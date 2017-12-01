@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4f90311a-2593-462e-9174-2f7ac78217b9
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Custom Authorization
 Authorization is the process of controlling access to resources and tasks. The topics in this section enable you to create to implement different claim types, or policies.  

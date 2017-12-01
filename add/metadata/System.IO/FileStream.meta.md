@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.IO.FileStream.FlushAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -126,7 +126,7 @@ manager: "wpickett"
 uid: System.IO.FileStream.WriteAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -142,14 +142,14 @@ manager: "wpickett"
 uid: System.IO.FileStream.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileStream.ReadAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

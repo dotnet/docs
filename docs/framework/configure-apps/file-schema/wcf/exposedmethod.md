@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 61c938cd-4ee9-4b06-ab28-922ef491ab11
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;exposedMethod&gt;
 Represents a COM+ method that is exposed when the interface on a COM+ component is exposed as a Web service.  

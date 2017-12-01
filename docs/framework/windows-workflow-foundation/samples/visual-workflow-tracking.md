@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0143448f-2044-40a0-8a3d-941f6d12468b
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Visual Workflow Tracking
 This sample demonstrates how to write a visual workflow tracking application using the debug functionality available through the [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)].  

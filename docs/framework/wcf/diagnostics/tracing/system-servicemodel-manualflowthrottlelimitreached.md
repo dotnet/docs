@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9aba851f-1830-493b-8e3e-60f454eb923e
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.ManualFlowThrottleLimitReached
 System.ServiceModel.ManualFlowThrottleLimitReached  

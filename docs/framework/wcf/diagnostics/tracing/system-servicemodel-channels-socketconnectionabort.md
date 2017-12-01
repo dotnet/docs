@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5e1a7716-b23a-46c5-952a-19c53b447a71
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.SocketConnectionAbort
 System.ServiceModel.Channels.SocketConnectionAbort  

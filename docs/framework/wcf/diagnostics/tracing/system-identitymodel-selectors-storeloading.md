@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a9287a5a-a36b-4659-8c87-13962b1c225c
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.IdentityModel.Selectors.StoreLoading
 System.IdentityModel.Selectors.StoreLoading  

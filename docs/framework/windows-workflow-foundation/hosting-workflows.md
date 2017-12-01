@@ -11,9 +11,9 @@ helpviewer_keywords:
   - "programming [WF], hosting workflows"
 ms.assetid: a99a5990-b53b-419b-9538-b1c3d1ba5db3
 caps.latest.revision: 15
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Hosting Workflows
 The topics in this section discuss hosting workflows.  

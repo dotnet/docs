@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "Windows Communication Foundation, configuration"
 ms.assetid: 58532b6d-4eea-4a4f-854f-a1c8c842564d
 caps.latest.revision: 33
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Custom Bindings
 You can use the <xref:System.ServiceModel.Channels.CustomBinding> class when one of the system-provided bindings does not meet the requirements of your service. All bindings are constructed from an ordered set of binding elements. Custom bindings can be built from a set of system-provided binding elements or can include user-defined custom binding elements. You can use custom binding elements, for example, to enable the use of new transports or encoders at a service endpoint. For working examples, see [Custom Binding Samples](http://msdn.microsoft.com/en-us/657e8143-beb0-472d-9cfe-ed1a19c2ab08). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  

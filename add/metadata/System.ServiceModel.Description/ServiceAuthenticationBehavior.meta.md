@@ -4,7 +4,7 @@ ms.technology:
   - "dotnet-standard"
 author: "BrucePerlerMS"
 ms.author: "bruceper"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -13,7 +13,7 @@ ms.technology:
   - "dotnet-standard"
 author: "BrucePerlerMS"
 ms.author: "bruceper"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -22,7 +22,7 @@ ms.technology:
   - "dotnet-standard"
 author: "BrucePerlerMS"
 ms.author: "bruceper"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -31,7 +31,7 @@ ms.technology:
   - "dotnet-standard"
 author: "BrucePerlerMS"
 ms.author: "bruceper"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -40,7 +40,7 @@ ms.technology:
   - "dotnet-standard"
 author: "BrucePerlerMS"
 ms.author: "bruceper"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -49,7 +49,7 @@ ms.technology:
   - "dotnet-standard"
 author: "BrucePerlerMS"
 ms.author: "bruceper"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -58,7 +58,7 @@ ms.technology:
   - "dotnet-standard"
 author: "BrucePerlerMS"
 ms.author: "bruceper"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -67,7 +67,7 @@ ms.technology:
   - "dotnet-standard"
 author: "BrucePerlerMS"
 ms.author: "bruceper"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -76,5 +76,5 @@ ms.technology:
   - "dotnet-standard"
 author: "BrucePerlerMS"
 ms.author: "bruceper"
-manager: "ghogen"
+manager: "wpickett"
 ---

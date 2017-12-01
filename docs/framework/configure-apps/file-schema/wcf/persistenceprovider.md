@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a37049c5-a7ea-4519-94f2-912eeb010380
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;persistenceProvider&gt;
 Specifies the type of the persistence provider implementation to use, as well as the time-out to use for persistence operations.  

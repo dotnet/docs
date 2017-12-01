@@ -3,7 +3,7 @@ uid: System.ServiceModel.Security.WSTrustRequestBodyWriter
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.ServiceModel.Security.WSTrustRequestBodyWriter.OnWriteBodyContents(S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,5 +19,5 @@ uid: System.ServiceModel.Security.WSTrustRequestBodyWriter.#ctor(System.Identity
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---

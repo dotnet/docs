@@ -3,7 +3,7 @@ uid: System.Linq.Expressions.IArgumentProvider
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Linq.Expressions.IArgumentProvider.GetArgument(System.Int32)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -1,6 +1,6 @@
 ---
 uid: Microsoft.VisualBasic.Logging
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

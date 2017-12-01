@@ -15,9 +15,9 @@ helpviewer_keywords:
   - "serialization, attributes"
 ms.assetid: 93ee258c-9c0f-4a08-897c-c10db7a00f91
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Attributes That Control Encoded SOAP Serialization 
 The World Wide Web Consortium (www.w3.org) document named "Simple Object Access Protocol (SOAP) 1.1" contains an optional section (section 5) that describes how SOAP parameters can be encoded. To conform to section 5 of the specification, you must use a special set of attributes found in the <xref:System.Xml.Serialization> namespace. Apply those attributes as appropriate to classes and members of classes, and then use the <xref:System.Xml.Serialization.XmlSerializer> to serialize instances of the class or classes.  

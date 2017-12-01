@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 78d70e0a-f6c3-4cfb-a7ca-f66ebddadde0
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Implement a Discovery Proxy
 This topic explains how to implement a discovery proxy. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the discovery feature in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], see [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md). A discovery proxy can be implemented by creating a class that extends the <xref:System.ServiceModel.Discovery.DiscoveryProxy> abstract class. There are a number of other support classes defined and used in this sample. `OnResolveAsyncResult`, `OnFindAsyncResult`, and `AsyncResult`. These classes implement the <xref:System.IAsyncResult> interface. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] <xref:System.IAsyncResult> see [System.IAsyncResult interface](xref:System.IAsyncResult).

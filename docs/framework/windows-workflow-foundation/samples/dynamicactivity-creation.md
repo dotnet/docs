@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d8ebe82f-98c8-4452-aed7-2c60a512b097
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # DynamicActivity Creation
 This sample demonstrates two different ways to create an activity at runtime using the <xref:System.Activities.DynamicActivity> activity.  

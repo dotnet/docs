@@ -14,9 +14,9 @@ dev_langs:
  - "vb"
 ms.assetid: 3dadd7f1-d207-4ea5-a73b-3e8aa44407f8
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Configure a WCF Client to interoperate with WSE3.0 Services
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] clients are wire-level compatible with Web Services Enhancements 3.0 for Microsoft .NET (WSE) services when [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients are configured to use the August 2004 version of the WS-Addressing specification.  

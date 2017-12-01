@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "asynchronous operations [WCF Data Services]"
 ms.assetid: 902a2dc1-d0e9-4b00-90a8-becc4cb1f6a7
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Execute Asynchronous Data Service Queries (WCF Data Services)
 By using the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library, you can asynchronously perform client-server operations, such as executing queries and saving changes. For more information, see [Asynchronous Operations](../../../../docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md).  

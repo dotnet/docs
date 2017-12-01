@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3a4ead79-8550-4037-84e3-fd70ff56e001
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Microsoft.Transactions.TransactionBridge.RegisterParticipantFailure
 The WS-AT protocol service failed to register a participant for a control protocol.  

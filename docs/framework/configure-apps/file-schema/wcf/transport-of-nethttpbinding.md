@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3b180006-1661-43bf-a699-96fd3da469af
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;transport&gt; of &lt;netHttpBinding&gt;
 Defines properties that control authentication parameters for the HTTP transport.  

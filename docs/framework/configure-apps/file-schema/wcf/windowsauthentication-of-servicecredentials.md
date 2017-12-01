@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e0709473-0997-4de3-8f49-783527309a48
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;windowsAuthentication&gt; of &lt;serviceCredentials&gt;
 Specifies the settings of a Windows service credential.  

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cb4173c5-476b-40d9-aa5c-19d95e98a51d
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.NoExistingTransportManager
 System.ServiceModel.Channels.NoExistingTransportManager  

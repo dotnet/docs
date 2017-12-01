@@ -29,5 +29,5 @@ manager: "wpickett"
 uid: System.Threading.Tasks.TaskExtensions.Unwrap
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

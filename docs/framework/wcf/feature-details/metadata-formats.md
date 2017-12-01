@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: baad1e68-28fc-4a6a-8a43-75e47e7fa871
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Metadata Formats
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] supports the metadata formats in the following table.  

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e726ab32-6923-4fdb-b0ce-bdf2a299ed6a
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.PnrpUnregisteredAddresses
 The Pnrp Resolver has unregistered the local node's addresses.  

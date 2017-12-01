@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: da8109fb-581c-48f4-b718-3bbda1edc47d
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;additionalRequestParameters&gt; element
 This contains a collection of configuration elements that specify additional request parameters.  

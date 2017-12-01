@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 53c93882-f8ba-4192-965b-787b5e3f09c0
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Exporting Custom Metadata for a WCF Extension
 In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], metadata export is the process of describing service endpoints and projecting them into a parallel, standardized representation that clients can use to understand how to use the service. Custom metadata consists of XML elements that the system-provided metadata exporters cannot export. Typically, this includes custom WSDL elements for user-defined behaviors and binding elements and policy assertions about the capabilities and requirements of bindings and contracts.  

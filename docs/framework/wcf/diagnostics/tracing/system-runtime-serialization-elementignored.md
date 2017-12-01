@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 795fc64f-07af-4b88-9256-1b154d2b209d
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.Runtime.Serialization.ElementIgnored
 System.Runtime.Serialization.ElementIgnored  

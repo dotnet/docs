@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "hosting services [WCF]"
 ms.assetid: 192be927-6be2-4fda-98f0-e513c4881acc
 caps.latest.revision: 31
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Hosting Services
 To become active, a service must be hosted within a run-time environment that creates it and controls its context and lifetime. [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] services are designed to run in any Windows process that supports managed code.  

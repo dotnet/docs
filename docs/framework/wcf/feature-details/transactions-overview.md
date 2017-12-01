@@ -15,9 +15,9 @@ helpviewer_keywords:
   - "Windows Communication Foundation, transactions"
 ms.assetid: c7757854-1207-4019-8b31-552578b7d570
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Windows Communication Foundation Transactions Overview
 Transactions provide a way to group a set of actions or operations into a single indivisible unit of execution. A transaction is a collection of operations with the following properties:  

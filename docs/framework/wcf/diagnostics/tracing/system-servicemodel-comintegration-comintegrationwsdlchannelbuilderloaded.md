@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b816e27e-e902-4009-bd61-325d68195f28
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationWsdlChannelBuilderLoaded
 System.ServiceModel.ComIntegration.ComIntegrationWsdlChannelBuilderLoaded  

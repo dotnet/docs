@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4680ace5-f4e1-4fcb-b9d8-a4a4af5cd7ae
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;localClientSettings&gt; element
 Specifies the security settings of a local client for this binding.  

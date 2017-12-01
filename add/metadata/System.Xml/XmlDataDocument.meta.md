@@ -101,7 +101,7 @@ manager: "wpickett"
 uid: System.Xml.XmlDataDocument.CreateElement
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -135,7 +135,7 @@ manager: "wpickett"
 uid: System.Xml.XmlDataDocument.CreateNavigator
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -169,5 +169,5 @@ manager: "wpickett"
 uid: System.Xml.XmlDataDocument.GetElementsByTagName
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

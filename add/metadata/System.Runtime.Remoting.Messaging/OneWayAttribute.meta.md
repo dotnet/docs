@@ -2,12 +2,12 @@
 uid: System.Runtime.Remoting.Messaging.OneWayAttribute
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.OneWayAttribute.#ctor
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

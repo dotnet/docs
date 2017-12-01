@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 61a5231b-4385-4a49-b676-a8e60cda96c3
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.ExtensionCollectionDoesNotExist
 System.ServiceModel.ExtensionCollectionDoesNotExist  

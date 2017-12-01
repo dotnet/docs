@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 613a03d8-4384-4556-bce2-8c23286c0bb0
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;add&gt; of &lt;authorizationPolicies&gt;
 Specifies an authorization policy for claim transformation.  

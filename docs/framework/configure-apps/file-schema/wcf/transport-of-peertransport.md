@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d7116240-845c-4b6f-b203-262de6b597ef
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;transport&gt; of &lt;peerTransport&gt;
 Specifies the transport type for secured messages sent by peers configured with this binding.  

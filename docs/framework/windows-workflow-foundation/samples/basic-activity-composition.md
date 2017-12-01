@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c283a1a7-1245-4ecd-8072-206c1b4ca379
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Basic Activity Composition
 This sample demonstrates how to compose custom activities and system-provided activities to build more custom activities.  

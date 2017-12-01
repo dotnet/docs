@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 24284565-c68b-40bf-b7f1-e148d151a6fc
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Custom Tracking Records
 This topic demonstrates how to create custom tracking records and populate them with data to be emitted along with the records.  

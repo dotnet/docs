@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 79ec2a3f-8407-4c4c-a1bc-2b0e6e21c543
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.TxCompletionStatusCompletedForAutocomplete
 The specified transaction for the specified operation was completed due to the `OperationBehaviorAttribute.TransactionAutoComplete` member being set to `true`.  

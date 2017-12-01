@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1d06a7e6-9633-4a12-8c5d-123adbbc19c5
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;messageLogging&gt;
 This element defines the settings for the message-logging capabilities of Windows Communication Foundation (WCF).  

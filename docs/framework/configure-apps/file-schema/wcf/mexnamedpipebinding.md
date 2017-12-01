@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 193412fa-3260-414c-92c6-b32ed3b94a34
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;mexNamedPipeBinding&gt;
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over named pipe.  

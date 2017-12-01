@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ca5b78f4-94fa-4aa7-830d-26039ac422c8
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # RangeEnumeration Activity
 This sample demonstrates how to create a custom activity that iterates over a collection of numbers.The following table details the main files included in the sample.  

@@ -2,16 +2,16 @@
 uid: System.Xml.Serialization.XmlNamespaceDeclarationsAttribute
 ms.technology: 
   - "dotnet-wcf"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlNamespaceDeclarationsAttribute.#ctor
 ms.technology: 
   - "dotnet-wcf"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

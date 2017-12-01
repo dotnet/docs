@@ -2,8 +2,8 @@
 uid: System.Windows.Input.ICommandSource
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -11,8 +11,8 @@ manager: "wpickett"
 uid: System.Windows.Input.ICommandSource.CommandParameter
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -20,8 +20,8 @@ manager: "wpickett"
 uid: System.Windows.Input.ICommandSource.CommandTarget
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -29,7 +29,7 @@ manager: "wpickett"
 uid: System.Windows.Input.ICommandSource.Command
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

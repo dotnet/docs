@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ebd69e9a-7a89-4a42-8f68-e756f8807a1a
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Microsoft.Transactions.TransactionBridge.RegisterCoordinator
 The WS-Atomic Transaction protocol service successfully registered with its coordinator for a control protocol.  

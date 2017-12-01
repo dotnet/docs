@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ea62fc06-55fb-42e0-aa2b-8867bdf4b415
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;messageSenderAuthentication&gt;
 Specifies authentication settings for peer certificate used by a message sender.  

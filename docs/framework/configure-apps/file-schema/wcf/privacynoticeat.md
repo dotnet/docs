@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4cc96942-4eb9-4241-b2fd-45aa239915e8
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;privacyNoticeAt&gt;
 Represents a configuration element that specifies a privacy notice used in `wsFederationHttp` binding.  

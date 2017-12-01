@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "event logging [WCF]"
 ms.assetid: aac0530d-f44c-45a1-bada-e30e0677b41f
 caps.latest.revision: 22
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Event Logging in WCF
 [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] traces internal events in the Windows event log.  

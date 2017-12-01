@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9c7e96e1-af70-4e6e-ac5c-d67929dddbaa
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;enableWebScript&gt;
 This element enables the endpoint behavior that makes it possible to consume the service from ASP.NET AJAX web pages.  

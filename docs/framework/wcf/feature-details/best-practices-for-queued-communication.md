@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "best practices [WCF], queued communication"
 ms.assetid: 446a6383-cae3-4338-b193-a33c14a49948
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Best Practices for Queued Communication
 This topic provides recommended practices for queued communication in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. The following sections discuss recommended practices from a scenario perspective.  

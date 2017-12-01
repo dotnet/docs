@@ -16,9 +16,9 @@ helpviewer_keywords:
   - "sessions [WCF]"
 ms.assetid: 864ba12f-3331-4359-a359-6d6d387f1035
 caps.latest.revision: 32
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Using Sessions
 In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications, a *session* correlates a group of messages into a conversation. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] sessions are different than the session object available in [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] applications, support different behaviors, and are controlled in different ways. This topic describes the features that sessions enable in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications and how to use them.  

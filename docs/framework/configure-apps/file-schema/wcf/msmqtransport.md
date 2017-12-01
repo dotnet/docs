@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 19d89f35-76ac-49dc-832b-e8bec2d5e33b
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;msmqTransport&gt;
 Causes a channel to transfers messages on the MSMQ transport when it is included in a custom binding.  

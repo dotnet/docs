@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d6a95f32-d58c-40fc-8658-dd92564d3c90
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;issuer&gt; of &lt;issuedTokenParameters&gt;
 Specifies the Security Token Service (STS) that issues security tokens.  

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7f8078e0-00d9-415c-b8ba-c1b6d5c31799
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Caching Support for WCF Web HTTP Services
 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] enables you to use the declarative caching mechanism already available in ASP.NET in your WCF Web HTTP services. This allows you to cache responses from your WCF Web HTTP service operations. When a user sends an HTTP GET to your service that is configured for caching, ASP.NET sends back the cached response and the service method is not called. When the cache expires, the next time a user sends an HTTP GET, your service method is called and the response is once again cached. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] ASP.NET caching, see [ASP.NET Caching Overview](http://go.microsoft.com/fwlink/?LinkId=152534)  

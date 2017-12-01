@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "XsdDataContractImporter class"
 ms.assetid: bb57b962-70c1-45a9-93d5-e721e340a13f
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Exporting Schemas from Classes
 To generate XML Schema definition language (XSD) schemas from classes that are used in the data contract model, use the <xref:System.Runtime.Serialization.XsdDataContractExporter> class. This topic describes the process for creating schemas.  

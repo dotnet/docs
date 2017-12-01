@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 201ffd59-df9e-40d9-9697-7de442ab8b35
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.TxCompletionStatusCompletedForSetComplete
 The specified transaction for the specified operation was completed due to a call to SetTransactionComplete.  

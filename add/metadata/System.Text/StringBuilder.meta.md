@@ -83,7 +83,7 @@ manager: "wpickett"
 uid: System.Text.StringBuilder.Equals
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

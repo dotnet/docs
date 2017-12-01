@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3cab9856-a5cf-4f0e-a0cb-89425e368f8e
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Activation.WebHostServiceCloseFailed
 Occurs when a service cannot be closed gracefully and is aborted.  

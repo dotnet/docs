@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 95d0aed3-16a2-4398-89bb-39418eeb7355
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Use Svcutil.exe to Export Metadata from Compiled Service Code
 Svcutil.exe can export metadata for services, contracts, and data types in compiled assemblies, as follows:  

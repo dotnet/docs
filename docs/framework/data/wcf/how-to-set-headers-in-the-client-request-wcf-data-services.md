@@ -16,9 +16,9 @@ helpviewer_keywords:
   - "WCF Data Services, customizing requests"
 ms.assetid: 3d55168d-5901-4f48-8117-6c93da3ab5ae
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Set Headers in the Client Request (WCF Data Services)
 When you use the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library to access a data service that supports the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)], the client library automatically sets the required HTTP headers in request messages sent to the data service. However, the client library does not know to set message headers that are required in certain cases, such as when the data service requires claims-based authentication or cookies. For more information, see [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md#clientAuthentication). In these cases, you must manually set message headers in the request message before it is sent. The example in this topic shows how to handle the <xref:System.Data.Services.Client.DataServiceContext.SendingRequest> event to add a new header to the request message before it is sent to the data service.  

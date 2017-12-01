@@ -1,6 +1,6 @@
 ---
 uid: System.Windows.Forms.DpiChangedEventHandler
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

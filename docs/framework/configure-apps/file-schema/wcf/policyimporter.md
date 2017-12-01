@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b0d03456-546f-44bb-ab12-1b2ce7f98fca
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;policyImporter&gt;
 Specifies a policy importer that controls the import of custom policy assertions about bindings.  

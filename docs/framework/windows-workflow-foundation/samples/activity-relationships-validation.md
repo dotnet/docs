@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6f11a34e-ed67-4bce-88ce-7e96bbb4d052
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Activity Relationships Validation
 This sample consists of three activities, `CreateCity`, `CreateState`, and `CreateCountry`. `CreateCity` must be inside a `CreateState` activity, and `CreateState` must be inside a `CreateCountry` activity. For the purpose of this sample, the validation logic is in code for the `CreateState` activity, and in XAML for the `CreateCity` activity. Both constraints have the same behavior.  

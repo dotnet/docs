@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2d55217e-8697-4113-94ce-10b60863342e
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Hosting Workflow Services
 A workflow service must be hosted for it to respond to incoming messages. Workflow services use the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] messaging infrastructure and are therefore hosted in similar ways. Like [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services, workflow services can be hosted in any managed application, under Internet Information Services (IIS), or under Windows Process Activation Services (WAS). In addition workflow services can be hosted under Windows Server App Fabric. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] Windows Server App Fabric see [Windows Server App Fabric documentation](http://go.microsoft.com/fwlink/?LinkId=193037), [AppFabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=196494), and [AppFabric Hosting Concepts](http://go.microsoft.com/fwlink/?LinkId=196495). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the various ways to host [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services see [Hosting Services](../../../../docs/framework/wcf/hosting-services.md).  

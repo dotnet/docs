@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 26bdd0df-0e7d-4b9e-bbeb-f28c53769385
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;localIssuer&gt;
 Specifies the address and binding of the local issuer to be used to obtain a security token.  

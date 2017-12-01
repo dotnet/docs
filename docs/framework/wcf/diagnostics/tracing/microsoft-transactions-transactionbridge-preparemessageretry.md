@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ada4baa5-b60d-46b8-ad46-4d69f8d8a9fa
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Microsoft.Transactions.TransactionBridge.PrepareMessageRetry
 A prepare message retry was sent to an unresponsive participant.  

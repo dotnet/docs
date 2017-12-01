@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ef28d086-d7fb-4e81-82e9-45a54647783b
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.PeerMaintainerActivity
 The PeerMaintainer module is performing a specific operation (details contained within the trace message body).  

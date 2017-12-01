@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "ProtectionLevel property"
 ms.assetid: 3d4e8f80-0f9e-4a26-9899-beb6584e78df
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Set the ProtectionLevel Property
 You can set the protection level by applying an appropriate attribute and setting the property. You can set protection at the service level to affect all parts of every message, or you can set protection at increasingly granular levels, from methods to message parts. [!INCLUDE[crabout](../../../includes/crabout-md.md)] the `ProtectionLevel` property, see [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md).  

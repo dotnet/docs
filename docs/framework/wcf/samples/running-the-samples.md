@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: db8a83da-95c1-4a21-a9d2-48caeb6398ea
 caps.latest.revision: 26
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Running the Windows Communication Foundation Samples
 The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples can be run in a single-machine or cross-machine configuration. As supplied, the samples are ready for running on a single machine. In a cross-machine configuration, it is necessary to modify a sample's configuration file settings. The following procedures explain how to run a sample in same-machine and cross-machine configurations. Note that there are variations in the steps for services hosted in Internet Information Services (IIS) and the self-hosted samples. Most samples are hosted in IIS; see the sample readme information to determine how it is hosted.  

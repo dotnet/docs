@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 24edae24-8ced-43c4-948b-f400ba42b2a5
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.MetadataExchangeClientReceiveReply
 System.ServiceModel.MetadataExchangeClientReceiveReply  

@@ -12,7 +12,7 @@ uid: System.Linq.Expressions.MemberAssignment.Update(System.Linq.Expressions.Exp
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -20,5 +20,5 @@ uid: System.Linq.Expressions.MemberAssignment.Expression
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---

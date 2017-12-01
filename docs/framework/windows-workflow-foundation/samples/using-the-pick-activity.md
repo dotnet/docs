@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b89be812-a247-4025-b0e3-ffb20db027a6
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Using the Pick Activity
 This sample demonstrates how to use the <xref:System.Activities.Statements.Pick> activity.  

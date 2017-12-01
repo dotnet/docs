@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: ebea5e7c-ad58-43c5-8f2d-cca25ae1b721
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;states&gt;
 Represents a collection of subscribed states from the tracked workflow instance when the tracking records are created.  

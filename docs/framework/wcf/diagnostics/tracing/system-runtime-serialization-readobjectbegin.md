@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1b08ba6d-f201-4ace-9dce-aaf539e323b3
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.Runtime.Serialization.ReadObjectBegin
 System.Runtime.Serialization.ReadObjectBegin  

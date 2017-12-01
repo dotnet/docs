@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bfe18481-c3ae-4305-a666-2ee63eac3dff
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.MsmqUnexpectedAcknowledgment
 System.ServiceModel.Channels.MsmqUnexpectedAcknowledgment  

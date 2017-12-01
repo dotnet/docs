@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b00612e4-84c7-4a53-849a-e693cdce7fca
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.UnhandledExceptionInUserOperation
 System.ServiceModel.UnhandledExceptionInUserOperation  

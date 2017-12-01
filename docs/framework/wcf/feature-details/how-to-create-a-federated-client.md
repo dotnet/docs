@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "federation"
 ms.assetid: 56ece47e-98bf-4346-b92b-fda1fc3b4d9c
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Create a Federated Client
 In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], creating a client for a *federated service* consists of three main steps:  

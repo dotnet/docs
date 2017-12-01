@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "choosing transports [WCF]"
 ms.assetid: b169462b-f7b6-4cf4-9fca-d306909ee8bf
 caps.latest.revision: 25
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Choosing a Transport
 This topic discusses criteria for choosing among the three main transports that are included in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]: HTTP, TCP, and named pipes. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also includes a message queuing (also known as MSMQ) transport, but this document does not cover message queuing.  

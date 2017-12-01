@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f5ac7fc7-f97c-4313-b068-54e0c471b2aa
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # End-to-End Tracing
 End to End (e2e) Tracing allows developers to follow the execution of code in the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] infrastructure to investigate why a code path has failed, or to provide detailed tracing for capacity planning and performance analysis. [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] provides three correlation mechanisms to help diagnose the cause of an error: activities, transfers, and propagation.  

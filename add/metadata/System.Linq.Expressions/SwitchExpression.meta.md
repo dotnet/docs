@@ -48,7 +48,7 @@ uid: System.Linq.Expressions.SwitchExpression.DefaultBody
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f94b1d9e-25d5-41a9-864b-5e0be7daaf56
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationTLBImportStarting
 System.ServiceModel.ComIntegration.ComIntegrationTLBImportStarting  

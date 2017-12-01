@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ef42fde7-f292-4610-9111-9fea382c3b5f
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;clear&gt; of &lt;claimTypeRequirements&gt; element
 Specifies that all the claim types to be removed in the federated credential. This ensures that the collection starts empty.  

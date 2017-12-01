@@ -21,7 +21,7 @@ uid: System.Linq.Expressions.RuntimeVariablesExpression.Update(System.Collection
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

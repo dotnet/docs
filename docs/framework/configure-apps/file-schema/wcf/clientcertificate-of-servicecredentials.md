@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 90ad03aa-2317-43dd-8a72-6d24cdcad15c
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;clientCertificate&gt; of &lt;serviceCredentials&gt;
 Defines an X.509 certificate used to sign and encrypt messages to a client form a service in a duplex communication pattern.  

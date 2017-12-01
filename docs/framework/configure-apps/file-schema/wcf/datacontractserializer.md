@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a47513a4-a96c-4350-8586-daacb05dee71
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # dataContractSerializer
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>.  

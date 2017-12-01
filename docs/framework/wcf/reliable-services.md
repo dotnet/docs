@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "service contracts [WCF], reliable services"
 ms.assetid: 07814ed0-0775-47f2-987b-d8134fdd5099
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Reliable Services
 Queues and reliable sessions are the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] features that implement reliable messaging. This topic explains the reliable messaging features of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)].  

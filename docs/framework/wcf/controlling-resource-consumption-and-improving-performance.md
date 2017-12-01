@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9a829669-5f76-4c88-80ec-92d0c62c0660
 caps.latest.revision: 18
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Controlling Resource Consumption and Improving Performance
 This topic describes various properties in different areas of the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] architecture that work to control resource consumption and affect performance metrics.  

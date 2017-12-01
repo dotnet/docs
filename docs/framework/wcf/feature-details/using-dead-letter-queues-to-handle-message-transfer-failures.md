@@ -14,9 +14,9 @@ dev_langs:
  - "vb"
 ms.assetid: 9e891c6a-d960-45ea-904f-1a00e202d61a
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Using Dead-Letter Queues to Handle Message Transfer Failures
 Queued messages can fail delivery. These failed messages are recorded in a dead-letter queue. The failed delivery can be caused by reasons such as network failures, a deleted queue, a full queue, authentication failure, or a failure to deliver on time.  

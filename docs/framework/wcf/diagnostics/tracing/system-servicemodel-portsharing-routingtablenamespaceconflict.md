@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5698b658-211b-4c92-b052-2dba57315551
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.PortSharing.RoutingTableNamespaceConflict
 System.ServiceModel.PortSharing.RoutingTableNamespaceConflict  

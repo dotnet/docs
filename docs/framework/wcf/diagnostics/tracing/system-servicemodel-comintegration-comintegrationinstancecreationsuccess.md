@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fac5288a-139b-4cb1-8931-d2a153a19971
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationInstanceCreationSuccess
 System.ServiceModel.ComIntegration.ComIntegrationInstanceCreationSuccess  

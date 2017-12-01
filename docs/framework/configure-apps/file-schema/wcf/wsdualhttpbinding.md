@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "wsDualHttpBinding Element"
 ms.assetid: fd8ac4e2-5641-473b-9115-73f14ab1c065
 caps.latest.revision: 25
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;wsDualHttpBinding&gt;
 Defines a secure, reliable and interoperable binding that is suitable for duplex service contracts or communication through SOAP intermediaries.  

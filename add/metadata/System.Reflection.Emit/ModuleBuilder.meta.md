@@ -92,7 +92,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.ModuleBuilder.GetField
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -144,7 +144,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.ModuleBuilder.ResolveType
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -475,7 +475,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.ModuleBuilder.ResolveField
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -590,7 +590,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.ModuleBuilder.GetMethods
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -660,7 +660,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.ModuleBuilder.ResolveMethod
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -739,7 +739,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.ModuleBuilder.ResolveMember
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -818,7 +818,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.ModuleBuilder.GetFields
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

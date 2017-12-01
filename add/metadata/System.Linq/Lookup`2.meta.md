@@ -3,7 +3,7 @@ uid: System.Linq.Lookup`2
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -47,7 +47,7 @@ uid: System.Linq.Lookup`2.Contains(`0)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

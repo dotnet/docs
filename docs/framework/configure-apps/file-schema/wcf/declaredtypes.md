@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "<declaredTypes> element"
 ms.assetid: f35184e4-9d9e-4d37-8fb4-d5b58220eb3e
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;declaredTypes&gt;
 Contains the known types that the <xref:System.Runtime.Serialization.DataContractSerializer> uses when deserializing.  

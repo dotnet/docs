@@ -3,7 +3,7 @@ uid: System.Runtime.Caching.MemoryCache
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Runtime.Caching.MemoryCache.Default
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.Runtime.Caching.MemoryCache.Contains(System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -33,7 +33,7 @@ uid: System.Runtime.Caching.MemoryCache.DefaultCacheCapabilities
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -41,7 +41,7 @@ uid: System.Runtime.Caching.MemoryCache.GetCacheItem(System.String,System.String
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -49,7 +49,7 @@ uid: System.Runtime.Caching.MemoryCache.Item(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -57,7 +57,7 @@ uid: System.Runtime.Caching.MemoryCache.GetCount(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -65,7 +65,7 @@ uid: System.Runtime.Caching.MemoryCache.Add(System.Runtime.Caching.CacheItem,Sys
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -73,7 +73,7 @@ uid: System.Runtime.Caching.MemoryCache.Trim(System.Int32)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -81,7 +81,7 @@ uid: System.Runtime.Caching.MemoryCache.Get(System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -89,7 +89,7 @@ uid: System.Runtime.Caching.MemoryCache.System#Collections#IEnumerable#GetEnumer
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -103,7 +103,7 @@ uid: System.Runtime.Caching.MemoryCache.Set(System.String,System.Object,System.R
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -111,7 +111,7 @@ uid: System.Runtime.Caching.MemoryCache.PhysicalMemoryLimit
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -122,7 +122,7 @@ uid: System.Runtime.Caching.MemoryCache.#ctor
 uid: System.Runtime.Caching.MemoryCache.Add
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -130,7 +130,7 @@ uid: System.Runtime.Caching.MemoryCache.AddOrGetExisting
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -138,7 +138,7 @@ uid: System.Runtime.Caching.MemoryCache.AddOrGetExisting(System.String,System.Ob
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -152,7 +152,7 @@ uid: System.Runtime.Caching.MemoryCache.#ctor(System.String,System.Collections.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -160,7 +160,7 @@ uid: System.Runtime.Caching.MemoryCache.Dispose
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -168,7 +168,7 @@ uid: System.Runtime.Caching.MemoryCache.AddOrGetExisting(System.String,System.Ob
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -176,7 +176,7 @@ uid: System.Runtime.Caching.MemoryCache.CacheMemoryLimit
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -184,7 +184,7 @@ uid: System.Runtime.Caching.MemoryCache.PollingInterval
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -192,7 +192,7 @@ uid: System.Runtime.Caching.MemoryCache.Set(System.String,System.Object,System.D
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -200,7 +200,7 @@ uid: System.Runtime.Caching.MemoryCache.AddOrGetExisting(System.Runtime.Caching.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -208,7 +208,7 @@ uid: System.Runtime.Caching.MemoryCache.GetValues(System.Collections.Generic.IEn
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -216,7 +216,7 @@ uid: System.Runtime.Caching.MemoryCache.Set
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -224,7 +224,7 @@ uid: System.Runtime.Caching.MemoryCache.Name
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -232,7 +232,7 @@ uid: System.Runtime.Caching.MemoryCache.GetEnumerator
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -240,7 +240,7 @@ uid: System.Runtime.Caching.MemoryCache.CreateCacheEntryChangeMonitor(System.Col
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -253,7 +253,7 @@ manager: "wpickett"
 uid: System.Runtime.Caching.MemoryCache.GetValues
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -261,7 +261,7 @@ uid: System.Runtime.Caching.MemoryCache.Remove(System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -269,5 +269,5 @@ uid: System.Runtime.Caching.MemoryCache.Set(System.Runtime.Caching.CacheItem,Sys
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---

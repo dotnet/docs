@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 49ba71e2-9468-4082-84c5-cf8daf95e34a
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Adopting Windows Communication Foundation
 You can choose to use [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] for new development, while continuing to maintain existing applications developed using ASP.NET. Because [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is intended to be the most suitable choice for facilitating communication with applications built with the .NET Framework in any scenario, it can serve as a standard tool for solving a wide variety of software communications problems in a way that ASP.NET cannot.  

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 72e1b338-39f0-4af1-a5d9-7a2fb79f6a0b
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;transport&gt; of &lt;netMsmqBinding&gt;
 Defines the transport security settings.  

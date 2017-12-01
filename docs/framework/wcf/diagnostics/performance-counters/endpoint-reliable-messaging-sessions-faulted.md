@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 63eb536f-cb9d-4c9a-b620-947d1828b1ce
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Endpoint: Reliable Messaging Sessions Faulted
 Counter Name: Reliable Messaging Sessions Faulted Per Second.  

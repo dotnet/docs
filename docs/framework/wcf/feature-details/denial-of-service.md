@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "denial of service [WCF]"
 ms.assetid: dfb150f3-d598-4697-a5e6-6779e4f9b600
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Denial of Service
 Denial of service occurs when a system is overwhelmed in such a way that messages cannot be processed, or they are processed extremely slowly.  

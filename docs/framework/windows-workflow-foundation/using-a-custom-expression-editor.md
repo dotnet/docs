@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0901b58b-e037-44a8-8281-f6f54361cfca
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Using a Custom Expression Editor
 A custom expression editor can be implemented to provide a richer or simpler expression editing experience. There are several scenarios in which you might want to use a custom expression editor:  

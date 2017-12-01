@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 97ce4797-426e-463d-9cc4-1261afad6df4
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Exposing and Invoking ActivityActions
 This sample demonstrates how to develop a custom activity that has an <xref:System.Activities.ActivityAction>. It also demonstrates how to use this activity by providing an implementation of the <xref:System.Activities.ActivityAction>.  

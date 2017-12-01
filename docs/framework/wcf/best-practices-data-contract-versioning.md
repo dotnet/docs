@@ -16,9 +16,9 @@ helpviewer_keywords:
   - "Windows Communication Foundation, data contracts"
 ms.assetid: bf0ab338-4d36-4e12-8002-8ebfdeb346cb
 caps.latest.revision: 24
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Best Practices: Data Contract Versioning
 This topic lists the best practices for creating data contracts that can evolve easily over time. [!INCLUDE[crabout](../../../includes/crabout-md.md)] data contracts, see the topics in [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md).  

@@ -12,7 +12,7 @@ uid: System.Linq.Expressions.SymbolDocumentInfo.LanguageVendor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

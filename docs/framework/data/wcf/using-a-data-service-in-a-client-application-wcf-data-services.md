@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "WCF Data Services, getting started"
 ms.assetid: 90872d0c-e989-4490-b3e9-54afb10d33d4
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Using a Data Service in a Client Application (WCF Data Services)
 You can access a service that exposes an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed by supplying a URI to a Web browser. The URI provides the address of a resource, and request messages are sent to these addresses to access or change the underlying data that the resource represents. The browser issues an HTTP GET command and returns the requested resource as an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed. For more information, see [Accessing the Service from a Web Browser](../../../../docs/framework/data/wcf/accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md).  

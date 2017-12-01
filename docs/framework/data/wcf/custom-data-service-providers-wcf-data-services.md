@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "WCF Data Services, providers"
 ms.assetid: e702ecdb-3419-4743-92a9-c3c0e7d44082
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Custom Data Service Providers (WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] includes a set of providers that enables you to define a data model based on late-bound data types.  

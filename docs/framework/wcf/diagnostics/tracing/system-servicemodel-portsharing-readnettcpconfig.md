@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c0d3350f-9d70-4529-a958-eb56a277e401
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.PortSharing.ReadNetTcpConfig
 System.ServiceModel.PortSharing.ReadNetTcpConfig  

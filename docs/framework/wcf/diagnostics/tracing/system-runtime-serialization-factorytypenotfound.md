@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e0ab341a-4000-4076-87cc-ffe332266658
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.Runtime.Serialization.FactoryTypeNotFound
 System.Runtime.Serialization.FactoryTypeNotFound  

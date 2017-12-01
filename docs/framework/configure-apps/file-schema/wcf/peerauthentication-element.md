@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 09a8a9ff-e395-42f6-8ceb-9d44bdc1cbe1
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;peerAuthentication&gt; Element
 Specifies authentication options for peer-to-peer clients.  

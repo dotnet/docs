@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 75a22c88-5e54-4ae8-84cb-fbb22a612f0a
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Advanced Policy
 This sample extends the Simple Policy sample. In addition to the residential discount and business discount rules from the Simple Policy example, several new rules have been added.  

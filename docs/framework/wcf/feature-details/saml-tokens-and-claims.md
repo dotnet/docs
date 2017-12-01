@@ -19,9 +19,9 @@ helpviewer_keywords:
   - "SAML token"
 ms.assetid: 930b6e34-9eab-4e95-826c-4e06659bb977
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # SAML Tokens and Claims
 Security Assertions Markup Language (SAML) *tokens* are XML representations of claims. By default, SAML tokens [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses in federated security scenarios are *issued tokens*.  

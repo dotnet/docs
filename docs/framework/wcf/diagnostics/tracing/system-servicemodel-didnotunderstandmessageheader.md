@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a4dfc51c-7148-4181-81c3-7b424b4c43db
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.DidNotUnderstandMessageHeader
 System.ServiceModel.DidNotUnderstandMessageHeader  

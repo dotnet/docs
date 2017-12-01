@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f850b3e2-022b-4c75-aca3-1a8b14f9dc30
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.IdentityModel.Selectors.StoreFailedToOpenStore
 System.IdentityModel.Selectors.StoreFailedToOpenStore  

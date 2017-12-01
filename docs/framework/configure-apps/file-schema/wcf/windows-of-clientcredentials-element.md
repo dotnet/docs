@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 793e41c2-31ea-4159-abbc-2123bf097233
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;windows&gt; of &lt;clientCredentials&gt; Element
 Specifies the settings for a Windows credential to be used to represent the client.  

@@ -24,6 +24,7 @@ Module CalendarSamples
         ' </Snippet1>
     End Sub
 
+    ' <Snippet2>
     Private Sub ThaiBuddhistEraParse()
         Dim thTH As New CultureInfo("th-TH")
         Dim value As DateTime = DateTime.Parse("28/5/2559", thTH)
@@ -35,6 +36,7 @@ Module CalendarSamples
         '       28/5/2559 0:00:00
         '       28/5/2016 0:00:00
     End Sub
+    ' </Snippet2>
 
     Private Sub InstantiateCalendar()
         ' <Snippet3>

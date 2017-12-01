@@ -296,6 +296,7 @@ Module Persistence
 
     Private Const filenameBin As String = ".\Dates.bin"
 
+    ' <Snippet5>
     Public Sub PersistBinary()
         SaveDatesBinary()
         RestoreDatesBinary()

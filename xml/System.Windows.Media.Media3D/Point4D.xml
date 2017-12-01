@@ -115,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point4D.op_Addition(System.Windows.Media.Media3D.Point4D,System.Windows.Media.Media3D.Point4D)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -157,6 +158,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point4D.op_Equality(System.Windows.Media.Media3D.Point4D,System.Windows.Media.Media3D.Point4D)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -187,6 +189,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point4D.op_Equality(System.Windows.Media.Media3D.Point4D,System.Windows.Media.Media3D.Point4D)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -229,6 +232,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point4D.op_Equality(System.Windows.Media.Media3D.Point4D,System.Windows.Media.Media3D.Point4D)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -292,6 +296,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point4D.op_Multiply(System.Windows.Media.Media3D.Point4D,System.Windows.Media.Media3D.Matrix3D)" />
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -368,6 +373,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point4D.Add(System.Windows.Media.Media3D.Point4D,System.Windows.Media.Media3D.Point4D)" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -410,6 +416,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Media3D.Point4D.Equals" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -486,6 +493,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point4D.Multiply(System.Windows.Media.Media3D.Point4D,System.Windows.Media.Media3D.Matrix3D)" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -520,6 +528,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point4D.Subtract(System.Windows.Media.Media3D.Point4D,System.Windows.Media.Media3D.Point4D)" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -586,6 +595,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point4D.op_Subtraction(System.Windows.Media.Media3D.Point4D,System.Windows.Media.Media3D.Point4D)" />
       </Docs>
     </Member>
     <Member MemberName="System.IFormattable.ToString">
@@ -753,5 +763,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Point4D" /> structures for equality.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

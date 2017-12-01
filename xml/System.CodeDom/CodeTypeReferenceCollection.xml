@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeTypeReference" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -146,6 +147,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeTypeReference" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -232,6 +234,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.CodeDom.CodeTypeReferenceCollection.Add(System.CodeDom.CodeTypeReference)" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -268,6 +271,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.CodeDom.CodeTypeReferenceCollection.Add(System.CodeDom.CodeTypeReference)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -304,6 +308,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.CodeDom.CodeTypeReferenceCollection.IndexOf(System.CodeDom.CodeTypeReference)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -347,6 +352,7 @@
  The number of elements in the <see cref="T:System.CodeDom.CodeTypeReferenceCollection" /> is greater than the available space between the index of the target array specified by the <paramref name="index" /> parameter and the end of the target array.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than the target array's minimum index.</exception>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -382,6 +388,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.CodeDom.CodeTypeReferenceCollection.Contains(System.CodeDom.CodeTypeReference)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -418,6 +425,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.CodeDom.CodeTypeReferenceCollection.Add(System.CodeDom.CodeTypeReference)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -489,5 +497,32 @@
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified <see cref="T:System.CodeDom.CodeTypeReference" /> to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeReferenceCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of the specified <see cref="T:System.CodeDom.CodeTypeReference" /> array to the end of the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "tile view feature"
   - "ListView control [Windows Forms], tile view"
-  - "tiling, Windows Forms, controls"
+  - "tiling [Windows Forms], Windows Forms, controls"
 ms.assetid: 12f0816a-52b8-41ee-a6d9-ded3a8a5817a
 caps.latest.revision: 6
 author: dotnet-bot
@@ -42,6 +42,6 @@ The tile view feature of the <xref:System.Windows.Forms.ListView> control enable
 2.  In the **Properties** window, select the <xref:System.Windows.Forms.ListView.View%2A> property and choose **Tile**.  
   
 ## See Also  
- <xref:System.Windows.Forms.ListView.TileSize%2A>   
- [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)   
+ <xref:System.Windows.Forms.ListView.TileSize%2A>  
+ [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)  
  [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)

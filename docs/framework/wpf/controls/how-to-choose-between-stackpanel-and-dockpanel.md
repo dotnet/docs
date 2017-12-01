@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "controls [WPF], DockPanel"
-  - "DockPanel control, StackPanel control compared to"
-  - "StackPanel control, DockPanel control compared to"
+  - "DockPanel control [WPF], StackPanel control compared to"
+  - "StackPanel control [WPF], DockPanel control compared to"
   - "controls [WPF], StackPanel"
 ms.assetid: f9239086-451f-42e6-81f7-ef89ef349742
 caps.latest.revision: 9
@@ -38,6 +38,6 @@ This example shows how to choose between using a <xref:System.Windows.Controls.S
  [!code-xaml[StackPanelOvw4#1](../../../../samples/snippets/xaml/VS_Snippets_Wpf/StackPanelOvw4/XAML/default.xaml#1)]  
   
 ## See Also  
- <xref:System.Windows.Controls.StackPanel>   
- <xref:System.Windows.Controls.DockPanel>   
+ <xref:System.Windows.Controls.StackPanel>  
+ <xref:System.Windows.Controls.DockPanel>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

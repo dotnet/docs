@@ -32,7 +32,7 @@ Provides a set of regular expressions that describe addresses that do not use a 
 ## Syntax  
   
 ```xml  
-      <bypasslist>   
+<bypasslist>   
 </bypasslist>  
 ```  
   
@@ -83,5 +83,5 @@ Provides a set of regular expressions that describe addresses that do not use a 
 ```  
   
 ## See Also  
- <xref:System.Net.WebProxy?displayProperty=nameWithType>   
+ <xref:System.Net.WebProxy?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

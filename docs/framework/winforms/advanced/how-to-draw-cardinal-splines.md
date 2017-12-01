@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "cardinal splines, drawing"
-  - "drawing, cardinal splines"
-  - "graphics, cardinal splines"
+  - "cardinal splines [Windows Forms], drawing"
+  - "drawing [Windows Forms], cardinal splines"
+  - "graphics [Windows Forms], cardinal splines"
 ms.assetid: a4a41e80-4461-4b47-b6bd-2c5e68881994
 caps.latest.revision: 13
 author: dotnet-bot
@@ -56,5 +56,5 @@ A cardinal spline is a curve that passes smoothly through a given set of points.
  The preceding examples are designed for use with Windows Forms, and they require <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See Also  
- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)   
+ [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)  
  [Constructing and Drawing Curves](../../../../docs/framework/winforms/advanced/constructing-and-drawing-curves.md)

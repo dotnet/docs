@@ -61,6 +61,7 @@
  ]]></format>
     </remarks>
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
+    <altmember cref="T:System.UInt16" />
   </Docs>
   <Members>
     <Member MemberName="CompareTo">
@@ -136,6 +137,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.UInt16" />
+        <altmember cref="M:System.Int16.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -200,6 +203,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not an <see cref="T:System.Int16" />.</exception>
+        <altmember cref="T:System.UInt16" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -249,6 +253,8 @@
  [!code-csharp[System.Int16.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.int16.equals/cs/equalsoverl.cs#1)]
  [!code-vb[System.Int16.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.int16.equals/vb/equalsoverl.vb#1)]</para>
         </block>
+        <altmember cref="M:System.Int16.Equals(System.Object)" />
+        <altmember cref="Overload:System.Int16.CompareTo" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -362,6 +368,7 @@
         <summary>Returns the <see cref="T:System.TypeCode" /> for value type <see cref="T:System.Int16" />.</summary>
         <returns>The enumerated constant, <see cref="F:System.TypeCode.Int16" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.TypeCode" />
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -411,6 +418,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Int16.MinValue" />
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -460,6 +468,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Int16.MaxValue" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -510,7 +519,7 @@
 |*sign*|An optional sign.|  
 |*digits*|A sequence of digits ranging from 0 to 9.|  
   
- The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. In addition to the integer value's decimal digits, only leading and trailing spaces together with a leading sign are allowed. To explicitly define the style elements that can be present in `s`, use either the <xref:System.Int16.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=nameWithType> or the <xref:System.Int16.Parse%2A> method.  
+ The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles.Integer?displayProperty=nameWithType> style. In addition to the integer value's decimal digits, only leading and trailing spaces together with a leading sign are allowed. To explicitly define the style elements that can be present in `s`, use either the <xref:System.Int16.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=nameWithType> or the <xref:System.Int16.Parse%2A> method.  
   
  The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object that is initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>. To parse a string using the formatting information of some other culture, use the <xref:System.Int16.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> or the <xref:System.Int16.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
   
@@ -531,6 +540,7 @@
           <paramref name="s" /> is not in the correct format.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Int16.MinValue" /> or greater than <see cref="F:System.Int16.MaxValue" />.</exception>
+        <altmember cref="M:System.Int16.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -583,32 +593,32 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, or at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> property of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, or at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> property of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag.|  
 |*digits*|A sequence of digits from 0 through 9.|  
-|*,*|A culture-specific thousands separator symbol. The current culture's thousands separator symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*fractional_digits*|A sequence of the 0 digit. Fractional digits can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. If any digit other than 0 appears in *fractional_digits*, the method throws an <xref:System.OverflowException>.|  
-|*e*|The 'e' or 'E' character, which indicates that `s` can be represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. However, the `s` parameter must represent a number in the range of the <xref:System.Int16> data type and cannot have a non-zero fractional component.|  
+|*,*|A culture-specific thousands separator symbol. The current culture's thousands separator symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*fractional_digits*|A sequence of the 0 digit. Fractional digits can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag. If any digit other than 0 appears in *fractional_digits*, the method throws an <xref:System.OverflowException>.|  
+|*e*|The 'e' or 'E' character, which indicates that `s` can be represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag. However, the `s` parameter must represent a number in the range of the <xref:System.Int16> data type and cannot have a non-zero fractional component.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with *digits* only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
+ A string with *digits* only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
   
 |Non-composite NumberStyles values|Elements permitted in s in addition to digits|  
 |----------------------------------------|---------------------------------------------------|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|Decimal digits only.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *.* and *fractional_digits* elements. However, *fractional_digits* must consist of only one or more 0 digits or an <xref:System.OverflowException> is thrown.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The `s` parameter can also use exponential notation.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *ws* element at the beginning of `s`.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *ws* element at the end of `s`.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|A sign can appear before *digits*.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|A sign can appear after *digits*.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *sign* element in the form of parentheses enclosing the numeric value.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *,* element.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *$* element.|  
+|<xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType>|Decimal digits only.|  
+|<xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType>|The *.* and *fractional_digits* elements. However, *fractional_digits* must consist of only one or more 0 digits or an <xref:System.OverflowException> is thrown.|  
+|<xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType>|The `s` parameter can also use exponential notation.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType>|The *ws* element at the beginning of `s`.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>|The *ws* element at the end of `s`.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType>|A sign can appear before *digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType>|A sign can appear after *digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType>|The *sign* element in the form of parentheses enclosing the numeric value.|  
+|<xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType>|The *,* element.|  
+|<xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType>|The *$* element.|  
   
- If the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag is used, `s` must be the string representation of a hexadecimal value without a prefix. For example, "9AF3" parses successfully, but "0x9AF3" does not. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite number style, <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>, that includes both white space flags.)  
+ If the <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType> flag is used, `s` must be the string representation of a hexadecimal value without a prefix. For example, "9AF3" parses successfully, but "0x9AF3" does not. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite number style, <xref:System.Globalization.NumberStyles.HexNumber?displayProperty=nameWithType>, that includes both white space flags.)  
   
  The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object that is initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType>. To parse `s` using the formatting information of a specific culture, call the <xref:System.Int16.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
   
@@ -639,6 +649,9 @@
  -or-  
   
  <paramref name="s" /> includes non-zero fractional digits.</exception>
+        <altmember cref="T:System.Globalization.NumberStyles" />
+        <altmember cref="M:System.Int16.ToString" />
+        <altmember cref="Overload:System.Int16.TryParse" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -691,7 +704,7 @@
 |sign|An optional sign.|  
 |digits|A sequence of digits ranging from 0 to 9.|  
   
- The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. In addition to decimal digits, only leading and trailing spaces together with a leading sign are allowed in `s`. To explicitly define the style elements together with the culture-specific formatting information that can be present in `s`, use the <xref:System.Int16.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
+ The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles.Integer?displayProperty=nameWithType> style. In addition to decimal digits, only leading and trailing spaces together with a leading sign are allowed in `s`. To explicitly define the style elements together with the culture-specific formatting information that can be present in `s`, use the <xref:System.Int16.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation that obtains a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> provides culture-specific information about the format of `s`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> for the current culture is used.  
   
@@ -712,6 +725,8 @@
           <paramref name="s" /> is not in the correct format.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Int16.MinValue" /> or greater than <see cref="F:System.Int16.MaxValue" />.</exception>
+        <altmember cref="M:System.Int16.ToString" />
+        <altmember cref="Overload:System.Int16.TryParse" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -766,32 +781,32 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, or at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> property of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, or at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> property of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag.|  
 |*digits*|A sequence of digits from 0 through 9.|  
-|*,*|A culture-specific thousands separator symbol. The current culture's thousands separator symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*fractional_digits*|A sequence of the 0 digit. Fractional digits can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. If any digit other than 0 appears in *fractional_digits*, the method throws an <xref:System.OverflowException>.|  
-|*e*|The 'e' or 'E' character, which indicates that `s` can be represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. However, the `s` parameter must represent a number in the range of the <xref:System.Int16> data type and cannot have a non-zero fractional component.|  
+|*,*|A culture-specific thousands separator symbol. The current culture's thousands separator symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*fractional_digits*|A sequence of the 0 digit. Fractional digits can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag. If any digit other than 0 appears in *fractional_digits*, the method throws an <xref:System.OverflowException>.|  
+|*e*|The 'e' or 'E' character, which indicates that `s` can be represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag. However, the `s` parameter must represent a number in the range of the <xref:System.Int16> data type and cannot have a non-zero fractional component.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with *digits* only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
+ A string with *digits* only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
   
 |Non-composite NumberStyles values|Elements permitted in s in addition to digits|  
 |----------------------------------------|---------------------------------------------------|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|Decimal digits only.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *.* and *fractional_digits* elements. However, *fractional_digits* must consist of only one or more 0 digits or an <xref:System.OverflowException> is thrown.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The `s` parameter can also use exponential notation.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *ws* element at the beginning of `s`.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *ws* element at the end of `s`.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|A sign can appear before *digits*.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|A sign can appear after *digits*.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *sign* element in the form of parentheses enclosing the numeric value.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *,* element.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *$* element.|  
+|<xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType>|Decimal digits only.|  
+|<xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType>|The *.* and *fractional_digits* elements. However, *fractional_digits* must consist of only one or more 0 digits or an <xref:System.OverflowException> is thrown.|  
+|<xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType>|The `s` parameter can also use exponential notation.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType>|The *ws* element at the beginning of `s`.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>|The *ws* element at the end of `s`.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType>|A sign can appear before *digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType>|A sign can appear after *digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType>|The *sign* element in the form of parentheses enclosing the numeric value.|  
+|<xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType>|The *,* element.|  
+|<xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType>|The *$* element.|  
   
- If the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag is used, `s` must be the string representation of a hexadecimal value without a prefix. For example, "9AF3" parses successfully, but "0x9AF3" does not.. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite number style, <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>, that includes both white space flags.)  
+ If the <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType> flag is used, `s` must be the string representation of a hexadecimal value without a prefix. For example, "9AF3" parses successfully, but "0x9AF3" does not.. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite number style, <xref:System.Globalization.NumberStyles.HexNumber?displayProperty=nameWithType>, that includes both white space flags.)  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A> method obtains a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> object provides culture-specific information about the format of `s`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> object for the current culture is used.  
   
@@ -822,6 +837,8 @@
  -or-  
   
  <paramref name="s" /> includes non-zero fractional digits.</exception>
+        <altmember cref="T:System.Globalization.NumberStyles" />
+        <altmember cref="M:System.Int16.ToString" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -1528,6 +1545,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Int16.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1597,6 +1616,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Int16.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1663,6 +1684,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Int16.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1739,6 +1762,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Int16.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -1794,7 +1818,7 @@
 |*sign*|An optional sign.|  
 |*digits*|A sequence of digits ranging from 0 to 9.|  
   
- The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. In addition to the decimal digits, only leading and trailing spaces together with a leading sign are allowed. To explicitly define the style elements together with the culture-specific formatting information that can be present in `s`, use the <xref:System.Int16.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Int16%40%29?displayProperty=nameWithType> method.  
+ The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles.Integer?displayProperty=nameWithType> style. In addition to the decimal digits, only leading and trailing spaces together with a leading sign are allowed. To explicitly define the style elements together with the culture-specific formatting information that can be present in `s`, use the <xref:System.Int16.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Int16%40%29?displayProperty=nameWithType> method.  
   
  The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object that is initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>.  
   
@@ -1820,6 +1844,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Int16.Parse(System.String)" />
+        <altmember cref="M:System.Int16.ToString" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -1871,7 +1897,7 @@
   
  [ws][$][sign][digits,]digits[.fractional_digits][e[sign]digits][ws]  
   
- Or, if the `style` parameter includes <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>:  
+ Or, if the `style` parameter includes <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>:  
   
  [ws]hexdigits[ws]  
   
@@ -1879,36 +1905,36 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, or at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, or at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
 |*sign*|An optional sign.|  
 |*digits*|A sequence of digits from 0 through 9.|  
-|*,*|A culture-specific thousands separator. The thousands separator of the culture specified by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture specified by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*fractional_digits*|One or more occurrences of the digit 0. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*,*|A culture-specific thousands separator. The thousands separator of the culture specified by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture specified by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*fractional_digits*|One or more occurrences of the digit 0. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
+ A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> flag) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
   
 |Non-composite NumberStyles values|Elements permitted in s in addition to digits|  
 |----------------------------------------|---------------------------------------------------|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|Decimal digits only.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *.* and *fractional_digits* elements. However, *fractional_digits* must consist of only one or more 0 digits or the method returns `false`.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The `s` parameter can also use exponential notation. If `s` represents a number in exponential notation, it must represent an integer within the range of the <xref:System.Int16> data type without a non-zero fractional component.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *ws* element at the beginning of *s*.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *ws* element at the end of *s*.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|A sign can appear before *digits*.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|A sign can appear after *digits*.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *sign* element in the form of parentheses enclosing the numeric value.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *,* element.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *$* element.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|All elements. The *s* parameter cannot represent a hexadecimal number or a number in exponential notation.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *ws* element at the beginning or end of `s`, *sign* at the beginning of `s`, and the *.* symbol. The `s` parameter can also use exponential notation.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|The *ws*, *sign*, thousands separator (*,*), and decimal point (*.*) elements.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=nameWithType>|All styles, except `s` cannot represent a hexadecimal number.|  
+|<xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType>|Decimal digits only.|  
+|<xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType>|The *.* and *fractional_digits* elements. However, *fractional_digits* must consist of only one or more 0 digits or the method returns `false`.|  
+|<xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType>|The `s` parameter can also use exponential notation. If `s` represents a number in exponential notation, it must represent an integer within the range of the <xref:System.Int16> data type without a non-zero fractional component.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType>|The *ws* element at the beginning of *s*.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>|The *ws* element at the end of *s*.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType>|A sign can appear before *digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType>|A sign can appear after *digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType>|The *sign* element in the form of parentheses enclosing the numeric value.|  
+|<xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType>|The *,* element.|  
+|<xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType>|The *$* element.|  
+|<xref:System.Globalization.NumberStyles.Currency?displayProperty=nameWithType>|All elements. The *s* parameter cannot represent a hexadecimal number or a number in exponential notation.|  
+|<xref:System.Globalization.NumberStyles.Float?displayProperty=nameWithType>|The *ws* element at the beginning or end of `s`, *sign* at the beginning of `s`, and the *.* symbol. The `s` parameter can also use exponential notation.|  
+|<xref:System.Globalization.NumberStyles.Number?displayProperty=nameWithType>|The *ws*, *sign*, thousands separator (*,*), and decimal point (*.*) elements.|  
+|<xref:System.Globalization.NumberStyles.Any?displayProperty=nameWithType>|All styles, except `s` cannot represent a hexadecimal number.|  
   
- If the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag is used, `s` must be a hexadecimal value without a prefix. For example, "9AF3" parses successfully, but "0x9AF3" does not. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>, that includes both white space flags.)  
+ If the <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType> flag is used, `s` must be a hexadecimal value without a prefix. For example, "9AF3" parses successfully, but "0x9AF3" does not. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles.HexNumber?displayProperty=nameWithType>, that includes both white space flags.)  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation, such as a <xref:System.Globalization.CultureInfo> object or a <xref:System.Globalization.NumberFormatInfo> object, whose <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> object provides culture-specific information about the format of `s`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> object for the current culture is used.  
   
@@ -1928,7 +1954,77 @@
  -or-  
   
  <paramref name="style" /> is not a combination of <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> and <see cref="F:System.Globalization.NumberStyles.HexNumber" /> values.</exception>
+        <altmember cref="Overload:System.Int16.Parse" />
+        <altmember cref="T:System.Globalization.NumberStyles" />
+        <altmember cref="M:System.Int16.ToString" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether this instance is equal to a specified object or <see cref="T:System.Int16" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its 16-bit signed integer equivalent. A return value indicates whether the conversion succeeded or failed.</summary>
+        <altmember cref="Overload:System.Int16.Parse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its 16-bit signed integer equivalent.</summary>
+        <altmember cref="Overload:System.Int16.TryParse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the numeric value of this instance to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or another <see cref="T:System.Int16" /> instance and returns an integer that indicates whether the value of this instance is less than, equal to, or greater than the value of the specified object or the other <see cref="T:System.Int16" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

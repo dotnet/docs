@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "background colors, Windows Forms Panel controls"
-  - "background images, Windows Forms Panel controls"
+  - "background colors [Windows Forms], Windows Forms Panel controls"
+  - "background images [Windows Forms], Windows Forms Panel controls"
   - "Panel control [Windows Forms], background"
-  - "colors, Windows Forms Panel controls"
+  - "colors [Windows Forms], Windows Forms Panel controls"
 ms.assetid: db83cf54-3c69-4b08-ac6c-25b9b5abb1b0
 caps.latest.revision: 8
 author: dotnet-bot
@@ -43,8 +43,8 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
 6.  In the **Open** dialog box, select the file that you want to display.  
   
 ## See Also  
- <xref:System.Windows.Forms.Control.BackColor%2A>   
- <xref:System.Windows.Forms.Control.BackgroundImage%2A>   
- [Panel Control](../../../../docs/framework/winforms/controls/panel-control-windows-forms.md)   
- [Panel Control Overview](../../../../docs/framework/winforms/controls/panel-control-overview-windows-forms.md)   
+ <xref:System.Windows.Forms.Control.BackColor%2A>  
+ <xref:System.Windows.Forms.Control.BackgroundImage%2A>  
+ [Panel Control](../../../../docs/framework/winforms/controls/panel-control-windows-forms.md)  
+ [Panel Control Overview](../../../../docs/framework/winforms/controls/panel-control-overview-windows-forms.md)  
  [How to: Group Controls with the Windows Forms Panel Control Using the Designer](../../../../docs/framework/winforms/controls/group-controls-with-wf-panel-control-using-the-designer.md)

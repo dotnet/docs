@@ -19,11 +19,6 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>FSharp.Core</AssemblyName>
-    <AssemblyVersion>2.3.98.1</AssemblyVersion>
-    <AssemblyVersion>3.98.4.0</AssemblyVersion>
-  </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>Defines methods to support the comparison of objects for structural equality.</summary>
@@ -55,6 +50,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.IEqualityComparer" />
+    <altmember cref="T:System.Collections.IStructuralComparable" />
+    <altmember cref="P:System.Collections.StructuralComparisons.StructuralEqualityComparer" />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -78,11 +76,6 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -118,6 +111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.StructuralComparisons.StructuralEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -141,11 +135,6 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

@@ -43,5 +43,5 @@ END
  [!code-vb[DLinqSprox#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSprox/vb/northwind-sprox.vb#1)]  
   
 ## See Also  
- [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)   
+ [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)  
  [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)

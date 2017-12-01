@@ -45,6 +45,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewCommandEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemCommand" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemCommand(System.Web.UI.WebControls.DetailsViewCommandEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +90,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewCommandEventArgs.CommandSource" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemCommand(System.Web.UI.WebControls.DetailsViewCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CommandSource">
@@ -116,6 +128,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
       </Docs>
     </Member>
     <Member MemberName="Handled">

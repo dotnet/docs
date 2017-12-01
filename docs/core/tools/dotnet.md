@@ -42,7 +42,7 @@ The only time `dotnet` is used as a command on its own is to run [framework-depe
 
 `--additionaldeps <PATH>`
 
-Path to additonal *deps.json* file.
+Path to additional *deps.json* file.
 
 `--additionalprobingpath <PATH>`
 
@@ -180,6 +180,8 @@ Initialize a sample .NET Core console application that can be compiled and run:
 Restore dependencies for a given application:
 
 `dotnet restore`
+
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
 Build a project and its dependencies in a given directory:
 

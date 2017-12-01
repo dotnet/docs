@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "WPF application, building"
+  - "WPF application [WPF], building"
 ms.assetid: a58696fd-bdad-4b55-9759-136dfdf8b91c
 caps.latest.revision: 45
 author: dotnet-bot
@@ -173,7 +173,7 @@ End Sub
 -   Nothing is recompiled (if nothing in the project has changed).  
   
 ## See Also  
- [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)   
- [WPF MSBuild Reference](/visualstudio/msbuild/wpf-msbuild-reference)   
- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)   
+ [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)  
+ [WPF MSBuild Reference](/visualstudio/msbuild/wpf-msbuild-reference)  
+ [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
  [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)

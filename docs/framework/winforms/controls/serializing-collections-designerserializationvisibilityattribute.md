@@ -9,16 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "serialization, collections"
-  - "standard types, collections"
-  - "DesiginerSerializationVisibilityAttribute class"
-  - "collections, serializing"
-  - "collections, standard types"
+  - "serialization [Windows Forms], collections"
+  - "standard types [Windows Forms], collections"
+  - "collections [Windows Forms], serializing"
+  - "collections [Windows Forms], standard types"
 ms.assetid: 020c9df4-fdc5-4dae-815a-963ecae5668c
 caps.latest.revision: 19
 author: dotnet-bot
@@ -145,7 +144,7 @@ Your custom controls will sometimes expose a collection as a property. This walk
 -   [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](../../../../docs/framework/winforms/controls/creating-a-wf-control-design-time-features.md)  
   
 ## See Also  
- <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute>   
- [Designer Serialization Overview](http://msdn.microsoft.com/library/c342635a-aa5f-4281-915b-b013738af15a)   
- [How to: Serialize Collections of Standard Types with the DesignerSerializationVisibilityAttribute](http://msdn.microsoft.com/library/7829fcdd-8205-405f-8231-a1282a9835c9)   
+ <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute>  
+ [Designer Serialization Overview](http://msdn.microsoft.com/library/c342635a-aa5f-4281-915b-b013738af15a)  
+ [How to: Serialize Collections of Standard Types with the DesignerSerializationVisibilityAttribute](http://msdn.microsoft.com/library/7829fcdd-8205-405f-8231-a1282a9835c9)  
  [Walkthrough: Automatically Populating the Toolbox with Custom Components](../../../../docs/framework/winforms/controls/walkthrough-automatically-populating-the-toolbox-with-custom-components.md)

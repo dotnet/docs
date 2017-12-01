@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "ListView control [Windows Forms], grouping items"
   - "grouping"
-  - "groups, in Windows Forms controls"
+  - "groups [Windows Forms], in Windows Forms controls"
 ms.assetid: 8b615000-69d9-4c64-acaf-b54fa09b69e3
 caps.latest.revision: 8
 author: dotnet-bot
@@ -52,10 +52,10 @@ The grouping feature of the <xref:System.Windows.Forms.ListView> control enables
 3.  Select the <xref:System.Windows.Forms.ListViewItem.Group%2A> property and choose a group from the drop-down list.  
   
 ## See Also  
- <xref:System.Windows.Forms.ListView>   
- <xref:System.Windows.Forms.ListView.Groups%2A>   
- <xref:System.Windows.Forms.ListViewGroup>   
- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)   
- [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)   
- [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)   
+ <xref:System.Windows.Forms.ListView>  
+ <xref:System.Windows.Forms.ListView.Groups%2A>  
+ <xref:System.Windows.Forms.ListViewGroup>  
+ [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)  
+ [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)  
+ [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)  
  [How to: Add and Remove Items with the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-add-and-remove-items-with-the-windows-forms-listview-control.md)

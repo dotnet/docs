@@ -53,6 +53,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
+    <altmember cref="T:System.MissingFieldException" />
+    <altmember cref="T:System.MissingMethodException" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -223,6 +226,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -327,6 +331,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> object is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for providing serialization services. Associated enumeration:   <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="MemberName">
@@ -409,6 +415,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
+        <altmember cref="T:System.MissingFieldException" />
+        <altmember cref="T:System.MissingMethodException" />
       </Docs>
     </Member>
     <Member MemberName="Signature">
@@ -444,7 +453,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.Emit.SignatureHelper" />
+        <altmember cref="T:System.Reflection.Emit.SignatureToken" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.MissingMemberException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

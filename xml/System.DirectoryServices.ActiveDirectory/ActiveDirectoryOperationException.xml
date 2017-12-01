@@ -30,6 +30,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -49,6 +50,7 @@
         <param name="message">A message that describes the error.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException" /> class with a specified error message.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,6 +72,9 @@
         <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> object for the exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException" /> class, using the specified serialization information and streaming context.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,6 +96,7 @@
         <param name="inner">An <see cref="T:System.Exception" /> object that contains underlying exception information.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException" /> class with a specified error message and an underlying exception object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -112,6 +118,7 @@
         <param name="errorCode">An error code that identifies the error.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException" /> class with a specified error message and a specified error code.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -135,6 +142,7 @@
         <param name="errorCode">An error code that identifies the error.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException" /> class with a specified error message, an underlying exception object, and a specified error code.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException" />
       </Docs>
     </Member>
     <Member MemberName="ErrorCode">
@@ -179,7 +187,19 @@
         <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with information about the exception.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

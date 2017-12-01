@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "printing"
-  - "print system management"
+  - "printing [WPF]"
+  - "print system management [WPF]"
 ms.assetid: 5f3d391a-4afd-49ee-ad99-ceb737c0c8a8
 caps.latest.revision: 10
 author: dotnet-bot
@@ -53,9 +53,9 @@ The topics in this section demonstrate how to use the printing and print system 
  Instructions for checking that a print ticket is valid and that it does not request anything that is not supported by the printer.  
   
 ## See Also  
- <xref:System.Printing>   
- <xref:System.Printing.IndexedProperties>   
- <xref:System.Printing.Interop>   
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
+ <xref:System.Printing>  
+ <xref:System.Printing.IndexedProperties>  
+ <xref:System.Printing.Interop>  
+ [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [XPS](http://www.microsoft.com/xps)

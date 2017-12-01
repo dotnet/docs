@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "fonts, international"
+  - "fonts [Windows Forms], international"
   - "international applications [Windows Forms], character display"
-  - "fonts, globalization considerations"
+  - "fonts [Windows Forms], globalization considerations"
   - "localization [Windows Forms], fonts"
   - "Windows Forms controls, labels"
   - "font fallback in Windows Forms"
@@ -86,5 +86,5 @@ textBox1.Font = new System.Drawing.Font(this.Font, textBox1.Font.Style);
 ```  
   
 ## See Also  
- [Globalizing Windows Forms](../../../../docs/framework/winforms/advanced/globalizing-windows-forms.md)   
+ [Globalizing Windows Forms](../../../../docs/framework/winforms/advanced/globalizing-windows-forms.md)  
  [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)

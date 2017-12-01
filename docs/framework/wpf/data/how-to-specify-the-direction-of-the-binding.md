@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "direction of binding"
-  - "binding direction"
-  - "data binding, direction of binding"
+  - "direction of binding [WPF]"
+  - "binding direction [WPF]"
+  - "data binding [WPF], direction of binding"
 ms.assetid: 37334478-028b-4514-86c9-1420709f4818
 caps.latest.revision: 21
 author: dotnet-bot
@@ -46,6 +46,6 @@ This example shows how to specify whether the binding updates only the binding t
  For <xref:System.Windows.Data.BindingMode.TwoWay> or <xref:System.Windows.Data.BindingMode.OneWayToSource> bindings, you can control the timing of the source updates by setting the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property. See <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> for more information.  
   
 ## See Also  
- <xref:System.Windows.Data.Binding>   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
+ <xref:System.Windows.Data.Binding>  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

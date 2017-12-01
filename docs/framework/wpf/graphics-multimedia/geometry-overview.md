@@ -9,18 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "PathGeometry class"
-  - "classes, geometry"
-  - "geometry classes"
-  - "graphics, geometry classes"
-  - "CombinedGeometry class"
-  - "EllipseGeometry class"
-  - "RectangleGeometry class"
-  - "LineGeometry class"
+  - "geometry classes [WPF]"
+  - "graphics [WPF], geometry classes"
 ms.assetid: 9fba8934-98b7-4af6-82f6-f4ef887f963a
 caps.latest.revision: 23
 author: dotnet-bot
@@ -229,13 +223,13 @@ A PathGeometry with multiple figures
  See the <xref:System.Windows.Media.Geometry> class for a complete listing of its methods.  
   
 ## See Also  
- <xref:System.Windows.Media.Geometry>   
- <xref:System.Windows.Media.PathGeometry>   
- <xref:System.Windows.Shapes.Path>   
- <xref:System.Windows.Media.GeometryDrawing>   
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)   
- [Path Markup Syntax](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md)   
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/geometries-how-to-topics.md)   
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)   
- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)   
+ <xref:System.Windows.Media.Geometry>  
+ <xref:System.Windows.Media.PathGeometry>  
+ <xref:System.Windows.Shapes.Path>  
+ <xref:System.Windows.Media.GeometryDrawing>  
+ [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
+ [Path Markup Syntax](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md)  
+ [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/geometries-how-to-topics.md)  
+ [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
+ [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
  [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)

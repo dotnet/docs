@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "IScrollInfo interface"
-  - "scrolling methods"
-  - "ScrollViewer control, scrolling methods"
+  - "IScrollInfo interface [WPF]"
+  - "scrolling methods [WPF]"
+  - "ScrollViewer control [WPF], scrolling methods"
 ms.assetid: 4708cc65-6510-45f8-82e6-30b0d3e30045
 caps.latest.revision: 11
 author: dotnet-bot
@@ -36,5 +36,5 @@ This example shows how to use the scrolling methods of the <xref:System.Windows.
  [!code-vb[ScrollViewerMethods#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ScrollViewerMethods/VisualBasic/Window1.xaml.vb#2)]  
   
 ## See Also  
- <xref:System.Windows.Controls.ScrollViewer>   
+ <xref:System.Windows.Controls.ScrollViewer>  
  <xref:System.Windows.Controls.StackPanel>

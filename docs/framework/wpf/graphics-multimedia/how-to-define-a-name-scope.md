@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "name scope, defining"
-  - "Storyboards, animating in procedural code"
-  - "animation, Storyboards, in procedural code"
+  - "name scope [WPF], defining"
+  - "Storyboards [WPF], animating in procedural code"
+  - "animation [WPF], Storyboards [WPF], in procedural code"
 ms.assetid: 4f361925-6a08-40dc-8231-a61111c6b28b
 caps.latest.revision: 6
 author: dotnet-bot
@@ -32,5 +32,5 @@ To animate with <xref:System.Windows.Media.Animation.Storyboard> in code, you mu
  [!code-vb[StoryboardBeginAnimation_procedural_snip#NameScopeExample](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/StoryboardBeginAnimation_procedural_snip/visualbasic/scopeexample.vb#namescopeexample)]  
   
 ## See Also  
- [Animate a Property by Using a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-by-using-a-storyboard.md)   
+ [Animate a Property by Using a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-by-using-a-storyboard.md)  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)

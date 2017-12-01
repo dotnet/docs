@@ -59,6 +59,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.Win32.Registry" />
+    <altmember cref="T:Microsoft.Win32.RegistryHive" />
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -99,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.Flush" />
       </Docs>
     </Member>
     <Member MemberName="CreateSubKey">
@@ -158,6 +161,8 @@
  A system error occurred, such as deletion of the key, or an attempt to create a key in the <see cref="F:Microsoft.Win32.Registry.LocalMachine" /> root.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to modify the specified registry key if it exists, or for the ability to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access the specified registry key if it is a remote key. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="CreateSubKey">
@@ -217,6 +222,8 @@
  A system error occurred, such as deletion of the key, or an attempt to create a key in the <see cref="F:Microsoft.Win32.Registry.LocalMachine" /> root.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to modify the specified registry key if it exists, or for the ability to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access the specified registry key if it is a remote key. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="CreateSubKey">
@@ -368,9 +375,9 @@
 ## Remarks  
  The <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A> method creates a registry key that has the access control specified by the `registrySecurity` parameter. The <xref:Microsoft.Win32.RegistryKey> object that is returned represents the registry key, but that object is not restricted by the access control specified in the `registrySecurity` parameter.  
   
- If `permissionCheck` is <xref:Microsoft.Win32.RegistryKeyPermissionCheck?displayProperty=nameWithType>, the key is opened for read/write access. If `permissionCheck` is <xref:Microsoft.Win32.RegistryKeyPermissionCheck?displayProperty=nameWithType>, the key is opened for read access.  
+ If `permissionCheck` is <xref:Microsoft.Win32.RegistryKeyPermissionCheck.ReadWriteSubTree?displayProperty=nameWithType>, the key is opened for read/write access. If `permissionCheck` is <xref:Microsoft.Win32.RegistryKeyPermissionCheck.ReadSubTree?displayProperty=nameWithType>, the key is opened for read access.  
   
- For backward compatibility, the key is opened for reading and writing if `permissionCheck` is <xref:Microsoft.Win32.RegistryKeyPermissionCheck?displayProperty=nameWithType> and the parent key also has <xref:Microsoft.Win32.RegistryKeyPermissionCheck?displayProperty=nameWithType>. If the parent key has any other setting, read/write status is controlled by the parent key's setting.  
+ For backward compatibility, the key is opened for reading and writing if `permissionCheck` is <xref:Microsoft.Win32.RegistryKeyPermissionCheck.Default?displayProperty=nameWithType> and the parent key also has <xref:Microsoft.Win32.RegistryKeyPermissionCheck.Default?displayProperty=nameWithType>. If the parent key has any other setting, read/write status is controlled by the parent key's setting.  
   
  In order to perform this action, the user must have permissions at this level and below in the registry hierarchy.  
   
@@ -395,6 +402,8 @@
  A system error occurred, such as deletion of the key, or an attempt to create a key in the <see cref="F:Microsoft.Win32.Registry.LocalMachine" /> root.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to modify the specified registry key if it exists, or for the ability to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access the specified registry key if it is a remote key. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="CreateSubKey">
@@ -566,6 +575,10 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have the necessary registry rights.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to modify the specified registry key. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access the specified registry key if it is a remote key. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKeyTree(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteValue(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetSubKeyNames" />
       </Docs>
     </Member>
     <Member MemberName="DeleteSubKey">
@@ -615,6 +628,10 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have the necessary registry rights.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to modify the specified registry key. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access the specified registry key if it is a remote key. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKeyTree(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteValue(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetSubKeyNames" />
       </Docs>
     </Member>
     <Member MemberName="DeleteSubKeyTree">
@@ -674,6 +691,11 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have the necessary registry rights.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to modify the specified registry key. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access the specified registry key if it is a remote key. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteValue(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetSubKeyNames" />
+        <altmember cref="P:Microsoft.Win32.RegistryKey.SubKeyCount" />
       </Docs>
     </Member>
     <Member MemberName="DeleteSubKeyTree">
@@ -764,6 +786,11 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:Microsoft.Win32.RegistryKey" /> being manipulated is closed (closed keys cannot be accessed).</exception>
         <exception cref="T:System.UnauthorizedAccessException">The <see cref="T:Microsoft.Win32.RegistryKey" /> being manipulated is read-only.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to delete the specified registry key. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String,System.Boolean)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValue(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValueNames" />
+        <altmember cref="P:Microsoft.Win32.RegistryKey.ValueCount" />
       </Docs>
     </Member>
     <Member MemberName="DeleteValue">
@@ -812,6 +839,11 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:Microsoft.Win32.RegistryKey" /> being manipulated is closed (closed keys cannot be accessed).</exception>
         <exception cref="T:System.UnauthorizedAccessException">The <see cref="T:Microsoft.Win32.RegistryKey" /> being manipulated is read-only.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to delete the specified registry key. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String,System.Boolean)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValue(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValueNames" />
+        <altmember cref="P:Microsoft.Win32.RegistryKey.ValueCount" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -885,6 +917,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.Close" />
       </Docs>
     </Member>
     <Member MemberName="FromHandle">
@@ -1002,9 +1035,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overload is equivalent to calling the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%28System.Security.AccessControl.AccessControlSections%29> method overload with the bitwise combination of the following flags: <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>, <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>, and <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>. You can use that overload to search for other permissions.  
+ This method overload is equivalent to calling the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%28System.Security.AccessControl.AccessControlSections%29> method overload with the bitwise combination of the following flags: <xref:System.Security.AccessControl.AccessControlSections.Access?displayProperty=nameWithType>, <xref:System.Security.AccessControl.AccessControlSections.Owner?displayProperty=nameWithType>, and <xref:System.Security.AccessControl.AccessControlSections.Group?displayProperty=nameWithType>. You can use that overload to search for other permissions.  
   
- The user must have <xref:System.Security.AccessControl.RegistryRights?displayProperty=nameWithType> rights to call this method.  
+ The user must have <xref:System.Security.AccessControl.RegistryRights.ReadPermissions?displayProperty=nameWithType> rights to call this method.  
   
  ]]></format>
         </remarks>
@@ -1040,9 +1073,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To request the access permissions currently granted to users, specify the bitwise combination of the following flags: <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>, <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>, and <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>. Alternatively, you can use the <xref:Microsoft.Win32.RegistryKey.GetAccessControl> method overload, which specifies exactly that combination of values.  
+ To request the access permissions currently granted to users, specify the bitwise combination of the following flags: <xref:System.Security.AccessControl.AccessControlSections.Access?displayProperty=nameWithType>, <xref:System.Security.AccessControl.AccessControlSections.Owner?displayProperty=nameWithType>, and <xref:System.Security.AccessControl.AccessControlSections.Group?displayProperty=nameWithType>. Alternatively, you can use the <xref:Microsoft.Win32.RegistryKey.GetAccessControl> method overload, which specifies exactly that combination of values.  
   
- The user must have <xref:System.Security.AccessControl.RegistryRights?displayProperty=nameWithType> rights to call this method.  
+ The user must have <xref:System.Security.AccessControl.RegistryRights.ReadPermissions?displayProperty=nameWithType> rights to call this method.  
   
  ]]></format>
         </remarks>
@@ -1095,6 +1128,8 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have the necessary registry rights.</exception>
         <exception cref="T:System.IO.IOException">A system error occurred, for example the current key has been deleted.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to read from the registry. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
+        <altmember cref="P:Microsoft.Win32.RegistryKey.SubKeyCount" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValueNames" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -1130,10 +1165,10 @@
 > [!NOTE]
 >  A registry key can have one value that is not associated with any name. When this unnamed value is displayed in the registry editor, the string "(Default)" appears instead of a name. To retrieve this unnamed value, specify either `null` or the empty string ("") for `name`.  
   
- When the <xref:Microsoft.Win32.RegistryKey.GetValue%2A> method retrieves expandable string values (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>), it expands environment strings using data from the local environment. To retrieve expandable string values from the registry on a remote computer, use the <xref:Microsoft.Win32.RegistryKey.GetValue%28System.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueOptions%29> method overload to specify that you do not want environment strings expanded.  
+ When the <xref:Microsoft.Win32.RegistryKey.GetValue%2A> method retrieves expandable string values (<xref:Microsoft.Win32.RegistryValueKind.ExpandString?displayProperty=nameWithType>), it expands environment strings using data from the local environment. To retrieve expandable string values from the registry on a remote computer, use the <xref:Microsoft.Win32.RegistryKey.GetValue%28System.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueOptions%29> method overload to specify that you do not want environment strings expanded.  
   
 > [!NOTE]
->  If a value containing expandable references to environment variables has been stored as a string (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>), rather than as an expandable string (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>), <xref:Microsoft.Win32.RegistryKey.GetValue%2A> does not expand it. You can expand such a string after it has been retrieved by calling the <xref:System.Environment.ExpandEnvironmentVariables%2A> method.  
+>  If a value containing expandable references to environment variables has been stored as a string (<xref:Microsoft.Win32.RegistryValueKind.String?displayProperty=nameWithType>), rather than as an expandable string (<xref:Microsoft.Win32.RegistryValueKind.ExpandString?displayProperty=nameWithType>), <xref:Microsoft.Win32.RegistryKey.GetValue%2A> does not expand it. You can expand such a string after it has been retrieved by calling the <xref:System.Environment.ExpandEnvironmentVariables%2A> method.  
   
 > [!NOTE]
 >  The recommended way to retrieve data from the <xref:Microsoft.Win32.Registry.PerformanceData> key is to use the <xref:System.Diagnostics.PerformanceCounter> class rather than the <xref:Microsoft.Win32.RegistryKey.GetValue%2A?displayProperty=nameWithType> method.  
@@ -1157,6 +1192,11 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have the necessary registry rights.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">to read from the registry. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">to read a registry key of type REG_EXPAND_SZ. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValueNames" />
+        <altmember cref="Overload:Microsoft.Win32.RegistryKey.SetValue" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteValue(System.String)" />
+        <altmember cref="P:Microsoft.Win32.RegistryKey.ValueCount" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetSubKeyNames" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -1195,10 +1235,10 @@
 > [!NOTE]
 >  A registry key can have one value that is not associated with any name. When this unnamed value is displayed in the registry editor, the string "(Default)" appears instead of a name. To retrieve this unnamed value, specify either `null` or the empty string ("") for `name`.  
   
- When the <xref:Microsoft.Win32.RegistryKey.GetValue%2A> method retrieves expandable string values (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>), it expands environment strings using data from the local environment. To retrieve expandable string values from the registry on a remote computer, use the <xref:Microsoft.Win32.RegistryKey.GetValue%2A> overload to specify that you do not want environment strings expanded.  
+ When the <xref:Microsoft.Win32.RegistryKey.GetValue%2A> method retrieves expandable string values (<xref:Microsoft.Win32.RegistryValueKind.ExpandString?displayProperty=nameWithType>), it expands environment strings using data from the local environment. To retrieve expandable string values from the registry on a remote computer, use the <xref:Microsoft.Win32.RegistryKey.GetValue%2A> overload to specify that you do not want environment strings expanded.  
   
 > [!NOTE]
->  If a value containing expandable references to environment variables has been stored as a string (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>), rather than as an expandable string (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>), the <xref:Microsoft.Win32.RegistryKey.GetValue%2A> method does not expand it. You can expand such a string after it has been retrieved by calling the <xref:System.Environment.ExpandEnvironmentVariables%2A> method.  
+>  If a value containing expandable references to environment variables has been stored as a string (<xref:Microsoft.Win32.RegistryValueKind.String?displayProperty=nameWithType>), rather than as an expandable string (<xref:Microsoft.Win32.RegistryValueKind.ExpandString?displayProperty=nameWithType>), the <xref:Microsoft.Win32.RegistryKey.GetValue%2A> method does not expand it. You can expand such a string after it has been retrieved by calling the <xref:System.Environment.ExpandEnvironmentVariables%2A> method.  
   
 > [!NOTE]
 >  The recommended way to retrieve data from the <xref:Microsoft.Win32.Registry.PerformanceData> key is to use the <xref:System.Diagnostics.PerformanceCounter> class rather than the <xref:Microsoft.Win32.RegistryKey.GetValue%2A?displayProperty=nameWithType> method.  
@@ -1222,6 +1262,11 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have the necessary registry rights.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">to read from the registry. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">to read a registry key of type REG_EXPAND_SZ. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValueNames" />
+        <altmember cref="Overload:Microsoft.Win32.RegistryKey.SetValue" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteValue(System.String)" />
+        <altmember cref="P:Microsoft.Win32.RegistryKey.ValueCount" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetSubKeyNames" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -1262,7 +1307,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this overload to specify special processing of the retrieved value. For example, you can specify <xref:Microsoft.Win32.RegistryValueOptions?displayProperty=nameWithType> when retrieving a registry value of type <xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType> to retrieve the string without expanding embedded environment variables.  
+ Use this overload to specify special processing of the retrieved value. For example, you can specify <xref:Microsoft.Win32.RegistryValueOptions.DoNotExpandEnvironmentNames?displayProperty=nameWithType> when retrieving a registry value of type <xref:Microsoft.Win32.RegistryValueKind.ExpandString?displayProperty=nameWithType> to retrieve the string without expanding embedded environment variables.  
   
  Use the `defaultValue` parameter to specify the value to return if `name` does not exist.  
   
@@ -1290,6 +1335,12 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have the necessary registry rights.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">to read from the registry. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">to read a registry key of type REG_EXPAND_SZ. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:Microsoft.Win32.RegistryValueOptions" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValueNames" />
+        <altmember cref="Overload:Microsoft.Win32.RegistryKey.SetValue" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteValue(System.String)" />
+        <altmember cref="P:Microsoft.Win32.RegistryKey.ValueCount" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetSubKeyNames" />
       </Docs>
     </Member>
     <Member MemberName="GetValueKind">
@@ -1354,6 +1405,10 @@
  This exception is not thrown on Windows 95, Windows 98, or Windows Millennium Edition.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user does not have the necessary registry rights.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">to read from the registry. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValueNames" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValue(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.SetValue(System.String,System.Object)" />
+        <altmember cref="T:Microsoft.Win32.RegistryValueKind" />
       </Docs>
     </Member>
     <Member MemberName="GetValueNames">
@@ -1402,6 +1457,8 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have the necessary registry rights.</exception>
         <exception cref="T:System.IO.IOException">A system error occurred; for example, the current key has been deleted.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to read from the registry. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValue(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetSubKeyNames" />
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -1478,6 +1535,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:Microsoft.Win32.RegistryKey" /> is closed (closed keys cannot be accessed).</exception>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.ToString" />
       </Docs>
     </Member>
     <Member MemberName="OpenBaseKey">
@@ -1548,7 +1606,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The local machine registry is opened if `machineName` is <xref:System.String?displayProperty=nameWithType>. The requested key must be a root key on the remote machine, and is identified by the appropriate <xref:Microsoft.Win32.RegistryHive> value.  
+ The local machine registry is opened if `machineName` is <xref:System.String.Empty?displayProperty=nameWithType>. The requested key must be a root key on the remote machine, and is identified by the appropriate <xref:Microsoft.Win32.RegistryHive> value.  
   
  In order for a key to be opened remotely, both the server and client machines must be running the remote registry service, and have remote administration enabled.  
   
@@ -1572,6 +1630,8 @@
         <exception cref="T:System.Security.SecurityException">The user does not have the proper permissions to perform this operation.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user does not have the necessary registry rights.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access the specified registry key if it is a remote key. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:Microsoft.Win32.RegistryHive" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="OpenRemoteBaseKey">
@@ -1610,7 +1670,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The local machine registry is opened if `machineName` is <xref:System.String?displayProperty=nameWithType>. The requested key must be a root key on the remote machine, and is identified by the appropriate <xref:Microsoft.Win32.RegistryHive> value.  
+ The local machine registry is opened if `machineName` is <xref:System.String.Empty?displayProperty=nameWithType>. The requested key must be a root key on the remote machine, and is identified by the appropriate <xref:Microsoft.Win32.RegistryHive> value.  
   
  In order for a key to be opened remotely, both the server and client machines must be running the remote registry service, and have remote administration enabled.  
   
@@ -1680,6 +1740,13 @@
         <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to read the registry key.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to read the specified registry key. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access the specified registry key if it is a remote key. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKeyTree(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetSubKeyNames" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String)" />
+        <altmember cref="P:Microsoft.Win32.RegistryKey.SubKeyCount" />
+        <altmember cref="T:Microsoft.Win32.Registry" />
       </Docs>
     </Member>
     <Member MemberName="OpenSubKey">
@@ -1718,7 +1785,7 @@
 ## Remarks  
  Rather than throwing an exception, this method returns `null` if the requested key does not exist.  
   
- If `permissionCheck` is <xref:Microsoft.Win32.RegistryKeyPermissionCheck?displayProperty=nameWithType>, the key is opened for reading and writing; if `permissionCheck` is <xref:Microsoft.Win32.RegistryKeyPermissionCheck?displayProperty=nameWithType> or <xref:Microsoft.Win32.RegistryKeyPermissionCheck?displayProperty=nameWithType>, the key is opened for reading unless the parent key was opened with <xref:Microsoft.Win32.RegistryKeyPermissionCheck?displayProperty=nameWithType>.  
+ If `permissionCheck` is <xref:Microsoft.Win32.RegistryKeyPermissionCheck.ReadWriteSubTree?displayProperty=nameWithType>, the key is opened for reading and writing; if `permissionCheck` is <xref:Microsoft.Win32.RegistryKeyPermissionCheck.ReadSubTree?displayProperty=nameWithType> or <xref:Microsoft.Win32.RegistryKeyPermissionCheck.Default?displayProperty=nameWithType>, the key is opened for reading unless the parent key was opened with <xref:Microsoft.Win32.RegistryKeyPermissionCheck.ReadWriteSubTree?displayProperty=nameWithType>.  
   
  In order to use the <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> method, you must have an instance of the <xref:Microsoft.Win32.RegistryKey> class. To get an instance of <xref:Microsoft.Win32.RegistryKey>, use one of the static members of the <xref:Microsoft.Win32.Registry> class.  
   
@@ -1740,6 +1807,13 @@
         <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to read the registry key.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to read the specified registry key. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access the specified registry key if it is a remote key. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKeyTree(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetSubKeyNames" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String)" />
+        <altmember cref="P:Microsoft.Win32.RegistryKey.SubKeyCount" />
+        <altmember cref="T:Microsoft.Win32.Registry" />
       </Docs>
     </Member>
     <Member MemberName="OpenSubKey">
@@ -1796,6 +1870,13 @@
         <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to access the registry key in the specified mode.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to read the specified registry key. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access the specified registry key if it is a remote key. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKeyTree(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetSubKeyNames" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String)" />
+        <altmember cref="P:Microsoft.Win32.RegistryKey.SubKeyCount" />
+        <altmember cref="T:Microsoft.Win32.Registry" />
       </Docs>
     </Member>
     <Member MemberName="OpenSubKey">
@@ -1884,9 +1965,9 @@
 ## Remarks  
  Rather than throwing an exception, this method returns `null` if the requested key does not exist.  
   
- If `permissionCheck` is <xref:Microsoft.Win32.RegistryKeyPermissionCheck?displayProperty=nameWithType>, the key is opened for reading and writing; if `permissionCheck` is <xref:Microsoft.Win32.RegistryKeyPermissionCheck?displayProperty=nameWithType> or <xref:Microsoft.Win32.RegistryKeyPermissionCheck?displayProperty=nameWithType>, the key is opened for reading unless the parent key was opened with <xref:Microsoft.Win32.RegistryKeyPermissionCheck?displayProperty=nameWithType>.  
+ If `permissionCheck` is <xref:Microsoft.Win32.RegistryKeyPermissionCheck.ReadWriteSubTree?displayProperty=nameWithType>, the key is opened for reading and writing; if `permissionCheck` is <xref:Microsoft.Win32.RegistryKeyPermissionCheck.ReadSubTree?displayProperty=nameWithType> or <xref:Microsoft.Win32.RegistryKeyPermissionCheck.Default?displayProperty=nameWithType>, the key is opened for reading unless the parent key was opened with <xref:Microsoft.Win32.RegistryKeyPermissionCheck.ReadWriteSubTree?displayProperty=nameWithType>.  
   
- The access specified for `permissionCheck` takes precedence over the access specified for `rights`. For example, if you specify <xref:Microsoft.Win32.RegistryKeyPermissionCheck?displayProperty=nameWithType> for `permissionCheck` and <xref:System.Security.AccessControl.RegistryRights?displayProperty=nameWithType> for `rights`, an attempt to write to the subkey throws an exception.  
+ The access specified for `permissionCheck` takes precedence over the access specified for `rights`. For example, if you specify <xref:Microsoft.Win32.RegistryKeyPermissionCheck.ReadSubTree?displayProperty=nameWithType> for `permissionCheck` and <xref:System.Security.AccessControl.RegistryRights.WriteKey?displayProperty=nameWithType> for `rights`, an attempt to write to the subkey throws an exception.  
   
  In order to use the <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> method, you must have an instance of the <xref:Microsoft.Win32.RegistryKey> class. To get an instance of <xref:Microsoft.Win32.RegistryKey>, use one of the static members of the <xref:Microsoft.Win32.Registry> class.  
   
@@ -1905,6 +1986,13 @@
  The user does not have the requested permissions.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to read the specified registry key. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access the specified registry key if it is a remote key. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKey(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.DeleteSubKeyTree(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetSubKeyNames" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String)" />
+        <altmember cref="P:Microsoft.Win32.RegistryKey.SubKeyCount" />
+        <altmember cref="T:Microsoft.Win32.Registry" />
       </Docs>
     </Member>
     <Member MemberName="SetAccessControl">
@@ -1996,9 +2084,9 @@
   
  If the specified `name` does not exist in the key, it is created and the associated value is set to `value`.  
   
- This overload of <xref:Microsoft.Win32.RegistryKey.SetValue%2A> stores 64-bit integers as strings (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>). To store 64-bit numbers as <xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType> values, use the <xref:Microsoft.Win32.RegistryKey.SetValue%28System.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueKind%29> overload that specifies <xref:Microsoft.Win32.RegistryValueKind>.  
+ This overload of <xref:Microsoft.Win32.RegistryKey.SetValue%2A> stores 64-bit integers as strings (<xref:Microsoft.Win32.RegistryValueKind.String?displayProperty=nameWithType>). To store 64-bit numbers as <xref:Microsoft.Win32.RegistryValueKind.QWord?displayProperty=nameWithType> values, use the <xref:Microsoft.Win32.RegistryKey.SetValue%28System.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueKind%29> overload that specifies <xref:Microsoft.Win32.RegistryValueKind>.  
   
- This overload of <xref:Microsoft.Win32.RegistryKey.SetValue%2A> stores all string values as <xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>, even if they contain expandable references to environment variables. To save string values as expandable strings (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>), use the <xref:Microsoft.Win32.RegistryKey.SetValue%28System.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueKind%29> overload that specifies <xref:Microsoft.Win32.RegistryValueKind>.  
+ This overload of <xref:Microsoft.Win32.RegistryKey.SetValue%2A> stores all string values as <xref:Microsoft.Win32.RegistryValueKind.String?displayProperty=nameWithType>, even if they contain expandable references to environment variables. To save string values as expandable strings (<xref:Microsoft.Win32.RegistryValueKind.ExpandString?displayProperty=nameWithType>), use the <xref:Microsoft.Win32.RegistryKey.SetValue%28System.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueKind%29> overload that specifies <xref:Microsoft.Win32.RegistryValueKind>.  
   
  Numeric types other than 32-bit integers are stored as strings by this method overload. Enumeration elements are stored as strings containing the element names.  
   
@@ -2033,6 +2121,9 @@
         <exception cref="T:System.IO.IOException">The <see cref="T:Microsoft.Win32.RegistryKey" /> object represents a root-level node, and the operating system is Windows 2000, Windows XP, or Windows Server 2003.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">to modify the specified registry key if it exists, or to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access the specified registry key if it is a remote key. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValue(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValueKind(System.String)" />
+        <altmember cref="P:Microsoft.Win32.RegistryKey.ValueCount" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -2084,10 +2175,10 @@
 > [!NOTE]
 >  Specifying the registry data type <xref:Microsoft.Win32.RegistryValueKind.Unknown> is the same as using the <xref:Microsoft.Win32.RegistryKey.SetValue%2A> overload.  
   
- If the type of the specified `value` does not match the specified `valueKind`, and the data cannot be converted, <xref:System.ArgumentException> is thrown. For example, you can store a <xref:System.Int64?displayProperty=nameWithType> as a <xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>, but only if its value is less than the maximum value of a <xref:System.Int32?displayProperty=nameWithType>. You cannot store a single string value as a <xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>.  
+ If the type of the specified `value` does not match the specified `valueKind`, and the data cannot be converted, <xref:System.ArgumentException> is thrown. For example, you can store a <xref:System.Int64?displayProperty=nameWithType> as a <xref:Microsoft.Win32.RegistryValueKind.DWord?displayProperty=nameWithType>, but only if its value is less than the maximum value of a <xref:System.Int32?displayProperty=nameWithType>. You cannot store a single string value as a <xref:Microsoft.Win32.RegistryValueKind.MultiString?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  If boxed values are passed for <xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType> or <xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>, the conversion is done using the invariant culture.  
+>  If boxed values are passed for <xref:Microsoft.Win32.RegistryValueKind.DWord?displayProperty=nameWithType> or <xref:Microsoft.Win32.RegistryValueKind.QWord?displayProperty=nameWithType>, the conversion is done using the invariant culture.  
   
 > [!CAUTION]
 >  Do not expose <xref:Microsoft.Win32.RegistryKey> objects in such a way that a malicious program could create thousands of meaningless subkeys or key/value pairs. For example, do not allow callers to enter arbitrary keys or values.  
@@ -2119,6 +2210,10 @@
         <exception cref="T:System.IO.IOException">The <see cref="T:Microsoft.Win32.RegistryKey" /> object represents a root-level node, and the operating system is Windows 2000, Windows XP, or Windows Server 2003.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">to modify the specified registry key if it exists, or to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access the specified registry key if it is a remote key. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValueKind(System.String)" />
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetValue(System.String)" />
+        <altmember cref="P:Microsoft.Win32.RegistryKey.ValueCount" />
+        <altmember cref="T:Microsoft.Win32.RegistryValueKind" />
       </Docs>
     </Member>
     <Member MemberName="SubKeyCount">
@@ -2164,6 +2259,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have the necessary registry rights.</exception>
         <exception cref="T:System.IO.IOException">A system error occurred, for example the current key has been deleted.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to read the specified registry key. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
+        <altmember cref="M:Microsoft.Win32.RegistryKey.GetSubKeyNames" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2205,6 +2301,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:Microsoft.Win32.RegistryKey" /> being accessed is closed (closed keys cannot be accessed).</exception>
+        <altmember cref="P:Microsoft.Win32.RegistryKey.Name" />
       </Docs>
     </Member>
     <Member MemberName="ValueCount">
@@ -2294,5 +2391,103 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeleteValue">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes the specified value from this key, and throws an exception if the value is not found.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetValue">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the value associated with the specified name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAccessControl">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the access control security for the current registry key.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenSubKey">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the specified subkey.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateSubKey">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new subkey or opens an existing subkey.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of a name/value pair in the registry key. Depending on the overload, the registry data type is determined from the type of data being stored or from a specified <see cref="T:Microsoft.Win32.RegistryValueKind" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeleteSubKey">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes the specified subkey.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenRemoteBaseKey">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a new T:Microsoft.Win32.RegistryKey that represents the requested key on a remote machine, with the option of specified registry view.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromHandle">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a registry key from a specified handle.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeleteSubKeyTree">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a subkey and any child subkeys recursively, with optional exception handling.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -931,6 +931,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpContext.SetSessionStateBehavior(System.Web.SessionState.SessionStateBehavior)" />
       </Docs>
     </Member>
     <Member MemberName="SkipAuthorization">
@@ -1068,5 +1069,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetLocalResourceObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a page-level resource.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetGlobalResourceObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an application-level resource.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AcceptWebSocketRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Accepts an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> request.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RewritePath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Assigns an internal rewrite path, which lets the requested URL differ from the internal path of the resource.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

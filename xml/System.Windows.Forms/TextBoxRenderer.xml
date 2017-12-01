@@ -33,6 +33,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" />
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" />
   </Docs>
   <Members>
     <Member MemberName="DrawTextBox">
@@ -306,7 +308,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Application.VisualStyleState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="DrawTextBox">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a text box control with the current visual style of the operating system.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -60,6 +60,6 @@ AllowOptimize=0
 >  In version 1.0 of the .NET Framework, the Microsoft Visual C++ compiler adds the **DebuggableAttribute** when the **/clr** and **/Zi** compiler options are specified. In version 1.1 of the .NET Framework, you must either add the **DebugabbleAttribute** manually in your code or use the **/ASSEMBLYDEBUG** linker option.  
   
 ## See Also  
- [Debugging, Tracing, and Profiling](../../../docs/framework/debug-trace-profile/index.md)   
- [Enabling JIT-Attach Debugging](../../../docs/framework/debug-trace-profile/enabling-jit-attach-debugging.md)   
+ [Debugging, Tracing, and Profiling](../../../docs/framework/debug-trace-profile/index.md)  
+ [Enabling JIT-Attach Debugging](../../../docs/framework/debug-trace-profile/enabling-jit-attach-debugging.md)  
  [Enabling Profiling](http://msdn.microsoft.com/en-us/3b669676-f0e0-4ebf-8674-68986dd2020d)

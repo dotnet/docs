@@ -19,6 +19,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Messaging.MessageQueueTransaction.Status" />
+    <altmember cref="M:System.Messaging.MessageQueueTransaction.Abort" />
+    <altmember cref="M:System.Messaging.MessageQueueTransaction.Begin" />
+    <altmember cref="M:System.Messaging.MessageQueueTransaction.Commit" />
   </Docs>
   <Members>
     <Member MemberName="Aborted">

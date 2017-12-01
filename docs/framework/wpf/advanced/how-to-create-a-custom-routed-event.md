@@ -9,13 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "creating, routed events"
-  - "routed events, creating"
-  - "events, routing"
+  - "routed events [WPF], creating"
+  - "events [WPF], routing"
 ms.assetid: b79f459a-1c3f-4045-b2d4-1659cc8eaa3c
 caps.latest.revision: 13
 author: dotnet-bot
@@ -42,6 +41,6 @@ For your custom event to support event routing, you need to register a <xref:Sys
  To see an example of how bubbling events work, see [Handle a Routed Event](../../../../docs/framework/wpf/advanced/how-to-handle-a-routed-event.md).  
   
 ## See Also  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)   
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)   
+ [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
+ [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
  [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)

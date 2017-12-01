@@ -59,7 +59,7 @@
    
   
 ## Examples  
- The following code example creates an empty <xref:System.Collections.Generic.Dictionary%602> of strings, with integer keys, and accesses it through the <xref:System.Collections.Generic.IDictionary%602> interface.  
+ The following code example creates an empty <xref:System.Collections.Generic.Dictionary%602> of strings, with string keys, and accesses it through the <xref:System.Collections.Generic.IDictionary%602> interface.  
   
  The code example uses the <xref:System.Collections.Generic.IDictionary%602.Add%2A> method to add some elements. The example demonstrates that the <xref:System.Collections.Generic.IDictionary%602.Add%2A> method throws <xref:System.ArgumentException> when attempting to add a duplicate key.  
   
@@ -78,6 +78,8 @@
     <block subset="none" type="overrides">
       <para>The implementing class must have a means to compare keys.</para>
     </block>
+    <altmember cref="T:System.Collections.Generic.ICollection`1" />
+    <altmember cref="N:System.Collections" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -140,6 +142,8 @@
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IDictionary`2" /> is read-only.</exception>
+        <altmember cref="P:System.Collections.Generic.IDictionary`2.Item(`0)" />
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -277,6 +281,9 @@
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">The property is retrieved and <paramref name="key" /> is not found.</exception>
         <exception cref="T:System.NotSupportedException">The property is set and the <see cref="T:System.Collections.Generic.IDictionary`2" /> is read-only.</exception>
+        <altmember cref="M:System.Collections.Generic.IDictionary`2.Add(`0,`1)" />
+        <altmember cref="M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)" />
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -326,6 +333,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.ICollection`1" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -383,6 +391,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IDictionary`2" /> is read-only.</exception>
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
@@ -446,6 +455,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)" />
+        <altmember cref="P:System.Collections.Generic.IDictionary`2.Item(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -495,6 +506,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.ICollection`1" />
       </Docs>
     </Member>
   </Members>

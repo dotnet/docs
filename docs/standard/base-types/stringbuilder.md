@@ -114,6 +114,6 @@ The <xref:System.String> object is immutable. Every time you use one of the meth
  [!code-vb[Conceptual.StringBuilder#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/tostringexample1.vb#10)]  
   
 ## See Also  
- <xref:System.Text.StringBuilder?displayProperty=nameWithType>   
- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)   
+ <xref:System.Text.StringBuilder?displayProperty=nameWithType>  
+ [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
  [Formatting Types](../../../docs/standard/base-types/formatting-types.md)

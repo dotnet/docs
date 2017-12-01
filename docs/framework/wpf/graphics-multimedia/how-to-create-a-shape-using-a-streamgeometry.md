@@ -9,14 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "classes, StreamGeometry"
-  - "StreamGeometry class"
   - "graphics [WPF], shapes"
-  - "shapes, creating with StreamGeometry class"
+  - "shapes [WPF], creating with StreamGeometry class"
 ms.assetid: 08f7c8ce-074b-49cd-9aba-cc9592d4ee51
 caps.latest.revision: 9
 author: dotnet-bot
@@ -46,8 +44,8 @@ manager: "wpickett"
  [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometryexample.vb#streamgeometryexamplewholepage)]  
   
 ## See Also  
- <xref:System.Windows.Media.PathGeometry>   
- <xref:System.Windows.Media.StreamGeometry>   
- <xref:System.Windows.Media.StreamGeometryContext>   
- [Create a Shape by Using a PathGeometry](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-shape-by-using-a-pathgeometry.md)   
+ <xref:System.Windows.Media.PathGeometry>  
+ <xref:System.Windows.Media.StreamGeometry>  
+ <xref:System.Windows.Media.StreamGeometryContext>  
+ [Create a Shape by Using a PathGeometry](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-shape-by-using-a-pathgeometry.md)  
  [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)

@@ -9,10 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 f1_keywords: 
   - "StringFormat.FormatFlags"
   - "Graphics.DrawString"
@@ -44,9 +44,9 @@ The following code example shows how to draw vertical text on a form by using th
 -   The Arial font is not installed.  
   
 ## See Also  
- <xref:System.Drawing.Graphics.DrawString%2A>   
- <xref:System.Drawing.StringFormat.FormatFlags%2A>   
- <xref:System.Drawing.StringFormatFlags>   
- <xref:System.Windows.Forms.Control.OnPaint%2A>   
- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)   
+ <xref:System.Drawing.Graphics.DrawString%2A>  
+ <xref:System.Drawing.StringFormat.FormatFlags%2A>  
+ <xref:System.Drawing.StringFormatFlags>  
+ <xref:System.Windows.Forms.Control.OnPaint%2A>  
+ [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)  
  [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)

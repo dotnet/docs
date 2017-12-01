@@ -189,6 +189,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XmlAttribute.OwnerElement" />
       </Docs>
     </Member>
     <Member MemberName="CloneNode">
@@ -247,6 +248,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlElement" />
       </Docs>
     </Member>
     <Member MemberName="InnerText">
@@ -287,6 +289,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XmlAttribute.InnerXml" />
+        <altmember cref="P:System.Xml.XmlNode.OuterXml" />
       </Docs>
     </Member>
     <Member MemberName="InnerXml">
@@ -326,6 +330,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The XML specified when setting this property is not well-formed.</exception>
+        <altmember cref="P:System.Xml.XmlAttribute.InnerText" />
+        <altmember cref="P:System.Xml.XmlNode.OuterXml" />
       </Docs>
     </Member>
     <Member MemberName="InsertAfter">
@@ -535,6 +541,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XmlAttribute.LocalName" />
       </Docs>
     </Member>
     <Member MemberName="NamespaceURI">
@@ -613,6 +620,7 @@
         <summary>Gets the type of the current node.</summary>
         <value>The node type for <see langword="XmlAttribute" /> nodes is XmlNodeType.Attribute.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="OwnerDocument">

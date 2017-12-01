@@ -140,6 +140,7 @@
         <returns>
           <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">

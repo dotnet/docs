@@ -35,6 +35,18 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Web.UI.WebControls.ButtonFieldBase" /> class, you must override the following member: <see cref="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" />.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.ShowHeader" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+    <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +69,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandField" />
       </Docs>
     </Member>
     <Member MemberName="ButtonType">
@@ -104,6 +118,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value for the <see cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" /> property is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.ButtonField.ImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -147,6 +163,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -178,6 +196,8 @@
         <block subset="none" type="overrides">
           <para>Control developers should override the <see cref="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> method to copy any properties that are added to the custom control. When overriding the <see cref="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> method for the base class so that the base class properties are copied.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CreateField" />
       </Docs>
     </Member>
     <Member MemberName="ShowHeader">
@@ -222,6 +242,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.ShowHeader" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -267,6 +290,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.CausesValidation" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ValidationGroup" />
       </Docs>
     </Member>
   </Members>

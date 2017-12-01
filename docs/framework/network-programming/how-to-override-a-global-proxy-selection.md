@@ -37,5 +37,5 @@ req.Proxy = New WebProxy("http://alternateproxy:80/")
 -   References to the **System.Net** namespace.  
   
 ## See Also  
- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)   
+ [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)  
  [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)

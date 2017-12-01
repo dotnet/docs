@@ -9,13 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "classes, PriorityBinding"
-  - "data binding, PriorityBinding class"
-  - "PriorityBinding class"
+  - "data binding [WPF], PriorityBinding class"
 ms.assetid: d63b65ab-b3e9-4322-9aa8-1450f8d89532
 caps.latest.revision: 13
 author: dotnet-bot
@@ -53,6 +51,6 @@ manager: "wpickett"
  See <xref:System.Windows.Data.PriorityBinding> for information about what is considered a successful return value from a binding.  
   
 ## See Also  
- <xref:System.Windows.Data.Binding.IsAsync%2A?displayProperty=nameWithType>   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
+ <xref:System.Windows.Data.Binding.IsAsync%2A?displayProperty=nameWithType>  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

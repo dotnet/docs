@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "columns [Windows Forms], unbound data"
-  - "data grids, adding unbound columns"
+  - "data grids [Windows Forms], adding unbound columns"
   - "DataGridView control [Windows Forms], unbound data"
 ms.assetid: f7bdc4d8-ba8e-421b-ad62-82d936f01372
 caps.latest.revision: 14
@@ -41,6 +41,6 @@ The data you display in the <xref:System.Windows.Forms.DataGridView> control wil
 -   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- [Displaying Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/displaying-data-in-the-windows-forms-datagridview-control.md)   
+ <xref:System.Windows.Forms.DataGridView>  
+ [Displaying Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/displaying-data-in-the-windows-forms-datagridview-control.md)  
  [Data Display Modes in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/data-display-modes-in-the-windows-forms-datagridview-control.md)

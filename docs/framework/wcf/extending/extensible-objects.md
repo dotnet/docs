@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "extensible objects [WCF]"
 ms.assetid: bc88cefc-31fb-428e-9447-6d20a7d452af
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Extensible Objects
 The extensible object pattern is used to either extend existing runtime classes with new functionality or to add new state to an object. Extensions, attached to one of the extensible objects, enable behaviors at very different stages in processing to access shared state and functionality attached to a common extensible object that they can access.  
@@ -72,6 +72,6 @@ where T : IExtensibleObject<T>
  [!code-csharp[IInstanceContextInitializer#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/iinstancecontextinitializer/cs/initializer.cs#1)]  
   
 ## See Also  
- <xref:System.ServiceModel.IExtensibleObject%601>   
- <xref:System.ServiceModel.IExtension%601>   
+ <xref:System.ServiceModel.IExtensibleObject%601>  
+ <xref:System.ServiceModel.IExtension%601>  
  <xref:System.ServiceModel.IExtensionCollection%601>

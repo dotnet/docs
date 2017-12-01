@@ -15,20 +15,6 @@ ms.assetid: 4e8212e5-04e3-45b1-8a42-41bc50e683b0
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /recurse (C# Compiler Options)
 The /recurse option enables you to compile source code files in all child directories of either the specified directory (dir) or of the project directory.  
@@ -67,5 +53,5 @@ csc /target:library /out:dir2.dll /recurse:dir1\dir2\*.cs
 ```  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

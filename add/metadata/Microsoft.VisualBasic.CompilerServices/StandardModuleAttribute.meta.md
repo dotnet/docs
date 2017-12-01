@@ -1,13 +1,13 @@
 ---
 uid: Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

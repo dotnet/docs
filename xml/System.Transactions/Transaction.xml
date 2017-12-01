@@ -1037,5 +1037,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EnlistPromotableSinglePhase">
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enlists a resource manager that has an internal transaction using a promotable single phase enlistment (PSPE).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Rollback">
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Rolls back (aborts) the transaction.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

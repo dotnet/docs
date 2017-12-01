@@ -34,6 +34,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+    <altmember cref="T:System.ComponentModel.CustomTypeDescriptor" />
+    <altmember cref="T:System.ComponentModel.TypeDescriptionProvider" />
   </Docs>
   <Members>
     <Member MemberName="GetAttributes">
@@ -72,6 +75,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.AttributeCollection" />
+        <altmember cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetProperties" />
       </Docs>
     </Member>
     <Member MemberName="GetClassName">
@@ -108,6 +116,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetClassName" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetComponentName" />
       </Docs>
     </Member>
     <Member MemberName="GetComponentName">
@@ -144,6 +154,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetComponentName" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetClassName" />
       </Docs>
     </Member>
     <Member MemberName="GetConverter">
@@ -180,6 +192,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultEvent">
@@ -209,6 +224,9 @@
         <summary>Returns the default event for this instance of a component.</summary>
         <returns>An <see cref="T:System.ComponentModel.EventDescriptor" /> that represents the default event for this object, or <see langword="null" /> if this object does not have events.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultEvent" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultProperty">
@@ -238,6 +256,9 @@
         <summary>Returns the default property for this instance of a component.</summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that represents the default property for this object, or <see langword="null" /> if this object does not have properties.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultProperty" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent" />
       </Docs>
     </Member>
     <Member MemberName="GetEditor">
@@ -277,6 +298,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEditor" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -311,10 +334,15 @@
 ## Remarks  
  The events for this instance can differ from the set of events that the class provides. For example, if the component is site-based, the site can add or remove additional events.  
   
- Implementors can return <xref:System.ComponentModel.EventDescriptorCollection?displayProperty=nameWithType> if no properties are specified. This method should never return `null`.  
+ Implementors can return <xref:System.ComponentModel.EventDescriptorCollection.Empty?displayProperty=nameWithType> if no properties are specified. This method should never return `null`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
+        <altmember cref="T:System.ComponentModel.EventDescriptorCollection" />
+        <altmember cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetProperties" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent" />
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -356,6 +384,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.DefaultEventAttribute" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
+        <altmember cref="T:System.ComponentModel.EventDescriptorCollection" />
+        <altmember cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetProperties" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -390,10 +425,15 @@
 ## Remarks  
  The properties for this instance can differ from the set of properties that the class provides. For example, if the component is sited, the site can add or remove additional properties.  
   
- Implementers can return <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=nameWithType> if no properties are specified. This method should never return `null`.  
+ Implementers can return <xref:System.ComponentModel.PropertyDescriptorCollection.Empty?displayProperty=nameWithType> if no properties are specified. This method should never return `null`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+        <altmember cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetEvents" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -437,6 +477,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.GetProperties(System.Object,System.Attribute[])" />
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.DefaultPropertyAttribute" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+        <altmember cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetEvents" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertyOwner">
@@ -484,7 +532,29 @@ pd.GetValue(GetPropertyOwner(myPd));
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetProperties" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the properties for this instance of a component.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the events for this instance of a component.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

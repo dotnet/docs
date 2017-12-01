@@ -96,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int32?displayProperty=nameWithType> and `value` is 1, the result is <xref:System.Int32?displayProperty=nameWithType>; if `value` is 2, the result is (<xref:System.Int32?displayProperty=nameWithType> + 1); and so on. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int32.MaxValue?displayProperty=nameWithType> and `value` is 1, the result is <xref:System.Int32.MinValue?displayProperty=nameWithType>; if `value` is 2, the result is (<xref:System.Int32.MinValue?displayProperty=nameWithType> + 1); and so on. No exception is thrown.  
   
  ]]></format>
         </remarks>
@@ -144,13 +144,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int64?displayProperty=nameWithType> and `value` is 1, the result is <xref:System.Int64?displayProperty=nameWithType>; if `value` is 2, the result is (<xref:System.Int64?displayProperty=nameWithType> + 1); and so on. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int64.MaxValue?displayProperty=nameWithType> and `value` is 1, the result is <xref:System.Int64.MinValue?displayProperty=nameWithType>; if `value` is 2, the result is (<xref:System.Int64.MinValue?displayProperty=nameWithType> + 1); and so on. No exception is thrown.  
   
  The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=nameWithType> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <altmember cref="Overload:System.Threading.Interlocked.Increment" />
+        <altmember cref="Overload:System.Threading.Interlocked.Decrement" />
+        <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -583,7 +586,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: If `location` = <xref:System.Int32?displayProperty=nameWithType>, `location` - 1 = <xref:System.Int32?displayProperty=nameWithType>. No exception is thrown.  
+ This method handles an overflow condition by wrapping: If `location` = <xref:System.Int32.MinValue?displayProperty=nameWithType>, `location` - 1 = <xref:System.Int32.MaxValue?displayProperty=nameWithType>. No exception is thrown.  
   
    
   
@@ -637,13 +640,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64?displayProperty=nameWithType>, `location` - 1 = <xref:System.Int64?displayProperty=nameWithType>. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64.MinValue?displayProperty=nameWithType>, `location` - 1 = <xref:System.Int64.MaxValue?displayProperty=nameWithType>. No exception is thrown.  
   
  The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=nameWithType> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location" /> is a null pointer.</exception>
+        <altmember cref="Overload:System.Threading.Interlocked.Increment" />
+        <altmember cref="Overload:System.Threading.Interlocked.Add" />
+        <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -1015,7 +1021,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if `location` = <xref:System.Int32?displayProperty=nameWithType>, `location` + 1 = <xref:System.Int32?displayProperty=nameWithType>. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if `location` = <xref:System.Int32.MaxValue?displayProperty=nameWithType>, `location` + 1 = <xref:System.Int32.MinValue?displayProperty=nameWithType>. No exception is thrown.  
   
    
   
@@ -1074,13 +1080,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64?displayProperty=nameWithType>, `location` + 1 = <xref:System.Int64?displayProperty=nameWithType>. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64.MaxValue?displayProperty=nameWithType>, `location` + 1 = <xref:System.Int64.MinValue?displayProperty=nameWithType>. No exception is thrown.  
   
  The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=nameWithType> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a null pointer.</exception>
+        <altmember cref="Overload:System.Threading.Interlocked.Decrement" />
+        <altmember cref="Overload:System.Threading.Interlocked.Add" />
+        <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
       </Docs>
     </Member>
     <Member MemberName="MemoryBarrier">
@@ -1184,7 +1193,65 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Threading.Interlocked.Increment" />
+        <altmember cref="Overload:System.Threading.Interlocked.Decrement" />
+        <altmember cref="Overload:System.Threading.Interlocked.Add" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Increment">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Increments a specified variable and stores the result, as an atomic operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompareExchange">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two values for equality and, if they are equal, replaces the first value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Decrement">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decrements a specified variable and stores the result, as an atomic operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds two integers and replaces the first integer with the sum, as an atomic operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Exchange">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a variable to a specified value as an atomic operation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

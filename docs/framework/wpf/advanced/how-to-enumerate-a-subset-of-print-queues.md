@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "enumerating, subset of print queues"
-  - "print queues, enumerating subset of"
+  - "enumerating [WPF], subset of print queues"
+  - "print queues [WPF], enumerating subset of"
 ms.assetid: cc4a1b5b-d46f-4c5e-bc26-22c226e4bee0
 caps.latest.revision: 8
 author: dotnet-bot
@@ -41,12 +41,12 @@ A common situation faced by information technology (IT) professionals managing a
  You could extend this example by having the `foreach` loop that steps through each print queue do further screening. For example, you could screen out printers that do not support two-sided printing by having the loop call each print queue's <xref:System.Printing.PrintQueue.GetPrintCapabilities%2A> method and test the returned value for the presence of duplexing.  
   
 ## See Also  
- <xref:System.Printing.PrintServer.GetPrintQueues%2A>   
- <xref:System.Printing.PrintServer>   
- <xref:System.Printing.LocalPrintServer>   
- <xref:System.Printing.EnumeratedPrintQueueTypes>   
- <xref:System.Printing.PrintQueue>   
- <xref:System.Printing.PrintQueue.GetPrintCapabilities%2A>   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)   
+ <xref:System.Printing.PrintServer.GetPrintQueues%2A>  
+ <xref:System.Printing.PrintServer>  
+ <xref:System.Printing.LocalPrintServer>  
+ <xref:System.Printing.EnumeratedPrintQueueTypes>  
+ <xref:System.Printing.PrintQueue>  
+ <xref:System.Printing.PrintQueue.GetPrintCapabilities%2A>  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
+ [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)  
  [Microsoft XPS Document Writer](http://go.microsoft.com/fwlink/?LinkId=147319)

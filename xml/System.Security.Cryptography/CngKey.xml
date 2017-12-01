@@ -1073,7 +1073,7 @@
   
 -   Key storage provider (KSP): <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A>. Use the <xref:System.Security.Cryptography.CngKey.Open%28System.String%2CSystem.Security.Cryptography.CngProvider%29> overload if you want to specify another KSP.  
   
--   Key open options: <xref:System.Security.Cryptography.CngKeyOpenOptions?displayProperty=nameWithType>.  
+-   Key open options: <xref:System.Security.Cryptography.CngKeyOpenOptions.None?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1484,5 +1484,45 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Import">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new key by importing key material into the key storage provider (KSP).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Security.Cryptography.CngKey" /> object that represents a new key.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of an <see cref="T:System.Security.Cryptography.CngKey" /> object that represents an existing key.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Exists">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks for a named key in a specific key storage provider(KSP).</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

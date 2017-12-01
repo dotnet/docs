@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "ListView controls, creating custom View mode"
+  - "ListView controls [WPF], creating custom View mode"
 ms.assetid: 71077349-eeb9-4344-ab29-b5df96df3314
 caps.latest.revision: 13
 author: dotnet-bot
@@ -49,8 +49,8 @@ This example shows how to create a custom <xref:System.Windows.Controls.ListView
  For the complete sample, see [ListView with Multiple Views Sample](http://go.microsoft.com/fwlink/?LinkID=160013).  
   
 ## See Also  
- <xref:System.Windows.Controls.ListView>   
- <xref:System.Windows.Controls.GridView>   
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)   
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)   
+ <xref:System.Windows.Controls.ListView>  
+ <xref:System.Windows.Controls.GridView>  
+ [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
+ [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
  [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)

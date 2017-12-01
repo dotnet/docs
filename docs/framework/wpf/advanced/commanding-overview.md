@@ -9,18 +9,17 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "interfaces, ICommandSource"
-  - "classes, CommandBinding"
-  - "command library"
-  - "commands, definition of"
-  - "CommandBindings"
-  - "ICommandSource interfaces"
-  - "commanding"
-  - "CommandManager"
+  - "interfaces [WPF], ICommandSource"
+  - "command library [WPF]"
+  - "commands [WPF], definition of"
+  - "CommandBindings [WPF]"
+  - "ICommandSource interfaces [WPF]"
+  - "commanding [WPF]"
+  - "CommandManager [WPF]"
 ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
 caps.latest.revision: 35
 author: dotnet-bot
@@ -191,12 +190,12 @@ manager: "wpickett"
  For an example of creating a custom <xref:System.Windows.Input.RoutedCommand>, see [Create a Custom RoutedCommand Sample](http://go.microsoft.com/fwlink/?LinkID=159980).  
   
 ## See Also  
- <xref:System.Windows.Input.RoutedCommand>   
- <xref:System.Windows.Input.CommandBinding>   
- <xref:System.Windows.Input.InputBinding>   
- <xref:System.Windows.Input.CommandManager>   
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)   
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)   
- [Implement ICommandSource](../../../../docs/framework/wpf/advanced/how-to-implement-icommandsource.md)   
- [How to: Add a Command to a MenuItem](http://msdn.microsoft.com/en-us/013d68a0-5373-4a68-bd91-5de574307370)   
+ <xref:System.Windows.Input.RoutedCommand>  
+ <xref:System.Windows.Input.CommandBinding>  
+ <xref:System.Windows.Input.InputBinding>  
+ <xref:System.Windows.Input.CommandManager>  
+ [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
+ [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
+ [Implement ICommandSource](../../../../docs/framework/wpf/advanced/how-to-implement-icommandsource.md)  
+ [How to: Add a Command to a MenuItem](http://msdn.microsoft.com/en-us/013d68a0-5373-4a68-bd91-5de574307370)  
  [Create a Custom RoutedCommand Sample](http://go.microsoft.com/fwlink/?LinkID=159980)

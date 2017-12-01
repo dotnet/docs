@@ -23,6 +23,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.WeakEventManager" />
   </Docs>
   <Members>
     <Member MemberName="ReceiveWeakEvent">
@@ -65,6 +66,7 @@
   
  Typically, after checking for the identity of the event based on the <see cref="T:System.Windows.WeakEventManager" /> type, your implementation should call a private class handler. Your class handler could conceivably be the very same class handler that is used to handle that event for listeners that are added through the conventional event pattern of adding via <see langword="+=" /> to the event on the sender. The following example section provides a rough implementation template.</para>
         </block>
+        <altmember cref="T:System.Windows.WeakEventManager" />
       </Docs>
     </Member>
   </Members>

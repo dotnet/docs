@@ -15,20 +15,6 @@ ms.assetid: bda5717d-1b91-4848-956b-fcf85c30e432
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /target:exe (C# Compiler Options)
 The **/target:exe** option causes the compiler to create an executable (EXE), console application.  
@@ -69,5 +55,5 @@ csc in.cs
 ```  
   
 ## See Also  
- [/target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)   
+ [/target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

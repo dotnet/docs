@@ -97,6 +97,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebEventCodes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -136,6 +137,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebEventCodes" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationInformation">
@@ -164,6 +166,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebApplicationInformation" />
       </Docs>
     </Member>
     <Member MemberName="EventCode">
@@ -200,6 +203,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebEventCodes" />
       </Docs>
     </Member>
     <Member MemberName="EventDetailCode">
@@ -228,6 +232,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebEventCodes" />
       </Docs>
     </Member>
     <Member MemberName="EventID">
@@ -628,5 +633,33 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebBaseEvent" /> class.</summary>
+        <altmember cref="T:System.Web.Management.WebEventCodes" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Formats event information for display purposes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Raise">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises a <see cref="T:System.Web.Management.WebBaseEvent" /> event by notifying any configured provider that the event has occurred.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

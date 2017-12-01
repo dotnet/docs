@@ -1,5 +1,5 @@
 ---
-title: What is Docker? | Microsoft Docs 
+title: What is Docker?
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

@@ -10,11 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "shapes, renderable"
-  - "renderable shapes"
-  - "GeometryDrawing class"
-  - "graphics, GeometryDrawing class"
-  - "classes, GeometryDrawing"
+  - "shapes [WPF], renderable"
+  - "renderable shapes [WPF]"
+  - "graphics [WPF], GeometryDrawing class"
+  - "classes [WPF], GeometryDrawing"
 ms.assetid: 11d3c096-91ba-4d41-9bba-aeac0db70f97
 caps.latest.revision: 8
 author: dotnet-bot
@@ -37,7 +36,7 @@ This example shows how to create and display a <xref:System.Windows.Media.Geomet
  To create more complex drawings, you can combine multiple drawing objects into a single composite drawing using a <xref:System.Windows.Media.DrawingGroup>.  
   
 ## See Also  
- <xref:System.Windows.Media.DrawingGroup>   
- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)   
- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)   
+ <xref:System.Windows.Media.DrawingGroup>  
+ [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  
+ [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
  [Create a Composite Drawing](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-drawing.md)

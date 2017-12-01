@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "print options, changing at run time"
+  - "print options [Windows Forms], changing at run time"
   - "printing [Windows Forms], options"
   - "print options"
-  - "run time, changing print options"
+  - "run time [Windows Forms], changing print options"
 ms.assetid: 438501d8-9a70-4fb3-aae6-e46579aba0c6
 caps.latest.revision: 19
 author: dotnet-bot
@@ -62,5 +62,5 @@ While you can set options related to printing at design time, you will sometimes
 4.  The user's printing choices from the dialog will be copied to the <xref:System.Drawing.Printing.PrinterSettings> property of the <xref:System.Drawing.Printing.PrintDocument> component.  
   
 ## See Also  
- [How to: Print a Multi-Page Text File in Windows Forms](../../../../docs/framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md)   
+ [How to: Print a Multi-Page Text File in Windows Forms](../../../../docs/framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md)  
  [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)

@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "brushes, GDI+"
-  - "filled shapes, GDI+"
-  - "shapes, GDI+"
+  - "brushes [Windows Forms], GDI+"
+  - "filled shapes [Windows Forms], GDI+"
+  - "shapes [Windows Forms], GDI+"
   - "GDI+, brushes"
   - "GDI+, filled shapes"
   - "gradient brushes"
-  - "brushes, gradient"
+  - "brushes [Windows Forms], gradient"
 ms.assetid: e863e2a7-0294-4130-99b6-f1ea3201e7cd
 caps.latest.revision: 15
 author: dotnet-bot
@@ -83,10 +83,10 @@ A closed shape, such as a rectangle or an ellipse, consists of an outline and an
  ![Filled Shape](../../../../docs/framework/winforms/advanced/media/aboutgdip02-art23.gif "AboutGdip02_Art23")  
   
 ## See Also  
- <xref:System.Drawing.SolidBrush?displayProperty=nameWithType>   
- <xref:System.Drawing.Drawing2D.HatchBrush?displayProperty=nameWithType>   
- <xref:System.Drawing.TextureBrush?displayProperty=nameWithType>   
- <xref:System.Drawing.Drawing2D.LinearGradientBrush?displayProperty=nameWithType>   
- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)   
- [How to: Draw a Filled Rectangle on a Windows Form](../../../../docs/framework/winforms/advanced/how-to-draw-a-filled-rectangle-on-a-windows-form.md)   
+ <xref:System.Drawing.SolidBrush?displayProperty=nameWithType>  
+ <xref:System.Drawing.Drawing2D.HatchBrush?displayProperty=nameWithType>  
+ <xref:System.Drawing.TextureBrush?displayProperty=nameWithType>  
+ <xref:System.Drawing.Drawing2D.LinearGradientBrush?displayProperty=nameWithType>  
+ [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)  
+ [How to: Draw a Filled Rectangle on a Windows Form](../../../../docs/framework/winforms/advanced/how-to-draw-a-filled-rectangle-on-a-windows-form.md)  
  [How to: Draw a Filled Ellipse on a Windows Form](../../../../docs/framework/winforms/advanced/how-to-draw-a-filled-ellipse-on-a-windows-form.md)

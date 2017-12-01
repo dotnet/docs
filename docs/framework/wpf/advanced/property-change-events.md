@@ -68,5 +68,5 @@ manager: "wpickett"
  To learn more about property triggers, see [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md).  
   
 ## See Also  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)   
+ [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
  [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)

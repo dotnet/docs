@@ -1,13 +1,10 @@
 ---
 title: "Windows Forms Application Basics (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "Windows applications"
@@ -16,21 +13,6 @@ ms.assetid: 0b919d30-7fd6-42db-85c8-543d15312441
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Windows Forms Application Basics (Visual Basic)
 An important part of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is the ability to create Windows Forms applications that run locally on users' computers. You can use Visual Studio to create the application and user interface using Windows Forms. A Windows Forms application is built on classes from the <xref:System.Windows.Forms> namespace.  
@@ -116,6 +98,6 @@ An important part of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is the ability 
 |Learn more about Windows Forms security|[Security in Windows Forms Overview](https://msdn.microsoft.com/library/90k49ccb.aspx)|  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>   
- [Windows Forms Overview](https://msdn.microsoft.com/library/8bxxy49h.aspx)   
+ <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>  
+ [Windows Forms Overview](https://msdn.microsoft.com/library/8bxxy49h.aspx)  
  [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)

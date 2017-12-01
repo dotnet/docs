@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "data binding, binding properties of two controls"
-  - "binding properties of two controls"
-  - "controls, binding properties of"
+  - "data binding [WPF], binding properties of two controls"
+  - "binding properties of two controls [WPF]"
+  - "controls [WPF], binding properties of"
 ms.assetid: 06318fac-6afd-4c7d-a277-6d7ef50f47bc
 caps.latest.revision: 12
 author: dotnet-bot
@@ -34,5 +34,5 @@ This example shows how to bind the property of one instantiated control to that 
  **Note** The binding target property (in this example, the <xref:System.Windows.Controls.Panel.Background%2A> property) must be a dependency property. For more information, see [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md).  
   
 ## See Also  
- [Specify the Binding Source](../../../../docs/framework/wpf/data/how-to-specify-the-binding-source.md)   
+ [Specify the Binding Source](../../../../docs/framework/wpf/data/how-to-specify-the-binding-source.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

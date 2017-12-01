@@ -38,6 +38,13 @@
   
  For more information on licensing, see [How to: License Components and Controls](http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57).</para>
     </block>
+    <altmember cref="T:System.ComponentModel.LicenseContext" />
+    <altmember cref="T:System.ComponentModel.LicenseException" />
+    <altmember cref="T:System.ComponentModel.LicenseManager" />
+    <altmember cref="T:System.ComponentModel.LicenseProvider" />
+    <altmember cref="T:System.ComponentModel.LicenseProviderAttribute" />
+    <altmember cref="T:System.ComponentModel.LicFileLicenseProvider" />
+    <altmember cref="T:System.ComponentModel.LicenseUsageMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,6 +110,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.License" />
+        <altmember cref="T:System.ComponentModel.LicenseContext" />
+        <altmember cref="T:System.ComponentModel.LicenseException" />
+        <altmember cref="T:System.ComponentModel.LicenseManager" />
+        <altmember cref="T:System.ComponentModel.LicenseProvider" />
+        <altmember cref="T:System.ComponentModel.LicenseProviderAttribute" />
+        <altmember cref="T:System.ComponentModel.LicFileLicenseProvider" />
+        <altmember cref="T:System.ComponentModel.LicenseUsageMode" />
       </Docs>
     </Member>
     <Member MemberName="LicenseKey">
@@ -137,6 +152,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.License" />
+        <altmember cref="T:System.ComponentModel.LicenseContext" />
+        <altmember cref="T:System.ComponentModel.LicenseException" />
+        <altmember cref="T:System.ComponentModel.LicenseManager" />
+        <altmember cref="T:System.ComponentModel.LicenseProvider" />
+        <altmember cref="T:System.ComponentModel.LicenseProviderAttribute" />
+        <altmember cref="T:System.ComponentModel.LicFileLicenseProvider" />
+        <altmember cref="T:System.ComponentModel.LicenseUsageMode" />
       </Docs>
     </Member>
   </Members>

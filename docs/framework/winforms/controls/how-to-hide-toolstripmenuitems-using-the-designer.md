@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ToolStripMenuItems, hiding menu items in designer"
+  - "ToolStripMenuItems [Windows Forms], hiding menu items in designer"
   - "MenuStrip control [Windows Forms], hiding menu items in designer"
-  - "menu items, hiding"
+  - "menu items [Windows Forms], hiding"
 ms.assetid: 8f1b057e-3d8a-4f11-88df-935f7b29a836
 caps.latest.revision: 8
 author: dotnet-bot
@@ -41,10 +41,10 @@ Hiding menu items is a way to control the user interface (UI) of your applicatio
      When you hide a submenu item, it remains visible on your form at design time so that you can easily select it for further work. It will actually be hidden at run time.  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolStripItem.Visible%2A>   
- <xref:System.Windows.Forms.MenuStrip>   
- <xref:System.Windows.Forms.ToolStripMenuItem.Enabled%2A>   
- <xref:System.Windows.Forms.ToolStripItem.Available%2A>   
- <xref:System.Windows.Forms.ToolStripMenuItem.Overflow%2A>   
- [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)   
+ <xref:System.Windows.Forms.ToolStripItem.Visible%2A>  
+ <xref:System.Windows.Forms.MenuStrip>  
+ <xref:System.Windows.Forms.ToolStripMenuItem.Enabled%2A>  
+ <xref:System.Windows.Forms.ToolStripItem.Available%2A>  
+ <xref:System.Windows.Forms.ToolStripMenuItem.Overflow%2A>  
+ [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)  
  [How to: Disable ToolStripMenuItems Using the Designer](../../../../docs/framework/winforms/controls/how-to-disable-toolstripmenuitems-using-the-designer.md)

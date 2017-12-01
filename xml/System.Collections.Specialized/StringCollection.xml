@@ -134,6 +134,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Specialized.StringCollection.AddRange(System.String[])" />
+        <altmember cref="P:System.Collections.Specialized.StringCollection.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -185,6 +187,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Specialized.StringCollection.Add(System.String)" />
+        <altmember cref="P:System.Collections.Specialized.StringCollection.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -231,6 +235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Specialized.StringCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -286,6 +291,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Specialized.StringCollection.IndexOf(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -350,6 +356,8 @@
   
  The number of elements in the source <see cref="T:System.Collections.Specialized.StringCollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Collections.Specialized.StringCollection" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+        <altmember cref="T:System.Array" />
+        <altmember cref="M:System.Collections.Specialized.StringCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -446,6 +454,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.StringEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -498,6 +508,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Specialized.StringCollection.Contains(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -559,6 +570,8 @@
  -or-  
   
  <paramref name="index" /> greater than <see cref="P:System.Collections.Specialized.StringCollection.Count" />.</exception>
+        <altmember cref="P:System.Collections.Specialized.StringCollection.Count" />
+        <altmember cref="M:System.Collections.Specialized.StringCollection.Add(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -647,6 +660,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Specialized.StringCollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -698,6 +712,7 @@
  -or-  
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Collections.Specialized.StringCollection.Count" />.</exception>
+        <altmember cref="P:System.Collections.Specialized.StringCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -853,6 +868,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Specialized.StringCollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -960,6 +976,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.StringEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -1008,6 +1026,9 @@
  -or-  
   
  The <see cref="T:System.Collections.Specialized.StringCollection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Collections.IList.Remove(System.Object)" />
+        <altmember cref="P:System.Collections.Specialized.StringCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -1052,6 +1073,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -1097,6 +1119,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -1154,6 +1177,9 @@
  -or-  
   
  The <see cref="T:System.Collections.Specialized.StringCollection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.IList.Add(System.Object)" />
+        <altmember cref="M:System.Collections.IList.Remove(System.Object)" />
+        <altmember cref="P:System.Collections.Specialized.StringCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -1285,6 +1311,7 @@
  -or-  
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Collections.Specialized.StringCollection.Count" />.</exception>
+        <altmember cref="P:System.Collections.Specialized.StringCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -1334,6 +1361,9 @@
  -or-  
   
  The <see cref="T:System.Collections.Specialized.StringCollection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.IList.Add(System.Object)" />
+        <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
+        <altmember cref="P:System.Collections.Specialized.StringCollection.Count" />
       </Docs>
     </Member>
   </Members>

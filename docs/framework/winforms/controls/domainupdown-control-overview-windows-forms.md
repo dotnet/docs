@@ -12,7 +12,7 @@ ms.topic: "article"
 f1_keywords: 
   - "DomainUpDown"
 helpviewer_keywords: 
-  - "spin button control, about spin button"
+  - "spin button control [Windows Forms], about spin button"
   - "DomainUpDown control [Windows Forms], about DomainUpDown control"
 ms.assetid: 3f40f9c1-20ad-4331-b9b5-b0127eb36eb3
 caps.latest.revision: 11
@@ -34,5 +34,5 @@ The Windows Forms <xref:System.Windows.Forms.DomainUpDown> control is essentiall
  This control displays only text strings. If you want a control that displays numeric values, use the <xref:System.Windows.Forms.NumericUpDown> control. For more information, see [NumericUpDown Control Overview](../../../../docs/framework/winforms/controls/numericupdown-control-overview-windows-forms.md).  
   
 ## See Also  
- <xref:System.Windows.Forms.DomainUpDown>   
+ <xref:System.Windows.Forms.DomainUpDown>  
  [DomainUpDown Control](../../../../docs/framework/winforms/controls/domainupdown-control-windows-forms.md)

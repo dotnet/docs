@@ -9,13 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data collections, creating views of"
-  - "creating, views of data collections"
-  - "data binding, creating views of data collections"
+  - "data collections [WPF], creating views of"
+  - "data binding [WPF], creating views of data collections"
 ms.assetid: b641e96c-c2f6-42ea-9c5d-bac81176ad65
 caps.latest.revision: 15
 author: dotnet-bot
@@ -40,5 +39,5 @@ Views allow the same data collection to be viewed in different ways, depending o
  For examples of the functionality provided by a collection view, see [Sort Data in a View](../../../../docs/framework/wpf/data/how-to-sort-data-in-a-view.md), [Filter Data in a View](../../../../docs/framework/wpf/data/how-to-filter-data-in-a-view.md), and [Navigate Through the Objects in a Data CollectionView](../../../../docs/framework/wpf/data/how-to-navigate-through-the-objects-in-a-data-collectionview.md).  
   
 ## See Also  
- [Sort and Group Data Using a View in XAML](../../../../docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md)   
+ [Sort and Group Data Using a View in XAML](../../../../docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

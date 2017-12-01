@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "ToolStripMenuItems, hiding"
+  - "ToolStripMenuItems [Windows Forms], hiding"
   - "MenuStrip control [Windows Forms], hiding menu items"
-  - "menus, hiding menu items"
-  - "menu items, hiding"
+  - "menus [Windows Forms], hiding menu items"
+  - "menu items [Windows Forms], hiding"
   - "hiding menu items"
 ms.assetid: 418a768f-808a-44cd-8cef-f4e161883621
 caps.latest.revision: 11
@@ -45,7 +45,7 @@ Hiding menu items is a way to control the user interface of your application and
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolStripItem.Visible%2A>   
- <xref:System.Windows.Forms.MenuStrip>   
- [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)   
+ <xref:System.Windows.Forms.ToolStripItem.Visible%2A>  
+ <xref:System.Windows.Forms.MenuStrip>  
+ [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)  
  [How to: Disable ToolStripMenuItems](../../../../docs/framework/winforms/controls/how-to-disable-toolstripmenuitems.md)

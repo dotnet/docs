@@ -64,16 +64,16 @@ Namespace GenericTypes
     
     '<snippet3>
     <DataContract()>  _
-    Public Class MyGenericType1 (Of T)
+    Public Class MyGenericType1(Of T)
         ' Code not shown.
     End Class
     '</snippet3>
 
    '<snippet4>
-    <DataContract()> Public Class MyGenericType2(Of T)
-
-        <DataMember()> Dim theData As T
-
+    <DataContract()>  _
+    Public Class MyGenericType2(Of T)
+        <DataMember()>  _
+        Dim theData As T
     End Class 
     '</snippet4>
 End Namespace 

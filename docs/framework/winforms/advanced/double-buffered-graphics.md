@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "double buffering"
-  - "graphics, double-buffered"
-  - "flicker, reducing with double buffering"
+  - "graphics [Windows Forms], double-buffered"
+  - "flicker [Windows Forms], reducing with double buffering"
   - "examples [Windows Forms], double-buffered graphics"
 ms.assetid: 4f6fef99-0972-436e-9d73-0167e4033f71
 caps.latest.revision: 11
@@ -39,10 +39,10 @@ Flicker is a common problem when programming graphics. Graphics operations that 
  For more information on using the <xref:System.Drawing.BufferedGraphics> class, see [Manually Rendering Buffered Graphics](../../../../docs/framework/winforms/advanced/how-to-manually-render-buffered-graphics.md). For more information on rendering graphics, see [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)  
   
 ## See Also  
- <xref:System.Drawing.BufferedGraphics>   
- <xref:System.Drawing.BufferedGraphicsContext>   
- <xref:System.Drawing.BufferedGraphicsManager>   
- [How to: Manually Render Buffered Graphics](../../../../docs/framework/winforms/advanced/how-to-manually-render-buffered-graphics.md)   
- [How to: Reduce Graphics Flicker with Double Buffering for Forms and Controls](../../../../docs/framework/winforms/advanced/how-to-reduce-graphics-flicker-with-double-buffering-for-forms-and-controls.md)   
- [How to: Manually Manage Buffered Graphics](../../../../docs/framework/winforms/advanced/how-to-manually-manage-buffered-graphics.md)   
+ <xref:System.Drawing.BufferedGraphics>  
+ <xref:System.Drawing.BufferedGraphicsContext>  
+ <xref:System.Drawing.BufferedGraphicsManager>  
+ [How to: Manually Render Buffered Graphics](../../../../docs/framework/winforms/advanced/how-to-manually-render-buffered-graphics.md)  
+ [How to: Reduce Graphics Flicker with Double Buffering for Forms and Controls](../../../../docs/framework/winforms/advanced/how-to-reduce-graphics-flicker-with-double-buffering-for-forms-and-controls.md)  
+ [How to: Manually Manage Buffered Graphics](../../../../docs/framework/winforms/advanced/how-to-manually-manage-buffered-graphics.md)  
  [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)

@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolStripDropDownItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -232,9 +233,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new accessibility object for this <see cref="T:System.Windows.Forms.ToolStripDropDownButton" /> instance.</summary>
+        <returns>A new accessibility object for this <see cref="T:System.Windows.Forms.ToolStripDropDownButton" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The <xref:System.Windows.Forms.AccessibleObject> instance returned by this method supports the UI Automation expand/collapse pattern. 
+However, it's only available in applications that are running on the .NET Framework 4.7.1 or later versions and are either recompiled to target the .NET Framework 4.7.1 or opt in to this .NET Framework accessibility enhancements by using an AppCompat switch. 
+For more information, see the [migration guide](~/docs/framework/migration-guide/retargeting/4.7-4.7.1.md#windows-forms). 
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultDropDown">
@@ -454,5 +465,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripDropDownButton" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

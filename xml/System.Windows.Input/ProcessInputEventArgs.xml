@@ -36,6 +36,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Windows.Input.InputManager.PreProcessInput" />
+    <altmember cref="T:System.Windows.Input.InputManager" />
+    <altmember cref="T:System.Windows.Input.PreProcessInputEventArgs" />
+    <altmember cref="T:System.Windows.Input.NotifyInputEventArgs" />
+    <altmember cref="T:System.Windows.Input.StagingAreaInputItem" />
   </Docs>
   <Members>
     <Member MemberName="PeekInput">
@@ -68,6 +73,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for getting the top input.  Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.Windows.Input.ProcessInputEventArgs.PopInput" />
+        <altmember cref="Overload:System.Windows.Input.ProcessInputEventArgs.PushInput" />
       </Docs>
     </Member>
     <Member MemberName="PopInput">
@@ -93,6 +100,8 @@
         <returns>The input event that was on the top of the staging area stack. This will be <see langword="null" /> if the staging area is empty.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for popping an input event.  Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.Windows.Input.ProcessInputEventArgs.PeekInput" />
+        <altmember cref="Overload:System.Windows.Input.ProcessInputEventArgs.PushInput" />
       </Docs>
     </Member>
     <MemberGroup MemberName="PushInput">
@@ -110,6 +119,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.ProcessInputEventArgs.PeekInput" />
+        <altmember cref="M:System.Windows.Input.ProcessInputEventArgs.PopInput" />
       </Docs>
     </MemberGroup>
     <Member MemberName="PushInput">
@@ -145,6 +156,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for pushing an input event.  Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.Windows.Input.ProcessInputEventArgs.PeekInput" />
+        <altmember cref="M:System.Windows.Input.ProcessInputEventArgs.PopInput" />
       </Docs>
     </Member>
     <Member MemberName="PushInput">
@@ -182,6 +195,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for pushing an input event. Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.Windows.Input.ProcessInputEventArgs.PeekInput" />
+        <altmember cref="M:System.Windows.Input.ProcessInputEventArgs.PopInput" />
       </Docs>
     </Member>
   </Members>

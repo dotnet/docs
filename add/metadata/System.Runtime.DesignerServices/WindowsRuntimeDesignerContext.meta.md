@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Runtime.DesignerServices.WindowsRuntimeDesignerContext.GetType
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

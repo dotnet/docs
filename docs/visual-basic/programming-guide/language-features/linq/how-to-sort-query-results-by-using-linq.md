@@ -7,7 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "sorting query results, multiple columns"
@@ -22,21 +21,6 @@ ms.assetid: 07a4584d-9fd8-4a1d-b7d9-ccf2efa5c84e
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Sort Query Results by Using LINQ (Visual Basic)
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  
@@ -94,7 +78,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
 4.  Press F5 to run your project and view the results.  
   
 ## See Also  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
- [Queries](../../../../visual-basic/language-reference/queries/queries.md)   
- [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)   
+ [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
+ [Queries](../../../../visual-basic/language-reference/queries/queries.md)  
+ [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
  [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

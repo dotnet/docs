@@ -7,18 +7,11 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "get-started-article"
 ms.assetid: 5f7749f3-aaf2-4319-b63c-bfa72e1e2b7a
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Collections (Visual Basic)
 For many applications, you want to create and manage groups of related objects. There are two ways to group objects: by creating arrays of objects, and by creating collections of objects.  
@@ -187,11 +180,11 @@ End Class
   
  Some of the common collection classes are described in this section:  
   
--   @System.Collections.Generic classes  
+-   <xref:System.Collections.Generic> classes  
   
--   @System.Collections.Concurrent classes  
+-   <xref:System.Collections.Concurrent> classes  
   
--   @System.Collections classes  
+-   <xref:System.Collections> classes  
   
 -   Visual Basic `Collection` class  
   
@@ -582,13 +575,13 @@ End Function
 ```  
   
 ## See Also  
- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)   
- [Programming Concepts (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)   
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
- [LINQ to Objects (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)   
- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)   
- [Collections and Data Structures](../../../standard/collections/index.md)   
- [Creating and Manipulating Collections](http://msdn.microsoft.com/en-us/2065398e-eb1a-4821-9188-75f16e42e069)   
- [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)   
- [Comparisons and Sorts Within Collections](../../../standard/collections/comparisons-and-sorts-within-collections.md)   
+ [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)  
+ [Programming Concepts (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)  
+ [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
+ [LINQ to Objects (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)  
+ [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)  
+ [Collections and Data Structures](../../../standard/collections/index.md)  
+ [Creating and Manipulating Collections](http://msdn.microsoft.com/en-us/2065398e-eb1a-4821-9188-75f16e42e069)  
+ [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)  
+ [Comparisons and Sorts Within Collections](../../../standard/collections/comparisons-and-sorts-within-collections.md)  
  [When to Use Generic Collections](../../../standard/collections/when-to-use-generic-collections.md)

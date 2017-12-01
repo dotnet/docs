@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Shell.JumpTask" />
+    <altmember cref="T:System.Windows.Shell.JumpList" />
+    <altmember cref="E:System.Windows.Shell.JumpList.JumpItemsRejected" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +63,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Shell.JumpList.JumpItemsRejected" />
       </Docs>
     </Member>
   </Members>

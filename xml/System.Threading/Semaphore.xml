@@ -374,9 +374,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Threading.Semaphore.GetAccessControl%2A> method uses the following combination of flags (combined using the bitwise OR operation) to search for permissions: <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>, <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>, and <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>.  
+ The <xref:System.Threading.Semaphore.GetAccessControl%2A> method uses the following combination of flags (combined using the bitwise OR operation) to search for permissions: <xref:System.Security.AccessControl.AccessControlSections.Access?displayProperty=nameWithType>, <xref:System.Security.AccessControl.AccessControlSections.Owner?displayProperty=nameWithType>, and <xref:System.Security.AccessControl.AccessControlSections.Group?displayProperty=nameWithType>.  
   
- The user must have <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> rights to call this method, and the semaphore must have been opened with <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> rights.  
+ The user must have <xref:System.Security.AccessControl.SemaphoreRights.ReadPermissions?displayProperty=nameWithType> rights to call this method, and the semaphore must have been opened with <xref:System.Security.AccessControl.SemaphoreRights.ReadPermissions?displayProperty=nameWithType> rights.  
   
  On a local semaphore, access control security is irrelevant. If the <xref:System.Threading.Semaphore> object does not represent a named system semaphore, this method returns a <xref:System.Security.AccessControl.SemaphoreSecurity> object that grants all rights to any user.  
   
@@ -443,9 +443,9 @@
   
  Multiple calls to this method that use the same value for `name` do not necessarily return the same <xref:System.Threading.Semaphore> object, even though the objects that are returned represent the same named system semaphore.  
   
- This method overload is equivalent to calling the <xref:System.Threading.Semaphore.OpenExisting%2A> method overload and specifying <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> and <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> rights, combined by using the bitwise OR operation.  
+ This method overload is equivalent to calling the <xref:System.Threading.Semaphore.OpenExisting%2A> method overload and specifying <xref:System.Security.AccessControl.SemaphoreRights.Synchronize?displayProperty=nameWithType> and <xref:System.Security.AccessControl.SemaphoreRights.Modify?displayProperty=nameWithType> rights, combined by using the bitwise OR operation.  
   
- Specifying the <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> flag allows a thread to enter the semaphore, and specifying the <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> flag allows a thread to call the <xref:System.Threading.Semaphore.Release%2A> method.  
+ Specifying the <xref:System.Security.AccessControl.SemaphoreRights.Synchronize?displayProperty=nameWithType> flag allows a thread to enter the semaphore, and specifying the <xref:System.Security.AccessControl.SemaphoreRights.Modify?displayProperty=nameWithType> flag allows a thread to call the <xref:System.Threading.Semaphore.Release%2A> method.  
   
    
   
@@ -506,7 +506,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `rights` parameter must include the <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> flag to allow threads to enter the semaphore, and the <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> flag to allow threads to call the <xref:System.Threading.Semaphore.Release%2A> method.  
+ The `rights` parameter must include the <xref:System.Security.AccessControl.SemaphoreRights.Synchronize?displayProperty=nameWithType> flag to allow threads to enter the semaphore, and the <xref:System.Security.AccessControl.SemaphoreRights.Modify?displayProperty=nameWithType> flag to allow threads to call the <xref:System.Threading.Semaphore.Release%2A> method.  
   
  The <xref:System.Threading.Semaphore.OpenExisting%2A> method tries to open an existing named semaphore. If the system semaphore does not exist, this method throws an exception instead of creating the system semaphore. To create the system semaphore when it does not already exist, use one of the <xref:System.Threading.Semaphore.%23ctor%2A> constructors that has a `name` parameter.  
   
@@ -588,7 +588,7 @@
   
  If a <xref:System.Threading.SemaphoreFullException> is thrown by the <xref:System.Threading.Semaphore.Release%2A> method, it does not necessarily indicate a problem with the calling thread. A programming error in another thread might have caused that thread to exit the semaphore more times than it entered.  
   
- If the current <xref:System.Threading.Semaphore> object represents a named system semaphore, the user must have <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> rights and the semaphore must have been opened with <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> rights.  
+ If the current <xref:System.Threading.Semaphore> object represents a named system semaphore, the user must have <xref:System.Security.AccessControl.SemaphoreRights.Modify?displayProperty=nameWithType> rights and the semaphore must have been opened with <xref:System.Security.AccessControl.SemaphoreRights.Modify?displayProperty=nameWithType> rights.  
   
    
   
@@ -655,7 +655,7 @@
   
  If a <xref:System.Threading.SemaphoreFullException> is thrown by the <xref:System.Threading.Semaphore.Release%2A> method, it does not necessarily indicate a problem with the calling thread. A programming error in another thread might have caused that thread to exit the semaphore more times than it entered.  
   
- If the current <xref:System.Threading.Semaphore> object represents a named system semaphore, the user must have <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> rights and the semaphore must have been opened with <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> rights.  
+ If the current <xref:System.Threading.Semaphore> object represents a named system semaphore, the user must have <xref:System.Security.AccessControl.SemaphoreRights.Modify?displayProperty=nameWithType> rights and the semaphore must have been opened with <xref:System.Security.AccessControl.SemaphoreRights.Modify?displayProperty=nameWithType> rights.  
   
    
   
@@ -706,7 +706,7 @@
 ## Remarks  
  You can set access control security only on <xref:System.Threading.Semaphore> objects that represent named system semaphores.  
   
- The user must have <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> rights to call this method, and the semaphore must have been opened with <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> rights.  
+ The user must have <xref:System.Security.AccessControl.SemaphoreRights.ChangePermissions?displayProperty=nameWithType> rights to call this method, and the semaphore must have been opened with <xref:System.Security.AccessControl.SemaphoreRights.ChangePermissions?displayProperty=nameWithType> rights.  
   
    
   
@@ -776,7 +776,7 @@
   
  If you are uncertain whether a named semaphore exists, use this method overload instead of the <xref:System.Threading.Semaphore.OpenExisting%28System.String%29> method overload, which throws an exception if the semaphore does not exist.  
   
- This method overload is equivalent to calling the <xref:System.Threading.Semaphore.TryOpenExisting%2A> method overload and specifying <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> and <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> rights, combined by using the bitwise OR operation. Specifying the <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> flag allows a thread to enter the semaphore, and specifying the   <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> flag allows a thread to call the <xref:System.Threading.Semaphore.Release%2A> method.  
+ This method overload is equivalent to calling the <xref:System.Threading.Semaphore.TryOpenExisting%2A> method overload and specifying <xref:System.Security.AccessControl.SemaphoreRights.Synchronize?displayProperty=nameWithType> and <xref:System.Security.AccessControl.SemaphoreRights.Modify?displayProperty=nameWithType> rights, combined by using the bitwise OR operation. Specifying the <xref:System.Security.AccessControl.SemaphoreRights.Synchronize?displayProperty=nameWithType> flag allows a thread to enter the semaphore, and specifying the   <xref:System.Security.AccessControl.SemaphoreRights.Modify?displayProperty=nameWithType> flag allows a thread to call the <xref:System.Threading.Semaphore.Release%2A> method.  
   
  ]]></format>
         </remarks>
@@ -825,7 +825,7 @@
   
  If you are uncertain whether a named semaphore exists, use this method overload instead of the <xref:System.Threading.Semaphore.OpenExisting%28System.String%2CSystem.Security.AccessControl.SemaphoreRights%29> method overload, which throws an exception if the semaphore does not exist.  
   
- The `rights` parameter must include the <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> flag to allow threads to enter the semaphore, and the <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> flag to allow threads to call the <xref:System.Threading.Semaphore.Release%2A> method.  
+ The `rights` parameter must include the <xref:System.Security.AccessControl.SemaphoreRights.Synchronize?displayProperty=nameWithType> flag to allow threads to enter the semaphore, and the <xref:System.Security.AccessControl.SemaphoreRights.Modify?displayProperty=nameWithType> flag to allow threads to call the <xref:System.Threading.Semaphore.Release%2A> method.  
   
  Multiple calls to this method that use the same value for `name` do not necessarily return the same <xref:System.Threading.Semaphore> object, even though the objects that are returned represent the same named system semaphore.  
   
@@ -843,5 +843,49 @@
         <exception cref="T:System.UnauthorizedAccessException">The named semaphore exists, but the user does not have the security access required to use it.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenExisting">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a specified named semaphore, if it already exists.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryOpenExisting">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a specified named semaphore, if it already exists, and returns a value that indicates whether the operation succeeded.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Release">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Exits the semaphore.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Semaphore" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

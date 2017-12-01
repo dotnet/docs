@@ -112,6 +112,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.BaseFileName" />
+    <altmember cref="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
+    <altmember cref="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
+    <altmember cref="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.Flush" />
+    <altmember cref="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.Close" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -136,6 +141,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Logging.Log" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -164,6 +172,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Logging.Log" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -201,6 +212,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize" />
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule" />
       </Docs>
     </Member>
     <Member MemberName="AutoFlush">
@@ -232,6 +245,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.Flush" />
+        <altmember cref="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.Close" />
       </Docs>
     </Member>
     <Member MemberName="BaseFileName">
@@ -270,6 +285,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName" />
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location" />
+        <altmember cref="F:Microsoft.VisualBasic.Logging.LogFileLocation.Custom" />
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -328,6 +347,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location" />
       </Docs>
     </Member>
     <Member MemberName="Delimiter">
@@ -387,6 +407,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption" />
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace" />
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -448,6 +471,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Encoding" />
+        <altmember cref="T:System.Text.UTF8Encoding" />
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -514,6 +539,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.BaseFileName" />
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location" />
+        <altmember cref="F:Microsoft.VisualBasic.Logging.LogFileLocation.Custom" />
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule" />
       </Docs>
     </Member>
     <Member MemberName="GetSupportedAttributes">
@@ -541,6 +570,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Diagnostics.TraceSource.GetSupportedAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IncludeHostName">
@@ -572,6 +602,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -606,6 +638,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Logging.LogFileLocation" />
       </Docs>
     </Member>
     <Member MemberName="LogFileCreationSchedule">
@@ -640,6 +673,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption" />
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName" />
       </Docs>
     </Member>
     <Member MemberName="MaxFileSize">
@@ -674,6 +709,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">When this property is set to a value less than 1000.</exception>
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName" />
       </Docs>
     </Member>
     <Member MemberName="ReserveDiskSpace">
@@ -708,6 +744,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">When this property is set to a value less than 0.</exception>
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior" />
+        <altmember cref="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="TraceData">
@@ -785,6 +824,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName" />
+        <altmember cref="P:System.Diagnostics.TraceListener.TraceOutputOptions" />
+        <altmember cref="T:System.Diagnostics.TraceEventCache" />
+        <altmember cref="T:System.Diagnostics.TraceEventType" />
       </Docs>
     </Member>
     <Member MemberName="TraceData">
@@ -851,6 +895,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName" />
+        <altmember cref="P:System.Diagnostics.TraceListener.TraceOutputOptions" />
+        <altmember cref="T:System.Diagnostics.TraceEventCache" />
+        <altmember cref="T:System.Diagnostics.TraceEventType" />
       </Docs>
     </Member>
     <MemberGroup MemberName="TraceEvent">
@@ -928,6 +977,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName" />
+        <altmember cref="P:System.Diagnostics.TraceListener.TraceOutputOptions" />
+        <altmember cref="T:System.Diagnostics.TraceEventCache" />
+        <altmember cref="T:System.Diagnostics.TraceEventType" />
       </Docs>
     </Member>
     <Member MemberName="TraceEvent">
@@ -996,6 +1050,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName" />
+        <altmember cref="P:System.Diagnostics.TraceListener.TraceOutputOptions" />
+        <altmember cref="T:System.Diagnostics.TraceEventCache" />
+        <altmember cref="T:System.Diagnostics.TraceEventType" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1027,6 +1086,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName" />
+        <altmember cref="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1058,7 +1120,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName" />
+        <altmember cref="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" /> class and sets the name.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

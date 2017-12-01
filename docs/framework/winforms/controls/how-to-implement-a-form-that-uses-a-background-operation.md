@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "threading [Windows Forms], forms"
   - "BackgroundWorker component"
   - "background tasks"
-  - "forms, multithreading"
+  - "forms [Windows Forms], multithreading"
   - "components [Windows Forms], asynchronous"
-  - "forms, background operations"
+  - "forms [Windows Forms], background operations"
   - "background threads"
   - "threading [Windows Forms], background operations"
   - "background operations"
@@ -54,7 +54,7 @@ The following example program creates a form that calculates Fibonacci numbers. 
 >  When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md) before implementing any solution that uses multithreading.  
   
 ## See Also  
- <xref:System.ComponentModel.BackgroundWorker>   
- <xref:System.ComponentModel.DoWorkEventArgs>   
- [Event-based Asynchronous Pattern Overview](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)   
+ <xref:System.ComponentModel.BackgroundWorker>  
+ <xref:System.ComponentModel.DoWorkEventArgs>  
+ [Event-based Asynchronous Pattern Overview](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)  
  [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md)

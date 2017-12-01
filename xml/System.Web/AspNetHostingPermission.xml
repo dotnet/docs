@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.AspNetHostingPermissionAttribute" />
+    <altmember cref="T:System.Web.AspNetHostingPermissionLevel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +78,7 @@
         <param name="level">An <see cref="T:System.Web.AspNetHostingPermissionLevel" /> enumeration value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.AspNetHostingPermission" /> class with the specified permission level.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.AspNetHostingPermission.Level" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -130,6 +133,9 @@
  <see langword="-" /> or-  
   
  The class <see cref="M:System.Security.SecurityElement.Attribute(System.String)" /> of <paramref name="securityElement" /> is <see langword="null" /> or an empty string ("").</exception>
+        <altmember cref="T:System.Security.ISecurityEncodable" />
+        <altmember cref="T:System.Security.IPermission" />
+        <altmember cref="T:System.Security.SecurityElement" />
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -154,6 +160,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="target" /> is not an <see cref="T:System.Web.AspNetHostingPermission" />.</exception>
+        <altmember cref="M:System.Web.AspNetHostingPermission.Union(System.Security.IPermission)" />
+        <altmember cref="M:System.Web.AspNetHostingPermission.IsSubsetOf(System.Security.IPermission)" />
       </Docs>
     </Member>
     <Member MemberName="IsSubsetOf">
@@ -179,6 +187,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="target" /> is not an <see cref="T:System.Web.AspNetHostingPermission" />.</exception>
+        <altmember cref="M:System.Web.AspNetHostingPermission.Union(System.Security.IPermission)" />
+        <altmember cref="M:System.Web.AspNetHostingPermission.Intersect(System.Security.IPermission)" />
       </Docs>
     </Member>
     <Member MemberName="IsUnrestricted">
@@ -260,7 +270,18 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="target" /> is not an <see cref="T:System.Web.AspNetHostingPermission" />.</exception>
+        <altmember cref="M:System.Web.AspNetHostingPermission.IsSubsetOf(System.Security.IPermission)" />
+        <altmember cref="M:System.Web.AspNetHostingPermission.Intersect(System.Security.IPermission)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.AspNetHostingPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -34,9 +34,9 @@ Adds an IP address or DNS name to the connection management list.
 ## Syntax  
   
 ```xml  
-      <add   
-   address = "address expression"   
-   maxconnection = integer   
+<add   
+  address="address expression"   
+  maxconnection="integer"   
 />  
 ```  
   
@@ -74,14 +74,14 @@ Adds an IP address or DNS name to the connection management list.
 <configuration>  
   <system.net>  
     <connectionManagement>  
-      <add address = "http://www.contoso.com" maxconnection = "4" />  
-      <add address = "*" maxconnection = "2" />  
+      <add address="http://www.contoso.com" maxconnection="4" />  
+      <add address="*" maxconnection="2" />  
     </connectionManagement>  
   </system.net>  
 </configuration>  
 ```  
   
 ## See Also  
- <xref:System.Net.ServicePoint>   
- <xref:System.Net.ServicePointManager>   
+ <xref:System.Net.ServicePoint>  
+ <xref:System.Net.ServicePointManager>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

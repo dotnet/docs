@@ -86,8 +86,8 @@ Removes a listener from the `Listeners` collection for a trace source.
 ```  
   
 ## See Also  
- <xref:System.Diagnostics.TraceSource.Listeners%2A>   
- <xref:System.Diagnostics.TraceSource>   
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)   
- [\<clear>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-source.md)   
+ <xref:System.Diagnostics.TraceSource.Listeners%2A>  
+ <xref:System.Diagnostics.TraceSource>  
+ [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
+ [\<clear>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-source.md)  
  [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)

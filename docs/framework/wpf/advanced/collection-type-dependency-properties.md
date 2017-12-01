@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "properties, dependency"
-  - "properties, collection-type"
-  - "dependency properties"
-  - "collection-type properties"
+  - "properties [WPF], dependency"
+  - "properties [WPF], collection-type"
+  - "dependency properties [WPF]"
+  - "collection-type properties [WPF]"
 ms.assetid: 99f96a42-3ab7-4f64-a16b-2e10d654e97c
 caps.latest.revision: 10
 author: dotnet-bot
@@ -63,9 +63,9 @@ This topic provides guidance and suggested patterns for how to implement a depen
  To enable subproperty binding in a dependency object collection, create the collection property as type <xref:System.Windows.FreezableCollection%601>, with a type constraint for that collection to any <xref:System.Windows.DependencyObject> derived class.  
   
 ## See Also  
- <xref:System.Windows.FreezableCollection%601>   
- [XAML and Custom Classes for WPF](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)   
+ <xref:System.Windows.FreezableCollection%601>  
+ [XAML and Custom Classes for WPF](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
+ [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
  [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)

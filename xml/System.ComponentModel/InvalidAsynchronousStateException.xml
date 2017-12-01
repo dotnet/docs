@@ -23,6 +23,11 @@
   <Docs>
     <summary>Thrown when a thread on which an operation should execute no longer exists or has no message loop.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" />
+    <altmember cref="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)" />
+    <altmember cref="T:System.ComponentModel.AsyncOperation" />
+    <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+    <altmember cref="T:System.Threading.SynchronizationContext" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +53,11 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.InvalidAsynchronousStateException" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" />
+        <altmember cref="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)" />
+        <altmember cref="T:System.ComponentModel.AsyncOperation" />
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+        <altmember cref="T:System.Threading.SynchronizationContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -76,6 +86,11 @@
         <param name="message">A detailed description of the error.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.InvalidAsynchronousStateException" /> class with the specified detailed description.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" />
+        <altmember cref="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)" />
+        <altmember cref="T:System.ComponentModel.AsyncOperation" />
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+        <altmember cref="T:System.Threading.SynchronizationContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -105,6 +120,11 @@
         <param name="context">The destination to be used for deserialization.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.InvalidAsynchronousStateException" /> class with the given <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" />
+        <altmember cref="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)" />
+        <altmember cref="T:System.ComponentModel.AsyncOperation" />
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+        <altmember cref="T:System.Threading.SynchronizationContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -135,7 +155,22 @@
         <param name="innerException">A reference to the inner exception that is the cause of this exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.InvalidAsynchronousStateException" /> class with the specified detailed description and the specified exception.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" />
+        <altmember cref="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)" />
+        <altmember cref="T:System.ComponentModel.AsyncOperation" />
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+        <altmember cref="T:System.Threading.SynchronizationContext" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.InvalidAsynchronousStateException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

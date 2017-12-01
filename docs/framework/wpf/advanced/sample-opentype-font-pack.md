@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "OpenType font pack"
-  - "fonts, OpenType font pack"
-  - "typography, OpenType font pack"
+  - "OpenType font pack [WPF]"
+  - "fonts [WPF], OpenType font pack"
+  - "typography [WPF], OpenType font pack"
 ms.assetid: 56b46fa1-a44e-419b-8f14-25ad51c715c3
 caps.latest.revision: 23
 author: dotnet-bot
@@ -60,6 +60,6 @@ Displaying the Lindsey font
  There are two ways that you can use fonts in your application. You can add fonts to your application as project content items that are not embedded as resources within an assembly. Alternatively, you can add fonts to your application as project resource items that are embedded within the application's assembly files. For more information, see [Packaging Fonts with Applications](../../../../docs/framework/wpf/advanced/packaging-fonts-with-applications.md).  
   
 ## See Also  
- <xref:System.Windows.Documents.Typography>   
- [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)   
+ <xref:System.Windows.Documents.Typography>  
+ [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)  
  [Packaging Fonts with Applications](../../../../docs/framework/wpf/advanced/packaging-fonts-with-applications.md)

@@ -10,17 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ink strokes, managing"
-  - "managing ink strokes"
-  - "ink input control"
-  - "input from mouse, accepting"
-  - "mouse input, accepting"
-  - "ink, rendering"
-  - "ink strokes, collecting"
-  - "rendering ink"
-  - "collecting ink strokes"
-  - "DynamicRenderer objects"
-  - "StylusPlugIn objects"
+  - "ink strokes [WPF], managing"
+  - "managing ink strokes [WPF]"
+  - "ink input control [WPF]"
+  - "input from mouse [WPF], accepting"
+  - "mouse input [WPF], accepting"
+  - "ink [WPF], rendering"
+  - "ink strokes [WPF], collecting"
+  - "rendering ink [WPF]"
+  - "collecting ink strokes [WPF]"
+  - "DynamicRenderer objects [WPF]"
+  - "StylusPlugIn objects [WPF]"
 ms.assetid: c31f3a67-cb3f-4ded-af9e-ed21f6575b26
 caps.latest.revision: 14
 author: dotnet-bot
@@ -105,5 +105,5 @@ You can create a custom control that dynamically and statically renders ink. Tha
  You can create a control that collects and renders ink by overriding the stylus event methods. By creating your own control, deriving your own <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> classes, and inserting them the into <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection>, you can implement virtually any behavior imaginable with digital ink. You have access to the <xref:System.Windows.Input.StylusPoint> data as it is generated, giving you the opportunity to  customize <xref:System.Windows.Input.Stylus> input and render it on the screen as appropriate for your application. Because you have such low-level access to the <xref:System.Windows.Input.StylusPoint> data, you can implement ink collection and render it with optimal performance for your application.  
   
 ## See Also  
- [Advanced Ink Handling](../../../../docs/framework/wpf/advanced/advanced-ink-handling.md)   
+ [Advanced Ink Handling](../../../../docs/framework/wpf/advanced/advanced-ink-handling.md)  
  [Accessing and Manipulating Pen Input](http://go.microsoft.com/fwlink/?LinkId=50752&clcid=0x409)

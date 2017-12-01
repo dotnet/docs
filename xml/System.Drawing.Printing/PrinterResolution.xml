@@ -33,6 +33,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PrinterResolutionKind" />
+    <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PrinterResolutions" />
+    <altmember cref="P:System.Drawing.Printing.PageSettings.PrinterResolution" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +82,7 @@
         <value>One of the <see cref="T:System.Drawing.Printing.PrinterResolutionKind" /> values.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not a member of the <see cref="T:System.Drawing.Printing.PrinterResolutionKind" /> enumeration.</exception>
+        <altmember cref="T:System.Drawing.Printing.PrinterResolutionKind" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -124,6 +129,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrinterResolutionKind" />
       </Docs>
     </Member>
     <Member MemberName="Y">

@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data grids, customizing cells"
+  - "data grids [Windows Forms], customizing cells"
   - "DataGridView control [Windows Forms], customizing cells"
-  - "cells, customizing in DataGridView control"
+  - "cells [Windows Forms], customizing in DataGridView control"
 ms.assetid: 478b20c9-625c-4116-9c5c-5a16e6f4ec67
 caps.latest.revision: 11
 author: dotnet-bot
@@ -39,6 +39,6 @@ You can customize the appearance of any cell by handling the <xref:System.Window
 -   References to the System, System.Windows.Forms, and System.Drawing assemblies.  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridView.CellPainting>   
+ <xref:System.Windows.Forms.DataGridView>  
+ <xref:System.Windows.Forms.DataGridView.CellPainting>  
  [Customizing the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/customizing-the-windows-forms-datagridview-control.md)

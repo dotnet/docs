@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "merged resource dictionaries"
-  - "dictionaries, merged resources"
+  - "merged resource dictionaries [WPF]"
+  - "dictionaries [WPF], merged resources"
 ms.assetid: d159531f-05d4-49fd-b951-c332de51e5bc
 caps.latest.revision: 13
 author: dotnet-bot
@@ -58,7 +58,7 @@ manager: "wpickett"
  If resources that need to be localized are isolated to dictionaries that are merged into primary dictionaries, and kept as loose [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], these files can be localized separately. This technique is a lightweight alternative to localizing  the satellite resource assemblies. For details, see [WPF Globalization and Localization Overview](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md).  
   
 ## See Also  
- <xref:System.Windows.ResourceDictionary>   
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)   
- [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)   
+ <xref:System.Windows.ResourceDictionary>  
+ [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
+ [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)  
  [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)

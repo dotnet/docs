@@ -30,6 +30,8 @@
   <Docs>
     <summary>Defines the formatting options that customize string parsing for the <see cref="Overload:System.TimeSpan.ParseExact" /> and <see cref="Overload:System.TimeSpan.TryParseExact" /> methods.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="Overload:System.TimeSpan.ParseExact" />
+    <altmember cref="Overload:System.TimeSpan.TryParseExact" />
   </Docs>
   <Members>
     <Member MemberName="AssumeNegative">

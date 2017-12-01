@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "properties [Windows Forms], defining in code"
   - "custom controls [Windows Forms], defining properties in code"
@@ -127,7 +127,7 @@ public int Value {
 ```  
   
 ## See Also  
- [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)   
- [Defining Default Values with the ShouldSerialize and Reset Methods](../../../../docs/framework/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods.md)   
- [Property-Changed Events](../../../../docs/framework/winforms/controls/property-changed-events.md)   
+ [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)  
+ [Defining Default Values with the ShouldSerialize and Reset Methods](../../../../docs/framework/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods.md)  
+ [Property-Changed Events](../../../../docs/framework/winforms/controls/property-changed-events.md)  
  [Attributes in Windows Forms Controls](../../../../docs/framework/winforms/controls/attributes-in-windows-forms-controls.md)

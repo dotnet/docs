@@ -41,6 +41,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -216,6 +217,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Vector3DAnimation.From" />
+        <altmember cref="P:System.Windows.Media.Animation.Vector3DAnimation.To" />
       </Docs>
     </Member>
     <Member MemberName="ByProperty">
@@ -280,6 +283,7 @@
         <summary>Creates a new instance of the <see cref="T:System.Windows.Media.Animation.Vector3DAnimation" />.</summary>
         <returns>The new instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="EasingFunction">
@@ -305,6 +309,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="EasingFunctionProperty">
@@ -322,6 +327,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Animation.Vector3DAnimation.EasingFunction" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="From">
@@ -387,6 +393,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Vector3DAnimation.By" />
+        <altmember cref="P:System.Windows.Media.Animation.Vector3DAnimation.To" />
       </Docs>
     </Member>
     <Member MemberName="FromProperty">
@@ -512,6 +520,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" />
       </Docs>
     </Member>
     <Member MemberName="To">
@@ -577,6 +586,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Vector3DAnimation.From" />
+        <altmember cref="P:System.Windows.Media.Animation.Vector3DAnimation.By" />
       </Docs>
     </Member>
     <Member MemberName="ToProperty">
@@ -596,5 +607,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.Vector3DAnimation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

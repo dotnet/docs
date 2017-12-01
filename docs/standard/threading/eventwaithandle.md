@@ -65,8 +65,8 @@ The <xref:System.Threading.EventWaitHandle> class allows threads to communicate 
 >  Unlike the <xref:System.Threading.EventWaitHandle> class, the derived classes <xref:System.Threading.AutoResetEvent> and <xref:System.Threading.ManualResetEvent> can represent only local wait handles. They cannot represent named system events.  
   
 ## See Also  
- <xref:System.Threading.EventWaitHandle>   
- <xref:System.Threading.WaitHandle>   
- <xref:System.Threading.AutoResetEvent>   
- <xref:System.Threading.ManualResetEvent>   
+ <xref:System.Threading.EventWaitHandle>  
+ <xref:System.Threading.WaitHandle>  
+ <xref:System.Threading.AutoResetEvent>  
+ <xref:System.Threading.ManualResetEvent>  
  [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](../../../docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)

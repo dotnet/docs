@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TreeViewCancelEventArgs" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +50,7 @@
         <param name="node">The <see cref="T:System.Windows.Forms.TreeNode" /> that the event is responding to.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeViewEventArgs" /> class for the specified tree node.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.TreeNode" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeViewAction" />
       </Docs>
     </Member>
     <Member MemberName="Node">
@@ -131,7 +134,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeNode" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeViewEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

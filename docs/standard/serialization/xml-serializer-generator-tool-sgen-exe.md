@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cc1d1f1c-fb26-4be9-885a-3fe84c81cec6
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # XML Serializer Generator Tool (Sgen.exe)
 The XML Serializer Generator creates an XML serialization assembly for types in a specified assembly in order to improve the startup performance of a <xref:System.Xml.Serialization.XmlSerializer> when it serializes or deserializes objects of the specified types.  
@@ -60,6 +60,6 @@ sgen Data.dll
  The Data.XmlSerializers.dll assembly can be referenced from code that needs to serialize and deserialize the types in Data.dll.  
   
 ## See Also  
- [Tools](../../../docs/framework/tools/index.md)   
- [XML Web Services Overview](http://msdn.microsoft.com/en-us/9db0c7b8-bca6-462b-9be5-f5f9a7f05a4d)   
+ [Tools](../../../docs/framework/tools/index.md)  
+ [XML Web Services Overview](http://msdn.microsoft.com/en-us/9db0c7b8-bca6-462b-9be5-f5f9a7f05a4d)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

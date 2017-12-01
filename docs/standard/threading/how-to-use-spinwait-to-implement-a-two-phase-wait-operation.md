@@ -33,5 +33,5 @@ The following example shows how to use a <xref:System.Threading.SpinWait?display
  The logging output shows how often the Latch was able to increase performance by acquiring the lock without using the <xref:System.Threading.ManualResetEvent>.  
   
 ## See Also  
- [SpinWait](../../../docs/standard/threading/spinwait.md)   
+ [SpinWait](../../../docs/standard/threading/spinwait.md)  
  [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)

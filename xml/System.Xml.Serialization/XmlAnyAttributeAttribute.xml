@@ -65,6 +65,9 @@ GroupType = 'Technical' GroupNumber = '42' GroupBase = 'Red'>
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.Serialization.XmlAnyElementAttribute" />
+    <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
+    <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

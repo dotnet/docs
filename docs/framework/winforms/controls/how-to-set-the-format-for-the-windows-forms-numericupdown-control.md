@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "NumericUpDown control [Windows Forms], formatting values"
-  - "up-down controls, formatting numeric values"
+  - "up-down controls [Windows Forms], formatting numeric values"
 ms.assetid: fa7c5557-6bfb-45b2-975d-8887b23b0ba0
 caps.latest.revision: 13
 author: dotnet-bot
@@ -64,6 +64,6 @@ You can configure how values are displayed in the Windows Forms <xref:System.Win
     >  Even if the value is displayed on the form as hexadecimal, any tests you perform on the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property will be testing its decimal value.  
   
 ## See Also  
- <xref:System.Windows.Forms.NumericUpDown>   
- [NumericUpDown Control](../../../../docs/framework/winforms/controls/numericupdown-control-windows-forms.md)   
+ <xref:System.Windows.Forms.NumericUpDown>  
+ [NumericUpDown Control](../../../../docs/framework/winforms/controls/numericupdown-control-windows-forms.md)  
  [NumericUpDown Control Overview](../../../../docs/framework/winforms/controls/numericupdown-control-overview-windows-forms.md)

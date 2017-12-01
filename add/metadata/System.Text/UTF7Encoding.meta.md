@@ -29,7 +29,7 @@ manager: "wpickett"
 uid: System.Text.UTF7Encoding.GetString
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

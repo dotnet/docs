@@ -529,6 +529,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.DragDrop" />
       </Docs>
     </Member>
     <Member MemberName="DragEnter">
@@ -558,6 +559,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.DragEnter" />
       </Docs>
     </Member>
     <Member MemberName="DragLeave">
@@ -587,6 +589,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.DragLeave" />
       </Docs>
     </Member>
     <Member MemberName="DragOver">
@@ -616,6 +619,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.DragOver" />
       </Docs>
     </Member>
     <Member MemberName="EnabledChanged">
@@ -925,6 +929,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.GiveFeedback" />
       </Docs>
     </Member>
     <Member MemberName="HelpRequested">
@@ -954,6 +959,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.HelpRequested" />
       </Docs>
     </Member>
     <Member MemberName="HookUpControlEvents">
@@ -1117,6 +1123,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -1158,6 +1165,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.KeyPress" />
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -1195,6 +1203,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
       </Docs>
     </Member>
     <Member MemberName="Layout">
@@ -1224,6 +1233,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
       </Docs>
     </Member>
     <Member MemberName="Leave">
@@ -1271,6 +1281,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Leave" />
       </Docs>
     </Member>
     <Member MemberName="LocationChanged">
@@ -1356,6 +1367,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseCaptureChanged" />
       </Docs>
     </Member>
     <Member MemberName="MouseClick">
@@ -1398,6 +1410,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseClick" />
       </Docs>
     </Member>
     <Member MemberName="MouseDoubleClick">
@@ -1491,6 +1504,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseDown" />
       </Docs>
     </Member>
     <Member MemberName="MouseEnter">
@@ -1534,6 +1548,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseEnter" />
       </Docs>
     </Member>
     <Member MemberName="MouseHover">
@@ -1581,6 +1596,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseHover" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeave">
@@ -1620,6 +1636,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseLeave" />
       </Docs>
     </Member>
     <Member MemberName="MouseMove">
@@ -1659,6 +1676,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseMove" />
       </Docs>
     </Member>
     <Member MemberName="MouseUp">
@@ -1698,6 +1716,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseUp" />
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -1725,6 +1744,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Move" />
       </Docs>
     </Member>
     <Member MemberName="PaddingChanged">
@@ -1812,6 +1832,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.QueryAccessibilityHelp" />
       </Docs>
     </Member>
     <Member MemberName="QueryContinueDrag">
@@ -1841,6 +1862,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.QueryContinueDrag" />
       </Docs>
     </Member>
     <Member MemberName="RegionChanged">
@@ -1937,6 +1959,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Resize" />
       </Docs>
     </Member>
     <Member MemberName="RightToLeftChanged">
@@ -1995,6 +2018,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.SystemColorsChanged" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValueChanged">
@@ -2189,6 +2213,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.SystemColorsChanged" />
       </Docs>
     </Member>
     <Member MemberName="TabIndexChanged">
@@ -2306,6 +2331,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Validated" />
       </Docs>
     </Member>
     <Member MemberName="Validating">
@@ -2365,6 +2391,7 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Validating" />
       </Docs>
     </Member>
     <Member MemberName="VisibleChanged">
@@ -2396,5 +2423,14 @@ MsgBox(CStr(CheckedListBoxArray(1).Text))
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.CheckedListBoxArray" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

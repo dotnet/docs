@@ -40,6 +40,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Data.DataColumnCollection.CollectionChanged" />
+    <altmember cref="T:System.ComponentModel.CollectionChangeEventHandler" />
+    <altmember cref="T:System.ComponentModel.CollectionChangeAction" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +73,8 @@
         <param name="element">An <see cref="T:System.Object" /> that specifies the instance of the collection where the change occurred.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CollectionChangeEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Data.DataColumnCollection.CollectionChanged" />
+        <altmember cref="T:System.ComponentModel.CollectionChangeAction" />
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -121,6 +126,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Data.DataColumnCollection.CollectionChanged" />
+        <altmember cref="T:System.ComponentModel.CollectionChangeAction" />
       </Docs>
     </Member>
     <Member MemberName="Element">
@@ -161,6 +168,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Data.DataColumnCollection.CollectionChanged" />
+        <altmember cref="T:System.ComponentModel.CollectionChangeAction" />
       </Docs>
     </Member>
   </Members>

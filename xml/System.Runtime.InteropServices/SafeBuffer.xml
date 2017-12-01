@@ -425,6 +425,7 @@ finally {
         <returns>The value type that was read from memory.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Runtime.InteropServices.SafeBuffer.Initialize" /> method has not been called.</exception>
+        <altmember cref="M:System.Runtime.InteropServices.SafeBuffer.Write``1(System.UInt64,``0)" />
       </Docs>
     </Member>
     <Member MemberName="ReadArray&lt;T&gt;">
@@ -494,6 +495,7 @@ finally {
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The length of the array minus the index is less than <paramref name="count" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Runtime.InteropServices.SafeBuffer.Initialize" /> method has not been called.</exception>
+        <altmember cref="M:System.Runtime.InteropServices.SafeBuffer.WriteArray``1(System.UInt64,``0[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReleasePointer">
@@ -606,6 +608,7 @@ finally {
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Runtime.InteropServices.SafeBuffer.Initialize" /> method has not been called.</exception>
+        <altmember cref="M:System.Runtime.InteropServices.SafeBuffer.Read``1(System.UInt64)" />
       </Docs>
     </Member>
     <Member MemberName="WriteArray&lt;T&gt;">
@@ -678,7 +681,22 @@ finally {
           <paramref name="index" /> or <paramref name="count" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">The length of the input array minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Runtime.InteropServices.SafeBuffer.Initialize" /> method has not been called.</exception>
+        <altmember cref="M:System.Runtime.InteropServices.SafeBuffer.ReadArray``1(System.UInt64,``0[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Initialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies the size of the memory buffer to allocate. You must call this method before you use the <see cref="T:System.Runtime.InteropServices.SafeBuffer" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

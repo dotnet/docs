@@ -25,6 +25,8 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.Web.HttpContext" />
+    <altmember cref="T:System.Web.HttpApplication" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -375,6 +377,7 @@ MyObject = Application.Get("MyAppVar1");
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpApplicationState.UnLock" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -569,7 +572,26 @@ MyObject = Application.Get("MyAppVar1");
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpApplicationState.Lock" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Web.HttpApplicationState" /> object by name or index.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets access to an object in an <see cref="T:System.Web.HttpApplicationState" /> collection. This property is overloaded to allow access to an object by name or numerical index.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

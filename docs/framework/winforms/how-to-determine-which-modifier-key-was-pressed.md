@@ -9,26 +9,26 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "keyboard input"
   - "shift keys"
   - "events [Windows Forms], mouse"
   - "Keys.ControlKey enumeration member"
-  - "keys, control keys"
-  - "user input, checking for keyboard"
-  - "keys, determining last pressed"
-  - "keys, shift keys"
-  - "keys, modifier keys"
+  - "keys [Windows Forms], control keys"
+  - "user input [Windows Forms], checking for keyboard"
+  - "keys [Windows Forms], determining last pressed"
+  - "keys [Windows Forms], shift keys"
+  - "keys [Windows Forms], modifier keys"
   - "control keys"
-  - "keys, alt keys"
+  - "keys [Windows Forms], alt keys"
   - "alt keys"
   - "Keys.Shift enumeration member"
   - "events [Windows Forms], keyboard"
-  - "keyboards, keyboard input"
+  - "keyboards [Windows Forms], keyboard input"
   - "Keys.Alt enumeration member"
   - "modifier keys"
 ms.assetid: 1e184048-0ae3-4067-a200-d4ba31dbc2cb
@@ -52,7 +52,7 @@ When you create an application that accepts the user's keystrokes, you may also 
      [!code-vb[System.Windows.Forms.DetermineModifierKey#5](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DetermineModifierKey/VB/form1.vb#5)]  
   
 ## See Also  
- <xref:System.Windows.Forms.Keys>   
- <xref:System.Windows.Forms.Control.ModifierKeys%2A>   
- [Keyboard Input in a Windows Forms Application](../../../docs/framework/winforms/keyboard-input-in-a-windows-forms-application.md)   
+ <xref:System.Windows.Forms.Keys>  
+ <xref:System.Windows.Forms.Control.ModifierKeys%2A>  
+ [Keyboard Input in a Windows Forms Application](../../../docs/framework/winforms/keyboard-input-in-a-windows-forms-application.md)  
  [How to: Determine If CapsLock is On in Visual Basic](http://msdn.microsoft.com/en-us/91e60f5c-dd61-4222-ba5f-39af803afd8c)

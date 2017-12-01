@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "rendering graphics, registry settings"
-  - "rendering graphics"
-  - "rendering graphics, troubleshooting"
-  - "troubleshooting graphics rendering"
+  - "rendering graphics [WPF], registry settings"
+  - "rendering graphics [WPF]"
+  - "rendering graphics [WPF], troubleshooting"
+  - "troubleshooting graphics rendering [WPF]"
   - "graphics [WPF], rendering"
 ms.assetid: f4b41b42-327d-407c-b398-3ed5f505df8b
 caps.latest.revision: 18
@@ -104,5 +104,5 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
  The **use reference rasterizer option** takes a DWORD value. A value of 0 indicates that the reference rasterizer is not used. Any other non-zero value forces [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to use the reference rasterizer.  
   
 ## See Also  
- [Graphics Rendering Tiers](../../../../docs/framework/wpf/advanced/graphics-rendering-tiers.md)   
+ [Graphics Rendering Tiers](../../../../docs/framework/wpf/advanced/graphics-rendering-tiers.md)  
  [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)

@@ -127,6 +127,8 @@
         <param name="stream">The stream that is coming back from the transport sink.</param>
         <summary>Requests asynchronous processing of a response to a method call on the current sink.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.ClientChannelSinkStack" />
+        <altmember cref="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.Push(System.Runtime.Remoting.Channels.IClientChannelSink,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetRequestStream">

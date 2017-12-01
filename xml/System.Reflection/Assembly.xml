@@ -98,6 +98,8 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.AppDomain" />
+    <altmember cref="T:System.Reflection.AssemblyName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -529,12 +531,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.Assembly.DefinedTypes%2A> property is comparable to the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> method, except that the <xref:System.Reflection.Assembly.DefinedTypes%2A> property returns a [collection](../Topic/IEnumerable\(T\)%20Interface.md) of <xref:System.Reflection.TypeInfo> objects, and the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> method returns an array of <xref:System.Type> objects.  
+ The <xref:System.Reflection.Assembly.DefinedTypes%2A> property is comparable to the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> method, except that the <xref:System.Reflection.Assembly.DefinedTypes%2A> property returns a collection of <xref:System.Reflection.TypeInfo> objects, and the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> method returns an array of <xref:System.Type> objects.  
   
  The returned array includes nested types.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetTypes" />
       </Docs>
     </Member>
     <Member MemberName="EntryPoint">
@@ -666,6 +669,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="ExportedTypes">
@@ -846,7 +850,7 @@
   
  When `M1` is not inlined, <xref:System.Reflection.Assembly.GetCallingAssembly%2A> returns `A2`. When `M1` is inlined, <xref:System.Reflection.Assembly.GetCallingAssembly%2A> returns `A3`. Similarly, when `M2` is not inlined, <xref:System.Reflection.Assembly.GetCallingAssembly%2A> returns `A2`. When `M2` is inlined, <xref:System.Reflection.Assembly.GetCallingAssembly%2A> returns `A3`.  
   
- This effect also occurs when `M1` executes as a tail call from `M2`, or when `M2` executes as a tail call from `M3`. You can prevent the JIT compiler from inlining the method that calls <xref:System.Reflection.Assembly.GetCallingAssembly%2A>, by applying the <xref:System.Runtime.CompilerServices.MethodImplAttribute> attribute with the <xref:System.Runtime.CompilerServices.MethodImplOptions?displayProperty=nameWithType> flag, but there is no similar mechanism for preventing tail calls.  
+ This effect also occurs when `M1` executes as a tail call from `M2`, or when `M2` executes as a tail call from `M3`. You can prevent the JIT compiler from inlining the method that calls <xref:System.Reflection.Assembly.GetCallingAssembly%2A>, by applying the <xref:System.Runtime.CompilerServices.MethodImplAttribute> attribute with the <xref:System.Runtime.CompilerServices.MethodImplOptions.NoInlining?displayProperty=nameWithType> flag, but there is no similar mechanism for preventing tail calls.  
   
    
   
@@ -1155,6 +1159,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The assembly is a dynamic assembly.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">Unable to load a dependent assembly.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFile">
@@ -1427,6 +1432,7 @@
           <paramref name="resourceName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="resourceName" /> parameter is an empty string ("").</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceNames" />
       </Docs>
     </Member>
     <Member MemberName="GetManifestResourceNames">
@@ -1479,6 +1485,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceStream(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetManifestResourceStream">
@@ -1524,7 +1531,7 @@
  Resource information is returned only if the resource is visible to the caller, or the caller has <xref:System.Security.Permissions.ReflectionPermission>.  
   
 > [!NOTE]
->  This method returns `null` if a private resource in another assembly is accessed and the caller does not have <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag.  
+>  This method returns `null` if a private resource in another assembly is accessed and the caller does not have <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag.  
   
  If the assembly manifest lists a resource file, <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> returns a <xref:System.IO.Stream> object even if the resource file cannot be found on disk at the time. If the resource file is not found, passing the resulting <xref:System.IO.Stream> object to the <xref:System.Resources.ResourceReader> constructor causes an <xref:System.ArgumentException>.  
   
@@ -1547,6 +1554,7 @@
           <paramref name="name" /> is not a valid assembly.</exception>
         <exception cref="T:System.NotImplementedException">Resource length is greater than <see cref="F:System.Int64.MaxValue" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceNames" />
       </Docs>
     </Member>
     <Member MemberName="GetManifestResourceStream">
@@ -1590,7 +1598,7 @@
  Resource information is returned only if the resource is visible to the caller, or the caller has <xref:System.Security.Permissions.ReflectionPermission>.  
   
 > [!NOTE]
->  This method returns `null` if a private resource in another assembly is accessed and the caller does not have <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag.  
+>  This method returns `null` if a private resource in another assembly is accessed and the caller does not have <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag.  
   
  If the assembly manifest lists a resource file, <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> returns a <xref:System.IO.Stream> object even if the resource file cannot be found on disk at the time. If the resource file is not found, passing the resulting <xref:System.IO.Stream> object to the <xref:System.Resources.ResourceReader> constructor causes an <xref:System.ArgumentException>.  
   
@@ -1605,6 +1613,7 @@
           <paramref name="name" /> is not a valid assembly.</exception>
         <exception cref="T:System.NotImplementedException">Resource length is greater than <see cref="F:System.Int64.MaxValue" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceNames" />
       </Docs>
     </Member>
     <Member MemberName="GetModule">
@@ -1884,7 +1893,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property of an <xref:System.Reflection.AssemblyName> object that is returned by this method is <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> if there is no hash algorithm for the referenced assembly, or if the hash algorithm of the referenced assembly is not identified by the <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> enumeration. In previous versions of the .NET Framework, the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property returned <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> in this situation.  
+>  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property of an <xref:System.Reflection.AssemblyName> object that is returned by this method is <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm.None?displayProperty=nameWithType> if there is no hash algorithm for the referenced assembly, or if the hash algorithm of the referenced assembly is not identified by the <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> enumeration. In previous versions of the .NET Framework, the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property returned <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm.SHA1?displayProperty=nameWithType> in this situation.  
   
    
   
@@ -2645,6 +2654,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory, and for access to the information in the path itself. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
         <permission cref="T:System.Net.WebPermission">for reading a URI that does not begin with "file://".</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Reflection.AssemblyName" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2728,6 +2738,8 @@
   
  Version 2.0 or later of the common language runtime is currently loaded and <paramref name="assemblyString" /> was compiled with a later version.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Reflection.AssemblyName" />
+        <altmember cref="M:System.Reflection.Assembly.LoadFrom(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2854,6 +2866,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory, and for access to the information in the path itself. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
         <permission cref="T:System.Net.WebPermission">for reading a URI that does not begin with "file://".</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2926,6 +2939,7 @@
   
  An assembly or module was loaded twice with two different evidences.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -3201,7 +3215,7 @@
   
 -   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
   
 -   If a native image exists for `assemblyFile`, it is not used. The assembly cannot be loaded as domain neutral.  
   
@@ -3294,7 +3308,7 @@
   
 -   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
   
 -   If a native image exists for `assemblyFile`, it is not used. The assembly cannot be loaded as domain neutral.  
   
@@ -3335,6 +3349,7 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading a URI that begins with "file://". Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for reading a URI that does not begin with "file://".</permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="LoadFrom">
@@ -3400,7 +3415,7 @@
   
 -   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
   
 -   If a native image exists for `assemblyFile`, it is not used. The assembly cannot be loaded as domain-neutral.  
   
@@ -3489,7 +3504,7 @@
   
 -   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
   
 -   If a native image exists for `assemblyFile`, it is not used. The assembly cannot be loaded as domain neutral.  
   
@@ -3690,6 +3705,8 @@
  -or-  
   
  Version 2.0 or later of the common language runtime is currently loaded and <paramref name="partialName" /> was compiled with a later version.</exception>
+        <altmember cref="M:System.Reflection.Assembly.Load(System.String)" />
+        <altmember cref="M:System.Reflection.Assembly.LoadFrom(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="LoadWithPartialName">
@@ -3744,6 +3761,8 @@
   
  Version 2.0 or later of the common language runtime is currently loaded and <paramref name="partialName" /> was compiled with a later version.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code and to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.Load(System.String)" />
+        <altmember cref="M:System.Reflection.Assembly.LoadFrom(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -4423,5 +4442,147 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetManifestResourceStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the specified manifest resource from this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReflectionOnlyLoad">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads an assembly into the reflection-only context, where it can be examined but not executed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSatelliteAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the satellite assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the custom attributes for this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads an assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadModule">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the module internal to this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadFrom">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads an assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Locates a type from this assembly and creates an instance of it using the system activator.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetLoadedModules">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets all the loaded modules that are part of this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetModules">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets all the modules that are part of this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Type" /> object that represents the specified type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadFile">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the contents of an assembly file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFiles">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the files in the file table of an assembly manifest.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetName">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Reflection.AssemblyName" /> for this assembly.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

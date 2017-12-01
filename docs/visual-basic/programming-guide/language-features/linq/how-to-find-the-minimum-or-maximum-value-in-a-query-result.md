@@ -7,7 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "max operator [LINQ in Visual Basic]"
@@ -18,28 +17,13 @@ helpviewer_keywords:
   - "queries [LINQ in Visual Basic], minimum and maximum values"
   - "Max property"
   - "maximum values [LINQ in Visual Basic]"
-  - "Aggregate clause"
+  - "Aggregate clause [Visual Basic]"
   - "queries [LINQ in Visual Basic], aggregate queries"
   - "queries [LINQ in Visual Basic], how-to topics"
 ms.assetid: 238b763b-7dcd-4b14-8050-b65500a4f71c
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Find the Minimum or Maximum Value in a Query Result by Using LINQ (Visual Basic)
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  
@@ -97,7 +81,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
 4.  Press F5 to run your project and view the results.  
   
 ## See Also  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
- [Queries](../../../../visual-basic/language-reference/queries/queries.md)   
- [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)   
+ [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
+ [Queries](../../../../visual-basic/language-reference/queries/queries.md)  
+ [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
  [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

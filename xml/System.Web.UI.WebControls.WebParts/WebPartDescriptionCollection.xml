@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDescription" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +81,7 @@
  -or-  
   
  A member of <paramref name="webPartDescriptions" /> has a duplicate <see cref="P:System.Web.UI.WebControls.WebParts.WebPartDescription.ID" /> property</exception>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -109,6 +111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -139,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -168,6 +172,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -197,6 +202,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.IList.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -228,5 +234,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDescriptionCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specific member of the collection according to its index or a unique string identifier.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

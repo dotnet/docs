@@ -235,5 +235,14 @@
         <exception cref="T:System.ArgumentNullException">An attempt to set a value that is <see langword="null" /> occurs.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

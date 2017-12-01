@@ -100,6 +100,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.IdnElement" />
+        <altmember cref="T:System.Configuration.IriParsingElement" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="IriParsing">
@@ -144,6 +147,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.IdnElement" />
+        <altmember cref="T:System.Configuration.IriParsingElement" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -200,6 +206,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.SchemeSettingElement" />
+        <altmember cref="T:System.Configuration.SchemeSettingElementCollection" />
+        <altmember cref="T:System.GenericUriParserOptions" />
       </Docs>
     </Member>
   </Members>

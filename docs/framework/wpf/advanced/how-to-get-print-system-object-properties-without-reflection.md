@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "PrintSystemObject, getting properties"
+  - "PrintSystemObject [WPF], getting properties"
 ms.assetid: 43560f28-183d-41c1-b9d1-de7c2552273e
 caps.latest.revision: 6
 author: dotnet-bot
@@ -40,12 +40,12 @@ Using reflection to itemize the properties (and the types of those properties) o
  [!code-vb[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/visualbasic/program.vb#showpropertytypeswithoutreflection)]  
   
 ## See Also  
- <xref:System.Printing.IndexedProperties.PrintProperty>   
- <xref:System.Printing.PrintSystemObject>   
- <xref:System.Printing.IndexedProperties>   
- <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>   
- <xref:System.Printing.LocalPrintServer>   
- <xref:System.Printing.PrintQueue>   
- <xref:System.Collections.DictionaryEntry>   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
+ <xref:System.Printing.IndexedProperties.PrintProperty>  
+ <xref:System.Printing.PrintSystemObject>  
+ <xref:System.Printing.IndexedProperties>  
+ <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>  
+ <xref:System.Printing.LocalPrintServer>  
+ <xref:System.Printing.PrintQueue>  
+ <xref:System.Collections.DictionaryEntry>  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)

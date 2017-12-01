@@ -13,6 +13,9 @@
   <Docs>
     <summary>Represents a combination of two or more conditions where a match exists if any one of the conditions is true.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Automation.Condition" />
+    <altmember cref="T:System.Windows.Automation.AndCondition" />
+    <altmember cref="T:System.Windows.Automation.NotCondition" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

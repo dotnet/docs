@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "simplifying animations by child timelines"
-  - "animation, simplifying by child timelines"
-  - "child timelines"
+  - "simplifying animations by child timelines [WPF]"
+  - "animation [WPF], simplifying by child timelines"
+  - "child timelines [WPF]"
 ms.assetid: 8335d770-d13d-42bd-8dfa-63f92c0327e2
 caps.latest.revision: 9
 author: dotnet-bot
@@ -32,5 +32,5 @@ This example shows how to simplify animations by using child <xref:System.Window
  [!code-xaml[Timelines_snip#ParallelTimelineWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Timelines_snip/CS/ParallelTimelineExample.xaml#paralleltimelinewholepage)]  
   
 ## See Also  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)   
+ [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
  [Specify HandoffBehavior Between Storyboard Animations](../../../../docs/framework/wpf/graphics-multimedia/how-to-specify-handoffbehavior-between-storyboard-animations.md)

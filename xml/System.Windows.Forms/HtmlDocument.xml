@@ -211,6 +211,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlDocument.ForeColor" />
+        <altmember cref="P:System.Windows.Forms.HtmlDocument.LinkColor" />
+        <altmember cref="P:System.Windows.Forms.HtmlDocument.VisitedLinkColor" />
       </Docs>
     </Member>
     <Member MemberName="Body">
@@ -635,6 +638,9 @@
         <value>
           <see langword="true" /> if the document has focus; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.HtmlDocument.Focus" />
+        <altmember cref="E:System.Windows.Forms.HtmlDocument.Focusing" />
+        <altmember cref="E:System.Windows.Forms.HtmlDocument.LosingFocus" />
       </Docs>
     </Member>
     <Member MemberName="Focusing">
@@ -694,6 +700,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlDocument.BackColor" />
+        <altmember cref="P:System.Windows.Forms.HtmlDocument.LinkColor" />
+        <altmember cref="P:System.Windows.Forms.HtmlDocument.VisitedLinkColor" />
       </Docs>
     </Member>
     <Member MemberName="Forms">
@@ -1084,6 +1093,9 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlDocument.ForeColor" />
+        <altmember cref="P:System.Windows.Forms.HtmlDocument.BackColor" />
+        <altmember cref="P:System.Windows.Forms.HtmlDocument.VisitedLinkColor" />
       </Docs>
     </Member>
     <Member MemberName="Links">
@@ -1504,6 +1516,8 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentTitle" />
+        <altmember cref="T:System.Windows.Forms.WebBrowser" />
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -1554,6 +1568,9 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlDocument.BackColor" />
+        <altmember cref="P:System.Windows.Forms.HtmlDocument.ForeColor" />
+        <altmember cref="P:System.Windows.Forms.HtmlDocument.LinkColor" />
       </Docs>
     </Member>
     <Member MemberName="Window">
@@ -1617,6 +1634,7 @@ window.alert("Name is " + name + "; address is " + address);
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.HtmlDocument.OpenNew(System.Boolean)" />
       </Docs>
     </Member>
   </Members>

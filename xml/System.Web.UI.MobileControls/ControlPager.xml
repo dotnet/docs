@@ -26,6 +26,9 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.ItemPager" />
+    <altmember cref="T:System.Web.UI.MobileControls.PagedControl" />
+    <altmember cref="T:System.Web.UI.MobileControls.PagerStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

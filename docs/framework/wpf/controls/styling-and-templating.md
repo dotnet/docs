@@ -9,19 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "triggers"
-  - "styles, referencing"
-  - "event triggers"
-  - "styles, prerequisites"
-  - "styles, declaring"
-  - "styles, overview"
-  - "styles, extending"
-  - "styles, triggers"
-  - "styles, event triggers"
+  - "triggers [WPF]"
+  - "styles [WPF], referencing"
+  - "event triggers [WPF]"
+  - "styles [WPF], prerequisites"
+  - "styles [WPF], declaring"
+  - "styles [WPF], overview"
+  - "styles [WPF], extending"
+  - "styles [WPF], triggers"
+  - "styles [WPF], event triggers"
 ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
 caps.latest.revision: 34
 author: dotnet-bot
@@ -205,6 +205,6 @@ manager: "wpickett"
  If you are creating a theme for you custom control, see the External Control Library section of the [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md).  
   
 ## See Also  
- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)   
- [How to: Find ControlTemplate-Generated Elements](../../../../docs/framework/wpf/controls/how-to-find-controltemplate-generated-elements.md)   
+ [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
+ [How to: Find ControlTemplate-Generated Elements](../../../../docs/framework/wpf/controls/how-to-find-controltemplate-generated-elements.md)  
  [Find DataTemplate-Generated Elements](../../../../docs/framework/wpf/data/how-to-find-datatemplate-generated-elements.md)

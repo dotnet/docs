@@ -149,5 +149,14 @@
         <exception cref="T:System.ArgumentNullException">Specified value as <see langword="null" />, either through markup extension usage or explicit construction.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.StaticResourceExtension" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

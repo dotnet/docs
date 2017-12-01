@@ -91,5 +91,14 @@
         <exception cref="T:System.ArgumentException">The claim type of <paramref name="dnsName" /> is not <see cref="P:System.IdentityModel.Claims.ClaimTypes.Dns" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DnsEndpointIdentity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -12,8 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "picture formats"
   - "images [Windows Forms], displaying on Windows Forms"
-  - "pictures, displaying"
-  - "forms, displaying images"
+  - "pictures [Windows Forms], displaying"
+  - "forms [Windows Forms], displaying images"
   - "PictureBox control [Windows Forms], adding pictures"
 ms.assetid: 4dc7b973-afb1-4276-8322-20825af96655
 caps.latest.revision: 9
@@ -50,8 +50,8 @@ With the Windows Forms <xref:System.Windows.Forms.PictureBox> control, you can l
 1.  On the **Properties** window, select the <xref:System.Windows.Forms.PictureBox.Image%2A> property and right-click the small thumbnail image that appears to the left of the name of the image object. Choose **Reset**.  
   
 ## See Also  
- <xref:System.Windows.Forms.PictureBox>   
- [PictureBox Control Overview](../../../../docs/framework/winforms/controls/picturebox-control-overview-windows-forms.md)   
- [How to: Modify the Size or Placement of a Picture at Run Time](../../../../docs/framework/winforms/controls/how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)   
- [How to: Set Pictures at Run Time](../../../../docs/framework/winforms/controls/how-to-set-pictures-at-run-time-windows-forms.md)   
+ <xref:System.Windows.Forms.PictureBox>  
+ [PictureBox Control Overview](../../../../docs/framework/winforms/controls/picturebox-control-overview-windows-forms.md)  
+ [How to: Modify the Size or Placement of a Picture at Run Time](../../../../docs/framework/winforms/controls/how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)  
+ [How to: Set Pictures at Run Time](../../../../docs/framework/winforms/controls/how-to-set-pictures-at-run-time-windows-forms.md)  
  [PictureBox Control](../../../../docs/framework/winforms/controls/picturebox-control-windows-forms.md)

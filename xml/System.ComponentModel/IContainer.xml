@@ -48,6 +48,9 @@
     <block subset="none" type="overrides">
       <para>To be a container, the class must implement the <see cref="T:System.ComponentModel.IContainer" /> interface, which supports methods for adding, removing, and retrieving components.</para>
     </block>
+    <altmember cref="T:System.ComponentModel.Component" />
+    <altmember cref="T:System.ComponentModel.IComponent" />
+    <altmember cref="T:System.ComponentModel.Container" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -197,5 +200,15 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified component to the <see cref="T:System.ComponentModel.IContainer" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

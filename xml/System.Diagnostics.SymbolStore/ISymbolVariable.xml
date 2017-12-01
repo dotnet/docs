@@ -34,6 +34,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.SymbolStore.ISymbolMethod" />
+    <altmember cref="T:System.Diagnostics.SymbolStore.ISymbolNamespace" />
+    <altmember cref="T:System.Diagnostics.SymbolStore.ISymbolReader" />
+    <altmember cref="T:System.Diagnostics.SymbolStore.ISymbolScope" />
   </Docs>
   <Members>
     <Member MemberName="AddressField1">
@@ -68,6 +72,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.SymbolStore.SymAddressKind" />
       </Docs>
     </Member>
     <Member MemberName="AddressField2">
@@ -102,6 +107,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.SymbolStore.SymAddressKind" />
       </Docs>
     </Member>
     <Member MemberName="AddressField3">
@@ -136,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.SymbolStore.SymAddressKind" />
       </Docs>
     </Member>
     <Member MemberName="AddressKind">

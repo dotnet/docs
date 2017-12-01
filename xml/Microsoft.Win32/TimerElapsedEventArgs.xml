@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.Win32.TimerElapsedEventHandler" />
+    <altmember cref="E:Microsoft.Win32.SystemEvents.TimerElapsed" />
+    <altmember cref="T:Microsoft.Win32.SystemEvents" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,6 +41,9 @@
         <param name="timerId">The ID number for the timer.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.TimerElapsedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.Win32.TimerElapsedEventHandler" />
+        <altmember cref="E:Microsoft.Win32.SystemEvents.TimerElapsed" />
+        <altmember cref="T:Microsoft.Win32.SystemEvents" />
       </Docs>
     </Member>
     <Member MemberName="TimerId">

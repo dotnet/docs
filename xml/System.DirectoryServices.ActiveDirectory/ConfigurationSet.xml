@@ -35,6 +35,8 @@
         <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstanceCollection" /> object that contains the <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> objects that are in the configuration set.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstanceCollection" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationPartitions">
@@ -55,6 +57,8 @@
         <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection" /> object that contains the <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> objects that are in the configuration set.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -118,6 +122,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">An AD LDS instance could be not found in this configuration set.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" />
       </Docs>
     </Member>
     <Member MemberName="FindAdamInstance">
@@ -145,6 +150,7 @@
           <paramref name="partitionName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">An AD LDS instance for the specified <paramref name="partitionName" /> could not be found in this configuration set.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" />
       </Docs>
     </Member>
     <Member MemberName="FindAdamInstance">
@@ -174,6 +180,7 @@
           <paramref name="siteName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">An AD LDS instance for the specified <paramref name="partitionName" /> and <paramref name="siteName" /> parameters could not be found in this configuration set.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" />
       </Docs>
     </Member>
     <Member MemberName="FindAllAdamInstances">
@@ -195,6 +202,8 @@
         <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstanceCollection" /> object that contains the <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> objects that were found.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstanceCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAllAdamInstances">
@@ -221,6 +230,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="partitionName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstanceCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAllAdamInstances">
@@ -249,6 +260,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstanceCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetConfigurationSet">
@@ -277,6 +290,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="context" /> parameter is not valid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -317,6 +331,7 @@
         <summary>Returns the AD LDS replication security level.</summary>
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationSecurityLevel" /> value that indicates  the current AD LDS replication authentication mode.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationSecurityLevel" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -337,6 +352,7 @@
         <value>A <see cref="T:System.String" /> that contains the name of the <see cref="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" /> object.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ConfigurationSet.ToString" />
       </Docs>
     </Member>
     <Member MemberName="NamingRoleOwner">
@@ -357,6 +373,8 @@
         <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> object that represents the AD LDS instance that currently holds the domain naming master role.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ADAMInstance.Roles" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamRole" />
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -377,6 +395,7 @@
         <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" /> object that represents the schema for this configuration set.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" />
       </Docs>
     </Member>
     <Member MemberName="SchemaRoleOwner">
@@ -399,6 +418,8 @@
  instance that currently holds the schema operations master role.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ADAMInstance.Roles" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamRole" />
       </Docs>
     </Member>
     <Member MemberName="SetSecurityLevel">
@@ -423,6 +444,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="securityLevel" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationSecurityLevel" /> value.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationSecurityLevel" />
       </Docs>
     </Member>
     <Member MemberName="Sites">
@@ -443,6 +465,8 @@
         <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection" /> object that contains <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" /> objects that are in the configuration set.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -463,7 +487,18 @@
         <summary>Returns the name of the <see cref="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" /> object.</summary>
         <returns>A <see cref="T:System.String" /> that contains the name of the current <see cref="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ConfigurationSet.Name" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources that are used by the object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

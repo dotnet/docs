@@ -61,6 +61,6 @@ Asynchronous operations enable you to perform resource-intensive I/O operations 
  [!code-xaml[System.IO.WindowsRuntimeStorageExtensions#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestorageextensions/cs/blankpage.xaml#1)]  
   
 ## See Also  
- <xref:System.IO.Stream>   
- [File and Stream I/O](../../../docs/standard/io/index.md)   
+ <xref:System.IO.Stream>  
+ [File and Stream I/O](../../../docs/standard/io/index.md)  
  [Asynchronous Programming with Async and Await](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7)

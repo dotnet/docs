@@ -12,8 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "MonthCalendar"
 helpviewer_keywords: 
-  - "calendars, Windows Forms controls"
-  - "calendar controls, Windows Forms"
+  - "calendars [Windows Forms], Windows Forms controls"
+  - "calendar controls [Windows Forms], Windows Forms"
   - "MonthCalendar control [Windows Forms], setting the first day of the week"
 ms.assetid: 788c5325-b721-44ec-95bf-9b680ba0f6a2
 caps.latest.revision: 11
@@ -32,5 +32,5 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control presents an 
  The key property of the <xref:System.Windows.Forms.MonthCalendar> control is <xref:System.Windows.Forms.MonthCalendar.SelectionRange%2A>, the range of dates selected in the control. The <xref:System.Windows.Forms.MonthCalendar.SelectionRange%2A> value cannot exceed the maximum number of days that can be selected, set in the <xref:System.Windows.Forms.MonthCalendar.MaxSelectionCount%2A> property. The earliest and latest dates the user can select are determined by the <xref:System.Windows.Forms.MonthCalendar.MaxDate%2A> and <xref:System.Windows.Forms.MonthCalendar.MinDate%2A> properties.  
   
 ## See Also  
- <xref:System.Windows.Forms.MonthCalendar>   
+ <xref:System.Windows.Forms.MonthCalendar>  
  [MonthCalendar Control](../../../../docs/framework/winforms/controls/monthcalendar-control-windows-forms.md)

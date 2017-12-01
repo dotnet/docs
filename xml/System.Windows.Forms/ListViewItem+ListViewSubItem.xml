@@ -61,6 +61,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListViewItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +97,7 @@
         <param name="text">The text to display for the subitem.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> class with the specified owner and text.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -122,6 +124,9 @@
         <param name="font">A <see cref="T:System.Drawing.Font" /> that represents the font to display the subitem's text in.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> class with the specified owner, text, foreground color, background color, and font values.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="T:System.Drawing.Font" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -149,6 +154,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -232,6 +239,9 @@ ListViewItem1.SubItems[1].Font = New Font(ListViewItem1.SubItems[1].Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Font" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.Font" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -268,6 +278,8 @@ ListViewItem1.SubItems[1].Font = New Font(ListViewItem1.SubItems[1].Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -332,6 +344,9 @@ ListViewItem1.SubItems[1].Font = New Font(ListViewItem1.SubItems[1].Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ListViewSubItem.Font" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ListViewSubItem.ForeColor" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ListViewSubItem.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -401,6 +416,10 @@ ListViewItem1.SubItems[1].Font = New Font(ListViewItem1.SubItems[1].Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListViewItem.Text" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ListViewSubItem.BackColor" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ListViewSubItem.ForeColor" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ListViewSubItem.Font" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -420,7 +439,17 @@ ListViewItem1.SubItems[1].Font = New Font(ListViewItem1.SubItems[1].Font, _
         <summary>Returns a string that represents the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

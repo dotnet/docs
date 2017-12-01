@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ContextMenuOpening event"
+  - "ContextMenuOpening properties [WPF]"
 ms.assetid: 789652fb-1951-4217-934a-7843e355adf4
 caps.latest.revision: 7
 author: dotnet-bot
@@ -62,7 +62,7 @@ The <xref:System.Windows.FrameworkElement.ContextMenuOpening> event can be handl
  [!code-csharp[ContextMenuOpeningHandlers#ReplaceReopen](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuOpeningHandlers/CSharp/Pane1.xaml.cs#replacereopen)]  
   
 ## See Also  
- <xref:System.Windows.Controls.ContextMenu>   
- <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=nameWithType>   
- [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)   
+ <xref:System.Windows.Controls.ContextMenu>  
+ <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=nameWithType>  
+ [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)  
  [ContextMenu Overview](../../../../docs/framework/wpf/controls/contextmenu-overview.md)

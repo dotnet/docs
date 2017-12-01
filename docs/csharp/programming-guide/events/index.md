@@ -1,13 +1,9 @@
 ---
 title: "Events (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "classes [C#], events"
@@ -17,22 +13,6 @@ ms.assetid: a8e51b22-d294-44fb-9539-0072f06c4cb3
 caps.latest.revision: 43
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Events (C# Programming Guide)
 Events enable a [class](../../../csharp/language-reference/keywords/class.md) or object to notify other classes or objects when something of interest occurs. The class that sends (or *raises*) the event is called the *publisher* and the classes that receive (or *handle*) the event are called *subscribers*.  
@@ -80,8 +60,8 @@ Events enable a [class](../../../csharp/language-reference/keywords/class.md) or
  [Delegates and Events](http://go.microsoft.com/fwlink/?LinkId=195418) in [Learning C# 3.0: Master the fundamentals of C# 3.0](http://go.microsoft.com/fwlink/?LinkId=195412)  
   
 ## See Also  
- <xref:System.EventHandler>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Delegates](../../../csharp/programming-guide/delegates/index.md)   
- [Creating Event Handlers in Windows Forms](https://msdn.microsoft.com/library/dacysss4.aspx)   
+ <xref:System.EventHandler>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+ [Creating Event Handlers in Windows Forms](https://msdn.microsoft.com/library/dacysss4.aspx)  
  [Multithreaded Programming with the Event-based Asynchronous Pattern](https://msdn.microsoft.com/library/hkasytyf)

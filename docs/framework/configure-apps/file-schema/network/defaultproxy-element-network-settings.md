@@ -32,12 +32,12 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
   
 ```xml  
       <defaultProxy  
-  enabled="true|false"  
-  useDefaultCredentials="true|false"  
-  <bypasslist> … </bypasslist>  
-  <proxy> … </proxy>  
-  <module> … </module>  
-/>  
+        enabled="true|false"  
+        useDefaultCredentials="true|false">  
+           <bypasslist> … </bypasslist>  
+           <proxy> … </proxy>  
+           <module> … </module>  
+      </defaultProxy>
 ```  
   
 ## Attributes and Elements  
@@ -93,5 +93,5 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
 ```  
   
 ## See Also  
- <xref:System.Net.WebProxy?displayProperty=nameWithType>   
+ <xref:System.Net.WebProxy?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

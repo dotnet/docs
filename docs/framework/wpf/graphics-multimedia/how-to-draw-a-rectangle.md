@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "drawing, rectangles"
+  - "drawing [WPF], rectangles"
   - "graphics [WPF], rectangles"
-  - "rectangles, drawing"
+  - "rectangles [WPF], drawing"
 ms.assetid: beeb57ef-fab5-4446-a38a-1588f97b4c2f
 caps.latest.revision: 10
 author: dotnet-bot
@@ -36,7 +36,7 @@ This example shows how to draw a rectangle by using the <xref:System.Windows.Sha
  This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037).  
   
 ## See Also  
- <xref:System.Windows.Shapes.Rectangle>   
- [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037)   
- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)   
+ <xref:System.Windows.Shapes.Rectangle>  
+ [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037)  
+ [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
  [Table Overview](../../../../docs/framework/wpf/advanced/table-overview.md)

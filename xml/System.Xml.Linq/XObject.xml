@@ -80,8 +80,7 @@
  The following example adds an annotation to an <xref:System.Xml.Linq.XElement>.  
   
 ```csharp  
-  
-                public class MyAnnotation {  
+public class MyAnnotation {  
     private string tag;  
     public string Tag {get{return tag;} set{tag=value;}}  
     public MyAnnotation(string tag) {  
@@ -102,8 +101,7 @@ public class Program {
 ```  
   
 ```vb  
-  
-                Public Class MyAnnotation  
+Public Class MyAnnotation  
     Private _tag As String  
   
     Property Tag() As String  
@@ -136,7 +134,6 @@ End Module
  This example produces the following output:  
   
 ```  
-  
 T1  
 ```  
   
@@ -181,8 +178,7 @@ T1
  The following example adds an annotation to an <xref:System.Xml.Linq.XElement>. It then retrieves the annotation, specifying the type to retrieve.  
   
 ```csharp  
-  
-                public class MyAnnotation {  
+public class MyAnnotation {  
     private string tag;  
     public string Tag {get{return tag;} set{tag=value;}}  
     public MyAnnotation(string tag) {  
@@ -203,8 +199,7 @@ public class Program {
 ```  
   
 ```vb  
-  
-                Public Class MyAnnotation  
+Public Class MyAnnotation  
     Private _tag As String  
   
     Property Tag() As String  
@@ -237,7 +232,6 @@ End Module
  This example produces the following output:  
   
 ```  
-  
 T1  
 ```  
   
@@ -287,8 +281,7 @@ T1
  The following example adds an annotation to an element, and then retrieves it through this method.  
   
 ```csharp  
-  
-                public class MyAnnotation {  
+public class MyAnnotation {  
     private string tag;  
     public string Tag {get{return tag;} set{tag=value;}}  
     public MyAnnotation(string tag) {  
@@ -309,8 +302,7 @@ public class Program {
 ```  
   
 ```vb  
-  
-                Public Class MyAnnotation  
+Public Class MyAnnotation  
     Private _tag As String  
   
     Property Tag() As String  
@@ -342,7 +334,6 @@ End Module
  This example produces the following output:  
   
 ```  
-  
 T1  
 ```  
   
@@ -387,8 +378,7 @@ T1
  The following example adds some annotations to an <xref:System.Xml.Linq.XElement>, then retrieves a collection of annotations by using this method.  
   
 ```csharp  
-  
-                public class MyAnnotation  
+public class MyAnnotation  
 {  
     private string tag;  
     public string Tag { get { return tag; } set { tag = value; } }  
@@ -423,8 +413,7 @@ class Program
 ```  
   
 ```vb  
-  
-                Public Class MyAnnotation  
+Public Class MyAnnotation  
     Private _tag As String  
   
     Property Tag() As String  
@@ -469,8 +458,7 @@ End Module
  This example produces the following output:  
   
 ```  
-  
-                T1  
+T1  
 T2  
 ----  
 abc  
@@ -523,8 +511,7 @@ def
  The following example uses this method to retrieve annotations on an element.  
   
 ```csharp  
-  
-                public class MyAnnotation {  
+public class MyAnnotation {  
     private string tag;  
     public string Tag {get{return tag;} set{tag=value;}}  
     public MyAnnotation(string tag) {  
@@ -555,8 +542,7 @@ class Program {
 ```  
   
 ```vb  
-  
-                Public Class MyAnnotation  
+Public Class MyAnnotation  
     Private _tag As String  
   
     Property Tag() As String  
@@ -600,8 +586,7 @@ End Module
  This example produces the following output:  
   
 ```  
-  
-                T1  
+T1  
 T2  
 ----  
 abc  
@@ -660,8 +645,7 @@ def
  This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348).  
   
 ```csharp  
-  
-                XElement po = XElement.Load("PurchaseOrder.xml",  
+XElement po = XElement.Load("PurchaseOrder.xml",  
     LoadOptions.SetBaseUri | LoadOptions.SetLineInfo);  
 string[] splitUri = po.BaseUri.Split('/');  
 Console.WriteLine("BaseUri: {0}", splitUri[splitUri.Length - 1]);  
@@ -682,8 +666,7 @@ foreach (XElement e in po.DescendantsAndSelf())
 ```  
   
 ```vb  
-  
-                Dim po As XElement = XElement.Load("PurchaseOrder.xml", LoadOptions.SetBaseUri Or LoadOptions.SetLineInfo)  
+Dim po As XElement = XElement.Load("PurchaseOrder.xml", LoadOptions.SetBaseUri Or LoadOptions.SetLineInfo)  
 Dim splitUri() As String = po.BaseUri.Split("/"c)  
 Console.WriteLine("BaseUri: {0}", splitUri(splitUri.Length - 1))  
 Console.WriteLine()  
@@ -706,8 +689,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                BaseUri: PurchaseOrder.xml  
+BaseUri: PurchaseOrder.xml  
   
 Element Name        Line Position  
 ------------        ---- --------  
@@ -783,8 +765,7 @@ PurchaseOrder       2    2
  The following example adds an event handler to the root element of an XML tree. It then modifies the tree, causing LINQ to XML to raise some events.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root", "content");  
+XElement root = new XElement("Root", "content");  
 root.Changing += new EventHandler<XObjectChangeEventArgs>(  
     (sender, cea) =>  
     {  
@@ -807,8 +788,7 @@ root.Add(new XElement("Child", "child content"));
 ```  
   
 ```vb  
-  
-                Module Module1  
+Module Module1  
     WithEvents root As XElement = <Root>content</Root>  
   
     Sub Main()  
@@ -835,14 +815,12 @@ root.Add(new XElement("Child", "child content"));
         Console.WriteLine("  ObjectChange: {0}", e.ObjectChange)  
     End Sub  
 End Module  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                Changing event raised  
+Changing event raised  
   Sender: Child  
   ObjectChange: Add  
 Changed event raised  
@@ -853,8 +831,7 @@ Changed event raised
  Events are useful when you want to maintain some aggregate information in an XML tree. For example, you may want maintain an invoice total that is the sum of the line items of the invoice. This example uses events to maintain the total of all of the child elements under the complex element `Items`.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XElement("Total", 0),  
     new XElement("Items")  
 );  
@@ -890,8 +867,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Module Module1  
+Module Module1  
     Private total As XElement = Nothing  
     Private WithEvents items As XElement = Nothing  
     Private root As XElement = _  
@@ -942,14 +918,12 @@ Console.WriteLine(root);
                             cea.ObjectChange.ToString())  
     End Sub  
 End Module  
-  
 ```  
   
  This code produces the following output:  
   
 ```  
-  
-                Changed System.Xml.Linq.XElement Add  
+Changed System.Xml.Linq.XElement Add  
 Changed System.Xml.Linq.XElement Add  
 Changed System.Xml.Linq.XText Remove  
 Changed System.Xml.Linq.XText Add  
@@ -1010,8 +984,7 @@ Total:308
  The following example adds an event handler to the root element of an XML tree. It then modifies the tree, causing LINQ to XML to raise some events.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root", "content");  
+XElement root = new XElement("Root", "content");  
 root.Changing += new EventHandler<XObjectChangeEventArgs>(  
     (sender, cea) =>  
     {  
@@ -1034,8 +1007,7 @@ root.Add(new XElement("Child", "child content"));
 ```  
   
 ```vb  
-  
-                Module Module1  
+Module Module1  
     WithEvents root As XElement = <Root>content</Root>  
   
     Sub Main()  
@@ -1067,8 +1039,7 @@ End Module
  This example produces the following output:  
   
 ```  
-  
-                Changing event raised  
+Changing event raised  
   Sender: Child  
   ObjectChange: Add  
 Changed event raised  
@@ -1113,8 +1084,7 @@ Changed event raised
  The following example creates a document with some complex content. It then uses this property to retrieve the document for the `Child` element.  
   
 ```csharp  
-  
-                XDocument doc = new XDocument(  
+XDocument doc = new XDocument(  
     new XComment("A comment in the document."),  
     new XElement("Root",  
         new XElement("Child", "content")  
@@ -1126,8 +1096,7 @@ Console.WriteLine(documentOfChild.FirstNode);
 ```  
   
 ```vb  
-  
-                Dim doc As XDocument = _  
+Dim doc As XDocument = _  
         <?xml version="1.0"?>  
         <!--A comment in the document.-->  
         <Root>  
@@ -1141,7 +1110,6 @@ Console.WriteLine(documentOfChild.FirstNode)
  This example produces the following output:  
   
 ```  
-  
 <!--A comment in the document.-->  
 ```  
   
@@ -1187,8 +1155,7 @@ Console.WriteLine(documentOfChild.FirstNode)
  The following example uses this method to retrieve the node type for a variety of nodes.  
   
 ```csharp  
-  
-                // Note that XNode uses XmlNodeType, which is in the System.Xml namespace.  
+// Note that XNode uses XmlNodeType, which is in the System.Xml namespace.  
 XDocument xmlTree = new XDocument(  
     new XComment("a comment"),  
     new XProcessingInstruction("xml-stylesheet", "type=\"text/xsl\" href=\"hello.xsl\""),  
@@ -1215,8 +1182,7 @@ foreach (XNode node in xmlTree.DescendantNodes())
 ```  
   
 ```vb  
-  
-                ' Note that XNode uses XmlNodeType, which is in the System.Xml  namespace.  
+' Note that XNode uses XmlNodeType, which is in the System.Xml  namespace.  
 Dim xmlTree As XDocument = _   
     <?xml version="1.0"?>  
     <!--a comment-->  
@@ -1234,14 +1200,12 @@ For Each node As XNode In xmlTree.DescendantNodes
         Next  
     End If  
 Next  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                Comment  
+Comment  
 ProcessingInstruction  
 Element  
 Attribute  
@@ -1296,8 +1260,7 @@ Text
  The following example uses this method.  
   
 ```csharp  
-  
-                XDocument doc = new XDocument(  
+XDocument doc = new XDocument(  
     new XComment("A comment in the document."),  
     new XElement("Root",  
         new XElement("Child", "content")  
@@ -1309,8 +1272,7 @@ Console.WriteLine(root.Name);
 ```  
   
 ```vb  
-  
-                Dim doc As XDocument = _   
+Dim doc As XDocument = _   
     <?xml version="1.0"?>  
     <!--A comment in the document.-->  
     <Root>  
@@ -1324,7 +1286,6 @@ Console.WriteLine(root.Name)
  This example produces the following output:  
   
 ```  
-  
 Root  
 ```  
   
@@ -1368,8 +1329,7 @@ Root
  The following example creates an element with four annotations on it. It then uses this method to remove two of them.  
   
 ```csharp  
-  
-                public class MyAnnotation {  
+public class MyAnnotation {  
     private string tag;  
     public string Tag {get{return tag;} set{tag=value;}}  
     public MyAnnotation(string tag) {  
@@ -1395,8 +1355,7 @@ class Program
 ```  
   
 ```vb  
-  
-                Public Class MyAnnotation  
+Public Class MyAnnotation  
     Private _tag As String  
   
     Property Tag() As String  
@@ -1431,8 +1390,7 @@ End Module
  This example produces the following output:  
   
 ```  
-  
-                Count before removing: 4  
+Count before removing: 4  
 Count after removing: 2  
 ```  
   
@@ -1481,8 +1439,7 @@ Count after removing: 2
  The following example creates an element with four annotations on it. It then uses this method to remove two of them.  
   
 ```csharp  
-  
-                public class MyAnnotation {  
+public class MyAnnotation {  
     private string tag;  
     public string Tag {get{return tag;} set{tag=value;}}  
     public MyAnnotation(string tag) {  
@@ -1506,8 +1463,7 @@ class Program {
 ```  
   
 ```vb  
-  
-                Public Class MyAnnotation  
+Public Class MyAnnotation  
     Private _tag As String  
   
     Property Tag() As String  
@@ -1542,8 +1498,7 @@ End Module
  This example produces the following output:  
   
 ```  
-  
-                Count before removing: 4  
+Count before removing: 4  
 Count after removing: 2  
 ```  
   
@@ -1593,8 +1548,7 @@ Count after removing: 2
  This example loads a small XML tree from a file, setting the options to set base URI and retain line information. It then adds another element that does not have line information. It then prints the line information for each element in the tree.  
   
 ```csharp  
-  
-                string markup = @"<Root>  
+string markup = @"<Root>  
     <Child1 />  
     <Child2 />  
     <Child4 />  
@@ -1632,8 +1586,7 @@ foreach (XElement e in po.DescendantsAndSelf())
 ```  
   
 ```vb  
-  
-                Dim markup As String = _  
+Dim markup As String = _  
     "<Root>" & Environment.NewLine & _  
     "    <Child1 />" & Environment.NewLine & _  
     "    <Child2 />" & Environment.NewLine & _  
@@ -1674,8 +1627,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                BaseUri: Test.xml  
+BaseUri: Test.xml  
   
 Element Name        Line Position  
 ------------        ---- --------  
@@ -1728,8 +1680,7 @@ Root                1    2
  This example loads a small XML tree from a file, setting the options to set base URI and retain line information. It then adds another element that does not have line information. It then prints the line information for each element in the tree.  
   
 ```csharp  
-  
-                string markup = @"<Root>  
+string markup = @"<Root>  
     <Child1 />  
     <Child2 />  
     <Child4 />  
@@ -1767,8 +1718,7 @@ foreach (XElement e in po.DescendantsAndSelf())
 ```  
   
 ```vb  
-  
-                Dim markup As String = _  
+Dim markup As String = _  
     "<Root>" & Environment.NewLine & _  
     "    <Child1 />" & Environment.NewLine & _  
     "    <Child2 />" & Environment.NewLine & _  
@@ -1809,8 +1759,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                BaseUri: Test.xml  
+BaseUri: Test.xml  
   
 Element Name        Line Position  
 ------------        ---- --------  
@@ -1863,8 +1812,7 @@ Root                1    2
  This example loads a small XML tree from a file, setting the options to set base URI and retain line information. It then adds another element that does not have line information. It then prints the line information for each element in the tree.  
   
 ```csharp  
-  
-                string markup = @"<Root>  
+string markup = @"<Root>  
     <Child1 />  
     <Child2 />  
     <Child4 />  
@@ -1902,8 +1850,7 @@ foreach (XElement e in po.DescendantsAndSelf())
 ```  
   
 ```vb  
-  
-                Dim markup As String = _  
+Dim markup As String = _  
     "<Root>" & Environment.NewLine & _  
     "    <Child1 />" & Environment.NewLine & _  
     "    <Child2 />" & Environment.NewLine & _  
@@ -1944,8 +1891,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                BaseUri: Test.xml  
+BaseUri: Test.xml  
   
 Element Name        Line Position  
 ------------        ---- --------  

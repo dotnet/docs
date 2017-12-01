@@ -28,6 +28,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Management.SqlServices" />
+    <altmember cref="T:System.SystemException" />
+    <altmember cref="T:System.Data.SqlClient.SqlException" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,6 +112,7 @@
         <param name="sqlException">The <see cref="T:System.Data.SqlClient.SqlException" /> encountered when processing the SQL commands.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Management.SqlExecutionException" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Data.SqlClient.SqlException" />
       </Docs>
     </Member>
     <Member MemberName="Commands">
@@ -193,6 +197,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.SqlClient.SqlException" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -274,5 +279,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.SqlExecutionException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

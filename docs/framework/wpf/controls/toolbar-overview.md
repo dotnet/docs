@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "controls, ToolBar"
-  - "ToolBar control"
+  - "controls [WPF], ToolBar"
+  - "ToolBar control [WPF]"
 ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b
 caps.latest.revision: 28
 author: dotnet-bot
@@ -48,7 +48,7 @@ Toolbar with Overflow Items
  [ToolBar Styles and Templates](../../../../docs/framework/wpf/controls/toolbar-styles-and-templates.md).  
   
 ## See Also  
- <xref:System.Windows.Controls.Primitives.ToolBarPanel>   
- <xref:System.Windows.Controls.Primitives.ToolBarOverflowPanel>   
- [Style Controls on a ToolBar](../../../../docs/framework/wpf/controls/how-to-style-controls-on-a-toolbar.md)   
+ <xref:System.Windows.Controls.Primitives.ToolBarPanel>  
+ <xref:System.Windows.Controls.Primitives.ToolBarOverflowPanel>  
+ [Style Controls on a ToolBar](../../../../docs/framework/wpf/controls/how-to-style-controls-on-a-toolbar.md)  
  [WPF Controls Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160053)

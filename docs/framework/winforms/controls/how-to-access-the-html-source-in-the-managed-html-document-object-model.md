@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "managed HTML DOM"
-  - "HTML, accessing in Windows Forms"
+  - "HTML [Windows Forms], accessing in Windows Forms"
 ms.assetid: 53db79fa-8a5e-448e-88c2-f54ace3860b6
 caps.latest.revision: 10
 author: dotnet-bot
@@ -52,5 +52,5 @@ The <xref:System.Windows.Forms.WebBrowser.DocumentStream%2A> and <xref:System.Wi
  Always test the value of <xref:System.Windows.Forms.WebBrowser.Document%2A> before attempting to retrieve it. If the current page is not finished loading, <xref:System.Windows.Forms.WebBrowser.Document%2A> or one or more of its child objects may not be initialized.  
   
 ## See Also  
- [Using the Managed HTML Document Object Model](../../../../docs/framework/winforms/controls/using-the-managed-html-document-object-model.md)   
+ [Using the Managed HTML Document Object Model](../../../../docs/framework/winforms/controls/using-the-managed-html-document-object-model.md)  
  [WebBrowser Control Overview](../../../../docs/framework/winforms/controls/webbrowser-control-overview.md)

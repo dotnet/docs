@@ -29,6 +29,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.ParallelTimeline" />
+    <altmember cref="T:System.Windows.Media.Animation.Storyboard" />
+    <altmember cref="T:System.Windows.Media.Animation.BeginStoryboard" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -365,5 +368,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.TimelineGroup" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

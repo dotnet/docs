@@ -10,12 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "animation, camera position in 3-D scenes"
-  - "camera direction, animating in 3-D scenes"
-  - "3-D scenes, animating camera position"
-  - "3-D scenes, animating camera direction"
-  - "camera position, animating in 3-D scenes"
-  - "animation, camera direction in 3-D scenes"
+  - "animation [WPF], camera position in 3-D scenes"
+  - "camera direction [WPF], animating in 3-D scenes"
+  - "3-D scenes [WPF], animating camera position"
+  - "3-D scenes [WPF], animating camera direction"
+  - "camera position [WPF], animating in 3-D scenes"
+  - "animation [WPF], camera direction in 3-D scenes"
 ms.assetid: 480224b7-a5e5-4165-ba7f-ef760ddff94a
 caps.latest.revision: 4
 author: dotnet-bot
@@ -29,7 +29,7 @@ The following example shows how to animate the position of a camera and animate 
  [!code-xaml[Animation3DGallery_snip#PointVector3DAnimationExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/PointVector3DAnimationExample.xaml#pointvector3danimationexamplewholepage)]  
   
 ## See Also  
- <xref:System.Windows.Media.Animation.Vector3DAnimation>   
- <xref:System.Windows.Media.Animation.Point3DAnimation>   
- [Animate Camera Position and Direction Using Key Frames](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-camera-position-and-direction-using-key-frames.md)   
+ <xref:System.Windows.Media.Animation.Vector3DAnimation>  
+ <xref:System.Windows.Media.Animation.Point3DAnimation>  
+ [Animate Camera Position and Direction Using Key Frames](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-camera-position-and-direction-using-key-frames.md)  
  [3-D Graphics Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)

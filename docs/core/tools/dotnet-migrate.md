@@ -33,7 +33,7 @@ Migration is performed on the following:
 * A *solution.sln* file, where it migrates the projects referenced in the solution.
 * On all sub-directories of the given directory recursively.
 
-The `dotnet migrate` command keeps the migrated *project.json* file inside a `backup` directory, which it creates if the directory doesn't exist. This behavior is overriden using the `--skip-backup` option.
+The `dotnet migrate` command keeps the migrated *project.json* file inside a `backup` directory, which it creates if the directory doesn't exist. This behavior is overridden using the `--skip-backup` option.
 
 By default, the migration operation outputs the state of the migration process to standard output (STDOUT). If you use the `--report-file <REPORT_FILE>` option, the output is saved to the file specify. 
 

@@ -28,6 +28,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.ServiceProcess.ServiceController.WaitForStatus(System.ServiceProcess.ServiceControllerStatus)" />
+    <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
+    <altmember cref="T:System.ServiceProcess.ServiceController" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerStatus" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -122,7 +126,18 @@
         <param name="innerException">The exception that caused the current exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.TimeoutException" /> class with the specified message text and inner exception.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.TimeoutException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

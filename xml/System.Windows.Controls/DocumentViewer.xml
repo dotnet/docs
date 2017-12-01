@@ -35,6 +35,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.DocumentPaginator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +85,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanIncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.Zoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.IncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.DecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnIncreaseZoomCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnDecreaseZoomCommand" />
+        <altmember cref="T:System.Windows.Documents.ZoomPercentageConverter" />
       </Docs>
     </Member>
     <Member MemberName="CanDecreaseZoomProperty">
@@ -101,6 +109,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DocumentViewer.CanDecreaseZoom" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.CanIncreaseZoomProperty" />
       </Docs>
     </Member>
     <Member MemberName="CanIncreaseZoom">
@@ -135,6 +144,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanDecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.Zoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.IncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.DecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnIncreaseZoomCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnDecreaseZoomCommand" />
+        <altmember cref="T:System.Windows.Documents.ZoomPercentageConverter" />
       </Docs>
     </Member>
     <Member MemberName="CanIncreaseZoomProperty">
@@ -152,6 +168,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DocumentViewer.CanIncreaseZoom" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.CanDecreaseZoomProperty" />
       </Docs>
     </Member>
     <Member MemberName="CanMoveDown">
@@ -185,6 +202,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanMoveLeft" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanMoveRight" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanMoveUp" />
       </Docs>
     </Member>
     <Member MemberName="CanMoveDownProperty">
@@ -202,6 +222,9 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DocumentViewer.CanMoveDown" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.CanMoveLeftProperty" />
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.CanMoveRightProperty" />
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.CanMoveUpProperty" />
       </Docs>
     </Member>
     <Member MemberName="CanMoveLeft">
@@ -235,6 +258,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanMoveDown" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanMoveRight" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanMoveUp" />
       </Docs>
     </Member>
     <Member MemberName="CanMoveLeftProperty">
@@ -252,6 +278,9 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DocumentViewer.CanMoveLeft" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.CanMoveDownProperty" />
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.CanMoveRightProperty" />
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.CanMoveUpProperty" />
       </Docs>
     </Member>
     <Member MemberName="CanMoveRight">
@@ -285,6 +314,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanMoveDown" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanMoveLeft" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanMoveUp" />
       </Docs>
     </Member>
     <Member MemberName="CanMoveRightProperty">
@@ -302,6 +334,9 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DocumentViewer.CanMoveRight" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.CanMoveDownProperty" />
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.CanMoveLeftProperty" />
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.CanMoveUpProperty" />
       </Docs>
     </Member>
     <Member MemberName="CanMoveUp">
@@ -335,6 +370,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanMoveDown" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanMoveLeft" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanMoveRight" />
       </Docs>
     </Member>
     <Member MemberName="CanMoveUpProperty">
@@ -352,6 +390,9 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DocumentViewer.CanMoveUp" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.CanMoveDownProperty" />
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.CanMoveLeftProperty" />
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.CanMoveRightProperty" />
       </Docs>
     </Member>
     <Member MemberName="DecreaseZoom">
@@ -397,6 +438,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanIncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.Zoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.IncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnDecreaseZoomCommand" />
+        <altmember cref="T:System.Windows.Documents.ZoomPercentageConverter" />
       </Docs>
     </Member>
     <Member MemberName="ExtentHeight">
@@ -430,6 +476,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ExtentWidth" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.HorizontalOffset" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.VerticalOffset" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ViewportHeight" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ViewportWidth" />
       </Docs>
     </Member>
     <Member MemberName="ExtentHeightProperty">
@@ -447,6 +498,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DocumentViewer.ExtentHeight" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.ExtentWidthProperty" />
       </Docs>
     </Member>
     <Member MemberName="ExtentWidth">
@@ -480,6 +532,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ExtentHeight" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.HorizontalOffset" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.VerticalOffset" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ViewportHeight" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ViewportWidth" />
+        <altmember cref="Overload:System.Windows.Controls.DocumentViewer.FitToMaxPagesAcross" />
       </Docs>
     </Member>
     <Member MemberName="ExtentWidthProperty">
@@ -497,6 +555,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DocumentViewer.ExtentWidth" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.ExtentHeightProperty" />
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -515,6 +574,7 @@
       <Docs>
         <summary>Moves focus to the find toolbar to search the document content.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnFindCommand" />
       </Docs>
     </Member>
     <Member MemberName="FitToHeight">
@@ -533,6 +593,9 @@
       <Docs>
         <summary>Fits a single page to the height of the current viewport.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnFitToHeightCommand" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.FitToHeightCommand" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ExtentHeight" />
       </Docs>
     </Member>
     <Member MemberName="FitToHeightCommand">
@@ -551,6 +614,8 @@
         <summary>Gets the <see cref="T:System.Windows.Input.RoutedUICommand" /> that performs the <see cref="M:System.Windows.Controls.DocumentViewer.FitToHeight" /> operation.</summary>
         <value>The routed command that performs the <see cref="M:System.Windows.Controls.DocumentViewer.FitToHeight" /> operation.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.FitToWidthCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnFitToHeightCommand" />
       </Docs>
     </Member>
     <Member MemberName="FitToMaxPagesAcross">
@@ -569,6 +634,8 @@
       <Docs>
         <summary>Fits the document to the current <see cref="P:System.Windows.Controls.DocumentViewer.MaxPagesAcross" /> property setting.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnFitToMaxPagesAcrossCommand" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ExtentWidth" />
       </Docs>
     </Member>
     <Member MemberName="FitToMaxPagesAcross">
@@ -590,6 +657,8 @@
         <param name="pagesAcross">The maximum number of pages to fit in the current <see cref="P:System.Windows.Controls.DocumentViewer.ExtentWidth" />.</param>
         <summary>Fits the document to a specified maximum number of page widths.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnFitToMaxPagesAcrossCommand(System.Int32)" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ExtentWidth" />
       </Docs>
     </Member>
     <Member MemberName="FitToMaxPagesAcrossCommand">
@@ -608,6 +677,8 @@
         <summary>Gets the <see cref="T:System.Windows.Input.RoutedUICommand" /> that performs the <see cref="P:System.Windows.Controls.DocumentViewer.MaxPagesAcross" /> operation.</summary>
         <value>The routed command that performs the <see cref="P:System.Windows.Controls.DocumentViewer.MaxPagesAcross" /> operation.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.FitToWidthCommand" />
+        <altmember cref="Overload:System.Windows.Controls.DocumentViewer.OnFitToMaxPagesAcrossCommand" />
       </Docs>
     </Member>
     <Member MemberName="FitToWidth">
@@ -626,6 +697,9 @@
       <Docs>
         <summary>Fits a single page to the width of the current viewport.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnFitToWidthCommand" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.FitToWidthCommand" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ExtentWidth" />
       </Docs>
     </Member>
     <Member MemberName="FitToWidthCommand">
@@ -651,6 +725,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.FitToHeightCommand" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.FitToMaxPagesAcrossCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnFitToWidthCommand" />
       </Docs>
     </Member>
     <Member MemberName="GetPageViewsCollection">
@@ -711,6 +788,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value specified to set is negative.</exception>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ExtentHeight" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ExtentWidth" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.VerticalOffset" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ViewportHeight" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ViewportWidth" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalOffsetProperty">
@@ -728,6 +810,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DocumentViewer.HorizontalOffset" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.VerticalOffsetProperty" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalPageSpacing">
@@ -764,6 +847,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value specified to set is negative.</exception>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.VerticalPageSpacing" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ShowPageBorders" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalPageSpacingProperty">
@@ -781,6 +866,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DocumentViewer.HorizontalPageSpacing" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.VerticalPageSpacing" />
       </Docs>
     </Member>
     <Member MemberName="IncreaseZoom">
@@ -826,6 +912,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanDecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.Zoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.DecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnIncreaseZoomCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnDecreaseZoomCommand" />
+        <altmember cref="T:System.Windows.Documents.ZoomPercentageConverter" />
       </Docs>
     </Member>
     <Member MemberName="MaxPagesAcross">
@@ -894,6 +986,10 @@
       <Docs>
         <summary>Scrolls the document content down 16 device independent pixels.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.MoveLeft" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.MoveRight" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.MoveUp" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveDownCommand" />
       </Docs>
     </Member>
     <Member MemberName="MoveLeft">
@@ -912,6 +1008,10 @@
       <Docs>
         <summary>Scrolls the document content left 16 device independent pixels.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.MoveDown" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.MoveRight" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.MoveUp" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveLeftCommand" />
       </Docs>
     </Member>
     <Member MemberName="MoveRight">
@@ -930,6 +1030,10 @@
       <Docs>
         <summary>Scrolls the document content right 16 device independent pixels.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.MoveDown" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.MoveLeft" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.MoveUp" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveRightCommand" />
       </Docs>
     </Member>
     <Member MemberName="MoveUp">
@@ -948,6 +1052,10 @@
       <Docs>
         <summary>Scrolls the document content up 16 device independent pixels.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.MoveDown" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.MoveLeft" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.MoveRight" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveUpCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnApplyTemplate">
@@ -1035,6 +1143,13 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.DecreaseZoom" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanIncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanDecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.Zoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.IncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.DecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnIncreaseZoomCommand" />
+        <altmember cref="T:System.Windows.Documents.ZoomPercentageConverter" />
       </Docs>
     </Member>
     <Member MemberName="OnDocumentChanged">
@@ -1104,6 +1219,7 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.FirstPage" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnLastPageCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnFitToHeightCommand">
@@ -1122,6 +1238,7 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.FitToHeight" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnFitToWidthCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnFitToMaxPagesAcrossCommand">
@@ -1140,6 +1257,8 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.FitToMaxPagesAcross" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnFitToWidthCommand" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.MaxPagesAcross" />
       </Docs>
     </Member>
     <Member MemberName="OnFitToMaxPagesAcrossCommand">
@@ -1161,6 +1280,8 @@
         <param name="pagesAcross">The number of pages to fit across the content area.</param>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.FitToMaxPagesAcross(System.Int32)" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnFitToWidthCommand" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.MaxPagesAcross" />
       </Docs>
     </Member>
     <Member MemberName="OnFitToWidthCommand">
@@ -1179,6 +1300,8 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.FitToWidth" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnFitToHeightCommand" />
+        <altmember cref="Overload:System.Windows.Controls.DocumentViewer.OnFitToMaxPagesAcrossCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnGoToPageCommand">
@@ -1225,6 +1348,13 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.IncreaseZoom" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanIncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanDecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.Zoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.IncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.DecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnDecreaseZoomCommand" />
+        <altmember cref="T:System.Windows.Documents.ZoomPercentageConverter" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -1264,6 +1394,7 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.LastPage" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnFirstPageCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeftButtonDown">
@@ -1303,6 +1434,8 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.MoveDown" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveUpCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveRightCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnMoveLeftCommand">
@@ -1321,6 +1454,9 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.MoveLeft" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveDownCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveRightCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveUpCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnMoveRightCommand">
@@ -1339,6 +1475,9 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.MoveRight" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveDownCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveLeftCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveUpCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnMoveUpCommand">
@@ -1357,6 +1496,9 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.MoveUp" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveDownCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveLeftCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnMoveRightCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnNextPageCommand">
@@ -1375,6 +1517,7 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.NextPage" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnPreviousPageCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewMouseWheel">
@@ -1414,6 +1557,7 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.PreviousPage" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnNextPageCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnScrollPageDownCommand">
@@ -1432,6 +1576,9 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.ScrollPageDown" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageLeftCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageRightCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageUpCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnScrollPageLeftCommand">
@@ -1450,6 +1597,9 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.ScrollPageLeft" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageDownCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageRightCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageUpCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnScrollPageRightCommand">
@@ -1468,6 +1618,9 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.ScrollPageRight" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageDownCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageLeftCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageUpCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnScrollPageUpCommand">
@@ -1486,6 +1639,9 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.ScrollPageUp" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageDownCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageLeftCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageRightCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnViewThumbnailsCommand">
@@ -1504,6 +1660,7 @@
       <Docs>
         <summary>Responds to calls to the <see cref="M:System.Windows.Controls.DocumentViewer.ViewThumbnails" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.ViewThumbnails" />
       </Docs>
     </Member>
     <Member MemberName="ScrollPageDown">
@@ -1522,6 +1679,10 @@
       <Docs>
         <summary>Scrolls down one viewport.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.ScrollPageLeft" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.ScrollPageRight" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.ScrollPageUp" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageDownCommand" />
       </Docs>
     </Member>
     <Member MemberName="ScrollPageLeft">
@@ -1540,6 +1701,10 @@
       <Docs>
         <summary>Scrolls left one viewport.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.ScrollPageDown" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.ScrollPageRight" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.ScrollPageUp" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageLeftCommand" />
       </Docs>
     </Member>
     <Member MemberName="ScrollPageRight">
@@ -1558,6 +1723,10 @@
       <Docs>
         <summary>Scrolls right one viewport.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.ScrollPageDown" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.ScrollPageLeft" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.ScrollPageUp" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageRightCommand" />
       </Docs>
     </Member>
     <Member MemberName="ScrollPageUp">
@@ -1576,6 +1745,10 @@
       <Docs>
         <summary>Scrolls up one viewport.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.ScrollPageDown" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.ScrollPageLeft" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.ScrollPageRight" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnScrollPageUpCommand" />
       </Docs>
     </Member>
     <Member MemberName="ShowPageBorders">
@@ -1609,6 +1782,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.HorizontalPageSpacing" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.VerticalPageSpacing" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ShowPageBorders" />
       </Docs>
     </Member>
     <Member MemberName="ShowPageBordersProperty">
@@ -1663,6 +1839,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ExtentHeight" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ExtentWidth" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.HorizontalOffset" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ViewportHeight" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ViewportWidth" />
       </Docs>
     </Member>
     <Member MemberName="VerticalOffsetProperty">
@@ -1680,6 +1861,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DocumentViewer.VerticalOffset" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.HorizontalOffsetProperty" />
       </Docs>
     </Member>
     <Member MemberName="VerticalPageSpacing">
@@ -1717,6 +1899,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.HorizontalPageSpacing" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ShowPageBorders" />
       </Docs>
     </Member>
     <Member MemberName="VerticalPageSpacingProperty">
@@ -1734,6 +1918,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DocumentViewer.VerticalPageSpacing" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Controls.DocumentViewer.HorizontalPageSpacingProperty" />
       </Docs>
     </Member>
     <Member MemberName="ViewportHeight">
@@ -1766,6 +1951,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ExtentHeight" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ExtentWidth" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.HorizontalOffset" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.VerticalOffset" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ViewportWidth" />
       </Docs>
     </Member>
     <Member MemberName="ViewportHeightProperty">
@@ -1815,6 +2005,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ExtentHeight" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ExtentWidth" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.HorizontalOffset" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.VerticalOffset" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ViewportHeight" />
       </Docs>
     </Member>
     <Member MemberName="ViewportWidthProperty">
@@ -1850,6 +2045,7 @@
       <Docs>
         <summary>Displays a thumbnail representation of the pages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.ViewThumbnailsCommand" />
       </Docs>
     </Member>
     <Member MemberName="ViewThumbnailsCommand">
@@ -1881,6 +2077,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.FitToHeightCommand" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.FitToWidthCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnViewThumbnailsCommand" />
       </Docs>
     </Member>
     <Member MemberName="Zoom">
@@ -1918,6 +2117,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanIncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.CanDecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.IncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.DecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnIncreaseZoomCommand" />
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnDecreaseZoomCommand" />
+        <altmember cref="T:System.Windows.Documents.ZoomPercentageConverter" />
       </Docs>
     </Member>
     <Member MemberName="ZoomProperty">
@@ -1937,5 +2143,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnFitToMaxPagesAcrossCommand">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Responds to calls to the <see cref="Overload:System.Windows.Controls.DocumentViewer.FitToMaxPagesAcross" /> method.</summary>
+        <altmember cref="M:System.Windows.Controls.DocumentViewer.OnFitToWidthCommand" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FitToMaxPagesAcross">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Fits the document to the <see cref="P:System.Windows.Controls.DocumentViewer.MaxPagesAcross" /> property setting.</summary>
+        <altmember cref="Overload:System.Windows.Controls.DocumentViewer.OnFitToMaxPagesAcrossCommand" />
+        <altmember cref="P:System.Windows.Controls.DocumentViewer.FitToMaxPagesAcrossCommand" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

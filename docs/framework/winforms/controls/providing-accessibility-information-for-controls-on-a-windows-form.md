@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms controls, accessibility"
   - "controls [Windows Forms], accessibility"
-  - "accessibility, Windows Forms controls"
+  - "accessibility [Windows Forms], Windows Forms controls"
 ms.assetid: 887dee6f-5059-4d57-957d-7c6fcd4acb10
 caps.latest.revision: 9
 author: dotnet-bot
@@ -95,10 +95,10 @@ pictureBox1->AccessibleRole = AccessibleRole::Chart;
 ```  
   
 ## See Also  
- <xref:System.Windows.Forms.AccessibleObject>   
- <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.Control.AccessibleDefaultActionDescription%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.Control.AccessibleDescription%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.Control.AccessibleName%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.Control.AccessibleRole%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.AccessibleObject>  
+ <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.Control.AccessibleDefaultActionDescription%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.Control.AccessibleDescription%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.Control.AccessibleName%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.Control.AccessibleRole%2A?displayProperty=nameWithType>  
  <xref:System.Windows.Forms.AccessibleRole>

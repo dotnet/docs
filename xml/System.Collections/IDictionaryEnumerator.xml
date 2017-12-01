@@ -65,6 +65,9 @@
     <block subset="none" type="overrides">
       <para>The <see cref="P:System.Collections.IEnumerator.Current" /> property that is inherited from <see cref="T:System.Collections.IEnumerator" /> returns an <see cref="T:System.Object" /> that is a boxed <see cref="T:System.Collections.DictionaryEntry" />, similar to the return value of the <see cref="P:System.Collections.IDictionaryEnumerator.Entry" /> property.</para>
     </block>
+    <altmember cref="T:System.Collections.IDictionary" />
+    <altmember cref="T:System.Collections.IEnumerator" />
+    <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
   </Docs>
   <Members>
     <Member MemberName="Entry">
@@ -111,6 +114,10 @@
         <block subset="none" type="overrides">
           <para>The <see cref="P:System.Collections.IEnumerator.Current" /> property that is inherited from <see cref="T:System.Collections.IEnumerator" /> returns an <see cref="T:System.Object" /> that is a boxed <see cref="T:System.Collections.DictionaryEntry" />, similar to the return value of the <see cref="P:System.Collections.IDictionaryEnumerator.Entry" /> property.</para>
         </block>
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="P:System.Collections.IDictionaryEnumerator.Key" />
+        <altmember cref="P:System.Collections.IDictionaryEnumerator.Value" />
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -154,6 +161,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.IDictionaryEnumerator" /> is positioned before the first entry of the dictionary or after the last entry.</exception>
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="P:System.Collections.IDictionaryEnumerator.Value" />
+        <altmember cref="P:System.Collections.IDictionaryEnumerator.Entry" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -197,6 +208,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.IDictionaryEnumerator" /> is positioned before the first entry of the dictionary or after the last entry.</exception>
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="P:System.Collections.IDictionaryEnumerator.Key" />
+        <altmember cref="P:System.Collections.IDictionaryEnumerator.Entry" />
       </Docs>
     </Member>
   </Members>

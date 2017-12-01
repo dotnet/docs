@@ -16,20 +16,6 @@ ms.assetid: a18bbd8e-bbf7-49e7-992c-717d0eb1f76f
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /target (C# Compiler Options)
 The **/target** compiler option can be specified in one of four forms:  
@@ -78,6 +64,6 @@ public class TestClass
  For more information about setting this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  
  [/subsystemversion (C# Compiler Options)](../../../csharp/language-reference/compiler-options/subsystemversion-compiler-option.md)

@@ -9,12 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "interfaces, ICommandSource, implementing"
-  - "ICommandSource interfaces, implementing"
+  - "ICommandSource interfaces [WPF], implementing"
 ms.assetid: 7452dd39-6e11-44bf-806a-31d87f3772ac
 caps.latest.revision: 12
 author: dotnet-bot
@@ -66,7 +65,7 @@ This example shows how to create a command source by implementing <xref:System.W
  [!code-vb[ImplementICommandSource#ImplementICommandExecute](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ImplementICommandSource/visualbasic/commandslider.vb#implementicommandexecute)]  
   
 ## See Also  
- <xref:System.Windows.Input.ICommandSource>   
- <xref:System.Windows.Input.ICommand>   
- <xref:System.Windows.Input.RoutedCommand>   
+ <xref:System.Windows.Input.ICommandSource>  
+ <xref:System.Windows.Input.ICommand>  
+ <xref:System.Windows.Input.RoutedCommand>  
  [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)

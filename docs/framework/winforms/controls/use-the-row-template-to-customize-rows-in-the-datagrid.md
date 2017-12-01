@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "data grids, customizing rows"
+  - "data grids [Windows Forms], customizing rows"
   - "DataGridView control [Windows Forms], customizing rows"
 ms.assetid: 6db61607-7e57-4a84-8d63-9d6a7ed7f9ff
 caps.latest.revision: 13
@@ -48,9 +48,9 @@ The <xref:System.Windows.Forms.DataGridView> control uses the row template as a 
 -   References to the <xref:System?displayProperty=nameWithType>, <xref:System.Drawing?displayProperty=nameWithType>, and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridViewCellStyle>   
- <xref:System.Windows.Forms.DataGridViewRow>   
- <xref:System.Windows.Forms.DataGridView.RowTemplate%2A?displayProperty=nameWithType>   
- [Basic Formatting and Styling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)   
+ <xref:System.Windows.Forms.DataGridView>  
+ <xref:System.Windows.Forms.DataGridViewCellStyle>  
+ <xref:System.Windows.Forms.DataGridViewRow>  
+ <xref:System.Windows.Forms.DataGridView.RowTemplate%2A?displayProperty=nameWithType>  
+ [Basic Formatting and Styling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)  
  [Cell Styles in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md)

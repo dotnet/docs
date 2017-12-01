@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "controls [Windows Forms], images"
   - "images [Windows Forms], Windows Forms controls"
   - "examples [Windows Forms], controls"
-  - "setting images, Windows Forms controls"
+  - "setting images [Windows Forms], Windows Forms controls"
 ms.assetid: ae80d07a-e469-4251-90ca-df71f5852454
 caps.latest.revision: 5
 author: dotnet-bot
@@ -39,7 +39,7 @@ Several Windows Forms controls can display images. The image can be an icon that
 2.  Select the image you want to display.  
   
 ## See Also  
- <xref:System.Drawing.Image.FromFile%2A>   
- <xref:System.Drawing.Image>   
- <xref:System.Windows.Forms.Control.BackgroundImage%2A>   
+ <xref:System.Drawing.Image.FromFile%2A>  
+ <xref:System.Drawing.Image>  
+ <xref:System.Windows.Forms.Control.BackgroundImage%2A>  
  [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](../../../../docs/framework/winforms/controls/labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)

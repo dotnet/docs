@@ -84,6 +84,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.GCSettings" />
   </Docs>
   <Members>
     <Member MemberName="AddMemoryPressure">
@@ -239,7 +240,7 @@
   
  All objects, regardless of how long they have been in memory, are considered for collection; however, objects that are referenced in managed code are not collected. Use this method to force the system to try to reclaim the maximum amount of available memory.  
   
- Starting with the [!INCLUDE[net_v451](~/includes/net-v451-md.md)], you can compact the large object heap (LOH) by setting the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to <xref:System.Runtime.GCLargeObjectHeapCompactionMode?displayProperty=nameWithType> before calling the <xref:System.GC.Collect%2A> method, as the following example illustrates.  
+ Starting with the [!INCLUDE[net_v451](~/includes/net-v451-md.md)], you can compact the large object heap (LOH) by setting the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to <xref:System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce?displayProperty=nameWithType> before calling the <xref:System.GC.Collect%2A> method, as the following example illustrates.  
   
  [!code-csharp[System.Runtime.GCSettings#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.gcsettings/cs/lohcompactionmode1.cs#1)]
  [!code-vb[System.Runtime.GCSettings#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.gcsettings/vb/lohcompactionmode1.vb#1)]  
@@ -437,7 +438,7 @@
 |<xref:System.GCCollectionMode.Forced> or <xref:System.GCCollectionMode.Default>|A blocking collection is performed as soon as possible. If a background collection is in progress and `generation` is 0 or 1, the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method immediately triggers a blocking collection and returns when the collection is finished. If a background collection is in progress and `generation` is 2, the method waits until the background collection is finished, triggers a blocking generation 2 collection, and then returns.|A collection is performed as soon as possible. The <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed. If a background collection is already in progress, the method returns immediately.|  
 |<xref:System.GCCollectionMode.Optimized>|A blocking collection may be performed, depending on the state of the garbage collector and the `generation` parameter. The garbage collector tries to provide optimal performance.|A collection may be performed, depending on the state of the garbage collector. The <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed. The garbage collector tries to provide optimal performance. If a background collection is already in progress, the method returns immediately.|  
   
- If a call to the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method performs a full blocking garbage collection, you can also compact the large object heap by setting the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to <xref:System.Runtime.GCLargeObjectHeapCompactionMode?displayProperty=nameWithType> before calling the <xref:System.GC.Collect%2A> method.  
+ If a call to the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method performs a full blocking garbage collection, you can also compact the large object heap by setting the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to <xref:System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce?displayProperty=nameWithType> before calling the <xref:System.GC.Collect%2A> method.  
   
  ]]></format>
         </remarks>
@@ -495,14 +496,14 @@
 ## Remarks  
  If `blocking` is `false`, the GC decides whether to perform a background or a blocking garbage collection. If `compacting` is `true`, it performs a blocking garbage collection.  
   
- If `compacting` is `true`, the runtime compacts the small object heap (SOH). The large object heap (LOH) is not compacted unless the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property is set to <xref:System.Runtime.GCLargeObjectHeapCompactionMode?displayProperty=nameWithType>. Note that this includes all blocking garbage collections, not just full blocking garbage collections.  
+ If `compacting` is `true`, the runtime compacts the small object heap (SOH). The large object heap (LOH) is not compacted unless the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property is set to <xref:System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce?displayProperty=nameWithType>. Note that this includes all blocking garbage collections, not just full blocking garbage collections.  
   
  You can call the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%2CSystem.Boolean%29> method to reduce the managed heap to the smallest size possible, as the following code fragment illustrates.  
   
  [!code-csharp[System.GC.Collect#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.gc.collect/cs/collect4.cs#1)]
  [!code-vb[System.GC.Collect#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.gc.collect/vb/collect4.vb#1)]  
   
- Specifying `true` for the `compacting` argument guarantees a compacting, full blocking garbage collection. Setting the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to <xref:System.Runtime.GCLargeObjectHeapCompactionMode?displayProperty=nameWithType> ensures that both the LOH and SOH are compacted.  
+ Specifying `true` for the `compacting` argument guarantees a compacting, full blocking garbage collection. Setting the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to <xref:System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce?displayProperty=nameWithType> ensures that both the LOH and SOH are compacted.  
   
  ]]></format>
         </remarks>
@@ -617,6 +618,8 @@
  -or-  
   
  A memory allocation exceeded the amount specified in the call to the <see cref="M:System.GC.TryStartNoGCRegion(System.Int64)" /> method.</exception>
+        <altmember cref="M:System.GC.TryStartNoGCRegion(System.Int64)" />
+        <altmember cref="P:System.Runtime.GCSettings.LatencyMode" />
       </Docs>
     </Member>
     <Member MemberName="GetAllocatedBytesForCurrentThread">
@@ -690,6 +693,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.GC.MaxGeneration" />
       </Docs>
     </Member>
     <Member MemberName="GetGeneration">
@@ -738,6 +742,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Garbage collection has already been performed on <paramref name="wo" />.</exception>
+        <altmember cref="P:System.GC.MaxGeneration" />
       </Docs>
     </Member>
     <Member MemberName="GetTotalMemory">
@@ -910,6 +915,7 @@
   
  Use the <see cref="P:System.GC.MaxGeneration" /> property to determine the maximum value you can specify when calling the <see cref="M:System.GC.Collect(System.Int32)" /> method that takes a generation parameter.</para>
         </block>
+        <altmember cref="M:System.GC.GetGeneration(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterForFullGCNotification">
@@ -1113,6 +1119,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.GC.SuppressFinalize(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SuppressFinalize">
@@ -1174,6 +1181,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.GC.ReRegisterForFinalize(System.Object)" />
+        <altmember cref="M:System.Object.Finalize" />
       </Docs>
     </Member>
     <MemberGroup MemberName="TryStartNoGCRegion">
@@ -1194,6 +1203,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.GC.EndNoGCRegion" />
       </Docs>
     </MemberGroup>
     <Member MemberName="TryStartNoGCRegion">
@@ -1248,6 +1258,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="totalSize" /> exceeds the ephemeral segment size.</exception>
         <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
+        <altmember cref="M:System.GC.EndNoGCRegion" />
       </Docs>
     </Member>
     <Member MemberName="TryStartNoGCRegion">
@@ -1307,6 +1318,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="totalSize" /> exceeds the ephemeral segment size.</exception>
         <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
+        <altmember cref="M:System.GC.EndNoGCRegion" />
       </Docs>
     </Member>
     <Member MemberName="TryStartNoGCRegion">
@@ -1363,6 +1375,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="totalSize" /> – <paramref name="lohSize" /> exceeds the ephemeral segment size.</exception>
         <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
+        <altmember cref="M:System.GC.EndNoGCRegion" />
       </Docs>
     </Member>
     <Member MemberName="TryStartNoGCRegion">
@@ -1424,6 +1437,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="totalSize" /> – <paramref name="lohSize" /> exceeds the ephemeral segment size.</exception>
         <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
+        <altmember cref="M:System.GC.EndNoGCRegion" />
       </Docs>
     </Member>
     <Member MemberName="WaitForFullGCApproach">
@@ -1699,5 +1713,49 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WaitForFullGCComplete">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the status of a registered notification for determining whether a full, blocking garbage collection by the common language runtime has completed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Collect">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Forces garbage collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetGeneration">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the current generation number of an object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WaitForFullGCApproach">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the status of a registered notification for determining whether a full, blocking garbage collection by the common language runtime is imminent.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

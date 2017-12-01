@@ -7,18 +7,11 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: 55ed13c9-c5bb-4bc2-bcd8-0587eb568864
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)
 If you embed type information from a strong-named managed assembly, you can loosely couple types in an application to achieve version independence. That is, your program can be written to use types from multiple versions of a managed library without having to be recompiled for each version.  
@@ -244,7 +237,7 @@ If you embed type information from a strong-named managed assembly, you can loos
 6.  In File Explorer, open the output path folder (for example, C:\TypeEquivalenceSample). Double-click the TypeEquivalenceClient.exe to run the program. The program will reflect the new version of the TypeEquivalenceRuntime assembly without having been recompiled.  
   
 ## See Also  
- [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)   
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)   
+ [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)  
+ [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
+ [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)  
  [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)

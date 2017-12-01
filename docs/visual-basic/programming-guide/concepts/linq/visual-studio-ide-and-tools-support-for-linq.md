@@ -13,12 +13,6 @@ ms.assetid: e3bfe0d9-4a79-49cf-a31c-93297c688829
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Visual Studio IDE and Tools Support for LINQ (Visual Basic)
 The Visual Studio integrated development environment (IDE) provides the following features that support LINQ application development:  

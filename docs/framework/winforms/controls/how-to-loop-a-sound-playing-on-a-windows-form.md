@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "sound loops"
-  - "SoundPlayer class, play looping"
-  - "sounds, looping"
-  - "playing sounds, looping"
+  - "SoundPlayer class [Windows Forms], play looping"
+  - "sounds [Windows Forms], looping"
+  - "playing sounds [Windows Forms], looping"
 ms.assetid: ea95dd46-10a3-46c0-8263-4b205f00df7f
 caps.latest.revision: 17
 author: dotnet-bot
@@ -60,6 +60,6 @@ The following code example plays a sound repeatedly. When the code in the `stopP
  Do not make decisions about the contents of the file based on the name of the file. For example, the file Form1.vb may not be a Visual Basic source file. Verify all inputs before using the data in your application.  
   
 ## See Also  
- <xref:System.Media.SoundPlayer.PlayLooping%2A>   
- [How to: Play a Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)   
+ <xref:System.Media.SoundPlayer.PlayLooping%2A>  
+ [How to: Play a Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)  
  [SoundPlayer Class Overview](../../../../docs/framework/winforms/controls/soundplayer-class-overview.md)

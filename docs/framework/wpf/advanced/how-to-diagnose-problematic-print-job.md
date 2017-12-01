@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "troubleshooting print job problems"
-  - "print jobs, troubleshooting"
-  - "print jobs, diagnosing problems"
+  - "troubleshooting print job problems [WPF]"
+  - "print jobs [WPF], troubleshooting"
+  - "print jobs [WPF], diagnosing problems"
 ms.assetid: b081a170-84c6-48f9-a487-5766a8d58a82
 caps.latest.revision: 7
 author: dotnet-bot
@@ -88,10 +88,10 @@ Network administrators often field complaints from users about print jobs that d
  [!code-vb[DiagnoseProblematicPrintJob#HandlePausedJob](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#handlepausedjob)]  
   
 ## See Also  
- <xref:System.Printing.PrintJobStatus>   
- <xref:System.Printing.PrintSystemJobInfo>   
- <xref:System.FlagsAttribute>   
- <xref:System.Printing.PrintQueue>   
- [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
+ <xref:System.Printing.PrintJobStatus>  
+ <xref:System.Printing.PrintSystemJobInfo>  
+ <xref:System.FlagsAttribute>  
+ <xref:System.Printing.PrintQueue>  
+ [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)

@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data binding, templates"
-  - "binding data, templates"
-  - "templates, data"
-  - "data templates"
+  - "data binding [WPF], templates"
+  - "binding data [WPF], templates"
+  - "templates [WPF], data"
+  - "data templates [WPF]"
 ms.assetid: 0f4d9f8c-0230-4013-bd7b-e8e7fed01b4a
 caps.latest.revision: 25
 author: dotnet-bot
@@ -199,8 +199,8 @@ The WPF data templating model provides you with great flexibility to define the 
  ![HierarchicalDataTemplate sample screen shot](../../../../docs/framework/wpf/data/media/databinding-hierarchicaldatatemplate.png "DataBinding_HierarchicalDataTemplate")  
   
 ## See Also  
- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)   
- [Find DataTemplate-Generated Elements](../../../../docs/framework/wpf/data/how-to-find-datatemplate-generated-elements.md)   
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
+ [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
+ [Find DataTemplate-Generated Elements](../../../../docs/framework/wpf/data/how-to-find-datatemplate-generated-elements.md)  
+ [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [GridView Column Header Styles and Templates Overview](../../../../docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md)

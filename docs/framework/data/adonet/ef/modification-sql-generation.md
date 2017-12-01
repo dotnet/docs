@@ -118,7 +118,7 @@ INSERT <target>   [ (setClauseProperty0, .. setClausePropertyN)]
 VALUES (setClauseValue0, .. setClauseValueN) |  DEFAULT VALUES   
   
 [SELECT <returning>   
- FROM <target>   
+ FROM <target>  
  WHERE @@ROWCOUNT > 0 AND keyMember0 = keyValue0 AND .. keyMemberI =  keyValueI | scope_identity()  .. AND  keyMemberN = keyValueN]  
 ```  
   
@@ -130,12 +130,12 @@ DECLARE @generated_keys TABLE [(keyMember0, … keyMemberN)
   
 INSERT <target>   [ (setClauseProperty0, .. setClausePropertyN)]    
  OUTPUT inserted.KeyMember0, …, inserted.KeyMemberN INTO @generated_keys  
- VALUES (setClauseValue0, .. setClauseValueN) |  DEFAULT VALUES   
+ VALUES (setClauseValue0, .. setClauseValueN) |  DEFAULT VALUES  
   
 [SELECT <returning_over_t>   
- FROM @generated_keys  AS g   
+ FROM @generated_keys  AS g  
 JOIN <target> AS t ON g.KeyMember0 = t.KeyMember0 AND … g.KeyMemberN = t.KeyMemberN  
- WHERE @@ROWCOUNT > 0   
+ WHERE @@ROWCOUNT > 0  
 ```  
   
  The following is an example that uses the model that is included with the sample provider. It generates an insert command from a DbInsertCommandTree.  
@@ -201,7 +201,7 @@ SET setClauseProprerty0 = setClauseValue0,  .. setClauseProprertyN = setClauseVa
 WHERE <predicate>  
   
 [SELECT <returning>   
- FROM <target>   
+ FROM <target>  
  WHERE @@ROWCOUNT > 0 AND keyMember0 = keyValue0 AND .. keyMemberI =  keyValueI | scope_identity()  .. AND  keyMemberN = keyValueN]  
 ```  
   

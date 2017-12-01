@@ -9,13 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "PathGeometry class"
-  - "classes, PathGeometry"
-  - "line segments, creating"
+  - "line segments [WPF], creating"
   - "graphics [WPF], line segments"
 ms.assetid: 0155ed47-a20d-49a7-a306-186d8e07fbc4
 caps.latest.revision: 12
@@ -110,8 +108,8 @@ Dim myPathFigure As New PathFigure()
  This example is part of larger sample; for the complete sample, see the [Geometries Sample](http://go.microsoft.com/fwlink/?LinkID=159989).  
   
 ## See Also  
- <xref:System.Windows.Media.PathFigure>   
- <xref:System.Windows.Media.PathGeometry>   
- <xref:System.Windows.Media.GeometryDrawing>   
- <xref:System.Windows.Shapes.Path>   
+ <xref:System.Windows.Media.PathFigure>  
+ <xref:System.Windows.Media.PathGeometry>  
+ <xref:System.Windows.Media.GeometryDrawing>  
+ <xref:System.Windows.Shapes.Path>  
  [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)

@@ -9,13 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "DoubleBuffered property"
-  - "flicker, reducing in Windows Forms"
-  - "graphics, reducing double-buffered flicker"
+  - "flicker [Windows Forms], reducing in Windows Forms"
+  - "graphics [Windows Forms], reducing double-buffered flicker"
 ms.assetid: 91083d3a-653f-4f15-a467-0f37b2aa39d6
 caps.latest.revision: 11
 author: dotnet-bot
@@ -42,7 +41,7 @@ Double buffering uses a memory buffer to address the flicker problems associated
      [!code-vb[System.Windows.Forms.LegacyBufferedGraphics#32](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.LegacyBufferedGraphics/VB/Class1.vb#32)]  
   
 ## See Also  
- <xref:System.Windows.Forms.Control.DoubleBuffered%2A>   
- <xref:System.Windows.Forms.Control.SetStyle%2A>   
- [Double Buffered Graphics](../../../../docs/framework/winforms/advanced/double-buffered-graphics.md)   
+ <xref:System.Windows.Forms.Control.DoubleBuffered%2A>  
+ <xref:System.Windows.Forms.Control.SetStyle%2A>  
+ [Double Buffered Graphics](../../../../docs/framework/winforms/advanced/double-buffered-graphics.md)  
  [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)

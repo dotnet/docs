@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "scaling, 3-D objects"
-  - "3-D objects, scaling"
+  - "scaling [WPF], 3-D objects"
+  - "3-D objects [WPF], scaling"
 ms.assetid: f3fdfe33-f7dc-44b0-84a5-e43b89947f35
 caps.latest.revision: 3
 author: dotnet-bot
@@ -29,6 +29,6 @@ This example shows how to scale a 3-D object. To scale a 3-D object, use a <xref
  [!code-xaml[3DGallery_snip#ScaleTransform3DExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/ScaleTransform3DExample.xaml#scaletransform3dexamplewholepage)]  
   
 ## See Also  
- [Animate 3-D Translations](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-3-d-translations.md)   
- [Create a 3-D Scene](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-3-d-scene.md)   
+ [Animate 3-D Translations](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-3-d-translations.md)  
+ [Create a 3-D Scene](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-3-d-scene.md)  
  [3-D Graphics Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)

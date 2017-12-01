@@ -9,13 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "TextDecoration class"
-  - "classes, TextDecoration"
-  - "Hyperlink control type"
+  - "Hyperlink control type [WPF]"
 ms.assetid: 3996cfe6-1dac-4835-aeb3-c719ce9cfee5
 caps.latest.revision: 5
 author: dotnet-bot
@@ -41,7 +39,7 @@ Hyperlinks defined with TextDecorations
  [!code-vb[Performance#PerformanceSnippet15](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/hyperlink.xaml.vb#performancesnippet15)]  
   
 ## See Also  
- <xref:System.Windows.TextDecoration>   
- <xref:System.Windows.Documents.Hyperlink>   
- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)   
+ <xref:System.Windows.TextDecoration>  
+ <xref:System.Windows.Documents.Hyperlink>  
+ [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)  
  [Create a Text Decoration](../../../../docs/framework/wpf/advanced/how-to-create-a-text-decoration.md)

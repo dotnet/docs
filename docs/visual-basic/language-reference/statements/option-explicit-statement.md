@@ -1,42 +1,25 @@
 ---
 title: "Option Explicit Statement (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Explicit"
   - "vb.OptionExplicit"
 helpviewer_keywords: 
-  - "declaring variables, explicit"
-  - "forced variable declaration in Option Explicit statement"
+  - "declaring variables [Visual Basic], explicit"
+  - "forced variable declaration in Option Explicit statement [Visual Basic]"
   - "Explicit keyword"
   - "explicit variable declaration"
-  - "Option Explicit statement"
+  - "Option Explicit statement [Visual Basic]"
 ms.assetid: e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Option Explicit Statement (Visual Basic)
 Forces explicit declaration of all variables in a file, or allows implicit declarations of variables.  
@@ -87,11 +70,11 @@ Option Explicit { On | Off }
  [!code-vb[VbVbalrStatements#48](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-explicit-statement_2.vb)]  
   
 ## See Also  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   
- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)   
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)   
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
- [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)   
- [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)   
- [/optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)   
+ [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
+ [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)  
+ [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
+ [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
+ [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)  
+ [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)  
+ [/optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)  
  [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

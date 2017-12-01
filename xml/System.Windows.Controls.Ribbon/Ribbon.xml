@@ -790,6 +790,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Ribbon.Ribbon.IsMinimized" />
+        <altmember cref="E:System.Windows.Controls.Ribbon.Ribbon.Collapsed" />
+        <altmember cref="E:System.Windows.Controls.Ribbon.Ribbon.Expanded" />
       </Docs>
     </Member>
     <Member MemberName="IsCollapsedProperty">
@@ -843,6 +846,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Ribbon.Ribbon.IsMinimized" />
       </Docs>
     </Member>
     <Member MemberName="IsDropDownOpenProperty">
@@ -969,6 +973,8 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Ribbon.Ribbon.IsDropDownOpen" />
+        <altmember cref="P:System.Windows.Controls.Ribbon.Ribbon.IsCollapsed" />
       </Docs>
     </Member>
     <Member MemberName="IsMinimizedProperty">
@@ -1643,6 +1649,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Ribbon.Ribbon.IsHostedInRibbonWindow" />
       </Docs>
     </Member>
     <Member MemberName="TitleProperty">

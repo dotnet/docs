@@ -43,7 +43,7 @@
  You can use Ildasm.exe to examine the MSIL for the compiled code example, to see how the offsets and lengths are calculated.  
   
 > [!NOTE]
->  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
+>  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions.Filter?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
   
  This code is part of a larger example located in the <xref:System.Reflection.MethodBody> class topic.  
   
@@ -62,6 +62,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Reflection.MethodBody" />
+    <altmember cref="P:System.Reflection.MethodBody.ExceptionHandlingClauses" />
+    <altmember cref="T:System.Reflection.ExceptionHandlingClauseOptions" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -133,7 +136,7 @@
  The following code example defines a test method named `MethodBodyExample`, and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=nameWithType> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of <xref:System.Reflection.ExceptionHandlingClause> objects and display their properties.  
   
 > [!NOTE]
->  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
+>  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions.Filter?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
   
  This code is part of a larger example located in the <xref:System.Reflection.MethodBody> class topic.  
   
@@ -183,7 +186,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A filter clause contains user-suppliedMicrosoft intermediate language (MSIL) that determines whether an exception is handled by this clause. For example, any clause containing the Visual Basic `When` keyword is a <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=nameWithType> clause.  
+ A filter clause contains user-suppliedMicrosoft intermediate language (MSIL) that determines whether an exception is handled by this clause. For example, any clause containing the Visual Basic `When` keyword is a <xref:System.Reflection.ExceptionHandlingClauseOptions.Filter?displayProperty=nameWithType> clause.  
   
 > [!NOTE]
 >  Working with exception-handling clauses requires a thorough understanding of metadata and MSIL instruction formats. Information can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
@@ -231,7 +234,7 @@
  The following code example defines a test method named `MethodBodyExample`, and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=nameWithType> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of <xref:System.Reflection.ExceptionHandlingClause> objects and display their properties.  
   
 > [!NOTE]
->  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
+>  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions.Filter?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
   
  This code is part of a larger example located in the <xref:System.Reflection.MethodBody> class topic.  
   
@@ -250,6 +253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.ExceptionHandlingClauseOptions" />
       </Docs>
     </Member>
     <Member MemberName="HandlerLength">
@@ -290,7 +294,7 @@
  The following code example defines a test method named `MethodBodyExample`, and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=nameWithType> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of <xref:System.Reflection.ExceptionHandlingClause> objects and display their properties.  
   
 > [!NOTE]
->  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
+>  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions.Filter?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
   
  This code is part of a larger example located in the <xref:System.Reflection.MethodBody> class topic.  
   
@@ -349,7 +353,7 @@
  The following code example defines a test method named `MethodBodyExample`, and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=nameWithType> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of <xref:System.Reflection.ExceptionHandlingClause> objects and display their properties.  
   
 > [!NOTE]
->  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
+>  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions.Filter?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
   
  This code is part of a larger example located in the <xref:System.Reflection.MethodBody> class topic.  
   
@@ -437,7 +441,7 @@
  The following code example defines a test method named `MethodBodyExample`, and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=nameWithType> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of <xref:System.Reflection.ExceptionHandlingClause> objects and display their properties.  
   
 > [!NOTE]
->  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
+>  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions.Filter?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
   
  This code is part of a larger example located in the <xref:System.Reflection.MethodBody> class topic.  
   
@@ -496,7 +500,7 @@
  The following code example defines a test method named `MethodBodyExample`, and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=nameWithType> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of <xref:System.Reflection.ExceptionHandlingClause> objects and display their properties.  
   
 > [!NOTE]
->  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
+>  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions.Filter?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
   
  This code is part of a larger example located in the <xref:System.Reflection.MethodBody> class topic.  
   

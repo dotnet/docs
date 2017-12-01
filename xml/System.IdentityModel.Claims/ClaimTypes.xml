@@ -76,6 +76,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SamlAuthenticationClaimResource" />
       </Docs>
     </Member>
     <Member MemberName="AuthorizationDecision">
@@ -101,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource" />
       </Docs>
     </Member>
     <Member MemberName="Country">
@@ -178,6 +180,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Claims.Claim.CreateDenyOnlyWindowsSidClaim(System.Security.Principal.SecurityIdentifier)" />
       </Docs>
     </Member>
     <Member MemberName="Dns">
@@ -203,6 +206,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Claims.Claim.CreateDnsClaim(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Email">
@@ -228,6 +232,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Claims.Claim.CreateMailAddressClaim(System.Net.Mail.MailAddress)" />
       </Docs>
     </Member>
     <Member MemberName="Gender">
@@ -303,6 +308,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Claims.Claim.CreateHashClaim(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="HomePhone">
@@ -403,6 +409,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Claims.Claim.CreateNameClaim(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="NameIdentifier">
@@ -528,6 +535,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Claims.Claim.CreateRsaClaim(System.Security.Cryptography.RSA)" />
       </Docs>
     </Member>
     <Member MemberName="Sid">
@@ -553,6 +561,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Claims.Claim.CreateWindowsSidClaim(System.Security.Principal.SecurityIdentifier)" />
       </Docs>
     </Member>
     <Member MemberName="Spn">
@@ -578,6 +587,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Claims.Claim.CreateSpnClaim(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="StateOrProvince">
@@ -707,6 +717,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Claims.Claim.CreateThumbprintClaim(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="Upn">
@@ -737,6 +748,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Claims.Claim.CreateUpnClaim(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Uri">
@@ -762,6 +774,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Claims.Claim.CreateUriClaim(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="Webpage">
@@ -812,6 +825,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Claims.Claim.CreateX500DistinguishedNameClaim(System.Security.Cryptography.X509Certificates.X500DistinguishedName)" />
       </Docs>
     </Member>
   </Members>

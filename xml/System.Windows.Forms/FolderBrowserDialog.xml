@@ -29,7 +29,7 @@
 ## Remarks  
  This class provides a way to prompt the user to browse, create, and eventually select a folder. Use this class when you only want to allow the user to select folders, not files. Browsing of the folders is done through a tree control. Only folders from the file system can be selected; virtual folders cannot.  
   
- Typically, after creating a new <xref:System.Windows.Forms.FolderBrowserDialog>, you set the <xref:System.Windows.Forms.FolderBrowserDialog.RootFolder%2A> to the location from which to start browsing. Optionally, you can set the <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> to an absolute path of a subfolder of <xref:System.Windows.Forms.FolderBrowserDialog.RootFolder%2A> that will initially be selected. You can also optionally set the <xref:System.Windows.Forms.FolderBrowserDialog.Description%2A> property to provide additional instructions to the user. Finally, call the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method to display the dialog box to the user. When the dialog box is closed and the dialog box result from <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> is <xref:System.Windows.Forms.DialogResult?displayProperty=nameWithType>, the <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> will be a string containing the path to the selected folder.  
+ Typically, after creating a new <xref:System.Windows.Forms.FolderBrowserDialog>, you set the <xref:System.Windows.Forms.FolderBrowserDialog.RootFolder%2A> to the location from which to start browsing. Optionally, you can set the <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> to an absolute path of a subfolder of <xref:System.Windows.Forms.FolderBrowserDialog.RootFolder%2A> that will initially be selected. You can also optionally set the <xref:System.Windows.Forms.FolderBrowserDialog.Description%2A> property to provide additional instructions to the user. Finally, call the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method to display the dialog box to the user. When the dialog box is closed and the dialog box result from <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> is <xref:System.Windows.Forms.DialogResult.OK?displayProperty=nameWithType>, the <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> will be a string containing the path to the selected folder.  
   
  You can use the <xref:System.Windows.Forms.FolderBrowserDialog.ShowNewFolderButton%2A> property to control if the user is able to create new folders with the **New Folder** button.  
   
@@ -46,6 +46,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.FolderBrowserDialog.RootFolder" />
+    <altmember cref="P:System.Windows.Forms.FolderBrowserDialog.SelectedPath" />
+    <altmember cref="M:System.Windows.Forms.CommonDialog.ShowDialog" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,9 +69,9 @@
 ## Remarks  
  The default constructor initializes properties to their default values.  
   
- When a new <xref:System.Windows.Forms.FolderBrowserDialog> is created, the <xref:System.Windows.Forms.FolderBrowserDialog.RootFolder%2A> property is set to <xref:System.Environment.SpecialFolder?displayProperty=nameWithType>, the <xref:System.Windows.Forms.FolderBrowserDialog.Description%2A> property is set to an empty string (""), the <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> property is set to an empty string, and the <xref:System.Windows.Forms.FolderBrowserDialog.ShowNewFolderButton%2A> property is set to `true`.  
+ When a new <xref:System.Windows.Forms.FolderBrowserDialog> is created, the <xref:System.Windows.Forms.FolderBrowserDialog.RootFolder%2A> property is set to <xref:System.Environment.SpecialFolder.Desktop?displayProperty=nameWithType>, the <xref:System.Windows.Forms.FolderBrowserDialog.Description%2A> property is set to an empty string (""), the <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> property is set to an empty string, and the <xref:System.Windows.Forms.FolderBrowserDialog.ShowNewFolderButton%2A> property is set to `true`.  
   
- Typically, after creating a new <xref:System.Windows.Forms.FolderBrowserDialog>, you set the <xref:System.Windows.Forms.FolderBrowserDialog.RootFolder%2A> to the location from which to start browsing. Optionally, you can set the <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> to the path of a subfolder of <xref:System.Windows.Forms.FolderBrowserDialog.RootFolder%2A> that will initially be selected. You can also optionally set the <xref:System.Windows.Forms.FolderBrowserDialog.Description%2A> property to provide additional instructions to the user. Finally, call the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method to display the dialog box to the user. When the dialog box is closed and the dialog result from <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> is <xref:System.Windows.Forms.DialogResult?displayProperty=nameWithType>, the <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> will be a string containing the path to the selected folder.  
+ Typically, after creating a new <xref:System.Windows.Forms.FolderBrowserDialog>, you set the <xref:System.Windows.Forms.FolderBrowserDialog.RootFolder%2A> to the location from which to start browsing. Optionally, you can set the <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> to the path of a subfolder of <xref:System.Windows.Forms.FolderBrowserDialog.RootFolder%2A> that will initially be selected. You can also optionally set the <xref:System.Windows.Forms.FolderBrowserDialog.Description%2A> property to provide additional instructions to the user. Finally, call the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method to display the dialog box to the user. When the dialog box is closed and the dialog result from <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> is <xref:System.Windows.Forms.DialogResult.OK?displayProperty=nameWithType>, the <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> will be a string containing the path to the selected folder.  
   
  <xref:System.Windows.Forms.FolderBrowserDialog> is a modal dialog box; therefore, when shown, it blocks the rest of the application until the user has chosen a folder. When a dialog box is displayed modally, no input (keyboard or mouse click) can occur except to objects on the dialog box. The program must hide or close the dialog box (usually in response to some user action) before input to the calling program can occur.  
   
@@ -300,6 +303,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for getting the path. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <altmember cref="P:System.Windows.Forms.FolderBrowserDialog.RootFolder" />
       </Docs>
     </Member>
     <Member MemberName="ShowNewFolderButton">

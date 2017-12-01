@@ -56,6 +56,7 @@
         <summary>Creates and returns a text writer suitable for the given adapters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>A text writer suitable for the given adapters.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.CreateTextWriter(System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="DeviceQualifies">
@@ -91,6 +92,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Mobile.MobileCapabilities" />
       </Docs>
     </Member>
   </Members>

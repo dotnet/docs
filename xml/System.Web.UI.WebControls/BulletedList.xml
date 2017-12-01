@@ -161,6 +161,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.BulletedList.BulletStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.BulletedList.FirstBulletNumber" />
+    <altmember cref="P:System.Web.UI.WebControls.BulletedList.BulletImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.BulletedList.DisplayMode" />
+    <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
+    <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+    <altmember cref="T:System.Web.UI.DataSourceControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -222,6 +229,7 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.BulletedList.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method overrides the <see cref="M:System.Web.UI.WebControls.ListControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method.</para>
         </block>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="AutoPostBack">
@@ -265,6 +273,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Web.UI.WebControls.BulletedList.AutoPostBack" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.AutoPostBack" />
       </Docs>
     </Member>
     <Member MemberName="BulletImageUrl">
@@ -336,6 +346,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BulletedList.BulletStyle" />
       </Docs>
     </Member>
     <Member MemberName="BulletStyle">
@@ -395,6 +406,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.BulletStyle" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.BulletStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.BulletedList.BulletImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -429,6 +442,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -454,6 +468,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.EmptyControlCollection" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="DisplayMode">
@@ -505,6 +521,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.BulletedListDisplayMode" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.BulletedListDisplayMode" />
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
+        <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
       </Docs>
     </Member>
     <Member MemberName="FirstBulletNumber">
@@ -548,6 +567,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BulletStyle" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -591,6 +611,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -621,6 +642,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
+        <altmember cref="M:System.Web.UI.Page.Validate(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -685,6 +709,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BulletedList.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.BulletedList.RenderContents(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -713,6 +739,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="M:System.Web.UI.WebControls.BulletedList.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderWhenDataEmpty">
@@ -780,6 +808,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Web.UI.WebControls.BulletedList.SelectedIndex" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.BulletedListEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItem">
@@ -816,6 +845,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.SelectedItem" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValue">
@@ -855,6 +885,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Web.UI.WebControls.BulletedList.SelectedValue" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -883,6 +914,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -908,6 +940,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -971,6 +1004,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
       </Docs>
     </Member>
     <Member MemberName="Text">

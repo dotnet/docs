@@ -10,12 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ImageDrawing objects"
-  - "GlyphRunDrawing objects"
-  - "GeometryDrawing objects"
-  - "drawings, about drawings"
-  - "Drawing objects"
-  - "DrawingGroup objects"
+  - "ImageDrawing objects [WPF]"
+  - "GlyphRunDrawing objects [WPF]"
+  - "GeometryDrawing objects [WPF]"
+  - "drawings [WPF], about drawings"
+  - "Drawing objects [WPF]"
+  - "DrawingGroup objects [WPF]"
 ms.assetid: 9b5ce5c0-e204-4320-a7a8-0b2210d62f88
 caps.latest.revision: 25
 author: dotnet-bot
@@ -240,12 +240,12 @@ A GeometryDrawing used with a DrawingBrush
  [!code-csharp[DrawingMiscSnippets_snip#GraphicsMMRetrieveDrawings](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/EnumerateDrawingsExample.xaml.cs#graphicsmmretrievedrawings)]  
   
 ## See Also  
- <xref:System.Windows.Media.Drawing>   
- <xref:System.Windows.Media.DrawingGroup>   
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)   
- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)   
- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)   
- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)   
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)   
- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)   
+ <xref:System.Windows.Media.Drawing>  
+ <xref:System.Windows.Media.DrawingGroup>  
+ [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
+ [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)  
+ [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
+ [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
+ [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
+ [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/drawings-how-to-topics.md)

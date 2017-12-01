@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "drag-and-drop [WPF], retrieving data"
   - "DataFormats class [WPF], retrieving data"
@@ -44,5 +44,5 @@ The following examples show how to retrieve data from a data object in a specifi
  [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_GetSpecificDataFormat_Native](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_getspecificdataformat_native)]  
   
 ## See Also  
- <xref:System.Windows.IDataObject>   
+ <xref:System.Windows.IDataObject>  
  [Drag and Drop Overview](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)

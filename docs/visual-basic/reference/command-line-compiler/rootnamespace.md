@@ -1,13 +1,11 @@
 ---
 title: "/rootnamespace"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "/rootnamespace"
@@ -20,21 +18,6 @@ ms.assetid: e9245edf-6bef-420d-a7c7-324117752783
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /rootnamespace
 Specifies a namespace for all type declarations.  
@@ -68,6 +51,6 @@ vbc /rootnamespace:mynamespace in.vb
 ```  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [Ildasm.exe (IL Disassembler)](https://msdn.microsoft.com/library/f7dy01k1)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [Ildasm.exe (IL Disassembler)](https://msdn.microsoft.com/library/f7dy01k1)  
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

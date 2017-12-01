@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "graphics, performance"
-  - "drawing, optimizing performance"
-  - "imaging, optimizing performance"
-  - "shapes, optimizing performance"
-  - "2-D graphics"
-  - "images, optimizing performance"
+  - "graphics [WPF], performance"
+  - "drawing [WPF], optimizing performance"
+  - "imaging [WPF], optimizing performance"
+  - "shapes [WPF], optimizing performance"
+  - "2-D graphics [WPF]"
+  - "images [WPF], optimizing performance"
 ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
 caps.latest.revision: 8
 author: dotnet-bot
@@ -106,13 +106,13 @@ manager: "wpickett"
  [!code-vb[RenderOptions#RenderOptionsSnippet3](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RenderOptions/visualbasic/window1.xaml.vb#renderoptionssnippet3)]  
   
 ## See Also  
- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)   
- [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)   
- [Taking Advantage of Hardware](../../../../docs/framework/wpf/advanced/optimizing-performance-taking-advantage-of-hardware.md)   
- [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)   
- [Object Behavior](../../../../docs/framework/wpf/advanced/optimizing-performance-object-behavior.md)   
- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)   
- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)   
- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)   
- [Other Performance Recommendations](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)   
+ [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)  
+ [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)  
+ [Taking Advantage of Hardware](../../../../docs/framework/wpf/advanced/optimizing-performance-taking-advantage-of-hardware.md)  
+ [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)  
+ [Object Behavior](../../../../docs/framework/wpf/advanced/optimizing-performance-object-behavior.md)  
+ [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)  
+ [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)  
+ [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
+ [Other Performance Recommendations](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)  
  [Animation Tips and Tricks](../../../../docs/framework/wpf/graphics-multimedia/animation-tips-and-tricks.md)

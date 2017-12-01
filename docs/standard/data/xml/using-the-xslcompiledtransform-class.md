@@ -43,5 +43,5 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class is the Microsoft .NET Frame
  Discusses how to migrate code from the <xref:System.Xml.Xsl.XslTransform> class  
   
 ## See Also  
- <xref:System.Xml.Xsl.XsltSettings>   
+ <xref:System.Xml.Xsl.XsltSettings>  
  <xref:System.Xml.Xsl.XsltMessageEncounteredEventArgs>

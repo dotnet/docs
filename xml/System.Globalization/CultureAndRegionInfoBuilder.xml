@@ -35,10 +35,10 @@
 ## Defining and Creating a Custom Culture  
  You use the <xref:System.Globalization.CultureAndRegionInfoBuilder> class to define and name a custom culture. The custom culture can be an entirely new culture, a new culture that is based on an existing culture (that is, a supplemental culture), or a culture that replaces an existing .NET Framework culture. In each case, the basic steps are the same:  
   
-1.  Instantiate a <xref:System.Globalization.CultureAndRegionInfoBuilder> object by calling its <xref:System.Globalization.CultureAndRegionInfoBuilder.%23ctor%28System.String%2CSystem.Globalization.CultureAndRegionModifiers%29> constructor. To replace an existing culture, pass that culture's name and the <xref:System.Globalization.CultureAndRegionModifiers?displayProperty=nameWithType> enumeration value to the constructor. To create a new culture or a supplemental culture, pass a unique culture name and either the <xref:System.Globalization.CultureAndRegionModifiers?displayProperty=nameWithType> or <xref:System.Globalization.CultureAndRegionModifiers?displayProperty=nameWithType> enumeration value.  
+1.  Instantiate a <xref:System.Globalization.CultureAndRegionInfoBuilder> object by calling its <xref:System.Globalization.CultureAndRegionInfoBuilder.%23ctor%28System.String%2CSystem.Globalization.CultureAndRegionModifiers%29> constructor. To replace an existing culture, pass that culture's name and the <xref:System.Globalization.CultureAndRegionModifiers.Replacement?displayProperty=nameWithType> enumeration value to the constructor. To create a new culture or a supplemental culture, pass a unique culture name and either the <xref:System.Globalization.CultureAndRegionModifiers.Neutral?displayProperty=nameWithType> or <xref:System.Globalization.CultureAndRegionModifiers.None?displayProperty=nameWithType> enumeration value.  
   
     > [!NOTE]
-    >  If you use the <xref:System.Globalization.CultureAndRegionModifiers?displayProperty=nameWithType> enumeration value to instantiate a <xref:System.Globalization.CultureAndRegionInfoBuilder> object, the <xref:System.Globalization.CultureAndRegionInfoBuilder> object's properties are automatically populated with values from the <xref:System.Globalization.CultureInfo> object to be replaced.  
+    >  If you use the <xref:System.Globalization.CultureAndRegionModifiers.Replacement?displayProperty=nameWithType> enumeration value to instantiate a <xref:System.Globalization.CultureAndRegionInfoBuilder> object, the <xref:System.Globalization.CultureAndRegionInfoBuilder> object's properties are automatically populated with values from the <xref:System.Globalization.CultureInfo> object to be replaced.  
   
 2.  If you are creating a new or supplemental culture:  
   
@@ -190,6 +190,8 @@
  -or-  
   
  <paramref name="flags" /> contains <see cref="F:System.Globalization.CultureAndRegionModifiers.Neutral" /> and <paramref name="cultureName" /> specifies a user-created custom culture that replaces a specific culture shipped with the .NET Framework.</exception>
+        <altmember cref="T:System.Globalization.CultureTypes" />
+        <altmember cref="T:System.Globalization.CultureAndRegionModifiers" />
       </Docs>
     </Member>
     <Member MemberName="AvailableCalendars">
@@ -225,6 +227,7 @@
  -or-  
   
  In a set operation, the assigned array contains a custom calendar.</exception>
+        <altmember cref="P:System.Globalization.CultureAndRegionInfoBuilder.GregorianDateTimeFormat" />
       </Docs>
     </Member>
     <Member MemberName="CompareInfo">
@@ -254,6 +257,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">In a set operation the assigned value is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">This custom culture is an override of a built-in culture.</exception>
+        <altmember cref="P:System.Globalization.CultureAndRegionInfoBuilder.TextInfo" />
       </Docs>
     </Member>
     <Member MemberName="ConsoleFallbackUICulture">
@@ -349,6 +353,7 @@
   
  An I/O error occurred while accessing <paramref name="xmlFileName" />.</exception>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The data in <paramref name="xmlFileName" /> is not in valid LDML format.</exception>
+        <altmember cref="M:System.Globalization.CultureAndRegionInfoBuilder.Save(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CultureEnglishName">
@@ -483,6 +488,9 @@
         <summary>Gets the <see cref="T:System.Globalization.CultureTypes" /> value that describes the culture represented by the current <see cref="T:System.Globalization.CultureAndRegionInfoBuilder" /> object.</summary>
         <value>One of the <see cref="T:System.Globalization.CultureTypes" /> values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Globalization.CultureTypes" />
+        <altmember cref="P:System.Globalization.CultureInfo.CultureTypes" />
+        <altmember cref="M:System.Globalization.CultureInfo.GetCultures(System.Globalization.CultureTypes)" />
       </Docs>
     </Member>
     <Member MemberName="CurrencyEnglishName">
@@ -629,6 +637,7 @@
         <exception cref="T:System.ArgumentNullException">In a set operation, the value is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">In a set operation, the length of the value is not from 1 through 84 characters.</exception>
         <exception cref="T:System.ArgumentException">In a set operation, a component of the name specified in the value is empty or longer than 8 characters, not an alphanumeric character or hyphen (-), or the name contains a leading or trailing hyphen.</exception>
+        <altmember cref="M:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsMetric">
@@ -1011,6 +1020,7 @@
  <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CultureEnglishName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CultureNativeName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CurrencyEnglishName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CurrencyNativeName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ISOCurrencySymbol" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.Parent" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.RegionEnglishName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.RegionNativeName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterISOLanguageName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterISORegionName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterWindowsLanguageName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterWindowsRegionName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.TwoLetterISOLanguageName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.TwoLetterISORegionName" /></exception>
         <exception cref="T:System.ArgumentOutOfRangeException">A <see cref="T:System.Globalization.CultureAndRegionInfoBuilder" /> object property value exceeds its maximum length or value.</exception>
         <exception cref="T:System.UnauthorizedAccessException">User does not have administrative privileges.</exception>
+        <altmember cref="M:System.Globalization.CultureAndRegionInfoBuilder.Unregister(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -1054,6 +1064,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="filename" /> is an empty string ("").</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of a property of a <see cref="T:System.Globalization.DateTimeFormatInfo" />, <see cref="T:System.Globalization.TextInfo" />, or <see cref="T:System.Globalization.NumberFormatInfo" /> object contained in the current <see cref="T:System.Globalization.CultureAndRegionInfoBuilder" /> object is invalid.</exception>
+        <altmember cref="M:System.Globalization.CultureAndRegionInfoBuilder.CreateFromLdml(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TextInfo">
@@ -1084,6 +1095,7 @@
         <exception cref="T:System.NotSupportedException">This operation is not supported for replacement cultures.</exception>
         <exception cref="T:System.ArgumentNullException">The value in a set operation is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of characters in a list separator does not range from 0 to 3.</exception>
+        <altmember cref="P:System.Globalization.CultureAndRegionInfoBuilder.CompareInfo" />
       </Docs>
     </Member>
     <Member MemberName="ThreeLetterISOLanguageName">
@@ -1312,6 +1324,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The user does not have administrative privileges.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="cultureName" /> specifies a culture that is not found.</exception>
+        <altmember cref="M:System.Globalization.CultureAndRegionInfoBuilder.Register" />
       </Docs>
     </Member>
   </Members>

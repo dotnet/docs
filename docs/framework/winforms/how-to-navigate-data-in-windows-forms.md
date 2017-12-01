@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "cursors, data sources"
-  - "data sources, Windows Forms"
+  - "cursors [Windows Forms], data sources"
+  - "data sources [Windows Forms], Windows Forms"
   - "Windows Forms, navigating"
-  - "CurrencyManager class, navigating Windows Forms data"
+  - "CurrencyManager class [Windows Forms], navigating Windows Forms data"
   - "data [Windows Forms], navigating"
 ms.assetid: 97360f7b-b181-4084-966a-4c62518f735b
 caps.latest.revision: 12
@@ -57,7 +57,7 @@ In a Windows application, the easiest way to navigate through records in a data 
      [!code-vb[System.Windows.Forms.NavigatingData#2](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.NavigatingData/VB/Form1.vb#2)]  
   
 ## See Also  
- [Data Sources Supported by Windows Forms](../../../docs/framework/winforms/data-sources-supported-by-windows-forms.md)   
- [Change Notification in Windows Forms Data Binding](../../../docs/framework/winforms/change-notification-in-windows-forms-data-binding.md)   
- [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)   
+ [Data Sources Supported by Windows Forms](../../../docs/framework/winforms/data-sources-supported-by-windows-forms.md)  
+ [Change Notification in Windows Forms Data Binding](../../../docs/framework/winforms/change-notification-in-windows-forms-data-binding.md)  
+ [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)  
  [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)

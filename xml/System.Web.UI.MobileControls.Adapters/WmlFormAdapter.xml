@@ -19,6 +19,9 @@
     <summary>Provides the <see cref="T:System.Web.UI.MobileControls.Form" /> adapter for the Wireless Markup Language (WML) device adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.Form" />
+    <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlControlAdapter" />
+    <altmember cref="T:System.Web.UI.MobileControls.Adapters.ControlAdapter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,6 +37,7 @@
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.WmlFormAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Form" />
       </Docs>
     </Member>
     <Member MemberName="CalculatePostBackVariables">
@@ -60,6 +64,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Form" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -78,6 +83,7 @@
         <summary>Returns a strongly typed reference to the associated control.</summary>
         <value>A strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Form" />
       </Docs>
     </Member>
     <Member MemberName="HandlePostBackEvent">
@@ -101,6 +107,7 @@
         <returns>
           <see langword="true" /> if the event was handled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.HandlePostBackEvent(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -122,6 +129,7 @@
         <param name="writer">The text writer to receive output.</param>
         <summary>Generates the target-specific markup for the control to which the control adapter is attached, using the provided writer. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderCardTag">
@@ -152,6 +160,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Form" />
       </Docs>
     </Member>
     <Member MemberName="RenderExtraCardElements">
@@ -180,6 +189,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Form" />
       </Docs>
     </Member>
     <Member MemberName="RenderPager">
@@ -201,6 +211,7 @@
         <param name="writer">The text writer</param>
         <summary>Renders the pager user interface for the form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Form" />
       </Docs>
     </Member>
   </Members>

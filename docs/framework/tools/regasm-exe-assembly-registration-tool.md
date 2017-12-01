@@ -86,8 +86,8 @@ regasm myTest.dll /tlb:myTest.tlb
 ```  
   
 ## See Also  
- [Tools](../../../docs/framework/tools/index.md)   
- [Tlbexp.exe (Type Library Exporter)](../../../docs/framework/tools/tlbexp-exe-type-library-exporter.md)   
- [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)   
- [Registering Assemblies with COM](../../../docs/framework/interop/registering-assemblies-with-com.md)   
+ [Tools](../../../docs/framework/tools/index.md)  
+ [Tlbexp.exe (Type Library Exporter)](../../../docs/framework/tools/tlbexp-exe-type-library-exporter.md)  
+ [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)  
+ [Registering Assemblies with COM](../../../docs/framework/interop/registering-assemblies-with-com.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

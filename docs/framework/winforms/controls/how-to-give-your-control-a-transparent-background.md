@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "transparent backgrounds, custom controls"
+  - "transparent backgrounds [Windows Forms], custom controls"
   - "custom controls [Windows Forms], transparent background"
-  - "transparency, Windows Forms custom controls"
+  - "transparency [Windows Forms], Windows Forms custom controls"
 ms.assetid: 32433e63-f4e9-4305-9857-6de3edeb944a
 caps.latest.revision: 23
 author: dotnet-bot
@@ -33,7 +33,7 @@ In earlier versions of the .NET Framework, controls didn't support setting trans
 -   In the Properties window, choose the <xref:System.Windows.Forms.ButtonBase.BackColor%2A> property and set it to <xref:System.Drawing.Color.Transparent%2A>  
   
 ## See Also  
- <xref:System.Drawing.Color.FromArgb%2A>   
- [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)   
- [Using Managed Graphics Classes](../../../../docs/framework/winforms/advanced/using-managed-graphics-classes.md)   
+ <xref:System.Drawing.Color.FromArgb%2A>  
+ [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)  
+ [Using Managed Graphics Classes](../../../../docs/framework/winforms/advanced/using-managed-graphics-classes.md)  
  [How to: Draw Opaque and Semitransparent Lines](../../../../docs/framework/winforms/advanced/how-to-draw-opaque-and-semitransparent-lines.md)

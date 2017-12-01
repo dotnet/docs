@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "controls [Windows Forms], making invisible at run time"
   - "invisible controls"
   - "user controls [Windows Forms], invisible"
   - "custom controls [Windows Forms], invisible"
-  - "run time, making controls invisible"
+  - "run time [Windows Forms], making controls invisible"
 ms.assetid: 69eb2e72-32f5-4f79-a157-c2c5f60c1628
 caps.latest.revision: 13
 author: dotnet-bot
@@ -46,6 +46,6 @@ There are times when you might want to create a user control that is invisible a
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.Control.Visible%2A>   
- [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)   
+ <xref:System.Windows.Forms.Control.Visible%2A>  
+ [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)  
  [How to: Give Your Control a Transparent Background](../../../../docs/framework/winforms/controls/how-to-give-your-control-a-transparent-background.md)

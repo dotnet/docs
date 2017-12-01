@@ -165,6 +165,6 @@ The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-m
 ```  
   
 ## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)   
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
+ [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  
  [How to: Create and Install Temporary Certificates in WCF for Transport Security During Development](http://go.microsoft.com/fwlink/?LinkId=244264)

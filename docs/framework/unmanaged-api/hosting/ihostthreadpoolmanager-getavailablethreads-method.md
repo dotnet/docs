@@ -68,6 +68,6 @@ HRESULT GetAvailableThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- <xref:System.Threading.ThreadPool.GetAvailableThreads%2A>   
- <xref:System.Threading.ThreadPool>   
+ <xref:System.Threading.ThreadPool.GetAvailableThreads%2A>  
+ <xref:System.Threading.ThreadPool>  
  [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)

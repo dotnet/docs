@@ -10,10 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "serialization of documents"
-  - "storage of documents"
-  - "documents, storage"
-  - "documents, serialization"
+  - "serialization of documents [WPF], , "
+  - "documents [WPF], storage"
+  - "documents [WPF], serialization"
 ms.assetid: 4839cd87-e206-4571-803f-0200098ad37b
 caps.latest.revision: 24
 author: dotnet-bot
@@ -81,9 +80,9 @@ manager: "wpickett"
 3.  After the plug-in serializer is created, an installation script is implemented for distributing and installing (and uninstalling) the plug-in (see above, "[Installing Plug-in Serializers](#InstallingPluginSerializers)").  
   
 ## See Also  
- <xref:System.Windows.Documents.Serialization>   
- <xref:System.Windows.Xps.XpsDocumentWriter>   
- <xref:System.Windows.Xps.Packaging.XpsDocument>   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)   
+ <xref:System.Windows.Documents.Serialization>  
+ <xref:System.Windows.Xps.XpsDocumentWriter>  
+ <xref:System.Windows.Xps.Packaging.XpsDocument>  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
+ [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)  
  [XML Paper Specification: Overview](http://go.microsoft.com/fwlink?LinkID=106246)

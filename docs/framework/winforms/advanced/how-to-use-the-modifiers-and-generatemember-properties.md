@@ -9,18 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 f1_keywords: 
   - "Designer_GenerateMember"
   - "Designer_Modifiers"
 helpviewer_keywords: 
-  - "GenerateMember property"
-  - "Modifiers property"
   - "base forms"
-  - "inheritance, forms"
-  - "inherited forms, Windows Forms"
+  - "inheritance [Windows Forms], forms"
+  - "inherited forms [Windows Forms], Windows Forms"
   - "inherited forms"
   - "form inheritance"
   - "Windows Forms, inheritance"
@@ -68,7 +66,7 @@ When you place a component on a Windows Form, two properties are provided by the
 >  By default, the Windows Forms Designer assigns the `private` (`Friend` in Visual Basic) modifier to container controls like <xref:System.Windows.Forms.Panel>. If your base <xref:System.Windows.Forms.UserControl> or <xref:System.Windows.Forms.Form> has a container control, it will not accept new children in inherited controls and forms. The solution is to change the modifier of the base container control to `protected` or `public`.  
   
 ## See Also  
- <xref:System.Windows.Forms.Button>   
- [Windows Forms Visual Inheritance](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)   
- [Walkthrough: Demonstrating Visual Inheritance](../../../../docs/framework/winforms/advanced/walkthrough-demonstrating-visual-inheritance.md)   
+ <xref:System.Windows.Forms.Button>  
+ [Windows Forms Visual Inheritance](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)  
+ [Walkthrough: Demonstrating Visual Inheritance](../../../../docs/framework/winforms/advanced/walkthrough-demonstrating-visual-inheritance.md)  
  [How to: Inherit Windows Forms](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md)

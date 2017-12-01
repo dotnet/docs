@@ -340,5 +340,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InferSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Infers an XML Schema Definition Language (XSD) schema from the XML document specified.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

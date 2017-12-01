@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "typography, drawing text to visuals"
-  - "visuals, drawing text to"
-  - "text, drawing to visuals"
-  - "drawing, text to visuals"
+  - "typography [WPF], drawing text to visuals"
+  - "visuals [WPF], drawing text to"
+  - "text [WPF], drawing to visuals"
+  - "drawing [WPF], text to visuals"
 ms.assetid: fee4003c-e8a6-46ec-babd-2c7f4231a101
 caps.latest.revision: 11
 author: dotnet-bot

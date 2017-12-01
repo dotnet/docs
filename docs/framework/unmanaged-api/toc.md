@@ -10,6 +10,6 @@
 ## [Metadata](metadata/)
 ## [Profiling](profiling/)
 ## [Strong Naming](strong-naming/)
+## [WMI and Performance Counters](wmi/)
 ## [Tlbexp Helper Functions](tlbexp/)
-## [COR_PRF_ALLOWABLE_AFTER_ATTACH Bitmask](cor-prf-allowable-after-attach-bitmask.md)
 ## [GUID_ManagedName Attribute](guid-managedname-attribute.md)

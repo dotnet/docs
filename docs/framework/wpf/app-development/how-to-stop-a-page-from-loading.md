@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "pages, stopping from loading"
-  - "methods, Stoploading"
-  - "events, NavigationStopped"
-  - "NavigationStopped event"
-  - "stopping pages from loading"
-  - "loading, stopping"
+  - "pages [WPF], stopping from loading"
+  - "methods [WPF], Stoploading"
+  - "events [WPF], NavigationStopped"
+  - "NavigationStopped properties [WPF]"
+  - "stopping pages from loading [WPF]"
+  - "loading [WPF], stopping"
 ms.assetid: e2b695b0-517e-462c-8ccf-90cc8d6ba864
 caps.latest.revision: 6
 author: dotnet-bot

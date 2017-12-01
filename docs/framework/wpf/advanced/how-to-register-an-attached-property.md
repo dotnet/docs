@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "attached properties, registering"
-  - "registering attached properties"
+  - "attached properties [WPF], registering"
+  - "registering attached properties [WPF]"
 ms.assetid: eb47bd94-0451-4f8d-8fb6-95f7812ac05b
 caps.latest.revision: 12
 author: dotnet-bot
@@ -33,7 +33,7 @@ This example shows how to register an attached property and provide public acces
  [!code-vb[WPFAquariumSln#RegisterAttachedBubbler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#registerattachedbubbler)]  
   
 ## See Also  
- <xref:System.Windows.DependencyProperty>   
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)   
+ <xref:System.Windows.DependencyProperty>  
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
+ [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
  [How-to Topics](../../../../docs/framework/wpf/advanced/properties-how-to-topics.md)

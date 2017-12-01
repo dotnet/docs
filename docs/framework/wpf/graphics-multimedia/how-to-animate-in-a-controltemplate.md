@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "animation, ControlTemplates"
-  - "ControlTemplates, animating within"
+  - "animation [WPF], ControlTemplates"
+  - "ControlTemplates [WPF], animating within"
 ms.assetid: 97abb5d9-4dc7-4085-a011-54bd8bcb497b
 caps.latest.revision: 6
 author: dotnet-bot

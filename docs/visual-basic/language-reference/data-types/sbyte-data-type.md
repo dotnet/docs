@@ -1,45 +1,27 @@
 ---
 title: "SByte Data Type (Visual Basic)"
-
 ms.date: 04/20/2017
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.sbyte"
 helpviewer_keywords: 
-  - "numbers, whole"
+  - "numbers [Visual Basic], whole"
   - "whole numbers"
-  - "integral data types"
+  - "integral data types [Visual Basic]"
   - "integer numbers"
-  - "numbers, integer"
-  - "integers, data types"
-  - "integers, types"
+  - "numbers [Visual Basic], integer"
+  - "integers [Visual Basic], data types"
+  - "integers [Visual Basic], types"
   - "data types [Visual Basic], integral"
   - "SByte data type"
 ms.assetid: 5c38374a-18a1-4cc2-b493-299e3dcaa60f
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # SByte data type (Visual Basic)
 
@@ -86,11 +68,11 @@ If the integer literal is outside the range of `SByte` (that is, if it is less t
   
 ## See also
 
- <xref:System.SByte?displayProperty=nameWithType>   
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)   
- [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)   
- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)   
- [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)   
+ <xref:System.SByte?displayProperty=nameWithType>  
+ [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
+ [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
+ [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)  
+ [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)  
+ [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)  
  [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

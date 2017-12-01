@@ -10,14 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "data binding, grouping data in views in XAML"
-  - "XAML, sorting data in views"
-  - "grouping data in views in XAML"
-  - "data binding, sorting data in views in XAML"
-  - "sorting data in views in XAML"
-  - "XAML, grouping data in views"
-  - "views, sorting data"
-  - "views, grouping data"
+  - "data binding [WPF], grouping data in views in XAML"
+  - "XAML [WPF], sorting data in views"
+  - "grouping data in views in XAML [WPF]"
+  - "data binding [WPF], sorting data in views in XAML"
+  - "sorting data in views in XAML [WPF]"
+  - "XAML [WPF], grouping data in views"
+  - "views [WPF], sorting data"
+  - "views [WPF], grouping data"
 ms.assetid: 145c8c3f-dbdd-4d0d-816f-90b35eba7eda
 caps.latest.revision: 15
 author: dotnet-bot
@@ -45,7 +45,7 @@ This example shows how to create a view of a data collection in [!INCLUDE[TLA#tl
  [!code-xaml[CollectionViewSource#Attribute](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CollectionViewSource/CS/window1.xaml#attribute)]  
   
 ## See Also  
- <xref:System.Windows.Data.CollectionViewSource>   
- [Get the Default View of a Data Collection](../../../../docs/framework/wpf/data/how-to-get-the-default-view-of-a-data-collection.md)   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
+ <xref:System.Windows.Data.CollectionViewSource>  
+ [Get the Default View of a Data Collection](../../../../docs/framework/wpf/data/how-to-get-the-default-view-of-a-data-collection.md)  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

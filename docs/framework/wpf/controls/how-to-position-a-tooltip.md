@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "ToolTip control, positioning"
-  - "positioning ToolTip controls"
+  - "ToolTip control [WPF], positioning"
+  - "positioning ToolTip controls [WPF]"
 ms.assetid: cddf3757-9e5f-4ce3-a6eb-44489cf3804a
 caps.latest.revision: 14
 author: dotnet-bot
@@ -65,8 +65,8 @@ ToolTip placement by using the Placement, PlacementRectangle, and Offset propert
  [!code-vb[ToolTipService#NoToolTipCode](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#notooltipcode)]  
   
 ## See Also  
- <xref:System.Windows.Controls.ToolTip>   
- <xref:System.Windows.Controls.ToolTipService>   
- [How-to Topics](../../../../docs/framework/wpf/controls/tooltip-how-to-topics.md)   
- [ToolTip Overview](../../../../docs/framework/wpf/controls/tooltip-overview.md)   
+ <xref:System.Windows.Controls.ToolTip>  
+ <xref:System.Windows.Controls.ToolTipService>  
+ [How-to Topics](../../../../docs/framework/wpf/controls/tooltip-how-to-topics.md)  
+ [ToolTip Overview](../../../../docs/framework/wpf/controls/tooltip-overview.md)  
  [Use the ContextMenuService and ToolTipService](http://msdn.microsoft.com/en-us/809b0e9c-d612-4cda-b8af-1a698c68f4d1)

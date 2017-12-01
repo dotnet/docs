@@ -9,17 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "ColumnDefinitionCollection class"
-  - "controls, Grid class"
-  - "classes, RowDefinitionCollection"
-  - "classes, ColumnDefinitionCollection"
-  - "RowDefinitionCollection class"
-  - "Grid control, ColumnDefinitionCollection class"
-  - "Grid control, RowDefinitionCollection class"
+  - "controls [WPF], Grid class"
+  - "Grid control [WPF], ColumnDefinitionCollection class"
+  - "Grid control [WPF], RowDefinitionCollection class"
 ms.assetid: bfc7160a-45f2-4e17-9961-df414dfb13c5
 caps.latest.revision: 10
 author: dotnet-bot
@@ -40,6 +36,6 @@ This example shows how to use the methods in the <xref:System.Windows.Controls.C
  [!code-vb[ColumnDefinitionsGrid#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#2)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Grid>   
- <xref:System.Windows.Controls.ColumnDefinitionCollection>   
+ <xref:System.Windows.Controls.Grid>  
+ <xref:System.Windows.Controls.ColumnDefinitionCollection>  
  <xref:System.Windows.Controls.RowDefinitionCollection>

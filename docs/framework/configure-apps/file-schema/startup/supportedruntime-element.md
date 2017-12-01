@@ -1,6 +1,6 @@
 ---
 title: "&lt;supportedRuntime&gt; Element"
-ms.date: "08/19/2017"
+ms.date: "10/17/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
@@ -65,7 +65,7 @@ The `runtime` attribute specifies the Common Language Runtime (CLR) version that
 |2.0|"v2.0.50727"|  
 |3.0|"v2.0.50727"|  
 |3.5|"v2.0.50727"|  
-|4.0-4.7|"v4.0"|  
+|4.0-4.7.1|"v4.0"|  
 
   
 <a name="sku"></a>   
@@ -89,7 +89,8 @@ The `sku` attribute uses a target framework moniker (TFM) to indicate the versio
 |4.6.1|".NETFramework,Version=v4.6.1"|  
 |4.6.2|".NETFramework,Version=v4.6.2"|  
 |4.7|".NETFramework,Version=v4.7"|
-   
+|4.7.1|".NETFramework,Version=4.7.1"|
+
 ## Example  
  The following example shows how to specify the supported runtime version in a configuration file. The configuration file indicates that the app targets the .NET Framework 4.7.  
   
@@ -105,6 +106,6 @@ The `sku` attribute uses a target framework moniker (TFM) to indicate the versio
  This element can be used in the application configuration file.  
   
 ## See Also  
- [Startup Settings Schema](../../../../../docs/framework/configure-apps/file-schema/startup/index.md)   
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
+ [Startup Settings Schema](../../../../../docs/framework/configure-apps/file-schema/startup/index.md)  
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
  [In-Process Side-by-Side Execution](../../../../../docs/framework/deployment/in-process-side-by-side-execution.md)

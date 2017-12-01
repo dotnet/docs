@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "converting, bound data"
-  - "data binding, converting bound data"
-  - "binding data, converting bound data"
+  - "converting [WPF], bound data"
+  - "data binding [WPF], converting bound data"
+  - "binding data [WPF], converting bound data"
 ms.assetid: b00aaa19-c6df-4c3b-a9fd-88a0b488df2b
 caps.latest.revision: 11
 author: dotnet-bot
@@ -44,6 +44,6 @@ This example shows how to apply conversion to data that is used in bindings.
  The style resources referenced in the above example are defined in a resource section not shown in this topic.  
   
 ## See Also  
- [Implement Binding Validation](../../../../docs/framework/wpf/data/how-to-implement-binding-validation.md)   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
+ [Implement Binding Validation](../../../../docs/framework/wpf/data/how-to-implement-binding-validation.md)  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

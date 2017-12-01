@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "animation, duration"
-  - "Timelines, description"
-  - "duration of animations"
+  - "animation [WPF], duration"
+  - "Timelines [WPF], description"
+  - "duration of animations [WPF]"
 ms.assetid: 155034ef-7d00-4416-a73c-b1713992d2eb
 caps.latest.revision: 8
 author: dotnet-bot
@@ -30,5 +30,5 @@ A <xref:System.Windows.Media.Animation.Timeline> represents a segment of time an
  [!code-xaml[timingbehaviors_snip#DurationExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/DurationExample.xaml#durationexamplewholepage)]  
   
 ## See Also  
- <xref:System.Windows.Duration>   
+ <xref:System.Windows.Duration>  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)

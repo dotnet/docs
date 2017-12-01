@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "mapping properties"
-  - "ElementHost control, mapping properties"
+  - "mapping properties [WPF]"
+  - "ElementHost control [WPF], mapping properties"
 ms.assetid: bccd6e0d-2272-4924-9107-ff8ed58b88aa
 caps.latest.revision: 14
 author: dotnet-bot
@@ -144,9 +144,9 @@ This walkthrough shows you how to use the <xref:System.Windows.Forms.Integration
 2.  Press F5 to build and run the application.  
   
 ## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
- [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md)   
- [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)   
+ <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
+ [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md)  
+ [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)  
  [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)

@@ -80,6 +80,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.Switch" />
+    <altmember cref="T:System.Diagnostics.TraceSwitch" />
+    <altmember cref="T:System.Diagnostics.Debug" />
+    <altmember cref="T:System.Diagnostics.Trace" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,6 +148,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -218,7 +226,7 @@
  By default, this field is set to `false` (disabled). To enable the switch, assign this field the value of `true`. To disable the switch, assign the value to `false`.  The value of this property is determined by the value of the base class property <xref:System.Diagnostics.Switch.SwitchSetting%2A>.  
   
 > [!NOTE]
->  This method uses the <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> flag to prevent being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=nameWithType> permission. If your code can be called from partially trusted code, do not pass the user input to <xref:System.Runtime.InteropServices.Marshal> class methods without validation.  
+>  This method uses the <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> flag to prevent being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=nameWithType> permission. If your code can be called from partially trusted code, do not pass the user input to <xref:System.Runtime.InteropServices.Marshal> class methods without validation.  
   
    
   
@@ -233,6 +241,10 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the correct permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Demand value <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="OnValueChanged">
@@ -270,5 +282,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.BooleanSwitch" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

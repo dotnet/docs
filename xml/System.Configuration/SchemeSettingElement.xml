@@ -22,10 +22,15 @@
 ## Remarks  
  The <xref:System.Configuration.SchemeSettingElementCollection> class represents the \<schemeSettings> element under the Uri section within a configuration file. The <xref:System.Configuration.SchemeSettingElement> class represents an instance of an element in the <xref:System.Configuration.SchemeSettingElementCollection> class.  
   
- The <xref:System.Configuration.SchemeSettingElementCollection> class and the \<schemeSettings> section in a configuration file looks generic, implying that an application can specify any <xref:System.GenericUriParserOptions?displayProperty=nameWithType> enumeration value for any scheme. In fact, only the <xref:System.GenericUriParserOptions?displayProperty=nameWithType> flag for HTTP and HTTPS schemes are supported. All other settings are ignored.  
+ The <xref:System.Configuration.SchemeSettingElementCollection> class and the \<schemeSettings> section in a configuration file looks generic, implying that an application can specify any <xref:System.GenericUriParserOptions?displayProperty=nameWithType> enumeration value for any scheme. In fact, only the <xref:System.GenericUriParserOptions.DontUnescapePathDotsAndSlashes?displayProperty=nameWithType> flag for HTTP and HTTPS schemes are supported. All other settings are ignored.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.SchemeSettingElementCollection" />
+    <altmember cref="T:System.Configuration.UriSection" />
+    <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
+    <altmember cref="T:System.GenericUriParserOptions" />
+    <altmember cref="T:System.Uri" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,6 +50,11 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.SchemeSettingElement" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Configuration.SchemeSettingElementCollection" />
+        <altmember cref="T:System.Configuration.UriSection" />
+        <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
+        <altmember cref="T:System.GenericUriParserOptions" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="GenericUriParserOptions">
@@ -79,6 +89,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.SchemeSettingElementCollection" />
+        <altmember cref="T:System.Configuration.UriSection" />
+        <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
+        <altmember cref="T:System.GenericUriParserOptions" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -115,6 +130,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.SchemeSettingElementCollection" />
+        <altmember cref="T:System.Configuration.UriSection" />
+        <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
+        <altmember cref="T:System.GenericUriParserOptions" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="Properties">

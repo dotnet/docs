@@ -13,6 +13,9 @@
   <Docs>
     <summary>Provides data for the <see cref="E:System.Windows.Controls.DataGridColumn.CopyingCellClipboardContent" /> and <see cref="E:System.Windows.Controls.DataGridColumn.PastingCellClipboardContent" /> events.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.DataGrid" />
+    <altmember cref="E:System.Windows.Controls.DataGridColumn.CopyingCellClipboardContent" />
+    <altmember cref="E:System.Windows.Controls.DataGridColumn.PastingCellClipboardContent" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +38,9 @@
         <param name="content">The text value of the cell for which the event occurred.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridCellClipboardEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGridColumn.CopyingCellClipboardContent" />
+        <altmember cref="E:System.Windows.Controls.DataGridColumn.PastingCellClipboardContent" />
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -53,6 +59,9 @@
         <summary>Gets the column that contains the cell for which the event occurred.</summary>
         <value>The column that contains the cell for which the event occurred.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGridColumn.CopyingCellClipboardContent" />
+        <altmember cref="E:System.Windows.Controls.DataGridColumn.PastingCellClipboardContent" />
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -71,6 +80,9 @@
         <summary>Gets or sets the text value of the cell for which the event occurred.</summary>
         <value>The text value of the cell for which the event occurred.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGridColumn.CopyingCellClipboardContent" />
+        <altmember cref="E:System.Windows.Controls.DataGridColumn.PastingCellClipboardContent" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -89,6 +101,9 @@
         <summary>Gets the data item for the row that contains the cell for which the event occurred.</summary>
         <value>The data item for the row that contains the cell for which the event occurred.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGridColumn.CopyingCellClipboardContent" />
+        <altmember cref="E:System.Windows.Controls.DataGridColumn.PastingCellClipboardContent" />
       </Docs>
     </Member>
   </Members>

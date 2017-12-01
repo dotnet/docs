@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "image codecs, listing"
-  - "image encoders, listing"
+  - "image codecs [Windows Forms], listing"
+  - "image encoders [Windows Forms], listing"
 ms.assetid: 49e8e4e9-7a67-42d9-86bf-08821cdc282e
 caps.latest.revision: 9
 author: dotnet-bot
@@ -38,5 +38,5 @@ You may want to list the image encoders available on a computer, to determine wh
 -   A <xref:System.Windows.Forms.PaintEventArgs>, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See Also  
- [How to: List Installed Decoders](../../../../docs/framework/winforms/advanced/how-to-list-installed-decoders.md)   
+ [How to: List Installed Decoders](../../../../docs/framework/winforms/advanced/how-to-list-installed-decoders.md)  
  [Using Image Encoders and Decoders in Managed GDI+](../../../../docs/framework/winforms/advanced/using-image-encoders-and-decoders-in-managed-gdi.md)

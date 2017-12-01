@@ -3,7 +3,7 @@ uid: System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs.Request
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs.#ctor(S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,5 +27,5 @@ uid: System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs.Excepti
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---

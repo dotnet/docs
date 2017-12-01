@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "GridSplitter control, ensuring visibility of"
+  - "GridSplitter control [WPF], ensuring visibility of"
 ms.assetid: 0a62a964-89c8-48f0-9023-5df721a8cf47
 caps.latest.revision: 10
 author: dotnet-bot
@@ -38,5 +38,5 @@ This example shows how to make sure a <xref:System.Windows.Controls.GridSplitter
  [!code-xaml[GridSplitterSnips#GridSplitterMargin](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml#gridsplittermargin)]  
   
 ## See Also  
- <xref:System.Windows.Controls.GridSplitter>   
+ <xref:System.Windows.Controls.GridSplitter>  
  [How-to Topics](../../../../docs/framework/wpf/controls/gridsplitter-how-to-topics.md)

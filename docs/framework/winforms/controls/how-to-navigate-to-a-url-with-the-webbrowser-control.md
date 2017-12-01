@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 f1_keywords: 
   - "WebBrowser.Navigate"
 helpviewer_keywords: 
   - "WebBrowser control [Windows Forms], examples"
-  - "URLs, navigating to"
+  - "URLs [Windows Forms], navigating to"
   - "WebBrowser control [Windows Forms], navigating to URLs"
   - "examples [Windows Forms], WebBrowser control"
 ms.assetid: b3ec38cb-f509-4d0b-bd79-9f3611259c62
@@ -48,9 +48,9 @@ this.webBrowser1.Navigate("http://www.microsoft.com");
 -   References to the `System` and `System.Windows.Forms` assemblies.  
   
 ## See Also  
- <xref:System.Windows.Forms.WebBrowser>   
- <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.WebBrowser.Navigated?displayProperty=nameWithType>   
- [WebBrowser Control](../../../../docs/framework/winforms/controls/webbrowser-control-windows-forms.md)   
+ <xref:System.Windows.Forms.WebBrowser>  
+ <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.WebBrowser.Navigated?displayProperty=nameWithType>  
+ [WebBrowser Control](../../../../docs/framework/winforms/controls/webbrowser-control-windows-forms.md)  
  [How to: Print with a WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-print-with-a-webbrowser-control.md)

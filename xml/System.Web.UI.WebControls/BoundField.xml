@@ -46,6 +46,25 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+    <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+    <altmember cref="P:System.Web.UI.WebControls.BoundField.ApplyFormatInEditMode" />
+    <altmember cref="P:System.Web.UI.WebControls.BoundField.DataField" />
+    <altmember cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.InsertVisible" />
+    <altmember cref="P:System.Web.UI.WebControls.BoundField.NullDisplayText" />
+    <altmember cref="P:System.Web.UI.WebControls.BoundField.ReadOnly" />
+    <altmember cref="P:System.Web.UI.WebControls.CheckBoxField.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.BoundField.ConvertEmptyStringToNull" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.Visible" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +100,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
       </Docs>
     </Member>
     <Member MemberName="ApplyFormatInEditMode">
@@ -123,6 +144,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdating" />
       </Docs>
     </Member>
     <Member MemberName="ConvertEmptyStringToNull">
@@ -165,6 +189,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataField" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.NullDisplayText" />
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -193,6 +220,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.CreateField" />
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -219,6 +248,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
       </Docs>
     </Member>
     <Member MemberName="DataField">
@@ -263,6 +294,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.NullDisplayText" />
       </Docs>
     </Member>
     <Member MemberName="DataFormatString">
@@ -360,6 +393,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataField" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.ApplyFormatInEditMode" />
       </Docs>
     </Member>
     <Member MemberName="ExtractValuesFromCell">
@@ -403,6 +438,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
       </Docs>
     </Member>
     <Member MemberName="FormatDataValue">
@@ -473,6 +510,7 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this method to return a different value to display for the field in a designer.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.GetValue(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -517,6 +555,7 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this method to provide a custom routine to determine a field's value.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.GetDesignTimeValue" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -542,6 +581,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataField" />
       </Docs>
     </Member>
     <Member MemberName="HtmlEncode">
@@ -584,6 +624,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.HttpServerUtility.HtmlEncode" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.SupportsHtmlEncode" />
       </Docs>
     </Member>
     <Member MemberName="HtmlEncodeFormatString">
@@ -618,6 +660,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.HtmlEncode" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -653,6 +697,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.Initialize(System.Boolean,System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.InitializeDataCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlRowState)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -689,6 +737,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.Initialize(System.Boolean,System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.InitializeDataCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlRowState)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeDataCell">
@@ -722,6 +772,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this method to perform a custom initialization routine.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.Initialize(System.Boolean,System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -784,6 +836,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataField" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.ConvertEmptyStringToNull" />
       </Docs>
     </Member>
     <Member MemberName="OnDataBindField">
@@ -818,6 +873,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this method to perform a custom binding routine.</para>
         </block>
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.Web.HttpException" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -860,6 +917,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AutoGenerateEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
       </Docs>
     </Member>
     <Member MemberName="SupportsHtmlEncode">
@@ -888,6 +947,8 @@
         <block subset="none" type="overrides">
           <para>When deriving from the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this property to indicate whether HTML encoding is supported by the class.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.HtmlEncode" />
+        <altmember cref="Overload:System.Web.HttpServerUtility.HtmlEncode" />
       </Docs>
     </Member>
     <Member MemberName="ThisExpression">
@@ -914,6 +975,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ValidateRequestMode">
@@ -968,6 +1030,7 @@
         <block subset="none" type="overrides">
           <para>Classes that derive from the <see cref="T:System.Web.UI.WebControls.BoundField" /> class can override this method to indicate whether the controls contained by the field support callbacks. To indicate that callbacks are supported, implement this method as an empty method that does not throw an exception; otherwise, throw an exception with a useful message describing why callbacks are not supported.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.ValidateSupportsCallback" />
       </Docs>
     </Member>
   </Members>

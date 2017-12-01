@@ -1,13 +1,13 @@
 ---
 uid: Microsoft.VisualBasic.CompilerServices.OptionTextAttribute
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.OptionTextAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

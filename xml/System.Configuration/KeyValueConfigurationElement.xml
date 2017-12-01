@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationElement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +67,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.AppSettingsSection" />
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -147,6 +149,7 @@
         <summary>Gets the collection of properties.</summary>
         <value>The <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> of properties for the element.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Configuration.ConfigurationElement" />
       </Docs>
     </Member>
     <Member MemberName="Value">

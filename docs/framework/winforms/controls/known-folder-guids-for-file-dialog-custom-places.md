@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Known Folder GUIDs, Custom Places"
-  - "Custom Places, Known Folder GUIDs"
-  - "Windows Vista Known Folder GUIDs, Custom Places"
+  - "Known Folder GUIDs [Windows Forms], Custom Places"
+  - "Custom Places [Windows Forms], Known Folder GUIDs"
+  - "Windows Vista Known Folder GUIDs [Windows Forms], Custom Places"
 ms.assetid: d8d8b544-8b4d-4da5-ba3a-b05e93244778
 caps.latest.revision: 6
 author: dotnet-bot
@@ -293,5 +293,5 @@ You use a <xref:System.Guid> to specify a [!INCLUDE[wiprlhext](../../../../inclu
  F38BF404-1D43-42F2-9305-67DE0B28FC23  
   
 ## See Also  
- <xref:System.Windows.Forms.FileDialogCustomPlace>   
+ <xref:System.Windows.Forms.FileDialogCustomPlace>  
  [How To: Add a Custom Place to a File Dialog Box](../../../../docs/framework/winforms/controls/how-to-add-a-custom-place-to-a-file-dialog-box.md)

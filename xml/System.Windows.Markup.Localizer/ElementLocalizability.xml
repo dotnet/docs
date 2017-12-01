@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents localizability settings for an element in BAML.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Markup.Localizer.BamlLocalizer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +49,7 @@
         <param name="attribute">The associated element's localizability attribute.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.Localizer.ElementLocalizability" /> class with a specified formatting tag and localizability attribute.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.LocalizabilityAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Attribute">
@@ -73,6 +75,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.LocalizabilityAttribute" />
+        <altmember cref="P:System.Windows.Markup.Localizer.ElementLocalizability.FormattingTag" />
       </Docs>
     </Member>
     <Member MemberName="FormattingTag">
@@ -100,5 +104,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.Localizer.ElementLocalizability" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

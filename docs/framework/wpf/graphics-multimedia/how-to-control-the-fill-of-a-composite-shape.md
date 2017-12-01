@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "shapes, composite, controlling fill"
-  - "composite shapes, controlling fill"
+  - "shapes [WPF], composite [WPF], controlling fill"
+  - "composite shapes [WPF], controlling fill"
   - "graphics [WPF], composite shapes"
-  - "fill, controlling"
+  - "fill [WPF], controlling"
 ms.assetid: c1c94575-9eca-48a5-a49a-2ec65259f229
 caps.latest.revision: 11
 author: dotnet-bot
@@ -68,5 +68,5 @@ The <xref:System.Windows.Media.GeometryGroup.FillRule%2A> property of a <xref:Sy
 ## Example  
   
 ## See Also  
- [Create a Composite Shape](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-shape.md)   
+ [Create a Composite Shape](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-shape.md)  
  [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)

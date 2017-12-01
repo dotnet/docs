@@ -45,10 +45,10 @@ The following example shows how to group elements into chunks that represent sub
 ## Example  
  The following example shows both the extension method and the client code that uses it.  
   
- [!code-cs[cscsrefContiguousGroups#1](../../../samples/snippets/csharp/concepts/linq/how-to-group-results-by-contiguous-keys_1.cs)]  
+ [!code-csharp[cscsrefContiguousGroups#1](../../../samples/snippets/csharp/concepts/linq/how-to-group-results-by-contiguous-keys_1.cs)]  
   
  To use the extension method in your project, copy the `MyExtensions` static class to a new or existing source code file and if it is required, add a `using` directive for the namespace where it is located.  
   
 ## See also  
- [LINQ Query Expressions](index.md)   
+ [LINQ Query Expressions](index.md)  
  

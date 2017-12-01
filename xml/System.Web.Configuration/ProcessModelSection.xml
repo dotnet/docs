@@ -56,6 +56,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.ProcessModelSection" />
+    <altmember cref="T:System.Web.Configuration.ProcessModelLogLevel" />
+    <altmember cref="T:System.Web.Configuration.ProcessModelComAuthenticationLevel" />
+    <altmember cref="T:System.Web.Configuration.ProcessModelComImpersonationLevel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +82,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationAllowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="AutoConfig">
@@ -111,6 +116,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.ProcessModelSection.MaxWorkerThreads" />
+        <altmember cref="P:System.Web.Configuration.ProcessModelSection.MaxIOThreads" />
+        <altmember cref="P:System.Web.Configuration.HttpRuntimeSection.MinFreeThreads" />
+        <altmember cref="P:System.Web.Configuration.HttpRuntimeSection.MinLocalRequestFreeThreads" />
+        <altmember cref="P:System.Net.Configuration.ConnectionManagementElement.MaxConnection" />
       </Docs>
     </Member>
     <Member MemberName="ClientConnectedCheck">
@@ -408,6 +418,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProcessModelLogLevel" />
       </Docs>
     </Member>
     <Member MemberName="MaxAppDomains">
@@ -499,6 +510,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HttpRuntimeSection" />
       </Docs>
     </Member>
     <Member MemberName="MaxWorkerThreads">
@@ -549,6 +561,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HttpRuntimeSection" />
       </Docs>
     </Member>
     <Member MemberName="MemoryLimit">

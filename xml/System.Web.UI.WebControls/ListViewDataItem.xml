@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListViewDataItem> class represents an individual data item in a <xref:System.Web.UI.WebControls.ListView> control. A data item usually corresponds to a record in a data source object. The class derives from the <xref:System.Web.UI.WebControls.ListViewItem> class.  
   
- Each item in the <xref:System.Web.UI.WebControls.ListView> control has a designated item type that is represented by the <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> property. When the item type is <xref:System.Web.UI.WebControls.ListViewItemType?displayProperty=nameWithType>, you can use the <xref:System.Web.UI.WebControls.ListViewDataItem> class to get more information about the item.  
+ Each item in the <xref:System.Web.UI.WebControls.ListView> control has a designated item type that is represented by the <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> property. When the item type is <xref:System.Web.UI.WebControls.ListViewItemType.DataItem?displayProperty=nameWithType>, you can use the <xref:System.Web.UI.WebControls.ListViewDataItem> class to get more information about the item.  
   
  The <xref:System.Web.UI.WebControls.ListView> control stores data items in the <xref:System.Web.UI.WebControls.ListView.Items%2A> collection. To determine the index of a <xref:System.Web.UI.WebControls.ListViewDataItem> object in the <xref:System.Web.UI.WebControls.ListView.Items%2A> collection, use the <xref:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex%2A> property. To determine the index of the data item in the underlying data source, use the <xref:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex%2A> property. The difference between these index properties is that <xref:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex%2A> represents the position of the data item in the current page, whereas <xref:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex%2A> is based on the page offset. If the paging functionality is not enabled in the <xref:System.Web.UI.WebControls.ListView> control by using a <xref:System.Web.UI.WebControls.DataPager> control, these two properties will contain the same value.  
   
@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="DataItemIndex">
@@ -131,6 +134,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DataItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex" />
       </Docs>
     </Member>
     <Member MemberName="DisplayIndex">
@@ -167,6 +172,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">

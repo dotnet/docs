@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "transformations, order signficance"
+  - "transformations [Windows Forms], order signficance"
 ms.assetid: 37d5f9dc-a5cf-4475-aa5d-34d714e808a9
 caps.latest.revision: 13
 author: dotnet-bot
@@ -46,6 +46,6 @@ A single <xref:System.Drawing.Drawing2D.Matrix> object can store a single transf
  The result of the immediately preceding example is the same as the result of the first example in this topic. This is because we reversed both the order of the method calls and the order of the matrix multiplication.  
   
 ## See Also  
- <xref:System.Drawing.Drawing2D.Matrix>   
- [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)   
+ <xref:System.Drawing.Drawing2D.Matrix>  
+ [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)  
  [Using Transformations in Managed GDI+](../../../../docs/framework/winforms/advanced/using-transformations-in-managed-gdi.md)

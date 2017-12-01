@@ -109,5 +109,5 @@ static WriteToFile()
 ```  
   
 ## See Also  
- <xref:System.IO.StreamWriter>   
+ <xref:System.IO.StreamWriter>  
  [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

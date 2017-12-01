@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data binding, implementing"
+  - "data binding [Windows Forms], implementing"
   - "IListSource interface"
 ms.assetid: 63ce27aa-2e23-4fbd-8228-0c1726f6c421
 caps.latest.revision: 6
@@ -45,8 +45,8 @@ Implement the <xref:System.ComponentModel.IListSource> interface to create a bin
 -   References to the System.Drawing and System.Windows.Forms assemblies.  
   
 ## See Also  
- <xref:System.ComponentModel.IListSource>   
- <xref:System.ComponentModel.ITypedList>   
- <xref:System.ComponentModel.BindingList%601>   
- <xref:System.ComponentModel.IBindingList>   
+ <xref:System.ComponentModel.IListSource>  
+ <xref:System.ComponentModel.ITypedList>  
+ <xref:System.ComponentModel.BindingList%601>  
+ <xref:System.ComponentModel.IBindingList>  
  [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)

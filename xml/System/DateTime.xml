@@ -168,7 +168,7 @@
   
  UTC time is suitable for calculations, comparisons, and storing dates and time in files. Local time is appropriate for display in user interfaces of desktop applications. Time zone-aware applications (such as many Web applications) also need to work with a number of other time zones.  
   
- If the <xref:System.DateTime.Kind%2A> property of a <xref:System.DateTime> object is <xref:System.DateTimeKind?displayProperty=nameWithType>, it is unspecified whether the time represented is local time, UTC time, or a time in some other time zone.  
+ If the <xref:System.DateTime.Kind%2A> property of a <xref:System.DateTime> object is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, it is unspecified whether the time represented is local time, UTC time, or a time in some other time zone.  
   
 <a name="datetime_ops"></a>   
 ## DateTime operations  
@@ -252,7 +252,7 @@
  [!code-csharp[System.DateTime.Calendar#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.DateTime.Calendar/cs/UmAlQuraParse1.cs#2)]
  [!code-vb[System.DateTime.Calendar#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.DateTime.Calendar/vb/UmAlQuraParse1.vb#2)]  
   
- You can also instantiate a <xref:System.DateTime> value by using the date and time elements (such as the number of the year, month, and day) of a specific calendar by calling a [DateTime constructor](../Topic/DateTime%20Constructor.md) that includes a `calendar` parameter and passing it a <xref:System.Globalization.CultureInfo.Calendar%2A> object that represents that calendar. The following example does this by using the date and time elements from the <xref:System.Globalization.UmAlQuraCalendar> calendar.  
+ You can also instantiate a <xref:System.DateTime> value by using the date and time elements (such as the number of the year, month, and day) of a specific calendar by calling a [DateTime constructor](xref:System.DateTime.%23ctor%2A) that includes a `calendar` parameter and passing it a <xref:System.Globalization.CultureInfo.Calendar%2A> object that represents that calendar. The following example does this by using the date and time elements from the <xref:System.Globalization.UmAlQuraCalendar> calendar.  
   
  [!code-csharp[System.DateTime.Calendar#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.DateTime.Calendar/cs/Ctor1.cs#3)]
  [!code-vb[System.DateTime.Calendar#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.DateTime.Calendar/vb/Ctor1.vb#3)]  
@@ -308,7 +308,7 @@
   
  To restore the persisted <xref:System.DateTime> values without data loss, do the following:  
   
-1.  Parse the data by calling the <xref:System.DateTime.ParseExact%2A> or <xref:System.DateTime.TryParseExact%2A> overload. Specify <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> as the `provider` argument, and use the same standard format string you used for the `format` argument during conversion. Include the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> value in the `styles` argument.  
+1.  Parse the data by calling the <xref:System.DateTime.ParseExact%2A> or <xref:System.DateTime.TryParseExact%2A> overload. Specify <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> as the `provider` argument, and use the same standard format string you used for the `format` argument during conversion. Include the <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> value in the `styles` argument.  
   
 2.  If the <xref:System.DateTime> values represent single moments in time, call the <xref:System.DateTime.ToLocalTime%2A> method to convert the parsed date from UTC to local time.  
   
@@ -394,6 +394,11 @@
  ]]></format>
     </remarks>
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
+    <altmember cref="T:System.DateTimeOffset" />
+    <altmember cref="T:System.TimeSpan" />
+    <altmember cref="T:System.Globalization.Calendar" />
+    <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
+    <altmember cref="T:System.TimeZoneInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -529,7 +534,7 @@
 ## Remarks  
  This constructor interprets `year`, `month`, and `day` as a year, month, and day in the Gregorian calendar. To instantiate a <xref:System.DateTime> value by using the year, month, and day in another calendar, call the <xref:System.DateTime.%23ctor%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Globalization.Calendar%29> constructor.  
   
- The time of day for the resulting <xref:System.DateTime> is midnight (00:00:00). The <xref:System.DateTime.Kind%2A> property is initialized to <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ The time of day for the resulting <xref:System.DateTime> is midnight (00:00:00). The <xref:System.DateTime.Kind%2A> property is initialized to <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>.  
   
    
   
@@ -615,6 +620,8 @@
  -or-  
   
  <paramref name="day" /> is less than 1 or greater than the number of days in <paramref name="month" />.</exception>
+        <altmember cref="T:System.Int32" />
+        <altmember cref="T:System.Globalization.Calendar" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -863,6 +870,8 @@
  -or-  
   
  <paramref name="second" /> is less than 0 or greater than 59.</exception>
+        <altmember cref="T:System.Int32" />
+        <altmember cref="T:System.Globalization.Calendar" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -951,6 +960,7 @@
  -or-  
   
  <paramref name="millisecond" /> is less than 0 or greater than 999.</exception>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1131,6 +1141,8 @@
  -or-  
   
  <paramref name="millisecond" /> is less than 0 or greater than 999.</exception>
+        <altmember cref="T:System.Int32" />
+        <altmember cref="T:System.Globalization.Calendar" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1279,6 +1291,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="M:System.TimeSpan.Add(System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="AddDays">
@@ -1337,6 +1351,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="AddHours">
@@ -1394,6 +1409,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTime.Add(System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="AddMilliseconds">
@@ -1449,6 +1465,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="AddMinutes">
@@ -1505,6 +1522,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="AddMonths">
@@ -1619,6 +1637,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="AddTicks">
@@ -1662,6 +1681,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="P:System.DateTime.Ticks" />
       </Docs>
     </Member>
     <Member MemberName="AddYears">
@@ -1789,6 +1810,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.CompareTo(System.Object)" />
+        <altmember cref="M:System.DateTime.Equals(System.Object)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="CompareTo">
@@ -1885,6 +1908,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.Compare(System.DateTime,System.DateTime)" />
+        <altmember cref="M:System.DateTime.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -1954,6 +1979,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not a <see cref="T:System.DateTime" />.</exception>
+        <altmember cref="M:System.DateTime.Compare(System.DateTime,System.DateTime)" />
+        <altmember cref="M:System.DateTime.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -2107,6 +2134,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Ticks" />
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="DayOfYear">
@@ -2153,6 +2182,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfYear(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="DaysInMonth">
@@ -2272,6 +2302,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.Equals(System.Object)" />
+        <altmember cref="M:System.DateTime.Compare(System.DateTime,System.DateTime)" />
+        <altmember cref="M:System.DateTime.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -2323,6 +2356,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.Compare(System.DateTime,System.DateTime)" />
+        <altmember cref="M:System.DateTime.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -2377,6 +2412,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="M:System.DateTime.Compare(System.DateTime,System.DateTime)" />
+        <altmember cref="M:System.DateTime.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="FromBinary">
@@ -2443,6 +2481,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="dateData" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTime.ToBinary" />
       </Docs>
     </Member>
     <Member MemberName="FromFileTime">
@@ -2485,7 +2524,7 @@
   
  The `fileTime` parameter specifies a file time expressed in 100-nanosecond ticks.  
   
- Starting with the .NET Framework version 2.0, the return value is a <xref:System.DateTime> whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ Starting with the .NET Framework version 2.0, the return value is a <xref:System.DateTime> whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
    
   
@@ -2512,6 +2551,8 @@
      [!code-csharp[System.DateTime.FromFileTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.fromfiletime/cs/fromfiletime1.cs#1)]
      [!code-vb[System.DateTime.FromFileTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.fromfiletime/vb/fromfiletime1.vb#1)]</para>
         </block>
+        <altmember cref="M:System.DateTime.ToUniversalTime" />
+        <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="FromFileTimeUtc">
@@ -2560,6 +2601,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="fileTime" /> is less than 0 or represents a time greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTime.ToUniversalTime" />
+        <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
+        <altmember cref="M:System.DateTime.FromFileTime(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FromOADate">
@@ -2603,6 +2647,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The date is not a valid OLE Automation Date value.</exception>
+        <altmember cref="M:System.DateTime.ToOADate" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetDateTimeFormats">
@@ -3249,6 +3294,7 @@ juillet 2009
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeZoneInfo.IsDaylightSavingTime(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapYear">
@@ -3352,6 +3398,7 @@ juillet 2009
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.SpecifyKind(System.DateTime,System.DateTimeKind)" />
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -3399,6 +3446,7 @@ juillet 2009
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.DateTime.MinValue" />
       </Docs>
     </Member>
     <Member MemberName="Millisecond">
@@ -3655,6 +3703,8 @@ juillet 2009
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTimeOffset.Now" />
+        <altmember cref="P:System.DateTime.UtcNow" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -3704,6 +3754,9 @@ juillet 2009
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTime.Add(System.TimeSpan)" />
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="P:System.DateTime.Ticks" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -3758,6 +3811,7 @@ juillet 2009
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.Equals(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -3803,6 +3857,7 @@ juillet 2009
   
  The equivalent method for this operator is <xref:System.DateTime.Compare%28System.DateTime%2CSystem.DateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.CompareTo(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -3848,6 +3903,7 @@ juillet 2009
   
  The equivalent method for this operator is <xref:System.DateTime.Compare%28System.DateTime%2CSystem.DateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.CompareTo(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -3893,6 +3949,7 @@ juillet 2009
   
  The equivalent method for this operator is <xref:System.DateTime.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.CompareTo(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -3938,6 +3995,7 @@ juillet 2009
   
  The equivalent method for this operator is <xref:System.DateTime.Compare%28System.DateTime%2CSystem.DateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.CompareTo(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -3983,6 +4041,7 @@ juillet 2009
   
  The equivalent method for this operator is <xref:System.DateTime.Compare%28System.DateTime%2CSystem.DateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.CompareTo(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -4039,6 +4098,8 @@ juillet 2009
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.Subtract(System.DateTime)" />
+        <altmember cref="P:System.DateTime.Ticks" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -4093,6 +4154,9 @@ juillet 2009
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTime.Subtract(System.TimeSpan)" />
+        <altmember cref="P:System.DateTime.Ticks" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Parse">
@@ -4130,10 +4194,10 @@ juillet 2009
  For additional guidance on choosing an overload, see [Which method do I call?](#Tasks)  
   
  `DateTime.Parse(String s)`  
- For the conversion, uses the formatting conventions of the current thread culture and interprets the string based on the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> style flag ([example](#Parse1_Example)).  
+ For the conversion, uses the formatting conventions of the current thread culture and interprets the string based on the <xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces?displayProperty=nameWithType> style flag ([example](#Parse1_Example)).  
   
  `DateTime.Parse(String s, IFormatProvider provider)`  
- For the conversion, uses the formatting conventions of a specified culture and interprets the string based on the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> style flag ([example](#Parse2_Example)).  
+ For the conversion, uses the formatting conventions of a specified culture and interprets the string based on the <xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces?displayProperty=nameWithType> style flag ([example](#Parse2_Example)).  
   
  `DateTime.Parse(String s, IFormatProvider provider, DateTypeStyles styles)`  
  For the conversion, uses the formatting conventions of a specified culture and interprets the string based on specified style flags ([example](#Parse3_Example)).  
@@ -4146,27 +4210,27 @@ juillet 2009
 |---------------|----------|-----------------|  
 |`s`|<xref:System.String>|A string that contains the date and time to convert. See [The string to parse](#StringToParse).<br /><br /> Default value: None (parameter is used by all overloads)|  
 |`provider`|<xref:System.IFormatProvider>|An object that supplies culture-specific formatting information about `s`. See [Parsing and cultural conventions](#Culture).<br /><br /> Default value: <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>|  
-|`styles`|<xref:System.Globalization.DateTimeStyles>|A bitwise combination of the enumeration values that indicates the style elements that can be present in `s` for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType>. See [Parsing and style elements](#Styles).<br /><br /> Default value: <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType>|  
+|`styles`|<xref:System.Globalization.DateTimeStyles>|A bitwise combination of the enumeration values that indicates the style elements that can be present in `s` for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <xref:System.Globalization.DateTimeStyles.None?displayProperty=nameWithType>. See [Parsing and style elements](#Styles).<br /><br /> Default value: <xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces?displayProperty=nameWithType>|  
   
 <a name="Returns"></a>   
 ## Return value  
  Type: <xref:System.DateTime>  
 An object that is equivalent to the date and time contained in `s`.  
   
- Generally, the <xref:System.DateTime.Parse%2A> method returns a <xref:System.DateTime> object whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType>. However, the <xref:System.DateTime.Parse%2A> method may also perform time zone conversion and set the value of the <xref:System.DateTime.Kind%2A> property differently, depending on the values of the `s` and `styles` parameters:  
+ Generally, the <xref:System.DateTime.Parse%2A> method returns a <xref:System.DateTime> object whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. However, the <xref:System.DateTime.Parse%2A> method may also perform time zone conversion and set the value of the <xref:System.DateTime.Kind%2A> property differently, depending on the values of the `s` and `styles` parameters:  
   
 |If|Time zone conversion|Kind property|  
 |--------|--------------------------|-------------------|  
-|`s` contains time zone information.|The date and time is converted to the time in the local time zone.|<xref:System.DateTimeKind?displayProperty=nameWithType>|  
-|`s` contains time zone information, and `styles` includes the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> flag.|The date and time is converted to Coordinated Universal Time (UTC).|<xref:System.DateTimeKind?displayProperty=nameWithType>|  
-|`s` contains the Z or GMT time zone designator, and `styles` includes the <xref:System.Globalization.DateTimeStyles.RoundtripKind> flag.|The date and time are interpreted as UTC.|<xref:System.DateTimeKind?displayProperty=nameWithType>|  
+|`s` contains time zone information.|The date and time is converted to the time in the local time zone.|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|  
+|`s` contains time zone information, and `styles` includes the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> flag.|The date and time is converted to Coordinated Universal Time (UTC).|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|  
+|`s` contains the Z or GMT time zone designator, and `styles` includes the <xref:System.Globalization.DateTimeStyles.RoundtripKind> flag.|The date and time are interpreted as UTC.|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|  
   
  The following example converts date strings that contain time zone information to the time in the local time zone:  
   
  [!code-csharp[System.DateTime.Parse#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse2.cs#2)]
  [!code-vb[System.DateTime.Parse#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse2.vb#2)]  
   
- You can also preserve the value of a date and time's <xref:System.DateTime.Kind%2A> property during a formatting and parsing operation by using the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag. The following example illustrates how the <xref:System.Globalization.DateTimeStyles.RoundtripKind> flag affects the parsing operation on <xref:System.DateTime> values that are converted to strings by using the "o", "r", or "u" format specifier.  
+ You can also preserve the value of a date and time's <xref:System.DateTime.Kind%2A> property during a formatting and parsing operation by using the <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> flag. The following example illustrates how the <xref:System.Globalization.DateTimeStyles.RoundtripKind> flag affects the parsing operation on <xref:System.DateTime> values that are converted to strings by using the "o", "r", or "u" format specifier.  
   
  [!code-csharp[System.DateTime.Parse#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse5.cs#5)]
  [!code-vb[System.DateTime.Parse#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse5.vb#5)]  
@@ -4190,7 +4254,7 @@ An object that is equivalent to the date and time contained in `s`.
 |Parse a date and time string with special style elements (such as white space or no white space).|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload|  
 |Parse a date and time string and perform a conversion to UTC or local time.|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload|  
 |Parse a date and time string without handling exceptions.|<xref:System.DateTime.TryParse%2A?displayProperty=nameWithType> method|  
-|Restore (round-trip) a date and time value created by a formatting operation.|Pass the "o" or "r" standard format string to the <xref:System.DateTime.ToString%28System.String%29> method, and call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload with <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType>|  
+|Restore (round-trip) a date and time value created by a formatting operation.|Pass the "o" or "r" standard format string to the <xref:System.DateTime.ToString%28System.String%29> method, and call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload with <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType>|  
 |Parse a date and time string in a fixed format across machine (and possibly cultural) boundaries.|<xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> or <xref:System.DateTime.TryParseExact%2A?displayProperty=nameWithType> method|  
   
 <a name="StringToParse"></a>   
@@ -4206,7 +4270,7 @@ An object that is equivalent to the date and time contained in `s`.
   
 -   A string with a date but no time component. If the time component is absent, the method assumes 12:00 midnight. If the date component has a two-digit year, it is converted to a year based on the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=nameWithType> of the current culture's current calendar or the specified culture's current calendar (if you use an overload with a non-null `provider` argument).  
   
--   A string with a time but no date component. The method assumes the current date unless you call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload and include <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> in the `styles` parameter, in which case the method assumes January 1, 0001.  
+-   A string with a time but no date component. The method assumes the current date unless you call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload and include <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault?displayProperty=nameWithType> in the `styles` parameter, in which case the method assumes January 1, 0001.  
   
 -   A string that includes time zone information and conforms to ISO 8601. In the following examples, the first string designates Coordinated Universal Time (UTC), and the second string designates the time in a time zone that's seven hours earlier than UTC:  
   
@@ -4260,15 +4324,15 @@ An object that is equivalent to the date and time contained in `s`.
   
 |DateTimeStyles member|Effect on conversion|  
 |---------------------------|--------------------------|  
-|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC, as follows:<br /><br /> -   If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeLocal> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>.<br />-   If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeUniversal> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>.<br />-   In all other cases, the flag has no effect.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC, as follows:<br /><br /> -   If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeLocal> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.<br />-   If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeUniversal> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.<br />-   In all other cases, the flag has no effect.|  
 |<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|This value is ignored. Inner white space is always permitted in the date and time elements of `s`.|  
 |<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|This value is ignored. Leading white space is always permitted in the date and time elements of `s`.|  
 |<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|This value is ignored. Trailing white space is always permitted in the date and time elements of `s`.|  
 |<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Specifies that `s` may contain leading, inner, and trailing white spaces. This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value such as <xref:System.Globalization.DateTimeStyles.None>.|  
-|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, local time is assumed. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
-|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, UTC is assumed. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, local time is assumed. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, UTC is assumed. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
 |<xref:System.Globalization.DateTimeStyles.None>|Although valid, this value is ignored.|  
-|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion of a date and time string to a <xref:System.DateTime> value that represents a local time with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=nameWithType>. Typically, such a string is created by calling the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method and by using the "o", "r", or "u" standard format specifier.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion of a date and time string to a <xref:System.DateTime> value that represents a local time with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>. Typically, such a string is created by calling the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method and by using the "o", "r", or "u" standard format specifier.|  
   
 <a name="Parse1_Example"></a>   
 ## DateTime.Parse(String) example  
@@ -4307,6 +4371,8 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)" />
+        <altmember cref="Overload:System.DateTime.TryParse" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Parse">
@@ -4355,6 +4421,9 @@ An object that is equivalent to the date and time contained in `s`.
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="s" /> does not contain a valid string representation of a date and time.</exception>
+        <altmember cref="Overload:System.DateTime.TryParse" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -4405,6 +4474,9 @@ An object that is equivalent to the date and time contained in `s`.
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="s" /> does not contain a valid string representation of a date and time.</exception>
+        <altmember cref="Overload:System.DateTime.TryParse" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -4459,6 +4531,9 @@ An object that is equivalent to the date and time contained in `s`.
           <paramref name="s" /> does not contain a valid string representation of a date and time.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="styles" /> contains an invalid combination of <see cref="T:System.Globalization.DateTimeStyles" /> values. For example, both <see cref="F:System.Globalization.DateTimeStyles.AssumeLocal" /> and <see cref="F:System.Globalization.DateTimeStyles.AssumeUniversal" />.</exception>
+        <altmember cref="Overload:System.DateTime.TryParse" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -4503,7 +4578,7 @@ An object that is equivalent to the date and time contained in `s`.
 ## Remarks  
  The <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method parses the string representation of a date, which must be in the format defined by the `format` parameter. It also requires that the \<Date> and \<Time> elements of the string representation of a date and time appear in the order specified by `format`, and that `s` have no white space other than that permitted by `format`. If `format` defines a date with no time element and the parse operation succeeds, the resulting <xref:System.DateTime> value has a time of midnight (00:00:00). If `format` defines a time with no date element and the parse operation succeeds, the resulting <xref:System.DateTime> value has a date of `DateTime.Now.Date`.  
   
- If `s` does not represent a time in a particular time zone and the parse operation succeeds, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is <xref:System.DateTimeKind?displayProperty=nameWithType>. If `s` does represent the time in a particular time zone and `format` allows time zone information to be present (for example, if `format` is equal to the "o", "r", or "u" standard format specifiers, or if it contains the "z", "zz", or "zzz" custom format specifiers), the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ If `s` does not represent a time in a particular time zone and the parse operation succeeds, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. If `s` does represent the time in a particular time zone and `format` allows time zone information to be present (for example, if `format` is equal to the "o", "r", or "u" standard format specifiers, or if it contains the "z", "zz", or "zzz" custom format specifiers), the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
  The `format` parameter is a string that contains either a single standard format specifier, or one or more custom format specifiers that define the required format of `s`. For details about valid formatting codes, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) or [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
@@ -4545,6 +4620,9 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTime.ParseExact" /> method throws a <see cref="T:System.FormatException" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
+        <altmember cref="Overload:System.DateTime.TryParseExact" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -4591,9 +4669,9 @@ An object that is equivalent to the date and time contained in `s`.
 ## Remarks  
  The <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method parses the string representation of a date, which must be in a format defined by the `format` parameter. It also requires that the date and time elements in `s` appear in the order specified by `format`. If `s` does not match the pattern of the `format` parameter, with any variations defined by the `style` parameter, the method throws a <xref:System.FormatException>. In contrast, the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method parses the string representation of a date in any one of the formats recognized by the format provider's <xref:System.Globalization.DateTimeFormatInfo> object. The <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method also allows the date and time elements in `s` to appear in any order.  
   
- If the `s` parameter contains only a time and no date, the current date is used unless the `style` parameter includes the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, in which case the default date (`DateTime.Date.MinValue`) is used. If the `s` parameter contains only a date and no time, midnight (00:00:00) is used. The `style` parameter also determines whether the `s` parameter can contain leading, inner, or trailing white space characters.  
+ If the `s` parameter contains only a time and no date, the current date is used unless the `style` parameter includes the <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault?displayProperty=nameWithType> flag, in which case the default date (`DateTime.Date.MinValue`) is used. If the `s` parameter contains only a date and no time, midnight (00:00:00) is used. The `style` parameter also determines whether the `s` parameter can contain leading, inner, or trailing white space characters.  
   
- If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType>, or by using the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> and <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flags, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType>. If `s` contains time zone information, the time is converted to local time, if necessary, and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag to not convert Coordinated Universal Time (UTC) to a local time and to set the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles.AssumeLocal?displayProperty=nameWithType> flag, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType>, or by using the <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> and <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flags, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. If `s` contains time zone information, the time is converted to local time, if necessary, and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> flag to not convert Coordinated Universal Time (UTC) to a local time and to set the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.  
   
  The `format` parameter defines the required pattern of the `s` parameter. It can consist of either one or more custom format specifiers from the [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) table, or a single standard format specifier, which identifies a predefined pattern, from the [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) table.  
   
@@ -4606,16 +4684,16 @@ An object that is equivalent to the date and time contained in `s`.
   
 |DateTimeStyles member|Description|  
 |---------------------------|-----------------|  
-|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>. In all other cases, the flag has no effect.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeLocal?displayProperty=nameWithType> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. In all other cases, the flag has no effect.|  
 |<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Specifies that white space not defined by `format` can appear between any individual date or time element.|  
 |<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Specifies that white space not defined by `format` can appear at the beginning of `s`.|  
 |<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Specifies that white space not defined by `format` can appear at the end of `s`.|  
 |<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Specifies that `s` may contain leading, inner, and trailing white spaces not defined by `format`.|  
-|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
-|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
 |<xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault>|If `s` contains time without date information, the date of the return value is set to `DateTime.MinValue.Date`.|  
-|<xref:System.Globalization.DateTimeStyles.None>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=nameWithType>. If time zone information is present in `s`, the time is converted to local time and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
-|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion to a <xref:System.DateTime> value date and time with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=nameWithType>. This flag primarily prevents the conversion of UTC times to local times.|  
+|<xref:System.Globalization.DateTimeStyles.None>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. If time zone information is present in `s`, the time is converted to local time and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion to a <xref:System.DateTime> value date and time with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>. This flag primarily prevents the conversion of UTC times to local times.|  
   
  The particular date and time symbols and strings (such as the names of the days of the week in a particular language) used in `s` are defined by the `provider` parameter, as is the precise format of `s` if `format` is a standard format specifier string. The `provider` parameter can be any of the following:  
   
@@ -4630,7 +4708,7 @@ An object that is equivalent to the date and time contained in `s`.
    
   
 ## Examples  
- The following example demonstrates the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29> method. Note that the string " 5/01/2009 8:30 AM" cannot be parsed successfully when the `styles` parameter equals <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> because leading spaces are not allowed by `format`. Additionally, the string "5/01/2009 09:00" cannot be parsed successfully with a `format` of "MM/dd/yyyyhh:mm" because the date string does not precede the month number with a leading zero, as `format` requires.  
+ The following example demonstrates the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29> method. Note that the string " 5/01/2009 8:30 AM" cannot be parsed successfully when the `styles` parameter equals <xref:System.Globalization.DateTimeStyles.None?displayProperty=nameWithType> because leading spaces are not allowed by `format`. Additionally, the string "5/01/2009 09:00" cannot be parsed successfully with a `format` of "MM/dd/yyyyhh:mm" because the date string does not precede the month number with a leading zero, as `format` requires.  
   
  [!code-csharp[System.DateTime.ParseExact#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.ParseExact/cs/parseexact2.cs#2)]
  [!code-vb[System.DateTime.ParseExact#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.ParseExact/vb/parseexact2.vb#2)]  
@@ -4654,6 +4732,9 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTime.ParseExact" /> method throws a <see cref="T:System.FormatException" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
+        <altmember cref="Overload:System.DateTime.TryParseExact" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -4700,9 +4781,9 @@ An object that is equivalent to the date and time contained in `s`.
 ## Remarks  
  The <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method parses the string representation of a date that matches any one of the patterns assigned to the `formats` parameter. If the string `s` does not match any one of these patterns with any of the variations defined by the `styles` parameter, the method throws a <xref:System.FormatException>. Aside from comparing `s` to multiple formatting patterns, rather than to a single formatting pattern, this overload behaves identically to the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method.  
   
- The `s` parameter contains the date and time to parse. If the `s` parameter contains only a time and no date, the current date is used unless the `style` parameter includes the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, in which case the default date (`DateTime.Date.MinValue`) is used. If the `s` parameter contains only a date and no time, midnight (00:00:00) is used. The `style` parameter also determines whether the `s` parameter can contain leading, inner, or trailing white space characters other than those permitted by one of the format strings in `formats`.  
+ The `s` parameter contains the date and time to parse. If the `s` parameter contains only a time and no date, the current date is used unless the `style` parameter includes the <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault?displayProperty=nameWithType> flag, in which case the default date (`DateTime.Date.MinValue`) is used. If the `s` parameter contains only a date and no time, midnight (00:00:00) is used. The `style` parameter also determines whether the `s` parameter can contain leading, inner, or trailing white space characters other than those permitted by one of the format strings in `formats`.  
   
- If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType>, or by using the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> and <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flags, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType>. If `s` contains time zone information, the time is converted to local time, if necessary, and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag to not convert Coordinated Universal Time (UTC) to a local time and set the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles.AssumeLocal?displayProperty=nameWithType> flag, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType>, or by using the <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> and <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flags, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. If `s` contains time zone information, the time is converted to local time, if necessary, and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> flag to not convert Coordinated Universal Time (UTC) to a local time and set the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.  
   
  The `formats` parameter contains an array of patterns, one of which `s` must match exactly if the parse operation is to succeed. The patterns in the `formats` parameter consists of one or more custom format specifiers from the [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) table, or a single standard format specifier, which identifies a predefined pattern, from the [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) table.  
   
@@ -4712,16 +4793,16 @@ An object that is equivalent to the date and time contained in `s`.
   
 |DateTimeStyles member|Description|  
 |---------------------------|-----------------|  
-|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>. In all other cases, the flag has no effect.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeLocal?displayProperty=nameWithType> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. In all other cases, the flag has no effect.|  
 |<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Specifies that white space not defined by `format` can appear between any individual date or time element.|  
 |<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Specifies that white space not defined by `format` can appear at the beginning of `s`.|  
 |<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Specifies that white space not defined by `format` can appear at the end of `s`.|  
 |<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Specifies that `s` may contain leading, inner, and trailing white spaces not defined by `format`.|  
-|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
-|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
 |<xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault>|If `s` contains time without date information, the date of the return value is set to `DateTime.MinValue.Date`.|  
-|<xref:System.Globalization.DateTimeStyles.None>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=nameWithType>. If time zone information is present in `s`, the time is converted to local time and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
-|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion to a date and time with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=nameWithType>. This flag primarily prevents the conversion of UTC times to local times.|  
+|<xref:System.Globalization.DateTimeStyles.None>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. If time zone information is present in `s`, the time is converted to local time and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion to a date and time with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>. This flag primarily prevents the conversion of UTC times to local times.|  
   
  The particular date and time symbols and strings (such as the names of the days of the week in a particular language) used in `s` are defined by the `provider` parameter, as is the precise format of `s` if `format` is a standard format specifier string. The `provider` parameter can be any of the following:  
   
@@ -4764,6 +4845,9 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTime.ParseExact" /> method throws a <see cref="T:System.FormatException" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
+        <altmember cref="Overload:System.DateTime.TryParseExact" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="Second">
@@ -4996,6 +5080,7 @@ An object that is equivalent to the date and time contained in `s`.
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The result is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -5454,6 +5539,7 @@ An object that is equivalent to the date and time contained in `s`.
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DateTime" /> type.</exception>
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToUInt16">
@@ -5699,6 +5785,7 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="ToBinary">
@@ -5760,6 +5847,7 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.FromBinary(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="Today">
@@ -5808,6 +5896,8 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Now" />
+        <altmember cref="P:System.DateTime.TimeOfDay" />
       </Docs>
     </Member>
     <Member MemberName="ToFileTime">
@@ -5871,6 +5961,10 @@ An object that is equivalent to the date and time contained in `s`.
      [!code-csharp[System.DateTime.FromFileTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.fromfiletime/cs/fromfiletime1.cs#1)]
      [!code-vb[System.DateTime.FromFileTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.fromfiletime/vb/fromfiletime1.vb#1)]</para>
         </block>
+        <altmember cref="M:System.DateTime.ToFileTimeUtc" />
+        <altmember cref="T:System.Int64" />
+        <altmember cref="M:System.DateTime.ToUniversalTime" />
+        <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="ToFileTimeUtc">
@@ -5916,6 +6010,10 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>The <see cref="M:System.DateTime.ToFileTimeUtc" /> method is sometimes used to convert a local time to UTC, and subsequently to restore it by calling the <see cref="M:System.DateTime.FromFileTimeUtc(System.Int64)" /> method followed by the <see cref="M:System.DateTime.ToLocalTime" /> method. However, if the original time represents an invalid time in the local time zone, the two local time values will not be equal. For additional information, see the <see cref="M:System.DateTime.ToLocalTime" /> method.</para>
         </block>
+        <altmember cref="M:System.DateTime.ToFileTime" />
+        <altmember cref="T:System.Int64" />
+        <altmember cref="M:System.DateTime.ToUniversalTime" />
+        <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="ToLocalTime">
@@ -5993,6 +6091,10 @@ An object that is equivalent to the date and time contained in `s`.
  [!code-csharp[System.DateTime.ToLocalTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.tolocaltime/cs/tolocaltime1.cs#1)]
  [!code-vb[System.DateTime.ToLocalTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.tolocaltime/vb/tolocaltime1.vb#1)]</para>
         </block>
+        <altmember cref="T:System.TimeZone" />
+        <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
+        <altmember cref="M:System.TimeZone.GetDaylightChanges(System.Int32)" />
+        <altmember cref="M:System.DateTime.ToUniversalTime" />
       </Docs>
     </Member>
     <Member MemberName="ToLongDateString">
@@ -6041,6 +6143,10 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="M:System.DateTime.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ToLongTimeString">
@@ -6089,6 +6195,10 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="M:System.DateTime.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ToOADate">
@@ -6131,6 +6241,8 @@ An object that is equivalent to the date and time contained in `s`.
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The value of this instance cannot be represented as an OLE Automation Date.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="M:System.DateTime.FromOADate(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="ToShortDateString">
@@ -6179,6 +6291,10 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="M:System.DateTime.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ToShortTimeString">
@@ -6227,6 +6343,10 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="M:System.DateTime.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -6283,6 +6403,8 @@ An object that is equivalent to the date and time contained in `s`.
  [!code-csharp[System.DateTime.ToString.ArgumentOutOfRangeException#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/cs/datetime.tostring.argumentoutofrangeexception2.cs#2)]
  [!code-vb[System.DateTime.ToString.ArgumentOutOfRangeException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/vb/datetime.tostring.argumentoutofrangeexception2.vb#2)]</para>
         </block>
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -6350,6 +6472,8 @@ An object that is equivalent to the date and time contained in `s`.
  [!code-csharp[System.DateTime.ToString.ArgumentOutOfRangeException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/cs/datetime.tostring.argumentoutofrangeexception1.cs#1)]
  [!code-vb[System.DateTime.ToString.ArgumentOutOfRangeException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/vb/datetime.tostring.argumentoutofrangeexception1.vb#1)]</para>
         </block>
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -6429,6 +6553,8 @@ An object that is equivalent to the date and time contained in `s`.
  [!code-csharp[System.DateTime.ToString.ArgumentOutOfRangeException#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/cs/datetime.tostring.argumentoutofrangeexception3.cs#3)]
  [!code-vb[System.DateTime.ToString.ArgumentOutOfRangeException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/vb/datetime.tostring.argumentoutofrangeexception3.vb#3)]</para>
         </block>
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -6509,6 +6635,8 @@ An object that is equivalent to the date and time contained in `s`.
  [!code-csharp[System.DateTime.ToString.ArgumentOutOfRangeException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/cs/datetime.tostring.argumentoutofrangeexception4.cs#4)]
  [!code-vb[System.DateTime.ToString.ArgumentOutOfRangeException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/vb/datetime.tostring.argumentoutofrangeexception4.vb#4)]</para>
         </block>
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="ToUniversalTime">
@@ -6588,6 +6716,7 @@ An object that is equivalent to the date and time contained in `s`.
  [!code-csharp[System.DateTime.ToUniversalTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.touniversaltime/cs/touniversaltime.cs#1)]
  [!code-vb[System.DateTime.ToUniversalTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.touniversaltime/vb/touniversaltime.vb#1)]</para>
         </block>
+        <altmember cref="M:System.DateTime.ToLocalTime" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -6639,7 +6768,7 @@ An object that is equivalent to the date and time contained in `s`.
   
  If `s` is the string representation of a leap day in a leap year in the current calendar, the method parses `s` successfully. If `s` is the string representation of a leap day in a non-leap year in the current culture's current calendar, the parse operation fails and the method returns `false`.  
   
- If `s` contains no time zone information, `result` contains a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType> when the method returns. If the string to be parsed contains time zone information, `result` contains a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType> when the method returns.  
+ If `s` contains no time zone information, `result` contains a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType> when the method returns. If the string to be parsed contains time zone information, `result` contains a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType> when the method returns.  
   
    
   
@@ -6655,6 +6784,9 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>Formatting is influenced by properties of the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object, which by default are derived from the **Regional and Language Options** item in Control Panel. The <see cref="Overload:System.DateTime.TryParse" /> method can unexpectedly fail and return <see langword="False" /> if the current <see cref="P:System.Globalization.DateTimeFormatInfo.DateSeparator" /> and <see cref="P:System.Globalization.DateTimeFormatInfo.TimeSeparator" /> properties are set to the same value.</para>
         </block>
+        <altmember cref="Overload:System.DateTime.Parse" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -6720,23 +6852,23 @@ An object that is equivalent to the date and time contained in `s`.
   
 |DateTimeStyles member|Description|  
 |---------------------------|-----------------|  
-|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>. In all other cases, the flag has no effect.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeLocal?displayProperty=nameWithType> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. In all other cases, the flag has no effect.|  
 |<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Although valid, this value is ignored. Inner white space is permitted in the date and time elements of `s`.|  
 |<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Although valid, this value is ignored. Leading white space is permitted in the date and time elements of `s`.|  
 |<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Although valid, this value is ignored. Trailing white space is permitted in the date and time elements of `s`.|  
-|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Specifies that `s` may contain leading, inner, and trailing white spaces. This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value such as <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType>.|  
-|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
-|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Specifies that `s` may contain leading, inner, and trailing white spaces. This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value such as <xref:System.Globalization.DateTimeStyles.None?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
 |<xref:System.Globalization.DateTimeStyles.None>|Although valid, this value is ignored.|  
-|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion of a date and time string to a <xref:System.DateTime> value with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=nameWithType>. Typically, such a string is created by calling the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method using either the "o", "r", or "u" standard format specifiers.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion of a date and time string to a <xref:System.DateTime> value with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>. Typically, such a string is created by calling the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method using either the "o", "r", or "u" standard format specifiers.|  
   
- If `s` contains no time zone information, the <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=nameWithType> method returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType> unless a `styles` flag indicates otherwise. If `s` includes time zone or time zone offset information, the <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=nameWithType> method performs any necessary time conversion and returns one of the following:  
+ If `s` contains no time zone information, the <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=nameWithType> method returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType> unless a `styles` flag indicates otherwise. If `s` includes time zone or time zone offset information, the <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=nameWithType> method performs any necessary time conversion and returns one of the following:  
   
--   A <xref:System.DateTime> value whose date and time reflect the local time and whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+-   A <xref:System.DateTime> value whose date and time reflect the local time and whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
--   Or, if `styles` includes the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> flag, a <xref:System.DateTime> value whose date and time reflect UTC and whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+-   Or, if `styles` includes the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> flag, a <xref:System.DateTime> value whose date and time reflect UTC and whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.  
   
- This behavior can be overridden by using the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag.  
+ This behavior can be overridden by using the <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> flag.  
   
 ## Parsing Custom Cultures  
  If you parse a date and time string generated for a custom culture, use the <xref:System.DateTime.TryParseExact%2A> method instead of the <xref:System.DateTime.TryParse%2A> method to improve the probability that the parse operation will succeed. A custom culture date and time string can be complicated and difficult to parse. The <xref:System.DateTime.TryParse%2A> method attempts to parse a string with several implicit parse patterns, all of which might fail. In contrast, the <xref:System.DateTime.TryParseExact%2A> method  requires you to explicitly designate one or more exact parse patterns that are likely to succeed.  
@@ -6764,6 +6896,9 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>Formatting is influenced by properties of the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object, which is supplied by the <paramref name="provider" /> parameter. The <see cref="Overload:System.DateTime.TryParse" /> method can unexpectedly fail and return <see langword="False" /> if the current <see cref="P:System.Globalization.DateTimeFormatInfo.DateSeparator" /> and <see cref="P:System.Globalization.DateTimeFormatInfo.TimeSeparator" /> properties are set to the same value.</para>
         </block>
+        <altmember cref="Overload:System.DateTime.Parse" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
@@ -6813,9 +6948,9 @@ An object that is equivalent to the date and time contained in `s`.
 ## Remarks  
  The <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=nameWithType> method parses the string representation of a date, which must be in the format defined by the `format` parameter. It is similar to the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method, except that the <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> method does not throw an exception if the conversion fails.  
   
- The `s` parameter contains the date and time to parse and must be in a format defined by the `format` parameter. If date, time, and time zone elements are present in `s`, they must also appear in the order specified by `format`. If `format` defines a date with no time element and the parse operation succeeds, the resulting <xref:System.DateTime> value has a time of midnight (00:00:00). If `format` defines a time with no date element and the parse operation succeeds, the resulting <xref:System.DateTime> value by default has a date of `DateTime.Now.Date`, or it has a date of `DateTime.MinValue.Date` if `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag. The `style` parameter determines whether the `s` parameter can contain leading, inner, or trailing white space characters.  
+ The `s` parameter contains the date and time to parse and must be in a format defined by the `format` parameter. If date, time, and time zone elements are present in `s`, they must also appear in the order specified by `format`. If `format` defines a date with no time element and the parse operation succeeds, the resulting <xref:System.DateTime> value has a time of midnight (00:00:00). If `format` defines a time with no date element and the parse operation succeeds, the resulting <xref:System.DateTime> value by default has a date of `DateTime.Now.Date`, or it has a date of `DateTime.MinValue.Date` if `styles` includes the <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault?displayProperty=nameWithType> flag. The `style` parameter determines whether the `s` parameter can contain leading, inner, or trailing white space characters.  
   
- If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType>, or by using the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> and <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flags, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType>. If s contains time zone information, the time is converted to local time, if necessary, and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag to not convert Coordinated Universal Time (UTC) to a local time and set the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles.AssumeLocal?displayProperty=nameWithType> flag, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType>, or by using the <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> and <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flags, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. If s contains time zone information, the time is converted to local time, if necessary, and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> flag to not convert Coordinated Universal Time (UTC) to a local time and set the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.  
   
  The `format` parameter contains a pattern that corresponds to the expected format of the `s` parameter. The pattern in the `format` parameter consists of one or more custom format specifiers from the [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) table, or a single standard format specifier, which identifies a predefined pattern, from the [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) table.  
   
@@ -6838,21 +6973,21 @@ An object that is equivalent to the date and time contained in `s`.
   
 |DateTimeStyles member|Description|  
 |---------------------------|-----------------|  
-|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>. In all other cases, the flag has no effect.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeLocal?displayProperty=nameWithType> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. In all other cases, the flag has no effect.|  
 |<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Specifies that white space not defined by `format` can appear between any individual date or time element.|  
 |<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Specifies that white space not defined by `format` can appear at the beginning of `s`.|  
 |<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Specifies that white space not defined by `format` can appear at the end of `s`.|  
 |<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Specifies that `s` may contain leading, inner, and trailing white spaces not defined by `format`.|  
-|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
-|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
 |<xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault>|If `s` contains time without date information, the date of the return value is set to `DateTime.MinValue.Date`.|  
-|<xref:System.Globalization.DateTimeStyles.None>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=nameWithType>. If time zone information is present in `s`, the time is converted to local time and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
-|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion to a <xref:System.DateTime> value with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=nameWithType>. This flag primarily prevents the conversion of UTC times to local times.|  
+|<xref:System.Globalization.DateTimeStyles.None>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. If time zone information is present in `s`, the time is converted to local time and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion to a <xref:System.DateTime> value with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>. This flag primarily prevents the conversion of UTC times to local times.|  
   
    
   
 ## Examples  
- The following example demonstrates the <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=nameWithType> method. Note that the string " 5/01/2009 8:30 AM" cannot be parsed successfully when the `styles` parameter equals <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> because leading spaces are not allowed by `format`. Additionally, the string "5/01/2009 09:00" cannot be parsed successfully with a `format` of "MM/dd/yyyyhh:mm" because the date string does not precede the month number with a leading zero, as `format` requires.  
+ The following example demonstrates the <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=nameWithType> method. Note that the string " 5/01/2009 8:30 AM" cannot be parsed successfully when the `styles` parameter equals <xref:System.Globalization.DateTimeStyles.None?displayProperty=nameWithType> because leading spaces are not allowed by `format`. Additionally, the string "5/01/2009 09:00" cannot be parsed successfully with a `format` of "MM/dd/yyyyhh:mm" because the date string does not precede the month number with a leading zero, as `format` requires.  
   
  [!code-csharp[System.DateTime.TryParseExact#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.TryParseExact/cs/TryParseExact1.cs#1)]
  [!code-vb[System.DateTime.TryParseExact#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.TryParseExact/vb/TryParseExact1.vb#1)]  
@@ -6868,6 +7003,9 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTime.TryParseExact" /> method returns <see langword="false" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
+        <altmember cref="Overload:System.DateTime.ParseExact" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
@@ -6917,9 +7055,9 @@ An object that is equivalent to the date and time contained in `s`.
 ## Remarks  
  The <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=nameWithType> method parses the string representation of a date that matches any one of the patterns assigned to the `formats` parameter. It is like the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method, except the <xref:System.DateTime.TryParseExact%2A> method does not throw an exception if the conversion fails.  
   
- The `s` parameter contains the date and time to parse. If the `s` parameter contains only a time and no date, the current date is used unless the `style` parameter includes the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, in which case the default date (`DateTime.Date.MinValue`) is used. If the `s` parameter contains only a date and no time, midnight (00:00:00) is used. The `style` parameter also determines whether the `s` parameter can contain leading, inner, or trailing white space characters other than those permitted by one of the format strings in `formats`.  
+ The `s` parameter contains the date and time to parse. If the `s` parameter contains only a time and no date, the current date is used unless the `style` parameter includes the <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault?displayProperty=nameWithType> flag, in which case the default date (`DateTime.Date.MinValue`) is used. If the `s` parameter contains only a date and no time, midnight (00:00:00) is used. The `style` parameter also determines whether the `s` parameter can contain leading, inner, or trailing white space characters other than those permitted by one of the format strings in `formats`.  
   
- If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType>, or by using the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> and <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flags, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType>. If s contains time zone information, the time is converted to local time, if necessary, and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag to not convert Coordinated Universal Time (UTC) to a local time and set the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles.AssumeLocal?displayProperty=nameWithType> flag, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType>, or by using the <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> and <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flags, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. If s contains time zone information, the time is converted to local time, if necessary, and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> flag to not convert Coordinated Universal Time (UTC) to a local time and set the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.  
   
  The `formats` parameter contains an array of patterns, one of which `s` must match exactly if the parse operation is to succeed. The patterns in the `formats` parameter consist of one or more custom format specifiers from the [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) table, or a single standard format specifier, which identifies a predefined pattern, from the [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) table.  
   
@@ -6939,16 +7077,16 @@ An object that is equivalent to the date and time contained in `s`.
   
 |DateTimeStyles member|Description|  
 |---------------------------|-----------------|  
-|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>. In all other cases, the flag has no effect.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeLocal?displayProperty=nameWithType> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. In all other cases, the flag has no effect.|  
 |<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Specifies that white space not defined by `format` can appear between any individual date or time element.|  
 |<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Specifies that white space not defined by `format` can appear at the beginning of `s`.|  
 |<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Specifies that white space not defined by `format` can appear at the end of `s`.|  
 |<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Specifies that `s` may contain leading, inner, and trailing white spaces not defined by `format`.|  
-|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
-|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
 |<xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault>|If `s` contains time without date information, the date of the return value is set to `DateTime.MinValue.Date`.|  
-|<xref:System.Globalization.DateTimeStyles.None>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=nameWithType>. If time zone information is present in `s`, the time is converted to local time and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=nameWithType>.|  
-|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion to a <xref:System.DateTime> value with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=nameWithType>. This flag primarily prevents the conversion of UTC times to local times.|  
+|<xref:System.Globalization.DateTimeStyles.None>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. If time zone information is present in `s`, the time is converted to local time and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion to a <xref:System.DateTime> value with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>. This flag primarily prevents the conversion of UTC times to local times.|  
   
    
   
@@ -6969,6 +7107,9 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTime.TryParseExact" /> method returns <see langword="false" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
+        <altmember cref="Overload:System.DateTime.ParseExact" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="UtcNow">
@@ -7022,6 +7163,8 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTimeOffset.UtcNow" />
+        <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="Year">
@@ -7072,7 +7215,117 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int32" />
+        <altmember cref="T:System.Globalization.Calendar" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Subtraction">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subtracts a specified <see cref="T:System.DateTime" /> or<see cref="T:System.TimeSpan" /> from a specified <see cref="T:System.DateTime" />.</summary>
+        <altmember cref="M:System.DateTime.Subtract(System.DateTime)" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent and returns a value that indicates whether the conversion succeeded.</summary>
+        <altmember cref="Overload:System.DateTime.Parse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParseExact">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent. The format of the string representation must match a specified format exactly. The method returns a value that indicates whether the conversion succeeded.</summary>
+        <altmember cref="Overload:System.DateTime.ParseExact" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether two <see cref="T:System.DateTime" /> objects, or a <see cref="T:System.DateTime" /> instance and another object or <see cref="T:System.DateTime" />, have the same value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Subtract">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subtracts the specified time or duration from this instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ParseExact">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent. The format of the string representation must match a specified format exactly or an exception is thrown.</summary>
+        <altmember cref="Overload:System.DateTime.TryParseExact" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of the current <see cref="T:System.DateTime" /> object to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -2,16 +2,16 @@
 uid: System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection.#ctor
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

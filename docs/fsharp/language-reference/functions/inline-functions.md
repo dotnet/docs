@@ -18,7 +18,7 @@ ms.assetid: 3fa31178-08f8-463d-9d41-d29220a90027
 
 
 ## Using Inline Functions
-When you use static type parameters, any functions that are parameterized by type parameters must be inline. This guarantees that that the compiler can resolve these type parameters. When you use ordinary generic type parameters, there is no such restriction.
+When you use static type parameters, any functions that are parameterized by type parameters must be inline. This guarantees that the compiler can resolve these type parameters. When you use ordinary generic type parameters, there is no such restriction.
 
 Other than enabling the use of member constraints, inline functions can be helpful in optimizing code. However, overuse of inline functions can cause your code to be less resistant to changes in compiler optimizations and the implementation of library functions. For this reason, you should avoid using inline functions for optimization unless you have tried all other optimization techniques. Making a function or method inline can sometimes improve performance, but that is not always the case. Therefore, you should also use performance measurements to verify that making any given function inline does in fact have a positive effect.
 

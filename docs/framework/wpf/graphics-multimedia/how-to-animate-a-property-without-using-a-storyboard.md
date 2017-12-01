@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "non-Storyboard animation"
-  - "local animation"
-  - "animation, non-Storyboard (local)"
+  - "local animation [WPF]"
+  - "animation [WPF], non-Storyboard (local)"
 ms.assetid: d411db70-4df7-487d-82bc-95a7c1b2e7f8
 caps.latest.revision: 14
 author: dotnet-bot
@@ -43,9 +43,9 @@ This example shows one way to apply an animation to a property without using a <
  There are other ways to animate without using <xref:System.Windows.Media.Animation.Storyboard> objects; for more information, see [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md).  
   
 ## See Also  
- <xref:System.Windows.Media.Animation.AnimationTimeline>   
- <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A>   
- <xref:System.Windows.Media.Animation>   
- <xref:System.Windows.Media.Animation.Storyboard>   
- [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)   
+ <xref:System.Windows.Media.Animation.AnimationTimeline>  
+ <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A>  
+ <xref:System.Windows.Media.Animation>  
+ <xref:System.Windows.Media.Animation.Storyboard>  
+ [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)

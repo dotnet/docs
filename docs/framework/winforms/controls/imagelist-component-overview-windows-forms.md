@@ -12,7 +12,7 @@ ms.topic: "article"
 f1_keywords: 
   - "ImageList"
 helpviewer_keywords: 
-  - "collection controls, images"
+  - "collection controls [Windows Forms], images"
   - "icon list control"
   - "ImageList component [Windows Forms], about ImageList component"
 ms.assetid: 7e25d89b-5633-40c1-afc3-82e0e301ffa2
@@ -33,5 +33,5 @@ The Windows Forms <xref:System.Windows.Forms.ImageList> component is used to sto
  If you are using [!INCLUDE[vsprvslong](../../../../includes/vsprvslong-md.md)], you have access to a large library of standard images that you can use in your applications.  
   
 ## See Also  
- <xref:System.Windows.Forms.ImageList>   
+ <xref:System.Windows.Forms.ImageList>  
  [How to: Add or Remove Images with the Windows Forms ImageList Component](../../../../docs/framework/winforms/controls/how-to-add-or-remove-images-with-the-windows-forms-imagelist-component.md)

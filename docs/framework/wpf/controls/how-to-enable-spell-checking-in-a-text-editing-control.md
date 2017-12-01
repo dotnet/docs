@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "spellchecking"
+  - "spellchecking [WPF]"
   - "real-time spellchecking"
-  - "TextBox control, real-time spellchecking"
-  - "spelling checker"
-  - "checking spelling"
+  - "TextBox control [WPF], real-time spellchecking"
+  - "spelling checker [WPF]"
+  - "checking spelling [WPF]"
 ms.assetid: 6f953d2b-67e8-4012-84ce-53c0e958da47
 caps.latest.revision: 7
 author: dotnet-bot
@@ -34,6 +34,6 @@ The following example shows how to enable real-time spell checking in a <xref:Sy
  [!code-vb[TextBoxMiscSnippets_procedural_snip#SpellCheckCodeExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/visualbasic/spellcheckexample.vb#spellcheckcodeexamplewholepage)]  
   
 ## See Also  
- [Use Spell Checking with a Context Menu](../../../../docs/framework/wpf/controls/how-to-use-spell-checking-with-a-context-menu.md)   
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)   
+ [Use Spell Checking with a Context Menu](../../../../docs/framework/wpf/controls/how-to-use-spell-checking-with-a-context-menu.md)  
+ [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
  [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)

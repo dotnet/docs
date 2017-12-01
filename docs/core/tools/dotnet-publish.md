@@ -90,7 +90,7 @@ If a relative path is provided, the output directory generated is relative to th
 
 `--self-contained`
 
-Publishes the .NET Core runtime with your application so the runtime doesn't need to be installed on the target machine. If a runtime identifier is specified, its default value is `true`. For more infomation about the different deployment types, see [.NET Core application deployment](../deploying/index.md).
+Publishes the .NET Core runtime with your application so the runtime doesn't need to be installed on the target machine. If a runtime identifier is specified, its default value is `true`. For more information about the different deployment types, see [.NET Core application deployment](../deploying/index.md).
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 

@@ -88,6 +88,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="package" /> or <paramref name="partUri" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
+        <altmember cref="Overload:System.IO.Packaging.PackagePart.GetStream" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -141,6 +143,8 @@
           <paramref name="package" /> or <paramref name="partUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="partUri" /> is not a valid <see cref="T:System.IO.Packaging.PackagePart" /> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</exception>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
+        <altmember cref="Overload:System.IO.Packaging.PackagePart.GetStream" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -195,6 +199,8 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="partUri" /> is not a valid <see cref="T:System.IO.Packaging.PackagePart" /> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="compressionOption" /> value is not valid.</exception>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
+        <altmember cref="Overload:System.IO.Packaging.PackagePart.GetStream" />
       </Docs>
     </Member>
     <Member MemberName="CompressionOption">
@@ -232,6 +238,7 @@
  -or-  
   
  The <see cref="P:System.IO.Packaging.PackagePart.Package" /> is not open (<see cref="M:System.IO.Packaging.Package.Dispose(System.Boolean)" /> or <see cref="M:System.IO.Packaging.Package.Close" /> has been called).</exception>
+        <altmember cref="Overload:System.IO.Packaging.PackagePart.GetStream" />
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -286,6 +293,7 @@
  -or-  
   
  The string returned by the derived class <see cref="M:System.IO.Packaging.PackagePart.GetContentTypeCore" /> method is empty.</exception>
+        <altmember cref="Overload:System.IO.Packaging.PackagePart.GetStream" />
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateRelationship">
@@ -400,6 +408,11 @@
   
  <paramref name="targetMode" /> is specified as <see cref="F:System.IO.Packaging.TargetMode.Internal" /> but <paramref name="targetUri" /> is an absolute external [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</exception>
         <exception cref="T:System.IO.IOException">The package is read-only (a new relationship cannot be added).</exception>
+        <altmember cref="Overload:System.IO.Packaging.Package.CreateRelationship" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.DeleteRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationships" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateRelationship">
@@ -493,6 +506,11 @@
  -or-  
   
  A part with the specified <paramref name="id" /> already exists.</exception>
+        <altmember cref="Overload:System.IO.Packaging.Package.CreateRelationship" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.DeleteRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationships" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteRelationship">
@@ -540,6 +558,11 @@
         <exception cref="T:System.IO.IOException">The package is read-only (relationships cannot be deleted).</exception>
         <exception cref="T:System.Xml.XmlException">
           <paramref name="id" /> is not a valid XML identifier.</exception>
+        <altmember cref="Overload:System.IO.Packaging.PackagePart.CreateRelationship" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationships" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.RelationshipExists(System.String)" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetContentTypeCore">
@@ -626,6 +649,11 @@
   
  A relationship with the specified <paramref name="id" /> does not exist in the package.</exception>
         <exception cref="T:System.IO.IOException">The package is write-only (relationship information cannot be read).</exception>
+        <altmember cref="Overload:System.IO.Packaging.PackagePart.CreateRelationship" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.DeleteRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationships" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.RelationshipExists(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetRelationships">
@@ -663,6 +691,10 @@
   
  The <see cref="P:System.IO.Packaging.PackagePart.Package" /> is not open (<see cref="M:System.IO.Packaging.Package.Dispose(System.Boolean)" /> or <see cref="M:System.IO.Packaging.Package.Close" /> has been called).</exception>
         <exception cref="T:System.IO.IOException">The package is write-only (relationship information cannot be read).</exception>
+        <altmember cref="Overload:System.IO.Packaging.PackagePart.CreateRelationship" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.DeleteRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetRelationshipsByType">
@@ -986,6 +1018,11 @@
   
  The <see cref="P:System.IO.Packaging.PackagePart.Package" /> is not open (<see cref="M:System.IO.Packaging.Package.Dispose(System.Boolean)" /> or <see cref="M:System.IO.Packaging.Package.Close" /> has been called).</exception>
         <exception cref="T:System.IO.IOException">The package is write-only (relationship information cannot be read).</exception>
+        <altmember cref="Overload:System.IO.Packaging.PackagePart.CreateRelationship" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.DeleteRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationships" />
+        <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Uri">
@@ -1023,7 +1060,25 @@
  -or-  
   
  The <see cref="P:System.IO.Packaging.PackagePart.Package" /> is not open (<see cref="M:System.IO.Packaging.Package.Dispose(System.Boolean)" /> or <see cref="M:System.IO.Packaging.Package.Close" /> has been called).</exception>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetStream">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the part content data stream.</summary>
+        <block subset="none" type="usage">
+          <para>
+            <see cref="Overload:System.IO.Packaging.PackagePart.GetStream" /> internally calls the derived <see cref="M:System.IO.Packaging.PackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)" /> method to actually open and return the part data stream based on the physical format implemented in the derived class.  
+  
+ By default, the <see cref="T:System.IO.Packaging.ZipPackagePart" /> subclass implementation of the abstract <see cref="T:System.IO.Packaging.PackagePart" /> class is provided and used.  In the default operation, <see cref="Overload:System.IO.Packaging.PackagePart.GetStream" /> internally calls <see cref="M:System.IO.Packaging.PackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)" /> of the <see cref="T:System.IO.Packaging.ZipPackagePart" /> class to open and return the part data stream from a ZIP file.</para>
+        </block>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

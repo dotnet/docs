@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "clocks, notification of state changes"
-  - "notifications, clocks' state changes"
+  - "clocks [WPF], notification of state changes"
+  - "notifications [WPF], clocks' state changes"
 ms.assetid: ecb10fc9-d0c2-45c3-b0a1-7b11baa733da
 caps.latest.revision: 7
 author: dotnet-bot

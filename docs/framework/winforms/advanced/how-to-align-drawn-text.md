@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "text, aligning"
+  - "text [Windows Forms], aligning"
   - "Windows Forms, aligning drawn text"
 ms.assetid: 83c10a81-1a90-4b5c-98aa-2c6c4b280079
 caps.latest.revision: 18
@@ -42,6 +42,6 @@ When you perform custom drawing, you may often want to center drawn text on a fo
  The preceding code examples are designed for use with Windows Forms, and they require <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See Also  
- [How to: Draw Text with GDI](../../../../docs/framework/winforms/advanced/how-to-draw-text-with-gdi.md)   
- [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)   
+ [How to: Draw Text with GDI](../../../../docs/framework/winforms/advanced/how-to-draw-text-with-gdi.md)  
+ [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)  
  [How to: Construct Font Families and Fonts](../../../../docs/framework/winforms/advanced/how-to-construct-font-families-and-fonts.md)

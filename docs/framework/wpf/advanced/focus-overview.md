@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "applications, focus"
-  - "focus in applications"
+  - "applications [WPF], focus"
+  - "focus in applications [WPF]"
 ms.assetid: 0230c4eb-0c8a-462b-ac4b-ae3e511659f4
 caps.latest.revision: 19
 author: dotnet-bot
@@ -124,8 +124,8 @@ In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.
  The events related to logical focus are <xref:System.Windows.UIElement.GotFocus> and <xref:System.Windows.UIElement.LostFocus>.  These events are defined on the <xref:System.Windows.Input.FocusManager> as attached events, but the <xref:System.Windows.Input.FocusManager> does not expose CLR event wrappers.  <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> expose these events more conveniently.  
   
 ## See Also  
- <xref:System.Windows.Input.FocusManager>   
- <xref:System.Windows.UIElement>   
- <xref:System.Windows.ContentElement>   
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)   
+ <xref:System.Windows.Input.FocusManager>  
+ <xref:System.Windows.UIElement>  
+ <xref:System.Windows.ContentElement>  
+ [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
  [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)

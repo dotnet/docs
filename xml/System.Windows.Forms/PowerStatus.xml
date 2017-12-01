@@ -31,6 +31,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.SystemInformation.PowerStatus" />
+    <altmember cref="T:System.Windows.Forms.SystemInformation" />
+    <altmember cref="T:System.Windows.Forms.PowerLineStatus" />
+    <altmember cref="T:System.Windows.Forms.BatteryChargeStatus" />
+    <altmember cref="T:System.Windows.Forms.PowerState" />
   </Docs>
   <Members>
     <Member MemberName="BatteryChargeStatus">
@@ -56,6 +61,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.BatteryChargeStatus" />
+        <altmember cref="P:System.Windows.Forms.PowerStatus.BatteryFullLifetime" />
+        <altmember cref="P:System.Windows.Forms.PowerStatus.BatteryLifePercent" />
+        <altmember cref="P:System.Windows.Forms.PowerStatus.BatteryLifeRemaining" />
       </Docs>
     </Member>
     <Member MemberName="BatteryFullLifetime">
@@ -74,6 +83,9 @@
         <summary>Gets the reported full charge lifetime of the primary battery power source in seconds.</summary>
         <value>The reported number of seconds of battery life available when the battery is fully charged, or -1 if the battery life is unknown.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.PowerStatus.BatteryChargeStatus" />
+        <altmember cref="P:System.Windows.Forms.PowerStatus.BatteryLifePercent" />
+        <altmember cref="P:System.Windows.Forms.PowerStatus.BatteryLifeRemaining" />
       </Docs>
     </Member>
     <Member MemberName="BatteryLifePercent">
@@ -92,6 +104,9 @@
         <summary>Gets the approximate amount of full battery charge remaining.</summary>
         <value>The approximate amount, from 0.0 to 1.0, of full battery charge remaining.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.PowerStatus.BatteryChargeStatus" />
+        <altmember cref="P:System.Windows.Forms.PowerStatus.BatteryFullLifetime" />
+        <altmember cref="P:System.Windows.Forms.PowerStatus.BatteryLifeRemaining" />
       </Docs>
     </Member>
     <Member MemberName="BatteryLifeRemaining">
@@ -110,6 +125,9 @@
         <summary>Gets the approximate number of seconds of battery time remaining.</summary>
         <value>The approximate number of seconds of battery life remaining, or –1 if the approximate remaining battery life is unknown.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.PowerStatus.BatteryChargeStatus" />
+        <altmember cref="P:System.Windows.Forms.PowerStatus.BatteryFullLifetime" />
+        <altmember cref="P:System.Windows.Forms.PowerStatus.BatteryLifePercent" />
       </Docs>
     </Member>
     <Member MemberName="PowerLineStatus">

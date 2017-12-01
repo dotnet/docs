@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Xml.Linq.XDocument.Declaration" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,6 +70,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDeclaration.ToString" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -108,8 +110,7 @@
  The following example creates a document that contains a declaration.  
   
 ```csharp  
-  
-                XDocument doc = new XDocument(  
+XDocument doc = new XDocument(  
     new XDeclaration("1.0", "utf-8", "yes"),  
     new XComment("This is a comment"),  
     new XElement("Root", "content")  
@@ -120,8 +121,7 @@ Console.WriteLine(File.ReadAllText("Root.xml"));
 ```  
   
 ```vb  
-  
-                Dim doc As XDocument = _   
+Dim doc As XDocument = _   
         <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
             <!--This is a comment-->  
             <Root>content</Root>  
@@ -134,14 +134,14 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
  This example produces the following output:  
   
 ```xml  
-  
-                <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>  
 <!--This is a comment-->  
 <Root>content</Root>  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDeclaration.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -186,8 +186,7 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
  The following example creates two documents, one with utf-8 encoding, and one with utf-16 encoding. It then loads the documents and prints the encoding to the console.  
   
 ```csharp  
-  
-                Console.WriteLine("Creating a document with utf-8 encoding");  
+Console.WriteLine("Creating a document with utf-8 encoding");  
 XDocument encodedDoc8 = new XDocument(  
     new XDeclaration("1.0", "utf-8", "yes"),  
     new XElement("Root", "Content")  
@@ -220,8 +219,7 @@ Console.WriteLine("Encoding of loaded document is:{0}", newDoc16.Declaration.Enc
 ```  
   
 ```vb  
-  
-                Console.WriteLine("Creating a document with utf-8 encoding")  
+Console.WriteLine("Creating a document with utf-8 encoding")  
 Dim encodedDoc8 As XDocument = _   
         <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
             <Root>Content</Root>  
@@ -276,6 +274,7 @@ Encoding of loaded document is:utf-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDeclaration.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Standalone">
@@ -316,20 +315,17 @@ Encoding of loaded document is:utf-16
  The following example uses this property to print the standalone property of a declaration.  
   
 ```csharp  
-  
-                XDeclaration xd = new XDeclaration("1.0", "utf-8", "yes");  
+XDeclaration xd = new XDeclaration("1.0", "utf-8", "yes");  
 Console.WriteLine(xd.Version);  
 Console.WriteLine(xd.Encoding);  
 Console.WriteLine(xd.Standalone);  
 ```  
   
 ```vb  
-  
-                Dim xd As XDeclaration = New XDeclaration("1.0", "utf-8", "yes")  
+Dim xd As XDeclaration = New XDeclaration("1.0", "utf-8", "yes")  
 Console.WriteLine(xd.Version)  
 Console.WriteLine(xd.Encoding)  
 Console.WriteLine(xd.Standalone)  
-  
 ```  
   
  This example produces the following output:  
@@ -342,6 +338,7 @@ yes
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.Linq.XDeclaration.Version" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -435,7 +432,20 @@ yes
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.Linq.XDeclaration.Standalone" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XDeclaration" /> class.</summary>
+        <altmember cref="M:System.Xml.Linq.XDeclaration.ToString" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

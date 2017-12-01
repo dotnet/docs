@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "examples [Windows Forms], LinkLabel control"
   - "Windows Forms, linking to objects"
   - "Web page link control"
-  - "linking, to other forms"
+  - "linking [Windows Forms], to other forms"
   - "Windows Forms, linking to Web pages"
-  - "links, to other forms"
+  - "links [Windows Forms], to other forms"
   - "LinkLabel control [Windows Forms], linking to object or Web page"
   - "LinkLabel control [Windows Forms], examples"
 ms.assetid: 6c91c975-3cb7-4504-82f0-fc6255f8fb85
@@ -185,7 +185,7 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
     ```  
   
 ## See Also  
- <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType>   
- [LinkLabel Control Overview](../../../../docs/framework/winforms/controls/linklabel-control-overview-windows-forms.md)   
- [How to: Change the Appearance of the Windows Forms LinkLabel Control](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-linklabel-control.md)   
+ <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType>  
+ [LinkLabel Control Overview](../../../../docs/framework/winforms/controls/linklabel-control-overview-windows-forms.md)  
+ [How to: Change the Appearance of the Windows Forms LinkLabel Control](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-linklabel-control.md)  
  [LinkLabel Control](../../../../docs/framework/winforms/controls/linklabel-control-windows-forms.md)

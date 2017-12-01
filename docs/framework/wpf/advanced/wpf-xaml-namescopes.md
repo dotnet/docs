@@ -10,18 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "namescopes"
-  - "styles, namescopes in"
-  - "FrameworkElement class"
-  - "templates, namescopes in"
-  - "APIs, name-related"
-  - "classes, FrameworkElement"
+  - "namescopes [WPF]"
+  - "styles [WPF], namescopes in"
+  - "templates [WPF], namescopes in"
+  - "APIs [WPF], name-related"
   - "name-related APIs"
-  - "FrameworkContentElement class"
-  - "RegisterName class"
-  - "XAML, namescopes"
-  - "classes, RegisterName"
-  - "classes, FrameworkContentElement"
+  - "XAML [WPF], namescopes"
+  - "classes [WPF], FrameworkContentElement"
 ms.assetid: 52bbf4f2-15fc-40d4-837b-bb4c21ead7d4
 caps.latest.revision: 19
 author: dotnet-bot
@@ -45,9 +40,9 @@ XAML namescopes are a concept that identifies objects that are defined in XAML. 
  If you try to use the same name twice in any XAML namescope, an exception is raised. For WPF XAML that has code-behind and is part of a compiled application, the exception is raised at build time by WPF build actions, when creating the generated class for the page during the initial markup compile. For XAML that is not markup-compiled by any build action, exceptions related to XAML namescope issues might be raised when the XAML is loaded. XAML designers might also anticipate XAML namescope issues at design time.  
   
 ### Adding Objects to Runtime Object Trees  
- The moment that XAML is parsed represents the moment in time that a WPF XAML namescope is created and defined. If you add an object to an object tree at a point in time after the XAML that produced that tree was parsed, a `Name` or `x:Name` value on the new object does not automatically update the information in a XAML namescope. To add a name for an object into a WPF XAML namescope after XAML is loaded, must call the appropriate implementation of <xref:System.Windows.Markup.INameScope.RegisterName%2A> on the object that defines the XAML namescope, which is typically the XAML page root. If the name is not registered, the added object cannot be referenced by name through methods such as <xref:System.Windows.FrameworkElement.FindName%2A>, and you cannot use that name for animation targeting.  
+ The moment that XAML is parsed represents the moment in time that a WPF XAML namescope is created and defined. If you add an object to an object tree at a point in time after the XAML that produced that tree was parsed, a `Name` or `x:Name` value on the new object does not automatically update the information in a XAML namescope. To add a name for an object into a WPF XAML namescope after XAML is loaded, you must call the appropriate implementation of <xref:System.Windows.Markup.INameScope.RegisterName%2A> on the object that defines the XAML namescope, which is typically the XAML page root. If the name is not registered, the added object cannot be referenced by name through methods such as <xref:System.Windows.FrameworkElement.FindName%2A>, and you cannot use that name for animation targeting.  
   
- The most common scenario for application developers is that you will use <xref:System.Windows.FrameworkElement.RegisterName%2A> to register names into the XAML namescope on the current root of the page. <xref:System.Windows.FrameworkElement.RegisterName%2A> is part of an mportant scenario for storyboards that target objects for animations. For more information, see [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
+ The most common scenario for application developers is that you will use <xref:System.Windows.FrameworkElement.RegisterName%2A> to register names into the XAML namescope on the current root of the page. <xref:System.Windows.FrameworkElement.RegisterName%2A> is part of an important scenario for storyboards that target objects for animations. For more information, see [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
   
  If you call <xref:System.Windows.FrameworkElement.RegisterName%2A> on an object other than the object that defines the XAML namescope, the name is still registered to the XAML namescope that the calling object is held within, as if you had called <xref:System.Windows.FrameworkElement.RegisterName%2A> on the XAML namescope defining object.  
   
@@ -108,5 +103,5 @@ XAML namescopes are a concept that identifies objects that are defined in XAML. 
 -   <xref:System.Windows.FrameworkContentElement>  
   
 ## See Also  
- [XAML Namespaces and Namespace Mapping for WPF XAML](../../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)   
+ [XAML Namespaces and Namespace Mapping for WPF XAML](../../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)  
  [x:Name Directive](../../../../docs/framework/xaml-services/x-name-directive.md)

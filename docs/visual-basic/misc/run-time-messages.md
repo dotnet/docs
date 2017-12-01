@@ -1,37 +1,17 @@
 ---
 title: "Visual Basic Run-Time Messages"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "errors [Visual Basic], run-time"
-  - "run-time errors, Visual Basic"
+  - "run-time errors [Visual Basic], Visual Basic"
 ms.assetid: 130f7c2b-8eb1-4a6e-81aa-e30e27d3d4f7
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Visual Basic Run-Time Messages
 This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error messages that occur at run time.  
@@ -575,5 +555,5 @@ This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error mess
  [You must specify a path that is under the current folder or one of its sub-folders](../../visual-basic/misc/you-must-specify-path-that-is-under-the-current-folder-or-one-of-sub-folders.md)  
   
 ## See Also  
- [NOTINBUILD How to: Get Information about Visual Basic Run-Time Errors](http://msdn.microsoft.com/en-us/22a7d0a6-b7d7-4c5d-971c-52ff0583c656)   
+ [NOTINBUILD How to: Get Information about Visual Basic Run-Time Errors](http://msdn.microsoft.com/en-us/22a7d0a6-b7d7-4c5d-971c-52ff0583c656)  
  [Error Messages](../../visual-basic/language-reference/error-messages/index.md)

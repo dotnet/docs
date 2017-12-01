@@ -3,7 +3,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Canc
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.SecurityTokenServiceCon
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrust13CancelRespons
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005Issue(
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13Issue(Syste
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -51,7 +51,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13Cancel(Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,7 +59,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005Valida
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -67,7 +67,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ExportContract(System.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -75,7 +75,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.DispatchRequest(System.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -83,7 +83,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrust13Cancel(System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -91,7 +91,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13ValidateRes
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -99,7 +99,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005Validate
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -107,7 +107,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13CancelRespo
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -115,7 +115,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginProcessCore(System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -123,7 +123,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Issu
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -131,7 +131,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13RenewRespon
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -139,7 +139,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005CancelRe
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -147,7 +147,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ValidateDispatchContext
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -155,7 +155,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginDispatchRequest(Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -163,7 +163,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13Validate(
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -171,7 +171,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13IssueRespon
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -179,7 +179,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005Cancel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -187,7 +187,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndDispatchRequest(Syst
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -195,7 +195,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005IssueR
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -203,7 +203,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrust13RenewResponse
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -211,7 +211,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005Valida
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -219,7 +219,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13Renew(Sys
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -227,7 +227,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005RenewR
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -235,7 +235,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13Cancel(Syst
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -243,7 +243,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005RenewRes
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -251,7 +251,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005Cancel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -259,7 +259,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Rene
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -267,7 +267,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.Validate(System.Service
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -275,7 +275,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.RequestFailed
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -283,7 +283,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.#ctor(System.IdentityMo
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -291,7 +291,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ImportSchema(System.Ser
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -299,7 +299,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005Cancel(S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -307,7 +307,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13RenewResp
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -315,7 +315,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Canc
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -323,7 +323,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.CreateDispatchContext(S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -331,7 +331,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.IncludeNamespace(System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -339,7 +339,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005Renew(
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -347,7 +347,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrust13ValidateRespo
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -355,7 +355,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.AddBindingParameters(Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -363,7 +363,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13ValidateR
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -371,7 +371,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrust13IssueResponse
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -379,7 +379,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005Issue(Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -387,7 +387,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.FixMessageElement(Syste
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -395,7 +395,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrust13Issue(System.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -403,7 +403,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.HandleException(System.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -411,7 +411,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005Validate
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -419,7 +419,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005Renew(Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -427,7 +427,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13CancelRes
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -435,7 +435,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13IssueResp
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -443,7 +443,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13Issue(Sys
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -451,7 +451,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndProcessCore(System.I
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -459,7 +459,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13Validate(Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -467,7 +467,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.GetRstSecurityTokenReso
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -475,7 +475,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ApplyClientBehavior(Sys
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -483,7 +483,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Vali
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -491,7 +491,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13Renew(Syste
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -499,7 +499,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ExportEndpoint(System.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -507,7 +507,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Rene
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -515,7 +515,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.CreateSerializationCont
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -523,7 +523,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Issu
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -531,7 +531,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrust13Validate(Syst
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -539,7 +539,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005IssueRes
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -547,7 +547,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ApplyDispatchBehavior(S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -555,7 +555,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.GetSecurityHeaderTokenR
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -563,7 +563,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.EndTrust13Renew(System.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -571,7 +571,7 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessCore(System.Serv
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -579,5 +579,5 @@ uid: System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Vali
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---

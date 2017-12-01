@@ -51,6 +51,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.RelativeSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -158,6 +159,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.RelativeSourceMode" />
+        <altmember cref="T:System.Windows.Data.RelativeSource" />
       </Docs>
     </Member>
     <Member MemberName="AncestorType">
@@ -196,6 +199,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Data.RelativeSource" /> is not in the <see cref="F:System.Windows.Data.RelativeSourceMode.FindAncestor" /> mode.</exception>
+        <altmember cref="T:System.Windows.Data.RelativeSourceMode" />
+        <altmember cref="P:System.Windows.Data.RelativeSource.AncestorLevel" />
+        <altmember cref="F:System.Windows.Data.RelativeSourceMode.FindAncestor" />
+        <altmember cref="T:System.Windows.Data.RelativeSource" />
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -231,6 +238,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This property is immutable after initialization. Instead of changing the <see cref="P:System.Windows.Data.RelativeSource.Mode" /> on this instance, create a new <see cref="T:System.Windows.Data.RelativeSource" /> or use a different static instance.</exception>
+        <altmember cref="T:System.Windows.Data.RelativeSourceMode" />
+        <altmember cref="T:System.Windows.Data.RelativeSource" />
       </Docs>
     </Member>
     <Member MemberName="PreviousData">
@@ -260,6 +269,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.RelativeSourceMode" />
+        <altmember cref="T:System.Windows.Data.RelativeSource" />
       </Docs>
     </Member>
     <Member MemberName="ProvideValue">
@@ -325,6 +336,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.RelativeSourceMode" />
+        <altmember cref="T:System.Windows.Data.RelativeSource" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeAncestorLevel">
@@ -465,7 +478,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.RelativeSourceMode" />
+        <altmember cref="T:System.Windows.Data.RelativeSource" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.RelativeSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "graphics, using managed interface"
-  - "graphics, about graphics"
+  - "graphics [Windows Forms], using managed interface"
+  - "graphics [Windows Forms], about graphics"
 ms.assetid: a602aef8-a8c8-4c36-9816-74e7bad96a68
 caps.latest.revision: 17
 author: dotnet-bot

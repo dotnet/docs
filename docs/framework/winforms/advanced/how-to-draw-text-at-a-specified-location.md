@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "text, drawing at specified locations [Windows Forms]"
+  - "text [Windows Forms], drawing at specified locations [Windows Forms]"
   - "drawing text"
-  - "drawing text, specified locations [Windows Forms]"
+  - "drawing text [Windows Forms], specified locations [Windows Forms]"
   - "Windows Forms, drawing text a a specified location"
 ms.assetid: 60816423-1c38-465e-980d-2c2b64d74086
 caps.latest.revision: 19
@@ -52,7 +52,7 @@ When you perform custom drawing, you can draw text in a single horizontal line s
 -   <xref:System.Windows.Forms.PaintEventArgs>  `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See Also  
- [How to: Draw Text with GDI](../../../../docs/framework/winforms/advanced/how-to-draw-text-with-gdi.md)   
- [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)   
- [How to: Construct Font Families and Fonts](../../../../docs/framework/winforms/advanced/how-to-construct-font-families-and-fonts.md)   
+ [How to: Draw Text with GDI](../../../../docs/framework/winforms/advanced/how-to-draw-text-with-gdi.md)  
+ [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)  
+ [How to: Construct Font Families and Fonts](../../../../docs/framework/winforms/advanced/how-to-construct-font-families-and-fonts.md)  
  [How to: Draw Wrapped Text in a Rectangle](../../../../docs/framework/winforms/advanced/how-to-draw-wrapped-text-in-a-rectangle.md)

@@ -125,7 +125,7 @@ peverify myAssembly.exe /break=100 /ignore@ignoreErrors.rsp
 ```  
   
 ## See Also  
- [Tools](../../../docs/framework/tools/index.md)   
- [NIB: Writing Verifiably Type-Safe Code](http://msdn.microsoft.com/en-us/d18f10ef-3b48-4f47-8726-96714021547b)   
- [Type Safety and Security](http://msdn.microsoft.com/en-us/095cd1f6-d8db-4c0e-bce2-83ccb34dd5dc)   
+ [Tools](../../../docs/framework/tools/index.md)  
+ [NIB: Writing Verifiably Type-Safe Code](http://msdn.microsoft.com/en-us/d18f10ef-3b48-4f47-8726-96714021547b)  
+ [Type Safety and Security](http://msdn.microsoft.com/en-us/095cd1f6-d8db-4c0e-bce2-83ccb34dd5dc)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

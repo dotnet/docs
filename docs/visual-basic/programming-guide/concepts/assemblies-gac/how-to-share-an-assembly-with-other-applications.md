@@ -13,12 +13,6 @@ ms.assetid: 5388aedc-cb42-4622-8b70-8e701eee057a
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Share an Assembly with Other Applications (Visual Basic)
 Assemblies can be private or shared: by default, most simple programs consist of a private assembly because they are not intended to be used by other applications.  
@@ -39,5 +33,5 @@ Assemblies can be private or shared: by default, most simple programs consist of
   
 ## See Also  
  [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
+ [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
  [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)

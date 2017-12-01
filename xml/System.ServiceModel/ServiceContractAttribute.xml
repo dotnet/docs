@@ -49,7 +49,7 @@
   
  Services implement service contracts, which represent the data exchange that a service type supports. A service class can implement a service contract (by implementing an interface marked with <xref:System.ServiceModel.ServiceContractAttribute> that has methods marked with <xref:System.ServiceModel.OperationContractAttribute>) or it can be marked with the <xref:System.ServiceModel.ServiceContractAttribute> and apply the <xref:System.ServiceModel.OperationContractAttribute> attribute to its own methods. (If a class implements an interface marked with <xref:System.ServiceModel.ServiceContractAttribute>, it cannot be itself marked with <xref:System.ServiceModel.ServiceContractAttribute>.) Methods on service types that are marked with the <xref:System.ServiceModel.OperationContractAttribute> are treated as part of a default service contract specified by the service type itself. For details about service operations, see <xref:System.ServiceModel.OperationContractAttribute>.  
   
- By default, the <xref:System.ServiceModel.ServiceContractAttribute.Name%2A> and <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A> properties are the name of the contract type and `http://tempuri.org`, respectively, and <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A> is <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType>. It is recommended that service contracts explicitly set their names, namespaces, and protection levels using these properties. Doing so accomplishes two goals. First, it builds a contract that is not directly connected to the managed type information, enabling you to refactor your managed code and namespaces without breaking the contract as it is expressed in WSDL. Second, explicitly requiring a certain level of protection on the contract itself enables the runtime to validate whether the binding configuration supports that level of security, preventing poor configuration from exposing sensitive information. For more information about protection levels, see [Understanding Protection Level](~/docs/framework/wcf/understanding-protection-level.md).  
+ By default, the <xref:System.ServiceModel.ServiceContractAttribute.Name%2A> and <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A> properties are the name of the contract type and `http://tempuri.org`, respectively, and <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A> is <xref:System.Net.Security.ProtectionLevel.None?displayProperty=nameWithType>. It is recommended that service contracts explicitly set their names, namespaces, and protection levels using these properties. Doing so accomplishes two goals. First, it builds a contract that is not directly connected to the managed type information, enabling you to refactor your managed code and namespaces without breaking the contract as it is expressed in WSDL. Second, explicitly requiring a certain level of protection on the contract itself enables the runtime to validate whether the binding configuration supports that level of security, preventing poor configuration from exposing sensitive information. For more information about protection levels, see [Understanding Protection Level](~/docs/framework/wcf/understanding-protection-level.md).  
   
  To expose a service for use by client applications, create a host application to register your service endpoint with [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. You can host [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services using Windows Activation Services (WAS), in console applications, Windows Service applications, ASP.NET applications, Windows Forms applications, or any other kind of application domain.  
   
@@ -66,7 +66,7 @@
    
   
 ## Examples  
- The following code example shows how to apply the <xref:System.ServiceModel.ServiceContractAttribute> to an interface to define a service contract with one service method, indicated by the <xref:System.ServiceModel.OperationContractAttribute>. In this case, the protection level required of bindings for all messages is <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType>.  
+ The following code example shows how to apply the <xref:System.ServiceModel.ServiceContractAttribute> to an interface to define a service contract with one service method, indicated by the <xref:System.ServiceModel.OperationContractAttribute>. In this case, the protection level required of bindings for all messages is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign?displayProperty=nameWithType>.  
   
  The code example then implements that contract on the `SampleService` class.  
   
@@ -84,6 +84,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceModel.OperationContractAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -330,7 +331,7 @@
   
  It is important to remember that the protection behavior at runtime is the combination of the protection-level values set on the following properties. These properties have a hierarchical structure. Setting the outermost value establishes the default setting for all narrower scopes unless a different value for a narrower scope is explicitly set. In this case, the outer value remains the default for all narrower scopes with the exception of that specifically set.  
   
- For example, if <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A?displayProperty=nameWithType> is set to <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType> and no other narrower scopes have protection level settings, all messages in an operation contract are encrypted and signed. If, however, one of those operations has the <xref:System.ServiceModel.OperationContractAttribute> set to <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType>, then the messages for that operation are signed but all other messages in the contract are encrypted and signed.  
+ For example, if <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A?displayProperty=nameWithType> is set to <xref:System.Net.Security.ProtectionLevel.EncryptAndSign?displayProperty=nameWithType> and no other narrower scopes have protection level settings, all messages in an operation contract are encrypted and signed. If, however, one of those operations has the <xref:System.ServiceModel.OperationContractAttribute> set to <xref:System.Net.Security.ProtectionLevel.Sign?displayProperty=nameWithType>, then the messages for that operation are signed but all other messages in the contract are encrypted and signed.  
   
  For details about protection levels and their assumptions and scopes, see [Understanding Protection Level](~/docs/framework/wcf/understanding-protection-level.md).  
   
@@ -348,7 +349,7 @@
   
  The <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=nameWithType> property on <xref:System.ServiceModel.MessageBodyMemberAttribute?displayProperty=nameWithType>.  
   
- When there is no protection level explicitly specified on the contract and the underlying binding supports security (whether at the transport or message level), the effective protection level for the whole contract is <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType>. If the binding does not support security (such as <xref:System.ServiceModel.BasicHttpBinding>), the effective <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType> is <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType> for the whole contract. The result is that depending upon the endpoint binding, clients can require different message or transport level security protection even when the contract specifies <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType>.  
+ When there is no protection level explicitly specified on the contract and the underlying binding supports security (whether at the transport or message level), the effective protection level for the whole contract is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign?displayProperty=nameWithType>. If the binding does not support security (such as <xref:System.ServiceModel.BasicHttpBinding>), the effective <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType> is <xref:System.Net.Security.ProtectionLevel.None?displayProperty=nameWithType> for the whole contract. The result is that depending upon the endpoint binding, clients can require different message or transport level security protection even when the contract specifies <xref:System.Net.Security.ProtectionLevel.None?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -381,7 +382,7 @@
 ## Remarks  
  Use the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property to require bindings that support sessions between endpoints. A session is a way of correlating a set of messages exchanged between two or more endpoints. If your service supports channel sessions, you can then use the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property to specify the relationship between instances your service contract implementation and the channel session. If a binding does not support sessions, an exception is thrown.  
   
- For example, if the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property is set to <xref:System.ServiceModel.SessionMode?displayProperty=nameWithType> and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property is set to <xref:System.ServiceModel.InstanceContextMode.PerSession>, clients can use the same connection to make repeated calls to the same service object.  
+ For example, if the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property is set to <xref:System.ServiceModel.SessionMode.Required?displayProperty=nameWithType> and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property is set to <xref:System.ServiceModel.InstanceContextMode.PerSession>, clients can use the same connection to make repeated calls to the same service object.  
   
  For more information about sessions and service instances, see [Using Sessions](~/docs/framework/wcf/using-sessions.md) and [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   

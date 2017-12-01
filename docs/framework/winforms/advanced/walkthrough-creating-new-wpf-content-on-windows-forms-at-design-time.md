@@ -10,11 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "interoperability, WPF and Windows Forms"
-  - "WPF content, hosting in Windows Forms"
+  - "interoperability [Windows Forms], WPF and Windows Forms"
+  - "WPF content [Windows Forms], hosting in Windows Forms"
   - "hosting WPF content in Windows Forms"
   - "ElementHost control"
-  - "WPF user control, hosting in Windows Forms"
+  - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: 2e92d8e8-f0e4-4df7-9f07-2acf35cd798c
 caps.latest.revision: 20
 author: dotnet-bot
@@ -116,8 +116,8 @@ This topic shows you how to create a Windows Presentation Foundation (WPF) contr
 -   Change the style of your WPF content. For more information, see [Walkthrough: Styling WPF Content](../../../../docs/framework/winforms/advanced/walkthrough-styling-wpf-content.md).  
   
 ## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>   
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)   
- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)   
+ <xref:System.Windows.Forms.Integration.ElementHost>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
+ [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
+ [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
  [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)

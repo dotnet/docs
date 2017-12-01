@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "brushes, opacity masks"
-  - "masks, opacity"
-  - "opacity, masks"
+  - "brushes [WPF], opacity masks"
+  - "masks [WPF], opacity"
+  - "opacity [WPF], masks"
 ms.assetid: 22367fab-5f59-4583-abfd-db2bf86eaef7
 caps.latest.revision: 14
 author: dotnet-bot
@@ -122,5 +122,5 @@ DrawingBrush opacity masking example
  [!code-xaml[OpacityMasksSnippet#TiledDrawingasOpacityMask](../../../../samples/snippets/csharp/VS_Snippets_Wpf/OpacityMasksSnippet/CS/DrawingBrushExample.xaml#tileddrawingasopacitymask)]  
   
 ## See Also  
- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)   
+ [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)  
  [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)

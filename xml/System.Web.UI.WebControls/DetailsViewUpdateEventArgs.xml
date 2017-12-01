@@ -34,6 +34,16 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdateEventHandler" />
+    <altmember cref="T:System.ComponentModel.CancelEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdating" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.CommandArgument" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.OldValues" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemUpdating(System.Web.UI.WebControls.DetailsViewUpdateEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +78,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdateEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdating" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.CommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="CommandArgument">
@@ -93,6 +107,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserting" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -134,6 +152,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdateEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.OldValues" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdating" />
       </Docs>
     </Member>
     <Member MemberName="NewValues">
@@ -175,6 +200,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdating" />
       </Docs>
     </Member>
     <Member MemberName="OldValues">
@@ -216,6 +248,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdateEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.OldValues" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdating" />
       </Docs>
     </Member>
   </Members>

@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "resizing grid rows"
-  - "grid rows, resizing"
-  - "GridSplitter control, resizing grid rows"
+  - "resizing grid rows [WPF]"
+  - "grid rows [WPF], resizing"
+  - "GridSplitter control [WPF], resizing grid rows"
 ms.assetid: 2413a9f2-1d81-46ed-95cb-95ec8233eea2
 caps.latest.revision: 15
 author: dotnet-bot
@@ -43,5 +43,5 @@ This example shows how to use a horizontal <xref:System.Windows.Controls.GridSpl
 [!code-xaml[GridSplitterRowColumn#GridSplitterEntireRowPart2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterRowColumn/CS/Window1.xaml#gridsplitterentirerowpart2)]  
   
 ## See Also  
- <xref:System.Windows.Controls.GridSplitter>   
+ <xref:System.Windows.Controls.GridSplitter>  
  [How-to Topics](../../../../docs/framework/wpf/controls/gridsplitter-how-to-topics.md)

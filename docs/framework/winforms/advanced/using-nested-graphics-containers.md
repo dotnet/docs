@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "graphics, nested containers"
+  - "graphics [Windows Forms], nested containers"
   - "graphics [Windows Forms], clipping"
-  - "graphics, transformations in nested objects"
+  - "graphics [Windows Forms], transformations in nested objects"
 ms.assetid: a0d9f178-43a4-4323-bb5a-d3e3f77ae6c1
 caps.latest.revision: 13
 author: dotnet-bot
@@ -63,5 +63,5 @@ manager: "wpickett"
  ![Nested Containers](../../../../docs/framework/winforms/advanced/media/nestedcontainers3.png "nestedcontainers3")  
   
 ## See Also  
- <xref:System.Drawing.Graphics>   
+ <xref:System.Drawing.Graphics>  
  [Managing the State of a Graphics Object](../../../../docs/framework/winforms/advanced/managing-the-state-of-a-graphics-object.md)

@@ -68,16 +68,14 @@
  The following example creates an element that contains a CDATA node.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XCData("Some content")  
 );  
 Console.WriteLine(root);  
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root>  
+Dim root As XElement = <Root>  
                            <![CDATA[Some content]]]><![CDATA[]>  
                        </Root>  
 Console.WriteLine(root)  
@@ -167,8 +165,7 @@ Console.WriteLine(root)
  The following example creates an XML tree that contains various types of nodes. It then iterates through the tree, and prints the node type of each node.  
   
 ```csharp  
-  
-                // Note that XNode uses XmlNodeType, which is in the System.Xml namespace.  
+// Note that XNode uses XmlNodeType, which is in the System.Xml namespace.  
 XDocument xmlTree = new XDocument(  
     new XComment("a comment"),  
     new XProcessingInstruction("xml-stylesheet", "type=\"text/xsl\" href=\"hello.xsl\""),  
@@ -195,8 +192,7 @@ foreach (XNode node in xmlTree.DescendantNodes())
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XDocument = _   
+Dim xmlTree As XDocument = _   
     <?xml version="1.0" encoding="utf-8"?>  
         <!--a comment-->  
         <?xml-stylesheet type='text/xsl' href='hello.xsl'?>  
@@ -232,6 +228,8 @@ Text
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
+        <altmember cref="T:System.Xml.Linq.XNode" />
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -297,5 +295,16 @@ Text
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XCData" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -10,11 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ImageDrawing class"
-  - "drawing, images"
-  - "graphics, drawing images"
-  - "classes, ImageDrawing"
-  - "images, drawing"
+  - "drawing [WPF], images"
+  - "graphics [WPF], drawing images"
+  - "images [WPF], drawing"
 ms.assetid: df28ab41-25fb-4ab3-b51d-7f695b24f55e
 caps.latest.revision: 7
 author: dotnet-bot
@@ -36,8 +34,8 @@ Four ImageDrawing objects
  For an example showing a simple way to display an image without using <xref:System.Windows.Media.ImageDrawing>, see [Use the Image Element](../../../../docs/framework/wpf/controls/how-to-use-the-image-element.md).  
   
 ## See Also  
- <xref:System.Windows.Freezable.Freeze%2A>   
- <xref:System.Windows.Controls.Image>   
- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)   
- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)   
+ <xref:System.Windows.Freezable.Freeze%2A>  
+ <xref:System.Windows.Controls.Image>  
+ [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  
+ [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)  
  [PresentationOptions:Freeze Attribute](../../../../docs/framework/wpf/advanced/presentationoptions-freeze-attribute.md)

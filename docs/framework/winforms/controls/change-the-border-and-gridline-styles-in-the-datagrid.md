@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "gridlines, changing styles"
-  - "data grids, changing gridline styles"
+  - "gridlines [Windows Forms], changing styles"
+  - "data grids [Windows Forms], changing gridline styles"
   - "DataGridView control [Windows Forms], border styles"
-  - "data grids, changing border styles"
+  - "data grids [Windows Forms], changing border styles"
   - "DataGridView control [Windows Forms], gridline styles"
 ms.assetid: 2f413c7a-4025-4171-8e3a-66ef908ea583
 caps.latest.revision: 15
@@ -63,12 +63,12 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can customize the
 -   References to the <xref:System?displayProperty=nameWithType>, <xref:System.Windows.Forms?displayProperty=nameWithType>, and <xref:System.Drawing?displayProperty=nameWithType> assemblies.  
   
 ## See Also  
- <xref:System.Windows.Forms.BorderStyle>   
- <xref:System.Windows.Forms.DataGridView.BorderStyle%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.DataGridView.CellBorderStyle%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.DataGridView.GridColor%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.DataGridView.RowHeadersBorderStyle%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.DataGridViewCellBorderStyle>   
- <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle>   
+ <xref:System.Windows.Forms.BorderStyle>  
+ <xref:System.Windows.Forms.DataGridView.BorderStyle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.CellBorderStyle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.GridColor%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.RowHeadersBorderStyle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridViewCellBorderStyle>  
+ <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle>  
  [Basic Formatting and Styling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)

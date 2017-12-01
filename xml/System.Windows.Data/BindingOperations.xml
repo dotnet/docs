@@ -303,7 +303,7 @@ In return, WPF provides the following behavior:
 
 - The <xref:System.Windows.Data.CollectionView> maintains a "shadow copy" of the collection for use on the UI thread.
 
-- <xref:System.Windows.Data.CollectionView.CollectionChanged%2A> events are queued up as they arrive (on any thread).
+- <xref:System.Windows.Data.CollectionView.CollectionChanged> events are queued up as they arrive (on any thread).
 
 - Pending events are applied to the shadow copy asynchronously on the UI thread when it has the opportunity to do so.
 
@@ -379,7 +379,7 @@ In return, WPF provides the following behavior:
 
 - The <xref:System.Windows.Data.CollectionView> maintains a "shadow copy" of the collection for use on the UI thread.
 
-- <xref:System.Windows.Data.CollectionView.CollectionChanged%2A> events are queued up as they arrive (on any thread).
+- <xref:System.Windows.Data.CollectionView.CollectionChanged> events are queued up as they arrive (on any thread).
 
 - Pending events are applied to the shadow copy asynchronously on the UI thread when it has the opportunity to do so.
 
@@ -416,6 +416,10 @@ The net effect is that you can change the collection on any thread, and those c
         <returns>The <see cref="T:System.Windows.Data.Binding" /> object set on the given property or <see langword="null" /> if no <see cref="T:System.Windows.Data.Binding" /> object has been set.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be null.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetMultiBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetPriorityBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetBindingBase">
@@ -448,6 +452,7 @@ The net effect is that you can change the collection on any thread, and those c
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingExpressionBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetBindingExpression">
@@ -490,6 +495,9 @@ The net effect is that you can change the collection on any thread, and those c
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetMultiBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetPriorityBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingExpressionBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetBindingExpressionBase">
@@ -522,6 +530,7 @@ The net effect is that you can change the collection on any thread, and those c
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be null.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetMultiBinding">
@@ -547,6 +556,8 @@ The net effect is that you can change the collection on any thread, and those c
         <returns>The <see cref="T:System.Windows.Data.MultiBinding" /> object set on the given property or <see langword="null" /> if no <see cref="T:System.Windows.Data.MultiBinding" /> object has been set.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be null.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetMultiBindingExpression">
@@ -579,6 +590,9 @@ The net effect is that you can change the collection on any thread, and those c
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingExpressionBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetMultiBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetPriorityBinding">
@@ -604,6 +618,8 @@ The net effect is that you can change the collection on any thread, and those c
         <returns>The <see cref="T:System.Windows.Data.PriorityBinding" /> object set on the given property or <see langword="null" /> if no <see cref="T:System.Windows.Data.PriorityBinding" /> object has been set.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be null.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetPriorityBindingExpression">
@@ -629,6 +645,9 @@ The net effect is that you can change the collection on any thread, and those c
         <returns>The <see cref="T:System.Windows.Data.PriorityBindingExpression" /> object associated with the given property or <see langword="null" /> if none exists.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingExpressionBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetPriorityBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetSourceUpdatingBindingGroups">

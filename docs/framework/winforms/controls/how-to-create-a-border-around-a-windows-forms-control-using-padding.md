@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "margins"
   - "controls [Windows Forms], Margin property"
-  - "padding, Windows Forms"
+  - "padding [Windows Forms], Windows Forms"
   - "controls [Windows Forms], Padding property"
   - "controls [Windows Forms], outlining"
   - "Padding property [Windows Forms]"
-  - "margins, Windows Forms"
+  - "margins [Windows Forms], Windows Forms"
   - "Margin property [Windows Forms]"
 ms.assetid: bac7ed4d-a163-4259-98bd-155a36345890
 caps.latest.revision: 5
@@ -35,5 +35,5 @@ The following code example demonstrates how to create a border or outline around
  [!code-vb[System.Windows.Forms.Padding#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Padding/VB/Form1.vb#1)]  
   
 ## See Also  
- <xref:System.Windows.Forms.Padding>   
+ <xref:System.Windows.Forms.Padding>  
  [Margin and Padding in Windows Forms Controls](../../../../docs/framework/winforms/controls/margin-and-padding-in-windows-forms-controls.md)

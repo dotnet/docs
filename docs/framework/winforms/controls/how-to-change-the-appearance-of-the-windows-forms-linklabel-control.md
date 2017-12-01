@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "LinkLabel properties"
   - "LinkLabel control [Windows Forms], changing appearance of links"
-  - "links, changing appearance"
+  - "links [Windows Forms], changing appearance"
   - "examples [Windows Forms], LinkLabel control"
   - "LinkLabel control [Windows Forms], examples"
 ms.assetid: fdc5854f-5162-4457-8cbe-1042feb2d132
@@ -128,10 +128,10 @@ You can change the text displayed by the <xref:System.Windows.Forms.LinkLabel> c
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.LinkLabel.LinkArea%2A>   
- <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>   
- <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A>   
- <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A>   
- [LinkLabel Control Overview](../../../../docs/framework/winforms/controls/linklabel-control-overview-windows-forms.md)   
- [How to: Link to an Object or Web Page with the Windows Forms LinkLabel Control](../../../../docs/framework/winforms/controls/link-to-an-object-or-web-page-with-wf-linklabel-control.md)   
+ <xref:System.Windows.Forms.LinkLabel.LinkArea%2A>  
+ <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>  
+ <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A>  
+ <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A>  
+ [LinkLabel Control Overview](../../../../docs/framework/winforms/controls/linklabel-control-overview-windows-forms.md)  
+ [How to: Link to an Object or Web Page with the Windows Forms LinkLabel Control](../../../../docs/framework/winforms/controls/link-to-an-object-or-web-page-with-wf-linklabel-control.md)  
  [LinkLabel Control](../../../../docs/framework/winforms/controls/linklabel-control-windows-forms.md)

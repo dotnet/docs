@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapFrame" />
   </Docs>
   <Members>
     <Member MemberName="CodecInfo">
@@ -58,6 +60,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapCodecInfo" />
       </Docs>
     </Member>
     <Member MemberName="ColorContexts">
@@ -81,6 +84,7 @@
         <summary>Gets a value that represents the color profile that is associated with a bitmap, if one is defined.</summary>
         <value>An instance of <see cref="T:System.Windows.Media.ColorContext" /> that represents the embedded color profile of the bitmap. If no color profile has been defined, or if the <see cref="T:System.Windows.Media.Imaging.LateBoundBitmapDecoder" /> is still downloading content, this property returns <see langword="null" />. This property has no default value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.ColorContext" />
       </Docs>
     </Member>
     <Member MemberName="Decoder">
@@ -138,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapFrame" />
       </Docs>
     </Member>
     <Member MemberName="IsDownloading">
@@ -180,6 +185,7 @@
         <summary>Gets the <see cref="T:System.Windows.Media.Imaging.BitmapPalette" /> that is associated with this decoder.</summary>
         <value>The <see cref="T:System.Windows.Media.Imaging.BitmapPalette" /> that is associated with this decoder. If the bitmap has no palette, or if the <see cref="T:System.Windows.Media.Imaging.LateBoundBitmapDecoder" /> is still downloading content, this property returns <see langword="null" />. This property has no default value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapPalette" />
       </Docs>
     </Member>
     <Member MemberName="Preview">
@@ -210,6 +216,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
     <Member MemberName="Thumbnail">
@@ -240,6 +247,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
   </Members>

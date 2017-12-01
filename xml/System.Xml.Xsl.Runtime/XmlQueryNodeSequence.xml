@@ -635,5 +635,23 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateOrReuse">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears and reuses the specified <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> if it is available. If it is not available, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

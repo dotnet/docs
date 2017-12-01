@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "DataGrid control [WPF], sizing"
   - "size [WPF], DataGrid"
-  - "automatically size DataGrid"
+  - "automatically size DataGrid [WPF]"
 ms.assetid: 96a0e47e-b010-4302-98ef-2daac446d8db
 caps.latest.revision: 6
 author: dotnet-bot
@@ -92,7 +92,7 @@ Various options are available to control how the <xref:System.Windows.Controls.D
  Users can resize <xref:System.Windows.Controls.DataGrid> rows and columns by dragging the row or column header dividers. The <xref:System.Windows.Controls.DataGrid> also supports automatic resizing of rows and columns by double-clicking the row or column header divider. To prevent a user from resizing particular columns, set the <xref:System.Windows.Controls.DataGridColumn.CanUserResize%2A?displayProperty=nameWithType> property to `false` for the individual columns. To prevent users from resizing all columns, set the <xref:System.Windows.Controls.DataGrid.CanUserResizeColumns%2A?displayProperty=nameWithType> property to `false`. To prevent users from resizing all rows, set the <xref:System.Windows.Controls.DataGrid.CanUserResizeRows%2A?displayProperty=nameWithType> property to `false`.  
   
 ## See Also  
- <xref:System.Windows.Controls.DataGrid>   
- <xref:System.Windows.Controls.DataGridColumn>   
- <xref:System.Windows.Controls.DataGridLength>   
+ <xref:System.Windows.Controls.DataGrid>  
+ <xref:System.Windows.Controls.DataGridColumn>  
+ <xref:System.Windows.Controls.DataGridLength>  
  <xref:System.Windows.Controls.DataGridLengthConverter>

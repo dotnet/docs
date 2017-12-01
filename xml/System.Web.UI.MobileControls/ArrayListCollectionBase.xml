@@ -30,6 +30,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Collections.ArrayList" />
   </Docs>
   <Members>
     <Member MemberName="CopyTo">
@@ -60,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -85,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -111,6 +114,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -137,6 +141,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -163,6 +168,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -188,6 +194,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -213,6 +220,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
       </Docs>
     </Member>
   </Members>

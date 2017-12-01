@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "drawing, lines"
-  - "lines, texture"
-  - "drawing lines, texture"
+  - "drawing [Windows Forms], lines"
+  - "lines [Windows Forms], texture"
+  - "drawing lines [Windows Forms], texture"
 ms.assetid: dc9118cc-f3c2-42e5-8173-f46d41d18fd5
 caps.latest.revision: 12
 author: dotnet-bot
@@ -39,5 +39,5 @@ Instead of drawing a line with a solid color, you can draw a line with a texture
  Create a Windows Form and handle the form's <xref:System.Windows.Forms.Control.Paint> event. Paste the preceding code into the <xref:System.Windows.Forms.Control.Paint> event handler. Replace `Texture.jpg` with an image valid on your system.  
   
 ## See Also  
- [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)   
+ [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)  
  [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)

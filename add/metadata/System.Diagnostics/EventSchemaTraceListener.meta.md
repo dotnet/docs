@@ -128,14 +128,14 @@ manager: "wpickett"
 uid: System.Diagnostics.EventSchemaTraceListener.Write
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.EventSchemaTraceListener.Fail
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -259,5 +259,5 @@ manager: "wpickett"
 uid: System.Diagnostics.EventSchemaTraceListener.WriteLine
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

@@ -38,5 +38,5 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.BStrWrapper.#ctor
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

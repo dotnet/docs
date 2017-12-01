@@ -65,7 +65,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.GetNestedTypes
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -126,7 +126,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.GetField
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -205,7 +205,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.GetMethods
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -248,7 +248,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.GetEvent
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -291,7 +291,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.GetProperties
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -325,7 +325,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.Equals
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -377,7 +377,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.GetNestedType
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -393,7 +393,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.InvokeMember
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -454,7 +454,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.GetInterface
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -524,7 +524,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.GetFields
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -549,7 +549,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.GetMember
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -592,7 +592,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.GetMembers
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -626,7 +626,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.GetConstructors
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

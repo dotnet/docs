@@ -1,13 +1,10 @@
 ---
 title: "My.Forms Object"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "My.Forms"
@@ -18,21 +15,6 @@ ms.assetid: f6bff4e6-6769-4294-956b-037aa6106d2a
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # My.Forms Object
 Provides properties for accessing an instance of each Windows form declared in the current project.  
@@ -87,11 +69,11 @@ Provides properties for accessing an instance of each Windows form declared in t
 |Web Site|No|  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>   
- <xref:System.Windows.Forms.Form>   
- <xref:System.Windows.Forms.Form.Close%2A>   
- [Objects](../../../visual-basic/language-reference/objects/index.md)   
- [How to: Add Windows Forms to a Project](http://msdn.microsoft.com/en-us/3d7bb25f-fd90-47cf-9378-fa0d764686c1)   
- [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)   
- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)   
+ <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>  
+ <xref:System.Windows.Forms.Form>  
+ <xref:System.Windows.Forms.Form.Close%2A>  
+ [Objects](../../../visual-basic/language-reference/objects/index.md)  
+ [How to: Add Windows Forms to a Project](http://msdn.microsoft.com/en-us/3d7bb25f-fd90-47cf-9378-fa0d764686c1)  
+ [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)  
+ [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)  
  [Accessing Application Forms](../../../visual-basic/developing-apps/programming/accessing-application-forms.md)

@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "text, retrieving"
-  - "TextBox control, retrieving text"
-  - "retrieving text"
+  - "text [WPF], retrieving"
+  - "TextBox control [WPF], retrieving text"
+  - "retrieving text [WPF]"
 ms.assetid: d5793172-1e11-4a39-9be0-73f336ed858d
 caps.latest.revision: 10
 author: dotnet-bot
@@ -39,5 +39,5 @@ This example shows one way to use the <xref:System.Windows.Controls.TextBox.Sele
  [!code-vb[TextBox_MiscCode#_SelectText](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextBox_MiscCode/VisualBasic/Window1.xaml.vb#_selecttext)]  
   
 ## See Also  
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)   
+ [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
  [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)

@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "change notifications, raising"
+  - "change notifications [Windows Forms], raising"
   - "BindingSource component [Windows Forms], and IPropertyChange"
-  - "data sources, detecting changes"
+  - "data sources [Windows Forms], detecting changes"
   - "examples [Windows Forms], BindingSource component"
   - "change notifications"
-  - "INotifyPropertyChanged interface, using with BindingSource"
+  - "INotifyPropertyChanged interface [Windows Forms], using with BindingSource"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: 7fa2cf51-c09f-4375-adf0-e36c5617f099
 caps.latest.revision: 15
@@ -48,6 +48,6 @@ The <xref:System.Windows.Forms.BindingSource> component will automatically detec
  For information about building this example from the command line for [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] by pasting the code into a new project.  Also see [HYPERLINK "http://msdn.microsoft.com/library/Bb129228(v=vs.110)" How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
   
 ## See Also  
- <xref:System.ComponentModel.INotifyPropertyChanged>   
- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)   
+ <xref:System.ComponentModel.INotifyPropertyChanged>  
+ [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)  
  [How to: Raise Change Notifications Using the BindingSource ResetItem Method](../../../../docs/framework/winforms/controls/how-to-raise-change-notifications-using-the-bindingsource-resetitem-method.md)

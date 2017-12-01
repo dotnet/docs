@@ -130,8 +130,7 @@
  The following example creates a document with an internal DTD. When it creates the <xref:System.Xml.Linq.XDocumentType> object, it specifies the qualified name of the DTD (Pubs), and a string that contains the internal subset. Because the document does not use a public or private external DTD, the `publicId` and `systemId` are set to `null`.  
   
 ```csharp  
-  
-                string internalSubset = @"<!ELEMENT Pubs (Book+)>  
+string internalSubset = @"<!ELEMENT Pubs (Book+)>  
 <!ELEMENT Book (Title, Author)>  
 <!ELEMENT Title (#PCDATA)>  
 <!ELEMENT Author (#PCDATA)>";  
@@ -161,8 +160,7 @@ Console.WriteLine(doc);
 ```  
   
 ```vb  
-  
-                Dim internalSubset = _  
+Dim internalSubset = _  
     "<!ELEMENT Pubs (Book+)>" & Environment.NewLine & _  
     "<!ELEMENT Book (Title, Author)>" & Environment.NewLine & _  
     "<!ELEMENT Title (#PCDATA)>" & Environment.NewLine & _  
@@ -192,8 +190,7 @@ Console.WriteLine(doc)
  This example produces the following output:  
   
 ```xml  
-  
-                <!--This is a comment.-->  
+<!--This is a comment.-->  
 <?xml-stylesheet href="mystyle.css" title="Compact" type="text/css"?>  
 <!DOCTYPE Pubs [<!ELEMENT Pubs (Book+)>  
 <!ELEMENT Book (Title, Author)>  
@@ -249,8 +246,7 @@ Console.WriteLine(doc)
  The following example creates a document with a DTD that contains an internal subset.  
   
 ```csharp  
-  
-                string internalSubset = @"<!ELEMENT Pubs (Book+)>  
+string internalSubset = @"<!ELEMENT Pubs (Book+)>  
 <!ELEMENT Book (Title, Author)>  
 <!ELEMENT Title (#PCDATA)>  
 <!ELEMENT Author (#PCDATA)>";  
@@ -280,8 +276,7 @@ Console.WriteLine(doc.DocumentType.InternalSubset);
 ```  
   
 ```vb  
-  
-                Dim internalSubset = _  
+Dim internalSubset = _  
     "<!ELEMENT Pubs (Book+)>" & Environment.NewLine & _  
     "<!ELEMENT Book (Title, Author)>" & Environment.NewLine & _  
     "<!ELEMENT Title (#PCDATA)>" & Environment.NewLine & _  
@@ -354,8 +349,7 @@ Console.WriteLine(doc.DocumentType.InternalSubset)
  The following example creates an XML document that contains a DTD. After creating the document, it retrieves the qualified name of the DTD using this property.  
   
 ```csharp  
-  
-                string internalSubset = @"<!ELEMENT Pubs (Book+)>  
+string internalSubset = @"<!ELEMENT Pubs (Book+)>  
 <!ELEMENT Book (Title, Author)>  
 <!ELEMENT Title (#PCDATA)>  
 <!ELEMENT Author (#PCDATA)>";  
@@ -385,8 +379,7 @@ Console.WriteLine(doc.DocumentType.Name);
 ```  
   
 ```vb  
-  
-                Dim internalSubset = _  
+Dim internalSubset = _  
     "<!ELEMENT Pubs (Book+)>" & Environment.NewLine & _  
     "<!ELEMENT Book (Title, Author)>" & Environment.NewLine & _  
     "<!ELEMENT Title (#PCDATA)>" & Environment.NewLine & _  
@@ -461,8 +454,7 @@ Pubs
  The following example shows the use of this property to retrieve the node type for an <xref:System.Xml.Linq.XDocumentType> object.  
   
 ```csharp  
-  
-                string internalSubset = @"<!ELEMENT Pubs (Book+)>  
+string internalSubset = @"<!ELEMENT Pubs (Book+)>  
 <!ELEMENT Book (Title, Author)>  
 <!ELEMENT Title (#PCDATA)>  
 <!ELEMENT Author (#PCDATA)>";  
@@ -492,8 +484,7 @@ Console.WriteLine(doc.DocumentType.NodeType);
 ```  
   
 ```vb  
-  
-                Dim internalSubset = _  
+Dim internalSubset = _  
     "<!ELEMENT Pubs (Book+)>" & Environment.NewLine & _  
     "<!ELEMENT Book (Title, Author)>" & Environment.NewLine & _  
     "<!ELEMENT Title (#PCDATA)>" & Environment.NewLine & _  
@@ -604,8 +595,7 @@ DocumentType
  The following example creates an XML document that refers to an external private DTD. The DTD does not have an internal subset. The call to the <xref:System.Xml.Linq.XDocumentType> constructor reflects the use of the external private DTD. It passes `null` for the internal subset.  
   
 ```csharp  
-  
-                string pubsDtd =  
+string pubsDtd =  
 @"<!ELEMENT Pubs (Book+)>  
 <!ELEMENT Book (Title, Author)>  
 <!ELEMENT Title (#PCDATA)>  
@@ -645,8 +635,7 @@ Console.WriteLine("SystemId:{0}", dt.SystemId);
 ```  
   
 ```vb  
-  
-                Dim pubsDtd As String = _   
+Dim pubsDtd As String = _   
     "<!ELEMENT Pubs (Book+)>" & Environment.NewLine & _  
     "<!ELEMENT Book (Title, Author)>" & Environment.NewLine & _  
     "<!ELEMENT Title (#PCDATA)>" & Environment.NewLine & _  
@@ -762,5 +751,16 @@ SystemId:Pubs.dtd
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XDocumentType" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

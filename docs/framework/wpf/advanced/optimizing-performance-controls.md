@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "controls [WPF], improving performance"
-  - "container recycling"
-  - "user interface virtualization"
+  - "container recycling [WPF]"
+  - "user interface virtualization [WPF]"
 ms.assetid: 45a31c43-ea8a-4546-96c8-0631b9934179
 caps.latest.revision: 22
 author: dotnet-bot
@@ -82,9 +82,9 @@ manager: "wpickett"
 >  For an example of how to enable virtualization and container recycling on a <xref:System.Windows.Controls.TreeView>, see [Improve the Performance of a TreeView](../../../../docs/framework/wpf/controls/how-to-improve-the-performance-of-a-treeview.md).  
   
 ## See Also  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)   
- [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)   
- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)   
- [Controls](../../../../docs/framework/wpf/controls/index.md)   
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)   
+ [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
+ [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)  
+ [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
+ [Controls](../../../../docs/framework/wpf/controls/index.md)  
+ [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
  [Walkthrough: Caching Application Data in a WPF Application](../../../../docs/framework/wpf/advanced/walkthrough-caching-application-data-in-a-wpf-application.md)

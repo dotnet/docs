@@ -54,6 +54,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.PageSetupDialog" />
+    <altmember cref="T:System.Windows.Forms.PrintDialog" />
+    <altmember cref="T:System.Windows.Forms.PrintPreviewControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,6 +88,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+        <altmember cref="T:System.Windows.Forms.PrintPreviewControl" />
       </Docs>
     </Member>
     <Member MemberName="AcceptButton">
@@ -124,6 +129,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.AcceptButton" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleDescription">
@@ -1079,6 +1085,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer settings in <see cref="P:System.Windows.Forms.PrintPreviewDialog.Document" /> are not valid.</exception>
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -1332,6 +1339,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -1563,7 +1571,7 @@
 ## Remarks  
  This property is not relevant for this class.  
   
- The border style of the form determines how the outer edge of the form appears. In addition to changing the border display for a form, certain border styles prevent the form from being sized. For example, the <xref:System.Windows.Forms.FormBorderStyle?displayProperty=nameWithType> border style changes the border of the form to that of a dialog box and prevents the form from being resized. The border style can also affect the size or availability of the caption bar section of a form.  
+ The border style of the form determines how the outer edge of the form appears. In addition to changing the border display for a form, certain border styles prevent the form from being sized. For example, the <xref:System.Windows.Forms.FormBorderStyle.FixedDialog?displayProperty=nameWithType> border style changes the border of the form to that of a dialog box and prevents the form from being resized. The border style can also affect the size or availability of the caption bar section of a form.  
   
  ]]></format>
         </remarks>
@@ -1951,7 +1959,7 @@
 ## Remarks  
  This property is not relevant for this class.  
   
- A maximize button enables users to enlarge a window to full-screen size. To display a maximize button, you must also set the form's <xref:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle%2A> property to either <xref:System.Windows.Forms.FormBorderStyle?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle?displayProperty=nameWithType>, or <xref:System.Windows.Forms.FormBorderStyle?displayProperty=nameWithType>.  
+ A maximize button enables users to enlarge a window to full-screen size. To display a maximize button, you must also set the form's <xref:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle%2A> property to either <xref:System.Windows.Forms.FormBorderStyle.FixedSingle?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Sizable?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Fixed3D?displayProperty=nameWithType>, or <xref:System.Windows.Forms.FormBorderStyle.FixedDialog?displayProperty=nameWithType>.  
   
  A maximize button automatically becomes a restore button when a window is maximized. Minimizing or restoring a window automatically changes the restore button back to a maximize button.  
   
@@ -2100,10 +2108,10 @@
 ## Remarks  
  This property is not relevant for this class.  
   
- A minimize button enables users to minimize a window to an icon. To display a minimize button, you must also set the form's <xref:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle%2A> property to either <xref:System.Windows.Forms.FormBorderStyle?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle?displayProperty=nameWithType>, or <xref:System.Windows.Forms.FormBorderStyle?displayProperty=nameWithType>.  
+ A minimize button enables users to minimize a window to an icon. To display a minimize button, you must also set the form's <xref:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle%2A> property to either <xref:System.Windows.Forms.FormBorderStyle.FixedSingle?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Sizable?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Fixed3D?displayProperty=nameWithType>, or <xref:System.Windows.Forms.FormBorderStyle.FixedDialog?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  Minimizing a form at run time generates a <xref:System.Windows.Forms.Control.Resize> event. The <xref:System.Windows.Forms.PrintPreviewDialog.WindowState%2A> property reflects the current state of the window. If you set the <xref:System.Windows.Forms.PrintPreviewDialog.WindowState%2A> property to <xref:System.Windows.Forms.FormWindowState?displayProperty=nameWithType>, the form is minimized independently of whatever settings are in effect for the <xref:System.Windows.Forms.PrintPreviewDialog.MinimizeBox%2A> and <xref:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle%2A> properties.  
+>  Minimizing a form at run time generates a <xref:System.Windows.Forms.Control.Resize> event. The <xref:System.Windows.Forms.PrintPreviewDialog.WindowState%2A> property reflects the current state of the window. If you set the <xref:System.Windows.Forms.PrintPreviewDialog.WindowState%2A> property to <xref:System.Windows.Forms.FormWindowState.Minimized?displayProperty=nameWithType>, the form is minimized independently of whatever settings are in effect for the <xref:System.Windows.Forms.PrintPreviewDialog.MinimizeBox%2A> and <xref:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle%2A> properties.  
   
  ]]></format>
         </remarks>
@@ -2340,6 +2348,7 @@
         <summary>Gets a value indicating the <see cref="T:System.Windows.Forms.PrintPreviewControl" /> contained in this form.</summary>
         <value>The <see cref="T:System.Windows.Forms.PrintPreviewControl" /> contained in this form.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.PrintPreviewControl" />
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogKey">
@@ -2366,7 +2375,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Keys?displayProperty=nameWithType>, <xref:System.Windows.Forms.Keys?displayProperty=nameWithType>, <xref:System.Windows.Forms.Keys?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Keys?displayProperty=nameWithType> key values will return `false`; otherwise, processing is passed to the base class's <xref:System.Windows.Forms.Form.ProcessDialogKey%2A> method.  
+ The <xref:System.Windows.Forms.Keys.Up?displayProperty=nameWithType>, <xref:System.Windows.Forms.Keys.Down?displayProperty=nameWithType>, <xref:System.Windows.Forms.Keys.Right?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Keys.Left?displayProperty=nameWithType> key values will return `false`; otherwise, processing is passed to the base class's <xref:System.Windows.Forms.Form.ProcessDialogKey%2A> method.  
   
  ]]></format>
         </remarks>
@@ -3121,7 +3130,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Before a form is displayed, the <xref:System.Windows.Forms.Form.WindowState%2A> property is always set to <xref:System.Windows.Forms.FormWindowState?displayProperty=nameWithType>, regardless of its initial setting. This is reflected in the <xref:System.Windows.Forms.Control.Height%2A>, <xref:System.Windows.Forms.Control.Left%2A>, <xref:System.Windows.Forms.Control.Top%2A>, and <xref:System.Windows.Forms.Control.Width%2A> property settings. If a form is hidden after it has been shown, these properties reflect the previous state until the form is shown again, regardless of any changes made to the <xref:System.Windows.Forms.Form.WindowState%2A> property.  
+ Before a form is displayed, the <xref:System.Windows.Forms.Form.WindowState%2A> property is always set to <xref:System.Windows.Forms.FormWindowState.Normal?displayProperty=nameWithType>, regardless of its initial setting. This is reflected in the <xref:System.Windows.Forms.Control.Height%2A>, <xref:System.Windows.Forms.Control.Left%2A>, <xref:System.Windows.Forms.Control.Top%2A>, and <xref:System.Windows.Forms.Control.Width%2A> property settings. If a form is hidden after it has been shown, these properties reflect the previous state until the form is shown again, regardless of any changes made to the <xref:System.Windows.Forms.Form.WindowState%2A> property.  
   
  ]]></format>
         </remarks>

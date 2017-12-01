@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "ListView control [Windows Forms], populating"
-  - "list views, adding list items"
+  - "list views [Windows Forms], adding list items"
   - "ListView control [Windows Forms], adding list items"
 ms.assetid: 1b35a80a-edd8-495f-a807-a28c4aae52c6
 caps.latest.revision: 13
@@ -40,6 +40,6 @@ The process of adding an item to a Windows Forms <xref:System.Windows.Forms.List
      [!code-vb[System.Windows.Forms.ListViewLegacyTopics#12](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewLegacyTopics/VB/Class1.vb#12)]  
   
 ## See Also  
- <xref:System.Windows.Forms.ListView>   
- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)   
+ <xref:System.Windows.Forms.ListView>  
+ [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)  
  [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)

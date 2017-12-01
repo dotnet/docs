@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "getting started, WPF"
-  - "WPF, getting started"
+  - "getting started [WPF], WPF"
+  - "WPF [WPF], getting started"
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 caps.latest.revision: 71
 author: dotnet-bot
@@ -458,7 +458,7 @@ For more information about installing the latest version of Visual Studio, see [
 -   [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
   
 ## See also  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)   
- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)   
- [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)   
+ [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
+ [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)  
+ [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)  
  [Styles and Templates](../../../../docs/framework/wpf/controls/styles-and-templates.md)

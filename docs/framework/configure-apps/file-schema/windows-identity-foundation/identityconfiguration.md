@@ -99,5 +99,5 @@ Specifies service-level identity settings.
 ```  
   
 ## See Also  
- <xref:System.IdentityModel.Configuration.IdentityConfiguration>   
+ <xref:System.IdentityModel.Configuration.IdentityConfiguration>  
  <xref:System.IdentityModel.Configuration.IdentityConfigurationElement>

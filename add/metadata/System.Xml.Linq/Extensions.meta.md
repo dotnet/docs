@@ -146,7 +146,7 @@ manager: "wpickett"
 uid: System.Xml.Linq.Extensions.Remove
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

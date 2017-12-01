@@ -13,7 +13,7 @@ f1_keywords:
   - "RichTextBox"
 helpviewer_keywords: 
   - "RichTextBox control [Windows Forms], about RichTextBox control"
-  - "text boxes, about text boxes"
+  - "text boxes [Windows Forms], about text boxes"
 ms.assetid: 95081194-3dd4-4b84-9545-dd373e491eca
 caps.latest.revision: 9
 author: dotnet-bot
@@ -31,6 +31,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control is used for di
  You can undo and redo most edit operations in a <xref:System.Windows.Forms.RichTextBox> control by calling the <xref:System.Windows.Forms.TextBoxBase.Undo%2A> and <xref:System.Windows.Forms.RichTextBox.Redo%2A> methods. The <xref:System.Windows.Forms.RichTextBox.CanRedo%2A> method enables you to determine whether the last operation the user has undone can be reapplied to the control.  
   
 ## See Also  
- <xref:System.Windows.Forms.RichTextBox>   
- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)   
+ <xref:System.Windows.Forms.RichTextBox>  
+ [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)  
  [TextBox Control Overview](../../../../docs/framework/winforms/controls/textbox-control-overview-windows-forms.md)

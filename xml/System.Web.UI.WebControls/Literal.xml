@@ -84,6 +84,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Label" />
+    <altmember cref="P:System.Web.UI.WebControls.Literal.Text" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -253,6 +255,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.LiteralMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.LiteralMode" />
       </Docs>
     </Member>
     <Member MemberName="Render">

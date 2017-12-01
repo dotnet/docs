@@ -10,14 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Feedback Center"
-  - "Microsoft Product Feedback Center"
-  - "community resources"
-  - "forums"
-  - "blogs for feedback"
-  - "weblogs for feedback"
-  - "Product Feedback Center"
-  - "bug descriptions"
+  - "Feedback Center [WPF]"
+  - "Microsoft Product Feedback Center [WPF]"
+  - "community resources [WPF]"
+  - "forums [WPF]"
+  - "blogs for feedback [WPF]"
+  - "weblogs for feedback [WPF]"
+  - "Product Feedback Center [WPF]"
+  - "bug descriptions [WPF]"
 ms.assetid: 468b060a-d54b-4900-a74a-9faccb554045
 caps.latest.revision: 23
 author: dotnet-bot

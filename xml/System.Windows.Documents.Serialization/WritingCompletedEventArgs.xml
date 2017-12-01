@@ -13,6 +13,11 @@
   <Docs>
     <summary>Provides data for the <see cref="E:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted" /> event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Documents.Serialization.WritingCompletedEventArgs" />
+    <altmember cref="T:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs" />
+    <altmember cref="T:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs" />
+    <altmember cref="T:System.Windows.Documents.Serialization.SerializerWriter" />
+    <altmember cref="M:System.Windows.Documents.Serialization.SerializerWriter.CancelAsync" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

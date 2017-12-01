@@ -15,20 +15,6 @@ ms.assetid: 27ff7381-c281-45d7-b2eb-1ad644b1354e
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /utf8output (C# Compiler Options)
 The **/utf8output** option displays compiler output using UTF-8 encoding.  

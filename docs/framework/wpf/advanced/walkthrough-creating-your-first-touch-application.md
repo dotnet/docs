@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "creating a touch-sensitive application [WPF]"
   - "touchscreen applications [WPF], creating"
@@ -90,6 +90,6 @@ manager: "wpickett"
  To cause inertia, quickly raise your fingers from the screen as you perform the previous manipulations. The <xref:System.Windows.Shapes.Rectangle> will continue to move, resize, or rotate for a few seconds before it stops.  
   
 ## See Also  
- <xref:System.Windows.UIElement.ManipulationStarting?displayProperty=nameWithType>   
- <xref:System.Windows.UIElement.ManipulationDelta?displayProperty=nameWithType>   
+ <xref:System.Windows.UIElement.ManipulationStarting?displayProperty=nameWithType>  
+ <xref:System.Windows.UIElement.ManipulationDelta?displayProperty=nameWithType>  
  <xref:System.Windows.UIElement.ManipulationInertiaStarting?displayProperty=nameWithType>

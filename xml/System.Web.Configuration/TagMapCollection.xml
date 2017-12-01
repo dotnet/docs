@@ -58,6 +58,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.PagesSection" />
+    <altmember cref="T:System.Web.Configuration.TagMapInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +82,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -121,6 +124,8 @@
  \- or -  
   
  The collection is read-only.</exception>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
+        <altmember cref="T:System.Web.Configuration.TagMapInfo" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -217,6 +222,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">

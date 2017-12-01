@@ -14,6 +14,9 @@
     <summary>Represents a stream of data. This class sends its data to either a <see cref="T:Microsoft.JScript.COMCharStream" /> or a <see cref="T:System.Console" /> stream.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+    <altmember cref="P:System.Console.Out" />
+    <altmember cref="P:System.Console.Error" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,6 +33,11 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ScriptStream" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.COMCharStream" />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.Console" />
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="P:System.Console.Error" />
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -48,6 +56,9 @@
         <summary>Stores a reference to either the standard console <see cref="P:System.Console.Error" /> stream or a custom <see cref="T:Microsoft.JScript.COMCharStream" />.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.Console" />
+        <altmember cref="P:System.Console.Out" />
       </Docs>
     </Member>
     <Member MemberName="Out">
@@ -66,6 +77,9 @@
         <summary>Stores a reference to either the standard console <see cref="P:System.Console.Out" /> stream or a custom <see cref="T:Microsoft.JScript.COMCharStream" />.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.Console" />
+        <altmember cref="P:System.Console.Error" />
       </Docs>
     </Member>
     <Member MemberName="PrintStackTrace">
@@ -85,6 +99,11 @@
         <summary>Writes a string that describes the current contents of the call stack. The string is written to the <see cref="F:Microsoft.JScript.ScriptStream.Out" /> stream.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.COMCharStream" />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.Console" />
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="P:System.Console.Error" />
       </Docs>
     </Member>
     <Member MemberName="PrintStackTrace">
@@ -107,6 +126,11 @@
         <summary>Writes a string that describes the contents of the call stack at the time the specified exception was thrown. The string is written to the <see cref="F:Microsoft.JScript.ScriptStream.Out" /> stream.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.COMCharStream" />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.Console" />
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="P:System.Console.Error" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -129,6 +153,11 @@
         <summary>Writes the specified string to the stream. The string is written to the <see cref="F:Microsoft.JScript.ScriptStream.Out" /> stream.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.COMCharStream" />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.Console" />
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="P:System.Console.Error" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -151,7 +180,26 @@
         <summary>Writes the specified string to the stream, followed by the line terminator. The string is written to the <see cref="F:Microsoft.JScript.ScriptStream.Out" /> stream.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.COMCharStream" />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.Console" />
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="P:System.Console.Error" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="PrintStackTrace">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a string that describes the contents of the call stack to the <see cref="F:Microsoft.JScript.ScriptStream.Out" /> stream.</summary>
+        <altmember cref="T:Microsoft.JScript.COMCharStream" />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.Console" />
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="P:System.Console.Error" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

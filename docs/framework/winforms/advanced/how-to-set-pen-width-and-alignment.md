@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "pens, setting width"
-  - "pens, setting alignment"
+  - "pens [Windows Forms], setting width"
+  - "pens [Windows Forms], setting alignment"
 ms.assetid: a202af36-4d31-4401-a126-b232f51db581
 caps.latest.revision: 16
 author: dotnet-bot
@@ -64,5 +64,5 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
      ![Pens](../../../../docs/framework/winforms/advanced/media/pens3.gif "pens3")  
   
 ## See Also  
- [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)   
+ [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)  
  [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)

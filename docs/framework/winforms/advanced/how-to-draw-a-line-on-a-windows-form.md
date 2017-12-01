@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 f1_keywords: 
   - "Graphics.DrawLine"
 helpviewer_keywords: 
   - "examples [Windows Forms], drawing lines on forms"
-  - "drawing, lines"
-  - "lines, drawing"
+  - "drawing [Windows Forms], lines"
+  - "lines [Windows Forms], drawing"
   - "drawing lines"
 ms.assetid: 55c1dbeb-75d0-430c-9814-a24b8971ad8c
 caps.latest.revision: 13
@@ -39,8 +39,8 @@ This example draws a line on a form. Typically, when you draw on a form, you han
  You should always call <xref:System.IDisposable.Dispose%2A> on any objects that consume system resources, such as <xref:System.Drawing.Pen> objects.  
   
 ## See Also  
- <xref:System.Drawing.Graphics.DrawLine%2A>   
- <xref:System.Windows.Forms.Control.OnPaint%2A>   
- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)   
- [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)   
+ <xref:System.Drawing.Graphics.DrawLine%2A>  
+ <xref:System.Windows.Forms.Control.OnPaint%2A>  
+ [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)  
+ [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)  
  [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)

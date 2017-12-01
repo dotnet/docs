@@ -103,6 +103,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dc" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Drawing.IDeviceContext" />
       </Docs>
     </Member>
     <Member MemberName="DrawText">
@@ -135,7 +136,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `font` or `forecolor` is `null` or <xref:System.Drawing.Color?displayProperty=nameWithType>, respectively; the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method will draw the text in the font or color currently selected in the device context specified by `dc`. If `forecolor` is <xref:System.Drawing.Color.Transparent%2A>, the text will not be drawn.  
+ If `font` or `forecolor` is `null` or <xref:System.Drawing.Color.Empty?displayProperty=nameWithType>, respectively; the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method will draw the text in the font or color currently selected in the device context specified by `dc`. If `forecolor` is <xref:System.Drawing.Color.Transparent%2A>, the text will not be drawn.  
   
  This method will result in text that is horizontally and vertically centered in the rectangle specified by the `bounds` parameter. To change how the text is drawn, use a version of <xref:System.Windows.Forms.TextRenderer.DrawText%2A> that takes a <xref:System.Windows.Forms.TextFormatFlags> parameter type.  
   
@@ -153,6 +154,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dc" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Drawing.IDeviceContext" />
       </Docs>
     </Member>
     <Member MemberName="DrawText">
@@ -187,7 +189,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `backColor` parameter is applied to the rectangular area containing the drawn text. If `font`, `backcolor` or `forecolor` is `null` or <xref:System.Drawing.Color?displayProperty=nameWithType>, respectively; the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method will draw the text in the font or color currently selected in the device context specified by `dc`. If `forecolor` is <xref:System.Drawing.Color.Transparent%2A>, the text will not be drawn.  
+ The `backColor` parameter is applied to the rectangular area containing the drawn text. If `font`, `backcolor` or `forecolor` is `null` or <xref:System.Drawing.Color.Empty?displayProperty=nameWithType>, respectively; the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method will draw the text in the font or color currently selected in the device context specified by `dc`. If `forecolor` is <xref:System.Drawing.Color.Transparent%2A>, the text will not be drawn.  
   
  You can manipulate how the text is drawn by using one of the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> overloads that takes a <xref:System.Windows.Forms.TextFormatFlags> parameter.  
   
@@ -751,5 +753,14 @@
           <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MeasureText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Measures the specified text when drawn with the specified font.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

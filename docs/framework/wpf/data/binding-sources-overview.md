@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "binding data, binding sources"
-  - "data binding, binding source"
-  - "binding sources"
+  - "binding data [WPF], binding sources"
+  - "data binding [WPF], binding source"
+  - "binding sources [WPF]"
 ms.assetid: 2df2cd11-6aac-4bdf-ab7b-ea5f464cd5ca
 caps.latest.revision: 25
 author: dotnet-bot
@@ -101,10 +101,10 @@ In data binding, the binding source object refers to the object you obtain data 
  For more information about partial-trust security, see [WPF Partial Trust Security](../../../../docs/framework/wpf/wpf-partial-trust-security.md).  
   
 ## See Also  
- <xref:System.Windows.Data.ObjectDataProvider>   
- <xref:System.Windows.Data.XmlDataProvider>   
- [Specify the Binding Source](../../../../docs/framework/wpf/data/how-to-specify-the-binding-source.md)   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)   
- [WPF Data Binding with LINQ to XML Overview](/visualstudio/designers/wpf-data-binding-with-linq-to-xml-overview)   
+ <xref:System.Windows.Data.ObjectDataProvider>  
+ <xref:System.Windows.Data.XmlDataProvider>  
+ [Specify the Binding Source](../../../../docs/framework/wpf/data/how-to-specify-the-binding-source.md)  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
+ [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)  
+ [WPF Data Binding with LINQ to XML Overview](/visualstudio/designers/wpf-data-binding-with-linq-to-xml-overview)  
  [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)

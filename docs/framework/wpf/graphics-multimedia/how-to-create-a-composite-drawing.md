@@ -10,11 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "drawings, composite"
-  - "composite drawings"
-  - "classes, DrawingGroup"
-  - "graphics, composite drawings"
-  - "DrawingGroup class"
+  - "drawings [WPF], composite"
+  - "composite drawings [WPF]"
+  - "graphics [WPF], composite drawings"
 ms.assetid: 066eb0ab-5f0e-439d-85c6-dca60af269fc
 caps.latest.revision: 9
 author: dotnet-bot
@@ -50,10 +48,10 @@ Composite drawing that has multiple DrawingGroup objects
  For more information about <xref:System.Windows.Media.Drawing> objects, see [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md).  
   
 ## See Also  
- <xref:System.Windows.Media.DrawingGroup.BitmapEffect%2A>   
- <xref:System.Windows.Media.DrawingGroup.Transform%2A>   
- <xref:System.Windows.Media.DrawingGroup.OpacityMask%2A>   
- <xref:System.Windows.Media.DrawingGroup.Opacity%2A>   
- <xref:System.Windows.Media.DrawingGroup.ClipGeometry%2A>   
- <xref:System.Windows.Media.DrawingGroup.GuidelineSet%2A>   
+ <xref:System.Windows.Media.DrawingGroup.BitmapEffect%2A>  
+ <xref:System.Windows.Media.DrawingGroup.Transform%2A>  
+ <xref:System.Windows.Media.DrawingGroup.OpacityMask%2A>  
+ <xref:System.Windows.Media.DrawingGroup.Opacity%2A>  
+ <xref:System.Windows.Media.DrawingGroup.ClipGeometry%2A>  
+ <xref:System.Windows.Media.DrawingGroup.GuidelineSet%2A>  
  [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)

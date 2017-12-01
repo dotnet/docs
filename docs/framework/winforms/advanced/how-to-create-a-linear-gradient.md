@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "linear gradients, creating"
-  - "gradients, creating linear"
-  - "colors, creating linear gradients"
+  - "linear gradients [Windows Forms], creating"
+  - "gradients [Windows Forms], creating linear"
+  - "colors [Windows Forms], creating linear gradients"
   - "gradients"
 ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
 caps.latest.revision: 17
@@ -84,5 +84,5 @@ manager: "wpickett"
      [!code-vb[System.Drawing.UsingaGradientBrush#23](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/VB/Class1.vb#23)]  
   
 ## See Also  
- [Using a Gradient Brush to Fill Shapes](../../../../docs/framework/winforms/advanced/using-a-gradient-brush-to-fill-shapes.md)   
+ [Using a Gradient Brush to Fill Shapes](../../../../docs/framework/winforms/advanced/using-a-gradient-brush-to-fill-shapes.md)  
  [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)

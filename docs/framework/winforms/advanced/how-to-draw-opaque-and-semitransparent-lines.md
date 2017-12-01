@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "drawing, lines"
-  - "transparency, lines"
-  - "lines, drawing alpha blended"
-  - "alpha blending, drawing lines"
+  - "drawing [Windows Forms], lines"
+  - "transparency [Windows Forms], lines"
+  - "lines [Windows Forms], drawing alpha blended"
+  - "alpha blending [Windows Forms], drawing lines"
 ms.assetid: 8f2508af-f495-4223-b5cc-646cbbb520eb
 caps.latest.revision: 18
 author: dotnet-bot
@@ -42,6 +42,6 @@ When you draw a line, you must pass a <xref:System.Drawing.Pen> object to the <x
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See Also  
- [Alpha Blending Lines and Fills](../../../../docs/framework/winforms/advanced/alpha-blending-lines-and-fills.md)   
- [How to: Give Your Control a Transparent Background](../../../../docs/framework/winforms/controls/how-to-give-your-control-a-transparent-background.md)   
+ [Alpha Blending Lines and Fills](../../../../docs/framework/winforms/advanced/alpha-blending-lines-and-fills.md)  
+ [How to: Give Your Control a Transparent Background](../../../../docs/framework/winforms/controls/how-to-give-your-control-a-transparent-background.md)  
  [How to: Draw with Opaque and Semitransparent Brushes](../../../../docs/framework/winforms/advanced/how-to-draw-with-opaque-and-semitransparent-brushes.md)

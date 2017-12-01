@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Serialization.XsdDataContractExporter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -261,6 +262,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
+        <altmember cref="T:System.Runtime.Serialization.XsdDataContractImporter" />
       </Docs>
     </Member>
     <Member MemberName="GetCodeTypeReference">
@@ -354,6 +357,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.KnownTypeAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Import">
@@ -483,7 +487,36 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.XsdDataContractExporter" />
+        <altmember cref="T:System.Runtime.Serialization.ImportOptions" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Import">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transforms a set of XML schemas into a <see cref="T:System.CodeDom.CodeCompileUnit" /> used to generate CLR code.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.XsdDataContractImporter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCodeTypeReference">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.CodeDom.CodeTypeReference" /> for the specified element.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

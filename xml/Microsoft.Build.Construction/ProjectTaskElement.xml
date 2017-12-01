@@ -449,5 +449,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddOutputProperty">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an Output property to this task after the last child.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddOutputItem">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an Output item after the last child.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

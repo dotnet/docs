@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "icons, displaying on tabs"
+  - "icons [Windows Forms], displaying on tabs"
   - "TabControl control [Windows Forms], changing page appearance"
-  - "tabs, controlling appearance"
-  - "buttons, displaying tabs as"
+  - "tabs [Windows Forms], controlling appearance"
+  - "buttons [Windows Forms], displaying tabs as"
 ms.assetid: 7c6cc443-ed62-4d26-b94d-b8913b44f773
 caps.latest.revision: 16
 author: dotnet-bot
@@ -72,8 +72,8 @@ You can change the appearance of tabs in Windows Forms by using properties of th
 -   Set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the <xref:System.Windows.Forms.TabControl> to <xref:System.Windows.Forms.TabAppearance.Buttons> or <xref:System.Windows.Forms.TabAppearance.FlatButtons>.  
   
 ## See Also  
- [TabControl Control](../../../../docs/framework/winforms/controls/tabcontrol-control-windows-forms.md)   
- [TabControl Control Overview](../../../../docs/framework/winforms/controls/tabcontrol-control-overview-windows-forms.md)   
- [How to: Add a Control to a Tab Page](../../../../docs/framework/winforms/controls/how-to-add-a-control-to-a-tab-page.md)   
- [How to: Disable Tab Pages](../../../../docs/framework/winforms/controls/how-to-disable-tab-pages.md)   
+ [TabControl Control](../../../../docs/framework/winforms/controls/tabcontrol-control-windows-forms.md)  
+ [TabControl Control Overview](../../../../docs/framework/winforms/controls/tabcontrol-control-overview-windows-forms.md)  
+ [How to: Add a Control to a Tab Page](../../../../docs/framework/winforms/controls/how-to-add-a-control-to-a-tab-page.md)  
+ [How to: Disable Tab Pages](../../../../docs/framework/winforms/controls/how-to-disable-tab-pages.md)  
  [How to: Add and Remove Tabs with the Windows Forms TabControl](../../../../docs/framework/winforms/controls/how-to-add-and-remove-tabs-with-the-windows-forms-tabcontrol.md)

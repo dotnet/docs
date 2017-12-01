@@ -22,6 +22,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.IComponent" />
+    <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
   </Docs>
   <Members>
     <Member MemberName="GetState">
@@ -46,6 +48,8 @@
         <summary>Gets a state item specified by the key for the given component.</summary>
         <returns>The designer state for <paramref name="component" /> specified by <paramref name="key" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
       </Docs>
     </Member>
     <Member MemberName="SetState">
@@ -71,6 +75,8 @@
         <param name="value">The designer state item for <c>component</c>.</param>
         <summary>Sets a state item specified by the key for the given component.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
       </Docs>
     </Member>
   </Members>

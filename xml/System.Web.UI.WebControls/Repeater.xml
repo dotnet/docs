@@ -136,6 +136,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.DataList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -201,6 +203,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.SeparatorTemplate" />
       </Docs>
     </Member>
     <Member MemberName="CallingDataMethods">
@@ -253,6 +259,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -271,6 +278,7 @@
       <Docs>
         <summary>Called by the ASP.NET page framework to notify server controls that use composition-based implementation to create any child controls they contain in preparation for posting back or rendering.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlHierarchy">
@@ -419,6 +427,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -459,6 +469,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -511,6 +522,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.UI.WebControls.Repeater.DataSource" /> object specified is not a supported source of data for the <see cref="T:System.Web.UI.WebControls.Repeater" /> control.</exception>
         <exception cref="T:System.Web.HttpException">The data source cannot be resolved because a value is specified for both the <see cref="P:System.Web.UI.WebControls.Repeater.DataSource" /> property and the <see cref="P:System.Web.UI.WebControls.Repeater.DataSourceID" /> property.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceID">
@@ -565,6 +578,7 @@
 -   The data source specified by the <see cref="P:System.Web.UI.WebControls.Repeater.DataSourceID" /> property cannot be found on the page.  
   
 -   The data source specified by the <see cref="P:System.Web.UI.WebControls.Repeater.DataSourceID" /> property does not implement <see cref="T:System.Web.UI.IDataSource" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -596,6 +610,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Repeater.EnsureDataBound" />
       </Docs>
     </Member>
     <Member MemberName="EnsureDataBound">
@@ -621,6 +636,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSourceID" />
+        <altmember cref="M:System.Web.UI.WebControls.Repeater.DataBind" />
       </Docs>
     </Member>
     <Member MemberName="FooterTemplate">
@@ -671,6 +688,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.SeparatorTemplate" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -747,6 +768,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.SeparatorTemplate" />
       </Docs>
     </Member>
     <Member MemberName="Initialized">
@@ -882,6 +907,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Repeater.OnItemCommand(System.Web.UI.WebControls.RepeaterCommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterCommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ItemCreated">
@@ -916,6 +944,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Repeater.OnItemCreated(System.Web.UI.WebControls.RepeaterItemEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ItemDataBound">
@@ -950,6 +981,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Repeater.OnItemDataBound(System.Web.UI.WebControls.RepeaterItemEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -991,6 +1025,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="ItemTemplate">
@@ -1041,6 +1076,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.SeparatorTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ItemType">
@@ -1217,6 +1256,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">
           <see cref="M:System.Web.UI.WebControls.Repeater.OnDataPropertyChanged" /> is called during the data-binding phase of the control.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.Initialized" />
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceViewChanged">
@@ -1247,6 +1287,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.RequiresDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -1307,6 +1348,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Repeater.OnItemCommand(System.Web.UI.WebControls.RepeaterCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Repeater.OnItemCommand(System.Web.UI.WebControls.RepeaterCommandEventArgs)" /> method.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Repeater.ItemCommand" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterCommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCreated">
@@ -1346,6 +1390,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Repeater.OnItemCreated(System.Web.UI.WebControls.RepeaterItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Repeater.OnItemCreated(System.Web.UI.WebControls.RepeaterItemEventArgs)" /> method.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Repeater.ItemCreated" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnItemDataBound">
@@ -1385,6 +1432,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Repeater.OnItemDataBound(System.Web.UI.WebControls.RepeaterItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Repeater.OnItemDataBound(System.Web.UI.WebControls.RepeaterItemEventArgs)" /> method.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Repeater.ItemDataBound" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
@@ -1413,6 +1463,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -1441,6 +1492,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
       </Docs>
     </Member>
     <Member MemberName="RequiresDataBinding">
@@ -1471,6 +1523,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSourceID" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1598,6 +1653,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.AlternatingItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">

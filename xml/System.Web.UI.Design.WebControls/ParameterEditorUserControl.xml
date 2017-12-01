@@ -26,6 +26,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.WebControls.ParameterCollectionEditor" />
+    <altmember cref="T:System.Web.UI.WebControls.ParameterCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceView" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +60,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.WebControls.ParameterCollectionEditor" />
+        <altmember cref="T:System.Windows.Forms.UserControl" />
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="AddParameters">
@@ -79,6 +91,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.ClearParameters" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.GetParameters" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ParameterCollectionEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.ParameterCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ParameterCollection.ParametersChanged" />
       </Docs>
     </Member>
     <Member MemberName="ClearParameters">
@@ -104,6 +123,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.AddParameters(System.Web.UI.WebControls.Parameter[])" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.GetParameters" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ParameterCollectionEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.ParameterCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ParameterCollection.ParametersChanged" />
       </Docs>
     </Member>
     <Member MemberName="GetParameters">
@@ -130,6 +156,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.AddParameters(System.Web.UI.WebControls.Parameter[])" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.ClearParameters" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ParameterCollectionEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.ParameterCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
       </Docs>
     </Member>
     <Member MemberName="OnParametersChanged">
@@ -153,6 +185,9 @@
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.Design.WebControls.ParameterEditorUserControl.ParametersChanged" /> event when the state of a parameter in the editor changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.WebControls.ParameterCollectionEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.ParameterCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
       </Docs>
     </Member>
     <Member MemberName="ParametersChanged">
@@ -170,6 +205,9 @@
       <Docs>
         <summary>Occurs when any parameter or one of the parameter's properties is changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.WebControls.ParameterCollectionEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.ParameterCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
       </Docs>
     </Member>
     <Member MemberName="ParametersConfigured">
@@ -189,6 +227,9 @@
         <value>
           <see langword="true" /> if all parameters in the editor are fully configured; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.WebControls.ParameterCollectionEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.ParameterCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
       </Docs>
     </Member>
     <Member MemberName="SetAllowCollectionChanges">
@@ -217,6 +258,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.WebControls.ParameterCollectionEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.ParameterCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
       </Docs>
     </Member>
     <Member MemberName="TypeDescriptionProvider">

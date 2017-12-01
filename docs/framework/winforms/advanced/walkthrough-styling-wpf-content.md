@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "WPF Designer, styling WPF content"
+  - "WPF Designer [Windows Forms], styling WPF content"
   - "interoperability [WDF]"
-  - "styles, WPF content"
+  - "styles [Windows Forms], WPF content"
 ms.assetid: e574aac7-7ea4-4cdb-8034-bab541f000df
 caps.latest.revision: 10
 author: dotnet-bot
@@ -156,10 +156,10 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
 5.  Click the OK and Cancel buttons and view the differences.  
   
 ## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>   
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)   
- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)   
- [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)   
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
+ <xref:System.Windows.Forms.Integration.ElementHost>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
+ [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
+ [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
+ [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)  
+ [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

@@ -66,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TextElement.Foreground" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundProperty">
@@ -106,10 +107,13 @@
 ## Remarks  
  The <xref:System.Windows.Documents.FlowDocument.ContentEnd%2A> property is often used to append content to the end of a <xref:System.Windows.Documents.TextElement>.  
   
- The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection.Forward?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TextElement.ContentStart" />
+        <altmember cref="P:System.Windows.Documents.TextElement.ElementStart" />
+        <altmember cref="P:System.Windows.Documents.TextElement.ElementEnd" />
       </Docs>
     </Member>
     <Member MemberName="ContentStart">
@@ -133,10 +137,13 @@
 ## Remarks  
  The <xref:System.Windows.Documents.FlowDocument.ContentStart%2A> property is often used to insert content to the beginning of a <xref:System.Windows.Documents.TextElement>.  
   
- The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection.Backward?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TextElement.ContentEnd" />
+        <altmember cref="P:System.Windows.Documents.TextElement.ElementStart" />
+        <altmember cref="P:System.Windows.Documents.TextElement.ElementEnd" />
       </Docs>
     </Member>
     <Member MemberName="ElementEnd">
@@ -158,10 +165,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection.Forward?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TextElement.ElementStart" />
+        <altmember cref="P:System.Windows.Documents.TextElement.ContentStart" />
+        <altmember cref="P:System.Windows.Documents.TextElement.ContentEnd" />
       </Docs>
     </Member>
     <Member MemberName="ElementStart">
@@ -183,10 +193,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection.Backward?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TextElement.ElementEnd" />
+        <altmember cref="P:System.Windows.Documents.TextElement.ContentStart" />
+        <altmember cref="P:System.Windows.Documents.TextElement.ContentEnd" />
       </Docs>
     </Member>
     <Member MemberName="FontFamily">
@@ -641,6 +654,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TextElement.Background" />
       </Docs>
     </Member>
     <Member MemberName="ForegroundProperty">
@@ -682,6 +696,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TextElement.SetFontFamily(System.Windows.DependencyObject,System.Windows.Media.FontFamily)" />
       </Docs>
     </Member>
     <Member MemberName="GetFontSize">
@@ -711,6 +726,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TextElement.SetFontSize(System.Windows.DependencyObject,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="GetFontStretch">
@@ -735,6 +751,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TextElement.SetFontStretch(System.Windows.DependencyObject,System.Windows.FontStretch)" />
       </Docs>
     </Member>
     <Member MemberName="GetFontStyle">
@@ -759,6 +776,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TextElement.SetFontStyle(System.Windows.DependencyObject,System.Windows.FontStyle)" />
       </Docs>
     </Member>
     <Member MemberName="GetFontWeight">
@@ -783,6 +801,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TextElement.SetFontWeight(System.Windows.DependencyObject,System.Windows.FontWeight)" />
       </Docs>
     </Member>
     <Member MemberName="GetForeground">
@@ -807,6 +826,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TextElement.SetForeground(System.Windows.DependencyObject,System.Windows.Media.Brush)" />
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
@@ -878,6 +898,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TextElement.GetFontFamily(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetFontSize">
@@ -903,6 +924,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TextElement.GetFontSize(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetFontStretch">
@@ -928,6 +950,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TextElement.GetFontStretch(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetFontStyle">
@@ -953,6 +976,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TextElement.GetFontStyle(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetFontWeight">
@@ -978,6 +1002,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TextElement.GetFontWeight(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetForeground">
@@ -1003,6 +1028,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TextElement.GetForeground(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">

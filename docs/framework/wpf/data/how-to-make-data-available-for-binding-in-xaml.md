@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data binding, making data available for binding"
-  - "binding data, making data available for"
+  - "data binding [WPF], making data available for binding"
+  - "binding data [WPF], making data available for"
 ms.assetid: 7103c2e8-0e31-4a13-bf12-ca382221a8d5
 caps.latest.revision: 14
 author: dotnet-bot
@@ -54,5 +54,5 @@ This topic discusses the different ways you can make data available for binding 
  For information about the different ways you can specify the data you are binding to, see [Specify the Binding Source](../../../../docs/framework/wpf/data/how-to-specify-the-binding-source.md). For information about what types of data you can bind to or how to implement your own [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] objects for binding, see [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md).  
   
 ## See Also  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

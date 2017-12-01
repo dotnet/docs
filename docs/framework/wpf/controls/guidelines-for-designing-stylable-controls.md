@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "style design for controls"
-  - "controls, style design"
+  - "style design for controls [WPF]"
+  - "controls [WPF], style design"
 ms.assetid: c52dde45-a311-4531-af4c-853371c4d5f4
 caps.latest.revision: 18
 author: dotnet-bot
@@ -125,5 +125,5 @@ This document summarizes a set of best practices to consider when designing a co
 -   **Theme styles do not need to have consistent "layout" semantics across all themes**. For example, the default style does not need to guarantee that a control will occupy the same amount of size in all themes or guarantee that a control will have the same content margins / padding across all themes.  
   
 ## See Also  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)   
+ [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
  [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)

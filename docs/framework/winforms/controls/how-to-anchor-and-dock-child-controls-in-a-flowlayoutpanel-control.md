@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "layout [Windows Forms], child controls"
   - "FlowLayoutPanel control [Windows Forms], child controls"
   - "controls [Windows Forms], child"
-  - "child controls, anchoring and docking"
+  - "child controls [Windows Forms], anchoring and docking"
 ms.assetid: a2bcdfca-9b63-45e6-9c0e-3411015cba98
 caps.latest.revision: 15
 author: dotnet-bot
@@ -67,5 +67,5 @@ The <xref:System.Windows.Forms.FlowLayoutPanel> control supports the <xref:Syste
  For information about building this example from the command line for [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
   
 ## See Also  
- <xref:System.Windows.Forms.FlowLayoutPanel>   
+ <xref:System.Windows.Forms.FlowLayoutPanel>  
  [FlowLayoutPanel Control Overview](../../../../docs/framework/winforms/controls/flowlayoutpanel-control-overview.md)

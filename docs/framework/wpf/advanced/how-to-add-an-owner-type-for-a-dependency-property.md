@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "classes, adding as owners of dependency properties"
-  - "dependency properties, adding classes as owners of"
+  - "classes [WPF], adding as owners of dependency properties"
+  - "dependency properties [WPF], adding classes as owners of"
 ms.assetid: edcce050-0576-4edb-a31a-3f909637b452
 caps.latest.revision: 11
 author: dotnet-bot
@@ -37,5 +37,5 @@ This example shows how to add a class as an owner of a dependency property regis
 [!code-vb[PropertySystemEsoterics#UnrelatedStateControl](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/sdksamplelibrary/class1.vb#unrelatedstatecontrol)]  
   
 ## See Also  
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)   
+ [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
  [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)

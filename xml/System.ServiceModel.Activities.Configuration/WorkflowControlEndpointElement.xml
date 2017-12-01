@@ -251,5 +251,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnInitializeAndValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When called or overridden by a derived class, initializes and validates the given endpoint element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OnApplyConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When called or overridden by a derived class, converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to a workflow control endpoint.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

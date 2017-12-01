@@ -38,6 +38,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.ShowUI(System.ComponentModel.IComponent)" />
+    <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Add" />
+    <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Remove" />
+    <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
   </Docs>
   <Members>
     <Member MemberName="DesignerActionUIStateChange">
@@ -70,6 +74,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionUIStateChangeEventHandler" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionUIStateChangeType" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.ShowUI(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.HideUI(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -129,6 +138,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.ShowUI(System.ComponentModel.IComponent)" />
+        <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Add" />
+        <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Remove" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -219,6 +231,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.HideUI(System.ComponentModel.IComponent)" />
+        <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Add" />
+        <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Remove" />
       </Docs>
     </Member>
   </Members>

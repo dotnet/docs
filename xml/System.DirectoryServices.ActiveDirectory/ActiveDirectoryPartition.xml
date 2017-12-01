@@ -106,6 +106,7 @@
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
           <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />
         </permission>
+        <altmember cref="T:System.DirectoryServices.DirectoryEntry" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -147,5 +148,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources that are held by the object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

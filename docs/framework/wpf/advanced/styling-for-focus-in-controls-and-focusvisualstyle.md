@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "keyboard focus"
-  - "focus, visual styling"
-  - "styles, focus visual style"
+  - "keyboard focus [WPF]"
+  - "focus [WPF], visual styling"
+  - "styles [WPF], focus visual style"
 ms.assetid: 786ac576-011b-4d72-913b-558deccb9b35
 caps.latest.revision: 10
 author: dotnet-bot
@@ -83,7 +83,7 @@ manager: "wpickett"
  If you want all possible causes of changing focus to produce a visual behavior, you should base a setter or trigger on the <xref:System.Windows.UIElement.IsFocused%2A> dependency property, or alternatively on the <xref:System.Windows.UIElement.GotFocus> or <xref:System.Windows.UIElement.LostFocus> events used for an <xref:System.Windows.EventSetter>.  
   
 ## See Also  
- <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A>   
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)   
- [Focus Overview](../../../../docs/framework/wpf/advanced/focus-overview.md)   
+ <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A>  
+ [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
+ [Focus Overview](../../../../docs/framework/wpf/advanced/focus-overview.md)  
  [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)

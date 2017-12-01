@@ -107,6 +107,16 @@ namespace SampleRecognition
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognizedEventArgs" />
+    <altmember cref="T:System.Speech.Recognition.RecognitionEventArgs" />
+    <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+    <altmember cref="E:System.Speech.Recognition.Grammar.SpeechRecognized" />
+    <altmember cref="T:System.Speech.Recognition.SpeechHypothesizedEventArgs" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognitionRejectedEventArgs" />
   </Docs>
   <Members />
 </Type>

@@ -3,7 +3,7 @@ uid: System.ServiceModel.Security.WSTrustChannel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Opened
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Renew(System.IdentityModel.Prot
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Cancel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginRenew
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.ReadResponse(System.ServiceMode
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -51,7 +51,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginOpen(System.TimeSpan,Syste
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,7 +59,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginClose
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -67,7 +67,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Close
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -75,7 +75,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Issue(System.IdentityModel.Prot
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -83,7 +83,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginCancel(System.ServiceModel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -91,7 +91,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.EndCancel(System.IAsyncResult,S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -99,7 +99,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Open
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -107,7 +107,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.ChannelFactory
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -115,7 +115,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Issue(System.IdentityModel.Prot
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -123,7 +123,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.EndValidate(System.IAsyncResult
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -131,7 +131,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Closing
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -139,7 +139,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.EndRenew
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -147,7 +147,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.EndIssue(System.IAsyncResult)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -155,7 +155,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.EndCancel(System.IAsyncResult)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -163,7 +163,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.CreateRequest(System.IdentityMo
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -171,7 +171,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.EndClose(System.IAsyncResult)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -179,7 +179,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Cancel(System.IdentityModel.Pro
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -187,7 +187,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Cancel(System.ServiceModel.Chan
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -195,7 +195,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginIssue(System.ServiceModel.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -203,7 +203,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginValidate
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -211,7 +211,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginClose(System.AsyncCallback
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -219,7 +219,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.EndCancel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -227,7 +227,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Close(System.TimeSpan)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -235,7 +235,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Renew
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -243,7 +243,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.GetTokenFromResponse(System.Ide
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -251,7 +251,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginRenew(System.IdentityModel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -259,7 +259,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Validate(System.ServiceModel.Ch
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -267,7 +267,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginIssue(System.IdentityModel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -275,7 +275,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginCancel(System.IdentityMode
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -283,7 +283,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.EndRenew(System.IAsyncResult,Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -291,7 +291,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Closed
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -299,7 +299,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginClose(System.TimeSpan,Syst
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -307,7 +307,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginValidate(System.ServiceMod
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -315,7 +315,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.#ctor(System.ServiceModel.Secur
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -323,7 +323,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.GetProperty``1
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -331,7 +331,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.EndRenew(System.IAsyncResult)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -339,7 +339,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Issue(System.ServiceModel.Chann
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -347,7 +347,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Channel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -355,7 +355,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginValidate(System.IdentityMo
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -363,7 +363,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginIssue
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -371,7 +371,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Renew(System.ServiceModel.Chann
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -379,7 +379,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Opening
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -387,7 +387,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.WSTrustResponseSerializer
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -395,7 +395,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Open(System.TimeSpan)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -403,7 +403,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.EndOpen(System.IAsyncResult)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -411,7 +411,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Validate(System.IdentityModel.P
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -419,7 +419,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.EndIssue(System.IAsyncResult,Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -427,7 +427,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.EndIssue
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -435,7 +435,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginRenew(System.ServiceModel.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -443,7 +443,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Issue
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -451,7 +451,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.EndValidate(System.IAsyncResult
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -459,7 +459,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.WSTrustSerializationContext
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -467,7 +467,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Faulted
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -475,7 +475,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Abort
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -483,7 +483,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.EndValidate
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -491,7 +491,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.State
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -499,7 +499,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.WSTrustRequestSerializer
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -507,7 +507,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginOpen(System.AsyncCallback,
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -515,7 +515,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.TrustVersion
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -523,7 +523,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginCancel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -531,7 +531,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.BeginOpen
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -539,7 +539,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.Validate
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -547,7 +547,7 @@ uid: System.ServiceModel.Security.WSTrustChannel.GetRequestAction(System.String,
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -555,5 +555,5 @@ uid: System.ServiceModel.Security.WSTrustChannel.Contract
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---

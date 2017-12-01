@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "radio buttons, grouping"
+  - "radio buttons [Windows Forms], grouping"
   - "controls [Windows Forms], grouping"
   - "Windows Forms controls, grouping"
   - "RadioButton control [Windows Forms], grouping"
@@ -32,9 +32,9 @@ Windows Forms <xref:System.Windows.Forms.RadioButton> controls are designed to g
 2.  Draw <xref:System.Windows.Forms.RadioButton> controls on the <xref:System.Windows.Forms.GroupBox> or <xref:System.Windows.Forms.Panel> control.  
   
 ## See Also  
- <xref:System.Windows.Forms.RadioButton>   
- [RadioButton Control Overview](../../../../docs/framework/winforms/controls/radiobutton-control-overview-windows-forms.md)   
- [Panel Control Overview](../../../../docs/framework/winforms/controls/panel-control-overview-windows-forms.md)   
- [GroupBox Control Overview](../../../../docs/framework/winforms/controls/groupbox-control-overview-windows-forms.md)   
- [CheckBox Control Overview](../../../../docs/framework/winforms/controls/checkbox-control-overview-windows-forms.md)   
+ <xref:System.Windows.Forms.RadioButton>  
+ [RadioButton Control Overview](../../../../docs/framework/winforms/controls/radiobutton-control-overview-windows-forms.md)  
+ [Panel Control Overview](../../../../docs/framework/winforms/controls/panel-control-overview-windows-forms.md)  
+ [GroupBox Control Overview](../../../../docs/framework/winforms/controls/groupbox-control-overview-windows-forms.md)  
+ [CheckBox Control Overview](../../../../docs/framework/winforms/controls/checkbox-control-overview-windows-forms.md)  
  [RadioButton Control](../../../../docs/framework/winforms/controls/radiobutton-control-windows-forms.md)

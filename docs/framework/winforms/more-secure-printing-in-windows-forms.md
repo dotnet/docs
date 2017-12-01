@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, printing"
-  - "PrintingPermission class, Windows Forms security"
+  - "PrintingPermission class [Windows Forms], Windows Forms security"
   - "printing [Windows Forms], security"
   - "security [Windows Forms], printing"
 ms.assetid: 48fd36ac-872f-4de0-902a-e52969cd4367
@@ -33,7 +33,7 @@ Windows Forms applications frequently include printing abilities. The [!INCLUDE[
 |<xref:System.Drawing.Printing.PrintingPermissionLevel.NoPrinting>|Prevents access to printers. <xref:System.Drawing.Printing.PrintingPermissionLevel.NoPrinting> is a subset of <xref:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting>.|  
   
 ## See Also  
- [More Secure File and Data Access in Windows Forms](../../../docs/framework/winforms/more-secure-file-and-data-access-in-windows-forms.md)   
- [Additional Security Considerations in Windows Forms](../../../docs/framework/winforms/additional-security-considerations-in-windows-forms.md)   
- [Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md)   
+ [More Secure File and Data Access in Windows Forms](../../../docs/framework/winforms/more-secure-file-and-data-access-in-windows-forms.md)  
+ [Additional Security Considerations in Windows Forms](../../../docs/framework/winforms/additional-security-considerations-in-windows-forms.md)  
+ [Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md)  
  [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)

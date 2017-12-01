@@ -10,15 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "documents, packaging"
-  - "documents, text layout"
-  - "documents, XPS"
-  - "XPS documents"
-  - "packaging documents"
-  - "documents, controls"
-  - "documents, types of"
-  - "documents, browser-viewable"
-  - "browser-viewable documents"
+  - "documents [WPF], packaging"
+  - "documents [WPF], text layout"
+  - "documents [WPF], XPS"
+  - "XPS documents [WPF], , "
+  - "documents [WPF], controls"
+  - "documents [WPF], types of"
+  - "documents [WPF], browser-viewable"
 ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 caps.latest.revision: 36
 author: dotnet-bot
@@ -143,14 +141,14 @@ manager: "wpickett"
 -   Routing documents directly to an [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printer.  
   
 ## See Also  
- <xref:System.Windows.Documents.FixedDocument>   
- <xref:System.Windows.Documents.FlowDocument>   
- <xref:System.Windows.Xps.Packaging.XpsDocument>   
- <xref:System.IO.Packaging.ZipPackage>   
- <xref:System.IO.Packaging.ZipPackagePart>   
- <xref:System.IO.Packaging.PackageRelationship>   
- <xref:System.Windows.Controls.DocumentViewer>   
- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)   
- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)   
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)   
+ <xref:System.Windows.Documents.FixedDocument>  
+ <xref:System.Windows.Documents.FlowDocument>  
+ <xref:System.Windows.Xps.Packaging.XpsDocument>  
+ <xref:System.IO.Packaging.ZipPackage>  
+ <xref:System.IO.Packaging.ZipPackagePart>  
+ <xref:System.IO.Packaging.PackageRelationship>  
+ <xref:System.Windows.Controls.DocumentViewer>  
+ [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)  
+ [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)  
+ [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)  
  [Document Serialization and Storage](../../../../docs/framework/wpf/advanced/document-serialization-and-storage.md)

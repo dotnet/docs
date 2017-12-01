@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "controls [WPF], Expander"
-  - "ScrollViewer control, with Expander control"
-  - "Expander control, creating"
+  - "ScrollViewer control [WPF], with Expander control"
+  - "Expander control [WPF], creating"
   - "controls [WPF], ScrollViewer"
 ms.assetid: 2ad124d2-2406-4157-aaf2-64e067298f01
 caps.latest.revision: 13
@@ -33,6 +33,6 @@ This example shows how to create an <xref:System.Windows.Controls.Expander> cont
  [!code-csharp[ExpanderRichContent#CreateExpanderCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpanderRichContent/CSharp/Window1.xaml.cs#createexpandercode)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Expander>   
- [Expander Overview](../../../../docs/framework/wpf/controls/expander-overview.md)   
+ <xref:System.Windows.Controls.Expander>  
+ [Expander Overview](../../../../docs/framework/wpf/controls/expander-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/controls/expander-how-to-topics.md)

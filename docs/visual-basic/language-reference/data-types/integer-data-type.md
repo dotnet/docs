@@ -1,51 +1,33 @@
 ---
 title: "Integer Data Type (Visual Basic)"
-
 ms.date: 04/20/2017
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Integer"
   - "Integer"
 helpviewer_keywords: 
-  - "numbers, whole"
-  - "enumerated values"
+  - "numbers [Visual Basic], whole"
+  - "enumerated values [Visual Basic]"
   - "whole numbers"
-  - "integral data types"
+  - "integral data types [Visual Basic]"
   - "integer numbers"
-  - "numbers, integer"
-  - "integers, data types"
-  - "literal type characters, I"
-  - "integers, types"
+  - "numbers [Visual Basic], integer"
+  - "integers [Visual Basic], data types"
+  - "literal type characters [Visual Basic], I"
+  - "integers [Visual Basic], types"
   - "data types [Visual Basic], integral"
   - "% identifier type character"
   - "data types [Visual Basic], assigning"
-  - "identifier type characters, %"
-  - "I literal type character"
+  - "identifier type characters [Visual Basic], %"
+  - "I literal type character [Visual Basic]"
   - "Integer data type"
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
 author: "rpetrusha"
 ms.author: "ronpet"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Integer data type (Visual Basic)
 Holds signed 32-bit (4-byte) integers that range in value from -2,147,483,648 through 2,147,483,647.  
@@ -107,9 +89,9 @@ k = 5.5
 ## See also
 
 <xref:System.Int32?displayProperty=nameWithType>   
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)   
- [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)   
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)   
+ [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)  
+ [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)  
+ [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
+ [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
  [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

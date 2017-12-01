@@ -24,6 +24,17 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.EasingFunctionBase" />
+    <altmember cref="T:System.Windows.Media.Animation.PowerEase" />
+    <altmember cref="T:System.Windows.Media.Animation.BackEase" />
+    <altmember cref="T:System.Windows.Media.Animation.BounceEase" />
+    <altmember cref="T:System.Windows.Media.Animation.CircleEase" />
+    <altmember cref="T:System.Windows.Media.Animation.CubicEase" />
+    <altmember cref="T:System.Windows.Media.Animation.ElasticEase" />
+    <altmember cref="T:System.Windows.Media.Animation.ExponentialEase" />
+    <altmember cref="T:System.Windows.Media.Animation.QuadraticEase" />
+    <altmember cref="T:System.Windows.Media.Animation.QuarticEase" />
+    <altmember cref="T:System.Windows.Media.Animation.QuinticEase" />
   </Docs>
   <Members>
     <Member MemberName="Ease">
@@ -46,6 +57,17 @@
         <summary>Transforms normalized time to control the pace of an animation.</summary>
         <returns>The transformed progress.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.EasingFunctionBase" />
+        <altmember cref="T:System.Windows.Media.Animation.PowerEase" />
+        <altmember cref="T:System.Windows.Media.Animation.BackEase" />
+        <altmember cref="T:System.Windows.Media.Animation.BounceEase" />
+        <altmember cref="T:System.Windows.Media.Animation.CircleEase" />
+        <altmember cref="T:System.Windows.Media.Animation.CubicEase" />
+        <altmember cref="T:System.Windows.Media.Animation.ElasticEase" />
+        <altmember cref="T:System.Windows.Media.Animation.ExponentialEase" />
+        <altmember cref="T:System.Windows.Media.Animation.QuadraticEase" />
+        <altmember cref="T:System.Windows.Media.Animation.QuarticEase" />
+        <altmember cref="T:System.Windows.Media.Animation.QuinticEase" />
       </Docs>
     </Member>
   </Members>

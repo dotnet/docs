@@ -45,6 +45,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyTabScope" />
       </Docs>
     </Member>
     <Member MemberName="AddTabType">
@@ -68,6 +69,7 @@
         <param name="tabScope">One of the <see cref="T:System.ComponentModel.PropertyTabScope" /> values.</param>
         <summary>Adds a **Property** tab of the specified type and with the specified scope to the collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.PropertyTabScope" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -276,5 +278,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddTabType">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a **Property** tab to the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

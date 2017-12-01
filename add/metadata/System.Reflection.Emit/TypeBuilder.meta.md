@@ -74,7 +74,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.TypeBuilder.GetMember
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -198,7 +198,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.TypeBuilder.GetNestedTypes
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -214,7 +214,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.TypeBuilder.GetNestedType
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -293,7 +293,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.TypeBuilder.GetMembers
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -309,7 +309,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.TypeBuilder.InvokeMember
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -343,14 +343,14 @@ manager: "wpickett"
 uid: System.Reflection.Emit.TypeBuilder.GetConstructors
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.TypeBuilder.GetMethods
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -501,7 +501,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.TypeBuilder.GetFields
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -661,7 +661,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.TypeBuilder.GetInterface
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -920,7 +920,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.TypeBuilder.GetProperties
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -981,7 +981,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.TypeBuilder.GetConstructor
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1015,7 +1015,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.TypeBuilder.GetMethod
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1031,7 +1031,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.TypeBuilder.GetEvent
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

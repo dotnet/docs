@@ -44,6 +44,20 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.IO.FileSystemWatcher.Changed" />
+    <altmember cref="E:System.IO.FileSystemWatcher.Created" />
+    <altmember cref="E:System.IO.FileSystemWatcher.Deleted" />
+    <altmember cref="T:System.IO.FileSystemEventHandler" />
+    <altmember cref="T:System.IO.FileSystemWatcher" />
+    <altmember cref="T:System.IO.InternalBufferOverflowException" />
+    <altmember cref="T:System.IO.NotifyFilters" />
+    <altmember cref="M:System.IO.FileSystemWatcher.OnCreated(System.IO.FileSystemEventArgs)" />
+    <altmember cref="M:System.IO.FileSystemWatcher.OnDeleted(System.IO.FileSystemEventArgs)" />
+    <altmember cref="P:System.IO.FileSystemWatcher.Path" />
+    <altmember cref="T:System.IO.RenamedEventArgs" />
+    <altmember cref="T:System.IO.RenamedEventHandler" />
+    <altmember cref="T:System.IO.WaitForChangedResult" />
+    <altmember cref="T:System.IO.WatcherChangeTypes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +90,8 @@
         <param name="name">The name of the affected file or directory.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileSystemEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
+        <altmember cref="T:System.IO.WatcherChangeTypes" />
       </Docs>
     </Member>
     <Member MemberName="ChangeType">
@@ -114,6 +130,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.WatcherChangeTypes" />
       </Docs>
     </Member>
     <Member MemberName="FullPath">

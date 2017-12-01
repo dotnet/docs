@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.EnumBuilder.GetConstructors
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -108,7 +108,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.EnumBuilder.GetEvent
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -151,7 +151,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.EnumBuilder.GetField
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -284,14 +284,14 @@ manager: "wpickett"
 uid: System.Reflection.Emit.EnumBuilder.GetFields
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetNestedType
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -325,7 +325,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.EnumBuilder.GetMembers
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -368,7 +368,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.EnumBuilder.GetMember
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -402,7 +402,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.EnumBuilder.GetInterface
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -418,7 +418,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.EnumBuilder.GetNestedTypes
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -452,14 +452,14 @@ manager: "wpickett"
 uid: System.Reflection.Emit.EnumBuilder.IsAssignableFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.InvokeMember
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -484,7 +484,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.EnumBuilder.GetProperties
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -563,5 +563,5 @@ manager: "wpickett"
 uid: System.Reflection.Emit.EnumBuilder.GetMethods
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

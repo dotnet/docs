@@ -1,5 +1,5 @@
 ---
-title: Inner-loop development workflow for Docker apps | Microsoft Docs 
+title: Inner-loop development workflow for Docker apps
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
@@ -16,11 +16,11 @@ Figure 4-14: Inner-loop development context
 
 The container or instance of a Docker image will contain these components:
 
--   An operating system selection (e.g., a Linux distribution or Windows)
+-   An operating system selection (for example, a Linux distribution or Windows)
 
--   Files added by the developer (e.g., app binaries)
+-   Files added by the developer (for example, app binaries)
 
--   Configuration (e.g., environment settings and dependencies)
+-   Configuration (for example, environment settings and dependencies)
 
 -   Instructions for what processes to run by Docker
 

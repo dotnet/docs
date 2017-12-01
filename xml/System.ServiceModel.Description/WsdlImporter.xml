@@ -519,5 +519,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ImportEndpoints">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> objects that matches all WSDL ports using a specified binding, associated with a specified port type, or within a specified WSDL service.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.WsdlImporter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -593,6 +593,6 @@ manager: "wpickett"
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/classsubtraction1.vb#15)]  
   
 ## See Also  
- <xref:System.Char.GetUnicodeCategory%2A>   
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)   
+ <xref:System.Char.GetUnicodeCategory%2A>  
+ [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
  [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)

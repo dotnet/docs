@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
+    <altmember cref="T:System.Web.UI.DataSourceView" />
   </Docs>
   <Members>
     <Member MemberName="Select">
@@ -50,6 +52,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.WebControls.XmlDataSourceView.Select" />
       </Docs>
     </Member>
   </Members>

@@ -51,6 +51,16 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.BackColor" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.ForeColor" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.BorderWidth" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.BorderStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.BorderColor" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.Height" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.Width" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.TabIndex" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.ToolTip" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +92,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -117,6 +129,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagName" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -162,6 +177,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
       </Docs>
     </Member>
     <Member MemberName="AccessKey">
@@ -248,6 +265,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.AddAttribute" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.AddStyleAttribute" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="ApplyStyle">
@@ -282,6 +302,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.MergeStyle(System.Web.UI.WebControls.Style)" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -335,6 +357,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.AttributeCollection" />
+        <altmember cref="T:System.Web.UI.ClientScriptManager" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -383,6 +407,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="T:System.Web.UI.WebControls.Panel" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="T:System.Web.UI.WebControls.ValidationSummary" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeatLayout" />
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -437,6 +472,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="T:System.Web.UI.WebControls.Panel" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="T:System.Web.UI.WebControls.ValidationSummary" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeatLayout" />
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -499,6 +545,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="BorderWidth">
@@ -554,6 +602,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified border width is a negative value.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Unit" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="ControlStyle">
@@ -587,6 +637,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.ControlStyleCreated" />
       </Docs>
     </Member>
     <Member MemberName="ControlStyleCreated">
@@ -617,6 +669,7 @@
         <value>
           <see langword="true" /> if a <see cref="T:System.Web.UI.WebControls.Style" /> object has been created for the <see cref="P:System.Web.UI.WebControls.WebControl.ControlStyle" /> property; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.ControlStyle" />
       </Docs>
     </Member>
     <Member MemberName="CopyBaseAttributes">
@@ -647,6 +700,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="controlSrc" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Style" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -675,6 +729,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.ControlStyle" />
       </Docs>
     </Member>
     <Member MemberName="CssClass">
@@ -798,6 +854,10 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -861,6 +921,11 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.EnsureChildControls" />
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -898,6 +963,8 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.EnableTheming" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SkinID" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -949,6 +1016,8 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.FontInfo" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -993,6 +1062,8 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="HasAttributes">
@@ -1027,6 +1098,7 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -1078,6 +1150,17 @@ void Application_Start(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The height was set to a negative value.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.Unit" />
+        <altmember cref="T:System.Web.UI.WebControls.Label" />
+        <altmember cref="T:System.Web.UI.WebControls.HyperLink" />
+        <altmember cref="T:System.Web.UI.WebControls.LinkButton" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeatLayout" />
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -1116,6 +1199,10 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1146,6 +1233,8 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="P:System.Web.UI.Control.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="MergeStyle">
@@ -1240,6 +1329,9 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderContents(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -1270,6 +1362,9 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderEndTag">
@@ -1298,6 +1393,9 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderContents(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1328,6 +1426,8 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="P:System.Web.UI.Control.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="SkinID">
@@ -1363,6 +1463,7 @@ void Application_Start(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The skin specified in the <see cref="P:System.Web.UI.WebControls.WebControl.SkinID" /> property does not exist in the theme.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.EnableTheming" />
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -1414,6 +1515,7 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CssStyleCollection" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -1487,6 +1589,11 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.Configuration.PagesSection.ControlRenderingCompatibilityVersion" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.GetAttribute">
@@ -1516,6 +1623,7 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.SetAttribute">
@@ -1546,6 +1654,7 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="TabIndex">
@@ -1632,6 +1741,7 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
       </Docs>
     </Member>
     <Member MemberName="TagName">
@@ -1741,6 +1851,8 @@ void Application_Start(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="P:System.Web.UI.Control.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1792,7 +1904,17 @@ void Application_Start(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The width of the Web server control was set to a negative value.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebControl" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

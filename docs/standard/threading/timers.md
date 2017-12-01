@@ -36,5 +36,5 @@ Timers are lightweight objects that enable you to specify a delegate to be calle
  [!code-vb[System.Threading.Timer#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Timer/VB/source2.vb#2)]  
   
 ## See Also  
- <xref:System.Threading.Timer>   
+ <xref:System.Threading.Timer>  
  [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)

@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Visual Basic, event handlers"
-  - "event handlers, Visual Basic"
+  - "Visual Basic [WPF], event handlers"
+  - "event handlers [WPF], Visual Basic"
 ms.assetid: ad4eb9aa-3afc-4a71-8cf6-add3fbea54a1
 caps.latest.revision: 12
 author: dotnet-bot
@@ -49,7 +49,7 @@ For the [!INCLUDE[TLA#tla_visualbnet](../../../../includes/tlasharptla-visualbne
 >  Within [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], [!INCLUDE[TLA2#tla_intellisense](../../../../includes/tla2sharptla-intellisense-md.md)] can show you completion for which elements are available for a `Handles` reference in a page. However, this might take one compile pass so that the intermediate file can populate all the `Friends` references.  
   
 ## See Also  
- <xref:System.Windows.UIElement.AddHandler%2A>   
- [Marking Routed Events as Handled, and Class Handling](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md)   
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)   
+ <xref:System.Windows.UIElement.AddHandler%2A>  
+ [Marking Routed Events as Handled, and Class Handling](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md)  
+ [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
  [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)

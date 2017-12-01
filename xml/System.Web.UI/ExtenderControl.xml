@@ -50,6 +50,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Control" />
+    <altmember cref="T:System.Web.UI.IExtenderControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -155,6 +157,7 @@
         <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> object that receives the server control content.</param>
         <summary>Sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to be rendered in the browser window.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IExtenderControl.GetScriptDescriptors">

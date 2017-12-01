@@ -80,8 +80,8 @@ foreach (DataRowView catDRV in catView)
 ```  
   
 ## See Also  
- <xref:System.Data.DataSet>   
- <xref:System.Data.DataView>   
- <xref:System.Data.DataRowView>   
- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)   
+ <xref:System.Data.DataSet>  
+ <xref:System.Data.DataView>  
+ <xref:System.Data.DataRowView>  
+ [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "background colors, Windows Forms Panel controls"
-  - "background images, Windows Forms Panel controls"
+  - "background colors [Windows Forms], Windows Forms Panel controls"
+  - "background images [Windows Forms], Windows Forms Panel controls"
   - "Panel control [Windows Forms], background"
-  - "colors, Windows Forms Panel controls"
+  - "colors [Windows Forms], Windows Forms Panel controls"
 ms.assetid: 096cbd8d-45cc-47b8-b1ef-a27f60ea8be0
 caps.latest.revision: 13
 author: dotnet-bot
@@ -74,7 +74,7 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.Control.BackColor%2A>   
- <xref:System.Windows.Forms.Control.BackgroundImage%2A>   
- [Panel Control](../../../../docs/framework/winforms/controls/panel-control-windows-forms.md)   
+ <xref:System.Windows.Forms.Control.BackColor%2A>  
+ <xref:System.Windows.Forms.Control.BackgroundImage%2A>  
+ [Panel Control](../../../../docs/framework/winforms/controls/panel-control-windows-forms.md)  
  [Panel Control Overview](../../../../docs/framework/winforms/controls/panel-control-overview-windows-forms.md)

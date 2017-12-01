@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.HttpContext" />
   </Docs>
   <Members>
     <Member MemberName="ClearError">
@@ -58,6 +59,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpServerUtility.GetLastError" />
       </Docs>
     </Member>
     <Member MemberName="CreateObject">
@@ -91,6 +93,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An instance of the object could not be created.</exception>
+        <altmember cref="M:System.Web.HttpServerUtility.CreateObjectFromClsid(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateObject">
@@ -146,6 +149,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An instance of the object could not be created.</exception>
+        <altmember cref="M:System.Web.HttpServerUtility.CreateObject(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -244,6 +248,7 @@
  \- or -  
   
  <paramref name="path" /> is not a virtual path.</exception>
+        <altmember cref="Overload:System.Web.HttpServerUtility.Transfer" />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -299,6 +304,7 @@
  \- or -  
   
  <paramref name="path" /> is not a virtual path.</exception>
+        <altmember cref="Overload:System.Web.HttpServerUtility.Transfer" />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -359,6 +365,7 @@
           <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is not a virtual path.</exception>
+        <altmember cref="Overload:System.Web.HttpServerUtility.Transfer" />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -400,6 +407,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">An error occurred while executing the handler specified by <paramref name="handler" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="handler" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Web.HttpServerUtility.Transfer" />
       </Docs>
     </Member>
     <Member MemberName="GetLastError">
@@ -429,6 +437,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpServerUtility.ClearError" />
       </Docs>
     </Member>
     <Member MemberName="HtmlDecode">
@@ -691,7 +700,11 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> is <see langword="null" />.
+        
+-or- 
+        
+<paramref name="path" /> is a physical path, but a virtual path was expected.</exception>        
       </Docs>
     </Member>
     <Member MemberName="ScriptTimeout">
@@ -1290,6 +1303,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value of the <paramref name="input" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Convert.FromBase64CharArray(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Web.HttpServerUtility.UrlTokenEncode(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="UrlTokenEncode">
@@ -1322,7 +1337,69 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value of the <paramref name="input" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Convert.ToBase64String(System.Byte[])" />
+        <altmember cref="M:System.Web.HttpServerUtility.UrlTokenDecode(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="HtmlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes a string to be displayed in a browser.  
+  
+ To encode or decode values outside of a web application, use the <see cref="T:System.Net.WebUtility" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Transfer">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Terminates execution of the current page and starts execution of a new page for the current request.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Execute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes the handler for a specified resource in the context of the current request and returns execution to the page that invoked it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HtmlDecode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decodes a string that has been encoded to eliminate invalid HTML characters.  
+  
+ To encode or decode values outside of a web application, use the <see cref="T:System.Net.WebUtility" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a server instance of a COM object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UrlDecode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decodes a string that was encoded for HTTP transmission and then sent to the server in a URL.  
+  
+ To encode or decode values outside of a web application, use the <see cref="T:System.Net.WebUtility" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

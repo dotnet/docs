@@ -26,6 +26,7 @@
   <Docs>
     <summary>Represents a processing instruction, which XML defines to keep processor-specific information in the text of the document.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.Xml.XmlDocument.CreateProcessingInstruction(System.String,System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -286,6 +287,7 @@
         <summary>Gets the type of the current node.</summary>
         <value>For <see langword="XmlProcessingInstruction" /> nodes, this value is XmlNodeType.ProcessingInstruction.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="Target">

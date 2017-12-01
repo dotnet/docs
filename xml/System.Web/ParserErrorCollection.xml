@@ -44,6 +44,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.BuildProvider" />
+    <altmember cref="T:System.Web.HttpException" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -436,5 +438,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ParserErrorCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds <see cref="T:System.Web.ParserError" /> objects to a collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

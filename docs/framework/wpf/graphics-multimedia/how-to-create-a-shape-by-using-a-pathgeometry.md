@@ -10,9 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "PathGeometry class"
-  - "classes, PathGeometry"
-  - "shapes, creating with PathGeometry class"
+  - "shapes [WPF], creating with PathGeometry class"
   - "graphics [WPF], shapes"
 ms.assetid: 49a4a8b7-e738-45be-8dac-b54a6d8f5b21
 caps.latest.revision: 11
@@ -38,7 +36,7 @@ A triangle created with a PathGeometry
  This example is part of larger sample; for the complete sample, see the [Geometries Sample](http://go.microsoft.com/fwlink/?LinkID=159989).  
   
 ## See Also  
- <xref:System.Windows.Shapes.Path>   
- <xref:System.Windows.Media.GeometryDrawing>   
- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)   
+ <xref:System.Windows.Shapes.Path>  
+ <xref:System.Windows.Media.GeometryDrawing>  
+ [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
  [Geometries Sample](http://go.microsoft.com/fwlink/?LinkID=159989)

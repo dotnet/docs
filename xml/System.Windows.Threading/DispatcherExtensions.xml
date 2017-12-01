@@ -246,5 +246,23 @@
           <paramref name="priority" /> is not a valid <see cref="T:System.Windows.Threading.DispatcherPriority" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginInvoke">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes the specified delegate asynchronously on the thread that the <see cref="T:System.Windows.Threading.Dispatcher" /> was created on.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Invoke">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes the specified delegate synchronously on the thread that the specified <see cref="T:System.Windows.Threading.Dispatcher" /> was created on.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

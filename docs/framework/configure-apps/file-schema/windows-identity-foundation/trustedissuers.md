@@ -82,5 +82,5 @@ Configures the list of trusted issuer certificates used by the configuration-bas
 ```  
   
 ## See Also  
- <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>   
+ <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>  
  <xref:System.IdentityModel.Tokens.IssuerNameRegistry>

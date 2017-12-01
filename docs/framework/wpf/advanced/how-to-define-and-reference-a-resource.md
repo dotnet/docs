@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "resources, defining"
-  - "defining resources"
-  - "resources, referencing"
-  - "referencing resources"
+  - "resources [WPF], defining"
+  - "defining resources [WPF]"
+  - "resources [WPF], referencing"
+  - "referencing resources [WPF]"
 ms.assetid: b86b876b-0a10-489b-9a5d-581ea9b32406
 caps.latest.revision: 10
 author: dotnet-bot
@@ -31,5 +31,5 @@ This example shows how to define a resource and reference it by using an attribu
  [!code-xaml[FEResource#XAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResource/CS/default.xaml#xaml)]  
   
 ## See Also  
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)   
+ [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Markup.XamlReader" />
   </Docs>
   <Members>
     <Member MemberName="Save">
@@ -77,6 +78,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The application is not running in full trust.</exception>
+        <altmember cref="T:System.Windows.Markup.XamlReader" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -125,6 +127,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> or <paramref name="stream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The application is not running in full trust.</exception>
+        <altmember cref="T:System.Windows.Markup.XamlReader" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -165,6 +168,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> or <paramref name="writer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The application is not running in full trust.</exception>
+        <altmember cref="T:System.Windows.Markup.XamlReader" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -205,6 +209,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> or <paramref name="manager" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The application is not running in full trust.</exception>
+        <altmember cref="T:System.Windows.Markup.XamlReader" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -245,7 +250,17 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> or <paramref name="xmlWriter" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The application is not running in full trust.</exception>
+        <altmember cref="T:System.Windows.Markup.XamlReader" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns XAML either directly or through an object intermediary that serializes the specified object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

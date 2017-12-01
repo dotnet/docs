@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "text [Windows Forms], drawing vertical"
   - "Windows Forms, drawing vertical text"
   - "strings [Windows Forms], drawing vertical"
-  - "vertical text, drawing"
+  - "vertical text [Windows Forms], drawing"
 ms.assetid: 50c69046-4188-47d9-b949-cc2610ffd337
 caps.latest.revision: 9
 author: dotnet-bot

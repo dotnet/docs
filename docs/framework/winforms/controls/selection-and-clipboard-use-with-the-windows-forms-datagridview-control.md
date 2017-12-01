@@ -11,10 +11,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], Clipboard use"
-  - "cells, selecting in grids"
-  - "Clipboard, in DataGridView control"
-  - "selection, in DataGridView control"
-  - "data grids, selecting cells"
+  - "cells [Windows Forms], selecting in grids"
+  - "Clipboard [Windows Forms], in DataGridView control"
+  - "selection [Windows Forms], in DataGridView control"
+  - "data grids [Windows Forms], selecting cells"
   - "DataGridView control [Windows Forms], selecting cells"
 ms.assetid: 82cffcad-8b30-4897-bddb-c3a79d751b83
 caps.latest.revision: 10
@@ -58,5 +58,5 @@ The `DataGridView` control provides you with a variety of options for configurin
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class.  
   
 ## See Also  
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)   
+ [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
  [Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/default-keyboard-and-mouse-handling-in-the-windows-forms-datagridview-control.md)

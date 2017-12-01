@@ -40,7 +40,7 @@ There are several sections in the C# Guide. You can read them in order, or jump 
     - This section covers what you need to install for a C# development environment on your preferred platform. The different topics under this section explain how to create your first C# program in different supported environments.
 
 * [Tutorials](tutorials/index.md):
-    - This section provides a variety of end to end scenarios, including descriptions and code. You'll learn why certain idioms are preferred, what C# features work best in different situations, and see reference implemetntaions for common tasks. If you learn best by seeing code, start in this section. You can also download all the code and experiment in your own environment.
+    - This section provides a variety of end to end scenarios, including descriptions and code. You'll learn why certain idioms are preferred, what C# features work best in different situations, and see reference implementations for common tasks. If you learn best by seeing code, start in this section. You can also download all the code and experiment in your own environment.
 
 * [A Tour of C#](tour-of-csharp/index.md): 
     - This section provides an overview of the language. You'll learn the elements that make up C# programs and the capabilities of the language. You'll see small samples of all the syntax elements of C# and discussions of the major C# language topics. 
@@ -73,5 +73,5 @@ There are several sections in the C# Guide. You can read them in order, or jump 
     - Links to the latest version of the C# Specifications in Microsoft Word format.  
   
 ## See Also  
- [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)   
+ [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)  
  [.NET Development](https://msdn.microsoft.com/library/ff361664)

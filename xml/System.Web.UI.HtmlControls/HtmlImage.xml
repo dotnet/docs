@@ -35,6 +35,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlControl" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlButton" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -175,6 +177,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlImage.Src" />
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -261,6 +264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlImage.Width" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -305,6 +309,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.UI.HtmlControls.HtmlImage.Src" /> property contains a malformed URL.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlImage.Src" />
       </Docs>
     </Member>
     <Member MemberName="Src">
@@ -399,6 +404,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlImage.Height" />
       </Docs>
     </Member>
   </Members>

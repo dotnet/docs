@@ -49,6 +49,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="CheckHash">
@@ -75,6 +81,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.CmsSigner" />
+        <altmember cref="M:System.Security.Cryptography.Pkcs.SignedCms.CheckHash" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierType" />
       </Docs>
     </Member>
     <Member MemberName="CheckSignature">
@@ -181,13 +190,13 @@
 ## .NET Framework Security  
  The following permissions are required to display the user interface:  
   
--   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows?displayProperty=nameWithType>  
   
  The following permissions are required to access the signature key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Sign?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -222,9 +231,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the signature key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Sign?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -255,6 +264,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="DigestAlgorithm">
@@ -273,6 +288,12 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" /> property retrieves the <see cref="T:System.Security.Cryptography.Oid" /> object that represents the hash algorithm used in the computation of the signatures.</summary>
         <value>An <see cref="T:System.Security.Cryptography.Oid" /> object that represents the hash algorithm used with the signature.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="RemoveCounterSignature">
@@ -348,6 +369,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.Pkcs9SigningTime" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="SignerIdentifier">
@@ -366,6 +394,12 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" /> property retrieves the certificate identifier of the signer associated with the signer information.</summary>
         <value>A <see cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifier" /> object that uniquely identifies the certificate associated with the signer information.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="UnsignedAttributes">
@@ -393,6 +427,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -418,7 +458,40 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CheckSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies the digital signature of the message.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ComputeCounterSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a countersignature and adds the signature to the CMS/PKCS #7 message.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveCounterSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified countersignature from the <see cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

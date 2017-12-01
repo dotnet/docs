@@ -18,6 +18,8 @@
   <Docs>
     <summary>An abstract class that provides a base for all inline flow content elements.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Documents.Block" />
+    <altmember cref="T:System.Windows.Documents.FlowDocument" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -183,6 +185,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Inline.PreviousInline" />
+        <altmember cref="P:System.Windows.Documents.Inline.SiblingInlines" />
       </Docs>
     </Member>
     <Member MemberName="PreviousInline">
@@ -216,6 +220,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Inline.NextInline" />
+        <altmember cref="P:System.Windows.Documents.Inline.SiblingInlines" />
       </Docs>
     </Member>
     <Member MemberName="SiblingInlines">
@@ -254,6 +260,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Inline.NextInline" />
+        <altmember cref="P:System.Windows.Documents.Inline.PreviousInline" />
       </Docs>
     </Member>
     <Member MemberName="TextDecorations">

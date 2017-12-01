@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "displaying a file name and its file type icon in a ListView control [Windows Forms]"
   - "file name extension icons [Windows Forms], displaying in a ListView"
@@ -39,5 +39,5 @@ Many files have embedded icons that provide a visual representation of the assoc
      You will need to make sure that your form imports the <xref:System.IO> namespace.  
   
 ## See Also  
- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)   
+ [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)  
  [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)

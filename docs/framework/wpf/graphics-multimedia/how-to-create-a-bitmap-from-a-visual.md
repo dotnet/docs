@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "bitmaps, rendering from visuals"
-  - "visuals, rendering to bitmaps"
+  - "bitmaps [WPF], rendering from visuals"
+  - "visuals [WPF], rendering to bitmaps"
 ms.assetid: 103fc7f5-7306-4026-9d61-2005e79959f3
 caps.latest.revision: 5
 author: dotnet-bot
@@ -29,7 +29,7 @@ This example shows how you can create a bitmap from a <xref:System.Windows.Media
  [!code-vb[ImagingSnippetGallery_procedural_snip#CreateRTBImage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/RenderTargetBitmapExample.vb#creatertbimage)]  
   
 ## See Also  
- <xref:System.Windows.Media.DrawingContext>   
- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)   
- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)   
+ <xref:System.Windows.Media.DrawingContext>  
+ [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)  
+ [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  
  [Using DrawingVisual Objects](../../../../docs/framework/wpf/graphics-multimedia/using-drawingvisual-objects.md)

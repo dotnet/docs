@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "typography, linear gradient brush"
-  - "outlined text"
-  - "gradient brush"
-  - "linear gradient brush"
-  - "typography, outline effects"
+  - "typography [WPF], linear gradient brush"
+  - "outlined text [WPF]"
+  - "gradient brush [WPF]"
+  - "linear gradient brush [WPF]"
+  - "typography [WPF], outline effects"
 ms.assetid: 4aa3cf6e-1953-4f26-8230-7c1409e5f28d
 caps.latest.revision: 11
 author: dotnet-bot

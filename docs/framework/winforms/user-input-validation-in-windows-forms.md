@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, validating user input"
-  - "validation, Windows Forms user input"
-  - "user input, validating in Windows Forms"
-  - "validating user input, Windows Forms"
+  - "validation [Windows Forms], Windows Forms user input"
+  - "user input [Windows Forms], validating in Windows Forms"
+  - "validating user input [Windows Forms], Windows Forms"
 ms.assetid: 4ec07681-1dee-4bf9-be5e-718f635a33a1
 caps.latest.revision: 15
 author: dotnet-bot
@@ -97,8 +97,8 @@ When users enter data into your application, you may want to verify that the dat
 >  If you force the form to close in this manner, any data in the form's controls that has not already been saved is lost. In addition, modal forms do not validate the contents of controls when they are closed. You can still use control validation to lock focus to a control, but you do not have to be concerned about the behavior associated with closing the form.  
   
 ## See Also  
- <xref:System.Windows.Forms.Control.Validating?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.Form.Closing?displayProperty=nameWithType>   
- <xref:System.ComponentModel.CancelEventArgs?displayProperty=nameWithType>   
- [MaskedTextBox Control](../../../docs/framework/winforms/controls/maskedtextbox-control-windows-forms.md)   
+ <xref:System.Windows.Forms.Control.Validating?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.Form.Closing?displayProperty=nameWithType>  
+ <xref:System.ComponentModel.CancelEventArgs?displayProperty=nameWithType>  
+ [MaskedTextBox Control](../../../docs/framework/winforms/controls/maskedtextbox-control-windows-forms.md)  
  [Regular Expression Examples](../../../docs/standard/base-types/regular-expression-examples.md)

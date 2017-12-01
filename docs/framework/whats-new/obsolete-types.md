@@ -781,5 +781,5 @@ manager: "wpickett"
 |<xref:Microsoft.VisualC.NoSignSpecifiedModifier?displayProperty=nameWithType>|Microsoft.VisualC.dll is an obsolete assembly and exists only for backwards compatibility.|  
   
 ## See Also  
- [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)   
+ [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)  
  [Obsolete Members](../../../docs/framework/whats-new/obsolete-members.md)

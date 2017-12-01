@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "data grids, sort modes"
+  - "data grids [Windows Forms], sort modes"
   - "DataGridView control [Windows Forms], sort mode"
 ms.assetid: 43715887-2df9-4da7-bcf1-b9c7c842b2bf
 caps.latest.revision: 18
@@ -65,12 +65,12 @@ manager: "wpickett"
 >  The <xref:System.Windows.Forms.DataGridView.SortCompare> event does not occur when the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or when the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property value is `true`.  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.DataGridView.SortedColumn%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.DataGridView.SortOrder%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A?displayProperty=nameWithType>   
- [Sorting Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/sorting-data-in-the-windows-forms-datagridview-control.md)   
- [How to: Set the Sort Modes for Columns in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/set-the-sort-modes-for-columns-wf-datagridview-control.md)   
+ <xref:System.Windows.Forms.DataGridView>  
+ <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.SortedColumn%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.SortOrder%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A?displayProperty=nameWithType>  
+ [Sorting Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/sorting-data-in-the-windows-forms-datagridview-control.md)  
+ [How to: Set the Sort Modes for Columns in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/set-the-sort-modes-for-columns-wf-datagridview-control.md)  
  [How to: Customize Sorting in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-customize-sorting-in-the-windows-forms-datagridview-control.md)

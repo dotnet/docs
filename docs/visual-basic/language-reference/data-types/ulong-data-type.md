@@ -1,47 +1,29 @@
 ---
 title: "ULong Data Type (Visual Basic)"
-
 ms.date: 04/20/2017
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.ulong"
 helpviewer_keywords: 
-  - "numbers, whole"
+  - "numbers [Visual Basic], whole"
   - "whole numbers"
-  - "integral data types"
+  - "integral data types [Visual Basic]"
   - "integer numbers"
-  - "numbers, integer"
-  - "integers, data types"
-  - "integers, types"
+  - "numbers [Visual Basic], integer"
+  - "integers [Visual Basic], data types"
+  - "integers [Visual Basic], types"
   - "data types [Visual Basic], integral"
-  - "literal type characters, UL"
+  - "literal type characters [Visual Basic], UL"
   - "ULong data type"
-  - "UL literal type characters"
+  - "UL literal type characters [Visual Basic]"
 ms.assetid: 017e0702-774e-44ae-bedc-786b424ca84e
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ULong data type (Visual Basic)
 
@@ -92,9 +74,9 @@ Dim number = &H00_00_0A_96_2F_AC_14_D7ul
   
 ## See also
 
- <xref:System.UInt64>   
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)   
- [How to: Call a Windows Function that Takes Unsigned Types](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)   
+ <xref:System.UInt64>  
+ [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
+ [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
+ [How to: Call a Windows Function that Takes Unsigned Types](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)  
  [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

@@ -7,37 +7,21 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], about LINQ in Visual Basic queries"
   - "query execution [LINQ in Visual Basic]"
-  - "range variables"
+  - "range variables [Visual Basic]"
   - "LINQ [Visual Basic]"
   - "LINQ [Visual Basic], about LINQ in Visual Basic"
   - "query expressions [LINQ in Visual Basic]"
   - "LINQ"
   - "deferred execution"
-  - "iteration variables"
+  - "iteration variables [Visual Basic]"
 ms.assetid: 3047d86e-0d49-40e2-928b-dc02e46c7984
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Introduction to LINQ in Visual Basic
 Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] and provides simple and powerful capabilities when you work with all kinds of data. Rather than sending a query to a database to be processed, or working with different query syntax for each type of data that you are searching, LINQ introduces queries as part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language. It uses a unified syntax regardless of the type of data.  
@@ -213,9 +197,9 @@ Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](~/
  [Chapter 17: LINQ](http://go.microsoft.com/fwlink/?LinkId=195277) in [Programming Visual Basic 2008](http://go.microsoft.com/fwlink/?LinkId=195383)  
   
 ## See Also  
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
- [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)   
- [LINQ to DataSet Overview](../../../../framework/data/adonet/linq-to-dataset-overview.md)   
+ [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+ [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)  
+ [LINQ to DataSet Overview](../../../../framework/data/adonet/linq-to-dataset-overview.md)  
  [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
- [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)   
+ [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)  
  [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

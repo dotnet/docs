@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.CurrencyManager" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -247,6 +248,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The collection doesn't contain an item at the specified index.</exception>
+        <altmember cref="T:System.Windows.Forms.Binding" />
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -298,6 +300,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.BindingsCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingsCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.BindingsCollection.CollectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnCollectionChanging">
@@ -354,6 +357,8 @@
         <param name="binding">The Binding to remove from the collection.</param>
         <summary>Deletes the specified binding from the collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.BindingsCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.BindingsCollection.Add(System.Windows.Forms.Binding)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -375,6 +380,8 @@
         <param name="index">The index of the <see cref="T:System.Windows.Forms.Binding" /> to remove.</param>
         <summary>Deletes the binding from the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.BindingsCollection.Add(System.Windows.Forms.Binding)" />
+        <altmember cref="M:System.Windows.Forms.BindingsCollection.Remove(System.Windows.Forms.Binding)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveCore">

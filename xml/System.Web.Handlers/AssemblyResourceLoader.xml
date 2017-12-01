@@ -36,6 +36,8 @@ WebResource.axd?d=<encrypted identifier>&t=<time stamp value>
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.UI.ClientScriptManager.GetWebResourceUrl(System.Type,System.String)" />
+    <altmember cref="T:System.Web.UI.WebResourceAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -46,7 +46,7 @@
   
  Although class interfaces eliminate the task of explicitly defining interfaces for each class, their use in production applications is strongly discouraged. Dual class interfaces allow clients to bind to a specific interface layout that is subject to change as the class evolves. For example, consider a managed class that exposes a class interface to COM clients. The first version of the class contains methods `North` and `South`. An unmanaged client can bind to the class interface, which provides `North` as the first method in the class interface and method `South` as the second method. Now consider the next version of the class, which has a new method, `East`, inserted between methods `North` and `South`. Unmanaged clients that try to bind to the new class through the old class interface end up calling method `East` when they intend to call method `South`, because the positioning of methods within the interface has changed. Moreover, any change to the layout of a base class also affects the layout of the class interface for all derived classes. Managed clients, which bind directly to classes, do not exhibit the same versioning problems. For specific guidelines on using a class interface, see [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md).  
   
- The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) always applies to imported classes the <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=nameWithType> enumeration member to indicate that existing COM classes never expose managed interfaces.  
+ The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) always applies to imported classes the <xref:System.Runtime.InteropServices.ClassInterfaceType.None?displayProperty=nameWithType> enumeration member to indicate that existing COM classes never expose managed interfaces.  
   
    
   
@@ -59,6 +59,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.InteropServices.ClassInterfaceType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +99,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.ClassInterfaceType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -171,5 +173,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ClassInterfaceAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

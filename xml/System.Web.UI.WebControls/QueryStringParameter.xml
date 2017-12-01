@@ -45,6 +45,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ControlParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.CookieParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.FormParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.ProfileParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.SessionParameter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,7 +74,7 @@
   
 -   <xref:System.Web.UI.WebControls.Parameter.Name%2A> is initialized to an empty string ("").  
   
--   <xref:System.Web.UI.WebControls.Parameter.Type%2A> is initialized to <xref:System.TypeCode?displayProperty=nameWithType>.  
+-   <xref:System.Web.UI.WebControls.Parameter.Type%2A> is initialized to <xref:System.TypeCode.Object?displayProperty=nameWithType>.  
   
 -   <xref:System.Web.UI.WebControls.Parameter.Direction%2A> is initialized to <xref:System.Data.ParameterDirection.Input>.  
   
@@ -115,6 +120,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.QueryStringParameter.Clone" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -150,6 +156,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.QueryStringParameter.QueryStringField" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -209,6 +217,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.QueryStringParameter.QueryStringField" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -235,6 +245,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.QueryStringParameter.#ctor(System.Web.UI.WebControls.QueryStringParameter)" />
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -270,6 +281,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.QueryStringParameter.QueryStringField" />
       </Docs>
     </Member>
     <Member MemberName="QueryStringField">
@@ -346,5 +358,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.QueryStringParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

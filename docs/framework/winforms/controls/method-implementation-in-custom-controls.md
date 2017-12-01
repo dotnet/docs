@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "user controls [Windows Forms], method implementation"
   - "custom controls [Windows Forms], overloading methods"
@@ -82,5 +82,5 @@ public void Spin(Widget driver)
 ```  
   
 ## See Also  
- [Events](../../../../docs/standard/events/index.md)   
+ [Events](../../../../docs/standard/events/index.md)  
  [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)

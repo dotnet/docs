@@ -98,5 +98,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnWriteBodyContents">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Override this method to handle writing the message body contents.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

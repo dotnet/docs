@@ -41,6 +41,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapPath" />
+    <altmember cref="T:System.Web.SiteMapNode" />
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapNodeItemType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +79,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapNodeItem.ItemType" />
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapNodeItem.ItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -137,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SiteMapNodeItemType" />
       </Docs>
     </Member>
     <Member MemberName="SetItemType">
@@ -191,6 +197,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.SiteMapNode" />
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DataItem">
@@ -218,6 +226,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapNodeItem.SiteMapNode" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DataItemIndex">
@@ -245,6 +254,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapNodeItem.ItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DisplayIndex">
@@ -272,6 +282,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapNodeItem.ItemIndex" />
       </Docs>
     </Member>
   </Members>

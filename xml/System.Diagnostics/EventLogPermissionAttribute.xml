@@ -29,6 +29,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.EventLog" />
+    <altmember cref="T:System.Diagnostics.EventLogPermission" />
+    <altmember cref="T:System.Diagnostics.EventLogPermissionAccess" />
+    <altmember cref="T:System.Diagnostics.EventLogPermissionEntry" />
+    <altmember cref="T:System.Diagnostics.EventLogPermissionEntryCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +56,7 @@
         <param name="action">One of the <see cref="T:System.Security.Permissions.SecurityAction" /> values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventLogPermissionAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Permissions.SecurityAction" />
       </Docs>
     </Member>
     <Member MemberName="CreatePermission">

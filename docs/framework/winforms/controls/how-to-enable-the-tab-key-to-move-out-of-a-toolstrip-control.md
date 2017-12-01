@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "controls [Windows Forms], moving between"
-  - "TAB key, enabling"
+  - "TAB key [Windows Forms], enabling"
   - "ToolStrip control [Windows Forms], moving from"
 ms.assetid: 40f9e88b-09a3-428e-8da8-c00bb65079c6
 caps.latest.revision: 7
@@ -29,6 +29,6 @@ Use the following procedure to enable the user to press the TAB key to move out 
 -   Set the <xref:System.Windows.Forms.ToolStrip.TabStop%2A> property of the <xref:System.Windows.Forms.ToolStrip> to `true`.  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolStrip>   
- <xref:System.Windows.Forms.ToolStrip.TabStop%2A>   
+ <xref:System.Windows.Forms.ToolStrip>  
+ <xref:System.Windows.Forms.ToolStrip.TabStop%2A>  
  [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)

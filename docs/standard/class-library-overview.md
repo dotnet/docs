@@ -108,6 +108,6 @@ ass objects|<xref:System.Object>|The root of the object hierarchy.|**Object**|**
  For more information about namespaces, browse the [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=227195). The reference documentation provides a brief overview of each namespace as well as a formal description of each type and its members.  
   
 ## See Also  
- [Common Type System](../../docs/standard/base-types/common-type-system.md)   
- [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=227195)   
+ [Common Type System](../../docs/standard/base-types/common-type-system.md)  
+ [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=227195)  
  [Overview](../../docs/framework/get-started/overview.md)

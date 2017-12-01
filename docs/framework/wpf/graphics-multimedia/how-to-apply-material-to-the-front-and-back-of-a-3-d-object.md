@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "3-D objects, applying Material class"
-  - "Material class, applying to both sides of 3-D object"
-  - "classes, Material"
+  - "3-D objects [WPF], applying Material class"
+  - "Material class [WPF], applying to both sides of 3-D object"
+  - "classes [WPF], Material"
 ms.assetid: d93c8ad6-4939-4d29-9544-4d16d98093c1
 caps.latest.revision: 5
 author: dotnet-bot
@@ -30,7 +30,7 @@ The following example shows how to apply a <xref:System.Windows.Media.Media3D.Ma
  [!code-xaml[Animation3DGallery_snip#BackMaterialAnimationExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/BackMaterialAnimationExample.xaml#backmaterialanimationexamplewholepage)]  
   
 ## See Also  
- [Create a 3-D Scene](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-3-d-scene.md)   
- [3-D Graphics Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)   
- [Animate Material Properties in a 3-D Scene](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-material-properties-in-a-3-d-scene.md)   
+ [Create a 3-D Scene](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-3-d-scene.md)  
+ [3-D Graphics Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)  
+ [Animate Material Properties in a 3-D Scene](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-material-properties-in-a-3-d-scene.md)  
  [Apply Emissive Material to a 3-D Object](../../../../docs/framework/wpf/graphics-multimedia/how-to-apply-emissive-material-to-a-3-d-object.md)

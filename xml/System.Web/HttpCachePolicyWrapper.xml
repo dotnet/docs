@@ -542,5 +542,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetCacheability">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the <see langword="Cache-Control" /> header to one of the <see cref="T:System.Web.HttpCacheability" /> values.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -9,13 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "flicker, reducing by manually rendering graphics"
+  - "flicker [Windows Forms], reducing by manually rendering graphics"
   - "graphics [Windows Forms], rendering"
-  - "BufferedGraphics class"
 ms.assetid: 5192295e-bd8e-45f7-8bd6-5c4f6bd21e61
 caps.latest.revision: 10
 author: dotnet-bot
@@ -53,7 +52,7 @@ If you are managing your own buffered graphics, you will need to be able to crea
      [!code-vb[System.Windows.Forms.LegacyBufferedGraphics#24](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.LegacyBufferedGraphics/VB/Class1.vb#24)]  
   
 ## See Also  
- <xref:System.Drawing.BufferedGraphicsContext>   
- <xref:System.Drawing.BufferedGraphics>   
- [Double Buffered Graphics](../../../../docs/framework/winforms/advanced/double-buffered-graphics.md)   
+ <xref:System.Drawing.BufferedGraphicsContext>  
+ <xref:System.Drawing.BufferedGraphics>  
+ [Double Buffered Graphics](../../../../docs/framework/winforms/advanced/double-buffered-graphics.md)  
  [How to: Manually Manage Buffered Graphics](../../../../docs/framework/winforms/advanced/how-to-manually-manage-buffered-graphics.md)

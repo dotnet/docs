@@ -38,6 +38,7 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Windows.Forms.FeatureSupport" />, you must override the <see cref="M:System.Windows.Forms.FeatureSupport.GetVersionPresent(System.String,System.String)" /> method. When you override this method, check that the class that you use for the <paramref name="feature" /> parameter is the same as the class used for this parameter in the <see cref="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String)" /> method. If the two <paramref name="feature" /> parameters differ, you also must override <see cref="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String)" />.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.OSFeature" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +97,7 @@
   
  See <see cref="M:System.Windows.Forms.OSFeature.GetVersionPresent(System.Object)" /> for an implementation of this method.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.OSFeature.GetVersionPresent(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetVersionPresent">
@@ -129,6 +131,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.OSFeature.GetVersionPresent(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsPresent">
@@ -226,6 +230,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.FeatureSupport.GetVersionPresent(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsPresent">
@@ -260,7 +265,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.FeatureSupport.GetVersionPresent(System.String,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsPresent">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified feature is installed in the system.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetVersionPresent">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the version of the specified feature that is available on the system.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

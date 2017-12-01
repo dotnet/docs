@@ -26,6 +26,8 @@
     <summary>Provides services for authoring JScript code in an editor.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.IParseText" />
+    <altmember cref="T:Microsoft.JScript.IColorizeText" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +44,9 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSAuthor" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IAuthorServices" />
+        <altmember cref="T:Microsoft.JScript.IParseText" />
+        <altmember cref="T:Microsoft.JScript.IColorizeText" />
       </Docs>
     </Member>
     <Member MemberName="GetCodeSense">
@@ -62,6 +67,8 @@
         <returns>An object that is used to add IntelliSense to text.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IAuthorServices" />
+        <altmember cref="T:Microsoft.JScript.IColorizeText" />
       </Docs>
     </Member>
     <Member MemberName="GetColorizer">
@@ -82,6 +89,8 @@
         <returns>An object that is used to colorize text.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IAuthorServices" />
+        <altmember cref="T:Microsoft.JScript.IParseText" />
       </Docs>
     </Member>
   </Members>

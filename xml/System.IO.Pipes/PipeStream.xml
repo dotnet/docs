@@ -1524,5 +1524,15 @@
         <exception cref="T:System.IO.IOException">The pipe is broken or another I/O error occurred.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.PipeStream" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

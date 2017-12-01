@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "run time, removing controls"
+  - "run time [Windows Forms], removing controls"
   - "controls [Windows Forms], adding using collections"
   - "controls collections"
-  - "collections, adding items"
-  - "run time, adding controls"
+  - "collections [Windows Forms], adding items"
+  - "run time [Windows Forms], adding controls"
   - "controls [Windows Forms], removing using collections"
 ms.assetid: 771bf895-3d5f-469b-a324-3528f343657e
 caps.latest.revision: 10
@@ -64,7 +64,7 @@ Common tasks in application development are adding controls to and removing cont
        // from the Control class. In this case, it is a Button control.  
        panel1.Controls.Add(newPanelButton);  
        // The event handler indicated for the Click event in the code   
-       // below is used as an example. Substite the appropriate event  
+       // below is used as an example. Substitute the appropriate event  
        // handler for your application.  
        this.newPanelButton.Click += new System.EventHandler(this. NewPanelButton_Click);  
     }  
@@ -107,5 +107,5 @@ Common tasks in application development are adding controls to and removing cont
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.Panel>   
+ <xref:System.Windows.Forms.Panel>  
  [Panel Control](../../../../docs/framework/winforms/controls/panel-control-windows-forms.md)

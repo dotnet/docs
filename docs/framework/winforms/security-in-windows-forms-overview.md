@@ -10,11 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "code access security, Windows Forms"
-  - "permissions, Windows Forms"
+  - "code access security [Windows Forms], Windows Forms"
+  - "permissions [Windows Forms], Windows Forms"
   - "Windows Forms, security"
   - "security [Windows Forms], about security"
-  - "access control, Windows Forms"
+  - "access control [Windows Forms], Windows Forms"
 ms.assetid: 4810dc9f-ea23-4ce1-8ea1-657f0ff1d820
 caps.latest.revision: 16
 author: dotnet-bot
@@ -89,9 +89,9 @@ Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-m
  If you have deployed your Windows Forms application by using [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], you can enable debugging in partial trust or a restricted permission set from the development environment.  Also see [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/593zkfdf\(v=vs.110\)) or [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/593zkfdf\(v=vs.120\)).  
   
 ## See Also  
- [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)   
- [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)   
- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)   
- [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)   
- [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)   
+ [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)  
+ [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)  
+ [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)  
+ [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)  
+ [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)  
  [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)

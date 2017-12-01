@@ -108,5 +108,5 @@ This topic describes the fundamental programming tasks used to create a secure [
  [!code-vb[c_TcpClient#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_tcpclient/vb/source.vb#1)]  
   
 ## See Also  
- [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)   
+ [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)  
  [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)

@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, RichTextBox"
+  - "controls [WPF], RichTextBox"
   - "RichTextBox control [WPF], about RichTextBox control"
 ms.assetid: c94548b2-c1e9-4b62-b10c-dd8740eb23d8
 caps.latest.revision: 11
@@ -101,5 +101,5 @@ The <xref:System.Windows.Controls.RichTextBox> control enables you to display or
  [!code-vb[RichTextBoxMiscSnippets_snip#SaveLoadPrintRTBCodeExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxMiscSnippets_snip/VisualBasic/SaveLoadPrintRTB.xaml.vb#saveloadprintrtbcodeexamplewholepage)]  
   
 ## See Also  
- [How-to Topics](../../../../docs/framework/wpf/controls/richtextbox-how-to-topics.md)   
+ [How-to Topics](../../../../docs/framework/wpf/controls/richtextbox-how-to-topics.md)  
  [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)

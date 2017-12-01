@@ -93,5 +93,5 @@ Activation path from the add-in to the host
      Describes how to pass data collections over the pipeline using a book store scenario.  
   
 ## See Also  
- [Add-in Pipeline Scenarios](http://msdn.microsoft.com/en-us/feb70e0b-8734-494c-aeaf-b567f014043e)   
+ [Add-in Pipeline Scenarios](http://msdn.microsoft.com/en-us/feb70e0b-8734-494c-aeaf-b567f014043e)  
  [Add-ins and Extensibility](../../../docs/framework/add-ins/index.md)

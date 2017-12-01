@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ListView controls, styling"
+  - "ListView controls [WPF], styling"
 ms.assetid: 1e2bdce0-afe8-4507-9b18-f33de43de25a
 caps.latest.revision: 11
 author: dotnet-bot
@@ -36,9 +36,9 @@ This example shows how to define <xref:System.Windows.Style.Triggers%2A> for a <
 [!code-xaml[ListViewChkBox#ListViewItemTriggersEnd](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListViewChkBox/CS/window1.xaml#listviewitemtriggersend)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Control>   
- <xref:System.Windows.Controls.ListView>   
- <xref:System.Windows.Controls.GridView>   
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)   
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)   
+ <xref:System.Windows.Controls.Control>  
+ <xref:System.Windows.Controls.ListView>  
+ <xref:System.Windows.Controls.GridView>  
+ [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
+ [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
  [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)

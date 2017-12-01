@@ -360,7 +360,7 @@ When dealing with data in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)
 -   In general, when using any component that accepts a quota, understand its security implications and set it to a safe value.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- <xref:System.Xml.XmlDictionaryReader>   
- <xref:System.Xml.Serialization.XmlSerializer>   
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ <xref:System.Xml.XmlDictionaryReader>  
+ <xref:System.Xml.Serialization.XmlSerializer>  
  [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)

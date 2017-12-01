@@ -70,6 +70,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPart" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -143,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowZoneChange" />
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -227,6 +230,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="BorderWidth">
@@ -332,6 +336,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteVerb" />
       </Docs>
     </Member>
     <Member MemberName="CloseWebPart">
@@ -367,6 +373,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.PageCatalogPart" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowClose" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseVerb" />
       </Docs>
     </Member>
     <Member MemberName="ConnectVerb">
@@ -454,6 +464,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -473,6 +484,7 @@
         <summary>Creates a <see cref="T:System.Web.UI.ControlCollection" /> object that contains all the controls in a zone.</summary>
         <returns>A <see cref="T:System.Web.UI.ControlCollection" /> that contains references to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls in a zone.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -550,6 +562,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbsEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="CreateWebPartChrome">
@@ -581,6 +594,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartChrome" />
       </Docs>
     </Member>
     <Member MemberName="DeleteVerb">
@@ -639,6 +653,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteWebPart">
@@ -669,6 +684,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteVerb" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="DisplayTitle">
@@ -712,6 +729,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="DragDropEnabled">
@@ -737,6 +755,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
       </Docs>
     </Member>
     <Member MemberName="DragHighlightColor">
@@ -861,6 +881,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EditVerb" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.BeginWebPartEditing(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="EmptyZoneText">
@@ -898,6 +920,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText" />
       </Docs>
     </Member>
     <Member MemberName="ExportVerb">
@@ -961,6 +984,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ExportMode" />
       </Docs>
     </Member>
     <Member MemberName="GetEffectiveChromeType">
@@ -983,6 +1007,7 @@
         <summary>Returns the actual or effective current <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" /> value of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control, given the <see cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType" /> property of the zone and the current display mode of the Web Parts page.</summary>
         <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" /> value that contains the kind of border that currently frames Web Parts controls contained by a zone.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.GetEffectiveChromeType(System.Web.UI.WebControls.WebParts.Part)" />
       </Docs>
     </Member>
     <Member MemberName="GetInitialWebParts">
@@ -1014,6 +1039,8 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.GetInitialWebParts" /> method is abstract, so it must be implemented by derived classes. The <see cref="M:System.Web.UI.WebControls.WebParts.WebPartZone.GetInitialWebParts" /> method of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" /> class contains one implementation of the method.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebParts" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZone.GetInitialWebParts" />
       </Docs>
     </Member>
     <Member MemberName="HasFooter">
@@ -1040,6 +1067,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HasFooter" />
       </Docs>
     </Member>
     <Member MemberName="HasHeader">
@@ -1068,6 +1096,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HasHeader" />
       </Docs>
     </Member>
     <Member MemberName="HelpVerb">
@@ -1157,6 +1186,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl" />
       </Docs>
     </Member>
     <Member MemberName="LayoutOrientation">
@@ -1213,6 +1243,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of the enumerated <see cref="T:System.Web.UI.WebControls.Orientation" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Orientation" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Height" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1244,6 +1276,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The size of the <paramref name="savedState" /> object does not equal the size of the current view-state object.</exception>
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="MenuCheckImageStyle">
@@ -1289,6 +1322,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartVerb.Checked" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuCheckImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="MenuCheckImageUrl">
@@ -1318,6 +1353,7 @@
         <summary>Gets or sets the URL to an image used as a check mark in the verbs menu of each <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control in a zone.</summary>
         <value>A string that represents the URL to an image used as a check mark. The default value is an empty string ("").</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuCheckImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="MenuLabelHoverStyle">
@@ -1367,6 +1403,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle" />
       </Docs>
     </Member>
     <Member MemberName="MenuLabelStyle">
@@ -1416,6 +1453,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelText" />
       </Docs>
     </Member>
     <Member MemberName="MenuLabelText">
@@ -1461,6 +1499,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle" />
       </Docs>
     </Member>
     <Member MemberName="MenuPopupImageUrl">
@@ -1507,6 +1546,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle" />
       </Docs>
     </Member>
     <Member MemberName="MenuPopupStyle">
@@ -1548,6 +1588,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode" />
       </Docs>
     </Member>
     <Member MemberName="MenuVerbHoverStyle">
@@ -1610,6 +1651,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbStyle" />
       </Docs>
     </Member>
     <Member MemberName="MenuVerbStyle">
@@ -1661,6 +1704,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.VerbStyle" />
       </Docs>
     </Member>
     <Member MemberName="MinimizeVerb">
@@ -1719,6 +1763,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreVerb" />
       </Docs>
     </Member>
     <Member MemberName="MinimizeWebPart">
@@ -1751,6 +1796,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeVerb" />
+        <altmember cref="F:System.Web.UI.WebControls.WebParts.PartChromeState.Minimized" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowMinimize" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateVerbs">
@@ -1801,6 +1849,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateVerbs" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -1829,6 +1878,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -1850,6 +1900,7 @@
         <param name="eventArgument">The postback argument.</param>
         <summary>Updates the status of the current collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls in a zone, based on the changes that have occurred since the most recent postback event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1878,6 +1929,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderBody">
@@ -1908,6 +1960,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.RenderBody(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderDropCue">
@@ -1964,6 +2017,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.RenderHeader(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderHeader(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RestoreVerb">
@@ -2022,6 +2077,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeVerb" />
       </Docs>
     </Member>
     <Member MemberName="RestoreWebPart">
@@ -2056,6 +2112,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreVerb" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -2082,6 +2139,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.SaveViewState" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="SelectedPartChromeStyle">
@@ -2162,6 +2221,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.TitleIconImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -2221,6 +2281,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value for the property is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ButtonType" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode" />
       </Docs>
     </Member>
     <Member MemberName="TitleBarVerbStyle">
@@ -2262,6 +2324,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -2287,6 +2351,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.TrackViewState" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="VerbButtonType">
@@ -2329,6 +2395,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ButtonType" />
       </Docs>
     </Member>
     <Member MemberName="WebPartChrome">
@@ -2355,6 +2422,7 @@
         <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartChrome" /> object that determines the peripheral rendering for <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls in the zone.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartChrome" /> that determines rendering for controls in the zone.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateWebPartChrome" />
       </Docs>
     </Member>
     <Member MemberName="WebParts">
@@ -2398,6 +2466,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.WebParts" />
       </Docs>
     </Member>
     <Member MemberName="WebPartVerbRenderMode">
@@ -2429,6 +2498,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value for the property is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbButtonType" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode" />
       </Docs>
     </Member>
   </Members>

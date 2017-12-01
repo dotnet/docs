@@ -116,6 +116,7 @@ dotnet build --output /build_output
 dotnet /build_output/my_app.dll
 ```
 
+
 ---
 
 ### Driver
@@ -144,5 +145,5 @@ If you used Preview 2 tooling to produce *project.json*-based projects, consult 
 
 ## See also
 
- [dotnet/CLI GitHub Repository](https://github.com/dotnet/cli/)   
- [.NET Core installation guide](https://aka.ms/dotnetcoregs)   
+ [dotnet/CLI GitHub Repository](https://github.com/dotnet/cli/)  
+ [.NET Core installation guide](https://aka.ms/dotnetcoregs)  

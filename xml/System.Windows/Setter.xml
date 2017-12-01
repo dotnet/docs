@@ -47,6 +47,8 @@
     </remarks>
     <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Windows.Setter.Property" /> property cannot be null.</exception>
     <exception cref="T:System.ArgumentException">If the specified <see cref="P:System.Windows.Setter.Value" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
+    <altmember cref="T:System.Windows.EventSetter" />
+    <altmember cref="T:System.Windows.TriggerBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -154,6 +156,7 @@
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Windows.Setter.Property" /> property cannot be <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The specified <see cref="P:System.Windows.Setter.Property" /> property cannot be read-only.</exception>
         <exception cref="T:System.InvalidOperationException">If the specified <see cref="P:System.Windows.Setter.Value" /> is not valid for the type of the specified <see cref="P:System.Windows.Setter.Property" />.</exception>
+        <altmember cref="P:System.Windows.Setter.Value" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveMarkupExtension">
@@ -184,6 +187,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.XamlSetMarkupExtensionAttribute" />
+        <altmember cref="T:System.Windows.Markup.XamlSetMarkupExtensionEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveTypeConverter">
@@ -214,6 +219,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.XamlSetTypeConverterAttribute" />
+        <altmember cref="T:System.Windows.Markup.XamlSetTypeConverterEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit">
@@ -304,6 +311,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Setter.Value" />
+        <altmember cref="P:System.Windows.Setter.Property" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -389,7 +398,17 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">If the specified <see cref="P:System.Windows.Setter.Value" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
+        <altmember cref="P:System.Windows.Setter.Property" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Setter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

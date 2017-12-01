@@ -199,8 +199,8 @@ mage -Sign deploy.application -CertFile cert.pfx -Password <passwd>
 ```  
   
 ## See Also  
- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)   
- [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)   
- [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)   
- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)   
+ [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)  
+ [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)  
+ [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)  
+ [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

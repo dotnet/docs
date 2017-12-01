@@ -91,5 +91,5 @@ The Developer Command Prompt for Visual Studio automatically sets the environmen
  After that, the new menu item is added and you can access the command prompt from the **Tools** menu.  
   
 ## See Also  
- [Tools](../../../docs/framework/tools/index.md)   
+ [Tools](../../../docs/framework/tools/index.md)  
  [Managing External Tools](/visualstudio/ide/managing-external-tools)

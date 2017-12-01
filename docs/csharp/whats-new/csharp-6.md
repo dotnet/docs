@@ -3,7 +3,6 @@ title: What's New in C# 6 - C# Guide
 description: Learn the new features in C# Version 6    
 keywords: .NET, .NET Core
 author: BillWagner
-
 ms.date: 09/22/2016
 ms.topic: article
 ms.prod: .net
@@ -158,18 +157,18 @@ in a namespace.
 Often we use a class' static methods throughout our code. Repeatedly
 typing the class name can obscure the meaning of your code. A common
 example is when you write classes that perform many numeric calculations.
-Your code will be littered with @System.Math.Sin, @System.Math.Sqrt and other calls
-to different methods in the @System.Math class. The new `using static` syntax can make these
+Your code will be littered with <xref:System.Math.Sin%2A>, <xref:System.Math.Sqrt%2A> and other calls
+to different methods in the <xref:System.Math> class. The new `using static` syntax can make these
 classes much cleaner to read. You specify the class you're using:
 
 [!code-csharp[UsingStaticMath](../../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStaticMath)]
 
-And now, you can use any static method in the @System.Math class without
-qualifying the @System.Math class. The @System.Math class is a great use case for
+And now, you can use any static method in the <xref:System.Math> class without
+qualifying the <xref:System.Math> class. The <xref:System.Math> class is a great use case for
 this feature because it does not contain any
 instance methods. You can also use `using static` to import a
 class' static methods for a class that has both static
-and instance methods. One of the most useful examples is @System.String:
+and instance methods. One of the most useful examples is <xref:System.String>:
 
 [!code-csharp[UsingStatic](../../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStatic)]
 
@@ -178,7 +177,7 @@ and instance methods. One of the most useful examples is @System.String:
 > in a static using statement. 
 > You cannot use the `string` keyword instead. 
 
-You can now call static methods defined in the @System.String class without
+You can now call static methods defined in the <xref:System.String> class without
 qualifying those methods as members of that class:
 
 [!code-csharp[UsingStaticString](../../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStaticString)]
@@ -192,11 +191,11 @@ including yours.
 Extension methods are only in scope when called using the
 extension method invocation syntax, not when called as a static method.
 You'll often see this in LINQ queries. You can import the LINQ pattern
-by importing @System.Linq.Enumerable. 
+by importing <xref:System.Linq.Enumerable>.
 
 [!code-csharp[UsingStaticLinq](../../../samples/snippets/csharp/new-in-6/newcode.cs#usingStaticLinq)]
 
-This imports all the methods in the @System.Linq.Enumerable class.
+This imports all the methods in the <xref:System.Linq.Enumerable> class.
 However, the extension methods are only in scope when called as extension
 methods. They are not in scope if they are called using the static method
 syntax:
@@ -267,7 +266,7 @@ if (this.SomethingHappened != null)
 > The preceding example introduces a race condition. The `SomethingHappened`
 > event may have subscribers when checked against `null`, and those subscribers
 > may have been removed before the event is raised. That would cause 
-> a @System.NullReferenceException to be thrown.
+> a <xref:System.NullReferenceException> to be thrown.
 
 In this second version, the `SomethingHappened` event handler might
 be non-null when tested, but if other code removes a handler,
@@ -356,18 +355,18 @@ All the examples shown in the preceding section will format the strings using th
 culture and language on the machine where the code executes. Often you
 may need to format the string produced using a specific culture.
 The object produced from a string interpolation is a type that has an
-implicit conversion to either @System.String or @System.FormattableString.
+implicit conversion to either <xref:System.String> or <xref:System.FormattableString>.
 
-The @System.FormattableString type contains the format string, and the results
+The <xref:System.FormattableString> type contains the format string, and the results
 of evaluating the arguments before converting them to strings. You can
-use public methods of @System.FormattableString to specify the culture when
+use public methods of <xref:System.FormattableString> to specify the culture when
 formatting a string. For example, the following will produce a string
 using German as the language and culture. (It will use the ',' character
 for the decimal separator,
 and the '.' character as the thousands separator.)
 
 ```csharp
-FormattableString str = @"Average grade is {s.Grades.Average()}";
+FormattableString str = $"Average grade is {s.Grades.Average()}";
 var gradeStr = string.Format(null, 
     System.Globalization.CultureInfo.CreateSpecificCulture("de-de"),
     str.GetFormat(), str.GetArguments());
@@ -531,7 +530,7 @@ initializers more consistent. In earlier releases of C#, you could use
 
 [!code-csharp[ListInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#ListInitializer)]
 
-Now, you can also use them with @System.Collections.Generic.Dictionary collections and similar types:
+Now, you can also use them with <xref:System.Collections.Generic.Dictionary%602> collections and similar types:
 
 [!code-csharp[DictionaryInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#DictionaryInitializer)]
 

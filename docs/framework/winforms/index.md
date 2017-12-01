@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms"
   - "user interface"
-  - "user interface, forms"
+  - "user interface [Windows Forms], forms"
 ms.assetid: 627df1e9-b254-41af-bbac-9a4f02810c54
 caps.latest.revision: 25
 author: dotnet-bot

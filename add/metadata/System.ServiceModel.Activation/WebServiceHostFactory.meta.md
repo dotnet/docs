@@ -29,5 +29,5 @@ manager: "wpickett"
 uid: System.ServiceModel.Activation.WebServiceHostFactory.CreateServiceHost
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

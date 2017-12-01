@@ -3,7 +3,7 @@ uid: System.Printing.PrintServer
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -47,7 +47,7 @@ uid: System.Printing.PrintServer.GetPrintQueues(System.String[])
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -100,7 +100,7 @@ uid: System.Printing.PrintServer.InstallPrintQueue(System.String,System.String,S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -117,7 +117,7 @@ uid: System.Printing.PrintServer.NetPopup
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -161,7 +161,7 @@ uid: System.Printing.PrintServer.EventLog
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -196,7 +196,7 @@ uid: System.Printing.PrintServer.SchedulerPriority
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -384,5 +384,5 @@ uid: System.Printing.PrintServer.GetPrintQueues(System.Printing.PrintQueueIndexe
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---

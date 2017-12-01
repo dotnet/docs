@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Routing.Configuration.BackupListCollection.Item
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

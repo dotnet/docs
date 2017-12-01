@@ -3,7 +3,7 @@ uid: System.Printing.IndexedProperties.PrintInt32Property
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -47,5 +47,5 @@ uid: System.Printing.IndexedProperties.PrintInt32Property.#ctor(System.String,Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---

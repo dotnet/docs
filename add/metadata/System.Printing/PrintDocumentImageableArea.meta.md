@@ -21,7 +21,7 @@ uid: System.Printing.PrintDocumentImageableArea.OriginHeight
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -38,7 +38,7 @@ uid: System.Printing.PrintDocumentImageableArea.OriginWidth
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

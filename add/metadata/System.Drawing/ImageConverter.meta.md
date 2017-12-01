@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.Drawing.ImageConverter.ConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -36,7 +36,7 @@ manager: "wpickett"
 uid: System.Drawing.ImageConverter.CanConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -52,7 +52,7 @@ manager: "wpickett"
 uid: System.Drawing.ImageConverter.ConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -77,14 +77,14 @@ manager: "wpickett"
 uid: System.Drawing.ImageConverter.GetPropertiesSupported
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.ImageConverter.CanConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -109,5 +109,5 @@ manager: "wpickett"
 uid: System.Drawing.ImageConverter.GetProperties
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

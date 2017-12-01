@@ -38,12 +38,12 @@ manager: "wpickett"
 uid: System.Drawing.Design.FontNameEditor.GetPaintValueSupported
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.FontNameEditor.PaintValue
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

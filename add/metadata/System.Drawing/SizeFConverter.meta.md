@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Drawing.SizeFConverter.ConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -36,14 +36,14 @@ manager: "wpickett"
 uid: System.Drawing.SizeFConverter.GetCreateInstanceSupported
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.SizeFConverter.CreateInstance
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,7 +59,7 @@ manager: "wpickett"
 uid: System.Drawing.SizeFConverter.CanConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -93,21 +93,21 @@ manager: "wpickett"
 uid: System.Drawing.SizeFConverter.CanConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.SizeFConverter.GetProperties
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.SizeFConverter.GetPropertiesSupported
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -141,5 +141,5 @@ manager: "wpickett"
 uid: System.Drawing.SizeFConverter.ConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

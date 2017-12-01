@@ -3,7 +3,7 @@ uid: System.Speech.Synthesis.PromptBuilder
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Speech.Synthesis.PromptBuilder.StartVoice(System.Globalization.Cultu
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendBookmark(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.Speech.Synthesis.PromptBuilder.StartSentence(System.Globalization.Cu
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendTextWithPronunciation(System.St
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendTextWithHint
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -51,7 +51,7 @@ uid: System.Speech.Synthesis.PromptBuilder.StartSentence
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,7 +59,7 @@ uid: System.Speech.Synthesis.PromptBuilder.IsEmpty
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -67,7 +67,7 @@ uid: System.Speech.Synthesis.PromptBuilder.ToXml
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -75,7 +75,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendAudio(System.Uri)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -83,7 +83,7 @@ uid: System.Speech.Synthesis.PromptBuilder.StartVoice(System.Speech.Synthesis.Vo
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -91,7 +91,7 @@ uid: System.Speech.Synthesis.PromptBuilder.EndStyle
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -99,7 +99,7 @@ uid: System.Speech.Synthesis.PromptBuilder.StartVoice
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -107,7 +107,7 @@ uid: System.Speech.Synthesis.PromptBuilder.StartVoice(System.Speech.Synthesis.Vo
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -115,7 +115,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -123,7 +123,7 @@ uid: System.Speech.Synthesis.PromptBuilder.ClearContent
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -131,7 +131,7 @@ uid: System.Speech.Synthesis.PromptBuilder.EndVoice
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -139,7 +139,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendText(System.String,System.Speec
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -147,7 +147,7 @@ uid: System.Speech.Synthesis.PromptBuilder.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -155,7 +155,7 @@ uid: System.Speech.Synthesis.PromptBuilder.StartParagraph(System.Globalization.C
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -163,7 +163,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendText(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -171,7 +171,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendSsml
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -179,7 +179,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendSsml(System.Xml.XmlReader)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -187,7 +187,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendText(System.String,System.Speec
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -195,7 +195,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendBreak
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -203,7 +203,7 @@ uid: System.Speech.Synthesis.PromptBuilder.StartParagraph
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -211,7 +211,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendText
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -219,7 +219,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendAudio
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -227,7 +227,7 @@ uid: System.Speech.Synthesis.PromptBuilder.StartVoice(System.Speech.Synthesis.Vo
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -235,7 +235,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendTextWithAlias(System.String,Sys
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -243,7 +243,7 @@ uid: System.Speech.Synthesis.PromptBuilder.#ctor(System.Globalization.CultureInf
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -251,7 +251,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendAudio(System.Uri,System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -259,7 +259,7 @@ uid: System.Speech.Synthesis.PromptBuilder.EndSentence
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -267,7 +267,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendPromptBuilder(System.Speech.Syn
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -275,7 +275,7 @@ uid: System.Speech.Synthesis.PromptBuilder.StartVoice(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -283,7 +283,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendText(System.String,System.Speec
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -291,7 +291,7 @@ uid: System.Speech.Synthesis.PromptBuilder.Culture
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -299,7 +299,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendSsml(System.Uri)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -307,7 +307,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendTextWithHint(System.String,Syst
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -315,7 +315,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendSsml(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -323,7 +323,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendBreak(System.Speech.Synthesis.P
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -331,7 +331,7 @@ uid: System.Speech.Synthesis.PromptBuilder.EndParagraph
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -339,7 +339,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendAudio(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -347,7 +347,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendBreak(System.TimeSpan)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -355,7 +355,7 @@ uid: System.Speech.Synthesis.PromptBuilder.AppendTextWithHint(System.String,Syst
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -363,7 +363,7 @@ uid: System.Speech.Synthesis.PromptBuilder.StartStyle(System.Speech.Synthesis.Pr
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -371,5 +371,5 @@ uid: System.Speech.Synthesis.PromptBuilder.StartVoice(System.Speech.Synthesis.Vo
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---

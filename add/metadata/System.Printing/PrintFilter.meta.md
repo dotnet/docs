@@ -3,7 +3,7 @@ uid: System.Printing.PrintFilter
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

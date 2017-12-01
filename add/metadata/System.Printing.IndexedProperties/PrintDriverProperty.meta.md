@@ -3,7 +3,7 @@ uid: System.Printing.IndexedProperties.PrintDriverProperty
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -20,7 +20,7 @@ uid: System.Printing.IndexedProperties.PrintDriverProperty.op_Implicit
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

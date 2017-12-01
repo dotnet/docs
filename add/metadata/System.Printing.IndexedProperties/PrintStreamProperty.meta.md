@@ -30,7 +30,7 @@ uid: System.Printing.IndexedProperties.PrintStreamProperty.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -38,7 +38,7 @@ uid: System.Printing.IndexedProperties.PrintStreamProperty.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -46,5 +46,5 @@ uid: System.Printing.IndexedProperties.PrintStreamProperty.op_Implicit
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---

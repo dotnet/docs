@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Configuration.SecurityElement.CreateBindingElement
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

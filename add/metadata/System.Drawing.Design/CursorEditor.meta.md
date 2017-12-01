@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.Drawing.Design.CursorEditor.EditValue
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -36,7 +36,7 @@ manager: "wpickett"
 uid: System.Drawing.Design.CursorEditor.GetEditStyle
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

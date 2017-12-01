@@ -65,7 +65,7 @@ manager: "wpickett"
 uid: System.Drawing.Design.IconEditor.PaintValue
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -81,7 +81,7 @@ manager: "wpickett"
 uid: System.Drawing.Design.IconEditor.GetEditStyle
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -115,12 +115,12 @@ manager: "wpickett"
 uid: System.Drawing.Design.IconEditor.EditValue
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.IconEditor.GetPaintValueSupported
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

@@ -3,7 +3,7 @@ uid: System.Printing.PageResolution
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -74,5 +74,5 @@ uid: System.Printing.PageResolution.#ctor(System.Int32,System.Int32,System.Print
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---

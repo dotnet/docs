@@ -47,7 +47,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.CopyTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -135,7 +135,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.BaseAdd
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

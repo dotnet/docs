@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.ServiceModel.XamlIntegration.EndpointIdentityConverter.ConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -36,7 +36,7 @@ manager: "wpickett"
 uid: System.ServiceModel.XamlIntegration.EndpointIdentityConverter.CanConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

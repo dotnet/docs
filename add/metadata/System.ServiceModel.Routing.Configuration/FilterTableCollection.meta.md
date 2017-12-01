@@ -65,7 +65,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Routing.Configuration.FilterTableCollection.Item
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

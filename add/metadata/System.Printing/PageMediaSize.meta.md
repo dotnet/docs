@@ -12,7 +12,7 @@ uid: System.Printing.PageMediaSize.Height
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -74,5 +74,5 @@ uid: System.Printing.PageMediaSize.#ctor(System.Double,System.Double)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---

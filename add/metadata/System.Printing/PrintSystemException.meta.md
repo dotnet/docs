@@ -48,7 +48,7 @@ uid: System.Printing.PrintSystemException.#ctor(System.Int32,System.String,Syste
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -65,7 +65,7 @@ uid: System.Printing.PrintSystemException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

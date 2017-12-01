@@ -21,7 +21,7 @@ uid: System.Linq.Expressions.GotoExpression.NodeType
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -38,7 +38,7 @@ uid: System.Linq.Expressions.GotoExpression.Kind
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

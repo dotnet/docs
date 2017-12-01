@@ -39,7 +39,7 @@ uid: System.Linq.ParallelEnumerable.Max``1(System.Linq.ParallelQuery{``0})
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -47,7 +47,7 @@ uid: System.Linq.ParallelEnumerable.SkipWhile``1(System.Linq.ParallelQuery{``0},
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -55,7 +55,7 @@ uid: System.Linq.ParallelEnumerable.OrderByDescending
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -72,7 +72,7 @@ uid: System.Linq.ParallelEnumerable.Distinct``1(System.Linq.ParallelQuery{``0})
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -80,7 +80,7 @@ uid: System.Linq.ParallelEnumerable.Average``1(System.Linq.ParallelQuery{``0},Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -106,7 +106,7 @@ uid: System.Linq.ParallelEnumerable.SingleOrDefault``1(System.Linq.ParallelQuery
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -186,7 +186,7 @@ uid: System.Linq.ParallelEnumerable.Aggregate``2(System.Linq.ParallelQuery{``0},
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -203,7 +203,7 @@ uid: System.Linq.ParallelEnumerable.Min(System.Linq.ParallelQuery{System.Int64})
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -283,7 +283,7 @@ uid: System.Linq.ParallelEnumerable.Sum(System.Linq.ParallelQuery{System.Double}
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -300,7 +300,7 @@ uid: System.Linq.ParallelEnumerable.Average(System.Linq.ParallelQuery{System.Dec
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -308,7 +308,7 @@ uid: System.Linq.ParallelEnumerable.Max(System.Linq.ParallelQuery{System.Nullabl
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -379,7 +379,7 @@ uid: System.Linq.ParallelEnumerable.Sum
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -396,7 +396,7 @@ uid: System.Linq.ParallelEnumerable.TakeWhile``1(System.Linq.ParallelQuery{``0},
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -404,7 +404,7 @@ uid: System.Linq.ParallelEnumerable.Contains``1(System.Linq.ParallelQuery{``0},`
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -421,7 +421,7 @@ uid: System.Linq.ParallelEnumerable.DefaultIfEmpty``1(System.Linq.ParallelQuery{
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -429,7 +429,7 @@ uid: System.Linq.ParallelEnumerable.Last
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -437,7 +437,7 @@ uid: System.Linq.ParallelEnumerable.Max``1(System.Linq.ParallelQuery{``0},System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -454,7 +454,7 @@ uid: System.Linq.ParallelEnumerable.ToDictionary``3(System.Linq.ParallelQuery{``
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -471,7 +471,7 @@ uid: System.Linq.ParallelEnumerable.AsSequential``1(System.Linq.ParallelQuery{``
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -488,7 +488,7 @@ uid: System.Linq.ParallelEnumerable.Min``1(System.Linq.ParallelQuery{``0},System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -577,7 +577,7 @@ uid: System.Linq.ParallelEnumerable.GroupBy``2(System.Linq.ParallelQuery{``0},Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -585,7 +585,7 @@ uid: System.Linq.ParallelEnumerable.Sum``1(System.Linq.ParallelQuery{``0},System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -593,7 +593,7 @@ uid: System.Linq.ParallelEnumerable.Max(System.Linq.ParallelQuery{System.Decimal
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -646,7 +646,7 @@ uid: System.Linq.ParallelEnumerable.ForAll``1(System.Linq.ParallelQuery{``0},Sys
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -689,7 +689,7 @@ manager: "wpickett"
 uid: System.Linq.ParallelEnumerable.AsOrdered
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -697,7 +697,7 @@ uid: System.Linq.ParallelEnumerable.ToLookup``3(System.Linq.ParallelQuery{``0},S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -750,7 +750,7 @@ uid: System.Linq.ParallelEnumerable.OrderBy``2(System.Linq.ParallelQuery{``0},Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -767,7 +767,7 @@ uid: System.Linq.ParallelEnumerable.Union``1(System.Linq.ParallelQuery{``0},Syst
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -793,7 +793,7 @@ uid: System.Linq.ParallelEnumerable.Single``1(System.Linq.ParallelQuery{``0})
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -810,7 +810,7 @@ uid: System.Linq.ParallelEnumerable.FirstOrDefault
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -818,7 +818,7 @@ uid: System.Linq.ParallelEnumerable.GroupBy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -916,7 +916,7 @@ uid: System.Linq.ParallelEnumerable.Max(System.Linq.ParallelQuery{System.Nullabl
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -924,7 +924,7 @@ uid: System.Linq.ParallelEnumerable.Sum(System.Linq.ParallelQuery{System.Nullabl
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -995,7 +995,7 @@ uid: System.Linq.ParallelEnumerable.Cast``1(System.Linq.ParallelQuery)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1021,7 +1021,7 @@ uid: System.Linq.ParallelEnumerable.Take``1(System.Linq.ParallelQuery{``0},Syste
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1065,7 +1065,7 @@ uid: System.Linq.ParallelEnumerable.ThenByDescending``2(System.Linq.OrderedParal
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1109,7 +1109,7 @@ uid: System.Linq.ParallelEnumerable.Average(System.Linq.ParallelQuery{System.Nul
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1135,7 +1135,7 @@ uid: System.Linq.ParallelEnumerable.Average``1(System.Linq.ParallelQuery{``0},Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1152,7 +1152,7 @@ uid: System.Linq.ParallelEnumerable.OrderByDescending``2(System.Linq.ParallelQue
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1214,7 +1214,7 @@ uid: System.Linq.ParallelEnumerable.SingleOrDefault
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1222,7 +1222,7 @@ uid: System.Linq.ParallelEnumerable.Aggregate``3(System.Linq.ParallelQuery{``0},
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1266,7 +1266,7 @@ uid: System.Linq.ParallelEnumerable.SelectMany
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1301,7 +1301,7 @@ uid: System.Linq.ParallelEnumerable.Any``1(System.Linq.ParallelQuery{``0},System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1309,7 +1309,7 @@ uid: System.Linq.ParallelEnumerable.Where
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1389,7 +1389,7 @@ uid: System.Linq.ParallelEnumerable.ToLookup``3(System.Linq.ParallelQuery{``0},S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1406,7 +1406,7 @@ uid: System.Linq.ParallelEnumerable.Concat
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1423,7 +1423,7 @@ uid: System.Linq.ParallelEnumerable.Average``1(System.Linq.ParallelQuery{``0},Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1440,7 +1440,7 @@ uid: System.Linq.ParallelEnumerable.Max``1(System.Linq.ParallelQuery{``0},System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1466,7 +1466,7 @@ uid: System.Linq.ParallelEnumerable.Average``1(System.Linq.ParallelQuery{``0},Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1555,7 +1555,7 @@ uid: System.Linq.ParallelEnumerable.GroupJoin``4(System.Linq.ParallelQuery{``0},
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1572,7 +1572,7 @@ uid: System.Linq.ParallelEnumerable.Intersect``1(System.Linq.ParallelQuery{``0},
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1589,7 +1589,7 @@ uid: System.Linq.ParallelEnumerable.GroupBy``3(System.Linq.ParallelQuery{``0},Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1615,7 +1615,7 @@ uid: System.Linq.ParallelEnumerable.Join``4(System.Linq.ParallelQuery{``0},Syste
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1686,7 +1686,7 @@ uid: System.Linq.ParallelEnumerable.Any``1(System.Linq.ParallelQuery{``0})
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1712,7 +1712,7 @@ uid: System.Linq.ParallelEnumerable.SelectMany``3(System.Linq.ParallelQuery{``0}
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1738,7 +1738,7 @@ uid: System.Linq.ParallelEnumerable.SkipWhile``1(System.Linq.ParallelQuery{``0},
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1746,7 +1746,7 @@ uid: System.Linq.ParallelEnumerable.Min(System.Linq.ParallelQuery{System.Nullabl
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1835,7 +1835,7 @@ uid: System.Linq.ParallelEnumerable.Sum``1(System.Linq.ParallelQuery{``0},System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1897,7 +1897,7 @@ uid: System.Linq.ParallelEnumerable.Contains``1(System.Linq.ParallelQuery{``0},`
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1923,7 +1923,7 @@ uid: System.Linq.ParallelEnumerable.Min(System.Linq.ParallelQuery{System.Nullabl
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1931,7 +1931,7 @@ uid: System.Linq.ParallelEnumerable.OrderBy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2038,7 +2038,7 @@ uid: System.Linq.ParallelEnumerable.Union
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2055,7 +2055,7 @@ uid: System.Linq.ParallelEnumerable.Where``1(System.Linq.ParallelQuery{``0},Syst
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2063,7 +2063,7 @@ uid: System.Linq.ParallelEnumerable.Sum(System.Linq.ParallelQuery{System.Nullabl
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2071,7 +2071,7 @@ uid: System.Linq.ParallelEnumerable.Max``2(System.Linq.ParallelQuery{``0},System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2097,7 +2097,7 @@ uid: System.Linq.ParallelEnumerable.Sum(System.Linq.ParallelQuery{System.Nullabl
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2105,7 +2105,7 @@ uid: System.Linq.ParallelEnumerable.SequenceEqual``1(System.Linq.ParallelQuery{`
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

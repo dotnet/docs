@@ -2,6 +2,6 @@
 uid: System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode
 ms.technology: 
   - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

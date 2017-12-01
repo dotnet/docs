@@ -66,7 +66,7 @@ uid: System.Printing.IndexedProperties.PrintPropertyDictionary.SetProperty(Syste
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

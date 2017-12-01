@@ -12,7 +12,7 @@ uid: System.Printing.IndexedProperties.PrintJobPriorityProperty.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -20,7 +20,7 @@ uid: System.Printing.IndexedProperties.PrintJobPriorityProperty.#ctor(System.Str
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

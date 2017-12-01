@@ -111,5 +111,5 @@ uid: System.Printing.PrintJobException.#ctor(System.Int32,System.String,System.E
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---

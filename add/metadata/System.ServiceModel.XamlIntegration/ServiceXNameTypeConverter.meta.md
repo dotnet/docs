@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.ServiceModel.XamlIntegration.ServiceXNameTypeConverter.CanConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ manager: "wpickett"
 uid: System.ServiceModel.XamlIntegration.ServiceXNameTypeConverter.ConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ manager: "wpickett"
 uid: System.ServiceModel.XamlIntegration.ServiceXNameTypeConverter.ConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -77,5 +77,5 @@ manager: "wpickett"
 uid: System.ServiceModel.XamlIntegration.ServiceXNameTypeConverter.CanConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

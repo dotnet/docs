@@ -200,7 +200,7 @@ manager: "wpickett"
 uid: System.Diagnostics.Contracts.Contract.Exists
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -234,7 +234,7 @@ manager: "wpickett"
 uid: System.Diagnostics.Contracts.Contract.ForAll
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Drawing.Design.ContentAlignmentEditor.EditValue
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ manager: "wpickett"
 uid: System.Drawing.Design.ContentAlignmentEditor.GetEditStyle
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

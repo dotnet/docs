@@ -236,7 +236,7 @@ manager: "wpickett"
 uid: System.Drawing.Region.Equals
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

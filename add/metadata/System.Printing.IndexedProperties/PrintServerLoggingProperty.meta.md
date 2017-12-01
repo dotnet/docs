@@ -12,7 +12,7 @@ uid: System.Printing.IndexedProperties.PrintServerLoggingProperty.Value
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -29,7 +29,7 @@ uid: System.Printing.IndexedProperties.PrintServerLoggingProperty.#ctor(System.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -37,7 +37,7 @@ uid: System.Printing.IndexedProperties.PrintServerLoggingProperty.#ctor(System.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -45,5 +45,5 @@ uid: System.Printing.IndexedProperties.PrintServerLoggingProperty.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---

@@ -29,14 +29,14 @@ manager: "wpickett"
 uid: System.Drawing.ColorConverter.GetStandardValues
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.ColorConverter.ConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -52,14 +52,14 @@ manager: "wpickett"
 uid: System.Drawing.ColorConverter.CanConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.ColorConverter.CanConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -75,7 +75,7 @@ manager: "wpickett"
 uid: System.Drawing.ColorConverter.GetStandardValuesSupported
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -109,5 +109,5 @@ manager: "wpickett"
 uid: System.Drawing.ColorConverter.ConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

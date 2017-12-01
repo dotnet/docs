@@ -30,7 +30,7 @@ uid: System.Printing.PrintCapabilities.PageOrderCapability
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -74,7 +74,7 @@ uid: System.Printing.PrintCapabilities.DeviceFontSubstitutionCapability
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -190,7 +190,7 @@ uid: System.Printing.PrintCapabilities.CollationCapability
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

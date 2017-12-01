@@ -200,7 +200,7 @@ manager: "wpickett"
 uid: System.Runtime.Serialization.NetDataContractSerializer.WriteObject
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

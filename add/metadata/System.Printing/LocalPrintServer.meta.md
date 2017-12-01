@@ -30,7 +30,7 @@ uid: System.Printing.LocalPrintServer.#ctor(System.String[],System.Printing.Prin
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -38,7 +38,7 @@ uid: System.Printing.LocalPrintServer.Commit
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -64,7 +64,7 @@ uid: System.Printing.LocalPrintServer.ConnectToPrintQueue(System.Printing.PrintQ
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -72,7 +72,7 @@ uid: System.Printing.LocalPrintServer.#ctor(System.Printing.LocalPrintServerInde
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

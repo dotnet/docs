@@ -20,14 +20,14 @@ manager: "wpickett"
 uid: System.Drawing.Design.FontEditor.EditValue
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.FontEditor.GetEditStyle
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

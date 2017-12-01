@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Drawing.RectangleConverter.GetCreateInstanceSupported
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,14 +27,14 @@ manager: "wpickett"
 uid: System.Drawing.RectangleConverter.ConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.RectangleConverter.CanConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,21 +59,21 @@ manager: "wpickett"
 uid: System.Drawing.RectangleConverter.CanConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.RectangleConverter.GetProperties
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.RectangleConverter.GetPropertiesSupported
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -98,7 +98,7 @@ manager: "wpickett"
 uid: System.Drawing.RectangleConverter.CreateInstance
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -114,7 +114,7 @@ manager: "wpickett"
 uid: System.Drawing.RectangleConverter.ConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

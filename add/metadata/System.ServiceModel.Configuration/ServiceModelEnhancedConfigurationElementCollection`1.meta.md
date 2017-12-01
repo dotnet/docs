@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection`1.BaseAdd
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

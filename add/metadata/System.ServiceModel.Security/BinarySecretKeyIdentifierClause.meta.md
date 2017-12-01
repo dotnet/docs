@@ -56,7 +56,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Security.BinarySecretKeyIdentifierClause.Matches
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

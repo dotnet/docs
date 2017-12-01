@@ -56,7 +56,7 @@ manager: "wpickett"
 uid: System.Xml.Schema.XmlAtomicValue.ValueAs
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

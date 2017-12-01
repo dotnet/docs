@@ -110,7 +110,7 @@ manager: "wpickett"
 uid: System.ServiceModel.NetHttpBinding.BuildChannelFactory
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

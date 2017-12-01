@@ -57,7 +57,7 @@ uid: System.Printing.PrintCommitAttributesException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

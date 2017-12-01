@@ -39,7 +39,7 @@ uid: System.Printing.IndexedProperties.PrintQueueAttributeProperty.#ctor(System.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

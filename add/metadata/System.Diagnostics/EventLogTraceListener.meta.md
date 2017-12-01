@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.Diagnostics.EventLogTraceListener.WriteLine
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -90,7 +90,7 @@ manager: "wpickett"
 uid: System.Diagnostics.EventLogTraceListener.Write
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

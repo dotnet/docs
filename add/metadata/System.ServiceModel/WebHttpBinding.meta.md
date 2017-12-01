@@ -146,7 +146,7 @@ manager: "wpickett"
 uid: System.ServiceModel.WebHttpBinding.BuildChannelFactory
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

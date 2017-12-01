@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Drawing.FontConverter.FontNameConverter.GetStandardValues
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,14 +27,14 @@ manager: "wpickett"
 uid: System.Drawing.FontConverter.FontNameConverter.GetStandardValuesExclusive
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.FontConverter.FontNameConverter.GetStandardValuesSupported
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -95,12 +95,12 @@ manager: "wpickett"
 uid: System.Drawing.FontConverter.FontNameConverter.ConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.FontConverter.FontNameConverter.CanConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

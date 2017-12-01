@@ -9,7 +9,7 @@ manager: "wpickett"
 
 ---
 uid: System.ServiceModel.ExtensionCollection`1.System#Collections#Generic#ICollection{System#ServiceModel#IExtension{T}}#IsReadOnly
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

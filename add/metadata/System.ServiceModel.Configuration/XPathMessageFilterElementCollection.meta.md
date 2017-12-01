@@ -29,7 +29,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Configuration.XPathMessageFilterElementCollection.Item
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

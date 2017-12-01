@@ -164,7 +164,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Configuration.BindingsSection.Item
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -47,28 +47,28 @@ manager: "wpickett"
 uid: System.ServiceModel.Discovery.Configuration.DiscoveryVersionConverter.ConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.DiscoveryVersionConverter.CanConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.DiscoveryVersionConverter.CanConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.DiscoveryVersionConverter.ConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

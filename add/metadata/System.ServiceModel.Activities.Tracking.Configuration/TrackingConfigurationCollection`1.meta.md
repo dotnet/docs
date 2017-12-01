@@ -38,7 +38,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1.Item
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

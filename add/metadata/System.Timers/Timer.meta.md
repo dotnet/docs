@@ -65,7 +65,7 @@ manager: "wpickett"
 uid: System.Timers.Timer.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

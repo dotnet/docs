@@ -2,12 +2,12 @@
 uid: System.Runtime.Serialization.OnDeserializedAttribute
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Serialization.OnDeserializedAttribute.#ctor
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

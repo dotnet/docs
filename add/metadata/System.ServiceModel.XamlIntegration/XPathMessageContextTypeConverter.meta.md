@@ -29,7 +29,7 @@ manager: "wpickett"
 uid: System.ServiceModel.XamlIntegration.XPathMessageContextTypeConverter.CanConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -45,7 +45,7 @@ manager: "wpickett"
 uid: System.ServiceModel.XamlIntegration.XPathMessageContextTypeConverter.CanConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -61,7 +61,7 @@ manager: "wpickett"
 uid: System.ServiceModel.XamlIntegration.XPathMessageContextTypeConverter.ConvertTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -77,5 +77,5 @@ manager: "wpickett"
 uid: System.ServiceModel.XamlIntegration.XPathMessageContextTypeConverter.ConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

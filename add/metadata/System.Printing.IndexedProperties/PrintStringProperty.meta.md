@@ -3,7 +3,7 @@ uid: System.Printing.IndexedProperties.PrintStringProperty
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -29,7 +29,7 @@ uid: System.Printing.IndexedProperties.PrintStringProperty.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

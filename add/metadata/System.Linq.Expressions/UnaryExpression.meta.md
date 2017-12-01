@@ -57,7 +57,7 @@ uid: System.Linq.Expressions.UnaryExpression.IsLiftedToNull
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -65,7 +65,7 @@ uid: System.Linq.Expressions.UnaryExpression.Operand
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -73,7 +73,7 @@ uid: System.Linq.Expressions.UnaryExpression.IsLifted
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -47,7 +47,7 @@ manager: "wpickett"
 uid: System.ServiceModel.BasicHttpBinding.BuildChannelFactory
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

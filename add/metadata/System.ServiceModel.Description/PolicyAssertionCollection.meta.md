@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Description.PolicyAssertionCollection.Remove
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -99,5 +99,5 @@ manager: "wpickett"
 uid: System.ServiceModel.Description.PolicyAssertionCollection.Contains
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

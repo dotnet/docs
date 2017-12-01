@@ -4,7 +4,7 @@ ms.technology:
   - "dotnet-standard"
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -13,5 +13,5 @@ ms.technology:
   - "dotnet-standard"
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "ghogen"
+manager: "wpickett"
 ---

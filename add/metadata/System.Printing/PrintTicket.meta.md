@@ -66,7 +66,7 @@ uid: System.Printing.PrintTicket.Collation
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -137,7 +137,7 @@ uid: System.Printing.PrintTicket.GetXmlStream
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -163,7 +163,7 @@ uid: System.Printing.PrintTicket.PageOrder
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -198,7 +198,7 @@ uid: System.Printing.PrintTicket.PageResolution
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -56,14 +56,14 @@ manager: "wpickett"
 uid: System.ServiceModel.Dispatcher.SeekableXPathNavigator.ComparePosition
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetNamespace
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

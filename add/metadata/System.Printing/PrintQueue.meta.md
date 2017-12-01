@@ -12,7 +12,7 @@ uid: System.Printing.PrintQueue.IsServerUnknown
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -119,7 +119,7 @@ uid: System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Printing.PrintQue
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -172,7 +172,7 @@ uid: System.Printing.PrintQueue.InternalDispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -216,7 +216,7 @@ uid: System.Printing.PrintQueue.IsOffline
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -224,7 +224,7 @@ uid: System.Printing.PrintQueue.IsPaperJammed
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -304,7 +304,7 @@ uid: System.Printing.PrintQueue.NeedUserIntervention
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -402,7 +402,7 @@ uid: System.Printing.PrintQueue.CreateXpsDocumentWriter
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -410,7 +410,7 @@ uid: System.Printing.PrintQueue.QueueStatus
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -445,7 +445,7 @@ uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -507,7 +507,7 @@ uid: System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Double@,System.Do
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -560,7 +560,7 @@ uid: System.Printing.PrintQueue.IsPaused
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -604,7 +604,7 @@ uid: System.Printing.PrintQueue.Commit
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -693,7 +693,7 @@ uid: System.Printing.PrintQueue.IsProcessing
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -701,7 +701,7 @@ uid: System.Printing.PrintQueue.Priority
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -781,7 +781,7 @@ uid: System.Printing.PrintQueue.CreateXpsDocumentWriter(System.String,System.Pri
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -789,7 +789,7 @@ uid: System.Printing.PrintQueue.IsDirect
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -833,7 +833,7 @@ uid: System.Printing.PrintQueue.IsBidiEnabled
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -841,7 +841,7 @@ uid: System.Printing.PrintQueue.MergeAndValidatePrintTicket
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

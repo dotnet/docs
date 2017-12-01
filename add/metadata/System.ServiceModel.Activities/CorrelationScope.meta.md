@@ -47,7 +47,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Activities.CorrelationScope.CacheMetadata
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

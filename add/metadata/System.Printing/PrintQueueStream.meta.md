@@ -21,7 +21,7 @@ uid: System.Printing.PrintQueueStream.Write(System.Byte[],System.Int32,System.In
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -29,7 +29,7 @@ uid: System.Printing.PrintQueueStream.#ctor(System.Printing.PrintQueue,System.St
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -154,7 +154,7 @@ uid: System.Printing.PrintQueueStream.Close
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

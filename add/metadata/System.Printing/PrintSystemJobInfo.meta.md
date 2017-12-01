@@ -30,7 +30,7 @@ uid: System.Printing.PrintSystemJobInfo.IsSpooling
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -56,7 +56,7 @@ uid: System.Printing.PrintSystemJobInfo.IsInError
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -64,7 +64,7 @@ uid: System.Printing.PrintSystemJobInfo.IsPrinted
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -90,7 +90,7 @@ uid: System.Printing.PrintSystemJobInfo.JobSize
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -107,7 +107,7 @@ uid: System.Printing.PrintSystemJobInfo.NumberOfPages
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -124,7 +124,7 @@ uid: System.Printing.PrintSystemJobInfo.JobStream
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -150,7 +150,7 @@ uid: System.Printing.PrintSystemJobInfo.TimeJobSubmitted
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -221,7 +221,7 @@ uid: System.Printing.PrintSystemJobInfo.IsDeleting
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -229,7 +229,7 @@ uid: System.Printing.PrintSystemJobInfo.IsPaused
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -237,7 +237,7 @@ uid: System.Printing.PrintSystemJobInfo.IsRetained
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -281,7 +281,7 @@ uid: System.Printing.PrintSystemJobInfo.JobIdentifier
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

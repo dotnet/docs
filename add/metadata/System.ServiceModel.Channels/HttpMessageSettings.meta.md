@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Channels.HttpMessageSettings.Equals
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

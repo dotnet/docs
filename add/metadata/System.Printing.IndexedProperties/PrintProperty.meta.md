@@ -21,7 +21,7 @@ uid: System.Printing.IndexedProperties.PrintProperty.Value
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -47,7 +47,7 @@ uid: System.Printing.IndexedProperties.PrintProperty.Name
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

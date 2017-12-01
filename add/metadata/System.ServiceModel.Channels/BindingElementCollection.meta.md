@@ -74,14 +74,14 @@ manager: "wpickett"
 uid: System.ServiceModel.Channels.BindingElementCollection.Remove
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Channels.BindingElementCollection.Contains
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

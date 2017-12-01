@@ -38,7 +38,7 @@ manager: "wpickett"
 uid: System.Runtime.Serialization.Configuration.TypeElementCollection.Item
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

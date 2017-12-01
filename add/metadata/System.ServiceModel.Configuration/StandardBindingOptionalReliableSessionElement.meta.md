@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.ApplyConfiguration
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -36,7 +36,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.InitializeFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

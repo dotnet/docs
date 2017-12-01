@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.Globalization.HijriCalendar.IsLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -36,7 +36,7 @@ manager: "wpickett"
 uid: System.Globalization.HijriCalendar.GetDaysInMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -70,7 +70,7 @@ manager: "wpickett"
 uid: System.Globalization.HijriCalendar.GetMonthsInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -113,7 +113,7 @@ manager: "wpickett"
 uid: System.Globalization.HijriCalendar.ToDateTime
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -138,7 +138,7 @@ manager: "wpickett"
 uid: System.Globalization.HijriCalendar.GetDaysInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -190,7 +190,7 @@ manager: "wpickett"
 uid: System.Globalization.HijriCalendar.IsLeapYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -206,7 +206,7 @@ manager: "wpickett"
 uid: System.Globalization.HijriCalendar.IsLeapDay
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -231,7 +231,7 @@ manager: "wpickett"
 uid: System.Globalization.HijriCalendar.GetLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

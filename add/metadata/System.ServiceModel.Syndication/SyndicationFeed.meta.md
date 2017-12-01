@@ -236,7 +236,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Syndication.SyndicationFeed.Load
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

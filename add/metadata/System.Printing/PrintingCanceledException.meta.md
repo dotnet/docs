@@ -21,7 +21,7 @@ uid: System.Printing.PrintingCanceledException.#ctor(System.Int32,System.String,
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

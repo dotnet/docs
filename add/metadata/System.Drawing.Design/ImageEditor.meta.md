@@ -29,14 +29,14 @@ manager: "wpickett"
 uid: System.Drawing.Design.ImageEditor.EditValue
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.ImageEditor.GetEditStyle
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -106,7 +106,7 @@ manager: "wpickett"
 uid: System.Drawing.Design.ImageEditor.GetPaintValueSupported
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -131,5 +131,5 @@ manager: "wpickett"
 uid: System.Drawing.Design.ImageEditor.PaintValue
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

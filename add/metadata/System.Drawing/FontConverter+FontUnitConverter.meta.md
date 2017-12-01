@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Drawing.FontConverter.FontUnitConverter.GetStandardValues
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

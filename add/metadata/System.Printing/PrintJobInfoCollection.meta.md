@@ -21,7 +21,7 @@ uid: System.Printing.PrintJobInfoCollection.Dispose
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

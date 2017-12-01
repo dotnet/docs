@@ -3,7 +3,7 @@ uid: System.Printing.IndexedProperties.PrintQueueStatusProperty
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -38,7 +38,7 @@ uid: System.Printing.IndexedProperties.PrintQueueStatusProperty.#ctor(System.Str
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -93,7 +93,7 @@ uid: System.Printing.PrintSystemObject.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -101,7 +101,7 @@ uid: System.Printing.PrintSystemObject.PropertiesCollection
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

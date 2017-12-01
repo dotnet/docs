@@ -3,7 +3,7 @@ uid: System.Printing.IndexedProperties.PrintQueueProperty
 ms.technology: 
   - "dotnet-standard"
 ms.author: "dotnet-bot"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

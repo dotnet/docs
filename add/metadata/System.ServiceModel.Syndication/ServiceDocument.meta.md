@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.ServiceModel.Syndication.ServiceDocument.Load
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

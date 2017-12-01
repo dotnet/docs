@@ -7,7 +7,6 @@ ms.date: 12/01/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: 9a978eef-3660-4b8f-bced-4620ff392476
 ---
 
 # Unit testing C# with NUnit and .NET Core

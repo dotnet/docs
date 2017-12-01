@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Text;
 
 namespace SystemDateTimeReference
 {
@@ -79,16 +76,16 @@ namespace SystemDateTimeReference
             var thTH = new System.Globalization.CultureInfo("th-TH");
             var thCalendar = thTH.DateTimeFormat.Calendar;
             var dat = new DateTime(1395, 8, 18, thCalendar);
-            Console.WriteLine("Using the Umm-al-Qura calendar:");
+            Console.WriteLine("Using the Thai Buddhist Era calendar:");
             Console.WriteLine($"Date: {dat.ToString("d", thTH)}");
             Console.WriteLine($"Day of Week: {thCalendar.GetDayOfWeek(dat)}");
             Console.WriteLine($"Week of year: {thCalendar.GetWeekOfYear(dat, System.Globalization.CalendarWeekRule.FirstDay, DayOfWeek.Sunday)}\n");
 
-            var greg = new GregorianCalendar();
+            var greg = new System.Globalization.GregorianCalendar();
             Console.WriteLine("Using the Gregorian calendar:");
             Console.WriteLine($"Date: {dat:d}");
             Console.WriteLine($"Day of Week: {dat.DayOfWeek}");
-            Console.WriteLine($"Week of year: {greg.GetWeekOfYear(dat, CalendarWeekRule.FirstDay,DayOfWeek.Sunday)}");
+            Console.WriteLine($"Week of year: {greg.GetWeekOfYear(dat, System.Globalization.CalendarWeekRule.FirstDay,DayOfWeek.Sunday)}");
             // Press "Run" to see the output
             // </Snippet5>
         }

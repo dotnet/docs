@@ -50,33 +50,35 @@
 
 This section contains examples for many common uses of the `DateTime` struct:
   
- [Instantiating a `DateTime` object](#instantiating-a-datetime-object)   
+ [Initializing a `DateTime` object](#initializing-a-datetime-object)   
  [DateTime values and their string representations](#datetime-values-and-their-string-representations)   
- [Converting strings to DateTime values](#converting-strings-to-datetime-values)   
+ [Parsing DateTime values from strings](#parsing-datetime-values-from-strings)   
  [DateTime resolution](#datetime-resolution)   
  [DateTime values and calendars](#datetime-values-and-calendars)   
  [Persisting DateTime values](#persisting-datetime-values)   
  [Comparing for equality within tolerance](#comparing-for-equality-within-tolerance)
 
-### Instantiating a DateTime object  
+You can download the entire set of examples from this article in either [Visual Basic](https://github.com/docs/samples/snippets/visualbasic/System.DateTime/) or [C#](https://github.com/docs/samples/snippets/csharp/System.DateTime/) from the docs repository on GitHub.
 
-You can create a new `DateTime` value in many different ways:
+### Initializing a DateTime object  
+
+You can assign an initial value to a new `DateTime` value in many different ways:
 
 - Calling a constructor, either one where you specify arguments for values, or use the implicit default constructor.
 - Assigning a `DateTime` to one the return value of a property or method.
-- Parsing the a `DateTime` value from its string representation.
+- Parsing a `DateTime` value from its string representation.
 - Using Visual Basic specific language features to instantiate a `DateTime`. 
 
 The following code snippets show examples of each:
 
 #### Invoke Constructors
 
-You can call any of the overloads of the <xref:System.DateTime> constructor that allow you to specify specific elements of the date and time value (such as the year, month, and day, or the number of ticks). The following code illustrates a call to one of the <xref:System.DateTime> constructors to create a date with a specific year, month, day, hour, minute, and second.  
+You call any of the overloads of the <xref:System.DateTime> constructor that specifies elements of the date and time value (such as the year, month, and day, or the number of ticks). The following code creates a specific date using the <xref:System.DateTime> constructor specifying the year, month, day, hour, minute, and second.  
 
 [!code-vb[System.DateTime.Instantiation#1](~/samples/snippets/visualbasic/System.DateTime/Instantiation.vb#1)]  
 [!code-csharp-interactive[System.DateTime.Instantiation#1](~/samples/snippets/csharp/System.DateTime/Instantiation.cs#1)]
 
-If you want the default value for a `DateTime` object, you can invoke the `DateTime` structure's implicit default constructor. (For details on the implicit default constructor of a value type, see [Value Types](~/docs/csharp/language-reference/keywords/value-types.md).) An approximate equivalent, for compilers that support it, is declaring a <xref:System.DateTime> value without explicitly assigning a date and time to it. The following example illustrates a call to the <xref:System.DateTime> implicit default constructor in C# and Visual Basic, as well as a <xref:System.DateTime> variable declaration with no assignment in Visual Basic.  
+You invoke the `DateTime` structure's implicit default constructor when you want a `DateTime` initialized to its default value. (For details on the implicit default constructor of a value type, see [Value Types](~/docs/csharp/language-reference/keywords/value-types.md).) Some compilers also support declaring a <xref:System.DateTime> value without explicitly assigning a value to it. Creating a value without an explicit initialization also results in the default value. The following example illustrates the <xref:System.DateTime> implicit default constructor in C# and Visual Basic, as well as a <xref:System.DateTime> declaration without assignment in Visual Basic.  
   
 [!code-vb[System.DateTime.Instantiation#5](~/samples/snippets/visualbasic/System.DateTime/Instantiation.vb#5)]  
 [!code-csharp-interactive[System.DateTime.Instantiation#5](~/samples/snippets/csharp/System.DateTime/Instantiation.cs#5)]
@@ -90,14 +92,14 @@ You can assign the <xref:System.DateTime> object a date and time value returned 
 
 #### Parsing a string that represents a DateTime
 
-You can parse the string representation of a date and time value. The <xref:System.DateTime.Parse%2A>, <xref:System.DateTime.ParseExact%2A>, <xref:System.DateTime.TryParse%2A>, and <xref:System.DateTime.TryParseExact%2A> methods all convert a string to its equivalent date and time value. The following examples use the <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.ParseExact%2A> methods to parse a string and convert it to a <xref:System.DateTime> value. The second format uses a form supported by the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard for representing date and time in string format. This standard representation is often used to transfer date information in web services.
+The <xref:System.DateTime.Parse%2A>, <xref:System.DateTime.ParseExact%2A>, <xref:System.DateTime.TryParse%2A>, and <xref:System.DateTime.TryParseExact%2A> methods all convert a string to its equivalent date and time value. The following examples use the <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.ParseExact%2A> methods to parse a string and convert it to a <xref:System.DateTime> value. The second format uses a form supported by the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard for representing date and time in string format. This standard representation is often used to transfer date information in web services.
   
 [!code-vb[System.DateTime.Instantiation#4](~/samples/snippets/visualbasic/System.DateTime/Instantiation.vb#4)]  
 [!code-csharp-interactive[System.DateTime.Instantiation#4](~/samples/snippets/csharp/System.DateTime/Instantiation.cs#4)]
 
-Note that the <xref:System.DateTime.TryParse%2A> and <xref:System.DateTime.TryParseExact%2A> methods indicate whether a particular string contains a valid representation of a <xref:System.DateTime> value in addition to performing the conversion.  
+The <xref:System.DateTime.TryParse%2A> and <xref:System.DateTime.TryParseExact%2A> methods indicate whether a string is a valid representation of a <xref:System.DateTime> value in addition to performing the conversion.  
 
-#### Language specific syntax for Visual Basic
+#### Language-specific syntax for Visual Basic
 
 The following Visual Basic statement initializes a new <xref:System.DateTime> value.  
   
@@ -105,24 +107,24 @@ The following Visual Basic statement initializes a new <xref:System.DateTime> va
 
 ### DateTime values and their string representations  
 
-Internally, all <xref:System.DateTime> values are represented as the number of ticks (the number of 100-nanosecond intervals) that have elapsed since 12:00:00 midnight, January 1, 0001. The actual <xref:System.DateTime> value is independent of the way in which that value appears when displayed in a user interface element or when written to a file. The appearance of a <xref:System.DateTime> value is the result of a formatting operation. Formatting is the process of converting a value to its string representation.  
+Internally, all <xref:System.DateTime> values are represented as the number of ticks (the number of 100-nanosecond intervals) that have elapsed since 12:00:00 midnight, January 1, 0001. The actual <xref:System.DateTime> value is independent of the way in which that value appears when displayed. The appearance of a <xref:System.DateTime> value is the string result of a formatting operation that converts a value to its string representation.  
   
- Because the appearance of date and time values is dependent on such factors as culture, international standards, application requirements, and personal preference, the <xref:System.DateTime> structure offers a great deal of flexibility in formatting date and time values through the overloads of its <xref:System.DateTime.ToString%2A> method. The default <xref:System.DateTime.ToString?displayProperty=nameWithType> method returns the string representation of a date and time value using the current culture's short date and long time pattern. The following example uses the default <xref:System.DateTime.ToString?displayProperty=nameWithType> method to display the date and time using the short date and long time pattern for the en-US culture, the current culture on the computer on which the example was run.  
+The appearance of date and time values is dependent on culture, international standards, application requirements, and personal preference. The <xref:System.DateTime> structure offers flexibility in formatting date and time values through overloads of  <xref:System.DateTime.ToString%2A>. The default <xref:System.DateTime.ToString?displayProperty=nameWithType> method returns the string representation of a date and time value using the current culture's short date and long time pattern. The following example uses the default <xref:System.DateTime.ToString?displayProperty=nameWithType> method. It displays the date and time using the short date and long time pattern for the current culture. The en-us culture is the current culture on the computer on which the example was run.  
   
 [!code-csharp-interactive[System.DateTime.Formatting#1](~/samples/snippets/csharp/System.DateTime/StringFormat.cs#1)]
 [!code-vb[System.DateTime.Formatting#1](~/samples/snippets/visualbasic/System.DateTime/StringFormat.vb#1)]  
 
- The <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method returns the string representation of a date and time value using the short date and long time pattern of a specific culture. The following example uses the <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to display the date and time using the short date and long time pattern for the fr-FR culture.  
+You may need to format dates in a specific culture to support web scenarios where the server may be in a different culture from the client. You specify the culture using the <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to create the short date and long time representation in a specific culture. The following example uses the <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to display the date and time using the short date and long time pattern for the fr-fr culture.  
   
 [!code-csharp-interactive[System.DateTime.Formatting#2](~/samples/snippets/csharp/System.DateTime/StringFormat.cs#2)]
 [!code-vb[System.DateTime.Formatting#2](~/samples/snippets/visualbasic/System.DateTime/StringFormat.vb#2)]  
 
- The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method returns the string representation of the date and time in a format defined by a standard or custom format specifier and using the formatting conventions of the current culture. The following example uses the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method to display the full date and time pattern for the en-US culture, the current culture on the computer on which the example was run.  
+ Other applications may require different string representations of a date. The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method returns the string representation defined by a standard or custom format specifier using the formatting conventions of the current culture. The following example uses the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method to display the full date and time pattern for the en-us culture, the current culture on the computer on which the example was run.  
   
 [!code-csharp-interactive[System.DateTime.Formatting#3](~/samples/snippets/csharp/System.DateTime/StringFormat.cs#3)]
 [!code-vb[System.DateTime.Formatting#3](~/samples/snippets/visualbasic/System.DateTime/StringFormat.vb#3)]  
 
- The <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method returns the string representation of the date and time in a format defined by a specific format specifier and using the formatting conventions of a specific culture. The following example uses the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method to display the full date and time pattern for the fr-FR culture.  
+ Finally, you can specify both the culture and the representation using the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method. The following example uses the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method to display the full date and time pattern for the fr-fr culture.  
 
 [!code-csharp-interactive[System.DateTime.Formatting#4](~/samples/snippets/csharp/System.DateTime/StringFormat.cs#4)]
 [!code-vb[System.DateTime.Formatting#4](~/samples/snippets/visualbasic/System.DateTime/StringFormat.vb#4)]  
@@ -134,20 +136,20 @@ The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithTy
 
 For more information about formatting <xref:System.DateTime> values, see  [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
 
-### Converting strings to DateTime values  
+### Parsing DateTime values from strings
 
-Parsing involves converting the string representation of a date and time to a <xref:System.DateTime> value. Typically, date and time strings have two different usages in applications:  
+Parsing converts the string representation of a date and time to a <xref:System.DateTime> value. Typically, date and time strings have two different usages in applications:  
   
--   They represent a date and time that can take a variety of forms and that reflect the conventions of either the current culture or a specific culture. For example, an application may allow a user whose current culture is en-US to input a date value as "12/15/2013" or "December 15, 2013", and allow a user whose current culture is en-GB to input a date value as "15/12/2013" or "15 December 2013".  
+-   A date and time takes a variety of forms and reflects the conventions of either the current culture or a specific culture. For example, an application allows a user whose current culture is en-us to input a date value as "12/15/2013" or "December 15, 2013". It allows a user whose current culture is en-gb to input a date value as "15/12/2013" or "15 December 2013."  
   
--   They represent a date and time in a predefined format. For example, an application may serialize a date as "20130103" independently of the culture on which the app is running, or it may require that a date be input in the current culture's short date format.
+-   A date and time is represented in a predefined format. For example, an application serializes a date as "20130103" independently of the culture on which the app is running. An application may require dates be input in the current culture's short date format.
   
- You can use the <xref:System.DateTime.Parse%2A> or <xref:System.DateTime.TryParse%2A> method to convert a string that might reflect one of the common date and time formats used by a culture to a <xref:System.DateTime> value. The following example shows how you can use <xref:System.DateTime.TryParse%2A> to convert date strings in a number of different culture-specific formats to a <xref:System.DateTime> value. It changes the current culture to English (Great Britain) and calls the <xref:System.DateTime.GetDateTimeFormats> method to generate an array of date and time strings. It then passes each element in the array to the <xref:System.DateTime.TryParse%2A> method. The output from the example shows that the parsing method was able to successfully convert each of the culture-specific date and time strings.  
+You use the <xref:System.DateTime.Parse%2A> or <xref:System.DateTime.TryParse%2A> method to convert a string from one of the common date and time formats used by a culture to a <xref:System.DateTime> value. The following example shows how you can use <xref:System.DateTime.TryParse%2A> to convert date strings in different culture-specific formats to a <xref:System.DateTime> value. It changes the current culture to English (Great Britain) and calls the <xref:System.DateTime.GetDateTimeFormats> method to generate an array of date and time strings. It then passes each element in the array to the <xref:System.DateTime.TryParse%2A> method. The output from the example shows the parsing method was able to successfully convert each of the culture-specific date and time strings.  
   
 [!code-csharp-interactive[System.DateTime.Parsing#1](~/samples/snippets/csharp/System.DateTime/Parsing.cs#1)]
 [!code-vb[System.DateTime.Parsing#1](~/samples/snippets/visualbasic/System.DateTime/Parsing.vb#1)]  
 
-You can use the <xref:System.DateTime.TryParse%2A> and <xref:System.DateTime.TryParseExact%2A> methods to convert a date and time string that must match a particular format or formats to a <xref:System.DateTime> value. You specify the required format or formats as a parameter to the parsing methodby using one or more  or  date and time format strings. The following example uses the <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> method to convert strings that must be either in a "yyyyMMdd" format or a "HHmmss" format to <xref:System.DateTime> values.  
+You use the <xref:System.DateTime.TryParse%2A> and <xref:System.DateTime.TryParseExact%2A> methods to convert a string that must match a particular format or formats to a <xref:System.DateTime> value. You specify the required format or formats as a parameter to the parsing method. The parameter must be one or more date and time format strings. The following example uses the <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> method to convert strings that must be either in a "yyyyMMdd" format or a "HHmmss" format to <xref:System.DateTime> values.  
   
 [!code-csharp-interactive[System.DateTime.Parsing#2](~/samples/snippets/csharp/System.DateTime/Parsing.cs#2)]
 [!code-vb[System.DateTime.Parsing#2](~/samples/snippets/visualbasic/System.DateTime/Parsing.vb#2)]  
@@ -157,7 +159,7 @@ One common use for the <xref:System.DateTime.Parse%2A> and <xref:System.DateTime
 [!code-csharp-interactive[System.DateTime.Parsing#3](~/samples/snippets/csharp/System.DateTime/Parsing.cs#3)]
 [!code-vb[System.DateTime.Parsing#3](~/samples/snippets/visualbasic/System.DateTime/Parsing.vb#3)]  
 
-The <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.ParseExact%2A> methods throw an exception if the string to be converted to a <xref:System.DateTime> value cannot be parsed. The <xref:System.DateTime.TryParse%2A> and <xref:System.DateTime.TryParseExact%2A> methods return a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed. Because the parsing operation for date and time strings, particularly if strings are input by users, tends to have a high failure rate, and because exception handling is expensive, you should use the <xref:System.DateTime.TryParse%2A> or <xref:System.DateTime.TryParseExact%2A> methods in scenarios where performance is important or conversions are subject to a high rate of failure.  
+If the string cannot be parsed the <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.ParseExact%2A> methods throw an exception. The <xref:System.DateTime.TryParse%2A> and <xref:System.DateTime.TryParseExact%2A> methods return a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed. You should use the <xref:System.DateTime.TryParse%2A> or <xref:System.DateTime.TryParseExact%2A> methods in scenarios where performance is important. The parsing operation for date and time strings tends to have a high failure rate and exception handling is expensive. Examples are if strings are input by users or coming from an unknown source. 
   
 For more information about parsing date and time values, see [Parsing Date and Time Strings](~/docs/standard/base-types/parsing-datetime.md).  
 
@@ -166,9 +168,9 @@ For more information about parsing date and time values, see [Parsing Date and T
 > [!NOTE]
 >  As an alternative to performing date and time arithmetic on <xref:System.DateTime> values to measure elapsed time, you can use the <xref:System.Diagnostics.Stopwatch> class.  
   
-The <xref:System.DateTime.Ticks%2A> property expresses date and time values in units of one ten-millionth of a second, and the <xref:System.DateTime.Millisecond%2A> property returns the thousandths of a second in a date and time value. However, if you are using repeated calls to the <xref:System.DateTime.Now%2A?displayProperty=nameWithType> property to measure elapsed time, and you are concerned with small time intervals less than 100 milliseconds, you should note that values returned by the <xref:System.DateTime.Now%2A?displayProperty=nameWithType> property are dependent on the system clock, which on Windows 7 and Windows 8 systems has a resolution of approximately 15 milliseconds.  
+The <xref:System.DateTime.Ticks%2A> property expresses date and time values in units of one ten-millionth of a second. The <xref:System.DateTime.Millisecond%2A> property returns the thousandths of a second in a date and time value. Using repeated calls to the <xref:System.DateTime.Now%2A?displayProperty=nameWithType> property to measure elapsed time is dependent on the system clock. The system clock on  Windows 7 and Windows 8 systems has a resolution of approximately 15 milliseconds. This resolution affects small time intervals less than 100 milliseconds. 
   
-The following example illustrates the dependence of current date and time values on the resolution of the system clock. In the example, an outer loop repeats 20 times, and an inner loop serves to delay the outer loop. If the value of the outer loop counter is 10, a call to the <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType> method introduces a five millisecond delay. As the output from the example shows, the number of milliseconds in returned by the `DateTime.Now.Milliseconds` property changed only after the call to <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType>.  
+The following example illustrates the dependence of current date and time values on the resolution of the system clock. In the example, an outer loop repeats 20 times, and an inner loop serves to delay the outer loop. If the value of the outer loop counter is 10, a call to the <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType> method introduces a five-millisecond delay. The following example shows the number of milliseconds returned by the `DateTime.Now.Milliseconds` property changes only after the call to <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType>.  
 
 [!code-csharp-interactive[System.DateTime.Resolution#1](~/samples/snippets/csharp/System.DateTime/Resolution.cs#1)]
 [!code-vb[System.DateTime.Resolution#1](~/samples/snippets/visualbasic/System.DateTime/Resolution.vb#1)]  
@@ -193,9 +195,9 @@ The .NET Framework Class Library includes a number of calendar classes, all of w
 -   The <xref:System.Globalization.ThaiBuddhistCalendar> class.  
 -   The <xref:System.Globalization.UmAlQuraCalendar> class.  
   
-Each culture uses a default calendar defined by its read-only <xref:System.Globalization.CultureInfo.Calendar%2A?displayProperty=nameWithType> property and supports one or more calendars defined by its read-only <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=nameWithType> property. The calendar currently used by a specific <xref:System.Globalization.CultureInfo> object is defined by its <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType> property; it must be one of the calendars found in the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=nameWithType> array.  
+Each culture uses a default calendar defined by its read-only <xref:System.Globalization.CultureInfo.Calendar%2A?displayProperty=nameWithType> property. Each culture may support one or more calendars defined by its read-only <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=nameWithType> property. The calendar currently used by a specific <xref:System.Globalization.CultureInfo> object is defined by its <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType> property. It must be one of the calendars found in the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=nameWithType> array.  
   
-A culture's current calendar is used in all formatting operations for that culture. For example, the default calendar of the Thai Buddhist culture is the Thai Buddhist Era calendar, which is represented by the <xref:System.Globalization.ThaiBuddhistCalendar> class.  When a <xref:System.Globalization.CultureInfo> object that represents the Thai Buddhist culture is used in a date and time formatting operation, the Thai Buddhist Era calendar is used by default, and the Gregorian calendar is used only if the culture's <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType> property is changed, as the following example shows.  
+A culture's current calendar is used in all formatting operations for that culture. For example, the default calendar of the Thai Buddhist culture is the Thai Buddhist Era calendar, which is represented by the <xref:System.Globalization.ThaiBuddhistCalendar> class.  When a <xref:System.Globalization.CultureInfo> object that represents the Thai Buddhist culture is used in a date and time formatting operation, the Thai Buddhist Era calendar is used by default. The Gregorian calendar is used only if the culture's <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType> property is changed, as the following example shows:  
   
 [!code-csharp-interactive[System.DateTime.Calendar#1](~/samples/snippets/csharp/System.DateTime/Calendar.cs#1)]
 [!code-vb[System.DateTime.Calendar#1](~/samples/snippets/visualbasic/System.DateTime/Calendar.vb#1)]  
@@ -205,19 +207,19 @@ A culture's current calendar is also used in all parsing operations for that cul
 [!code-csharp-interactive[System.DateTime.Calendar#2](~/samples/snippets/csharp/System.DateTime/Calendar.cs#2)]
 [!code-vb[System.DateTime.Calendar#2](~/samples/snippets/visualbasic/System.DateTime/Calendar.vb#2)]  
 
-You can also instantiate a <xref:System.DateTime> value by using the date and time elements (such as the number of the year, month, and day) of a specific calendar by calling a [DateTime constructor](xref:System.DateTime.%23ctor%2A) that includes a `calendar` parameter and passing it a <xref:System.Globalization.CultureInfo.Calendar%2A> object that represents that calendar. The following example does this by using the date and time elements from the <xref:System.Globalization.ThaiBuddhistCalendar> calendar.  
+You instantiate a <xref:System.DateTime> value using the date and time elements (number of the year, month, and day) of a specific calendar by calling a [DateTime constructor](xref:System.DateTime.%23ctor%2A) that includes a `calendar` parameter and passing it a <xref:System.Globalization.CultureInfo.Calendar%2A> object that represents that calendar. The following example uses the date and time elements from the <xref:System.Globalization.ThaiBuddhistCalendar> calendar.  
   
 [!code-csharp-interactive[System.DateTime.Calendar#3](~/samples/snippets/csharp/System.DateTime/Calendar.cs#3)]
 [!code-vb[System.DateTime.Calendar#3](~/samples/snippets/visualbasic/System.DateTime/Calendar.vb#3)]  
 
 <xref:System.DateTime> constructors that do not include a `calendar` parameter assume that the date and time elements are expressed as units in the Gregorian calendar.  
   
-All other <xref:System.DateTime> properties and methods use the Gregorian calendar. For example, the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> property returns the year in the Gregorian calendar, and the <xref:System.DateTime.IsLeapYear%28System.Int32%29?displayProperty=nameWithType> method assumes that the `year` parameter is a year in the Gregorian calendar.  Each <xref:System.DateTime> member that uses the Gregorian calendar has a corresponding member of the <xref:System.Globalization.CultureInfo.Calendar%2A> class that  uses a specific calendar. For example, the <xref:System.Globalization.Calendar.GetYear%2A?displayProperty=nameWithType> method returns the year in a specific calendar, and the <xref:System.Globalization.Calendar.IsLeapYear%2A?displayProperty=nameWithType> method interprets the `year` parameter as a year number in a specific calendar. The following example use both the <xref:System.DateTime> and the corresponding members of the  <xref:System.Globalization.ThaiBuddhistCalendar> class.  
+All other <xref:System.DateTime> properties and methods use the Gregorian calendar. For example, the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> property returns the year in the Gregorian calendar, and the <xref:System.DateTime.IsLeapYear%28System.Int32%29?displayProperty=nameWithType> method assumes that the `year` parameter is a year in the Gregorian calendar.  Each <xref:System.DateTime> member that uses the Gregorian calendar has a corresponding member of the <xref:System.Globalization.CultureInfo.Calendar%2A> class that uses a specific calendar. For example, the <xref:System.Globalization.Calendar.GetYear%2A?displayProperty=nameWithType> method returns the year in a specific calendar, and the <xref:System.Globalization.Calendar.IsLeapYear%2A?displayProperty=nameWithType> method interprets the `year` parameter as a year number in a specific calendar. The following example uses both the <xref:System.DateTime> and the corresponding members of the  <xref:System.Globalization.ThaiBuddhistCalendar> class.  
   
 [!code-csharp-interactive[System.DateTime.Calendar#4](~/samples/snippets/csharp/System.DateTime/Calendar.cs#4)]
 [!code-vb[System.DateTime.Calendar#4](~/samples/snippets/visualbasic/System.DateTime/Calendar.vb#4)]  
 
-Although the <xref:System.DateTime> structure includes <xref:System.DateTime.DayOfWeek%2A> property that returns the day of the week in the Gregorian calendar, it does not include a member that allows you to retrieve the week number of the year. To retrieve the week of the year, call the individual calendar's <xref:System.Globalization.Calendar.GetWeekOfYear%2A?displayProperty=nameWithType> method. The following example provides an illustration.  
+The <xref:System.DateTime> structure includes <xref:System.DateTime.DayOfWeek%2A> property that returns the day of the week in the Gregorian calendar. It does not include a member that allows you to retrieve the week number of the year. To retrieve the week of the year, call the individual calendar's <xref:System.Globalization.Calendar.GetWeekOfYear%2A?displayProperty=nameWithType> method. The following example provides an illustration.  
   
 [!code-csharp-interactive[System.DateTime.Calendar#5](~/samples/snippets/csharp/System.DateTime/Calendar.cs#5)]
 [!code-vb[System.DateTime.Calendar#5](~/samples/snippets/visualbasic/System.DateTime/Calendar.vb#5)]  
@@ -228,45 +230,45 @@ For more information on dates and calendars, see [Working with Calendars](~/docs
 
 You can persist <xref:System.DateTime> values in four ways:  
   
--   You can [convert them to strings](#persisting-values-as-strings) and persist the strings.  
--   You can [convert them to 64-bit integer values](#persisting-values-as-integers) (the value of the <xref:System.DateTime.Ticks%2A> property) and persist the integers.  
--   You can[serialize the DateTime values](#serializing-dateTime-values).  
--   You can [serialize the DateTime values along with time zone information](#serializing-datetime-and-time-zone-data).  
+-   You [convert them to strings](#persisting-values-as-strings) and persist the strings.  
+-   You [convert them to 64-bit integer values](#persisting-values-as-integers) (the value of the <xref:System.DateTime.Ticks%2A> property) and persist the integers.  
+-   You [serialize the DateTime values](#serializing-dateTime-values).  
+-   You [serialize the DateTime values along with time zone information](#serializing-datetime-and-time-zone-data).  
   
-Regardless of which technique you choose, you must ensure that the routine that restores the <xref:System.DateTime> values doesn't lose data or throw an exception. <xref:System.DateTime> values should round-trip. That is, the original value and the restored value should be the same. And if the original <xref:System.DateTime> value represents a single instant of time, it should identify the same moment of time when it's restored.  
+You must ensure that the routine that restores the <xref:System.DateTime> values doesn't lose data or throw an exception regardless of which technique you choose. <xref:System.DateTime> values should round-trip. That is, the original value and the restored value should be the same. And if the original <xref:System.DateTime> value represents a single instant of time, it should identify the same moment of time when it's restored.  
   
 #### Persisting values as strings  
 
 To successfully restore <xref:System.DateTime> values that are persisted as strings, follow these rules:  
   
--   Make the same assumptions about culture-specific formatting when you restore the string as when you persisted it. To ensure that a string can be restored on a system whose current culture is different from the culture of the system it was saved on, call the <xref:System.DateTime.ToString%2A> overload to save the string by using the conventions of the invariant culture, and call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> or <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> overload to restore the string by using the conventions of the invariant culture. Never use the <xref:System.DateTime.ToString>, <xref:System.DateTime.Parse%28System.String%29>, or <xref:System.DateTime.TryParse%28System.String%2CSystem.DateTime%40%29> overloads, which use the conventions of the current thread culture.  
+-   Make the same assumptions about culture-specific formatting when you restore the string as when you persisted it. To ensure that a string can be restored on a system whose current culture is different from the culture of the system it was saved on, call the <xref:System.DateTime.ToString%2A> overload to save the string by using the conventions of the invariant culture. Call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> or <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> overload to restore the string by using the conventions of the invariant culture. Never use the <xref:System.DateTime.ToString>, <xref:System.DateTime.Parse%28System.String%29>, or <xref:System.DateTime.TryParse%28System.String%2CSystem.DateTime%40%29> overloads, which use the conventions of the current thread culture.  
   
--   If the data represents a single moment of time, ensure that it represents the same moment in time when it's restored, even if it's restored on a system that uses a different time zone. To do this, you convert the <xref:System.DateTime> value to Coordinated Universal Time (UTC) before saving it. You can also serialize the value along with time zone information; for more information about this approach, see [Serializing DateTime and time zone data](#TimeZone).  
+-   If the date represents a single moment of time, ensure that it represents the same moment in time when it's restored, even on a different time zone. Convert the <xref:System.DateTime> value to Coordinated Universal Time (UTC) before saving it. You can also serialize the value along with time zone information. For more information about this approach, see [Serializing DateTime and time zone data](#TimeZone).  
   
- The most common error made when persisting <xref:System.DateTime> values as strings is to rely on the formatting conventions of the default or current culture. Problems arise if the current culture is different when saving and restoring the strings. The following example illustrates these problems. It saves five dates using the formatting conventions of the current culture, which in this case is English (United States). It restores the dates using the formatting conventions of the current culture, which in this case is English (Great Britain). Because the formatting conventions of the two cultures are different, two of the dates can't be restored, and the remaining three dates are interpreted incorrectly. Also, if the original date and time values represent single moments in time, the restored times are incorrect because time zone information is lost.  
+ The most common error made when persisting <xref:System.DateTime> values as strings is to rely on the formatting conventions of the default or current culture. Problems arise if the current culture is different when saving and restoring the strings. The following example illustrates these problems. It saves five dates using the formatting conventions of the current culture, which in this case is English (United States). It restores the dates using the formatting conventions a different culture, which in this case is English (Great Britain). Because the formatting conventions of the two cultures are different, two of the dates can't be restored, and the remaining three dates are interpreted incorrectly. Also, if the original date and time values represent single moments in time, the restored times are incorrect because time zone information is lost.  
   
-[!code-csharp-interactive[System.DateTime.Persistence#1](~/samples/snippets/csharp/System.DateTime/Persistence.cs#1)]
+[!code-csharp[System.DateTime.Persistence#1](~/samples/snippets/csharp/System.DateTime/Persistence.cs#1)]
 [!code-vb[System.DateTime.Persistence#1](~/samples/snippets/visualbasic/System.DateTime/Persistence.vb#1)]  
 
 To round-trip <xref:System.DateTime> values successfully, follow these steps:  
   
 1.  If the values represent single moments of time, convert them from the local time to UTC by calling the <xref:System.DateTime.ToUniversalTime%2A> method.  
-1.  Convert the dates to their string representations by calling the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29> or <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> overload. Use the formatting conventions of the invariant culture by specifying <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> as the `provider` argument. Specify that the value should round-trip by using the "O" or "R" .  
+1.  Convert the dates to their string representations by calling the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29> or <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> overload. Use the formatting conventions of the invariant culture by specifying <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> as the `provider` argument. Specify that the value should round-trip by using the "O" or "R."  
 1.  When you call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> or <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> method.  
   
-To restore the persisted <xref:System.DateTime> values without data loss, do the following:  
+To restore the persisted <xref:System.DateTime> values without data loss, follow these steps:  
   
 1.  Parse the data by calling the <xref:System.DateTime.ParseExact%2A> or <xref:System.DateTime.TryParseExact%2A> overload. Specify <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> as the `provider` argument, and use the same standard format string you used for the `format` argument during conversion. Include the <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> value in the `styles` argument.  
 1.  If the <xref:System.DateTime> values represent single moments in time, call the <xref:System.DateTime.ToLocalTime%2A> method to convert the parsed date from UTC to local time.  
   
-The following example uses the invariant culture and the "O" standard format string to ensure that <xref:System.DateTime> values that are saved and restored represent the same moment in time regardless of the system, culture, or time zone of the source and target systems.  
+The following example uses the invariant culture and the "O" standard format string to ensure that <xref:System.DateTime> values saved and restored represent the same moment in time regardless of the system, culture, or time zone of the source and target systems.  
   
-[!code-csharp-interactive[System.DateTime.Persistence#2](~/samples/snippets/csharp/System.DateTime/Persistence.cs#2)]
+[!code-csharp[System.DateTime.Persistence#2](~/samples/snippets/csharp/System.DateTime/Persistence.cs#2)]
 [!code-vb[System.DateTime.Persistence#2](~/samples/snippets/visualbasic/System.DateTime/Persistence.vb#2)]  
 
 #### Persisting values as integers  
 
-Instead of persisting a <xref:System.DateTime> value as a string, you can persist it as an <xref:System.Int64> value that represents a number of ticks. In this case, you don't have to consider the culture of the systems the <xref:System.DateTime> values are persisted and restored on.  
+You can persist it as an <xref:System.Int64> value that represents a number of ticks. In this case, you don't have to consider the culture of the systems the <xref:System.DateTime> values are persisted and restored on.  
   
 To persist a <xref:System.DateTime> value as an integer:  
   
@@ -280,48 +282,48 @@ To restore a <xref:System.DateTime> value that has been persisted as an integer:
   
 The following example persists an array of <xref:System.DateTime> values as integers on a system in the U.S. Pacific Time zone. It restores it on a system in the UTC zone. The file that contains the integers includes an <xref:System.Int32> value that indicates the total number of <xref:System.Int64> values that immediately follow it.  
   
-[!code-csharp-interactive[System.DateTime.Persistence#3](~/samples/snippets/csharp/System.DateTime/Persistence.cs#3)]
+[!code-csharp[System.DateTime.Persistence#3](~/samples/snippets/csharp/System.DateTime/Persistence.cs#3)]
 [!code-vb[System.DateTime.Persistence#3](~/samples/snippets/visualbasic/System.DateTime/Persistence.vb#3)]  
 
 #### Serializing DateTime values  
 
-Instead of saving <xref:System.DateTime> values as strings or integers, which you then have to convert back to <xref:System.DateTime> values, you can persist <xref:System.DateTime> values through serialization to a stream or file, and then restore them through deserialization. In this case, <xref:System.DateTime> data is serialized in some specified object format, and the objects are restored when they are deserialized. A formatter or serializer, such as <xref:System.Xml.Serialization.XmlSerializer> or <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, handles the process of serialization and deserialization. For more information about serialization and the types of serialization supported by the .NET Framework, see [Serialization](http://msdn.microsoft.com/library/4d1111c0-9447-4231-a997-96a2b74b3453).  
+You can persist <xref:System.DateTime> values through serialization to a stream or file, and then restore them through deserialization. <xref:System.DateTime> data is serialized in some specified object format. The objects are restored when they are deserialized. A formatter or serializer, such as <xref:System.Xml.Serialization.XmlSerializer> or <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, handles the process of serialization and deserialization. For more information about serialization and the types of serialization supported by the .NET Framework, see [Serialization](http://msdn.microsoft.com/library/4d1111c0-9447-4231-a997-96a2b74b3453).  
   
- The following example uses the <xref:System.Xml.Serialization.XmlSerializer> class to serialize and deserialize <xref:System.DateTime> values that represent all leap year days in the twenty-first century. The output represents the result if the example is run on a system whose current culture is English (Great Britain). Because we've deserialized the <xref:System.DateTime> object itself, the code doesn't have to handle cultural differences in date and time formats.  
+The following example uses the <xref:System.Xml.Serialization.XmlSerializer> class to serialize and deserialize <xref:System.DateTime> values. The values represent all leap year days in the twenty-first century. The output represents the result if the example is run on a system whose current culture is English (Great Britain). Because you've deserialized the <xref:System.DateTime> object itself, the code doesn't have to handle cultural differences in date and time formats.  
   
-[!code-csharp-interactive[System.DateTime.Persistence#4](~/samples/snippets/csharp/System.DateTime/Persistence.cs#4)]
+[!code-csharp[System.DateTime.Persistence#4](~/samples/snippets/csharp/System.DateTime/Persistence.cs#4)]
 [!code-vb[System.DateTime.Persistence#4](~/samples/snippets/visualbasic/System.DateTime/Persistence.vb#4)]  
 
-The previous example doesn't include time information. However, if a <xref:System.DateTime> value represents a moment in time and is expressed as a local time, you should convert it from local time to UTC before serializing it by calling the <xref:System.DateTime.ToUniversalTime%2A> method. After you deserialize it, you should convert it from UTC to local time by calling the <xref:System.DateTime.ToLocalTime%2A> method. The following example uses the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> class to serialize <xref:System.DateTime> data on a system in the U.S. Pacific Standard Time zone and to deserialize it on a system in the UTC zone.  
+The previous example doesn't include time information. If a <xref:System.DateTime> value represents a moment in time and is expressed as a local time, convert it from local time to UTC before serializing it by calling the <xref:System.DateTime.ToUniversalTime%2A> method. After you deserialize it convert it from UTC to local time by calling the <xref:System.DateTime.ToLocalTime%2A> method. The following example uses the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> class to serialize <xref:System.DateTime> data on a system in the U.S. Pacific Standard Time zone and to deserialize it on a system in the UTC zone.  
   
-[!code-csharp-interactive[System.DateTime.Persistence#5](~/samples/snippets/csharp/System.DateTime/Persistence.cs#5)]
+[!code-csharp[System.DateTime.Persistence#5](~/samples/snippets/csharp/System.DateTime/Persistence.cs#5)]
 [!code-vb[System.DateTime.Persistence#5](~/samples/snippets/visualbasic/System.DateTime/Persistence.vb#5)]  
 
 #### Serializing DateTime and time zone data  
 
-The previous examples have all assumed that <xref:System.DateTime> values are expressed as local times, and converted the values between UTC and local time so they reflect the same moment in time on the source and target systems. <xref:System.DateTime> values may also reflect moments in time in a time zone other than local and UTC. In this case, because the <xref:System.DateTime> structure is not time zone-aware, you have to serialize both the <xref:System.DateTime> value and the <xref:System.TimeZoneInfo> object that represents its time zone. To do this, create a type whose fields include both the <xref:System.DateTime> value and its time zone. The following example defines a `DateWithTimeZone` structure that illustrates how this might be done.  
+The previous examples all assumed that <xref:System.DateTime> values are expressed as local times. The code converted the values between UTC and local time so they reflect the same moment in time on the source and target systems. <xref:System.DateTime> values may also reflect moments in time in a time zone other than local and UTC. Because the <xref:System.DateTime> structure is not time zone-aware, you have to serialize both the <xref:System.DateTime> value and the <xref:System.TimeZoneInfo> object that represents its time zone. Create a type whose fields include both the <xref:System.DateTime> value and its time zone. The following example defines a `DateWithTimeZone` structure.  
   
-[!code-csharp-interactive[System.DateTime.Persistence#6](~/samples/snippets/csharp/System.DateTime/DateWithTimeZone.cs#6)]
+[!code-csharp[System.DateTime.Persistence#6](~/samples/snippets/csharp/System.DateTime/DateWithTimeZone.cs#6)]
 [!code-vb[System.DateTime.Persistence#6](~/samples/snippets/visualbasic/System.DateTime/DateWithTimeZone.vb#6)]  
 
 > [!IMPORTANT]
->  The `DateWithTimeZone` structure is used in the next two examples, which serialize and deserialize an array of `DateWithTimeZone` objects. To run the examples, first create a class library that contains the `DateWithTimeZone` structure, and then add a reference to it when you compile each example.  
+>  The `DateWithTimeZone` structure is used in the next two examples, which serialize and deserialize an array of `DateWithTimeZone` objects. You can download the entire set of examples from this article in either [Visual Basic](https://github.com/docs/samples/snippets/visualbasic/System.DateTime/) or [C#](https://github.com/docs/samples/snippets/csharp/System.DateTime/) from the docs repository on GitHub.
   
-By using the `DateWithTimeZone` structure , you can then persist date and time along with time zone information. The following example uses the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> class to serialize an array of `DateWithTimeZone` objects.  
+By using the `DateWithTimeZone` structure, you can then persist date and time along with time zone information. The following example uses the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> class to serialize an array of `DateWithTimeZone` objects.  
   
-[!code-csharp-interactive[System.DateTime.Persistence#7](~/samples/snippets/csharp/System.DateTime/Persistence.cs#7)]
+[!code-csharp[System.DateTime.Persistence#7](~/samples/snippets/csharp/System.DateTime/Persistence.cs#7)]
 [!code-vb[System.DateTime.Persistence#7](~/samples/snippets/visualbasic/System.DateTime/Persistence.vb#7)]  
 
 The following example then calls the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType> method to deserialize it.  
   
-[!code-csharp-interactive[System.DateTime.Persistence#8](~/samples/snippets/csharp/System.DateTime/Persistence.cs#8)]
+[!code-csharp[System.DateTime.Persistence#8](~/samples/snippets/csharp/System.DateTime/Persistence.cs#8)]
 [!code-vb[System.DateTime.Persistence#8](~/samples/snippets/visualbasic/System.DateTime/Persistence.vb#8)]  
 
 ### Comparing for equality within tolerance
 
-The following example demonstrates how to compare roughly equivalent <xref:System.DateTime> values, accepting a small margin of difference when declaring them equal.  
+The following example demonstrates how to compare roughly equivalent <xref:System.DateTime> . It accepts a small margin of difference when declaring them equal.  
   
-[!code-csharp-interactive[System.DateTime.Comparisons#1](~/samples/snippets/csharp/System.DateTime/DateTimeComparisons.cs#1)]
+[!code-csharp[System.DateTime.Comparisons#1](~/samples/snippets/csharp/System.DateTime/DateTimeComparisons.cs#1)]
 [!code-vb[System.DateTime.Comparisons#1](~/samples/snippets/visualbasic/System.DateTime/DateTimeComparisons.vb#1)]  
 
 ## Remarks  
@@ -337,18 +339,18 @@ In this Section:
 > [!NOTE]
 >  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource-beta.microsoft.com/#mscorlib/system/datetime.cs#df6b1eba7461813b). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
   
- The <xref:System.DateTime> value type represents dates and times with values ranging from 00:00:00 (midnight), January 1, 0001 Anno Domini (Common Era) through 11:59:59 P.M., December 31, 9999 A.D. (C.E.) in the Gregorian calendar.  
+The <xref:System.DateTime> value type represents dates and times with values ranging from 00:00:00 (midnight), January 1, 0001 Anno Domini (Common Era) through 11:59:59 P.M., December 31, 9999 A.D. (C.E.) in the Gregorian calendar.  
   
- Time values are measured in 100-nanosecond units called ticks, and a particular date is the number of ticks since 12:00 midnight, January 1, 0001 A.D. (C.E.) in the <xref:System.Globalization.GregorianCalendar> calendar (excluding ticks that would be added by leap seconds). For example, a ticks value of 31241376000000000L represents the date, Friday, January 01, 0100 12:00:00 midnight. A <xref:System.DateTime> value is always expressed in the context of an explicit or default calendar.  
+Time values are measured in 100-nanosecond units called ticks. A particular date is the number of ticks since 12:00 midnight, January 1, 0001 A.D. (C.E.) in the <xref:System.Globalization.GregorianCalendar> calendar. The number excludes ticks that would be added by leap seconds. For example, a ticks value of 31241376000000000L represents the date, Friday, January 01, 0100 12:00:00 midnight. A <xref:System.DateTime> value is always expressed in the context of an explicit or default calendar.  
   
 > [!NOTE]
 >  If you are working with a ticks value that you want to convert to some other time interval, such as minutes or seconds, you should use the <xref:System.TimeSpan.TicksPerDay?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerHour?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerMinute?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerSecond?displayProperty=nameWithType>, or <xref:System.TimeSpan.TicksPerMillisecond?displayProperty=nameWithType> constant to perform the conversion. For example, to add the number of seconds represented by a specified number of ticks to the <xref:System.DateTime.Second%2A> component of a <xref:System.DateTime> value, you can use the expression `dateValue.Second + nTicks/Timespan.TicksPerSecond`.  
 
 ### DateTime values
 
-Descriptions of time values in the <xref:System.DateTime> type are often expressed using the Coordinated Universal Time (UTC) standard, which is the internationally recognized name for Greenwich Mean Time (GMT). Coordinated Universal Time is the time as measured at zero degrees longitude, the UTC origin point. Daylight saving time is not applicable to UTC.  
+Descriptions of time values in the <xref:System.DateTime> type are often expressed using the Coordinated Universal Time (UTC) standard. Coordinated Universal Time is the internationally recognized name for Greenwich Mean Time (GMT). Coordinated Universal Time is the time as measured at zero degrees longitude, the UTC origin point. Daylight saving time is not applicable to UTC.  
   
-Local time is relative to a particular time zone. A time zone is associated with a time zone offset, which is the displacement of the time zone measured in hours from the UTC origin point. In addition, local time is optionally affected by daylight saving time, which adds or subtracts an hour from the length of a day. Consequently, local time is calculated by adding the time zone offset to UTC and adjusting for daylight saving time if necessary. The time zone offset at the UTC origin point is zero.  
+Local time is relative to a particular time zone. A time zone is associated with a time zone offset. A time zone offset is the displacement of the time zone measured in hours from the UTC origin point. In addition, local time is optionally affected by daylight saving time, which adds or subtracts an hour from the length of a day. Local time is calculated by adding the time zone offset to UTC and adjusting for daylight saving time if necessary. The time zone offset at the UTC origin point is zero.  
   
 UTC time is suitable for calculations, comparisons, and storing dates and time in files. Local time is appropriate for display in user interfaces of desktop applications. Time zone-aware applications (such as many Web applications) also need to work with a number of other time zones.  
   
@@ -360,26 +362,22 @@ A calculation using a <xref:System.DateTime> structure, such as <xref:System.Dat
   
 Conversion operations between time zones (such as between UTC and local time, or between one time zone and another) take daylight saving time into account, but arithmetic and comparison operations do not.  
   
-The <xref:System.DateTime> structure itself offers limited support for converting from one time zone to another. You can use the <xref:System.DateTime.ToLocalTime%2A> method to convert UTC to local time, or you can use the <xref:System.DateTime.ToUniversalTime%2A> method to convert from local time to UTC. However, a full set of time zone conversion methods is available in the <xref:System.TimeZoneInfo> class. Using these methods, you can convert the time in any one of the world's time zones to the time in any other time zone.  
+The <xref:System.DateTime> structure itself offers limited support for converting from one time zone to another. You can use the <xref:System.DateTime.ToLocalTime%2A> method to convert UTC to local time, or you can use the <xref:System.DateTime.ToUniversalTime%2A> method to convert from local time to UTC. However, a full set of time zone conversion methods is available in the <xref:System.TimeZoneInfo> class. You convert the time in any one of the world's time zones to the time in any other time zone using these methods.  
   
-Calculations and comparisons of <xref:System.DateTime> objects are meaningful only if the objects represent times in the same time zone. You can use a <xref:System.TimeZoneInfo> object to represent a <xref:System.DateTime> value's time zone, although the two are loosely coupled. (That is, a <xref:System.DateTime> object does not have a property that returns an object that represents that date and time value's time zone other than the <xref:System.DateTime.Kind%2A> property.) For this reason, in a time zone-aware application, you must rely on some external mechanism to determine the time zone in which a <xref:System.DateTime> object was created. For example, you could use a structure that wraps both the <xref:System.DateTime> value and the <xref:System.TimeZoneInfo> object that represents the <xref:System.DateTime> value's time zone. For details on using UTC in calculations and comparisons with <xref:System.DateTime> values, see [Performing Arithmetic Operations with Dates and Times](~/docs/standard/datetime/performing-arithmetic-operations.md).  
+Calculations and comparisons of <xref:System.DateTime> objects are meaningful only if the objects represent times in the same time zone. You can use a <xref:System.TimeZoneInfo> object to represent a <xref:System.DateTime> value's time zone, although the two are loosely coupled. A <xref:System.DateTime> object does not have a property that returns an object that represents that date and time value's time zone. The <xref:System.DateTime.Kind%2A> property indicates if a `DateTime` represents UTC, local time, or is unspecified. In a time zone-aware application, you must rely on some external mechanism to determine the time zone in which a <xref:System.DateTime> object was created. You could use a structure that wraps both the <xref:System.DateTime> value and the <xref:System.TimeZoneInfo> object that represents the <xref:System.DateTime> value's time zone. For details on using UTC in calculations and comparisons with <xref:System.DateTime> values, see [Performing Arithmetic Operations with Dates and Times](~/docs/standard/datetime/performing-arithmetic-operations.md).  
   
-Each <xref:System.DateTime> member implicitly uses the Gregorian calendar to perform its operation, with the exception of constructors that specify a calendar, and methods with a parameter derived from <xref:System.IFormatProvider>, such as <xref:System.Globalization.DateTimeFormatInfo?displayProperty=nameWithType>, that implicitly specifies a calendar.  
+Each <xref:System.DateTime> member implicitly uses the Gregorian calendar to perform its operation. Exceptions are methods that implicitly specify a calendar. These include constructors that specify a calendar, and methods with a parameter derived from <xref:System.IFormatProvider>, such as <xref:System.Globalization.DateTimeFormatInfo?displayProperty=nameWithType>.  
   
 Operations by members of the <xref:System.DateTime> type take into account details such as leap years and the number of days in a month.  
-  
-Two other common operations with <xref:System.DateTime> values involve converting a date and time value to or from its string representation. The process of converting a <xref:System.DateTime> value to its string representation is a formatting operation; for more information about formatting, see [DateTime values and their string representations](#datetime_values_strings). The process of converting the string representation of a date and time to a <xref:System.DateTime> value is a parsing operation; for more information about parsing, see [Converting strings to DateTime values](#parsing).  
 
 ### DateTime vs. TimeSpan  
 
-The <xref:System.DateTime> and <xref:System.TimeSpan> value types differ in that a <xref:System.DateTime> represents an instant in time whereas a <xref:System.TimeSpan> represents a time interval. This means, for example, that you can subtract one instance of <xref:System.DateTime> from another to obtain a <xref:System.TimeSpan> object that represents the time interval between them. Or you could add a positive <xref:System.TimeSpan> to the current <xref:System.DateTime> to obtain a <xref:System.DateTime> value that represents a future date.  
+The <xref:System.DateTime> and <xref:System.TimeSpan> value types differ in that a <xref:System.DateTime> represents an instant in time whereas a <xref:System.TimeSpan> represents a time interval. You can subtract one instance of <xref:System.DateTime> from another to obtain a <xref:System.TimeSpan> object that represents the time interval between them. Or you could add a positive <xref:System.TimeSpan> to the current <xref:System.DateTime> to obtain a <xref:System.DateTime> value that represents a future date.  
   
-You can add or subtract a time interval from a <xref:System.DateTime> object. Time intervals can be negative or positive, can be expressed in units such as ticks or seconds, or can be expressed as a <xref:System.TimeSpan> object.  
+You can add or subtract a time interval from a <xref:System.DateTime> object. Time intervals can be negative or positive, can be expressed in units such as ticks, seconds, or as a <xref:System.TimeSpan> object.  
 
 ### Version considerations  
 
-Prior to the .NET Framework version 2.0, the <xref:System.DateTime> structure contains a 64-bit field composed of an unused 2-bit field concatenated with a private `Ticks` field, which is a 62-bit unsigned field that contains the number of ticks that represent the date and time. The value of the `Ticks` field can be obtained with the <xref:System.DateTime.Ticks%2A> property.  
-  
 Starting with the .NET Framework 2.0, the <xref:System.DateTime> structure contains a 64-bit field composed of a private Kind field concatenated with the Ticks field. The Kind field is a 2-bit field that indicates whether the <xref:System.DateTime> structure represents a local time, a Coordinated Universal Time (UTC), or the time in an unspecified time zone. The Kind field is used when performing time conversions between time zones, but not for time comparisons or arithmetic. The value of the Kind field can be obtained with the <xref:System.DateTime.Kind%2A> property.  
   
 > [!NOTE]
@@ -389,9 +387,9 @@ Starting with the .NET Framework 2.0, the <xref:System.DateTime> structure conta
 
 A <xref:System.DateTime> value that is transferred to a COM application, then is transferred back to a managed application, is said to round-trip. However, a <xref:System.DateTime> value that specifies only a time does not round-trip as you might expect.  
   
-If you round-trip only a time, such as 3 P.M., the final date and time is December 30, 1899 C.E. at 3:00 P.M., instead of January, 1, 0001 C.E. at 3:00 P.M. This happens because the .NET Framework and COM assume a default date when only a time is specified. However, the COM system assumes a base date of December 30, 1899 C.E. while the .NET Framework assumes a base date of January, 1, 0001 C.E.  
+If you round-trip only a time, such as 3 P.M., the final date and time is December 30, 1899 C.E. at 3:00 P.M., instead of January, 1, 0001 C.E. at 3:00 P.M. The .NET Framework and COM assume a default date when only a time is specified. However, the COM system assumes a base date of December 30, 1899 C.E. while the .NET Framework assumes a base date of January, 1, 0001 C.E.  
   
-When only a time is passed from the .NET Framework to COM, special processing is performed that converts the time to the format used by COM. When only a time is passed from COM to the .NET Framework, no special processing is performed because that would corrupt legitimate dates and times on or before December 30, 1899. This also means if a date starts its round-trip from COM, the .NET Framework and COM preserve the date.  
+When only a time is passed from the .NET Framework to COM, special processing is performed that converts the time to the format used by COM. When only a time is passed from COM to the .NET Framework, no special processing is performed because that would corrupt legitimate dates and times on or before December 30, 1899. If a date starts its round-trip from COM, the .NET Framework and COM preserve the date.  
   
 The behavior of the .NET Framework and COM means that if your application round-trips a <xref:System.DateTime> that only specifies a time, your application must remember to modify or ignore the erroneous date from the final <xref:System.DateTime> object.  
      

@@ -9,13 +9,13 @@ namespace new_in_7
     #region 18_PercentileDie
     public struct PercentileDie
     {
-        public int Value { get; }
-        public int Multiplier { get; }
+        public int OnesDigit { get; }
+        public int TensDigit { get; }
 
-        public PercentileDie(int multiplier, int value)
+        public PercentileDie(int tensDigit, int onesDigit)
         {
-            this.Value = value;
-            this.Multiplier = multiplier;
+            this.OnesDigit = onesDigit;
+            this.TensDigit = tensDigit;
         }
     }
     #endregion
@@ -110,7 +110,7 @@ namespace new_in_7
                         sum += val;
                         break;
                     case PercentileDie die:
-                        sum += die.Multiplier * die.Value;
+                        sum += die.TensDigit * 10 + die.OnesDigit;
                         break;
                     case IEnumerable<object> subList when subList.Any():
                         sum += DiceSum5(subList);

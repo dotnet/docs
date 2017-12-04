@@ -10,17 +10,17 @@ The WCF Web Service Reference VS connected service extension is applicable to pr
 Using the ASP.NET Core Web Application project template as an example, I will walk you through adding a WCF service reference to the project:
 1. In Solution Explorer, double-click the Connected Services node of a project. A Connected Services page appears as shown below:
 
-![Connected Services tab](/additional-tools/images/WCFCS-ConnectedServicesPage.png)
+![Connected Services tab](images/WCFCS-ConnectedServicesPage.png)
 
 2. On this page, click Microsoft WCF Web Service Reference Provider. This will bring up the Configure WCF Web Service Reference wizard:
 
-![Service Endpoint tab](/additional-tools/images/WCFCS-ServiceEndpointPage.png)
+![Service Endpoint tab](images/WCFCS-ServiceEndpointPage.png)
 
 3. You can either click the Discover button to initiate a search for services that are contained in the current solution, enter a service URL in the Address box and click Go to search for services hosted at the address, or Browse to a WSDL file containing the service metadata information.  The services that are found will be displayed in the Services box and you can select the one you want to use. You can also enter the namespace for the generated code in the Namespace box.
 
 Once a service has been selected you can click Next to visit the Data Type Options and the Client Options pages.  Alternatively, you can click Finish to use default options.
 
-![Data types tab](/additional-tools/images/WCFCS-DataTypesPage.png)
+![Data types tab](images/WCFCS-DataTypesPage.png)
 
 The Data Type Options form offers a few settings for further refining the configuration for the generated service reference, Of particular interest is the option to reuse types in reference assemblies.  This is useful when types needed for generating the service reference code are already referenced in your project, and it is necessary to reuse the existing types to avoid a compile-time type clash.
 
@@ -28,7 +28,7 @@ Depending on the number of project dependencies as well as other system performa
 
 4. Click Finish when you are done.
 
-![Progress window](/additional-tools/images/WCFCS-ProgressWindow.png)
+![Progress window](images/WCFCS-ProgressWindow.png)
 
 This will download metadata from the WCF service, generate the service reference code in a file named 'reference.cs', and add it to your project under the Connected Services node. The project file (.csproj) will also be updated with NuGet package references required for your project to compile and run on the target platform.
 

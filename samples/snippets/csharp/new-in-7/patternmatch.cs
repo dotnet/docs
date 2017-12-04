@@ -12,7 +12,7 @@ namespace new_in_7
         public int OnesDigit { get; }
         public int TensDigit { get; }
 
-        public PercentileDie(int tensDigit, int onesDigit)
+        public PercentileDice(int tensDigit, int onesDigit)
         {
             this.OnesDigit = onesDigit;
             this.TensDigit = tensDigit;

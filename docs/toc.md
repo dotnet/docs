@@ -253,7 +253,7 @@
 ### [Documenting your code](csharp/codedoc.md)
 ### [Versioning](csharp/versioning.md)
 <!-- End of C# Concepts section -->
-## [The .NET Compiler Platform SDK (Roslyn APIs)](roslyn-sdk/)
+## [The .NET Compiler Platform SDK (Roslyn APIs)](csharp/roslyn-sdk/)
 ## [C# Programming Guide](csharp/programming-guide/)
 ## [Language Reference](csharp/language-reference/)
 ## [Walkthroughs](csharp/walkthroughs.md)

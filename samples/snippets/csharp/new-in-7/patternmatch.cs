@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace new_in_7
 {
-    #region 18_PercentileDie
-    public struct PercentileDie
+    #region 18_PercentileDice
+    public struct PercentileDice
     {
         public int OnesDigit { get; }
         public int TensDigit { get; }
@@ -109,8 +109,8 @@ namespace new_in_7
                     case int val:
                         sum += val;
                         break;
-                    case PercentileDie die:
-                        sum += die.TensDigit * 10 + die.OnesDigit;
+                    case PercentileDice dice:
+                        sum += dice.TensDigit + dice.OnesDigit;
                         break;
                     case IEnumerable<object> subList when subList.Any():
                         sum += DiceSum5(subList);

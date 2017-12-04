@@ -58,14 +58,14 @@ This section contains examples for many common uses of the `DateTime` struct:
  [Persisting DateTime values](#persisting-datetime-values)   
  [Comparing for equality within tolerance](#comparing-for-equality-within-tolerance)
 
-You can download the entire set of examples from this article in either [Visual Basic](https://github.com/docs/samples/snippets/visualbasic/System.DateTime/) or [C#](https://github.com/docs/samples/snippets/csharp/System.DateTime/) from the docs repository on GitHub.
+You can download the entire set of examples from this article in either [Visual Basic](https://github.com/docs/tree/master/samples/snippets/visualbasic/System.DateTime/) or [C#](https://github.com/docs/tree/master/samples/snippets/csharp/System.DateTime/) from the docs repository on GitHub.
 
 ### Initializing a DateTime object  
 
 You can assign an initial value to a new `DateTime` value in many different ways:
 
 - Calling a constructor, either one where you specify arguments for values, or use the implicit default constructor.
-- Assigning a `DateTime` to one the return value of a property or method.
+- Assigning a `DateTime` to the return value of a property or method.
 - Parsing a `DateTime` value from its string representation.
 - Using Visual Basic specific language features to instantiate a `DateTime`. 
 
@@ -107,7 +107,7 @@ The following Visual Basic statement initializes a new <xref:System.DateTime> va
 
 ### DateTime values and their string representations  
 
-Internally, all <xref:System.DateTime> values are represented as the number of ticks (the number of 100-nanosecond intervals) that have elapsed since 12:00:00 midnight, January 1, 0001. The actual <xref:System.DateTime> value is independent of the way in which that value appears when displayed. The appearance of a <xref:System.DateTime> value is the string result of a formatting operation that converts a value to its string representation.  
+Internally, all <xref:System.DateTime> values are represented as the number of ticks (the number of 100-nanosecond intervals) that have elapsed since 12:00:00 midnight, January 1, 0001. The actual <xref:System.DateTime> value is independent of the way in which that value appears when displayed. The appearance of a <xref:System.DateTime> value is the result of a formatting operation that converts a value to its string representation.  
   
 The appearance of date and time values is dependent on culture, international standards, application requirements, and personal preference. The <xref:System.DateTime> structure offers flexibility in formatting date and time values through overloads of  <xref:System.DateTime.ToString%2A>. The default <xref:System.DateTime.ToString?displayProperty=nameWithType> method returns the string representation of a date and time value using the current culture's short date and long time pattern. The following example uses the default <xref:System.DateTime.ToString?displayProperty=nameWithType> method. It displays the date and time using the short date and long time pattern for the current culture. The en-us culture is the current culture on the computer on which the example was run.  
   
@@ -254,7 +254,7 @@ To round-trip <xref:System.DateTime> values successfully, follow these steps:
   
 1.  If the values represent single moments of time, convert them from the local time to UTC by calling the <xref:System.DateTime.ToUniversalTime%2A> method.  
 1.  Convert the dates to their string representations by calling the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29> or <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> overload. Use the formatting conventions of the invariant culture by specifying <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> as the `provider` argument. Specify that the value should round-trip by using the "O" or "R."  
-1.  When you call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> or <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> method.  
+1.  Call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> or <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> method.  
   
 To restore the persisted <xref:System.DateTime> values without data loss, follow these steps:  
   
@@ -287,7 +287,7 @@ The following example persists an array of <xref:System.DateTime> values as inte
 
 #### Serializing DateTime values  
 
-You can persist <xref:System.DateTime> values through serialization to a stream or file, and then restore them through deserialization. <xref:System.DateTime> data is serialized in some specified object format. The objects are restored when they are deserialized. A formatter or serializer, such as <xref:System.Xml.Serialization.XmlSerializer> or <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, handles the process of serialization and deserialization. For more information about serialization and the types of serialization supported by the .NET Framework, see [Serialization](http://msdn.microsoft.com/library/4d1111c0-9447-4231-a997-96a2b74b3453).  
+You can persist <xref:System.DateTime> values through serialization to a stream or file, and then restore them through deserialization. <xref:System.DateTime> data is serialized in some specified object format. The objects are restored when they are deserialized. A formatter or serializer, such as <xref:System.Xml.Serialization.XmlSerializer> or <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, handles the process of serialization and deserialization. For more information about serialization and the types of serialization supported by the .NET Framework, see [Serialization](~/standard/serialization/index.md).
   
 The following example uses the <xref:System.Xml.Serialization.XmlSerializer> class to serialize and deserialize <xref:System.DateTime> values. The values represent all leap year days in the twenty-first century. The output represents the result if the example is run on a system whose current culture is English (Great Britain). Because you've deserialized the <xref:System.DateTime> object itself, the code doesn't have to handle cultural differences in date and time formats.  
   
@@ -307,7 +307,7 @@ The previous examples all assumed that <xref:System.DateTime> values are express
 [!code-vb[System.DateTime.Persistence#6](~/samples/snippets/visualbasic/System.DateTime/DateWithTimeZone.vb#6)]  
 
 > [!IMPORTANT]
->  The `DateWithTimeZone` structure is used in the next two examples, which serialize and deserialize an array of `DateWithTimeZone` objects. You can download the entire set of examples from this article in either [Visual Basic](https://github.com/docs/samples/snippets/visualbasic/System.DateTime/) or [C#](https://github.com/docs/samples/snippets/csharp/System.DateTime/) from the docs repository on GitHub.
+>  The `DateWithTimeZone` structure is used in the next two examples, which serialize and deserialize an array of `DateWithTimeZone` objects. You can download the entire set of examples from this article in either [Visual Basic](https://github.com/docs/tree/master/samples/snippets/visualbasic/System.DateTime/) or [C#](https://github.com/docs/tree/master/samples/snippets/csharp/System.DateTime/) from the docs repository on GitHub.
   
 By using the `DateWithTimeZone` structure, you can then persist date and time along with time zone information. The following example uses the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> class to serialize an array of `DateWithTimeZone` objects.  
   
@@ -3436,7 +3436,7 @@ juillet 2009
 ## Remarks  
  The value of this constant is equivalent to 23:59:59.9999999 UTC, December 31, 9999 in the Gregorian calendar, exactly one 100-nanosecond tick before 00:00:00 UTC, January 1, 10000.  
   
- Some calendars, such as the <xref:System.Globalization.ThaiBuddhistCalendar>, support an upper date range that is earlier than <xref:System.DateTime.MaxValue>. In these cases, trying to access <xref:System.DateTime.MaxValue> in variable assignments or formatting and parsing operations can throw an <xref:System.ArgumentOutOfRangeException>. Rather than retrieving the value of <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, you can retrieve the value of the specified culture's latest valid date value from the `System.Globalization.CultureInfo.DateTimeFormat.Calendar.MaxSupportedDateTime` property.  
+ Some calendars, such as the <xref:System.Globalization.ThaiBuddhistCalendar>, support an upper date range that is earlier than <xref:System.DateTime.MaxValue>. In these cases, trying to access <xref:System.DateTime.MaxValue> in variable assignments or formatting and parsing operations can throw an <xref:System.ArgumentOutOfRangeException>. Rather than retrieving the value of <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, you can retrieve the value of the specified culture's latest valid date value from the <xref:System.Globalization.Calendar.MaxSupportedDateTime?displayProperty=nameWithType> property.  
   
    
   

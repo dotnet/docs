@@ -67,7 +67,7 @@ int binaryValue = 0b_0101_0101;
 ## `private protected`
 
 Finally, a new compound access modifier: `private protected` indicates that a member may be
-accessed by derived classes that are declared in the same assembly. While `protected internal`
+accessed by containing class or derived classes that are declared in the same assembly. While `protected internal`
 allows access by derived classes or classes that are in the same assembly, `private protected`
 limits access to derived types declared in the same assembly.
 

@@ -113,7 +113,7 @@ You can define the size of an array in several ways:
   
     [!code-vb[creating2](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/create-array.vb#2)]  
   
- If you have an existing array, you can redefine its size by using the [`Redim`](../../../language-reference/statements/redim-statement.md) statement. You can specify that the `Redim` statement keep the values that are in the array, or you can specify that it create an empty array. The following example shows different uses of the `Redim` statement to modify the size of an existing array.  
+ If you have an existing array, you can redefine its size by using the [`Redim`](../../../../visual-basic/language-reference/statements/redim-statement.md) statement. You can specify that the `Redim` statement keep the values that are in the array, or you can specify that it create an empty array. The following example shows different uses of the `Redim` statement to modify the size of an existing array.  
   
  [!code-vb[redimensioning](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/create-array.vb#3)]  
   
@@ -231,11 +231,19 @@ Sometimes the data structure in your application is two-dimensional but not rect
 
 The previous example assigns values to the jagged array on an element-by-element basis by using a `For...Next` loop. You can also assign values to the elements of a jagged array by using nested array literals. However, the attempt to use nested array literals in the following example generates compiler error [BC30568](../../../,,/../misc/bc30568.md). 
 
- [!code-vb[jagged-array-initialization](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/jagged-assign.vb#1)] 
+```vb
+Module Example
+   Public Sub Main()
+      Dim values1d = { 1, 2, 3 }
+      Dim values2d = {{1, 2}, {2, 3}, {3, 4}}
+      Dim valuesjagged = {{1, 2}, {2, 3, 4}}
+   End Sub
+End Module
+```
 
-To correct the error, enlose the inner array literals in parentheses. The parentheses force the array literal expression to be evaluated, and the resulting values are used with the outer array literal, as the following example shows.  
+To correct the error, enclose the inner array literals in parentheses. The parentheses force the array literal expression to be evaluated, and the resulting values are used with the outer array literal, as the following example shows.  
   
- [!code-vb[jagged-array-initialization](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/jagged-assign.vb#2)] 
+ [!code-vb[jagged-array-initialization](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/jagged-assign.vb)] 
   
 ## Zero-length arrays  
 Visual Basic differentiates between a uninitialized array (an array whose value is `Nothing`) and a *zero-length array* or empty array (an array that has no elements.) An uninitialized array is one that has not been dimensioned or had any values assigned to it. For example:

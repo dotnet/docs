@@ -35,9 +35,9 @@ module MyMath =
 Change the directory back to the *unit-testing-with-fsharp* directory. Run [`dotnet sln add .\MathService\MathService.fsproj`](../tools/dotnet-sln.md)
 to add the class library project to the solution.
 
- ### Install the NUnit project template
+## Install the NUnit project template
 
- The NUnit test project templates need to be installed before creating a test project. This only needs to be done once. Run [`dotnet new -i NUnit3.DotNetNew.Template`](../tools/dotnet-new.md) to install the NUnit templates.
+The NUnit test project templates need to be installed before creating a test project. This only needs to be done once on each developer machine where you'll create new NUnit projects. Run [`dotnet new -i NUnit3.DotNetNew.Template`](../tools/dotnet-new.md) to install the NUnit templates.
 
  ```
  dotnet new -i NUnit3.DotNetNew.Template
@@ -155,7 +155,8 @@ let private isOdd x = x % 2 <> 0
 
 let sumOfSquares xs =
     xs
-    |> Seq.filter isOdd |> Seq.toList
+    |> Seq.filter isOdd
+    |> Seq.toList
 ```
 
 Notice the call to `Seq.toList`. That creates a list, which implements the <xref:System.Collections.ICollection> interface.

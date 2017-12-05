@@ -13,7 +13,7 @@ ms.devlang: dotnet
 
 This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-nunit/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
-### Creating the source project
+## Creating the source project
 
 Open a shell window. Create a directory called *unit-testing-using-nunit* to hold the solution. Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to create
 a new solution file for the class library and the test project. Next, create a *PrimeService* directory. The following outline shows the directory and file structure thus far:
@@ -43,9 +43,9 @@ namespace Prime.Services
 
 Change the directory back to the *unit-testing-using-nunit* directory. Run [`dotnet sln add PrimeService/PrimeService.csproj`](../tools/dotnet-sln.md) to add the class library project to the solution.
 
-### Install the NUnit project template
+## Install the NUnit project template
 
-The NUnit test project templates need to be installed before creating a test project. This only needs to be done once. Run [`dotnet new -i NUnit3.DotNetNew.Template`](../tools/dotnet-new.md) to install the NUnit templates.
+The NUnit test project templates need to be installed before creating a test project. This only needs to be done once on each developer machine where you'll create new NUnit projects. Run [`dotnet new -i NUnit3.DotNetNew.Template`](../tools/dotnet-new.md) to install the NUnit templates.
 
 ```
 dotnet new -i NUnit3.DotNetNew.Template

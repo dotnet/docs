@@ -1,6 +1,6 @@
 ---
-title: "FindPrivateKey Sample"
-ms.date: "09/11/2017"
+title: "FindPrivateKey sample - WCF"
+ms.date: "12/04/2017"
 ms.prod: ".net-framework"
 ms.technology: "dotnet-clr"
 ms.topic: "article"
@@ -12,20 +12,20 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-# FindPrivateKey Sample
+# FindPrivateKey sample
 
 It can be difficult to find the location and name of the private key file associated with a specific X.509 certificate in the certificate store. The FindPrivateKey.exe tool facilitates this process.
 
 > [!IMPORTANT]
 > FindPrivateKey is a sample that needs to be compiled prior to use. See the [To build the FindPrivateKey project](#to-build-the-findprivatekey-project) section for instructions on how to build the FindPrivateKey tool.
 
-X.509 certificates are installed by an Administrator or any user in the machine. However, the certificate may be accessed by a service running under a different account. For example, the ASPNET on Windows clients or the NETWORK SERVICE accounts on Windows Server machines.
+X.509 certificates are installed by an Administrator or any user in the machine. However, the certificate may be accessed by a service running under a different account. For example, the NETWORK SERVICE account.
 
 This account may not have access to the private key file because the certificate was not installed by it originally. The FindPrivateKey tool gives you the location of a given X.509 Certificate's private key file. You can add permissions or remove permissions to this file once you know the location of the particular X.509 certificates' private key file.
 
 The samples that use certificates for security use the FindPrivateKey tool in the *Setup.bat* file. Once the private key file has been found, you can use other tools such as *Cacls.exe* to set the appropriate access rights onto the file.
 
-When running a Windows Communication Foundation (WCF) service under a user account, such as a self-hosted executable, ensure that the user account has read-only access to the file. When running a WCF service under Internet Information Services (IIS) the default accounts that the service runs under are the ASPNET on Windows clients or the NETWORK SERVICE on Windows Server machines, which by default don't have access to the private key file.
+When running a Windows Communication Foundation (WCF) service under a user account, such as a self-hosted executable, ensure that the user account has read-only access to the file. When running a WCF service under Internet Information Services (IIS) the default accounts that the service runs under are the NETWORK SERVICE on IIS 7 and earlier versions, or Application Pool Identity on IIS 7.5 and later versions. For more information, see [Application Pool Identities](/iis/manage/configuring-security/application-pool-identities).
 
 ## Examples
 

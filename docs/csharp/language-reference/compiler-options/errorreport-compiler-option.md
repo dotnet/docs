@@ -48,7 +48,7 @@ This option provides a convenient way to report a C# internal compiler error to 
   
  A user's ability to send reports depends on computer and user policy permissions.  
   
- For more information about error debugger, see [Description of the Dr. Watson for Windows (Drwtsn32.exe) Tool](http://go.microsoft.com/fwlink/?LinkId=147286).  
+ For more information about error debugger, see [Description of the Dr. Watson for Windows (Drwtsn32.exe) Tool](https://support.microsoft.com/help/308538/description-of-the-dr--watson-for-windows-drwtsn32-exe-tool).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

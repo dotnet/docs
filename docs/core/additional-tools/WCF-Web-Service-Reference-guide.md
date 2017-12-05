@@ -2,11 +2,6 @@
 
 Over the years, many Visual Studio developers have enjoyed the productivity that Add Service Reference provides when their .NET Framework projects needed to access Windows Communication Foundation (WCF) services. The WCF team is excited to introduce the WCF Connected Service for .NET Core and ASP.NET Core, a VS extension providing an experience like the Add Service Reference functionality. This tool retrieves metadata from a WCF service in the current solution, locally or on a network, and generates a .NET Core compatible source code file for a WCF client proxy that you can use to access the service.
 
-```
-Note
-```
-*You should only reference services from a trusted source. Adding references from an untrusted source may compromise security.*
-
 > [!NOTE]
 > You should only reference services from a trusted source. Adding references from an untrusted source may compromise security. 
 

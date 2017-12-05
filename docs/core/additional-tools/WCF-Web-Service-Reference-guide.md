@@ -1,13 +1,13 @@
 ## Microsoft WCF Web Service Reference Provider
 
-Over the years, many Visual Studio developers have enjoyed the productivity that Add Service Reference provides when their .NET Framework projects needed to access Windows Communication Foundation (WCF) services. The WCF team is excited to introduce the WCF Connected Service for .NET Core and ASP.NET Core, a VS extension providing an experience like the Add Service Reference functionality. This tool retrieves metadata from a WCF service in the current solution, locally or on a network, and generates a .NET Core compatible source code file for a WCF client proxy that you can use to access the service.
+Over the years, many Visual Studio developers have enjoyed the productivity that Add Service Reference provides when their .NET Framework projects needed to access Windows Communication Foundation (WCF) services. The WCF team is excited to introduce the WCF Connected Service for .NET Core and ASP.NET Core, a VS extension providing an experience like the Add Service Reference functionality. This tool retrieves metadata from a WCF service in the current solution, from a WSDL file or on a network, and generates a .NET Core compatible source code file for a WCF client proxy that you can use to access the service.
 
 > [!NOTE]
 > You should only reference services from a trusted source. Adding references from an untrusted source may compromise security. 
 
 ### How to use the extension
 
-The WCF Web Service Reference VS connected service extension is applicable to projects created using the templates under Visual C# -> .Net Core, Visual C# -> .Net Standard and Visual C# -> Web -> ASP.NET CORE Web Application projects.
+The WCF Web Service Reference VS connected service extension is applicable to projects created using the templates under Visual C# -> .Net Core, Visual C# -> .Net Standard and Visual C# -> Web -> ASP.NET Core Web Application projects.
 
 Using the ASP.NET Core Web Application project template as an example, I will walk you through adding a WCF service reference to the project:
 1. In Solution Explorer, double-click the Connected Services node of a project. A Connected Services page appears as shown below:

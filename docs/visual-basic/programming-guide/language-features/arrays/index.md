@@ -1,7 +1,7 @@
 ---
 title: "Arrays in Visual Basic"
 ms.custom: ""
-ms.date: 07/20/2015
+ms.date: 12/06/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"
@@ -18,8 +18,13 @@ ms.manager: wpickett
 ---
 # Arrays in Visual Basic
 An array is a set of values, which are termed *elements*, that are logically related to each other. For example, an array may consist of the number of students in each grade in a grammar school; each element of the array is the number of students in a single grade. Similarly, an array may consist of a student's grades for a class; each element of the array is a single grade.    
-  
- By using an array, you can refer to these related values by the same name, and use a number that’s called an *index* or *subscript* to identify an individual element based on its position in the array. The indexes of an array range from 0 to one less than the total number of elements in the array. 
+
+It is possible individual variables to store each of our data items. For example, if our application analyzes student grades, we can use a separate variable for each student's grade, such as `englishGrade1`, `englishGrade2`, etc. This approach has three major limitations:
+- We have to know at design time exactly how many grades we have to handle.
+- Handling large numbers of grades quickly become unwieldy. This in turn makes an application much more likely to have serious bugs.
+- It is difficult to maintain. Each new grade that we add requires that the application be modified, recompiled, and redeployed.  
+ 
+ By using an array, you can refer to these related values by the same name, and use a number that’s called an *index* or *subscript* to identify an individual element based on its position in the array. The indexes of an array range from 0 to one less than the total number of elements in the array. You can work with the array as a unit, and the ability to iterate its elements frees you from needing to know exactly how many elements it contains at design time.
   
  Some quick examples before explanation:  
   
@@ -66,6 +71,8 @@ Dim sales()() As Double = New Double(11)() {}
 - [Jagged arrays](#jagged-arrays)  
   
 - [Zero-length arrays](#zero-length-arrays)  
+
+- [Splitting an array](#splitting-an-array)
   
 - [Collections as an alternative to arrays](#collections-as-an-alternative-to-arrays)  
   
@@ -167,7 +174,7 @@ Just as you can for one-dimensional arrays, you can rely on type inference when 
 
  [!code-vb[array-size](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/array-size.vb)]  
   
-  You can find the size of an array by using the <xref:System.Array.Length%2A?displayProperty=nameWithType> property. You can find the length of each dimension of a multi-dimensional array by using the <xref:System.Array.GetLength%2A> method.  
+  You can find the size of an array by using the <xref:System.Array.Length%2A?displayProperty=nameWithType> property. You can find the length of each dimension of a multi-dimensional array by using the <xref:System.Array.GetLength%2A?displayProperty=nameWithType> method.  
   
  You can resize an array variable by assigning a new array object to it or by using the [`ReDim` Statement](../../../../visual-basic/language-reference/statements/redim-statement.md) statement. The following example uses the `ReDim` statement to change a 100-element array to a 51-element array.
 
@@ -197,9 +204,9 @@ Also, the [ReDim Statement](../../../../visual-basic/language-reference/statemen
   
 -   You can pass the variable to the <xref:Microsoft.VisualBasic.Information.TypeName%2A> function to get a `String` with the name of run-time type.  
   
- The following example calls the `TypeName` function to determine the type of the array and the type of the elements in the array. The array type is `Integer(,)` and the elements in the array are of type `Integer`.  
+ The following example calls the both the `GetType` method and the `TypeName` function to determine the type of an array. The array type is `Byte(,)`. Note that the <xref:System.Type.BaseType%2A?displayProperty=nameWithType> property also indicates that the base type of the byte array is the <xref:System.Array> class.  
   
- [!code-vb[VbVbalrArrays#15](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#15)]  
+ [!code-vb[array-type](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/array-type.vb)]  
   
 ##  Arrays as return values and parameters  
  To return an array from a `Function` procedure, specify the array data type and the number of dimensions as the return type of the [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md). Within the function, declare a local array variable with same data type and number of dimensions. In the [Return Statement](../../../../visual-basic/language-reference/statements/return-statement.md), include the local array variable without parentheses.  
@@ -248,25 +255,60 @@ You might need to create a zero-length array under the following circumstances:
 -   You want to keep the your code simple by not having to check for `Nothing` as a special case.  
   
 -   Your code interacts with an application programming interface (API) that either requires you to pass a zero-length array to one or more procedures or returns a zero-length array from one or more procedures.
-  
 
-##  <a name="BKMK_Collections"></a> Collections as an Alternative to Arrays  
- Arrays are most useful for creating and working with a fixed number of strongly typed objects. Collections provide a more flexible way to work with groups of objects. Unlike arrays, the group of objects that you work with can grow and shrink dynamically as the needs of the application change.  
+## Splitting an array
+
+In some cases, you may need to split a single array into multiple arrays. This involves identifying the point or points at which the array is to be split, and then spitting the array into two or more separate arrays. 
+
+> [!NOTE] 
+> This section does not discuss splitting a single string into a string array based on some delimiter. For information on splitting a string, see the <xref:System.String.Split%2A?displayProperty=nameWithType> method.
+
+The most common criteria for splitting an array are:
+
+- The number of elements in the array. For example, you might want to split an array of more than a specified number of elements into a number of approximately equal parts. For this purpose, you can use the value returned by either the <xref:System.Array.Length%2A?displayProperty=nameWithType> or <xref:System.Array.GetLength%2A?displayProperty=nameWithType> method.
+
+- The value of an element, which serves as a delimiter that indicates where the array should be split. You can search for a specific value by calling the <xref:System.Array.FindIndex%2A?displayProperty=nameWithType> and <xref:System.Array.FindLastIndex%2A?displayProperty=nameWithType> methods.
+ 
+Once you've determined the index or indexes at which the array should be split, you can then create the individual arrays by calling the <xref:System.Array.Copy%2A?displayProperty=nameWithType> method. 
+
+The following example splits an array into two arrays of approximately equal size. (If the total number of array elements is odd, the first array has one more element than the second.) 
+
+[!code-vb[splitting-an-array-by-length](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/split1.vb)] 
+
+The following example splits a string array into two arrays based on the presence of an element whose value is "zzz", which serves as the array delimiter. The new arrays do not include the element that contains the delimiter.
+
+[!code-vb[splitting-an-array-by-delimiter](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/split2.vb)] 
+
+## Joining arrays
+
+You can also combine a number of arrays into a single larger array. To do this, you also use the <xref:System.Array.Copy%2A?displayProperty=nameWithType> method. 
+
+> [!NOTE] 
+> This section does not discuss joining a string array into a single string. For information on joining a string array, see the <xref:System.String.Join%2A?displayProperty=nameWithType> method.
+
+Before copying the elements of each array into the new array, you must first ensure that you have initialized the array so that it is large enough to accompodate the new array. You can do this in one of two ways:
+
+- Use the [`ReDim Preserve`]((../../../../visual-basic/language-reference/statements/redim-statement.md)) statement to dynamically expand the array before adding new elements to it. This is the easiest technique, but it can result in performance degradation and excessive memory consumption when you are copying large arrays.
+- Calculate the total number of elements needed for the new large array, then add the elements of each source array to it.
+
+The following example uses the second approach to add four arrays with ten elements each to a single array.  
+
+[!code-vb[joining-an-array](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/join.vb)] 
+
+Since in this case the source arrays are all small, we can also dynamically expand the array as we add the elements of each new array to it. The following example does that.
+
+[!code-vb[joining-an-array-dynamically](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/join2.vb)] 
+
+##  Collections as an alternative to arrays  
+ Arrays are most useful for creating and working with a fixed number of strongly typed objects. Collections provide a more flexible way to work with groups of objects. Unlike arrays, which require that you explicitly change the size of an array with the [`ReDim` Statement](../../../../visual-basic/language-reference/statements/redim-statement.md), collections grow and shrink dynamically as the needs of an application change.  
   
- If you need to change the size of an array, you must use the [ReDim Statement](../../../../visual-basic/language-reference/statements/redim-statement.md). When you do this, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] creates a new array and releases the previous array for disposal. This takes execution time. Therefore, if the number of items you are working with changes frequently, or you cannot predict the maximum number of items you need, you might obtain better performance using a collection.  
+ When you use `ReDim` to redimension an array, Visual Basic creates a new array and releases the previous one. This takes execution time. Therefore, if the number of items you are working with changes frequently, or you cannot predict the maximum number of items you need, you'll usually obtain better performance by using a collection.  
   
  For some collections, you can assign a key to any object that you put into the collection so that you can quickly retrieve the object by using the key.  
   
- If your collection contains elements of only one data type, you can use one of the classes in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace. A generic collection enforces type safety so that no other data type can be added to it. When you retrieve an element from a generic collection, you do not have to determine its data type or convert it.  
+ If your collection contains elements of only one data type, you can use one of the classes in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace. A generic collection enforces type safety so that no other data type can be added to it.  
   
- For more information about collections, see [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b).  
-  
-### Example  
- The following example uses the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] generic class <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> to create a list collection of `Customer` objects.  
-  
- [!code-vb[VbVbalrArrays#1](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#1)]  
-  
- The declaration of the `CustomerFile` collection specifies that it can contain elements only of type `Customer`. It also provides for an initial capacity of 200 elements. The procedure `AddNewCustomer` checks the new element for validity and then adds it to the collection. The procedure `PrintCustomers` uses a `For Each` loop to traverse the collection and display its elements.  
+ For more information about collections, see [Collections](../../concepts/collections.md).
   
 ## Related Topics  
   

@@ -40,9 +40,9 @@ End Namespace
 Change the directory back to the *unit-testing-vb-using-stest* directory. Run [`dotnet sln add .\PrimeService\PrimeService.vbproj`](../tools/dotnet-sln.md)
 to add the class library project to the solution.
 
- ### Install the NUnit project template
+## Install the NUnit project template
 
- The NUnit test project templates need to be installed before creating a test project. This only needs to be done once. Run [`dotnet new -i NUnit3.DotNetNew.Template`](../tools/dotnet-new.md) to install the NUnit templates.
+The NUnit test project templates need to be installed before creating a test project. This only needs to be done once on each developer machine where you'll create new NUnit projects. Run [`dotnet new -i NUnit3.DotNetNew.Template`](../tools/dotnet-new.md) to install the NUnit templates.
 
  ```
  dotnet new -i NUnit3.DotNetNew.Template

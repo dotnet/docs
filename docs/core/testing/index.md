@@ -30,11 +30,12 @@ When writing unit tests, be careful you don’t accidentally introduce dependenc
 
 Learn more about unit testing in .NET Core projects:
 
-Unit Test projects for .NET Core are supported for [C#](../../csharp/index.md), [F#](../../fsharp/index.md) and [Visual Basic](../../visual-basic/index.md). You can also choose between [xUnit](http://xunit.github.io) and [MSTest](https://github.com/Microsoft/vstest-docs).
+Unit Test projects for .NET Core are supported for [C#](../../csharp/index.md), [F#](../../fsharp/index.md) and [Visual Basic](../../visual-basic/index.md). You can also choose between [xUnit](http://xunit.github.io), [NUnit](http://nunit.org) and [MSTest](https://github.com/Microsoft/vstest-docs).
 
 You can read about those combinations in these walkthroughs:
 
 * Create unit tests using [*XUnit* and *C#* with the .NET Core CLI](unit-testing-with-dotnet-test.md).
+* Create unit tests using [*NUnit* and *C#* with the .NET Core CLI](unit-testing-with-nunit.md).
 * Create unit tests using [*MSTest* and *C#* with the .NET Core CLI](unit-testing-with-mstest.md).
 * Create unit tests using [*XUnit* and *F#* with the .NET Core CLI](unit-testing-fsharp-with-dotnet-test.md).
 * Create unit tests using [*MSTest* and *F#* with the .NET Core CLI](unit-testing-fsharp-with-mstest.md).

@@ -58,7 +58,7 @@ This section contains examples for many common uses of the `DateTime` struct:
  [Persisting DateTime values](#persisting-datetime-values)   
  [Comparing for equality within tolerance](#comparing-for-equality-within-tolerance)
 
-You can download the entire set of examples from this article in either [Visual Basic](https://github.com/docs/tree/master/samples/snippets/visualbasic/System.DateTime/) or [C#](https://github.com/docs/tree/master/samples/snippets/csharp/System.DateTime/) from the docs repository on GitHub.
+You can download the entire set of examples from this article in either [Visual Basic](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/System.DateTime/) or [C#](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/System.DateTime/) from the docs repository on GitHub.
 
 ### Initializing a DateTime object  
 
@@ -109,22 +109,22 @@ The following Visual Basic statement initializes a new <xref:System.DateTime> va
 
 Internally, all <xref:System.DateTime> values are represented as the number of ticks (the number of 100-nanosecond intervals) that have elapsed since 12:00:00 midnight, January 1, 0001. The actual <xref:System.DateTime> value is independent of the way in which that value appears when displayed. The appearance of a <xref:System.DateTime> value is the result of a formatting operation that converts a value to its string representation.  
   
-The appearance of date and time values is dependent on culture, international standards, application requirements, and personal preference. The <xref:System.DateTime> structure offers flexibility in formatting date and time values through overloads of  <xref:System.DateTime.ToString%2A>. The default <xref:System.DateTime.ToString?displayProperty=nameWithType> method returns the string representation of a date and time value using the current culture's short date and long time pattern. The following example uses the default <xref:System.DateTime.ToString?displayProperty=nameWithType> method. It displays the date and time using the short date and long time pattern for the current culture. The en-us culture is the current culture on the computer on which the example was run.  
+The appearance of date and time values is dependent on culture, international standards, application requirements, and personal preference. The <xref:System.DateTime> structure offers flexibility in formatting date and time values through overloads of  <xref:System.DateTime.ToString%2A>. The default <xref:System.DateTime.ToString?displayProperty=nameWithType> method returns the string representation of a date and time value using the current culture's short date and long time pattern. The following example uses the default <xref:System.DateTime.ToString?displayProperty=nameWithType> method. It displays the date and time using the short date and long time pattern for the current culture. The en-US culture is the current culture on the computer on which the example was run.  
   
 [!code-csharp-interactive[System.DateTime.Formatting#1](~/samples/snippets/csharp/System.DateTime/StringFormat.cs#1)]
 [!code-vb[System.DateTime.Formatting#1](~/samples/snippets/visualbasic/System.DateTime/StringFormat.vb#1)]  
 
-You may need to format dates in a specific culture to support web scenarios where the server may be in a different culture from the client. You specify the culture using the <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to create the short date and long time representation in a specific culture. The following example uses the <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to display the date and time using the short date and long time pattern for the fr-fr culture.  
+You may need to format dates in a specific culture to support web scenarios where the server may be in a different culture from the client. You specify the culture using the <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to create the short date and long time representation in a specific culture. The following example uses the <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to display the date and time using the short date and long time pattern for the fr-FR culture.  
   
 [!code-csharp-interactive[System.DateTime.Formatting#2](~/samples/snippets/csharp/System.DateTime/StringFormat.cs#2)]
 [!code-vb[System.DateTime.Formatting#2](~/samples/snippets/visualbasic/System.DateTime/StringFormat.vb#2)]  
 
- Other applications may require different string representations of a date. The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method returns the string representation defined by a standard or custom format specifier using the formatting conventions of the current culture. The following example uses the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method to display the full date and time pattern for the en-us culture, the current culture on the computer on which the example was run.  
+ Other applications may require different string representations of a date. The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method returns the string representation defined by a standard or custom format specifier using the formatting conventions of the current culture. The following example uses the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method to display the full date and time pattern for the en-US culture, the current culture on the computer on which the example was run.  
   
 [!code-csharp-interactive[System.DateTime.Formatting#3](~/samples/snippets/csharp/System.DateTime/StringFormat.cs#3)]
 [!code-vb[System.DateTime.Formatting#3](~/samples/snippets/visualbasic/System.DateTime/StringFormat.vb#3)]  
 
- Finally, you can specify both the culture and the representation using the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method. The following example uses the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method to display the full date and time pattern for the fr-fr culture.  
+ Finally, you can specify both the culture and the representation using the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method. The following example uses the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method to display the full date and time pattern for the fr-FR culture.  
 
 [!code-csharp-interactive[System.DateTime.Formatting#4](~/samples/snippets/csharp/System.DateTime/StringFormat.cs#4)]
 [!code-vb[System.DateTime.Formatting#4](~/samples/snippets/visualbasic/System.DateTime/StringFormat.vb#4)]  
@@ -140,7 +140,7 @@ For more information about formatting <xref:System.DateTime> values, see  [Stand
 
 Parsing converts the string representation of a date and time to a <xref:System.DateTime> value. Typically, date and time strings have two different usages in applications:  
   
--   A date and time takes a variety of forms and reflects the conventions of either the current culture or a specific culture. For example, an application allows a user whose current culture is en-us to input a date value as "12/15/2013" or "December 15, 2013". It allows a user whose current culture is en-gb to input a date value as "15/12/2013" or "15 December 2013."  
+-   A date and time takes a variety of forms and reflects the conventions of either the current culture or a specific culture. For example, an application allows a user whose current culture is en-US to input a date value as "12/15/2013" or "December 15, 2013". It allows a user whose current culture is en-gb to input a date value as "15/12/2013" or "15 December 2013."  
   
 -   A date and time is represented in a predefined format. For example, an application serializes a date as "20130103" independently of the culture on which the app is running. An application may require dates be input in the current culture's short date format.
   
@@ -307,7 +307,7 @@ The previous examples all assumed that <xref:System.DateTime> values are express
 [!code-vb[System.DateTime.Persistence#6](~/samples/snippets/visualbasic/System.DateTime/DateWithTimeZone.vb#6)]  
 
 > [!IMPORTANT]
->  The `DateWithTimeZone` structure is used in the next two examples, which serialize and deserialize an array of `DateWithTimeZone` objects. You can download the entire set of examples from this article in either [Visual Basic](https://github.com/docs/tree/master/samples/snippets/visualbasic/System.DateTime/) or [C#](https://github.com/docs/tree/master/samples/snippets/csharp/System.DateTime/) from the docs repository on GitHub.
+>  The `DateWithTimeZone` structure is used in the next two examples, which serialize and deserialize an array of `DateWithTimeZone` objects. You can download the entire set of examples from this article in either [Visual Basic](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/System.DateTime/) or [C#](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/System.DateTime/) from the docs repository on GitHub.
   
 By using the `DateWithTimeZone` structure, you can then persist date and time along with time zone information. The following example uses the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> class to serialize an array of `DateWithTimeZone` objects.  
   
@@ -378,8 +378,6 @@ You can add or subtract a time interval from a <xref:System.DateTime> object. Ti
 
 ### Version considerations  
 
-Starting with the .NET Framework 2.0, the <xref:System.DateTime> structure contains a 64-bit field composed of a private Kind field concatenated with the Ticks field. The Kind field is a 2-bit field that indicates whether the <xref:System.DateTime> structure represents a local time, a Coordinated Universal Time (UTC), or the time in an unspecified time zone. The Kind field is used when performing time conversions between time zones, but not for time comparisons or arithmetic. The value of the Kind field can be obtained with the <xref:System.DateTime.Kind%2A> property.  
-  
 > [!NOTE]
 >  An alternative to the <xref:System.DateTime> structure for working with date and time values in particular time zones is the <xref:System.DateTimeOffset> structure. The <xref:System.DateTimeOffset> structure stores date and time information in a private <xref:System.DateTime> field and the number of minutes by which that date and time differs from UTC in a private <xref:System.Int16> field. This makes it possible for a <xref:System.DateTimeOffset> value to reflect the time in a particular time zone, whereas a <xref:System.DateTime> value can unambiguously reflect only UTC and the local time zone's time. For a discussion about when to use the <xref:System.DateTime> structure or the <xref:System.DateTimeOffset> structure when working with date and time values, see [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](~/docs/standard/datetime/choosing-between-datetime.md).  
   

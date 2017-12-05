@@ -10281,10 +10281,10 @@ From i As Integer In objects
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <param name="source">An <xref:System.Collections.Generic.IEnumerable%601> to create a <see cref="T:System.Collections.Generic.Dictionary`2" /> from.</param>
+        <summary>Creates a <xref:System.Collections.Generic.HashSet%601> from an <xref:System.Collections.Generic.IEnumerable%601>.</summary>
+        <returns>A <xref:System.Collections.Generic.HashSet%601> that contains values of type <paramref name="TSource" /> selected from the input sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -10308,11 +10308,11 @@ From i As Integer In objects
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TSource&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <param name="source">An <xref:System.Collections.Generic.IEnumerable%601> to create a <xrefSystem.Collections.Generic.HashSet%601> from.</param>
+        <param name="comparer">An <xref:System.Collections.Generic.IEqualityComparer%601> to compare keys.</param>
+        <summary>Creates a <xref:System.Collections.Generic.HashSet%601> from an <xref:System.Collections.Generic.IEnumerable%601> using the <paramref name="comparer"> to compare keys.</summary>
+        <returns>A <xref:System.Collections.Generic.HashSet%601> that contains values of type <paramref name="TSource" /> selected from the input sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

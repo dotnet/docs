@@ -296,7 +296,7 @@ You can also combine a number of arrays into a single larger array. To do this, 
 
 Before copying the elements of each array into the new array, you must first ensure that you have initialized the array so that it is large enough to accompodate the new array. You can do this in one of two ways:
 
-- Use the [`ReDim Preserve`]((../../../../visual-basic/language-reference/statements/redim-statement.md)) statement to dynamically expand the array before adding new elements to it. This is the easiest technique, but it can result in performance degradation and excessive memory consumption when you are copying large arrays.
+- Use the [`ReDim Preserve`](../../../../visual-basic/language-reference/statements/redim-statement.md) statement to dynamically expand the array before adding new elements to it. This is the easiest technique, but it can result in performance degradation and excessive memory consumption when you are copying large arrays.
 - Calculate the total number of elements needed for the new large array, then add the elements of each source array to it.
 
 The following example uses the second approach to add four arrays with ten elements each to a single array.  

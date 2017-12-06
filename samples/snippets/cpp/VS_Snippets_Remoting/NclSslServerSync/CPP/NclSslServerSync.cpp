@@ -53,8 +53,8 @@ public:
       // Authenticate the server but don't require the client to authenticate.
       try
       {
-         sslStream->AuthenticateAsServer( serverCertificate, false, 
-             SslProtocols::Tls, true );
+         sslStream->AuthenticateAsServer( serverCertificate, false, true );
+         // false == no client cert required; true == check cert revocation.
          
          // Display the properties and settings for the authenticated stream.
          DisplaySecurityLevel( sslStream );

@@ -437,8 +437,13 @@ ms.technology:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+---
+
+---
+uid: System.TimeZoneInfo.SupportsDaylightSavingTime*
 langs: ["csharp", "vb", "powershell"]
 ---
+
 
 ---
 uid: System.TimeZoneInfo.IsInvalidTime(System.DateTime)

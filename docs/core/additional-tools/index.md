@@ -12,7 +12,7 @@ ms.technology: .net-core tools.
 This section compiles a list of tools that support and extend the .Net Core functionality, in addition to the [.NET Core command-line interface (CLI)](..\tools\index.md) tools.
 
 
-### [WCF Web Service Reference](WCF-Web-Service-Reference-guide.md)
+### [WCF Web Service Reference](wcf_web_service_reference-guide.md)
 The WCF Web Service Reference is a Visual Studio connected service provider which made its debut in [Visual Studio 2017 version 15.5](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#WCFTools). Similarly to the Add Service Reference tool for classic .Net Framework VS projects, it allows for generating a web service reference containing proxy code that makes it easier for a client to consume the web service's functionality.
 
 ### [XML Serializer Generator](xmlserializergenerator-instructions.md)

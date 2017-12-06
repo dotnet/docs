@@ -7,11 +7,11 @@ Over the years, many Visual Studio developers have enjoyed the productivity that
 
 ### How to use the extension
 
-The **WCF Web Service Reference** option is applicable to projects created using the templates under **Visual C#** -> **.Net Core**, **Visual C#** -> **.Net Standard**, and **Visual C#** -> **Web** -> **ASP.NET Core Web Application** projects.
+The **WCF Web Service Reference** option is applicable to projects created using the templates under **Visual C#** -> **.NET Core**, **Visual C#** -> **.NET Standard**, and **Visual C#** -> **Web** -> **ASP.NET Core Web Application** projects.
 
 Using the **ASP.NET Core Web Application** project template as an example, I will walk you through adding a WCF service reference to the project:
 
-1. In Solution Explorer, double-click the **Connected Services** node of the project (for a .Net Core or .Net Standard project this option is available from the context menu of the **Dependencies** node). The **Connected Services** page appears as shown below:
+1. In Solution Explorer, double-click the **Connected Services** node of the project (for a .NET Core or .NET Standard project this option is available from the context menu of the **Dependencies** node). The **Connected Services** page appears as shown below:
 
 ![Connected Services tab](images/WCFCS-ConnectedServicesPage.png)
 

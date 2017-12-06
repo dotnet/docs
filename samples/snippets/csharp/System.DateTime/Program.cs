@@ -4,13 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Instantiation.Snippets();
-            StringFormat.Snippets();
-            Parsing.Snippets();
-            Resolution.Snippets();
-            CalendarSamples.Snippets();
+            //Instantiation.Snippets();
+            //StringFormat.Snippets();
+            //Parsing.Snippets();
+            //Resolution.Snippets();
+            //CalendarSamples.Snippets();
             Persistence.Snippets();
-            DateTimeComparisons.Snippets();
+            //DateTimeComparisons.Snippets();
         }
     }
 }

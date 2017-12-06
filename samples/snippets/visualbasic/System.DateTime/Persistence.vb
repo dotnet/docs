@@ -347,13 +347,13 @@ Module Persistence
     '       Saved dates...
     '
     ' When restored on an en-GB system, the example displays the following output:
-    '       Current Time Zone: (UTC) Dublin, Edinburgh, Lisbon, London
+    '       Current Time Zone: (UTC-6:00) Central Time (US & Canada)
     '       The dates on an en-GB system:
-    '       14 June 2014 14:32
-    '       11 July 2014 07:49
-    '       10 January 2015 09:16
-    '       21 December 2014 05:45
-    '       02 June 2014 23:14
+    '       14 June 2014 08:32
+    '       11 July 2014 01:49
+    '       10 January 2015 03:16
+    '       20 December 2014 11:45
+    '       02 June 2014 17:14
     '       Restored dates...
     ' </Snippet5>
 

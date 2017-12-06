@@ -43,8 +43,7 @@ namespace Examples.System.Net
             // Authenticate the server but don't require the client to authenticate.
             try 
             {
-                sslStream.AuthenticateAsServer(serverCertificate, false, true);
-                // false == no client cert required; true == check cert revocation.
+                sslStream.AuthenticateAsServer(serverCertificate, clientCertificateRequired: false, checkCertificateRevocation: true);
                 
                 // Display the properties and settings for the authenticated stream.
                 DisplaySecurityLevel(sslStream);

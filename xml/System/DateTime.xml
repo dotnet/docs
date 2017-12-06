@@ -46,24 +46,34 @@
     <summary>Represents an instant in time, typically expressed as a date and time of day.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-## Examples
 
 This section contains examples for many common uses of the `DateTime` struct:
   
  [Initializing a `DateTime` object](#initializing-a-datetime-object)   
  [DateTime values and their string representations](#datetime-values-and-their-string-representations)   
  [Parsing DateTime values from strings](#parsing-datetime-values-from-strings)   
+ [DateTime values](#datetime-values)   
+ [DateTime operations](#datetime-operations)   
  [DateTime resolution](#datetime-resolution)   
  [DateTime values and calendars](#datetime-values-and-calendars)   
  [Persisting DateTime values](#persisting-datetime-values)   
+ [DateTime vs. TimeSpan](#datetime-vs-timespan)   
  [Comparing for equality within tolerance](#comparing-for-equality-within-tolerance)
+ [COM interop considerations](#com-interop-considerations)  
+   
+The <xref:System.DateTime> value type represents dates and times with values ranging from 00:00:00 (midnight), January 1, 0001 Anno Domini (Common Era) through 11:59:59 P.M., December 31, 9999 A.D. (C.E.) in the Gregorian calendar.  
+  
+Time values are measured in 100-nanosecond units called ticks. A particular date is the number of ticks since 12:00 midnight, January 1, 0001 A.D. (C.E.) in the <xref:System.Globalization.GregorianCalendar> calendar. The number excludes ticks that would be added by leap seconds. For example, a ticks value of 31241376000000000L represents the date Friday, January 01, 0100 12:00:00 midnight. A <xref:System.DateTime> value is always expressed in the context of an explicit or default calendar.  
+  
+> [!NOTE]
+>  If you are working with a ticks value that you want to convert to some other time interval, such as minutes or seconds, you should use the <xref:System.TimeSpan.TicksPerDay?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerHour?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerMinute?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerSecond?displayProperty=nameWithType>, or <xref:System.TimeSpan.TicksPerMillisecond?displayProperty=nameWithType> constant to perform the conversion. For example, to add the number of seconds represented by a specified number of ticks to the <xref:System.DateTime.Second%2A> component of a <xref:System.DateTime> value, you can use the expression `dateValue.Second + nTicks/Timespan.TicksPerSecond`.  
 
 You can view the source for the entire set of examples from this article in either [Visual Basic](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/System.DateTime/) or [C#](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/System.DateTime/) from the docs repository on GitHub.
 
 > [!NOTE]
 >  An alternative to the <xref:System.DateTime> structure for working with date and time values in particular time zones is the <xref:System.DateTimeOffset> structure. The <xref:System.DateTimeOffset> structure stores date and time information in a private <xref:System.DateTime> field and the number of minutes by which that date and time differs from UTC in a private <xref:System.Int16> field. This makes it possible for a <xref:System.DateTimeOffset> value to reflect the time in a particular time zone, whereas a <xref:System.DateTime> value can unambiguously reflect only UTC and the local time zone's time. For a discussion about when to use the <xref:System.DateTime> structure or the <xref:System.DateTimeOffset> structure when working with date and time values, see [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](~/docs/standard/datetime/choosing-between-datetime.md).  
   
-### Initializing a DateTime object  
+## Initializing a DateTime object  
 
 You can assign an initial value to a new `DateTime` value in many different ways:
 
@@ -74,7 +84,7 @@ You can assign an initial value to a new `DateTime` value in many different ways
 
 The following code snippets show examples of each:
 
-#### Invoke Constructors
+### Invoke Constructors
 
 You call any of the overloads of the <xref:System.DateTime> constructor that specify elements of the date and time value (such as the year, month, and day, or the number of ticks). The following code creates a specific date using the <xref:System.DateTime> constructor specifying the year, month, day, hour, minute, and second.  
 
@@ -86,14 +96,14 @@ You invoke the `DateTime` structure's implicit default constructor when you want
 [!code-vb[System.DateTime.Instantiation#5](~/samples/snippets/visualbasic/System.DateTime/Instantiation.vb#5)]  
 [!code-csharp-interactive[System.DateTime.Instantiation#5](~/samples/snippets/csharp/System.DateTime/Instantiation.cs#5)]
     
-#### Assigning a computed value
+### Assigning a computed value
 
 You can assign the <xref:System.DateTime> object a date and time value returned by a property or method. The following example assigns the current date and time, the current Coordinated Universal Time (UTC) date and time, and the current date to three new <xref:System.DateTime> variables.  
   
 [!code-vb[System.DateTime.Instantiation#3](~/samples/snippets/visualbasic/System.DateTime/Instantiation.vb#3)]  
 [!code-csharp-interactive[System.DateTime.Instantiation#3](~/samples/snippets/csharp/System.DateTime/Instantiation.cs#3)]
 
-#### Parsing a string that represents a DateTime
+### Parsing a string that represents a DateTime
 
 The <xref:System.DateTime.Parse%2A>, <xref:System.DateTime.ParseExact%2A>, <xref:System.DateTime.TryParse%2A>, and <xref:System.DateTime.TryParseExact%2A> methods all convert a string to its equivalent date and time value. The following examples use the <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.ParseExact%2A> methods to parse a string and convert it to a <xref:System.DateTime> value. The second format uses a form supported by the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard for a representing date and time in string format. This standard representation is often used to transfer date information in web services.
   
@@ -102,13 +112,13 @@ The <xref:System.DateTime.Parse%2A>, <xref:System.DateTime.ParseExact%2A>, <xref
 
 The <xref:System.DateTime.TryParse%2A> and <xref:System.DateTime.TryParseExact%2A> methods indicate whether a string is a valid representation of a <xref:System.DateTime> value and, if it is, performs the conversion.  
 
-#### Language-specific syntax for Visual Basic
+### Language-specific syntax for Visual Basic
 
 The following Visual Basic statement initializes a new <xref:System.DateTime> value.  
   
 [!code-vb[System.DateTime.Instantiation#2](~/samples/snippets/visualbasic/System.DateTime/Instantiation.vb#2)]  
 
-### DateTime values and their string representations  
+## DateTime values and their string representations  
 
 Internally, all <xref:System.DateTime> values are represented as the number of ticks (the number of 100-nanosecond intervals) that have elapsed since 12:00:00 midnight, January 1, 0001. The actual <xref:System.DateTime> value is independent of the way in which that value appears when displayed. The appearance of a <xref:System.DateTime> value is the result of a formatting operation that converts a value to its string representation.  
   
@@ -139,7 +149,7 @@ The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithTy
 
 For more information about formatting <xref:System.DateTime> values, see  [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
 
-### Parsing DateTime values from strings
+## Parsing DateTime values from strings
 
 Parsing converts the string representation of a date and time to a <xref:System.DateTime> value. Typically, date and time strings have two different usages in applications:  
   
@@ -166,7 +176,17 @@ If a string cannot be parsed, the <xref:System.DateTime.Parse%2A> and <xref:Syst
   
 For more information about parsing date and time values, see [Parsing Date and Time Strings](~/docs/standard/base-types/parsing-datetime.md).  
 
-### DateTime resolution
+## DateTime values
+
+Descriptions of time values in the <xref:System.DateTime> type are often expressed using the Coordinated Universal Time (UTC) standard. Coordinated Universal Time is the internationally recognized name for Greenwich Mean Time (GMT). Coordinated Universal Time is the time as measured at zero degrees longitude, the UTC origin point. Daylight saving time is not applicable to UTC.  
+  
+Local time is relative to a particular time zone. A time zone is associated with a time zone offset. A time zone offset is the displacement of the time zone measured in hours from the UTC origin point. In addition, local time is optionally affected by daylight saving time, which adds or subtracts a time interval adjustment. Local time is calculated by adding the time zone offset to UTC and adjusting for daylight saving time if necessary. The time zone offset at the UTC origin point is zero.  
+  
+UTC time is suitable for calculations, comparisons, and storing dates and time in files. Local time is appropriate for display in user interfaces of desktop applications. Time zone-aware applications (such as many Web applications) also need to work with a number of other time zones.  
+  
+If the <xref:System.DateTime.Kind%2A> property of a <xref:System.DateTime> object is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, it is unspecified whether the time represented is local time, UTC time, or a time in some other time zone.  
+
+## DateTime resolution
   
 > [!NOTE]
 >  As an alternative to performing date and time arithmetic on <xref:System.DateTime> values to measure elapsed time, you can use the <xref:System.Diagnostics.Stopwatch> class.  
@@ -177,6 +197,20 @@ The following example illustrates the dependence of current date and time values
 
 [!code-csharp-interactive[System.DateTime.Resolution#1](~/samples/snippets/csharp/System.DateTime/Resolution.cs#1)]
 [!code-vb[System.DateTime.Resolution#1](~/samples/snippets/visualbasic/System.DateTime/Resolution.vb#1)]  
+
+## DateTime operations  
+
+A calculation using a <xref:System.DateTime> structure, such as <xref:System.DateTime.Add%2A> or <xref:System.DateTime.Subtract%2A>, does not modify the value of the structure. Instead, the calculation returns a new <xref:System.DateTime> structure whose value is the result of the calculation.  
+  
+Conversion operations between time zones (such as between UTC and local time, or between one time zone and another) take daylight saving time into account, but arithmetic and comparison operations do not.  
+  
+The <xref:System.DateTime> structure itself offers limited support for converting from one time zone to another. You can use the <xref:System.DateTime.ToLocalTime%2A> method to convert UTC to local time, or you can use the <xref:System.DateTime.ToUniversalTime%2A> method to convert from local time to UTC. However, a full set of time zone conversion methods is available in the <xref:System.TimeZoneInfo> class. You convert the time in any one of the world's time zones to the time in any other time zone using these methods.  
+  
+Calculations and comparisons of <xref:System.DateTime> objects are meaningful only if the objects represent times in the same time zone. You can use a <xref:System.TimeZoneInfo> object to represent a <xref:System.DateTime> value's time zone, although the two are loosely coupled. A <xref:System.DateTime> object does not have a property that returns an object that represents that date and time value's time zone. The <xref:System.DateTime.Kind%2A> property indicates if a `DateTime` represents UTC, local time, or is unspecified. In a time zone-aware application, you must rely on some external mechanism to determine the time zone in which a <xref:System.DateTime> object was created. You could use a structure that wraps both the <xref:System.DateTime> value and the <xref:System.TimeZoneInfo> object that represents the <xref:System.DateTime> value's time zone. For details on using UTC in calculations and comparisons with <xref:System.DateTime> values, see [Performing Arithmetic Operations with Dates and Times](~/docs/standard/datetime/performing-arithmetic-operations.md).  
+  
+Each <xref:System.DateTime> member implicitly uses the Gregorian calendar to perform its operation. Exceptions are methods that implicitly specify a calendar. These include constructors that specify a calendar, and methods with a parameter derived from <xref:System.IFormatProvider>, such as <xref:System.Globalization.DateTimeFormatInfo?displayProperty=nameWithType>.  
+  
+Operations by members of the <xref:System.DateTime> type take into account details such as leap years and the number of days in a month.  
 
 ## DateTime values and calendars  
 
@@ -229,7 +263,7 @@ The <xref:System.DateTime> structure includes a <xref:System.DateTime.DayOfWeek%
 
 For more information on dates and calendars, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
   
-### Persisting DateTime values  
+## Persisting DateTime values  
 
 You can persist <xref:System.DateTime> values in four ways:  
   
@@ -240,7 +274,7 @@ You can persist <xref:System.DateTime> values in four ways:
   
 You must ensure that the routine that restores the <xref:System.DateTime> values doesn't lose data or throw an exception regardless of which technique you choose. <xref:System.DateTime> values should round-trip. That is, the original value and the restored value should be the same. And if the original <xref:System.DateTime> value represents a single instant of time, it should identify the same moment of time when it's restored.  
   
-#### Persisting values as strings  
+### Persisting values as strings  
 
 To successfully restore <xref:System.DateTime> values that are persisted as strings, follow these rules:  
   
@@ -268,7 +302,7 @@ The following example uses the invariant culture and the "O" standard format str
 [!code-csharp[System.DateTime.Persistence#2](~/samples/snippets/csharp/System.DateTime/Persistence.cs#2)]
 [!code-vb[System.DateTime.Persistence#2](~/samples/snippets/visualbasic/System.DateTime/Persistence.vb#2)]  
 
-#### Persisting values as integers  
+### Persisting values as integers  
 
 You can persist a date and time as an <xref:System.Int64> value that represents a number of ticks. In this case, you don't have to consider the culture of the systems the <xref:System.DateTime> values are persisted and restored on.  
   
@@ -287,7 +321,7 @@ The following example persists an array of <xref:System.DateTime> values as inte
 [!code-csharp[System.DateTime.Persistence#3](~/samples/snippets/csharp/System.DateTime/Persistence.cs#3)]
 [!code-vb[System.DateTime.Persistence#3](~/samples/snippets/visualbasic/System.DateTime/Persistence.vb#3)]  
 
-#### Serializing DateTime values  
+### Serializing DateTime values  
 
 You can persist <xref:System.DateTime> values through serialization to a stream or file, and then restore them through deserialization. <xref:System.DateTime> data is serialized in some specified object format. The objects are restored when they are deserialized. A formatter or serializer, such as <xref:System.Xml.Serialization.XmlSerializer> or <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, handles the process of serialization and deserialization. For more information about serialization and the types of serialization supported by the .NET Framework, see [Serialization](~/standard/serialization/index.md).
   
@@ -301,7 +335,7 @@ The previous example doesn't include time information. If a <xref:System.DateTim
 [!code-csharp[System.DateTime.Persistence#5](~/samples/snippets/csharp/System.DateTime/Persistence.cs#5)]
 [!code-vb[System.DateTime.Persistence#5](~/samples/snippets/visualbasic/System.DateTime/Persistence.vb#5)]  
 
-#### Serializing DateTime and time zone data  
+### Serializing DateTime and time zone data  
 
 The previous examples all assumed that <xref:System.DateTime> values are expressed as local times. The code converted the values between UTC and local time so they reflect the same moment in time on the source and target systems. <xref:System.DateTime> values may also reflect moments in time in a time zone other than local and UTC. Because the <xref:System.DateTime> structure is not time zone-aware, you have to serialize both the <xref:System.DateTime> value and the <xref:System.TimeZoneInfo> object that represents its time zone. Create a type whose fields include both the <xref:System.DateTime> value and its time zone. The following example defines a `DateWithTimeZone` structure.  
   
@@ -321,7 +355,13 @@ The following example then calls the <xref:System.Runtime.Serialization.Formatte
 [!code-csharp[System.DateTime.Persistence#8](~/samples/snippets/csharp/System.DateTime/Persistence.cs#8)]
 [!code-vb[System.DateTime.Persistence#8](~/samples/snippets/visualbasic/System.DateTime/Persistence.vb#8)]  
 
-### Comparing for equality within tolerance
+## DateTime vs. TimeSpan  
+
+The <xref:System.DateTime> and <xref:System.TimeSpan> value types differ in that a <xref:System.DateTime> represents an instant in time whereas a <xref:System.TimeSpan> represents a time interval. You can subtract one instance of <xref:System.DateTime> from another to obtain a <xref:System.TimeSpan> object that represents the time interval between them. Or you could add a positive <xref:System.TimeSpan> to the current <xref:System.DateTime> to obtain a <xref:System.DateTime> value that represents a future date.  
+  
+You can add or subtract a time interval from a <xref:System.DateTime> object. Time intervals can be negative or positive, and they can be expressed in units such as ticks, seconds, or as a <xref:System.TimeSpan> object.  
+
+## Comparing for equality within tolerance
 
 Equality comparisons for <xref:System.DateTime> values are exact. That means two values must be expressed as the same number of ticks to be considered equal. That precision is often unecessary or even incorrect for many applications. Often, you want to test if <xref:System.DateTime> objects are **roughly equal**. 
 
@@ -329,54 +369,7 @@ The following example demonstrates how to compare roughly equivalent <xref:Syste
   
 [!code-csharp[System.DateTime.Comparisons#1](~/samples/snippets/csharp/System.DateTime/DateTimeComparisons.cs#1)]
 [!code-vb[System.DateTime.Comparisons#1](~/samples/snippets/visualbasic/System.DateTime/DateTimeComparisons.vb#1)]  
-
-## Remarks  
-
-In this Section:
-
- [DateTime values](#datetime-values)   
- [DateTime operations](#datetime-operations)   
- [DateTime vs. TimeSpan](#datetime-vs-timespan)   
- [COM interop considerations](#com-interop-considerations)  
-   
-The <xref:System.DateTime> value type represents dates and times with values ranging from 00:00:00 (midnight), January 1, 0001 Anno Domini (Common Era) through 11:59:59 P.M., December 31, 9999 A.D. (C.E.) in the Gregorian calendar.  
-  
-Time values are measured in 100-nanosecond units called ticks. A particular date is the number of ticks since 12:00 midnight, January 1, 0001 A.D. (C.E.) in the <xref:System.Globalization.GregorianCalendar> calendar. The number excludes ticks that would be added by leap seconds. For example, a ticks value of 31241376000000000L represents the date Friday, January 01, 0100 12:00:00 midnight. A <xref:System.DateTime> value is always expressed in the context of an explicit or default calendar.  
-  
-> [!NOTE]
->  If you are working with a ticks value that you want to convert to some other time interval, such as minutes or seconds, you should use the <xref:System.TimeSpan.TicksPerDay?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerHour?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerMinute?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerSecond?displayProperty=nameWithType>, or <xref:System.TimeSpan.TicksPerMillisecond?displayProperty=nameWithType> constant to perform the conversion. For example, to add the number of seconds represented by a specified number of ticks to the <xref:System.DateTime.Second%2A> component of a <xref:System.DateTime> value, you can use the expression `dateValue.Second + nTicks/Timespan.TicksPerSecond`.  
-
-### DateTime values
-
-Descriptions of time values in the <xref:System.DateTime> type are often expressed using the Coordinated Universal Time (UTC) standard. Coordinated Universal Time is the internationally recognized name for Greenwich Mean Time (GMT). Coordinated Universal Time is the time as measured at zero degrees longitude, the UTC origin point. Daylight saving time is not applicable to UTC.  
-  
-Local time is relative to a particular time zone. A time zone is associated with a time zone offset. A time zone offset is the displacement of the time zone measured in hours from the UTC origin point. In addition, local time is optionally affected by daylight saving time, which adds or subtracts a time interval adjustment. Local time is calculated by adding the time zone offset to UTC and adjusting for daylight saving time if necessary. The time zone offset at the UTC origin point is zero.  
-  
-UTC time is suitable for calculations, comparisons, and storing dates and time in files. Local time is appropriate for display in user interfaces of desktop applications. Time zone-aware applications (such as many Web applications) also need to work with a number of other time zones.  
-  
-If the <xref:System.DateTime.Kind%2A> property of a <xref:System.DateTime> object is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, it is unspecified whether the time represented is local time, UTC time, or a time in some other time zone.  
-
-### DateTime operations  
-
-A calculation using a <xref:System.DateTime> structure, such as <xref:System.DateTime.Add%2A> or <xref:System.DateTime.Subtract%2A>, does not modify the value of the structure. Instead, the calculation returns a new <xref:System.DateTime> structure whose value is the result of the calculation.  
-  
-Conversion operations between time zones (such as between UTC and local time, or between one time zone and another) take daylight saving time into account, but arithmetic and comparison operations do not.  
-  
-The <xref:System.DateTime> structure itself offers limited support for converting from one time zone to another. You can use the <xref:System.DateTime.ToLocalTime%2A> method to convert UTC to local time, or you can use the <xref:System.DateTime.ToUniversalTime%2A> method to convert from local time to UTC. However, a full set of time zone conversion methods is available in the <xref:System.TimeZoneInfo> class. You convert the time in any one of the world's time zones to the time in any other time zone using these methods.  
-  
-Calculations and comparisons of <xref:System.DateTime> objects are meaningful only if the objects represent times in the same time zone. You can use a <xref:System.TimeZoneInfo> object to represent a <xref:System.DateTime> value's time zone, although the two are loosely coupled. A <xref:System.DateTime> object does not have a property that returns an object that represents that date and time value's time zone. The <xref:System.DateTime.Kind%2A> property indicates if a `DateTime` represents UTC, local time, or is unspecified. In a time zone-aware application, you must rely on some external mechanism to determine the time zone in which a <xref:System.DateTime> object was created. You could use a structure that wraps both the <xref:System.DateTime> value and the <xref:System.TimeZoneInfo> object that represents the <xref:System.DateTime> value's time zone. For details on using UTC in calculations and comparisons with <xref:System.DateTime> values, see [Performing Arithmetic Operations with Dates and Times](~/docs/standard/datetime/performing-arithmetic-operations.md).  
-  
-Each <xref:System.DateTime> member implicitly uses the Gregorian calendar to perform its operation. Exceptions are methods that implicitly specify a calendar. These include constructors that specify a calendar, and methods with a parameter derived from <xref:System.IFormatProvider>, such as <xref:System.Globalization.DateTimeFormatInfo?displayProperty=nameWithType>.  
-  
-Operations by members of the <xref:System.DateTime> type take into account details such as leap years and the number of days in a month.  
-
-### DateTime vs. TimeSpan  
-
-The <xref:System.DateTime> and <xref:System.TimeSpan> value types differ in that a <xref:System.DateTime> represents an instant in time whereas a <xref:System.TimeSpan> represents a time interval. You can subtract one instance of <xref:System.DateTime> from another to obtain a <xref:System.TimeSpan> object that represents the time interval between them. Or you could add a positive <xref:System.TimeSpan> to the current <xref:System.DateTime> to obtain a <xref:System.DateTime> value that represents a future date.  
-  
-You can add or subtract a time interval from a <xref:System.DateTime> object. Time intervals can be negative or positive, and they can be expressed in units such as ticks, seconds, or as a <xref:System.TimeSpan> object.  
-
-### COM interop considerations  
+## COM interop considerations  
 
 A <xref:System.DateTime> value that is transferred to a COM application, then is transferred back to a managed application, is said to round-trip. However, a <xref:System.DateTime> value that specifies only a time does not round-trip as you might expect.  
   

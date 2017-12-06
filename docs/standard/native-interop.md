@@ -67,7 +67,7 @@ using System.Runtime.InteropServices;
 namespace PInvokeSamples {
     public static class Program {
 
-        // Import the libc and define the method corresponding to the native function.
+        // Import the libSystem shared library and define the method corresponding to the native function.
         [DllImport("libSystem.dylib")]
         private static extern int getpid();
 
@@ -80,7 +80,7 @@ namespace PInvokeSamples {
 }
 ```
 
-It is similar on Linux, of course. The function name is same, since `getpid(2)` is [POSIX](https://en.wikipedia.org/wiki/POSIX) system call.
+It is also similar on Linux. The function name is the same, since `getpid(2)` is a standard [POSIX](https://en.wikipedia.org/wiki/POSIX) system call.
 
 ```csharp
 using System;
@@ -89,7 +89,7 @@ using System.Runtime.InteropServices;
 namespace PInvokeSamples {
     public static class Program {
 
-        // Import the libc and define the method corresponding to the native function.
+        // Import the libc shared library and define the method corresponding to the native function.
         [DllImport("libc.so.6")]
         private static extern int getpid();
 

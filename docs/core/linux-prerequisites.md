@@ -65,7 +65,7 @@ The following are intended to be examples. The exact versions and names may vary
 Ubuntu distributions require the following libraries installed:
 
 * libunwind8
-* liblttng-ust0
+* liblttng-ust-0
 * libcurl3
 * libssl1.0.0
 * libuuid1

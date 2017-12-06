@@ -57,7 +57,7 @@
         <ReturnType>System.Security.Authentication.SslProtocols</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use `None` instead of `Default`. `Default` permits only the Secure Sockets Layer (SSL) 3.0 or Transport Layer Security (TLS) 1.0 protocols to be negotiated, and those options are now considered obsolete. Consequently, `Default` is not allowed in many organizations. Despite the name of this field, <xref:System.Net.Security.SslStream> does not use it as a default except under special circumstances.</summary>
+        <summary>Use `None` instead of `Default`. `Default` permits only the Secure Sockets Layer (SSL) 3.0 or Transport Layer Security (TLS) 1.0 protocols to be negotiated, and those options are now considered obsolete. Consequently, `Default` is not allowed in many organizations. Despite the name of this field, <see cref="T:System.Net.Security.SslStream"/> does not use it as a default except under special circumstances.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">

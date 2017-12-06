@@ -1,4 +1,4 @@
-# [Welcome](welcome.md)
+﻿# [Welcome](welcome.md)
 
 <!-- Start of .NET Guide -->
 # [.NET Guide](standard/index.md)
@@ -114,6 +114,7 @@
 ## [Runtime IDentifier catalog](core/rid-catalog.md)
 ## [.NET Core SDK Overview](core/sdk.md)
 ## [.NET Core CLI Tools](core/tools/index.md)
+## [.NET Core Additional Tools](core/additional-tools/index.md)
 ### [Telemetry](core/tools/telemetry.md)
 ### [Extensibility Model](core/tools/extensibility.md)
 ### [Continuous Integration](core/tools/using-ci-with-cli.md)

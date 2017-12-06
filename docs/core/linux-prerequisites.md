@@ -69,7 +69,7 @@ Ubuntu distributions require the following libraries installed:
 * libcurl3
 * libssl1.0.0
 * libuuid1
-* libkrb5
+* libkrb5-3
 * zlib1g
 * libicu52 (for 14.X)
 * libicu55 (for 16.X)

@@ -2,7 +2,7 @@
 
 Over the years, many Visual Studio developers have enjoyed the productivity that the [Add Service Reference](https://msdn.microsoft.com/en-us/library/bb386382.aspx) tool provided when their .NET Framework projects needed to access Windows Communication Foundation (WCF) services. The WCF team is excited to introduce the **WCF Web Service Reference** tool, a Visual Studio connected service extension providing an experience like the Add Service Reference functionality for .NET Core and ASP.NET Core projects. This tool retrieves metadata from a WCF service in the current solution, from a WSDL file or on a network location, and generates a .NET Core compatible source file containing WCF client proxy code that you can use to access the web service.
 
-> [!!IMPORTANT]
+> [!IMPORTANT]
 > You should only reference services from a trusted source. Adding references from an untrusted source may compromise security. 
 
 ### How to use the extension

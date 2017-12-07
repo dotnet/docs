@@ -563,7 +563,7 @@
 ## Remarks  
  The interface types are described in detail in the <xref:System.Net.NetworkInformation.NetworkInterfaceType?displayProperty=nameWithType> enumeration documentation.  
 
- In principle, this property can return any member of the <xref:System.Net.NetworkInformation.NetworkInterfaceType> enumeration. The specific value that it does return is dependent on the runtime conditions of the network topology. This means that:
+ In principle, this property can return any member of the <xref:System.Net.NetworkInformation.NetworkInterfaceType> enumeration. The specific value that it does return is dependent on the runtime conditions of the underlying network topology. This means that:
  
  - It is not possible to determine in advance which value the property returns for a particular network.
  

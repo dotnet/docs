@@ -274,6 +274,8 @@ items:
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
+    You should get an answer between 19 and 20 (remember that doouble arithmetic rounds.)
+
 - title: Complete challenge
   durationInMinutes: 1
   content: |
@@ -290,11 +292,11 @@ items:
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
-  content: |
+- content: |
     You've completed the "Numbers in C#" quick start. 
     
-    You can continue these quick starts on your own development environment. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment. Once you've done that, continue with [Branches and loops](branches-and-loops-local.md) in your local environment.
-
+    You can continue these quick starts on your own development environment. Learn the basics of [local development](local-environment.md) and then pick a quick start. You can try this same exercise, move directly to the next quick start, or start again at with the [numbers in C#](numbers-in-csharp-local.md) quickstart.
+    
     You can learn more about numbers in C# in the following topics:
 
     [Integral Types Table](../language-reference/keywords/integral-types-table.md)   

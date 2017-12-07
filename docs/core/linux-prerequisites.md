@@ -4,7 +4,7 @@ description: Supported Linux versions and .NET Core dependencies to develop, dep
 keywords: .NET, .NET Core, Linux, debian, ubuntu, RHEL, centOS,
 author: jralexander
 ms.author: johalex
-ms.date: 09/07/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -65,7 +65,7 @@ The following are intended to be examples. The exact versions and names may vary
 Ubuntu distributions require the following libraries installed:
 
 * libunwind8
-* liblttng-ust-0
+* liblttng-ust0
 * libcurl3
 * libssl1.0.0
 * libuuid1

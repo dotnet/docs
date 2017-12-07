@@ -27,7 +27,7 @@ The **Project Designer** and its general use are described fully in the topic [I
 |`Build`|[Build Page, Project Designer &#40;C&#35;&#41;](https://msdn.microsoft.com/library/kb4wyys2.aspx)|Enables you to control how the code is compiled.|
 |`Build Events`|[Build Events Page, Project Designer &#40;C&#35;&#41;](https://msdn.microsoft.com/library/kb4wyys2.aspx)|Enables you to specify commands to run before or after a compilation.|
 |`Debug`|[Debug Page, Project Designer](https://msdn.microsoft.com/library/2wcdezs5.aspx)|Enables you to control how the application runs during debugging. This includes what command-line to use and what your application's starting directory is, and any special debugging modes you want to enable, such as native code and SQL.|
-|`Reference Paths`|[Managing references in a project](https://msdn.microsoft.com/library/ez524kew.aspx)|Enables you to specify where to search for assemblies that the code depends on.|
+|`Reference Paths`|[Managing references in a project](/visualstudio/ide/managing-references-in-a-project)|Enables you to specify where to search for assemblies that the code depends on.|
 
 ## F#-Specific Settings
 The following table summarizes settings that are specific to F#:

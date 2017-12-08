@@ -78,7 +78,7 @@ Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](~/
   
  [!code-vb[VbVbalrIntroToLINQ#2](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_3.vb)]  
   
- This example is a valid query by itself; however, the query becomes far more powerful when you add more query clauses to refine the result. For example, you can add a `Where` clause to filter the result by one or more values. Query expressions are a single line of code; you can just append additional query clauses to the end of the query. You can break up a query across multiple lines of text to improve readability by using the underscore (_) line-continuation character. The following code example shows an example of a query that includes a `Where` clause.  
+ This example is a valid query by itself; however, the query becomes far more powerful when you add more query clauses to refine the result. For example, you can add a `Where` clause to filter the result by one or more values. Query expressions are a single line of code; you can just append additional query clauses to the end of the query. You can break up a query across multiple lines of text to improve readability by using the underscore (\_) line-continuation character. The following code example shows an example of a query that includes a `Where` clause.  
   
  [!code-vb[VbVbalrIntroToLINQ#3](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_4.vb)]  
   

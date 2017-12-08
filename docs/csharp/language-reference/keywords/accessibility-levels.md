@@ -1,6 +1,6 @@
 ---
 title: "Accessibility Levels (C# Reference)"
-ms.date: 07/20/2015
+ms.date: 12/06/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -9,11 +9,11 @@ helpviewer_keywords:
   - "access modifiers [C#], accessibility levels"
   - "accessibility levels"
 ms.assetid: dc083921-0073-413e-8936-a613e8bb7df4
-caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # Accessibility Levels (C# Reference)
+
 Use the access modifiers, [public](../../../csharp/language-reference/keywords/public.md), [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), or [private](../../../csharp/language-reference/keywords/private.md), to specify one of the following declared accessibility levels for members.  
   
 |Declared accessibility|Meaning|  
@@ -23,7 +23,7 @@ Use the access modifiers, [public](../../../csharp/language-reference/keywords/p
 |`internal`|Access is limited to the current assembly.|  
 |`protected internal`|Access is limited to the current assembly or types derived from the containing class.|  
 |`private`|Access is limited to the containing type.|  
-|`private protected`|Access is limited to the containing class or types derived from the containing class within the current assembly.|  
+|`private protected`|Access is limited to the containing class or types derived from the containing class within the current assembly. Available since C# 7.2. |  
   
  Only one access modifier is allowed for a member or type, except when you use the `protected internal` or `private protected` combinations.  
   

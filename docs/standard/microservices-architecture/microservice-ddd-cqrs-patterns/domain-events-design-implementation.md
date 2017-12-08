@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 11/08/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -79,8 +79,9 @@ When the total amount purchased by a customer in the store, across any number of
 In C#, a domain event is simply a data-holding structure or class, like a DTO, with all the information related to what just happened in the domain, as shown in the following example:
 
 ```csharp
-public class OrderStartedDomainEvent : IAsyncNotification
+public class OrderStartedDomainEvent : INotification
 {
+    public string UserId { get; private set; }
     public int CardTypeId { get; private set; }
     public string CardNumber { get; private set; }
     public string CardSecurityNumber { get; private set; }
@@ -89,9 +90,9 @@ public class OrderStartedDomainEvent : IAsyncNotification
     public Order Order { get; private set; }
 
     public OrderStartedDomainEvent(Order order,
-        int cardTypeId, string cardNumber,
-        string cardSecurityNumber, string cardHolderName,
-        DateTime cardExpiration)
+                                   int cardTypeId, string cardNumber,
+                                   string cardSecurityNumber, string cardHolderName,
+                                   DateTime cardExpiration)
     {
         Order = order;
         CardTypeId = cardTypeId;
@@ -123,22 +124,22 @@ Instead of dispatching to a domain event handler immediately, a better approach 
 
 Deciding if you send the domain events right before or right after committing the transaction is important, since it determines whether you will include the side effects as part of the same transaction or in different transactions. In the latter case, you need to deal with eventual consistency across multiple aggregates. This topic is discussed in the next section.
 
-The deferred approach is what eShopOnContainers uses. First, you add the events happening in your entities into a collection or list of events per entity. That list should be part of the entity object, or even better, part of your base entity class, as shown in the following example:
+The deferred approach is what eShopOnContainers uses. First, you add the events happening in your entities into a collection or list of events per entity. That list should be part of the entity object, or even better, part of your base entity class, as shown in the following example of the Entity base class:
 
 ```csharp
 public abstract class Entity
 {
-    private List<IAsyncNotification> _domainEvents;
+     //... 
+    private List<INotification> _domainEvents;
+    public List<INotification> DomainEvents => _domainEvents;
 
-    public List<IAsyncNotification> DomainEvents => _domainEvents;
-
-    public void AddDomainEvent(IAsyncNotification eventItem)
+    public void AddDomainEvent(INotification eventItem)
     {
-        _domainEvents = _domainEvents ?? new List<IAsyncNotification>();
+        _domainEvents = _domainEvents ?? new List<INotification>();
         _domainEvents.Add(eventItem);
     }
 
-    public void RemoveDomainEvent(IAsyncNotification eventItem)
+    public void RemoveDomainEvent(INotification eventItem)
     {
         if (_domainEvents is null) return;
         _domainEvents.Remove(eventItem);
@@ -147,19 +148,18 @@ public abstract class Entity
 }
 ```
 
-When you want to raise an event, you just add it to the event collection to be placed within an aggregate entity method, as the following code shows:
+When you want to raise an event, you just add it to the event collection from code at any method of the aggregate-root entity, as the following code shows which is part of the [Order agregate-root at eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs):
 
 ```csharp
 var orderStartedDomainEvent = new OrderStartedDomainEvent(this, //Order object
-    cardTypeId,
-    cardNumber,
-    cardSecurityNumber,
-    cardHolderName,
-    cardExpiration);
+                                                          cardTypeId, cardNumber,
+                                                          cardSecurityNumber,
+                                                          cardHolderName,
+                                                          cardExpiration);
 this.AddDomainEvent(orderStartedDomainEvent);
 ```
 
-Notice that the only thing that the AddDomainEvent method is doing is adding an event to the list. No event is raised yet, and no event handler is invoked yet.
+Notice that the only thing that the AddDomainEvent method is doing is adding an event to the list. No event is dispatched yet, and no event handler is invoked yet.
 
 You actually want to dispatch the events later on, when you commit the transaction to the database. If you are using Entity Framework Core, that means in the SaveChanges method of your EF DbContext, as in the following code:
 
@@ -168,7 +168,7 @@ You actually want to dispatch the events later on, when you commit the transacti
 public class OrderingContext : DbContext, IUnitOfWork
 {
     // ...
-    public async Task<int> SaveEntitiesAsync()
+    public async Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default(CancellationToken))
     {
         // Dispatch Domain Events collection.
         // Choices:
@@ -177,8 +177,9 @@ public class OrderingContext : DbContext, IUnitOfWork
         // handlers that are using the same DbContext with Scope lifetime
         // B) Right AFTER committing data (EF SaveChanges) into the DB. This makes
         // multiple transactions. You will need to handle eventual consistency and
-        // compensatory actions in case of failures.
+        // compensatory actions in case of failures.        
         await _mediator.DispatchDomainEventsAsync(this);
+
         // After this line runs, all the changes (from the Command Handler and Domain
         // event handlers) performed through the DbContext will be commited
         var result = await base.SaveChangesAsync();
@@ -232,7 +233,7 @@ Another way to map events to multiple event handlers is by using types registrat
 
 You can build all the plumbing and artifacts to implement that approach by yourself. However, you can also use available libraries like [MediatR](https://github.com/jbogard/MediatR), which underneath the covers uses your IoT container. You can therefore directly use the predefined interfaces and the mediator object’s publish/dispatch methods.
 
-In code, you first need to register the event handler types in your IoC container, as shown in the following example:
+In code, you first need to register the event handler types in your IoC container, as shown in the following example at [eShopOnContainers Ordering microservice](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Infrastructure/AutofacModules/MediatorModule.cs):
 
 ```csharp
 public class MediatorModule : Autofac.Module
@@ -240,13 +241,11 @@ public class MediatorModule : Autofac.Module
     protected override void Load(ContainerBuilder builder)
     {
         // Other registrations ...
-        // Register the DomainEventHandler classes (they implement
-        // IAsyncNotificationHandler<>) in assembly holding the Domain Events
-        builder.RegisterAssemblyTypes(
-            typeof(ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler)
-            .GetTypeInfo().Assembly)
-            .Where(t => t.IsClosedTypeOf(typeof(IAsyncNotificationHandler<>)))
-            .AsImplementedInterfaces();
+        // Register the DomainEventHandler classes (they implement IAsyncNotificationHandler<>)
+        // in assembly holding the Domain Events
+        builder.RegisterAssemblyTypes(typeof(ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler)
+                                       .GetTypeInfo().Assembly)
+                                         .AsClosedTypesOf(typeof(IAsyncNotificationHandler<>));
         // Other registrations ...
     }
 }
@@ -256,7 +255,7 @@ The code first identifies the assembly that contains the domain event handlers b
 
 ### How to subscribe to domain events
 
-When you use MediatR, each event handler must use an event type that is provided on the generic parameter of the IAsyncNotificationHandler interface, as you can see in the following code:
+When you use MediatR, each event handler must use an event type that is provided on the generic parameter of the INotificationHandler interface, as you can see in the following code:
 
 ```csharp
 public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
@@ -267,51 +266,56 @@ Based on the relationship between event and event handler, which can be consider
 
 ### How to handle domain events
 
-Finally, the event handler usually implements application layer code that uses infrastructure repositories to obtain the required additional aggregates and to execute side-effect domain logic. The following code shows an example.
+Finally, the event handler usually implements application layer code that uses infrastructure repositories to obtain the required additional aggregates and to execute side-effect domain logic. The following [domain event handler code at eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/DomainEventHandlers/OrderStartedEvent/ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler.cs), shows an implementation example.
 
 ```csharp
 public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
-    : IAsyncNotificationHandler<OrderStartedDomainEvent>
+                   : INotificationHandler<OrderStartedDomainEvent>
 {
     private readonly ILoggerFactory _logger;
     private readonly IBuyerRepository<Buyer> _buyerRepository;
     private readonly IIdentityService _identityService;
+
     public ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler(
         ILoggerFactory logger,
         IBuyerRepository<Buyer> buyerRepository,
         IIdentityService identityService)
     {
-        // Parameter validations
-        //...
+        // ...Parameter validations...
     }
 
     public async Task Handle(OrderStartedDomainEvent orderStartedEvent)
     {
-        var cardTypeId = (orderStartedEvent.CardTypeId != 0) ?
-            orderStartedEvent.CardTypeId : 1;
+        var cardTypeId = (orderStartedEvent.CardTypeId != 0) ? orderStartedEvent.CardTypeId : 1;        
         var userGuid = _identityService.GetUserIdentity();
         var buyer = await _buyerRepository.FindAsync(userGuid);
         bool buyerOriginallyExisted = (buyer == null) ? false : true;
+
         if (!buyerOriginallyExisted)
         {
             buyer = new Buyer(userGuid);
         }
+
         buyer.VerifyOrAddPaymentMethod(cardTypeId,
-            $"Payment Method on {DateTime.UtcNow}",
-            orderStartedEvent.CardNumber,
-            orderStartedEvent.CardSecurityNumber,
-            orderStartedEvent.CardHolderName,
-            orderStartedEvent.CardExpiration,
-            orderStartedEvent.Order.Id);
-        var buyerUpdated = buyerOriginallyExisted ? _buyerRepository.Update(buyer) :
-        _buyerRepository.Add(buyer);
-        await _buyerRepository.UnitOfWork.SaveEntitiesAsync();
+                                       $"Payment Method on {DateTime.UtcNow}",
+                                       orderStartedEvent.CardNumber,
+                                       orderStartedEvent.CardSecurityNumber,
+                                       orderStartedEvent.CardHolderName,
+                                       orderStartedEvent.CardExpiration,
+                                       orderStartedEvent.Order.Id);
+
+        var buyerUpdated = buyerOriginallyExisted ? _buyerRepository.Update(buyer) 
+                                                                      : _buyerRepository.Add(buyer);
+
+        await _buyerRepository.UnitOfWork
+                .SaveEntitiesAsync();
+
         // Logging code using buyerUpdated info, etc.
     }
 }
 ```
 
-This event handler code is considered application layer code because it uses infrastructure repositories, as explained in the next section on the infrastructure-persistence layer. Event handlers could also use other infrastructure components.
+The previous domain event handler code is considered application layer code because it uses infrastructure repositories, as explained in the next section on the infrastructure-persistence layer. Event handlers could also use other infrastructure components.
 
 #### Domain events can generate integration events to be published outside of the microservice boundaries
 

@@ -106,7 +106,7 @@ version: '2'
   
 services:
   ci-build:
-    image: microsoft/aspnetcore-build:1.0-1.1
+    image: microsoft/aspnetcore-build:latest
     volumes:
       - .:/src
     working_dir: /src

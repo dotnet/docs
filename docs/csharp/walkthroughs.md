@@ -33,34 +33,34 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  [Creating and Using Dynamic Objects (C# and Visual Basic)](../csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)  
  Shows how to create a custom object that dynamically exposes the contents of a text file, and how to create a project that uses the `IronPython` library.  
    
- [Authoring a Composite Control with Visual C#](https://msdn.microsoft.com/library/a6h7e207.aspx)  
+ [Authoring a Composite Control with Visual C#](../framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-csharp.md)  
  Demonstrates creating a simple composite control and extending its functionality through inheritance.  
   
  [Creating a Windows Forms Control that Takes Advantage of Visual Studio Design-Time Features](https://msdn.microsoft.com/library/35ea88wb.aspx)  
  Illustrates how to create a custom designer for a custom control.  
   
- [Inheriting from a Windows Forms Control with Visual C#](https://msdn.microsoft.com/library/5h0k2e6x.aspx)  
+ [Inheriting from a Windows Forms Control with Visual C#](..framework/winforms/controls/walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)  
  Demonstrates creating a simple inherited button control. This button inherits functionality from the standard Windows Forms button and exposes a custom member.  
   
- [Debugging Custom Windows Forms Controls at Design Time](https://msdn.microsoft.com/library/5ytx0z24.aspx)  
+ [Debugging Custom Windows Forms Controls at Design Time](..framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)  
  Describes how to debug the design-time behavior of your custom control.
 
- [Performing Common Tasks Using Smart Tags on Windows Forms Controls](https://msdn.microsoft.com/library/xhz359sc.aspx)  
+ [Performing Common Tasks Using Smart Tags on Windows Forms Controls](../framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls.md)  
  Demonstrates some of the commonly performed tasks such as adding or removing a tab on a `TabControl`, docking a control to its parent, and changing the orientation of a `SplitContainer` control.  
   
  [Writing Queries in C# (LINQ)](../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
  Demonstrates the C# language features that are used to write [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions.  
   
- [Manipulating Data (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb386927.aspx)  
+ [Manipulating Data (C#) (LINQ to SQL)](../docs/framework/data/adonet/sql/linq/walkthrough-manipulating-data-csharp.md)  
  Describes a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] scenario for adding, modifying, and deleting data in a database.  
   
- [Simple Object Model and Query (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb386940.aspx)  
+ [Simple Object Model and Query (C#) (LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-simple-object-model-and-query-csharp.md)  
  Demonstrates how to create an entity class and a simple query to filter the entity class.  
   
- [Using Only Stored Procedures (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb399407.aspx)  
+ [Using Only Stored Procedures (C#) (LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-using-only-stored-procedures-csharp.md)  
  Demonstrates how to use LINQ to SQL to access data by executing only stored procedures.  
   
- [Querying Across Relationships (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb386951.aspx)  
+ [Querying Across Relationships (C#) (LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-querying-across-relationships-csharp.md)  
  Demonstrates the use of [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] associations to represent foreign-key relationships in a database.  
 
  [Writing a Visualizer in C#](/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp)  

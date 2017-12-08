@@ -244,6 +244,6 @@ The output of the previous code is:
 ## See Also
 [Query Expressions](../../language-reference/query-expressions.md)
 
-[LINQ Considerations (WCF Data Services)](https://msdn.microsoft.com/library/ee622463.aspx)
+[LINQ Considerations (WCF Data Services)](../../../docs/framework/data/wcf/linq-considerations-wcf-data-services.md)
 
 [ODataService Type Provider (F#)](https://msdn.microsoft.com/visualfsharpdocs/conceptual/odataservice-type-provider-%5bfsharp%5d)

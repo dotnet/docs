@@ -23,7 +23,7 @@ This is the type of copy and paste reuse that many developers share between proj
 
 ## The custom Entity base class
 
-The following code is an example of an Entity base class where you can place code that can be used the same way by any domain entity, such as the entity ID, [equality operators](https://msdn.microsoft.com/en-us/library/c35t2ffz.aspx), etc.
+The following code is an example of an Entity base class where you can place code that can be used the same way by any domain entity, such as the entity ID, [equality operators](/cpp/cpp/equality-operators-equal-equal-and-exclpt-equal), etc.
 
 ```csharp
 // ENTITY FRAMEWORK CORE 1.1

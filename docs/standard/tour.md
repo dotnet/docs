@@ -120,7 +120,7 @@ To learn more and see some samples, see the [LINQ (Language Integrated Query)](u
 
 Every operating system includes an application programming interface (API) that provides system services. .NET provides several ways to call those APIs.
 
-The main way to do native interoperability is via "platform invoke" or P/Invoke for short, which is supported across Linux and Windows platforms. A Windows-only way of doing native interoperability is known as "COM interop," which is used to work with [COM components](https://msdn.microsoft.com/library/bwa2bx93.aspx) in managed code. It's built on top of the P/Invoke infrastructure, but it works in subtly different ways.
+The main way to do native interoperability is via "platform invoke" or P/Invoke for short, which is supported across Linux and Windows platforms. A Windows-only way of doing native interoperability is known as "COM interop," which is used to work with [COM components](/cpp/atl/introduction-to-com) in managed code. It's built on top of the P/Invoke infrastructure, but it works in subtly different ways.
 
 Most of Mono's (and thus Xamarin's) interoperability support for Java and Objective-C are built similarly, that is, they use the same principles.
 

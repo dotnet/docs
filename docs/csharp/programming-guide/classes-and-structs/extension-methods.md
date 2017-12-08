@@ -80,7 +80,7 @@ using System.Linq;
   
 -   Extension methods are brought into scope at the namespace level. For example, if you have multiple static classes that contain extension methods in a single namespace named `Extensions`, they will all be brought into scope by the `using Extensions;` directive.  
   
- For a class library that you implemented, you shouldn't use extension methods to avoid incrementing the version number of an assembly. If you want to add significant functionality to a library for which you own the source code, you should follow the standard .NET Framework guidelines for assembly versioning. For more information, see [Assembly Versioning](https://msdn.microsoft.com/library/51ket42z).  
+ For a class library that you implemented, you shouldn't use extension methods to avoid incrementing the version number of an assembly. If you want to add significant functionality to a library for which you own the source code, you should follow the standard .NET Framework guidelines for assembly versioning. For more information, see [Assembly Versioning](../../../../docs/framework/app-domains/assembly-versioning.md).  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  

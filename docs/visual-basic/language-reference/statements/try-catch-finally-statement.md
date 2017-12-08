@@ -190,5 +190,5 @@ End Try
  [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
  [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)  
  [Best Practices for Using Code Snippets](/visualstudio/ide/best-practices-for-using-code-snippets)  
- [Exception Handling](https://msdn.microsoft.com/library/dd997415)  
+ [Exception Handling](../../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md)  
  [Throw Statement](../../../visual-basic/language-reference/statements/throw-statement.md)

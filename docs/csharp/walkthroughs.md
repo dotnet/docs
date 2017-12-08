@@ -33,7 +33,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  [Creating and Using Dynamic Objects (C# and Visual Basic)](../csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)  
  Shows how to create a custom object that dynamically exposes the contents of a text file, and how to create a project that uses the `IronPython` library.  
    
- [Authoring a Composite Control with Visual C#](../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-csharp.md)  
+ [Authoring a Composite Control with Visual C#](../framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-csharp.md)  
  Demonstrates creating a simple composite control and extending its functionality through inheritance.  
   
  [Creating a Windows Forms Control that Takes Advantage of Visual Studio Design-Time Features](https://msdn.microsoft.com/library/35ea88wb.aspx)  

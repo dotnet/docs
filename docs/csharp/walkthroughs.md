@@ -39,13 +39,13 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  [Creating a Windows Forms Control that Takes Advantage of Visual Studio Design-Time Features](https://msdn.microsoft.com/library/35ea88wb.aspx)  
  Illustrates how to create a custom designer for a custom control.  
   
- [Inheriting from a Windows Forms Control with Visual C#](../docs/framework/winforms/controls/walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)  
+ [Inheriting from a Windows Forms Control with Visual C#](..framework/winforms/controls/walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)  
  Demonstrates creating a simple inherited button control. This button inherits functionality from the standard Windows Forms button and exposes a custom member.  
   
- [Debugging Custom Windows Forms Controls at Design Time](../docs/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)  
+ [Debugging Custom Windows Forms Controls at Design Time](..framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)  
  Describes how to debug the design-time behavior of your custom control.
 
- [Performing Common Tasks Using Smart Tags on Windows Forms Controls](../docs/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls.md)  
+ [Performing Common Tasks Using Smart Tags on Windows Forms Controls](../framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls.md)  
  Demonstrates some of the commonly performed tasks such as adding or removing a tab on a `TabControl`, docking a control to its parent, and changing the orientation of a `SplitContainer` control.  
   
  [Writing Queries in C# (LINQ)](../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
@@ -54,13 +54,13 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  [Manipulating Data (C#) (LINQ to SQL)](../docs/framework/data/adonet/sql/linq/walkthrough-manipulating-data-csharp.md)  
  Describes a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] scenario for adding, modifying, and deleting data in a database.  
   
- [Simple Object Model and Query (C#) (LINQ to SQL)](../docs/framework/data/adonet/sql/linq/walkthrough-simple-object-model-and-query-csharp.md)  
+ [Simple Object Model and Query (C#) (LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-simple-object-model-and-query-csharp.md)  
  Demonstrates how to create an entity class and a simple query to filter the entity class.  
   
- [Using Only Stored Procedures (C#) (LINQ to SQL)](../docs/framework/data/adonet/sql/linq/walkthrough-using-only-stored-procedures-csharp.md)  
+ [Using Only Stored Procedures (C#) (LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-using-only-stored-procedures-csharp.md)  
  Demonstrates how to use LINQ to SQL to access data by executing only stored procedures.  
   
- [Querying Across Relationships (C#) (LINQ to SQL)](../docs/framework/data/adonet/sql/linq/walkthrough-querying-across-relationships-csharp.md)  
+ [Querying Across Relationships (C#) (LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-querying-across-relationships-csharp.md)  
  Demonstrates the use of [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] associations to represent foreign-key relationships in a database.  
 
  [Writing a Visualizer in C#](/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp)  

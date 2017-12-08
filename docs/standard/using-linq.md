@@ -1,7 +1,7 @@
 ---
 title: LINQ (Language Integrated Query)
 description: Learn how LINQ provides language-level querying capabilities and an API to C# and VB as a way to write expressive, declarative code.
-keywords: .NET, .NET Core
+keywords: .NET, .NET Coref
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
@@ -250,7 +250,7 @@ In diagram form:
 
 ![PLINQ diagram](./media/using-linq/plinq-diagram.png)
 
-Parallelizable CPU-bound jobs which can be easily expressed via LINQ (in other words, are pure functions and have no side effects) are a great candidate for PLINQ. For jobs which _do_ have a side effect, consider using the [Task Parallel Library](../parallel-programming/task-parallel-library-tpl.md).
+Parallelizable CPU-bound jobs which can be easily expressed via LINQ (in other words, are pure functions and have no side effects) are a great candidate for PLINQ. For jobs which _do_ have a side effect, consider using the [Task Parallel Library](/parallel-programming/task-parallel-library-tpl.md).
 
 ## Further Resources:
 

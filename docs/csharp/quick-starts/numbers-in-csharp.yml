@@ -268,13 +268,13 @@ items:
 
     Now that you've seen the different numeric types, write code that calculates
     the area of a circle whose radius is 2.50 inches. Remember that the area of a circle
-    is the radius squared multiplied by PI. One hint: C# contains a constant
+    is the radius squared multiplied by PI. One hint: .NET contains a constant
     for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value. 
 
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
-    You should get an answer between 19 and 20 (remember that doouble arithmetic rounds.)
+    You should get an answer between 19 and 20.
 
 - title: Complete challenge
   durationInMinutes: 1

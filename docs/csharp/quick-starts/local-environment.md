@@ -25,7 +25,7 @@ You'll create applications using the [`dotnet new`](../../core/tools/dotnet-new.
 generates the files and assets necessary for your application. The quickstarts all use the `console` application
 type.
 
-The other commands you'll use is [`dotnet build`](../../core/tools/dotnet-build.md) to build the executable,
+The other commands you'll use are [`dotnet build`](../../core/tools/dotnet-build.md) to build the executable,
 and [`dotnet run`](../../core/tools/dotnet-run.md) to run the executable.
 
 ## Pick your quickstart
@@ -36,7 +36,7 @@ You can start with any of the following quick starts:
 
 In the [Numbers in C#](numbers-in-csharp-local.md) quick start, you'll learn
 how computers store numbers and how to perform calculations with different
-number types. You'll learn the basics of rounding, and how to perform
+numeric types. You'll learn the basics of rounding, and how to perform
 mathematical calculations using C#. 
 
 This quick start assumes that you have finished the [Hello world](hello-world.yml) tutorial.
@@ -44,7 +44,7 @@ This quick start assumes that you have finished the [Hello world](hello-world.ym
 ## [Branches and loops](branches-and-loops-local.md)
 
 The [Branches and loops](branches-and-loops-local.md) quick start teaches the basics of selecting
-different paths of code based on the values stored in variables. You'll learn the
+different paths of code execution based on the values stored in variables. You'll learn the
 basics of control flow, which is the basis of how programs make decisions and choose
 different actions. 
 
@@ -54,7 +54,7 @@ This beginning lesson assumes that you have finished the [Hello World](hello-wor
 ## [List collection](arrays-and-collections.md)
 
 The [List collection](arrays-and-collections.md) lesson gives you
-a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and remove items and sort the lists. You'll explore different kinds of lists. 
+a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists. 
 
 This beginning quick start assumes that you have finished the quick starts listed above.
 

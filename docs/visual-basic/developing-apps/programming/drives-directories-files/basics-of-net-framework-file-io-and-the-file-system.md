@@ -42,7 +42,7 @@ Classes in the <xref:System.IO> namespace are used to work with drives, files, a
   
 -   **Seeking**. You can query and modify your position in the stream.  
   
- For more information, see [Composing Streams](../../../../docs/standard/io/composing-streams.md).  
+ For more information, see [Composing Streams](../../../../standard/io/composing-streams.md).  
   
 ## Types of Streams  
  In the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], a stream is represented by the <xref:System.IO.Stream> class, which forms the abstract class for all other streams. You cannot directly create an instance of the <xref:System.IO.Stream> class, but must use one of the classes it implements.  
@@ -55,15 +55,15 @@ Classes in the <xref:System.IO> namespace are used to work with drives, files, a
   
 -   <xref:System.IO.MemoryStream>  
   
--   <xref:System.Net.Sockets.NetworkStream>.  
+-   <xref:System.Net.Sockets.NetworkStream>  
   
  The following table lists tasks commonly accomplished with a stream:  
   
 |To|See|
 |---|---|   
-|Read and write to a data file|[How to: Read and Write to a Newly Created Data File](../../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
-|Read text from a file|[How to: Read Text from a File](../../../../docs/standard/io/how-to-read-text-from-a-file.md)|  
-|Write text to a file|[How to: Write Text to a File](../../../../docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read and write to a data file|[How to: Read and Write to a Newly Created Data File](../../../../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Read text from a file|[How to: Read Text from a File](../../../../standard/io/how-to-read-text-from-a-file.md)|  
+|Write text to a file|[How to: Write Text to a File](../../../../standard/io/how-to-write-text-to-a-file.md)|  
 |Read characters from a string|[How to: Read Characters from a String](../../../../docs/standard/io/how-to-read-characters-from-a-string.md)|  
 |Write characters to a string|[How to: Write Characters to a String](../../../../docs/standard/io/how-to-write-characters-to-a-string.md)|  
 |Encrypt data|[Encrypting Data](../../../../docs/standard/security/encrypting-data.md)|  

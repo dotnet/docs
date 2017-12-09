@@ -26,11 +26,11 @@ ms.author: dotnetcontent
  [LINQ](../../visual-basic/programming-guide/language-features/linq/index.md)  
  Provides links to topics that describe how to use LINQ with Visual Basic.  
   
- [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
+ [LINQ to SQL](../../../docs/framework/data/adonet/sql/linq/index.md)  
  Provides information about [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)]. Includes programming examples.  
   
  [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)  
- Provides links to topics about how to create a [LINQ to SQL](https://msdn.microsoft.com/library/bb386976) object model in applications.  
+ Provides links to topics about how to create a [LINQ to SQL](../../../docs/framework/data/adonet/sql/linq/index.md) object model in applications.  
   
  [Work with datasets in n-tier applications](/visualstudio/data-tools/work-with-datasets-in-n-tier-applications)  
  Provides links to topics about how to create multitiered data applications.  

@@ -77,4 +77,4 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |Title|Description|
 |-----|-----------|
 |[F# Interactive Options](../tutorials/fsharp-interactive/fsharp-interactive-options.md)|Describes command-line options supported by the F# interpreter, fsi.exe.|
-|[Project Properties Reference](https://msdn.microsoft.com/library/16satcwx.aspx)|Describes the UI for projects, including project property pages that provide build options.|
+|[Project Properties Reference](/visualstudio/ide/reference/project-properties-reference)|Describes the UI for projects, including project property pages that provide build options.|

@@ -11,7 +11,7 @@ ms.topic: article
 ---
 # Using Enumeration classes instead of enum types
 
-[Enumerations](https://msdn.microsoft.com/en-us/library/sbbt4032.aspx) (*enums* for short) are a thin language wrapper around an integral type. You might want to limit their use to when you are storing one value from a closed set of values. Classification based on gender (for example, male, female, unknown), or sizes (S, M, L, XL) are good examples. Using enums for control flow or more robust abstractions can be a [code smell](http://deviq.com/code-smells/). This type of usage will lead to fragile code with many control flow statements checking values of the enum.
+[Enumerations](../../../../docs/csharp/language-reference/keywords/enum.md) (*enums* for short) are a thin language wrapper around an integral type. You might want to limit their use to when you are storing one value from a closed set of values. Classification based on gender (for example, male, female, unknown), or sizes (S, M, L, XL) are good examples. Using enums for control flow or more robust abstractions can be a [code smell](http://deviq.com/code-smells/). This type of usage will lead to fragile code with many control flow statements checking values of the enum.
 
 Instead, you can create Enumeration classes that enable all the rich features of an object-oriented language. However, this is not a critical issue and in many cases, for simplicity, you can still use regular enums if that is your preference.
 

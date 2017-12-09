@@ -53,5 +53,5 @@ You can consult the documents in the [More Resources](#more-resources) section b
 
 ## More resources
 
-*   [Common Type System](https://msdn.microsoft.com/library/zcx1eb1e.aspx)
-*   [Common Language Specification](https://msdn.microsoft.com/library/12a7a7h3.aspx)
+*   [Common Type System](./base-types/common-type-system.md)
+*   [Common Language Specification](language-independence-and-language-independent-components.md)

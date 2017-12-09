@@ -39,5 +39,5 @@ Similar to this, C# is one language that allows you to use unmanaged constructs 
 ## More resources
 
 *   [.NET Framework Conceptual Overview](https://msdn.microsoft.com/library/zw4w595w.aspx)
-*   [Unsafe Code and Pointers](https://msdn.microsoft.com/library/t2yzs44b.aspx)
+*   [Unsafe Code and Pointers](../../docs/csharp/programming-guide/unsafe-code-pointers/index.md)
 *   [Interoperability (C# Programming guide)](https://msdn.microsoft.com/library/ms173184.aspx)

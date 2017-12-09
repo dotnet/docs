@@ -67,7 +67,7 @@ Specifies which platform version of common language runtime (CLR) can run the ou
   
 -   Executables that are compiled with `/platform:anycpu32bitpreferred` will execute on the 32-bit CLR.  
   
- For more information about how to develop an application to run on a 64-bit version of Windows, see [64-bit Applications](https://msdn.microsoft.com/library/ms241064).  
+ For more information about how to develop an application to run on a 64-bit version of Windows, see [64-bit Applications](../../../../docs/framework/64-bit-apps.md).  
   
 ### To set /platform in the Visual Studio IDE  
   

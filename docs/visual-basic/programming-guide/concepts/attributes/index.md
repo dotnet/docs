@@ -150,4 +150,4 @@ Module: CLSCompliant(True)>
 ## See Also  
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)  
  [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)  
- [Attributes](https://msdn.microsoft.com/library/5x6cd29c)
+ [Attributes](../../../../../docs/standard/attributes/index.md)

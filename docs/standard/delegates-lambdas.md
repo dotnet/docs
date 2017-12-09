@@ -148,6 +148,6 @@ public MainWindow()
 
 ## Further reading and resources
 
-*   [Delegates](https://msdn.microsoft.com/library/ms173171.aspx)
-*   [Anonymous Functions](https://msdn.microsoft.com/library/bb882516.aspx)
-*   [Lambda expressions](https://msdn.microsoft.com/library/bb397687.aspx)
+*   [Delegates](../../docs/csharp/programming-guide/delegates/index.md)
+*   [Anonymous Functions](../../docs/csharp/programming-guide/statements-expressions-operators/anonymous-functions.md)
+*   [Lambda expressions](../../docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)

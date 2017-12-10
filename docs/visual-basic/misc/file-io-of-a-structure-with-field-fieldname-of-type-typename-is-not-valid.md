@@ -20,5 +20,5 @@ The structure you are attempting to write to a file contains an unsupported type
 -   Check the structure to determine where the unsupported type occurs, and then change it to a valid type.  
   
 ## See Also  
- <xref:My.Computer.FileSystem.WriteAllBytes>  
+ [My.Computer.FileSystem.WriteAllBytes](../../../api/microsoft.visualbasic.devices.FileSystem.WriteAllBytes)  
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

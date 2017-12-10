@@ -69,7 +69,7 @@ Next [ element ]
   
  [!code-vb[VbVbalrStatements#121](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_1.vb)]  
   
- For more examples, see [Collections](../../../standard/collections.md) and [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
+ For more examples, see [Collections](../../../standard/collections/index.md) and [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
   
 ## Nested Loops  
  You can nest `For Each` loops by putting one loop within another.  
@@ -176,7 +176,7 @@ End Sub
  [!code-vb[VbVbalrStatements#125](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_7.vb)]  
   
 ## See Also  
- [Collections](../../../standard/collections.md)  
+ [Collections](../../../standard/collections/index.md)  
  [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
  [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
  [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)  

@@ -23,4 +23,4 @@ The `FileGet` method includes an argument of type `Object`. `FileGetObject` shou
   
 ## See Also  
    
- <xref:My.Computer.FileSystem>
+ [My.Computer.FileSystem](../../../api/microsoft.visualbasic.devices.FileSystem)

@@ -20,4 +20,4 @@ A file name is incorrect or the file does not exist.
 1.  Ensure that the file name is correct and that it exists.  
   
 ## See Also  
- <xref:My.Computer.FileSystem>
+ [My.Computer.FileSystem](../../../api/microsoft.visualbasic.devices.FileSystem)

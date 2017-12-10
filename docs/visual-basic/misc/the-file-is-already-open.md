@@ -23,4 +23,4 @@ An attempt has been made to open a file that is already open.
   
 ## See Also  
    
- <xref:My.Computer.FileSystem>
+ [My.Computer.FileSystem](../../../api/microsoft.visualbasic.devices.FileSystem)

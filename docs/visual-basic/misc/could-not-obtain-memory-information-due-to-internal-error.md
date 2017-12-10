@@ -20,6 +20,6 @@ A call to one of the memory-information properties of the `My.Computer.Info` obj
 -   Add a `Try...Catch` block around the call to the memory-information property of the `My.Computer.Info` object.  
   
 ## See Also  
- <xref:My.Computer.Info>  
+ [My.Computer.Info](../../../api/microsoft.visualbasic.devices.Info)  
  [Exception and Error Handling in Visual Basic](http://msdn.microsoft.com/en-us/3e351e73-cf23-40ab-8b60-05794160529e)  
  [Try...Catch...Finally Statement](../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

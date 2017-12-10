@@ -18,7 +18,7 @@ An attempt has been made to read from a file, but the specified encoding is not 
 -   Check to make sure you are supplying the correct file encoding.  
   
 ## See Also  
- <xref:My.Computer.FileSystem.ReadAllText>  
- <xref:My.Computer.FileSystem>  
+ [My.Computer.FileSystem.ReadAllText](../../../api/microsoft.visualbasic.devices.FileSystem.ReadAllText)  
+ [My.Computer.FileSystem](../../../api/microsoft.visualbasic.devices.FileSystem)  
  [File Encodings](../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)  
  [How to: Read from Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md)

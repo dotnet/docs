@@ -19,4 +19,4 @@ When performing file operations such as renaming a file, you must specify the na
   
 ## See Also  
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
- <xref:My.Computer.FileSystem>
+ [My.Computer.FileSystem](../../../api/microsoft.visualbasic.devices.FileSystem)

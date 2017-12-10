@@ -20,7 +20,7 @@ The operation cannot be performed because no network connection is available.
 -   Connect to the network and reattempt the operation.  
   
 ## See Also  
- <xref:My.Computer.Network.Ping>  
- <xref:My.Computer.Network.IsAvailable>  
+ [My.Computer.Network.Ping](../../../api/microsoft.visualbasic.devices.Network.Ping)  
+ [My.Computer.Network.IsAvailable](../../../api/microsoft.visualbasic.devices.Network.IsAvailable)  
  [Network Operations in the .NET Framework with Visual Basic](http://msdn.microsoft.com/en-us/c5379021-44ef-4d6a-acf5-e951fdcab6b2)  
- <xref:My.Computer.Network>
+ [My.Computer.Network](../../../api/microsoft.visualbasic.devices.Network)

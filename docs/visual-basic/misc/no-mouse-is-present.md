@@ -24,6 +24,6 @@ One of the properties of the `My.Computer.Mouse` object was called, but the comp
 -   Install a mouse on the computer.  
   
 ## See Also  
- <xref:My.Computer.Mouse>  
+ [My.Computer.Mouse](../../../api/microsoft.visualbasic.devices.Mouse)  
  [Exception and Error Handling in Visual Basic](http://msdn.microsoft.com/en-us/3e351e73-cf23-40ab-8b60-05794160529e)  
  [Try...Catch...Finally Statement](../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

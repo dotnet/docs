@@ -18,8 +18,8 @@ An attempt has been made to copy or move a file, but the specified source direct
 -   Make sure you supplied the correct source and target directories.  
   
 ## See Also  
- <xref:My.Computer.FileSystem.MoveFile>  
- <xref:My.Computer.FileSystem.CopyFile>  
+ [My.Computer.FileSystem.MoveFile](../../../api/microsoft.visualbasic.devices.FileSystem.MoveFile)  
+ [My.Computer.FileSystem.CopyFile](../../../api/microsoft.visualbasic.devices.FileSystem.CopyFile)  
  [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)  
  [How to: Move a File](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-move-a-file.md)  
  [How to: Copy Files with a Specific Pattern to a Directory](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-files-with-a-specific-pattern-to-a-directory.md)

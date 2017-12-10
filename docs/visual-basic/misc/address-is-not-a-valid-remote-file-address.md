@@ -20,7 +20,7 @@ ms.author: dotnetcontent
 -   Check the address you have specified to determine where it fails, and supply the necessary information.  
   
 ## See Also  
- <xref:My.Computer.Network.UploadFile>  
- <xref:My.Computer.Network.DownloadFile>  
+ [My.Computer.Network.UploadFile](../../../api/microsoft.visualbasic.devices.Network.UploadFile)  
+ [My.Computer.Network.DownloadFile](../../../api/microsoft.visualbasic.devices.Network.DownloadFile)  
  [How to: Download a File](../../visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)  
 

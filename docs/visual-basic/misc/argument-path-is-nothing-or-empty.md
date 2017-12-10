@@ -20,6 +20,6 @@ A path name is not valid because it is initialized to `Nothing` or is empty. A p
 -   Add a valid path name.  
   
 ## See Also  
- <xref:My.Application.Info.DirectoryPath>  
+ [My.Application.Info.DirectoryPath](../../../api/microsoft.visualbasic.applicationservices.assemblyinfo.directorypath)  
  [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)  
  [Nothing](../../visual-basic/language-reference/nothing.md)

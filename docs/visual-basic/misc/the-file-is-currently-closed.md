@@ -20,5 +20,5 @@ An attempt has been made to perform an operation that can only be performed on a
 ## See Also  
    
    
- <xref:My.Computer.FileSystem>  
+ [My.Computer.FileSystem](../../../api/microsoft.visualbasic.devices.FileSystem)  
  [File Access with Visual Basic](../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)

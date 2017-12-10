@@ -79,4 +79,4 @@ The `CreateSubKey` method of the `My.Computer.Registry` object can be used to cr
  <xref:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentUser%2A>  
  <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A>  
  [Reading from and Writing to the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)  
- [Code Access Security Basics](../../../../framework/misc/code-access-security-basics)
+ [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md)

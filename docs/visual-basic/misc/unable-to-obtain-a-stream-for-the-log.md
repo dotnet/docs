@@ -28,5 +28,5 @@ Unable to obtain a stream for the log. Potential file names based on \<name> are
 ## See Also  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A>  
- <xref:My.Application.Log>  
- <xref:My.Log>
+ [My.Application.Log](../../../api/microsoft.visualbasic.applicationservices.applicationbase.log)  
+ [My.Application.Info.DirectoryPath](../../../api/microsoft.visualbasic.applicationservices.applicationbase.log)

@@ -23,5 +23,5 @@ The value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Reserv
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace%2A>  
- <xref:My.Application.Log>  
- <xref:My.Log>
+ [My.Application.Log](../../../api/microsoft.visualbasic.applicationservices.applicationbase.log)  
+ [My.Application.Info.DirectoryPath](../../../api/microsoft.visualbasic.applicationservices.applicationbase.log)

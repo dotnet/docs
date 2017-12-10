@@ -19,4 +19,4 @@ A registry key specified with a path contains two or more consecutive backslashe
   
 ## See Also  
  [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)  
- [My.Computer.Registry](../../../api/microsoft.visualbasic.devices.Registry)
+ [My.Computer.Registry](xref:microsoft.visualbasic.devices.Registry)

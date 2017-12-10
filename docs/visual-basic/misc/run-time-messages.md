@@ -300,7 +300,7 @@ This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error mess
   
  [Method or data member not found](../../visual-basic/misc/method-or-data-member-not-found.md)  
   
- [My.Application.Log](../../../api/microsoft.visualbasic.applicationservices.applicationbase.log)  
+ [My.Application.Log](xref:microsoft.visualbasic.applicationservices.applicationbase.log)  
   
  [Named argument '\<argumentname>' specified multiple times](../../visual-basic/misc/named-argument-argumentname-specified-multiple-times.md)  
   

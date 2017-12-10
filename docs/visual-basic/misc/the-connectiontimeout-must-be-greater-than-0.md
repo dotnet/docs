@@ -13,15 +13,15 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # The ConnectionTimeout must be greater than 0
-When uploading and downloading files with the [My.Computer.Network](../../../api/microsoft.visualbasic.devices.Network), you must specify a `connectionTimeout` greater than `0`.  
+When uploading and downloading files with the [My.Computer.Network](xref:microsoft.visualbasic.devices.Network), you must specify a `connectionTimeout` greater than `0`.  
   
 ## To correct this error  
   
 -   Supply a `connectionTimeout` that is greater than `0`.  
   
 ## See Also  
- [My.Computer.Network.UploadFile](../../../api/microsoft.visualbasic.devices.Network.UploadFile)  
- [My.Computer.Network.DownloadFile](../../../api/microsoft.visualbasic.devices.Network.DownloadFile)  
+ [My.Computer.Network.UploadFile](xref:microsoft.visualbasic.devices.Network.UploadFile)  
+ [My.Computer.Network.DownloadFile](xref:microsoft.visualbasic.devices.Network.DownloadFile)  
  [How to: Upload a File](../../visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)  
  [How to: Download a File](../../visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)  
  [Network Operations in the .NET Framework with Visual Basic](http://msdn.microsoft.com/en-us/c5379021-44ef-4d6a-acf5-e951fdcab6b2)

@@ -24,6 +24,6 @@ The `My.Computer.Mouse.WheelScrollLines` property was called, but the mouse has 
 -   Install a mouse with a scroll wheel on the computer.  
   
 ## See Also  
- [My.Computer.Mouse.WheelScrollLines](../../../api/microsoft.visualbasic.devices.Mouse.WheelScrollLines)  
- [My.Computer.Mouse.WheelExists](../../../api/microsoft.visualbasic.devices.Mouse.WheelExists)  
+ [My.Computer.Mouse.WheelScrollLines](xref:microsoft.visualbasic.devices.Mouse.WheelScrollLines)  
+ [My.Computer.Mouse.WheelExists](xref:microsoft.visualbasic.devices.Mouse.WheelExists)  
  [Exception and Error Handling in Visual Basic](http://msdn.microsoft.com/en-us/3e351e73-cf23-40ab-8b60-05794160529e)

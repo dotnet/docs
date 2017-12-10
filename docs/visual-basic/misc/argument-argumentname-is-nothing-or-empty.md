@@ -20,6 +20,6 @@ An argument name is not valid because it is initialized to `Nothing` or is empty
 -   Add a valid argument name.  
   
 ## See Also  
- [My.Application.Info.DirectoryPath](../../../api/microsoft.visualbasic.applicationservices.assemblyinfo.directorypath)  
+ [My.Application.Info.DirectoryPath](xref:microsoft.visualbasic.applicationservices.assemblyinfo.directorypath)  
  [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)  
  [Nothing](../../visual-basic/language-reference/nothing.md)

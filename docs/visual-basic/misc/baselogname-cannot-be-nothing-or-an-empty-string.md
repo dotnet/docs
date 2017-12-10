@@ -23,5 +23,5 @@ The value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.BaseFi
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.BaseFileName%2A>  
- [My.Application.Log](../../../api/microsoft.visualbasic.applicationservices.applicationbase.log)  
- [My.Application.Info.DirectoryPath](../../../api/microsoft.visualbasic.applicationservices.applicationbase.log)
+ [My.Application.Log](xref:microsoft.visualbasic.applicationservices.applicationbase.log)  
+ [My.Application.Info.DirectoryPath](xref:microsoft.visualbasic.applicationservices.applicationbase.log)

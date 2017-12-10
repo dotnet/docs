@@ -22,8 +22,8 @@ when you don't follow our guidelines.
 #### Appropriate Style:
 We want our documentation to have a conversational tone. You should feel as though you
 are having a conversation with the author as you read any of our tutorials or explanations.
-For you, the experience should be informal, conversational, and informative. Readies should
-feel as though you are listening to the author explain the concepts to them.
+For you, the experience should be informal, conversational, and informative. Readers should
+feel as though they are listening to the author explain the concepts to them.
 
 #### Inappropriate Style:
 One might see the contrast between a conversational style and the style one finds with

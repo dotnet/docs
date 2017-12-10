@@ -51,5 +51,5 @@ End Sub
  <xref:System.Array.Sort%2A?displayProperty=nameWithType>  
  [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
  [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)  
- [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
+ [Collections](../../concepts/collections.md)  
  [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)

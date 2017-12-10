@@ -1,4 +1,4 @@
     Dim customerOrders = From customer In customers 
-                         Join ord In orders 
-                           On customer.CustomerID Equals ord.CustomerID 
-                         Select Customer = customer, Order = ord
+                         Join order In orders 
+                           On customer.CustomerID Equals order.CustomerID 
+                         Select Customer = customer, Order = order

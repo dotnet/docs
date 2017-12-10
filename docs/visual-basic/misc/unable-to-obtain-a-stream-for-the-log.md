@@ -28,5 +28,5 @@ Unable to obtain a stream for the log. Potential file names based on \<name> are
 ## See Also  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A>  
- [My.Application.Log Object](../../visual-basic/language-reference/objects/my-application-log-object.md)  
- [My.Log Object](../../visual-basic/language-reference/objects/my-log-object.md)
+ <xref:My.Application.Log>  
+ <xref:My.Log>

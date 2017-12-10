@@ -21,5 +21,3 @@ The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class could not de
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>  
- [PAVE Product Support](http://msdn.microsoft.com/en-us/77e75b8b-817d-45bf-9c38-458930d873b4)  
- [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)

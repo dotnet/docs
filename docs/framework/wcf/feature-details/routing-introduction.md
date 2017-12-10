@@ -44,7 +44,7 @@ The Routing Service provides a generic pluggable SOAP intermediary that is capab
  The following example defines the service and client endpoints that are used by the Routing Service both programmatically and by using a configuration file.  
   
 ```xml  
-<services>  
+    <services>  
       <!--ROUTING SERVICE -->  
       <service behaviorConfiguration="routingData"  
                name="System.ServiceModel.Routing.RoutingService">  
@@ -57,7 +57,8 @@ The Routing Service provides a generic pluggable SOAP intermediary that is capab
         <endpoint address=""  
                   binding="wsHttpBinding"  
                   name="reqReplyEndpoint"  
-                  contract="System.ServiceModel.Routing.IRequestReplyRouter" />      </service>  
+                  contract="System.ServiceModel.Routing.IRequestReplyRouter" />      
+      </service>  
     </services>  
     <behaviors>  
       <serviceBehaviors>  

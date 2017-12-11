@@ -47,7 +47,7 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
 
-## Example
+## Quick links to example code
 
 This article includes several examples that use the `DateTime` type:
 
@@ -58,30 +58,30 @@ This article includes several examples that use the `DateTime` type:
  [Parsing a string that represents a date and time](#initialization-04)     
  [Visual Basic syntax to initialize a date and time](#initialization-05)     
 
-**Formatting `DateTime` objects as strings**
+**Formatting `DateTime` objects as strings**  
  [Use the default date time format](#formatting-01)     
  [Format a date and time using a specific culture](#formatting-02)     
  [Format a date time using a standard or custom format string](#formatting-03)     
  [Specify both a format string and a specific culture](#formatting-04)     
  [Format a date time using the ISO 8601 standard for web services](#formatting-05)     
 
-**Parsing strings as `DateTime` objects**
+**Parsing strings as `DateTime` objects**  
  [Use `Parse` or `TryParse` to convert a string to a date and time](#parsing-01)     
  [Use `ParseExact` or `TryParseExact` to convert a string in a known format](#parsing-02)     
  [Convert from the ISO 8601 string representation to a date and time](#parsing-03)     
 
-**`DateTime` resolution**
+**`DateTime` resolution**  
  [Explore the resolution of date and time values](#resolution-01)     
  [Comparing for equality within a tolerance](#comparison-01)     
 
-**Culture and calendars**
+**Culture and calendars**  
  [Display date and time values using culture specific calendars](#calendars-01)     
  [Parse strings according to a culture specific calendar](#calendars-02)     
  [Initialize a date and time from a specific culture's calendar](#calendars-03)     
  [Accessing date and time properties using a specific culture's calendar](#calendars-04)     
  [Retrieving the week of the year using culture specific calendars](#calendars-05)     
 
-**Persistence**
+**Persistence**  
  [Persisting date and time values as strings in the local time zone](#persistence-01)     
  [Persisting date and time values as strings in a culture and and time invariant format](#persistence-02)     
  [Persisting date and time values as integers](#persistence-03)     
@@ -89,9 +89,9 @@ This article includes several examples that use the `DateTime` type:
  [Persisting date and time values using the `BinaryFormatter`](#persistence-05)     
  [Persisting date and time values with time zone data](#persistence-06)     
 
-## Remarks
+## Quick links to Remarks topics.
 
-This section contains examples for many common uses of the `DateTime` struct:
+This section contains topics for many common uses of the `DateTime` struct:
   
  [Initializing a `DateTime` object](#initializing-a-datetime-object)   
  [DateTime values and their string representations](#datetime-values-and-their-string-representations)   

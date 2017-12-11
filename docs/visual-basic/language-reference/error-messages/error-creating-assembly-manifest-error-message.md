@@ -26,12 +26,12 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler calls the Assembly Link
   
 ## To correct this error  
   
-1.  Examine the quoted error message and consult the topic [Al.exe](../../../framework/tools/al-exe-assembly-linker). for error AL1019 further explanation and advice  
+1.  Examine the quoted error message and consult the topic [Al.exe](../../../framework/tools/al-exe-assembly-linker.md). for error AL1019 further explanation and advice  
   
 2.  If the error persists, gather information about the circumstances and notify Microsoft Product Support Services.  
   
 ## See Also  
  [How to: Sign an Assembly with a Strong Name](../../../framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)  
  [Signing Page, Project Designer](/visualstudio/ide/reference/signing-page-project-designer)  
- [Al.exe](../../../framework/tools/al-exe-assembly-linker).  
+ [Al.exe](../../../framework/tools/al-exe-assembly-linker.md).  
  [Talk to Us](/visualstudio/ide/talk-to-us)

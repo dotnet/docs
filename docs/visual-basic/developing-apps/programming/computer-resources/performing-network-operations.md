@@ -33,14 +33,14 @@ The following tables list tasks associated with the `My.Computer.Network` object
  <xref:Microsoft.VisualBasic.Devices.Network>  
  Lists methods, properties, and events for working with the network.  
   
- <xref:Microsoft.VisualBasic.Devices.Computer.Network.DownloadFile%2A>  
+ <xref:Microsoft.VisualBasic.Devices.Computer.Network.DownloadFile>  
  Describes the `DownloadFile` method.  
   
- <xref:Microsoft.VisualBasic.Devices.Computer.Network.Ping%2A>  
+ <xref:Microsoft.VisualBasic.Devices.Computer.Network.Ping>  
  Describes the `Ping` method.  
   
- <xref:Microsoft.VisualBasic.Devices.Computer.Network.UploadFile%2A>  
+ <xref:Microsoft.VisualBasic.Devices.Computer.Network.UploadFile>  
  Describes the `UploadFile` method.  
   
- <xref:Microsoft.VisualBasic.Devices.Computer.Network.IsAvailable%2A>  
+ <xref:Microsoft.VisualBasic.Devices.Computer.Network.IsAvailable>  
  Describes the `IsAvailable` property.

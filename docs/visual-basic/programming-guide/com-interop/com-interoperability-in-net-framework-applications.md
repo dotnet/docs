@@ -40,5 +40,5 @@ When you want to use COM objects and .NET Framework objects in the same applicat
  [Advanced COM Interoperability](../../../framework/interop/index.md)  
  Provides links to topics covering COM interoperability with respect to wrappers, exceptions, inheritance, threading, events, conversions, and marshaling.  
   
- [Tlbimp.exe (Type Library Importer)](../../framework/tools/tlbimp-exe-type-library-importer.md)  
+ [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md)  
  Discusses the tool you can use to convert the type definitions found within a COM type library into equivalent definitions in a common language runtime assembly.

@@ -20,7 +20,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # How to: Download a File in Visual Basic
-The <xref:Microsoft.VisualBasic.Devices.Computer.Network.DownloadFile%2A> method can be used to download a remote file and store it to a specific location. If the `ShowUI` parameter is set to `True`, a dialog box is displayed showing the progress of the download and allowing users to cancel the operation. By default, existing files having the same name are not overwritten; if you want to overwrite existing files, set the `overwrite` parameter to `True`.  
+The <xref:Microsoft.VisualBasic.Devices.Computer.Network.DownloadFile> method can be used to download a remote file and store it to a specific location. If the `ShowUI` parameter is set to `True`, a dialog box is displayed showing the progress of the download and allowing users to cancel the operation. By default, existing files having the same name are not overwritten; if you want to overwrite existing files, set the `overwrite` parameter to `True`.  
   
  The following conditions may cause an exception:  
   

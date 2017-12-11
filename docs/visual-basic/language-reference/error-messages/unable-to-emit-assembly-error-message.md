@@ -24,7 +24,7 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler calls the Assembly Link
   
 ## To correct this error  
   
-1.  Examine the quoted error message and consult the topic [Al.exe](../../../framework/tools/al-exe-assembly-linker). for further explanation and advice.  
+1.  Examine the quoted error message and consult the topic [Al.exe](../../../framework/tools/al-exe-assembly-linker.md). for further explanation and advice.  
   
 2.  Try signing the assembly manually, using either theor the [Sn.exe (Strong Name Tool)][Sn.exe (Strong Name Tool)](../../../framework/tools/sn-exe-strong-name-tool.md)).  
   
@@ -60,7 +60,7 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler calls the Assembly Link
   
 ## See Also  
  
- [Al.exe](../../../framework/tools/al-exe-assembly-linker).  
+ [Al.exe](../../../framework/tools/al-exe-assembly-linker.md).  
  [Sn.exe (Strong Name Tool)][Sn.exe (Strong Name Tool)](../../../framework/tools/sn-exe-strong-name-tool.md))  
  [How to: Create a Public-Private Key Pair](../../../framework/app-domains/how-to-create-a-public-private-key-pair.md)  
  [Talk to Us](/visualstudio/ide/talk-to-us)

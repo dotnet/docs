@@ -38,7 +38,7 @@ C# program. You'll explore the `string` type and how to work with text.
 
 In the [Numbers in C#](numbers-in-csharp.yml) quick start, you'll learn
 how computers store numbers and how to perform calculations with different
-number types. You'll learn the basics of rounding, and how to perform
+numeric types. You'll learn the basics of rounding, and how to perform
 mathematical calculations using C#. This quick start is also available
 [to run locally on your machine](numbers-in-csharp-local.md).
 
@@ -47,7 +47,7 @@ This quick start assumes that you have finished the [Hello world](hello-world.ym
 ## [Branches and loops](branches-and-loops.yml)
 
 The [Branches and loops](branches-and-loops.yml) quick start teaches the basics of selecting
-different paths of code based on the values stored in variables. You'll learn the
+different paths of code execution based on the values stored in variables. You'll learn the
 basics of control flow, which is the basis of how programs make decisions and choose
 different actions. This quick start is also available
 [to run locally on your machine](branches-and-loops-local.md).
@@ -58,7 +58,7 @@ This beginning lesson assumes that you have finished the [Hello World](hello-wor
 ## [List collection](list-collection.yml)
 
 The [List collection](list-collection.yml) lesson gives you
-a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and remove items and sort the lists. You'll explore different kinds of lists. This quick start is also
+a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists. This quick start is also
 available [to run locally on your machine](arrays-and-collections.md).
 
 This beginning quick start assumes that you have finished the quick starts listed above.

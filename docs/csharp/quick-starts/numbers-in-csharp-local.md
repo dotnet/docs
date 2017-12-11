@@ -15,7 +15,7 @@ ms.custom: mvc
 
 This quick start teaches you about the number types in C# interactively. You'll write small amounts of code, then you'll compile and run that code. The quick start contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
-This quick start expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux.
+This quick start expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quick starts](local-environment.md) with links to more details.
 
 ## Explore integer math
 
@@ -348,9 +348,10 @@ of the decimal point.
 
 Now that you've seen the different numeric types, write code that calculates
 the area of a circle whose radius is 2.50 inches. Remember that the area of a circle
-is the radius squared multiplied by PI. One hint: C# contains a constant
+is the radius squared multiplied by PI. One hint: .NET contains a constant
 for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value. 
 
+You should get an answer between 19 and 20.
 You can check your answer by [looking at the finished sample code on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/numbers-quickstart/Program.cs#L104-L106)
 
 Try some other formulas if you'd like. 

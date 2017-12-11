@@ -46,4 +46,4 @@ The data type specified for this member is not part of the [Language Independenc
   
 ## See Also  
  [Reflection](../../../framework/reflection-and-codedom/reflection.md)  
- [\<PAVE OVER> Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3)
+ 

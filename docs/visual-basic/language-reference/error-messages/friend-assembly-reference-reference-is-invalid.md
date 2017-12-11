@@ -30,5 +30,6 @@ Friend assembly reference \<reference> is invalid. Strong-name signed assemblies
   
 ## See Also  
  <xref:System.Reflection.AssemblyName>  
- [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)  
- [How to: Create Signed Friend Assemblies](http://msdn.microsoft.com/library/f5542300-58b4-4e1c-b809-8df11e95e69b)
+ [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)  
+ 
+

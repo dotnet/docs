@@ -35,4 +35,4 @@ A reference was created to embedded interop assembly '\<assembly1>' because of a
   
 ## See Also  
  [/link (Visual Basic)](../../../visual-basic/reference/command-line-compiler/link.md)  
- [Programming with Primary Interop Assemblies](http://msdn.microsoft.com/en-us/306fa1d6-0703-4004-9e93-d0a57f1be81e)
+ [Interoperating with Unmanaged Code](../../../framework/interop/index.md)

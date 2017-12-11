@@ -166,7 +166,7 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 #### Microsoft Azure Command Line Interface (CLI)
 
-* [Microsoft Azure Command Line Interface (CLI) images on DockerHub](Docker image for Microsoft Azure Command Line Interface) 
+* [Microsoft Azure Command Line Interface (CLI) images on DockerHub](https://hub.docker.com/r/microsoft/azure-cli/) 
 
 * [Microsoft Azure Command Line Interface (CLI) images on GitHub](https://github.com/Microsoft/OMS-docker)
 

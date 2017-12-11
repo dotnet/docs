@@ -23,4 +23,4 @@ An attempt has been made to open a file that is already open.
   
 ## See Also  
    
- [My.Computer.FileSystem](xref:microsoft.visualbasic.devices.FileSystem)
+ [My.Computer.FileSystem](xref:Microsoft.VisualBasic.Devices.Computer.FileSystem)

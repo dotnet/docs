@@ -35,7 +35,7 @@ This topic provides links to other topics that document the Visual Basic run-tim
 |`My.Computer.Keyboard` (<xref:Microsoft.VisualBasic.Devices.Keyboard>)|Provides properties for accessing the current state of the keyboard, such as what keys are currently pressed, and provides a method to send keystrokes to the active window.|  
 |`My.Computer.Mouse` (<xref:Microsoft.VisualBasic.Devices.Mouse>)|Provides properties for getting information about the format and configuration of the mouse that is installed on the local computer.|  
 |`My.Computer.Network` (<xref:Microsoft.VisualBasic.Devices.Network>)|Provides a property, an event, and methods for interacting with the network to which the computer is connected.|  
-|`My.Computer.Ports` (<xref:Microsoft.VisualBasic.Devices.Ports>)|Provides a property and a method for accessing the computer's serial ports.|  
+|`My.Computer.Ports` (<xref:Microsoft.VisualBasic.Devices.Computer.Ports>)|Provides a property and a method for accessing the computer's serial ports.|  
 |`My.Computer.Registry` (<xref:Microsoft.VisualBasic.MyServices.RegistryProxy>)|Provides properties and methods for manipulating the registry.|  
 |[My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)|Provides properties for accessing an instance of each Windows Form declared in the current project.|  
 |`My.Log` (<xref:Microsoft.VisualBasic.Logging.AspLog>)|Provides a property and methods for writing event and exception information to the application's log listeners for Web applications.|  

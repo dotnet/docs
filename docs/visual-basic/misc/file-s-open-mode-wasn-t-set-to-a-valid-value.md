@@ -27,6 +27,6 @@ The value supplied for the file's open mode was not valid. The following table s
   
 ## See Also  
    
- [My.Computer.FileSystem](xref:microsoft.visualbasic.devices.FileSystem)  
+ [My.Computer.FileSystem](xref:Microsoft.VisualBasic.Devices.Computer.FileSystem)  
  [Reading from Files](../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
  [Writing to Files](../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)

@@ -30,7 +30,7 @@ The `My.Computer` object is one of the three central objects in `My`, providing 
 -   <xref:Microsoft.VisualBasic.Devices.Keyboard>
 -   <xref:Microsoft.VisualBasic.Devices.Mouse>
 -   <xref:Microsoft.VisualBasic.Devices.Network>
--   <xref:Microsoft.VisualBasic.Devices.Ports>
+-   <xref:Microsoft.VisualBasic.Devices.Computer.Ports>
 -   Registry (<xref:Microsoft.VisualBasic.MyServices.RegistryProxy>)
   
 ## In this section

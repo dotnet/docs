@@ -18,7 +18,7 @@ ms.author: dotnetcontent
 Provides a property and a method for accessing the computer's serial ports.  
   
 ## Remarks  
- For information about the methods and properties of the `My.Computer.Ports` object, see <xref:Microsoft.VisualBasic.Devices.Ports>.  
+ For information about the methods and properties of the `My.Computer.Ports` object, see <xref:Microsoft.VisualBasic.Devices.Computer.Ports>.  
   
  For more information, see [Accessing the Computer's Ports](../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-computer-s-ports.md).  
   
@@ -28,7 +28,7 @@ Provides a property and a method for accessing the computer's serial ports.
 ## Requirements  
  **Namespace:** <xref:Microsoft.VisualBasic.Devices>  
   
- **Class:** <xref:Microsoft.VisualBasic.Devices.Ports>  
+ **Class:** <xref:Microsoft.VisualBasic.Devices.Computer.Ports>  
   
  **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   

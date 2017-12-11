@@ -36,13 +36,13 @@ The `My.Computer.Ports` object provides a property and a method for accessing th
  Describes how to use the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] when performing port operations.  
   
 ## Reference  
- <xref:Microsoft.VisualBasic.Devices.Ports>  
+ <xref:Microsoft.VisualBasic.Devices.Computer.Ports>  
  Describes the `My.Computer.Ports` object and its members.  
   
- <xref:Microsoft.VisualBasic.Devices.Ports.SerialPortNames%2A>  
+ <xref:Microsoft.VisualBasic.Devices.Computer.Ports.SerialPortNames%2A>  
  Describes the `SerialPortNames` property, which gets a collection of the names of the serial ports on the computer.  
   
- <xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A>  
+ <xref:Microsoft.VisualBasic.Devices.Computer.Ports.OpenSerialPort%2A>  
  Describes the `OpenSerialPort` method, which creates and opens a <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> object.  
   
 ## Related Sections  

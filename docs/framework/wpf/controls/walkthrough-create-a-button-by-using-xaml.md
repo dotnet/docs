@@ -73,7 +73,7 @@ The objective of this walkthrough is to learn how to create an animated button f
     </Application>  
     ```  
   
-     Resource scope is determined by where you define the resource. Defining resources in `Application.Resoureses` in the app.xaml file enables the resource to be used from anywhere in the application. To learn more about defining the scope of your resources, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).  
+     Resource scope is determined by where you define the resource. Defining resources in `Application.Resources` in the app.xaml file enables the resource to be used from anywhere in the application. To learn more about defining the scope of your resources, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).  
   
 2.  **Create a style and define basic property values with it:** Add the following markup to the `Application.Resources` block. This markup creates a <xref:System.Windows.Style> that applies to all buttons in the application, setting the <xref:System.Windows.FrameworkElement.Width%2A> of the buttons to 90 and the <xref:System.Windows.FrameworkElement.Margin%2A> to 10:  
   

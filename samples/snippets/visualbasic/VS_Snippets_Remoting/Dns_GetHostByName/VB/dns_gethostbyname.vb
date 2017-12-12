@@ -38,7 +38,7 @@ Class DnsHostByName
             ' Get the IP address list that resolves to the host names contained in 
             ' the Alias property.
             Dim address As IPAddress() = hostInfo.AddressList
-            ' Get the alias names of the the addresses in the IP address list.
+            ' Get the alias names of the addresses in the IP address list.
             Dim [alias] As [String]() = hostInfo.Aliases
             
             Console.WriteLine(("Host name : " + hostInfo.HostName))

@@ -27,7 +27,7 @@ namespace Samples.AspNet.CS.Controls
                 }
                 else // Else the parsed element is not a LiteralControl.
                 {
-                    // If the server control has a value in the the Text property.
+                    // If the server control has a value in the Text property.
                     string currentText = this.Text;
                     if (currentText.Length != 0) 
                     {

@@ -12,7 +12,7 @@
     // Retrieve the IOrderedDictionary object that contains the key field values.
     IOrderedDictionary allKeysDictionary = CustomerDetailsView.DataKey.Values;
 
-    // Display the the value of the key fields.
+    // Display the value of the key fields.
     MessageLabel.Text = "The key field values for the displayed record are: <br/><br/>";
 
     foreach (DictionaryEntry entry in allKeysDictionary)

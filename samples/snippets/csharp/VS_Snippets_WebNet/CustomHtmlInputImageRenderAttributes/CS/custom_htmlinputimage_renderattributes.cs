@@ -9,7 +9,7 @@ namespace Samples.AspNet.CS.Controls
     {
         protected override void RenderAttributes(System.Web.UI.HtmlTextWriter writer)
         {
-            // Add an Alt attribute to the the HtmlInputImage control.
+            // Add an Alt attribute to the HtmlInputImage control.
             writer.Write(" alt='Alternate text from RenderAttributes'");
             
             // Call the base class's RenderAttributes method.

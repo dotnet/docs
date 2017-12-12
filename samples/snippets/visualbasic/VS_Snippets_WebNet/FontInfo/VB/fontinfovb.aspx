@@ -7,7 +7,7 @@
 
   Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
   
-    ' When the page loads, set the the myLabel Label control's FontInfo properties.
+    ' When the page loads, set the myLabel Label control's FontInfo properties.
     ' Note that myLabel.Font is a FontInfo object.
     
     myLabel.Font.Bold = True

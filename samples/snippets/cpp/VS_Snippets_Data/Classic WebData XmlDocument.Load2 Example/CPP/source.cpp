@@ -12,7 +12,7 @@ int main()
    //Create the XmlDocument.
    XmlDocument^ doc = gcnew XmlDocument;
    
-   //Load the the document with the last book node.
+   //Load the document with the last book node.
    XmlTextReader^ reader = gcnew XmlTextReader( "books.xml" );
    reader->WhitespaceHandling = WhitespaceHandling::None;
    reader->MoveToContent();

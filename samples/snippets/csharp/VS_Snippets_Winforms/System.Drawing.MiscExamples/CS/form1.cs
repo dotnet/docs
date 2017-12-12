@@ -506,7 +506,7 @@ public class Form1:
             // Create a bitmap.
             Bitmap bmp = new Bitmap("c:\\fakePhoto.jpg");
             
-           // Retrieve the bitmap data from the the bitmap.
+           // Retrieve the bitmap data from the bitmap.
             System.Drawing.Imaging.BitmapData bmpData = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), 
                 ImageLockMode.ReadOnly, bmp.PixelFormat);
 

@@ -169,7 +169,7 @@ Namespace Microsoft.Samples.CustomControls
 		End Property
 		#End Region ' ScRGB Properties
 
-		' Gets or sets the the selected color in hexadecimal notation.
+		' Gets or sets the selected color in hexadecimal notation.
 		Public Property HexadecimalString() As String
 			Get
 				Return CStr(GetValue(HexadecimalStringProperty))

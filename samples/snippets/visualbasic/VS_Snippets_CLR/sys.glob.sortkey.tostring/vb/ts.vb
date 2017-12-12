@@ -28,7 +28,7 @@ Class Sample
         Console.WriteLine("Original string: ""{0}""", sk1.OriginalString)
         Console.WriteLine()
         
-        ' Display the the string equivalent of the two sort keys.
+        ' Display the string equivalent of the two sort keys.
         Console.WriteLine("CompareInfo (culture) name: {0}", cmpi.Name)
         Console.WriteLine("ToString - {0}: ""{1}""", ignoreCase, sk1.ToString())
         Console.WriteLine("ToString - {0}: ""{1}""", useCase, sk2.ToString())

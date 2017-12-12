@@ -88,7 +88,7 @@ namespace NavigatingData
             DataTable customerTable = new DataTable();
             
 
-            // Fill the the table with the contents of the customer table.
+            // Fill the table with the contents of the customer table.
             customersDataAdapter.Fill(customerTable);
             DataView customerView = new DataView(customerTable);
 

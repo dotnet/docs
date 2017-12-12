@@ -10,7 +10,7 @@ public class Sample
     //Create the XmlDocument.
     XmlDocument doc = new XmlDocument();
 
-    //Load the the document with the last book node.
+    //Load the document with the last book node.
     XmlTextReader reader = new XmlTextReader("books.xml");
     reader.WhitespaceHandling = WhitespaceHandling.None;
     reader.MoveToContent();

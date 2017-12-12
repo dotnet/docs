@@ -323,7 +323,7 @@
   
  The <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.PointDepth%2A> property can be applied to the depth of bar, column, line, pie and spline chart data points only. If you set this property for other chart types (for example, bubble and point charts) that cannot have their point depths "stretched", it will reserve extra space for the data points, but will not increase their depth.  
   
- You can display the chart as an isometric projection by setting the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.IsRightAngleAxes%2A> property to `true`, which is the the default value. This will cause the point depth to appear to be more or less than the percentage set by this property, depending on the chart being displayed.  
+ You can display the chart as an isometric projection by setting the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.IsRightAngleAxes%2A> property to `true`, which is the default value. This will cause the point depth to appear to be more or less than the percentage set by this property, depending on the chart being displayed.  
   
  To control the spacing between rows of data, use the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.PointGapDepth%2A> property.  
   

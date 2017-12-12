@@ -155,7 +155,7 @@ size3DResult = (Size3D)s3DConverter.ConvertFromString(string3);
         <summary>Attempts to convert a specified object to a <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.</summary>
         <returns>The <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure created from the converted <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">Occurs if the specified object is **null** or is a type that cannot be converted to to a <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.</exception>
+        <exception cref="T:System.NotSupportedException">Occurs if the specified object is **null** or is a type that cannot be converted to a <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">

@@ -13,7 +13,7 @@
     MenuItem item = NavigationMenu.Items[0].ChildItems[0].ChildItems[0];
 
     // Create the delimiter array using the PathSeparator value.
-    // This array is used by the the Split method to parse the
+    // This array is used by the Split method to parse the
     // value path string. 
     Char[] DelimiterArray = new Char[1];
     DelimiterArray[0] = NavigationMenu.PathSeparator;

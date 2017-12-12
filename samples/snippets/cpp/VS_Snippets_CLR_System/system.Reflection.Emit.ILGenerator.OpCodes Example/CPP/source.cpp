@@ -92,7 +92,7 @@ Type^ CreateDynamicType()
    writeStrIL->EmitWriteLine( "The value of 'y' is:" );
    writeStrIL->EmitWriteLine( yField );
    
-   // Since we return no value (void), the the ret opcode will not
+   // Since we return no value (void), the ret opcode will not
    // return the top stack value.
    writeStrIL->Emit( OpCodes::Ret );
    return pointTypeBld->CreateType();

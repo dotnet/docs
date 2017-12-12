@@ -57,7 +57,7 @@ Class MyOperationClass
       ' Add the 'Binding' to 'BindingCollection' of 'ServiceDescription'.
       myServiceDescription.Bindings.Add(myBinding)
       
-      ' Create a a 'PortType' object.
+      ' Create a 'PortType' object.
       Dim myPostPortType As New PortType()
       myPostPortType.Name = "OperationServiceHttpPost"
 ' <Snippet1>

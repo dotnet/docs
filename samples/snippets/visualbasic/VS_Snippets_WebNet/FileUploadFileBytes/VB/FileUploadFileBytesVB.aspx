@@ -13,7 +13,7 @@
             Dim savePath As String = "c:\temp\uploads\"
             
             ' Before attempting to perform operations
-            ' on the the file, verify that the FileUpload 
+            ' on the file, verify that the FileUpload 
             ' control contains a file.
             If (FileUpload1.HasFile) Then
             

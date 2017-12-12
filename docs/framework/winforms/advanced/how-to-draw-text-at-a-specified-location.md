@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "text [Windows Forms], drawing at specified locations [Windows Forms]"
   - "drawing text"
   - "drawing text [Windows Forms], specified locations [Windows Forms]"
-  - "Windows Forms, drawing text a a specified location"
+  - "Windows Forms, drawing text at a specified location"
 ms.assetid: 60816423-1c38-465e-980d-2c2b64d74086
 caps.latest.revision: 19
 author: dotnet-bot

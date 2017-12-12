@@ -21,10 +21,10 @@ An array is a set of values, which are termed *elements*, that are logically rel
 
 It is possible individual variables to store each of our data items. For example, if our application analyzes student grades, we can use a separate variable for each student's grade, such as `englishGrade1`, `englishGrade2`, etc. This approach has three major limitations:
 - We have to know at design time exactly how many grades we have to handle.
-- Handling large numbers of grades quickly become unwieldy. This in turn makes an application much more likely to have serious bugs.
+- Handling large numbers of grades quickly becomes unwieldy. This in turn makes an application much more likely to have serious bugs.
 - It is difficult to maintain. Each new grade that we add requires that the application be modified, recompiled, and redeployed.  
  
- By using an array, you can refer to these related values by the same name, and use a number that’s called an *index* or *subscript* to identify an individual element based on its position in the array. The indexes of an array range from 0 to one less than the total number of elements in the array. You can work with the array as a unit, and the ability to iterate its elements frees you from needing to know exactly how many elements it contains at design time.
+ By using an array, you can refer to these related values by the same name, and use a number that’s called an *index* or *subscript* to identify an individual element based on its position in the array. The indexes of an array range from 0 to one less than the total number of elements in the array. When you use Visual Basic syntax to define the size of an array, you specify its highest index, not the total number of elements in the array. You can work with the array as a unit, and the ability to iterate its elements frees you from needing to know exactly how many elements it contains at design time.
   
  Some quick examples before explanation:  
   
@@ -41,10 +41,10 @@ ReDim Preserve numbers(15)
 ' Redefine the size of an existing array and reset the values.
 ReDim numbers(15)  
   
-' Declare a 6 x 6 multi-dimensional array.
+' Declare a 6 x 6 multidimensional array.
 Dim matrix(5, 5) As Double  
   
-' Declare a 4 x 3 multi-dimensional array and set array element values.  
+' Declare a 4 x 3 multidimensional array and set array element values.  
 Dim matrix = New Integer(3, 2) {{1, 2, 3}, {2, 3, 4}, {3, 4, 5}, {4, 5, 6}}  
   
 ' Declare a jagged array  
@@ -99,7 +99,7 @@ The example does three things:
 - It assigns values to each element in the array. Array elements are accessed by using the array name and including the index of the individual element in parentheses.
 - It lists each value of the array. The example uses a [`For`](../../../language-reference/statements/for-next-statement.md) statement to access each element of the array by its index number.
   
- The `students` array in the preceding example is a one-dimensional array because it uses one index. An array that uses more than one index or subscript is called multidimensional. For more information, see the rest of this article and [Array Dimensions in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/array-dimensions.md).  
+ The `students` array in the preceding example is a one-dimensional array because it uses one index. An array that uses more than one index or subscript is called *multidimensional*. For more information, see the rest of this article and [Array Dimensions in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/array-dimensions.md).  
   
 ##  Creating an Array  
  
@@ -121,7 +121,7 @@ You can define the size of an array in several ways:
   
 ##  Storing Values in an Array
  
- You can access each location in an array by using an index of type `Integer`. You can store and retrieve values in an array by referencing each array location by using its index enclosed in parentheses. Indexes for multi-dimensional arrays are separated by commas (,). You need one index for each array dimension. 
+ You can access each location in an array by using an index of type `Integer`. You can store and retrieve values in an array by referencing each array location by using its index enclosed in parentheses. Indexes for multidimensional arrays are separated by commas (,). You need one index for each array dimension. 
 
 The following example shows some statements that store and retrieve values in arrays.
   
@@ -173,8 +173,11 @@ Just as you can for one-dimensional arrays, you can rely on type inference when 
  The size of an array is the product of the lengths of all its dimensions. It represents the total number of elements currently contained in the array.  For example, the following example declares a 2-dimensional array with four elements in each dimension. As the output from the example shows, the array's size is 16 (or (3 + 1) * (3 + 1).
 
  [!code-vb[array-size](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/array-size.vb)]  
+
+> [!NOTE] 
+> This discussion of array size does not apply to jagged arrays. For information on jagged arrays and determining the size of a jagged array, see the [Jagged arrays](#jagged-arrays) section.
   
-  You can find the size of an array by using the <xref:System.Array.Length%2A?displayProperty=nameWithType> property. You can find the length of each dimension of a multi-dimensional array by using the <xref:System.Array.GetLength%2A?displayProperty=nameWithType> method.  
+  You can find the size of an array by using the <xref:System.Array.Length%2A?displayProperty=nameWithType> property. You can find the length of each dimension of a multidimensional array by using the <xref:System.Array.GetLength%2A?displayProperty=nameWithType> method.  
   
  You can resize an array variable by assigning a new array object to it or by using the [`ReDim` Statement](../../../../visual-basic/language-reference/statements/redim-statement.md) statement. The following example uses the `ReDim` statement to change a 100-element array to a 51-element array.
 
@@ -221,30 +224,22 @@ Also, the [ReDim Statement](../../../../visual-basic/language-reference/statemen
   
  [!code-vb[multidimensional-return-value](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/return-values-and-params-2d.vb)]  
   
-##  Jagged Arrays  
+## Jagged Arrays  
  
-Sometimes the data structure in your application is two-dimensional but not rectangular. For example, you might use an array to store data about the high temperature of each day of the month. The first dimension of the array represents the month, but the second dimension represents the number of days, and the number of days in a month is not uniform. A *jagged array* is designed for such scenarios. A jagged array is an array whose elements are also arrays. A jagged array and each element in a jagged array can have one or more dimensions.  
+Sometimes the data structure in your application is two-dimensional but not rectangular. For example, you might use an array to store data about the high temperature of each day of the month. The first dimension of the array represents the month, but the second dimension represents the number of days, and the number of days in a month is not uniform. A *jagged array*, which is also called an *array of arrays*, is designed for such scenarios. A jagged array is an array whose elements are also arrays. A jagged array and each element in a jagged array can have one or more dimensions.  
   
  The following example uses an array of months, each element of which is an array of days. The example uses a jagged array because different months have different numbers of days.  The example shows how to create a jagged array, assign values to it, and retrieve and display its values.
   
  [!code-vb[jagged-arrays](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/jagged.vb)]  
 
-The previous example assigns values to the jagged array on an element-by-element basis by using a `For...Next` loop. You can also assign values to the elements of a jagged array by using nested array literals. However, the attempt to use nested array literals in the following example generates compiler error [BC30568](../../../,,/../misc/bc30568.md). 
-
-```vb
-Module Example
-   Public Sub Main()
-      Dim values1d = { 1, 2, 3 }
-      Dim values2d = {{1, 2}, {2, 3}, {3, 4}}
-      Dim valuesjagged = {{1, 2}, {2, 3, 4}}
-   End Sub
-End Module
-```
-
-To correct the error, enclose the inner array literals in parentheses. The parentheses force the array literal expression to be evaluated, and the resulting values are used with the outer array literal, as the following example shows.  
+The previous example assigns values to the jagged array on an element-by-element basis by using a `For...Next` loop. You can also assign values to the elements of a jagged array by using nested array literals. However, the attempt to use nested array literals (for example, ```Dim valuesjagged = {{1, 2}, {2, 3, 4}}```) generates compiler error [BC30568](../../../,,/../misc/bc30568.md). To correct the error, enclose the inner array literals in parentheses. The parentheses force the array literal expression to be evaluated, and the resulting values are used with the outer array literal, as the following example shows.  
   
  [!code-vb[jagged-array-initialization](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/jagged-assign.vb)] 
-  
+
+A jagged array is a one-dimensional array whose elements contain arrays. Therefore, the <xref:System.Array.Length%2A?displayProperty=nameWithType> property and the `Array.GetLength(0)` method return the number of elements in the one-dimensional array, and `Array.GetLength(1)` throws an <xref:System.IndexOutOfRangeException> because a jagged array is not multidimensional. You determine the number of elements in each subarray by retrieving the value of each subarray's <xref:System.Array.Length%2A?displayProperty=nameWithType> property. The following example illustrates how to determine the number of elements in a jagged array.
+
+[!code-vb[jagged-array-size](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/jagged-length.vb)] 
+
 ## Zero-length arrays  
 Visual Basic differentiates between a uninitialized array (an array whose value is `Nothing`) and a *zero-length array* or empty array (an array that has no elements.) An uninitialized array is one that has not been dimensioned or had any values assigned to it. For example:
 

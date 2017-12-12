@@ -42,11 +42,11 @@ The .NET Framework 4.7.1 is not supported on:
 
 If you're using Windows 10 1507 or 1511 and you want to install the .NET Framework 4.7.1, you first need to upgrade to a later Windows 10 version.
 
-## .NET Framework 4.6.1
+## .NET Framework 4.6.2
 
-The [.NET Framework 4.6.1](https://www.microsoft.com/download/details.aspx?id=49981) is the latest supported .NET Framework version on Windows 10 1507 and 1511.
+The [.NET Framework 4.6.2](https://www.microsoft.com/en-us/download/details.aspx?id=53345) is the latest supported .NET Framework version on Windows 10 1507 and 1511.
 
-The .NET Framework 4.6.1 supports apps built for the .NET Framework 4.0 through 4.6.1.
+The .NET Framework 4.6.2 supports apps built for the .NET Framework 4.0 through 4.6.2.
 
 ## .NET Framework 3.5
 

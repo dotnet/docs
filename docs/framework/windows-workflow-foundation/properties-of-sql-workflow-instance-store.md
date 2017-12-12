@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5bf75f3c-8f33-450d-967f-6ee862c14c67
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Properties of SQL Workflow Instance Store
 The topics in this section provide details about properties of the SQL Workflow Instance Store.  

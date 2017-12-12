@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "Windows Communication Foundation, guidelines"
 ms.assetid: 5098ba46-6e8d-4e02-b0c5-d737f9fdad84
 caps.latest.revision: 18
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Guidelines and Best Practices
 This section contains topics that provide guidelines for creating [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications.  

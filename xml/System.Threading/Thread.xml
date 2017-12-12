@@ -509,6 +509,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Core only: This member is not supported.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <exception cref="T:System.Threading.ThreadStateException">The thread that is being aborted is currently suspended.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for advanced operations on threads. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
@@ -579,6 +580,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Core only: This member is not supported.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <exception cref="T:System.Threading.ThreadStateException">The thread that is being aborted is currently suspended.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for advanced operations on threads. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
@@ -2342,6 +2344,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Core only: This member is not supported.</exception>
         <exception cref="T:System.Threading.ThreadStateException">
           <see langword="Abort" /> was not invoked on the current thread.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required security permission for the current thread.</exception>
@@ -2389,7 +2392,8 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
 >  Do not use the <xref:System.Threading.Thread.Suspend%2A> and <xref:System.Threading.Thread.Resume%2A> methods to synchronize the activities of threads. You have no way of knowing what code a thread is executing when you suspend it. If you suspend a thread while it holds locks during a security permission evaluation, other threads in the <xref:System.AppDomain> might be blocked. If you suspend a thread while it is executing a class constructor, other threads in the <xref:System.AppDomain> that attempt to use that class are blocked. Deadlocks can occur very easily.  
   
  ]]></format>
-        </remarks>
+        </remarks>		
+        <exception cref="T:System.PlatformNotSupportedException">.NET Core only: This member is not supported.</exception>
         <exception cref="T:System.Threading.ThreadStateException">The thread has not been started, is dead, or is not in the suspended state.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the appropriate <see cref="T:System.Security.Permissions.SecurityPermission" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for advanced operations on threads. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" /></permission>
@@ -2446,6 +2450,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Core only: This member is not supported on the macOS and Linux platforms.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="state" /> is not a valid apartment state.</exception>
         <exception cref="T:System.Threading.ThreadStateException">The thread has already been started.</exception>
@@ -2885,6 +2890,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Core only: This member is not supported.</exception>
         <exception cref="T:System.Threading.ThreadStateException">The thread has not been started or is dead.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the appropriate <see cref="T:System.Security.Permissions.SecurityPermission" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for advanced operations on threads. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>

@@ -126,9 +126,9 @@ string s = String.Empty;
 |[How to: Search Strings Using Regular Expressions](../../../csharp/programming-guide/strings/how-to-search-strings-using-regular-expressions.md)|Explains how to use regular expressions to search strings.|  
 |[How to: Determine Whether a String Represents a Numeric Value](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)|Shows how to safely parse a string to see whether it has a valid numeric value.|  
 |[How to: Convert a String to a DateTime](../../../csharp/programming-guide/strings/how-to-convert-a-string-to-a-datetime.md)|Shows how to convert a string such as "01/24/2008" to a <xref:System.DateTime?displayProperty=nameWithType> object.|  
-|[Basic String Operations](https://msdn.microsoft.com/library/a292he7t)|Provides links to topics that use <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> methods to perform basic string operations.|  
-|[Parsing Strings](https://msdn.microsoft.com/library/b4w53z0y)|Describes how to insert characters or empty spaces into a string.|  
-|[Comparing Strings](https://msdn.microsoft.com/library/fbh501kz)|Includes information about how to compare strings and provides examples in C# and Visual Basic.|  
+|[Basic String Operations](../../../../docs/standard/base-types/basic-string-operations.md)|Provides links to topics that use <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> methods to perform basic string operations.|  
+|[Parsing Strings](../../../../docs/standard/base-types/parsing-strings.md)|Describes how to insert characters or empty spaces into a string.|  
+|[Comparing Strings](../../../../docs/standard/base-types/comparing.md)|Includes information about how to compare strings and provides examples in C# and Visual Basic.|  
 |[Using the StringBuilder Class](../../../standard/base-types/stringbuilder.md)|Describes how to create and modify dynamic string objects by using the <xref:System.Text.StringBuilder> class.|  
 |[LINQ and Strings](../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)|Provides information about how to perform various string operations by using LINQ queries.|  
 |[C# Programming Guide](../../../csharp/programming-guide/index.md)|Provides links to topics that explain programming constructs in C#.|  

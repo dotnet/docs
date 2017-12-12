@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d5587606-f2f3-46f8-9e76-cb8ad83088bd
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.MsmqPoisonMessageMovedPoison
 System.ServiceModel.Channels.MsmqPoisonMessageMovedPoison  

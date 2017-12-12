@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 19d27f47-0491-4569-8f53-51bc1d940e80
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Creating and Running a Workflow Instance
 This sample shows how to run a workflow instance. It shows how to execute it synchronously and asynchronously.  

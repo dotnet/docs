@@ -16,7 +16,7 @@ ms.custom: mvc
 This quick start provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601>
 class.
 
-This quick start expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux.
+This quick start expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quick starts](local-environment.md) with links to more details.
 
 ## A basic list example.
 
@@ -206,7 +206,7 @@ Save the file and type `dotnet run` to see the results.
 > To concentrate on just this section, you can comment out the code that calls `WorkingWithStrings();`. Just put two `/` characters in front of the call like this:  `// WorkingWithStrings();`. 
 
 ## Challenge
-See if you can put together some of the lessons from this and earlier lessons. Expand on what you've built so far with Fibonacci Numbers. Try and write the code to generate the first 20 numbers in the sequence.
+See if you can put together some of the concepts from this and earlier lessons. Expand on what you've built so far with Fibonacci Numbers. Try to write the code to generate the first 20 numbers in the sequence. (As a hint, the 20th Fibonacci number is 6765.)
 
 ## Complete challenge
 

@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "federation"
 ms.assetid: 149ab165-0ef3-490a-83a9-4322a07bd98a
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Configure Credentials on a Federation Service
 In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], creating a federated service consists of the following main procedures:  

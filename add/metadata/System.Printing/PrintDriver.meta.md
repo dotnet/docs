@@ -2,8 +2,8 @@
 uid: System.Printing.PrintDriver
 ms.technology: 
   - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -11,8 +11,8 @@ manager: "wpickett"
 uid: System.Printing.PrintDriver.Refresh
 ms.technology: 
   - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -20,6 +20,6 @@ manager: "wpickett"
 uid: System.Printing.PrintDriver.Commit
 ms.technology: 
   - "dotnet-standard"
-ms.author: "kempb"
-manager: "ghogen"
+ms.author: "dotnet-bot"
+manager: "wpickett"
 ---

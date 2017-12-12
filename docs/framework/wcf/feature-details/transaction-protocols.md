@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2820b0ec-2f32-430c-b299-1f0e95e1f2dc
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Transaction Protocols
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implements WS-Atomic Transaction and WS-Coordination protocols.  

@@ -14,9 +14,9 @@ dev_langs:
  - "vb"
 ms.assetid: d613a22b-07d7-41a4-bada-1adc653b9b5d
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Overriding the Identity of a Service for Authentication
 Typically, you do not have to set the identity on a service because the selection of a client credential type dictates the type of identity exposed in the service metadata. For example, the following configuration code uses the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element and sets the `clientCredentialType` attribute to Windows.  

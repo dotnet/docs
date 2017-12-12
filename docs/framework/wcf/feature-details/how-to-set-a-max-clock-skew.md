@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "WCF, custom bindings"
 ms.assetid: 491d1705-eb29-43c2-a44c-c0cf996f74eb
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Set a Max Clock Skew
 Time-critical functions can be derailed if the clock settings on two computers are different. To mitigate this possibility, you can set the `MaxClockSkew` property to a <xref:System.TimeSpan>. This property is available on two classes:  

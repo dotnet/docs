@@ -2,7 +2,7 @@
 uid: System.Windows.Data.RelativeSourceMode
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8ef05bc4-1950-4ee4-95c5-1c6a394eff7e
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;remove&gt; of &lt;claimTypeRequirements&gt; element
 Specifies the types of claims to be removed in the federated credential.  

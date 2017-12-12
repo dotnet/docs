@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f1ddf364-9a00-45d3-b989-ff381c154ce6
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;defaultCertificate&gt; Element
 Specifies an X.509 certificate to be used when a service or STS does not provide one via a negotiation protocol.  

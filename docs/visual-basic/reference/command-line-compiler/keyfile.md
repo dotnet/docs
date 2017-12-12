@@ -42,7 +42,7 @@ Specifies a file containing a key or key pair to give an assembly a strong name.
   
  Note that a key file might contain only the public key.  
   
- See [Creating and Using Strong-Named Assemblies](https://msdn.microsoft.com/library/xwb8f617) for more information on signing an assembly.  
+ See [Creating and Using Strong-Named Assemblies](../../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md) for more information on signing an assembly.  
   
 > [!NOTE]
 >  The `/keyfile` option is not available from within the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] development environment; it is available only when compiling from the command line.  

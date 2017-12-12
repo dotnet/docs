@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: eb896d04-e4a5-404f-9df6-5fcaa93e5b60
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.TcpChannelMessageReceived
 System.ServiceModel.Channels.TcpChannelMessageReceived  

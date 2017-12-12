@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 83082d4a-7350-4b04-ab2d-1fa5ffd643f5
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Performance Considerations
 Performance considerations are always important when building applications. This section contains entries related to performance and security.  

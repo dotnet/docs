@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e6d834d0-356e-45eb-b530-bbefbb9ec3f0
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;textMessageEncoding&gt;
 Specifies the character encoding and message versioning used for text-based XML messages.  

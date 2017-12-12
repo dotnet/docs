@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9f09ea91-8399-4ea0-af70-640ce72a2018
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationTxProxyTxAbortedByTM
 System.ServiceModel.ComIntegration.ComIntegrationTxProxyTxAbortedByTM  

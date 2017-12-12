@@ -92,7 +92,7 @@ manager: "wpickett"
 uid: System.IO.MemoryStream.WriteAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -126,7 +126,7 @@ manager: "wpickett"
 uid: System.IO.MemoryStream.CopyToAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -232,7 +232,7 @@ manager: "wpickett"
 uid: System.IO.MemoryStream.FlushAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -248,7 +248,7 @@ manager: "wpickett"
 uid: System.IO.MemoryStream.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -282,7 +282,7 @@ manager: "wpickett"
 uid: System.IO.MemoryStream.ReadAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

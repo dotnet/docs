@@ -62,6 +62,6 @@ The topic describes methods to enable interoperability between C# managed code a
  [Improving Interop Performance](http://go.microsoft.com/fwlink/?LinkId=99564)  
  [Introduction to COM Interop](http://go.microsoft.com/fwlink/?LinkId=112406)  
  [Marshaling between Managed and Unmanaged Code](http://go.microsoft.com/fwlink/?LinkId=112398)  
- [Interoperating with Unmanaged Code](https://msdn.microsoft.com/library/sd10k43k)  
+ [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)  
  [Advanced COM Interoperability](http://msdn.microsoft.com/en-us/3ada36e5-2390-4d70-b490-6ad8de92f2fb)  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)

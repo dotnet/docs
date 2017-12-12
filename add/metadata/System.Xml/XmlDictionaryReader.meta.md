@@ -83,7 +83,7 @@ manager: "wpickett"
 uid: System.Xml.XmlDictionaryReader.ReadStartElement
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -567,7 +567,7 @@ manager: "wpickett"
 uid: System.Xml.XmlDictionaryReader.GetAttribute
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1258,7 +1258,7 @@ manager: "wpickett"
 uid: System.Xml.XmlDictionaryReader.IsStartElement
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

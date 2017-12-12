@@ -14,9 +14,9 @@ dev_langs:
  - "vb"
 ms.assetid: f8b97862-e8bb-470d-8b96-07733c21fe26
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Customize a System-Provided Binding
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] includes several system-provided bindings that allow you to configure some of the properties of the underlying binding elements, but not all of the properties. This topic demonstrates how to set properties on the binding elements to create a custom binding.  

@@ -3,7 +3,7 @@ uid: System.Linq.Expressions.ElementInit
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

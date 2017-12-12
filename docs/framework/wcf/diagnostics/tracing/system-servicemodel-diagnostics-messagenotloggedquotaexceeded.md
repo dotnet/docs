@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8b4fa4c5-83b7-41c3-9d5e-baa1fc2c98ae
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Diagnostics.MessageNotLoggedQuotaExceeded
 System.ServiceModel.Diagnostics.MessageNotLoggedQuotaExceeded  

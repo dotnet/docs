@@ -21,7 +21,7 @@ uid: System.Linq.Expressions.DynamicExpression.NodeType
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -29,7 +29,7 @@ uid: System.Linq.Expressions.DynamicExpression.MakeDynamic
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -37,7 +37,7 @@ uid: System.Linq.Expressions.DynamicExpression.Dynamic(System.Runtime.CompilerSe
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -69,7 +69,7 @@ uid: System.Linq.Expressions.DynamicExpression.Accept(System.Linq.Expressions.Ex
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -77,7 +77,7 @@ uid: System.Linq.Expressions.DynamicExpression.MakeDynamic(System.Type,System.Ru
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -166,7 +166,7 @@ uid: System.Linq.Expressions.DynamicExpression.Dynamic(System.Runtime.CompilerSe
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

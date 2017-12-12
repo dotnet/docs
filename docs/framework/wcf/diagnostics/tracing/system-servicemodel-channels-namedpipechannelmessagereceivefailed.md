@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 20e65df6-4539-428d-bf61-92e05c405bef
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.NamedPipeChannelMessageReceiveFailed
 System.ServiceModel.Channels.NamedPipeChannelMessageReceiveFailed  

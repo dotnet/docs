@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a530df15-ebcd-45d6-bcdf-fc4483bcebec
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.MsmqPotentiallyPoisonMessageDetected
 System.ServiceModel.Channels.MsmqPotentiallyPoisonMessageDetected  

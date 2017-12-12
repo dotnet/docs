@@ -497,7 +497,7 @@ manager: "wpickett"
 uid: System.Xml.Linq.XElement.op_Explicit
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

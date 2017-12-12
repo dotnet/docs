@@ -1,6 +1,6 @@
 ---
 uid: Microsoft.Build.Tasks.Xaml
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

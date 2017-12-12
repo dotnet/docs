@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "WCF clients [WCF], running"
 ms.assetid: a67884cc-1c4b-416b-8c96-5c954099f19f
 caps.latest.revision: 64
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Create a Windows Communication Foundation Client
 This is the fourth of six tasks required to create a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  

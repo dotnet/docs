@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "security [WCF], elevation of privilege"
 ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Elevation of Privilege
 *Elevation of privilege* results from giving an attacker authorization permissions beyond those initially granted. For example, an attacker with a privilege set of "read only" permissions somehow elevates the set to include "read and write."  

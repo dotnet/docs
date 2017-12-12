@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5da1b5a3-f144-41ba-b9c4-02818b28b15d
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # SQLStoreExtensibility
 This sample demonstrates the use and configuration of promoted properties in the SQL workflow instance store. The SQL workflow instance store is a SQL-based implementation of an instance store. It allows an instance to save its state and load its state to and from a SQL Server or SQL Server Express database. The store extensibility feature allows the user to define properties that are stored in the instance store. These properties are displayed in a promoted properties view that allows the user to query for them.  

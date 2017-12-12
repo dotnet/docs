@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "behavior [WCF], service performance"
 ms.assetid: f9dc120c-dc24-49d5-930e-b22f5bc73423
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Using ServiceThrottlingBehavior to Control WCF Service Performance
 The <xref:System.ServiceModel.Description.ServiceThrottlingBehavior> class exposes properties that you can use to limit how many instances or sessions are created at the application level. Using this behavior, you can fine-tune the performance of your [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] application.  

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ba793c1d-6b2f-43da-b14d-a825c6c31b01
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Microsoft.Transactions.TransactionBridge.EnlistTransaction
 The WS-Atomic Transaction protocol service successfully enlisted on a transaction that uses the provided coordination context.  

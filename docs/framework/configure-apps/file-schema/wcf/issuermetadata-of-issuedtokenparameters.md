@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1a85ca37-496d-4fa3-8d44-d6c9383d735c
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;issuerMetadata&gt; of &lt;issuedTokenParameters&gt;
 \<system.serviceModel>  

@@ -166,7 +166,7 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 #### Microsoft Azure Command Line Interface (CLI)
 
-* [Microsoft Azure Command-Line Interface (CLI) images on DockerHub](https://hub.docker.com/r/microsoft/azure-cli/)
+* [Microsoft Azure Command Line Interface (CLI) images on DockerHub](https://hub.docker.com/r/microsoft/azure-cli/) 
 
 * [Microsoft Azure Command-Line Interface (CLI) images on GitHub](https://github.com/Microsoft/OMS-docker)
 
@@ -199,3 +199,4 @@ Now that you have learned about the Docker platform and different Docker images,
 
 * [Learn Docker Basics with .NET Core](docker-basics-dotnet-core.md)
 * [Building .NET Core Docker Images](building-net-docker-images.md)
+\

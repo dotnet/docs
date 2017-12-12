@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "Windows Communication Foundation, requirements"
 ms.assetid: c43918db-9a36-426c-9e8a-e1bd6688a5b7
 caps.latest.revision: 20
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # WCF System Requirements
 [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] is a communication infrastructure that is used to create distributed applications. The following lists the requirements that enable [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] to run.  

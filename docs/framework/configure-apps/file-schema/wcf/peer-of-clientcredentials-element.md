@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 505bd987-0042-4622-b68e-94f439729d53
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;peer&gt; of &lt;clientCredentials&gt; Element
 Specifies credentials used when authenticating peer-to-peer clients.  

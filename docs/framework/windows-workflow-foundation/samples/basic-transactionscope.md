@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1e22b76a-76de-43b4-9be7-7a86ed3d5a44
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Basic TransactionScope
 This sample consists of four scenarios that run showing how to nest <xref:System.Activities.Statements.TransactionScope> instances. The first scenario shows nesting a 3rd party activity of which the author has no knowledge of the construction. The second and third scenarios show how time-outs are respected and the final scenario shows the <xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure%2A> setting.  

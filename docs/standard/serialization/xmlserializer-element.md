@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "xmlSerializer element"
 ms.assetid: d129d10c-3eb7-45d9-8098-5fa853825e47
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;xmlSerializer&gt; Element
 Specifies whether an additional check of progress of the <xref:System.Xml.Serialization.XmlSerializer> is done.  

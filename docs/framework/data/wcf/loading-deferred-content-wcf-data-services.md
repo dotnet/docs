@@ -18,9 +18,9 @@ helpviewer_keywords:
   - "WCF Data Services, loading data"
 ms.assetid: 32f9b588-c832-44c4-a7e0-fcce635df59a
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Loading Deferred Content (WCF Data Services)
 By default, [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] limits the amount of data that a query returns. However, you can explicitly load additional data, including related entities, paged response data, and binary data streams, from the data service when it is needed. This topic describes how to load such deferred content into your application.  

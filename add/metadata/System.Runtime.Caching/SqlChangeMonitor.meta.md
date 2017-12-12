@@ -3,7 +3,7 @@ uid: System.Runtime.Caching.SqlChangeMonitor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Runtime.Caching.SqlChangeMonitor.#ctor(System.Data.SqlClient.SqlDepe
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,5 +19,5 @@ uid: System.Runtime.Caching.SqlChangeMonitor.UniqueId
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---

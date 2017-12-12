@@ -3,7 +3,7 @@ uid: System.Linq.Expressions.Expression
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -110,7 +110,7 @@ uid: System.Linq.Expressions.Expression.PostIncrementAssign(System.Linq.Expressi
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -127,7 +127,7 @@ uid: System.Linq.Expressions.Expression.Decrement(System.Linq.Expressions.Expres
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -144,7 +144,7 @@ uid: System.Linq.Expressions.Expression.Or
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -233,7 +233,7 @@ uid: System.Linq.Expressions.Expression.Return(System.Linq.Expressions.LabelTarg
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -313,7 +313,7 @@ uid: System.Linq.Expressions.Expression.LeftShiftAssign(System.Linq.Expressions.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -375,7 +375,7 @@ uid: System.Linq.Expressions.Expression.Catch(System.Type,System.Linq.Expression
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -446,7 +446,7 @@ uid: System.Linq.Expressions.Expression.PreDecrementAssign
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -472,7 +472,7 @@ uid: System.Linq.Expressions.Expression.Not(System.Linq.Expressions.Expression,S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -498,7 +498,7 @@ uid: System.Linq.Expressions.Expression.Add(System.Linq.Expressions.Expression,S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -506,7 +506,7 @@ uid: System.Linq.Expressions.Expression.Add
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -514,7 +514,7 @@ uid: System.Linq.Expressions.Expression.Parameter
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -522,7 +522,7 @@ uid: System.Linq.Expressions.Expression.ListInit(System.Linq.Expressions.NewExpr
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -647,7 +647,7 @@ uid: System.Linq.Expressions.Expression.Property(System.Linq.Expressions.Express
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -691,7 +691,7 @@ uid: System.Linq.Expressions.Expression.MultiplyAssign(System.Linq.Expressions.E
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -726,7 +726,7 @@ uid: System.Linq.Expressions.Expression.Switch(System.Linq.Expressions.Expressio
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -833,7 +833,7 @@ uid: System.Linq.Expressions.Expression.Multiply(System.Linq.Expressions.Express
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -868,7 +868,7 @@ uid: System.Linq.Expressions.Expression.SymbolDocument(System.String,System.Guid
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -903,7 +903,7 @@ uid: System.Linq.Expressions.Expression.AddAssignChecked(System.Linq.Expressions
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -920,7 +920,7 @@ uid: System.Linq.Expressions.Expression.Multiply
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -982,7 +982,7 @@ uid: System.Linq.Expressions.Expression.Block(System.Collections.Generic.IEnumer
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1044,7 +1044,7 @@ uid: System.Linq.Expressions.Expression.New(System.Reflection.ConstructorInfo,Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1106,7 +1106,7 @@ uid: System.Linq.Expressions.Expression.Dynamic(System.Runtime.CompilerServices.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1123,7 +1123,7 @@ uid: System.Linq.Expressions.Expression.Goto(System.Linq.Expressions.LabelTarget
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1140,7 +1140,7 @@ uid: System.Linq.Expressions.Expression.Lambda``1(System.Linq.Expressions.Expres
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1193,7 +1193,7 @@ uid: System.Linq.Expressions.Expression.SwitchCase
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1300,7 +1300,7 @@ uid: System.Linq.Expressions.Expression.NewArrayBounds
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1326,7 +1326,7 @@ uid: System.Linq.Expressions.Expression.Label(System.Type)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1343,7 +1343,7 @@ uid: System.Linq.Expressions.Expression.Reduce
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1360,7 +1360,7 @@ uid: System.Linq.Expressions.Expression.Bind
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1422,7 +1422,7 @@ uid: System.Linq.Expressions.Expression.TryFault(System.Linq.Expressions.Express
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1493,7 +1493,7 @@ uid: System.Linq.Expressions.Expression.NegateChecked(System.Linq.Expressions.Ex
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1537,7 +1537,7 @@ uid: System.Linq.Expressions.Expression.ConvertChecked
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1554,7 +1554,7 @@ uid: System.Linq.Expressions.Expression.AddAssignChecked(System.Linq.Expressions
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1571,7 +1571,7 @@ uid: System.Linq.Expressions.Expression.Subtract(System.Linq.Expressions.Express
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1633,7 +1633,7 @@ uid: System.Linq.Expressions.Expression.Call(System.Linq.Expressions.Expression,
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1650,7 +1650,7 @@ uid: System.Linq.Expressions.Expression.Subtract(System.Linq.Expressions.Express
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1685,7 +1685,7 @@ uid: System.Linq.Expressions.Expression.GreaterThanOrEqual
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1693,7 +1693,7 @@ uid: System.Linq.Expressions.Expression.Goto(System.Linq.Expressions.LabelTarget
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1737,7 +1737,7 @@ uid: System.Linq.Expressions.Expression.Break(System.Linq.Expressions.LabelTarge
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1745,7 +1745,7 @@ uid: System.Linq.Expressions.Expression.TypeIs(System.Linq.Expressions.Expressio
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1771,7 +1771,7 @@ uid: System.Linq.Expressions.Expression.Switch
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1788,7 +1788,7 @@ uid: System.Linq.Expressions.Expression.Call(System.Type,System.String,System.Ty
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1796,7 +1796,7 @@ uid: System.Linq.Expressions.Expression.Or(System.Linq.Expressions.Expression,Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1813,7 +1813,7 @@ uid: System.Linq.Expressions.Expression.SubtractAssignChecked(System.Linq.Expres
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1848,7 +1848,7 @@ uid: System.Linq.Expressions.Expression.IsFalse
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1874,7 +1874,7 @@ uid: System.Linq.Expressions.Expression.AndAlso(System.Linq.Expressions.Expressi
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1900,7 +1900,7 @@ uid: System.Linq.Expressions.Expression.Goto(System.Linq.Expressions.LabelTarget
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2034,7 +2034,7 @@ uid: System.Linq.Expressions.Expression.SymbolDocument(System.String,System.Guid
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2078,7 +2078,7 @@ uid: System.Linq.Expressions.Expression.And
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2140,7 +2140,7 @@ uid: System.Linq.Expressions.Expression.Return(System.Linq.Expressions.LabelTarg
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2211,7 +2211,7 @@ uid: System.Linq.Expressions.Expression.PowerAssign(System.Linq.Expressions.Expr
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2255,7 +2255,7 @@ uid: System.Linq.Expressions.Expression.Block(System.Type,System.Collections.Gen
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2299,7 +2299,7 @@ uid: System.Linq.Expressions.Expression.Return
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2316,7 +2316,7 @@ uid: System.Linq.Expressions.Expression.IsTrue
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2360,7 +2360,7 @@ uid: System.Linq.Expressions.Expression.LessThan(System.Linq.Expressions.Express
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2386,7 +2386,7 @@ uid: System.Linq.Expressions.Expression.Property(System.Linq.Expressions.Express
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2394,7 +2394,7 @@ uid: System.Linq.Expressions.Expression.Equal(System.Linq.Expressions.Expression
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2420,7 +2420,7 @@ uid: System.Linq.Expressions.Expression.NewArrayInit(System.Type,System.Collecti
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2464,7 +2464,7 @@ uid: System.Linq.Expressions.Expression.Type
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2571,7 +2571,7 @@ uid: System.Linq.Expressions.Expression.SymbolDocument(System.String,System.Guid
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2750,7 +2750,7 @@ uid: System.Linq.Expressions.Expression.MakeDynamic(System.Type,System.Runtime.C
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2767,7 +2767,7 @@ uid: System.Linq.Expressions.Expression.Increment(System.Linq.Expressions.Expres
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2793,7 +2793,7 @@ uid: System.Linq.Expressions.Expression.Loop(System.Linq.Expressions.Expression)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2810,7 +2810,7 @@ uid: System.Linq.Expressions.Expression.Not(System.Linq.Expressions.Expression)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2872,7 +2872,7 @@ uid: System.Linq.Expressions.Expression.LeftShift
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2898,7 +2898,7 @@ uid: System.Linq.Expressions.Expression.MakeMemberAccess(System.Linq.Expressions
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2906,7 +2906,7 @@ uid: System.Linq.Expressions.Expression.ExclusiveOr(System.Linq.Expressions.Expr
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2941,7 +2941,7 @@ uid: System.Linq.Expressions.Expression.Power
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2958,7 +2958,7 @@ uid: System.Linq.Expressions.Expression.LessThan
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -2966,7 +2966,7 @@ uid: System.Linq.Expressions.Expression.Call(System.Reflection.MethodInfo,System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -3001,7 +3001,7 @@ uid: System.Linq.Expressions.Expression.NotEqual
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -3027,7 +3027,7 @@ uid: System.Linq.Expressions.Expression.AddAssignChecked
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -3071,7 +3071,7 @@ uid: System.Linq.Expressions.Expression.PowerAssign
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -3097,7 +3097,7 @@ uid: System.Linq.Expressions.Expression.NodeType
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -3159,7 +3159,7 @@ uid: System.Linq.Expressions.Expression.ListInit(System.Linq.Expressions.NewExpr
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -3194,7 +3194,7 @@ uid: System.Linq.Expressions.Expression.Convert(System.Linq.Expressions.Expressi
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -3400,7 +3400,7 @@ uid: System.Linq.Expressions.Expression.ConvertChecked(System.Linq.Expressions.E
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -3435,7 +3435,7 @@ uid: System.Linq.Expressions.Expression.SubtractAssign(System.Linq.Expressions.E
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -3443,7 +3443,7 @@ uid: System.Linq.Expressions.Expression.SubtractAssignChecked
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -3460,7 +3460,7 @@ uid: System.Linq.Expressions.Expression.ArrayAccess
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -3468,7 +3468,7 @@ uid: System.Linq.Expressions.Expression.GreaterThanOrEqual(System.Linq.Expressio
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -3485,7 +3485,7 @@ uid: System.Linq.Expressions.Expression.Condition(System.Linq.Expressions.Expres
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

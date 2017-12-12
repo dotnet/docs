@@ -1,5 +1,5 @@
 ---
-title: Quick Start - Branches and lops - C# Guide
+title: Quick Start - Branches and loops - C# Guide
 description: In this quick start about branches and loops, you write C# code to explore the language syntax that supports conditional branches and loops to execute statements repeatedly.
 author: billwagner
 ms.author: wiwagn
@@ -15,7 +15,7 @@ ms.custom: mvc
 
 This quick start teaches you how to write code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The quick start contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
 
-This quick start expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux.
+This quick start expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quick starts](local-environment.md) with links to more details.
 
 ## Make decisions using the `if` statement
 
@@ -283,7 +283,7 @@ by 3.  Here are a few hints:
 - The `if` statement gives you the condition to see if a number should be part of the sum.
 - The `for` loop can help you repeat a series of steps for all the numbers 1 through 20.
 
-Try it yourself. Then check how you did. You can see one possible answer by
+Try it yourself. Then check how you did. You should get 63 for an answer. You can see one possible answer by
 [viewing the completed code on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/branches-quickstart/Program.cs#L46-L54).
 
 You've completed the "branches and loops" quick start.

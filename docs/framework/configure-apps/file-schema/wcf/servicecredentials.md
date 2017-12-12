@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 96db336c-4f7a-4193-81a5-910b8ffd804f
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;serviceCredentials&gt;
 Specifies the credential to be used in authenticating the service and the client credential validation-related settings.  

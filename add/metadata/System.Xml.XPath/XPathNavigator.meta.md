@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.Xml.XPath.XPathNavigator.ValueAs
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

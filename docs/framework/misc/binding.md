@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 666183d6-4d1f-45c7-ac64-bdf93ee8f36f
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;binding&gt;
 You can use the `binding` element to configure different types of predefined bindings provided by Windows Communication Foundation (WCF).  

@@ -15,9 +15,9 @@ helpviewer_keywords:
   - "DataContractSerializer"
 ms.assetid: 3d64837e-0a0c-4cc8-90ff-a5c6f313c63a
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Data Contract Serializer
 The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] infrastructure uses the <xref:System.Runtime.Serialization.DataContractSerializer> class as the default serializer. The topics in this section provide more details for using it as a stand-alone serializer.  

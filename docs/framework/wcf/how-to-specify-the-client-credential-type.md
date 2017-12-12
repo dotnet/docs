@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "WCF, security"
 ms.assetid: 10f51bee-5f92-4c1a-9126-fa5418535d8f
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Specify the Client Credential Type
 After setting a security mode (either transport or message), you have the option of setting the client credential type. This property specifies what type of credential the client must provide to the service for authentication. [!INCLUDE[crabout](../../../includes/crabout-md.md)] setting the security mode (a necessary step before setting the client credential type), see [How to: Set the Security Mode](../../../docs/framework/wcf/how-to-set-the-security-mode.md).  

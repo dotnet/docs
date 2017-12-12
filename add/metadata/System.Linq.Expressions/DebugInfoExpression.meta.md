@@ -39,7 +39,7 @@ uid: System.Linq.Expressions.DebugInfoExpression.NodeType
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -47,7 +47,7 @@ uid: System.Linq.Expressions.DebugInfoExpression.StartLine
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

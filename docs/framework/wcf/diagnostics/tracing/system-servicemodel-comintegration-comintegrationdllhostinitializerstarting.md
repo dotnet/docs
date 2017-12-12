@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: affa55c6-03b5-4664-bb9c-2b9d15620df3
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationDllHostInitializerStarting
 System.ServiceModel.ComIntegration.ComIntegrationDllHostInitializerStarting  

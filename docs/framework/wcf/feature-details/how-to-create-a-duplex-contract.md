@@ -16,9 +16,9 @@ helpviewer_keywords:
   - "duplex contracts [WCF]"
 ms.assetid: 500a75b6-998a-47d5-8e3b-24e3aba2a434
 caps.latest.revision: 28
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Create a Duplex Contract
 This topic shows the basic steps to create methods that use a duplex (two-way) contract. A duplex contract allows clients and servers to communicate with each other independently so that either can initiate calls to the other. The duplex contract is one of three message patterns available to [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services. The other two message patterns are one-way and request-reply. A duplex contract consists of two one-way contracts between the client and the server and does not require that the method calls be correlated. Use this kind of contract when your service must query the client for more information or explicitly raise events on the client. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating a client application for a duplex contract, see [How to: Access Services with a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md). For a working sample, see the [Duplex](../../../../docs/framework/wcf/samples/duplex.md) sample.  

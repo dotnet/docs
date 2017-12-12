@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 193a1a73-42b8-4a98-9a72-ec06ad6b3073
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.MsmqQueueTransactionalStatusUnknown
 System.ServiceModel.Channels.MsmqQueueTransactionalStatusUnknown  

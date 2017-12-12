@@ -38,7 +38,7 @@ manager: "wpickett"
 uid: System.IO.BufferedStream.FlushAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -90,7 +90,7 @@ manager: "wpickett"
 uid: System.IO.BufferedStream.WriteAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -160,7 +160,7 @@ manager: "wpickett"
 uid: System.IO.BufferedStream.ReadAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

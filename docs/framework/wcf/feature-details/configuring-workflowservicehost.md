@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d8e961cb-0ef5-4f8c-8a25-e76ae6334fed
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Configuring WorkflowServiceHost
 This section contains a set of short "how to" topics that briefly describe how to configure different features of the <xref:System.ServiceModel.Activities.WorkflowServiceHost> class in configuration. These topics cover workflow service specific configuration, all other configuration is done in the same way as a regular [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  

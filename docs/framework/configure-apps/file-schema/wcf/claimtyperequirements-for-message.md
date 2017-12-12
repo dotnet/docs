@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f95c5ecd-abb6-4b77-a6d7-a38727f4a142
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;claimTypeRequirements&gt; for &lt;message&gt;
 Specifies a collection of required claim types.  

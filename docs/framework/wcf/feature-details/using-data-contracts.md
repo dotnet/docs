@@ -18,9 +18,9 @@ helpviewer_keywords:
   - "data contracts [WCF]"
 ms.assetid: a3ae7b21-c15c-4c05-abd8-f483bcbf31af
 caps.latest.revision: 38
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Using Data Contracts
 A *data contract* is a formal agreement between a service and a client that abstractly describes the data to be exchanged. That is, to communicate, the client and the service do not have to share the same types, only the same data contracts. A data contract precisely defines, for each parameter or return type, what data is serialized (turned into XML) to be exchanged.  

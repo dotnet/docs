@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "basicHttpBinding Element"
 ms.assetid: 85cf1a4f-26c2-48c7-bda6-6c960d5d3fb3
 caps.latest.revision: 43
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;basicHttpBinding&gt;
 Represents a binding that a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] service can use to configure and expose endpoints that are able to communicate with ASMX-based Web services and clients and other services that conform to the WS-I Basic Profile 1.1.  

@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "<dateTimeSerialization> element"
 ms.assetid: 90fda55c-7730-41e9-bc4b-6423a4b920af
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;dateTimeSerialization&gt; Element
 Determines the serialization mode of <xref:System.DateTime> objects.  

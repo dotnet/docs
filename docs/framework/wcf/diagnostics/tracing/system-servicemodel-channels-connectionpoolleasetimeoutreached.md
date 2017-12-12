@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bba612da-25ab-4051-916a-c0fba1ae6189
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.ConnectionPoolLeaseTimeoutReached
 System.ServiceModel.Channels.ConnectionPoolLeaseTimeoutReached  

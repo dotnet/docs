@@ -16,9 +16,9 @@ helpviewer_keywords:
   - "clients [WCF], consuming services"
 ms.assetid: 1abf3d9f-b420-46f1-b628-df238751f308
 caps.latest.revision: 40
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # ServiceModel Metadata Utility Tool (Svcutil.exe)
 The ServiceModel Metadata Utility tool is used to generate service model code from metadata documents and metadata documents from service model code.  

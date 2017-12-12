@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cb95e569-cc5e-4d70-81b5-7374d3a2f8be
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.MsmqCannotPeekOnQueue
 System.ServiceModel.Channels.MsmqCannotPeekOnQueue  

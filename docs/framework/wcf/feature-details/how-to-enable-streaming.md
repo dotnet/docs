@@ -14,9 +14,9 @@ dev_langs:
  - "vb"
 ms.assetid: 6ca2cf4b-c7a1-49d8-a79b-843a90556ba4
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Enable Streaming
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] can send messages using either buffered or streamed transfers. In the default buffered-transfer mode, a message must be completely delivered before a receiver can read it. In streaming transfer mode, the receiver can begin to process the message before it is completely delivered. The streaming mode is useful when the information that is passed is lengthy and can be processed serially. Streaming mode is also useful when the message is too large to be entirely buffered.  

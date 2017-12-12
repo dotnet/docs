@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 58aeffb0-8f3f-4b40-80c8-15f3f1652fd3
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # WAS Activation Architecture
 This topic itemizes and discusses the components of the Windows Process Activation Service (also known as WAS).  

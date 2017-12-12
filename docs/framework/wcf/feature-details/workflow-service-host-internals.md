@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: af44596f-bf6a-4149-9f04-08d8e8f45250
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Workflow Service Host Internals
 <xref:System.ServiceModel.WorkflowServiceHost> provides a host for workflow services. It is responsible for listening for incoming messages and routing them to the appropriate workflow service instance, it controls unloading and persisting of idle workflows, and more. This topic describes how WorkflowServiceHost processes incoming messages.  

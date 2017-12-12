@@ -12,7 +12,7 @@ ms.custom: mvc
 ---
 # Introduction to classes
 
-This lesson assumes that you've installed [.NET Core SDK](http://dot.net/core), and an editor of your choice. If you don't have one, try [Visual Studio Code](https://code.visualstudio.com/), or [Visual Studio](https://www.visualstudio.com/) on Mac or Windows.
+This quick start expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quick starts](local-environment.md) with links to more details.
 
 ## Create your application
 

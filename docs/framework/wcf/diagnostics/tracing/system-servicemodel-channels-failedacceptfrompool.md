@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d535b1b5-ee58-45e8-b400-7d9570f4eb9a
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.FailedAcceptFromPool
 An attempt to reuse a pooled connection failed. Another attempt is made within the specified timeout period.  

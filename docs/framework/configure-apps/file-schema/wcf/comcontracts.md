@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 42e74148-223d-4888-a8ed-1d928527eb09
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;comContracts&gt;
 The `comContracts` configuration section contains elements that allow you to specify various properties of a COM+ integration service contract.  

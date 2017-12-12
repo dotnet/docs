@@ -16,9 +16,9 @@ helpviewer_keywords:
   - "basic samples [WCF], getting started"
 ms.assetid: 967a3d94-0261-49ff-b85a-20bb07f1af20
 caps.latest.revision: 60
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Getting Started Sample
 The Getting Started sample demonstrates how to implement a typical service and a typical client using [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. This sample is the basis for all other basic technology samples.  

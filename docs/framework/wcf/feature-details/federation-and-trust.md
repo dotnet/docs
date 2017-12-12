@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "federation [WCF], and trust"
 ms.assetid: 4bdec4f2-f8a2-4512-bdcf-14ef54b5877a
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Federation and Trust
 This topic covers various aspects related to federated applications, trust boundaries and configuration, and use of issued tokens in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9b3d9233-ef35-477a-bf5d-efd1e80a52f4
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;certificate&gt; Element
 Specifies an X.509 certificate to use for signing and encrypting messages for peer-to-peer clients.  

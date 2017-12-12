@@ -14,9 +14,9 @@ dev_langs:
  - "vb"
 ms.assetid: b6c4dfd0-f270-43ec-961a-e16eb6af2f2c
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Export Metadata from Service Endpoints
 This topic explains how to export metadata from service endpoints.  

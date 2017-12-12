@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f6ed4bc0-7e38-4348-9259-30bf61eb9435
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;httpsTransport&gt;
 Specifies an HTTP transport for transmitting SOAP messages for a custom binding.  

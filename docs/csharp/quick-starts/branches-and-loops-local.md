@@ -44,7 +44,7 @@ written one of the possible branches for an `if` statement: the true branch.
 > [!TIP]
 > As you explore C# (or any programming language), you'll
 > make mistakes when you write code. The compiler will
-> find and report the errors. Look closely the the error 
+> find and report the errors. Look closely at the error 
 > output and the code that generated the error. The compler
 > error can usually help you find the problem. 
 

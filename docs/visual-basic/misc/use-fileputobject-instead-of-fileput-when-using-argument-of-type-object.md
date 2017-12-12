@@ -25,5 +25,5 @@ The `FilePut` method includes an argument of type `Object`. `FilePutObject` shou
   
 ## See Also  
    
- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.Devices.Computer.FileSystem)  
- [My.Computer.FileSystem.WriteAllBytes](xref:Microsoft.VisualBasic.Devices.Computer.FileSystem.WriteAllBytes)
+ [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)  
+ [My.Computer.FileSystem.WriteAllBytes](xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes)

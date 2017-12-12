@@ -21,5 +21,5 @@ A deletion is being attempted on an open file.
   
 ## See Also  
    
- [My.Computer.FileSystem.DeleteFile](xref:Microsoft.VisualBasic.Devices.Computer.FileSystem.DeleteFile)  
- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.Devices.Computer.FileSystem)
+ [My.Computer.FileSystem.DeleteFile](xref:Microsoft.VisualBasic.FileIO.FileSystem.DeleteFile%2A)  
+ [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)

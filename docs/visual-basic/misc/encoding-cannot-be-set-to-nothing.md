@@ -23,5 +23,5 @@ An attempt to read from or write to a file has failed because the parameter `enc
  [File Encodings](../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)  
  [Reading from Files](../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
  [Writing to Files](../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)  
- [My.Computer.FileSystem.ReadAllText](xref:Microsoft.VisualBasic.Devices.Computer.FileSystem.ReadAllText)  
- [My.Computer.FileSystem.WriteAllText](xref:Microsoft.VisualBasic.Devices.Computer.FileSystem.WriteAllText)
+ [My.Computer.FileSystem.ReadAllText](xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllText%2A)  
+ [My.Computer.FileSystem.WriteAllText](xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A)

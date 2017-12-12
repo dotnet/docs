@@ -23,4 +23,4 @@ The `FileGet` method includes an argument of type `Object`. `FileGetObject` shou
   
 ## See Also  
    
- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.Devices.Computer.FileSystem)
+ [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)

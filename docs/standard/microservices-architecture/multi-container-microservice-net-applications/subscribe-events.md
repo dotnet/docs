@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/30/2017
+ms.date: 12/11/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -13,9 +13,9 @@ ms.topic: article
 
 The first step for using the event bus is to subscribe the microservices to the events they want to receive. That should be done in the receiver microservices.
 
-The following simple code shows what each receiver microservice needs to implement when starting the service (that is, in the `Startu`p class) so it subscribes to the events it needs. In this case, the `basket.api` microservice needs to subscribe to `ProductPriceChangedIntegrationEvent` and the `OrderStartedIntegrationEvent` messages. 
+The following simple code shows what each receiver microservice needs to implement when starting the service (that is, in the `Startup` class) so it subscribes to the events it needs. In this case, the `basket.api` microservice needs to subscribe to `ProductPriceChangedIntegrationEvent` and the `OrderStartedIntegrationEvent` messages. 
 
-For instance, when subscribing to the `ProductPriceChangedIntegrationEvent` event, that makes the basjet microservice aware of any changes to the product price and lets it warn the user about the change if that product is in the user’s basket.
+For instance, when subscribing to the `ProductPriceChangedIntegrationEvent` event, that makes the basket microservice aware of any changes to the product price and lets it warn the user about the change if that product is in the user’s basket.
 
 ```csharp
 var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
@@ -85,7 +85,10 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem product)
 }
 ```
 
-In this case, since the origin microservice is a simple CRUD microservice, that code is placed right into a Web API controller. In more advanced microservices, like when using CQRS approaches, it could be implemented in the CommandHandler class, right after the original data is committed.
+In this case, since the origin microservice is a simple CRUD microservice, that code is placed right into a Web API controller. 
+ 
+In more advanced microservices, like when using CQRS approaches, it can be implemented in the CommandHandler class, within the Handle() method. 
+
 
 ### Designing atomicity and resiliency when publishing to the event bus
 

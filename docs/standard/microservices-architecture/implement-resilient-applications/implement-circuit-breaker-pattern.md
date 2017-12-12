@@ -147,7 +147,7 @@ There are a few ways you can open the circuit and test it with eShopOnContainers
 
 One option is to lower the allowed number of retries to 1 in the circuit breaker policy and redeploy the whole solution into Docker. With a single retry, there is a good chance that an HTTP request will fail during deployment, the circuit breaker will open, and you get an error.
 
-Another option is to use custom middleware that is implemented in the **Basket** microservice. When this middleware is enabled, it catches all HTTP requests and returns status code 500. You can enable the middleware by making a GET request to the failing URI, like the following:
+Another option is to use custom middleware that is implemented in the `Basket` microservice. When this middleware is enabled, it catches all HTTP requests and returns status code 500. You can enable the middleware by making a GET request to the failing URI, like the following:
 
 -   GET /failing
 
@@ -189,7 +189,7 @@ public class CartController : Controller
         }
         catch (BrokenCircuitException)
         {
-            // Catch error when Basket.api is in circuit-opened mode                 
+            // Catches error when Basket.api is in circuit-opened mode                 
             HandleBrokenCircuitException();
         }
         return View();
@@ -197,7 +197,7 @@ public class CartController : Controller
 
     private void HandleBrokenCircuitException()
     {
-        TempData["BasketInoperativeMsg"] = "Basket Service is inoperative, please try later on. (Business Msg Due to Circuit-Breaker)";
+        TempData["BasketInoperativeMsg"] = "Basket Service is inoperative, please try later on. (Business message due to Circuit-Breaker)";
     }
 }
 ```

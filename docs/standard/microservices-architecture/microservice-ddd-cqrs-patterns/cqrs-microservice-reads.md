@@ -39,24 +39,23 @@ The ViewModels can be static types defined in classes. Or they can be created dy
 
 You can use any micro ORM, Entity Framework Core, or even plain ADO.NET for querying. In the sample application, we selected Dapper for the ordering microservice in eShopOnContainers as a good example of a popular micro ORM. It can run plain SQL queries with great performance, because it is a very light framework. Using Dapper, you can write a SQL query that can access and join multiple tables.
 
-Dapper is an open source project (original created by Sam Saffron), and is part of the building blocks used in [Stack Overflow](https://stackoverflow.com/). To use Dapper, you just need to install it through the [Dapper NuGet package](https://www.nuget.org/packages/Dapper), as shown in the following figure.
+Dapper is an open-source project (original created by Sam Saffron), and is part of the building blocks used in [Stack Overflow](https://stackoverflow.com/). To use Dapper, you just need to install it through the [Dapper NuGet package](https://www.nuget.org/packages/Dapper), as shown in the following figure.
 
 ![](./media/image4.1.png)
 
 You will also need to add a using statement so your code has access to the Dapper extension methods.
 
-When you use Dapper in your code, you directly use the SqlClient class available in the System.Data.SqlClient namespace. Through the QueryAsync method and other extension methods which extend the SqlClient class, you can simply run queries in a straightforward and performant way.
+When you use Dapper in your code, you directly use the SqlClient class available in the System.Data.SqlClient namespace. Through the QueryAsync method and other extension methods that extend the SqlClient class, you can simply run queries in a straightforward and performant way.
 
 ## Dynamic versus static ViewModels
 
-When returning ViewModels from the server-side to client apps, you can think about those ViewModels as DTOs (Data Transfer Objects) that can be different to the internal domain entities of your entity model because the ViewModels hold the data the way the client app needs. Therefore, in many cases, you can aggregate data coming from multiple domain entities and compose the ViewModels precisely according to how the client app needs that data. 
-Those ViewModels or DTOs can be defined explicetely (as data holder classes) like the OrderSummary class shown in a later code snipet, or you could just return dynamic ViewModels or DTOs simply based on the attributes returned by your queries.
+When returning ViewModels from the server-side to client apps, you can think about those ViewModels as DTOs that can be different to the internal domain entities of your entity model because the ViewModels hold the data the way the client app needs. Therefore, in many cases, you can aggregate data coming from multiple domain entities and compose the ViewModels precisely according to how the client app needs that data. 
+
+Those ViewModels or DTOs can be defined explicitly (as data holder classes) like the [OrderSummary](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Queries/OrderViewModel.cs) class shown in a later code snipet, or you could just return dynamic ViewModels or dynamic DTOs simply based on the attributes returned by your queries, as a `dynamic` type.
 
 ### ViewModel as dynamic type
 
-As shown in the following code, a ViewModel can be directly returned by the queries by simply returning a dynamic type that internally is based on the attributes returned by a query. That means that the subset of attributes to be returned is based on the query itself. If you add a new column to the query or join, that data is dynamically added to the returned ViewModel. 
-
-*Pros:* This approach reduces the need to modify static ViewModels classes whenever you update the SQL sentence of a query, making this design approach pretty agile when coding, straightforward and quick to evolve in regard to future changes.
+As shown in the following code, a ViewModel can be directly returned by the queries by returning a dynamic type that internally is based on the attributes returned by a query. That means that the subset of attributes to be returned is based on the query itself. Therefore, if you add a new column to the query or join, that data is dynamically added to the returned ViewModel. 
 
 ```csharp
 using Dapper;
@@ -85,21 +84,24 @@ GROUP BY o.[Id], o.[OrderDate], os.[Name]");
   }
 }
 ```
-*Cons:* In the long term, dynamic types can impact negatively the clarity and even impact the compatibility of a service with client apps. In addition, middleware software like Swagger cannot provide the same level of documentation on returned types if using dynamic types. 
+The important point is that by using a dynamic type, the returned collection of data is dynamically assembled as the ViewModel. 
 
-The important point is that by using a dynamic type, the returned collection of data will be dynamically assembled as the ViewModel. 
+*Pros:* This approach reduces the need to modify static ViewModels classes whenever you update the SQL sentence of a query, making this design approach pretty agile when coding, straightforward, and quick to evolve in regard to future changes.
+
+*Cons:* In the long term, dynamic types can impact negatively the clarity and impact the compatibility of a service with client apps. In addition, middleware software like Swagger cannot provide the same level of documentation on returned types if using dynamic types. 
+
 
 ### ViewModel as predefined DTO classes
 
-*Pros:* Having static predefined ViewModel classes, like “contracts” based on explicit DTO classes, is definitely better for public APIs but also for long term microservices, even if they are just used by the same application.
+*Pros:* Having static predefined ViewModel classes, like “contracts” based on explicit DTO classes, is definitely better for public APIs but also for long term microservices, even if they are only used by the same application.
 
-If you want to specify response types for swagger, you need to use explicit DTO classes as the return type. Therefore, predefined DTO classes allows you to offer a richer information from Swagger. That will benefit the API documentation and compatibility when consuming an API.
+If you want to specify response types for swagger, you need to use explicit DTO classes as the return type. Therefore, predefined DTO classes allow you to offer richer information from Swagger. That will improve the API documentation and compatibility when consuming an API.
 
-*Cons:* As mentioned, when updating the code, it takes some more steps to update the DTO classes.
+*Cons:* As mentioned earlier, when updating the code, it takes some more steps to update the DTO classes.
 
-*Tip based on our experience:* In the queries implemented at the the Ordering microservice in eShopOnContainers, we started developing by using dynamic ViewModels as it was very straight forward and agile when developing. But, once the development was stabilized, we chose to refactor this topic and use static or prefedifed DTOs for the ViewModels due to the mentioned reasons.
+*Tip based on our experience:* In the queries implemented at the Ordering microservice in eShopOnContainers, we started developing by using dynamic ViewModels as it was very straightforward and agile on the early development stages. But, once the development was stabilized, we chose to refactor the APIs and use static or pre-defined DTOs for the ViewModels, because it is clearer for the microservice’s consumers to know explicit DTO types, used as "contracts".
 
-In the next code, you can see how in this case the query is returning data by using an explicit ViewModel DTO class: the OrderSummary class.
+In the following example, you can see how the query is returning data by using an explicit ViewModel DTO class: the OrderSummary class.
 
 ```csharp
 using Dapper;
@@ -129,11 +131,11 @@ public class OrderQueries : IOrderQueries
     } 
 }
 ```
-#### Describing Response Types of Web APIs
+#### Describing response types of Web APIs
 
 Developers consuming web APIs and microservices are most concerned with what is returned — specifically response types and error codes (if not standard). These are handled in the XML comments and data annotations.
 
-Without proper documentation in the Swagger UI, the consumer lacks knowledge of what types are being returned or what Http codes can be returned. That problem is fixed by adding the `ProducesResponseType` attribute (defined at `Microsoft.AspNetCore.Mvc`), so Swagger will generate richer information about the API return model and values, as shown in the following code.
+Without proper documentation in the Swagger UI, the consumer lacks knowledge of what types are being returned or what HTTP codes can be returned. That problem is fixed by adding the `ProducesResponseType` attribute (defined at `Microsoft.AspNetCore.Mvc`), so Swagger can generate richer information about the API return model and values, as shown in the following code:
 
 ```csharp
 namespace Microsoft.eShopOnContainers.Services.Ordering.API.Controllers
@@ -143,7 +145,7 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.API.Controllers
     public class OrdersController : Controller
     {
        //Additional code...
-          [Route("")]
+       [Route("")]
        [HttpGet]
        [ProducesResponseType(typeof(IEnumerable<OrderSummary>),
                              (int)HttpStatusCode.OK)]
@@ -157,7 +159,7 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.API.Controllers
 }
 ```
 
-However, the ProducesResponseType attribute cannot use dynamic as a type but requires to use explicit types, like OrderSummary, ViewModel DTO, shown in the following code snippet.
+However, the ProducesResponseType attribute cannot use dynamic as a type but requires to use explicit types, like the OrderSummary ViewModel DTO, shown in the following example:
 
 ```csharp
 public class OrderSummary
@@ -168,16 +170,16 @@ public class OrderSummary
     public double total { get; set; }
 }
 ```
-This is another reason why explicit returned types are better than dynamic types, in the long-term.
-When using the `ProducesResponseType` attribute you can also specify what is the expected outcome in regards possible Http errors/codes, like 200,400, etc.
+This is another reason why explicit returned types are better than dynamic types, in the long term.
+When using the `ProducesResponseType` attribute, you can also specify what is the expected outcome in regards possible HTTP errors/codes, like 200,400, etc.
 
-In the following image you can see how Swagger UI shows the ResponseType information.
+In the following image, you can see how Swagger UI shows the ResponseType information.
 
 ![](./media/image5.png)
 
-**Figure 9-5**. Swagger UI showing response types and possible Http status codes from a Web API
+**Figure 9-5**. Swagger UI showing response types and possible HTTP status codes from a Web API
 
-You can see in the image above some example values based on the ViewModel types plus the possible Http status codes that can be returned.
+You can see in the image above some example values based on the ViewModel types plus the possible HTTP status codes that can be returned.
 
 #### Additional resources
 
@@ -186,11 +188,11 @@ You can see in the image above some example values based on the ViewModel types 
 
 -   **Julie Lerman. Data Points - Dapper, Entity Framework and Hybrid Apps (MSDN Mag. article)**
 
-    *https://msdn.microsoft.com/en-us/magazine/mt703432.aspx*
+    *https://msdn.microsoft.com/magazine/mt703432.aspx*
 
 -   **ASP.NET Core Web API Help Pages using Swagger**
 
-    *https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio*
+    *https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio*
 
 
 

@@ -93,7 +93,7 @@ class UsingAppSettingsSection
             config.Save(ConfigurationSaveMode.Modified);
 
             // Force a reload in memory of the changed section.
-            // This to to read the section with the
+            // This to read the section with the
             // updated values.
             ConfigurationManager.RefreshSection("appSettings");
 

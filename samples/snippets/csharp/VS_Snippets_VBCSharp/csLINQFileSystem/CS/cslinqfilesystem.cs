@@ -486,7 +486,7 @@ namespace LINQAndFiles
             // Change the root drive or folder if necessary.
             string startFolder = @"c:\program files\Microsoft Visual Studio 9.0\Common7";
 
-            // Make the the lines shorter for the console display
+            // Make the lines shorter for the console display
             int charsToSkip = startFolder.Length;
 
             // Take a snapshot of the file system.

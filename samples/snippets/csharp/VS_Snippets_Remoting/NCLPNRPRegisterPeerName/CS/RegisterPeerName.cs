@@ -2,7 +2,7 @@
 //
 // Description:
 //
-//    This sample illustrates how to to create a Peer Name, associate metadata with the PeerName
+//    This sample illustrates how to create a Peer Name, associate metadata with the PeerName
 //    via a PeerNameRegistration object and register a PeerName in a cloud.  Once the PeerName is registered, 
 //    it can be resolved by remote peers, thereby retreiving the data associated with the PeerName. 
 //

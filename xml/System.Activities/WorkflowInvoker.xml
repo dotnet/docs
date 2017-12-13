@@ -417,7 +417,7 @@
    
   
 ## Examples  
- The following example invokes a workflow consisting of a single `DiceRoll` activity. The `DiceRoll` activity has two output arguments that represent the results of the dice roll operation. When the call to `Invoke` returns, each output argument is returned in the outputs dictionary, keyed by argument name. The workflow is invoked twice, using the workflow definition passed into to the `WorkflowInvoker` constructor.  
+ The following example invokes a workflow consisting of a single `DiceRoll` activity. The `DiceRoll` activity has two output arguments that represent the results of the dice roll operation. When the call to `Invoke` returns, each output argument is returned in the outputs dictionary, keyed by argument name. The workflow is invoked twice, using the workflow definition passed into the `WorkflowInvoker` constructor.  
   
  [!code-csharp[CFX_WorkflowInvokerExample#130](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowinvokerexample/cs/program.cs#130)]  
   

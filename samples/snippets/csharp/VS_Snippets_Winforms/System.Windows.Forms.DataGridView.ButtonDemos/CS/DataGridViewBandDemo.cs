@@ -239,7 +239,7 @@ public class DataGridViewBandDemo : Form
     //</snippet10>
 
     //<snippet11>
-    // Make the the entire DataGridView read only.
+    // Make the entire DataGridView read only.
     private void Button8_Click(object sender, System.EventArgs e)
     {
         foreach (DataGridViewBand band in dataGridView.Columns)

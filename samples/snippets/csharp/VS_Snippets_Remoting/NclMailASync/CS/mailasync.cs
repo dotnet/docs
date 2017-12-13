@@ -33,7 +33,7 @@ namespace Examples.SmptExamples.Async
         }
         public static void Main(string[] args)
         {
-            // Command line argument must the the SMTP host.
+            // Command-line argument must be the SMTP host.
             SmtpClient client = new SmtpClient(args[0]);
             // Specify the e-mail sender.
             //<snippet2>

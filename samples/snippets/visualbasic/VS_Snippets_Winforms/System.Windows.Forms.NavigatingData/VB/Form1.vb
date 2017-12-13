@@ -85,7 +85,7 @@ Class Form1
 
         Dim customerTable As New DataTable()
 
-        ' Fill the the table with the contents of the customer table.
+        ' Fill the table with the contents of the customer table.
         customersDataAdapter.Fill(customerTable)
         Dim customerView As New DataView(customerTable)
 

@@ -26,7 +26,7 @@ public partial class ihd_1_aspx : System.Web.UI.Page
     }
     // </Snippet3>
     // <Snippet2>
-    // Print out the the current data node, then iterate through its
+    // Print out the current data node, then iterate through its
     // children and do the same.
     private void PrintFullChildNodeInfo(IHierarchyData node)
     {

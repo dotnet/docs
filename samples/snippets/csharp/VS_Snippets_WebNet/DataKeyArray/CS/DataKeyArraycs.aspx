@@ -8,7 +8,7 @@
 
   void CustomerGridView_DataBound(Object sender, EventArgs e)
   {    
-    // Display the the value of the primary key for each
+    // Display the value of the primary key for each
     // record in the GridView control.
     MessageLabel.Text = "The primary key of each record displayed are: <br/><br/>";
 

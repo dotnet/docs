@@ -13,7 +13,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to implement the <xref:System.ServiceModel.Activities.ISendMessageCallback> interface to a a new header to a message before it is sent out on the wire.  
+ The following example shows how to implement the <xref:System.ServiceModel.Activities.ISendMessageCallback> interface to a new header to a message before it is sent out on the wire.  
   
  [!code-csharp[AccessingOperationContext#0](~/samples/snippets/csharp/VS_Snippets_CFX/accessingoperationcontext/cs/sendinstanceidcallback.cs#0)]  
   
@@ -43,7 +43,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to implement the <xref:System.ServiceModel.Activities.ISendMessageCallback> interface to a a new header to a message before it is sent out on the wire.  
+ The following example shows how to implement the <xref:System.ServiceModel.Activities.ISendMessageCallback> interface to a new header to a message before it is sent out on the wire.  
   
  [!code-csharp[AccessingOperationContext#0](~/samples/snippets/csharp/VS_Snippets_CFX/accessingoperationcontext/cs/sendinstanceidcallback.cs#0)]  
   

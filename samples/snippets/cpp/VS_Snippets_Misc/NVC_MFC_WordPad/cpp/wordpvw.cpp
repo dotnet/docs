@@ -793,7 +793,7 @@ void CWordPadView::OnPaletteChanged(CWnd* pFocusWnd)
 {
 	ForwardPaletteChanged(m_hWnd, pFocusWnd->GetSafeHwnd());
 	// allow the richedit control to realize its palette
-	// remove this if if richedit fixes their code so that
+	// remove this if richedit fixes their code so that
 	// they don't realize their palette into foreground
 	if (::GetWindow(m_hWnd, GW_CHILD) == NULL)
 		CRichEditView::OnPaletteChanged(pFocusWnd);

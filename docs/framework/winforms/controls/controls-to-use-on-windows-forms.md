@@ -79,9 +79,9 @@ The following is an alphabetic list of controls and components that can be used 
  [ErrorProvider Component](../../../../docs/framework/winforms/controls/errorprovider-component-windows-forms.md)  
  Displays error information to the user in a non-intrusive way.  
   
- "FileDialog Class"  
- Provides base-class functionality for file dialog boxes.  
-  
+ [FileDialog Class](../../../../docs/framework/winforms/controls/filedialog-class.md)
+ Provides base-class functionality for file dialog boxes.
+
  [FlowLayoutPanel Control](../../../../docs/framework/winforms/controls/flowlayoutpanel-control-windows-forms.md)  
  Represents a panel that dynamically lays out its contents horizontally or vertically.  
   
@@ -169,8 +169,8 @@ The following is an alphabetic list of controls and components that can be used 
  [SaveFileDialog Component](../../../../docs/framework/winforms/controls/savefiledialog-component-windows-forms.md)  
  Selects files to save and where to save them.  
   
- "SoundPlayer Class"  
- Enables you to easily include sounds in your applications.  
+ [SoundPlayer Class](../../../../docs/framework/winforms/controls/soundplayer-class.md)
+ Enables you to easily include sounds in your applications.
   
  [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)  
  Allows the user to resize a docked control.  

@@ -13,7 +13,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # The ConnectionTimeout must be greater than 0
-When uploading and downloading files with the [My.Computer.Network](xref:microsoft.visualbasic.devices.Network), you must specify a `connectionTimeout` greater than `0`.  
+When uploading and downloading files with the [My.Computer.Network](xref:Microsoft.VisualBasic.Devices.Network), you must specify a `connectionTimeout` greater than `0`.  
   
 ## To correct this error  
   

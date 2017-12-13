@@ -18,4 +18,4 @@ The `BaudRate` argument specified for the `My.Computer.Ports.OpenSerialPort` met
 -   Change the value of the `BaudRate` argument to a positive number.  
   
 ## See Also  
- [My.Computer.Ports.OpenSerialPort](xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort)
+ [My.Computer.Ports.OpenSerialPort](xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A)

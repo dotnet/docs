@@ -11,9 +11,9 @@ helpviewer_keywords:
   - "programming [WF], workflow security"
 ms.assetid: d712a566-f435-44c0-b8c0-49298e84b114
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Workflow Security
 [!INCLUDE[wf](../../../includes/wf-md.md)] is integrated with several different technologies, such as Microsoft SQL Server and [!INCLUDE[indigo1](../../../includes/indigo1-md.md)]. Interacting with these technologies may introduce security issues into your workflow if done improperly.  

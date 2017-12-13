@@ -3574,7 +3574,7 @@
   
  A control can be docked to one edge of its parent container or can be docked to all edges and fill the parent container.  
   
- Setting the <xref:System.Windows.Forms.Control.Margin%2A> property on a docked control has no effect on the distance of the control from the the edges of its container.  
+ Setting the <xref:System.Windows.Forms.Control.Margin%2A> property on a docked control has no effect on the distance of the control from the edges of its container.  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Control.Anchor%2A> and <xref:System.Windows.Forms.Control.Dock%2A> properties are mutually exclusive. Only one can be set at a time, and the last one set takes precedence.  
@@ -7367,7 +7367,7 @@ MyControl.Font = New Font(MyControl.Font, _
  Controls receive default values for <xref:System.Windows.Forms.Control.Margin%2A> that are reasonably close to Windows user interface guidelines. Some adjustments might still be necessary for particular applications.  
   
 > [!NOTE]
->  Setting the <xref:System.Windows.Forms.Control.Margin%2A> property on a docked control has no effect on the distance of the control from the the edges of its container.  
+>  Setting the <xref:System.Windows.Forms.Control.Margin%2A> property on a docked control has no effect on the distance of the control from the edges of its container.  
   
  ]]></format>
         </remarks>

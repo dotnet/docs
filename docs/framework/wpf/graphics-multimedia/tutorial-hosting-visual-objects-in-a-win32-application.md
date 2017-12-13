@@ -84,6 +84,6 @@ manager: "wpickett"
  For more information on hit testing against visual objects, see [Hit Testing in the Visual Layer](../../../../docs/framework/wpf/graphics-multimedia/hit-testing-in-the-visual-layer.md).  
   
 ## See Also  
- <xref:System.Windows.Interop.HwndSource>   
- [Hit Test with Win32 Interoperation Sample](http://go.microsoft.com/fwlink/?LinkID=159995)   
+ <xref:System.Windows.Interop.HwndSource>  
+ [Hit Test with Win32 Interoperation Sample](http://go.microsoft.com/fwlink/?LinkID=159995)  
  [Hit Testing in the Visual Layer](../../../../docs/framework/wpf/graphics-multimedia/hit-testing-in-the-visual-layer.md)

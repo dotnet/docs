@@ -35,6 +35,6 @@ manager: "wpickett"
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/shapes-how-to-topics.md)  
   
 ## See Also  
- <xref:System.Windows.Shapes.Shape>   
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)   
+ <xref:System.Windows.Shapes.Shape>  
+ [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
  [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)

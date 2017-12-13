@@ -12,7 +12,7 @@
     // first record.
     DataKey key = CustomerGridView.DataKeys[0];
 
-    // Display the the value of the primary key for the first
+    // Display the value of the primary key for the first
     // record displayed in the GridView control.
     MessageLabel.Text = "The primary key of the first record displayed is " +
       key.Value.ToString() + ".";

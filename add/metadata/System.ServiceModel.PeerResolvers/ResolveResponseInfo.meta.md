@@ -3,7 +3,7 @@ uid: System.ServiceModel.PeerResolvers.ResolveResponseInfo
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.ServiceModel.PeerResolvers.ResolveResponseInfo.#ctor(System.ServiceM
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.ServiceModel.PeerResolvers.ResolveResponseInfo.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.ServiceModel.PeerResolvers.ResolveResponseInfo.HasBody
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,5 +35,5 @@ uid: System.ServiceModel.PeerResolvers.ResolveResponseInfo.Addresses
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---

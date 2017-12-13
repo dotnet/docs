@@ -19,9 +19,9 @@ helpviewer_keywords:
   - "overriding classes"
 ms.assetid: 5cc1c0b0-f94b-4525-9a41-88a582cd6668
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Specify an Alternate Element Name for an XML Stream
 [Code Example](#cpconoverridingserializationofclasseswithxmlattributeoverridesclassanchor1)  
@@ -97,11 +97,11 @@ public class SerializeOverride()
 ```  
   
 ## See Also  
- <xref:System.Xml.Serialization.XmlElementAttribute>   
- <xref:System.Xml.Serialization.XmlAttributes>   
- <xref:System.Xml.Serialization.XmlAttributeOverrides>   
- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)   
- [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx)   
- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)   
- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)   
+ <xref:System.Xml.Serialization.XmlElementAttribute>  
+ <xref:System.Xml.Serialization.XmlAttributes>  
+ <xref:System.Xml.Serialization.XmlAttributeOverrides>  
+ [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
+ [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx)  
+ [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
+ [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)  
  [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

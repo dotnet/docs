@@ -141,11 +141,11 @@ A2
 ```  
   
 ## See Also  
- <xref:System.Attribute>   
- <xref:System.Reflection>   
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Attributes](https://msdn.microsoft.com/library/5x6cd29c)   
- [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
- [Attributes](../../../../csharp/programming-guide/concepts/attributes/index.md)   
- [Creating Custom Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/creating-custom-attributes.md)   
+ <xref:System.Attribute>  
+ <xref:System.Reflection>  
+ [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
+ [Attributes](../../../../../docs/standard/attributes/index.md)  
+ [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
+ [Attributes](../../../../csharp/programming-guide/concepts/attributes/index.md)  
+ [Creating Custom Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/creating-custom-attributes.md)  
  [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

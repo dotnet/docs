@@ -46,5 +46,5 @@ tlbimp LoanLib.dll /out: LOANLib.dll
 ```  
   
 ## See Also  
- [Importing a Type Library as an Assembly](../../../docs/framework/interop/importing-a-type-library-as-an-assembly.md)   
+ [Importing a Type Library as an Assembly](../../../docs/framework/interop/importing-a-type-library-as-an-assembly.md)  
  [Exposing COM Components to the .NET Framework](../../../docs/framework/interop/exposing-com-components.md)

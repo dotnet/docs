@@ -101,5 +101,5 @@ public class Grid {
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)   
+ [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
  [Common Design Patterns](../../../docs/standard/design-guidelines/common-design-patterns.md)

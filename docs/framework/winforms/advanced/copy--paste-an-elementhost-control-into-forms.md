@@ -71,8 +71,8 @@ This walkthrough shows you how to copy a Windows Presentation Foundation (WPF) c
      The copied control is also named `elementHost1`, because it is a private field of the `Form2` class. There is no name collision with the `elementHost1` in the `Form1` class.  
   
 ## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>   
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)   
- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)   
+ <xref:System.Windows.Forms.Integration.ElementHost>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
+ [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
+ [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
  [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)

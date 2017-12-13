@@ -108,10 +108,10 @@ Adds a listener to the **Listeners** collection.
 ```  
   
 ## See Also  
- <xref:System.Diagnostics.Trace>   
- <xref:System.Diagnostics.Debug>   
- <xref:System.Diagnostics.EventLogTraceListener>   
- <xref:System.Diagnostics.ConsoleTraceListener>   
- <xref:System.Diagnostics.TextWriterTraceListener>   
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)   
+ <xref:System.Diagnostics.Trace>  
+ <xref:System.Diagnostics.Debug>  
+ <xref:System.Diagnostics.EventLogTraceListener>  
+ <xref:System.Diagnostics.ConsoleTraceListener>  
+ <xref:System.Diagnostics.TextWriterTraceListener>  
+ [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
  [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)

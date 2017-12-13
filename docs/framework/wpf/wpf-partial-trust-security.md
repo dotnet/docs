@@ -170,6 +170,6 @@ manager: "wpickett"
  Alternatively, you can use the ClickOnce Trusted Deployment model for full trust deployment from any security zone. For more information, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview) and [Security](../../../docs/framework/wpf/security-wpf.md).  
   
 ## See Also  
- [Security](../../../docs/framework/wpf/security-wpf.md)   
- [WPF Security Strategy - Platform Security](../../../docs/framework/wpf/wpf-security-strategy-platform-security.md)   
+ [Security](../../../docs/framework/wpf/security-wpf.md)  
+ [WPF Security Strategy - Platform Security](../../../docs/framework/wpf/wpf-security-strategy-platform-security.md)  
  [WPF Security Strategy - Security Engineering](../../../docs/framework/wpf/wpf-security-strategy-security-engineering.md)

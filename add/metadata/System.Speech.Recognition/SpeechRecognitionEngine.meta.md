@@ -3,7 +3,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarCompleted
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.AudioSignalProblemOccurre
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.UnloadAllGrammars
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -51,7 +51,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream(Sys
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,7 +59,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -67,7 +67,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -75,7 +75,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(Sys
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -83,7 +83,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync(System.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -91,7 +91,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.AudioState
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -99,7 +99,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.#ctor(System.Speech.Recog
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -107,7 +107,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -115,7 +115,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate(S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -123,7 +123,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(System.Spe
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -131,7 +131,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.AudioLevelUpdated
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -139,7 +139,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.AudioFormat
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -147,7 +147,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -155,7 +155,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.Dispose
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -163,7 +163,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -171,7 +171,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.UnloadGrammar(System.Spee
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -179,7 +179,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.Recognize(System.TimeSpan
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -187,7 +187,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -195,7 +195,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -203,7 +203,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.#ctor(System.Globalizatio
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -211,7 +211,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate(S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -219,7 +219,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting(S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -227,7 +227,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -235,7 +235,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -243,7 +243,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.MaxAlternates
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -251,7 +251,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(Sys
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -259,7 +259,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.Grammars
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -267,7 +267,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -275,7 +275,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -283,7 +283,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguou
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -291,7 +291,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -299,7 +299,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -307,7 +307,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.QueryRecognizerSetting(Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -315,7 +315,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.Recognize
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -323,7 +323,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -331,7 +331,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -339,7 +339,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -347,7 +347,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -355,7 +355,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.AudioLevel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -363,7 +363,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.InstalledRecognizers
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -371,7 +371,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting(S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -379,7 +379,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDev
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -387,7 +387,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncCancel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -395,7 +395,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -403,7 +403,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -411,7 +411,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile(System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -419,7 +419,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.RecognizerInfo
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -427,7 +427,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -435,7 +435,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -443,7 +443,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveStream(Syst
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -451,7 +451,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -459,7 +459,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar(System.Speech
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -467,7 +467,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -475,7 +475,7 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(Sys
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -483,5 +483,5 @@ uid: System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncStop
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---

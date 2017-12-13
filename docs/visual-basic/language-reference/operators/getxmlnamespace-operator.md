@@ -49,5 +49,5 @@ GetXmlNamespace(xmlNamespacePrefix)
  `Name: Patrick Hines`  
   
 ## See Also  
- [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)   
+ [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)  
  [Accessing XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)

@@ -33,5 +33,5 @@ This example shows how to modify the shape at the start or end of an open <xref:
  This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037).  
   
 ## See Also  
- <xref:System.Windows.Shapes.Polyline>   
+ <xref:System.Windows.Shapes.Polyline>  
  <xref:System.Windows.Media.PenLineCap>

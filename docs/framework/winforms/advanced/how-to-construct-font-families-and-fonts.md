@@ -56,5 +56,5 @@ manager: "wpickett"
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See Also  
- [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)   
+ [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)  
  [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)

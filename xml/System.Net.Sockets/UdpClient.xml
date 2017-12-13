@@ -1334,7 +1334,7 @@
         <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> object returned by a call to <see cref="M:System.Net.Sockets.UdpClient.BeginReceive(System.AsyncCallback,System.Object)" />.</param>
         <param name="remoteEP">The specified remote endpoint.</param>
         <summary>Ends a pending asynchronous receive.</summary>
-        <returns>If successful, the number of bytes received. If unsuccessful, this method returns 0.</returns>
+        <returns>If successful, an array of bytes that contains datagram data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

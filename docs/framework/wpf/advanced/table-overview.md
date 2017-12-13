@@ -182,7 +182,7 @@ manager: "wpickett"
  [!code-vb[TableSnippets#_TableAddFooterRow](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets/VisualBasic/Table.vb#_tableaddfooterrow)]  
   
 ## See Also  
- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)   
- [Define a Table with XAML](../../../../docs/framework/wpf/advanced/how-to-define-a-table-with-xaml.md)   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
+ [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)  
+ [Define a Table with XAML](../../../../docs/framework/wpf/advanced/how-to-define-a-table-with-xaml.md)  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [Use Flow Content Elements](../../../../docs/framework/wpf/advanced/how-to-use-flow-content-elements.md)

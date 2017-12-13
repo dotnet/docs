@@ -30,5 +30,5 @@ By using the following steps, you can produce [!INCLUDE[vbtecdlinq](../../../../
     -   `sqlmetal /code:northwind.cs /language:csharp "c:\northwnd.mdf" /sprocs /functions /pluralize`  
   
 ## See Also  
- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)   
+ [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)  
  [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

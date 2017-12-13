@@ -25,10 +25,10 @@ A partial method has its signature defined in one part of a partial type, and it
   
  The following example shows a partial method defined in two parts of a partial class:  
   
- [!code-cs[csrefKeywordsContextual#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/partial-method_1.cs)]  
+ [!code-csharp[csrefKeywordsContextual#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/partial-method_1.cs)]  
   
  For more information, see [Partial Classes and Methods](../../../csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md).  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
  [partial (Type)](../../../csharp/language-reference/keywords/partial-type.md)

@@ -3,7 +3,7 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.RefreshInterval
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Resolve(System.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.GetServiceSetti
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register(System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -51,7 +51,7 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Refresh(System.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,7 +59,7 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Unregister(Syst
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -67,7 +67,7 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.ControlShape
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -75,7 +75,7 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Close
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -83,7 +83,7 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.CleanupInterval
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -91,7 +91,7 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -99,7 +99,7 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Open
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -107,7 +107,7 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Update(System.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -115,5 +115,5 @@ uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register(System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---

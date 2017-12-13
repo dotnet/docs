@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1bd2e4ed-a557-43f9-ba98-4c70cb75c154
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Create a Transactional Service
 This sample demonstrates various aspects of creating a transactional service and the use of a client-initiated transaction to coordinate service operations.  

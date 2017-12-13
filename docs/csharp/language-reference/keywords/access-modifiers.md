@@ -23,30 +23,32 @@ Access modifiers are keywords used to specify the declared accessibility of a me
   
 -   [private](../../../csharp/language-reference/keywords/private.md)  
   
- The following five accessibility levels can be specified using the access modifiers:  
+ The following six accessibility levels can be specified using the access modifiers:  
   
  `public`: Access is not restricted.  
   
  `protected`: Access is limited to the containing class or types derived from the containing class.  
   
- `Internal`: Access is limited to the current assembly.  
+ `internal`: Access is limited to the current assembly.  
   
- [protected internal](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md): Access is limited to the current assembly or types derived from the containing class.  
+ [`protected internal`](../../../csharp/language-reference/keywords/protected-internal.md): Access is limited to the current assembly or types derived from the containing class.  
   
  `private`: Access is limited to the containing type.  
+
+ [`private protected`](../../../csharp/language-reference/keywords/private-protected.md): Access is limited to the containing class or types derived from the containing class within the current assembly.  
   
  This section also introduces the following:  
   
--   [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md): Using the four access modifiers to declare five levels of accessibility.  
+-   [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md): Using the four access modifiers to declare six levels of accessibility.  
   
 -   [Accessibility Domain](../../../csharp/language-reference/keywords/accessibility-domain.md): Specifies where, in the program sections, a member can be referenced.  
   
 -   [Restrictions on Using Accessibility Levels](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md): A summary of the restrictions on using declared accessibility levels.  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)   
- [Access Keywords](../../../csharp/language-reference/keywords/access-keywords.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+ [Access Keywords](../../../csharp/language-reference/keywords/access-keywords.md)  
  [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)

@@ -64,5 +64,5 @@ BOOLEAN StrongNameHashSize (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [StrongNameHashSize Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamehashsize-method.md)   
+ [StrongNameHashSize Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamehashsize-method.md)  
  [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

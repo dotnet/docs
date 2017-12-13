@@ -205,8 +205,8 @@ csc Example.cs
 ```  
   
 ## See Also  
- <xref:System.Resources.ResourceManager>   
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)   
- [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)   
- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)   
+ <xref:System.Resources.ResourceManager>  
+ [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
+ [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)  
+ [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  [Creating and retrieving resources in Windows Store apps](http://go.microsoft.com/fwlink/p/?LinkID=241674)

@@ -1,5 +1,5 @@
 ---
-title: Common container design principles | Microsoft Docs 
+title: Common container design principles
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

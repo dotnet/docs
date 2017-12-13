@@ -59,5 +59,5 @@ HRESULT GetReference (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [IInstallReferenceItem Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md)   
+ [IInstallReferenceItem Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md)  
  [FUSION_INSTALL_REFERENCE Structure](../../../../docs/framework/unmanaged-api/fusion/fusion-install-reference-structure.md)

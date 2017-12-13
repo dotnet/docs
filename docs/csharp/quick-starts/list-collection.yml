@@ -1,24 +1,21 @@
-### YamlMime:YamlDocument
-documentType: Tutorial
+### YamlMime:Tutorial
 title: Collections in C#
 metadata:
   title:  Collections in C#. Learn to use sequences and collections in C#.
   description: In this tutorial, you'll use your browser to learn C# interactively. You write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
+  ms.custom: mvc
   level: Beginner
   displayType: two-column
   interactive: csharp
 items:
 - durationInMinutes: 1
   content: |
-    This tutorial teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that create, modify and explore collections and arrays.
+    This quick start teaches you C# interactively, using your browser to write C# code and see the results of compiling and running your code. It contains a series of lessons that create, modify and explore collections and arrays.
 - title: Create lists
   durationInMinutes: 2
   content: |
     Run the following code in the interactive window. To do that, type the following code block in the interactive window (replace "<name>" with your name) and click the **Run** button:
-
-    > [!NOTE]
-    > If you're coming from the [.NET In-Browser Tutorial](https://microsoft.com/net), you've already completed this step. Copy and paste the following code into the interactive window, then move on to [the next step](list-collection#step-2).
 
     ```csharp
     var names = new List<string> { "<name>", "Ana", "Felipe" };
@@ -134,7 +131,7 @@ items:
 - title: Challenge
   durationInMinutes: 10
   content: |
-    See if you can put together some of the lessons from this and earlier lessons. Expand on what you've built so far with Fibonacci Numbers. Try and write the code to generate the first 20 numbers in the sequence.
+    See if you can put together some of the concepts from this and earlier lessons. Expand on what you've built so far with Fibonacci Numbers. Try and write the code to generate the first 20 numbers in the sequence. (As a hint, the 20th Fibonacci number is 6765.)
 
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
@@ -164,7 +161,7 @@ items:
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
     
 - content: |
-    You've completed the list tutorial.
+    You've completed the list quick start. This quick start is the final interactive quick start. You can continue these quick starts on your own development environment. Learn the basics of [local development](local-environment.md) and then pick a quick start. You can try this same exercise, move directly to the next quick start, or start again at with the [numbers in C#](numbers-in-csharp-local.md) quickstart.
 
     You can learn more about working with the `List` type in the
     [.NET Guide](../../standard/index.md) topic on [collections](../../standard/collections/index.md). You'll also learn about many other collection types.

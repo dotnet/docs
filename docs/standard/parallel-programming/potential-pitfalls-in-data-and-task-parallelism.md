@@ -83,6 +83,6 @@ In many cases, <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=name
  [!code-vb[TPL_Pitfalls#03](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_pitfalls/vb/pitfalls_vb.vb#03)]  
   
 ## See Also  
- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)   
- [Potential Pitfalls with PLINQ](../../../docs/standard/parallel-programming/potential-pitfalls-with-plinq.md)   
+ [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
+ [Potential Pitfalls with PLINQ](../../../docs/standard/parallel-programming/potential-pitfalls-with-plinq.md)  
  [Patterns for Parallel Programming: Understanding and Applying Parallel Patterns with the .NET Framework 4](http://go.microsoft.com/fwlink/?LinkID=185142)

@@ -20,7 +20,7 @@ Class RSACSPSample
                 'Create another RSACryptoServiceProvider object.
                 Using RSA2 As New RSACryptoServiceProvider()
 
-                    'Import the the key information from the other 
+                    'Import the key information from the other 
                     'RSACryptoServiceProvider object.  
                     RSA2.ImportParameters(RSAParams)
                 End Using

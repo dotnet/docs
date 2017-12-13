@@ -230,7 +230,7 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
  [!code-csharp[SharedResources#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/SharedDictionaryManager.cs#3)]  
   
- The following example merges the shared resource with the resources of a custom control in the control's constructor before it calls `InitilizeComponent`.  Because the `SharedDictionaryManager.SharedDictionary` is a static property, the <xref:System.Windows.ResourceDictionary> is created only once. Because the resource dictionary was merged before `InitializeComponent` was called, the resources are available to the control in its [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file.  
+ The following example merges the shared resource with the resources of a custom control in the control's constructor before it calls `InitializeComponent`.  Because the `SharedDictionaryManager.SharedDictionary` is a static property, the <xref:System.Windows.ResourceDictionary> is created only once. Because the resource dictionary was merged before `InitializeComponent` was called, the resources are available to the control in its [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file.  
   
  [!code-csharp[SharedResources#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/ShapeResizer.xaml.cs#4)]  
   
@@ -275,6 +275,6 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
  [!code-vb[CustomControlNumericUpDown#ThemesSection](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/my project/assemblyinfo.vb#themessection)]  
   
 ## See Also  
- [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)   
- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)   
+ [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)  
+ [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
  [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)

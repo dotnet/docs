@@ -11,7 +11,7 @@
     ' Get the value of the PostalCode key field.
     Dim value As String = CustomerDetailsView.DataKey("PostalCode").ToString()
 
-    ' Display the the value of the key field.
+    ' Display the value of the key field.
     MessageLabel.Text = "The value of the PostalCode key field is " & value & _
       "."
 

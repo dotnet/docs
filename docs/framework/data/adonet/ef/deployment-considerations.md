@@ -20,7 +20,7 @@ This topic provides information about deploying applications that use the ADO.NE
   
  The Entity Framework provides a set of tools that integrate with and make it easier to develop in Visual Studio. For more information, see [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/en-us/91076853-0881-421b-837a-f582f36be527). This topic does not describe how to use specific technologies to deploy an Entity Framework–based application.  
   
- Visual Studio provides facilities for distributing and deploying applications, such as ClickOnce deployment. For more information, see [Deploying Applications and Components](https://msdn.microsoft.com/library/wtzawcsz) in the Visual Studio documentation.  
+ Visual Studio provides facilities for distributing and deploying applications, such as ClickOnce deployment. For more information, see [Deploying Applications and Components](/visualstudio/deployment/deploying-applications-services-and-components) in the Visual Studio documentation.  
   
  The following considerations apply when you deploy an application that uses the Entity Framework:  
   
@@ -35,5 +35,5 @@ This topic provides information about deploying applications that use the ADO.NE
 -   Because the Entity Framework is a component of the .NET Framework, it can be redistributed with your application as permitted by the .NET Framework license agreement.  
   
 ## See Also  
- [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)   
+ [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)  
  [Development and Deployment Considerations](../../../../../docs/framework/data/adonet/ef/development-and-deployment-considerations.md)

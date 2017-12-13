@@ -47,7 +47,7 @@ Function() new MyClass()
  For more information about how to use lambda expressions, see [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md).  
   
 ## See Also  
- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)   
- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)   
- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)   
+ [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
+ [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
+ [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)  
  [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)

@@ -38,7 +38,7 @@ manager: "wpickett"
 uid: System.Globalization.TaiwanCalendar.GetDaysInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -63,7 +63,7 @@ manager: "wpickett"
 uid: System.Globalization.TaiwanCalendar.GetDaysInMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -79,7 +79,7 @@ manager: "wpickett"
 uid: System.Globalization.TaiwanCalendar.GetMonthsInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -122,21 +122,21 @@ manager: "wpickett"
 uid: System.Globalization.TaiwanCalendar.IsLeapYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.TaiwanCalendar.ToDateTime
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.TaiwanCalendar.GetLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -152,7 +152,7 @@ manager: "wpickett"
 uid: System.Globalization.TaiwanCalendar.IsLeapDay
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -177,7 +177,7 @@ manager: "wpickett"
 uid: System.Globalization.TaiwanCalendar.IsLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

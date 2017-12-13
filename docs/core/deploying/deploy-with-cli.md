@@ -40,7 +40,7 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
    Open the *Program.cs* file in your editor and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
-   [!code-cs[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
+   [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
 
 1. Update the project's dependencies and tools.
  
@@ -97,7 +97,7 @@ Deploying a self-contained deployment without third-party dependencies involves 
 
    Open the *Program.cs* file in your editor and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
-   [!code-cs[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
+   [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
 
 1. Define the platforms that your app will target.
 

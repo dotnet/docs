@@ -11,7 +11,7 @@ array<Byte>^ HashAndSignBytes( Stream^ DataStream, RSAParameters Key )
       
       // Reset the current position in the stream to 
       // the beginning of the stream (0). RSACryptoServiceProvider
-      // can't verify the data unless the the stream position
+      // can't verify the data unless the stream position
       // is set to the starting position of the data.
       DataStream->Position = 0;
       

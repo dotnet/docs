@@ -22,19 +22,19 @@ In a query expression, the `orderby` clause causes the returned sequence or subs
 ## Example  
  In the following example, the first query sorts the words in alphabetical order starting from A, and second query sorts the same words in descending order. (The `ascending` keyword is the default sort value and can be omitted.)  
   
- [!code-cs[cscsrefQueryKeywords#20](../../../csharp/language-reference/keywords/codesnippet/CSharp/orderby-clause_1.cs)]  
+ [!code-csharp[cscsrefQueryKeywords#20](../../../csharp/language-reference/keywords/codesnippet/CSharp/orderby-clause_1.cs)]  
   
 ## Example  
  The following example performs a primary sort on the students' last names, and then a secondary sort on their first names.  
   
- [!code-cs[cscsrefQueryKeywords#22](../../../csharp/language-reference/keywords/codesnippet/CSharp/orderby-clause_2.cs)]  
+ [!code-csharp[cscsrefQueryKeywords#22](../../../csharp/language-reference/keywords/codesnippet/CSharp/orderby-clause_2.cs)]  
   
 ## Remarks  
  At compile time, the `orderby` clause is translated to a call to the <xref:System.Linq.Enumerable.OrderBy%2A> method. Multiple keys in the `orderby` clause translate to <xref:System.Linq.Enumerable.ThenBy%2A> method calls.  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)   
- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
- [group clause](../../../csharp/language-reference/keywords/group-clause.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)  
+ [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
+ [group clause](../../../csharp/language-reference/keywords/group-clause.md)  
  [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)

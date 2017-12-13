@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3cb7c2f0-97bf-4ee9-a037-ed64a25a18fd
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # 1417 - MaxSentMessageSizeExceeded
 ## Properties  

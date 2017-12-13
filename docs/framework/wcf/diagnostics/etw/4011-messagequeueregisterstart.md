@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ab806605-810a-406e-981e-38e25c66ac6f
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # 4011 - MessageQueueRegisterStart
 ## Properties  

@@ -446,7 +446,7 @@
       <Docs>
         <summary>Gets a value which specifies whether the cache has a sliding expiration policy.</summary>
         <returns>
-          <see langword="true" /> if the the cache has a sliding expiration policy; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the cache has a sliding expiration policy; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,7 +466,7 @@
       <Docs>
         <summary>Gets a value which specifies whether the HTTP cache has been modified.</summary>
         <returns>
-          <see langword="true" /> if the the cache has been modified; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the cache has been modified; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,7 +486,7 @@
       <Docs>
         <summary>Gets a value which specifies whether the ASP.NET cache should ignore HTTP <see langword="Cache-Control" /> headers sent by the client that invalidate the cache.</summary>
         <returns>
-          <see langword="true" /> if the the ASP.NET cache should ignore HTTP <see langword="Cache-Control" /> headers sent by the client; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the ASP.NET cache should ignore HTTP <see langword="Cache-Control" /> headers sent by the client; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7065c508-46c4-49ea-a7cf-e038e9246e29
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # 3406 - EncryptedDataProcessingSuccess
 ## Properties  

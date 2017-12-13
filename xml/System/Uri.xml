@@ -69,9 +69,9 @@ var uri = new Uri("http://myUrl/../.."); // http scheme, unescaped
 OR
 var uri = new Uri("http://myUrl/%2E%2E/%2E%2E"); // http scheme, escaped
 OR
-var uri = new Uri("tcp://myUrl/../.."); // ftp scheme, unescaped
+var uri = new Uri("ftp://myUrl/../.."); // ftp scheme, unescaped
 OR
-var uri = new Uri("tcp://myUrl/%2E%2E/%2E%2E"); // ftp scheme, unescaped
+var uri = new Uri("ftp://myUrl/%2E%2E/%2E%2E"); // ftp scheme, escaped
 
 Console.WriteLine(uri.AbsoluteUri);  
 Console.WriteLine(uri.PathAndQuery);  

@@ -862,7 +862,7 @@ The following code example creates a process that prints a file. It sets the <xr
  The event only occurs during asynchronous read operations on <xref:System.Diagnostics.Process.StandardError%2A>. To start asynchronous read operations, you must redirect the <xref:System.Diagnostics.Process.StandardError%2A> stream of a <xref:System.Diagnostics.Process>, add your event handler to the <xref:System.Diagnostics.Process.ErrorDataReceived> event, and call <xref:System.Diagnostics.Process.BeginErrorReadLine%2A>. Thereafter, the <xref:System.Diagnostics.Process.ErrorDataReceived> event signals each time the process writes a line to the redirected <xref:System.Diagnostics.Process.StandardError%2A> stream, until the process exits or calls <xref:System.Diagnostics.Process.CancelErrorRead%2A>.  
   
 > [!NOTE]
->  The application that is processing the asynchronous output should call the <xref:System.Diagnostics.Process.WaitForExit%2A> method to ensure that the output buffer has been flushed.  
+>  The application that is processing the asynchronous output should call the <xref:System.Diagnostics.Process.WaitForExit> method to ensure that the output buffer has been flushed. Note that specifying a timeout by using the <xref:System.Diagnostics.Process.WaitForExit(System.Int32)> overload does *not* ensure the output buffer has been flushed.
   
    
   
@@ -5024,7 +5024,7 @@ p.WaitForExit();
 ## Remarks  
  <xref:System.Diagnostics.Process.WaitForExit%28System.Int32%29> makes the current thread wait until the associated process terminates. It should be called after all other methods are called on the process. To avoid blocking the current thread, use the <xref:System.Diagnostics.Process.Exited> event.  
   
- This method instructs the <xref:System.Diagnostics.Process> component to wait a finite amount of time for the process to exit. If the associated process does not exit by the end of the interval because the request to terminate is denied, `false` is returned to the calling procedure. You can specify a negative number (<xref:System.Threading.Timeout.Infinite>) for `milliseconds`, and <xref:System.Diagnostics.Process.WaitForExit%28System.Int32%29?displayProperty=nameWithType> will behave the same as the <xref:System.Diagnostics.Process.WaitForExit> overload. If you pass 0 (zero) to the method, it returns `true` only if the process has already exited; otherwise, it immediately returns `false`.  
+ This method instructs the <xref:System.Diagnostics.Process> component to wait a finite amount of time for the process to exit. If the associated process does not exit by the end of the interval because the request to terminate is denied, `false` is returned to the calling procedure. You can specify <xref:System.Threading.Timeout.Infinite?displayProperty=nameWithType> for `milliseconds`, and <xref:System.Diagnostics.Process.WaitForExit%28System.Int32%29?displayProperty=nameWithType> will behave the same as the <xref:System.Diagnostics.Process.WaitForExit> overload. If you pass 0 (zero) to the method, it returns `true` only if the process has already exited; otherwise, it immediately returns `false`.  
   
 > [!NOTE]
 >  In the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] and earlier versions, if `milliseconds` was -1, the <xref:System.Diagnostics.Process.WaitForExit%28System.Int32%29> overload waited for <xref:System.Int32.MaxValue> milliseconds (approximately 24 days), not indefinitely.  
@@ -5052,6 +5052,7 @@ p.WaitForExit();
  -or-  
   
  You are attempting to call <see cref="M:System.Diagnostics.Process.WaitForExit(System.Int32)" /> for a process that is running on a remote computer. This method is available only for processes that are running on the local computer.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="milliseconds" /> is a negative number other than -1, which represents an infinite time-out.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
         <altmember cref="M:System.Diagnostics.Process.Kill" />

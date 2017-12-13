@@ -58,12 +58,12 @@ Public Class AsynchronousClient
     Public Shared Sub Main()  
         ' Establish the remote endpoint for the socket.  
         ' For this example use local machine.  
-        Dim ipHostInfo As IPHostEntry = Dns.Resolve(Dns.GetHostName())  
+        Dim ipHostInfo As IPHostEntry = Dns.GetHostEntry(Dns.GetHostName())  
         Dim ipAddress As IPAddress = ipHostInfo.AddressList(0)  
         Dim remoteEP As New IPEndPoint(ipAddress, port)  
   
         ' Create a TCP/IP socket.  
-        Dim client As New Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp)  
+        Dim client As New Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp)  
   
         ' Connect to the remote endpoint.  
         client.BeginConnect(remoteEP, New AsyncCallback(AddressOf ConnectCallback), client)  
@@ -198,12 +198,12 @@ public class AsynchronousClient {
             // Establish the remote endpoint for the socket.  
             // The name of the   
             // remote device is "host.contoso.com".  
-            IPHostEntry ipHostInfo = Dns.Resolve("host.contoso.com");  
+            IPHostEntry ipHostInfo = Dns.GetHostEntry("host.contoso.com");  
             IPAddress ipAddress = ipHostInfo.AddressList[0];  
             IPEndPoint remoteEP = new IPEndPoint(ipAddress, port);  
   
             // Create a TCP/IP socket.  
-            Socket client = new Socket(AddressFamily.InterNetwork,  
+            Socket client = new Socket(ipAddress.AddressFamily,  
                 SocketType.Stream, ProtocolType.Tcp);  
   
             // Connect to the remote endpoint.  
@@ -326,6 +326,6 @@ public class AsynchronousClient {
 ```  
   
 ## See Also  
- [Asynchronous Server Socket Example](../../../docs/framework/network-programming/asynchronous-server-socket-example.md)   
- [Using a Synchronous Server Socket](../../../docs/framework/network-programming/using-a-synchronous-server-socket.md)   
+ [Asynchronous Server Socket Example](../../../docs/framework/network-programming/asynchronous-server-socket-example.md)  
+ [Using a Synchronous Server Socket](../../../docs/framework/network-programming/using-a-synchronous-server-socket.md)  
  [Socket Code Examples](../../../docs/framework/network-programming/socket-code-examples.md)

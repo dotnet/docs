@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: da13d5bc-1736-47a4-b3fd-064ca8040326
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # 39456 - TrackingRecordDropped
 ## Properties  

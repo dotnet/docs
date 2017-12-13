@@ -1224,7 +1224,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.DataControlField.Visible%2A> property to show or hide <xref:System.Web.UI.WebControls.DataControlField> objects in a data-bound control.  
   
- If the the <xref:System.Web.UI.WebControls.DataControlField.Visible%2A> property is `false`, the data values are not displayed and do not make a round-trip to the client. If you want to round-trip the data for a field that is not visible, add the field name to the `DataKeyNames` property of the data-bound control.  
+ If the <xref:System.Web.UI.WebControls.DataControlField.Visible%2A> property is `false`, the data values are not displayed and do not make a round-trip to the client. If you want to round-trip the data for a field that is not visible, add the field name to the `DataKeyNames` property of the data-bound control.  
   
    
   

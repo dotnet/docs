@@ -37,7 +37,7 @@ After establishing a connection to a data source, you can execute commands and r
  Describes how to use a data provider to execute stored procedures or data definition language (DDL) statements.  
   
 ## See Also  
- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)   
- [DataSets, DataTables, and DataViews](../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)   
- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)   
+ [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
+ [DataSets, DataTables, and DataViews](../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
+ [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

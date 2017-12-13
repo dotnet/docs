@@ -99,10 +99,10 @@ The following overview discusses the advantages of smart client applications, th
 |Learn more about Windows Forms security|[Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md)|  
   
 ## See Also  
- [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)   
- [Creating a New Windows Form](../../../docs/framework/winforms/creating-a-new-windows-form.md)   
- [ToolStrip Control Overview](../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)   
- [DataGridView Control Overview](../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md)   
- [BindingSource Component Overview](../../../docs/framework/winforms/controls/bindingsource-component-overview.md)   
- [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md)   
+ [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)  
+ [Creating a New Windows Form](../../../docs/framework/winforms/creating-a-new-windows-form.md)  
+ [ToolStrip Control Overview](../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)  
+ [DataGridView Control Overview](../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md)  
+ [BindingSource Component Overview](../../../docs/framework/winforms/controls/bindingsource-component-overview.md)  
+ [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md)  
  [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)

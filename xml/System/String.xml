@@ -54,9 +54,6 @@
   
 ## Remarks  
   
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/string.cs#8281103e6f23cb5c). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  A string is a sequential collection of characters that is used to represent text. A <xref:System.String> object is a sequential collection of <xref:System.Char?displayProperty=nameWithType> objects that represent a string; a <xref:System.Char?displayProperty=nameWithType> object corresponds to a UTF-16 code unit. The value of the <xref:System.String> object is the content of the sequential collection of <xref:System.Char?displayProperty=nameWithType> objects, and that value is immutable (that is, it is read-only). For more information about the immutability of strings, see the [Immutability and the StringBuilder class](#Immutability) section later in this topic. The maximum size of a <xref:System.String> object in memory is 2GB, or about 1 billion characters.  
   
  In this section:  
@@ -9412,7 +9409,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  If the `options` parameter is <xref:System.StringSplitOptions.RemoveEmptyEntries> and the length of this instance is zero, the method returns an empty array.  
   
- Each element of `separator` defines a separate delimiter that consists of a single character. If the `options` argument is <xref:System.StringSplitOptions.None>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String.Empty?displayProperty=nameWithType>. For example, if `separator` includes  two elements, "-" and "_", the value of the string instance is "-_aa-\_", and the value of   the `options` argument is <xref:System.StringSplitOptions.None>, the method returns a string array with the following five elements:  
+ Each element of `separator` defines a separate delimiter that consists of a single character. If the `options` argument is <xref:System.StringSplitOptions.None>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String.Empty?displayProperty=nameWithType>. For example, if `separator` includes  two elements, "-" and "\_", the value of the string instance is "-\_aa-\_", and the value of   the `options` argument is <xref:System.StringSplitOptions.None>, the method returns a string array with the following five elements:  
   
 1.  <xref:System.String.Empty?displayProperty=nameWithType>, which represents the empty string that precedes the "-" character at index 0.  
   

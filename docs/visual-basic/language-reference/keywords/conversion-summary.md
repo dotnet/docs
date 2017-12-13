@@ -34,5 +34,5 @@ ms.author: dotnetcontent
 |Convert time to serial number.|<xref:Microsoft.VisualBasic.DateAndTime.TimeSerial%2A>, <xref:Microsoft.VisualBasic.DateAndTime.TimeValue%2A>|  
   
 ## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
+ [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
  [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

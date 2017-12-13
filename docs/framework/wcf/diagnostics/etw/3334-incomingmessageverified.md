@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9fed3d02-72d7-4581-9abb-aede74331e22
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # 3334 - IncomingMessageVerified
 ## Properties  

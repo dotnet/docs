@@ -2012,7 +2012,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `instanceType` is a a collection type then every expression in `arguments` must have a result type that is promotable to the element type of the `instanceType`. If `instanceType` is a row type,  `arguments` must contain as many expressions as there are columns in the row type, and the result type of each expression must be equal or promotable to the type of the corresponding column. A row type that does not declare any columns is invalid. If `instanceType` is an entity type,  `arguments` must contain as many expressions as there are properties defined by the type, and the result type of each expression must be equal or promotable to the type of the corresponding property.  
+ If `instanceType` is a collection type then every expression in `arguments` must have a result type that is promotable to the element type of the `instanceType`. If `instanceType` is a row type,  `arguments` must contain as many expressions as there are columns in the row type, and the result type of each expression must be equal or promotable to the type of the corresponding column. A row type that does not declare any columns is invalid. If `instanceType` is an entity type,  `arguments` must contain as many expressions as there are properties defined by the type, and the result type of each expression must be equal or promotable to the type of the corresponding property.  
   
  ]]></format>
         </remarks>
@@ -2053,7 +2053,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `instanceType` is a a collection type then every expression in `arguments` must have a result type that is promotable to the element type of the `instanceType`. If `instanceType` is a row type,  `arguments` must contain as many expressions as there are columns in the row type, and the result type of each expression must be equal or promotable to the type of the corresponding column. A row type that does not declare any columns is invalid. If `instanceType` is an entity type,  `arguments` must contain as many expressions as there are properties defined by the type, and the result type of each expression must be equal or promotable to the type of the corresponding property.  
+ If `instanceType` is a collection type then every expression in `arguments` must have a result type that is promotable to the element type of the `instanceType`. If `instanceType` is a row type,  `arguments` must contain as many expressions as there are columns in the row type, and the result type of each expression must be equal or promotable to the type of the corresponding column. A row type that does not declare any columns is invalid. If `instanceType` is an entity type,  `arguments` must contain as many expressions as there are properties defined by the type, and the result type of each expression must be equal or promotable to the type of the corresponding property.  
   
  ]]></format>
         </remarks>
@@ -3352,7 +3352,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
         <param name="left">An expression that defines the left set argument.</param>
         <param name="right">An expression that defines the right set argument.</param>
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that computes the union of the left and right set arguments with duplicates removed.</summary>
-        <returns>A new DbExpression that computes the union, without duplicates, of the the left and right arguments.</returns>
+        <returns>A new DbExpression that computes the union, without duplicates, of the left and right arguments.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="left" /> or <paramref name="right" /> is null.</exception>
@@ -3379,7 +3379,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
         <param name="left">An expression that defines the left set argument.</param>
         <param name="right">An expression that defines the right set argument.</param>
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbUnionAllExpression" /> that computes the union of the left and right set arguments and does not remove duplicates.</summary>
-        <returns>A new DbUnionAllExpression that union, including duplicates, of the the left and right arguments.</returns>
+        <returns>A new DbUnionAllExpression that union, including duplicates, of the left and right arguments.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="left" /> or <paramref name="right" /> is null.</exception>

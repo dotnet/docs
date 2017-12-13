@@ -31,7 +31,7 @@ This topic shows how to use the [EDM Generator (EdmGen.exe)](../../../../../docs
     ```  
   
 ## See Also  
- [How to: Manually Configure an Entity Framework Project](http://msdn.microsoft.com/en-us/73f6ae1d-b3b2-4577-aebd-ad5a75954e9e)   
- [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/en-us/91076853-0881-421b-837a-f582f36be527)   
- [How to: Pre-Generate Views to Improve Query Performance](http://msdn.microsoft.com/en-us/b18a9d16-e10b-4043-ba91-b632f85a2579)   
+ [How to: Manually Configure an Entity Framework Project](http://msdn.microsoft.com/en-us/73f6ae1d-b3b2-4577-aebd-ad5a75954e9e)  
+ [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/en-us/91076853-0881-421b-837a-f582f36be527)  
+ [How to: Pre-Generate Views to Improve Query Performance](http://msdn.microsoft.com/en-us/b18a9d16-e10b-4043-ba91-b632f85a2579)  
  [How to: Use EdmGen.exe to Generate Object-Layer Code](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-object-layer-code.md)

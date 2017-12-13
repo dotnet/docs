@@ -160,7 +160,7 @@ This buffer is loaned to the caller and should be returned to the same pool usin
       </Parameters>
       <Docs>
         <param name="array">A buffer to return to the pool that was previously obtained using the <see cref="Rent" /> method.</param>
-        <param name="clearArray">Indicates whether the contents of the buffer should be cleared before reuse. If <paramref name="bufferLength" /> is set to <see langword="true" />, and if the pool will store the buffer to enable subsequent reuse, the <see cref="Return" /> method will clear the <paramref name="array" /> of its contents so that a subsequent caller using the <see cref="Rent" /> method will not see the content of the previous caller. If <paramref name="bufferLength" /> is set to <see langword="false" /> or if the pool will release the buffer, the array's contents are left unchanged.</param>
+        <param name="clearArray">Indicates whether the contents of the buffer should be cleared before reuse. If <paramref name="clearArray" /> is set to <see langword="true" />, and if the pool will store the buffer to enable subsequent reuse, the <see cref="Return" /> method will clear the <paramref name="array" /> of its contents so that a subsequent caller using the <see cref="Rent" /> method will not see the content of the previous caller. If <paramref name="clearArray" /> is set to <see langword="false" /> or if the pool will release the buffer, the array's contents are left unchanged.</param>
         <summary>Returns an array to the pool that was previously obtained using the <see cref="Rent" /> method on the same <see cref="ArrayPool{T}" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

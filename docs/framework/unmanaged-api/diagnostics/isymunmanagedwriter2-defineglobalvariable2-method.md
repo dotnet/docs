@@ -73,5 +73,5 @@ HRESULT DefineGlobalVariable2(
  **Header:** CorSym.idl  
   
 ## See Also  
- [ISymUnmanagedWriter2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)   
+ [ISymUnmanagedWriter2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)  
  [DefineGlobalVariable Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-defineglobalvariable-method.md)

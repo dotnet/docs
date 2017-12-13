@@ -84,7 +84,7 @@ Incorporating digital ink into your applications is easier than ever. Ink has ev
  [!code-vb[InkCanvasConsoleApp#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InkCanvasConsoleApp/VisualBasic/Module1.vb#1)]  
   
 ## See Also  
- [Digital Ink](../../../../docs/framework/wpf/advanced/digital-ink.md)   
- [Collecting Ink](../../../../docs/framework/wpf/advanced/collecting-ink.md)   
- [Handwriting Recognition](../../../../docs/framework/wpf/advanced/handwriting-recognition.md)   
+ [Digital Ink](../../../../docs/framework/wpf/advanced/digital-ink.md)  
+ [Collecting Ink](../../../../docs/framework/wpf/advanced/collecting-ink.md)  
+ [Handwriting Recognition](../../../../docs/framework/wpf/advanced/handwriting-recognition.md)  
  [Storing Ink](../../../../docs/framework/wpf/advanced/storing-ink.md)

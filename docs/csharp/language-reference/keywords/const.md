@@ -48,19 +48,19 @@ public const int c2 = c1 + 100;
 >  The [readonly](../../../csharp/language-reference/keywords/readonly.md) keyword differs from the `const` keyword. A `const` field can only be initialized at the declaration of the field. A `readonly` field can be initialized either at the declaration or in a constructor. Therefore, `readonly` fields can have different values depending on the constructor used. Also, although a `const` field is a compile-time constant, the `readonly` field can be used for run-time constants, as in this line: `public static readonly uint l1 = (uint)DateTime.Now.Ticks;`  
   
 ## Example  
- [!code-cs[csrefKeywordsModifiers#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/const_1.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/const_1.cs)]  
   
 ## Example  
  This example demonstrates how to use constants as local variables.  
   
- [!code-cs[csrefKeywordsModifiers#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/const_2.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/const_2.cs)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
  [readonly](../../../csharp/language-reference/keywords/readonly.md)

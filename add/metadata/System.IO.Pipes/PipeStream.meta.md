@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.IO.Pipes.PipeStream.WriteAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -171,7 +171,7 @@ manager: "wpickett"
 uid: System.IO.Pipes.PipeStream.ReadAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -295,7 +295,7 @@ manager: "wpickett"
 uid: System.IO.Pipes.PipeStream.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -40,7 +40,7 @@ The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component enables
     >  On some operating systems, text or graphics drawn by <xref:System.Drawing.Graphics> methods may not print correctly. In this case, use the compatible printing method: `PrintForm1.Print(Me, PowerPacks.Printing.PrintForm.PrintOption.CompatibleModeFullWindow`).  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A>   
- <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.Print%2A>   
- [PrintForm Component](../../../visual-basic/developing-apps/printing/printform-component.md)   
+ <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A>  
+ <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.Print%2A>  
+ [PrintForm Component](../../../visual-basic/developing-apps/printing/printform-component.md)  
  [How to: Print a Scrollable Form](../../../visual-basic/developing-apps/printing/how-to-print-a-scrollable-form.md)

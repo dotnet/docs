@@ -21,7 +21,7 @@ By using a `for` loop, you can run a statement or a block of statements repeated
 ## Example  
  In the following example, the value of `i` is written to the console and incremented by 1 during each iteration of the loop.  
   
- [!code-cs[csrefKeywordsIteration#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_1.cs)]  
+ [!code-csharp[csrefKeywordsIteration#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_1.cs)]  
   
  The `for` statement in the previous example performs the following actions.  
   
@@ -98,19 +98,19 @@ for (initializer; condition; iterator)
   
  The following example illustrates several less common choices: assigning a value to an external loop variable in the initializer section,  invoking the `Console.WriteLine` method in both the initializer and the iterator sections, and changing the values of two variables in the iterator section.  
   
- [!code-cs[csrefKeywordsIteration#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_2.cs)]  
+ [!code-csharp[csrefKeywordsIteration#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_2.cs)]  
   
  All of the expressions that define a `for` statement are optional. For example, the following statement creates an infinite loop.  
   
- [!code-cs[csrefKeywordsIteration#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_3.cs)]  
+ [!code-csharp[csrefKeywordsIteration#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_3.cs)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)   
- [for Statement (C++)](/cpp/cpp/for-statement-cpp)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)  
+ [for Statement (C++)](/cpp/cpp/for-statement-cpp)  
  [Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)

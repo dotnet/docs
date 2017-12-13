@@ -42,7 +42,7 @@ type Request =
 
 // Define some logic for what defines a valid name.
 //
-// Generates a Result wich is an Ok if the name valides;
+// Generates a Result which is an Ok if the name validates;
 // otherwise, it generates a Result which is an Error.
 let validateName req =
     match req.Name with
@@ -51,7 +51,7 @@ let validateName req =
     | "bananas" -> Error "Bananas is not a name."
     | _ -> Ok req
 
-// Similarily, define some email validation logic.
+// Similarly, define some email validation logic.
 let validateEmail req =
     match req.Email with
     | null -> Error "No email found."
@@ -73,7 +73,7 @@ let test() =
     | Error e -> printfn "Error: %s" e
     // Prints " "My request was valid!  Name: Phillip Email: phillip@consoto.biz"
 
-    let req2 = { Name = "Phillip"; Email = "phillip@bananas.biz" }
+    let req2 = { Name = "Phillip"; Email = "phillip@bananas.com" }
     let res2 = validateRequest (OK req2)
     match res2 with
     | Ok req -> printfn "My request was valid! Name: %s Email %s" req1.Name req1.Email

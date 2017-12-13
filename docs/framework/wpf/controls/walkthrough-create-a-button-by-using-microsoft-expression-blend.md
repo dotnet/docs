@@ -231,7 +231,7 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
 ## Conclusion  
  You have completed a customized button. You did this using a button template that was applied to all buttons in the application. If you leave the template editing mode (see the following figure) and create more buttons, you will see that they look and behave like your custom button rather than like the default button.  
   
- ![The custom buton template](../../../../docs/framework/wpf/controls/media/custom-button-blend-scopeup.gif "custom_button_blend_ScopeUp")  
+ ![The custom button template](../../../../docs/framework/wpf/controls/media/custom-button-blend-scopeup.gif "custom_button_blend_ScopeUp")  
   
  ![Multiple buttons that use the same template](../../../../docs/framework/wpf/controls/media/custom-button-blend-createmultiplebuttons.png "custom_button_blend_CreateMultipleButtons")  
   
@@ -254,8 +254,8 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
 -   Miscellaneous: create gradients, add BitmapEffects, use transforms, and set basic properties of objects.  
   
 ## See Also  
- [Create a Button by Using XAML](../../../../docs/framework/wpf/controls/walkthrough-create-a-button-by-using-xaml.md)   
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)   
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)   
- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)   
+ [Create a Button by Using XAML](../../../../docs/framework/wpf/controls/walkthrough-create-a-button-by-using-xaml.md)  
+ [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
+ [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
+ [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  
  [Bitmap Effects Overview](../../../../docs/framework/wpf/graphics-multimedia/bitmap-effects-overview.md)

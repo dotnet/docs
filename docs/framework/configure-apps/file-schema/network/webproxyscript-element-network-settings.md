@@ -32,7 +32,7 @@ Configures the characteristics of the script used to discover Web proxies.
 ## Syntax  
   
 ```xml  
-      <webProxyScript  
+<webProxyScript  
   downloadTimeout="hh:mm:ss"  
 />  
 ```  

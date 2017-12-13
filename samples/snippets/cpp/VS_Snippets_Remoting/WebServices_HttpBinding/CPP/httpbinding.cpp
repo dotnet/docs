@@ -97,7 +97,7 @@ int main()
    // Add the 'Port' to 'PortCollection' of 'ServiceDescription'.
    myDescription->Services[ 0 ]->Ports->Add( postPort );
 
-   // Create a a 'PortType' object.
+   // Create a 'PortType' object.
    PortType^ postPortType = gcnew PortType;
    postPortType->Name = "Service1HttpPost";
    Operation^ postOperation = gcnew Operation;

@@ -21,7 +21,7 @@ uid: System.Linq.Expressions.ConditionalExpression.Accept(System.Linq.Expression
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

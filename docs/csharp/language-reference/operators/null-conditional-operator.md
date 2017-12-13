@@ -27,11 +27,11 @@ The `??` operator is called the null-coalescing operator.  It returns the left-h
  The result of a ?? operator is not considered to be a constant even if both its arguments are constants.  
   
 ## Example  
- [!code-cs[csRefOperators#53](../../../csharp/language-reference/operators/codesnippet/CSharp/null-conditional-operator_1.cs)]  
+ [!code-csharp[csRefOperators#53](../../../csharp/language-reference/operators/codesnippet/CSharp/null-conditional-operator_1.cs)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Operators](../../../csharp/language-reference/operators/index.md)   
- [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md)   
- [What Exactly Does 'Lifted' mean?](http://go.microsoft.com/fwlink/?LinkID=112382)
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Operators](../../../csharp/language-reference/operators/index.md)  
+ [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md)  
+ [What Exactly Does 'Lifted' mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)

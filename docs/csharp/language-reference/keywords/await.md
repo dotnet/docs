@@ -28,10 +28,10 @@ The task to which the `await` operator is applied typically is returned by a cal
   
  In the following example, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> method returns a `Task<byte[]>`. The task is a promise to produce the actual byte array when the task is complete. The `await` operator suspends execution until the work of the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> method is complete. In the meantime, control is returned to the caller of `GetPageSizeAsync`. When the task finishes execution, the `await` expression evaluates to a byte array.  
 
-[!code-cs[await-example](../../../../samples/snippets/csharp/language-reference/keywords/await/await1.cs)]  
+[!code-csharp[await-example](../../../../samples/snippets/csharp/language-reference/keywords/await/await1.cs)]  
 
 > [!IMPORTANT]
->  For the complete example, see [Walkthrough: Accessing the Web by Using Async and Await](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can download the sample from [Developer Code Samples](http://go.microsoft.com/fwlink/?LinkID=255191) on the Microsoft website. The example is in the AsyncWalkthrough_HttpClient project.  
+>  For the complete example, see [Walkthrough: Accessing the Web by Using Async and Await](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can download the sample from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f) on the Microsoft website. The example is in the AsyncWalkthrough_HttpClient project.  
   
 As shown in the previous example, if `await` is applied to the result of a method call that returns a `Task<TResult>`, then the type of the `await` expression is `TResult`. If `await` is applied to the result of a method call that returns a `Task`, then the type of the `await` expression is `void`. The following example illustrates the difference.  
   
@@ -64,7 +64,7 @@ For examples of error handling in async methods, see [try-catch](../../../csharp
 ## Example  
 The following example returns the total number of characters in the pages whose URLs are passed to it as command line arguments. The example calls the `GetPageLengthsAsync` method, which is marked with the `async` keyword. The `GetPageLengthsAsync` method in turn uses the `await` keyword to await calls to the <xref:System.Net.Http.HttpClient.GetStringAsync%2A?displayProperty=nameWithType> method.  
 
-[!code-cs[await-example](../../../../samples/snippets/csharp/language-reference/keywords/await/await2.cs)]  
+[!code-csharp[await-example](../../../../samples/snippets/csharp/language-reference/keywords/await/await2.cs)]  
 
 Because the use of `async` and `await` in an application entry point is not supported, we cannot apply the `async` attribute to the `Main` method, nor can we await the `GetPageLengthsAsync` method call. We can ensure that the `Main` method waits for the async operation to complete by retrieving the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property. For tasks that do not return a value, you can call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method. 
 

@@ -120,6 +120,6 @@ Both the Task Parallel Library and PLINQ generate Event Trace for Windows (ETW) 
 |QueryID|<xref:System.Int32?displayProperty=nameWithType>|A unique query identifier.|  
   
 ## See Also  
- [ETW Events in the .NET Framework](../../../docs/framework/performance/etw-events.md)   
- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)   
+ [ETW Events in the .NET Framework](../../../docs/framework/performance/etw-events.md)  
+ [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)  
  [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

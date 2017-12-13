@@ -30,5 +30,5 @@ The <xref:System.Data.DataTableReader> presents the contents of a <xref:System.D
  Describes the use of the **Read** method to move through the contents of a **DataTableReader**.  
   
 ## See Also  
- [Retrieving and Modifying Data in ADO.NET](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)   
+ [Retrieving and Modifying Data in ADO.NET](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

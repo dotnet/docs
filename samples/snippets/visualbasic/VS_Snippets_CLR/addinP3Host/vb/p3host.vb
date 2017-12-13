@@ -107,7 +107,7 @@ Dim CalcAddIn4 As Calculator = _
     selectedToken.Activate(Of Calculator)(pExternal, _
         AddInSecurityLevel.FullTrust)
 
-' Show that the add-in is an an external process
+' Show that the add-in is an external process
 ' by verifying that it is not in the current (host's) process.
 Dim AddinCtl As AddInController = AddInController.GetAddInController(CalcAddIn4)
 Console.WriteLine("Add-in in host's process: {0}", _

@@ -21,7 +21,7 @@ The `readonly` keyword is a modifier that you can use on fields. When a field de
 ## Example  
  In this example, the value of the field `year` cannot be changed in the method `ChangeYear`, even though it is assigned a value in the class constructor:  
   
- [!code-cs[csrefKeywordsModifiers#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/readonly_1.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/readonly_1.cs)]  
   
  You can assign a value to a `readonly` field only in the following contexts:  
   
@@ -41,7 +41,7 @@ public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
 ```  
   
 ## Example  
- [!code-cs[csrefKeywordsModifiers#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/readonly_2.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/readonly_2.cs)]  
   
  In the preceding example, if you use a statement like this:  
   
@@ -57,9 +57,9 @@ public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)   
- [const](../../../csharp/language-reference/keywords/const.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
+ [const](../../../csharp/language-reference/keywords/const.md)  
  [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)

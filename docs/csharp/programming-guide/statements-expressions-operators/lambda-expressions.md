@@ -273,10 +273,10 @@ class Test
  [Delegates, Events, and Lambda Expressions](http://go.microsoft.com/fwlink/?LinkId=195395) in [C# 3.0 Cookbook, Third Edition: More than 250 solutions for C# 3.0 programmers](http://go.microsoft.com/fwlink/?LinkId=195369)  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)   
- [is](../../../csharp/language-reference/keywords/is.md)   
- [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)   
- [Visual Studio 2008 C# Samples (see LINQ Sample Queries files and XQuery program)](http://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+ [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
+ [is](../../../csharp/language-reference/keywords/is.md)  
+ [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)  
+ [Visual Studio 2008 C# Samples (see LINQ Sample Queries files and XQuery program)](http://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)  
  [Recursive lambda expressions](http://go.microsoft.com/fwlink/?LinkId=112395)

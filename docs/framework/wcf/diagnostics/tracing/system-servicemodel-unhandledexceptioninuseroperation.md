@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b00612e4-84c7-4a53-849a-e693cdce7fca
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.UnhandledExceptionInUserOperation
 System.ServiceModel.UnhandledExceptionInUserOperation  
@@ -22,6 +22,6 @@ System.ServiceModel.UnhandledExceptionInUserOperation
  Unhandled exception in user operation.  
   
 ## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)   
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)   
+ [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
+ [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
  [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

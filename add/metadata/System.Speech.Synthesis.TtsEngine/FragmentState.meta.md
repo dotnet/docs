@@ -3,7 +3,7 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState.Equals(System.Object)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState.Equals(System.Speech.Synthe
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState.#ctor(System.Speech.Synthes
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState.GetHashCode
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState.op_Inequality(System.Speech
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -51,7 +51,7 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState.Equals
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,7 +59,7 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState.Duration
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -67,7 +67,7 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState.LangId
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -75,7 +75,7 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -83,7 +83,7 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState.SayAs
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -91,7 +91,7 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState.Phoneme
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -99,7 +99,7 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState.Action
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -107,7 +107,7 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState.op_Equality(System.Speech.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -115,5 +115,5 @@ uid: System.Speech.Synthesis.TtsEngine.FragmentState.Prosody
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---

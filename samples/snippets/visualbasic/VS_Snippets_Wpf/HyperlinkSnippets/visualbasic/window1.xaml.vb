@@ -60,7 +60,7 @@ Namespace HyperlinkSnippets
                 ' After this line executes, the selection of content
                 ' indicated by the "start" and "end" parameters will be
                 ' enclosed by the new Hyperlink.  In this case, the new Hyperlink
-                ' will enclose the entire contents of the the text run "run2".  
+                ' will enclose the entire contents of the text run "run2".  
                 Dim hyperl As New Hyperlink(run2.ContentStart, run2.ContentEnd)
                 ' </Snippet_Hyperlink_Const3>
 

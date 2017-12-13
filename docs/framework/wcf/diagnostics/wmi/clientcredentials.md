@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 41dffd6b-8f14-4fed-aefb-2a1bb168efb3
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # ClientCredentials
 ClientCredentials  

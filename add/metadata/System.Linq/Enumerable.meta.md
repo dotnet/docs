@@ -12,7 +12,7 @@ uid: System.Linq.Enumerable.Take``1(System.Collections.Generic.IEnumerable{``0},
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -29,7 +29,7 @@ uid: System.Linq.Enumerable.Average``1(System.Collections.Generic.IEnumerable{``
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -37,7 +37,7 @@ uid: System.Linq.Enumerable.Union``1(System.Collections.Generic.IEnumerable{``0}
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -54,7 +54,7 @@ uid: System.Linq.Enumerable.LastOrDefault``1(System.Collections.Generic.IEnumera
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -62,7 +62,7 @@ uid: System.Linq.Enumerable.Count``1(System.Collections.Generic.IEnumerable{``0}
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -97,7 +97,7 @@ uid: System.Linq.Enumerable.Aggregate``3(System.Collections.Generic.IEnumerable{
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -105,7 +105,7 @@ uid: System.Linq.Enumerable.ThenBy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -149,7 +149,7 @@ uid: System.Linq.Enumerable.Max(System.Collections.Generic.IEnumerable{System.De
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -157,7 +157,7 @@ uid: System.Linq.Enumerable.SelectMany``3(System.Collections.Generic.IEnumerable
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -300,7 +300,7 @@ uid: System.Linq.Enumerable.Where``1(System.Collections.Generic.IEnumerable{``0}
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -308,7 +308,7 @@ uid: System.Linq.Enumerable.TakeWhile``1(System.Collections.Generic.IEnumerable{
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -361,7 +361,7 @@ uid: System.Linq.Enumerable.First``1(System.Collections.Generic.IEnumerable{``0}
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -441,7 +441,7 @@ uid: System.Linq.Enumerable.Average(System.Collections.Generic.IEnumerable{Syste
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -467,7 +467,7 @@ uid: System.Linq.Enumerable.Average``1(System.Collections.Generic.IEnumerable{``
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -574,7 +574,7 @@ uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -609,7 +609,7 @@ uid: System.Linq.Enumerable.Average(System.Collections.Generic.IEnumerable{Syste
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -653,7 +653,7 @@ uid: System.Linq.Enumerable.ToDictionary
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -679,7 +679,7 @@ uid: System.Linq.Enumerable.Min``1(System.Collections.Generic.IEnumerable{``0})
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -687,7 +687,7 @@ uid: System.Linq.Enumerable.GroupBy``3(System.Collections.Generic.IEnumerable{``
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -731,7 +731,7 @@ uid: System.Linq.Enumerable.Max``1(System.Collections.Generic.IEnumerable{``0},S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -793,7 +793,7 @@ uid: System.Linq.Enumerable.Count``1(System.Collections.Generic.IEnumerable{``0}
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -801,7 +801,7 @@ uid: System.Linq.Enumerable.Sum(System.Collections.Generic.IEnumerable{System.In
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -818,7 +818,7 @@ uid: System.Linq.Enumerable.Average``1(System.Collections.Generic.IEnumerable{``
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -853,7 +853,7 @@ uid: System.Linq.Enumerable.Except
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -888,7 +888,7 @@ uid: System.Linq.Enumerable.Average``1(System.Collections.Generic.IEnumerable{``
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -896,7 +896,7 @@ uid: System.Linq.Enumerable.Union``1(System.Collections.Generic.IEnumerable{``0}
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -922,7 +922,7 @@ uid: System.Linq.Enumerable.Where``1(System.Collections.Generic.IEnumerable{``0}
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1047,7 +1047,7 @@ uid: System.Linq.Enumerable.Min
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1064,7 +1064,7 @@ uid: System.Linq.Enumerable.Max``1(System.Collections.Generic.IEnumerable{``0})
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1144,7 +1144,7 @@ uid: System.Linq.Enumerable.Max(System.Collections.Generic.IEnumerable{System.In
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1152,7 +1152,7 @@ uid: System.Linq.Enumerable.Sum(System.Collections.Generic.IEnumerable{System.Nu
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1169,7 +1169,7 @@ uid: System.Linq.Enumerable.Max``1(System.Collections.Generic.IEnumerable{``0},S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1375,7 +1375,7 @@ uid: System.Linq.Enumerable.Where
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1401,7 +1401,7 @@ uid: System.Linq.Enumerable.GroupBy``3(System.Collections.Generic.IEnumerable{``
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1462,7 +1462,7 @@ manager: "wpickett"
 uid: System.Linq.Enumerable.Aggregate
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1488,7 +1488,7 @@ uid: System.Linq.Enumerable.Min``1(System.Collections.Generic.IEnumerable{``0},S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1505,7 +1505,7 @@ uid: System.Linq.Enumerable.Average``1(System.Collections.Generic.IEnumerable{``
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1531,7 +1531,7 @@ uid: System.Linq.Enumerable.Max``1(System.Collections.Generic.IEnumerable{``0},S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1557,7 +1557,7 @@ uid: System.Linq.Enumerable.Max(System.Collections.Generic.IEnumerable{System.Nu
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1565,7 +1565,7 @@ uid: System.Linq.Enumerable.Max(System.Collections.Generic.IEnumerable{System.In
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1591,7 +1591,7 @@ uid: System.Linq.Enumerable.Average(System.Collections.Generic.IEnumerable{Syste
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1599,7 +1599,7 @@ uid: System.Linq.Enumerable.Min(System.Collections.Generic.IEnumerable{System.Nu
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1652,7 +1652,7 @@ uid: System.Linq.Enumerable.SequenceEqual``1(System.Collections.Generic.IEnumera
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1669,7 +1669,7 @@ uid: System.Linq.Enumerable.ToDictionary``2(System.Collections.Generic.IEnumerab
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1722,7 +1722,7 @@ uid: System.Linq.Enumerable.Max``2(System.Collections.Generic.IEnumerable{``0},S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1739,7 +1739,7 @@ uid: System.Linq.Enumerable.Max``1(System.Collections.Generic.IEnumerable{``0},S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1747,7 +1747,7 @@ uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1764,7 +1764,7 @@ uid: System.Linq.Enumerable.First``1(System.Collections.Generic.IEnumerable{``0}
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1781,7 +1781,7 @@ uid: System.Linq.Enumerable.Min(System.Collections.Generic.IEnumerable{System.Nu
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1816,7 +1816,7 @@ uid: System.Linq.Enumerable.Average``1(System.Collections.Generic.IEnumerable{``
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1824,7 +1824,7 @@ uid: System.Linq.Enumerable.GroupBy``3(System.Collections.Generic.IEnumerable{``
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

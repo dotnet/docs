@@ -37,5 +37,5 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
  <xref:System.Windows.Media.Imaging.BitmapSource>  
   
 ## See Also  
- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)   
+ [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/imaging-how-to-topics.md)

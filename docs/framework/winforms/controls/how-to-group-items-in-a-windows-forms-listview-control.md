@@ -63,10 +63,10 @@ ListView grouped items
      [!code-vb[System.Windows.Forms.ListViewLegacyTopics#23](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewLegacyTopics/VB/Class1.vb#23)]  
   
 ## See Also  
- <xref:System.Windows.Forms.ListView>   
- <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.ListViewGroup>   
- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)   
- [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)   
- [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)   
+ <xref:System.Windows.Forms.ListView>  
+ <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.ListViewGroup>  
+ [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)  
+ [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)  
+ [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)  
  [How to: Add and Remove Items with the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-add-and-remove-items-with-the-windows-forms-listview-control.md)

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 98cb139d-cb10-4d8c-9087-3dc3c6f23521
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # MessageLoggingOff
 Id: 117  
@@ -26,5 +26,5 @@ Id: 117
  This event indicates that message logging has been turned off. The event lists the process name and process ID.  
   
 ## See Also  
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)   
+ [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
  [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

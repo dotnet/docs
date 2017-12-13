@@ -289,9 +289,9 @@ manager: "wpickett"
  By default, when multiple application domains are used, the various [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] assemblies required by each application are all loaded into that application's domain. As a result, the time required for creating new application domains and starting applications in them might affect performance. However, the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides a way for you to reduce start times by instructing applications to share assemblies across application domains if they are already loaded. You do this by using the <xref:System.LoaderOptimizationAttribute> attribute, which must be applied to the entry point method (`Main`). In this case, you must use only code to implement your application definition (see [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)).  
   
 ## See Also  
- <xref:System.LoaderOptimizationAttribute>   
- [Add-ins and Extensibility](../../../../docs/framework/add-ins/index.md)   
- [Application Domains](../../../../docs/framework/app-domains/application-domains.md)   
- [.NET Framework Remoting Overview](http://msdn.microsoft.com/en-us/eccb1d31-0a22-417a-97fd-f4f1f3aa4462)   
- [Making Objects Remotable](http://msdn.microsoft.com/en-us/01197253-3f13-43b7-894d-9683e431192a)   
+ <xref:System.LoaderOptimizationAttribute>  
+ [Add-ins and Extensibility](../../../../docs/framework/add-ins/index.md)  
+ [Application Domains](../../../../docs/framework/app-domains/application-domains.md)  
+ [.NET Framework Remoting Overview](http://msdn.microsoft.com/en-us/eccb1d31-0a22-417a-97fd-f4f1f3aa4462)  
+ [Making Objects Remotable](http://msdn.microsoft.com/en-us/01197253-3f13-43b7-894d-9683e431192a)  
  [How-to Topics](../../../../docs/framework/wpf/app-development/how-to-topics.md)

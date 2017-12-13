@@ -23,22 +23,22 @@ A *field* is a variable of any type that is declared directly in a [class](../..
   
  Fields are declared in the class block by specifying the access level of the field, followed by the type of the field, followed by the name of the field. For example:  
   
- [!code-cs[csProgGuideObjects#61](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/fields_1.cs)]  
+ [!code-csharp[csProgGuideObjects#61](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/fields_1.cs)]  
   
  To access a field in an object, add a period after the object name, followed by the name of the field, as in `objectname.fieldname`. For example:  
   
- [!code-cs[csProgGuideObjects#62](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/fields_2.cs)]  
+ [!code-csharp[csProgGuideObjects#62](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/fields_2.cs)]  
   
  A field can be given an initial value by using the assignment operator when the field is declared. To automatically assign the `day` field to `"Monday"`, for example, you would declare `day` as in the following example:  
   
- [!code-cs[csProgGuideObjects#63](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/fields_3.cs)]  
+ [!code-csharp[csProgGuideObjects#63](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/fields_3.cs)]  
   
  Fields are initialized immediately before the constructor for the object instance is called. If the constructor assigns the value of a field, it will overwrite any value given during field declaration. For more information, see [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md).  
   
 > [!NOTE]
 >  A field initializer cannot refer to other instance fields.  
   
- Fields can be marked as [public](../../../csharp/language-reference/keywords/public.md), [private](../../../csharp/language-reference/keywords/private.md), [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), or `protected internal`. These access modifiers define how users of the class can access the fields. For more information, see [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).  
+ Fields can be marked as [public](../../../csharp/language-reference/keywords/public.md), [private](../../../csharp/language-reference/keywords/private.md), [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), [protected internal](../../../csharp/language-reference/keywords/protected-internal.md) or [private protected](../../../csharp/language-reference/keywords/private-protected.md). These access modifiers define how users of the class can access the fields. For more information, see [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).  
   
  A field can optionally be declared [static](../../../csharp/language-reference/keywords/static.md). This makes the field available to callers at any time, even if no instance of the class exists. For more information, see [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md).  
   
@@ -48,9 +48,9 @@ A *field* is a variable of any type that is declared directly in a [class](../..
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)   
- [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)   
- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)   
- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
+ [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)  
+ [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
+ [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
  [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)

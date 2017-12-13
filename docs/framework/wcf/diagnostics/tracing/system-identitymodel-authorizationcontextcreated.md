@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 392b5964-fb51-4e7c-883a-62c929623706
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.IdentityModel.AuthorizationContextCreated
 System.IdentityModel.AuthorizationContextCreated  
@@ -22,6 +22,6 @@ System.IdentityModel.AuthorizationContextCreated
  Authorization context with the specified id is created.  
   
 ## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)   
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)   
+ [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
+ [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
  [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

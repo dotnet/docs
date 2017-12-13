@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a89ab9b8-4429-4df0-ab62-7db4c58684cc
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.PerformanceCountersFailedDuringUpdate
 System.ServiceModel.PerformanceCountersFailedDuringUpdate  
@@ -22,6 +22,6 @@ System.ServiceModel.PerformanceCountersFailedDuringUpdate
  An error occurred while updating the specified performance counter. This performance counter is disabled.  
   
 ## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)   
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)   
+ [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
+ [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
  [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

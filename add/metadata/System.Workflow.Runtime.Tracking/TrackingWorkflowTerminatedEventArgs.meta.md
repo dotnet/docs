@@ -1,13 +1,13 @@
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs.Exception
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

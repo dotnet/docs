@@ -3,7 +3,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.FilterLevel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.#ctor(System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -51,7 +51,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.AssemblyForm
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,7 +59,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -67,7 +67,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -75,7 +75,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.SurrogateSel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -83,7 +83,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -91,7 +91,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.UnsafeDeseri
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -99,7 +99,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Context
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -107,7 +107,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.UnsafeDeseri
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -115,7 +115,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.TypeFormat
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -123,7 +123,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -131,7 +131,7 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.DeserializeM
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -139,5 +139,5 @@ uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---

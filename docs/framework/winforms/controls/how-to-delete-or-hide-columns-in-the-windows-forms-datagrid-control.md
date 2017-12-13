@@ -131,5 +131,5 @@ manager: "wpickett"
     ```  
   
 ## See Also  
- [How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/change-displayed-data-at-run-time-wf-datagrid-control.md)   
+ [How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/change-displayed-data-at-run-time-wf-datagrid-control.md)  
  [How to: Add Tables and Columns to the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)

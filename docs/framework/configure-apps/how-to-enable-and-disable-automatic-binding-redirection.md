@@ -86,5 +86,5 @@ Starting with [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], when you c
      ![Binding redirect permission dialog](../../../docs/framework/configure-apps/media/clr-addbindingredirect.png "CLR_AddBindingRedirect")  
   
 ## See Also  
- [\<bindingRedirect> Element](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md)   
+ [\<bindingRedirect> Element](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md)  
  [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)

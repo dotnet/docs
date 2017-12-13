@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1b58ab2e-4b11-4967-ad16-724d509814a1
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # 3348 - ServiceHostFaulted
 ## Properties  

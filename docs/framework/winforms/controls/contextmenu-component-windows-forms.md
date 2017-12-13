@@ -45,5 +45,5 @@ manager: "wpickett"
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   
 ## See Also  
- <xref:System.Windows.Forms.MenuStrip>   
+ <xref:System.Windows.Forms.MenuStrip>  
  <xref:System.Windows.Forms.ContextMenuStrip>

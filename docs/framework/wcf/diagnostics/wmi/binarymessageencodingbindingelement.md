@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e2bb3cdd-3bbd-4bb5-85fe-570457500a66
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # BinaryMessageEncodingBindingElement
 BinaryMessageEncodingBindingElement  

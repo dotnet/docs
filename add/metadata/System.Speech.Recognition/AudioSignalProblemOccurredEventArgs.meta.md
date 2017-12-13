@@ -3,7 +3,7 @@ uid: System.Speech.Recognition.AudioSignalProblemOccurredEventArgs
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.RecognizerAud
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioPosition
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioSignalPr
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,5 +35,5 @@ uid: System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioLevel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---

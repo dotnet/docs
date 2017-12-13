@@ -12,7 +12,7 @@
     // Get the value of the key field at index 2 in the DataKey object.
     String value = CustomerDetailsView.DataKey[2].ToString();
 
-    // Display the the value of the key field.
+    // Display the value of the key field.
     MessageLabel.Text = "The value of the PostalCode key field is " + value +
       ".";
 

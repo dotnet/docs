@@ -3,7 +3,7 @@ uid: System.Speech.Recognition.SpeechUI
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,5 +11,5 @@ uid: System.Speech.Recognition.SpeechUI.SendTextFeedback(System.Speech.Recogniti
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---

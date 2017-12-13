@@ -43,7 +43,7 @@ Interoperability enables you to preserve and take advantage of existing investme
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A?displayProperty=nameWithType>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Interoperating with Unmanaged Code](https://msdn.microsoft.com/library/sd10k43k)   
+ <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A?displayProperty=nameWithType>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)  
  [Walkthrough: Office Programming](../../../csharp/programming-guide/interop/walkthrough-office-programming.md)

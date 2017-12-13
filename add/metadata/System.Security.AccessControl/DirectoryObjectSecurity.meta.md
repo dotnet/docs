@@ -56,7 +56,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.DirectoryObjectSecurity.AccessRuleFactory
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -117,7 +117,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.DirectoryObjectSecurity.AuditRuleFactory
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

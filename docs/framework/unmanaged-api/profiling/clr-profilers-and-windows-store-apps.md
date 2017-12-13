@@ -30,8 +30,8 @@ This topic discusses what you need to think about when writing diagnostic tools 
   
  This topic consists of the following sections:  
   
- [Introduction](#Intro)   
- [Architecture and terminology](#Arch)   
+ [Introduction](#Intro)  
+ [Architecture and terminology](#Arch)  
  [Windows RT devices](#RT)  
 [Consuming Windows Runtime APIs](#Consuming)  
 [Loading the Profiler DLL](#Loading)  

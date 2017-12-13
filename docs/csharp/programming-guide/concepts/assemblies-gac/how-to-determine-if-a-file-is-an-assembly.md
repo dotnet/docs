@@ -14,7 +14,7 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # How to: Determine If a File Is an Assembly (C#)
-A file is an assembly if and only if it is managed, and contains an assembly entry in its metadata. For more information on assemblies and metadata, see the topic [Assembly Manifest](https://msdn.microsoft.com/library/1w45z383).  
+A file is an assembly if and only if it is managed, and contains an assembly entry in its metadata. For more information on assemblies and metadata, see the topic [Assembly Manifest](../../../../../docs/framework/app-domains/assembly-manifest.md).  
   
 ### How to manually determine if a file is an assembly  
   
@@ -71,6 +71,6 @@ class TestAssembly
  The <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method loads the test file, and then releases it once the information is read.  
   
 ## See Also  
- <xref:System.Reflection.AssemblyName>   
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
+ <xref:System.Reflection.AssemblyName>  
+ [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
  [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d193fdd1-02f1-44a0-906e-f632a8f574c3
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Queued Poison Messages Per Second
 Counter Name: Queued Poison Messages Per Second.  

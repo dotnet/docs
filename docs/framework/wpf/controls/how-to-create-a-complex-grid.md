@@ -30,8 +30,8 @@ This example shows how to use a <xref:System.Windows.Controls.Grid> to create la
  [!code-xaml[GridComplex#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridComplex/CS/default.xaml#1)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Grid>   
- <xref:System.Windows.Documents.TableCell>   
- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)   
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)   
+ <xref:System.Windows.Controls.Grid>  
+ <xref:System.Windows.Documents.TableCell>  
+ [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  
+ [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
  [Table Overview](../../../../docs/framework/wpf/advanced/table-overview.md)

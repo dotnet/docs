@@ -7,7 +7,7 @@
 
   void Page_Load(object sender, EventArgs e)
   {
-    // When the page loads, set the the myLabel Label control's FontInfo properties.
+    // When the page loads, set the myLabel Label control's FontInfo properties.
     // Note that myLabel.Font is a FontInfo object.
     
     myLabel.Font.Bold = true;

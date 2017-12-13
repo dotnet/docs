@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.Xml.Linq.XNodeEqualityComparer.GetHashCode
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -54,7 +54,7 @@ manager: "wpickett"
 uid: System.Xml.Linq.XNodeEqualityComparer.Equals
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

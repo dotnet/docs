@@ -16,13 +16,13 @@ ms.author: "wiwagn"
 # Assemblies and the Global Assembly Cache (C#)
 Assemblies form the fundamental unit of deployment, version control, reuse, activation scoping, and security permissions for a .NET-based application. Assemblies take the form of an executable (.exe) file or dynamic link library (.dll) file, and are the building blocks of the .NET Framework. They provide the common language runtime with the information it needs to be aware of type implementations. You can think of an assembly as a collection of types and resources that form a logical unit of functionality and are built to work together.  
   
- Assemblies can contain one or more modules. For example, larger projects may be planned in such a way that several individual developers work on separate modules, all coming together to create a single assembly. For more information about modules, see the topic [How to: Build a Multifile Assembly](https://msdn.microsoft.com/library/226t7yxe).  
+ Assemblies can contain one or more modules. For example, larger projects may be planned in such a way that several individual developers work on separate modules, all coming together to create a single assembly. For more information about modules, see the topic [How to: Build a Multifile Assembly](../../../../../docs/framework/app-domains/how-to-build-a-multifile-assembly.md).  
   
  Assemblies have the following properties:  
   
 -   Assemblies are implemented as .exe or .dll files.  
   
--   You can share an assembly between applications by putting it in the global assembly cache. Assemblies must be strong-named before they can be included in the global assembly cache. For more information, see [Strong-Named Assemblies](https://msdn.microsoft.com/library/wd40t7ad).  
+-   You can share an assembly between applications by putting it in the global assembly cache. Assemblies must be strong-named before they can be included in the global assembly cache. For more information, see [Strong-Named Assemblies](../../../../../docs/framework/app-domains/strong-named-assemblies.md).  
   
 -   Assemblies are only loaded into memory if they are required. If they are not used, they are not loaded. This means that assemblies can be an efficient way to manage resources in larger projects.  
   
@@ -41,7 +41,7 @@ Assemblies form the fundamental unit of deployment, version control, reuse, acti
   
  Because assemblies contain information about content, versioning, and dependencies, the applications you create with C# do not rely on Windows registry values to function properly. Assemblies reduce .dll conflicts and make your applications more reliable and easier to deploy. In many cases, you can install a .NET-based application simply by copying its files to the target computer.  
   
- For more information see [Assembly Manifest](https://msdn.microsoft.com/library/1w45z383).  
+ For more information see [Assembly Manifest](../../../../../docs/framework/app-domains/assembly-manifest.md).  
   
 ## Adding a Reference to an Assembly  
  To use an assembly, you must add a reference to it. Next, you use the [using directive](../../../../csharp/language-reference/keywords/using-directive.md) to choose the namespace of the items you want to use. Once an assembly is referenced and imported, all the accessible classes, properties, methods, and other members of its namespaces are available to your application as if their code were part of your source file.  
@@ -55,12 +55,12 @@ Assemblies form the fundamental unit of deployment, version control, reuse, acti
 >  To build an assembly in Visual Studio, on the **Build** menu choose **Build**.  
   
 ## See Also  
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Assemblies in the Common Language Runtime](https://msdn.microsoft.com/library/k3677y81)   
- [Friend Assemblies (C#)](friend-assemblies.md)   
- [How to: Share an Assembly with Other Applications (C#)](how-to-share-an-assembly-with-other-applications.md)   
- [How to: Load and Unload Assemblies (C#)](how-to-load-and-unload-assemblies.md)   
- [How to: Determine If a File Is an Assembly (C#)](how-to-determine-if-a-file-is-an-assembly.md)   
- [How to: Create and Use Assemblies Using the Command Line (C#)](how-to-create-and-use-assemblies-using-the-command-line.md)   
- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)](walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)   
+ [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
+ [Assemblies in the Common Language Runtime](../../../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
+ [Friend Assemblies (C#)](friend-assemblies.md)  
+ [How to: Share an Assembly with Other Applications (C#)](how-to-share-an-assembly-with-other-applications.md)  
+ [How to: Load and Unload Assemblies (C#)](how-to-load-and-unload-assemblies.md)  
+ [How to: Determine If a File Is an Assembly (C#)](how-to-determine-if-a-file-is-an-assembly.md)  
+ [How to: Create and Use Assemblies Using the Command Line (C#)](how-to-create-and-use-assemblies-using-the-command-line.md)  
+ [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)](walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)  
  [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (C#)](walkthrough-embedding-type-information-from-microsoft-office-assemblies.md)

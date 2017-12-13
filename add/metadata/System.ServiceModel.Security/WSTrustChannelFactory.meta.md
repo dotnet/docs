@@ -3,7 +3,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceMode
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceMode
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.CreateSerializationConte
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.WSTrustRequestSerializer
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -51,7 +51,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.SecurityTokenResolver
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,7 +59,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -67,7 +67,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.String,Syst
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -75,7 +75,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.CreateTrustChannel(Syste
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -83,7 +83,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceMode
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -91,7 +91,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.WSTrustResponseSerialize
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -99,7 +99,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceMode
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -107,7 +107,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.TrustVersion
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -115,7 +115,7 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.UseKeyTokenResolver
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -123,14 +123,14 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.CreateChannel(System.Ser
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.CreateChannel
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -138,5 +138,5 @@ uid: System.ServiceModel.Security.WSTrustChannelFactory.SecurityTokenHandlerColl
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---

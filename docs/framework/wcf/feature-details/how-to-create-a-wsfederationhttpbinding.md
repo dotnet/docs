@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "federation"
 ms.assetid: e54897d7-aa6c-46ec-a278-b2430c8c2e10
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Create a WSFederationHttpBinding
 In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], the <xref:System.ServiceModel.WSFederationHttpBinding> class ([\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) in configuration) provides a mechanism for exposing a federated service. That is, a service that requires clients to authenticate using a security token issued by a security token service. This topic shows how to set up a <xref:System.ServiceModel.WSFederationHttpBinding> in both code and configuration. Once the binding is created, you can set up an endpoint to use that binding.  
@@ -108,9 +108,9 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], the <xref:System.Ser
  The following code sample shows code for setting up a `WSFederationHttpBinding` imperatively.  
   
  [!code-csharp[c_FederationBinding#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_federationbinding/cs/source.cs#2)] 
- [!code-vb[c_FederationBinding#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_federationbinding/vb/source.vb#2)]   
+ [!code-vb[c_FederationBinding#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_federationbinding/vb/source.vb#2)]  
   
 ## See Also  
- [Federation](../../../../docs/framework/wcf/feature-details/federation.md)   
- [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md)   
+ [Federation](../../../../docs/framework/wcf/feature-details/federation.md)  
+ [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md)  
  [How to: Disable Secure Sessions on a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)

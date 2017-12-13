@@ -1,0 +1,6 @@
+# [Introduction](index.md)
+## [Lift and shift existing apps Azure IaaS](lift-and-shift-existing-apps-azure-iaas.md)
+## [Migrate your relational databases to Azure](migrate-your-relational-databases-to-azure.md)
+## [Lift and shift existing apps DevOps](lift-and-shift-existing-apps-devops/)
+## [Walkthroughs and technical get started overview](walkthroughs-technical-get-started-overview.md)
+## [Conclusions](conclusions.md)

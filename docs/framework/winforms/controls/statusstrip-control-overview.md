@@ -48,6 +48,6 @@ A <xref:System.Windows.Forms.StatusStrip> control displays information about an 
 |<xref:System.Windows.Forms.ToolStripProgressBar>|Displays the completion state of a process.|  
   
 ## See Also  
- <xref:System.Windows.Forms.StatusStrip>   
- <xref:System.Windows.Forms.ToolStripStatusLabel>   
+ <xref:System.Windows.Forms.StatusStrip>  
+ <xref:System.Windows.Forms.ToolStripStatusLabel>  
  <xref:System.Windows.Forms.ToolStripStatusLabel.Spring%2A>

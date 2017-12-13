@@ -80,5 +80,5 @@ typedef struct _CorDebugEHClause {
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## See Also  
- [GetEHClauses Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md)   
+ [GetEHClauses Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md)  
  [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)

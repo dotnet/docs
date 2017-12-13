@@ -47,7 +47,7 @@ Press any key to continue . . .
 ```  
   
 ## Example  
- [!code-cs[csProgGuideStrings#13](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-convert-a-string-to-a-datetime_1.cs)]  
+ [!code-csharp[csProgGuideStrings#13](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-convert-a-string-to-a-datetime_1.cs)]  
   
 ## See Also  
  [Strings](../../../csharp/programming-guide/strings/index.md)

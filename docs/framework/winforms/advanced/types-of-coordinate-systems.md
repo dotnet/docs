@@ -101,5 +101,5 @@ manager: "wpickett"
 |Device|(192, 48) to (384, 144)|  
   
 ## See Also  
- [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)   
+ [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)  
  [Matrix Representation of Transformations](../../../../docs/framework/winforms/advanced/matrix-representation-of-transformations.md)

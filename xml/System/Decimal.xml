@@ -53,7 +53,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Decimal> value type represents decimal numbers ranging from positive 79,228,162,514,264,337,593,543,950,335 to negative 79,228,162,514,264,337,593,543,950,335. The <xref:System.Decimal> value type is appropriate for financial calculations that require large numbers of significant integral and fractional digits and no round-off errors. The <xref:System.Decimal> type does not eliminate the need for rounding. Rather, it minimizes errors due to rounding. For example, the following code produces a result of 0.9999999999999999999999999999 instead of 1.  
+ The <xref:System.Decimal> value type represents decimal numbers ranging from positive 79,228,162,514,264,337,593,543,950,335 to negative 79,228,162,514,264,337,593,543,950,335. The default value of a `Decimal` is 0. The <xref:System.Decimal> value type is appropriate for financial calculations that require large numbers of significant integral and fractional digits and no round-off errors. The <xref:System.Decimal> type does not eliminate the need for rounding. Rather, it minimizes errors due to rounding. For example, the following code produces a result of 0.9999999999999999999999999999 instead of 1.  
   
  [!code-cpp[System.Decimal.Class#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Decimal.Class/cpp/decimal1.cpp#1)]
  [!code-csharp[System.Decimal.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Decimal.Class/cs/DecimalDivision_46630_1.cs#1)]

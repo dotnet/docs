@@ -173,7 +173,7 @@ End Sub
 -   Nothing is recompiled (if nothing in the project has changed).  
   
 ## See Also  
- [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)   
- [WPF MSBuild Reference](/visualstudio/msbuild/wpf-msbuild-reference)   
- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)   
+ [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)  
+ [WPF MSBuild Reference](/visualstudio/msbuild/wpf-msbuild-reference)  
+ [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
  [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)

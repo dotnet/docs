@@ -3,7 +3,7 @@ uid: System.ServiceModel.Security.IWSTrustContract
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.ServiceModel.Security.IWSTrustContract.BeginValidate(System.ServiceM
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.ServiceModel.Security.IWSTrustContract.Cancel(System.ServiceModel.Ch
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.ServiceModel.Security.IWSTrustContract.Issue(System.ServiceModel.Cha
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.ServiceModel.Security.IWSTrustContract.BeginRenew(System.ServiceMode
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ uid: System.ServiceModel.Security.IWSTrustContract.BeginCancel(System.ServiceMod
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -51,7 +51,7 @@ uid: System.ServiceModel.Security.IWSTrustContract.Validate(System.ServiceModel.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,7 +59,7 @@ uid: System.ServiceModel.Security.IWSTrustContract.EndCancel(System.IAsyncResult
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -67,7 +67,7 @@ uid: System.ServiceModel.Security.IWSTrustContract.Renew(System.ServiceModel.Cha
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -75,7 +75,7 @@ uid: System.ServiceModel.Security.IWSTrustContract.BeginIssue(System.ServiceMode
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -83,7 +83,7 @@ uid: System.ServiceModel.Security.IWSTrustContract.EndRenew(System.IAsyncResult)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -91,7 +91,7 @@ uid: System.ServiceModel.Security.IWSTrustContract.EndIssue(System.IAsyncResult)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -99,5 +99,5 @@ uid: System.ServiceModel.Security.IWSTrustContract.EndValidate(System.IAsyncResu
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---

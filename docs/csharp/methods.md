@@ -86,7 +86,7 @@ In addition to the members that are explicitly defined in a type, a type inherit
 
 [!code-csharp[csSnippets.Methods#104](../../samples/snippets/csharp/concepts/methods/inherited1.cs#104)]
 
-Types can override inherited members by using the `override` keyword and providing an implementation for the overridden method. The method signature must be the same as that of the overriden method. The following example is like the previous one, except that it overrides the <xref:System.Object.Equals(System.Object)> method. (It also overrides the <xref:System.Object.GetHashCode> method, since the two methods are intended to provide consistent results.)
+Types can override inherited members by using the `override` keyword and providing an implementation for the overridden method. The method signature must be the same as that of the overridden method. The following example is like the previous one, except that it overrides the <xref:System.Object.Equals(System.Object)> method. (It also overrides the <xref:System.Object.GetHashCode> method, since the two methods are intended to provide consistent results.)
 
 [!code-csharp[csSnippets.Methods#105](../../samples/snippets/csharp/concepts/methods/overridden1.cs#105)]
 

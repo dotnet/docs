@@ -101,7 +101,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.PropertyBuilder.GetSetMethod
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -252,7 +252,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.PropertyBuilder.GetAccessors
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -313,7 +313,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.PropertyBuilder.GetGetMethod
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

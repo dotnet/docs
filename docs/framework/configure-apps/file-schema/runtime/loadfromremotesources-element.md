@@ -103,7 +103,7 @@ Specifies whether assemblies from remote sources should be granted full trust.
 ```  
   
 ## See Also  
- [More Implicit Uses of CAS Policy: loadFromRemoteSources](http://go.microsoft.com/fwlink/p/?LinkId=266839)   
- [How to: Run Partially Trusted Code in a Sandbox](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)   
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
+ [More Implicit Uses of CAS Policy: loadFromRemoteSources](http://go.microsoft.com/fwlink/p/?LinkId=266839)  
+ [How to: Run Partially Trusted Code in a Sandbox](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)  
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
  [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

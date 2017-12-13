@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], what's new"
 ms.assetid: 7e93fe73-af93-46b5-9f63-32f761ee40cf
 caps.latest.revision: 35
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # What&#39;s New in Windows Communication Foundation 4.5
 This topic discusses features new to [!INCLUDE[indigo1](../../../includes/indigo1-md.md)].  

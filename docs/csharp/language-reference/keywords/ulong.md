@@ -29,7 +29,7 @@ You can declare and initialize a `ulong` variable by assigning a decimal literal
 
 In the following example, integers equal to 7,934,076,125 that are represented as decimal, hexadecimal, and binary literals are assigned to `ulong` values.  
   
-[!code-cs[ulong](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#ULong)]  
+[!code-csharp[ulong](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#ULong)]  
 
 > [!NOTE] 
 > You use the prefix `0x` or `0X` to denote a hexadecimal literal and the prefix `0b` or `0B` to denote a binary literal. Decimal literals have no prefix. 
@@ -40,11 +40,11 @@ Starting with C# 7, a couple of features have been added to enhance readability.
 
 Some examples are shown below.
 
-[!code-cs[long](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#LongS)]  
+[!code-csharp[long](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#LongS)]  
  
  Integer literals can also include a suffix that denotes the type. The suffix `UL` or `ul` unambiguously identifies a numeric literal as a `ulong` value. The `L` suffix denotes a `ulong` if the literal value exceeds <xref:System.Int64.MaxValue?displayProperty=nameWithType>. And the `U` or `u` suffix denotes a `ulong` if the literal value exceeds <xref:System.UInt32.MaxValue?displayProperty=nameWithType>. The following example uses the `ul` suffix to denote a long integer:
  
-[!code-cs[ulsuffix](../../../../samples/snippets/csharp/language-reference/keywords/numeric-suffixes.cs#2)]
+[!code-csharp[ulsuffix](../../../../samples/snippets/csharp/language-reference/keywords/numeric-suffixes.cs#2)]
 
 If an integer literal has no suffix, its type is the first of the following types in which its value can be represented: 
 
@@ -97,11 +97,11 @@ ulong y = (ulong)3.0;
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- <xref:System.UInt64>   
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)   
- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)   
- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
+ <xref:System.UInt64>  
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
+ [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+ [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
  [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)

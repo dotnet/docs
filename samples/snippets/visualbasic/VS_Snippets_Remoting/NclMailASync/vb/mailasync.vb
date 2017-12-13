@@ -26,7 +26,7 @@ Namespace Examples.SmptExamples.Async
             mailSent = True
         End Sub
         Public Shared Sub Main(ByVal args() As String)
-            ' Command line argument must the the SMTP host.
+            ' Command line argument must the SMTP host.
             Dim client As New SmtpClient(args(0))
             ' Specify the e-mail sender.
             '<snippet2>

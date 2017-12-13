@@ -308,7 +308,7 @@ manager: "wpickett"
 uid: System.Diagnostics.EventLog.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -98,6 +98,6 @@ manager: "wpickett"
  However, if you are defining a custom attached event based on the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] model of basing attached events on <xref:System.Windows.RoutedEvent>, you can use <xref:System.Windows.UIElement.RaiseEvent%2A> to raise an attached event from any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement>. Raising a routed event (attached or not) requires that you declare a particular element in the element tree as the event source; that source is reported as the <xref:System.Windows.UIElement.RaiseEvent%2A> caller. Determining which element is reported as the source in the tree is your service's responsibility  
   
 ## See Also  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)   
- [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)   
+ [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
+ [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)  
  [XAML and Custom Classes for WPF](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)

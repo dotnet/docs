@@ -50,9 +50,9 @@ You can create single-file or multifile assemblies using an IDE, such as [!INCLU
  Special considerations must be made when making common language runtime assemblies available to unmanaged COM applications. For more information about working with unmanaged code, see [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md).  
   
 ## See Also  
- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)   
- [Assembly Versioning](../../../docs/framework/app-domains/assembly-versioning.md)   
- [How to: Build a Single-File Assembly](../../../docs/framework/app-domains/how-to-build-a-single-file-assembly.md)   
- [How to: Build a Multifile Assembly](../../../docs/framework/app-domains/how-to-build-a-multifile-assembly.md)   
- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)   
+ [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)  
+ [Assembly Versioning](../../../docs/framework/app-domains/assembly-versioning.md)  
+ [How to: Build a Single-File Assembly](../../../docs/framework/app-domains/how-to-build-a-single-file-assembly.md)  
+ [How to: Build a Multifile Assembly](../../../docs/framework/app-domains/how-to-build-a-multifile-assembly.md)  
+ [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  [Multifile Assemblies](../../../docs/framework/app-domains/multifile-assemblies.md)

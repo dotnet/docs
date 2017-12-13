@@ -8,10 +8,11 @@ ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
+ms.custom: mvc
 ---
 # Introduction to classes
 
-This lesson assumes that you've installed [.NET Core SDK](http://dot.net/core), and an editor of your choice. If you don't have one, try [Visual Studio Code](https://code.visualstudio.com/), or [Visual Studio](https://www.visualstudio.com/) on Mac or Windows.
+This quick start expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quick starts](local-environment.md) with links to more details.
 
 ## Create your application
 
@@ -92,7 +93,7 @@ Constructors are called when you create an object using [`new`](../language-refe
 
 ```csharp
 var account = new BankAccount("<name", 1000);
-Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance".);
+Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance.");
 ```
 
 Type `dotnet run` to see what happens.  
@@ -144,7 +145,7 @@ This introduces the concept of ***exceptions***. The standard way of indicating 
 
 [!code-csharp[DepositAndWithdrawal](../../../samples/csharp/classes-quickstart/BankAccount.cs#DepositAndWithdrawal "Make deposits and withdrawals")]
 
-The [`throw`](../language-reference/throw.md) statment **throws** an exception. Execution of the current method ends, and will resume when a matching `catch` block is found. You'll add a `catch` block to test this code a little later on.
+The [`throw`](../language-reference/keywords/throw.md) statement **throws** an exception. Execution of the current method ends, and will resume when a matching `catch` block is found. You'll add a `catch` block to test this code a little later on.
 
 The constructor should get one change so that it adds an initial transaction, rather than updating the balance directly. Since you already wrote the `MakeDeposit` method, call it from your constructor. The finished constructor should look like this:
 

@@ -16,7 +16,7 @@
           if (CityReqValidator.IsValid)
           {
               // Indicate that the city query was selected.
-              Message.InnerHtml = "You have chosen to run a query for the the following city: " +
+              Message.InnerHtml = "You have chosen to run a query for the following city: " +
                                   CityTextBox.Value;
           }
         

@@ -36,5 +36,5 @@ This article describes how you can use manipulations and inertia processing in a
  [Full Code Listings](../../../docs/framework/common-client-technologies/full-code-listings.md)  
   
 ## See Also  
- <xref:System.Windows.Input.Manipulations>   
+ <xref:System.Windows.Input.Manipulations>  
  [Manipulations and Inertia Overview](../../../docs/framework/common-client-technologies/manipulations-and-inertia-overview.md)

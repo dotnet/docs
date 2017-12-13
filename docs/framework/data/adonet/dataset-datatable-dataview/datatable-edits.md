@@ -93,9 +93,9 @@ protected static void OnColumnChanged(
 ```  
   
 ## See Also  
- <xref:System.Data.DataRow>   
- <xref:System.Data.DataTable>   
- <xref:System.Data.DataRowVersion>   
- [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)   
- [Handling DataTable Events](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-datatable-events.md)   
+ <xref:System.Data.DataRow>  
+ <xref:System.Data.DataTable>  
+ <xref:System.Data.DataRowVersion>  
+ [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)  
+ [Handling DataTable Events](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-datatable-events.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

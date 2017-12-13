@@ -2,43 +2,43 @@
 uid: System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElement
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElement.Properties
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElement.Name
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElement.NewTrackingQuery
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElement.#ctor
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

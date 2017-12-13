@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "WCF clients [WCF], configuring"
 ms.assetid: d067b86d-afb0-47bf-94f6-45180a3d8d78
 caps.latest.revision: 47
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Configure a Basic Windows Communication Foundation Client
 This is the fifth of six tasks required to create a basic [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
@@ -61,8 +61,8 @@ This is the fifth of six tasks required to create a basic [!INCLUDE[indigo1](../
 2.  [!INCLUDE[crabout](../../../includes/crabout-md.md)] how to use the generated client with this configuration, see [How to: Use a Client](../../../docs/framework/wcf/how-to-use-a-wcf-client.md).  
   
 ## See Also  
- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)   
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)   
- [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)   
- [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)   
+ [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
+ [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
+ [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)  
+ [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)  
  [Self-Host](../../../docs/framework/wcf/samples/self-host.md)

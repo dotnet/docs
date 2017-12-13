@@ -28,7 +28,7 @@
   
  <xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
   
--   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=nameWithType> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=nameWithType> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=nameWithType> throws an exeption, the <xref:System.Data.EntityClient.EntityDataReader> will wrap it in an <xref:System.Data.EntityException> (or a derived exception).  
+-   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=nameWithType> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=nameWithType> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=nameWithType> throws an exception, the <xref:System.Data.EntityClient.EntityDataReader> will wrap it in an <xref:System.Data.EntityException> (or a derived exception).  
   
 -   <xref:System.Data.EntityClient.EntityDataReader.Close%2A> only closes the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
   

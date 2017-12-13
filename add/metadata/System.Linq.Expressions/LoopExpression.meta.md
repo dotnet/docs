@@ -12,7 +12,7 @@ uid: System.Linq.Expressions.LoopExpression.ContinueLabel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -56,5 +56,5 @@ uid: System.Linq.Expressions.LoopExpression.Update(System.Linq.Expressions.Label
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---

@@ -20,7 +20,7 @@ ms.author: dotnetcontent
 # Type &lt;typename&gt; is not CLS-compliant
 A variable, property, or function return is declared with a data type that is not CLS-compliant.  
   
- For an application to be compliant with the [Language Independence and Language-Independent Components](https://msdn.microsoft.com/library/12a7a7h3) (CLS), it must use only CLS-compliant types.  
+ For an application to be compliant with the [Language Independence and Language-Independent Components](../../../../docs/standard/language-independence-and-language-independent-components.md) (CLS), it must use only CLS-compliant types.  
   
  The following [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] data types are not CLS-compliant:  
   

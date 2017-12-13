@@ -55,6 +55,6 @@ Specifies that a function or `Get` accessor is an iterator.
  For additional examples, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
   
 ## See Also  
- <xref:System.Runtime.CompilerServices.IteratorStateMachineAttribute>   
- [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)   
+ <xref:System.Runtime.CompilerServices.IteratorStateMachineAttribute>  
+ [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)  
  [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md)

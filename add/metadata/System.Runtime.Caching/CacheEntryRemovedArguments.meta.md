@@ -3,7 +3,7 @@ uid: System.Runtime.Caching.CacheEntryRemovedArguments
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Runtime.Caching.CacheEntryRemovedArguments.RemovedReason
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.Runtime.Caching.CacheEntryRemovedArguments.Source
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.Runtime.Caching.CacheEntryRemovedArguments.#ctor(System.Runtime.Cach
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,5 +35,5 @@ uid: System.Runtime.Caching.CacheEntryRemovedArguments.CacheItem
 ms.technology: 
   - "dotnet-standard"
 ms.author: "riande"
-manager: "ghogen"
+manager: "wpickett"
 ---

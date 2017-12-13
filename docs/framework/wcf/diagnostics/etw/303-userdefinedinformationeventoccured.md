@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5ed5acaf-3755-4417-92c4-4ebc8e854ca1
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # 303 - UserDefinedInformationEventOccured
 ## Properties  

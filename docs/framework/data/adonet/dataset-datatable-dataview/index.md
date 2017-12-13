@@ -85,5 +85,5 @@ The ADO.NET <xref:System.Data.DataSet> is a memory-resident representation of da
  Describes how to populate a **DataSet** with primary key information from a data source.  
   
 ## See Also  
- [ADO.NET](../../../../../docs/framework/data/adonet/index.md)   
+ [ADO.NET](../../../../../docs/framework/data/adonet/index.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

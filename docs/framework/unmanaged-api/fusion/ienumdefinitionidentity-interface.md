@@ -72,5 +72,5 @@ IEnumDefinitionIdentity : IUnknown {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)   
+ [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)  
  [IDefinitionIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/idefinitionidentity-interface.md)

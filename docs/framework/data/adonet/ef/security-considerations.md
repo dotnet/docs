@@ -168,6 +168,6 @@ This topic describes security considerations that are specific to developing, de
  Applications should not accept instances of the <xref:System.Data.Metadata.Edm.MetadataWorkspace> class from untrusted sources. Instead, you should explicitly construct and populate a workspace from such a source.  
   
 ## See Also  
- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)   
- [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)   
+ [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
+ [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)  
  [Migration Considerations](../../../../../docs/framework/data/adonet/ef/migration-considerations.md)

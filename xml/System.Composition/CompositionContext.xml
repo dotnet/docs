@@ -162,7 +162,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <Docs>
         <typeparam name="TExport">The type to match.</typeparam>
         <param name="contractName">The name to match.</param>
-        <summary>Retrieves the the export that matches the specified generic type parameter and contract name.</summary>
+        <summary>Retrieves the export that matches the specified generic type parameter and contract name.</summary>
         <returns>The exported value.</returns>
         <remarks>
         </remarks>

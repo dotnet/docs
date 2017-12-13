@@ -99,7 +99,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a a value that indicates whether the <see cref="P:System.ServiceModel.NetNamedPipeSecurity.Transport" /> property has changed from its default value and should be serialized. This is used by WCF for XAML integration.</summary>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.NetNamedPipeSecurity.Transport" /> property has changed from its default value and should be serialized. This is used by WCF for XAML integration.</summary>
         <returns>
           <see langword="true" /> if the <see cref="P:System.ServiceModel.NetNamedPipeSecurity.Transport" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

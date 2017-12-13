@@ -108,7 +108,7 @@ Starting with the .NET Framework 4.7, Windows Forms controls raise a number of e
 
 ### Single-pass scaling
 
-Single or multi-pass scaling influences the perceived responsiveness of the user interface and the the visual appearance of user interface elements as they are scaled. Starting with the .NET Framework 4.7, Windows Forms uses single pass scaling. In previous versions of the .NET Framework, scaling was performed through multiple passes, which caused some controls to be scaled more than was necessary. Single-pass scaling should only be disabled if your app depends on the old behavior.  
+Single or multi-pass scaling influences the perceived responsiveness of the user interface and the visual appearance of user interface elements as they are scaled. Starting with the .NET Framework 4.7, Windows Forms uses single pass scaling. In previous versions of the .NET Framework, scaling was performed through multiple passes, which caused some controls to be scaled more than was necessary. Single-pass scaling should only be disabled if your app depends on the old behavior.  
 
 ## See also
  

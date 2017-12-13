@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 11/09/2017
+ms.date: 12/12/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -41,7 +41,7 @@ From a DDD point of view, an important capability of EF is the ability to use PO
 
 Per DDD patterns, you should encapsulate domain behavior and rules within the entity class itself, so it can control invariants, validations, and rules when accessing any collection. Therefore, it is not a good practice in DDD to allow public access to collections of child entities or value objects. Instead, you want to expose methods that control how and when your fields and property collections can be updated, and what behavior and actions should occur when that happens.
 
-Since EF Core 1.1, to satisfy those DDD requirements you can have plain fields in your entities instead of public properties. If you do not want an entity field to be externally accessible, you can just create the attribute or field instead of a property. You can also use private property setters.
+Since EF Core 1.1, to satisfy those DDD requirements, you can have plain fields in your entities instead of public properties. If you do not want an entity field to be externally accessible, you can just create the attribute or field instead of a property. You can also use private property setters.
 
 In a similar way, you can now have read-only access to collections by using a public property typed as  `IReadOnlyCollection<T>`, which is backed by a private field member for the collection (like a `List<T>`) in your entity that relies on EF for persistence. Previous versions of Entity Framework required collection properties to support `ICollection<T>`, which meant that any developer using the parent entity class could add or remove items through its property collections. That possibility would be against the recommended patterns in DDD.
 
@@ -110,7 +110,7 @@ class OrderEntityTypeConfiguration : IEntityTypeConfiguration<Order>
 }
 ```
 
-When you use fields instead of properties, the OrderItem entity is persisted just as if it had a List&lt;OrderItem&gt; property. However, it exposes a single accessor, the `AddOrderItem()` method for adding new items to the order. As a result, behavior and data are tied together and will be consistent throughout any application code that uses the domain model.
+When you use fields instead of properties, the OrderItem entity is persisted just as if it had a List&lt;OrderItem&gt; property. However, it exposes a single accessor, the `AddOrderItem` method for adding new items to the order. As a result, behavior and data are tied together and will be consistent throughout any application code that uses the domain model.
 
 ## Implementing custom repositories with Entity Framework Core
 
@@ -138,9 +138,7 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure.Repositor
 
         public Buyer Add(Buyer buyer)
         {
-            return _context.Buyers
-                .Add(buyer)
-                .Entity; 
+            return _context.Buyers.Add(buyer).Entity; 
         }
 
         public async Task<Buyer> FindAsync(string BuyerIdentityGuid)
@@ -156,7 +154,7 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure.Repositor
 }
 ```
 
-Note that the IBuyerRepository interface comes from the domain model layer, as a contract. However, the repository implementation is done at the persistence and infrastructure layer.
+Note that the IBuyerRepository interface comes from the domain model layer as a contract. However, the repository implementation is done at the persistence and infrastructure layer.
 
 The EF DbContext comes through the constructor through Dependency Injection. It is shared between multiple repositories within the same HTTP request scope, thanks to its default lifetime (ServiceLifetime.Scoped) in the IoC container (which can also be explicitly set with services.AddDbContext&lt;&gt;).
 
@@ -259,7 +257,7 @@ Data annotations must be used on the entity model classes themselves, which is a
 
 As mentioned, in order to change conventions and mappings, you can use the OnModelCreating method in the DbContext class. 
 
-The ordering microservice in eShopOnContainers implements explicit mapping and configuration, when needed, as show in the following code.
+The ordering microservice in eShopOnContainers implements explicit mapping and configuration, when needed, as shown in the following code.
 
 ```csharp
 // At OrderingContext.cs from eShopOnContainers
@@ -351,9 +349,7 @@ Shadow properties in EF Core are properties that do not exist in your entity cla
 
 ## Implementing the Specification pattern
 
-As introduced earlier in the design section, the Specification pattern (its full name would be Query-specification pattern) is a Domain-Driven Design pattern designed as the place where you can put the definition of a query with optional sorting and paging logic.
-
-The Specification pattern defines a query in an object. For example, in order to encapsulate a paged query that searches for some products you can create a PagedProduct specification which takes the necessary input paramaters (pageNumber, pageSize, filter, etc.). Then, within any Repository method (usually a List() overload) it would accept an ISpecification and run the expected query based on that specification.
+As introduced earlier in the design section, the Specification pattern (its full name would be Query-specification pattern) is a Domain-Driven Design pattern designed as the place where you can put the definition of a query with optional sorting and paging logic. The Specification pattern defines a query in an object. For example, in order to encapsulate a paged query that searches for some products you can create a PagedProduct specification that takes the necessary input parameters (pageNumber, pageSize, filter, etc.). Then, any Repository’s method (usually a List() overload) would accept an ISpecification and run the expected query based on that specification.
 
 An example of a generic Specification interface is the following code from [eShopOnweb](https://github.com/dotnet-architecture/eShopOnWeb). 
 
@@ -402,7 +398,7 @@ public abstract class BaseSpecification<T> : ISpecification<T>
 }
 ```
 
-The following specification loads a single basket entity given either the basket’s ID or the ID of the buyer to whom the basket belongs. It will eager-load the basket’s Items collection.
+The following specification loads a single basket entity given either the basket’s ID or the ID of the buyer to whom the basket belongs. It will [eager load](https://docs.microsoft.com/en-us/ef/core/querying/related-data) the basket’s Items collection.
 
 ```csharp
 // SAMPLE QUERY SPECIFICATION IMPLEMENTATION
@@ -446,9 +442,9 @@ public IEnumerable<T> List(ISpecification<T> spec)
                     .AsEnumerable();
 }
 ```
-In addition to encapsulating filtering logic, specification can specify the shape of the data to be returned, including which properties to populate. 
+In addition to encapsulating filtering logic, the specification can specify the shape of the data to be returned, including which properties to populate. 
 
-Although it’s not recommended to return IQueryable from a repository, it’s perfectly fine to use them within the repository to build up a set of results. You can see this approach used in the List method above, which uses intermediate IQueryable expressions to build up the query’s list of includes before executing the query with the specification’s criteria on the last line.
+Although we don't recommended to return IQueryable from a repository, it’s perfectly fine to use them within the repository to build up a set of results. You can see this approach used in the List method above, which uses intermediate IQueryable expressions to build up the query’s list of includes before executing the query with the specification’s criteria on the last line.
 
 
 #### Additional resources

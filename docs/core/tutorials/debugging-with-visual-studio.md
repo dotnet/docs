@@ -1,10 +1,10 @@
 ---
-title: Debug your Hello World application with Visual Studio 2017
+title: Debug your C# or Visual Basic Hello World .NET Core application with Visual Studio 2017
 description: Learn how to debug a Hello World app written in C# or Visual Basic with Visual Studio 2017.
 keywords: .NET Core, .NET Core console application, .NET Core debugging
 author: BillWagner
 ms.author: wiwagn
-ms.date: 08/07/2017
+ms.date: 12/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-csharp
@@ -58,7 +58,7 @@ Run your program in Debug mode and try a few debugging features:
    ![Console window showing the typed value Jack at the What is your name? prompt followed by Hello Gracie on 11/1/2016 at 11:59am](./media/debugging-with-visual-studio/changed.png)
 
 1. Press any key to exit the application and end Debug mode.
-# [Visual Basic](#tab/visual-basic)
+# [Visual Basic](#tab/vb)
 1. A *breakpoint* temporarily interrupts the execution of the application *before* the line with the breakpoint is executed. 
 
    Set a breakpoint on the line that reads `Console.WriteLine(vbCrLf + $"Hello, {name}, on {currentDate:d} at {currentDate:t}!")` by clicking in the left margin of the code window on that line or by choosing the **Debug** > **Toggle Breakpoint** menu item with the line selected. As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
@@ -86,7 +86,7 @@ Run your program in Debug mode and try a few debugging features:
 
 1. Continue program execution by selecting the **Continue** button in the toolbar or by selecting the **Debug** > **Continue** menu item. The values displayed in the console window correspond to the changes you made in the **Immediate Window**.
 
-   ![Console window showing the typed value Jack at the What is your name? prompt followed by Hello Gracie on 11/1/2016 at 11:59am](./media/debugging-with-visual-studio/changed.png)
+   ![Console window showing the changed values entered in the Immediate Window](./media/debugging-with-visual-studio/changed.png)
 
 1. Press any key to exit the application and end Debug mode.
 ---
@@ -133,7 +133,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 1. Press any key to close the console window and exit Debug mode.
 
 1. Clear the breakpoint by clicking on the dot in the left margin of the code window or by choosing the **Debug > Toggle Breakpoint** menu item with the row selected.
-# [Visual Basic](#tab/visual-basic)
+# [Visual Basic](#tab/vb)
 1. Right-click on the red dot that represents the breakpoint. On the context menu, select **Conditions** to open the **Breakpoint Settings** dialog. Check the box for **Conditions**.
 
    ![Breakpoint settings panel](./media/debugging-with-visual-studio/vb-breakpointsettings.png)
@@ -197,7 +197,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 1. Select **Debug** > **Step Out** or press Shift and the F11 key. This stops step-by-step execution. The console window displays a message and waits for you to press a key.
 
 1. Press any key to close the console window and exit Debug mode.
-# [Visual Basic](#tab/visual-basic)
+# [Visual Basic](#tab/vb)
 1. On the menu bar, choose **Debug** > **Step Into** or press the F11 key. Visual Studio highlights and displays an arrow beside the next line of execution.
 
    ![Visual Studio window](./media/debugging-with-visual-studio/vb-stepinto1.png)

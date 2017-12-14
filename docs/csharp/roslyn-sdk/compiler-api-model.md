@@ -1,5 +1,5 @@
 ---
-title: .NET compiler SDK concepts and object model
+title: .NET Compiler Platform SDK concepts and object model
 description: This overview provides the background you need to work effectively with the .NET compiler SDK. You'll learn the API layers, the major types involved, and the overall object model.
 author: billwagner
 ms.author: wiwagn
@@ -9,16 +9,16 @@ ms.prod: .net
 ms.devlang: devlang-csharp
 ms.custom: mvc
 ---
-# Understand the compiler API model
+# Understand the .NET Compiler Platform SDK model
 
 Compilers process the code you write following structured rules that often
 differ from the way humans read and understand code. A basic understanding
-of the model used by the compilers is essential to understanding the APIs
-you use building Roslyn-based tools. 
+of the model used by compilers is essential to understanding the APIs
+you use when building Roslyn-based tools. 
 
 ## Compiler Pipeline Functional Areas
 
-The .NET Compiler SDK exposes the C# and Visual Basic compiler’s code analysis to you
+The .NET Compiler Platform SDK exposes the C# and Visual Basic compilers' code analysis to you
 as a consumer by providing an API layer that mirrors a traditional compiler
 pipeline.
 
@@ -33,11 +33,11 @@ all the information built up by the compiler.
 
 ![compiler pipeline api](media/compiler-pipeline-api.png)
 
-Corresponding to each of those phases, the .NET Compiler SDK exposes an
+Corresponding to each of those phases, the .NET Compiler Platform SDK exposes an
 object model that allows access to the information at that phase. The parsing
 phase exposes a syntax tree, the declaration phase exposes a hierarchical
 symbol table, the binding phase exposes the result of the compiler’s semantic
-analysis and the emit phase is an API that produces IL byte codes.
+analysis, and the emit phase is an API that produces IL byte codes.
 
 ![compiler api lang service](media/compiler-pipeline-lang-svc.png)
 
@@ -51,14 +51,14 @@ these, including the Emit API.
 
 ## API Layers
 
-The .NET compiler SDK consists of two main layers of APIs – the Compiler
-APIs and Workspaces APIs.
+The .NET compiler SDK consists of two main layers of APIs: compiler
+APIs and workspaces APIs.
 
 ![api layers](media/api-layers.png)
 
 ### Compiler APIs
 
-The compiler layer contains the object models that correspond with
+The compiler layer contains the object models that correspond to
 information exposed at each phase of the compiler pipeline, both syntactic
 and semantic. The compiler layer also contains an immutable snapshot of a
 single invocation of a compiler, including assembly references, compiler
@@ -71,11 +71,11 @@ layer has no dependencies on Visual Studio components.
 
 As part of its analysis the compiler may produce a set of diagnostics
 covering everything from syntax, semantic, and definite assignment errors
-to various warnings and informational diagnostics. The Compiler API layer
-exposes diagnostics through an extensible API allowing user-defined
-analyzers to be plugged into a Compilation and user-defined diagnostics,
-such as those produced by tools like StyleCop or FxCop, to be produced
-alongside compiler-defined diagnostics. Producing diagnostics in this
+to various warnings and informational diagnostics. TThe Compiler API layer
+exposes diagnostics through an extensible API that allows user-defined
+analyzers to be plugged into the compilation process. It allows user-defined
+diagnostics, such as those produced by tools like StyleCop or FxCop, to be
+produced alongside compiler-defined diagnostics. Producing diagnostics in this
 way has the benefit of integrating naturally with tools such as MSBuild
 and Visual Studio which depend on diagnostics for experiences such as
 halting a build based on policy and showing live squiggles in the editor
@@ -85,7 +85,9 @@ and suggesting code fixes.
 
 Hosting and scripting APIs are part of the compiler layer. You can use them
 for executing code snippets and accumulating a runtime execution context.
-The REPL uses these APIs.
+The C# interactive REPL (Read-Evaluate-Print Loop) uses these APIs. The REPL
+enables you to use C# as a scripting language, executing the code interactively
+as you write it.
 
 ### Workspaces APIs
 
@@ -93,12 +95,12 @@ The Workspaces layer contains the Workspace API, which is the starting
 point for doing code analysis and refactoring over entire solutions. It
 assists you in organizing all the information about the projects in a
 solution into single object model, offering you direct access to the compiler
-layer object models without needing to parse files, configure options or
-manage project to project dependencies.
+layer object models without needing to parse files, configure options, or
+manage project-to-project dependencies.
 
-In addition, the Workspaces layer surfaces a set of commonly used APIs used
+In addition, the Workspaces layer surfaces a set of APIs used
 when implementing code analysis and refactoring tools that function within
-a host environment like the Visual Studio IDE, such as the Find All References,
+a host environment like the Visual Studio IDE. Excamples include the Find All References,
 Formatting, and Code Generation APIs.
 
 This layer has no dependencies on Visual Studio components.

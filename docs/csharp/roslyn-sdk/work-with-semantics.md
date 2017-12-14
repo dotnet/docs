@@ -1,5 +1,5 @@
 ---
-title: Work with the .NET Compiler SDK semantic model
+title: Work with the .NET Compiler Platform SDK semantic model
 description: This overview provides an understanding of the type you use to understand and manipulate the semantic model of your code.
 author: billwagner
 ms.author: wiwagn
@@ -10,15 +10,23 @@ ms.devlang: devlang-csharp
 ms.custom: mvc
 ---
 
-# Work with Semantics
+# Work with semantics
 
-Syntax trees represent the lexical and syntactic structure of source code. Although this information alone is enough to describe all the declarations and logic in the source, it is not enough information to identify what is being referenced. For those tasks, you need the **Semantic model**.
+[Syntax trees](work-with-syntax.md) represent the lexical and syntactic structure of source code. Although this information alone is enough to describe all the declarations and logic in the source, it is not enough information to identify what is being referenced. A name
+may represent:
 
-For example, many types, fields, methods, and local variables with the same name may be spread throughout the source. Although each of these is uniquely different, determining which one an identifier actually refers to often requires a deep understanding of the language rules. 
+- a type
+- a field
+- a method
+- a local variable
 
-There are program elements represented in source code, and programs can also refer to previously compiled libraries, packaged in assembly files. Although no source code is available for assemblies and therefore no syntax nodes or trees, programs can still refer to elements inside them.
+Although each of these is uniquely different, determining which one an identifier actually refers to often requires a deep understanding of the language rules. 
 
-In addition to a syntactic model of the source code, a semantic model encapsulates the language rules, giving you an easy way to make these distinctions.
+There are program elements represented in source code, and programs can also refer to previously compiled libraries, packaged in assembly files. Although no source code, and therefore no syntax nodes or trees, are available for assemblies, programs can still refer to elements inside them.
+
+For those tasks, you need the **Semantic model**.
+
+In addition to a syntactic model of the source code, a semantic model encapsulates the language rules, giving you an easy way to correctly match identifiers with the correct program element being referenced.
 
 ## Compilation
 
@@ -34,7 +42,8 @@ A symbol represents a distinct element declared by the source code or imported f
 
 A variety of methods and properties on the <xref:Microsoft.CodeAnalysis.Compilation> type help you find symbols. For example, you can find a symbol for a declared type by its common metadata name. You can also access the entire symbol table as a tree of symbols rooted by the global namespace.
 
-Symbols also contain additional information that the compiler determined from the source or metadata, such as other referenced symbols. Each kind of symbol is represented by a separate interface derived from <xref:Microsoft.CodeAnalysis.ISymbol>, each with its own methods and properties detailing the information the compiler has gathered. Many of these properties directly reference other symbols. For example, the <xref:Microsoft.CodeAnalysis.IMethodSymbol.ReturnType> property of the <xref:Microsoft.CodeAnalysis.IMethodSymbol> class tells you the actual type symbol that the method declaration referenced.
+Symbols also contain additional information that the compiler determines from the source or metadata, such as other referenced symbols. Each kind of symbol is represented by a separate interface derived from <xref:Microsoft.CodeAnalysis.ISymbol>, each with its own methods and properties detailing the information the compiler has gathered. Many of these properties directly reference other symbols. For example, the <xref:Microsoft.CodeAnalysis.IMethodSymbol.ReturnType?displayProperty=nameWithType> property
+tells you the actual type symbol that the method declaration references.
 
 Symbols present a common representation of namespaces, types, and members, between source code and metadata. For example, a method that was declared in source code and a method that was imported from metadata are both represented by an <xref:Microsoft.CodeAnalysis.IMethodSymbol> with the same properties.
 

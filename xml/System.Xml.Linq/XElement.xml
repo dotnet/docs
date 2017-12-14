@@ -3655,9 +3655,7 @@ Element
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When converting to <xref:System.Boolean> from an attribute or element, allowed values are "0", "1", and any string that produces "true" or "false" after trimming and conversion to lower case.  
-  
- The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToBoolean(System.String)?displayProperty=fullName>.
+ When converting to <xref:System.Boolean> from an attribute or element, allowed values are "0", "1", and any string that produces "true" or "false" after trimming and conversion to lower case.
   
 ## Examples  
  The following example creates some elements with boolean values. It then casts them to <xref:System.Boolean>.  
@@ -3838,8 +3836,6 @@ orderDate=10/6/2006
   
 ## Remarks  
  This conversion operator uses the <xref:System.Xml.XmlConvert> class to do the conversion.  
-  
- The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToDateTimeOffset(System.String)?displayProperty=fullName>. 
   
 ## Examples  
  The following example creates an element with date and time content. It then casts to <xref:System.DateTimeOffset> to retrieve the value.  
@@ -4326,7 +4322,7 @@ Nullable Boolean: value2=False
 ## Remarks  
  The value space of an attribute or element that contains date and time content is closely related to the dates and times described in ISO 8601. When creating an attribute or element that contains date and time content, the attribute or element values are formatted per the W3C specification. See the W3C specification for more details.  
   
- Behavior is lax when casting to a <xref:System.Nullable%601> of <xref:System.DateTime> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.Nullable%601> of <xref:System.DateTime>.  
+ The behavior is lax when casting to a <xref:System.Nullable%601> of <xref:System.DateTime> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.Nullable%601> of <xref:System.DateTime>.  
   
  This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to convert from a <xref:System.DateTime>.
   

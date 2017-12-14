@@ -1,13 +1,12 @@
 ---
-title: Building documentation with mdoc 
+title: Building documentation with mdoc
 description: Learn to use mdoc to build documentation for your class library.
-author: github-alias
+author: rpetrusha
 ms.author: ronpet
 ms.date: 11/03/2017
-ms.topic: overview
-ms.prod: .Network
+ms.topic: article
+ms.prod: .net
 ---
 # Building documentation with mdoc
 
-mdoc is a documentation build system for managed reference documentation. By reflecting over your assemblies, mdoc creates the basic format of your managed reference documentation, which it supplements with authored content. 
-
+mdoc is a documentation build system for managed reference documentation. By reflecting over your assemblies, mdoc creates the basic format of your managed reference documentation, which it supplements with authored content.

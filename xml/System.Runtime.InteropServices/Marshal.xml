@@ -7578,7 +7578,7 @@
   
  -or-  
   
- <paramref name="structure" /> is an instance of a generic type (the .NET Framework 4.5 and earlier versions only). </exception>
+ <paramref name="structure" /> is an instance of a generic type (in the .NET Framework 4.5 and earlier versions only). </exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="M:System.Runtime.InteropServices.Marshal.DestroyStructure(System.IntPtr,System.Type)" />
         <altmember cref="T:System.Runtime.InteropServices.GCHandle" />

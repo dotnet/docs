@@ -28,7 +28,7 @@ This topic describes how to use `My.Computer.Ports` to send strings to the compu
   
  The `Using` block allows the application to close the serial port even if it generates an exception. All code that manipulates the serial port should appear within this block or within a `Try...Catch...Finally` block.  
   
- The <xref:System.IO.Ports.SerialPort.WriteLine> method sends the data to the serial port.  
+ The <xref:System.IO.Ports.SerialPort.WriteLine%2A> method sends the data to the serial port.  
   
  [!code-vb[VbVbalrMyComputer#33](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-send-strings-to-serial-ports_1.vb)]  
   

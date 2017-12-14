@@ -3,7 +3,7 @@ title: dotnet pack command - .NET Core CLI
 description: The dotnet pack command creates NuGet packages for your .NET Core project.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/14/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -40,7 +40,7 @@ NuGet dependencies of the packed project are added to the *.nuspec* file, so the
 
 By default, `dotnet pack` builds the project first. If you wish to avoid this behavior, pass the `--no-build` option. This is often useful in Continuous Integration (CI) build scenarios where you know the code was previously built.
 
-You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet metadata properties](csproj.md#nuget-metadata-properties) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference).
+You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet metadata properties](csproj.md#nuget-metadata-properties) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). The [Examples](#examples) section shows how to use the MSBuild /p switch for a couple of different scenarios.
 
 ## Arguments
 
@@ -168,3 +168,7 @@ With the project's version suffix configured as `<VersionSuffix>$(VersionSuffix)
 Set the package version to `2.1.0` with the `PackageVersion` MSBuild property:
 
 `dotnet pack /p:PackageVersion=2.1.0`
+
+Pack the project for a specific [target framework](../../standard/frameworks.md):
+
+`dotnet pack /p:TargetFrameworks=net45`

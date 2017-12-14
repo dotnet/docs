@@ -28,13 +28,15 @@ You should always begin by testing your program in Debug mode. Debug mode turns 
 
 Run your program in Debug mode and try a few debugging features:
 
+# [C#](#tab/csharp)
 1. A *breakpoint* temporarily interrupts the execution of the application *before* the line with the breakpoint is executed. 
 
-# [C#](#tab/csharp)
    Set a breakpoint on the line that reads `Console.WriteLine($"\nHello, {name}, on {date:d} at {date:t}!");` by clicking in the left margin of the code window on that line or by choosing the **Debug** > **Toggle Breakpoint** menu item with the line selected. As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
 
    ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio/setbreakpoint.png)
 # [Visual Basic](#tab/visual-basic)
+1. A *breakpoint* temporarily interrupts the execution of the application *before* the line with the breakpoint is executed. 
+
    Set a breakpoint on the line that reads `Console.WriteLine(vbCrLf + $"Hello, {name}, on {currentDate:d} at {currentDate:t}!")` by clicking in the left margin of the code window on that line or by choosing the **Debug** > **Toggle Breakpoint** menu item with the line selected. As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
 
    ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio/vb-setbreakpoint.png)
@@ -44,11 +46,13 @@ Run your program in Debug mode and try a few debugging features:
 
 1. Enter a string in the console window when the program prompts for a name and press Enter.
 
+# [C#](#tab/csharp)
 1. Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Autos** window displays the values of variables that are used around the current line. The **Locals** window (which you can view by clicking the **Locals** tab) displays the values of variables that are defined in the currently executing method.
 
-# [C#](#tab/csharp)
    ![Visual Studio application window](./media/debugging-with-visual-studio/break.png)
 # [Visual Basic](#tab/visual-basic)
+1. Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Autos** window displays the values of variables that are used around the current line. The **Locals** window (which you can view by clicking the **Locals** tab) displays the values of variables that are defined in the currently executing method.
+
    ![Visual Studio application window](./media/debugging-with-visual-studio/vb-break.png)
 ---
 

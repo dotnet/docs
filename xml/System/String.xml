@@ -4334,13 +4334,13 @@
  Use <xref:System.String.Format%2A?displayProperty=nameWithType> if you need to insert the value of an object, variable, or expression into another string. For example, you can insert the value of a <xref:System.Decimal> value into a string to display it to the user as a single string:  
   
  [!code-cpp[System.String.Format#35](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting2.cpp#35)]
- [!code-csharp[System.String.Format#35](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting2.cs#35)]
+ [!code-csharp-interactive[System.String.Format#35](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting2.cs#35)]
  [!code-vb[System.String.Format#35](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting2.vb#35)]  
   
  And you can control that value's formatting:  
   
  [!code-cpp[System.String.Format#36](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting2.cpp#36)]
- [!code-csharp[System.String.Format#36](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting2.cs#36)]
+ [!code-csharp-interactive[System.String.Format#36](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting2.cs#36)]
  [!code-vb[System.String.Format#36](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting2.vb#36)]  
   
  Besides formatting, you can also control alignment and spacing.  
@@ -4350,7 +4350,7 @@
  <xref:System.String.Format%2A?displayProperty=nameWithType> starts with a format string, followed by one or more objects or expressions that will be converted to strings and inserted at a specified place in the format string. For example:  
   
  [!code-cpp[System.String.Format#30](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#30)]
- [!code-csharp[System.String.Format#30](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#30)]
+ [!code-csharp-interactive[System.String.Format#30](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#30)]
  [!code-vb[System.String.Format#30](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#30)]  
   
  The `{0}` in the format string is a format item. `0` is the index of the object whose string value will be inserted at that position. (Indexes start at 0.) If the object to be inserted is not a string, its `ToString` method is called to convert it to one before inserting it in the result string.  
@@ -4358,7 +4358,7 @@
  Here's another example that uses two format items and two objects in the object list:  
   
  [!code-cpp[System.String.Format#31](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#31)]
- [!code-csharp[System.String.Format#31](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#31)]
+ [!code-csharp-interactive[System.String.Format#31](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#31)]
  [!code-vb[System.String.Format#31](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#31)]  
   
  You can have as many format items and as many objects in the object list as you want, as long as the index of every format item has a matching object in the object list. You also don't have to worry about which overload you call; the compiler will select the appropriate one for you.  
@@ -4367,7 +4367,7 @@
  You can follow the index in a format item with a format string to control how an object is formatted. For example, `{0:d}` applies the "d" format string to the first object in the object list. Here is an example with a single object and two format items:  
   
  [!code-cpp[System.String.Format#32](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#32)]
- [!code-csharp[System.String.Format#32](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#32)]
+ [!code-csharp-interactive[System.String.Format#32](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#32)]
  [!code-vb[System.String.Format#32](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#32)]  
   
  A number of types support format strings, including all numeric types (both                                          [standard](~/docs/standard/base-types/standard-numeric-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-numeric-format-strings.md) format strings), all dates and times (both                                          [standard](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-date-and-time-format-strings.md) format strings) and time intervals (both                                          [standard](~/docs/standard/base-types/standard-timespan-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-timespan-format-strings.md) format strings), all enumeration types                                          [enumeration types](~/docs/standard/base-types/enumeration-format-strings.md), and                                          [GUIDs](https://msdn.microsoft.com/library/97af8hh4.aspx). You can also add support for format strings to your own types.  
@@ -4378,7 +4378,7 @@
  The following example defines a 6-character field to hold the string "Year" and some year strings, as well as an 15-character field to hold the string "Population" and some population data. Note that the characters are right-aligned in the field.  
   
  [!code-cpp[System.String.Format#33](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#33)]
- [!code-csharp[System.String.Format#33](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#33)]
+ [!code-csharp-interactive[System.String.Format#33](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#33)]
  [!code-vb[System.String.Format#33](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#33)]  
   
  ### Controlling alignment  
@@ -4387,7 +4387,7 @@
  The following example is similar to the previous one, except that it left-aligns both labels and data.  
   
  [!code-cpp[System.String.Format#34](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#34)]
- [!code-csharp[System.String.Format#34](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#34)]
+ [!code-csharp-interactive[System.String.Format#34](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#34)]
  [!code-vb[System.String.Format#34](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#34)]  
   
  <xref:System.String.Format%2A?displayProperty=nameWithType> makes use of the composite formatting feature. For more information, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
@@ -4404,10 +4404,10 @@
 <a name="Format_Brief"></a>   
 ## The Format method in brief 
 
- Each overload of the <xref:System.String.Format%2A> method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to include zero-based indexed placeholders, called format items, in a composite format string. At run time, each format item is replaced with the string representation of the corresponding argument in a parameter list. If the value of the argument is                  `null`, the format item is replaced with <xref:System.String.Empty?displayProperty=nameWithType>. For example, the following call to the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%2CSystem.Object%29> method includes a format string with three format items, {0}, {1}, and {2}, and an argument list with three items.  
+ Each overload of the <xref:System.String.Format%2A> method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to include zero-based indexed placeholders, called *format items*, in a composite format string. At run time, each format item is replaced with the string representation of the corresponding argument in a parameter list. If the value of the argument is `null`, the format item is replaced with <xref:System.String.Empty?displayProperty=nameWithType>. For example, the following call to the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%2CSystem.Object%29> method includes a format string with three format items, {0}, {1}, and {2}, and an argument list with three items.  
   
  [!code-cpp[System.String.Format#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatoverload1.cpp#8)]
- [!code-csharp[System.String.Format#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatoverload1.cs#8)]
+ [!code-csharp-interactive[System.String.Format#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatoverload1.cs#8)]
  [!code-vb[System.String.Format#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatoverload1.vb#8)]  
   
 <a name="FormatItem"></a>   
@@ -4423,8 +4423,9 @@
  For example, a format item to format a currency value might appear like this:  
   
  [!code-cpp[System.String.Format#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatsyntax1.cpp#12)]
- [!code-csharp[System.String.Format#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatsyntax1.cs#12)]  
-  
+ [!code-csharp-interactive[System.String.Format#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatsyntax1.cs#12)]  
+ [!code-vb[System.String.Format#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatsyntax1.vb#12)]  
+
  A format item has the following elements:  
   
  *index*  
@@ -4453,14 +4454,14 @@
  The following example uses the `alignment` and `formatString` arguments to produce formatted output.  
   
  [!code-cpp[System.String.Format#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatoverload2.cpp#9)]
- [!code-csharp[System.String.Format#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatoverload2.cs#9)]
+ [!code-csharp-interactive[System.String.Format#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatoverload2.cs#9)]
  [!code-vb[System.String.Format#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatoverload2.vb#9)]  
   
 <a name="HowFormatted"></a>   
 ## How arguments are formatted  
  Format items are processed sequentially from the beginning of the string. Each format item has an index that corresponds to an object in the method's argument list. The <xref:System.String.Format%2A> method retrieves the argument and derives its string representation as follows:  
   
--   If the argument is `null`, the method inserts <xref:System.String.Empty?displayProperty=nameWithType> into the result string.  
+-   If the argument is `null`, the method inserts <xref:System.String.Empty?displayProperty=nameWithType> into the result string. You don't have to be converned with handling an <xref:System.NullReferenceException> for null arguments. 
   
 -   If you call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload and the `provider` parameter implements the <xref:System.ICustomFormatter> interface, the argument is passed to the `provider` object's <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method. If the format item includes a *formatString* argument, it is passed as the first argument to the method. If the <xref:System.ICustomFormatter> implementation is able to provide formatting services, it returns the string representation of the argument; otherwise, it returns `null` and the next step executes.  
   
@@ -4468,13 +4469,13 @@
   
 -   The argument's parameterless `ToString` method, which is either overridden or inherited from the <xref:System.Object> class, is called.  
   
- For an example that intercepts calls to the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> method and allows you to see what information the <xref:System.String.Format%2A> method passes to a formatting method for each format item in a composite format string, see [Example 7: An intercept provider and Roman numeral formatter](#Format7_Example).  
+ For an example that intercepts calls to the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> method and allows you to see what information the <xref:System.String.Format%2A> method passes to a formatting method for each format item in a composite format string, see [Example: An intercept provider and Roman numeral formatter](#Format7_Example).  
   
 <a name="SameIndex"></a>   
 ## Format items that have the same index  
  The <xref:System.String.Format%2A> method throws a <xref:System.FormatException> exception if the index of an index item is greater than or equal to the number of arguments in the argument list. However, `format` can include more format items than there are arguments, as long as multiple format items have the same index. In the call to the <xref:System.String.Format%28System.String%2CSystem.Object%29> method in following example, the argument list has a single argument, but the format string includes two format items: one displays the decimal value of a number, and the other displays its hexadecimal value.  
   
- [!code-csharp[System.String.Format2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format2/cs/Example1.cs#1)]
+ [!code-csharp-interactive[System.String.Format2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format2/cs/Example1.cs#1)]
  [!code-vb[System.String.Format2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format2/vb/Example1.vb#1)]  
   
 <a name="Format_Culture"></a>   
@@ -4487,21 +4488,23 @@
   
 -   <xref:System.Globalization.DateTimeFormatInfo>, which is used for culture-specific formatting of date and time values. Its <xref:System.Globalization.DateTimeFormatInfo.GetFormat%2A> method returns itself.  
   
--   <xref:System.Globalization.NumberFormatInfo>, which is used for culture-specific formatting of numeric values. Its <xref:System.Globalization.NumberFormatInfo.GetFormat%2A> property returns itself.  
-  
+-   <xref:System.Globalization.NumberFormatInfo>, which is used for culture-specific formatting of numeric values. Its <xref:System.Globalization.NumberFormatInfo.GetFormat%2A> property returns itself. 
+
 <a name="Format_Custom"></a>   
 ## Custom formatting operations  
  You can also call the any of the overloads of the <xref:System.String.Format%2A> method that have a  `provider` parameter <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload to perform custom formatting operations. For example, you could format an integer as an identification number or as a telephone number. To perform custom formatting, your `provider` argument must implement both the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces. When the <xref:System.String.Format%2A> method is passed an <xref:System.ICustomFormatter> implementation as the `provider` argument, the <xref:System.String.Format%2A> method calls its   <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> implementation and requests an object of type <xref:System.ICustomFormatter>. It then calls the returned <xref:System.ICustomFormatter> object's <xref:System.ICustomFormatter.Format%2A> method to format each format item in the composite string passed to it.  
   
- For more information about providing custom formatting solutions, see [How to: Define and Use Custom Numeric Format Providers](~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md) and <xref:System.ICustomFormatter>. For an example that converts integers to formatted custom numbers, see [Example 6: A custom formatting operation](#Format6_Example). For an example that converts unsigned bytes to Roman numerals, see [Example 7: An intercept provider and Roman numeral formatter](#Format7_Example).  
+ For more information about providing custom formatting solutions, see [How to: Define and Use Custom Numeric Format Providers](~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md) and <xref:System.ICustomFormatter>. For an example that converts integers to formatted custom numbers, see [Example: A custom formatting operation](#Format6_Example). For an example that converts unsigned bytes to Roman numerals, see [Example: An intercept provider and Roman numeral formatter](#Format7_Example).  
   
+<a name="Format6_Example" />  
 ### Example: A custom formatting operation  
  This example defines a format provider that formats an integer value as a customer account number in the form x-xxxxx-xx.  
   
  [!code-cpp[System.String.Format#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatexample2.cpp#2)]
- [!code-csharp[System.String.Format#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/FormatExample2.cs#2)]
+ [!code-csharp-interactive[System.String.Format#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/FormatExample2.cs#2)]
  [!code-vb[System.String.Format#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/FormatExample2.vb#2)]  
   
+<a name="Format7_Example" />  
 ### Example: An intercept provider and Roman numeral formatter  
  This example defines a custom format provider that implements the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces to do two things:  
   
@@ -4510,7 +4513,7 @@
 -   If the object to be formatted is an unsigned byte value that is to be formatted by using the "R" standard format string, the custom formatter formats the numeric value as a Roman numeral.  
   
  [!code-cpp[System.String.Format#11](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/interceptor2.cpp#11)]
- [!code-csharp[System.String.Format#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/interceptor2.cs#11)]
+ [!code-csharp-interactive[System.String.Format#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/interceptor2.cs#11)]
  [!code-vb[System.String.Format#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/interceptor2.vb#11)]  
   
 <a name="QA"></a>   
@@ -4540,28 +4543,29 @@
 ### How do I control the number of digits after the decimal separator?  
  All [standard numeric format strings](~/docs/standard/base-types/standard-numeric-format-strings.md) except "D" (which is used with integers only), "G", "R", and "X" allow a precision specifier that defines the number of decimal digits in the result string. The following example uses standard numeric format strings to control the number of decimal digits in the result string.  
   
- [!code-csharp[System.String.Format#26](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa26.cs#26)]
+ [!code-csharp-interactive[System.String.Format#26](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa26.cs#26)]
  [!code-vb[System.String.Format#26](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa26.vb#26)]  
   
  If you're using a [custom numeric format string](~/docs/standard/base-types/custom-numeric-format-strings.md), use the "0" format specifier to control the number of decimal digits in the result string, as the following example shows.  
   
- [!code-csharp[System.String.Format#27](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa27.cs#27)]
+ [!code-csharp-interactive[System.String.Format#27](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa27.cs#27)]
  [!code-vb[System.String.Format#27](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa27.vb#27)]  
   
 ### How do I control the number of integral digits?  
  By default, formatting operations only display non-zero integral digits. If you are formatting integers, you can use a precision specifier with the "D" and "X" standard format strings to control the number of digits.  
   
- [!code-csharp[System.String.Format#29](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa29.cs#29)]
+ [!code-csharp-interactive[System.String.Format#29](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa29.cs#29)]
  [!code-vb[System.String.Format#29](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa29.vb#29)]  
   
  You can pad an integer or floating-point number with leading zeros to produce a result string with a specified number of integral digits by using the "0" [custom numeric format specifier](~/docs/standard/base-types/custom-numeric-format-strings.md), as the following example shows.  
   
- [!code-csharp[System.String.Format#28](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa28.cs#28)]
+ [!code-csharp-interactive[System.String.Format#28](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa28.cs#28)]
  [!code-vb[System.String.Format#28](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa28.vb#28)]  
   
 ### How many items can I include in the format list?  
  There is no practical limit. The second parameter of the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method is tagged with the <xref:System.ParamArrayAttribute> attribute, which allows you to include either a delimited list or an object array as your format list.  
   
+<a name="braces" />
 ### How do I include literal braces ("{" and "}") in the result string?  
  For example, how do you prevent the following method call from throwing a <xref:System.FormatException> exception?  
   
@@ -4570,16 +4574,16 @@
   
  A single opening or closing brace is always interpreted as the beginning or end of a format item. To be interpreted literally, it must be escaped. You escape a brace by adding another brace ("{{" and "}}" instead of "{" and "}"), as in the following method call:  
   
- [!code-csharp[System.String.Format#24](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa3.cs#24)]
+ [!code-csharp-interactive[System.String.Format#24](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa3.cs#24)]
  [!code-vb[System.String.Format#24](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa3.vb#24)]  
   
  However, even escaped braces are easily misinterpreted. We recommend that you include braces in the format list and use format items to insert them in the result string, as the following example shows.  
   
- [!code-csharp[System.String.Format#25](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa3.cs#25)]
+ [!code-csharp-interactive[System.String.Format#25](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa3.cs#25)]
  [!code-vb[System.String.Format#25](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa3.vb#25)]  
   
 ### Why does my call to the String.Format method throw a FormatException?  
- The most common cause of the exception is that the index of a format item doesn't correspond to an object in the format list. Usually this indicates that you've misnumbered the indexes of format items or you've forgotten to include an object in the format list. Occasionally, the exception is the result of a typo; for example, a typical mistake is to mistype "[" (the left bracket) instead of "{" (the left brace).  
+ The most common cause of the exception is that the index of a format item doesn't correspond to an object in the format list. Usually this indicates that you've misnumbered the indexes of format items or you've forgotten to include an object in the format list. Attempting to include an unescaped left or right brace character also throws a <xref:System.FormatException>. Occasionally, the exception is the result of a typo; for example, a typical mistake is to mistype "[" (the left bracket) instead of "{" (the left brace).  
   
 ### If the Format(System.IFormatProvider,System.String,System.Object[]) method supports parameter arrays, why does my code throw an exception when I use an array?  
  For example, the following code throws a <xref:System.FormatException> exception:  
@@ -4591,9 +4595,37 @@
   
  Because neither Visual Basic nor C# can convert an integer array to an object array, you have to perform the conversion yourself before calling the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> method. The following example provides one implementation.  
   
- [!code-csharp[System.String.Format#22](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa2.cs#22)]
+ [!code-csharp-interactive[System.String.Format#22](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa2.cs#22)]
  [!code-vb[System.String.Format#22](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa2.vb#22)]  
-  
+
+## Examples
+
+Numerous examples that call the <xref:System.String.Format%2A> method are interspersed through the [Remarks](#remarks) section of this article. The C# examples are runnable from your browser; just select the **Run** button. The following are some of the examples included in the article:
+
+### Create a format string
+
+[Inserting a string](#inserting-a-string)  
+[The format item](#the-format-item)  
+[Format items that have the same index](#format-items-that-have-the-same-index)
+
+### Control formatted output
+
+[Controlling formatting](#controlling-formatting)  
+[Controlling spacing](#controlling-spacing)  
+[Controlling alignment](#controlling-alignment)  
+[Controlling the number of integral digits](how-do-i-control-the-number-of-integral-digits)  
+[Controlling the number of digits after the decimal separator](#how-do-i-control-the-number-of-digits-after-the-decimal-separator)  
+[Including literal braces in a result string](#braces)  
+
+### Make format strings culture-sensitive
+
+[Culture-sensitive formatting](#culture-sensitive-formatting)  
+
+### Customize the formatting operation
+
+[A custom formatting operation](#example-a-custom-formatting-operation)  
+[An intercept provider and Roman numeral formatter](#example-an-intercept-provider-and-roman-numeral-formatter)  
+
  ]]></format>
         </remarks>
       </Docs>
@@ -4646,7 +4678,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  The following example uses the <xref:System.String.Format%28System.String%2CSystem.Object%29> method to embed an individual's age in the middle of a string.  
   
  [!code-cpp[System.String.Format#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format7.cpp#7)]
- [!code-csharp[System.String.Format#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format7.cs#7)]
+ [!code-csharp-interactive[System.String.Format#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format7.cs#7)]
  [!code-vb[System.String.Format#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format7.vb#7)]  
 
  ]]></format>
@@ -4716,13 +4748,13 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  This example creates a string that contains data on the high and low temperature on a particular date. The composite format string has five format items in the C# example and six in the Visual Basic example. Two of the format items define the width of their corresponding value's string representation, and the first format item also includes a standard date and time format string.  
   
  [!code-cpp[System.String.Format#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format5.cpp#5)]
- [!code-csharp[System.String.Format#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format5.cs#5)]
+ [!code-csharp-interactive[System.String.Format#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format5.cs#5)]
  [!code-vb[System.String.Format#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format5.vb#5)]  
   
  You can also pass the objects to be formatted as an array rather than a an argument list.  
   
  [!code-cpp[System.String.Format#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format_paramarray1.cpp#10)]
- [!code-csharp[System.String.Format#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format_paramarray1.cs#10)]
+ [!code-csharp-interactive[System.String.Format#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format_paramarray1.cs#10)]
  [!code-vb[System.String.Format#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format_paramarray1.vb#10)]  
 
  ]]></format>
@@ -4850,7 +4882,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
 ## Example: Culture-sensitive formatting  
  This example uses the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method to display the string representation of some date and time values and numeric values by using several different cultures.  
   
- [!code-csharp[System.String.Format2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format2/cs/Example2.cs#2)]
+ [!code-csharp-interactive[System.String.Format2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format2/cs/Example2.cs#2)]
  [!code-vb[System.String.Format2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format2/vb/Example2.vb#2)]  
 
  ]]></format>
@@ -4919,7 +4951,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  This example uses the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%29> method to display time and temperature data stored in a generic <xref:System.Collections.Generic.Dictionary%602> object. Note that the format string has three format items, although there are only two objects to format. This is because the first object in the list (a date and time value) is used by two format items: The first format item displays the time, and the second displays the date.  
   
  [!code-cpp[System.String.Format#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatexample4.cpp#6)]
- [!code-csharp[System.String.Format#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatexample4.cs#6)]
+ [!code-csharp-interactive[System.String.Format#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatexample4.cs#6)]
  [!code-vb[System.String.Format#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatexample4.vb#6)]  
     
  ]]></format>
@@ -5045,7 +5077,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  This example uses the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%2CSystem.Object%29> method to create a string that illustrates the result of a Boolean `And` operation with two integer values. Note that the format string includes six format items, but the method has only three items in its parameter list, because each item is formatted in two different ways.  
   
  [!code-cpp[System.String.Format#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format4.cpp#4)]
- [!code-csharp[System.String.Format#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format4.cs#4)]
+ [!code-csharp-interactive[System.String.Format#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format4.cs#4)]
  [!code-vb[System.String.Format#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format4.vb#4)]  
     
  ]]></format>

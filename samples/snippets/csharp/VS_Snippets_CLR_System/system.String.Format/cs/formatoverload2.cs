@@ -17,12 +17,11 @@ public class Example
                          new DateTime(1950, 1, 1), 1849568) };
 
       // Display header
-      string header = String.Format("{0,-12}{1,8}{2,12}{1,8}{2,12}{3,14}\n",
+      var header = String.Format("{0,-12}{1,8}{2,12}{1,8}{2,12}{3,14}\n",
                                     "City", "Year", "Population", "Change (%)");
       Console.WriteLine(header);
-      string output;      
       foreach (var city in cities) {
-         output = String.Format("{0,-12}{1,8:yyyy}{2,12:N0}{3,8:yyyy}{4,12:N0}{5,14:P1}",
+         var output = String.Format("{0,-12}{1,8:yyyy}{2,12:N0}{3,8:yyyy}{4,12:N0}{5,14:P1}",
                                 city.Item1, city.Item2, city.Item3, city.Item4, city.Item5,
                                 (city.Item5 - city.Item3)/ (double)city.Item3);
          Console.WriteLine(output);

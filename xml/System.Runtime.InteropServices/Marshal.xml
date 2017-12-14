@@ -1532,7 +1532,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.CreateWrapperOfType%2A> converts one COM class type, typically the generic `__ComObject` type, to another COM class type. The input COM object, represented by parameter `o`, is a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW).  
+ <xref:System.Runtime.InteropServices.Marshal.CreateWrapperOfType%2A> converts one COM class type, typically the base `__ComObject` type, to another COM class type. The input COM object, represented by parameter `o`, is a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW).  
   
  Both the `t` and `o` parameters must be classes whose signatures are attributed with <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=nameWithType>. The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool applies this attribute for you when it imports a type library. If you create the RCW manually in source code, you should apply this attribute to the managed signature that represents the original coclass to signify its COM origins.  
   
@@ -2129,7 +2129,7 @@
   
  -or-  
   
- The <typeparamref name="T" /> parameter is a generic type.</exception>
+ The <typeparamref name="T" /> parameter is a generic type definition.</exception>
         <exception cref="T:System.InvalidCastException">The <paramref name="o" /> parameter does not support the requested interface.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="o" /> parameter is <see langword="null" />.  
   
@@ -2197,7 +2197,7 @@
   
  -or-  
   
- The <typeparamref name="T" /> parameter is a generic type.</exception>
+ The <typeparamref name="T" /> parameter is a generic type definition.</exception>
         <exception cref="T:System.InvalidCastException">The object <paramref name="o" /> does not support the requested interface.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="o" /> parameter is <see langword="null" />.  
   
@@ -3399,7 +3399,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="obj" /> parameter is a generic type.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="obj" /> parameter is an instance of a generic type.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
@@ -3492,7 +3492,7 @@
 ## Remarks  
  This method wraps `IUnknown` in a managed object. This has the effect of incrementing the reference count of the COM component. The reference count will be decremented when the runtime performs garbage collection on the managed object that represents the COM object.  
   
- The `pUnk` parameter represents an `IUnknown` interface pointer; however, because all COM interfaces derive directly or indirectly from `IUnknown`, you can pass any COM interface to this method. The object returned by <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> is a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), which the common language runtime manages as it does any other managed object. The type of this wrapper is often a generic `System.__ComObject` type, which is a hidden type used when the wrapper type is ambiguous. You can still make late-bound calls to such a generic type as long as the COM object implements the [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) interface. Likewise, you can cast the returned object to an appropriate COM interface.  
+ The `pUnk` parameter represents an `IUnknown` interface pointer; however, because all COM interfaces derive directly or indirectly from `IUnknown`, you can pass any COM interface to this method. The object returned by <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> is a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), which the common language runtime manages as it does any other managed object. The type of this wrapper is often a base `System.__ComObject` type, which is a hidden type used when the wrapper type is ambiguous. You can still make late-bound calls to such a base type as long as the COM object implements the [IDispatch](https://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5(vs.85)) interface. Likewise, you can cast the returned object to an appropriate COM interface.  
   
  For an object to be wrapped with a specific managed class type (and not a generic wrapper type), you must adhere to the following requirements:  
   
@@ -5211,7 +5211,7 @@
   
  -or-  
   
- The <paramref name="structureType" /> parameter is a generic type.</exception>
+ The <paramref name="structureType" /> parameter is a generic type definition.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="structureType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.MissingMethodException">The class specified by <paramref name="structureType" /> does not have an accessible default constructor.</exception>
@@ -7019,7 +7019,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="t" /> parameter is a generic type.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="t" /> parameter is a generic type definition.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="t" /> parameter is <see langword="null" />.</exception>
         <altmember cref="T:System.Runtime.InteropServices.CharSet" />
       </Docs>
@@ -7578,7 +7578,7 @@
   
  -or-  
   
- <paramref name="structure" /> is a generic type.</exception>
+ <paramref name="structure" /> is an instance of a generic type (in the .NET Framework 4.5 and earlier versions only). </exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="M:System.Runtime.InteropServices.Marshal.DestroyStructure(System.IntPtr,System.Type)" />
         <altmember cref="T:System.Runtime.InteropServices.GCHandle" />

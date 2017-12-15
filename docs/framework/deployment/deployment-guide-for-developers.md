@@ -40,7 +40,7 @@ For download links, see the section [Redistributable Packages](#redistributable-
 > [!NOTE]
 > The phrase "the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases"  refers to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and all later versions.
 
-- Versions of the .NET Framework from the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] through the [!INCLUDE[net_current]](../../../includes/net-current-version.md) are in-place updates to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], which means they use the same runtime version, but the assembly versions are updated and include new types and members.
+- Versions of the .NET Framework from the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] through the [!INCLUDE[net_current](../../../includes/net-current-version.md)] are in-place updates to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], which means they use the same runtime version, but the assembly versions are updated and include new types and members.
 
 - The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases are built incrementally on the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. When you install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or its point releases on a system that has the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] installed, the version 4 assemblies are replaced with newer versions.
 

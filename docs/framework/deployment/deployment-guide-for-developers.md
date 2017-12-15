@@ -1,7 +1,7 @@
 ---
 title: ".NET Framework deployment guide for developers"
 ms.custom: "updateeachrelease"
-ms.date: "10/17/2017"
+ms.date: "12/14/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
@@ -15,7 +15,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # .NET Framework deployment guide for developers
-This topic provides information for developers who want to install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], 4.5.1, 4.5.2, the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], 4.6.1, 4.6.2, or the .NET Framework 4.7 or 4.7.1 with their apps.
+This topic provides information for developers who want to install any version of the .NET Framework from the .NET Framework 4.5 to the [!INCLUDE[net_current](../../../includes/net-current-version.md)] with their apps.
 
 For download links, see the section [Redistributable Packages](#redistributable-packages). You can also download the redistributable packages and language packs from these Microsoft Download Center pages:
 
@@ -40,9 +40,9 @@ For download links, see the section [Redistributable Packages](#redistributable-
 > [!NOTE]
 > The phrase "the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases"  refers to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and all later versions.
 
-- The [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, and 4.7.1 are in-place updates to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], which means they use the same runtime version, but the assembly versions are updated and include new types and members.
+- Versions of the .NET Framework from the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] through the [!INCLUDE[net_current](../../../includes/net-current-version.md)] are in-place updates to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], which means they use the same runtime version, but the assembly versions are updated and include new types and members.
 
-- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases are built incrementally on the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. When you install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, or 4.7.1 on a system that has the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] installed, the version 4 assemblies are replaced with newer versions.
+- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases are built incrementally on the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. When you install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or its point releases on a system that has the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] installed, the version 4 assemblies are replaced with newer versions.
 
 - If you are referencing a Microsoft [out-of-band package](http://msdn.microsoft.com/library/dn151288\(v=vs.110\).aspx) in your app, the assembly will be included in the app package.
 
@@ -338,7 +338,7 @@ NDP451-KB2858728-x86-x64-AllOS-JPN.exe/q /norestart /ChainingPackage <ProductNam
 - [Windows Update Agent result codes](http://go.microsoft.com/fwlink/?LinkId=180951)
 
 ## Uninstalling the .NET Framework
- Starting with [!INCLUDE[win8](../../../includes/win8-md.md)], you can uninstall the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, or 4.7.1 by using **Turn Windows features on and off** in Control Panel. In older versions of Windows, you can uninstall the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, or 4.7.1 by using **Add or Remove Programs** in Control Panel.
+ Starting with [!INCLUDE[win8](../../../includes/win8-md.md)], you can uninstall the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or one of its point releases by using **Turn Windows features on and off** in Control Panel. In older versions of Windows, you can uninstall the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or one of its point releases by using **Add or Remove Programs** in Control Panel.
 
 > [!IMPORTANT]
 > For Windows 7 and earlier operating systems, uninstalling the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, or 4.7.1 doesn't restore [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] files, and uninstalling the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] doesn't restore [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] files. If you want to go back to the older version, you must reinstall it and any updates to it.

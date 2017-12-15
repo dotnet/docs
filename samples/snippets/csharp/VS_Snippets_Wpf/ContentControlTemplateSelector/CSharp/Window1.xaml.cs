@@ -40,21 +40,8 @@ namespace ContentControlNew
             //null value will be used in design mode
             if (item == null) return null;
 
-            if (!(item is string numberStr))
-                throw new ArgumentNullException(nameof(item),
-                    "This TemplateSelector can be used to format strings only");
-
-            int num;
-            try
-            {
-                num = Convert.ToInt32(numberStr);
-            }
-            catch (FormatException formatException)
-            {
-                throw new FormatException(
-                    "All strings must be convertible to numbers only", formatException);
-            }
-
+            var num = Convert.ToInt32((string)item);
+            
             // Select one of the DataTemplate objects, based on the 
             // value of the selected item in the ComboBox.
             if (num < 5)

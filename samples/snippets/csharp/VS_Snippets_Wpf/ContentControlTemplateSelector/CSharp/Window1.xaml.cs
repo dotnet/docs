@@ -32,40 +32,40 @@ namespace ContentControlNew
     //<Snippet2>
     public class NumderDataTemplateSelector : DataTemplateSelector
     {
+        public DataTemplate NumberTemplate { get; set; }
+        public DataTemplate LargeNumberTemplate { get; set; }
+
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
-            string numberStr = item as string;
+            //null value will be used in design mode
+            if (item == null) return null;
 
-            if (numberStr != null)
+            if (!(item is string numberStr))
+                throw new ArgumentNullException(nameof(item),
+                    "This TemplateSelector can be used to format strings only");
+
+            int num;
+            try
             {
-                int num;
-                Window win = Application.Current.MainWindow;
-
-                try
-                {
-                    num = Convert.ToInt32(numberStr);
-                }
-                catch
-                {
-                    return null;
-                }
-
-                // Select one of the DataTemplate objects, based on the 
-                // value of the selected item in the ComboBox.
-                if (num < 5)
-                {
-                    return win.FindResource("numberTemplate") as DataTemplate;
-                }
-                else
-                {
-                    return win.FindResource("largeNumberTemplate") as DataTemplate;
-
-                }
+                num = Convert.ToInt32(numberStr);
+            }
+            catch (FormatException formatException)
+            {
+                throw new FormatException(
+                    "All strings must be convertible to numbers only", formatException);
             }
 
-            return null;
+            // Select one of the DataTemplate objects, based on the 
+            // value of the selected item in the ComboBox.
+            if (num < 5)
+            {
+                return NumberTemplate;
+            }
+            else
+            {
+                return LargeNumberTemplate;
+            }
         }
-
     }
     //</Snippet2>
 }

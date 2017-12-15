@@ -649,8 +649,6 @@ ChildInNoNamespace element is in no namespace
 ## Remarks  
  This operator enables the common idiom of combining a namespace and a local name in the construction of an element or attribute. This idiom provides some of the benefits of having namespace prefixes, in that you can refer to a namespace using a variable that is short. This eliminates syntactic noise in the code that creates XML trees.  
   
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
-  
 ## Examples  
  The following example shows the use of the `+` operator to create an <xref:System.Xml.Linq.XName> from an <xref:System.Xml.Linq.XNamespace> and a local name.  
   
@@ -736,9 +734,7 @@ End Module
   
 ## Remarks  
  The operator overloads `==` and `!=` are provided to enable comparisons between <xref:System.Xml.Linq.XNamespace> and string (for example, `element.Name.Namespace == "http://www.adventure-works.com"`). The predefined reference equality operators in C# require one operand to be convertible to the type of the other through reference conversions only, and do not consider the implicit conversion from string to <xref:System.Xml.Linq.XNamespace>.  
-  
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
-  
+   
 ## Examples  
  The following example shows the comparison of an <xref:System.Xml.Linq.XNamespace> and a string.  
   
@@ -804,9 +800,7 @@ True
         <summary>Converts a string containing a Uniform Resource Identifier (URI) to an <see cref="T:System.Xml.Linq.XNamespace" />.</summary>
         <returns>An <see cref="T:System.Xml.Linq.XNamespace" /> constructed from the URI string.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example shows the initialization of an <xref:System.Xml.Linq.XNamespace> variable by assigning a string to it.  
   
 ```csharp  
@@ -871,9 +865,7 @@ http://www.adventure-works.com
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The operator overloads `==` and `!=` are provided to enable comparisons between <xref:System.Xml.Linq.XNamespace> and string (for example, `element.Name.Namespace == "http://www.adventure-works.com"`). The predefined reference equality operators in C# require one operand to be convertible to the type of the other through reference conversions only, and do not consider the implicit conversion from string to <xref:System.Xml.Linq.XNamespace>.  
-  
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+ The operator overloads `==` and `!=` are provided to enable comparisons between <xref:System.Xml.Linq.XNamespace> and string (for example, `element.Name.Namespace == "http://www.adventure-works.com"`). The predefined reference equality operators in C# require one operand to be convertible to the type of the other through reference conversions only, and do not consider the implicit conversion from string to <xref:System.Xml.Linq.XNamespace>.   
   
 ## Examples  
  The following example shows a comparison of a <xref:System.Xml.Linq.XNamespace> to a string.  

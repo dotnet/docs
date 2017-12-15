@@ -675,8 +675,6 @@ http://www.adventure-works.com
 ## Remarks  
  The operator overloads `==` and `!=` are included to enable comparisons between <xref:System.Xml.Linq.XName> and a `string`, such as`element.Name == "SomeElementName"`. The predefined reference equality operators in C# require one operand to be convertible to the type of the other through reference conversions only. These operators do not consider the implicit conversion from string to <xref:System.Xml.Linq.XName>.  
   
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
-  
 ## Examples  
  The following example shows some comparisons between <xref:System.Xml.Linq.XName> objects and strings.  
   
@@ -757,8 +755,6 @@ True
 ## Remarks  
  You are using this implicit operator when you create an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute> by passing a string to the appropriate constructor.  
   
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
-  
 ## Examples  
  The following example creates an <xref:System.Xml.Linq.XName> by assigning a string to it, which invokes this implicit conversion operator.  
   
@@ -838,8 +834,6 @@ End Module
   
 ## Remarks  
  The operator overloads `==` and `!=` are included to enable comparisons between <xref:System.Xml.Linq.XName> and a string, such as`element.Name == "SomeElementName"`. The predefined reference equality operators in C# require one operand to be convertible to the type of the other through reference conversions only. These operators do not consider the implicit conversion from string to <xref:System.Xml.Linq.XName>.  
-  
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
   
 ## Examples  
  The following C# example compares an <xref:System.Xml.Linq.XName> object to a string, which invokes this operator.  

@@ -128,18 +128,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An example of the default string is, Call `{0}` at `{1}` right now!! where the system replaces `{0}` with the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property of the <xref:System.Web.UI.MobileControls.PhoneCall> object (the `innerText` of the element on the page), and `{1}` with the value of the <xref:System.Web.UI.MobileControls.PhoneCall.PhoneNumber%2A> property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to add several phone numbers to a <xref:System.Web.UI.MobileControls.Panel> on your page, and shows two forms of <xref:System.Web.UI.MobileControls.PhoneCall.AlternateFormat%2A>.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
-  
-<!-- TODO: review snippet reference  [!CODE [MobilePhoneCall#1](MobilePhoneCall#1)]  
-  
+ An example of the default string is, Call `{0}` at `{1}` right now!! where the system replaces `{0}` with the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property of the <xref:System.Web.UI.MobileControls.PhoneCall> object (the `innerText` of the element on the page), and `{1}` with the value of the <xref:System.Web.UI.MobileControls.PhoneCall.PhoneNumber%2A> property.
+    
  ]]></format>
         </remarks>
       </Docs>
@@ -178,16 +168,6 @@
   
 > [!NOTE]
 >  This property is only used on devices that are unable to originate telephone calls as an alternative location for navigation purposes.  
-  
-   
-  
-## Examples  
- This example shows how to add several phone numbers to a <xref:System.Web.UI.MobileControls.Panel> on your page. One <xref:System.Web.UI.MobileControls.PhoneCall> control has an <xref:System.Web.UI.MobileControls.PhoneCall.AlternateUrl%2A> for devices that cannot make a phone call.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
-  
-<!-- TODO: review snippet reference  [!CODE [MobilePhoneCall#1](MobilePhoneCall#1)]  
   
  ]]></format>
         </remarks>

@@ -618,9 +618,7 @@
   
 -   Permanent keys determine equality based on the values of the contained key properties and the <xref:System.Data.Metadata.Edm.EntitySet>. That is, you can have two separate <xref:System.Data.EntityKey> instances that are equal if their entity sets are the same and their key values are equal.  
   
- In addition, temporary keys have no <xref:System.Data.Metadata.Edm.EntitySet> or key values, but regular keys do.  
-  
- The equivalent method for this operator is <xref:System.Data.EntityKey.Compare%28System.Data.EntityKey%2CSystem.Data.EntityKey%29?displayProperty=fullName>]]></format>
+ In addition, temporary keys have no <xref:System.Data.Metadata.Edm.EntitySet> or key values, but regular keys do.]]></format>
         </remarks>
       </Docs>
     </Member>

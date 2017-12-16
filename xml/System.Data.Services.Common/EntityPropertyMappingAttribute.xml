@@ -297,7 +297,7 @@
 ## Remarks  
  If mapping to syndication content, this property is the content type of syndication item.  
   
- When you specify a value of <xref:System.Data.Services.Common.SyndicationTextContentKind.xhtml> for the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetTextContentKind%2A> attribute, you must ensure that the property value contains properly formatted XML. The data service returns the value without performing any transformations. You must also ensure that any XML element prefixes in the returned XML have a namespace URI and prefix defined in the mapped feed.  
+ When you specify a value of <xref:System.Data.Services.Common.SyndicationTextContentKind.Xhtml> for the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetTextContentKind%2A> attribute, you must ensure that the property value contains properly formatted XML. The data service returns the value without performing any transformations. You must also ensure that any XML element prefixes in the returned XML have a namespace URI and prefix defined in the mapped feed.  
   
  ]]></format>
         </remarks>

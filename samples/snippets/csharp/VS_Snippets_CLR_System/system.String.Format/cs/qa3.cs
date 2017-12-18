@@ -35,8 +35,8 @@ public class Example
       // <Snippet24>
       result = String.Format("The text has {0} '{{' characters and {1} '}}' characters.",
                              nOpen, nClose);
-      // </Snippet24>
       Console.WriteLine(result);
+      // </Snippet24>
    }
    
    public static void Recommended()
@@ -47,7 +47,7 @@ public class Example
       // <Snippet25>
       result = String.Format("The text has {0} '{1}' characters and {2} '{3}' characters.",
                              nOpen, "{", nClose, "}");
-      // </Snippet25>
       Console.WriteLine(result);
+      // </Snippet25>
    }
 }

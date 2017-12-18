@@ -25,7 +25,7 @@ Module Module1
     Private Function GetConnectionString() As String
         ' To avoid storing the connection string in your code,  
         ' you can retrieve it from a configuration file, using the
-        ' System.Configuration.ConfigurationSettings.AppSettings property
+        ' System.Configuration.ConfigurationManager.ConnectionStrings property
         Return "Data Source=(local);Database=AdventureWorks;" _
           & "Integrated Security=SSPI;"
     End Function

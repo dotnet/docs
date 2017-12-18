@@ -26,7 +26,7 @@ class Program
     {
         // To avoid storing the connection string in your code, 
         // you can retrieve it from a configuration file, using the 
-        // System.Configuration.ConfigurationSettings.AppSettings property 
+        // System.Configuration.ConfigurationManager.ConnectionStrings property 
         return "Data Source=(local);Initial Catalog=AdventureWorks;"
             + "Integrated Security=SSPI;";
     }

@@ -1,0 +1,4 @@
+
+However, when calling the **String.Format** method, it is not necessary to focus on the particular overload that you want to call. Instead, you can call the method with a [composite format string](~/docs/standard/base-types/composite-formatting.md) that includes one or more format items. You assign each format item a numeric index; the first index starts at 0. In addition to the initial string, your method call should have as many additional arguments as it has index values. For example, a string whose format items have indexes of 0 and 1 should have 2 arguments; one with indexes 0 through 5 should have 6 arguments. Your language compiler will then resolve your method call to a particular overload of the **String.Format** method.   
+ 
+For more detailed documentation on using the **String.Format** method, see [Getting started with the String.Format method](#Starting) and [Which method do I call?](#FTaskList).    

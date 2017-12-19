@@ -202,7 +202,7 @@ method uses the `yield return` statement to create the requested sequence.
 ## Deeper Dive into `foreach`
 
 The `foreach` statement expands into a standard idiom that uses the
-`IEnumable<T>` and `IEnumerator<T>` interfaces to iterate across all
+`IEnumerable<T>` and `IEnumerator<T>` interfaces to iterate across all
 elements of a collection. It also  minimizes errors developers make
 by not properly managing resources. 
 

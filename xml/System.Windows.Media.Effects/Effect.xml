@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class Effect : System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract Effect extends System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.Effect" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Effect&#xA;Inherits Animatable" />
+  <TypeSignature Language="F#" Value="type Effect = class&#xA;    inherit Animatable&#xA;    interface DUCE.IResource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,7 @@
       <MemberSignature Language="C#" Value="protected Effect ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.Effect.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.Effect Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.Effect Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.Effect.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Effect" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Effects.Effect" Usage="effect.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +82,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.Effect CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.Effect CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.Effect.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Effect" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Effects.Effect" Usage="effect.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,9 +110,11 @@
       </Docs>
     </Member>
     <Member MemberName="EffectMapping">
-      <MemberSignature Language="C#" Value="protected virtual System.Windows.Media.GeneralTransform EffectMapping { get; }" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Windows.Media.GeneralTransform EffectMapping { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.GeneralTransform EffectMapping" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.Effect.EffectMapping" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property EffectMapping As GeneralTransform" />
+      <MemberSignature Language="F#" Value="member this.EffectMapping : System.Windows.Media.GeneralTransform" Usage="System.Windows.Media.Effects.Effect.EffectMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -141,6 +150,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Brush ImplicitInput { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Brush ImplicitInput" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.Effect.ImplicitInput" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ImplicitInput As Brush" />
+      <MemberSignature Language="F#" Value="member this.ImplicitInput : System.Windows.Media.Brush" Usage="System.Windows.Media.Effects.Effect.ImplicitInput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

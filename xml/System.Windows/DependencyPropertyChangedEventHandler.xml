@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void DependencyPropertyChangedEventHandler(object sender, DependencyPropertyChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DependencyPropertyChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.DependencyPropertyChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DependencyPropertyChangedEventHandler(sender As Object, e As DependencyPropertyChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type DependencyPropertyChangedEventHandler = delegate of obj * DependencyPropertyChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

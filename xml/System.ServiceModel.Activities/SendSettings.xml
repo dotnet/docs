@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SendSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SendSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.SendSettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SendSettings" />
+  <TypeSignature Language="F#" Value="type SendSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public SendSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Endpoint Endpoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Endpoint Endpoint" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.Endpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property Endpoint As Endpoint" />
+      <MemberSignature Language="F#" Value="member this.Endpoint : System.ServiceModel.Endpoint with get, set" Usage="System.ServiceModel.Activities.SendSettings.Endpoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="public Uri EndpointAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri EndpointAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.EndpointAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndpointAddress As Uri" />
+      <MemberSignature Language="F#" Value="member this.EndpointAddress : Uri with get, set" Usage="System.ServiceModel.Activities.SendSettings.EndpointAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -70,6 +77,8 @@
       <MemberSignature Language="C#" Value="public string EndpointConfigurationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EndpointConfigurationName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.EndpointConfigurationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndpointConfigurationName As String" />
+      <MemberSignature Language="F#" Value="member this.EndpointConfigurationName : string with get, set" Usage="System.ServiceModel.Activities.SendSettings.EndpointConfigurationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -88,6 +97,8 @@
       <MemberSignature Language="C#" Value="public bool IsOneWay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOneWay" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.IsOneWay" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsOneWay As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsOneWay : bool with get, set" Usage="System.ServiceModel.Activities.SendSettings.IsOneWay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -107,6 +118,8 @@
       <MemberSignature Language="C#" Value="public string OwnerDisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OwnerDisplayName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.OwnerDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property OwnerDisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.OwnerDisplayName : string with get, set" Usage="System.ServiceModel.Activities.SendSettings.OwnerDisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -125,6 +138,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Net.Security.ProtectionLevel&gt; ProtectionLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Net.Security.ProtectionLevel&gt; ProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.ProtectionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As Nullable(Of ProtectionLevel)" />
+      <MemberSignature Language="F#" Value="member this.ProtectionLevel : Nullable&lt;System.Net.Security.ProtectionLevel&gt; with get, set" Usage="System.ServiceModel.Activities.SendSettings.ProtectionLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -143,6 +158,8 @@
       <MemberSignature Language="C#" Value="public bool RequirePersistBeforeSend { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequirePersistBeforeSend" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.RequirePersistBeforeSend" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequirePersistBeforeSend As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequirePersistBeforeSend : bool with get, set" Usage="System.ServiceModel.Activities.SendSettings.RequirePersistBeforeSend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -162,6 +179,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Principal.TokenImpersonationLevel TokenImpersonationLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Principal.TokenImpersonationLevel TokenImpersonationLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.TokenImpersonationLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property TokenImpersonationLevel As TokenImpersonationLevel" />
+      <MemberSignature Language="F#" Value="member this.TokenImpersonationLevel : System.Security.Principal.TokenImpersonationLevel with get, set" Usage="System.ServiceModel.Activities.SendSettings.TokenImpersonationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

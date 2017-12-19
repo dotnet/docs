@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class LinearInt32KeyFrame : System.Windows.Media.Animation.Int32KeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinearInt32KeyFrame extends System.Windows.Media.Animation.Int32KeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.LinearInt32KeyFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Class LinearInt32KeyFrame&#xA;Inherits Int32KeyFrame" />
+  <TypeSignature Language="F#" Value="type LinearInt32KeyFrame = class&#xA;    inherit Int32KeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,20 @@
     <altmember cref="T:System.Windows.Media.Animation.Int32KeyFrameCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.LinearInt32KeyFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LinearInt32KeyFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearInt32KeyFrame.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +59,8 @@
       <MemberSignature Language="C#" Value="public LinearInt32KeyFrame (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearInt32KeyFrame.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.LinearInt32KeyFrame : int -&gt; System.Windows.Media.Animation.LinearInt32KeyFrame" Usage="new System.Windows.Media.Animation.LinearInt32KeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +79,7 @@
       <MemberSignature Language="C#" Value="public LinearInt32KeyFrame (int value, System.Windows.Media.Animation.KeyTime keyTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearInt32KeyFrame.#ctor(System.Int32,System.Windows.Media.Animation.KeyTime)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.LinearInt32KeyFrame : int * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.LinearInt32KeyFrame" Usage="new System.Windows.Media.Animation.LinearInt32KeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +100,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearInt32KeyFrame.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="linearInt32KeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -105,6 +122,8 @@
       <MemberSignature Language="C#" Value="protected override int InterpolateValueCore (int baseValue, double keyFrameProgress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 InterpolateValueCore(int32 baseValue, float64 keyFrameProgress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearInt32KeyFrame.InterpolateValueCore(System.Int32,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Integer, keyFrameProgress As Double) As Integer" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : int * double -&gt; int" Usage="linearInt32KeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,14 +144,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.LinearInt32KeyFrame" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

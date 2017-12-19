@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class KeyedCollection&lt;TKey,TItem&gt; : System.Collections.ObjectModel.Collection&lt;TItem&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit KeyedCollection`2&lt;TKey, TItem&gt; extends System.Collections.ObjectModel.Collection`1&lt;!TItem&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Collections.ObjectModel.KeyedCollection`2" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class KeyedCollection(Of TKey, TItem)&#xA;Inherits Collection(Of TItem)" />
+  <TypeSignature Language="F#" Value="type KeyedCollection&lt;'Key, 'Item&gt; = class&#xA;    inherit Collection&lt;'Item&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,10 +96,22 @@
     <altmember cref="T:System.Collections.Specialized.StringDictionary" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected KeyedCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -150,6 +164,8 @@
       <MemberSignature Language="C#" Value="protected KeyedCollection (System.Collections.Generic.IEqualityComparer&lt;TKey&gt; comparer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEqualityComparer`1&lt;!TKey&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (comparer As IEqualityComparer(Of TKey))" />
+      <MemberSignature Language="F#" Value="new System.Collections.ObjectModel.KeyedCollection&lt;'Key, 'Item&gt; : System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Collections.ObjectModel.KeyedCollection&lt;'Key, 'Item&gt;" Usage="new System.Collections.ObjectModel.KeyedCollection&lt;'Key, 'Item&gt; comparer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -192,6 +208,8 @@
       <MemberSignature Language="C#" Value="protected KeyedCollection (System.Collections.Generic.IEqualityComparer&lt;TKey&gt; comparer, int dictionaryCreationThreshold);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEqualityComparer`1&lt;!TKey&gt; comparer, int32 dictionaryCreationThreshold) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.#ctor(System.Collections.Generic.IEqualityComparer{`0},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (comparer As IEqualityComparer(Of TKey), dictionaryCreationThreshold As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Collections.ObjectModel.KeyedCollection&lt;'Key, 'Item&gt; : System.Collections.Generic.IEqualityComparer&lt;'Key&gt; * int -&gt; System.Collections.ObjectModel.KeyedCollection&lt;'Key, 'Item&gt;" Usage="new System.Collections.ObjectModel.KeyedCollection&lt;'Key, 'Item&gt; (comparer, dictionaryCreationThreshold)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -257,6 +275,8 @@
       <MemberSignature Language="C#" Value="protected void ChangeItemKey (TItem item, TKey newKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ChangeItemKey(!TItem item, !TKey newKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.ChangeItemKey(`1,`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ChangeItemKey (item As TItem, newKey As TKey)" />
+      <MemberSignature Language="F#" Value="member this.ChangeItemKey : 'Item * 'Key -&gt; unit" Usage="keyedCollection.ChangeItemKey (item, newKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -335,6 +355,8 @@
       <MemberSignature Language="C#" Value="protected override void ClearItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.ClearItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="keyedCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -412,6 +434,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEqualityComparer&lt;TKey&gt; Comparer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEqualityComparer`1&lt;!TKey&gt; Comparer" />
       <MemberSignature Language="DocId" Value="P:System.Collections.ObjectModel.KeyedCollection`2.Comparer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comparer As IEqualityComparer(Of TKey)" />
+      <MemberSignature Language="F#" Value="member this.Comparer : System.Collections.Generic.IEqualityComparer&lt;'Key&gt;" Usage="System.Collections.ObjectModel.KeyedCollection&lt;'Key, 'Item&gt;.Comparer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -448,6 +472,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (TKey key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(!TKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.Contains(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (key As TKey) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Contains : 'Key -&gt; bool" Usage="keyedCollection.Contains key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -505,6 +531,8 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Generic.IDictionary&lt;TKey,TItem&gt; Dictionary { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;!TKey, !TItem&gt; Dictionary" />
       <MemberSignature Language="DocId" Value="P:System.Collections.ObjectModel.KeyedCollection`2.Dictionary" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Dictionary As IDictionary(Of TKey, TItem)" />
+      <MemberSignature Language="F#" Value="member this.Dictionary : System.Collections.Generic.IDictionary&lt;'Key, 'Item&gt;" Usage="System.Collections.ObjectModel.KeyedCollection&lt;'Key, 'Item&gt;.Dictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -556,6 +584,8 @@
       <MemberSignature Language="C#" Value="protected abstract TKey GetKeyForItem (TItem item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance !TKey GetKeyForItem(!TItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.GetKeyForItem(`1)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetKeyForItem (item As TItem) As TKey" />
+      <MemberSignature Language="F#" Value="abstract member GetKeyForItem : 'Item -&gt; 'Key" Usage="keyedCollection.GetKeyForItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -616,6 +646,8 @@
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, TItem item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !TItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.InsertItem(System.Int32,`1)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As TItem)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * 'Item -&gt; unit" Usage="keyedCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -703,6 +735,8 @@
       <MemberSignature Language="C#" Value="public TItem this[TKey key] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TItem Item(!TKey)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.ObjectModel.KeyedCollection`2.Item(`0)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As TKey) As TItem" />
+      <MemberSignature Language="F#" Value="member this.Item('Key) : 'Item" Usage="System.Collections.ObjectModel.KeyedCollection&lt;'Key, 'Item&gt;.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -769,6 +803,8 @@
       <MemberSignature Language="C#" Value="public bool Remove (TKey key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(!TKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.Remove(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (key As TKey) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Remove : 'Key -&gt; bool" Usage="keyedCollection.Remove key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -834,6 +870,8 @@
       <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.RemoveItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="keyedCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -914,6 +952,8 @@
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, TItem item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, !TItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.SetItem(System.Int32,`1)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As TItem)" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * 'Item -&gt; unit" Usage="keyedCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -997,6 +1037,8 @@
       <MemberSignature Language="C#" Value="public bool TryGetValue (TKey key, out TItem item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(!TKey key, [out] !TItem&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.TryGetValue(`0,`1@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (key As TKey, ByRef item As TItem) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetValue : 'Key *  -&gt; bool" Usage="keyedCollection.TryGetValue (key, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -1017,16 +1059,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ObjectModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

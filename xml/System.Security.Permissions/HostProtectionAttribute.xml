@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class HostProtectionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit HostProtectionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.HostProtectionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HostProtectionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type HostProtectionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,10 +65,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.HostProtectionAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HostProtectionAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.HostProtectionAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -94,6 +107,8 @@
       <MemberSignature Language="C#" Value="public HostProtectionAttribute (System.Security.Permissions.SecurityAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.HostProtectionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.HostProtectionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.HostProtectionAttribute" Usage="new System.Security.Permissions.HostProtectionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -126,6 +141,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.HostProtectionAttribute.CreatePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="hostProtectionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -159,6 +176,8 @@
       <MemberSignature Language="C#" Value="public bool ExternalProcessMgmt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExternalProcessMgmt" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.HostProtectionAttribute.ExternalProcessMgmt" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExternalProcessMgmt As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ExternalProcessMgmt : bool with get, set" Usage="System.Security.Permissions.HostProtectionAttribute.ExternalProcessMgmt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -200,6 +219,8 @@
       <MemberSignature Language="C#" Value="public bool ExternalThreading { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExternalThreading" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.HostProtectionAttribute.ExternalThreading" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExternalThreading As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ExternalThreading : bool with get, set" Usage="System.Security.Permissions.HostProtectionAttribute.ExternalThreading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -241,6 +262,8 @@
       <MemberSignature Language="C#" Value="public bool MayLeakOnAbort { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MayLeakOnAbort" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.HostProtectionAttribute.MayLeakOnAbort" />
+      <MemberSignature Language="VB.NET" Value="Public Property MayLeakOnAbort As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MayLeakOnAbort : bool with get, set" Usage="System.Security.Permissions.HostProtectionAttribute.MayLeakOnAbort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -273,6 +296,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Permissions.HostProtectionResource Resources { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.HostProtectionResource Resources" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.HostProtectionAttribute.Resources" />
+      <MemberSignature Language="VB.NET" Value="Public Property Resources As HostProtectionResource" />
+      <MemberSignature Language="F#" Value="member this.Resources : System.Security.Permissions.HostProtectionResource with get, set" Usage="System.Security.Permissions.HostProtectionAttribute.Resources" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -313,6 +338,8 @@
       <MemberSignature Language="C#" Value="public bool SecurityInfrastructure { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SecurityInfrastructure" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.HostProtectionAttribute.SecurityInfrastructure" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecurityInfrastructure As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SecurityInfrastructure : bool with get, set" Usage="System.Security.Permissions.HostProtectionAttribute.SecurityInfrastructure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -359,6 +386,8 @@
       <MemberSignature Language="C#" Value="public bool SelfAffectingProcessMgmt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SelfAffectingProcessMgmt" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.HostProtectionAttribute.SelfAffectingProcessMgmt" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelfAffectingProcessMgmt As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SelfAffectingProcessMgmt : bool with get, set" Usage="System.Security.Permissions.HostProtectionAttribute.SelfAffectingProcessMgmt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -400,6 +429,8 @@
       <MemberSignature Language="C#" Value="public bool SelfAffectingThreading { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SelfAffectingThreading" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.HostProtectionAttribute.SelfAffectingThreading" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelfAffectingThreading As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SelfAffectingThreading : bool with get, set" Usage="System.Security.Permissions.HostProtectionAttribute.SelfAffectingThreading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -441,6 +472,8 @@
       <MemberSignature Language="C#" Value="public bool SharedState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SharedState" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.HostProtectionAttribute.SharedState" />
+      <MemberSignature Language="VB.NET" Value="Public Property SharedState As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SharedState : bool with get, set" Usage="System.Security.Permissions.HostProtectionAttribute.SharedState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -482,6 +515,8 @@
       <MemberSignature Language="C#" Value="public bool Synchronization { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Synchronization" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.HostProtectionAttribute.Synchronization" />
+      <MemberSignature Language="VB.NET" Value="Public Property Synchronization As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Synchronization : bool with get, set" Usage="System.Security.Permissions.HostProtectionAttribute.Synchronization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -518,6 +553,8 @@
       <MemberSignature Language="C#" Value="public bool UI { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UI" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.HostProtectionAttribute.UI" />
+      <MemberSignature Language="VB.NET" Value="Public Property UI As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UI : bool with get, set" Usage="System.Security.Permissions.HostProtectionAttribute.UI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -550,15 +587,5 @@
         <altmember cref="F:System.Security.Permissions.HostProtectionResource.UI" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.HostProtectionAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

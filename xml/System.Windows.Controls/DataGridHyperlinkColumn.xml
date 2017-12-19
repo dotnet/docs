@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class DataGridHyperlinkColumn : System.Windows.Controls.DataGridBoundColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DataGridHyperlinkColumn extends System.Windows.Controls.DataGridBoundColumn" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridHyperlinkColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridHyperlinkColumn&#xA;Inherits DataGridBoundColumn" />
+  <TypeSignature Language="F#" Value="type DataGridHyperlinkColumn = class&#xA;    inherit DataGridBoundColumn" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +70,7 @@
       <MemberSignature Language="C#" Value="public DataGridHyperlinkColumn ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridHyperlinkColumn.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -83,6 +86,8 @@
       <MemberSignature Language="C#" Value="protected override void CancelCellEdit (System.Windows.FrameworkElement editingElement, object uneditedValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CancelCellEdit(class System.Windows.FrameworkElement editingElement, object uneditedValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridHyperlinkColumn.CancelCellEdit(System.Windows.FrameworkElement,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CancelCellEdit (editingElement As FrameworkElement, uneditedValue As Object)" />
+      <MemberSignature Language="F#" Value="override this.CancelCellEdit : System.Windows.FrameworkElement * obj -&gt; unit" Usage="dataGridHyperlinkColumn.CancelCellEdit (editingElement, uneditedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -106,6 +111,8 @@
       <MemberSignature Language="C#" Value="protected override bool CommitCellEdit (System.Windows.FrameworkElement editingElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CommitCellEdit(class System.Windows.FrameworkElement editingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridHyperlinkColumn.CommitCellEdit(System.Windows.FrameworkElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CommitCellEdit (editingElement As FrameworkElement) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CommitCellEdit : System.Windows.FrameworkElement -&gt; bool" Usage="dataGridHyperlinkColumn.CommitCellEdit editingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -129,6 +136,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Data.BindingBase ContentBinding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.BindingBase ContentBinding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridHyperlinkColumn.ContentBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentBinding As BindingBase" />
+      <MemberSignature Language="F#" Value="member this.ContentBinding : System.Windows.Data.BindingBase with get, set" Usage="System.Windows.Controls.DataGridHyperlinkColumn.ContentBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -154,6 +163,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Style DefaultEditingElementStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Style DefaultEditingElementStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridHyperlinkColumn.DefaultEditingElementStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultEditingElementStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.DefaultEditingElementStyle : System.Windows.Style" Usage="System.Windows.Controls.DataGridHyperlinkColumn.DefaultEditingElementStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -172,6 +183,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Style DefaultElementStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Style DefaultElementStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridHyperlinkColumn.DefaultElementStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultElementStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.DefaultElementStyle : System.Windows.Style" Usage="System.Windows.Controls.DataGridHyperlinkColumn.DefaultElementStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -190,6 +203,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.FrameworkElement GenerateEditingElement (System.Windows.Controls.DataGridCell cell, object dataItem);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.FrameworkElement GenerateEditingElement(class System.Windows.Controls.DataGridCell cell, object dataItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridHyperlinkColumn.GenerateEditingElement(System.Windows.Controls.DataGridCell,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateEditingElement (cell As DataGridCell, dataItem As Object) As FrameworkElement" />
+      <MemberSignature Language="F#" Value="override this.GenerateEditingElement : System.Windows.Controls.DataGridCell * obj -&gt; System.Windows.FrameworkElement" Usage="dataGridHyperlinkColumn.GenerateEditingElement (cell, dataItem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -214,6 +229,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.FrameworkElement GenerateElement (System.Windows.Controls.DataGridCell cell, object dataItem);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.FrameworkElement GenerateElement(class System.Windows.Controls.DataGridCell cell, object dataItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridHyperlinkColumn.GenerateElement(System.Windows.Controls.DataGridCell,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateElement (cell As DataGridCell, dataItem As Object) As FrameworkElement" />
+      <MemberSignature Language="F#" Value="override this.GenerateElement : System.Windows.Controls.DataGridCell * obj -&gt; System.Windows.FrameworkElement" Usage="dataGridHyperlinkColumn.GenerateElement (cell, dataItem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -238,6 +255,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnContentBindingChanged (System.Windows.Data.BindingBase oldBinding, System.Windows.Data.BindingBase newBinding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnContentBindingChanged(class System.Windows.Data.BindingBase oldBinding, class System.Windows.Data.BindingBase newBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridHyperlinkColumn.OnContentBindingChanged(System.Windows.Data.BindingBase,System.Windows.Data.BindingBase)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContentBindingChanged (oldBinding As BindingBase, newBinding As BindingBase)" />
+      <MemberSignature Language="F#" Value="abstract member OnContentBindingChanged : System.Windows.Data.BindingBase * System.Windows.Data.BindingBase -&gt; unit&#xA;override this.OnContentBindingChanged : System.Windows.Data.BindingBase * System.Windows.Data.BindingBase -&gt; unit" Usage="dataGridHyperlinkColumn.OnContentBindingChanged (oldBinding, newBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -268,6 +287,8 @@
       <MemberSignature Language="C#" Value="protected override object PrepareCellForEdit (System.Windows.FrameworkElement editingElement, System.Windows.RoutedEventArgs editingEventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object PrepareCellForEdit(class System.Windows.FrameworkElement editingElement, class System.Windows.RoutedEventArgs editingEventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridHyperlinkColumn.PrepareCellForEdit(System.Windows.FrameworkElement,System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PrepareCellForEdit (editingElement As FrameworkElement, editingEventArgs As RoutedEventArgs) As Object" />
+      <MemberSignature Language="F#" Value="override this.PrepareCellForEdit : System.Windows.FrameworkElement * System.Windows.RoutedEventArgs -&gt; obj" Usage="dataGridHyperlinkColumn.PrepareCellForEdit (editingElement, editingEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -289,9 +310,11 @@
       </Docs>
     </Member>
     <Member MemberName="RefreshCellContent">
-      <MemberSignature Language="C#" Value="protected override void RefreshCellContent (System.Windows.FrameworkElement element, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal override void RefreshCellContent (System.Windows.FrameworkElement element, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RefreshCellContent(class System.Windows.FrameworkElement element, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridHyperlinkColumn.RefreshCellContent(System.Windows.FrameworkElement,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RefreshCellContent (element As FrameworkElement, propertyName As String)" />
+      <MemberSignature Language="F#" Value="override this.RefreshCellContent : System.Windows.FrameworkElement * string -&gt; unit" Usage="dataGridHyperlinkColumn.RefreshCellContent (element, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -315,6 +338,8 @@
       <MemberSignature Language="C#" Value="public string TargetName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridHyperlinkColumn.TargetName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetName As String" />
+      <MemberSignature Language="F#" Value="member this.TargetName : string with get, set" Usage="System.Windows.Controls.DataGridHyperlinkColumn.TargetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -340,6 +365,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TargetNameProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TargetNameProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridHyperlinkColumn.TargetNameProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetNameProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TargetNameProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridHyperlinkColumn.TargetNameProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

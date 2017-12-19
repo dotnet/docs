@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class DependencyAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DependencyAccessor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.DependencyAccessor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DependencyAccessor" />
+  <TypeSignature Language="F#" Value="type DependencyAccessor = class" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Hosting</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -21,6 +23,7 @@
       <MemberSignature Language="C#" Value="protected DependencyAccessor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.DependencyAccessor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.ExportDescriptorPromise&gt; GetPromises (System.Composition.Hosting.Core.CompositionContract exportKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.ExportDescriptorPromise&gt; GetPromises(class System.Composition.Hosting.Core.CompositionContract exportKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.DependencyAccessor.GetPromises(System.Composition.Hosting.Core.CompositionContract)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetPromises (exportKey As CompositionContract) As IEnumerable(Of ExportDescriptorPromise)" />
+      <MemberSignature Language="F#" Value="abstract member GetPromises : System.Composition.Hosting.Core.CompositionContract -&gt; seq&lt;System.Composition.Hosting.Core.ExportDescriptorPromise&gt;" Usage="dependencyAccessor.GetPromises exportKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -68,6 +73,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt; ResolveDependencies (object site, System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.CompositionDependency&gt; ResolveDependencies(object site, class System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.DependencyAccessor.ResolveDependencies(System.Object,System.Composition.Hosting.Core.CompositionContract,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveDependencies (site As Object, contract As CompositionContract, isPrerequisite As Boolean) As IEnumerable(Of CompositionDependency)" />
+      <MemberSignature Language="F#" Value="member this.ResolveDependencies : obj * System.Composition.Hosting.Core.CompositionContract * bool -&gt; seq&lt;System.Composition.Hosting.Core.CompositionDependency&gt;" Usage="dependencyAccessor.ResolveDependencies (site, contract, isPrerequisite)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -97,6 +104,8 @@
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.Core.CompositionDependency ResolveRequiredDependency (object site, System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.Core.CompositionDependency ResolveRequiredDependency(object site, class System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.DependencyAccessor.ResolveRequiredDependency(System.Object,System.Composition.Hosting.Core.CompositionContract,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveRequiredDependency (site As Object, contract As CompositionContract, isPrerequisite As Boolean) As CompositionDependency" />
+      <MemberSignature Language="F#" Value="member this.ResolveRequiredDependency : obj * System.Composition.Hosting.Core.CompositionContract * bool -&gt; System.Composition.Hosting.Core.CompositionDependency" Usage="dependencyAccessor.ResolveRequiredDependency (site, contract, isPrerequisite)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -126,6 +135,8 @@
       <MemberSignature Language="C#" Value="public bool TryResolveOptionalDependency (object site, System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite, out System.Composition.Hosting.Core.CompositionDependency dependency);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryResolveOptionalDependency(object site, class System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite, [out] class System.Composition.Hosting.Core.CompositionDependency&amp; dependency) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.DependencyAccessor.TryResolveOptionalDependency(System.Object,System.Composition.Hosting.Core.CompositionContract,System.Boolean,System.Composition.Hosting.Core.CompositionDependency@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryResolveOptionalDependency (site As Object, contract As CompositionContract, isPrerequisite As Boolean, ByRef dependency As CompositionDependency) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryResolveOptionalDependency : obj * System.Composition.Hosting.Core.CompositionContract * bool *  -&gt; bool" Usage="dependencyAccessor.TryResolveOptionalDependency (site, contract, isPrerequisite, dependency)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>

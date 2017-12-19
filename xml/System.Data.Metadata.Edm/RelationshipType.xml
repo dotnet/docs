@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class RelationshipType : System.Data.Metadata.Edm.EntityTypeBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RelationshipType extends System.Data.Metadata.Edm.EntityTypeBase" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.RelationshipType" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class RelationshipType&#xA;Inherits EntityTypeBase" />
+  <TypeSignature Language="F#" Value="type RelationshipType = class&#xA;    inherit EntityTypeBase" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.RelationshipEndMember&gt; RelationshipEndMembers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.RelationshipEndMember&gt; RelationshipEndMembers" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.RelationshipType.RelationshipEndMembers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelationshipEndMembers As ReadOnlyMetadataCollection(Of RelationshipEndMember)" />
+      <MemberSignature Language="F#" Value="member this.RelationshipEndMembers : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.RelationshipEndMember&gt;" Usage="System.Data.Metadata.Edm.RelationshipType.RelationshipEndMembers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class FunctionParameter : System.Data.Metadata.Edm.MetadataItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FunctionParameter extends System.Data.Metadata.Edm.MetadataItem" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.FunctionParameter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FunctionParameter&#xA;Inherits MetadataItem" />
+  <TypeSignature Language="F#" Value="type FunctionParameter = class&#xA;    inherit MetadataItem" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public override System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.FunctionParameter.BuiltInTypeKind" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.FunctionParameter.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EdmFunction DeclaringFunction { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EdmFunction DeclaringFunction" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.FunctionParameter.DeclaringFunction" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeclaringFunction As EdmFunction" />
+      <MemberSignature Language="F#" Value="member this.DeclaringFunction : System.Data.Metadata.Edm.EdmFunction" Usage="System.Data.Metadata.Edm.FunctionParameter.DeclaringFunction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -55,6 +61,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ParameterMode Mode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.ParameterMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.FunctionParameter.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mode As ParameterMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Data.Metadata.Edm.ParameterMode" Usage="System.Data.Metadata.Edm.FunctionParameter.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.FunctionParameter.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Metadata.Edm.FunctionParameter.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -91,6 +101,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.FunctionParameter.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="functionParameter.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -110,6 +122,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.TypeUsage TypeUsage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.TypeUsage TypeUsage" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.FunctionParameter.TypeUsage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeUsage As TypeUsage" />
+      <MemberSignature Language="F#" Value="member this.TypeUsage : System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Metadata.Edm.FunctionParameter.TypeUsage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class WSFederationHttpSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WSFederationHttpSecurity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSFederationHttpSecurity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WSFederationHttpSecurity" />
+  <TypeSignature Language="F#" Value="type WSFederationHttpSecurity = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="public WSFederationHttpSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSFederationHttpSecurity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.FederatedMessageSecurityOverHttp Message { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.FederatedMessageSecurityOverHttp Message" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSFederationHttpSecurity.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Property Message As FederatedMessageSecurityOverHttp" />
+      <MemberSignature Language="F#" Value="member this.Message : System.ServiceModel.FederatedMessageSecurityOverHttp with get, set" Usage="System.ServiceModel.WSFederationHttpSecurity.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +79,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.WSFederationHttpSecurityMode Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.WSFederationHttpSecurityMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSFederationHttpSecurity.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As WSFederationHttpSecurityMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.WSFederationHttpSecurityMode with get, set" Usage="System.ServiceModel.WSFederationHttpSecurity.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,6 +120,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeMessage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeMessage() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSFederationHttpSecurity.ShouldSerializeMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMessage () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMessage : unit -&gt; bool" Usage="wSFederationHttpSecurity.ShouldSerializeMessage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,6 +147,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeMode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeMode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSFederationHttpSecurity.ShouldSerializeMode" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMode () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMode : unit -&gt; bool" Usage="wSFederationHttpSecurity.ShouldSerializeMode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

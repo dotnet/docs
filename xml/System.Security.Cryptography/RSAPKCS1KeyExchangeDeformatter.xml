@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class RSAPKCS1KeyExchangeDeformatter : System.Security.Cryptography.AsymmetricKeyExchangeDeformatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RSAPKCS1KeyExchangeDeformatter extends System.Security.Cryptography.AsymmetricKeyExchangeDeformatter" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter" />
+  <TypeSignature Language="VB.NET" Value="Public Class RSAPKCS1KeyExchangeDeformatter&#xA;Inherits AsymmetricKeyExchangeDeformatter" />
+  <TypeSignature Language="F#" Value="type RSAPKCS1KeyExchangeDeformatter = class&#xA;    inherit AsymmetricKeyExchangeDeformatter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,10 +51,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RSAPKCS1KeyExchangeDeformatter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +97,8 @@
       <MemberSignature Language="C#" Value="public RSAPKCS1KeyExchangeDeformatter (System.Security.Cryptography.AsymmetricAlgorithm key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.AsymmetricAlgorithm key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.#ctor(System.Security.Cryptography.AsymmetricAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (key As AsymmetricAlgorithm)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter" Usage="new System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -113,6 +128,8 @@
       <MemberSignature Language="C#" Value="public override byte[] DecryptKeyExchange (byte[] rgbIn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] DecryptKeyExchange(unsigned int8[] rgbIn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.DecryptKeyExchange(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function DecryptKeyExchange (rgbIn As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.DecryptKeyExchange : byte[] -&gt; byte[]" Usage="rSAPKCS1KeyExchangeDeformatter.DecryptKeyExchange rgbIn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -160,6 +177,8 @@
       <MemberSignature Language="C#" Value="public override string Parameters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Parameters As String" />
+      <MemberSignature Language="F#" Value="member this.Parameters : string with get, set" Usage="System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +206,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.RandomNumberGenerator RNG { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.RandomNumberGenerator RNG" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.RNG" />
+      <MemberSignature Language="VB.NET" Value="Public Property RNG As RandomNumberGenerator" />
+      <MemberSignature Language="F#" Value="member this.RNG : System.Security.Cryptography.RandomNumberGenerator with get, set" Usage="System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.RNG" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -214,6 +235,8 @@
       <MemberSignature Language="C#" Value="public override void SetKey (System.Security.Cryptography.AsymmetricAlgorithm key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetKey(class System.Security.Cryptography.AsymmetricAlgorithm key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetKey (key As AsymmetricAlgorithm)" />
+      <MemberSignature Language="F#" Value="override this.SetKey : System.Security.Cryptography.AsymmetricAlgorithm -&gt; unit" Usage="rSAPKCS1KeyExchangeDeformatter.SetKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -249,15 +272,5 @@
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

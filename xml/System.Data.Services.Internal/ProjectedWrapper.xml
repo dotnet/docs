@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class ProjectedWrapper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ProjectedWrapper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Internal.ProjectedWrapper" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProjectedWrapper" />
+  <TypeSignature Language="F#" Value="type ProjectedWrapper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,7 @@
       <MemberSignature Language="C#" Value="protected ProjectedWrapper ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ProjectedWrapper.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public object GetProjectedPropertyValue (string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetProjectedPropertyValue(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ProjectedWrapper.GetProjectedPropertyValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProjectedPropertyValue (propertyName As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetProjectedPropertyValue : string -&gt; obj&#xA;override this.GetProjectedPropertyValue : string -&gt; obj" Usage="projectedWrapper.GetProjectedPropertyValue propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -64,6 +69,8 @@
       <MemberSignature Language="C#" Value="protected abstract object InternalGetProjectedPropertyValue (int propertyIndex);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object InternalGetProjectedPropertyValue(int32 propertyIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ProjectedWrapper.InternalGetProjectedPropertyValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function InternalGetProjectedPropertyValue (propertyIndex As Integer) As Object" />
+      <MemberSignature Language="F#" Value="abstract member InternalGetProjectedPropertyValue : int -&gt; obj" Usage="projectedWrapper.InternalGetProjectedPropertyValue propertyIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -87,6 +94,8 @@
       <MemberSignature Language="C#" Value="public string PropertyNameList { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PropertyNameList" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapper.PropertyNameList" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropertyNameList As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyNameList : string with get, set" Usage="System.Data.Services.Internal.ProjectedWrapper.PropertyNameList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -106,6 +115,8 @@
       <MemberSignature Language="C#" Value="public string ResourceTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResourceTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapper.ResourceTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceTypeName As String" />
+      <MemberSignature Language="F#" Value="member this.ResourceTypeName : string with get, set" Usage="System.Data.Services.Internal.ProjectedWrapper.ResourceTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

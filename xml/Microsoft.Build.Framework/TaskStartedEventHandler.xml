@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void TaskStartedEventHandler(object sender, TaskStartedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TaskStartedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.TaskStartedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub TaskStartedEventHandler(sender As Object, e As TaskStartedEventArgs)" />
+  <TypeSignature Language="F#" Value="type TaskStartedEventHandler = delegate of obj * TaskStartedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

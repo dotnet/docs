@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class PartialTrustVisibleAssembly : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PartialTrustVisibleAssembly extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.PartialTrustVisibleAssembly" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PartialTrustVisibleAssembly&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type PartialTrustVisibleAssembly = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public PartialTrustVisibleAssembly (string assemblyName, string publicKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string assemblyName, string publicKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PartialTrustVisibleAssembly.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyName As String, publicKey As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.PartialTrustVisibleAssembly : string * string -&gt; System.Web.Configuration.PartialTrustVisibleAssembly" Usage="new System.Web.Configuration.PartialTrustVisibleAssembly (assemblyName, publicKey)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public string AssemblyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PartialTrustVisibleAssembly.AssemblyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="System.Web.Configuration.PartialTrustVisibleAssembly.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PartialTrustVisibleAssembly.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.PartialTrustVisibleAssembly.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="public string PublicKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PublicKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PartialTrustVisibleAssembly.PublicKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublicKey As String" />
+      <MemberSignature Language="F#" Value="member this.PublicKey : string with get, set" Usage="System.Web.Configuration.PartialTrustVisibleAssembly.PublicKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

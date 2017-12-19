@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void WritingCompletedEventHandler(object sender, WritingCompletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WritingCompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.WritingCompletedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub WritingCompletedEventHandler(sender As Object, e As WritingCompletedEventArgs)" />
+  <TypeSignature Language="F#" Value="type WritingCompletedEventHandler = delegate of obj * WritingCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void InputEventHandler(object sender, InputEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InputEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub InputEventHandler(sender As Object, e As InputEventArgs)" />
+  <TypeSignature Language="F#" Value="type InputEventHandler = delegate of obj * InputEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

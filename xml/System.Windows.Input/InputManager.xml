@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class InputManager : System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InputManager extends System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InputManager&#xA;Inherits DispatcherObject" />
+  <TypeSignature Language="F#" Value="type InputManager = class&#xA;    inherit DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.InputManager Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.InputManager Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputManager.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As InputManager" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Windows.Input.InputManager" Usage="System.Windows.Input.InputManager.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +83,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler EnterMenuMode;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler EnterMenuMode" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.InputManager.EnterMenuMode" />
+      <MemberSignature Language="VB.NET" Value="Public Event EnterMenuMode As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.EnterMenuMode : EventHandler " Usage="member this.EnterMenuMode : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +109,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler HitTestInvalidatedAsync;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler HitTestInvalidatedAsync" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.InputManager.HitTestInvalidatedAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Event HitTestInvalidatedAsync As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.HitTestInvalidatedAsync : EventHandler " Usage="member this.HitTestInvalidatedAsync : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -120,6 +128,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection InputProviders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection InputProviders" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputManager.InputProviders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputProviders As ICollection" />
+      <MemberSignature Language="F#" Value="member this.InputProviders : System.Collections.ICollection" Usage="System.Windows.Input.InputManager.InputProviders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +154,8 @@
       <MemberSignature Language="C#" Value="public bool IsInMenuMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInMenuMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputManager.IsInMenuMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInMenuMode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInMenuMode : bool" Usage="System.Windows.Input.InputManager.IsInMenuMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -170,6 +182,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler LeaveMenuMode;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LeaveMenuMode" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.InputManager.LeaveMenuMode" />
+      <MemberSignature Language="VB.NET" Value="Public Event LeaveMenuMode As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.LeaveMenuMode : EventHandler " Usage="member this.LeaveMenuMode : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -194,6 +208,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.InputDevice MostRecentInputDevice { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.InputDevice MostRecentInputDevice" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputManager.MostRecentInputDevice" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MostRecentInputDevice As InputDevice" />
+      <MemberSignature Language="F#" Value="member this.MostRecentInputDevice : System.Windows.Input.InputDevice" Usage="System.Windows.Input.InputManager.MostRecentInputDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -212,6 +228,8 @@
       <MemberSignature Language="C#" Value="public void PopMenuMode (System.Windows.PresentationSource menuSite);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PopMenuMode(class System.Windows.PresentationSource menuSite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputManager.PopMenuMode(System.Windows.PresentationSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PopMenuMode (menuSite As PresentationSource)" />
+      <MemberSignature Language="F#" Value="member this.PopMenuMode : System.Windows.PresentationSource -&gt; unit" Usage="inputManager.PopMenuMode menuSite" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -244,6 +262,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Input.NotifyInputEventHandler PostNotifyInput;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.NotifyInputEventHandler PostNotifyInput" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.InputManager.PostNotifyInput" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PostNotifyInput As NotifyInputEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PostNotifyInput : System.Windows.Input.NotifyInputEventHandler " Usage="member this.PostNotifyInput : System.Windows.Input.NotifyInputEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -292,6 +312,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Input.ProcessInputEventHandler PostProcessInput;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.ProcessInputEventHandler PostProcessInput" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.InputManager.PostProcessInput" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PostProcessInput As ProcessInputEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PostProcessInput : System.Windows.Input.ProcessInputEventHandler " Usage="member this.PostProcessInput : System.Windows.Input.ProcessInputEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -340,6 +362,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Input.NotifyInputEventHandler PreNotifyInput;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.NotifyInputEventHandler PreNotifyInput" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.InputManager.PreNotifyInput" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PreNotifyInput As NotifyInputEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PreNotifyInput : System.Windows.Input.NotifyInputEventHandler " Usage="member this.PreNotifyInput : System.Windows.Input.NotifyInputEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -388,6 +412,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Input.PreProcessInputEventHandler PreProcessInput;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.PreProcessInputEventHandler PreProcessInput" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.InputManager.PreProcessInput" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PreProcessInput As PreProcessInputEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PreProcessInput : System.Windows.Input.PreProcessInputEventHandler " Usage="member this.PreProcessInput : System.Windows.Input.PreProcessInputEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -438,6 +464,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.KeyboardDevice PrimaryKeyboardDevice { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.KeyboardDevice PrimaryKeyboardDevice" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputManager.PrimaryKeyboardDevice" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimaryKeyboardDevice As KeyboardDevice" />
+      <MemberSignature Language="F#" Value="member this.PrimaryKeyboardDevice : System.Windows.Input.KeyboardDevice" Usage="System.Windows.Input.InputManager.PrimaryKeyboardDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -457,6 +485,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.MouseDevice PrimaryMouseDevice { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.MouseDevice PrimaryMouseDevice" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputManager.PrimaryMouseDevice" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimaryMouseDevice As MouseDevice" />
+      <MemberSignature Language="F#" Value="member this.PrimaryMouseDevice : System.Windows.Input.MouseDevice" Usage="System.Windows.Input.InputManager.PrimaryMouseDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -476,6 +506,8 @@
       <MemberSignature Language="C#" Value="public bool ProcessInput (System.Windows.Input.InputEventArgs input);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ProcessInput(class System.Windows.Input.InputEventArgs input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputManager.ProcessInput(System.Windows.Input.InputEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessInput (input As InputEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ProcessInput : System.Windows.Input.InputEventArgs -&gt; bool" Usage="inputManager.ProcessInput input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -530,6 +562,8 @@
       <MemberSignature Language="C#" Value="public void PushMenuMode (System.Windows.PresentationSource menuSite);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PushMenuMode(class System.Windows.PresentationSource menuSite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputManager.PushMenuMode(System.Windows.PresentationSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PushMenuMode (menuSite As PresentationSource)" />
+      <MemberSignature Language="F#" Value="member this.PushMenuMode : System.Windows.PresentationSource -&gt; unit" Usage="inputManager.PushMenuMode menuSite" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

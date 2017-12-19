@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class LocalizabilityAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LocalizabilityAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.LocalizabilityAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LocalizabilityAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type LocalizabilityAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public LocalizabilityAttribute (System.Windows.LocalizationCategory category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.LocalizationCategory category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LocalizabilityAttribute.#ctor(System.Windows.LocalizationCategory)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (category As LocalizationCategory)" />
+      <MemberSignature Language="F#" Value="new System.Windows.LocalizabilityAttribute : System.Windows.LocalizationCategory -&gt; System.Windows.LocalizabilityAttribute" Usage="new System.Windows.LocalizabilityAttribute category" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.LocalizationCategory Category { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.LocalizationCategory Category" />
       <MemberSignature Language="DocId" Value="P:System.Windows.LocalizabilityAttribute.Category" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Category As LocalizationCategory" />
+      <MemberSignature Language="F#" Value="member this.Category : System.Windows.LocalizationCategory" Usage="System.Windows.LocalizabilityAttribute.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -106,6 +112,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Modifiability Modifiability { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Modifiability Modifiability" />
       <MemberSignature Language="DocId" Value="P:System.Windows.LocalizabilityAttribute.Modifiability" />
+      <MemberSignature Language="VB.NET" Value="Public Property Modifiability As Modifiability" />
+      <MemberSignature Language="F#" Value="member this.Modifiability : System.Windows.Modifiability with get, set" Usage="System.Windows.LocalizabilityAttribute.Modifiability" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +152,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Readability Readability { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Readability Readability" />
       <MemberSignature Language="DocId" Value="P:System.Windows.LocalizabilityAttribute.Readability" />
+      <MemberSignature Language="VB.NET" Value="Public Property Readability As Readability" />
+      <MemberSignature Language="F#" Value="member this.Readability : System.Windows.Readability with get, set" Usage="System.Windows.LocalizabilityAttribute.Readability" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

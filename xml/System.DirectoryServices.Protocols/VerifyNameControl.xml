@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class VerifyNameControl : System.DirectoryServices.Protocols.DirectoryControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VerifyNameControl extends System.DirectoryServices.Protocols.DirectoryControl" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.VerifyNameControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class VerifyNameControl&#xA;Inherits DirectoryControl" />
+  <TypeSignature Language="F#" Value="type VerifyNameControl = class&#xA;    inherit DirectoryControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.VerifyNameControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.VerifyNameControl" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public VerifyNameControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.VerifyNameControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -36,6 +49,8 @@
       <MemberSignature Language="C#" Value="public VerifyNameControl (string serverName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serverName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.VerifyNameControl.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serverName As String)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.VerifyNameControl : string -&gt; System.DirectoryServices.Protocols.VerifyNameControl" Usage="new System.DirectoryServices.Protocols.VerifyNameControl serverName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -55,6 +70,8 @@
       <MemberSignature Language="C#" Value="public VerifyNameControl (string serverName, int flag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serverName, int32 flag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.VerifyNameControl.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serverName As String, flag As Integer)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.VerifyNameControl : string * int -&gt; System.DirectoryServices.Protocols.VerifyNameControl" Usage="new System.DirectoryServices.Protocols.VerifyNameControl (serverName, flag)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -76,6 +93,8 @@
       <MemberSignature Language="C#" Value="public int Flag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Flag" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.VerifyNameControl.Flag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Flag As Integer" />
+      <MemberSignature Language="F#" Value="member this.Flag : int with get, set" Usage="System.DirectoryServices.Protocols.VerifyNameControl.Flag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -95,6 +114,8 @@
       <MemberSignature Language="C#" Value="public override byte[] GetValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.VerifyNameControl.GetValue" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue () As Byte()" />
+      <MemberSignature Language="F#" Value="override this.GetValue : unit -&gt; byte[]" Usage="verifyNameControl.GetValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -115,6 +136,8 @@
       <MemberSignature Language="C#" Value="public string ServerName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServerName" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.VerifyNameControl.ServerName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerName As String" />
+      <MemberSignature Language="F#" Value="member this.ServerName : string with get, set" Usage="System.DirectoryServices.Protocols.VerifyNameControl.ServerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -130,15 +153,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>The <see cref="M:System.DirectoryServices.Protocols.VerifyNameControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.VerifyNameControl" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

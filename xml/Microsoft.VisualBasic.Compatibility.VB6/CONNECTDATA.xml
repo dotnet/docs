@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public struct CONNECTDATA" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed CONNECTDATA extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA" />
+  <TypeSignature Language="VB.NET" Value="Public Structure CONNECTDATA" />
+  <TypeSignature Language="F#" Value="type CONNECTDATA = struct" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public int cookie;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 cookie" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA.cookie" />
+      <MemberSignature Language="VB.NET" Value="Public cookie As Integer " />
+      <MemberSignature Language="F#" Value="val mutable cookie : int" Usage="Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA.cookie" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public IntPtr pUnk;" />
       <MemberSignature Language="ILAsm" Value=".field public native int pUnk" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA.pUnk" />
+      <MemberSignature Language="VB.NET" Value="Public pUnk As IntPtr " />
+      <MemberSignature Language="F#" Value="val mutable pUnk : nativeint" Usage="Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA.pUnk" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

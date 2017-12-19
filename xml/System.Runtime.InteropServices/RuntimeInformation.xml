@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class RuntimeInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RuntimeInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.RuntimeInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Class RuntimeInformation" />
+  <TypeSignature Language="F#" Value="type RuntimeInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public static string FrameworkDescription { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string FrameworkDescription" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FrameworkDescription As String" />
+      <MemberSignature Language="F#" Value="member this.FrameworkDescription : string" Usage="System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -70,6 +74,7 @@
       <MemberSignature Language="C#" Value="public static bool IsOSPlatform (System.Runtime.InteropServices.OSPlatform osPlatform);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsOSPlatform(valuetype System.Runtime.InteropServices.OSPlatform osPlatform) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform)" />
+      <MemberSignature Language="F#" Value="static member IsOSPlatform : System.Runtime.InteropServices.OSPlatform -&gt; bool" Usage="System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform osPlatform" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -103,6 +108,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.Architecture OSArchitecture { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Runtime.InteropServices.Architecture OSArchitecture" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.RuntimeInformation.OSArchitecture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OSArchitecture As Architecture" />
+      <MemberSignature Language="F#" Value="member this.OSArchitecture : System.Runtime.InteropServices.Architecture" Usage="System.Runtime.InteropServices.RuntimeInformation.OSArchitecture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -131,6 +138,8 @@
       <MemberSignature Language="C#" Value="public static string OSDescription { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string OSDescription" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.RuntimeInformation.OSDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OSDescription As String" />
+      <MemberSignature Language="F#" Value="member this.OSDescription : string" Usage="System.Runtime.InteropServices.RuntimeInformation.OSDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -159,6 +168,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.Architecture ProcessArchitecture { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Runtime.InteropServices.Architecture ProcessArchitecture" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ProcessArchitecture As Architecture" />
+      <MemberSignature Language="F#" Value="member this.ProcessArchitecture : System.Runtime.InteropServices.Architecture" Usage="System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public struct BindingMemberInfo" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BindingMemberInfo extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingMemberInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Structure BindingMemberInfo" />
+  <TypeSignature Language="F#" Value="type BindingMemberInfo = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public BindingMemberInfo (string dataMember);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dataMember) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingMemberInfo.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dataMember As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.BindingMemberInfo : string -&gt; System.Windows.Forms.BindingMemberInfo" Usage="new System.Windows.Forms.BindingMemberInfo dataMember" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public string BindingField { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BindingField" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingMemberInfo.BindingField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingField As String" />
+      <MemberSignature Language="F#" Value="member this.BindingField : string" Usage="System.Windows.Forms.BindingMemberInfo.BindingField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -104,6 +110,8 @@
       <MemberSignature Language="C#" Value="public string BindingMember { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BindingMember" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingMemberInfo.BindingMember" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingMember As String" />
+      <MemberSignature Language="F#" Value="member this.BindingMember : string" Usage="System.Windows.Forms.BindingMemberInfo.BindingMember" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +151,8 @@
       <MemberSignature Language="C#" Value="public string BindingPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BindingPath" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingMemberInfo.BindingPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingPath As String" />
+      <MemberSignature Language="F#" Value="member this.BindingPath : string" Usage="System.Windows.Forms.BindingMemberInfo.BindingPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -180,6 +190,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object otherObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object otherObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingMemberInfo.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (otherObject As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="bindingMemberInfo.Equals otherObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -211,6 +223,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingMemberInfo.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="bindingMemberInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -230,6 +244,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Forms.BindingMemberInfo a, System.Windows.Forms.BindingMemberInfo b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Forms.BindingMemberInfo a, valuetype System.Windows.Forms.BindingMemberInfo b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingMemberInfo.op_Equality(System.Windows.Forms.BindingMemberInfo,System.Windows.Forms.BindingMemberInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As BindingMemberInfo, b As BindingMemberInfo) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Forms.BindingMemberInfo * System.Windows.Forms.BindingMemberInfo -&gt; bool" Usage="a = b" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -257,6 +273,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Forms.BindingMemberInfo a, System.Windows.Forms.BindingMemberInfo b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Forms.BindingMemberInfo a, valuetype System.Windows.Forms.BindingMemberInfo b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingMemberInfo.op_Inequality(System.Windows.Forms.BindingMemberInfo,System.Windows.Forms.BindingMemberInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As BindingMemberInfo, b As BindingMemberInfo) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Forms.BindingMemberInfo * System.Windows.Forms.BindingMemberInfo -&gt; bool" Usage="System.Windows.Forms.BindingMemberInfo.op_Inequality (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

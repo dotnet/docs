@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class GenerateBootstrapper : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GenerateBootstrapper extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.GenerateBootstrapper" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GenerateBootstrapper&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="F#" Value="type GenerateBootstrapper = class&#xA;    inherit TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,7 @@
       <MemberSignature Language="C#" Value="public GenerateBootstrapper ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GenerateBootstrapper.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="public string ApplicationFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.ApplicationFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationFile As String" />
+      <MemberSignature Language="F#" Value="member this.ApplicationFile : string with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.ApplicationFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -55,6 +60,8 @@
       <MemberSignature Language="C#" Value="public string ApplicationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.ApplicationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationName As String" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -81,6 +88,8 @@
       <MemberSignature Language="C#" Value="public bool ApplicationRequiresElevation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ApplicationRequiresElevation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.ApplicationRequiresElevation" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationRequiresElevation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ApplicationRequiresElevation : bool with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.ApplicationRequiresElevation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -109,6 +118,8 @@
       <MemberSignature Language="C#" Value="public string ApplicationUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.ApplicationUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ApplicationUrl : string with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.ApplicationUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -128,6 +139,8 @@
       <MemberSignature Language="C#" Value="public string[] BootstrapperComponentFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] BootstrapperComponentFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.BootstrapperComponentFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property BootstrapperComponentFiles As String()" />
+      <MemberSignature Language="F#" Value="member this.BootstrapperComponentFiles : string[] with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.BootstrapperComponentFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -159,6 +172,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] BootstrapperItems { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] BootstrapperItems" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.BootstrapperItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property BootstrapperItems As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.BootstrapperItems : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.BootstrapperItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -178,6 +193,8 @@
       <MemberSignature Language="C#" Value="public string BootstrapperKeyFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BootstrapperKeyFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.BootstrapperKeyFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property BootstrapperKeyFile As String" />
+      <MemberSignature Language="F#" Value="member this.BootstrapperKeyFile : string with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.BootstrapperKeyFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -202,6 +219,8 @@
       <MemberSignature Language="C#" Value="public string ComponentsLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ComponentsLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.ComponentsLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property ComponentsLocation As String" />
+      <MemberSignature Language="F#" Value="member this.ComponentsLocation : string with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.ComponentsLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -236,6 +255,8 @@
       <MemberSignature Language="C#" Value="public string ComponentsUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ComponentsUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.ComponentsUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ComponentsUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ComponentsUrl : string with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.ComponentsUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -255,6 +276,8 @@
       <MemberSignature Language="C#" Value="public bool CopyComponents { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CopyComponents" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.CopyComponents" />
+      <MemberSignature Language="VB.NET" Value="Public Property CopyComponents As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CopyComponents : bool with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.CopyComponents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -282,6 +305,8 @@
       <MemberSignature Language="C#" Value="public string Culture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Culture" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public Property Culture As String" />
+      <MemberSignature Language="F#" Value="member this.Culture : string with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -308,6 +333,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GenerateBootstrapper.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="generateBootstrapper.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -329,6 +356,8 @@
       <MemberSignature Language="C#" Value="public string FallbackCulture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FallbackCulture" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.FallbackCulture" />
+      <MemberSignature Language="VB.NET" Value="Public Property FallbackCulture As String" />
+      <MemberSignature Language="F#" Value="member this.FallbackCulture : string with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.FallbackCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -348,6 +377,8 @@
       <MemberSignature Language="C#" Value="public string OutputPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OutputPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.OutputPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputPath As String" />
+      <MemberSignature Language="F#" Value="member this.OutputPath : string with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.OutputPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -367,6 +398,8 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -386,6 +419,8 @@
       <MemberSignature Language="C#" Value="public string SupportUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SupportUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.SupportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportUrl As String" />
+      <MemberSignature Language="F#" Value="member this.SupportUrl : string with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.SupportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -405,6 +440,8 @@
       <MemberSignature Language="C#" Value="public bool Validate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Validate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Property Validate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Validate : bool with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.Validate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -432,6 +469,8 @@
       <MemberSignature Language="C#" Value="public string VisualStudioVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VisualStudioVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.VisualStudioVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualStudioVersion As String" />
+      <MemberSignature Language="F#" Value="member this.VisualStudioVersion : string with get, set" Usage="Microsoft.Build.Tasks.GenerateBootstrapper.VisualStudioVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

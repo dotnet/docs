@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class IPAddressInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit IPAddressInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.IPAddressInformation" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class IPAddressInformation" />
+  <TypeSignature Language="F#" Value="type IPAddressInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -45,6 +47,7 @@
       <MemberSignature Language="C#" Value="protected IPAddressInformation ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPAddressInformation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -77,6 +80,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Net.IPAddress Address { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPAddress Address" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPAddressInformation.Address" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Address As IPAddress" />
+      <MemberSignature Language="F#" Value="member this.Address : System.Net.IPAddress" Usage="System.Net.NetworkInformation.IPAddressInformation.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -121,6 +126,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsDnsEligible { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDnsEligible" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPAddressInformation.IsDnsEligible" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsDnsEligible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDnsEligible : bool" Usage="System.Net.NetworkInformation.IPAddressInformation.IsDnsEligible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -166,6 +173,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsTransient { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTransient" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPAddressInformation.IsTransient" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsTransient As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTransient : bool" Usage="System.Net.NetworkInformation.IPAddressInformation.IsTransient" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

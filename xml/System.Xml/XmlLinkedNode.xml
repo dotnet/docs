@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class XmlLinkedNode : System.Xml.XmlNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlLinkedNode extends System.Xml.XmlNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlLinkedNode" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlLinkedNode&#xA;Inherits XmlNode" />
+  <TypeSignature Language="F#" Value="type XmlLinkedNode = class&#xA;    inherit XmlNode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNode NextSibling { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode NextSibling" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlLinkedNode.NextSibling" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NextSibling As XmlNode" />
+      <MemberSignature Language="F#" Value="member this.NextSibling : System.Xml.XmlNode" Usage="System.Xml.XmlLinkedNode.NextSibling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -75,6 +79,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNode PreviousSibling { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode PreviousSibling" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlLinkedNode.PreviousSibling" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PreviousSibling As XmlNode" />
+      <MemberSignature Language="F#" Value="member this.PreviousSibling : System.Xml.XmlNode" Usage="System.Xml.XmlLinkedNode.PreviousSibling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>

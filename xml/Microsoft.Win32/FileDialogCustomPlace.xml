@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class FileDialogCustomPlace" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileDialogCustomPlace extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.FileDialogCustomPlace" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileDialogCustomPlace" />
+  <TypeSignature Language="F#" Value="type FileDialogCustomPlace = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,10 +25,21 @@
     <altmember cref="P:Microsoft.Win32.FileDialog.CustomPlaces" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.FileDialogCustomPlace" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FileDialogCustomPlace (Guid knownFolder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid knownFolder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialogCustomPlace.#ctor(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (knownFolder As Guid)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.FileDialogCustomPlace : Guid -&gt; Microsoft.Win32.FileDialogCustomPlace" Usage="new Microsoft.Win32.FileDialogCustomPlace knownFolder" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -45,6 +58,8 @@
       <MemberSignature Language="C#" Value="public FileDialogCustomPlace (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialogCustomPlace.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.FileDialogCustomPlace : string -&gt; Microsoft.Win32.FileDialogCustomPlace" Usage="new Microsoft.Win32.FileDialogCustomPlace path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +78,8 @@
       <MemberSignature Language="C#" Value="public Guid KnownFolder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid KnownFolder" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlace.KnownFolder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KnownFolder As Guid" />
+      <MemberSignature Language="F#" Value="member this.KnownFolder : Guid" Usage="Microsoft.Win32.FileDialogCustomPlace.KnownFolder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +105,8 @@
       <MemberSignature Language="C#" Value="public string Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlace.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Win32.FileDialogCustomPlace.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -102,14 +121,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.FileDialogCustomPlace" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

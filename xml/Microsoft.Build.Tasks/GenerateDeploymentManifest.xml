@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class GenerateDeploymentManifest : Microsoft.Build.Tasks.GenerateManifestBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GenerateDeploymentManifest extends Microsoft.Build.Tasks.GenerateManifestBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.GenerateDeploymentManifest" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GenerateDeploymentManifest&#xA;Inherits GenerateManifestBase" />
+  <TypeSignature Language="F#" Value="type GenerateDeploymentManifest = class&#xA;    inherit GenerateManifestBase" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,7 @@
       <MemberSignature Language="C#" Value="public GenerateDeploymentManifest ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GenerateDeploymentManifest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="public bool CreateDesktopShortcut { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CreateDesktopShortcut" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.CreateDesktopShortcut" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreateDesktopShortcut As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CreateDesktopShortcut : bool with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.CreateDesktopShortcut" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -56,6 +61,8 @@
       <MemberSignature Language="C#" Value="public string DeploymentUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DeploymentUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.DeploymentUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeploymentUrl As String" />
+      <MemberSignature Language="F#" Value="member this.DeploymentUrl : string with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.DeploymentUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -82,6 +89,8 @@
       <MemberSignature Language="C#" Value="public bool DisallowUrlActivation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisallowUrlActivation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.DisallowUrlActivation" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisallowUrlActivation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisallowUrlActivation : bool with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.DisallowUrlActivation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -109,6 +118,8 @@
       <MemberSignature Language="C#" Value="public string ErrorReportUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorReportUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.ErrorReportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorReportUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorReportUrl : string with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.ErrorReportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -135,6 +146,8 @@
       <MemberSignature Language="C#" Value="protected override Type GetObjectType ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type GetObjectType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GenerateDeploymentManifest.GetObjectType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetObjectType () As Type" />
+      <MemberSignature Language="F#" Value="override this.GetObjectType : unit -&gt; Type" Usage="generateDeploymentManifest.GetObjectType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -154,6 +167,8 @@
       <MemberSignature Language="C#" Value="public bool Install { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Install" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install" />
+      <MemberSignature Language="VB.NET" Value="Public Property Install As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Install : bool with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.Install" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -181,6 +196,8 @@
       <MemberSignature Language="C#" Value="public bool MapFileExtensions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MapFileExtensions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.MapFileExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public Property MapFileExtensions As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MapFileExtensions : bool with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.MapFileExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -208,6 +225,8 @@
       <MemberSignature Language="C#" Value="public string MinimumRequiredVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MinimumRequiredVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.MinimumRequiredVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinimumRequiredVersion As String" />
+      <MemberSignature Language="F#" Value="member this.MinimumRequiredVersion : string with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.MinimumRequiredVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -235,6 +254,7 @@
       <MemberSignature Language="C#" Value="protected override bool OnManifestLoaded (Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnManifestLoaded(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GenerateDeploymentManifest.OnManifestLoaded(Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest)" />
+      <MemberSignature Language="F#" Value="override this.OnManifestLoaded : Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest -&gt; bool" Usage="generateDeploymentManifest.OnManifestLoaded manifest" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -257,6 +277,7 @@
       <MemberSignature Language="C#" Value="protected override bool OnManifestResolved (Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnManifestResolved(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GenerateDeploymentManifest.OnManifestResolved(Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest)" />
+      <MemberSignature Language="F#" Value="override this.OnManifestResolved : Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest -&gt; bool" Usage="generateDeploymentManifest.OnManifestResolved manifest" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -279,6 +300,8 @@
       <MemberSignature Language="C#" Value="public string Product { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Product" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.Product" />
+      <MemberSignature Language="VB.NET" Value="Public Property Product As String" />
+      <MemberSignature Language="F#" Value="member this.Product : string with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.Product" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -305,6 +328,8 @@
       <MemberSignature Language="C#" Value="public string Publisher { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Publisher" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.Publisher" />
+      <MemberSignature Language="VB.NET" Value="Public Property Publisher As String" />
+      <MemberSignature Language="F#" Value="member this.Publisher : string with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.Publisher" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -331,6 +356,8 @@
       <MemberSignature Language="C#" Value="public string SuiteName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SuiteName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.SuiteName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuiteName As String" />
+      <MemberSignature Language="F#" Value="member this.SuiteName : string with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.SuiteName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -350,6 +377,8 @@
       <MemberSignature Language="C#" Value="public string SupportUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SupportUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.SupportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportUrl As String" />
+      <MemberSignature Language="F#" Value="member this.SupportUrl : string with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.SupportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -369,6 +398,8 @@
       <MemberSignature Language="C#" Value="public bool TrustUrlParameters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TrustUrlParameters" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.TrustUrlParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrustUrlParameters As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TrustUrlParameters : bool with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.TrustUrlParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -396,6 +427,8 @@
       <MemberSignature Language="C#" Value="public bool UpdateEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UpdateEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UpdateEnabled : bool with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -423,6 +456,8 @@
       <MemberSignature Language="C#" Value="public int UpdateInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 UpdateInterval" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateInterval" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateInterval As Integer" />
+      <MemberSignature Language="F#" Value="member this.UpdateInterval : int with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -449,6 +484,8 @@
       <MemberSignature Language="C#" Value="public string UpdateMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UpdateMode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateMode As String" />
+      <MemberSignature Language="F#" Value="member this.UpdateMode : string with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -482,6 +519,8 @@
       <MemberSignature Language="C#" Value="public string UpdateUnit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UpdateUnit" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateUnit" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateUnit As String" />
+      <MemberSignature Language="F#" Value="member this.UpdateUnit : string with get, set" Usage="Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateUnit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -513,9 +552,11 @@
       </Docs>
     </Member>
     <Member MemberName="ValidateInputs">
-      <MemberSignature Language="C#" Value="protected override bool ValidateInputs ();" />
+      <MemberSignature Language="C#" Value="protected internal override bool ValidateInputs ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool ValidateInputs() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GenerateDeploymentManifest.ValidateInputs" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ValidateInputs () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ValidateInputs : unit -&gt; bool" Usage="generateDeploymentManifest.ValidateInputs " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

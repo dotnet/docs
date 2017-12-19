@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class TextRun" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TextRun extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextRun" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextRun" />
+  <TypeSignature Language="F#" Value="type TextRun = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,7 @@
       <MemberSignature Language="C#" Value="protected TextRun ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextRun.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.CharacterBufferReference CharacterBufferReference { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.TextFormatting.CharacterBufferReference CharacterBufferReference" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRun.CharacterBufferReference" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CharacterBufferReference As CharacterBufferReference" />
+      <MemberSignature Language="F#" Value="member this.CharacterBufferReference : System.Windows.Media.TextFormatting.CharacterBufferReference" Usage="System.Windows.Media.TextFormatting.TextRun.CharacterBufferReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +85,8 @@
       <MemberSignature Language="C#" Value="public abstract int Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRun.Length" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Length As Integer" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Windows.Media.TextFormatting.TextRun.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +105,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.TextRunProperties Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextFormatting.TextRunProperties Properties" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRun.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Properties As TextRunProperties" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Windows.Media.TextFormatting.TextRunProperties" Usage="System.Windows.Media.TextFormatting.TextRun.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

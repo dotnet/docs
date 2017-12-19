@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IDebugVsaScriptCodeItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDebugVsaScriptCodeItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDebugVsaScriptCodeItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDebugVsaScriptCodeItem" />
+  <TypeSignature Language="F#" Value="type IDebugVsaScriptCodeItem = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public object Evaluate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Evaluate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugVsaScriptCodeItem.Evaluate" />
+      <MemberSignature Language="VB.NET" Value="Public Function Evaluate () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : unit -&gt; obj" Usage="iDebugVsaScriptCodeItem.Evaluate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public bool ParseNamedBreakPoint (string input, out string functionName, out int nargs, out string arguments, out string returnType, out ulong offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ParseNamedBreakPoint(string input, [out] string&amp; functionName, [out] int32&amp; nargs, [out] string&amp; arguments, [out] string&amp; returnType, [out] unsigned int64&amp; offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugVsaScriptCodeItem.ParseNamedBreakPoint(System.String,System.String@,System.Int32@,System.String@,System.String@,System.UInt64@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ParseNamedBreakPoint (input As String, ByRef functionName As String, ByRef nargs As Integer, ByRef arguments As String, ByRef returnType As String, ByRef offset As ULong) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ParseNamedBreakPoint : string *  *  *  *  *  -&gt; bool" Usage="iDebugVsaScriptCodeItem.ParseNamedBreakPoint (input, functionName, nargs, arguments, returnType, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

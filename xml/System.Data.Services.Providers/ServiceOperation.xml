@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ServiceOperation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceOperation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ServiceOperation" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceOperation" />
+  <TypeSignature Language="F#" Value="type ServiceOperation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public ServiceOperation (string name, System.Data.Services.Providers.ServiceOperationResultKind resultKind, System.Data.Services.Providers.ResourceType resultType, System.Data.Services.Providers.ResourceSet resultSet, string method, System.Collections.Generic.IEnumerable&lt;System.Data.Services.Providers.ServiceOperationParameter&gt; parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.Services.Providers.ServiceOperationResultKind resultKind, class System.Data.Services.Providers.ResourceType resultType, class System.Data.Services.Providers.ResourceSet resultSet, string method, class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Services.Providers.ServiceOperationParameter&gt; parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ServiceOperation.#ctor(System.String,System.Data.Services.Providers.ServiceOperationResultKind,System.Data.Services.Providers.ResourceType,System.Data.Services.Providers.ResourceSet,System.String,System.Collections.Generic.IEnumerable{System.Data.Services.Providers.ServiceOperationParameter})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, resultKind As ServiceOperationResultKind, resultType As ResourceType, resultSet As ResourceSet, method As String, parameters As IEnumerable(Of ServiceOperationParameter))" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Providers.ServiceOperation : string * System.Data.Services.Providers.ServiceOperationResultKind * System.Data.Services.Providers.ResourceType * System.Data.Services.Providers.ResourceSet * string * seq&lt;System.Data.Services.Providers.ServiceOperationParameter&gt; -&gt; System.Data.Services.Providers.ServiceOperation" Usage="new System.Data.Services.Providers.ServiceOperation (name, resultKind, resultType, resultSet, method, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public object CustomState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CustomState" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.CustomState" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomState As Object" />
+      <MemberSignature Language="F#" Value="member this.CustomState : obj with get, set" Usage="System.Data.Services.Providers.ServiceOperation.CustomState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -73,6 +79,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Data.Services.Providers.ServiceOperation.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -91,6 +99,8 @@
       <MemberSignature Language="C#" Value="public string Method { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Method" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.Method" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Method As String" />
+      <MemberSignature Language="F#" Value="member this.Method : string" Usage="System.Data.Services.Providers.ServiceOperation.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -109,6 +119,8 @@
       <MemberSignature Language="C#" Value="public string MimeType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MimeType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.MimeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MimeType As String" />
+      <MemberSignature Language="F#" Value="member this.MimeType : string with get, set" Usage="System.Data.Services.Providers.ServiceOperation.MimeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -127,6 +139,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Services.Providers.ServiceOperation.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -145,6 +159,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Services.Providers.ServiceOperationParameter&gt; Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Services.Providers.ServiceOperationParameter&gt; Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As ReadOnlyCollection(Of ServiceOperationParameter)" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Services.Providers.ServiceOperationParameter&gt;" Usage="System.Data.Services.Providers.ServiceOperation.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -163,6 +179,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourceSet ResourceSet { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Providers.ResourceSet ResourceSet" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.ResourceSet" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceSet As ResourceSet" />
+      <MemberSignature Language="F#" Value="member this.ResourceSet : System.Data.Services.Providers.ResourceSet" Usage="System.Data.Services.Providers.ServiceOperation.ResourceSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -181,6 +199,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ServiceOperationResultKind ResultKind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Services.Providers.ServiceOperationResultKind ResultKind" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.ResultKind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultKind As ServiceOperationResultKind" />
+      <MemberSignature Language="F#" Value="member this.ResultKind : System.Data.Services.Providers.ServiceOperationResultKind" Usage="System.Data.Services.Providers.ServiceOperation.ResultKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -200,6 +220,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourceType ResultType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Providers.ResourceType ResultType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.ResultType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultType As ResourceType" />
+      <MemberSignature Language="F#" Value="member this.ResultType : System.Data.Services.Providers.ResourceType" Usage="System.Data.Services.Providers.ServiceOperation.ResultType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -218,6 +240,8 @@
       <MemberSignature Language="C#" Value="public void SetReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ServiceOperation.SetReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetReadOnly ()" />
+      <MemberSignature Language="F#" Value="member this.SetReadOnly : unit -&gt; unit" Usage="serviceOperation.SetReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

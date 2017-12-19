@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class BuildTask" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildTask extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.BuildTask" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuildTask" />
+  <TypeSignature Language="F#" Value="type BuildTask = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public void AddOutputItem (string taskParameter, string itemName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddOutputItem(string taskParameter, string itemName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildTask.AddOutputItem(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddOutputItem (taskParameter As String, itemName As String)" />
+      <MemberSignature Language="F#" Value="member this.AddOutputItem : string * string -&gt; unit" Usage="buildTask.AddOutputItem (taskParameter, itemName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public void AddOutputProperty (string taskParameter, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddOutputProperty(string taskParameter, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildTask.AddOutputProperty(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddOutputProperty (taskParameter As String, propertyName As String)" />
+      <MemberSignature Language="F#" Value="member this.AddOutputProperty : string * string -&gt; unit" Usage="buildTask.AddOutputProperty (taskParameter, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public string Condition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Condition" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildTask.Condition" />
+      <MemberSignature Language="VB.NET" Value="Public Property Condition As String" />
+      <MemberSignature Language="F#" Value="member this.Condition : string with get, set" Usage="Microsoft.Build.BuildEngine.BuildTask.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -83,6 +91,8 @@
       <MemberSignature Language="C#" Value="public bool ContinueOnError { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ContinueOnError" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildTask.ContinueOnError" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContinueOnError As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ContinueOnError : bool with get, set" Usage="Microsoft.Build.BuildEngine.BuildTask.ContinueOnError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -101,6 +111,8 @@
       <MemberSignature Language="C#" Value="public bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildTask.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Execute : unit -&gt; bool" Usage="buildTask.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -121,6 +133,8 @@
       <MemberSignature Language="C#" Value="public string[] GetParameterNames ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetParameterNames() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildTask.GetParameterNames" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParameterNames () As String()" />
+      <MemberSignature Language="F#" Value="member this.GetParameterNames : unit -&gt; string[]" Usage="buildTask.GetParameterNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -149,6 +163,8 @@
       <MemberSignature Language="C#" Value="public string GetParameterValue (string attributeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetParameterValue(string attributeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildTask.GetParameterValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParameterValue (attributeName As String) As String" />
+      <MemberSignature Language="F#" Value="member this.GetParameterValue : string -&gt; string" Usage="buildTask.GetParameterValue attributeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -171,6 +187,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskHost HostObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskHost HostObject" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildTask.HostObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostObject As ITaskHost" />
+      <MemberSignature Language="F#" Value="member this.HostObject : Microsoft.Build.Framework.ITaskHost with get, set" Usage="Microsoft.Build.BuildEngine.BuildTask.HostObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -189,6 +207,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildTask.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Build.BuildEngine.BuildTask.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -203,10 +223,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetParameterValue">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of the specified task parameter.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetParameterValue">
       <MemberSignature Language="C#" Value="public void SetParameterValue (string parameterName, string parameterValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetParameterValue(string parameterName, string parameterValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildTask.SetParameterValue(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetParameterValue (parameterName As String, parameterValue As String)" />
+      <MemberSignature Language="F#" Value="member this.SetParameterValue : string * string -&gt; unit" Usage="buildTask.SetParameterValue (parameterName, parameterValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -230,6 +261,8 @@
       <MemberSignature Language="C#" Value="public void SetParameterValue (string parameterName, string parameterValue, bool treatParameterValueAsLiteral);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetParameterValue(string parameterName, string parameterValue, bool treatParameterValueAsLiteral) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildTask.SetParameterValue(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetParameterValue (parameterName As String, parameterValue As String, treatParameterValueAsLiteral As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.SetParameterValue : string * string * bool -&gt; unit" Usage="buildTask.SetParameterValue (parameterName, parameterValue, treatParameterValueAsLiteral)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -256,6 +289,8 @@
       <MemberSignature Language="C#" Value="public Type Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildTask.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="Microsoft.Build.BuildEngine.BuildTask.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -270,14 +305,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetParameterValue">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the value of the specified task parameter.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

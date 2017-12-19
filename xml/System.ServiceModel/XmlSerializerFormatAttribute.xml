@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class XmlSerializerFormatAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlSerializerFormatAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.XmlSerializerFormatAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSerializerFormatAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type XmlSerializerFormatAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +57,7 @@
       <MemberSignature Language="C#" Value="public XmlSerializerFormatAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XmlSerializerFormatAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -77,6 +80,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.OperationFormatStyle Style { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.OperationFormatStyle Style" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.XmlSerializerFormatAttribute.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Property Style As OperationFormatStyle" />
+      <MemberSignature Language="F#" Value="member this.Style : System.ServiceModel.OperationFormatStyle with get, set" Usage="System.ServiceModel.XmlSerializerFormatAttribute.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +119,8 @@
       <MemberSignature Language="C#" Value="public bool SupportFaults { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportFaults" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.XmlSerializerFormatAttribute.SupportFaults" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportFaults As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportFaults : bool with get, set" Usage="System.ServiceModel.XmlSerializerFormatAttribute.SupportFaults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -147,6 +154,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.OperationFormatUse Use { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.OperationFormatUse Use" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.XmlSerializerFormatAttribute.Use" />
+      <MemberSignature Language="VB.NET" Value="Public Property Use As OperationFormatUse" />
+      <MemberSignature Language="F#" Value="member this.Use : System.ServiceModel.OperationFormatUse with get, set" Usage="System.ServiceModel.XmlSerializerFormatAttribute.Use" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

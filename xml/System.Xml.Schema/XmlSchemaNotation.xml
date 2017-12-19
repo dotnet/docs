@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class XmlSchemaNotation : System.Xml.Schema.XmlSchemaAnnotated" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaNotation extends System.Xml.Schema.XmlSchemaAnnotated" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaNotation" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaNotation&#xA;Inherits XmlSchemaAnnotated" />
+  <TypeSignature Language="F#" Value="type XmlSchemaNotation = class&#xA;    inherit XmlSchemaAnnotated" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +45,7 @@
       <MemberSignature Language="C#" Value="public XmlSchemaNotation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaNotation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -67,6 +70,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaNotation.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Xml.Schema.XmlSchemaNotation.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -99,6 +104,8 @@
       <MemberSignature Language="C#" Value="public string Public { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Public" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaNotation.Public" />
+      <MemberSignature Language="VB.NET" Value="Public Property Public As String" />
+      <MemberSignature Language="F#" Value="member this.Public : string with get, set" Usage="System.Xml.Schema.XmlSchemaNotation.Public" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -131,6 +138,8 @@
       <MemberSignature Language="C#" Value="public string System { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string System" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaNotation.System" />
+      <MemberSignature Language="VB.NET" Value="Public Property System As String" />
+      <MemberSignature Language="F#" Value="member this.System : string with get, set" Usage="System.Xml.Schema.XmlSchemaNotation.System" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

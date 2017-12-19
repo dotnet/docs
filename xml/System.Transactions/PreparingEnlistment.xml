@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class PreparingEnlistment : System.Transactions.Enlistment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PreparingEnlistment extends System.Transactions.Enlistment" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.PreparingEnlistment" />
+  <TypeSignature Language="VB.NET" Value="Public Class PreparingEnlistment&#xA;Inherits Enlistment" />
+  <TypeSignature Language="F#" Value="type PreparingEnlistment = class&#xA;    inherit Enlistment" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,10 +44,22 @@
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName="ForceRollback">
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates that the transaction should be rolled back.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ForceRollback">
       <MemberSignature Language="C#" Value="public void ForceRollback ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceRollback() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.PreparingEnlistment.ForceRollback" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ForceRollback ()" />
+      <MemberSignature Language="F#" Value="member this.ForceRollback : unit -&gt; unit" Usage="preparingEnlistment.ForceRollback " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -86,6 +100,8 @@
       <MemberSignature Language="C#" Value="public void ForceRollback (Exception ex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceRollback(class System.Exception ex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.PreparingEnlistment.ForceRollback(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ForceRollback (ex As Exception)" />
+      <MemberSignature Language="F#" Value="member this.ForceRollback : Exception -&gt; unit" Usage="preparingEnlistment.ForceRollback e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -116,6 +132,8 @@
       <MemberSignature Language="C#" Value="public void Prepared ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Prepared() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.PreparingEnlistment.Prepared" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Prepared ()" />
+      <MemberSignature Language="F#" Value="member this.Prepared : unit -&gt; unit" Usage="preparingEnlistment.Prepared " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -160,6 +178,8 @@
       <MemberSignature Language="C#" Value="public byte[] RecoveryInformation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] RecoveryInformation() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.PreparingEnlistment.RecoveryInformation" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecoveryInformation () As Byte()" />
+      <MemberSignature Language="F#" Value="member this.RecoveryInformation : unit -&gt; byte[]" Usage="preparingEnlistment.RecoveryInformation " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -185,15 +205,5 @@
         <exception cref="T:System.InvalidOperationException">An attempt to get recovery information inside a volatile enlistment, which does not generate any recovery information.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ForceRollback">
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates that the transaction should be rolled back.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class TextEncoder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TextEncoder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Text.Encodings.Web.TextEncoder" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextEncoder" />
+  <TypeSignature Language="F#" Value="type TextEncoder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encodings.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,7 @@
       <MemberSignature Language="C#" Value="protected TextEncoder ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="public virtual string Encode (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Encode(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoder.Encode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Encode (value As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member Encode : string -&gt; string&#xA;override this.Encode : string -&gt; string" Usage="textEncoder.Encode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -75,6 +80,8 @@
       <MemberSignature Language="C#" Value="public void Encode (System.IO.TextWriter output, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Encode(class System.IO.TextWriter output, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Encode (output As TextWriter, value As String)" />
+      <MemberSignature Language="F#" Value="member this.Encode : System.IO.TextWriter * string -&gt; unit" Usage="textEncoder.Encode (output, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -101,6 +108,8 @@
       <MemberSignature Language="C#" Value="public virtual void Encode (System.IO.TextWriter output, char[] value, int startIndex, int characterCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Encode(class System.IO.TextWriter output, char[] value, int32 startIndex, int32 characterCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Encode (output As TextWriter, value As Char(), startIndex As Integer, characterCount As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Encode : System.IO.TextWriter * char[] * int * int -&gt; unit&#xA;override this.Encode : System.IO.TextWriter * char[] * int * int -&gt; unit" Usage="textEncoder.Encode (output, value, startIndex, characterCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -140,6 +149,8 @@
       <MemberSignature Language="C#" Value="public virtual void Encode (System.IO.TextWriter output, string value, int startIndex, int characterCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Encode(class System.IO.TextWriter output, string value, int32 startIndex, int32 characterCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Encode (output As TextWriter, value As String, startIndex As Integer, characterCount As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Encode : System.IO.TextWriter * string * int * int -&gt; unit&#xA;override this.Encode : System.IO.TextWriter * string * int * int -&gt; unit" Usage="textEncoder.Encode (output, value, startIndex, characterCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -179,6 +190,7 @@
       <MemberSignature Language="C#" Value="public abstract int FindFirstCharacterToEncode (char* text, int textLength);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 FindFirstCharacterToEncode(char* text, int32 textLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoder.FindFirstCharacterToEncode(System.Char*,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member FindFirstCharacterToEncode : nativeptr&lt;char&gt; * int -&gt; int" Usage="textEncoder.FindFirstCharacterToEncode (text, textLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -219,6 +231,8 @@
       <MemberSignature Language="C#" Value="public abstract int MaxOutputCharactersPerInputCharacter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxOutputCharactersPerInputCharacter" />
       <MemberSignature Language="DocId" Value="P:System.Text.Encodings.Web.TextEncoder.MaxOutputCharactersPerInputCharacter" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MaxOutputCharactersPerInputCharacter As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxOutputCharactersPerInputCharacter : int" Usage="System.Text.Encodings.Web.TextEncoder.MaxOutputCharactersPerInputCharacter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -245,6 +259,7 @@
       <MemberSignature Language="C#" Value="public abstract bool TryEncodeUnicodeScalar (int unicodeScalar, char* buffer, int bufferLength, out int numberOfCharactersWritten);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryEncodeUnicodeScalar(int32 unicodeScalar, char* buffer, int32 bufferLength, [out] int32&amp; numberOfCharactersWritten) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoder.TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32@)" />
+      <MemberSignature Language="F#" Value="abstract member TryEncodeUnicodeScalar : int * nativeptr&lt;char&gt; * int *  -&gt; bool" Usage="textEncoder.TryEncodeUnicodeScalar (unicodeScalar, buffer, bufferLength, numberOfCharactersWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -290,6 +305,8 @@
       <MemberSignature Language="C#" Value="public abstract bool WillEncode (int unicodeScalar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool WillEncode(int32 unicodeScalar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoder.WillEncode(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function WillEncode (unicodeScalar As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member WillEncode : int -&gt; bool" Usage="textEncoder.WillEncode unicodeScalar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>

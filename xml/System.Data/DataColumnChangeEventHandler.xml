@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void DataColumnChangeEventHandler(object sender, DataColumnChangeEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataColumnChangeEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataColumnChangeEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataColumnChangeEventHandler(sender As Object, e As DataColumnChangeEventArgs)" />
+  <TypeSignature Language="F#" Value="type DataColumnChangeEventHandler = delegate of obj * DataColumnChangeEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

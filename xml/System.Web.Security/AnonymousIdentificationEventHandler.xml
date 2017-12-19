@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void AnonymousIdentificationEventHandler(object sender, AnonymousIdentificationEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AnonymousIdentificationEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.AnonymousIdentificationEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub AnonymousIdentificationEventHandler(sender As Object, e As AnonymousIdentificationEventArgs)" />
+  <TypeSignature Language="F#" Value="type AnonymousIdentificationEventHandler = delegate of obj * AnonymousIdentificationEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

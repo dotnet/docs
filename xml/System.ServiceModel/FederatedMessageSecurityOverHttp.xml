@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class FederatedMessageSecurityOverHttp" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FederatedMessageSecurityOverHttp extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.FederatedMessageSecurityOverHttp" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FederatedMessageSecurityOverHttp" />
+  <TypeSignature Language="F#" Value="type FederatedMessageSecurityOverHttp = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="public FederatedMessageSecurityOverHttp ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FederatedMessageSecurityOverHttp.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityAlgorithmSuite AlgorithmSuite { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityAlgorithmSuite AlgorithmSuite" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FederatedMessageSecurityOverHttp.AlgorithmSuite" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlgorithmSuite As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="member this.AlgorithmSuite : System.ServiceModel.Security.SecurityAlgorithmSuite with get, set" Usage="System.ServiceModel.FederatedMessageSecurityOverHttp.AlgorithmSuite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +80,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.Tokens.ClaimTypeRequirement&gt; ClaimTypeRequirements { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Security.Tokens.ClaimTypeRequirement&gt; ClaimTypeRequirements" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClaimTypeRequirements As Collection(Of ClaimTypeRequirement)" />
+      <MemberSignature Language="F#" Value="member this.ClaimTypeRequirements : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.Tokens.ClaimTypeRequirement&gt;" Usage="System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -110,6 +117,8 @@
       <MemberSignature Language="C#" Value="public bool EstablishSecurityContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EstablishSecurityContext" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FederatedMessageSecurityOverHttp.EstablishSecurityContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property EstablishSecurityContext As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EstablishSecurityContext : bool with get, set" Usage="System.ServiceModel.FederatedMessageSecurityOverHttp.EstablishSecurityContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -129,6 +138,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityKeyType IssuedKeyType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IdentityModel.Tokens.SecurityKeyType IssuedKeyType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedKeyType" />
+      <MemberSignature Language="VB.NET" Value="Public Property IssuedKeyType As SecurityKeyType" />
+      <MemberSignature Language="F#" Value="member this.IssuedKeyType : System.IdentityModel.Tokens.SecurityKeyType with get, set" Usage="System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedKeyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -163,6 +174,8 @@
       <MemberSignature Language="C#" Value="public string IssuedTokenType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IssuedTokenType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedTokenType" />
+      <MemberSignature Language="VB.NET" Value="Public Property IssuedTokenType As String" />
+      <MemberSignature Language="F#" Value="member this.IssuedTokenType : string with get, set" Usage="System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedTokenType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -203,6 +216,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress IssuerAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress IssuerAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property IssuerAddress As EndpointAddress" />
+      <MemberSignature Language="F#" Value="member this.IssuerAddress : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -243,6 +258,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Binding IssuerBinding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.Binding IssuerBinding" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Property IssuerBinding As Binding" />
+      <MemberSignature Language="F#" Value="member this.IssuerBinding : System.ServiceModel.Channels.Binding with get, set" Usage="System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -283,6 +300,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress IssuerMetadataAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress IssuerMetadataAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerMetadataAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property IssuerMetadataAddress As EndpointAddress" />
+      <MemberSignature Language="F#" Value="member this.IssuerMetadataAddress : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerMetadataAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -321,6 +340,8 @@
       <MemberSignature Language="C#" Value="public bool NegotiateServiceCredential { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NegotiateServiceCredential" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FederatedMessageSecurityOverHttp.NegotiateServiceCredential" />
+      <MemberSignature Language="VB.NET" Value="Public Property NegotiateServiceCredential As Boolean" />
+      <MemberSignature Language="F#" Value="member this.NegotiateServiceCredential : bool with get, set" Usage="System.ServiceModel.FederatedMessageSecurityOverHttp.NegotiateServiceCredential" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -359,6 +380,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeAlgorithmSuite ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeAlgorithmSuite() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FederatedMessageSecurityOverHttp.ShouldSerializeAlgorithmSuite" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeAlgorithmSuite () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeAlgorithmSuite : unit -&gt; bool" Usage="federatedMessageSecurityOverHttp.ShouldSerializeAlgorithmSuite " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -384,6 +407,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeClaimTypeRequirements ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeClaimTypeRequirements() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FederatedMessageSecurityOverHttp.ShouldSerializeClaimTypeRequirements" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeClaimTypeRequirements () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeClaimTypeRequirements : unit -&gt; bool" Usage="federatedMessageSecurityOverHttp.ShouldSerializeClaimTypeRequirements " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -409,6 +434,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeEstablishSecurityContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeEstablishSecurityContext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FederatedMessageSecurityOverHttp.ShouldSerializeEstablishSecurityContext" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeEstablishSecurityContext () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeEstablishSecurityContext : unit -&gt; bool" Usage="federatedMessageSecurityOverHttp.ShouldSerializeEstablishSecurityContext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -434,6 +461,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeIssuedKeyType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeIssuedKeyType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FederatedMessageSecurityOverHttp.ShouldSerializeIssuedKeyType" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIssuedKeyType () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeIssuedKeyType : unit -&gt; bool" Usage="federatedMessageSecurityOverHttp.ShouldSerializeIssuedKeyType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -459,6 +488,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeNegotiateServiceCredential ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeNegotiateServiceCredential() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FederatedMessageSecurityOverHttp.ShouldSerializeNegotiateServiceCredential" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeNegotiateServiceCredential () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeNegotiateServiceCredential : unit -&gt; bool" Usage="federatedMessageSecurityOverHttp.ShouldSerializeNegotiateServiceCredential " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -484,6 +515,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeTokenRequestParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeTokenRequestParameters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FederatedMessageSecurityOverHttp.ShouldSerializeTokenRequestParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTokenRequestParameters () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeTokenRequestParameters : unit -&gt; bool" Usage="federatedMessageSecurityOverHttp.ShouldSerializeTokenRequestParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -509,6 +542,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt; TokenRequestParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Xml.XmlElement&gt; TokenRequestParameters" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FederatedMessageSecurityOverHttp.TokenRequestParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TokenRequestParameters As Collection(Of XmlElement)" />
+      <MemberSignature Language="F#" Value="member this.TokenRequestParameters : System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;" Usage="System.ServiceModel.FederatedMessageSecurityOverHttp.TokenRequestParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

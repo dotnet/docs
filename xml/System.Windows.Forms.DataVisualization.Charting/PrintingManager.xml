@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class PrintingManager : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintingManager extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.PrintingManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrintingManager&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type PrintingManager = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public PrintingManager (System.ComponentModel.Design.IServiceContainer container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.IServiceContainer container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PrintingManager.#ctor(System.ComponentModel.Design.IServiceContainer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (container As IServiceContainer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.PrintingManager : System.ComponentModel.Design.IServiceContainer -&gt; System.Windows.Forms.DataVisualization.Charting.PrintingManager" Usage="new System.Windows.Forms.DataVisualization.Charting.PrintingManager container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -37,11 +41,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Frees, releases, or resets managed resources.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PrintingManager.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="printingManager.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +77,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PrintingManager.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="printingManager.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -81,6 +101,8 @@
       <MemberSignature Language="C#" Value="public void PageSetup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PageSetup() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PrintingManager.PageSetup" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PageSetup ()" />
+      <MemberSignature Language="F#" Value="member this.PageSetup : unit -&gt; unit" Usage="printingManager.PageSetup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -99,6 +121,8 @@
       <MemberSignature Language="C#" Value="public void Print (bool showPrintDialog);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Print(bool showPrintDialog) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PrintingManager.Print(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Print (showPrintDialog As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Print : bool -&gt; unit" Usage="printingManager.Print showPrintDialog" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -121,6 +145,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PrintDocument PrintDocument { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PrintDocument PrintDocument" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PrintingManager.PrintDocument" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrintDocument As PrintDocument" />
+      <MemberSignature Language="F#" Value="member this.PrintDocument : System.Drawing.Printing.PrintDocument with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.PrintingManager.PrintDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -150,6 +176,7 @@
       <MemberSignature Language="C#" Value="public void PrintPaint (System.Drawing.Graphics graphics, System.Drawing.Rectangle position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrintPaint(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PrintingManager.PrintPaint(System.Drawing.Graphics,System.Drawing.Rectangle)" />
+      <MemberSignature Language="F#" Value="member this.PrintPaint : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; unit" Usage="printingManager.PrintPaint (graphics, position)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -173,6 +200,8 @@
       <MemberSignature Language="C#" Value="public void PrintPreview ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrintPreview() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PrintingManager.PrintPreview" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrintPreview ()" />
+      <MemberSignature Language="F#" Value="member this.PrintPreview : unit -&gt; unit" Usage="printingManager.PrintPreview " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -187,14 +216,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Frees, releases, or resets managed resources.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

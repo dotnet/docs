@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IChapteredRowset" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IChapteredRowset" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IChapteredRowset" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IChapteredRowset" />
+  <TypeSignature Language="F#" Value="type IChapteredRowset = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public void AddRefChapter (int hChapter, out int cRefCount);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void AddRefChapter([in]int32 hChapter, [out] int32&amp; cRefCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IChapteredRowset.AddRefChapter(System.Int32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRefChapter (hChapter As Integer, ByRef cRefCount As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member AddRefChapter : int *  -&gt; unit" Usage="iChapteredRowset.AddRefChapter (hChapter, cRefCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public void ReleaseChapter (int hChapter, out int cRefCount);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ReleaseChapter([in]int32 hChapter, [out] int32&amp; cRefCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IChapteredRowset.ReleaseChapter(System.Int32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReleaseChapter (hChapter As Integer, ByRef cRefCount As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseChapter : int *  -&gt; unit" Usage="iChapteredRowset.ReleaseChapter (hChapter, cRefCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class FormattableStringFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FormattableStringFactory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.FormattableStringFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class FormattableStringFactory" />
+  <TypeSignature Language="F#" Value="type FormattableStringFactory = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public static FormattableString Create (string format, params object[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.FormattableString Create(string format, object[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.FormattableStringFactory.Create(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (format As String, ParamArray arguments As Object()) As FormattableString" />
+      <MemberSignature Language="F#" Value="static member Create : string * obj[] -&gt; FormattableString" Usage="System.Runtime.CompilerServices.FormattableStringFactory.Create (format, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

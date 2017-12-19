@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class RequiredArgumentAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RequiredArgumentAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Activities.RequiredArgumentAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RequiredArgumentAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type RequiredArgumentAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,7 @@
       <MemberSignature Language="C#" Value="public RequiredArgumentAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.RequiredArgumentAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -39,6 +42,8 @@
       <MemberSignature Language="C#" Value="public override object TypeId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object TypeId" />
       <MemberSignature Language="DocId" Value="P:System.Activities.RequiredArgumentAttribute.TypeId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.Activities.RequiredArgumentAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

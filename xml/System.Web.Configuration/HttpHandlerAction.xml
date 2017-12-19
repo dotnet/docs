@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class HttpHandlerAction : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpHandlerAction extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpHandlerAction" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpHandlerAction&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type HttpHandlerAction = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,10 +51,21 @@
     <altmember cref="T:System.Web.Configuration.HttpHandlersSection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpHandlerAction" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HttpHandlerAction (string path, string type, string verb);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, string type, string verb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpHandlerAction.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, type As String, verb As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.HttpHandlerAction : string * string * string -&gt; System.Web.Configuration.HttpHandlerAction" Usage="new System.Web.Configuration.HttpHandlerAction (path, type, verb)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +95,8 @@
       <MemberSignature Language="C#" Value="public HttpHandlerAction (string path, string type, string verb, bool validate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, string type, string verb, bool validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpHandlerAction.#ctor(System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, type As String, verb As String, validate As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.HttpHandlerAction : string * string * string * bool -&gt; System.Web.Configuration.HttpHandlerAction" Usage="new System.Web.Configuration.HttpHandlerAction (path, type, verb, validate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +137,8 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpHandlerAction.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Web.Configuration.HttpHandlerAction.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +177,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpHandlerAction.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.HttpHandlerAction.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,6 +197,8 @@
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpHandlerAction.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Web.Configuration.HttpHandlerAction.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +240,8 @@
       <MemberSignature Language="C#" Value="public bool Validate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Validate" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpHandlerAction.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Property Validate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Validate : bool with get, set" Usage="System.Web.Configuration.HttpHandlerAction.Validate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -258,6 +281,8 @@
       <MemberSignature Language="C#" Value="public string Verb { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Verb" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpHandlerAction.Verb" />
+      <MemberSignature Language="VB.NET" Value="Public Property Verb As String" />
+      <MemberSignature Language="F#" Value="member this.Verb : string with get, set" Usage="System.Web.Configuration.HttpHandlerAction.Verb" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -292,14 +317,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpHandlerAction" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

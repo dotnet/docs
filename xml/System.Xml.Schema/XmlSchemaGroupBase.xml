@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class XmlSchemaGroupBase : System.Xml.Schema.XmlSchemaParticle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlSchemaGroupBase extends System.Xml.Schema.XmlSchemaParticle" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaGroupBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlSchemaGroupBase&#xA;Inherits XmlSchemaParticle" />
+  <TypeSignature Language="F#" Value="type XmlSchemaGroupBase = class&#xA;    inherit XmlSchemaParticle" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +37,7 @@
       <MemberSignature Language="C#" Value="protected XmlSchemaGroupBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaGroupBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -59,6 +62,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Xml.Schema.XmlSchemaObjectCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectCollection Items" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaGroupBase.Items" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Items As XmlSchemaObjectCollection" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Xml.Schema.XmlSchemaObjectCollection" Usage="System.Xml.Schema.XmlSchemaGroupBase.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

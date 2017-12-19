@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ArgumentReference&lt;T&gt; : System.Activities.Expressions.EnvironmentLocationReference&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ArgumentReference`1&lt;T&gt; extends System.Activities.Expressions.EnvironmentLocationReference`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.ArgumentReference`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ArgumentReference(Of T)&#xA;Inherits EnvironmentLocationReference(Of T)" />
+  <TypeSignature Language="F#" Value="type ArgumentReference&lt;'T&gt; = class&#xA;    inherit EnvironmentLocationReference&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.ArgumentReference`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ArgumentReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ArgumentReference`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -41,6 +53,8 @@
       <MemberSignature Language="C#" Value="public ArgumentReference (string argumentName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string argumentName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ArgumentReference`1.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (argumentName As String)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Expressions.ArgumentReference&lt;'T&gt; : string -&gt; System.Activities.Expressions.ArgumentReference&lt;'T&gt;" Usage="new System.Activities.Expressions.ArgumentReference&lt;'T&gt; argumentName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -59,6 +73,8 @@
       <MemberSignature Language="C#" Value="public string ArgumentName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ArgumentName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.ArgumentReference`1.ArgumentName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ArgumentName As String" />
+      <MemberSignature Language="F#" Value="member this.ArgumentName : string with get, set" Usage="System.Activities.Expressions.ArgumentReference&lt;'T&gt;.ArgumentName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -77,6 +93,8 @@
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ArgumentReference`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="argumentReference.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -98,6 +116,8 @@
       <MemberSignature Language="C#" Value="public override System.Activities.LocationReference LocationReference { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.LocationReference LocationReference" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.ArgumentReference`1.LocationReference" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocationReference As LocationReference" />
+      <MemberSignature Language="F#" Value="member this.LocationReference : System.Activities.LocationReference" Usage="System.Activities.Expressions.ArgumentReference&lt;'T&gt;.LocationReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -116,6 +136,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ArgumentReference`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="argumentReference.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -131,14 +153,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.ArgumentReference`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ChannelEndpointElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ChannelEndpointElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ChannelEndpointElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ChannelEndpointElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ChannelEndpointElement = class&#xA;    inherit ConfigurationElement&#xA;    interface IConfigurationContextProviderInternal" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ChannelEndpointElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ChannelEndpointElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +46,8 @@
       <MemberSignature Language="C#" Value="public ChannelEndpointElement (System.ServiceModel.EndpointAddress address, string contractType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.EndpointAddress address, string contractType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ChannelEndpointElement.#ctor(System.ServiceModel.EndpointAddress,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (address As EndpointAddress, contractType As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ChannelEndpointElement : System.ServiceModel.EndpointAddress * string -&gt; System.ServiceModel.Configuration.ChannelEndpointElement" Usage="new System.ServiceModel.Configuration.ChannelEndpointElement (address, contractType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -54,6 +68,8 @@
       <MemberSignature Language="C#" Value="public Uri Address { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Address" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Address" />
+      <MemberSignature Language="VB.NET" Value="Public Property Address As Uri" />
+      <MemberSignature Language="F#" Value="member this.Address : Uri with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -77,6 +93,8 @@
       <MemberSignature Language="C#" Value="public string BehaviorConfiguration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BehaviorConfiguration" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.BehaviorConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property BehaviorConfiguration As String" />
+      <MemberSignature Language="F#" Value="member this.BehaviorConfiguration : string with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.BehaviorConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +121,8 @@
       <MemberSignature Language="C#" Value="public string Binding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Binding" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Binding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Binding As String" />
+      <MemberSignature Language="F#" Value="member this.Binding : string with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -129,6 +149,8 @@
       <MemberSignature Language="C#" Value="public string BindingConfiguration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BindingConfiguration" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.BindingConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property BindingConfiguration As String" />
+      <MemberSignature Language="F#" Value="member this.BindingConfiguration : string with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.BindingConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -155,6 +177,8 @@
       <MemberSignature Language="C#" Value="public string Contract { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Contract" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Contract" />
+      <MemberSignature Language="VB.NET" Value="Public Property Contract As String" />
+      <MemberSignature Language="F#" Value="member this.Contract : string with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Contract" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -181,6 +205,8 @@
       <MemberSignature Language="C#" Value="public string EndpointConfiguration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EndpointConfiguration" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.EndpointConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndpointConfiguration As String" />
+      <MemberSignature Language="F#" Value="member this.EndpointConfiguration : string with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.EndpointConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -207,6 +233,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.AddressHeaderCollectionElement Headers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.AddressHeaderCollectionElement Headers" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As AddressHeaderCollectionElement" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.ServiceModel.Configuration.AddressHeaderCollectionElement" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -230,6 +258,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.IdentityElement Identity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.IdentityElement Identity" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As IdentityElement" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.ServiceModel.Configuration.IdentityElement" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -253,6 +283,8 @@
       <MemberSignature Language="C#" Value="public string Kind { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Kind" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Property Kind As String" />
+      <MemberSignature Language="F#" Value="member this.Kind : string with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Kind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -279,6 +311,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -312,6 +346,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -330,6 +366,8 @@
       <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ChannelEndpointElement.Reset(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
+      <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="channelEndpointElement.Reset parentElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -352,14 +390,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

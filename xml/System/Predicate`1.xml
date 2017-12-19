@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate bool Predicate&lt;in T&gt;(T obj);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Predicate`1&lt;- T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Predicate`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function Predicate(Of In T)(obj As T) As Boolean " />
+  <TypeSignature Language="F#" Value="type Predicate&lt;'T&gt; = delegate of 'T -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

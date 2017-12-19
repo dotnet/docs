@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class HostServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HostServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.HostServices" />
+  <TypeSignature Language="VB.NET" Value="Public Class HostServices" />
+  <TypeSignature Language="F#" Value="type HostServices = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,7 @@
       <MemberSignature Language="C#" Value="public HostServices ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.HostServices.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -46,6 +49,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskHost GetHostObject (string projectFile, string targetName, string taskName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Framework.ITaskHost GetHostObject(string projectFile, string targetName, string taskName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.HostServices.GetHostObject(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHostObject (projectFile As String, targetName As String, taskName As String) As ITaskHost" />
+      <MemberSignature Language="F#" Value="member this.GetHostObject : string * string * string -&gt; Microsoft.Build.Framework.ITaskHost" Usage="hostServices.GetHostObject (projectFile, targetName, taskName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -72,6 +77,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.NodeAffinity GetNodeAffinity (string projectFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.Build.Execution.NodeAffinity GetNodeAffinity(string projectFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.HostServices.GetNodeAffinity(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNodeAffinity (projectFile As String) As NodeAffinity" />
+      <MemberSignature Language="F#" Value="member this.GetNodeAffinity : string -&gt; Microsoft.Build.Execution.NodeAffinity" Usage="hostServices.GetNodeAffinity projectFile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -94,6 +101,8 @@
       <MemberSignature Language="C#" Value="public void OnRenameProject (string oldFullPath, string newFullPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnRenameProject(string oldFullPath, string newFullPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.HostServices.OnRenameProject(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnRenameProject (oldFullPath As String, newFullPath As String)" />
+      <MemberSignature Language="F#" Value="member this.OnRenameProject : string * string -&gt; unit" Usage="hostServices.OnRenameProject (oldFullPath, newFullPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -124,6 +133,8 @@
       <MemberSignature Language="C#" Value="public void RegisterHostObject (string projectFile, string targetName, string taskName, Microsoft.Build.Framework.ITaskHost hostObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterHostObject(string projectFile, string targetName, string taskName, class Microsoft.Build.Framework.ITaskHost hostObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.HostServices.RegisterHostObject(System.String,System.String,System.String,Microsoft.Build.Framework.ITaskHost)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterHostObject (projectFile As String, targetName As String, taskName As String, hostObject As ITaskHost)" />
+      <MemberSignature Language="F#" Value="member this.RegisterHostObject : string * string * string * Microsoft.Build.Framework.ITaskHost -&gt; unit" Usage="hostServices.RegisterHostObject (projectFile, targetName, taskName, hostObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -158,6 +169,7 @@
       <MemberSignature Language="C#" Value="public void SetNodeAffinity (string projectFile, Microsoft.Build.Execution.NodeAffinity nodeAffinity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetNodeAffinity(string projectFile, valuetype Microsoft.Build.Execution.NodeAffinity nodeAffinity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.HostServices.SetNodeAffinity(System.String,Microsoft.Build.Execution.NodeAffinity)" />
+      <MemberSignature Language="F#" Value="member this.SetNodeAffinity : string * Microsoft.Build.Execution.NodeAffinity -&gt; unit" Usage="hostServices.SetNodeAffinity (projectFile, nodeAffinity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -181,6 +193,8 @@
       <MemberSignature Language="C#" Value="public void UnregisterProject (string projectFullPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnregisterProject(string projectFullPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.HostServices.UnregisterProject(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnregisterProject (projectFullPath As String)" />
+      <MemberSignature Language="F#" Value="member this.UnregisterProject : string -&gt; unit" Usage="hostServices.UnregisterProject projectFullPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

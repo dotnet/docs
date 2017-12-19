@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class BaseAddressPrefixFilterElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BaseAddressPrefixFilterElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BaseAddressPrefixFilterElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type BaseAddressPrefixFilterElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,10 +55,20 @@ http://test2.fabrikam.com/Service.svc
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BaseAddressPrefixFilterElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +84,8 @@ http://test2.fabrikam.com/Service.svc
       <MemberSignature Language="C#" Value="public BaseAddressPrefixFilterElement (Uri prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri prefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (prefix As Uri)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.BaseAddressPrefixFilterElement : Uri -&gt; System.ServiceModel.Configuration.BaseAddressPrefixFilterElement" Usage="new System.ServiceModel.Configuration.BaseAddressPrefixFilterElement prefix" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +104,8 @@ http://test2.fabrikam.com/Service.svc
       <MemberSignature Language="C#" Value="public Uri Prefix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Prefix" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement.Prefix" />
+      <MemberSignature Language="VB.NET" Value="Public Property Prefix As Uri" />
+      <MemberSignature Language="F#" Value="member this.Prefix : Uri with get, set" Usage="System.ServiceModel.Configuration.BaseAddressPrefixFilterElement.Prefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,6 +129,8 @@ http://test2.fabrikam.com/Service.svc
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.BaseAddressPrefixFilterElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -127,14 +145,5 @@ http://test2.fabrikam.com/Service.svc
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

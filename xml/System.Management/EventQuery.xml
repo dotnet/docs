@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class EventQuery : System.Management.ManagementQuery" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventQuery extends System.Management.ManagementQuery" />
   <TypeSignature Language="DocId" Value="T:System.Management.EventQuery" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventQuery&#xA;Inherits ManagementQuery" />
+  <TypeSignature Language="F#" Value="type EventQuery = class&#xA;    inherit ManagementQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,10 +27,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.EventQuery" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.EventQuery.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -61,6 +73,8 @@
       <MemberSignature Language="C#" Value="public EventQuery (string query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.EventQuery.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (query As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.EventQuery : string -&gt; System.Management.EventQuery" Usage="new System.Management.EventQuery query" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -96,6 +110,8 @@
       <MemberSignature Language="C#" Value="public EventQuery (string language, string query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string language, string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.EventQuery.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (language As String, query As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.EventQuery : string * string -&gt; System.Management.EventQuery" Usage="new System.Management.EventQuery (language, query)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -133,6 +149,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.EventQuery.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="eventQuery.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -158,14 +176,5 @@
         <altmember cref="M:System.ICloneable.Clone" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.EventQuery" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

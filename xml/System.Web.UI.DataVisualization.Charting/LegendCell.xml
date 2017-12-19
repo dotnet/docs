@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class LegendCell : System.Web.UI.DataVisualization.Charting.ChartNamedElement, System.Web.UI.DataVisualization.Charting.IChartMapArea" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LegendCell extends System.Web.UI.DataVisualization.Charting.ChartNamedElement implements class System.Web.UI.DataVisualization.Charting.IChartMapArea" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LegendCell" />
+  <TypeSignature Language="VB.NET" Value="Public Class LegendCell&#xA;Inherits ChartNamedElement&#xA;Implements IChartMapArea" />
+  <TypeSignature Language="F#" Value="type LegendCell = class&#xA;    inherit ChartNamedElement&#xA;    interface IChartMapArea" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +28,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.LegendCell" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LegendCell ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.LegendCell.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -45,6 +57,8 @@
       <MemberSignature Language="C#" Value="public LegendCell (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.LegendCell.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.LegendCell : string -&gt; System.Web.UI.DataVisualization.Charting.LegendCell" Usage="new System.Web.UI.DataVisualization.Charting.LegendCell text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -63,6 +77,8 @@
       <MemberSignature Language="C#" Value="public LegendCell (System.Web.UI.DataVisualization.Charting.LegendCellType cellType, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.DataVisualization.Charting.LegendCellType cellType, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.LegendCell.#ctor(System.Web.UI.DataVisualization.Charting.LegendCellType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cellType As LegendCellType, text As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.LegendCell : System.Web.UI.DataVisualization.Charting.LegendCellType * string -&gt; System.Web.UI.DataVisualization.Charting.LegendCell" Usage="new System.Web.UI.DataVisualization.Charting.LegendCell (cellType, text)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -83,6 +99,8 @@
       <MemberSignature Language="C#" Value="public LegendCell (System.Web.UI.DataVisualization.Charting.LegendCellType cellType, string text, System.Drawing.ContentAlignment alignment);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.DataVisualization.Charting.LegendCellType cellType, string text, valuetype System.Drawing.ContentAlignment alignment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.LegendCell.#ctor(System.Web.UI.DataVisualization.Charting.LegendCellType,System.String,System.Drawing.ContentAlignment)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cellType As LegendCellType, text As String, alignment As ContentAlignment)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.LegendCell : System.Web.UI.DataVisualization.Charting.LegendCellType * string * System.Drawing.ContentAlignment -&gt; System.Web.UI.DataVisualization.Charting.LegendCell" Usage="new System.Web.UI.DataVisualization.Charting.LegendCell (cellType, text, alignment)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -105,6 +123,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.ContentAlignment Alignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.ContentAlignment Alignment" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.Alignment" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Alignment As ContentAlignment" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Drawing.ContentAlignment with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -135,6 +155,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -171,6 +193,8 @@
       <MemberSignature Language="C#" Value="public virtual int CellSpan { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CellSpan" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.CellSpan" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CellSpan As Integer" />
+      <MemberSignature Language="F#" Value="member this.CellSpan : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.CellSpan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -203,6 +227,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.DataVisualization.Charting.LegendCellType CellType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.LegendCellType CellType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.CellType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CellType As LegendCellType" />
+      <MemberSignature Language="F#" Value="member this.CellType : System.Web.UI.DataVisualization.Charting.LegendCellType with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.CellType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -242,6 +268,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.LegendCell.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="legendCell.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -264,6 +292,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Font As Font" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -296,6 +326,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -332,6 +364,8 @@
       <MemberSignature Language="C#" Value="public virtual string Image { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Image" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.Image" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Image As String" />
+      <MemberSignature Language="F#" Value="member this.Image : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -367,6 +401,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Size ImageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size ImageSize" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.ImageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ImageSize As Size" />
+      <MemberSignature Language="F#" Value="member this.ImageSize : System.Drawing.Size with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.ImageSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -402,6 +438,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ImageTransparentColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ImageTransparentColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.ImageTransparentColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ImageTransparentColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ImageTransparentColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.ImageTransparentColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -438,6 +476,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.DataVisualization.Charting.Legend Legend { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.Legend Legend" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.Legend" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Legend As Legend" />
+      <MemberSignature Language="F#" Value="member this.Legend : System.Web.UI.DataVisualization.Charting.Legend" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.Legend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -464,6 +504,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.DataVisualization.Charting.LegendItem LegendItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.LegendItem LegendItem" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.LegendItem" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LegendItem As LegendItem" />
+      <MemberSignature Language="F#" Value="member this.LegendItem : System.Web.UI.DataVisualization.Charting.LegendItem" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.LegendItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -490,7 +532,12 @@
       <MemberSignature Language="C#" Value="public virtual string MapAreaAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MapAreaAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.MapAreaAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property MapAreaAttributes As String" />
+      <MemberSignature Language="F#" Value="member this.MapAreaAttributes : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.MapAreaAttributes" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.MapAreaAttributes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -528,6 +575,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.DataVisualization.Charting.Margins Margins { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.Margins Margins" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.Margins" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Margins As Margins" />
+      <MemberSignature Language="F#" Value="member this.Margins : System.Web.UI.DataVisualization.Charting.Margins with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.Margins" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -564,6 +613,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -593,7 +644,12 @@
       <MemberSignature Language="C#" Value="public string PostBackValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PostBackValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.PostBackValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property PostBackValue As String" />
+      <MemberSignature Language="F#" Value="member this.PostBackValue : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.PostBackValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.PostBackValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -616,6 +672,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Size SeriesSymbolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size SeriesSymbolSize" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.SeriesSymbolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SeriesSymbolSize As Size" />
+      <MemberSignature Language="F#" Value="member this.SeriesSymbolSize : System.Drawing.Size with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.SeriesSymbolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -648,6 +706,8 @@
       <MemberSignature Language="C#" Value="public virtual string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -678,7 +738,12 @@
       <MemberSignature Language="C#" Value="public virtual string ToolTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.ToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ToolTip As String" />
+      <MemberSignature Language="F#" Value="member this.ToolTip : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.ToolTip" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.ToolTip</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -716,7 +781,12 @@
       <MemberSignature Language="C#" Value="public virtual string Url { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LegendCell.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.LegendCell.Url" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.Url</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -753,14 +823,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.LegendCell" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IPlaybackControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPlaybackControl" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IPlaybackControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPlaybackControl" />
+  <TypeSignature Language="F#" Value="type IPlaybackControl = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public void FinalClientRetry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FinalClientRetry() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IPlaybackControl.FinalClientRetry" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FinalClientRetry ()" />
+      <MemberSignature Language="F#" Value="abstract member FinalClientRetry : unit -&gt; unit" Usage="iPlaybackControl.FinalClientRetry " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public void FinalServerRetry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FinalServerRetry() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IPlaybackControl.FinalServerRetry" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FinalServerRetry ()" />
+      <MemberSignature Language="F#" Value="abstract member FinalServerRetry : unit -&gt; unit" Usage="iPlaybackControl.FinalServerRetry " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

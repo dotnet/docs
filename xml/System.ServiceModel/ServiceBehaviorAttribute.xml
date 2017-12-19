@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ServiceBehaviorAttribute : Attribute, System.ServiceModel.Description.IServiceBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceBehaviorAttribute extends System.Attribute implements class System.ServiceModel.Description.IServiceBehavior" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ServiceBehaviorAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceBehaviorAttribute&#xA;Inherits Attribute&#xA;Implements IServiceBehavior" />
+  <TypeSignature Language="F#" Value="type ServiceBehaviorAttribute = class&#xA;    inherit Attribute&#xA;    interface IServiceBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +92,7 @@
       <MemberSignature Language="C#" Value="public ServiceBehaviorAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceBehaviorAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -142,6 +145,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.AddressFilterMode AddressFilterMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.AddressFilterMode AddressFilterMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.AddressFilterMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddressFilterMode As AddressFilterMode" />
+      <MemberSignature Language="F#" Value="member this.AddressFilterMode : System.ServiceModel.AddressFilterMode with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.AddressFilterMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -166,6 +171,8 @@
       <MemberSignature Language="C#" Value="public bool AutomaticSessionShutdown { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutomaticSessionShutdown" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.AutomaticSessionShutdown" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutomaticSessionShutdown As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutomaticSessionShutdown : bool with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.AutomaticSessionShutdown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -197,6 +204,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.ConcurrencyMode ConcurrencyMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.ConcurrencyMode ConcurrencyMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConcurrencyMode As ConcurrencyMode" />
+      <MemberSignature Language="F#" Value="member this.ConcurrencyMode : System.ServiceModel.ConcurrencyMode with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -278,6 +287,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public string ConfigurationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConfigurationName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.ConfigurationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigurationName As String" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationName : string with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.ConfigurationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -310,6 +321,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public bool EnsureOrderedDispatch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnsureOrderedDispatch" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.EnsureOrderedDispatch" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnsureOrderedDispatch As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnsureOrderedDispatch : bool with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.EnsureOrderedDispatch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -334,6 +347,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public object GetWellKnownSingleton ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetWellKnownSingleton() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceBehaviorAttribute.GetWellKnownSingleton" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetWellKnownSingleton () As Object" />
+      <MemberSignature Language="F#" Value="member this.GetWellKnownSingleton : unit -&gt; obj" Usage="serviceBehaviorAttribute.GetWellKnownSingleton " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -360,6 +375,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public bool IgnoreExtensionDataObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreExtensionDataObject" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreExtensionDataObject As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IgnoreExtensionDataObject : bool with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -400,6 +417,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public bool IncludeExceptionDetailInFaults { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IncludeExceptionDetailInFaults" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeExceptionDetailInFaults As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeExceptionDetailInFaults : bool with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -465,6 +484,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public System.ServiceModel.InstanceContextMode InstanceContextMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.InstanceContextMode InstanceContextMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceContextMode As InstanceContextMode" />
+      <MemberSignature Language="F#" Value="member this.InstanceContextMode : System.ServiceModel.InstanceContextMode with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -523,6 +544,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public int MaxItemsInObjectGraph { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxItemsInObjectGraph" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.MaxItemsInObjectGraph" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxItemsInObjectGraph As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxItemsInObjectGraph : int with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.MaxItemsInObjectGraph" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -553,6 +576,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -576,6 +601,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -599,6 +626,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public bool ReleaseServiceInstanceOnTransactionComplete { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReleaseServiceInstanceOnTransactionComplete" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReleaseServiceInstanceOnTransactionComplete As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ReleaseServiceInstanceOnTransactionComplete : bool with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -639,6 +668,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public void SetWellKnownSingleton (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetWellKnownSingleton(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceBehaviorAttribute.SetWellKnownSingleton(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetWellKnownSingleton (value As Object)" />
+      <MemberSignature Language="F#" Value="member this.SetWellKnownSingleton : obj -&gt; unit" Usage="serviceBehaviorAttribute.SetWellKnownSingleton value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -670,6 +701,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public bool ShouldSerializeConfigurationName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeConfigurationName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceBehaviorAttribute.ShouldSerializeConfigurationName" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeConfigurationName () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeConfigurationName : unit -&gt; bool" Usage="serviceBehaviorAttribute.ShouldSerializeConfigurationName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -690,6 +723,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public bool ShouldSerializeReleaseServiceInstanceOnTransactionComplete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeReleaseServiceInstanceOnTransactionComplete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceBehaviorAttribute.ShouldSerializeReleaseServiceInstanceOnTransactionComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeReleaseServiceInstanceOnTransactionComplete () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeReleaseServiceInstanceOnTransactionComplete : unit -&gt; bool" Usage="serviceBehaviorAttribute.ShouldSerializeReleaseServiceInstanceOnTransactionComplete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -710,6 +745,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public bool ShouldSerializeTransactionAutoCompleteOnSessionClose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeTransactionAutoCompleteOnSessionClose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceBehaviorAttribute.ShouldSerializeTransactionAutoCompleteOnSessionClose" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTransactionAutoCompleteOnSessionClose () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeTransactionAutoCompleteOnSessionClose : unit -&gt; bool" Usage="serviceBehaviorAttribute.ShouldSerializeTransactionAutoCompleteOnSessionClose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -730,6 +767,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public bool ShouldSerializeTransactionIsolationLevel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeTransactionIsolationLevel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceBehaviorAttribute.ShouldSerializeTransactionIsolationLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTransactionIsolationLevel () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeTransactionIsolationLevel : unit -&gt; bool" Usage="serviceBehaviorAttribute.ShouldSerializeTransactionIsolationLevel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -750,6 +789,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public bool ShouldSerializeTransactionTimeout ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeTransactionTimeout() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceBehaviorAttribute.ShouldSerializeTransactionTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTransactionTimeout () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeTransactionTimeout : unit -&gt; bool" Usage="serviceBehaviorAttribute.ShouldSerializeTransactionTimeout " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -771,6 +812,9 @@ public void MyMethod()
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceBehaviorAttribute.System#ServiceModel#Description#IServiceBehavior#AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -798,6 +842,9 @@ public void MyMethod()
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceBehaviorAttribute.System#ServiceModel#Description#IServiceBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -821,6 +868,9 @@ public void MyMethod()
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.Validate(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceBehaviorAttribute.System#ServiceModel#Description#IServiceBehavior#Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -843,6 +893,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public bool TransactionAutoCompleteOnSessionClose { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TransactionAutoCompleteOnSessionClose" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.TransactionAutoCompleteOnSessionClose" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransactionAutoCompleteOnSessionClose As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TransactionAutoCompleteOnSessionClose : bool with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.TransactionAutoCompleteOnSessionClose" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -862,6 +914,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public System.Transactions.IsolationLevel TransactionIsolationLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Transactions.IsolationLevel TransactionIsolationLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransactionIsolationLevel As IsolationLevel" />
+      <MemberSignature Language="F#" Value="member this.TransactionIsolationLevel : System.Transactions.IsolationLevel with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -902,6 +956,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public string TransactionTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TransactionTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransactionTimeout As String" />
+      <MemberSignature Language="F#" Value="member this.TransactionTimeout : string with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -937,6 +993,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public bool UseSynchronizationContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseSynchronizationContext" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.UseSynchronizationContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseSynchronizationContext As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseSynchronizationContext : bool with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.UseSynchronizationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -968,6 +1026,8 @@ public void MyMethod()
       <MemberSignature Language="C#" Value="public bool ValidateMustUnderstand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ValidateMustUnderstand" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceBehaviorAttribute.ValidateMustUnderstand" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidateMustUnderstand As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ValidateMustUnderstand : bool with get, set" Usage="System.ServiceModel.ServiceBehaviorAttribute.ValidateMustUnderstand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

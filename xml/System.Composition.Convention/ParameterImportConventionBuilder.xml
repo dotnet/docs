@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class ParameterImportConventionBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ParameterImportConventionBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Convention.ParameterImportConventionBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ParameterImportConventionBuilder" />
+  <TypeSignature Language="F#" Value="type ParameterImportConventionBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Convention</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public T Import&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Import&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ParameterImportConventionBuilder.Import``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function Import(Of T) () As T" />
+      <MemberSignature Language="F#" Value="member this.Import : unit -&gt; 'T" Usage="parameterImportConventionBuilder.Import " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public T Import&lt;T&gt; (Action&lt;System.Composition.Convention.ImportConventionBuilder&gt; configure);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Import&lt;T&gt;(class System.Action`1&lt;class System.Composition.Convention.ImportConventionBuilder&gt; configure) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ParameterImportConventionBuilder.Import``1(System.Action{System.Composition.Convention.ImportConventionBuilder})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Import(Of T) (configure As Action(Of ImportConventionBuilder)) As T" />
+      <MemberSignature Language="F#" Value="member this.Import : Action&lt;System.Composition.Convention.ImportConventionBuilder&gt; -&gt; 'T" Usage="parameterImportConventionBuilder.Import configure" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>

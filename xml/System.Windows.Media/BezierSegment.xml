@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class BezierSegment : System.Windows.Media.PathSegment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BezierSegment extends System.Windows.Media.PathSegment" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.BezierSegment" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BezierSegment&#xA;Inherits PathSegment" />
+  <TypeSignature Language="F#" Value="type BezierSegment = class&#xA;    inherit PathSegment" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,10 +32,20 @@
     <altmember cref="T:System.Windows.Media.PathFigure" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.BezierSegment" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BezierSegment ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BezierSegment.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +70,8 @@
       <MemberSignature Language="C#" Value="public BezierSegment (System.Windows.Point point1, System.Windows.Point point2, System.Windows.Point point3, bool isStroked);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point point1, valuetype System.Windows.Point point2, valuetype System.Windows.Point point3, bool isStroked) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BezierSegment.#ctor(System.Windows.Point,System.Windows.Point,System.Windows.Point,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (point1 As Point, point2 As Point, point3 As Point, isStroked As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.BezierSegment : System.Windows.Point * System.Windows.Point * System.Windows.Point * bool -&gt; System.Windows.Media.BezierSegment" Usage="new System.Windows.Media.BezierSegment (point1, point2, point3, isStroked)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -92,6 +106,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.BezierSegment Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.BezierSegment Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BezierSegment.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As BezierSegment" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.BezierSegment" Usage="bezierSegment.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -120,6 +136,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.BezierSegment CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.BezierSegment CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BezierSegment.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BezierSegment" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.BezierSegment" Usage="bezierSegment.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -148,6 +166,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BezierSegment.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="bezierSegment.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -167,6 +187,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Point Point1 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point Point1" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.BezierSegment.Point1" />
+      <MemberSignature Language="VB.NET" Value="Public Property Point1 As Point" />
+      <MemberSignature Language="F#" Value="member this.Point1 : System.Windows.Point with get, set" Usage="System.Windows.Media.BezierSegment.Point1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -200,6 +222,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty Point1Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty Point1Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BezierSegment.Point1Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Point1Property As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable Point1Property : System.Windows.DependencyProperty" Usage="System.Windows.Media.BezierSegment.Point1Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -217,6 +241,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Point Point2 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point Point2" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.BezierSegment.Point2" />
+      <MemberSignature Language="VB.NET" Value="Public Property Point2 As Point" />
+      <MemberSignature Language="F#" Value="member this.Point2 : System.Windows.Point with get, set" Usage="System.Windows.Media.BezierSegment.Point2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -250,6 +276,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty Point2Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty Point2Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BezierSegment.Point2Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Point2Property As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable Point2Property : System.Windows.DependencyProperty" Usage="System.Windows.Media.BezierSegment.Point2Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -267,6 +295,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Point Point3 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point Point3" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.BezierSegment.Point3" />
+      <MemberSignature Language="VB.NET" Value="Public Property Point3 As Point" />
+      <MemberSignature Language="F#" Value="member this.Point3 : System.Windows.Point with get, set" Usage="System.Windows.Media.BezierSegment.Point3" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -300,6 +330,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty Point3Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty Point3Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BezierSegment.Point3Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Point3Property As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable Point3Property : System.Windows.DependencyProperty" Usage="System.Windows.Media.BezierSegment.Point3Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -313,14 +345,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.BezierSegment" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

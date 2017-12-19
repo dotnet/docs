@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void ColumnReorderedEventHandler(object sender, ColumnReorderedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColumnReorderedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnReorderedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ColumnReorderedEventHandler(sender As Object, e As ColumnReorderedEventArgs)" />
+  <TypeSignature Language="F#" Value="type ColumnReorderedEventHandler = delegate of obj * ColumnReorderedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

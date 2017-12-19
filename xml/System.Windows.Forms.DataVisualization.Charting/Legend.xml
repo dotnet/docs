@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class Legend : System.Windows.Forms.DataVisualization.Charting.ChartNamedElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Legend extends System.Windows.Forms.DataVisualization.Charting.ChartNamedElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.Legend" />
+  <TypeSignature Language="VB.NET" Value="Public Class Legend&#xA;Inherits ChartNamedElement" />
+  <TypeSignature Language="F#" Value="type Legend = class&#xA;    inherit ChartNamedElement" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,10 +73,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Legend" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Legend ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Legend.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -90,6 +102,8 @@
       <MemberSignature Language="C#" Value="public Legend (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Legend.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.Legend : string -&gt; System.Windows.Forms.DataVisualization.Charting.Legend" Usage="new System.Windows.Forms.DataVisualization.Charting.Legend name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -108,6 +122,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.StringAlignment Alignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.StringAlignment Alignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.Alignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Alignment As StringAlignment" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Drawing.StringAlignment with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -150,6 +166,8 @@
       <MemberSignature Language="C#" Value="public int AutoFitMinFontSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AutoFitMinFontSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.AutoFitMinFontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoFitMinFontSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.AutoFitMinFontSize : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.AutoFitMinFontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -173,6 +191,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -219,6 +239,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackGradientStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackGradientStyle As GradientStyle" />
+      <MemberSignature Language="F#" Value="member this.BackGradientStyle : System.Windows.Forms.DataVisualization.Charting.GradientStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.BackGradientStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -268,6 +290,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackHatchStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackHatchStyle As ChartHatchStyle" />
+      <MemberSignature Language="F#" Value="member this.BackHatchStyle : System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.BackHatchStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -311,6 +335,8 @@
       <MemberSignature Language="C#" Value="public string BackImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BackImage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackImage" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImage As String" />
+      <MemberSignature Language="F#" Value="member this.BackImage : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.BackImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -358,6 +384,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle BackImageAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle BackImageAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackImageAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageAlignment As ChartImageAlignmentStyle" />
+      <MemberSignature Language="F#" Value="member this.BackImageAlignment : System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.BackImageAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -394,6 +422,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackImageTransparentColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackImageTransparentColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackImageTransparentColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageTransparentColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackImageTransparentColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.BackImageTransparentColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -429,6 +459,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode BackImageWrapMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode BackImageWrapMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackImageWrapMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageWrapMode As ChartImageWrapMode" />
+      <MemberSignature Language="F#" Value="member this.BackImageWrapMode : System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.BackImageWrapMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -471,6 +503,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackSecondaryColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackSecondaryColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BackSecondaryColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackSecondaryColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackSecondaryColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.BackSecondaryColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -525,6 +559,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BorderColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.BorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -567,6 +603,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartDashStyle BorderDashStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartDashStyle BorderDashStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BorderDashStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderDashStyle As ChartDashStyle" />
+      <MemberSignature Language="F#" Value="member this.BorderDashStyle : System.Windows.Forms.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.BorderDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -605,6 +643,8 @@
       <MemberSignature Language="C#" Value="public int BorderWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BorderWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.BorderWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.BorderWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.BorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -641,6 +681,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendCellColumnCollection CellColumns { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.LegendCellColumnCollection CellColumns" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.CellColumns" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CellColumns As LegendCellColumnCollection" />
+      <MemberSignature Language="F#" Value="member this.CellColumns : System.Windows.Forms.DataVisualization.Charting.LegendCellColumnCollection" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.CellColumns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -667,6 +709,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection CustomItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection CustomItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.CustomItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomItems As LegendItemsCollection" />
+      <MemberSignature Language="F#" Value="member this.CustomItems : System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.CustomItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -710,6 +754,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Legend.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="legend.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -732,6 +778,8 @@
       <MemberSignature Language="C#" Value="public string DockedToChartArea { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DockedToChartArea" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.DockedToChartArea" />
+      <MemberSignature Language="VB.NET" Value="Public Property DockedToChartArea As String" />
+      <MemberSignature Language="F#" Value="member this.DockedToChartArea : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.DockedToChartArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -764,6 +812,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Docking Docking { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.Docking Docking" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.Docking" />
+      <MemberSignature Language="VB.NET" Value="Public Property Docking As Docking" />
+      <MemberSignature Language="F#" Value="member this.Docking : System.Windows.Forms.DataVisualization.Charting.Docking with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.Docking" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -802,6 +852,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -842,6 +894,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -881,6 +935,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -923,6 +979,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle HeaderSeparator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle HeaderSeparator" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.HeaderSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderSeparator As LegendSeparatorStyle" />
+      <MemberSignature Language="F#" Value="member this.HeaderSeparator : System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.HeaderSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -946,6 +1004,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color HeaderSeparatorColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color HeaderSeparatorColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.HeaderSeparatorColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderSeparatorColor As Color" />
+      <MemberSignature Language="F#" Value="member this.HeaderSeparatorColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.HeaderSeparatorColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -975,6 +1035,8 @@
       <MemberSignature Language="C#" Value="public string InsideChartArea { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InsideChartArea" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.InsideChartArea" />
+      <MemberSignature Language="VB.NET" Value="Public Property InsideChartArea As String" />
+      <MemberSignature Language="F#" Value="member this.InsideChartArea : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.InsideChartArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1016,6 +1078,8 @@
       <MemberSignature Language="C#" Value="public bool InterlacedRows { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool InterlacedRows" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.InterlacedRows" />
+      <MemberSignature Language="VB.NET" Value="Public Property InterlacedRows As Boolean" />
+      <MemberSignature Language="F#" Value="member this.InterlacedRows : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.InterlacedRows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1047,6 +1111,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color InterlacedRowsColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color InterlacedRowsColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.InterlacedRowsColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property InterlacedRowsColor As Color" />
+      <MemberSignature Language="F#" Value="member this.InterlacedRowsColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.InterlacedRowsColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1083,6 +1149,8 @@
       <MemberSignature Language="C#" Value="public bool IsDockedInsideChartArea { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDockedInsideChartArea" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.IsDockedInsideChartArea" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDockedInsideChartArea As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDockedInsideChartArea : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.IsDockedInsideChartArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1123,6 +1191,8 @@
       <MemberSignature Language="C#" Value="public bool IsEquallySpacedItems { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEquallySpacedItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.IsEquallySpacedItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsEquallySpacedItems As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEquallySpacedItems : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.IsEquallySpacedItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1153,6 +1223,8 @@
       <MemberSignature Language="C#" Value="public bool IsTextAutoFit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTextAutoFit" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.IsTextAutoFit" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsTextAutoFit As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTextAutoFit : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.IsTextAutoFit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1183,6 +1255,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle ItemColumnSeparator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle ItemColumnSeparator" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.ItemColumnSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemColumnSeparator As LegendSeparatorStyle" />
+      <MemberSignature Language="F#" Value="member this.ItemColumnSeparator : System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.ItemColumnSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1206,6 +1280,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ItemColumnSeparatorColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ItemColumnSeparatorColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.ItemColumnSeparatorColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemColumnSeparatorColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ItemColumnSeparatorColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.ItemColumnSeparatorColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1235,6 +1311,8 @@
       <MemberSignature Language="C#" Value="public int ItemColumnSpacing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemColumnSpacing" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.ItemColumnSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemColumnSpacing As Integer" />
+      <MemberSignature Language="F#" Value="member this.ItemColumnSpacing : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.ItemColumnSpacing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1265,6 +1343,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendItemOrder LegendItemOrder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LegendItemOrder LegendItemOrder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.LegendItemOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property LegendItemOrder As LegendItemOrder" />
+      <MemberSignature Language="F#" Value="member this.LegendItemOrder : System.Windows.Forms.DataVisualization.Charting.LegendItemOrder with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.LegendItemOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1295,6 +1375,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendStyle LegendStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LegendStyle LegendStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.LegendStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property LegendStyle As LegendStyle" />
+      <MemberSignature Language="F#" Value="member this.LegendStyle : System.Windows.Forms.DataVisualization.Charting.LegendStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.LegendStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1342,6 +1424,8 @@
       <MemberSignature Language="C#" Value="public float MaximumAutoSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 MaximumAutoSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.MaximumAutoSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumAutoSize As Single" />
+      <MemberSignature Language="F#" Value="member this.MaximumAutoSize : single with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.MaximumAutoSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1372,6 +1456,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1398,6 +1484,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ElementPosition Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.ElementPosition Position" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Property Position As ElementPosition" />
+      <MemberSignature Language="F#" Value="member this.Position : System.Windows.Forms.DataVisualization.Charting.ElementPosition with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1432,6 +1520,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ShadowColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ShadowColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.ShadowColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShadowColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ShadowColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.ShadowColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1478,6 +1568,8 @@
       <MemberSignature Language="C#" Value="public int ShadowOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ShadowOffset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.ShadowOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShadowOffset As Integer" />
+      <MemberSignature Language="F#" Value="member this.ShadowOffset : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.ShadowOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1514,6 +1606,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendTableStyle TableStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LegendTableStyle TableStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TableStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property TableStyle As LegendTableStyle" />
+      <MemberSignature Language="F#" Value="member this.TableStyle : System.Windows.Forms.DataVisualization.Charting.LegendTableStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.TableStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1553,6 +1647,8 @@
       <MemberSignature Language="C#" Value="public int TextWrapThreshold { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TextWrapThreshold" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TextWrapThreshold" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextWrapThreshold As Integer" />
+      <MemberSignature Language="F#" Value="member this.TextWrapThreshold : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.TextWrapThreshold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1585,6 +1681,8 @@
       <MemberSignature Language="C#" Value="public string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1608,6 +1706,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.StringAlignment TitleAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.StringAlignment TitleAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TitleAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property TitleAlignment As StringAlignment" />
+      <MemberSignature Language="F#" Value="member this.TitleAlignment : System.Drawing.StringAlignment with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.TitleAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1631,6 +1731,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color TitleBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color TitleBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TitleBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property TitleBackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.TitleBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.TitleBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1660,6 +1762,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font TitleFont { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font TitleFont" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TitleFont" />
+      <MemberSignature Language="VB.NET" Value="Public Property TitleFont As Font" />
+      <MemberSignature Language="F#" Value="member this.TitleFont : System.Drawing.Font with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.TitleFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1692,6 +1796,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color TitleForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color TitleForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TitleForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property TitleForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.TitleForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.TitleForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1721,6 +1827,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle TitleSeparator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle TitleSeparator" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TitleSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Property TitleSeparator As LegendSeparatorStyle" />
+      <MemberSignature Language="F#" Value="member this.TitleSeparator : System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.TitleSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1744,6 +1852,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color TitleSeparatorColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color TitleSeparatorColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Legend.TitleSeparatorColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property TitleSeparatorColor As Color" />
+      <MemberSignature Language="F#" Value="member this.TitleSeparatorColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Legend.TitleSeparatorColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1769,14 +1879,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Legend" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

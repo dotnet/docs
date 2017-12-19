@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class NoStartupFormException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable NoStartupFormException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" />
+  <TypeSignature Language="VB.NET" Value="Public Class NoStartupFormException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type NoStartupFormException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -30,10 +32,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NoStartupFormException ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -63,6 +75,8 @@
       <MemberSignature Language="C#" Value="public NoStartupFormException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ApplicationServices.NoStartupFormException : string -&gt; Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" Usage="new Microsoft.VisualBasic.ApplicationServices.NoStartupFormException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -95,6 +109,8 @@
       <MemberSignature Language="C#" Value="protected NoStartupFormException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyspecialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ApplicationServices.NoStartupFormException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" Usage="new Microsoft.VisualBasic.ApplicationServices.NoStartupFormException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -127,6 +143,8 @@
       <MemberSignature Language="C#" Value="public NoStartupFormException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ApplicationServices.NoStartupFormException : string * Exception -&gt; Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" Usage="new Microsoft.VisualBasic.ApplicationServices.NoStartupFormException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -159,14 +177,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

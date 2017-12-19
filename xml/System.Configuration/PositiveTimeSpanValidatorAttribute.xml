@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class PositiveTimeSpanValidatorAttribute : System.Configuration.ConfigurationValidatorAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PositiveTimeSpanValidatorAttribute extends System.Configuration.ConfigurationValidatorAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.PositiveTimeSpanValidatorAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PositiveTimeSpanValidatorAttribute&#xA;Inherits ConfigurationValidatorAttribute" />
+  <TypeSignature Language="F#" Value="type PositiveTimeSpanValidatorAttribute = class&#xA;    inherit ConfigurationValidatorAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,7 @@
       <MemberSignature Language="C#" Value="public PositiveTimeSpanValidatorAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.PositiveTimeSpanValidatorAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -67,6 +70,8 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationValidatorBase ValidatorInstance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationValidatorBase ValidatorInstance" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.PositiveTimeSpanValidatorAttribute.ValidatorInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidatorInstance As ConfigurationValidatorBase" />
+      <MemberSignature Language="F#" Value="member this.ValidatorInstance : System.Configuration.ConfigurationValidatorBase" Usage="System.Configuration.PositiveTimeSpanValidatorAttribute.ValidatorInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ReadOnlySiteLinkBridgeCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReadOnlySiteLinkBridgeCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkBridgeCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReadOnlySiteLinkBridgeCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ReadOnlySiteLinkBridgeCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge bridge);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge bridge) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkBridgeCollection.Contains(System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (bridge As ActiveDirectorySiteLinkBridge) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge -&gt; bool" Usage="readOnlySiteLinkBridgeCollection.Contains bridge" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -47,6 +51,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge[] bridges, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge[] bridges, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkBridgeCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (bridges As ActiveDirectorySiteLinkBridge(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge[] * int -&gt; unit" Usage="readOnlySiteLinkBridgeCollection.CopyTo (bridges, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge bridge);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge bridge) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkBridgeCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (bridge As ActiveDirectorySiteLinkBridge) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge -&gt; int" Usage="readOnlySiteLinkBridgeCollection.IndexOf bridge" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -104,6 +112,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkBridgeCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ActiveDirectorySiteLinkBridge" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" Usage="System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkBridgeCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

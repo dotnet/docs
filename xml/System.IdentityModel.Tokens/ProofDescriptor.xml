@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class ProofDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ProofDescriptor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.ProofDescriptor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProofDescriptor" />
+  <TypeSignature Language="F#" Value="type ProofDescriptor = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="protected ProofDescriptor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.ProofDescriptor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public abstract void ApplyTo (System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyTo(class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.ProofDescriptor.ApplyTo(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ApplyTo (response As RequestSecurityTokenResponse)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyTo : System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse -&gt; unit" Usage="proofDescriptor.ApplyTo response" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -55,6 +60,8 @@
       <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Tokens.SecurityKeyIdentifier KeyIdentifier { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityKeyIdentifier KeyIdentifier" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.ProofDescriptor.KeyIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property KeyIdentifier As SecurityKeyIdentifier" />
+      <MemberSignature Language="F#" Value="member this.KeyIdentifier : System.IdentityModel.Tokens.SecurityKeyIdentifier" Usage="System.IdentityModel.Tokens.ProofDescriptor.KeyIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

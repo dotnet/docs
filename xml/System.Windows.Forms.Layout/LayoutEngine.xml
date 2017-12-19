@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class LayoutEngine" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit LayoutEngine extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Layout.LayoutEngine" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class LayoutEngine" />
+  <TypeSignature Language="F#" Value="type LayoutEngine = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,7 @@
       <MemberSignature Language="C#" Value="protected LayoutEngine ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Layout.LayoutEngine.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -53,6 +56,8 @@
       <MemberSignature Language="C#" Value="public virtual void InitLayout (object child, System.Windows.Forms.BoundsSpecified specified);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitLayout(object child, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Layout.LayoutEngine.InitLayout(System.Object,System.Windows.Forms.BoundsSpecified)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub InitLayout (child As Object, specified As BoundsSpecified)" />
+      <MemberSignature Language="F#" Value="abstract member InitLayout : obj * System.Windows.Forms.BoundsSpecified -&gt; unit&#xA;override this.InitLayout : obj * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="layoutEngine.InitLayout (child, specified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -88,6 +93,7 @@
       <MemberSignature Language="C#" Value="public virtual bool Layout (object container, System.Windows.Forms.LayoutEventArgs layoutEventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Layout(object container, class System.Windows.Forms.LayoutEventArgs layoutEventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Layout.LayoutEngine.Layout(System.Object,System.Windows.Forms.LayoutEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member Layout : obj * System.Windows.Forms.LayoutEventArgs -&gt; bool&#xA;override this.Layout : obj * System.Windows.Forms.LayoutEventArgs -&gt; bool" Usage="layoutEngine.Layout (container, layoutEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

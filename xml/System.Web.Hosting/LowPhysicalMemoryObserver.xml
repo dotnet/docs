@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class LowPhysicalMemoryObserver : IObserver&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LowPhysicalMemoryObserver extends System.Object implements class System.IObserver`1&lt;class System.Web.Hosting.LowPhysicalMemoryInfo&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.LowPhysicalMemoryObserver" />
+  <TypeSignature Language="VB.NET" Value="Public Class LowPhysicalMemoryObserver&#xA;Implements IObserver(Of LowPhysicalMemoryInfo)" />
+  <TypeSignature Language="F#" Value="type LowPhysicalMemoryObserver = class&#xA;    interface IObserver&lt;LowPhysicalMemoryInfo&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,7 @@
       <MemberSignature Language="C#" Value="public LowPhysicalMemoryObserver ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.LowPhysicalMemoryObserver.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -38,7 +41,12 @@
       <MemberSignature Language="C#" Value="public void OnCompleted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnCompleted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.LowPhysicalMemoryObserver.OnCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnCompleted ()" />
+      <MemberSignature Language="F#" Value="abstract member OnCompleted : unit -&gt; unit&#xA;override this.OnCompleted : unit -&gt; unit" Usage="lowPhysicalMemoryObserver.OnCompleted " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IObserver`1.OnCompleted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,7 +64,12 @@
       <MemberSignature Language="C#" Value="public void OnError (Exception error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnError(class System.Exception error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.LowPhysicalMemoryObserver.OnError(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnError (error As Exception)" />
+      <MemberSignature Language="F#" Value="abstract member OnError : Exception -&gt; unit&#xA;override this.OnError : Exception -&gt; unit" Usage="lowPhysicalMemoryObserver.OnError error" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IObserver`1.OnError(System.Exception)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,7 +90,12 @@
       <MemberSignature Language="C#" Value="public void OnNext (System.Web.Hosting.LowPhysicalMemoryInfo lowMemoryInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnNext(class System.Web.Hosting.LowPhysicalMemoryInfo lowMemoryInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.LowPhysicalMemoryObserver.OnNext(System.Web.Hosting.LowPhysicalMemoryInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnNext (lowMemoryInfo As LowPhysicalMemoryInfo)" />
+      <MemberSignature Language="F#" Value="abstract member OnNext : System.Web.Hosting.LowPhysicalMemoryInfo -&gt; unit&#xA;override this.OnNext : System.Web.Hosting.LowPhysicalMemoryInfo -&gt; unit" Usage="lowPhysicalMemoryObserver.OnNext lowMemoryInfo" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IObserver`1.OnNext(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

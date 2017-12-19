@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class HttpCacheVaryByContentEncodings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpCacheVaryByContentEncodings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheVaryByContentEncodings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpCacheVaryByContentEncodings" />
+  <TypeSignature Language="F#" Value="type HttpCacheVaryByContentEncodings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,7 @@
       <MemberSignature Language="C#" Value="public HttpCacheVaryByContentEncodings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByContentEncodings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -64,6 +67,8 @@
       <MemberSignature Language="C#" Value="public string[] GetContentEncodings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetContentEncodings() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByContentEncodings.GetContentEncodings" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetContentEncodings () As String()" />
+      <MemberSignature Language="F#" Value="member this.GetContentEncodings : unit -&gt; string[]" Usage="httpCacheVaryByContentEncodings.GetContentEncodings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +88,8 @@
       <MemberSignature Language="C#" Value="public bool this[string contentEncoding] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByContentEncodings.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(contentEncoding As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : bool with get, set" Usage="System.Web.HttpCacheVaryByContentEncodings.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +114,8 @@
       <MemberSignature Language="C#" Value="public void SetContentEncodings (string[] contentEncodings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetContentEncodings(string[] contentEncodings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByContentEncodings.SetContentEncodings(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetContentEncodings (contentEncodings As String())" />
+      <MemberSignature Language="F#" Value="member this.SetContentEncodings : string[] -&gt; unit" Usage="httpCacheVaryByContentEncodings.SetContentEncodings contentEncodings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

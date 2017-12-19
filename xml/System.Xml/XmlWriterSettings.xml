@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class XmlWriterSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlWriterSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlWriterSettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlWriterSettings" />
+  <TypeSignature Language="F#" Value="type XmlWriterSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +83,7 @@
       <MemberSignature Language="C#" Value="public XmlWriterSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriterSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -138,6 +141,8 @@
       <MemberSignature Language="C#" Value="public bool Async { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Async" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.Async" />
+      <MemberSignature Language="VB.NET" Value="Public Property Async As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Async : bool with get, set" Usage="System.Xml.XmlWriterSettings.Async" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -178,6 +183,8 @@
       <MemberSignature Language="C#" Value="public bool CheckCharacters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CheckCharacters" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.CheckCharacters" />
+      <MemberSignature Language="VB.NET" Value="Public Property CheckCharacters As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CheckCharacters : bool with get, set" Usage="System.Xml.XmlWriterSettings.CheckCharacters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -218,6 +225,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlWriterSettings Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlWriterSettings Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriterSettings.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As XmlWriterSettings" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Xml.XmlWriterSettings" Usage="xmlWriterSettings.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -256,6 +265,8 @@
       <MemberSignature Language="C#" Value="public bool CloseOutput { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CloseOutput" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.CloseOutput" />
+      <MemberSignature Language="VB.NET" Value="Public Property CloseOutput As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CloseOutput : bool with get, set" Usage="System.Xml.XmlWriterSettings.CloseOutput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -304,6 +315,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.ConformanceLevel ConformanceLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.ConformanceLevel ConformanceLevel" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.ConformanceLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConformanceLevel As ConformanceLevel" />
+      <MemberSignature Language="F#" Value="member this.ConformanceLevel : System.Xml.ConformanceLevel with get, set" Usage="System.Xml.XmlWriterSettings.ConformanceLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -382,6 +395,8 @@
       <MemberSignature Language="C#" Value="public bool DoNotEscapeUriAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DoNotEscapeUriAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.DoNotEscapeUriAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property DoNotEscapeUriAttributes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DoNotEscapeUriAttributes : bool with get, set" Usage="System.Xml.XmlWriterSettings.DoNotEscapeUriAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -410,6 +425,8 @@
       <MemberSignature Language="C#" Value="public System.Text.Encoding Encoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding Encoding" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Encoding As Encoding" />
+      <MemberSignature Language="F#" Value="member this.Encoding : System.Text.Encoding with get, set" Usage="System.Xml.XmlWriterSettings.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -485,6 +502,8 @@ using (StreamWriter output =
       <MemberSignature Language="C#" Value="public bool Indent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Indent" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.Indent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Indent As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Indent : bool with get, set" Usage="System.Xml.XmlWriterSettings.Indent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -533,6 +552,8 @@ using (StreamWriter output =
       <MemberSignature Language="C#" Value="public string IndentChars { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IndentChars" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.IndentChars" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndentChars As String" />
+      <MemberSignature Language="F#" Value="member this.IndentChars : string with get, set" Usage="System.Xml.XmlWriterSettings.IndentChars" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -579,6 +600,8 @@ using (StreamWriter output =
       <MemberSignature Language="C#" Value="public System.Xml.NamespaceHandling NamespaceHandling { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.NamespaceHandling NamespaceHandling" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.NamespaceHandling" />
+      <MemberSignature Language="VB.NET" Value="Public Property NamespaceHandling As NamespaceHandling" />
+      <MemberSignature Language="F#" Value="member this.NamespaceHandling : System.Xml.NamespaceHandling with get, set" Usage="System.Xml.XmlWriterSettings.NamespaceHandling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -609,6 +632,8 @@ using (StreamWriter output =
       <MemberSignature Language="C#" Value="public string NewLineChars { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NewLineChars" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.NewLineChars" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewLineChars As String" />
+      <MemberSignature Language="F#" Value="member this.NewLineChars : string with get, set" Usage="System.Xml.XmlWriterSettings.NewLineChars" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -647,6 +672,8 @@ using (StreamWriter output =
       <MemberSignature Language="C#" Value="public System.Xml.NewLineHandling NewLineHandling { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.NewLineHandling NewLineHandling" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.NewLineHandling" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewLineHandling As NewLineHandling" />
+      <MemberSignature Language="F#" Value="member this.NewLineHandling : System.Xml.NewLineHandling with get, set" Usage="System.Xml.XmlWriterSettings.NewLineHandling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -721,6 +748,8 @@ using (StreamWriter output =
       <MemberSignature Language="C#" Value="public bool NewLineOnAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NewLineOnAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.NewLineOnAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewLineOnAttributes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.NewLineOnAttributes : bool with get, set" Usage="System.Xml.XmlWriterSettings.NewLineOnAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -784,6 +813,8 @@ using (StreamWriter output =
       <MemberSignature Language="C#" Value="public bool OmitXmlDeclaration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OmitXmlDeclaration" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.OmitXmlDeclaration" />
+      <MemberSignature Language="VB.NET" Value="Public Property OmitXmlDeclaration As Boolean" />
+      <MemberSignature Language="F#" Value="member this.OmitXmlDeclaration : bool with get, set" Usage="System.Xml.XmlWriterSettings.OmitXmlDeclaration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -836,6 +867,8 @@ using (StreamWriter output =
       <MemberSignature Language="C#" Value="public System.Xml.XmlOutputMethod OutputMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlOutputMethod OutputMethod" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.OutputMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputMethod As XmlOutputMethod" />
+      <MemberSignature Language="F#" Value="member this.OutputMethod : System.Xml.XmlOutputMethod" Usage="System.Xml.XmlWriterSettings.OutputMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -870,6 +903,8 @@ using (StreamWriter output =
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriterSettings.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="xmlWriterSettings.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -922,6 +957,8 @@ using (StreamWriter output =
       <MemberSignature Language="C#" Value="public bool WriteEndDocumentOnClose { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WriteEndDocumentOnClose" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.WriteEndDocumentOnClose" />
+      <MemberSignature Language="VB.NET" Value="Public Property WriteEndDocumentOnClose As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WriteEndDocumentOnClose : bool with get, set" Usage="System.Xml.XmlWriterSettings.WriteEndDocumentOnClose" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

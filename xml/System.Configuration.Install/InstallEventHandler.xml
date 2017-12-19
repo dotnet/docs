@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void InstallEventHandler(object sender, InstallEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InstallEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.InstallEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub InstallEventHandler(sender As Object, e As InstallEventArgs)" />
+  <TypeSignature Language="F#" Value="type InstallEventHandler = delegate of obj * InstallEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

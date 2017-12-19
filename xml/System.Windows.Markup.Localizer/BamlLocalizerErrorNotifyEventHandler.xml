@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void BamlLocalizerErrorNotifyEventHandler(object sender, BamlLocalizerErrorNotifyEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BamlLocalizerErrorNotifyEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Localizer.BamlLocalizerErrorNotifyEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub BamlLocalizerErrorNotifyEventHandler(sender As Object, e As BamlLocalizerErrorNotifyEventArgs)" />
+  <TypeSignature Language="F#" Value="type BamlLocalizerErrorNotifyEventHandler = delegate of obj * BamlLocalizerErrorNotifyEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

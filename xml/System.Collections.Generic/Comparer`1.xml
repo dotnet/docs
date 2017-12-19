@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class Comparer&lt;T&gt; : System.Collections.Generic.IComparer&lt;T&gt;, System.Collections.IComparer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Comparer`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.IComparer`1&lt;!T&gt;, class System.Collections.IComparer" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.Comparer`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Comparer(Of T)&#xA;Implements IComparer, IComparer(Of T)" />
+  <TypeSignature Language="F#" Value="type Comparer&lt;'T&gt; = class&#xA;    interface IComparer&#xA;    interface IComparer&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +78,7 @@
       <MemberSignature Language="C#" Value="protected Comparer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -102,7 +105,12 @@
       <MemberSignature Language="C#" Value="public abstract int Compare (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(!T x, !T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.Compare(`0,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Compare (x As T, y As T) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Compare : 'T * 'T -&gt; int" Usage="comparer.Compare (x, y)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IComparer`1.Compare(`0,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -181,6 +189,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.Comparer&lt;T&gt; Create (Comparison&lt;T&gt; comparison);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.Comparer`1&lt;!T&gt; Create(class System.Comparison`1&lt;!T&gt; comparison) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.Create(System.Comparison{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (comparison As Comparison(Of T)) As Comparer(Of T)" />
+      <MemberSignature Language="F#" Value="static member Create : Comparison&lt;'T&gt; -&gt; System.Collections.Generic.Comparer&lt;'T&gt;" Usage="System.Collections.Generic.Comparer&lt;'T&gt;.Create comparison" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -214,6 +224,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.Comparer&lt;T&gt; Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.Comparer`1&lt;!T&gt; Default" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Comparer`1.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As Comparer(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Collections.Generic.Comparer&lt;'T&gt;" Usage="System.Collections.Generic.Comparer&lt;'T&gt;.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -267,7 +279,11 @@
       <MemberSignature Language="C#" Value="int IComparer.Compare (object x, object y);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IComparer.Compare(object x, object y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.System#Collections#IComparer#Compare(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Compare (x As Object, y As Object) As Integer Implements IComparer.Compare" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IComparer.Compare(System.Object,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class StrongNameSignatureInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StrongNameSignatureInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.StrongNameSignatureInformation" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StrongNameSignatureInformation" />
+  <TypeSignature Language="F#" Value="type StrongNameSignatureInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public string HashAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HashAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.StrongNameSignatureInformation.HashAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HashAlgorithm As String" />
+      <MemberSignature Language="F#" Value="member this.HashAlgorithm : string" Usage="System.Security.Cryptography.StrongNameSignatureInformation.HashAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public int HResult { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 HResult" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.StrongNameSignatureInformation.HResult" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HResult As Integer" />
+      <MemberSignature Language="F#" Value="member this.HResult : int" Usage="System.Security.Cryptography.StrongNameSignatureInformation.HResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -55,6 +61,8 @@
       <MemberSignature Language="C#" Value="public bool IsValid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.StrongNameSignatureInformation.IsValid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="System.Security.Cryptography.StrongNameSignatureInformation.IsValid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -74,6 +82,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.AsymmetricAlgorithm PublicKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.AsymmetricAlgorithm PublicKey" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.StrongNameSignatureInformation.PublicKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicKey As AsymmetricAlgorithm" />
+      <MemberSignature Language="F#" Value="member this.PublicKey : System.Security.Cryptography.AsymmetricAlgorithm" Usage="System.Security.Cryptography.StrongNameSignatureInformation.PublicKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -99,6 +109,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.SignatureVerificationResult VerificationResult { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.SignatureVerificationResult VerificationResult" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.StrongNameSignatureInformation.VerificationResult" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerificationResult As SignatureVerificationResult" />
+      <MemberSignature Language="F#" Value="member this.VerificationResult : System.Security.Cryptography.SignatureVerificationResult" Usage="System.Security.Cryptography.StrongNameSignatureInformation.VerificationResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

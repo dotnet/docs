@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IReadOnlySessionState : System.Web.SessionState.IRequiresSessionState" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReadOnlySessionState implements class System.Web.SessionState.IRequiresSessionState" />
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.IReadOnlySessionState" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IReadOnlySessionState&#xA;Implements IRequiresSessionState" />
+  <TypeSignature Language="F#" Value="type IReadOnlySessionState = interface&#xA;    interface IRequiresSessionState" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

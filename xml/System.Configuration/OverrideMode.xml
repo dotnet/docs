@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public enum OverrideMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OverrideMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.OverrideMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OverrideMode" />
+  <TypeSignature Language="F#" Value="type OverrideMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="Allow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.OverrideMode Allow = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.OverrideMode.Allow" />
+      <MemberSignature Language="VB.NET" Value="Allow" />
+      <MemberSignature Language="F#" Value="Allow = 1" Usage="System.Configuration.OverrideMode.Allow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.OverrideMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The configuration setting of the element or group can be overridden by configuration settings that are in child directories.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="Deny" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.OverrideMode Deny = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.OverrideMode.Deny" />
+      <MemberSignature Language="VB.NET" Value="Deny" />
+      <MemberSignature Language="F#" Value="Deny = 2" Usage="System.Configuration.OverrideMode.Deny" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -62,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.OverrideMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The configuration setting of the element or group cannot be overridden by configuration settings that are in child directories.</summary>
       </Docs>
@@ -70,6 +78,8 @@
       <MemberSignature Language="C#" Value="Inherit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.OverrideMode Inherit = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.OverrideMode.Inherit" />
+      <MemberSignature Language="VB.NET" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 0" Usage="System.Configuration.OverrideMode.Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -82,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.OverrideMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The configuration setting of the element or group will be overridden by configuration settings that are in child directories if explicitly allowed by a parent element of the current configuration element or group. Permission to override is specified by using the <see langword="OverrideMode" /> attribute.</summary>
       </Docs>

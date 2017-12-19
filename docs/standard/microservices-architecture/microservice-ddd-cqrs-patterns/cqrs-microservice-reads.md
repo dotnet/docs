@@ -183,7 +183,7 @@ In the following image, you can see how Swagger UI shows the ResponseType inform
 
 You can see in the image above some example values based on the ViewModel types plus the possible HTTP status codes that can be returned.
 
-#### Additional resources
+## Additional resources
 
 -   **Dapper**
     [*https://github.com/StackExchange/dapper-dot-net*](https://github.com/StackExchange/dapper-dot-net)

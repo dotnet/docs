@@ -212,8 +212,6 @@
 ### [C# Version History](csharp/whats-new/csharp-version-history.md)
 ### [Relationships between language and framework](csharp/whats-new/relationships-between-language-and-library.md)
 <!-- End What's New -->
-<!--## [🔧 C# Interactive](csharp/interactive/)-->
-<!-- Do this section later, once master redirects are in place -->
 ## C# Concepts
 ### [C# Type system](csharp/programming-guide/types/index.md)
 ### [Namespaces](csharp/programming-guide/namespaces/index.md)
@@ -223,8 +221,7 @@
 ### [Tuples](csharp/tuples.md)
 ### [Deconstructing tuples and other types](csharp/deconstruct.md)
 ### [Interfaces](csharp/programming-guide/interfaces/index.md)
-<!--### [🔧 Methods and Lambda Expressions](csharp/methods-lambda-expressions.md)-->
-### [Methods](csharp/methods.md)
+#### [Methods](csharp/methods.md)
 #### [Lambda Expressions](csharp/lambda-expressions.md)
 ### [Properties](csharp/properties.md)
 ### [Indexers](csharp/indexers.md)
@@ -242,7 +239,6 @@
 #### [Distinguishing Delegates and Events](csharp/distinguish-delegates-events.md)
 ### [Language Integrated Query (LINQ)](csharp/linq/)
 ### [Asynchronous programming](csharp/async.md)
-<!--### [🔧 Parallel programming](csharp/parallel.md)-->
 ### [Pattern Matching](csharp/pattern-matching.md)
 ### [Reference semantics with value types](csharp/reference-semantics-with-value-types.md)
 ### [Expression Trees](csharp/expression-trees.md)
@@ -254,11 +250,10 @@
 #### [Translating Expressions](csharp/expression-trees-translating.md)
 #### [Summary](csharp/expression-trees-summary.md)
 ### [Native interoperability](csharp/programming-guide/interop/index.md)
-<!--### [🔧 Reflection & code generation](csharp/reflection.md)-->
 ### [Documenting your code](csharp/codedoc.md)
 ### [Versioning](csharp/versioning.md)
 <!-- End of C# Concepts section -->
-<!--## [🔧 Using the .NET Compiler Platform](csharp/roslyn/index.md)-->
+## [The .NET Compiler Platform SDK (Roslyn APIs)](csharp/roslyn-sdk/)
 ## [C# Programming Guide](csharp/programming-guide/)
 ## [Language Reference](csharp/language-reference/)
 ## [Walkthroughs](csharp/walkthroughs.md)

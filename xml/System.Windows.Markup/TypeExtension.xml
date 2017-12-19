@@ -35,8 +35,6 @@
 ## WPF Usage Notes  
  Type references are commonly used for style, template, and databinding feature areas in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)], when these features are referenced by XAML.  
   
-<a name="xamlTextUsage_TypeExtension"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
   </Docs>
@@ -182,8 +180,6 @@
   
  This property is settable per usual rules regarding markup extension usage. However, if you are setting with a <xref:System.Type>, then the purpose of this markup extension is irrelevant, because the same <xref:System.Type> is returned from a <xref:System.Windows.Markup.TypeExtension.ProvideValue%2A> call.  
   
-<a name="xamlTextUsage_Type"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Attempted to set to <see langword="null" />.</exception>
@@ -209,15 +205,7 @@
       <Docs>
         <summary>Gets or sets the type name represented by this markup extension.</summary>
         <value>A string that identifies the type. This string uses the format *prefix*<c>:</c>*className*. (*prefix* is the mapping prefix for an XML namespace, and is only required to reference types that are not mapped to the default XML namespace for WPF ([!INCLUDE[TLA#tla_wpfxmlnsv1](~/includes/tlasharptla-wpfxmlnsv1-md.md)]).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_TypeName"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Attempted to set to <see langword="null" />.</exception>
       </Docs>
     </Member>

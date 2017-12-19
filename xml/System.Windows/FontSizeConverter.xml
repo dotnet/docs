@@ -18,8 +18,6 @@
 ## Remarks  
  The <xref:System.Windows.FontSizeConverter> object supports conversion to and from the following types: include <xref:System.String>, <xref:System.Int32>, <xref:System.Single>, and <xref:System.Double>. There is no actual `FontSize` type, but values for font sizes are generally typed as <xref:System.Double>, so the converter's destination type is <xref:System.Double>.  
   
-<a name="XAMLTextUsage_FontSizeConverter"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
   </Docs>

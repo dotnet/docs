@@ -10919,10 +10919,6 @@ Image with an Elliptical Clip Region
   
  A more common scenario is handling the <xref:System.Windows.FrameworkElement.SizeChanged> event with the class handler override or the <xref:System.Windows.UIElement.OnRenderSizeChanged%2A> event.  
   
-<a name="xamlTextUsage_RenderSize"></a>   
-## XAML Text Usage  
-   
-  
 ## Examples  
  The following example shows how a custom adorner uses the <xref:System.Windows.UIElement.RenderSize%2A> value in order to create and size the rectangle graphic that defines the adorner, as part of its <xref:System.Windows.UIElement.OnRender%2A> implementation.  
   

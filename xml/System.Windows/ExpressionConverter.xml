@@ -18,8 +18,6 @@
 ## Remarks  
  The <xref:System.Windows.Expression> type should not use a type converter pathway to convert values (should use markup extensions instead). For this reason, <xref:System.Windows.ExpressionConverter.CanConvertFrom%2A?displayProperty=nameWithType> and <xref:System.Windows.ExpressionConverter.CanConvertTo%2A?displayProperty=nameWithType> always return `false`. <xref:System.Windows.ExpressionConverter.ConvertFrom%2A?displayProperty=nameWithType> and <xref:System.Windows.ExpressionConverter.ConvertTo%2A?displayProperty=nameWithType> always throw an exception.  
   
-<a name="XAMLTextUsage_ExpressionConverter"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
     <forInternalUseOnly />

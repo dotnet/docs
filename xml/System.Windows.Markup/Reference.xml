@@ -29,8 +29,6 @@
   
  The System.Xaml assembly uses <xref:System.Windows.Markup.XmlnsDefinitionAttribute> to map all types in the assembly to the XAML namespace for the XAML language ([!INCLUDE[TLA#tla_xamlxmlnsv1](~/includes/tlasharptla-xamlxmlnsv1-md.md)]). Typically you declare a prefix for [!INCLUDE[TLA#tla_xamlxmlnsv1](~/includes/tlasharptla-xamlxmlnsv1-md.md)] in a root element mapping and use the prefix `x`.  
   
-<a name="xamlTextUsage_Reference"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
   </Docs>
@@ -88,15 +86,7 @@
       <Docs>
         <summary>Gets or sets the XAML name to obtain the reference for.</summary>
         <value>The XAML name of the element to obtain the reference for.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_Name"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProvideValue">

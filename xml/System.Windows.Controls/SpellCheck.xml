@@ -193,10 +193,6 @@ ListBox
 ## Remarks  
  This dependency property also has a specialized write-only attached property usage. The [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax for setting the property is `<`*textBoxBaseClass* **SpellCheck.IsEnabled**`="`*boolValue*`" .../>`, where *textBoxBaseClass* is an object element for a class that derives from <xref:System.Windows.Controls.Primitives.TextBoxBase>, and *boolValue* is either `true` or `false` (case insensitive). To set the property as an attached property in code, see the <xref:System.Windows.Controls.SpellCheck.SetIsEnabled%2A> method. There is no matching `GetIsEnabled` accessor. To get the value, get the current <xref:System.Windows.Controls.SpellCheck> object from the <xref:System.Windows.Controls.Primitives.TextBoxBase.SpellCheck%2A?displayProperty=nameWithType> property, and then get the value of the <xref:System.Windows.Controls.SpellCheck.IsEnabled%2A> property from that <xref:System.Windows.Controls.SpellCheck>.  
   
-<a name="xamlTextUsage_IsEnabled"></a>   
-## XAML Text Usage  
- See Remarks.  
-  
 <a name="dependencyPropertyInfo_IsEnabled"></a>   
 ## Dependency Property Information  
   
@@ -310,10 +306,6 @@ ListBox
  The spelling reform rules that are determined by this property refer to the French and German spelling reforms. This property has no effect when it is used with any other language.  
   
  This dependency property also has a specialized write-only attached property usage. The [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax for setting the property is `<`*textBoxBaseClass* **SpellCheck.SpellingReform**`="`*enumValue*`" .../>`, where *textBoxBaseClass* is an object element for a class that derives from <xref:System.Windows.Controls.Primitives.TextBoxBase>, and *enumValue* is a string name for a value of the <xref:System.Windows.Controls.SpellingReform> enumeration. To set the property as an attached property in code, see the <xref:System.Windows.Controls.SpellCheck.SetSpellingReform%2A> method. There is no matching `GetSpellingReform` accessor. To get the value, get the current <xref:System.Windows.Controls.SpellCheck> object from the <xref:System.Windows.Controls.Primitives.TextBoxBase.SpellCheck%2A?displayProperty=nameWithType> property, and then get the value of the <xref:System.Windows.Controls.SpellCheck.SpellingReform%2A> property from that <xref:System.Windows.Controls.SpellCheck>.  
-  
-<a name="xamlTextUsage_SpellingReform"></a>   
-## XAML Text Usage  
- See Remarks.  
   
 <a name="dependencyPropertyInfo_SpellingReform"></a>   
 ## Dependency Property Information  

@@ -35,8 +35,6 @@
   
  The System.Xaml assembly uses <xref:System.Windows.Markup.XmlnsDefinitionAttribute> to map types from the <xref:System.Windows.Markup> CLR namespace in the assembly to the XAML namespace for the XAML language ([!INCLUDE[TLA#tla_xamlxmlnsv1](~/includes/tlasharptla-xamlxmlnsv1-md.md)]). In typical XAML markup, you declare a prefix for [!INCLUDE[TLA#tla_xamlxmlnsv1](~/includes/tlasharptla-xamlxmlnsv1-md.md)] in a root element mapping and use the prefix `x`.  
   
-<a name="xamlTextUsage_ArrayExtension"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
   </Docs>
@@ -196,8 +194,6 @@
   
  For XAML usage information, see [x:Array Markup Extension](~/docs/framework/xaml-services/x-array-markup-extension.md).  
   
-<a name="xamlTextUsage_Items"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -268,8 +264,6 @@
 ## Remarks  
  For XAML usage information, see [x:Array Markup Extension](~/docs/framework/xaml-services/x-array-markup-extension.md).  
   
-<a name="xamlTextUsage_Type"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>

@@ -20,8 +20,6 @@
   
  Encoding does not work in partial trust. See [WPF Partial Trust Security](~/docs/framework/wpf/wpf-partial-trust-security.md) for information on partial trust.  
   
-<a name="xamlTextUsage_No"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Media.Imaging.BitmapEncoder" />
@@ -79,10 +77,6 @@
   
 ## Remarks  
  The <xref:System.Windows.Media.Imaging.TiffCompressOption.Ccitt3>, <xref:System.Windows.Media.Imaging.TiffCompressOption.Ccitt4>, and <xref:System.Windows.Media.Imaging.TiffCompressOption.Rle> values require that the <xref:System.Windows.Media.PixelFormat> value be set to <xref:System.Windows.Media.PixelFormats.BlackWhite%2A?displayProperty=nameWithType>.  
-  
-<a name="XAMLTextUsage_Compression"></a>   
-## XAML Text Usage  
-   
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Windows.Media.Imaging.TiffBitmapEncoder.Compression%2A> property.  

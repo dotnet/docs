@@ -467,10 +467,6 @@ The invalidations happen when an implicit data template resource changes.</summa
   
  You do not use indexers to define collection members in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Instead, you create child elements in markup. The child elements are either child elements of <xref:System.Windows.ResourceDictionary>, or of a property element where the property type is `ResourceDictionary`. For details, see the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage sections in <xref:System.Windows.ResourceDictionary>.  
   
-<a name="xamlTextUsage_Item"></a>   
-## XAML Text Usage  
- See Remarks.  
-  
  ]]></format>
         </remarks>
       </Docs>

@@ -1,14 +1,17 @@
 # Voice and tone guidelines
 
-Developers will be reading your documents to learn .NET core, and to use it in their regular work.
-Your goal is to create useful documentation that helps the reader on their journey. Our guidelines
+A wide variety of people including IT Pros and developers read your documents both to learn .NET and to use it in their regular work.
+Your goal is to create great documentation that helps the reader on their journey. Our guidelines
 help with that. Our style guide contains four recommendations:
 - [Use a Conversational Tone](#use-a-conversational-tone)
 - [Write in Second Person](#write-in-2nd-person)
 - [Use Active Voice](#use-active-voice)
 - [Target a 5th Grade Reading Level](#target-a-fifth-grade-reading-level)
+- [Avoid split infinitives](#avoid-split-infinitives)
+- [Avoid future tense](#avoid-future-tense)
+- [What is it - so what?](#what-is-it-so-what)
 
-You will see examples of each of these as you read this style guide. We've written this guide
+You can see examples of each of these as you read this style guide. We've written this guide
 following our guidelines to provide examples for you to follow as you build documentation
 for .NET core. We also provide contrasting samples so you can see what articles look like
 when you don't follow our guidelines.
@@ -19,8 +22,8 @@ when you don't follow our guidelines.
 #### Appropriate Style:
 We want our documentation to have a conversational tone. You should feel as though you
 are having a conversation with the author as you read any of our tutorials or explanations.
-Your experience as a reader should be informal, conversational, and informative. You should
-feel as though you are listening to the author explain the concepts to you.
+For you, the experience should be informal, conversational, and informative. Readers should
+feel as though they are listening to the author explain the concepts to them.
 
 #### Inappropriate Style:
 One might see the contrast between a conversational style and the style one finds with
@@ -70,9 +73,18 @@ they may not have the English vocabulary you have.
 
 However, you are still writing for technical professionals. You can assume that your readers
 have programming knowledge and the specific vocabulary for programming terms. Object Oriented
-Programming, Class, and Object, Function and Method will all be familiar terms. However, not everyone
-reading your articles will have a formal computer science degree. Terms like 'idempotent' probably
+Programming, Class, and Object, Function and Method are familiar terms. However, not everyone
+reading your articles has a formal computer science degree. Terms like 'idempotent' probably
 need to be defined if you use it:
 
 >The Close() method is idempotent, meaning that you can call it multiple times and the effect is
 the same as if you called it once.
+
+### Avoid split infinitives
+While to boldly go may sound good on TV, split infinitives can reduce the readability of your content. So, to go boldly...
+
+### Avoid future tense
+In some non-English languages the concept of future tense is not the same as English. Using future tense can make your documents harder to read. Additionally, when using the future tense, the obvious question is when. So if you say 'Learning PowerShell will be good for you" - the obvious question for the reader is when will it be good? Instead, just say "Learning PowerShell is good for you".
+
+### What is it - so what?
+Whenever you introduce a new concept to the reader, define the concept and only then explain why it's useful. It's important for reader to understand what something is before they can understand the benefits (or otherwise). 

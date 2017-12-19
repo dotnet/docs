@@ -9,29 +9,29 @@ ms.prod: .net
 ms.devlang: devlang-csharp
 ms.custom: mvc
 ---
-# Understand the .NET Compiler Platform SDK model
+# Understand the .NET compiler platform SDK model
 
 Compilers process the code you write following structured rules that often
 differ from the way humans read and understand code. A basic understanding
 of the model used by compilers is essential to understanding the APIs
 you use when building Roslyn-based tools. 
 
-## Compiler Pipeline Functional Areas
+## Compiler pipeline functional areas
 
 The .NET Compiler Platform SDK exposes the C# and Visual Basic compilers' code analysis to you
 as a consumer by providing an API layer that mirrors a traditional compiler
 pipeline.
 
-![compiler pipeline](media/compiler-pipeline.png)
+![steps of the compiler pipeline processing source code to object code](media/compiler-pipeline.png)
 
-Each phase of this pipeline is a separate component. First the
+Each phase of this pipeline is a separate component. First, the
 parse phase tokenizes and parses source text into syntax that follows
 the language grammar. Second the declaration phase analyzes source and
 imported metadata to form named symbols. Next the bind phase matches identifiers
 in the code to symbols. Finally, the emit phase, emits an assembly with
 all the information built up by the compiler.
 
-![compiler pipeline api](media/compiler-pipeline-api.png)
+![compiler pipeline api provides access to each step that is part of the compiler pipelien](media/compiler-pipeline-api.png)
 
 Corresponding to each of those phases, the .NET Compiler Platform SDK exposes an
 object model that allows access to the information at that phase. The parsing
@@ -39,7 +39,7 @@ phase exposes a syntax tree, the declaration phase exposes a hierarchical
 symbol table, the binding phase exposes the result of the compiler’s semantic
 analysis, and the emit phase is an API that produces IL byte codes.
 
-![compiler api lang service](media/compiler-pipeline-lang-svc.png)
+![the language services available from the compiler api at each step of the compiler pipeline](media/compiler-pipeline-lang-svc.png)
 
 Each compiler combines these components together as a single end-to-end whole.
 
@@ -49,12 +49,12 @@ and navigation features use the symbol table, refactorings
 and Go to Definition use the semantic model, and Edit and Continue uses all of
 these, including the Emit API. 
 
-## API Layers
+## API layers
 
 The .NET compiler SDK consists of two main layers of APIs: compiler
 APIs and workspaces APIs.
 
-![api layers](media/api-layers.png)
+![the api layers represented by the compiler pipeline apis](media/api-layers.png)
 
 ### Compiler APIs
 
@@ -100,7 +100,7 @@ manage project-to-project dependencies.
 
 In addition, the Workspaces layer surfaces a set of APIs used
 when implementing code analysis and refactoring tools that function within
-a host environment like the Visual Studio IDE. Excamples include the Find All References,
+a host environment like the Visual Studio IDE. Examples include the Find All References,
 Formatting, and Code Generation APIs.
 
 This layer has no dependencies on Visual Studio components.

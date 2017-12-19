@@ -10,14 +10,14 @@ ms.devlang: devlang-csharp
 ms.custom: mvc
 ---
 
-# Work with Syntax
+# Work with syntax
 
 The **syntax tree** is a fundamental data structure exposed by the compiler APIs. These trees represent the lexical and syntactic structure of source code. They serve two important purposes:
 
 1. To allow tools - such as an IDE, add-ins, code analysis tools, and refactorings - to see and process the syntactic structure of source code in a user’s project.
 2. To enable tools - such as refactorings and an IDE - to create, modify, and rearrange source code in a natural manner without having use direct text edits. By creating and manipulating trees, tools can easily create and rearrange source code.
 
-## Syntax Trees
+## Syntax trees
 
 Syntax trees are the primary structure used for compilation, code analysis, binding, refactoring, IDE features, and code generation. No part of the source code is understood without it first being identified and categorized into one of many well-known structural language elements. 
 
@@ -29,7 +29,7 @@ The third attribute of syntax trees is that they are immutable and thread-safe. 
 
 A syntax tree is literally a tree data structure, where non-terminal structural elements parent other elements. Each syntax tree is made up of nodes, tokens, and trivia.  
 
-## Syntax Nodes
+## Syntax nodes
 
 Syntax nodes are one of the primary elements of syntax trees. These nodes represent syntactic constructs such as declarations, statements, clauses, and expressions. Each category of syntax nodes is represented by a separate class derived from <xref:Microsoft.CodeAnalysis.SyntaxNode?displayProperty=nameWithType>. The set of node classes is not extensible. 
 
@@ -41,7 +41,7 @@ In addition, each syntax node subclass exposes all the same children through str
 
 Some syntax nodes have optional children. For example, an <xref:Microsoft.CodeAnalysis.CSharp.Syntax.IfStatementSyntax> has an optional <xref:Microsoft.CodeAnalysis.CSharp.Syntax.ElseClauseSyntax>. If the child is not present, the property returns null. 
 
-## Syntax Tokens
+## Syntax tokens
 
 Syntax tokens are the terminals of the language grammar, representing the smallest syntactic fragments of the code. They are never parents of other nodes or tokens. Syntax tokens consist of keywords, identifiers, literals, and punctuation. 
 
@@ -53,7 +53,7 @@ The <xref:Microsoft.CodeAnalysis.SyntaxToken.ValueText> property tells you the s
 the <xref:Microsoft.CodeAnalysis.SyntaxToken.ValueText> property for this
 token will return `π`.
 
-## Syntax Trivia
+## Syntax trivia
 
 Syntax trivia represent the parts of the source text that are largely insignificant for normal understanding of the code, such as whitespace, comments, and preprocessor directives. Like syntax tokens, trivia are value types. The single <xref:Microsoft.CodeAnalysis.SyntaxTrivia?displayProperty=nameWithType> type is used to describe all kinds of trivia.
 

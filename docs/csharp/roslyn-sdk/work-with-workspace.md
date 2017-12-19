@@ -10,7 +10,7 @@ ms.devlang: devlang-csharp
 ms.custom: mvc
 ---
 
-# Work with a Workspace
+# Work with a workspace
 
 The **Workspaces** layer is the starting point for doing code analysis and refactoring over entire solutions. Within this layer, the Workspace API assists you in organizing all the information about the projects in a solution into a single object model, offering you direct access to compiler layer object models like source text, syntax trees, semantic models, and compilations without needing to parse files, configure options, or manage inter-project dependencies. 
 
@@ -24,7 +24,7 @@ The <xref:Microsoft.CodeAnalysis.Workspace> provides access to the current model
 
 You can also create stand-alone workspaces that are disconnected from the host environment or used in an application that has no host environment.
 
-## Solutions, Projects, Documents
+## Solutions, projects, documents
 
 Although a workspace may change every time a key is pressed, you can work with the model of the solution in isolation. 
 
@@ -36,7 +36,7 @@ A document is also a part of the overall immutable solution model. A document re
 
 The following diagram is a representation of how the Workspace relates to the host environment, tools, and how edits are made.
 
-![workspace relations](media/workspace-obj-relations.png)
+![the relationships between different elements of a workspace containing projects and source files](media/workspace-obj-relations.png)
 
 ## Summary
 

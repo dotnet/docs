@@ -49,7 +49,7 @@ Symbols present a common representation of namespaces, types, and members, betwe
 
 Symbols are similar in concept to the CLR type system as represented by the <xref:System.Reflection> API, yet they are richer in that they model more than just types. Namespaces, local variables, and labels are all symbols. In addition, symbols are a representation of language concepts, not CLR concepts. There is a lot of overlap, but there are many meaningful distinctions as well. For instance, an iterator method in C# or Visual Basic is a single symbol. However, when the iterator method is translated to CLR metadata, it is a type and multiple methods.
 
-## Semantic Model
+## Semantic model
 
 A semantic model represents all the semantic information for a single source file. You can use it to discover the following: 
 

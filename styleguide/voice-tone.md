@@ -73,8 +73,8 @@ they may not have the English vocabulary you have.
 
 However, you are still writing for technical professionals. You can assume that your readers
 have programming knowledge and the specific vocabulary for programming terms. Object Oriented
-Programming, Class, and Object, Function and Method are all be familiar terms. However, not everyone
-reading your articles have a formal computer science degree. Terms like 'idempotent' probably
+Programming, Class, and Object, Function and Method are familiar terms. However, not everyone
+reading your articles has a formal computer science degree. Terms like 'idempotent' probably
 need to be defined if you use it:
 
 >The Close() method is idempotent, meaning that you can call it multiple times and the effect is
@@ -84,7 +84,7 @@ the same as if you called it once.
 While to boldly go may sound good on TV, split infinitives can reduce the readability of your content. So, to go boldly...
 
 ### Avoid future tense
-In some non-English languages the concept of future tense is not the same as English. Using future tense can make your docuemnts harder to read. Additionally, when using the future tense, the obvious question is when. So if you say 'Learning PowerShell will be good for you" - the obvious question for the reader is when will it be good? Instead, just say "Learning PowerShell is good for you".
+In some non-English languages the concept of future tense is not the same as English. Using future tense can make your documents harder to read. Additionally, when using the future tense, the obvious question is when. So if you say 'Learning PowerShell will be good for you" - the obvious question for the reader is when will it be good? Instead, just say "Learning PowerShell is good for you".
 
 ### What is it - so what?
 Whenever you introduce a new concept to the reader, define the concept and only then explain why it's useful. It's important for reader to understand what something is before they can understand the benefits (or otherwise). 

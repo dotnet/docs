@@ -3,7 +3,7 @@ title: dotnet nuget push command - .NET Core CLI
 description: The dotnet nuget push command pushes a package to the server and publishes it. 
 author: karann-msft
 ms.author: mairaw
-ms.date: 08/14/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -97,7 +97,3 @@ Pushes all *.nupkg* files in the current directory to the default push source:
 Pushes all *.nupkg* files in the current directory to the default push source, specifying a custom config file *./config/My.Config*:
 
 `dotnet nuget push *.nupkg --config-file ./config/My.Config`
-
-Push all *.nupkg* files in the current directory to the default push source with maximum verbosity:
-
-`dotnet nuget push *.nupkg --verbosity detailed`

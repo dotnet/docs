@@ -86,7 +86,7 @@ GROUP BY o.[Id], o.[OrderDate], os.[Name]");
 ```
 The important point is that by using a dynamic type, the returned collection of data is dynamically assembled as the ViewModel. 
 
-*Pros:* This approach reduces the need to modify static ViewModels classes whenever you update the SQL sentence of a query, making this design approach pretty agile when coding, straightforward, and quick to evolve in regard to future changes.
+*Pros:* This approach reduces the need to modify static ViewModel classes whenever you update the SQL sentence of a query, making this design approach pretty agile when coding, straightforward, and quick to evolve in regard to future changes.
 
 *Cons:* In the long term, dynamic types can impact negatively the clarity and impact the compatibility of a service with client apps. In addition, middleware software like Swagger cannot provide the same level of documentation on returned types if using dynamic types. 
 

@@ -37,8 +37,6 @@
 ## WPF Usage Notes  
  The <xref:System.Windows.Setter.Value%2A> property on the <xref:System.Windows.Setter> class is an example of a property in WPF where the <xref:System.Windows.Markup.DependsOnAttribute> attribute is applied.  <xref:System.Windows.Setter.Value%2A> depends on <xref:System.Windows.Setter.Property%2A> and <xref:System.Windows.Setter.TargetName%2A> being processed first, otherwise there is no way to know what type is supposed to be created for value converter cases.  
   
-<a name="xamlTextUsage_DependsOnAttribute"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
     <altmember cref="P:System.Xaml.XamlMember.DependsOn" />

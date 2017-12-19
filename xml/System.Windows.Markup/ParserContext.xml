@@ -28,8 +28,6 @@
   
  `xml:lang` and `xml:space` behavior is one of the aspects of a context you can override. By default, the parser context uses `en-us` based values. For more information on why the language-level context for XAML uses `en-us` rather than a culture-invariant value, see [WPF Globalization and Localization Overview](~/docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md).  
   
-<a name="xamlTextUsage_ParserContext"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Markup.XamlReader" />
@@ -91,8 +89,6 @@
 ## Remarks  
  The <xref:System.Windows.Markup.ParserContext.BaseUri%2A> is used to resolve external resources that are referenced in XAML.  
   
-<a name="xamlTextUsage_BaseUri"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
         <altmember cref="P:System.Xml.XmlParserContext.BaseURI" />
@@ -186,8 +182,6 @@
 ## Remarks  
  This property is analogous to <xref:System.Xml.XmlReader.XmlLang%2A?displayProperty=nameWithType>.  
   
-<a name="xamlTextUsage_XmlLang"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Markup.XmlLanguage" />
@@ -217,8 +211,6 @@
   
  The <xref:System.Windows.Markup.XmlnsDictionary> uses XAML namespace prefixes as keys and the complete XAML namespace identifier (typically a URI in string form) as values.  
   
-<a name="xamlTextUsage_XmlnsDictionary"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Markup.XmlnsDictionary" />
@@ -245,8 +237,6 @@
 ## Remarks  
  This property is analogous to <xref:System.Xml.XmlReader.XmlSpace%2A?displayProperty=nameWithType>.  
   
-<a name="xamlTextUsage_XmlSpace"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>

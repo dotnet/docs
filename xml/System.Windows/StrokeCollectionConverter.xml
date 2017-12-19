@@ -18,10 +18,6 @@
 ## Remarks  
  The <xref:System.Windows.StrokeCollectionConverter> converts a <xref:System.Windows.Ink.StrokeCollection> to a string that represents the <xref:System.Windows.Ink.StrokeCollection> in base-64, encoded Ink Serialized Format (ISF). It is useful to store ink data as base-64, encoded ISF when it is not possible to store raw byte data, such as in Web pages.  
   
-<a name="XAMLTextUsage_StrokeCollectionConverter"></a>   
-## XAML Text Usage  
-   
-  
 ## Examples  
  The following example demonstrates how to convert a base-64, encoded ISF string to a <xref:System.Windows.Ink.StrokeCollection>. This assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
   

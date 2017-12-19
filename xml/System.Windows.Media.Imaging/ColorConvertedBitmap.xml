@@ -28,12 +28,6 @@
   
  A <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> is never cached.  
   
-<a name="xamlTextUsage_ColorConvertedBitmap"></a>   
-## XAML Text Usage  
- See Remarks  
-  
-   
-  
 ## Examples  
  The following example shows how to create an instance of <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> and use it to convert color.  
   
@@ -289,9 +283,6 @@
 ## Remarks  
  When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
   
-<a name="xamlTextUsage_Property"></a>   
-## XAML Text Usage  
-  
 <a name="dependencyPropertyInfo_DestinationColorContext"></a>   
 ## Dependency Property Information  
   
@@ -350,9 +341,6 @@
   
 ## Remarks  
  When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
-  
-<a name="xamlTextUsage_Property2"></a>   
-## XAML Text Usage  
   
 <a name="dependencyPropertyInfo_DestinationFormat"></a>   
 ## Dependency Property Information  
@@ -501,9 +489,6 @@
 ## Remarks  
  When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
   
-<a name="xamlTextUsage_Property3"></a>   
-## XAML Text Usage  
-  
 <a name="dependencyPropertyInfo_Source"></a>   
 ## Dependency Property Information  
   
@@ -545,9 +530,6 @@
   
 ## Remarks  
  When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
-  
-<a name="xamlTextUsage_Property4"></a>   
-## XAML Text Usage  
   
 <a name="dependencyPropertyInfo_SourceColorContext"></a>   
 ## Dependency Property Information  

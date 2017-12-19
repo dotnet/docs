@@ -34,11 +34,7 @@
   
 ## WPF Usage Notes  
  An example of a class in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] that uses the <xref:System.Windows.Markup.ContentPropertyAttribute> is <xref:System.Windows.Controls.ContentControl>, which the <xref:System.Windows.Controls.Button> class inherits from.  The property <xref:System.Windows.Controls.ContentControl.Content%2A> on the <xref:System.Windows.Controls.ContentControl> is the content property set by the <xref:System.Windows.Markup.ContentPropertyAttribute>.  If a <xref:System.Windows.Controls.Button> is instantiate in XAML <xref:System.Windows.Controls.ContentControl.Content%2A> of the <xref:System.Windows.Controls.Button> will be set to the element that is between the start and end button tags.  
-  
-<a name="xamlTextUsage_ContentPropertyAttribute"></a>   
-## XAML Text Usage  
-   
-  
+    
 ## Examples  
  The following example creates a class named `Film` that has a <xref:System.Windows.Markup.ContentPropertyAttribute> applied.  The property named `Title` is indicated as the content property.  
   

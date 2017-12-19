@@ -880,17 +880,7 @@
       <Docs>
         <summary>Gets the key that references the style that is defined for each <see cref="T:System.Windows.Controls.ListViewItem" /> in a <see cref="T:System.Windows.Controls.GridView" />.</summary>
         <value>A <see cref="T:System.Windows.ResourceKey" /> that references the style for each <see cref="T:System.Windows.Controls.ListViewItem" />. The default value references the default style for a <see cref="T:System.Windows.Controls.ListViewItem" /> control in the current theme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_GridViewItemContainerStyleKey"></a>   
-## XAML Text Usage  
- See Remarks.  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GridViewScrollViewerStyleKey">
@@ -913,10 +903,6 @@
   
 ## Remarks  
  You can use this read-only static property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] by assigning its static value to another property value. Specifically, this property's static value defines the resource key that is used to look up the default <xref:System.Windows.Controls.ScrollViewer> style of a <xref:System.Windows.Controls.GridView>. To redefine this style, reference the <xref:System.Windows.Controls.GridView.GridViewScrollViewerStyleKey%2A> by using the [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md) and assign that value as the [x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md) of the new <xref:System.Windows.Style>.  
-  
-<a name="xamlTextUsage_GridViewScrollViewerStyleKey"></a>   
-## XAML Text Usage  
- See Remarks.  
   
  ]]></format>
         </remarks>
@@ -943,12 +929,8 @@
 ## Remarks  
  You can use this read-only static property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] by assigning its static value to another property value. Specifically, this property's static value defines the resource key that is used to look up the default <xref:System.Windows.Controls.ListView> style. To redefine this style, reference the <xref:System.Windows.Controls.GridView.GridViewStyleKey%2A> by using the [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md) and assign that value as the [x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md) of the new <xref:System.Windows.Style>.  
   
- You can use this read-only property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] as an [x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md) of a <xref:System.Windows.Style> that redefines the <xref:System.Windows.Style> for the <xref:System.Windows.Controls.ListView>.  
-  
-<a name="xamlTextUsage_GridViewStyleKey"></a>   
-## XAML Text Usage  
- See Remarks.  
-  
+ You can use this read-only property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] as an [x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md) of a <xref:System.Windows.Style> that redefines the <xref:System.Windows.Style> for the <xref:System.Windows.Controls.ListView>.    
+ 
  ]]></format>
         </remarks>
       </Docs>

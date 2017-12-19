@@ -18,8 +18,6 @@
 ## Remarks  
  The <xref:System.Windows.TemplateKey> type should not use a type converter pathway to convert values (should use markup extensions instead). For this reason, the <xref:System.Windows.Markup.TemplateKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.TemplateKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.TemplateKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.TemplateKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
   
-<a name="xamlTextUsage_TemplateKeyConverter"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
   </Docs>

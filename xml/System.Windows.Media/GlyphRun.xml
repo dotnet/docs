@@ -31,8 +31,6 @@
  ![Diagraph of glyph measurements](~/add/media/glyph-example.png "Diagraph of glyph measurements")  
 Various typographic qualities of two different glyph characters  
   
-<a name="xamlTextUsage_GlyphRun"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
   </Docs>
@@ -203,8 +201,6 @@ Various typographic qualities of two different glyph characters
 ## Remarks  
  Each item in the list of advance widths corresponds to the glyph values returned by the <xref:System.Windows.Media.GlyphRun.GlyphIndices%2A> property. The nominal origin of the n<sup>th</sup> glyph in the run (n>0) is the nominal origin of the n-1<sup>th</sup> glyph plus the n-1<sup>th</sup> advance width added along the runs advance vector. Base glyphs generally have a non-zero advance width, whereas combining glyphs generally have a zero advance width.  
   
-<a name="xamlTextUsage_AdvanceWidths"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -224,15 +220,7 @@ Various typographic qualities of two different glyph characters
       <Docs>
         <summary>Gets or sets the baseline origin of the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
         <value>A <see cref="T:System.Windows.Point" /> value representing the baseline origin.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_BaselineOrigin"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BidiLevel">
@@ -250,15 +238,7 @@ Various typographic qualities of two different glyph characters
       <Docs>
         <summary>Gets or sets the bidirectional nesting level of the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
         <value>An <see cref="T:System.Int32" /> value that represents the bidirectional nesting level.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_BidiLevel"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildGeometry">
@@ -316,8 +296,6 @@ Various typographic qualities of two different glyph characters
 ## Remarks  
  The return value is `null` if there is a caret stop for every UTF16 code point in the Unicode representing the <xref:System.Windows.Media.GlyphRun>.  
   
-<a name="xamlTextUsage_CaretStops"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -345,15 +323,7 @@ Various typographic qualities of two different glyph characters
       <Docs>
         <summary>Gets or sets the list of UTF16 code points that represent the Unicode content of the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
         <value>A list of <see cref="T:System.Char" /> values that represent Unicode content.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_Characters"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClusterMap">
@@ -389,8 +359,6 @@ Various typographic qualities of two different glyph characters
   
  If the list is `null` or equal to <xref:System.String.Empty>, sequential 1 to 1 mapping is assumed.  
   
-<a name="xamlTextUsage_ClusterMap"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -468,8 +436,6 @@ Various typographic qualities of two different glyph characters
 ## Remarks  
  When a <xref:System.Windows.Media.GlyphRun> is rendered on a device that has built-in support for the named device font, the <xref:System.Windows.Media.GlyphRun> should be rendered using a device specific mechanism for selecting that font, and by sending Unicode code points rather than glyph indices. When rendering onto a device that does not include built-in support for the named device font, <xref:System.Windows.Media.GlyphRun.DeviceFontName%2A> should be ignored.  
   
-<a name="xamlTextUsage_DeviceFontName"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -489,15 +455,7 @@ Various typographic qualities of two different glyph characters
       <Docs>
         <summary>Gets or sets the em size used for rendering the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
         <value>A <see cref="T:System.Double" /> value that represents the em size used for rendering.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_FontRenderingEmSize"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCaretCharacterHitFromDistance">
@@ -652,8 +610,6 @@ Various typographic qualities of two different glyph characters
 ## Remarks  
  The default value of the glyph indices are defined by the font's character map table for the corresponding Unicode code points in the inner text.  
   
-<a name="xamlTextUsage_GlyphIndices"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -689,8 +645,6 @@ Various typographic qualities of two different glyph characters
   
  Base glyphs generally have a glyph offset of (0, 0), combining glyphs generally have an offset that places them correctly on top of the nearest preceding base glyph.  
   
-<a name="xamlTextUsage_GlyphOffsets"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -710,15 +664,7 @@ Various typographic qualities of two different glyph characters
       <Docs>
         <summary>Gets or sets the <see cref="T:System.Windows.Media.GlyphTypeface" /> for the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
         <value>The <see cref="T:System.Windows.Media.GlyphTypeface" /> for the <see cref="T:System.Windows.Media.GlyphRun" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_GlyphTypeface"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsHitTestable">
@@ -762,8 +708,6 @@ Various typographic qualities of two different glyph characters
 ## Remarks  
  If <xref:System.Windows.Media.GlyphRun.IsSideways%2A> is `true`, the glyphs that make up text characters are rotated 90° counter-clockwise, using vertical baseline positioning metrics.  
   
-<a name="xamlTextUsage_IsSideways"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -783,15 +727,7 @@ Various typographic qualities of two different glyph characters
       <Docs>
         <summary>Gets or sets the <see cref="T:System.Windows.Markup.XmlLanguage" /> for the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
         <value>The <see cref="T:System.Windows.Markup.XmlLanguage" /> for the <see cref="T:System.Windows.Media.GlyphRun" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_Language"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PixelsPerDip">

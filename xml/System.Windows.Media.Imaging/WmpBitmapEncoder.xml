@@ -22,8 +22,6 @@
   
  Encoding does not work in partial trust. See [WPF Partial Trust Security](~/docs/framework/wpf/wpf-partial-trust-security.md) for information on partial trust.  
   
-<a name="xamlTextUsage_No"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Media.Imaging.BitmapEncoder" />
@@ -108,8 +106,6 @@
 ## Remarks  
  This property has an effect only if <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.CompressedDomainTranscode%2A> is set to `true` and the image contains either a planar or interleaved alpha channel; otherwise, it is ignored.  
   
-<a name="XAMLTextUsage_1"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value given is not between 0 and 4.</exception>
@@ -136,8 +132,6 @@
 ## Remarks  
  This property has an effect only if <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.InterleavedAlpha%2A> is `false`.  
   
-<a name="XAMLTextUsage_2"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -158,15 +152,7 @@
         <summary>Gets or sets a value that indicates whether compressed domain operations can be used. Compressed domain operations are transformation operations that are done without decoding the image data.</summary>
         <value>
           <see langword="true" /> if compressed domain operations can be used; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_3"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FlipHorizontal">
@@ -185,15 +171,7 @@
         <summary>Gets or sets a value indicating whether to flip the image horizontally.</summary>
         <value>
           <see langword="true" /> if the image is to be flipped horizontally; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_4"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FlipVertical">
@@ -212,15 +190,7 @@
         <summary>Gets or sets a value that indicates whether to flip the image vertically.</summary>
         <value>
           <see langword="true" /> if the image is to be flipped vertically; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_5"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FrequencyOrder">
@@ -239,15 +209,7 @@
         <summary>Gets or sets a value that indicates whether to encoding in frequency order.</summary>
         <value>
           <see langword="true" /> to encode the image in frequency order; <see langword="false" /> to encode the image by its spatial orientation. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_6"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalTileSlices">
@@ -275,8 +237,6 @@
   
  When used in combination with <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.VerticalTileSlices%2A>, a grid of tiles is formed. For example, if both properties are set to 1, the image is divided into 4 tiles.  
   
-<a name="XAMLTextUsage_7"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -303,8 +263,6 @@
 ## Remarks  
  This value is valid only when <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.CompressedDomainTranscode%2A> is `true` and a subregion encode is requested.  
   
-<a name="XAMLTextUsage_8"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -352,8 +310,6 @@
 ## Remarks  
  This property has an effect only if <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.CompressedDomainTranscode%2A> is set to `true`; otherwise, it is ignored.  
   
-<a name="XAMLTextUsage_9"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value given is not between 0 and 3.</exception>
@@ -374,15 +330,7 @@
       <Docs>
         <summary>Gets or sets the image quality level.</summary>
         <value>The image quality level. The range is 0 to 1.0 (lossless image quality). The default is 0.9.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_10"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InterleavedAlpha">
@@ -407,8 +355,6 @@
 ## Remarks  
  Interleaved alpha channels are only supported by certain pixel formats.  
   
-<a name="XAMLTextUsage_11"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -429,15 +375,7 @@
         <summary>Gets or sets a value that indicates whether to encode using lossless compression.</summary>
         <value>
           <see langword="true" /> to use lossless compression; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_12"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OverlapLevel">
@@ -473,15 +411,7 @@
  </term><description> Two levels of overlap processing are enabled. In addition to the first level of processing, encoded values of 16x16 macro blocks are modified based on the values of neighboring macro blocks.  
   
  </description></item></list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_13"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="QualityLevel">
@@ -499,15 +429,7 @@
       <Docs>
         <summary>Gets or sets the compression quality for the main image.</summary>
         <value>The compression quality for the main image. A value of 1 is considered lossless, and higher values indicate a high compression ratio and lower image quality. The range is 1 to 255. The default is 1.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_14"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Rotation">
@@ -525,15 +447,7 @@
       <Docs>
         <summary>Gets or sets the <see cref="T:System.Windows.Media.Imaging.Rotation" /> of the image.</summary>
         <value>The rotation of the image.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_15"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SubsamplingLevel">
@@ -573,15 +487,7 @@
  </term><description> 4:4:4 encoding. Chroma resolution is preserved.  
   
  </description></item></list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_16"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value given is not between 0 and 3.</exception>
       </Docs>
     </Member>
@@ -609,8 +515,6 @@
   
  When <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.UseCodecOptions%2A> is `false`, <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.QualityLevel%2A>, <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.OverlapLevel%2A>, and <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.SubsamplingLevel%2A> are set based on <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.ImageQualityLevel%2A>.  
   
-<a name="XAMLTextUsage_17"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -640,8 +544,6 @@
   
  When used in combination with <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.HorizontalTileSlices%2A>, a grid of tiles is formed. For example, if both properties are set to 1, the image is divided into 4 tiles.  
   
-<a name="XAMLTextUsage_18"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>

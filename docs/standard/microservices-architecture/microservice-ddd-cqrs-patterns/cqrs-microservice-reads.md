@@ -135,7 +135,7 @@ public class OrderQueries : IOrderQueries
 
 Developers consuming web APIs and microservices are most concerned with what is returned — specifically response types and error codes (if not standard). These are handled in the XML comments and data annotations.
 
-Without proper documentation in the Swagger UI, the consumer lacks knowledge of what types are being returned or what HTTP codes can be returned. That problem is fixed by adding the `ProducesResponseType` attribute (defined at `Microsoft.AspNetCore.Mvc`), so Swagger can generate richer information about the API return model and values, as shown in the following code:
+Without proper documentation in the Swagger UI, the consumer lacks knowledge of what types are being returned or what HTTP codes can be returned. That problem is fixed by adding the <xref:Microsoft.AspNetCore.Mvc.ProducesResponseTypeAttribute?displayProperty=nameWithType>, so Swagger can generate richer information about the API return model and values, as shown in the following code:
 
 ```csharp
 namespace Microsoft.eShopOnContainers.Services.Ordering.API.Controllers

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class RequestClaim" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestClaim extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.RequestClaim" />
+  <TypeSignature Language="VB.NET" Value="Public Class RequestClaim" />
+  <TypeSignature Language="F#" Value="type RequestClaim = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +28,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestClaim" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RequestClaim (string claimType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string claimType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestClaim.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.RequestClaim : string -&gt; System.IdentityModel.Protocols.WSTrust.RequestClaim" Usage="new System.IdentityModel.Protocols.WSTrust.RequestClaim claimType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -55,6 +68,8 @@
       <MemberSignature Language="C#" Value="public RequestClaim (string claimType, bool isOptional);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string claimType, bool isOptional) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestClaim.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String, isOptional As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.RequestClaim : string * bool -&gt; System.IdentityModel.Protocols.WSTrust.RequestClaim" Usage="new System.IdentityModel.Protocols.WSTrust.RequestClaim (claimType, isOptional)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -83,6 +98,8 @@
       <MemberSignature Language="C#" Value="public RequestClaim (string claimType, bool isOptional, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string claimType, bool isOptional, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestClaim.#ctor(System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String, isOptional As Boolean, value As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.RequestClaim : string * bool * string -&gt; System.IdentityModel.Protocols.WSTrust.RequestClaim" Usage="new System.IdentityModel.Protocols.WSTrust.RequestClaim (claimType, isOptional, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -106,6 +123,8 @@
       <MemberSignature Language="C#" Value="public string ClaimType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClaimType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestClaim.ClaimType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClaimType As String" />
+      <MemberSignature Language="F#" Value="member this.ClaimType : string" Usage="System.IdentityModel.Protocols.WSTrust.RequestClaim.ClaimType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -131,6 +150,8 @@
       <MemberSignature Language="C#" Value="public bool IsOptional { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOptional" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestClaim.IsOptional" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsOptional As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsOptional : bool with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestClaim.IsOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -157,6 +178,8 @@
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestClaim.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestClaim.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -178,14 +201,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestClaim" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

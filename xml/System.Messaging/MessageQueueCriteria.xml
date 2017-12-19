@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class MessageQueueCriteria" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageQueueCriteria extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueCriteria" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageQueueCriteria" />
+  <TypeSignature Language="F#" Value="type MessageQueueCriteria = class" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,7 @@
       <MemberSignature Language="C#" Value="public MessageQueueCriteria ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueCriteria.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="public Guid Category { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Category" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.Category" />
+      <MemberSignature Language="VB.NET" Value="Public Property Category As Guid" />
+      <MemberSignature Language="F#" Value="member this.Category : Guid with get, set" Usage="System.Messaging.MessageQueueCriteria.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -93,6 +98,8 @@
       <MemberSignature Language="C#" Value="public void ClearAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueCriteria.ClearAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearAll ()" />
+      <MemberSignature Language="F#" Value="member this.ClearAll : unit -&gt; unit" Usage="messageQueueCriteria.ClearAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -120,6 +127,8 @@
       <MemberSignature Language="C#" Value="public DateTime CreatedAfter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreatedAfter" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.CreatedAfter" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatedAfter As DateTime" />
+      <MemberSignature Language="F#" Value="member this.CreatedAfter : DateTime with get, set" Usage="System.Messaging.MessageQueueCriteria.CreatedAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -151,6 +160,8 @@
       <MemberSignature Language="C#" Value="public DateTime CreatedBefore { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreatedBefore" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.CreatedBefore" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatedBefore As DateTime" />
+      <MemberSignature Language="F#" Value="member this.CreatedBefore : DateTime with get, set" Usage="System.Messaging.MessageQueueCriteria.CreatedBefore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -182,6 +193,8 @@
       <MemberSignature Language="C#" Value="public string Label { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.Label" />
+      <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.Messaging.MessageQueueCriteria.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -213,6 +226,8 @@
       <MemberSignature Language="C#" Value="public string MachineName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.MachineName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string with get, set" Usage="System.Messaging.MessageQueueCriteria.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -250,6 +265,8 @@
       <MemberSignature Language="C#" Value="public DateTime ModifiedAfter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ModifiedAfter" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.ModifiedAfter" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModifiedAfter As DateTime" />
+      <MemberSignature Language="F#" Value="member this.ModifiedAfter : DateTime with get, set" Usage="System.Messaging.MessageQueueCriteria.ModifiedAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -283,6 +300,8 @@
       <MemberSignature Language="C#" Value="public DateTime ModifiedBefore { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ModifiedBefore" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.ModifiedBefore" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModifiedBefore As DateTime" />
+      <MemberSignature Language="F#" Value="member this.ModifiedBefore : DateTime with get, set" Usage="System.Messaging.MessageQueueCriteria.ModifiedBefore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

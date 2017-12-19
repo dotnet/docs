@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ActivityCodeGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityCodeGenerator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityCodeGenerator" />
+  <TypeSignature Language="F#" Value="type ActivityCodeGenerator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,7 @@
       <MemberSignature Language="C#" Value="public ActivityCodeGenerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -48,6 +51,8 @@
       <MemberSignature Language="C#" Value="public virtual void GenerateCode (System.Workflow.ComponentModel.Compiler.CodeGenerationManager manager, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateCode(class System.Workflow.ComponentModel.Compiler.CodeGenerationManager manager, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator.GenerateCode(System.Workflow.ComponentModel.Compiler.CodeGenerationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub GenerateCode (manager As CodeGenerationManager, obj As Object)" />
+      <MemberSignature Language="F#" Value="abstract member GenerateCode : System.Workflow.ComponentModel.Compiler.CodeGenerationManager * obj -&gt; unit&#xA;override this.GenerateCode : System.Workflow.ComponentModel.Compiler.CodeGenerationManager * obj -&gt; unit" Usage="activityCodeGenerator.GenerateCode (manager, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -75,6 +80,8 @@
       <MemberSignature Language="C#" Value="protected System.CodeDom.CodeTypeDeclaration GetCodeTypeDeclaration (System.Workflow.ComponentModel.Compiler.CodeGenerationManager manager, string fullClassName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.CodeDom.CodeTypeDeclaration GetCodeTypeDeclaration(class System.Workflow.ComponentModel.Compiler.CodeGenerationManager manager, string fullClassName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator.GetCodeTypeDeclaration(System.Workflow.ComponentModel.Compiler.CodeGenerationManager,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetCodeTypeDeclaration (manager As CodeGenerationManager, fullClassName As String) As CodeTypeDeclaration" />
+      <MemberSignature Language="F#" Value="member this.GetCodeTypeDeclaration : System.Workflow.ComponentModel.Compiler.CodeGenerationManager * string -&gt; System.CodeDom.CodeTypeDeclaration" Usage="activityCodeGenerator.GetCodeTypeDeclaration (manager, fullClassName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

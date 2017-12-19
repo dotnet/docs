@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void ViewStateChangedEventHandler(object sender, ViewStateChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ViewStateChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.ViewStateChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ViewStateChangedEventHandler(sender As Object, e As ViewStateChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type ViewStateChangedEventHandler = delegate of obj * ViewStateChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

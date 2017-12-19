@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class HtmlTable : System.Web.UI.HtmlControls.HtmlContainerControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlTable extends System.Web.UI.HtmlControls.HtmlContainerControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlTable" />
+  <TypeSignature Language="VB.NET" Value="Public Class HtmlTable&#xA;Inherits HtmlContainerControl" />
+  <TypeSignature Language="F#" Value="type HtmlTable = class&#xA;    inherit HtmlContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +60,7 @@
       <MemberSignature Language="C#" Value="public HtmlTable ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTable.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +99,8 @@
       <MemberSignature Language="C#" Value="public string Align { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Align" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.Align" />
+      <MemberSignature Language="VB.NET" Value="Public Property Align As String" />
+      <MemberSignature Language="F#" Value="member this.Align : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlTable.Align" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -159,6 +164,8 @@
       <MemberSignature Language="C#" Value="public string BgColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BgColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.BgColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BgColor As String" />
+      <MemberSignature Language="F#" Value="member this.BgColor : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlTable.BgColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -230,6 +237,8 @@
       <MemberSignature Language="C#" Value="public int Border { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Border" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.Border" />
+      <MemberSignature Language="VB.NET" Value="Public Property Border As Integer" />
+      <MemberSignature Language="F#" Value="member this.Border : int with get, set" Usage="System.Web.UI.HtmlControls.HtmlTable.Border" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -275,6 +284,8 @@
       <MemberSignature Language="C#" Value="public string BorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.BorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderColor As String" />
+      <MemberSignature Language="F#" Value="member this.BorderColor : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlTable.BorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -346,6 +357,8 @@
       <MemberSignature Language="C#" Value="public int CellPadding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CellPadding" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.CellPadding" />
+      <MemberSignature Language="VB.NET" Value="Public Property CellPadding As Integer" />
+      <MemberSignature Language="F#" Value="member this.CellPadding : int with get, set" Usage="System.Web.UI.HtmlControls.HtmlTable.CellPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -389,6 +402,8 @@
       <MemberSignature Language="C#" Value="public int CellSpacing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CellSpacing" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.CellSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Property CellSpacing As Integer" />
+      <MemberSignature Language="F#" Value="member this.CellSpacing : int with get, set" Usage="System.Web.UI.HtmlControls.HtmlTable.CellSpacing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -432,6 +447,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.ControlCollection CreateControlCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTable.CreateControlCollection" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
+      <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="htmlTable.CreateControlCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -462,6 +479,8 @@
       <MemberSignature Language="C#" Value="public string Height { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Height" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As String" />
+      <MemberSignature Language="F#" Value="member this.Height : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlTable.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -510,6 +529,8 @@
       <MemberSignature Language="C#" Value="public override string InnerHtml { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerHtml" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.InnerHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property InnerHtml As String" />
+      <MemberSignature Language="F#" Value="member this.InnerHtml : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlTable.InnerHtml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -539,6 +560,8 @@
       <MemberSignature Language="C#" Value="public override string InnerText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.InnerText" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property InnerText As String" />
+      <MemberSignature Language="F#" Value="member this.InnerText : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlTable.InnerText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -565,9 +588,11 @@
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
-      <MemberSignature Language="C#" Value="protected override void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderChildren(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTable.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderChildren (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderChildren : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlTable.RenderChildren writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -612,6 +637,8 @@
       <MemberSignature Language="C#" Value="protected override void RenderEndTag (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderEndTag(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTable.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderEndTag (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderEndTag : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlTable.RenderEndTag writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -655,6 +682,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.HtmlControls.HtmlTableRowCollection Rows { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.HtmlControls.HtmlTableRowCollection Rows" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.Rows" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Rows As HtmlTableRowCollection" />
+      <MemberSignature Language="F#" Value="member this.Rows : System.Web.UI.HtmlControls.HtmlTableRowCollection" Usage="System.Web.UI.HtmlControls.HtmlTable.Rows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -700,6 +729,8 @@
       <MemberSignature Language="C#" Value="public string Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Width" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As String" />
+      <MemberSignature Language="F#" Value="member this.Width : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlTable.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

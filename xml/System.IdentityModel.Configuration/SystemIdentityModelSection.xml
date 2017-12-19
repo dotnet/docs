@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SystemIdentityModelSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SystemIdentityModelSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.SystemIdentityModelSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SystemIdentityModelSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type SystemIdentityModelSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,7 @@
       <MemberSignature Language="C#" Value="public SystemIdentityModelSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SystemIdentityModelSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Configuration.SystemIdentityModelSection Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.IdentityModel.Configuration.SystemIdentityModelSection Current" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SystemIdentityModelSection.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As SystemIdentityModelSection" />
+      <MemberSignature Language="F#" Value="member this.Current : System.IdentityModel.Configuration.SystemIdentityModelSection" Usage="System.IdentityModel.Configuration.SystemIdentityModelSection.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -61,6 +66,8 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Configuration.IdentityConfigurationElement DefaultIdentityConfigurationElement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.IdentityModel.Configuration.IdentityConfigurationElement DefaultIdentityConfigurationElement" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SystemIdentityModelSection.DefaultIdentityConfigurationElement" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultIdentityConfigurationElement As IdentityConfigurationElement" />
+      <MemberSignature Language="F#" Value="member this.DefaultIdentityConfigurationElement : System.IdentityModel.Configuration.IdentityConfigurationElement" Usage="System.IdentityModel.Configuration.SystemIdentityModelSection.DefaultIdentityConfigurationElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -86,6 +93,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Configuration.IdentityConfigurationElementCollection IdentityConfigurationElements { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Configuration.IdentityConfigurationElementCollection IdentityConfigurationElements" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SystemIdentityModelSection.IdentityConfigurationElements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IdentityConfigurationElements As IdentityConfigurationElementCollection" />
+      <MemberSignature Language="F#" Value="member this.IdentityConfigurationElements : System.IdentityModel.Configuration.IdentityConfigurationElementCollection" Usage="System.IdentityModel.Configuration.SystemIdentityModelSection.IdentityConfigurationElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -109,6 +118,8 @@
       <MemberSignature Language="C#" Value="public const string SectionName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string SectionName" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Configuration.SystemIdentityModelSection.SectionName" />
+      <MemberSignature Language="VB.NET" Value="Public Const SectionName As String " />
+      <MemberSignature Language="F#" Value="val mutable SectionName : string" Usage="System.IdentityModel.Configuration.SystemIdentityModelSection.SectionName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

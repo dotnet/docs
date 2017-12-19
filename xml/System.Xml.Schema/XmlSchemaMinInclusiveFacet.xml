@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class XmlSchemaMinInclusiveFacet : System.Xml.Schema.XmlSchemaFacet" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaMinInclusiveFacet extends System.Xml.Schema.XmlSchemaFacet" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaMinInclusiveFacet" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaMinInclusiveFacet&#xA;Inherits XmlSchemaFacet" />
+  <TypeSignature Language="F#" Value="type XmlSchemaMinInclusiveFacet = class&#xA;    inherit XmlSchemaFacet" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +45,7 @@
       <MemberSignature Language="C#" Value="public XmlSchemaMinInclusiveFacet ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaMinInclusiveFacet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

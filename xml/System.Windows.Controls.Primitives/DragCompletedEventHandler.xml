@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void DragCompletedEventHandler(object sender, DragCompletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DragCompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DragCompletedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DragCompletedEventHandler(sender As Object, e As DragCompletedEventArgs)" />
+  <TypeSignature Language="F#" Value="type DragCompletedEventHandler = delegate of obj * DragCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

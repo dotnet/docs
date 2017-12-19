@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class BrowserInteropHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed BrowserInteropHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.BrowserInteropHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class BrowserInteropHelper" />
+  <TypeSignature Language="F#" Value="type BrowserInteropHelper = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static object ClientSite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property object ClientSite" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.BrowserInteropHelper.ClientSite" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ClientSite As Object" />
+      <MemberSignature Language="F#" Value="member this.ClientSite : obj" Usage="System.Windows.Interop.BrowserInteropHelper.ClientSite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +47,8 @@
       <MemberSignature Language="C#" Value="public static dynamic HostScript { get; }" />
       <MemberSignature Language="ILAsm" Value=".property object HostScript" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.BrowserInteropHelper.HostScript" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HostScript As Object" />
+      <MemberSignature Language="F#" Value="member this.HostScript : obj" Usage="System.Windows.Interop.BrowserInteropHelper.HostScript" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -91,6 +97,8 @@
       <MemberSignature Language="C#" Value="public static bool IsBrowserHosted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool IsBrowserHosted" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsBrowserHosted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBrowserHosted : bool" Usage="System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -125,6 +133,8 @@
       <MemberSignature Language="C#" Value="public static Uri Source { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Uri Source" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.BrowserInteropHelper.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Source As Uri" />
+      <MemberSignature Language="F#" Value="member this.Source : Uri" Usage="System.Windows.Interop.BrowserInteropHelper.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

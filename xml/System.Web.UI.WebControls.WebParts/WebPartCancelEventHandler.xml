@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void WebPartCancelEventHandler(object sender, WebPartCancelEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebPartCancelEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartCancelEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub WebPartCancelEventHandler(sender As Object, e As WebPartCancelEventArgs)" />
+  <TypeSignature Language="F#" Value="type WebPartCancelEventHandler = delegate of obj * WebPartCancelEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

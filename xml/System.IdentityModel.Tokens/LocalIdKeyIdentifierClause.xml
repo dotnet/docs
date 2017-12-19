@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class LocalIdKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LocalIdKeyIdentifierClause extends System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" />
+  <TypeSignature Language="VB.NET" Value="Public Class LocalIdKeyIdentifierClause&#xA;Inherits SecurityKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type LocalIdKeyIdentifierClause = class&#xA;    inherit SecurityKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LocalIdKeyIdentifierClause (string localId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string localId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (localId As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.LocalIdKeyIdentifierClause : string -&gt; System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.LocalIdKeyIdentifierClause localId" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -50,6 +63,8 @@
       <MemberSignature Language="C#" Value="public LocalIdKeyIdentifierClause (string localId, Type ownerType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string localId, class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.#ctor(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (localId As String, ownerType As Type)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.LocalIdKeyIdentifierClause : string * Type -&gt; System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.LocalIdKeyIdentifierClause (localId, ownerType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -74,6 +89,8 @@
       <MemberSignature Language="C#" Value="public LocalIdKeyIdentifierClause (string localId, byte[] derivationNonce, int derivationLength, Type ownerType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string localId, unsigned int8[] derivationNonce, int32 derivationLength, class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.#ctor(System.String,System.Byte[],System.Int32,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (localId As String, derivationNonce As Byte(), derivationLength As Integer, ownerType As Type)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.LocalIdKeyIdentifierClause : string * byte[] * int * Type -&gt; System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.LocalIdKeyIdentifierClause (localId, derivationNonce, derivationLength, ownerType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -109,6 +126,8 @@
       <MemberSignature Language="C#" Value="public string LocalId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalId" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalId As String" />
+      <MemberSignature Language="F#" Value="member this.LocalId : string" Usage="System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -123,10 +142,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Matches">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Matches">
       <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (clause As SecurityKeyIdentifierClause) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="localIdKeyIdentifierClause.Matches keyIdentifierClause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -163,6 +193,8 @@
       <MemberSignature Language="C#" Value="public bool Matches (string localId, Type ownerType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(string localId, class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.Matches(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Matches (localId As String, ownerType As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Matches : string * Type -&gt; bool" Usage="localIdKeyIdentifierClause.Matches (localId, ownerType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -201,6 +233,8 @@
       <MemberSignature Language="C#" Value="public Type OwnerType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type OwnerType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnerType As Type" />
+      <MemberSignature Language="F#" Value="member this.OwnerType : Type" Usage="System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -219,6 +253,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="localIdKeyIdentifierClause.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -241,23 +277,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Matches">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

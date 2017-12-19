@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class RelationshipQuery : System.Management.WqlObjectQuery" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RelationshipQuery extends System.Management.WqlObjectQuery" />
   <TypeSignature Language="DocId" Value="T:System.Management.RelationshipQuery" />
+  <TypeSignature Language="VB.NET" Value="Public Class RelationshipQuery&#xA;Inherits WqlObjectQuery" />
+  <TypeSignature Language="F#" Value="type RelationshipQuery = class&#xA;    inherit WqlObjectQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.RelationshipQuery" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RelationshipQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelationshipQuery.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -43,6 +55,8 @@
       <MemberSignature Language="C#" Value="public RelationshipQuery (string queryOrSourceObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string queryOrSourceObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelationshipQuery.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (queryOrSourceObject As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.RelationshipQuery : string -&gt; System.Management.RelationshipQuery" Usage="new System.Management.RelationshipQuery queryOrSourceObject" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -78,6 +92,8 @@
       <MemberSignature Language="C#" Value="public RelationshipQuery (string sourceObject, string relationshipClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sourceObject, string relationshipClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelationshipQuery.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceObject As String, relationshipClass As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.RelationshipQuery : string * string -&gt; System.Management.RelationshipQuery" Usage="new System.Management.RelationshipQuery (sourceObject, relationshipClass)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -107,6 +123,8 @@
       <MemberSignature Language="C#" Value="public RelationshipQuery (bool isSchemaQuery, string sourceObject, string relationshipClass, string relationshipQualifier, string thisRole);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isSchemaQuery, string sourceObject, string relationshipClass, string relationshipQualifier, string thisRole) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelationshipQuery.#ctor(System.Boolean,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isSchemaQuery As Boolean, sourceObject As String, relationshipClass As String, relationshipQualifier As String, thisRole As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.RelationshipQuery : bool * string * string * string * string -&gt; System.Management.RelationshipQuery" Usage="new System.Management.RelationshipQuery (isSchemaQuery, sourceObject, relationshipClass, relationshipQualifier, thisRole)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -143,6 +161,8 @@
       <MemberSignature Language="C#" Value="public RelationshipQuery (string sourceObject, string relationshipClass, string relationshipQualifier, string thisRole, bool classDefinitionsOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sourceObject, string relationshipClass, string relationshipQualifier, string thisRole, bool classDefinitionsOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelationshipQuery.#ctor(System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceObject As String, relationshipClass As String, relationshipQualifier As String, thisRole As String, classDefinitionsOnly As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Management.RelationshipQuery : string * string * string * string * bool -&gt; System.Management.RelationshipQuery" Usage="new System.Management.RelationshipQuery (sourceObject, relationshipClass, relationshipQualifier, thisRole, classDefinitionsOnly)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -175,9 +195,11 @@
       </Docs>
     </Member>
     <Member MemberName="BuildQuery">
-      <MemberSignature Language="C#" Value="protected void BuildQuery ();" />
+      <MemberSignature Language="C#" Value="protected internal void BuildQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void BuildQuery() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelationshipQuery.BuildQuery" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub BuildQuery ()" />
+      <MemberSignature Language="F#" Value="member this.BuildQuery : unit -&gt; unit" Usage="relationshipQuery.BuildQuery " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -205,6 +227,8 @@
       <MemberSignature Language="C#" Value="public bool ClassDefinitionsOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ClassDefinitionsOnly" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelationshipQuery.ClassDefinitionsOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClassDefinitionsOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ClassDefinitionsOnly : bool with get, set" Usage="System.Management.RelationshipQuery.ClassDefinitionsOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -236,6 +260,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelationshipQuery.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="relationshipQuery.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -265,6 +291,8 @@
       <MemberSignature Language="C#" Value="public bool IsSchemaQuery { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSchemaQuery" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelationshipQuery.IsSchemaQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSchemaQuery As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSchemaQuery : bool with get, set" Usage="System.Management.RelationshipQuery.IsSchemaQuery" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -293,9 +321,11 @@
       </Docs>
     </Member>
     <Member MemberName="ParseQuery">
-      <MemberSignature Language="C#" Value="protected override void ParseQuery (string query);" />
+      <MemberSignature Language="C#" Value="protected internal override void ParseQuery (string query);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ParseQuery(string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelationshipQuery.ParseQuery(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub ParseQuery (query As String)" />
+      <MemberSignature Language="F#" Value="override this.ParseQuery : string -&gt; unit" Usage="relationshipQuery.ParseQuery query" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -326,6 +356,8 @@
       <MemberSignature Language="C#" Value="public string RelationshipClass { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RelationshipClass" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelationshipQuery.RelationshipClass" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelationshipClass As String" />
+      <MemberSignature Language="F#" Value="member this.RelationshipClass : string with get, set" Usage="System.Management.RelationshipQuery.RelationshipClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -357,6 +389,8 @@
       <MemberSignature Language="C#" Value="public string RelationshipQualifier { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RelationshipQualifier" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelationshipQuery.RelationshipQualifier" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelationshipQualifier As String" />
+      <MemberSignature Language="F#" Value="member this.RelationshipQualifier : string with get, set" Usage="System.Management.RelationshipQuery.RelationshipQualifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -388,6 +422,8 @@
       <MemberSignature Language="C#" Value="public string SourceObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceObject" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelationshipQuery.SourceObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceObject As String" />
+      <MemberSignature Language="F#" Value="member this.SourceObject : string with get, set" Usage="System.Management.RelationshipQuery.SourceObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -419,6 +455,8 @@
       <MemberSignature Language="C#" Value="public string ThisRole { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ThisRole" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelationshipQuery.ThisRole" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThisRole As String" />
+      <MemberSignature Language="F#" Value="member this.ThisRole : string with get, set" Usage="System.Management.RelationshipQuery.ThisRole" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -446,14 +484,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.RelationshipQuery" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class DiscoveryClientResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiscoveryClientResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryClientResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscoveryClientResult" />
+  <TypeSignature Language="F#" Value="type DiscoveryClientResult = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,10 +34,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DiscoveryClientResult ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -61,6 +74,8 @@
       <MemberSignature Language="C#" Value="public DiscoveryClientResult (Type referenceType, string url, string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type referenceType, string url, string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientResult.#ctor(System.Type,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (referenceType As Type, url As String, filename As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Discovery.DiscoveryClientResult : Type * string * string -&gt; System.Web.Services.Discovery.DiscoveryClientResult" Usage="new System.Web.Services.Discovery.DiscoveryClientResult (referenceType, url, filename)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -93,6 +108,8 @@
       <MemberSignature Language="C#" Value="public string Filename { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Filename" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientResult.Filename" />
+      <MemberSignature Language="VB.NET" Value="Public Property Filename As String" />
+      <MemberSignature Language="F#" Value="member this.Filename : string with get, set" Usage="System.Web.Services.Discovery.DiscoveryClientResult.Filename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -131,6 +148,8 @@
       <MemberSignature Language="C#" Value="public string ReferenceTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ReferenceTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientResult.ReferenceTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReferenceTypeName As String" />
+      <MemberSignature Language="F#" Value="member this.ReferenceTypeName : string with get, set" Usage="System.Web.Services.Discovery.DiscoveryClientResult.ReferenceTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -169,6 +188,8 @@
       <MemberSignature Language="C#" Value="public string Url { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientResult.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="System.Web.Services.Discovery.DiscoveryClientResult.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -203,15 +224,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

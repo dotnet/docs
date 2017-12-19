@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class WorkflowQueueInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowQueueInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowQueueInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowQueueInfo" />
+  <TypeSignature Language="F#" Value="type WorkflowQueueInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Items" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueueInfo.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ICollection" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.ICollection" Usage="System.Workflow.Runtime.WorkflowQueueInfo.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public IComparable QueueName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IComparable QueueName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueueInfo.QueueName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueueName As IComparable" />
+      <MemberSignature Language="F#" Value="member this.QueueName : IComparable" Usage="System.Workflow.Runtime.WorkflowQueueInfo.QueueName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -71,6 +77,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; SubscribedActivityNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; SubscribedActivityNames" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueueInfo.SubscribedActivityNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubscribedActivityNames As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.SubscribedActivityNames : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Workflow.Runtime.WorkflowQueueInfo.SubscribedActivityNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

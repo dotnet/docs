@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class HttpCompileException : System.Web.HttpException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit HttpCompileException extends System.Web.HttpException" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCompileException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpCompileException&#xA;Inherits HttpException" />
+  <TypeSignature Language="F#" Value="type HttpCompileException = class&#xA;    inherit HttpException" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpCompileException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HttpCompileException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCompileException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -34,6 +46,8 @@
       <MemberSignature Language="C#" Value="public HttpCompileException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCompileException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpCompileException : string -&gt; System.Web.HttpCompileException" Usage="new System.Web.HttpCompileException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +66,8 @@
       <MemberSignature Language="C#" Value="public HttpCompileException (System.CodeDom.Compiler.CompilerResults results, string sourceCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.Compiler.CompilerResults results, string sourceCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCompileException.#ctor(System.CodeDom.Compiler.CompilerResults,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (results As CompilerResults, sourceCode As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpCompileException : System.CodeDom.Compiler.CompilerResults * string -&gt; System.Web.HttpCompileException" Usage="new System.Web.HttpCompileException (results, sourceCode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +95,8 @@
       <MemberSignature Language="C#" Value="public HttpCompileException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCompileException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpCompileException : string * Exception -&gt; System.Web.HttpCompileException" Usage="new System.Web.HttpCompileException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +117,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCompileException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="httpCompileException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +142,8 @@
       <MemberSignature Language="C#" Value="public override string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCompileException.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Web.HttpCompileException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +162,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.Compiler.CompilerResults Results { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.Compiler.CompilerResults Results" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCompileException.Results" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Results As CompilerResults" />
+      <MemberSignature Language="F#" Value="member this.Results : System.CodeDom.Compiler.CompilerResults" Usage="System.Web.HttpCompileException.Results" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -158,6 +182,8 @@
       <MemberSignature Language="C#" Value="public string SourceCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceCode" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCompileException.SourceCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceCode As String" />
+      <MemberSignature Language="F#" Value="member this.SourceCode : string" Usage="System.Web.HttpCompileException.SourceCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -172,14 +198,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpCompileException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

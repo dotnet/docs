@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SafeFileHandle : Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SafeFileHandle extends Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SafeHandles.SafeFileHandle" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SafeFileHandle&#xA;Inherits SafeHandleZeroOrMinusOneIsInvalid" />
+  <TypeSignature Language="F#" Value="type SafeFileHandle = class&#xA;    inherit SafeHandleZeroOrMinusOneIsInvalid" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -59,6 +61,8 @@
       <MemberSignature Language="C#" Value="public SafeFileHandle (IntPtr preexistingHandle, bool ownsHandle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int preexistingHandle, bool ownsHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeFileHandle.#ctor(System.IntPtr,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (preexistingHandle As IntPtr, ownsHandle As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.SafeHandles.SafeFileHandle : nativeint * bool -&gt; Microsoft.Win32.SafeHandles.SafeFileHandle" Usage="new Microsoft.Win32.SafeHandles.SafeFileHandle (preexistingHandle, ownsHandle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -105,6 +109,8 @@
       <MemberSignature Language="C#" Value="public override bool IsInvalid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInvalid" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SafeHandles.SafeFileHandle.IsInvalid" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsInvalid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInvalid : bool" Usage="Microsoft.Win32.SafeHandles.SafeFileHandle.IsInvalid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -132,6 +138,8 @@
       <MemberSignature Language="C#" Value="protected override bool ReleaseHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ReleaseHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeFileHandle.ReleaseHandle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReleaseHandle () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ReleaseHandle : unit -&gt; bool" Usage="safeFileHandle.ReleaseHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>

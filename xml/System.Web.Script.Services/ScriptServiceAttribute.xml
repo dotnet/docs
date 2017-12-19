@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ScriptServiceAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScriptServiceAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Services.ScriptServiceAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScriptServiceAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ScriptServiceAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="public ScriptServiceAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Services.ScriptServiceAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

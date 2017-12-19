@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SectionInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SectionInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SectionInformation" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SectionInformation" />
+  <TypeSignature Language="F#" Value="type SectionInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +63,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationAllowDefinition AllowDefinition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationAllowDefinition AllowDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.AllowDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowDefinition As ConfigurationAllowDefinition" />
+      <MemberSignature Language="F#" Value="member this.AllowDefinition : System.Configuration.ConfigurationAllowDefinition with get, set" Usage="System.Configuration.SectionInformation.AllowDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -107,6 +111,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationAllowExeDefinition AllowExeDefinition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationAllowExeDefinition AllowExeDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.AllowExeDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowExeDefinition As ConfigurationAllowExeDefinition" />
+      <MemberSignature Language="F#" Value="member this.AllowExeDefinition : System.Configuration.ConfigurationAllowExeDefinition with get, set" Usage="System.Configuration.SectionInformation.AllowExeDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -153,6 +159,8 @@
       <MemberSignature Language="C#" Value="public bool AllowLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowLocation" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.AllowLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowLocation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowLocation : bool with get, set" Usage="System.Configuration.SectionInformation.AllowLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -199,6 +207,8 @@
       <MemberSignature Language="C#" Value="public bool AllowOverride { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowOverride" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.AllowOverride" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowOverride As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowOverride : bool with get, set" Usage="System.Configuration.SectionInformation.AllowOverride" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -239,6 +249,8 @@
       <MemberSignature Language="C#" Value="public string ConfigSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConfigSource" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.ConfigSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigSource As String" />
+      <MemberSignature Language="F#" Value="member this.ConfigSource : string with get, set" Usage="System.Configuration.SectionInformation.ConfigSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -285,6 +297,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationBuilder ConfigurationBuilder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationBuilder ConfigurationBuilder" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.ConfigurationBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConfigurationBuilder As ConfigurationBuilder" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationBuilder : System.Configuration.ConfigurationBuilder" Usage="System.Configuration.SectionInformation.ConfigurationBuilder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -320,6 +334,8 @@
       <MemberSignature Language="C#" Value="public void ForceDeclaration ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ForceDeclaration" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration ()" />
+      <MemberSignature Language="F#" Value="member this.ForceDeclaration : unit -&gt; unit" Usage="sectionInformation.ForceDeclaration " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -352,6 +368,8 @@
       <MemberSignature Language="C#" Value="public void ForceDeclaration (bool require);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration(bool require) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ForceDeclaration(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration (require As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ForceDeclaration : bool -&gt; unit" Usage="sectionInformation.ForceDeclaration force" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -398,6 +416,8 @@
       <MemberSignature Language="C#" Value="public bool ForceSave { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ForceSave" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.ForceSave" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForceSave As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ForceSave : bool with get, set" Usage="System.Configuration.SectionInformation.ForceSave" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -436,6 +456,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSection GetParentSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSection GetParentSection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.GetParentSection" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParentSection () As ConfigurationSection" />
+      <MemberSignature Language="F#" Value="member this.GetParentSection : unit -&gt; System.Configuration.ConfigurationSection" Usage="sectionInformation.GetParentSection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -475,6 +497,8 @@
       <MemberSignature Language="C#" Value="public string GetRawXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetRawXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.GetRawXml" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRawXml () As String" />
+      <MemberSignature Language="F#" Value="member this.GetRawXml : unit -&gt; string" Usage="sectionInformation.GetRawXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -509,6 +533,8 @@
       <MemberSignature Language="C#" Value="public bool InheritInChildApplications { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool InheritInChildApplications" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.InheritInChildApplications" />
+      <MemberSignature Language="VB.NET" Value="Public Property InheritInChildApplications As Boolean" />
+      <MemberSignature Language="F#" Value="member this.InheritInChildApplications : bool with get, set" Usage="System.Configuration.SectionInformation.InheritInChildApplications" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -555,6 +581,8 @@
       <MemberSignature Language="C#" Value="public bool IsDeclarationRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDeclarationRequired" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.IsDeclarationRequired" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeclarationRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDeclarationRequired : bool" Usage="System.Configuration.SectionInformation.IsDeclarationRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -596,6 +624,8 @@
       <MemberSignature Language="C#" Value="public bool IsDeclared { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDeclared" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.IsDeclared" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeclared As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDeclared : bool" Usage="System.Configuration.SectionInformation.IsDeclared" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -636,6 +666,8 @@
       <MemberSignature Language="C#" Value="public bool IsLocked { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLocked" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.IsLocked" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLocked As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsLocked : bool" Usage="System.Configuration.SectionInformation.IsLocked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -681,6 +713,8 @@
       <MemberSignature Language="C#" Value="public bool IsProtected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsProtected" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.IsProtected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsProtected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsProtected : bool" Usage="System.Configuration.SectionInformation.IsProtected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -728,6 +762,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Configuration.SectionInformation.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -765,6 +801,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.OverrideMode OverrideMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.OverrideMode OverrideMode" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.OverrideMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property OverrideMode As OverrideMode" />
+      <MemberSignature Language="F#" Value="member this.OverrideMode : System.Configuration.OverrideMode with get, set" Usage="System.Configuration.SectionInformation.OverrideMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -798,6 +836,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.OverrideMode OverrideModeDefault { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.OverrideMode OverrideModeDefault" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.OverrideModeDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Property OverrideModeDefault As OverrideMode" />
+      <MemberSignature Language="F#" Value="member this.OverrideModeDefault : System.Configuration.OverrideMode with get, set" Usage="System.Configuration.SectionInformation.OverrideModeDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -829,6 +869,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.OverrideMode OverrideModeEffective { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.OverrideMode OverrideModeEffective" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.OverrideModeEffective" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OverrideModeEffective As OverrideMode" />
+      <MemberSignature Language="F#" Value="member this.OverrideModeEffective : System.Configuration.OverrideMode" Usage="System.Configuration.SectionInformation.OverrideModeEffective" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -858,6 +900,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ProtectedConfigurationProvider ProtectionProvider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ProtectedConfigurationProvider ProtectionProvider" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.ProtectionProvider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProtectionProvider As ProtectedConfigurationProvider" />
+      <MemberSignature Language="F#" Value="member this.ProtectionProvider : System.Configuration.ProtectedConfigurationProvider" Usage="System.Configuration.SectionInformation.ProtectionProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -897,6 +941,8 @@
       <MemberSignature Language="C#" Value="public void ProtectSection (string provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProtectSection(string provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ProtectSection(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ProtectSection (provider As String)" />
+      <MemberSignature Language="F#" Value="member this.ProtectSection : string -&gt; unit" Usage="sectionInformation.ProtectSection protectionProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -955,6 +1001,8 @@
       <MemberSignature Language="C#" Value="public bool RequirePermission { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequirePermission" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.RequirePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequirePermission As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequirePermission : bool with get, set" Usage="System.Configuration.SectionInformation.RequirePermission" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1032,6 +1080,8 @@ Dim apSection As AppSettingsSection = _
       <MemberSignature Language="C#" Value="public bool RestartOnExternalChanges { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RestartOnExternalChanges" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.RestartOnExternalChanges" />
+      <MemberSignature Language="VB.NET" Value="Public Property RestartOnExternalChanges As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RestartOnExternalChanges : bool with get, set" Usage="System.Configuration.SectionInformation.RestartOnExternalChanges" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1071,6 +1121,8 @@ Dim apSection As AppSettingsSection = _
       <MemberSignature Language="C#" Value="public void RevertToParent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RevertToParent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.RevertToParent" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RevertToParent ()" />
+      <MemberSignature Language="F#" Value="member this.RevertToParent : unit -&gt; unit" Usage="sectionInformation.RevertToParent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1094,6 +1146,8 @@ Dim apSection As AppSettingsSection = _
       <MemberSignature Language="C#" Value="public string SectionName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SectionName" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.SectionName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SectionName As String" />
+      <MemberSignature Language="F#" Value="member this.SectionName : string" Usage="System.Configuration.SectionInformation.SectionName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1131,6 +1185,8 @@ Dim apSection As AppSettingsSection = _
       <MemberSignature Language="C#" Value="public void SetRawXml (string xml);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRawXml(string xml) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.SetRawXml(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetRawXml (xml As String)" />
+      <MemberSignature Language="F#" Value="member this.SetRawXml : string -&gt; unit" Usage="sectionInformation.SetRawXml rawXml" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1158,6 +1214,8 @@ Dim apSection As AppSettingsSection = _
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Configuration.SectionInformation.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1197,6 +1255,8 @@ Dim apSection As AppSettingsSection = _
       <MemberSignature Language="C#" Value="public void UnprotectSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnprotectSection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.UnprotectSection" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnprotectSection ()" />
+      <MemberSignature Language="F#" Value="member this.UnprotectSection : unit -&gt; unit" Usage="sectionInformation.UnprotectSection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

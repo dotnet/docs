@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class RegisteredArrayDeclaration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegisteredArrayDeclaration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.RegisteredArrayDeclaration" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegisteredArrayDeclaration" />
+  <TypeSignature Language="F#" Value="type RegisteredArrayDeclaration = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +24,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control Control { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control Control" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RegisteredArrayDeclaration.Control" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Control As Control" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.Control" Usage="System.Web.UI.RegisteredArrayDeclaration.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -40,6 +44,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RegisteredArrayDeclaration.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.UI.RegisteredArrayDeclaration.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -58,6 +64,8 @@
       <MemberSignature Language="C#" Value="public string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RegisteredArrayDeclaration.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Web.UI.RegisteredArrayDeclaration.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

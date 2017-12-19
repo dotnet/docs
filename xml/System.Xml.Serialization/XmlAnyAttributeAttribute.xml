@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class XmlAnyAttributeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlAnyAttributeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlAnyAttributeAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlAnyAttributeAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type XmlAnyAttributeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -74,6 +76,7 @@ GroupType = 'Technical' GroupNumber = '42' GroupBase = 'Red'>
       <MemberSignature Language="C#" Value="public XmlAnyAttributeAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlAnyAttributeAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>

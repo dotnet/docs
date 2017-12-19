@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IActivityTemplateFactory&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivityTemplateFactory`1&lt;class T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IActivityTemplateFactory`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IActivityTemplateFactory(Of T)" />
+  <TypeSignature Language="F#" Value="type IActivityTemplateFactory&lt;'T (requires 'T : null)&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public T Create (System.Windows.DependencyObject target, System.Windows.IDataObject dataObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Create(class System.Windows.DependencyObject target, class System.Windows.IDataObject dataObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityTemplateFactory`1.Create(System.Windows.DependencyObject,System.Windows.IDataObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Create (target As DependencyObject, dataObject As IDataObject) As T" />
+      <MemberSignature Language="F#" Value="abstract member Create : System.Windows.DependencyObject * System.Windows.IDataObject -&gt; 'T" Usage="iActivityTemplateFactory.Create (target, dataObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

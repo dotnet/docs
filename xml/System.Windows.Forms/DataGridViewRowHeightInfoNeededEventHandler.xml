@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void DataGridViewRowHeightInfoNeededEventHandler(object sender, DataGridViewRowHeightInfoNeededEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewRowHeightInfoNeededEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowHeightInfoNeededEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewRowHeightInfoNeededEventHandler(sender As Object, e As DataGridViewRowHeightInfoNeededEventArgs)" />
+  <TypeSignature Language="F#" Value="type DataGridViewRowHeightInfoNeededEventHandler = delegate of obj * DataGridViewRowHeightInfoNeededEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

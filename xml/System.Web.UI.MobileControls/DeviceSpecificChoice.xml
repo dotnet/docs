@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class DeviceSpecificChoice : System.Web.UI.IAttributeAccessor, System.Web.UI.IParserAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeviceSpecificChoice extends System.Object implements class System.Web.UI.IAttributeAccessor, class System.Web.UI.IParserAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeviceSpecificChoice&#xA;Implements IAttributeAccessor, IParserAccessor" />
+  <TypeSignature Language="F#" Value="type DeviceSpecificChoice = class&#xA;    interface IParserAccessor&#xA;    interface IAttributeAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +65,7 @@
       <MemberSignature Language="C#" Value="public DeviceSpecificChoice ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoice.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -78,7 +81,12 @@
       <MemberSignature Language="C#" Value="protected void AddParsedSubObject (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddParsedSubObject(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoice.AddParsedSubObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AddParsedSubObject (obj As Object)" />
+      <MemberSignature Language="F#" Value="member this.AddParsedSubObject : obj -&gt; unit" Usage="deviceSpecificChoice.AddParsedSubObject obj" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="public string Argument { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Argument" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Argument" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument As String" />
+      <MemberSignature Language="F#" Value="member this.Argument : string with get, set" Usage="System.Web.UI.MobileControls.DeviceSpecificChoice.Argument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -131,6 +141,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary Contents { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Contents" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Contents" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contents As IDictionary" />
+      <MemberSignature Language="F#" Value="member this.Contents : System.Collections.IDictionary" Usage="System.Web.UI.MobileControls.DeviceSpecificChoice.Contents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -161,6 +173,8 @@
       <MemberSignature Language="C#" Value="public string Filter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Filter As String" />
+      <MemberSignature Language="F#" Value="member this.Filter : string with get, set" Usage="System.Web.UI.MobileControls.DeviceSpecificChoice.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -208,7 +222,12 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="C#" Value="protected string GetAttribute (string key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetAttribute(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoice.GetAttribute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetAttribute (key As String) As String" />
+      <MemberSignature Language="F#" Value="member this.GetAttribute : string -&gt; string" Usage="deviceSpecificChoice.GetAttribute key" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -231,6 +250,8 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="C#" Value="public bool HasTemplates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasTemplates" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoice.HasTemplates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasTemplates As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasTemplates : bool" Usage="System.Web.UI.MobileControls.DeviceSpecificChoice.HasTemplates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -255,7 +276,12 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="C#" Value="protected void SetAttribute (string key, string value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetAttribute(string key, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoice.SetAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetAttribute (key As String, value As String)" />
+      <MemberSignature Language="F#" Value="member this.SetAttribute : string * string -&gt; unit" Usage="deviceSpecificChoice.SetAttribute (key, value)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -278,7 +304,11 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="C#" Value="string IAttributeAccessor.GetAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Web.UI.IAttributeAccessor.GetAttribute(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoice.System#Web#UI#IAttributeAccessor#GetAttribute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function GetAttribute (name As String) As String Implements IAttributeAccessor.GetAttribute" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -307,7 +337,11 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="C#" Value="void IAttributeAccessor.SetAttribute (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IAttributeAccessor.SetAttribute(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoice.System#Web#UI#IAttributeAccessor#SetAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub SetAttribute (name As String, value As String) Implements IAttributeAccessor.SetAttribute" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -337,7 +371,11 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="C#" Value="void IParserAccessor.AddParsedSubObject (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IParserAccessor.AddParsedSubObject(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoice.System#Web#UI#IParserAccessor#AddParsedSubObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddParsedSubObject (obj As Object) Implements IParserAccessor.AddParsedSubObject" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -365,6 +403,8 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary Templates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Templates" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Templates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Templates As IDictionary" />
+      <MemberSignature Language="F#" Value="member this.Templates : System.Collections.IDictionary" Usage="System.Web.UI.MobileControls.DeviceSpecificChoice.Templates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -388,6 +428,8 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="C#" Value="public string Xmlns { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Xmlns" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Xmlns" />
+      <MemberSignature Language="VB.NET" Value="Public Property Xmlns As String" />
+      <MemberSignature Language="F#" Value="member this.Xmlns : string with get, set" Usage="System.Web.UI.MobileControls.DeviceSpecificChoice.Xmlns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

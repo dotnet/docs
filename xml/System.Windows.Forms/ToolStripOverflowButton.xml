@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ToolStripOverflowButton : System.Windows.Forms.ToolStripDropDownButton" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripOverflowButton extends System.Windows.Forms.ToolStripDropDownButton" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripOverflowButton" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolStripOverflowButton&#xA;Inherits ToolStripDropDownButton" />
+  <TypeSignature Language="F#" Value="type ToolStripOverflowButton = class&#xA;    inherit ToolStripDropDownButton" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripOverflowButton.CreateAccessibilityInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="toolStripOverflowButton.CreateAccessibilityInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +77,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.ToolStripDropDown CreateDefaultDropDown ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.ToolStripDropDown CreateDefaultDropDown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripOverflowButton.CreateDefaultDropDown" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDefaultDropDown () As ToolStripDropDown" />
+      <MemberSignature Language="F#" Value="override this.CreateDefaultDropDown : unit -&gt; System.Windows.Forms.ToolStripDropDown" Usage="toolStripOverflowButton.CreateDefaultDropDown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -89,9 +95,11 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultMargin">
-      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.Padding DefaultMargin { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Windows.Forms.Padding DefaultMargin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding DefaultMargin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripOverflowButton.DefaultMargin" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultMargin As Padding" />
+      <MemberSignature Language="F#" Value="member this.DefaultMargin : System.Windows.Forms.Padding" Usage="System.Windows.Forms.ToolStripOverflowButton.DefaultMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -111,6 +119,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripOverflowButton.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="toolStripOverflowButton.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -146,6 +156,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Size GetPreferredSize (System.Drawing.Size constrainingSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Drawing.Size GetPreferredSize(valuetype System.Drawing.Size constrainingSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripOverflowButton.GetPreferredSize(System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPreferredSize (constrainingSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.GetPreferredSize : System.Drawing.Size -&gt; System.Drawing.Size" Usage="toolStripOverflowButton.GetPreferredSize constrainingSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +180,8 @@
       <MemberSignature Language="C#" Value="public override bool HasDropDownItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasDropDownItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripOverflowButton.HasDropDownItems" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasDropDownItems As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasDropDownItems : bool" Usage="System.Windows.Forms.ToolStripOverflowButton.HasDropDownItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -187,6 +201,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPaint (System.Windows.Forms.PaintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Windows.Forms.PaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripOverflowButton.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="toolStripOverflowButton.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -220,6 +236,8 @@
       <MemberSignature Language="C#" Value="public bool RightToLeftAutoMirrorImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RightToLeftAutoMirrorImage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripOverflowButton.RightToLeftAutoMirrorImage" />
+      <MemberSignature Language="VB.NET" Value="Public Property RightToLeftAutoMirrorImage As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftAutoMirrorImage : bool with get, set" Usage="System.Windows.Forms.ToolStripOverflowButton.RightToLeftAutoMirrorImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -254,9 +272,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetBounds">
-      <MemberSignature Language="C#" Value="protected override void SetBounds (System.Drawing.Rectangle bounds);" />
+      <MemberSignature Language="C#" Value="protected internal override void SetBounds (System.Drawing.Rectangle bounds);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void SetBounds(valuetype System.Drawing.Rectangle bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripOverflowButton.SetBounds(System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub SetBounds (bounds As Rectangle)" />
+      <MemberSignature Language="F#" Value="override this.SetBounds : System.Drawing.Rectangle -&gt; unit" Usage="toolStripOverflowButton.SetBounds bounds" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

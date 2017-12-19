@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class RC2 : System.Security.Cryptography.SymmetricAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RC2 extends System.Security.Cryptography.SymmetricAlgorithm" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RC2" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class RC2&#xA;Inherits SymmetricAlgorithm" />
+  <TypeSignature Language="F#" Value="type RC2 = class&#xA;    inherit SymmetricAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +44,7 @@
       <MemberSignature Language="C#" Value="protected RC2 ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -79,10 +82,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of a cryptographic object to perform the <see cref="T:System.Security.Cryptography.RC2" /> algorithm.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.RC2 Create ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.RC2 Create() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As RC2" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.RC2" Usage="System.Security.Cryptography.RC2.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -134,6 +149,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.RC2 Create (string AlgName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.RC2 Create(string AlgName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2.Create(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (AlgName As String) As RC2" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.RC2" Usage="System.Security.Cryptography.RC2.Create AlgName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -188,6 +205,8 @@
       <MemberSignature Language="C#" Value="public virtual int EffectiveKeySize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EffectiveKeySize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RC2.EffectiveKeySize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EffectiveKeySize As Integer" />
+      <MemberSignature Language="F#" Value="member this.EffectiveKeySize : int with get, set" Usage="System.Security.Cryptography.RC2.EffectiveKeySize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -216,6 +235,8 @@
       <MemberSignature Language="C#" Value="protected int EffectiveKeySizeValue;" />
       <MemberSignature Language="ILAsm" Value=".field family int32 EffectiveKeySizeValue" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RC2.EffectiveKeySizeValue" />
+      <MemberSignature Language="VB.NET" Value="Protected EffectiveKeySizeValue As Integer " />
+      <MemberSignature Language="F#" Value="val mutable EffectiveKeySizeValue : int" Usage="System.Security.Cryptography.RC2.EffectiveKeySizeValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -249,6 +270,8 @@
       <MemberSignature Language="C#" Value="public override int KeySize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RC2.KeySize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property KeySize As Integer" />
+      <MemberSignature Language="F#" Value="member this.KeySize : int with get, set" Usage="System.Security.Cryptography.RC2.KeySize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -280,15 +303,5 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">The value for the RC2 key size is less than the effective key size value.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of a cryptographic object to perform the <see cref="T:System.Security.Cryptography.RC2" /> algorithm.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

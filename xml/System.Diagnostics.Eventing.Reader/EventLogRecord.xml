@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class EventLogRecord : System.Diagnostics.Eventing.Reader.EventRecord" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventLogRecord extends System.Diagnostics.Eventing.Reader.EventRecord" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogRecord" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventLogRecord&#xA;Inherits EventRecord" />
+  <TypeSignature Language="F#" Value="type EventLogRecord = class&#xA;    inherit EventRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public override Nullable&lt;Guid&gt; ActivityId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; ActivityId" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.ActivityId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActivityId As Nullable(Of Guid)" />
+      <MemberSignature Language="F#" Value="member this.ActivityId : Nullable&lt;Guid&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.ActivityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public override System.Diagnostics.Eventing.Reader.EventBookmark Bookmark { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.Eventing.Reader.EventBookmark Bookmark" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Bookmark" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bookmark As EventBookmark" />
+      <MemberSignature Language="F#" Value="member this.Bookmark : System.Diagnostics.Eventing.Reader.EventBookmark" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Bookmark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -60,6 +66,8 @@
       <MemberSignature Language="C#" Value="public string ContainerLog { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContainerLog" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.ContainerLog" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainerLog As String" />
+      <MemberSignature Language="F#" Value="member this.ContainerLog : string" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.ContainerLog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -78,6 +86,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogRecord.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="eventLogRecord.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -101,10 +111,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FormatDescription">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the event message.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FormatDescription">
       <MemberSignature Language="C#" Value="public override string FormatDescription ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string FormatDescription() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogRecord.FormatDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function FormatDescription () As String" />
+      <MemberSignature Language="F#" Value="override this.FormatDescription : unit -&gt; string" Usage="eventLogRecord.FormatDescription " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -124,6 +145,8 @@
       <MemberSignature Language="C#" Value="public override string FormatDescription (System.Collections.Generic.IEnumerable&lt;object&gt; values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string FormatDescription(class System.Collections.Generic.IEnumerable`1&lt;object&gt; values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogRecord.FormatDescription(System.Collections.Generic.IEnumerable{System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function FormatDescription (values As IEnumerable(Of Object)) As String" />
+      <MemberSignature Language="F#" Value="override this.FormatDescription : seq&lt;obj&gt; -&gt; string" Usage="eventLogRecord.FormatDescription values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -146,6 +169,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;object&gt; GetPropertyValues (System.Diagnostics.Eventing.Reader.EventLogPropertySelector propertySelector);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;object&gt; GetPropertyValues(class System.Diagnostics.Eventing.Reader.EventLogPropertySelector propertySelector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogRecord.GetPropertyValues(System.Diagnostics.Eventing.Reader.EventLogPropertySelector)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPropertyValues (propertySelector As EventLogPropertySelector) As IList(Of Object)" />
+      <MemberSignature Language="F#" Value="member this.GetPropertyValues : System.Diagnostics.Eventing.Reader.EventLogPropertySelector -&gt; System.Collections.Generic.IList&lt;obj&gt;" Usage="eventLogRecord.GetPropertyValues propertySelector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -168,6 +193,8 @@
       <MemberSignature Language="C#" Value="public override int Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Id" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Id As Integer" />
+      <MemberSignature Language="F#" Value="member this.Id : int" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -186,6 +213,8 @@
       <MemberSignature Language="C#" Value="public override Nullable&lt;long&gt; Keywords { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; Keywords" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Keywords" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Keywords As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.Keywords : Nullable&lt;int64&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Keywords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -213,6 +242,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;string&gt; KeywordsDisplayNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; KeywordsDisplayNames" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.KeywordsDisplayNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeywordsDisplayNames As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="member this.KeywordsDisplayNames : seq&lt;string&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.KeywordsDisplayNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -238,6 +269,8 @@
       <MemberSignature Language="C#" Value="public override Nullable&lt;byte&gt; Level { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;unsigned int8&gt; Level" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Level" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Level As Nullable(Of Byte)" />
+      <MemberSignature Language="F#" Value="member this.Level : Nullable&lt;byte&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -263,6 +296,8 @@
       <MemberSignature Language="C#" Value="public override string LevelDisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LevelDisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.LevelDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LevelDisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.LevelDisplayName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.LevelDisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -288,6 +323,8 @@
       <MemberSignature Language="C#" Value="public override string LogName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LogName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.LogName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LogName As String" />
+      <MemberSignature Language="F#" Value="member this.LogName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.LogName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -306,6 +343,8 @@
       <MemberSignature Language="C#" Value="public override string MachineName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.MachineName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MachineName As String" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -324,6 +363,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;int&gt; MatchedQueryIds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;int32&gt; MatchedQueryIds" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.MatchedQueryIds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatchedQueryIds As IEnumerable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.MatchedQueryIds : seq&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.MatchedQueryIds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -342,6 +383,8 @@
       <MemberSignature Language="C#" Value="public override Nullable&lt;short&gt; Opcode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int16&gt; Opcode" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Opcode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Opcode As Nullable(Of Short)" />
+      <MemberSignature Language="F#" Value="member this.Opcode : Nullable&lt;int16&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Opcode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -367,6 +410,8 @@
       <MemberSignature Language="C#" Value="public override string OpcodeDisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OpcodeDisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.OpcodeDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property OpcodeDisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.OpcodeDisplayName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.OpcodeDisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -392,6 +437,8 @@
       <MemberSignature Language="C#" Value="public override Nullable&lt;int&gt; ProcessId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ProcessId" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.ProcessId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ProcessId As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.ProcessId : Nullable&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.ProcessId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -410,6 +457,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IList&lt;System.Diagnostics.Eventing.Reader.EventProperty&gt; Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Diagnostics.Eventing.Reader.EventProperty&gt; Properties" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Properties As IList(Of EventProperty)" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IList&lt;System.Diagnostics.Eventing.Reader.EventProperty&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -428,6 +477,8 @@
       <MemberSignature Language="C#" Value="public override Nullable&lt;Guid&gt; ProviderId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; ProviderId" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.ProviderId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ProviderId As Nullable(Of Guid)" />
+      <MemberSignature Language="F#" Value="member this.ProviderId : Nullable&lt;Guid&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.ProviderId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -446,6 +497,8 @@
       <MemberSignature Language="C#" Value="public override string ProviderName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProviderName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.ProviderName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ProviderName As String" />
+      <MemberSignature Language="F#" Value="member this.ProviderName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.ProviderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -464,6 +517,8 @@
       <MemberSignature Language="C#" Value="public override Nullable&lt;int&gt; Qualifiers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Qualifiers" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Qualifiers" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Qualifiers As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Qualifiers : Nullable&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Qualifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -482,6 +537,8 @@
       <MemberSignature Language="C#" Value="public override Nullable&lt;long&gt; RecordId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; RecordId" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.RecordId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RecordId As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.RecordId : Nullable&lt;int64&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.RecordId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -500,6 +557,8 @@
       <MemberSignature Language="C#" Value="public override Nullable&lt;Guid&gt; RelatedActivityId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; RelatedActivityId" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.RelatedActivityId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RelatedActivityId As Nullable(Of Guid)" />
+      <MemberSignature Language="F#" Value="member this.RelatedActivityId : Nullable&lt;Guid&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.RelatedActivityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -525,6 +584,8 @@
       <MemberSignature Language="C#" Value="public override Nullable&lt;int&gt; Task { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Task" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Task" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Task As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Task : Nullable&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Task" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -550,6 +611,8 @@
       <MemberSignature Language="C#" Value="public override string TaskDisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TaskDisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.TaskDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TaskDisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.TaskDisplayName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.TaskDisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -575,6 +638,8 @@
       <MemberSignature Language="C#" Value="public override Nullable&lt;int&gt; ThreadId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ThreadId" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.ThreadId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ThreadId As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.ThreadId : Nullable&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.ThreadId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -593,6 +658,8 @@
       <MemberSignature Language="C#" Value="public override Nullable&lt;DateTime&gt; TimeCreated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; TimeCreated" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.TimeCreated" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TimeCreated As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.TimeCreated : Nullable&lt;DateTime&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.TimeCreated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -611,6 +678,8 @@
       <MemberSignature Language="C#" Value="public override string ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogRecord.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As String" />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; string" Usage="eventLogRecord.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -635,6 +704,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Principal.SecurityIdentifier UserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.SecurityIdentifier UserId" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.UserId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property UserId As SecurityIdentifier" />
+      <MemberSignature Language="F#" Value="member this.UserId : System.Security.Principal.SecurityIdentifier" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.UserId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -653,6 +724,8 @@
       <MemberSignature Language="C#" Value="public override Nullable&lt;byte&gt; Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;unsigned int8&gt; Version" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Version As Nullable(Of Byte)" />
+      <MemberSignature Language="F#" Value="member this.Version : Nullable&lt;byte&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -667,14 +740,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="FormatDescription">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the event message.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

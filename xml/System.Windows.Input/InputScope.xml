@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class InputScope" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InputScope extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputScope" />
+  <TypeSignature Language="VB.NET" Value="Public Class InputScope" />
+  <TypeSignature Language="F#" Value="type InputScope = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public InputScope ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputScope.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -53,6 +56,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IList Names { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList Names" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScope.Names" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Names As IList" />
+      <MemberSignature Language="F#" Value="member this.Names : System.Collections.IList" Usage="System.Windows.Input.InputScope.Names" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -86,6 +91,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IList PhraseList { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList PhraseList" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScope.PhraseList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PhraseList As IList" />
+      <MemberSignature Language="F#" Value="member this.PhraseList : System.Collections.IList" Usage="System.Windows.Input.InputScope.PhraseList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -111,6 +118,8 @@
       <MemberSignature Language="C#" Value="public string RegularExpression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RegularExpression" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScope.RegularExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Property RegularExpression As String" />
+      <MemberSignature Language="F#" Value="member this.RegularExpression : string with get, set" Usage="System.Windows.Input.InputScope.RegularExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -137,6 +146,8 @@
       <MemberSignature Language="C#" Value="public string SrgsMarkup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SrgsMarkup" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScope.SrgsMarkup" />
+      <MemberSignature Language="VB.NET" Value="Public Property SrgsMarkup As String" />
+      <MemberSignature Language="F#" Value="member this.SrgsMarkup : string with get, set" Usage="System.Windows.Input.InputScope.SrgsMarkup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

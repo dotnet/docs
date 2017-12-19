@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class WebServiceDescriptor : System.IdentityModel.Metadata.RoleDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebServiceDescriptor extends System.IdentityModel.Metadata.RoleDescriptor" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.WebServiceDescriptor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebServiceDescriptor&#xA;Inherits RoleDescriptor" />
+  <TypeSignature Language="F#" Value="type WebServiceDescriptor = class&#xA;    inherit RoleDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="protected WebServiceDescriptor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.WebServiceDescriptor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.DisplayClaim&gt; ClaimTypesOffered { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.IdentityModel.Metadata.DisplayClaim&gt; ClaimTypesOffered" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.WebServiceDescriptor.ClaimTypesOffered" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClaimTypesOffered As ICollection(Of DisplayClaim)" />
+      <MemberSignature Language="F#" Value="member this.ClaimTypesOffered : System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.DisplayClaim&gt;" Usage="System.IdentityModel.Metadata.WebServiceDescriptor.ClaimTypesOffered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.DisplayClaim&gt; ClaimTypesRequested { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.IdentityModel.Metadata.DisplayClaim&gt; ClaimTypesRequested" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.WebServiceDescriptor.ClaimTypesRequested" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClaimTypesRequested As ICollection(Of DisplayClaim)" />
+      <MemberSignature Language="F#" Value="member this.ClaimTypesRequested : System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.DisplayClaim&gt;" Usage="System.IdentityModel.Metadata.WebServiceDescriptor.ClaimTypesRequested" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -70,6 +77,8 @@
       <MemberSignature Language="C#" Value="public string ServiceDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceDescription" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.WebServiceDescriptor.ServiceDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceDescription As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceDescription : string with get, set" Usage="System.IdentityModel.Metadata.WebServiceDescriptor.ServiceDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -88,6 +97,8 @@
       <MemberSignature Language="C#" Value="public string ServiceDisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceDisplayName" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.WebServiceDescriptor.ServiceDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceDisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceDisplayName : string with get, set" Usage="System.IdentityModel.Metadata.WebServiceDescriptor.ServiceDisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -106,6 +117,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt; TargetScopes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.IdentityModel.Protocols.WSTrust.EndpointReference&gt; TargetScopes" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.WebServiceDescriptor.TargetScopes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetScopes As ICollection(Of EndpointReference)" />
+      <MemberSignature Language="F#" Value="member this.TargetScopes : System.Collections.Generic.ICollection&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt;" Usage="System.IdentityModel.Metadata.WebServiceDescriptor.TargetScopes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -124,6 +137,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Uri&gt; TokenTypesOffered { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Uri&gt; TokenTypesOffered" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.WebServiceDescriptor.TokenTypesOffered" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TokenTypesOffered As ICollection(Of Uri)" />
+      <MemberSignature Language="F#" Value="member this.TokenTypesOffered : System.Collections.Generic.ICollection&lt;Uri&gt;" Usage="System.IdentityModel.Metadata.WebServiceDescriptor.TokenTypesOffered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class XmlSchemaElement : System.Xml.Schema.XmlSchemaParticle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaElement extends System.Xml.Schema.XmlSchemaParticle" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaElement&#xA;Inherits XmlSchemaParticle" />
+  <TypeSignature Language="F#" Value="type XmlSchemaElement = class&#xA;    inherit XmlSchemaParticle" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +54,7 @@
       <MemberSignature Language="C#" Value="public XmlSchemaElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -76,6 +79,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaDerivationMethod Block { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaDerivationMethod Block" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.Block" />
+      <MemberSignature Language="VB.NET" Value="Public Property Block As XmlSchemaDerivationMethod" />
+      <MemberSignature Language="F#" Value="member this.Block : System.Xml.Schema.XmlSchemaDerivationMethod with get, set" Usage="System.Xml.Schema.XmlSchemaElement.Block" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -131,6 +136,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaDerivationMethod BlockResolved { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaDerivationMethod BlockResolved" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.BlockResolved" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlockResolved As XmlSchemaDerivationMethod" />
+      <MemberSignature Language="F#" Value="member this.BlockResolved : System.Xml.Schema.XmlSchemaDerivationMethod" Usage="System.Xml.Schema.XmlSchemaElement.BlockResolved" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -180,6 +187,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectCollection Constraints { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectCollection Constraints" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.Constraints" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Constraints As XmlSchemaObjectCollection" />
+      <MemberSignature Language="F#" Value="member this.Constraints : System.Xml.Schema.XmlSchemaObjectCollection" Usage="System.Xml.Schema.XmlSchemaElement.Constraints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -225,6 +234,8 @@
       <MemberSignature Language="C#" Value="public string DefaultValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultValue" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.DefaultValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultValue As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultValue : string with get, set" Usage="System.Xml.Schema.XmlSchemaElement.DefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -269,6 +280,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaType ElementSchemaType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaType ElementSchemaType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.ElementSchemaType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementSchemaType As XmlSchemaType" />
+      <MemberSignature Language="F#" Value="member this.ElementSchemaType : System.Xml.Schema.XmlSchemaType" Usage="System.Xml.Schema.XmlSchemaElement.ElementSchemaType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -308,6 +321,8 @@
       <MemberSignature Language="C#" Value="public object ElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ElementType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.ElementType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementType As Object" />
+      <MemberSignature Language="F#" Value="member this.ElementType : obj" Usage="System.Xml.Schema.XmlSchemaElement.ElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -355,6 +370,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaDerivationMethod Final { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaDerivationMethod Final" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.Final" />
+      <MemberSignature Language="VB.NET" Value="Public Property Final As XmlSchemaDerivationMethod" />
+      <MemberSignature Language="F#" Value="member this.Final : System.Xml.Schema.XmlSchemaDerivationMethod with get, set" Usage="System.Xml.Schema.XmlSchemaElement.Final" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -409,6 +426,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaDerivationMethod FinalResolved { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaDerivationMethod FinalResolved" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.FinalResolved" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FinalResolved As XmlSchemaDerivationMethod" />
+      <MemberSignature Language="F#" Value="member this.FinalResolved : System.Xml.Schema.XmlSchemaDerivationMethod" Usage="System.Xml.Schema.XmlSchemaElement.FinalResolved" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -457,6 +476,8 @@
       <MemberSignature Language="C#" Value="public string FixedValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FixedValue" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.FixedValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property FixedValue As String" />
+      <MemberSignature Language="F#" Value="member this.FixedValue : string with get, set" Usage="System.Xml.Schema.XmlSchemaElement.FixedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -501,6 +522,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaForm Form { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaForm Form" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.Form" />
+      <MemberSignature Language="VB.NET" Value="Public Property Form As XmlSchemaForm" />
+      <MemberSignature Language="F#" Value="member this.Form : System.Xml.Schema.XmlSchemaForm with get, set" Usage="System.Xml.Schema.XmlSchemaElement.Form" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -552,6 +575,8 @@
       <MemberSignature Language="C#" Value="public bool IsAbstract { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAbstract" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.IsAbstract" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAbstract As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAbstract : bool with get, set" Usage="System.Xml.Schema.XmlSchemaElement.IsAbstract" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -589,6 +614,8 @@
       <MemberSignature Language="C#" Value="public bool IsNillable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNillable" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.IsNillable" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsNillable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNillable : bool with get, set" Usage="System.Xml.Schema.XmlSchemaElement.IsNillable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -633,6 +660,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Xml.Schema.XmlSchemaElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -675,6 +704,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName QualifiedName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName QualifiedName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.QualifiedName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QualifiedName As XmlQualifiedName" />
+      <MemberSignature Language="F#" Value="member this.QualifiedName : System.Xml.XmlQualifiedName" Usage="System.Xml.Schema.XmlSchemaElement.QualifiedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -714,6 +745,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName RefName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName RefName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.RefName" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefName As XmlQualifiedName" />
+      <MemberSignature Language="F#" Value="member this.RefName : System.Xml.XmlQualifiedName with get, set" Usage="System.Xml.Schema.XmlSchemaElement.RefName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -755,6 +788,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaType SchemaType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaType SchemaType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.SchemaType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SchemaType As XmlSchemaType" />
+      <MemberSignature Language="F#" Value="member this.SchemaType : System.Xml.Schema.XmlSchemaType with get, set" Usage="System.Xml.Schema.XmlSchemaElement.SchemaType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -797,6 +832,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName SchemaTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName SchemaTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.SchemaTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SchemaTypeName As XmlQualifiedName" />
+      <MemberSignature Language="F#" Value="member this.SchemaTypeName : System.Xml.XmlQualifiedName with get, set" Usage="System.Xml.Schema.XmlSchemaElement.SchemaTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -829,6 +866,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName SubstitutionGroup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName SubstitutionGroup" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaElement.SubstitutionGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubstitutionGroup As XmlQualifiedName" />
+      <MemberSignature Language="F#" Value="member this.SubstitutionGroup : System.Xml.XmlQualifiedName with get, set" Usage="System.Xml.Schema.XmlSchemaElement.SubstitutionGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

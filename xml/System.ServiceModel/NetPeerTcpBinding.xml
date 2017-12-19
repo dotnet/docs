@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class NetPeerTcpBinding : System.ServiceModel.Channels.Binding, System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetPeerTcpBinding extends System.ServiceModel.Channels.Binding implements class System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.NetPeerTcpBinding" />
+  <TypeSignature Language="VB.NET" Value="Public Class NetPeerTcpBinding&#xA;Inherits Binding&#xA;Implements IBindingRuntimePreferences" />
+  <TypeSignature Language="F#" Value="type NetPeerTcpBinding = class&#xA;    inherit Binding&#xA;    interface IBindingRuntimePreferences" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +37,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetPeerTcpBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NetPeerTcpBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetPeerTcpBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -54,6 +66,8 @@
       <MemberSignature Language="C#" Value="public NetPeerTcpBinding (string configurationName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetPeerTcpBinding.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (configurationName As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.NetPeerTcpBinding : string -&gt; System.ServiceModel.NetPeerTcpBinding" Usage="new System.ServiceModel.NetPeerTcpBinding configurationName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -80,6 +94,8 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElementCollection CreateBindingElements ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElementCollection CreateBindingElements() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetPeerTcpBinding.CreateBindingElements" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateBindingElements () As BindingElementCollection" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElements : unit -&gt; System.ServiceModel.Channels.BindingElementCollection" Usage="netPeerTcpBinding.CreateBindingElements " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,6 +115,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EnvelopeVersion EnvelopeVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EnvelopeVersion EnvelopeVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.EnvelopeVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnvelopeVersion As EnvelopeVersion" />
+      <MemberSignature Language="F#" Value="member this.EnvelopeVersion : System.ServiceModel.EnvelopeVersion" Usage="System.ServiceModel.NetPeerTcpBinding.EnvelopeVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +136,8 @@
       <MemberSignature Language="C#" Value="public static bool IsPnrpAvailable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool IsPnrpAvailable" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.IsPnrpAvailable" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsPnrpAvailable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPnrpAvailable : bool" Usage="System.ServiceModel.NetPeerTcpBinding.IsPnrpAvailable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -136,6 +156,8 @@
       <MemberSignature Language="C#" Value="public System.Net.IPAddress ListenIPAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPAddress ListenIPAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.ListenIPAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListenIPAddress As IPAddress" />
+      <MemberSignature Language="F#" Value="member this.ListenIPAddress : System.Net.IPAddress with get, set" Usage="System.ServiceModel.NetPeerTcpBinding.ListenIPAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -176,6 +198,8 @@
       <MemberSignature Language="C#" Value="public long MaxBufferPoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxBufferPoolSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.MaxBufferPoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxBufferPoolSize As Long" />
+      <MemberSignature Language="F#" Value="member this.MaxBufferPoolSize : int64 with get, set" Usage="System.ServiceModel.NetPeerTcpBinding.MaxBufferPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -206,6 +230,8 @@
       <MemberSignature Language="C#" Value="public long MaxReceivedMessageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxReceivedMessageSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.MaxReceivedMessageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxReceivedMessageSize As Long" />
+      <MemberSignature Language="F#" Value="member this.MaxReceivedMessageSize : int64 with get, set" Usage="System.ServiceModel.NetPeerTcpBinding.MaxReceivedMessageSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -230,6 +256,8 @@
       <MemberSignature Language="C#" Value="public int Port { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Port" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.Port" />
+      <MemberSignature Language="VB.NET" Value="Public Property Port As Integer" />
+      <MemberSignature Language="F#" Value="member this.Port : int with get, set" Usage="System.ServiceModel.NetPeerTcpBinding.Port" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -260,6 +288,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryReaderQuotas ReaderQuotas { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDictionaryReaderQuotas ReaderQuotas" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.ReaderQuotas" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReaderQuotas As XmlDictionaryReaderQuotas" />
+      <MemberSignature Language="F#" Value="member this.ReaderQuotas : System.Xml.XmlDictionaryReaderQuotas with get, set" Usage="System.ServiceModel.NetPeerTcpBinding.ReaderQuotas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -279,6 +309,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.PeerResolvers.PeerResolverSettings Resolver { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.PeerResolvers.PeerResolverSettings Resolver" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.Resolver" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Resolver As PeerResolverSettings" />
+      <MemberSignature Language="F#" Value="member this.Resolver : System.ServiceModel.PeerResolvers.PeerResolverSettings" Usage="System.ServiceModel.NetPeerTcpBinding.Resolver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -297,6 +329,8 @@
       <MemberSignature Language="C#" Value="public override string Scheme { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.Scheme" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Scheme As String" />
+      <MemberSignature Language="F#" Value="member this.Scheme : string" Usage="System.ServiceModel.NetPeerTcpBinding.Scheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -322,6 +356,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.PeerSecuritySettings Security { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.PeerSecuritySettings Security" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.Security" />
+      <MemberSignature Language="VB.NET" Value="Public Property Security As PeerSecuritySettings" />
+      <MemberSignature Language="F#" Value="member this.Security : System.ServiceModel.PeerSecuritySettings with get, set" Usage="System.ServiceModel.NetPeerTcpBinding.Security" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -341,6 +377,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeReaderQuotas ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeReaderQuotas() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetPeerTcpBinding.ShouldSerializeReaderQuotas" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeReaderQuotas () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeReaderQuotas : unit -&gt; bool" Usage="netPeerTcpBinding.ShouldSerializeReaderQuotas " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -365,6 +403,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeSecurity() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetPeerTcpBinding.ShouldSerializeSecurity" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeSecurity () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeSecurity : unit -&gt; bool" Usage="netPeerTcpBinding.ShouldSerializeSecurity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -389,7 +429,11 @@
       <MemberSignature Language="C#" Value="bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.System#ServiceModel#Channels#IBindingRuntimePreferences#ReceiveSynchronously" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ReceiveSynchronously As Boolean Implements IBindingRuntimePreferences.ReceiveSynchronously" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -403,14 +447,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetPeerTcpBinding" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

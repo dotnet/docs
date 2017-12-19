@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class Saml2Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Saml2Attribute extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2Attribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class Saml2Attribute" />
+  <TypeSignature Language="F#" Value="type Saml2Attribute = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Saml2Attribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Attribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2Attribute : string -&gt; System.IdentityModel.Tokens.Saml2Attribute" Usage="new System.IdentityModel.Tokens.Saml2Attribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -46,6 +59,8 @@
       <MemberSignature Language="C#" Value="public Saml2Attribute (string name, System.Collections.Generic.IEnumerable&lt;string&gt; values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Collections.Generic.IEnumerable`1&lt;string&gt; values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Attribute.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, values As IEnumerable(Of String))" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2Attribute : string * seq&lt;string&gt; -&gt; System.IdentityModel.Tokens.Saml2Attribute" Usage="new System.IdentityModel.Tokens.Saml2Attribute (name, values)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -72,6 +87,8 @@
       <MemberSignature Language="C#" Value="public Saml2Attribute (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Attribute.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2Attribute : string * string -&gt; System.IdentityModel.Tokens.Saml2Attribute" Usage="new System.IdentityModel.Tokens.Saml2Attribute (name, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="public string AttributeValueXsiType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AttributeValueXsiType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Attribute.AttributeValueXsiType" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttributeValueXsiType As String" />
+      <MemberSignature Language="F#" Value="member this.AttributeValueXsiType : string with get, set" Usage="System.IdentityModel.Tokens.Saml2Attribute.AttributeValueXsiType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -128,6 +147,8 @@
       <MemberSignature Language="C#" Value="public string FriendlyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FriendlyName" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Attribute.FriendlyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FriendlyName As String" />
+      <MemberSignature Language="F#" Value="member this.FriendlyName : string with get, set" Usage="System.IdentityModel.Tokens.Saml2Attribute.FriendlyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -153,6 +174,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Attribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.IdentityModel.Tokens.Saml2Attribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -179,6 +202,8 @@
       <MemberSignature Language="C#" Value="public Uri NameFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri NameFormat" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Attribute.NameFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property NameFormat As Uri" />
+      <MemberSignature Language="F#" Value="member this.NameFormat : Uri with get, set" Usage="System.IdentityModel.Tokens.Saml2Attribute.NameFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -205,6 +230,8 @@
       <MemberSignature Language="C#" Value="public string OriginalIssuer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OriginalIssuer" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Attribute.OriginalIssuer" />
+      <MemberSignature Language="VB.NET" Value="Public Property OriginalIssuer As String" />
+      <MemberSignature Language="F#" Value="member this.OriginalIssuer : string with get, set" Usage="System.IdentityModel.Tokens.Saml2Attribute.OriginalIssuer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -224,6 +251,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;string&gt; Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; Values" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Attribute.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As Collection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.IdentityModel.Tokens.Saml2Attribute.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -245,14 +274,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

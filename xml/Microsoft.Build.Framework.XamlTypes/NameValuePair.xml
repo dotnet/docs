@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class NameValuePair" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NameValuePair extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.NameValuePair" />
+  <TypeSignature Language="VB.NET" Value="Public Class NameValuePair" />
+  <TypeSignature Language="F#" Value="type NameValuePair = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public NameValuePair ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.NameValuePair.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.NameValuePair.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.NameValuePair.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.NameValuePair.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.NameValuePair.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

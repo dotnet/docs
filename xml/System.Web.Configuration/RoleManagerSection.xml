@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class RoleManagerSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RoleManagerSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.RoleManagerSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RoleManagerSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type RoleManagerSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +73,7 @@
       <MemberSignature Language="C#" Value="public RoleManagerSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RoleManagerSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -110,6 +113,8 @@
       <MemberSignature Language="C#" Value="public bool CacheRolesInCookie { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CacheRolesInCookie" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CacheRolesInCookie" />
+      <MemberSignature Language="VB.NET" Value="Public Property CacheRolesInCookie As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CacheRolesInCookie : bool with get, set" Usage="System.Web.Configuration.RoleManagerSection.CacheRolesInCookie" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -153,6 +158,8 @@
       <MemberSignature Language="C#" Value="public string CookieName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CookieName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CookieName As String" />
+      <MemberSignature Language="F#" Value="member this.CookieName : string with get, set" Usage="System.Web.Configuration.RoleManagerSection.CookieName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +204,8 @@
       <MemberSignature Language="C#" Value="public string CookiePath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CookiePath" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookiePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property CookiePath As String" />
+      <MemberSignature Language="F#" Value="member this.CookiePath : string with get, set" Usage="System.Web.Configuration.RoleManagerSection.CookiePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -241,6 +250,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Security.CookieProtection CookieProtection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Security.CookieProtection CookieProtection" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieProtection" />
+      <MemberSignature Language="VB.NET" Value="Public Property CookieProtection As CookieProtection" />
+      <MemberSignature Language="F#" Value="member this.CookieProtection : System.Web.Security.CookieProtection with get, set" Usage="System.Web.Configuration.RoleManagerSection.CookieProtection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -280,6 +291,8 @@
       <MemberSignature Language="C#" Value="public bool CookieRequireSSL { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CookieRequireSSL" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieRequireSSL" />
+      <MemberSignature Language="VB.NET" Value="Public Property CookieRequireSSL As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CookieRequireSSL : bool with get, set" Usage="System.Web.Configuration.RoleManagerSection.CookieRequireSSL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -320,6 +333,8 @@
       <MemberSignature Language="C#" Value="public bool CookieSlidingExpiration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CookieSlidingExpiration" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieSlidingExpiration" />
+      <MemberSignature Language="VB.NET" Value="Public Property CookieSlidingExpiration As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CookieSlidingExpiration : bool with get, set" Usage="System.Web.Configuration.RoleManagerSection.CookieSlidingExpiration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -359,6 +374,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan CookieTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan CookieTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property CookieTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.CookieTimeout : TimeSpan with get, set" Usage="System.Web.Configuration.RoleManagerSection.CookieTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -404,6 +421,8 @@
       <MemberSignature Language="C#" Value="public bool CreatePersistentCookie { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CreatePersistentCookie" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CreatePersistentCookie" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatePersistentCookie As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CreatePersistentCookie : bool with get, set" Usage="System.Web.Configuration.RoleManagerSection.CreatePersistentCookie" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -443,6 +462,8 @@
       <MemberSignature Language="C#" Value="public string DefaultProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultProvider" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.DefaultProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultProvider As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultProvider : string with get, set" Usage="System.Web.Configuration.RoleManagerSection.DefaultProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -488,6 +509,8 @@
       <MemberSignature Language="C#" Value="public string Domain { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Domain" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.Domain" />
+      <MemberSignature Language="VB.NET" Value="Public Property Domain As String" />
+      <MemberSignature Language="F#" Value="member this.Domain : string with get, set" Usage="System.Web.Configuration.RoleManagerSection.Domain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -518,6 +541,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.Configuration.RoleManagerSection.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -557,6 +582,8 @@
       <MemberSignature Language="C#" Value="public int MaxCachedResults { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxCachedResults" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.MaxCachedResults" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxCachedResults As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxCachedResults : int with get, set" Usage="System.Web.Configuration.RoleManagerSection.MaxCachedResults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -588,6 +615,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.RoleManagerSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -606,6 +635,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ProviderSettingsCollection Providers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ProviderSettingsCollection Providers" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.Providers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Providers As ProviderSettingsCollection" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Configuration.ProviderSettingsCollection" Usage="System.Web.Configuration.RoleManagerSection.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

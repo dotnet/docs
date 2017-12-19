@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class TableRowGroup : System.Windows.Documents.TextElement, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableRowGroup extends System.Windows.Documents.TextElement implements class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TableRowGroup" />
+  <TypeSignature Language="VB.NET" Value="Public Class TableRowGroup&#xA;Inherits TextElement&#xA;Implements IAddChild" />
+  <TypeSignature Language="F#" Value="type TableRowGroup = class&#xA;    inherit TextElement&#xA;    interface IAddChild&#xA;    interface IIndexedChild&lt;Table&gt;&#xA;    interface IAcceptInsertion" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,7 @@
       <MemberSignature Language="C#" Value="public TableRowGroup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TableRowGroup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -50,6 +53,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TableRowCollection Rows { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TableRowCollection Rows" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TableRowGroup.Rows" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rows As TableRowCollection" />
+      <MemberSignature Language="F#" Value="member this.Rows : System.Windows.Documents.TableRowCollection" Usage="System.Windows.Documents.TableRowGroup.Rows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +93,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeRows ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeRows() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TableRowGroup.ShouldSerializeRows" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeRows () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeRows : unit -&gt; bool" Usage="tableRowGroup.ShouldSerializeRows " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -120,7 +127,11 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TableRowGroup.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -141,7 +152,11 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TableRowGroup.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

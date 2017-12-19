@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class UriTemplateMatchException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit UriTemplateMatchException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.UriTemplateMatchException" />
+  <TypeSignature Language="VB.NET" Value="Public Class UriTemplateMatchException&#xA;Inherits SystemException" />
+  <TypeSignature Language="F#" Value="type UriTemplateMatchException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +22,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.UriTemplateMatchException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public UriTemplateMatchException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplateMatchException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -44,6 +56,8 @@
       <MemberSignature Language="C#" Value="public UriTemplateMatchException (string msg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplateMatchException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String)" />
+      <MemberSignature Language="F#" Value="new UriTemplateMatchException : string -&gt; UriTemplateMatchException" Usage="new System.UriTemplateMatchException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +81,8 @@
       <MemberSignature Language="C#" Value="protected UriTemplateMatchException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplateMatchException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new UriTemplateMatchException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; UriTemplateMatchException" Usage="new System.UriTemplateMatchException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +108,8 @@
       <MemberSignature Language="C#" Value="public UriTemplateMatchException (string msg, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string msg, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplateMatchException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String, inner As Exception)" />
+      <MemberSignature Language="F#" Value="new UriTemplateMatchException : string * Exception -&gt; UriTemplateMatchException" Usage="new System.UriTemplateMatchException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,14 +131,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.UriTemplateMatchException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

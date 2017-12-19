@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void StoppedEventHandler(object sender, StoppedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StoppedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Management.StoppedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub StoppedEventHandler(sender As Object, e As StoppedEventArgs)" />
+  <TypeSignature Language="F#" Value="type StoppedEventHandler = delegate of obj * StoppedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

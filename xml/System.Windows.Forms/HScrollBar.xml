@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class HScrollBar : System.Windows.Forms.ScrollBar" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HScrollBar extends System.Windows.Forms.ScrollBar" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HScrollBar" />
+  <TypeSignature Language="VB.NET" Value="Public Class HScrollBar&#xA;Inherits ScrollBar" />
+  <TypeSignature Language="F#" Value="type HScrollBar = class&#xA;    inherit ScrollBar" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,7 @@
       <MemberSignature Language="C#" Value="public HScrollBar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HScrollBar.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HScrollBar.CreateParams" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.HScrollBar.CreateParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +86,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HScrollBar.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.HScrollBar.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public struct MethodSignature&lt;TType&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MethodSignature`1&lt;TType&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MethodSignature`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure MethodSignature(Of TType)" />
+  <TypeSignature Language="F#" Value="type MethodSignature&lt;'ype&gt; = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public MethodSignature (System.Reflection.Metadata.SignatureHeader header, TType returnType, int requiredParameterCount, int genericParameterCount, System.Collections.Immutable.ImmutableArray&lt;TType&gt; parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Reflection.Metadata.SignatureHeader header, !TType returnType, int32 requiredParameterCount, int32 genericParameterCount, valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodSignature`1.#ctor(System.Reflection.Metadata.SignatureHeader,`0,System.Int32,System.Int32,System.Collections.Immutable.ImmutableArray{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (header As SignatureHeader, returnType As TType, requiredParameterCount As Integer, genericParameterCount As Integer, parameterTypes As ImmutableArray(Of TType))" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.MethodSignature&lt;'ype&gt; : System.Reflection.Metadata.SignatureHeader * 'ype * int * int * System.Collections.Immutable.ImmutableArray&lt;'ype&gt; -&gt; System.Reflection.Metadata.MethodSignature&lt;'ype&gt;" Usage="new System.Reflection.Metadata.MethodSignature&lt;'ype&gt; (header, returnType, requiredParameterCount, genericParameterCount, parameterTypes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public int GenericParameterCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 GenericParameterCount" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.GenericParameterCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GenericParameterCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.GenericParameterCount : int" Usage="System.Reflection.Metadata.MethodSignature&lt;'ype&gt;.GenericParameterCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -73,6 +79,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.SignatureHeader Header { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.SignatureHeader Header" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.Header" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Header As SignatureHeader" />
+      <MemberSignature Language="F#" Value="member this.Header : System.Reflection.Metadata.SignatureHeader" Usage="System.Reflection.Metadata.MethodSignature&lt;'ype&gt;.Header" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;TType&gt; ParameterTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; ParameterTypes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.ParameterTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterTypes As ImmutableArray(Of TType)" />
+      <MemberSignature Language="F#" Value="member this.ParameterTypes : System.Collections.Immutable.ImmutableArray&lt;'ype&gt;" Usage="System.Reflection.Metadata.MethodSignature&lt;'ype&gt;.ParameterTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -113,6 +123,8 @@
       <MemberSignature Language="C#" Value="public int RequiredParameterCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RequiredParameterCount" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.RequiredParameterCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequiredParameterCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.RequiredParameterCount : int" Usage="System.Reflection.Metadata.MethodSignature&lt;'ype&gt;.RequiredParameterCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -139,6 +151,8 @@
       <MemberSignature Language="C#" Value="public TType ReturnType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TType ReturnType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.ReturnType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnType As TType" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : 'ype" Usage="System.Reflection.Metadata.MethodSignature&lt;'ype&gt;.ReturnType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

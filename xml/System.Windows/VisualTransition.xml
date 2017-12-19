@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class VisualTransition : System.Windows.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualTransition extends System.Windows.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.VisualTransition" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualTransition&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="F#" Value="type VisualTransition = class&#xA;    inherit DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,7 @@
       <MemberSignature Language="C#" Value="public VisualTransition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.VisualTransition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -59,6 +62,8 @@
       <MemberSignature Language="C#" Value="public string From { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string From" />
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualTransition.From" />
+      <MemberSignature Language="VB.NET" Value="Public Property From As String" />
+      <MemberSignature Language="F#" Value="member this.From : string with get, set" Usage="System.Windows.VisualTransition.From" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -102,6 +107,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Duration GeneratedDuration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Duration GeneratedDuration" />
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualTransition.GeneratedDuration" />
+      <MemberSignature Language="VB.NET" Value="Public Property GeneratedDuration As Duration" />
+      <MemberSignature Language="F#" Value="member this.GeneratedDuration : System.Windows.Duration with get, set" Usage="System.Windows.VisualTransition.GeneratedDuration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +146,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.IEasingFunction GeneratedEasingFunction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.IEasingFunction GeneratedEasingFunction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualTransition.GeneratedEasingFunction" />
+      <MemberSignature Language="VB.NET" Value="Public Property GeneratedEasingFunction As IEasingFunction" />
+      <MemberSignature Language="F#" Value="member this.GeneratedEasingFunction : System.Windows.Media.Animation.IEasingFunction with get, set" Usage="System.Windows.VisualTransition.GeneratedEasingFunction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -176,6 +185,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.Storyboard Storyboard { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.Storyboard Storyboard" />
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualTransition.Storyboard" />
+      <MemberSignature Language="VB.NET" Value="Public Property Storyboard As Storyboard" />
+      <MemberSignature Language="F#" Value="member this.Storyboard : System.Windows.Media.Animation.Storyboard with get, set" Usage="System.Windows.VisualTransition.Storyboard" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -208,6 +219,8 @@
       <MemberSignature Language="C#" Value="public string To { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string To" />
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualTransition.To" />
+      <MemberSignature Language="VB.NET" Value="Public Property To As String" />
+      <MemberSignature Language="F#" Value="member this.To : string with get, set" Usage="System.Windows.VisualTransition.To" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

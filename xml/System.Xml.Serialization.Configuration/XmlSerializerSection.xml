@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class XmlSerializerSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlSerializerSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.XmlSerializerSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSerializerSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type XmlSerializerSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="public XmlSerializerSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.XmlSerializerSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public bool CheckDeserializeAdvances { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CheckDeserializeAdvances" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.XmlSerializerSection.CheckDeserializeAdvances" />
+      <MemberSignature Language="VB.NET" Value="Public Property CheckDeserializeAdvances As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CheckDeserializeAdvances : bool with get, set" Usage="System.Xml.Serialization.Configuration.XmlSerializerSection.CheckDeserializeAdvances" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -72,6 +77,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.XmlSerializerSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Xml.Serialization.Configuration.XmlSerializerSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -90,6 +97,8 @@
       <MemberSignature Language="C#" Value="public string TempFilesLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TempFilesLocation" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.XmlSerializerSection.TempFilesLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property TempFilesLocation As String" />
+      <MemberSignature Language="F#" Value="member this.TempFilesLocation : string with get, set" Usage="System.Xml.Serialization.Configuration.XmlSerializerSection.TempFilesLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -113,6 +122,8 @@
       <MemberSignature Language="C#" Value="public bool UseLegacySerializerGeneration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseLegacySerializerGeneration" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.XmlSerializerSection.UseLegacySerializerGeneration" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseLegacySerializerGeneration As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseLegacySerializerGeneration : bool with get, set" Usage="System.Xml.Serialization.Configuration.XmlSerializerSection.UseLegacySerializerGeneration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

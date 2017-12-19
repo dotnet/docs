@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class XmlMessageFormatter : ICloneable, System.Messaging.IMessageFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlMessageFormatter extends System.Object implements class System.ICloneable, class System.Messaging.IMessageFormatter" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.XmlMessageFormatter" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlMessageFormatter&#xA;Implements ICloneable, IMessageFormatter" />
+  <TypeSignature Language="F#" Value="type XmlMessageFormatter = class&#xA;    interface IMessageFormatter&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,10 +78,20 @@
     <altmember cref="T:System.Messaging.IMessageFormatter" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.XmlMessageFormatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlMessageFormatter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.XmlMessageFormatter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -106,6 +118,8 @@
       <MemberSignature Language="C#" Value="public XmlMessageFormatter (string[] targetTypeNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] targetTypeNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.XmlMessageFormatter.#ctor(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetTypeNames As String())" />
+      <MemberSignature Language="F#" Value="new System.Messaging.XmlMessageFormatter : string[] -&gt; System.Messaging.XmlMessageFormatter" Usage="new System.Messaging.XmlMessageFormatter targetTypeNames" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -147,6 +161,8 @@
       <MemberSignature Language="C#" Value="public XmlMessageFormatter (Type[] targetTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type[] targetTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.XmlMessageFormatter.#ctor(System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetTypes As Type())" />
+      <MemberSignature Language="F#" Value="new System.Messaging.XmlMessageFormatter : Type[] -&gt; System.Messaging.XmlMessageFormatter" Usage="new System.Messaging.XmlMessageFormatter targetTypes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -189,7 +205,11 @@ TargetTypes = new Type[]{typeof(MyClass)}
       <MemberSignature Language="C#" Value="public bool CanRead (System.Messaging.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanRead(class System.Messaging.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.XmlMessageFormatter.CanRead(System.Messaging.Message)" />
+      <MemberSignature Language="F#" Value="abstract member CanRead : System.Messaging.Message -&gt; bool&#xA;override this.CanRead : System.Messaging.Message -&gt; bool" Usage="xmlMessageFormatter.CanRead message" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Messaging.IMessageFormatter.CanRead(System.Messaging.Message)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -231,7 +251,12 @@ TargetTypes = new Type[]{typeof(MyClass)}
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.XmlMessageFormatter.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="xmlMessageFormatter.Clone " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -258,7 +283,11 @@ TargetTypes = new Type[]{typeof(MyClass)}
       <MemberSignature Language="C#" Value="public object Read (System.Messaging.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Read(class System.Messaging.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.XmlMessageFormatter.Read(System.Messaging.Message)" />
+      <MemberSignature Language="F#" Value="abstract member Read : System.Messaging.Message -&gt; obj&#xA;override this.Read : System.Messaging.Message -&gt; obj" Usage="xmlMessageFormatter.Read message" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Messaging.IMessageFormatter.Read(System.Messaging.Message)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -302,6 +331,8 @@ TargetTypes = new Type[]{typeof(MyClass)}
       <MemberSignature Language="C#" Value="public string[] TargetTypeNames { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] TargetTypeNames" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.XmlMessageFormatter.TargetTypeNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetTypeNames As String()" />
+      <MemberSignature Language="F#" Value="member this.TargetTypeNames : string[] with get, set" Usage="System.Messaging.XmlMessageFormatter.TargetTypeNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -344,6 +375,8 @@ TargetTypes = new Type[]{typeof(MyClass)}
       <MemberSignature Language="C#" Value="public Type[] TargetTypes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] TargetTypes" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.XmlMessageFormatter.TargetTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetTypes As Type()" />
+      <MemberSignature Language="F#" Value="member this.TargetTypes : Type[] with get, set" Usage="System.Messaging.XmlMessageFormatter.TargetTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -403,7 +436,11 @@ TargetTypes = new Type[]{typeof(MyClass)}
       <MemberSignature Language="C#" Value="public void Write (System.Messaging.Message message, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(class System.Messaging.Message message, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.XmlMessageFormatter.Write(System.Messaging.Message,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member Write : System.Messaging.Message * obj -&gt; unit&#xA;override this.Write : System.Messaging.Message * obj -&gt; unit" Usage="xmlMessageFormatter.Write (message, obj)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Messaging.IMessageFormatter.Write(System.Messaging.Message,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -437,14 +474,5 @@ TargetTypes = new Type[]{typeof(MyClass)}
         <altmember cref="M:System.Messaging.XmlMessageFormatter.Read(System.Messaging.Message)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Messaging.XmlMessageFormatter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class XmlIncludeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlIncludeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlIncludeAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlIncludeAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type XmlIncludeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -56,6 +58,7 @@
       <MemberSignature Language="C#" Value="public XmlIncludeAttribute (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlIncludeAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlIncludeAttribute : Type -&gt; System.Xml.Serialization.XmlIncludeAttribute" Usage="new System.Xml.Serialization.XmlIncludeAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -95,6 +98,8 @@
       <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlIncludeAttribute.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Xml.Serialization.XmlIncludeAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>

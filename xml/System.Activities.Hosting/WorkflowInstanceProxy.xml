@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class WorkflowInstanceProxy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowInstanceProxy extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.WorkflowInstanceProxy" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowInstanceProxy" />
+  <TypeSignature Language="F#" Value="type WorkflowInstanceProxy = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="BeginResumeBookmark">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resumes a bookmark asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginResumeBookmark">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginResumeBookmark (System.Activities.Bookmark bookmark, object value, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginResumeBookmark(class System.Activities.Bookmark bookmark, object value, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstanceProxy.BeginResumeBookmark(System.Activities.Bookmark,System.Object,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginResumeBookmark : System.Activities.Bookmark * obj * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowInstanceProxy.BeginResumeBookmark (bookmark, value, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -54,6 +66,7 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginResumeBookmark (System.Activities.Bookmark bookmark, object value, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginResumeBookmark(class System.Activities.Bookmark bookmark, object value, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstanceProxy.BeginResumeBookmark(System.Activities.Bookmark,System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginResumeBookmark : System.Activities.Bookmark * obj * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowInstanceProxy.BeginResumeBookmark (bookmark, value, timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -91,6 +104,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.BookmarkResumptionResult EndResumeBookmark (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.BookmarkResumptionResult EndResumeBookmark(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndResumeBookmark (result As IAsyncResult) As BookmarkResumptionResult" />
+      <MemberSignature Language="F#" Value="member this.EndResumeBookmark : IAsyncResult -&gt; System.Activities.BookmarkResumptionResult" Usage="workflowInstanceProxy.EndResumeBookmark result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -120,6 +135,8 @@
       <MemberSignature Language="C#" Value="public Guid Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstanceProxy.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Guid" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid" Usage="System.Activities.Hosting.WorkflowInstanceProxy.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -138,6 +155,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Activity WorkflowDefinition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity WorkflowDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstanceProxy.WorkflowDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowDefinition As Activity" />
+      <MemberSignature Language="F#" Value="member this.WorkflowDefinition : System.Activities.Activity" Usage="System.Activities.Hosting.WorkflowInstanceProxy.WorkflowDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -152,14 +171,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="BeginResumeBookmark">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Resumes a bookmark asynchronously.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

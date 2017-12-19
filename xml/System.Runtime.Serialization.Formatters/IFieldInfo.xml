@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IFieldInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldInfo" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.IFieldInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFieldInfo" />
+  <TypeSignature Language="F#" Value="type IFieldInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public string[] FieldNames { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] FieldNames" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.IFieldInfo.FieldNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldNames As String()" />
+      <MemberSignature Language="F#" Value="member this.FieldNames : string[] with get, set" Usage="System.Runtime.Serialization.Formatters.IFieldInfo.FieldNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public Type[] FieldTypes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] FieldTypes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.IFieldInfo.FieldTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldTypes As Type()" />
+      <MemberSignature Language="F#" Value="member this.FieldTypes : Type[] with get, set" Usage="System.Runtime.Serialization.Formatters.IFieldInfo.FieldTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

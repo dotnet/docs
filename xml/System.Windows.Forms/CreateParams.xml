@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CreateParams" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CreateParams extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CreateParams" />
+  <TypeSignature Language="VB.NET" Value="Public Class CreateParams" />
+  <TypeSignature Language="F#" Value="type CreateParams = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,7 @@
       <MemberSignature Language="C#" Value="public CreateParams ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CreateParams.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="public string Caption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CreateParams.Caption" />
+      <MemberSignature Language="VB.NET" Value="Public Property Caption As String" />
+      <MemberSignature Language="F#" Value="member this.Caption : string with get, set" Usage="System.Windows.Forms.CreateParams.Caption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +86,8 @@
       <MemberSignature Language="C#" Value="public string ClassName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClassName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CreateParams.ClassName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClassName As String" />
+      <MemberSignature Language="F#" Value="member this.ClassName : string with get, set" Usage="System.Windows.Forms.CreateParams.ClassName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -106,6 +113,8 @@
       <MemberSignature Language="C#" Value="public int ClassStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ClassStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CreateParams.ClassStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClassStyle As Integer" />
+      <MemberSignature Language="F#" Value="member this.ClassStyle : int with get, set" Usage="System.Windows.Forms.CreateParams.ClassStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -138,6 +147,8 @@
       <MemberSignature Language="C#" Value="public int ExStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ExStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CreateParams.ExStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExStyle As Integer" />
+      <MemberSignature Language="F#" Value="member this.ExStyle : int with get, set" Usage="System.Windows.Forms.CreateParams.ExStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -170,6 +181,8 @@
       <MemberSignature Language="C#" Value="public int Height { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CreateParams.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="System.Windows.Forms.CreateParams.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -190,6 +203,8 @@
       <MemberSignature Language="C#" Value="public object Param { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Param" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CreateParams.Param" />
+      <MemberSignature Language="VB.NET" Value="Public Property Param As Object" />
+      <MemberSignature Language="F#" Value="member this.Param : obj with get, set" Usage="System.Windows.Forms.CreateParams.Param" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -217,6 +232,8 @@
       <MemberSignature Language="C#" Value="public IntPtr Parent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Parent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CreateParams.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parent As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.Parent : nativeint with get, set" Usage="System.Windows.Forms.CreateParams.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -236,6 +253,8 @@
       <MemberSignature Language="C#" Value="public int Style { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Style" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CreateParams.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Property Style As Integer" />
+      <MemberSignature Language="F#" Value="member this.Style : int with get, set" Usage="System.Windows.Forms.CreateParams.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -277,6 +296,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CreateParams.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="createParams.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -297,6 +318,8 @@
       <MemberSignature Language="C#" Value="public int Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CreateParams.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="System.Windows.Forms.CreateParams.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -317,6 +340,8 @@
       <MemberSignature Language="C#" Value="public int X { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 X" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CreateParams.X" />
+      <MemberSignature Language="VB.NET" Value="Public Property X As Integer" />
+      <MemberSignature Language="F#" Value="member this.X : int with get, set" Usage="System.Windows.Forms.CreateParams.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -337,6 +362,8 @@
       <MemberSignature Language="C#" Value="public int Y { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Y" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CreateParams.Y" />
+      <MemberSignature Language="VB.NET" Value="Public Property Y As Integer" />
+      <MemberSignature Language="F#" Value="member this.Y : int with get, set" Usage="System.Windows.Forms.CreateParams.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

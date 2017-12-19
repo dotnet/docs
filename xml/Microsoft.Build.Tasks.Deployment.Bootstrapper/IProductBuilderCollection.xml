@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IProductBuilderCollection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProductBuilderCollection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilderCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProductBuilderCollection" />
+  <TypeSignature Language="F#" Value="type IProductBuilderCollection = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public void Add (Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilderCollection.Add(Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (builder As ProductBuilder)" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder -&gt; unit" Usage="iProductBuilderCollection.Add builder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

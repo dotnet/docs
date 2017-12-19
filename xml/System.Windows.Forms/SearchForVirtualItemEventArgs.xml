@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class SearchForVirtualItemEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchForVirtualItemEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SearchForVirtualItemEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SearchForVirtualItemEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type SearchForVirtualItemEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public SearchForVirtualItemEventArgs (bool isTextSearch, bool isPrefixSearch, bool includeSubItemsInSearch, string text, System.Drawing.Point startingPoint, System.Windows.Forms.SearchDirectionHint direction, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isTextSearch, bool isPrefixSearch, bool includeSubItemsInSearch, string text, valuetype System.Drawing.Point startingPoint, valuetype System.Windows.Forms.SearchDirectionHint direction, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SearchForVirtualItemEventArgs.#ctor(System.Boolean,System.Boolean,System.Boolean,System.String,System.Drawing.Point,System.Windows.Forms.SearchDirectionHint,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isTextSearch As Boolean, isPrefixSearch As Boolean, includeSubItemsInSearch As Boolean, text As String, startingPoint As Point, direction As SearchDirectionHint, startIndex As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.SearchForVirtualItemEventArgs : bool * bool * bool * string * System.Drawing.Point * System.Windows.Forms.SearchDirectionHint * int -&gt; System.Windows.Forms.SearchForVirtualItemEventArgs" Usage="new System.Windows.Forms.SearchForVirtualItemEventArgs (isTextSearch, isPrefixSearch, includeSubItemsInSearch, text, startingPoint, direction, startIndex)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.SearchDirectionHint Direction { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.SearchDirectionHint Direction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As SearchDirectionHint" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Windows.Forms.SearchDirectionHint" Usage="System.Windows.Forms.SearchForVirtualItemEventArgs.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +107,8 @@
       <MemberSignature Language="C#" Value="public bool IncludeSubItemsInSearch { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IncludeSubItemsInSearch" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.IncludeSubItemsInSearch" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncludeSubItemsInSearch As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeSubItemsInSearch : bool" Usage="System.Windows.Forms.SearchForVirtualItemEventArgs.IncludeSubItemsInSearch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -137,6 +145,8 @@
       <MemberSignature Language="C#" Value="public int Index { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.Index" />
+      <MemberSignature Language="VB.NET" Value="Public Property Index As Integer" />
+      <MemberSignature Language="F#" Value="member this.Index : int with get, set" Usage="System.Windows.Forms.SearchForVirtualItemEventArgs.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -172,6 +182,8 @@
       <MemberSignature Language="C#" Value="public bool IsPrefixSearch { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrefixSearch" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.IsPrefixSearch" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrefixSearch As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPrefixSearch : bool" Usage="System.Windows.Forms.SearchForVirtualItemEventArgs.IsPrefixSearch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -208,6 +220,8 @@
       <MemberSignature Language="C#" Value="public bool IsTextSearch { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTextSearch" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.IsTextSearch" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTextSearch As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTextSearch : bool" Usage="System.Windows.Forms.SearchForVirtualItemEventArgs.IsTextSearch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -244,6 +258,8 @@
       <MemberSignature Language="C#" Value="public int StartIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.StartIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.StartIndex : int" Usage="System.Windows.Forms.SearchForVirtualItemEventArgs.StartIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -279,6 +295,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point StartingPoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point StartingPoint" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.StartingPoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartingPoint As Point" />
+      <MemberSignature Language="F#" Value="member this.StartingPoint : System.Drawing.Point" Usage="System.Windows.Forms.SearchForVirtualItemEventArgs.StartingPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -314,6 +332,8 @@
       <MemberSignature Language="C#" Value="public string Text { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.Text" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string" Usage="System.Windows.Forms.SearchForVirtualItemEventArgs.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

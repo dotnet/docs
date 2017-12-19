@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class BaseValidator : System.Web.UI.MobileControls.TextControl, System.Web.UI.IValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseValidator extends System.Web.UI.MobileControls.TextControl implements class System.Web.UI.IValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.BaseValidator" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseValidator&#xA;Inherits TextControl&#xA;Implements IValidator" />
+  <TypeSignature Language="F#" Value="type BaseValidator = class&#xA;    inherit TextControl&#xA;    interface IValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +59,7 @@
       <MemberSignature Language="C#" Value="protected BaseValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.BaseValidator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -80,6 +83,8 @@
       <MemberSignature Language="C#" Value="protected void CheckControlValidationProperty (string name, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CheckControlValidationProperty(string name, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.BaseValidator.CheckControlValidationProperty(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub CheckControlValidationProperty (name As String, propertyName As String)" />
+      <MemberSignature Language="F#" Value="member this.CheckControlValidationProperty : string * string -&gt; unit" Usage="baseValidator.CheckControlValidationProperty (name, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -105,6 +110,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ControlPropertiesValid ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ControlPropertiesValid() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.BaseValidator.ControlPropertiesValid" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ControlPropertiesValid () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ControlPropertiesValid : unit -&gt; bool&#xA;override this.ControlPropertiesValid : unit -&gt; bool" Usage="baseValidator.ControlPropertiesValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -127,6 +134,8 @@
       <MemberSignature Language="C#" Value="public string ControlToValidate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ControlToValidate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.BaseValidator.ControlToValidate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlToValidate As String" />
+      <MemberSignature Language="F#" Value="member this.ControlToValidate : string with get, set" Usage="System.Web.UI.MobileControls.BaseValidator.ControlToValidate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -164,6 +173,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.MobileControls.Style CreateStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.MobileControls.Style CreateStyle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.BaseValidator.CreateStyle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateStyle () As Style" />
+      <MemberSignature Language="F#" Value="override this.CreateStyle : unit -&gt; System.Web.UI.MobileControls.Style" Usage="baseValidator.CreateStyle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -184,6 +195,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.BaseValidator CreateWebValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.BaseValidator CreateWebValidator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.BaseValidator.CreateWebValidator" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateWebValidator () As BaseValidator" />
+      <MemberSignature Language="F#" Value="abstract member CreateWebValidator : unit -&gt; System.Web.UI.WebControls.BaseValidator&#xA;override this.CreateWebValidator : unit -&gt; System.Web.UI.WebControls.BaseValidator" Usage="baseValidator.CreateWebValidator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -211,6 +224,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ValidatorDisplay Display { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ValidatorDisplay Display" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.BaseValidator.Display" />
+      <MemberSignature Language="VB.NET" Value="Public Property Display As ValidatorDisplay" />
+      <MemberSignature Language="F#" Value="member this.Display : System.Web.UI.WebControls.ValidatorDisplay with get, set" Usage="System.Web.UI.MobileControls.BaseValidator.Display" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -247,7 +262,12 @@
       <MemberSignature Language="C#" Value="public string ErrorMessage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.BaseValidator.ErrorMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorMessage As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessage : string with get, set" Usage="System.Web.UI.MobileControls.BaseValidator.ErrorMessage" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IValidator.ErrorMessage</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -281,6 +301,8 @@
       <MemberSignature Language="C#" Value="protected abstract bool EvaluateIsValid ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool EvaluateIsValid() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.BaseValidator.EvaluateIsValid" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function EvaluateIsValid () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member EvaluateIsValid : unit -&gt; bool" Usage="baseValidator.EvaluateIsValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -309,7 +331,12 @@
       <MemberSignature Language="C#" Value="public bool IsValid { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.BaseValidator.IsValid" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsValid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool with get, set" Usage="System.Web.UI.MobileControls.BaseValidator.IsValid" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IValidator.IsValid</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -340,6 +367,8 @@
       <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.BaseValidator.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="baseValidator.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -361,6 +390,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.BaseValidator.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="baseValidator.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -382,6 +413,8 @@
       <MemberSignature Language="C#" Value="public override string StyleReference { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StyleReference" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.BaseValidator.StyleReference" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property StyleReference As String" />
+      <MemberSignature Language="F#" Value="member this.StyleReference : string with get, set" Usage="System.Web.UI.MobileControls.BaseValidator.StyleReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -405,7 +438,12 @@
       <MemberSignature Language="C#" Value="public void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.BaseValidator.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Validate ()" />
+      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="baseValidator.Validate " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IValidator.Validate</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -431,6 +469,8 @@
       <MemberSignature Language="C#" Value="public override int VisibleWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisibleWeight" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.BaseValidator.VisibleWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property VisibleWeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.VisibleWeight : int" Usage="System.Web.UI.MobileControls.BaseValidator.VisibleWeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

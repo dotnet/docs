@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class WebConfigurationManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WebConfigurationManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.WebConfigurationManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebConfigurationManager" />
+  <TypeSignature Language="F#" Value="type WebConfigurationManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +76,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Specialized.NameValueCollection AppSettings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.Specialized.NameValueCollection AppSettings" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebConfigurationManager.AppSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AppSettings As NameValueCollection" />
+      <MemberSignature Language="F#" Value="member this.AppSettings : System.Collections.Specialized.NameValueCollection" Usage="System.Web.Configuration.WebConfigurationManager.AppSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -110,6 +114,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.ConnectionStringSettingsCollection ConnectionStrings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Configuration.ConnectionStringSettingsCollection ConnectionStrings" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebConfigurationManager.ConnectionStrings" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ConnectionStrings As ConnectionStringSettingsCollection" />
+      <MemberSignature Language="F#" Value="member this.ConnectionStrings : System.Configuration.ConnectionStringSettingsCollection" Usage="System.Web.Configuration.WebConfigurationManager.ConnectionStrings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,10 +143,23 @@
         <altmember cref="T:System.Configuration.ConnectionStringSettingsCollection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSection">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the specified configuration section from the current Web application's default configuration file.</summary>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="T:System.Configuration.ConfigurationManager" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetSection">
       <MemberSignature Language="C#" Value="public static object GetSection (string sectionName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetSection(string sectionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.GetSection(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSection (sectionName As String) As Object" />
+      <MemberSignature Language="F#" Value="static member GetSection : string -&gt; obj" Usage="System.Web.Configuration.WebConfigurationManager.GetSection sectionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -196,6 +215,8 @@
       <MemberSignature Language="C#" Value="public static object GetSection (string sectionName, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetSection(string sectionName, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.GetSection(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSection (sectionName As String, path As String) As Object" />
+      <MemberSignature Language="F#" Value="static member GetSection : string * string -&gt; obj" Usage="System.Web.Configuration.WebConfigurationManager.GetSection (sectionName, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -254,6 +275,8 @@
       <MemberSignature Language="C#" Value="public static object GetWebApplicationSection (string sectionName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetWebApplicationSection(string sectionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.GetWebApplicationSection(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetWebApplicationSection (sectionName As String) As Object" />
+      <MemberSignature Language="F#" Value="static member GetWebApplicationSection : string -&gt; obj" Usage="System.Web.Configuration.WebConfigurationManager.GetWebApplicationSection sectionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,10 +323,22 @@
         <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenMachineConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens the machine-configuration file as a <see cref="T:System.Configuration.Configuration" /> object to allow read or write operations.</summary>
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenMachineConfiguration">
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenMachineConfiguration ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenMachineConfiguration() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMachineConfiguration () As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenMachineConfiguration : unit -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -340,6 +375,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenMachineConfiguration (string locationSubPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenMachineConfiguration(string locationSubPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMachineConfiguration (locationSubPath As String) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenMachineConfiguration : string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration locationSubPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -379,6 +416,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenMachineConfiguration (string locationSubPath, string server);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenMachineConfiguration(string locationSubPath, string server) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMachineConfiguration (locationSubPath As String, server As String) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenMachineConfiguration : string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration (locationSubPath, server)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -420,6 +459,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenMachineConfiguration (string locationSubPath, string server, IntPtr userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenMachineConfiguration(string locationSubPath, string server, native int userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration(System.String,System.String,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMachineConfiguration (locationSubPath As String, server As String, userToken As IntPtr) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenMachineConfiguration : string * string * nativeint -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration (locationSubPath, server, userToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -468,6 +509,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenMachineConfiguration (string locationSubPath, string server, string userName, string password);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenMachineConfiguration(string locationSubPath, string server, string userName, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMachineConfiguration (locationSubPath As String, server As String, userName As String, password As String) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenMachineConfiguration : string * string * string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration (locationSubPath, server, userName, password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -510,10 +553,22 @@
         <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenMappedMachineConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens the machine-configuration file as a <see cref="T:System.Configuration.Configuration" /> object to allow read or write operations.</summary>
+        <altmember cref="T:System.Configuration.Configuration" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenMappedMachineConfiguration">
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenMappedMachineConfiguration (System.Configuration.ConfigurationFileMap fileMap);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenMappedMachineConfiguration(class System.Configuration.ConfigurationFileMap fileMap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMappedMachineConfiguration(System.Configuration.ConfigurationFileMap)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMappedMachineConfiguration (fileMap As ConfigurationFileMap) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenMappedMachineConfiguration : System.Configuration.ConfigurationFileMap -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMappedMachineConfiguration fileMap" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -539,6 +594,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenMappedMachineConfiguration (System.Configuration.ConfigurationFileMap fileMap, string locationSubPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenMappedMachineConfiguration(class System.Configuration.ConfigurationFileMap fileMap, string locationSubPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMappedMachineConfiguration(System.Configuration.ConfigurationFileMap,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMappedMachineConfiguration (fileMap As ConfigurationFileMap, locationSubPath As String) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenMappedMachineConfiguration : System.Configuration.ConfigurationFileMap * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMappedMachineConfiguration (fileMap, locationSubPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -593,6 +650,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenMappedWebConfiguration (System.Web.Configuration.WebConfigurationFileMap fileMap, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenMappedWebConfiguration(class System.Web.Configuration.WebConfigurationFileMap fileMap, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMappedWebConfiguration(System.Web.Configuration.WebConfigurationFileMap,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMappedWebConfiguration (fileMap As WebConfigurationFileMap, path As String) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenMappedWebConfiguration : System.Web.Configuration.WebConfigurationFileMap * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMappedWebConfiguration (fileMap, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -642,6 +701,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenMappedWebConfiguration (System.Web.Configuration.WebConfigurationFileMap fileMap, string path, string site);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenMappedWebConfiguration(class System.Web.Configuration.WebConfigurationFileMap fileMap, string path, string site) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMappedWebConfiguration(System.Web.Configuration.WebConfigurationFileMap,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMappedWebConfiguration (fileMap As WebConfigurationFileMap, path As String, site As String) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenMappedWebConfiguration : System.Web.Configuration.WebConfigurationFileMap * string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMappedWebConfiguration (fileMap, path, site)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -688,6 +749,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenMappedWebConfiguration (System.Web.Configuration.WebConfigurationFileMap fileMap, string path, string site, string locationSubPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenMappedWebConfiguration(class System.Web.Configuration.WebConfigurationFileMap fileMap, string path, string site, string locationSubPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMappedWebConfiguration(System.Web.Configuration.WebConfigurationFileMap,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMappedWebConfiguration (fileMap As WebConfigurationFileMap, path As String, site As String, locationSubPath As String) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenMappedWebConfiguration : System.Web.Configuration.WebConfigurationFileMap * string * string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMappedWebConfiguration (fileMap, path, site, locationSubPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -732,10 +795,23 @@
         <altmember cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenWebConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens the Web-application configuration file as a <see cref="T:System.Configuration.Configuration" /> object.</summary>
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMapping" />
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenWebConfiguration">
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenWebConfiguration (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenWebConfiguration(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenWebConfiguration (path As String) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenWebConfiguration : string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -775,6 +851,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenWebConfiguration (string path, string site);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenWebConfiguration(string path, string site) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenWebConfiguration (path As String, site As String) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenWebConfiguration : string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration (path, site)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -816,6 +894,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenWebConfiguration (string path, string site, string locationSubPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenWebConfiguration(string path, string site, string locationSubPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenWebConfiguration (path As String, site As String, locationSubPath As String) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenWebConfiguration : string * string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration (path, site, locationSubPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -859,6 +939,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenWebConfiguration (string path, string site, string locationSubPath, string server);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenWebConfiguration(string path, string site, string locationSubPath, string server) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenWebConfiguration (path As String, site As String, locationSubPath As String, server As String) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenWebConfiguration : string * string * string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration (path, site, locationSubPath, server)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -905,6 +987,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenWebConfiguration (string path, string site, string locationSubPath, string server, IntPtr userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenWebConfiguration(string path, string site, string locationSubPath, string server, native int userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.String,System.String,System.String,System.String,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenWebConfiguration (path As String, site As String, locationSubPath As String, server As String, userToken As IntPtr) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenWebConfiguration : string * string * string * string * nativeint -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration (path, site, locationSubPath, server, userToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -959,6 +1043,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenWebConfiguration (string path, string site, string locationSubPath, string server, string userName, string password);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenWebConfiguration(string path, string site, string locationSubPath, string server, string userName, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenWebConfiguration (path As String, site As String, locationSubPath As String, server As String, userName As String, password As String) As Configuration" />
+      <MemberSignature Language="F#" Value="static member OpenWebConfiguration : string * string * string * string * string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration (path, site, locationSubPath, server, userName, password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1009,47 +1095,5 @@
         <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="OpenWebConfiguration">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens the Web-application configuration file as a <see cref="T:System.Configuration.Configuration" /> object.</summary>
-        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMapping" />
-        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetSection">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the specified configuration section from the current Web application's default configuration file.</summary>
-        <altmember cref="T:System.Configuration.Configuration" />
-        <altmember cref="T:System.Configuration.ConfigurationManager" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="OpenMappedMachineConfiguration">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens the machine-configuration file as a <see cref="T:System.Configuration.Configuration" /> object to allow read or write operations.</summary>
-        <altmember cref="T:System.Configuration.Configuration" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="OpenMachineConfiguration">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens the machine-configuration file as a <see cref="T:System.Configuration.Configuration" /> object to allow read or write operations.</summary>
-        <altmember cref="T:System.Configuration.ConfigurationSection" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

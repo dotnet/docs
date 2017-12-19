@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class DpapiDataProtector : System.Security.Cryptography.DataProtector" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DpapiDataProtector extends System.Security.Cryptography.DataProtector" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DpapiDataProtector" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DpapiDataProtector&#xA;Inherits DataProtector" />
+  <TypeSignature Language="F#" Value="type DpapiDataProtector = class&#xA;    inherit DataProtector" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public DpapiDataProtector (string appName, string primaryPurpose, params string[] specificPurpose);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appName, string primaryPurpose, string[] specificPurpose) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DpapiDataProtector.#ctor(System.String,System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (appName As String, primaryPurpose As String, ParamArray specificPurpose As String())" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.DpapiDataProtector : string * string * string[] -&gt; System.Security.Cryptography.DpapiDataProtector" Usage="new System.Security.Cryptography.DpapiDataProtector (appName, primaryPurpose, specificPurpose)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -81,6 +85,8 @@
       <MemberSignature Language="C#" Value="public override bool IsReprotectRequired (byte[] encryptedData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsReprotectRequired(unsigned int8[] encryptedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DpapiDataProtector.IsReprotectRequired(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsReprotectRequired (encryptedData As Byte()) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsReprotectRequired : byte[] -&gt; bool" Usage="dpapiDataProtector.IsReprotectRequired encryptedData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -111,6 +117,8 @@
       <MemberSignature Language="C#" Value="protected override bool PrependHashedPurposeToPlaintext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PrependHashedPurposeToPlaintext" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DpapiDataProtector.PrependHashedPurposeToPlaintext" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property PrependHashedPurposeToPlaintext As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PrependHashedPurposeToPlaintext : bool" Usage="System.Security.Cryptography.DpapiDataProtector.PrependHashedPurposeToPlaintext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -129,6 +137,8 @@
       <MemberSignature Language="C#" Value="protected override byte[] ProviderProtect (byte[] userData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance unsigned int8[] ProviderProtect(unsigned int8[] userData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DpapiDataProtector.ProviderProtect(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProviderProtect (userData As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.ProviderProtect : byte[] -&gt; byte[]" Usage="dpapiDataProtector.ProviderProtect userData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -156,6 +166,8 @@
       <MemberSignature Language="C#" Value="protected override byte[] ProviderUnprotect (byte[] encryptedData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance unsigned int8[] ProviderUnprotect(unsigned int8[] encryptedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DpapiDataProtector.ProviderUnprotect(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProviderUnprotect (encryptedData As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.ProviderUnprotect : byte[] -&gt; byte[]" Usage="dpapiDataProtector.ProviderUnprotect encryptedData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -183,6 +195,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.DataProtectionScope Scope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.DataProtectionScope Scope" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DpapiDataProtector.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scope As DataProtectionScope" />
+      <MemberSignature Language="F#" Value="member this.Scope : System.Security.Cryptography.DataProtectionScope with get, set" Usage="System.Security.Cryptography.DpapiDataProtector.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

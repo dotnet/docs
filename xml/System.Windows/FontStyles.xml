@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class FontStyles" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FontStyles extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.FontStyles" />
+  <TypeSignature Language="VB.NET" Value="Public Class FontStyles" />
+  <TypeSignature Language="F#" Value="type FontStyles = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@ Example of font styles
       <MemberSignature Language="C#" Value="public static System.Windows.FontStyle Italic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStyle Italic" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStyles.Italic" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Italic As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.Italic : System.Windows.FontStyle" Usage="System.Windows.FontStyles.Italic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +85,8 @@ Example of font styles
       <MemberSignature Language="C#" Value="public static System.Windows.FontStyle Normal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStyle Normal" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStyles.Normal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Normal As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.Normal : System.Windows.FontStyle" Usage="System.Windows.FontStyles.Normal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +120,8 @@ Example of font styles
       <MemberSignature Language="C#" Value="public static System.Windows.FontStyle Oblique { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStyle Oblique" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStyles.Oblique" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Oblique As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.Oblique : System.Windows.FontStyle" Usage="System.Windows.FontStyles.Oblique" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

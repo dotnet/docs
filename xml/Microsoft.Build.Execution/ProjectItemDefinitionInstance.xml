@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ProjectItemDefinitionInstance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProjectItemDefinitionInstance extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.ProjectItemDefinitionInstance" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProjectItemDefinitionInstance" />
+  <TypeSignature Language="F#" Value="type ProjectItemDefinitionInstance = class&#xA;    interface IKeyed&#xA;    interface IMetadataTable&#xA;    interface IItemDefinition&lt;ProjectMetadataInstance&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,7 +26,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.ProjectMetadataInstance GetMetadata (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Build.Execution.ProjectMetadataInstance GetMetadata(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectItemDefinitionInstance.GetMetadata(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMetadata (name As String) As ProjectMetadataInstance" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadata : string -&gt; Microsoft.Build.Execution.ProjectMetadataInstance&#xA;override this.GetMetadata : string -&gt; Microsoft.Build.Execution.ProjectMetadataInstance" Usage="projectItemDefinitionInstance.GetMetadata name" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Evaluation.IItemDefinition`1.GetMetadata(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +58,8 @@
       <MemberSignature Language="C#" Value="public string ItemType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ItemType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemDefinitionInstance.ItemType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemType As String" />
+      <MemberSignature Language="F#" Value="member this.ItemType : string" Usage="Microsoft.Build.Execution.ProjectItemDefinitionInstance.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -77,6 +86,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.Build.Execution.ProjectMetadataInstance&gt; Metadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.Build.Execution.ProjectMetadataInstance&gt; Metadata" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemDefinitionInstance.Metadata" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Metadata As ICollection(Of ProjectMetadataInstance)" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.ICollection&lt;Microsoft.Build.Execution.ProjectMetadataInstance&gt;" Usage="Microsoft.Build.Execution.ProjectItemDefinitionInstance.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -95,6 +106,8 @@
       <MemberSignature Language="C#" Value="public int MetadataCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MetadataCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemDefinitionInstance.MetadataCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.MetadataCount : int" Usage="Microsoft.Build.Execution.ProjectItemDefinitionInstance.MetadataCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -113,6 +126,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; MetadataNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; MetadataNames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemDefinitionInstance.MetadataNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataNames As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="member this.MetadataNames : seq&lt;string&gt;" Usage="Microsoft.Build.Execution.ProjectItemDefinitionInstance.MetadataNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

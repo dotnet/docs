@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class DownloadFileGroupCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DownloadFileGroupCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DownloadFileGroupCompletedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DownloadFileGroupCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type DownloadFileGroupCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public string Group { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Group" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.DownloadFileGroupCompletedEventArgs.Group" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Group As String" />
+      <MemberSignature Language="F#" Value="member this.Group : string" Usage="System.Deployment.Application.DownloadFileGroupCompletedEventArgs.Group" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

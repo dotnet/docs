@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class Pen : MarshalByRefObject, ICloneable, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Pen extends System.MarshalByRefObject implements class System.ICloneable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Pen" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Pen&#xA;Inherits MarshalByRefObject&#xA;Implements ICloneable, IDisposable" />
+  <TypeSignature Language="F#" Value="type Pen = class&#xA;    inherit MarshalByRefObject&#xA;    interface ICloneable&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,10 +42,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Pen" /> class with the specified color.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Pen (System.Drawing.Brush brush);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Brush brush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.#ctor(System.Drawing.Brush)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Pen : System.Drawing.Brush -&gt; System.Drawing.Pen" Usage="new System.Drawing.Pen brush" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -84,6 +96,7 @@
       <MemberSignature Language="C#" Value="public Pen (System.Drawing.Color color);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Color color) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.#ctor(System.Drawing.Color)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Pen : System.Drawing.Color -&gt; System.Drawing.Pen" Usage="new System.Drawing.Pen color" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -109,6 +122,7 @@
       <MemberSignature Language="C#" Value="public Pen (System.Drawing.Brush brush, float width);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Brush brush, float32 width) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.#ctor(System.Drawing.Brush,System.Single)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Pen : System.Drawing.Brush * single -&gt; System.Drawing.Pen" Usage="new System.Drawing.Pen (brush, width)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -153,6 +167,7 @@
       <MemberSignature Language="C#" Value="public Pen (System.Drawing.Color color, float width);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Color color, float32 width) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.#ctor(System.Drawing.Color,System.Single)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Pen : System.Drawing.Color * single -&gt; System.Drawing.Pen" Usage="new System.Drawing.Pen (color, width)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -191,6 +206,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.PenAlignment Alignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.PenAlignment Alignment" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.Alignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Alignment As PenAlignment" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Drawing.Drawing2D.PenAlignment with get, set" Usage="System.Drawing.Pen.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -220,6 +237,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Brush Brush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Brush Brush" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.Brush" />
+      <MemberSignature Language="VB.NET" Value="Public Property Brush As Brush" />
+      <MemberSignature Language="F#" Value="member this.Brush : System.Drawing.Brush with get, set" Usage="System.Drawing.Pen.Brush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -246,7 +265,12 @@
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="pen.Clone " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -282,6 +306,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color Color { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color Color" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.Color" />
+      <MemberSignature Language="VB.NET" Value="Public Property Color As Color" />
+      <MemberSignature Language="F#" Value="member this.Color : System.Drawing.Color with get, set" Usage="System.Drawing.Pen.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -301,6 +327,8 @@
       <MemberSignature Language="C#" Value="public float[] CompoundArray { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32[] CompoundArray" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.CompoundArray" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompoundArray As Single()" />
+      <MemberSignature Language="F#" Value="member this.CompoundArray : single[] with get, set" Usage="System.Drawing.Pen.CompoundArray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -331,6 +359,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.CustomLineCap CustomEndCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Drawing2D.CustomLineCap CustomEndCap" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.CustomEndCap" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomEndCap As CustomLineCap" />
+      <MemberSignature Language="F#" Value="member this.CustomEndCap : System.Drawing.Drawing2D.CustomLineCap with get, set" Usage="System.Drawing.Pen.CustomEndCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -350,6 +380,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.CustomLineCap CustomStartCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Drawing2D.CustomLineCap CustomStartCap" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.CustomStartCap" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomStartCap As CustomLineCap" />
+      <MemberSignature Language="F#" Value="member this.CustomStartCap : System.Drawing.Drawing2D.CustomLineCap with get, set" Usage="System.Drawing.Pen.CustomStartCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -369,6 +401,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.DashCap DashCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.DashCap DashCap" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.DashCap" />
+      <MemberSignature Language="VB.NET" Value="Public Property DashCap As DashCap" />
+      <MemberSignature Language="F#" Value="member this.DashCap : System.Drawing.Drawing2D.DashCap with get, set" Usage="System.Drawing.Pen.DashCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -407,6 +441,8 @@
       <MemberSignature Language="C#" Value="public float DashOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 DashOffset" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.DashOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property DashOffset As Single" />
+      <MemberSignature Language="F#" Value="member this.DashOffset : single with get, set" Usage="System.Drawing.Pen.DashOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -426,6 +462,8 @@
       <MemberSignature Language="C#" Value="public float[] DashPattern { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32[] DashPattern" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.DashPattern" />
+      <MemberSignature Language="VB.NET" Value="Public Property DashPattern As Single()" />
+      <MemberSignature Language="F#" Value="member this.DashPattern : single[] with get, set" Usage="System.Drawing.Pen.DashPattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -467,6 +505,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.DashStyle DashStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.DashStyle DashStyle" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.DashStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property DashStyle As DashStyle" />
+      <MemberSignature Language="F#" Value="member this.DashStyle : System.Drawing.Drawing2D.DashStyle with get, set" Usage="System.Drawing.Pen.DashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -493,7 +533,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="pen.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -534,6 +579,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.LineCap EndCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.LineCap EndCap" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.EndCap" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndCap As LineCap" />
+      <MemberSignature Language="F#" Value="member this.EndCap : System.Drawing.Drawing2D.LineCap with get, set" Usage="System.Drawing.Pen.EndCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -567,6 +614,8 @@
       <MemberSignature Language="C#" Value="~Pen ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="pen.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -585,6 +634,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.LineJoin LineJoin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.LineJoin LineJoin" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.LineJoin" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineJoin As LineJoin" />
+      <MemberSignature Language="F#" Value="member this.LineJoin : System.Drawing.Drawing2D.LineJoin with get, set" Usage="System.Drawing.Pen.LineJoin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -624,6 +675,8 @@
       <MemberSignature Language="C#" Value="public float MiterLimit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 MiterLimit" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.MiterLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property MiterLimit As Single" />
+      <MemberSignature Language="F#" Value="member this.MiterLimit : single with get, set" Usage="System.Drawing.Pen.MiterLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -648,10 +701,20 @@
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.MiterLimit" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MultiplyTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Multiplies the transformation matrix for this <see cref="T:System.Drawing.Pen" /> by the specified <see cref="T:System.Drawing.Drawing2D.Matrix" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="MultiplyTransform">
       <MemberSignature Language="C#" Value="public void MultiplyTransform (System.Drawing.Drawing2D.Matrix matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MultiplyTransform(class System.Drawing.Drawing2D.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.MultiplyTransform(System.Drawing.Drawing2D.Matrix)" />
+      <MemberSignature Language="F#" Value="member this.MultiplyTransform : System.Drawing.Drawing2D.Matrix -&gt; unit" Usage="pen.MultiplyTransform matrix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -697,6 +760,7 @@
       <MemberSignature Language="C#" Value="public void MultiplyTransform (System.Drawing.Drawing2D.Matrix matrix, System.Drawing.Drawing2D.MatrixOrder order);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MultiplyTransform(class System.Drawing.Drawing2D.Matrix matrix, valuetype System.Drawing.Drawing2D.MatrixOrder order) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.MultiplyTransform(System.Drawing.Drawing2D.Matrix,System.Drawing.Drawing2D.MatrixOrder)" />
+      <MemberSignature Language="F#" Value="member this.MultiplyTransform : System.Drawing.Drawing2D.Matrix * System.Drawing.Drawing2D.MatrixOrder -&gt; unit" Usage="pen.MultiplyTransform (matrix, order)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -744,6 +808,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.PenType PenType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.PenType PenType" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.PenType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PenType As PenType" />
+      <MemberSignature Language="F#" Value="member this.PenType : System.Drawing.Drawing2D.PenType" Usage="System.Drawing.Pen.PenType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -769,6 +835,8 @@
       <MemberSignature Language="C#" Value="public void ResetTransform ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetTransform() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.ResetTransform" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetTransform ()" />
+      <MemberSignature Language="F#" Value="member this.ResetTransform : unit -&gt; unit" Usage="pen.ResetTransform " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -804,10 +872,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RotateTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Rotates the local geometric transformation by the specified angle. This method prepends the rotation to the transformation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RotateTransform">
       <MemberSignature Language="C#" Value="public void RotateTransform (float angle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RotateTransform(float32 angle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.RotateTransform(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RotateTransform (angle As Single)" />
+      <MemberSignature Language="F#" Value="member this.RotateTransform : single -&gt; unit" Usage="pen.RotateTransform angle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -855,6 +934,8 @@
       <MemberSignature Language="C#" Value="public void RotateTransform (float angle, System.Drawing.Drawing2D.MatrixOrder order);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RotateTransform(float32 angle, valuetype System.Drawing.Drawing2D.MatrixOrder order) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.RotateTransform(System.Single,System.Drawing.Drawing2D.MatrixOrder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RotateTransform (angle As Single, order As MatrixOrder)" />
+      <MemberSignature Language="F#" Value="member this.RotateTransform : single * System.Drawing.Drawing2D.MatrixOrder -&gt; unit" Usage="pen.RotateTransform (angle, order)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -900,10 +981,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ScaleTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Scales the local geometric transformation by the specified factors. This method prepends the scaling matrix to the transformation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ScaleTransform">
       <MemberSignature Language="C#" Value="public void ScaleTransform (float sx, float sy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScaleTransform(float32 sx, float32 sy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.ScaleTransform(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScaleTransform (sx As Single, sy As Single)" />
+      <MemberSignature Language="F#" Value="member this.ScaleTransform : single * single -&gt; unit" Usage="pen.ScaleTransform (sx, sy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -946,6 +1038,8 @@
       <MemberSignature Language="C#" Value="public void ScaleTransform (float sx, float sy, System.Drawing.Drawing2D.MatrixOrder order);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScaleTransform(float32 sx, float32 sy, valuetype System.Drawing.Drawing2D.MatrixOrder order) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.ScaleTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScaleTransform (sx As Single, sy As Single, order As MatrixOrder)" />
+      <MemberSignature Language="F#" Value="member this.ScaleTransform : single * single * System.Drawing.Drawing2D.MatrixOrder -&gt; unit" Usage="pen.ScaleTransform (sx, sy, order)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -990,6 +1084,7 @@
       <MemberSignature Language="C#" Value="public void SetLineCap (System.Drawing.Drawing2D.LineCap startCap, System.Drawing.Drawing2D.LineCap endCap, System.Drawing.Drawing2D.DashCap dashCap);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetLineCap(valuetype System.Drawing.Drawing2D.LineCap startCap, valuetype System.Drawing.Drawing2D.LineCap endCap, valuetype System.Drawing.Drawing2D.DashCap dashCap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.SetLineCap(System.Drawing.Drawing2D.LineCap,System.Drawing.Drawing2D.LineCap,System.Drawing.Drawing2D.DashCap)" />
+      <MemberSignature Language="F#" Value="member this.SetLineCap : System.Drawing.Drawing2D.LineCap * System.Drawing.Drawing2D.LineCap * System.Drawing.Drawing2D.DashCap -&gt; unit" Usage="pen.SetLineCap (startCap, endCap, dashCap)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1026,6 +1121,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.LineCap StartCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.LineCap StartCap" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.StartCap" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartCap As LineCap" />
+      <MemberSignature Language="F#" Value="member this.StartCap : System.Drawing.Drawing2D.LineCap with get, set" Usage="System.Drawing.Pen.StartCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1059,6 +1156,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.Matrix Transform { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Drawing2D.Matrix Transform" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.Transform" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transform As Matrix" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Drawing.Drawing2D.Matrix with get, set" Usage="System.Drawing.Pen.Transform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1081,10 +1180,21 @@
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.Transform" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TranslateTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates the local geometric transformation by the specified dimensions. This method prepends the translation to the transformation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TranslateTransform">
       <MemberSignature Language="C#" Value="public void TranslateTransform (float dx, float dy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TranslateTransform(float32 dx, float32 dy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.TranslateTransform(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TranslateTransform (dx As Single, dy As Single)" />
+      <MemberSignature Language="F#" Value="member this.TranslateTransform : single * single -&gt; unit" Usage="pen.TranslateTransform (dx, dy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1108,6 +1218,8 @@
       <MemberSignature Language="C#" Value="public void TranslateTransform (float dx, float dy, System.Drawing.Drawing2D.MatrixOrder order);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TranslateTransform(float32 dx, float32 dy, valuetype System.Drawing.Drawing2D.MatrixOrder order) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.TranslateTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TranslateTransform (dx As Single, dy As Single, order As MatrixOrder)" />
+      <MemberSignature Language="F#" Value="member this.TranslateTransform : single * single * System.Drawing.Drawing2D.MatrixOrder -&gt; unit" Usage="pen.TranslateTransform (dx, dy, order)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1133,6 +1245,8 @@
       <MemberSignature Language="C#" Value="public float Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Width" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="System.Drawing.Pen.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1166,50 +1280,5 @@
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.Width" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ScaleTransform">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Scales the local geometric transformation by the specified factors. This method prepends the scaling matrix to the transformation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Pen" /> class with the specified color.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="MultiplyTransform">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Multiplies the transformation matrix for this <see cref="T:System.Drawing.Pen" /> by the specified <see cref="T:System.Drawing.Drawing2D.Matrix" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TranslateTransform">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Translates the local geometric transformation by the specified dimensions. This method prepends the translation to the transformation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RotateTransform">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Rotates the local geometric transformation by the specified angle. This method prepends the rotation to the transformation.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

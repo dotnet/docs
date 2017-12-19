@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class XmlMembersMapping : System.Xml.Serialization.XmlMapping" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlMembersMapping extends System.Xml.Serialization.XmlMapping" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlMembersMapping" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlMembersMapping&#xA;Inherits XmlMapping" />
+  <TypeSignature Language="F#" Value="type XmlMembersMapping = class&#xA;    inherit XmlMapping" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -61,6 +63,8 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMembersMapping.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Xml.Serialization.XmlMembersMapping.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -106,6 +110,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlMemberMapping this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlMemberMapping Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMembersMapping.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As XmlMemberMapping" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Xml.Serialization.XmlMemberMapping" Usage="System.Xml.Serialization.XmlMembersMapping.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -155,6 +161,8 @@
       <MemberSignature Language="C#" Value="public string TypeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMembersMapping.TypeName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeName As String" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string" Usage="System.Xml.Serialization.XmlMembersMapping.TypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -192,6 +200,8 @@
       <MemberSignature Language="C#" Value="public string TypeNamespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMembersMapping.TypeNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeNamespace As String" />
+      <MemberSignature Language="F#" Value="member this.TypeNamespace : string" Usage="System.Xml.Serialization.XmlMembersMapping.TypeNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

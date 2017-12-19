@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ContextProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContextProperty extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.ContextProperty" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContextProperty" />
+  <TypeSignature Language="F#" Value="type ContextProperty = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public virtual string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Contexts.ContextProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Runtime.Remoting.Contexts.ContextProperty.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public virtual object Property { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Property" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Contexts.ContextProperty.Property" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Property As Object" />
+      <MemberSignature Language="F#" Value="member this.Property : obj" Usage="System.Runtime.Remoting.Contexts.ContextProperty.Property" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

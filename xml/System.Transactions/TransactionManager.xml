@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class TransactionManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed TransactionManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class TransactionManager" />
+  <TypeSignature Language="F#" Value="type TransactionManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public static TimeSpan DefaultTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.TimeSpan DefaultTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionManager.DefaultTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.DefaultTimeout : TimeSpan" Usage="System.Transactions.TransactionManager.DefaultTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -71,6 +75,8 @@
       <MemberSignature Language="C#" Value="public static event System.Transactions.TransactionStartedEventHandler DistributedTransactionStarted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Transactions.TransactionStartedEventHandler DistributedTransactionStarted" />
       <MemberSignature Language="DocId" Value="E:System.Transactions.TransactionManager.DistributedTransactionStarted" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event DistributedTransactionStarted As TransactionStartedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DistributedTransactionStarted : System.Transactions.TransactionStartedEventHandler " Usage="member this.DistributedTransactionStarted : System.Transactions.TransactionStartedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -106,6 +112,8 @@
       <MemberSignature Language="C#" Value="public static System.Transactions.HostCurrentTransactionCallback HostCurrentCallback { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Transactions.HostCurrentTransactionCallback HostCurrentCallback" />
       <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionManager.HostCurrentCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property HostCurrentCallback As HostCurrentTransactionCallback" />
+      <MemberSignature Language="F#" Value="member this.HostCurrentCallback : System.Transactions.HostCurrentTransactionCallback with get, set" Usage="System.Transactions.TransactionManager.HostCurrentCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -140,6 +148,8 @@
       <MemberSignature Language="C#" Value="public static TimeSpan MaximumTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.TimeSpan MaximumTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionManager.MaximumTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaximumTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.MaximumTimeout : TimeSpan" Usage="System.Transactions.TransactionManager.MaximumTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -176,6 +186,8 @@
       <MemberSignature Language="C#" Value="public static void RecoveryComplete (Guid manager);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RecoveryComplete(valuetype System.Guid manager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionManager.RecoveryComplete(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RecoveryComplete (manager As Guid)" />
+      <MemberSignature Language="F#" Value="static member RecoveryComplete : Guid -&gt; unit" Usage="System.Transactions.TransactionManager.RecoveryComplete resourceManagerIdentifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -218,6 +230,8 @@
       <MemberSignature Language="C#" Value="public static System.Transactions.Enlistment Reenlist (Guid manager, byte[] recoveryInfo, System.Transactions.IEnlistmentNotification notification);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Transactions.Enlistment Reenlist(valuetype System.Guid manager, unsigned int8[] recoveryInfo, class System.Transactions.IEnlistmentNotification notification) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionManager.Reenlist(System.Guid,System.Byte[],System.Transactions.IEnlistmentNotification)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Reenlist (manager As Guid, recoveryInfo As Byte(), notification As IEnlistmentNotification) As Enlistment" />
+      <MemberSignature Language="F#" Value="static member Reenlist : Guid * byte[] * System.Transactions.IEnlistmentNotification -&gt; System.Transactions.Enlistment" Usage="System.Transactions.TransactionManager.Reenlist (resourceManagerIdentifier, recoveryInformation, enlistmentNotification)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

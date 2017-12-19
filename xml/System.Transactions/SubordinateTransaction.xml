@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SubordinateTransaction : System.Transactions.Transaction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SubordinateTransaction extends System.Transactions.Transaction" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.SubordinateTransaction" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SubordinateTransaction&#xA;Inherits Transaction" />
+  <TypeSignature Language="F#" Value="type SubordinateTransaction = class&#xA;    inherit Transaction" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public SubordinateTransaction (System.Transactions.IsolationLevel level, System.Transactions.ISimpleTransactionSuperior superior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.IsolationLevel level, class System.Transactions.ISimpleTransactionSuperior superior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.SubordinateTransaction.#ctor(System.Transactions.IsolationLevel,System.Transactions.ISimpleTransactionSuperior)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (level As IsolationLevel, superior As ISimpleTransactionSuperior)" />
+      <MemberSignature Language="F#" Value="new System.Transactions.SubordinateTransaction : System.Transactions.IsolationLevel * System.Transactions.ISimpleTransactionSuperior -&gt; System.Transactions.SubordinateTransaction" Usage="new System.Transactions.SubordinateTransaction (isoLevel, superior)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

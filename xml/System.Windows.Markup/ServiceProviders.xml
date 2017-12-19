@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ServiceProviders : IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceProviders extends System.Object implements class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ServiceProviders" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceProviders&#xA;Implements IServiceProvider" />
+  <TypeSignature Language="F#" Value="type ServiceProviders = class&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,7 @@
       <MemberSignature Language="C#" Value="public ServiceProviders ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ServiceProviders.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -57,6 +60,8 @@
       <MemberSignature Language="C#" Value="public void AddService (Type serviceType, object service);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddService(class System.Type serviceType, object service) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ServiceProviders.AddService(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddService (serviceType As Type, service As Object)" />
+      <MemberSignature Language="F#" Value="member this.AddService : Type * obj -&gt; unit" Usage="serviceProviders.AddService (serviceType, service)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -83,7 +88,12 @@
       <MemberSignature Language="C#" Value="public object GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ServiceProviders.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="serviceProviders.GetService serviceType" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IServiceProvider.GetService(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

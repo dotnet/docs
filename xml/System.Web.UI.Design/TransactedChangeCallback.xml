@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate bool TransactedChangeCallback(object context);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TransactedChangeCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TransactedChangeCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function TransactedChangeCallback(context As Object) As Boolean " />
+  <TypeSignature Language="F#" Value="type TransactedChangeCallback = delegate of obj -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

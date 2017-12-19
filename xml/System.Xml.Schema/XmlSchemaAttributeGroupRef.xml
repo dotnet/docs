@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class XmlSchemaAttributeGroupRef : System.Xml.Schema.XmlSchemaAnnotated" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaAttributeGroupRef extends System.Xml.Schema.XmlSchemaAnnotated" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaAttributeGroupRef" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaAttributeGroupRef&#xA;Inherits XmlSchemaAnnotated" />
+  <TypeSignature Language="F#" Value="type XmlSchemaAttributeGroupRef = class&#xA;    inherit XmlSchemaAnnotated" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="public XmlSchemaAttributeGroupRef ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaAttributeGroupRef.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -64,6 +67,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName RefName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName RefName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAttributeGroupRef.RefName" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefName As XmlQualifiedName" />
+      <MemberSignature Language="F#" Value="member this.RefName : System.Xml.XmlQualifiedName with get, set" Usage="System.Xml.Schema.XmlSchemaAttributeGroupRef.RefName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

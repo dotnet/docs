@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ClientRuntime" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClientRuntime extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ClientRuntime" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClientRuntime" />
+  <TypeSignature Language="F#" Value="type ClientRuntime = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -84,6 +86,8 @@
       <MemberSignature Language="C#" Value="public Type CallbackClientType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type CallbackClientType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.CallbackClientType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CallbackClientType As Type" />
+      <MemberSignature Language="F#" Value="member this.CallbackClientType : Type with get, set" Usage="System.ServiceModel.Dispatcher.ClientRuntime.CallbackClientType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +107,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.DispatchRuntime CallbackDispatchRuntime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.DispatchRuntime CallbackDispatchRuntime" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.CallbackDispatchRuntime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallbackDispatchRuntime As DispatchRuntime" />
+      <MemberSignature Language="F#" Value="member this.CallbackDispatchRuntime : System.ServiceModel.Dispatcher.DispatchRuntime" Usage="System.ServiceModel.Dispatcher.ClientRuntime.CallbackDispatchRuntime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,6 +127,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IChannelInitializer&gt; ChannelInitializers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.SynchronizedCollection`1&lt;class System.ServiceModel.Dispatcher.IChannelInitializer&gt; ChannelInitializers" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.ChannelInitializers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelInitializers As SynchronizedCollection(Of IChannelInitializer)" />
+      <MemberSignature Language="F#" Value="member this.ChannelInitializers : System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IChannelInitializer&gt;" Usage="System.ServiceModel.Dispatcher.ClientRuntime.ChannelInitializers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -151,6 +159,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.IClientMessageInspector&gt; ClientMessageInspectors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.ServiceModel.Dispatcher.IClientMessageInspector&gt; ClientMessageInspectors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.ClientMessageInspectors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientMessageInspectors As ICollection(Of IClientMessageInspector)" />
+      <MemberSignature Language="F#" Value="member this.ClientMessageInspectors : System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.IClientMessageInspector&gt;" Usage="System.ServiceModel.Dispatcher.ClientRuntime.ClientMessageInspectors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -183,6 +193,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.ClientOperation&gt; ClientOperations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.ServiceModel.Dispatcher.ClientOperation&gt; ClientOperations" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.ClientOperations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientOperations As ICollection(Of ClientOperation)" />
+      <MemberSignature Language="F#" Value="member this.ClientOperations : System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.ClientOperation&gt;" Usage="System.ServiceModel.Dispatcher.ClientRuntime.ClientOperations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -215,6 +227,8 @@
       <MemberSignature Language="C#" Value="public Type ContractClientType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ContractClientType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.ContractClientType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContractClientType As Type" />
+      <MemberSignature Language="F#" Value="member this.ContractClientType : Type with get, set" Usage="System.ServiceModel.Dispatcher.ClientRuntime.ContractClientType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -240,6 +254,8 @@
       <MemberSignature Language="C#" Value="public string ContractName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContractName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.ContractName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractName As String" />
+      <MemberSignature Language="F#" Value="member this.ContractName : string" Usage="System.ServiceModel.Dispatcher.ClientRuntime.ContractName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -265,6 +281,8 @@
       <MemberSignature Language="C#" Value="public string ContractNamespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContractNamespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.ContractNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractNamespace As String" />
+      <MemberSignature Language="F#" Value="member this.ContractNamespace : string" Usage="System.ServiceModel.Dispatcher.ClientRuntime.ContractNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -290,6 +308,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IInteractiveChannelInitializer&gt; InteractiveChannelInitializers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.SynchronizedCollection`1&lt;class System.ServiceModel.Dispatcher.IInteractiveChannelInitializer&gt; InteractiveChannelInitializers" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.InteractiveChannelInitializers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InteractiveChannelInitializers As SynchronizedCollection(Of IInteractiveChannelInitializer)" />
+      <MemberSignature Language="F#" Value="member this.InteractiveChannelInitializers : System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IInteractiveChannelInitializer&gt;" Usage="System.ServiceModel.Dispatcher.ClientRuntime.InteractiveChannelInitializers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -328,6 +348,8 @@
       <MemberSignature Language="C#" Value="public bool ManualAddressing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ManualAddressing" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.ManualAddressing" />
+      <MemberSignature Language="VB.NET" Value="Public Property ManualAddressing As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ManualAddressing : bool with get, set" Usage="System.ServiceModel.Dispatcher.ClientRuntime.ManualAddressing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -364,6 +386,8 @@
       <MemberSignature Language="C#" Value="public int MaxFaultSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxFaultSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.MaxFaultSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxFaultSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxFaultSize : int with get, set" Usage="System.ServiceModel.Dispatcher.ClientRuntime.MaxFaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -396,6 +420,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IClientMessageInspector&gt; MessageInspectors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.SynchronizedCollection`1&lt;class System.ServiceModel.Dispatcher.IClientMessageInspector&gt; MessageInspectors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageInspectors As SynchronizedCollection(Of IClientMessageInspector)" />
+      <MemberSignature Language="F#" Value="member this.MessageInspectors : System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IClientMessageInspector&gt;" Usage="System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -434,6 +460,8 @@
       <MemberSignature Language="C#" Value="public bool MessageVersionNoneFaultsEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MessageVersionNoneFaultsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.MessageVersionNoneFaultsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageVersionNoneFaultsEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MessageVersionNoneFaultsEnabled : bool with get, set" Usage="System.ServiceModel.Dispatcher.ClientRuntime.MessageVersionNoneFaultsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -454,6 +482,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.SynchronizedKeyedCollection&lt;string,System.ServiceModel.Dispatcher.ClientOperation&gt; Operations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.SynchronizedKeyedCollection`2&lt;string, class System.ServiceModel.Dispatcher.ClientOperation&gt; Operations" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.Operations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operations As SynchronizedKeyedCollection(Of String, ClientOperation)" />
+      <MemberSignature Language="F#" Value="member this.Operations : System.Collections.Generic.SynchronizedKeyedCollection&lt;string, System.ServiceModel.Dispatcher.ClientOperation&gt;" Usage="System.ServiceModel.Dispatcher.ClientRuntime.Operations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -488,6 +518,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.IClientOperationSelector OperationSelector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.IClientOperationSelector OperationSelector" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.OperationSelector" />
+      <MemberSignature Language="VB.NET" Value="Public Property OperationSelector As IClientOperationSelector" />
+      <MemberSignature Language="F#" Value="member this.OperationSelector : System.ServiceModel.Dispatcher.IClientOperationSelector with get, set" Usage="System.ServiceModel.Dispatcher.ClientRuntime.OperationSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -520,6 +552,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.ClientOperation UnhandledClientOperation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.ClientOperation UnhandledClientOperation" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.UnhandledClientOperation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnhandledClientOperation As ClientOperation" />
+      <MemberSignature Language="F#" Value="member this.UnhandledClientOperation : System.ServiceModel.Dispatcher.ClientOperation" Usage="System.ServiceModel.Dispatcher.ClientRuntime.UnhandledClientOperation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -545,6 +579,8 @@
       <MemberSignature Language="C#" Value="public bool ValidateMustUnderstand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ValidateMustUnderstand" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.ValidateMustUnderstand" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidateMustUnderstand As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ValidateMustUnderstand : bool with get, set" Usage="System.ServiceModel.Dispatcher.ClientRuntime.ValidateMustUnderstand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -572,6 +608,8 @@
       <MemberSignature Language="C#" Value="public Uri Via { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Via" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.Via" />
+      <MemberSignature Language="VB.NET" Value="Public Property Via As Uri" />
+      <MemberSignature Language="F#" Value="member this.Via : Uri with get, set" Usage="System.ServiceModel.Dispatcher.ClientRuntime.Via" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

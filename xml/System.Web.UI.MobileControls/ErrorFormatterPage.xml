@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ErrorFormatterPage : System.Web.UI.MobileControls.MobilePage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorFormatterPage extends System.Web.UI.MobileControls.MobilePage" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ErrorFormatterPage" />
+  <TypeSignature Language="VB.NET" Value="Public Class ErrorFormatterPage&#xA;Inherits MobilePage" />
+  <TypeSignature Language="F#" Value="type ErrorFormatterPage = class&#xA;    inherit MobilePage" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,7 @@
       <MemberSignature Language="C#" Value="public ErrorFormatterPage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ErrorFormatterPage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -50,6 +53,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.Mobile.MobileErrorInfo ErrorInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Mobile.MobileErrorInfo ErrorInfo" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ErrorFormatterPage.ErrorInfo" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ErrorInfo As MobileErrorInfo" />
+      <MemberSignature Language="F#" Value="member this.ErrorInfo : System.Web.Mobile.MobileErrorInfo" Usage="System.Web.UI.MobileControls.ErrorFormatterPage.ErrorInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -76,6 +81,8 @@
       <MemberSignature Language="C#" Value="protected virtual void InitContent ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitContent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ErrorFormatterPage.InitContent" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitContent ()" />
+      <MemberSignature Language="F#" Value="abstract member InitContent : unit -&gt; unit&#xA;override this.InitContent : unit -&gt; unit" Usage="errorFormatterPage.InitContent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -103,6 +110,8 @@
       <MemberSignature Language="C#" Value="protected override object LoadPageStateFromPersistenceMedium ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object LoadPageStateFromPersistenceMedium() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ErrorFormatterPage.LoadPageStateFromPersistenceMedium" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function LoadPageStateFromPersistenceMedium () As Object" />
+      <MemberSignature Language="F#" Value="override this.LoadPageStateFromPersistenceMedium : unit -&gt; obj" Usage="errorFormatterPage.LoadPageStateFromPersistenceMedium " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -122,6 +131,8 @@
       <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ErrorFormatterPage.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="errorFormatterPage.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -151,6 +162,8 @@
       <MemberSignature Language="C#" Value="protected override void SavePageStateToPersistenceMedium (object viewState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SavePageStateToPersistenceMedium(object viewState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ErrorFormatterPage.SavePageStateToPersistenceMedium(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SavePageStateToPersistenceMedium (viewState As Object)" />
+      <MemberSignature Language="F#" Value="override this.SavePageStateToPersistenceMedium : obj -&gt; unit" Usage="errorFormatterPage.SavePageStateToPersistenceMedium viewState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

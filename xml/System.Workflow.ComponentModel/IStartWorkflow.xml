@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IStartWorkflow" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStartWorkflow" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.IStartWorkflow" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IStartWorkflow" />
+  <TypeSignature Language="F#" Value="type IStartWorkflow = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public Guid StartWorkflow (Type workflowType, System.Collections.Generic.Dictionary&lt;string,object&gt; namedArgumentValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Guid StartWorkflow(class System.Type workflowType, class System.Collections.Generic.Dictionary`2&lt;string, object&gt; namedArgumentValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.IStartWorkflow.StartWorkflow(System.Type,System.Collections.Generic.Dictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartWorkflow (workflowType As Type, namedArgumentValues As Dictionary(Of String, Object)) As Guid" />
+      <MemberSignature Language="F#" Value="abstract member StartWorkflow : Type * System.Collections.Generic.Dictionary&lt;string, obj&gt; -&gt; Guid" Usage="iStartWorkflow.StartWorkflow (workflowType, namedArgumentValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ViewEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ViewEvent extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ViewEvent" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ViewEvent" />
+  <TypeSignature Language="F#" Value="type ViewEvent = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.Design.ViewEvent Click;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.Design.ViewEvent Click" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ViewEvent.Click" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Click As ViewEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable Click : System.Web.UI.Design.ViewEvent" Usage="System.Web.UI.Design.ViewEvent.Click" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -78,6 +82,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.Design.ViewEvent Paint;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.Design.ViewEvent Paint" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ViewEvent.Paint" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Paint As ViewEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable Paint : System.Web.UI.Design.ViewEvent" Usage="System.Web.UI.Design.ViewEvent.Paint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -107,6 +113,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.Design.ViewEvent TemplateModeChanged;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.Design.ViewEvent TemplateModeChanged" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ViewEvent.TemplateModeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TemplateModeChanged As ViewEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable TemplateModeChanged : System.Web.UI.Design.ViewEvent" Usage="System.Web.UI.Design.ViewEvent.TemplateModeChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

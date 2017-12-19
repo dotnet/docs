@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface INotifyPropertyChanging" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INotifyPropertyChanging" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.INotifyPropertyChanging" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INotifyPropertyChanging" />
+  <TypeSignature Language="F#" Value="type INotifyPropertyChanging = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -32,9 +34,11 @@
   </Docs>
   <Members>
     <Member MemberName="PropertyChanging">
-      <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangingEventHandler PropertyChanging;" />
+      <MemberSignature Language="C#" Value="event System.ComponentModel.PropertyChangingEventHandler PropertyChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangingEventHandler PropertyChanging" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.INotifyPropertyChanging.PropertyChanging" />
+      <MemberSignature Language="VB.NET" Value="Event PropertyChanging As PropertyChangingEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PropertyChanging : System.ComponentModel.PropertyChangingEventHandler " Usage="member this.PropertyChanging : System.ComponentModel.PropertyChangingEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>

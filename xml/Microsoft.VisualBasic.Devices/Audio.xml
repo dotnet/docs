@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class Audio" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Audio extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Audio" />
+  <TypeSignature Language="VB.NET" Value="Public Class Audio" />
+  <TypeSignature Language="F#" Value="type Audio = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -54,6 +56,7 @@
       <MemberSignature Language="C#" Value="public Audio ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -72,10 +75,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Play">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Plays a .wav sound file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Play">
       <MemberSignature Language="C#" Value="public void Play (string location);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void Play(string location) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Play(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Play (location As String)" />
+      <MemberSignature Language="F#" Value="member this.Play : string -&gt; unit" Usage="audio.Play location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -151,6 +165,8 @@
       <MemberSignature Language="C#" Value="public void Play (byte[] data, Microsoft.VisualBasic.AudioPlayMode playMode);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void Play(unsigned int8[] data, valuetype Microsoft.VisualBasic.AudioPlayMode playMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Play(System.Byte[],Microsoft.VisualBasic.AudioPlayMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Play (data As Byte(), playMode As AudioPlayMode)" />
+      <MemberSignature Language="F#" Value="member this.Play : byte[] * Microsoft.VisualBasic.AudioPlayMode -&gt; unit" Usage="audio.Play (data, playMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -228,6 +244,7 @@
       <MemberSignature Language="C#" Value="public void Play (System.IO.Stream stream, Microsoft.VisualBasic.AudioPlayMode playMode);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void Play(class System.IO.Stream stream, valuetype Microsoft.VisualBasic.AudioPlayMode playMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Play(System.IO.Stream,Microsoft.VisualBasic.AudioPlayMode)" />
+      <MemberSignature Language="F#" Value="member this.Play : System.IO.Stream * Microsoft.VisualBasic.AudioPlayMode -&gt; unit" Usage="audio.Play (stream, playMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -306,6 +323,8 @@
       <MemberSignature Language="C#" Value="public void Play (string location, Microsoft.VisualBasic.AudioPlayMode playMode);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void Play(string location, valuetype Microsoft.VisualBasic.AudioPlayMode playMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Play(System.String,Microsoft.VisualBasic.AudioPlayMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Play (location As String, playMode As AudioPlayMode)" />
+      <MemberSignature Language="F#" Value="member this.Play : string * Microsoft.VisualBasic.AudioPlayMode -&gt; unit" Usage="audio.Play (location, playMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -386,6 +405,7 @@
       <MemberSignature Language="C#" Value="public void PlaySystemSound (System.Media.SystemSound systemSound);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void PlaySystemSound(class System.Media.SystemSound systemSound) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.PlaySystemSound(System.Media.SystemSound)" />
+      <MemberSignature Language="F#" Value="member this.PlaySystemSound : System.Media.SystemSound -&gt; unit" Usage="audio.PlaySystemSound systemSound" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -454,6 +474,8 @@
       <MemberSignature Language="C#" Value="public void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="audio.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -504,14 +526,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Play">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Plays a .wav sound file.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

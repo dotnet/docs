@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class TransportBindingElement : System.ServiceModel.Channels.BindingElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TransportBindingElement extends System.ServiceModel.Channels.BindingElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.TransportBindingElement" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TransportBindingElement&#xA;Inherits BindingElement" />
+  <TypeSignature Language="F#" Value="type TransportBindingElement = class&#xA;    inherit BindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +54,7 @@
       <MemberSignature Language="C#" Value="protected TransportBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TransportBindingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +77,8 @@
       <MemberSignature Language="C#" Value="protected TransportBindingElement (System.ServiceModel.Channels.TransportBindingElement elementToBeCloned);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.TransportBindingElement elementToBeCloned) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TransportBindingElement.#ctor(System.ServiceModel.Channels.TransportBindingElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (elementToBeCloned As TransportBindingElement)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.TransportBindingElement : System.ServiceModel.Channels.TransportBindingElement -&gt; System.ServiceModel.Channels.TransportBindingElement" Usage="new System.ServiceModel.Channels.TransportBindingElement elementToBeCloned" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,6 +104,8 @@
       <MemberSignature Language="C#" Value="public override T GetProperty&lt;T&gt; (System.ServiceModel.Channels.BindingContext context) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!T GetProperty&lt;class T&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TransportBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
+      <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="transportBindingElement.GetProperty context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -147,6 +154,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ManualAddressing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ManualAddressing" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.TransportBindingElement.ManualAddressing" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ManualAddressing As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ManualAddressing : bool with get, set" Usage="System.ServiceModel.Channels.TransportBindingElement.ManualAddressing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -184,6 +193,8 @@
       <MemberSignature Language="C#" Value="public virtual long MaxBufferPoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxBufferPoolSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.TransportBindingElement.MaxBufferPoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property MaxBufferPoolSize As Long" />
+      <MemberSignature Language="F#" Value="member this.MaxBufferPoolSize : int64 with get, set" Usage="System.ServiceModel.Channels.TransportBindingElement.MaxBufferPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -212,6 +223,8 @@
       <MemberSignature Language="C#" Value="public virtual long MaxReceivedMessageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxReceivedMessageSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property MaxReceivedMessageSize As Long" />
+      <MemberSignature Language="F#" Value="member this.MaxReceivedMessageSize : int64 with get, set" Usage="System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -244,6 +257,8 @@
       <MemberSignature Language="C#" Value="public abstract string Scheme { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.TransportBindingElement.Scheme" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Scheme As String" />
+      <MemberSignature Language="F#" Value="member this.Scheme : string" Usage="System.ServiceModel.Channels.TransportBindingElement.Scheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

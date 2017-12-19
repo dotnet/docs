@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CrossDomainMoveControl : System.DirectoryServices.Protocols.DirectoryControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CrossDomainMoveControl extends System.DirectoryServices.Protocols.DirectoryControl" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.CrossDomainMoveControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class CrossDomainMoveControl&#xA;Inherits DirectoryControl" />
+  <TypeSignature Language="F#" Value="type CrossDomainMoveControl = class&#xA;    inherit DirectoryControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.CrossDomainMoveControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.CrossDomainMoveControl" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CrossDomainMoveControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.CrossDomainMoveControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -36,6 +49,8 @@
       <MemberSignature Language="C#" Value="public CrossDomainMoveControl (string targetDomainController);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string targetDomainController) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.CrossDomainMoveControl.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetDomainController As String)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.CrossDomainMoveControl : string -&gt; System.DirectoryServices.Protocols.CrossDomainMoveControl" Usage="new System.DirectoryServices.Protocols.CrossDomainMoveControl targetDomainController" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -55,6 +70,8 @@
       <MemberSignature Language="C#" Value="public override byte[] GetValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.CrossDomainMoveControl.GetValue" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue () As Byte()" />
+      <MemberSignature Language="F#" Value="override this.GetValue : unit -&gt; byte[]" Usage="crossDomainMoveControl.GetValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -75,6 +92,8 @@
       <MemberSignature Language="C#" Value="public string TargetDomainController { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetDomainController" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.CrossDomainMoveControl.TargetDomainController" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetDomainController As String" />
+      <MemberSignature Language="F#" Value="member this.TargetDomainController : string with get, set" Usage="System.DirectoryServices.Protocols.CrossDomainMoveControl.TargetDomainController" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -90,15 +109,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>The <see cref="M:System.DirectoryServices.Protocols.CrossDomainMoveControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.CrossDomainMoveControl" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

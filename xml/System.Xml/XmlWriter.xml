@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class XmlWriter : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlWriter extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlWriter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlWriter&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type XmlWriter = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -208,6 +210,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="protected XmlWriter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -235,6 +238,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="xmlWriter.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -330,6 +335,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public static System.Xml.XmlWriter Create (System.IO.Stream output);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlWriter Create(class System.IO.Stream output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As Stream) As XmlWriter" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.Stream -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create output" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -400,6 +407,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public static System.Xml.XmlWriter Create (System.IO.TextWriter output);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlWriter Create(class System.IO.TextWriter output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As TextWriter) As XmlWriter" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.TextWriter -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create output" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -468,6 +477,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public static System.Xml.XmlWriter Create (string outputFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlWriter Create(string outputFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (outputFileName As String) As XmlWriter" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create outputFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -533,6 +544,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public static System.Xml.XmlWriter Create (System.Text.StringBuilder output);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlWriter Create(class System.Text.StringBuilder output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.Text.StringBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As StringBuilder) As XmlWriter" />
+      <MemberSignature Language="F#" Value="static member Create : System.Text.StringBuilder -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create output" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -593,6 +606,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public static System.Xml.XmlWriter Create (System.Xml.XmlWriter output);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlWriter Create(class System.Xml.XmlWriter output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As XmlWriter) As XmlWriter" />
+      <MemberSignature Language="F#" Value="static member Create : System.Xml.XmlWriter -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create output" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -655,6 +670,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public static System.Xml.XmlWriter Create (System.IO.Stream output, System.Xml.XmlWriterSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlWriter Create(class System.IO.Stream output, class System.Xml.XmlWriterSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.IO.Stream,System.Xml.XmlWriterSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As Stream, settings As XmlWriterSettings) As XmlWriter" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.Stream * System.Xml.XmlWriterSettings -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create (output, settings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -709,6 +726,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public static System.Xml.XmlWriter Create (System.IO.TextWriter output, System.Xml.XmlWriterSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlWriter Create(class System.IO.TextWriter output, class System.Xml.XmlWriterSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.IO.TextWriter,System.Xml.XmlWriterSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As TextWriter, settings As XmlWriterSettings) As XmlWriter" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.TextWriter * System.Xml.XmlWriterSettings -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create (output, settings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -758,6 +777,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public static System.Xml.XmlWriter Create (string outputFileName, System.Xml.XmlWriterSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlWriter Create(string outputFileName, class System.Xml.XmlWriterSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.String,System.Xml.XmlWriterSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (outputFileName As String, settings As XmlWriterSettings) As XmlWriter" />
+      <MemberSignature Language="F#" Value="static member Create : string * System.Xml.XmlWriterSettings -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create (outputFileName, settings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -804,6 +825,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public static System.Xml.XmlWriter Create (System.Text.StringBuilder output, System.Xml.XmlWriterSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlWriter Create(class System.Text.StringBuilder output, class System.Xml.XmlWriterSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.Text.StringBuilder,System.Xml.XmlWriterSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As StringBuilder, settings As XmlWriterSettings) As XmlWriter" />
+      <MemberSignature Language="F#" Value="static member Create : System.Text.StringBuilder * System.Xml.XmlWriterSettings -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create (output, settings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -843,6 +866,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public static System.Xml.XmlWriter Create (System.Xml.XmlWriter output, System.Xml.XmlWriterSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlWriter Create(class System.Xml.XmlWriter output, class System.Xml.XmlWriterSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.Xml.XmlWriter,System.Xml.XmlWriterSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As XmlWriter, settings As XmlWriterSettings) As XmlWriter" />
+      <MemberSignature Language="F#" Value="static member Create : System.Xml.XmlWriter * System.Xml.XmlWriterSettings -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create (output, settings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -885,11 +910,29 @@ async Task TestWriter(Stream stream)
         <exception cref="T:System.ArgumentNullException">The <paramref name="writer" /> value is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Releases the resources used by the <see cref="T:System.Xml.XmlWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="xmlWriter.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -920,6 +963,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="xmlWriter.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -955,6 +1000,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public abstract void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Flush ()" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit" Usage="xmlWriter.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1004,6 +1051,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task FlushAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task FlushAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.FlushAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function FlushAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member FlushAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.FlushAsync : unit -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.FlushAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1043,6 +1092,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public abstract string LookupPrefix (string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string LookupPrefix(string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.LookupPrefix(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function LookupPrefix (ns As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member LookupPrefix : string -&gt; string" Usage="xmlWriter.LookupPrefix ns" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1091,6 +1142,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlWriterSettings Settings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlWriterSettings Settings" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriter.Settings" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Settings As XmlWriterSettings" />
+      <MemberSignature Language="F#" Value="member this.Settings : System.Xml.XmlWriterSettings" Usage="System.Xml.XmlWriter.Settings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1129,6 +1182,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual void WriteAttributes (System.Xml.XmlReader reader, bool defattr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteAttributes(class System.Xml.XmlReader reader, bool defattr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteAttributes(System.Xml.XmlReader,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteAttributes (reader As XmlReader, defattr As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member WriteAttributes : System.Xml.XmlReader * bool -&gt; unit&#xA;override this.WriteAttributes : System.Xml.XmlReader * bool -&gt; unit" Usage="xmlWriter.WriteAttributes (reader, defattr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1193,6 +1248,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteAttributesAsync (System.Xml.XmlReader reader, bool defattr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteAttributesAsync(class System.Xml.XmlReader reader, bool defattr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteAttributesAsync(System.Xml.XmlReader,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteAttributesAsync (reader As XmlReader, defattr As Boolean) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteAttributesAsync : System.Xml.XmlReader * bool -&gt; System.Threading.Tasks.Task&#xA;override this.WriteAttributesAsync : System.Xml.XmlReader * bool -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteAttributesAsync (reader, defattr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1266,6 +1323,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public void WriteAttributeString (string localName, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAttributeString(string localName, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteAttributeString(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteAttributeString (localName As String, value As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteAttributeString : string * string -&gt; unit" Usage="xmlWriter.WriteAttributeString (localName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1327,6 +1386,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public void WriteAttributeString (string localName, string ns, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAttributeString(string localName, string ns, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteAttributeString(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteAttributeString (localName As String, ns As String, value As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteAttributeString : string * string * string -&gt; unit" Usage="xmlWriter.WriteAttributeString (localName, ns, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1392,6 +1453,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public void WriteAttributeString (string prefix, string localName, string ns, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAttributeString(string prefix, string localName, string ns, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteAttributeString(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteAttributeString (prefix As String, localName As String, ns As String, value As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteAttributeString : string * string * string * string -&gt; unit" Usage="xmlWriter.WriteAttributeString (prefix, localName, ns, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1460,6 +1523,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WriteAttributeStringAsync (string prefix, string localName, string ns, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WriteAttributeStringAsync(string prefix, string localName, string ns, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteAttributeStringAsync(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WriteAttributeStringAsync (prefix As String, localName As String, ns As String, value As String) As Task" />
+      <MemberSignature Language="F#" Value="member this.WriteAttributeStringAsync : string * string * string * string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteAttributeStringAsync (prefix, localName, ns, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1508,6 +1573,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public abstract void WriteBase64 (byte[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteBase64(unsigned int8[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteBase64(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteBase64 (buffer As Byte(), index As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member WriteBase64 : byte[] * int * int -&gt; unit" Usage="xmlWriter.WriteBase64 (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1571,6 +1638,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteBase64Async (byte[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteBase64Async(unsigned int8[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteBase64Async(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteBase64Async (buffer As Byte(), index As Integer, count As Integer) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteBase64Async : byte[] * int * int -&gt; System.Threading.Tasks.Task&#xA;override this.WriteBase64Async : byte[] * int * int -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteBase64Async (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1617,6 +1686,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual void WriteBinHex (byte[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteBinHex(unsigned int8[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteBinHex(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteBinHex (buffer As Byte(), index As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member WriteBinHex : byte[] * int * int -&gt; unit&#xA;override this.WriteBinHex : byte[] * int * int -&gt; unit" Usage="xmlWriter.WriteBinHex (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1678,6 +1749,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteBinHexAsync (byte[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteBinHexAsync(unsigned int8[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteBinHexAsync(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteBinHexAsync (buffer As Byte(), index As Integer, count As Integer) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteBinHexAsync : byte[] * int * int -&gt; System.Threading.Tasks.Task&#xA;override this.WriteBinHexAsync : byte[] * int * int -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteBinHexAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1724,6 +1797,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public abstract void WriteCData (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteCData(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteCData(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteCData (text As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteCData : string -&gt; unit" Usage="xmlWriter.WriteCData text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1776,6 +1851,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteCDataAsync (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteCDataAsync(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteCDataAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteCDataAsync (text As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteCDataAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteCDataAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteCDataAsync text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1818,6 +1895,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public abstract void WriteCharEntity (char ch);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteCharEntity(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteCharEntity(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteCharEntity (ch As Char)" />
+      <MemberSignature Language="F#" Value="abstract member WriteCharEntity : char -&gt; unit" Usage="xmlWriter.WriteCharEntity ch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1867,6 +1946,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteCharEntityAsync (char ch);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteCharEntityAsync(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteCharEntityAsync(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteCharEntityAsync (ch As Char) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteCharEntityAsync : char -&gt; System.Threading.Tasks.Task&#xA;override this.WriteCharEntityAsync : char -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteCharEntityAsync ch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1909,6 +1990,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public abstract void WriteChars (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteChars(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteChars(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteChars (buffer As Char(), index As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member WriteChars : char[] * int * int -&gt; unit" Usage="xmlWriter.WriteChars (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1972,6 +2055,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteCharsAsync (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteCharsAsync(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteCharsAsync(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteCharsAsync (buffer As Char(), index As Integer, count As Integer) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteCharsAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&#xA;override this.WriteCharsAsync : char[] * int * int -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteCharsAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2018,6 +2103,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public abstract void WriteComment (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteComment(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteComment(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteComment (text As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteComment : string -&gt; unit" Usage="xmlWriter.WriteComment text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2072,6 +2159,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteCommentAsync (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteCommentAsync(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteCommentAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteCommentAsync (text As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteCommentAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteCommentAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteCommentAsync text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2114,6 +2203,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public abstract void WriteDocType (string name, string pubid, string sysid, string subset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteDocType(string name, string pubid, string sysid, string subset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteDocType(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteDocType (name As String, pubid As String, sysid As String, subset As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteDocType : string * string * string * string -&gt; unit" Usage="xmlWriter.WriteDocType (name, pubid, sysid, subset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2175,6 +2266,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteDocTypeAsync (string name, string pubid, string sysid, string subset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteDocTypeAsync(string name, string pubid, string sysid, string subset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteDocTypeAsync(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteDocTypeAsync (name As String, pubid As String, sysid As String, subset As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteDocTypeAsync : string * string * string * string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteDocTypeAsync : string * string * string * string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteDocTypeAsync (name, pubid, sysid, subset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2243,6 +2336,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public void WriteElementString (string localName, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteElementString(string localName, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteElementString(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteElementString (localName As String, value As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteElementString : string * string -&gt; unit" Usage="xmlWriter.WriteElementString (localName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2301,6 +2396,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public void WriteElementString (string localName, string ns, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteElementString(string localName, string ns, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteElementString(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteElementString (localName As String, ns As String, value As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteElementString : string * string * string -&gt; unit" Usage="xmlWriter.WriteElementString (localName, ns, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2361,6 +2458,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public void WriteElementString (string prefix, string localName, string ns, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteElementString(string prefix, string localName, string ns, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteElementString(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteElementString (prefix As String, localName As String, ns As String, value As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteElementString : string * string * string * string -&gt; unit" Usage="xmlWriter.WriteElementString (prefix, localName, ns, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2414,6 +2513,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WriteElementStringAsync (string prefix, string localName, string ns, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WriteElementStringAsync(string prefix, string localName, string ns, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteElementStringAsync(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WriteElementStringAsync (prefix As String, localName As String, ns As String, value As String) As Task" />
+      <MemberSignature Language="F#" Value="member this.WriteElementStringAsync : string * string * string * string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteElementStringAsync (prefix, localName, ns, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2470,6 +2571,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public abstract void WriteEndAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteEndAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEndAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteEndAttribute ()" />
+      <MemberSignature Language="F#" Value="abstract member WriteEndAttribute : unit -&gt; unit" Usage="xmlWriter.WriteEndAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2512,9 +2615,11 @@ async Task TestWriter(Stream stream)
       </Docs>
     </Member>
     <Member MemberName="WriteEndAttributeAsync">
-      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task WriteEndAttributeAsync ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Threading.Tasks.Task WriteEndAttributeAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Threading.Tasks.Task WriteEndAttributeAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEndAttributeAsync" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function WriteEndAttributeAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteEndAttributeAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.WriteEndAttributeAsync : unit -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteEndAttributeAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2554,6 +2659,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public abstract void WriteEndDocument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteEndDocument() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEndDocument" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteEndDocument ()" />
+      <MemberSignature Language="F#" Value="abstract member WriteEndDocument : unit -&gt; unit" Usage="xmlWriter.WriteEndDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2605,6 +2712,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteEndDocumentAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteEndDocumentAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEndDocumentAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteEndDocumentAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteEndDocumentAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.WriteEndDocumentAsync : unit -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteEndDocumentAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2644,6 +2753,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public abstract void WriteEndElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteEndElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEndElement" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteEndElement ()" />
+      <MemberSignature Language="F#" Value="abstract member WriteEndElement : unit -&gt; unit" Usage="xmlWriter.WriteEndElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2695,6 +2806,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteEndElementAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteEndElementAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEndElementAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteEndElementAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteEndElementAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.WriteEndElementAsync : unit -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteEndElementAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2734,6 +2847,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public abstract void WriteEntityRef (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteEntityRef(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEntityRef(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteEntityRef (name As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteEntityRef : string -&gt; unit" Usage="xmlWriter.WriteEntityRef name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2785,6 +2900,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteEntityRefAsync (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteEntityRefAsync(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEntityRefAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteEntityRefAsync (name As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteEntityRefAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteEntityRefAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteEntityRefAsync name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2827,6 +2944,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public abstract void WriteFullEndElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteFullEndElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteFullEndElement" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteFullEndElement ()" />
+      <MemberSignature Language="F#" Value="abstract member WriteFullEndElement : unit -&gt; unit" Usage="xmlWriter.WriteFullEndElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2875,6 +2994,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteFullEndElementAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteFullEndElementAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteFullEndElementAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteFullEndElementAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteFullEndElementAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.WriteFullEndElementAsync : unit -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteFullEndElementAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2914,6 +3035,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual void WriteName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteName (name As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteName : string -&gt; unit&#xA;override this.WriteName : string -&gt; unit" Usage="xmlWriter.WriteName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2959,6 +3082,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteNameAsync (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteNameAsync(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteNameAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteNameAsync (name As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteNameAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteNameAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteNameAsync name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3001,6 +3126,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual void WriteNmToken (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteNmToken(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteNmToken(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteNmToken (name As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteNmToken : string -&gt; unit&#xA;override this.WriteNmToken : string -&gt; unit" Usage="xmlWriter.WriteNmToken name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3044,6 +3171,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteNmTokenAsync (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteNmTokenAsync(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteNmTokenAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteNmTokenAsync (name As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteNmTokenAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteNmTokenAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteNmTokenAsync name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3106,6 +3235,8 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="C#" Value="public virtual void WriteNode (System.Xml.XmlReader reader, bool defattr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteNode(class System.Xml.XmlReader reader, bool defattr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteNode(System.Xml.XmlReader,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteNode (reader As XmlReader, defattr As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member WriteNode : System.Xml.XmlReader * bool -&gt; unit&#xA;override this.WriteNode : System.Xml.XmlReader * bool -&gt; unit" Usage="xmlWriter.WriteNode (reader, defattr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3211,6 +3342,8 @@ while (!reader.EOF){
       <MemberSignature Language="C#" Value="public virtual void WriteNode (System.Xml.XPath.XPathNavigator navigator, bool defattr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteNode(class System.Xml.XPath.XPathNavigator navigator, bool defattr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteNode(System.Xml.XPath.XPathNavigator,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteNode (navigator As XPathNavigator, defattr As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member WriteNode : System.Xml.XPath.XPathNavigator * bool -&gt; unit&#xA;override this.WriteNode : System.Xml.XPath.XPathNavigator * bool -&gt; unit" Usage="xmlWriter.WriteNode (navigator, defattr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3300,6 +3433,8 @@ while (!reader.EOF){
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteNodeAsync (System.Xml.XmlReader reader, bool defattr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteNodeAsync(class System.Xml.XmlReader reader, bool defattr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteNodeAsync(System.Xml.XmlReader,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteNodeAsync (reader As XmlReader, defattr As Boolean) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteNodeAsync : System.Xml.XmlReader * bool -&gt; System.Threading.Tasks.Task&#xA;override this.WriteNodeAsync : System.Xml.XmlReader * bool -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteNodeAsync (reader, defattr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3345,6 +3480,8 @@ while (!reader.EOF){
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteNodeAsync (System.Xml.XPath.XPathNavigator navigator, bool defattr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteNodeAsync(class System.Xml.XPath.XPathNavigator navigator, bool defattr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteNodeAsync(System.Xml.XPath.XPathNavigator,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteNodeAsync (navigator As XPathNavigator, defattr As Boolean) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteNodeAsync : System.Xml.XPath.XPathNavigator * bool -&gt; System.Threading.Tasks.Task&#xA;override this.WriteNodeAsync : System.Xml.XPath.XPathNavigator * bool -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteNodeAsync (navigator, defattr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3395,6 +3532,8 @@ while (!reader.EOF){
       <MemberSignature Language="C#" Value="public abstract void WriteProcessingInstruction (string name, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteProcessingInstruction(string name, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteProcessingInstruction(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteProcessingInstruction (name As String, text As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteProcessingInstruction : string * string -&gt; unit" Usage="xmlWriter.WriteProcessingInstruction (name, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3464,6 +3603,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteProcessingInstructionAsync (string name, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteProcessingInstructionAsync(string name, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteProcessingInstructionAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteProcessingInstructionAsync (name As String, text As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteProcessingInstructionAsync : string * string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteProcessingInstructionAsync : string * string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteProcessingInstructionAsync (name, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3508,6 +3649,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public virtual void WriteQualifiedName (string localName, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteQualifiedName(string localName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteQualifiedName(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteQualifiedName (localName As String, ns As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteQualifiedName : string * string -&gt; unit&#xA;override this.WriteQualifiedName : string * string -&gt; unit" Usage="xmlWriter.WriteQualifiedName (localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3576,6 +3719,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteQualifiedNameAsync (string localName, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteQualifiedNameAsync(string localName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteQualifiedNameAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteQualifiedNameAsync (localName As String, ns As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteQualifiedNameAsync : string * string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteQualifiedNameAsync : string * string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteQualifiedNameAsync (localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3648,6 +3793,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public abstract void WriteRaw (string data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteRaw(string data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteRaw(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteRaw (data As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteRaw : string -&gt; unit" Usage="xmlWriter.WriteRaw data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3701,6 +3848,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public abstract void WriteRaw (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteRaw(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteRaw(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteRaw (buffer As Char(), index As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member WriteRaw : char[] * int * int -&gt; unit" Usage="xmlWriter.WriteRaw (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3779,6 +3928,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteRawAsync (string data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteRawAsync(string data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteRawAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteRawAsync (data As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteRawAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteRawAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteRawAsync data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3821,6 +3972,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteRawAsync (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteRawAsync(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteRawAsync(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteRawAsync (buffer As Char(), index As Integer, count As Integer) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteRawAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&#xA;override this.WriteRawAsync : char[] * int * int -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteRawAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3887,6 +4040,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public void WriteStartAttribute (string localName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartAttribute(string localName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartAttribute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartAttribute (localName As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteStartAttribute : string -&gt; unit" Usage="xmlWriter.WriteStartAttribute localName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3931,6 +4086,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public void WriteStartAttribute (string localName, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartAttribute(string localName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartAttribute (localName As String, ns As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteStartAttribute : string * string -&gt; unit" Usage="xmlWriter.WriteStartAttribute (localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3983,6 +4140,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public abstract void WriteStartAttribute (string prefix, string localName, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteStartAttribute(string prefix, string localName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartAttribute(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteStartAttribute (prefix As String, localName As String, ns As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteStartAttribute : string * string * string -&gt; unit" Usage="xmlWriter.WriteStartAttribute (prefix, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4028,9 +4187,11 @@ writer.Close();
       </Docs>
     </Member>
     <Member MemberName="WriteStartAttributeAsync">
-      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task WriteStartAttributeAsync (string prefix, string localName, string ns);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Threading.Tasks.Task WriteStartAttributeAsync (string prefix, string localName, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Threading.Tasks.Task WriteStartAttributeAsync(string prefix, string localName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartAttributeAsync(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function WriteStartAttributeAsync (prefix As String, localName As String, ns As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteStartAttributeAsync : string * string * string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteStartAttributeAsync : string * string * string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteStartAttributeAsync (prefix, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4097,6 +4258,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public abstract void WriteStartDocument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteStartDocument() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartDocument" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteStartDocument ()" />
+      <MemberSignature Language="F#" Value="abstract member WriteStartDocument : unit -&gt; unit" Usage="xmlWriter.WriteStartDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4141,6 +4304,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public abstract void WriteStartDocument (bool standalone);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteStartDocument(bool standalone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartDocument(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteStartDocument (standalone As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member WriteStartDocument : bool -&gt; unit" Usage="xmlWriter.WriteStartDocument standalone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4208,6 +4373,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteStartDocumentAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteStartDocumentAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartDocumentAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteStartDocumentAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteStartDocumentAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.WriteStartDocumentAsync : unit -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteStartDocumentAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4247,6 +4414,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteStartDocumentAsync (bool standalone);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteStartDocumentAsync(bool standalone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartDocumentAsync(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteStartDocumentAsync (standalone As Boolean) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteStartDocumentAsync : bool -&gt; System.Threading.Tasks.Task&#xA;override this.WriteStartDocumentAsync : bool -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteStartDocumentAsync standalone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4309,6 +4478,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public void WriteStartElement (string localName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartElement(string localName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartElement(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartElement (localName As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteStartElement : string -&gt; unit" Usage="xmlWriter.WriteStartElement localName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4360,6 +4531,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public void WriteStartElement (string localName, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartElement(string localName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartElement(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartElement (localName As String, ns As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteStartElement : string * string -&gt; unit" Usage="xmlWriter.WriteStartElement (localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4418,6 +4591,8 @@ writer.WriteEndElement();
       <MemberSignature Language="C#" Value="public abstract void WriteStartElement (string prefix, string localName, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteStartElement(string prefix, string localName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartElement(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteStartElement (prefix As String, localName As String, ns As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteStartElement : string * string * string -&gt; unit" Usage="xmlWriter.WriteStartElement (prefix, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4473,6 +4648,8 @@ writer.WriteEndElement();
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteStartElementAsync (string prefix, string localName, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteStartElementAsync(string prefix, string localName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartElementAsync(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteStartElementAsync (prefix As String, localName As String, ns As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteStartElementAsync : string * string * string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteStartElementAsync : string * string * string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteStartElementAsync (prefix, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4519,6 +4696,8 @@ writer.WriteEndElement();
       <MemberSignature Language="C#" Value="public abstract System.Xml.WriteState WriteState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.WriteState WriteState" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriter.WriteState" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property WriteState As WriteState" />
+      <MemberSignature Language="F#" Value="member this.WriteState : System.Xml.WriteState" Usage="System.Xml.XmlWriter.WriteState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4550,6 +4729,8 @@ writer.WriteEndElement();
       <MemberSignature Language="C#" Value="public abstract void WriteString (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteString(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteString (text As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteString : string -&gt; unit" Usage="xmlWriter.WriteString text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4619,6 +4800,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteStringAsync (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteStringAsync(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStringAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteStringAsync (text As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteStringAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteStringAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteStringAsync text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4661,6 +4844,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public abstract void WriteSurrogateCharEntity (char lowChar, char highChar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteSurrogateCharEntity(char lowChar, char highChar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteSurrogateCharEntity(System.Char,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteSurrogateCharEntity (lowChar As Char, highChar As Char)" />
+      <MemberSignature Language="F#" Value="abstract member WriteSurrogateCharEntity : char * char -&gt; unit" Usage="xmlWriter.WriteSurrogateCharEntity (lowChar, highChar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4713,6 +4898,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteSurrogateCharEntityAsync (char lowChar, char highChar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteSurrogateCharEntityAsync(char lowChar, char highChar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteSurrogateCharEntityAsync(System.Char,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteSurrogateCharEntityAsync (lowChar As Char, highChar As Char) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteSurrogateCharEntityAsync : char * char -&gt; System.Threading.Tasks.Task&#xA;override this.WriteSurrogateCharEntityAsync : char * char -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteSurrogateCharEntityAsync (lowChar, highChar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4804,6 +4991,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual void WriteValue (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member WriteValue : bool -&gt; unit&#xA;override this.WriteValue : bool -&gt; unit" Usage="xmlWriter.WriteValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4854,6 +5043,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual void WriteValue (DateTime value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(valuetype System.DateTime value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As DateTime)" />
+      <MemberSignature Language="F#" Value="abstract member WriteValue : DateTime -&gt; unit&#xA;override this.WriteValue : DateTime -&gt; unit" Usage="xmlWriter.WriteValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4910,6 +5101,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual void WriteValue (DateTimeOffset value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(valuetype System.DateTimeOffset value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="abstract member WriteValue : DateTimeOffset -&gt; unit&#xA;override this.WriteValue : DateTimeOffset -&gt; unit" Usage="xmlWriter.WriteValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4951,6 +5144,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual void WriteValue (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As Decimal)" />
+      <MemberSignature Language="F#" Value="abstract member WriteValue : decimal -&gt; unit&#xA;override this.WriteValue : decimal -&gt; unit" Usage="xmlWriter.WriteValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5001,6 +5196,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual void WriteValue (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As Double)" />
+      <MemberSignature Language="F#" Value="abstract member WriteValue : double -&gt; unit&#xA;override this.WriteValue : double -&gt; unit" Usage="xmlWriter.WriteValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5059,6 +5256,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual void WriteValue (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member WriteValue : int -&gt; unit&#xA;override this.WriteValue : int -&gt; unit" Usage="xmlWriter.WriteValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5109,6 +5308,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual void WriteValue (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As Long)" />
+      <MemberSignature Language="F#" Value="abstract member WriteValue : int64 -&gt; unit&#xA;override this.WriteValue : int64 -&gt; unit" Usage="xmlWriter.WriteValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5159,6 +5360,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual void WriteValue (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member WriteValue : obj -&gt; unit&#xA;override this.WriteValue : obj -&gt; unit" Usage="xmlWriter.WriteValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5210,6 +5413,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual void WriteValue (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As Single)" />
+      <MemberSignature Language="F#" Value="abstract member WriteValue : single -&gt; unit&#xA;override this.WriteValue : single -&gt; unit" Usage="xmlWriter.WriteValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5260,6 +5465,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual void WriteValue (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteValue : string -&gt; unit&#xA;override this.WriteValue : string -&gt; unit" Usage="xmlWriter.WriteValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5308,6 +5515,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public abstract void WriteWhitespace (string ws);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteWhitespace(string ws) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteWhitespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteWhitespace (ws As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteWhitespace : string -&gt; unit" Usage="xmlWriter.WriteWhitespace ws" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5352,6 +5561,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteWhitespaceAsync (string ws);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteWhitespaceAsync(string ws) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteWhitespaceAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteWhitespaceAsync (ws As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member WriteWhitespaceAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteWhitespaceAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteWhitespaceAsync ws" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5394,6 +5605,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual string XmlLang { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlLang" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriter.XmlLang" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XmlLang As String" />
+      <MemberSignature Language="F#" Value="member this.XmlLang : string" Usage="System.Xml.XmlWriter.XmlLang" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5432,6 +5645,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlSpace XmlSpace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlSpace XmlSpace" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriter.XmlSpace" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XmlSpace As XmlSpace" />
+      <MemberSignature Language="F#" Value="member this.XmlSpace : System.Xml.XmlSpace" Usage="System.Xml.XmlWriter.XmlSpace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5478,18 +5693,5 @@ test&lt;item&gt;test
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
-        <summary>Releases the resources used by the <see cref="T:System.Xml.XmlWriter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

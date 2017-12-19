@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void TransactionCompletedEventHandler(object sender, TransactionEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TransactionCompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionCompletedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub TransactionCompletedEventHandler(sender As Object, e As TransactionEventArgs)" />
+  <TypeSignature Language="F#" Value="type TransactionCompletedEventHandler = delegate of obj * TransactionEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

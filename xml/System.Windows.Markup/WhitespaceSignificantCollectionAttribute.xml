@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class WhitespaceSignificantCollectionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WhitespaceSignificantCollectionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.WhitespaceSignificantCollectionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WhitespaceSignificantCollectionAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type WhitespaceSignificantCollectionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,7 @@
       <MemberSignature Language="C#" Value="public WhitespaceSignificantCollectionAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.WhitespaceSignificantCollectionAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

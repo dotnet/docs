@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class TableHeaderCell : System.Web.UI.WebControls.TableCell" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableHeaderCell extends System.Web.UI.WebControls.TableCell" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableHeaderCell" />
+  <TypeSignature Language="VB.NET" Value="Public Class TableHeaderCell&#xA;Inherits TableCell" />
+  <TypeSignature Language="F#" Value="type TableHeaderCell = class&#xA;    inherit TableCell" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,7 @@
       <MemberSignature Language="C#" Value="public TableHeaderCell ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableHeaderCell.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +78,8 @@
       <MemberSignature Language="C#" Value="public virtual string AbbreviatedText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AbbreviatedText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableHeaderCell.AbbreviatedText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AbbreviatedText As String" />
+      <MemberSignature Language="F#" Value="member this.AbbreviatedText : string with get, set" Usage="System.Web.UI.WebControls.TableHeaderCell.AbbreviatedText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -115,6 +120,8 @@
       <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableHeaderCell.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="tableHeaderCell.AddAttributesToRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -146,6 +153,8 @@
       <MemberSignature Language="C#" Value="public virtual string[] CategoryText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] CategoryText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableHeaderCell.CategoryText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CategoryText As String()" />
+      <MemberSignature Language="F#" Value="member this.CategoryText : string[] with get, set" Usage="System.Web.UI.WebControls.TableHeaderCell.CategoryText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +200,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableHeaderScope Scope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.TableHeaderScope Scope" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableHeaderCell.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Scope As TableHeaderScope" />
+      <MemberSignature Language="F#" Value="member this.Scope : System.Web.UI.WebControls.TableHeaderScope with get, set" Usage="System.Web.UI.WebControls.TableHeaderCell.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

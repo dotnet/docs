@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public struct SocketInformation" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit SocketInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SocketInformation" />
+  <TypeSignature Language="F#" Value="type SocketInformation = struct" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.SocketInformationOptions Options { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Sockets.SocketInformationOptions Options" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketInformation.Options" />
+      <MemberSignature Language="VB.NET" Value="Public Property Options As SocketInformationOptions" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Net.Sockets.SocketInformationOptions with get, set" Usage="System.Net.Sockets.SocketInformation.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public byte[] ProtocolInformation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] ProtocolInformation" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketInformation.ProtocolInformation" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProtocolInformation As Byte()" />
+      <MemberSignature Language="F#" Value="member this.ProtocolInformation : byte[] with get, set" Usage="System.Net.Sockets.SocketInformation.ProtocolInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

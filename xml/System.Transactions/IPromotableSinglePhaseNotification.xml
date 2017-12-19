@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IPromotableSinglePhaseNotification : System.Transactions.ITransactionPromoter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPromotableSinglePhaseNotification implements class System.Transactions.ITransactionPromoter" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.IPromotableSinglePhaseNotification" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPromotableSinglePhaseNotification&#xA;Implements ITransactionPromoter" />
+  <TypeSignature Language="F#" Value="type IPromotableSinglePhaseNotification = interface&#xA;    interface ITransactionPromoter" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.IPromotableSinglePhaseNotification.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize ()" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit" Usage="iPromotableSinglePhaseNotification.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -80,6 +84,8 @@
       <MemberSignature Language="C#" Value="public void Rollback (System.Transactions.SinglePhaseEnlistment enlistment);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Rollback(class System.Transactions.SinglePhaseEnlistment enlistment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.IPromotableSinglePhaseNotification.Rollback(System.Transactions.SinglePhaseEnlistment)" />
+      <MemberSignature Language="F#" Value="abstract member Rollback : System.Transactions.SinglePhaseEnlistment -&gt; unit" Usage="iPromotableSinglePhaseNotification.Rollback singlePhaseEnlistment" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Rollback (enlistment As SinglePhaseEnlistment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -117,6 +123,8 @@
       <MemberSignature Language="C#" Value="public void SinglePhaseCommit (System.Transactions.SinglePhaseEnlistment enlistment);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SinglePhaseCommit(class System.Transactions.SinglePhaseEnlistment enlistment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.IPromotableSinglePhaseNotification.SinglePhaseCommit(System.Transactions.SinglePhaseEnlistment)" />
+      <MemberSignature Language="F#" Value="abstract member SinglePhaseCommit : System.Transactions.SinglePhaseEnlistment -&gt; unit" Usage="iPromotableSinglePhaseNotification.SinglePhaseCommit singlePhaseEnlistment" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SinglePhaseCommit (enlistment As SinglePhaseEnlistment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class XmlSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSerializer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSerializer" />
+  <TypeSignature Language="F#" Value="type XmlSerializer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -245,6 +247,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="protected XmlSerializer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -270,6 +273,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public XmlSerializer (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializer : Type -&gt; System.Xml.Serialization.XmlSerializer" Usage="new System.Xml.Serialization.XmlSerializer type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -317,6 +321,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public XmlSerializer (System.Xml.Serialization.XmlTypeMapping xmlTypeMapping);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Serialization.XmlTypeMapping xmlTypeMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Xml.Serialization.XmlTypeMapping)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializer : System.Xml.Serialization.XmlTypeMapping -&gt; System.Xml.Serialization.XmlSerializer" Usage="new System.Xml.Serialization.XmlSerializer xmlTypeMapping" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -361,6 +366,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public XmlSerializer (Type type, string defaultNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string defaultNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializer : Type * string -&gt; System.Xml.Serialization.XmlSerializer" Usage="new System.Xml.Serialization.XmlSerializer (type, defaultNamespace)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -403,6 +409,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public XmlSerializer (Type type, Type[] extraTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Type[] extraTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Type[])" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializer : Type * Type[] -&gt; System.Xml.Serialization.XmlSerializer" Usage="new System.Xml.Serialization.XmlSerializer (type, extraTypes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -452,6 +459,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public XmlSerializer (Type type, System.Xml.Serialization.XmlAttributeOverrides overrides);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.Serialization.XmlAttributeOverrides overrides) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlAttributeOverrides)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializer : Type * System.Xml.Serialization.XmlAttributeOverrides -&gt; System.Xml.Serialization.XmlSerializer" Usage="new System.Xml.Serialization.XmlSerializer (type, overrides)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -500,6 +508,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public XmlSerializer (Type type, System.Xml.Serialization.XmlRootAttribute root);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.Serialization.XmlRootAttribute root) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlRootAttribute)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializer : Type * System.Xml.Serialization.XmlRootAttribute -&gt; System.Xml.Serialization.XmlSerializer" Usage="new System.Xml.Serialization.XmlSerializer (type, root)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -547,6 +556,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public XmlSerializer (Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.Serialization.XmlAttributeOverrides overrides, class System.Type[] extraTypes, class System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlAttributeOverrides,System.Type[],System.Xml.Serialization.XmlRootAttribute,System.String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializer : Type * System.Xml.Serialization.XmlAttributeOverrides * Type[] * System.Xml.Serialization.XmlRootAttribute * string -&gt; System.Xml.Serialization.XmlSerializer" Usage="new System.Xml.Serialization.XmlSerializer (type, overrides, extraTypes, root, defaultNamespace)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -608,6 +618,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public XmlSerializer (Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace, string location);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.Serialization.XmlAttributeOverrides overrides, class System.Type[] extraTypes, class System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace, string location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlAttributeOverrides,System.Type[],System.Xml.Serialization.XmlRootAttribute,System.String,System.String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializer : Type * System.Xml.Serialization.XmlAttributeOverrides * Type[] * System.Xml.Serialization.XmlRootAttribute * string * string -&gt; System.Xml.Serialization.XmlSerializer" Usage="new System.Xml.Serialization.XmlSerializer (type, overrides, extraTypes, root, defaultNamespace, location)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -645,6 +656,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public XmlSerializer (Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace, string location, System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.Serialization.XmlAttributeOverrides overrides, class System.Type[] extraTypes, class System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace, string location, class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlAttributeOverrides,System.Type[],System.Xml.Serialization.XmlRootAttribute,System.String,System.String,System.Security.Policy.Evidence)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializer : Type * System.Xml.Serialization.XmlAttributeOverrides * Type[] * System.Xml.Serialization.XmlRootAttribute * string * string * System.Security.Policy.Evidence -&gt; System.Xml.Serialization.XmlSerializer" Usage="new System.Xml.Serialization.XmlSerializer (type, overrides, extraTypes, root, defaultNamespace, location, evidence)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -688,6 +700,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public virtual bool CanDeserialize (System.Xml.XmlReader xmlReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanDeserialize(class System.Xml.XmlReader xmlReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.CanDeserialize(System.Xml.XmlReader)" />
+      <MemberSignature Language="F#" Value="abstract member CanDeserialize : System.Xml.XmlReader -&gt; bool&#xA;override this.CanDeserialize : System.Xml.XmlReader -&gt; bool" Usage="xmlSerializer.CanDeserialize xmlReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -733,6 +746,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="protected virtual System.Xml.Serialization.XmlSerializationReader CreateReader ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xml.Serialization.XmlSerializationReader CreateReader() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.CreateReader" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateReader () As XmlSerializationReader" />
+      <MemberSignature Language="F#" Value="abstract member CreateReader : unit -&gt; System.Xml.Serialization.XmlSerializationReader&#xA;override this.CreateReader : unit -&gt; System.Xml.Serialization.XmlSerializationReader" Usage="xmlSerializer.CreateReader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -762,6 +777,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="protected virtual System.Xml.Serialization.XmlSerializationWriter CreateWriter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xml.Serialization.XmlSerializationWriter CreateWriter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.CreateWriter" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateWriter () As XmlSerializationWriter" />
+      <MemberSignature Language="F#" Value="abstract member CreateWriter : unit -&gt; System.Xml.Serialization.XmlSerializationWriter&#xA;override this.CreateWriter : unit -&gt; System.Xml.Serialization.XmlSerializationWriter" Usage="xmlSerializer.CreateWriter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -801,6 +818,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public object Deserialize (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="member this.Deserialize : System.IO.Stream -&gt; obj" Usage="xmlSerializer.Deserialize stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -870,6 +888,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public object Deserialize (System.IO.TextReader textReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.TextReader)" />
+      <MemberSignature Language="F#" Value="member this.Deserialize : System.IO.TextReader -&gt; obj" Usage="xmlSerializer.Deserialize textReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -932,6 +951,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="protected virtual object Deserialize (System.Xml.Serialization.XmlSerializationReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object Deserialize(class System.Xml.Serialization.XmlSerializationReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.Xml.Serialization.XmlSerializationReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function Deserialize (reader As XmlSerializationReader) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : System.Xml.Serialization.XmlSerializationReader -&gt; obj&#xA;override this.Deserialize : System.Xml.Serialization.XmlSerializationReader -&gt; obj" Usage="xmlSerializer.Deserialize reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -964,6 +985,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public object Deserialize (System.Xml.XmlReader xmlReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.Xml.XmlReader xmlReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.Xml.XmlReader)" />
+      <MemberSignature Language="F#" Value="member this.Deserialize : System.Xml.XmlReader -&gt; obj" Usage="xmlSerializer.Deserialize xmlReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -1024,6 +1046,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public object Deserialize (System.Xml.XmlReader xmlReader, string encodingStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.Xml.XmlReader xmlReader, string encodingStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.Xml.XmlReader,System.String)" />
+      <MemberSignature Language="F#" Value="member this.Deserialize : System.Xml.XmlReader * string -&gt; obj" Usage="xmlSerializer.Deserialize (xmlReader, encodingStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1074,6 +1097,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public object Deserialize (System.Xml.XmlReader xmlReader, System.Xml.Serialization.XmlDeserializationEvents events);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.Xml.XmlReader xmlReader, valuetype System.Xml.Serialization.XmlDeserializationEvents events) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.Xml.XmlReader,System.Xml.Serialization.XmlDeserializationEvents)" />
+      <MemberSignature Language="F#" Value="member this.Deserialize : System.Xml.XmlReader * System.Xml.Serialization.XmlDeserializationEvents -&gt; obj" Usage="xmlSerializer.Deserialize (xmlReader, events)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1114,6 +1138,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public object Deserialize (System.Xml.XmlReader xmlReader, string encodingStyle, System.Xml.Serialization.XmlDeserializationEvents events);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.Xml.XmlReader xmlReader, string encodingStyle, valuetype System.Xml.Serialization.XmlDeserializationEvents events) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.Xml.XmlReader,System.String,System.Xml.Serialization.XmlDeserializationEvents)" />
+      <MemberSignature Language="F#" Value="member this.Deserialize : System.Xml.XmlReader * string * System.Xml.Serialization.XmlDeserializationEvents -&gt; obj" Usage="xmlSerializer.Deserialize (xmlReader, encodingStyle, events)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1166,6 +1191,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public static System.Xml.Serialization.XmlSerializer[] FromMappings (System.Xml.Serialization.XmlMapping[] mappings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Serialization.XmlSerializer[] FromMappings(class System.Xml.Serialization.XmlMapping[] mappings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.FromMappings(System.Xml.Serialization.XmlMapping[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromMappings (mappings As XmlMapping()) As XmlSerializer()" />
+      <MemberSignature Language="F#" Value="static member FromMappings : System.Xml.Serialization.XmlMapping[] -&gt; System.Xml.Serialization.XmlSerializer[]" Usage="System.Xml.Serialization.XmlSerializer.FromMappings mappings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1197,6 +1224,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public static System.Xml.Serialization.XmlSerializer[] FromMappings (System.Xml.Serialization.XmlMapping[] mappings, System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Serialization.XmlSerializer[] FromMappings(class System.Xml.Serialization.XmlMapping[] mappings, class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.FromMappings(System.Xml.Serialization.XmlMapping[],System.Security.Policy.Evidence)" />
+      <MemberSignature Language="F#" Value="static member FromMappings : System.Xml.Serialization.XmlMapping[] * System.Security.Policy.Evidence -&gt; System.Xml.Serialization.XmlSerializer[]" Usage="System.Xml.Serialization.XmlSerializer.FromMappings (mappings, evidence)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1227,6 +1255,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public static System.Xml.Serialization.XmlSerializer[] FromMappings (System.Xml.Serialization.XmlMapping[] mappings, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Serialization.XmlSerializer[] FromMappings(class System.Xml.Serialization.XmlMapping[] mappings, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.FromMappings(System.Xml.Serialization.XmlMapping[],System.Type)" />
+      <MemberSignature Language="F#" Value="static member FromMappings : System.Xml.Serialization.XmlMapping[] * Type -&gt; System.Xml.Serialization.XmlSerializer[]" Usage="System.Xml.Serialization.XmlSerializer.FromMappings (mappings, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1260,6 +1289,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public static System.Xml.Serialization.XmlSerializer[] FromTypes (Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Serialization.XmlSerializer[] FromTypes(class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.FromTypes(System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromTypes (types As Type()) As XmlSerializer()" />
+      <MemberSignature Language="F#" Value="static member FromTypes : Type[] -&gt; System.Xml.Serialization.XmlSerializer[]" Usage="System.Xml.Serialization.XmlSerializer.FromTypes types" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -1328,6 +1359,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public static System.Reflection.Assembly GenerateSerializer (Type[] types, System.Xml.Serialization.XmlMapping[] mappings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Assembly GenerateSerializer(class System.Type[] types, class System.Xml.Serialization.XmlMapping[] mappings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.GenerateSerializer(System.Type[],System.Xml.Serialization.XmlMapping[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateSerializer (types As Type(), mappings As XmlMapping()) As Assembly" />
+      <MemberSignature Language="F#" Value="static member GenerateSerializer : Type[] * System.Xml.Serialization.XmlMapping[] -&gt; System.Reflection.Assembly" Usage="System.Xml.Serialization.XmlSerializer.GenerateSerializer (types, mappings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1352,6 +1385,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public static System.Reflection.Assembly GenerateSerializer (Type[] types, System.Xml.Serialization.XmlMapping[] mappings, System.CodeDom.Compiler.CompilerParameters parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Assembly GenerateSerializer(class System.Type[] types, class System.Xml.Serialization.XmlMapping[] mappings, class System.CodeDom.Compiler.CompilerParameters parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.GenerateSerializer(System.Type[],System.Xml.Serialization.XmlMapping[],System.CodeDom.Compiler.CompilerParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateSerializer (types As Type(), mappings As XmlMapping(), parameters As CompilerParameters) As Assembly" />
+      <MemberSignature Language="F#" Value="static member GenerateSerializer : Type[] * System.Xml.Serialization.XmlMapping[] * System.CodeDom.Compiler.CompilerParameters -&gt; System.Reflection.Assembly" Usage="System.Xml.Serialization.XmlSerializer.GenerateSerializer (types, mappings, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1398,6 +1433,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public static string GetXmlSerializerAssemblyName (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetXmlSerializerAssemblyName(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.GetXmlSerializerAssemblyName(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetXmlSerializerAssemblyName : Type -&gt; string" Usage="System.Xml.Serialization.XmlSerializer.GetXmlSerializerAssemblyName type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1438,6 +1474,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public static string GetXmlSerializerAssemblyName (Type type, string defaultNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetXmlSerializerAssemblyName(class System.Type type, string defaultNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.GetXmlSerializerAssemblyName(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="static member GetXmlSerializerAssemblyName : Type * string -&gt; string" Usage="System.Xml.Serialization.XmlSerializer.GetXmlSerializerAssemblyName (type, defaultNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1490,6 +1527,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public void Serialize (System.IO.Stream stream, object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.Stream stream, object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.Stream,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.Serialize : System.IO.Stream * obj -&gt; unit" Usage="xmlSerializer.Serialize (stream, o)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -1558,6 +1596,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public void Serialize (System.IO.TextWriter textWriter, object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.TextWriter textWriter, object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.Serialize : System.IO.TextWriter * obj -&gt; unit" Usage="xmlSerializer.Serialize (textWriter, o)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -1620,6 +1659,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="protected virtual void Serialize (object o, System.Xml.Serialization.XmlSerializationWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Serialize(object o, class System.Xml.Serialization.XmlSerializationWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.Object,System.Xml.Serialization.XmlSerializationWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Serialize (o As Object, writer As XmlSerializationWriter)" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : obj * System.Xml.Serialization.XmlSerializationWriter -&gt; unit&#xA;override this.Serialize : obj * System.Xml.Serialization.XmlSerializationWriter -&gt; unit" Usage="xmlSerializer.Serialize (o, writer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1653,6 +1694,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public void Serialize (System.Xml.XmlWriter xmlWriter, object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.Xml.XmlWriter xmlWriter, object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.Xml.XmlWriter,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.Serialize : System.Xml.XmlWriter * obj -&gt; unit" Usage="xmlSerializer.Serialize (xmlWriter, o)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -1711,6 +1753,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public void Serialize (System.IO.Stream stream, object o, System.Xml.Serialization.XmlSerializerNamespaces namespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.Stream stream, object o, class System.Xml.Serialization.XmlSerializerNamespaces namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.Stream,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)" />
+      <MemberSignature Language="F#" Value="member this.Serialize : System.IO.Stream * obj * System.Xml.Serialization.XmlSerializerNamespaces -&gt; unit" Usage="xmlSerializer.Serialize (stream, o, namespaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -1780,6 +1823,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public void Serialize (System.IO.TextWriter textWriter, object o, System.Xml.Serialization.XmlSerializerNamespaces namespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.TextWriter textWriter, object o, class System.Xml.Serialization.XmlSerializerNamespaces namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)" />
+      <MemberSignature Language="F#" Value="member this.Serialize : System.IO.TextWriter * obj * System.Xml.Serialization.XmlSerializerNamespaces -&gt; unit" Usage="xmlSerializer.Serialize (textWriter, o, namespaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -1845,6 +1889,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public void Serialize (System.Xml.XmlWriter xmlWriter, object o, System.Xml.Serialization.XmlSerializerNamespaces namespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.Xml.XmlWriter xmlWriter, object o, class System.Xml.Serialization.XmlSerializerNamespaces namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.Xml.XmlWriter,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)" />
+      <MemberSignature Language="F#" Value="member this.Serialize : System.Xml.XmlWriter * obj * System.Xml.Serialization.XmlSerializerNamespaces -&gt; unit" Usage="xmlSerializer.Serialize (xmlWriter, o, namespaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -1905,6 +1950,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public void Serialize (System.Xml.XmlWriter xmlWriter, object o, System.Xml.Serialization.XmlSerializerNamespaces namespaces, string encodingStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.Xml.XmlWriter xmlWriter, object o, class System.Xml.Serialization.XmlSerializerNamespaces namespaces, string encodingStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.Xml.XmlWriter,System.Object,System.Xml.Serialization.XmlSerializerNamespaces,System.String)" />
+      <MemberSignature Language="F#" Value="member this.Serialize : System.Xml.XmlWriter * obj * System.Xml.Serialization.XmlSerializerNamespaces * string -&gt; unit" Usage="xmlSerializer.Serialize (xmlWriter, o, namespaces, encodingStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1958,6 +2004,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public void Serialize (System.Xml.XmlWriter xmlWriter, object o, System.Xml.Serialization.XmlSerializerNamespaces namespaces, string encodingStyle, string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.Xml.XmlWriter xmlWriter, object o, class System.Xml.Serialization.XmlSerializerNamespaces namespaces, string encodingStyle, string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializer.Serialize(System.Xml.XmlWriter,System.Object,System.Xml.Serialization.XmlSerializerNamespaces,System.String,System.String)" />
+      <MemberSignature Language="F#" Value="member this.Serialize : System.Xml.XmlWriter * obj * System.Xml.Serialization.XmlSerializerNamespaces * string * string -&gt; unit" Usage="xmlSerializer.Serialize (xmlWriter, o, namespaces, encodingStyle, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2003,6 +2050,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public event System.Xml.Serialization.XmlAttributeEventHandler UnknownAttribute;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Xml.Serialization.XmlAttributeEventHandler UnknownAttribute" />
       <MemberSignature Language="DocId" Value="E:System.Xml.Serialization.XmlSerializer.UnknownAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event UnknownAttribute As XmlAttributeEventHandler " />
+      <MemberSignature Language="F#" Value="member this.UnknownAttribute : System.Xml.Serialization.XmlAttributeEventHandler " Usage="member this.UnknownAttribute : System.Xml.Serialization.XmlAttributeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2052,6 +2101,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public event System.Xml.Serialization.XmlElementEventHandler UnknownElement;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Xml.Serialization.XmlElementEventHandler UnknownElement" />
       <MemberSignature Language="DocId" Value="E:System.Xml.Serialization.XmlSerializer.UnknownElement" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event UnknownElement As XmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.UnknownElement : System.Xml.Serialization.XmlElementEventHandler " Usage="member this.UnknownElement : System.Xml.Serialization.XmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2111,6 +2162,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public event System.Xml.Serialization.XmlNodeEventHandler UnknownNode;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Xml.Serialization.XmlNodeEventHandler UnknownNode" />
       <MemberSignature Language="DocId" Value="E:System.Xml.Serialization.XmlSerializer.UnknownNode" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event UnknownNode As XmlNodeEventHandler " />
+      <MemberSignature Language="F#" Value="member this.UnknownNode : System.Xml.Serialization.XmlNodeEventHandler " Usage="member this.UnknownNode : System.Xml.Serialization.XmlNodeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2159,6 +2212,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       <MemberSignature Language="C#" Value="public event System.Xml.Serialization.UnreferencedObjectEventHandler UnreferencedObject;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Xml.Serialization.UnreferencedObjectEventHandler UnreferencedObject" />
       <MemberSignature Language="DocId" Value="E:System.Xml.Serialization.XmlSerializer.UnreferencedObject" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event UnreferencedObject As UnreferencedObjectEventHandler " />
+      <MemberSignature Language="F#" Value="member this.UnreferencedObject : System.Xml.Serialization.UnreferencedObjectEventHandler " Usage="member this.UnreferencedObject : System.Xml.Serialization.UnreferencedObjectEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

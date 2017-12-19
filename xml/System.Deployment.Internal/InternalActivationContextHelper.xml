@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class InternalActivationContextHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit InternalActivationContextHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Internal.InternalActivationContextHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class InternalActivationContextHelper" />
+  <TypeSignature Language="F#" Value="type InternalActivationContextHelper = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public static object GetActivationContextData (ActivationContext appInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetActivationContextData(class System.ActivationContext appInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalActivationContextHelper.GetActivationContextData(System.ActivationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetActivationContextData (appInfo As ActivationContext) As Object" />
+      <MemberSignature Language="F#" Value="static member GetActivationContextData : ActivationContext -&gt; obj" Usage="System.Deployment.Internal.InternalActivationContextHelper.GetActivationContextData appInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public static object GetApplicationComponentManifest (ActivationContext appInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetApplicationComponentManifest(class System.ActivationContext appInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalActivationContextHelper.GetApplicationComponentManifest(System.ActivationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetApplicationComponentManifest (appInfo As ActivationContext) As Object" />
+      <MemberSignature Language="F#" Value="static member GetApplicationComponentManifest : ActivationContext -&gt; obj" Usage="System.Deployment.Internal.InternalActivationContextHelper.GetApplicationComponentManifest appInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +84,8 @@
       <MemberSignature Language="C#" Value="public static byte[] GetApplicationManifestBytes (ActivationContext appInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] GetApplicationManifestBytes(class System.ActivationContext appInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalActivationContextHelper.GetApplicationManifestBytes(System.ActivationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetApplicationManifestBytes (appInfo As ActivationContext) As Byte()" />
+      <MemberSignature Language="F#" Value="static member GetApplicationManifestBytes : ActivationContext -&gt; byte[]" Usage="System.Deployment.Internal.InternalActivationContextHelper.GetApplicationManifestBytes appInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,6 +109,8 @@
       <MemberSignature Language="C#" Value="public static object GetDeploymentComponentManifest (ActivationContext appInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetDeploymentComponentManifest(class System.ActivationContext appInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalActivationContextHelper.GetDeploymentComponentManifest(System.ActivationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDeploymentComponentManifest (appInfo As ActivationContext) As Object" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentComponentManifest : ActivationContext -&gt; obj" Usage="System.Deployment.Internal.InternalActivationContextHelper.GetDeploymentComponentManifest appInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -124,6 +134,8 @@
       <MemberSignature Language="C#" Value="public static byte[] GetDeploymentManifestBytes (ActivationContext appInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] GetDeploymentManifestBytes(class System.ActivationContext appInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalActivationContextHelper.GetDeploymentManifestBytes(System.ActivationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDeploymentManifestBytes (appInfo As ActivationContext) As Byte()" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentManifestBytes : ActivationContext -&gt; byte[]" Usage="System.Deployment.Internal.InternalActivationContextHelper.GetDeploymentManifestBytes appInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +159,8 @@
       <MemberSignature Language="C#" Value="public static bool IsFirstRun (ActivationContext appInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsFirstRun(class System.ActivationContext appInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalActivationContextHelper.IsFirstRun(System.ActivationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsFirstRun (appInfo As ActivationContext) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsFirstRun : ActivationContext -&gt; bool" Usage="System.Deployment.Internal.InternalActivationContextHelper.IsFirstRun appInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -171,6 +185,8 @@
       <MemberSignature Language="C#" Value="public static void PrepareForExecution (ActivationContext appInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PrepareForExecution(class System.ActivationContext appInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalActivationContextHelper.PrepareForExecution(System.ActivationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub PrepareForExecution (appInfo As ActivationContext)" />
+      <MemberSignature Language="F#" Value="static member PrepareForExecution : ActivationContext -&gt; unit" Usage="System.Deployment.Internal.InternalActivationContextHelper.PrepareForExecution appInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

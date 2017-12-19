@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CustomLabel : System.Web.UI.DataVisualization.Charting.ChartNamedElement, System.Web.UI.DataVisualization.Charting.IChartMapArea" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomLabel extends System.Web.UI.DataVisualization.Charting.ChartNamedElement implements class System.Web.UI.DataVisualization.Charting.IChartMapArea" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.CustomLabel" />
+  <TypeSignature Language="VB.NET" Value="Public Class CustomLabel&#xA;Inherits ChartNamedElement&#xA;Implements IChartMapArea" />
+  <TypeSignature Language="F#" Value="type CustomLabel = class&#xA;    inherit ChartNamedElement&#xA;    interface IChartMapArea" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,10 +41,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.CustomLabel" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CustomLabel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -67,6 +79,8 @@
       <MemberSignature Language="C#" Value="public CustomLabel (double fromPosition, double toPosition, string text, int labelRow, System.Web.UI.DataVisualization.Charting.LabelMarkStyle markStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 fromPosition, float64 toPosition, string text, int32 labelRow, valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle markStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabel.#ctor(System.Double,System.Double,System.String,System.Int32,System.Web.UI.DataVisualization.Charting.LabelMarkStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fromPosition As Double, toPosition As Double, text As String, labelRow As Integer, markStyle As LabelMarkStyle)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.CustomLabel : double * double * string * int * System.Web.UI.DataVisualization.Charting.LabelMarkStyle -&gt; System.Web.UI.DataVisualization.Charting.CustomLabel" Usage="new System.Web.UI.DataVisualization.Charting.CustomLabel (fromPosition, toPosition, text, labelRow, markStyle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -93,6 +107,8 @@
       <MemberSignature Language="C#" Value="public CustomLabel (double fromPosition, double toPosition, string text, int labelRow, System.Web.UI.DataVisualization.Charting.LabelMarkStyle markStyle, System.Web.UI.DataVisualization.Charting.GridTickTypes gridTick);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 fromPosition, float64 toPosition, string text, int32 labelRow, valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle markStyle, valuetype System.Web.UI.DataVisualization.Charting.GridTickTypes gridTick) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabel.#ctor(System.Double,System.Double,System.String,System.Int32,System.Web.UI.DataVisualization.Charting.LabelMarkStyle,System.Web.UI.DataVisualization.Charting.GridTickTypes)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fromPosition As Double, toPosition As Double, text As String, labelRow As Integer, markStyle As LabelMarkStyle, gridTick As GridTickTypes)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.CustomLabel : double * double * string * int * System.Web.UI.DataVisualization.Charting.LabelMarkStyle * System.Web.UI.DataVisualization.Charting.GridTickTypes -&gt; System.Web.UI.DataVisualization.Charting.CustomLabel" Usage="new System.Web.UI.DataVisualization.Charting.CustomLabel (fromPosition, toPosition, text, labelRow, markStyle, gridTick)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -121,6 +137,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.Axis Axis { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.Axis Axis" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.Axis" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Axis As Axis" />
+      <MemberSignature Language="F#" Value="member this.Axis : System.Web.UI.DataVisualization.Charting.Axis" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.Axis" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -154,6 +172,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.CustomLabel Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.CustomLabel Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabel.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As CustomLabel" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Web.UI.DataVisualization.Charting.CustomLabel" Usage="customLabel.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -173,6 +193,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -218,6 +240,8 @@
       <MemberSignature Language="C#" Value="public double FromPosition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 FromPosition" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.FromPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property FromPosition As Double" />
+      <MemberSignature Language="F#" Value="member this.FromPosition : double with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.FromPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -263,6 +287,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.GridTickTypes GridTicks { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.GridTickTypes GridTicks" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.GridTicks" />
+      <MemberSignature Language="VB.NET" Value="Public Property GridTicks As GridTickTypes" />
+      <MemberSignature Language="F#" Value="member this.GridTicks : System.Web.UI.DataVisualization.Charting.GridTickTypes with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.GridTicks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -292,6 +318,8 @@
       <MemberSignature Language="C#" Value="public string Image { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Image" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.Image" />
+      <MemberSignature Language="VB.NET" Value="Public Property Image As String" />
+      <MemberSignature Language="F#" Value="member this.Image : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -327,6 +355,8 @@
       <MemberSignature Language="C#" Value="public string ImageMapAreaAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImageMapAreaAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.ImageMapAreaAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageMapAreaAttributes As String" />
+      <MemberSignature Language="F#" Value="member this.ImageMapAreaAttributes : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.ImageMapAreaAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -356,6 +386,8 @@
       <MemberSignature Language="C#" Value="public string ImagePostBackValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImagePostBackValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.ImagePostBackValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImagePostBackValue As String" />
+      <MemberSignature Language="F#" Value="member this.ImagePostBackValue : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.ImagePostBackValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -379,6 +411,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ImageTransparentColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ImageTransparentColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.ImageTransparentColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageTransparentColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ImageTransparentColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.ImageTransparentColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -417,6 +451,8 @@
       <MemberSignature Language="C#" Value="public string ImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.ImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ImageUrl : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.ImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -449,6 +485,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.LabelMarkStyle LabelMark { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle LabelMark" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.LabelMark" />
+      <MemberSignature Language="VB.NET" Value="Public Property LabelMark As LabelMarkStyle" />
+      <MemberSignature Language="F#" Value="member this.LabelMark : System.Web.UI.DataVisualization.Charting.LabelMarkStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.LabelMark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -487,7 +525,12 @@
       <MemberSignature Language="C#" Value="public string MapAreaAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MapAreaAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.MapAreaAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property MapAreaAttributes As String" />
+      <MemberSignature Language="F#" Value="member this.MapAreaAttributes : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.MapAreaAttributes" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.MapAreaAttributes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -516,6 +559,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color MarkColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MarkColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.MarkColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property MarkColor As Color" />
+      <MemberSignature Language="F#" Value="member this.MarkColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.MarkColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -561,6 +606,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -590,7 +637,12 @@
       <MemberSignature Language="C#" Value="public string PostBackValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PostBackValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.PostBackValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property PostBackValue As String" />
+      <MemberSignature Language="F#" Value="member this.PostBackValue : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.PostBackValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.PostBackValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -613,6 +665,8 @@
       <MemberSignature Language="C#" Value="public int RowIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RowIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.RowIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property RowIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.RowIndex : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.RowIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -653,6 +707,8 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -691,7 +747,12 @@
       <MemberSignature Language="C#" Value="public string ToolTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.ToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTip As String" />
+      <MemberSignature Language="F#" Value="member this.ToolTip : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.ToolTip" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.ToolTip</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -720,6 +781,8 @@
       <MemberSignature Language="C#" Value="public double ToPosition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ToPosition" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.ToPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToPosition As Double" />
+      <MemberSignature Language="F#" Value="member this.ToPosition : double with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.ToPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -752,7 +815,12 @@
       <MemberSignature Language="C#" Value="public string Url { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomLabel.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.CustomLabel.Url" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.Url</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -780,14 +848,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.CustomLabel" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

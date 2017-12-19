@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class FontFamilyMap" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FontFamilyMap extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.FontFamilyMap" />
+  <TypeSignature Language="VB.NET" Value="Public Class FontFamilyMap" />
+  <TypeSignature Language="F#" Value="type FontFamilyMap = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="public FontFamilyMap ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FontFamilyMap.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Markup.XmlLanguage Language { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Markup.XmlLanguage Language" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FontFamilyMap.Language" />
+      <MemberSignature Language="VB.NET" Value="Public Property Language As XmlLanguage" />
+      <MemberSignature Language="F#" Value="member this.Language : System.Windows.Markup.XmlLanguage with get, set" Usage="System.Windows.Media.FontFamilyMap.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -88,6 +93,8 @@
       <MemberSignature Language="C#" Value="public double Scale { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Scale" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FontFamilyMap.Scale" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scale As Double" />
+      <MemberSignature Language="F#" Value="member this.Scale : double with get, set" Usage="System.Windows.Media.FontFamilyMap.Scale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -119,6 +126,8 @@
       <MemberSignature Language="C#" Value="public string Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FontFamilyMap.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Windows.Media.FontFamilyMap.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -150,6 +159,8 @@
       <MemberSignature Language="C#" Value="public string Unicode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Unicode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FontFamilyMap.Unicode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Unicode As String" />
+      <MemberSignature Language="F#" Value="member this.Unicode : string with get, set" Usage="System.Windows.Media.FontFamilyMap.Unicode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

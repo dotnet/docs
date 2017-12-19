@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class Exception : System.Runtime.InteropServices._Exception, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable beforefieldinit Exception extends System.Object implements class System.Runtime.InteropServices._Exception, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Exception" />
+  <TypeSignature Language="VB.NET" Value="Public Class Exception&#xA;Implements _Exception, ISerializable" />
+  <TypeSignature Language="F#" Value="type Exception = class&#xA;    interface ISerializable&#xA;    interface _Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -273,10 +275,24 @@ Stack Trace:
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Exception" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Exception ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Exception.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -328,6 +344,8 @@ Stack Trace:
       <MemberSignature Language="C#" Value="public Exception (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Exception.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new Exception : string -&gt; Exception" Usage="new System.Exception message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -382,6 +400,8 @@ Stack Trace:
       <MemberSignature Language="C#" Value="protected Exception (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Exception.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new Exception : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; Exception" Usage="new System.Exception (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -436,6 +456,8 @@ Stack Trace:
       <MemberSignature Language="C#" Value="public Exception (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Exception.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new Exception : string * Exception -&gt; Exception" Usage="new System.Exception (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -492,6 +514,8 @@ Stack Trace:
       <MemberSignature Language="C#" Value="public virtual System.Collections.IDictionary Data { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Data" />
       <MemberSignature Language="DocId" Value="P:System.Exception.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Data As IDictionary" />
+      <MemberSignature Language="F#" Value="member this.Data : System.Collections.IDictionary" Usage="System.Exception.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -563,7 +587,12 @@ Stack Trace:
       <MemberSignature Language="C#" Value="public virtual Exception GetBaseException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Exception GetBaseException() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Exception.GetBaseException" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBaseException () As Exception" />
+      <MemberSignature Language="F#" Value="abstract member GetBaseException : unit -&gt; Exception&#xA;override this.GetBaseException : unit -&gt; Exception" Usage="exception.GetBaseException " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._Exception.GetBaseException</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -618,7 +647,13 @@ Stack Trace:
       <MemberSignature Language="C#" Value="public virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="exception.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices._Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -675,7 +710,12 @@ Stack Trace:
       <MemberSignature Language="C#" Value="public Type GetType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Exception.GetType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetType () As Type" />
+      <MemberSignature Language="F#" Value="override this.GetType : unit -&gt; Type" Usage="exception.GetType " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._Exception.GetType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -712,7 +752,12 @@ Stack Trace:
       <MemberSignature Language="C#" Value="public virtual string HelpLink { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpLink" />
       <MemberSignature Language="DocId" Value="P:System.Exception.HelpLink" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HelpLink As String" />
+      <MemberSignature Language="F#" Value="member this.HelpLink : string with get, set" Usage="System.Exception.HelpLink" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.InteropServices._Exception.HelpLink</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -761,6 +806,8 @@ Stack Trace:
       <MemberSignature Language="C#" Value="public int HResult { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 HResult" />
       <MemberSignature Language="DocId" Value="P:System.Exception.HResult" />
+      <MemberSignature Language="VB.NET" Value="Public Property HResult As Integer" />
+      <MemberSignature Language="F#" Value="member this.HResult : int with get, set" Usage="System.Exception.HResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -810,7 +857,12 @@ Stack Trace:
       <MemberSignature Language="C#" Value="public Exception InnerException { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception InnerException" />
       <MemberSignature Language="DocId" Value="P:System.Exception.InnerException" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerException As Exception" />
+      <MemberSignature Language="F#" Value="member this.InnerException : Exception" Usage="System.Exception.InnerException" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.InteropServices._Exception.InnerException</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -865,7 +917,12 @@ Stack Trace:
       <MemberSignature Language="C#" Value="public virtual string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.Exception.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Exception.Message" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.InteropServices._Exception.Message</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -928,6 +985,8 @@ Stack Trace:
       <MemberSignature Language="C#" Value="protected event EventHandler&lt;System.Runtime.Serialization.SafeSerializationEventArgs&gt; SerializeObjectState;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Runtime.Serialization.SafeSerializationEventArgs&gt; SerializeObjectState" />
       <MemberSignature Language="DocId" Value="E:System.Exception.SerializeObjectState" />
+      <MemberSignature Language="VB.NET" Value="Protected Custom Event SerializeObjectState As EventHandler(Of SafeSerializationEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SerializeObjectState : EventHandler&lt;System.Runtime.Serialization.SafeSerializationEventArgs&gt; " Usage="member this.SerializeObjectState : System.EventHandler&lt;System.Runtime.Serialization.SafeSerializationEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -982,7 +1041,12 @@ Stack Trace:
       <MemberSignature Language="C#" Value="public virtual string Source { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Source" />
       <MemberSignature Language="DocId" Value="P:System.Exception.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Source As String" />
+      <MemberSignature Language="F#" Value="member this.Source : string with get, set" Usage="System.Exception.Source" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.InteropServices._Exception.Source</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1030,7 +1094,12 @@ Stack Trace:
       <MemberSignature Language="C#" Value="public virtual string StackTrace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StackTrace" />
       <MemberSignature Language="DocId" Value="P:System.Exception.StackTrace" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property StackTrace As String" />
+      <MemberSignature Language="F#" Value="member this.StackTrace : string" Usage="System.Exception.StackTrace" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.InteropServices._Exception.StackTrace</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1089,7 +1158,12 @@ Stack Trace:
       <MemberSignature Language="C#" Value="public System.Reflection.MethodBase TargetSite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MethodBase TargetSite" />
       <MemberSignature Language="DocId" Value="P:System.Exception.TargetSite" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetSite As MethodBase" />
+      <MemberSignature Language="F#" Value="member this.TargetSite : System.Reflection.MethodBase" Usage="System.Exception.TargetSite" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.InteropServices._Exception.TargetSite</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1140,7 +1214,12 @@ Stack Trace:
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Exception.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="exception.ToString " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._Exception.ToString</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1190,18 +1269,5 @@ Stack Trace:
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Exception" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

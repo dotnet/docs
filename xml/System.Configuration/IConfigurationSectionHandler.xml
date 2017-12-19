@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IConfigurationSectionHandler" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConfigurationSectionHandler" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.IConfigurationSectionHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IConfigurationSectionHandler" />
+  <TypeSignature Language="F#" Value="type IConfigurationSectionHandler = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public object Create (object parent, object configContext, System.Xml.XmlNode section);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Create(object parent, object configContext, class System.Xml.XmlNode section) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IConfigurationSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Create (parent As Object, configContext As Object, section As XmlNode) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Create : obj * obj * System.Xml.XmlNode -&gt; obj" Usage="iConfigurationSectionHandler.Create (parent, configContext, section)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

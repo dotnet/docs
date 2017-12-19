@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public enum AmbientProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AmbientProperty extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.AmbientProperty" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AmbientProperty" />
+  <TypeSignature Language="F#" Value="type AmbientProperty = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="DesignerSize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.AmbientProperty DesignerSize = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.AmbientProperty.DesignerSize" />
+      <MemberSignature Language="VB.NET" Value="DesignerSize" />
+      <MemberSignature Language="F#" Value="DesignerSize = 0" Usage="System.Workflow.ComponentModel.Design.AmbientProperty.DesignerSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.AmbientProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The ambient theme settings are obtained from the <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> class associated with the activity designer.</summary>
       </Docs>
@@ -48,6 +53,8 @@
       <MemberSignature Language="C#" Value="OperatingSystemSetting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.AmbientProperty OperatingSystemSetting = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.AmbientProperty.OperatingSystemSetting" />
+      <MemberSignature Language="VB.NET" Value="OperatingSystemSetting" />
+      <MemberSignature Language="F#" Value="OperatingSystemSetting = 1" Usage="System.Workflow.ComponentModel.Design.AmbientProperty.OperatingSystemSetting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.AmbientProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The ambient theme settings are obtained from the operating system.</summary>
       </Docs>

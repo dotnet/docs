@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class WSHttpBindingBaseElement : System.ServiceModel.Configuration.StandardBindingElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WSHttpBindingBaseElement extends System.ServiceModel.Configuration.StandardBindingElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WSHttpBindingBaseElement" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WSHttpBindingBaseElement&#xA;Inherits StandardBindingElement" />
+  <TypeSignature Language="F#" Value="type WSHttpBindingBaseElement = class&#xA;    inherit StandardBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +18,20 @@
     <altmember cref="T:System.ServiceModel.WSHttpBindingBase" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WSHttpBindingBaseElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected WSHttpBindingBaseElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSHttpBindingBaseElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -35,6 +47,8 @@
       <MemberSignature Language="C#" Value="protected WSHttpBindingBaseElement (string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSHttpBindingBaseElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.WSHttpBindingBaseElement : string -&gt; System.ServiceModel.Configuration.WSHttpBindingBaseElement" Usage="new System.ServiceModel.Configuration.WSHttpBindingBaseElement name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -53,6 +67,8 @@
       <MemberSignature Language="C#" Value="public bool BypassProxyOnLocal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BypassProxyOnLocal" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpBindingBaseElement.BypassProxyOnLocal" />
+      <MemberSignature Language="VB.NET" Value="Public Property BypassProxyOnLocal As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BypassProxyOnLocal : bool with get, set" Usage="System.ServiceModel.Configuration.WSHttpBindingBaseElement.BypassProxyOnLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -77,6 +93,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.HostNameComparisonMode HostNameComparisonMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.HostNameComparisonMode HostNameComparisonMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpBindingBaseElement.HostNameComparisonMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostNameComparisonMode As HostNameComparisonMode" />
+      <MemberSignature Language="F#" Value="member this.HostNameComparisonMode : System.ServiceModel.HostNameComparisonMode with get, set" Usage="System.ServiceModel.Configuration.WSHttpBindingBaseElement.HostNameComparisonMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -97,9 +115,10 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeFrom">
-      <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="C#" Value="protected internal override void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSHttpBindingBaseElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.Binding -&gt; unit" Usage="wSHttpBindingBaseElement.InitializeFrom binding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,6 +140,8 @@
       <MemberSignature Language="C#" Value="public long MaxBufferPoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxBufferPoolSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpBindingBaseElement.MaxBufferPoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxBufferPoolSize As Long" />
+      <MemberSignature Language="F#" Value="member this.MaxBufferPoolSize : int64 with get, set" Usage="System.ServiceModel.Configuration.WSHttpBindingBaseElement.MaxBufferPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -147,6 +168,8 @@
       <MemberSignature Language="C#" Value="public long MaxReceivedMessageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxReceivedMessageSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpBindingBaseElement.MaxReceivedMessageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxReceivedMessageSize As Long" />
+      <MemberSignature Language="F#" Value="member this.MaxReceivedMessageSize : int64 with get, set" Usage="System.ServiceModel.Configuration.WSHttpBindingBaseElement.MaxReceivedMessageSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -173,6 +196,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.WSMessageEncoding MessageEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.WSMessageEncoding MessageEncoding" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpBindingBaseElement.MessageEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageEncoding As WSMessageEncoding" />
+      <MemberSignature Language="F#" Value="member this.MessageEncoding : System.ServiceModel.WSMessageEncoding with get, set" Usage="System.ServiceModel.Configuration.WSHttpBindingBaseElement.MessageEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -196,6 +221,7 @@
       <MemberSignature Language="C#" Value="protected override void OnApplyConfiguration (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSHttpBindingBaseElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="F#" Value="override this.OnApplyConfiguration : System.ServiceModel.Channels.Binding -&gt; unit" Usage="wSHttpBindingBaseElement.OnApplyConfiguration binding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -217,6 +243,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpBindingBaseElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.WSHttpBindingBaseElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -235,6 +263,8 @@
       <MemberSignature Language="C#" Value="public Uri ProxyAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ProxyAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpBindingBaseElement.ProxyAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProxyAddress As Uri" />
+      <MemberSignature Language="F#" Value="member this.ProxyAddress : Uri with get, set" Usage="System.ServiceModel.Configuration.WSHttpBindingBaseElement.ProxyAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -265,6 +295,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement ReaderQuotas { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement ReaderQuotas" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpBindingBaseElement.ReaderQuotas" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReaderQuotas As XmlDictionaryReaderQuotasElement" />
+      <MemberSignature Language="F#" Value="member this.ReaderQuotas : System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement" Usage="System.ServiceModel.Configuration.WSHttpBindingBaseElement.ReaderQuotas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -295,6 +327,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement ReliableSession { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement ReliableSession" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpBindingBaseElement.ReliableSession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReliableSession As StandardBindingOptionalReliableSessionElement" />
+      <MemberSignature Language="F#" Value="member this.ReliableSession : System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement" Usage="System.ServiceModel.Configuration.WSHttpBindingBaseElement.ReliableSession" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -318,6 +352,8 @@
       <MemberSignature Language="C#" Value="public System.Text.Encoding TextEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding TextEncoding" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpBindingBaseElement.TextEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextEncoding As Encoding" />
+      <MemberSignature Language="F#" Value="member this.TextEncoding : System.Text.Encoding with get, set" Usage="System.ServiceModel.Configuration.WSHttpBindingBaseElement.TextEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -344,6 +380,8 @@
       <MemberSignature Language="C#" Value="public bool TransactionFlow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TransactionFlow" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpBindingBaseElement.TransactionFlow" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransactionFlow As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TransactionFlow : bool with get, set" Usage="System.ServiceModel.Configuration.WSHttpBindingBaseElement.TransactionFlow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -375,6 +413,8 @@
       <MemberSignature Language="C#" Value="public bool UseDefaultWebProxy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseDefaultWebProxy" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpBindingBaseElement.UseDefaultWebProxy" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseDefaultWebProxy As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseDefaultWebProxy : bool with get, set" Usage="System.ServiceModel.Configuration.WSHttpBindingBaseElement.UseDefaultWebProxy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -395,14 +435,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WSHttpBindingBaseElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

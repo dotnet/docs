@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class WorkflowCompilerOptionsService : System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowCompilerOptionsService extends System.Object implements class System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowCompilerOptionsService&#xA;Implements IWorkflowCompilerOptionsService" />
+  <TypeSignature Language="F#" Value="type WorkflowCompilerOptionsService = class&#xA;    interface IWorkflowCompilerOptionsService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,7 @@
       <MemberSignature Language="C#" Value="public WorkflowCompilerOptionsService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -52,7 +55,12 @@
       <MemberSignature Language="C#" Value="public virtual bool CheckTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CheckTypes" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.CheckTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CheckTypes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CheckTypes : bool" Usage="System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.CheckTypes" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService.CheckTypes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,7 +86,12 @@
       <MemberSignature Language="C#" Value="public virtual string Language { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Language" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.Language" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Language As String" />
+      <MemberSignature Language="F#" Value="member this.Language : string" Usage="System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.Language" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService.Language</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -103,7 +116,12 @@
       <MemberSignature Language="C#" Value="public virtual string RootNamespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RootNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.RootNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RootNamespace As String" />
+      <MemberSignature Language="F#" Value="member this.RootNamespace : string" Usage="System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.RootNamespace" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService.RootNamespace</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -128,6 +146,8 @@
       <MemberSignature Language="C#" Value="public virtual string TargetFrameworkMoniker { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetFrameworkMoniker" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.TargetFrameworkMoniker" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TargetFrameworkMoniker As String" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkMoniker : string" Usage="System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.TargetFrameworkMoniker" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

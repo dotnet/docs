@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void DownloadProgressChangedEventHandler(object sender, DownloadProgressChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DownloadProgressChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.DownloadProgressChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DownloadProgressChangedEventHandler(sender As Object, e As DownloadProgressChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type DownloadProgressChangedEventHandler = delegate of obj * DownloadProgressChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

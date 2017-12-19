@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class ModelValidatorProviders" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ModelValidatorProviders extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelValidatorProviders" />
+  <TypeSignature Language="VB.NET" Value="Public Class ModelValidatorProviders" />
+  <TypeSignature Language="F#" Value="type ModelValidatorProviders = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.ModelBinding.ModelValidatorProviderCollection Providers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Web.ModelBinding.ModelValidatorProviderCollection Providers" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidatorProviders.Providers" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Providers As ModelValidatorProviderCollection" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Web.ModelBinding.ModelValidatorProviderCollection" Usage="System.Web.ModelBinding.ModelValidatorProviders.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

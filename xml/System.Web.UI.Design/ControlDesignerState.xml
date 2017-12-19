@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ControlDesignerState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ControlDesignerState extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ControlDesignerState" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ControlDesignerState" />
+  <TypeSignature Language="F#" Value="type ControlDesignerState = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public object this[string key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesignerState.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Web.UI.Design.ControlDesignerState.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

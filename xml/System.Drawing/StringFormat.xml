@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class StringFormat : MarshalByRefObject, ICloneable, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StringFormat extends System.MarshalByRefObject implements class System.ICloneable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.StringFormat" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StringFormat&#xA;Inherits MarshalByRefObject&#xA;Implements ICloneable, IDisposable" />
+  <TypeSignature Language="F#" Value="type StringFormat = class&#xA;    inherit MarshalByRefObject&#xA;    interface ICloneable&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +31,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Drawing.StringFormat" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StringFormat ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.StringFormat.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -60,6 +72,8 @@
       <MemberSignature Language="C#" Value="public StringFormat (System.Drawing.StringFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.StringFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.StringFormat.#ctor(System.Drawing.StringFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (format As StringFormat)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.StringFormat : System.Drawing.StringFormat -&gt; System.Drawing.StringFormat" Usage="new System.Drawing.StringFormat format" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -107,6 +121,8 @@
       <MemberSignature Language="C#" Value="public StringFormat (System.Drawing.StringFormatFlags options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.StringFormatFlags options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.StringFormat.#ctor(System.Drawing.StringFormatFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (options As StringFormatFlags)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.StringFormat : System.Drawing.StringFormatFlags -&gt; System.Drawing.StringFormat" Usage="new System.Drawing.StringFormat options" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -152,6 +168,8 @@
       <MemberSignature Language="C#" Value="public StringFormat (System.Drawing.StringFormatFlags options, int language);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.StringFormatFlags options, int32 language) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.StringFormat.#ctor(System.Drawing.StringFormatFlags,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (options As StringFormatFlags, language As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.StringFormat : System.Drawing.StringFormatFlags * int -&gt; System.Drawing.StringFormat" Usage="new System.Drawing.StringFormat (options, language)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -172,6 +190,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.StringAlignment Alignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.StringAlignment Alignment" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.StringFormat.Alignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Alignment As StringAlignment" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Drawing.StringAlignment with get, set" Usage="System.Drawing.StringFormat.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -206,7 +226,12 @@
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.StringFormat.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="stringFormat.Clone " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -225,6 +250,8 @@
       <MemberSignature Language="C#" Value="public int DigitSubstitutionLanguage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DigitSubstitutionLanguage" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.StringFormat.DigitSubstitutionLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DigitSubstitutionLanguage As Integer" />
+      <MemberSignature Language="F#" Value="member this.DigitSubstitutionLanguage : int" Usage="System.Drawing.StringFormat.DigitSubstitutionLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -243,6 +270,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.StringDigitSubstitute DigitSubstitutionMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.StringDigitSubstitute DigitSubstitutionMethod" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.StringFormat.DigitSubstitutionMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DigitSubstitutionMethod As StringDigitSubstitute" />
+      <MemberSignature Language="F#" Value="member this.DigitSubstitutionMethod : System.Drawing.StringDigitSubstitute" Usage="System.Drawing.StringFormat.DigitSubstitutionMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -261,7 +290,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.StringFormat.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="stringFormat.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -286,6 +320,8 @@
       <MemberSignature Language="C#" Value="~StringFormat ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.StringFormat.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="stringFormat.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -304,6 +340,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.StringFormatFlags FormatFlags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.StringFormatFlags FormatFlags" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.StringFormat.FormatFlags" />
+      <MemberSignature Language="VB.NET" Value="Public Property FormatFlags As StringFormatFlags" />
+      <MemberSignature Language="F#" Value="member this.FormatFlags : System.Drawing.StringFormatFlags with get, set" Usage="System.Drawing.StringFormat.FormatFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -322,6 +360,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.StringFormat GenericDefault { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.StringFormat GenericDefault" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.StringFormat.GenericDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GenericDefault As StringFormat" />
+      <MemberSignature Language="F#" Value="member this.GenericDefault : System.Drawing.StringFormat" Usage="System.Drawing.StringFormat.GenericDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -359,6 +399,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.StringFormat GenericTypographic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.StringFormat GenericTypographic" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.StringFormat.GenericTypographic" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GenericTypographic As StringFormat" />
+      <MemberSignature Language="F#" Value="member this.GenericTypographic : System.Drawing.StringFormat" Usage="System.Drawing.StringFormat.GenericTypographic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -394,6 +436,8 @@
       <MemberSignature Language="C#" Value="public float[] GetTabStops (out float firstTabOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32[] GetTabStops([out] float32&amp; firstTabOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.StringFormat.GetTabStops(System.Single@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTabStops (ByRef firstTabOffset As Single) As Single()" />
+      <MemberSignature Language="F#" Value="member this.GetTabStops :  -&gt; single[]" Usage="stringFormat.GetTabStops firstTabOffset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -433,6 +477,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Text.HotkeyPrefix HotkeyPrefix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Text.HotkeyPrefix HotkeyPrefix" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.StringFormat.HotkeyPrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Property HotkeyPrefix As HotkeyPrefix" />
+      <MemberSignature Language="F#" Value="member this.HotkeyPrefix : System.Drawing.Text.HotkeyPrefix with get, set" Usage="System.Drawing.StringFormat.HotkeyPrefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -467,6 +513,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.StringAlignment LineAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.StringAlignment LineAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.StringFormat.LineAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineAlignment As StringAlignment" />
+      <MemberSignature Language="F#" Value="member this.LineAlignment : System.Drawing.StringAlignment with get, set" Usage="System.Drawing.StringFormat.LineAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -501,6 +549,8 @@
       <MemberSignature Language="C#" Value="public void SetDigitSubstitution (int language, System.Drawing.StringDigitSubstitute substitute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDigitSubstitution(int32 language, valuetype System.Drawing.StringDigitSubstitute substitute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.StringFormat.SetDigitSubstitution(System.Int32,System.Drawing.StringDigitSubstitute)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDigitSubstitution (language As Integer, substitute As StringDigitSubstitute)" />
+      <MemberSignature Language="F#" Value="member this.SetDigitSubstitution : int * System.Drawing.StringDigitSubstitute -&gt; unit" Usage="stringFormat.SetDigitSubstitution (language, substitute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -543,6 +593,8 @@
       <MemberSignature Language="C#" Value="public void SetMeasurableCharacterRanges (System.Drawing.CharacterRange[] ranges);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetMeasurableCharacterRanges(valuetype System.Drawing.CharacterRange[] ranges) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.StringFormat.SetMeasurableCharacterRanges(System.Drawing.CharacterRange[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetMeasurableCharacterRanges (ranges As CharacterRange())" />
+      <MemberSignature Language="F#" Value="member this.SetMeasurableCharacterRanges : System.Drawing.CharacterRange[] -&gt; unit" Usage="stringFormat.SetMeasurableCharacterRanges ranges" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -595,6 +647,8 @@
       <MemberSignature Language="C#" Value="public void SetTabStops (float firstTabOffset, float[] tabStops);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetTabStops(float32 firstTabOffset, float32[] tabStops) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.StringFormat.SetTabStops(System.Single,System.Single[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetTabStops (firstTabOffset As Single, tabStops As Single())" />
+      <MemberSignature Language="F#" Value="member this.SetTabStops : single * single[] -&gt; unit" Usage="stringFormat.SetTabStops (firstTabOffset, tabStops)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -640,6 +694,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.StringFormat.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="stringFormat.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -683,6 +739,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.StringTrimming Trimming { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.StringTrimming Trimming" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.StringFormat.Trimming" />
+      <MemberSignature Language="VB.NET" Value="Public Property Trimming As StringTrimming" />
+      <MemberSignature Language="F#" Value="member this.Trimming : System.Drawing.StringTrimming with get, set" Usage="System.Drawing.StringFormat.Trimming" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -708,14 +766,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new <see cref="T:System.Drawing.StringFormat" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

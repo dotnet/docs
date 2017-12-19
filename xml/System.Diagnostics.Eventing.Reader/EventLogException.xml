@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class EventLogException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit EventLogException extends System.Exception implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogException" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventLogException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type EventLogException = class&#xA;    inherit Exception&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.EventLogException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventLogException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -34,6 +46,8 @@
       <MemberSignature Language="C#" Value="protected EventLogException (int errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(int32 errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogException.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (errorCode As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogException : int -&gt; System.Diagnostics.Eventing.Reader.EventLogException" Usage="new System.Diagnostics.Eventing.Reader.EventLogException errorCode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -52,6 +66,8 @@
       <MemberSignature Language="C#" Value="public EventLogException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogException : string -&gt; System.Diagnostics.Eventing.Reader.EventLogException" Usage="new System.Diagnostics.Eventing.Reader.EventLogException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -70,6 +86,7 @@
       <MemberSignature Language="C#" Value="protected EventLogException (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Diagnostics.Eventing.Reader.EventLogException" Usage="new System.Diagnostics.Eventing.Reader.EventLogException (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -90,6 +107,8 @@
       <MemberSignature Language="C#" Value="public EventLogException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogException : string * Exception -&gt; System.Diagnostics.Eventing.Reader.EventLogException" Usage="new System.Diagnostics.Eventing.Reader.EventLogException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -110,7 +129,12 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="eventLogException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -138,6 +162,8 @@
       <MemberSignature Language="C#" Value="public override string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogException.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Diagnostics.Eventing.Reader.EventLogException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -157,14 +183,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.EventLogException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate TServiceType PublishServiceCallback&lt;TServiceType&gt;();" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PublishServiceCallback`1&lt;TServiceType&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PublishServiceCallback`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function PublishServiceCallback(Of TServiceType)() As TServiceType " />
+  <TypeSignature Language="F#" Value="type PublishServiceCallback&lt;'ServiceType&gt; = delegate of unit -&gt; 'ServiceType" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

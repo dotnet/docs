@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CategoryAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CategoryAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.CategoryAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class CategoryAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type CategoryAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -98,10 +100,21 @@
     <altmember cref="T:System.ComponentModel.EventDescriptor" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CategoryAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CategoryAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CategoryAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -127,6 +140,8 @@
       <MemberSignature Language="C#" Value="public CategoryAttribute (string category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CategoryAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (category As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.CategoryAttribute : string -&gt; System.ComponentModel.CategoryAttribute" Usage="new System.ComponentModel.CategoryAttribute category" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -164,6 +179,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.CategoryAttribute Action { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.CategoryAttribute Action" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Action As CategoryAttribute" />
+      <MemberSignature Language="F#" Value="member this.Action : System.ComponentModel.CategoryAttribute" Usage="System.ComponentModel.CategoryAttribute.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -192,6 +209,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.CategoryAttribute Appearance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.CategoryAttribute Appearance" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.Appearance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Appearance As CategoryAttribute" />
+      <MemberSignature Language="F#" Value="member this.Appearance : System.ComponentModel.CategoryAttribute" Usage="System.ComponentModel.CategoryAttribute.Appearance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -220,6 +239,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.CategoryAttribute Asynchronous { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.CategoryAttribute Asynchronous" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.Asynchronous" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Asynchronous As CategoryAttribute" />
+      <MemberSignature Language="F#" Value="member this.Asynchronous : System.ComponentModel.CategoryAttribute" Usage="System.ComponentModel.CategoryAttribute.Asynchronous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -248,6 +269,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.CategoryAttribute Behavior { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.CategoryAttribute Behavior" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.Behavior" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Behavior As CategoryAttribute" />
+      <MemberSignature Language="F#" Value="member this.Behavior : System.ComponentModel.CategoryAttribute" Usage="System.ComponentModel.CategoryAttribute.Behavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -276,6 +299,8 @@
       <MemberSignature Language="C#" Value="public string Category { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Category" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.Category" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Category As String" />
+      <MemberSignature Language="F#" Value="member this.Category : string" Usage="System.ComponentModel.CategoryAttribute.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -311,6 +336,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.CategoryAttribute Data { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.CategoryAttribute Data" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Data As CategoryAttribute" />
+      <MemberSignature Language="F#" Value="member this.Data : System.ComponentModel.CategoryAttribute" Usage="System.ComponentModel.CategoryAttribute.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -339,6 +366,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.CategoryAttribute Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.CategoryAttribute Default" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As CategoryAttribute" />
+      <MemberSignature Language="F#" Value="member this.Default : System.ComponentModel.CategoryAttribute" Usage="System.ComponentModel.CategoryAttribute.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -367,6 +396,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.CategoryAttribute Design { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.CategoryAttribute Design" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.Design" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Design As CategoryAttribute" />
+      <MemberSignature Language="F#" Value="member this.Design : System.ComponentModel.CategoryAttribute" Usage="System.ComponentModel.CategoryAttribute.Design" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -395,6 +426,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.CategoryAttribute DragDrop { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.CategoryAttribute DragDrop" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.DragDrop" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DragDrop As CategoryAttribute" />
+      <MemberSignature Language="F#" Value="member this.DragDrop : System.ComponentModel.CategoryAttribute" Usage="System.ComponentModel.CategoryAttribute.DragDrop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -423,6 +456,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CategoryAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="categoryAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -456,6 +491,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.CategoryAttribute Focus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.CategoryAttribute Focus" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.Focus" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Focus As CategoryAttribute" />
+      <MemberSignature Language="F#" Value="member this.Focus : System.ComponentModel.CategoryAttribute" Usage="System.ComponentModel.CategoryAttribute.Focus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -484,6 +521,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.CategoryAttribute Format { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.CategoryAttribute Format" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.Format" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Format As CategoryAttribute" />
+      <MemberSignature Language="F#" Value="member this.Format : System.ComponentModel.CategoryAttribute" Usage="System.ComponentModel.CategoryAttribute.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -512,6 +551,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CategoryAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="categoryAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -541,6 +582,8 @@
       <MemberSignature Language="C#" Value="protected virtual string GetLocalizedString (string value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetLocalizedString(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CategoryAttribute.GetLocalizedString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetLocalizedString (value As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetLocalizedString : string -&gt; string&#xA;override this.GetLocalizedString : string -&gt; string" Usage="categoryAttribute.GetLocalizedString value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -583,6 +626,8 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CategoryAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="categoryAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -612,6 +657,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.CategoryAttribute Key { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.CategoryAttribute Key" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.Key" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Key As CategoryAttribute" />
+      <MemberSignature Language="F#" Value="member this.Key : System.ComponentModel.CategoryAttribute" Usage="System.ComponentModel.CategoryAttribute.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -640,6 +687,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.CategoryAttribute Layout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.CategoryAttribute Layout" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.Layout" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Layout As CategoryAttribute" />
+      <MemberSignature Language="F#" Value="member this.Layout : System.ComponentModel.CategoryAttribute" Usage="System.ComponentModel.CategoryAttribute.Layout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -668,6 +717,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.CategoryAttribute Mouse { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.CategoryAttribute Mouse" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.Mouse" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Mouse As CategoryAttribute" />
+      <MemberSignature Language="F#" Value="member this.Mouse : System.ComponentModel.CategoryAttribute" Usage="System.ComponentModel.CategoryAttribute.Mouse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -696,6 +747,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.CategoryAttribute WindowStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.CategoryAttribute WindowStyle" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CategoryAttribute.WindowStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowStyle As CategoryAttribute" />
+      <MemberSignature Language="F#" Value="member this.WindowStyle : System.ComponentModel.CategoryAttribute" Usage="System.ComponentModel.CategoryAttribute.WindowStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -720,15 +773,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CategoryAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

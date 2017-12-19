@@ -97,7 +97,3 @@ Pushes all *.nupkg* files in the current directory to the default push source:
 Pushes all *.nupkg* files in the current directory to the default push source, specifying a custom config file *./config/My.Config*:
 
 `dotnet nuget push *.nupkg --config-file ./config/My.Config`
-
-Push all *.nupkg* files in the current directory to the default push source with maximum verbosity:
-
-`dotnet nuget push *.nupkg --verbosity detailed`

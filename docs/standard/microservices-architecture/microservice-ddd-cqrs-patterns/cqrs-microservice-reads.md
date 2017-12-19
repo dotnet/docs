@@ -93,7 +93,7 @@ The important point is that by using a dynamic type, the returned collection of 
 
 ### ViewModel as predefined DTO classes
 
-*Pros:* Having static predefined ViewModel classes, like “contracts” based on explicit DTO classes, is definitely better for public APIs but also for long term microservices, even if they are only used by the same application.
+*Pros:* Having static predefined ViewModel classes, like "contracts" based on explicit DTO classes, is definitely better for public APIs but also for long term microservices, even if they are only used by the same application.
 
 If you want to specify response types for swagger, you need to use explicit DTO classes as the return type. Therefore, predefined DTO classes allow you to offer richer information from Swagger. That will improve the API documentation and compatibility when consuming an API.
 

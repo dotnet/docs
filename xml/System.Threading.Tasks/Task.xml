@@ -43,7 +43,7 @@
     <summary>Represents an asynchronous operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+   
 ## Remarks  
   
 > [!NOTE]
@@ -55,12 +55,30 @@
   
  In this section:  
   
+ [Task instantiation examples](#Instant)   
  [Creating and executing a task](#Creating)   
  [Separating task creation and execution](#Separating)   
  [Waiting for one or more tasks to complete](#WaitingForOne)   
  [Tasks and culture](#Culture)   
  [For debugger developers](#Debugger)  
+
+ <a name="Instant"></a>     
+## Task instantiation  
+ The following example creates and executes four tasks. Three tasks execute an <xref:System.Action%601> delegate named `action`, which accepts an argument of type <xref:System.Object>. A fourth task executes a lambda expression (an <xref:System.Action> delegate) that is defined inline in the call to the task creation method. Each task is instantiated and run in a different way:  
   
+-   Task `t1` is instantiated by calling a Task class constructor, but is started by calling its <xref:System.Threading.Tasks.Task.Start> method only after task `t2` has started.  
+  
+-   Task `t2` is instantiated and started in a single method call by calling the <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%7BSystem.Object%7D%2CSystem.Object%29?displayProperty=nameWithType> method.  
+  
+-   Task `t3` is instantiated and started in a single method call by calling the <xref:System.Threading.Tasks.Task.Run%28System.Action%29> method.  
+  
+-   Task `t4` is executed synchronously on the main thread by calling the <xref:System.Threading.Tasks.Task.RunSynchronously> method.  
+  
+ Because task `t4` executes synchronously, it executes on the main application thread. The remaining tasks execute asynchronously typically on one or more thread pool threads.  
+  
+ [!code-csharp[System.Threading.Tasks.Task#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task/cs/startnew.cs#01)]
+ [!code-vb[System.Threading.Tasks.Task#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task/vb/startnew.vb#01)] 
+    
 <a name="Creating"></a>   
 ## Creating and executing a task  
  <xref:System.Threading.Tasks.Task> instances may be created in a variety of ways. The most common approach, which is available starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], is to call the static <xref:System.Threading.Tasks.Task.Run%2A> method. The <xref:System.Threading.Tasks.Task.Run%2A> method provides a simple way to start a task using default values and without requiring additional parameters. The following example uses the <xref:System.Threading.Tasks.Task.Run%28System.Action%29> method to start a task that loops and then displays the number of loop iterations:  
@@ -123,25 +141,7 @@
   
 <a name="Debugger"></a>   
 ## For debugger developers  
- For developers implementing custom debuggers, several internal and private members of task may be useful (these may change from release to release). The `m_taskId` field serves as the backing store for the <xref:System.Threading.Tasks.Task.Id%2A> property, however accessing this field directly from a debugger may be more efficient than accessing the same value through the property's getter method (the `s_taskIdCounter` counter is used to retrieve the next available ID for a task). Similarly, the `m_stateFlags` field stores information about the current lifecycle stage of the task, information also accessible through the <xref:System.Threading.Tasks.Task.Status%2A> property. The `m_action` field stores a reference to the task's delegate, and the `m_stateObject` field stores the async state passed to the task by the developer. Finally, for debuggers that parse stack frames, the `InternalWait` method serves a potential marker for when a task is entering a wait operation.  
-  
-   
-  
-## Examples  
- The following example creates and executes four tasks. Three tasks execute an <xref:System.Action%601> delegate named `action`, which accepts an argument of type <xref:System.Object>. A fourth task executes a lambda expression (an <xref:System.Action> delegate) that is defined inline in the call to the task creation method. Each task is instantiated and run in a different way:  
-  
--   Task `t1` is instantiated by calling a Task class constructor, but is started by calling its <xref:System.Threading.Tasks.Task.Start> method only after task `t2` has started.  
-  
--   Task `t2` is instantiated and started in a single method call by calling the <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%7BSystem.Object%7D%2CSystem.Object%29?displayProperty=nameWithType> method.  
-  
--   Task `t3` is instantiated and started in a single method call by calling the <xref:System.Threading.Tasks.Task.Run%28System.Action%29> method.  
-  
--   Task `t4` is executed synchronously on the main thread by calling the <xref:System.Threading.Tasks.Task.RunSynchronously> method.  
-  
- Because task `t4` executes synchronously, it executes on the main application thread. The remaining tasks execute asynchronously typically on one or more thread pool threads.  
-  
- [!code-csharp[System.Threading.Tasks.Task#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task/cs/startnew.cs#01)]
- [!code-vb[System.Threading.Tasks.Task#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task/vb/startnew.vb#01)]  
+ For developers implementing custom debuggers, several internal and private members of task may be useful (these may change from release to release). The `m_taskId` field serves as the backing store for the <xref:System.Threading.Tasks.Task.Id%2A> property, however accessing this field directly from a debugger may be more efficient than accessing the same value through the property's getter method (the `s_taskIdCounter` counter is used to retrieve the next available ID for a task). Similarly, the `m_stateFlags` field stores information about the current lifecycle stage of the task, information also accessible through the <xref:System.Threading.Tasks.Task.Status%2A> property. The `m_action` field stores a reference to the task's delegate, and the `m_stateObject` field stores the async state passed to the task by the developer. Finally, for debuggers that parse stack frames, the `InternalWait` method serves a potential marker for when a task is entering a wait operation.   
   
  ]]></format>
     </remarks>

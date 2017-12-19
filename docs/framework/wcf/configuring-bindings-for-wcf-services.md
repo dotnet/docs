@@ -60,8 +60,7 @@ When creating an application, you often want to defer decisions to the administr
   <endpoint   
       address="/HelloWorld2/"  
       contract="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
-      binding="basicHttpBinding" />  
-  </endpoint>  
+      binding="basicHttpBinding" />
 </service>  
 ```  
   
@@ -86,8 +85,7 @@ When creating an application, you often want to defer decisions to the administr
   <endpoint   
       address="/HelloWorld2/"  
       contract="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
-      binding="basicHttpBinding" />  
-  </endpoint>  
+      binding="basicHttpBinding" />
 </service>  
 <bindings>  
     <basicHttpBinding   
@@ -110,12 +108,11 @@ When creating an application, you often want to defer decisions to the administr
 </behaviors>  
 <services>  
     <service   
-       name="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
+       name="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
        <endpoint   
           address="http://computer:8080/Hello"  
           contract="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
-          binding="basicHttpBinding" />  
-       </endpoint>  
+          binding="basicHttpBinding" />
     </service>  
 </services>  
 ```  
@@ -133,14 +130,12 @@ When creating an application, you often want to defer decisions to the administr
         address="http://computer:8080/Hello1"  
         contract="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
         binding="basicHttpBinding"  
-        bindingConfiguration="shortTimeout"  
-    </endpoint>  
+        bindingConfiguration="shortTimeout" />
     <endpoint  
         address="http://computer:8080/Hello2"  
         contract="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
         binding="basicHttpBinding"  
-        bindingConfiguration="Secure"  
-     </endpoint>  
+        bindingConfiguration="Secure" />
 </service>  
 <bindings>  
     <basicHttpBinding   

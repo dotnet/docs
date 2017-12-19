@@ -9,7 +9,7 @@ ms.prod: .net
 ms.devlang: devlang-csharp
 ms.custom: mvc
 ---
-# Understand the .NET compiler platform SDK model
+# Understand the .NET Compiler Platform SDK model
 
 Compilers process the code you write following structured rules that often
 differ from the way humans read and understand code. A basic understanding

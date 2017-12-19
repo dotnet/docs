@@ -11,7 +11,7 @@ ms.devlang: devlang-csharp
 ms.custom: mvc
 ---
 
-# The .NET compiler platform SDK
+# The .NET Compiler Platform SDK
 
 Compilers build a detailed model of application code as they validate the
 syntax and semantics of that code. The use this model to build the
@@ -29,7 +29,7 @@ Instead of being opaque source-code-in and object-code-out translators,
 through Roslyn, compilers become platforms: APIs that you can use for
 code-related tasks in your tools and applications.
 
-## .NET compiler platform SDK concepts
+## .NET Compiler Platform SDK concepts
 
 The .NET Compiler Platform SDK dramatically lowers the barrier
 to entry for creating code focused tools and applications. It creates many

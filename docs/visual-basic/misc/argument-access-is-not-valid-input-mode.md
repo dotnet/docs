@@ -17,7 +17,4 @@ An access value is not valid in `Input` mode.
   
 ## To correct this error  
   
--   Change the value to either `OpenAccess.Read` or `OpenAccess.Default`.  
-  
-## See Also  
-
+-   Change the value to either `OpenAccess.Read` or `OpenAccess.Default`.

@@ -87,7 +87,7 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem product)
 
 In this case, since the origin microservice is a simple CRUD microservice, that code is placed right into a Web API controller. 
  
-In more advanced microservices, like when using CQRS approaches, it can be implemented in the CommandHandler class, within the Handle() method. 
+In more advanced microservices, like when using CQRS approaches, it can be implemented in the `CommandHandler` class, within the `Handle()` method. 
 
 
 ### Designing atomicity and resiliency when publishing to the event bus

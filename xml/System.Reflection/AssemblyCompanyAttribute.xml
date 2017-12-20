@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class AssemblyCompanyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyCompanyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyCompanyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyCompanyAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblyCompanyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +53,8 @@
       <MemberSignature Language="C#" Value="public AssemblyCompanyAttribute (string company);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string company) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyCompanyAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (company As String)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyCompanyAttribute : string -&gt; System.Reflection.AssemblyCompanyAttribute" Usage="new System.Reflection.AssemblyCompanyAttribute company" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -82,6 +86,8 @@
       <MemberSignature Language="C#" Value="public string Company { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Company" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyCompanyAttribute.Company" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Company As String" />
+      <MemberSignature Language="F#" Value="member this.Company : string" Usage="System.Reflection.AssemblyCompanyAttribute.Company" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

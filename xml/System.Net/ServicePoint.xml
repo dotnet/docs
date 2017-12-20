@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ServicePoint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServicePoint extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.ServicePoint" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServicePoint" />
+  <TypeSignature Language="F#" Value="type ServicePoint = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="public Uri Address { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Address" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.Address" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Address As Uri" />
+      <MemberSignature Language="F#" Value="member this.Address : Uri" Usage="System.Net.ServicePoint.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -93,6 +97,8 @@
       <MemberSignature Language="C#" Value="public System.Net.BindIPEndPoint BindIPEndPointDelegate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.BindIPEndPoint BindIPEndPointDelegate" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.BindIPEndPointDelegate" />
+      <MemberSignature Language="VB.NET" Value="Public Property BindIPEndPointDelegate As BindIPEndPoint" />
+      <MemberSignature Language="F#" Value="member this.BindIPEndPointDelegate : System.Net.BindIPEndPoint with get, set" Usage="System.Net.ServicePoint.BindIPEndPointDelegate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -128,6 +134,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate Certificate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate Certificate" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.Certificate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificate As X509Certificate" />
+      <MemberSignature Language="F#" Value="member this.Certificate : System.Security.Cryptography.X509Certificates.X509Certificate" Usage="System.Net.ServicePoint.Certificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -171,6 +179,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate ClientCertificate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate ClientCertificate" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.ClientCertificate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientCertificate As X509Certificate" />
+      <MemberSignature Language="F#" Value="member this.ClientCertificate : System.Security.Cryptography.X509Certificates.X509Certificate" Usage="System.Net.ServicePoint.ClientCertificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -209,6 +219,8 @@
       <MemberSignature Language="C#" Value="public bool CloseConnectionGroup (string connectionGroupName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CloseConnectionGroup(string connectionGroupName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.ServicePoint.CloseConnectionGroup(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloseConnectionGroup (connectionGroupName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CloseConnectionGroup : string -&gt; bool" Usage="servicePoint.CloseConnectionGroup connectionGroupName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -247,6 +259,8 @@
       <MemberSignature Language="C#" Value="public int ConnectionLeaseTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectionLeaseTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.ConnectionLeaseTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionLeaseTimeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.ConnectionLeaseTimeout : int with get, set" Usage="System.Net.ServicePoint.ConnectionLeaseTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -305,6 +319,8 @@
       <MemberSignature Language="C#" Value="public int ConnectionLimit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectionLimit" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.ConnectionLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionLimit As Integer" />
+      <MemberSignature Language="F#" Value="member this.ConnectionLimit : int with get, set" Usage="System.Net.ServicePoint.ConnectionLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -349,6 +365,8 @@
       <MemberSignature Language="C#" Value="public string ConnectionName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionName" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.ConnectionName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionName As String" />
+      <MemberSignature Language="F#" Value="member this.ConnectionName : string" Usage="System.Net.ServicePoint.ConnectionName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -392,6 +410,8 @@
       <MemberSignature Language="C#" Value="public int CurrentConnections { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentConnections" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.CurrentConnections" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentConnections As Integer" />
+      <MemberSignature Language="F#" Value="member this.CurrentConnections : int" Usage="System.Net.ServicePoint.CurrentConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -435,6 +455,8 @@
       <MemberSignature Language="C#" Value="public bool Expect100Continue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Expect100Continue" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.Expect100Continue" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expect100Continue As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Expect100Continue : bool with get, set" Usage="System.Net.ServicePoint.Expect100Continue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -487,6 +509,8 @@
       <MemberSignature Language="C#" Value="public DateTime IdleSince { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime IdleSince" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.IdleSince" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IdleSince As DateTime" />
+      <MemberSignature Language="F#" Value="member this.IdleSince : DateTime" Usage="System.Net.ServicePoint.IdleSince" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -530,6 +554,8 @@
       <MemberSignature Language="C#" Value="public int MaxIdleTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxIdleTime" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.MaxIdleTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxIdleTime As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxIdleTime : int with get, set" Usage="System.Net.ServicePoint.MaxIdleTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -579,6 +605,8 @@
       <MemberSignature Language="C#" Value="public virtual Version ProtocolVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version ProtocolVersion" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.ProtocolVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ProtocolVersion As Version" />
+      <MemberSignature Language="F#" Value="member this.ProtocolVersion : Version" Usage="System.Net.ServicePoint.ProtocolVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -622,6 +650,8 @@
       <MemberSignature Language="C#" Value="public int ReceiveBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ReceiveBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.ReceiveBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceiveBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReceiveBufferSize : int with get, set" Usage="System.Net.ServicePoint.ReceiveBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -671,6 +701,8 @@
       <MemberSignature Language="C#" Value="public void SetTcpKeepAlive (bool enabled, int keepAliveTime, int keepAliveInterval);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetTcpKeepAlive(bool enabled, int32 keepAliveTime, int32 keepAliveInterval) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.ServicePoint.SetTcpKeepAlive(System.Boolean,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetTcpKeepAlive (enabled As Boolean, keepAliveTime As Integer, keepAliveInterval As Integer)" />
+      <MemberSignature Language="F#" Value="member this.SetTcpKeepAlive : bool * int * int -&gt; unit" Usage="servicePoint.SetTcpKeepAlive (enabled, keepAliveTime, keepAliveInterval)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -725,6 +757,8 @@
       <MemberSignature Language="C#" Value="public bool SupportsPipelining { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsPipelining" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.SupportsPipelining" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsPipelining As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsPipelining : bool" Usage="System.Net.ServicePoint.SupportsPipelining" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -771,6 +805,8 @@
       <MemberSignature Language="C#" Value="public bool UseNagleAlgorithm { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseNagleAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.UseNagleAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseNagleAlgorithm As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseNagleAlgorithm : bool with get, set" Usage="System.Net.ServicePoint.UseNagleAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

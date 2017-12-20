@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class DBDataPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit DBDataPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DBDataPermissionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DBDataPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type DBDataPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="protected DBDataPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (action As SecurityAction)" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Data.Common.DBDataPermissionAttribute" Usage="new System.Data.Common.DBDataPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public bool AllowBlankPassword { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowBlankPassword" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DBDataPermissionAttribute.AllowBlankPassword" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowBlankPassword As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowBlankPassword : bool with get, set" Usage="System.Data.Common.DBDataPermissionAttribute.AllowBlankPassword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -76,6 +82,8 @@
       <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DBDataPermissionAttribute.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Data.Common.DBDataPermissionAttribute.ConnectionString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="public System.Data.KeyRestrictionBehavior KeyRestrictionBehavior { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.KeyRestrictionBehavior KeyRestrictionBehavior" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DBDataPermissionAttribute.KeyRestrictionBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyRestrictionBehavior As KeyRestrictionBehavior" />
+      <MemberSignature Language="F#" Value="member this.KeyRestrictionBehavior : System.Data.KeyRestrictionBehavior with get, set" Usage="System.Data.Common.DBDataPermissionAttribute.KeyRestrictionBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -129,6 +139,8 @@
       <MemberSignature Language="C#" Value="public string KeyRestrictions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeyRestrictions" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DBDataPermissionAttribute.KeyRestrictions" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyRestrictions As String" />
+      <MemberSignature Language="F#" Value="member this.KeyRestrictions : string with get, set" Usage="System.Data.Common.DBDataPermissionAttribute.KeyRestrictions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -163,6 +175,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeConnectionString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeConnectionString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermissionAttribute.ShouldSerializeConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeConnectionString () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeConnectionString : unit -&gt; bool" Usage="dBDataPermissionAttribute.ShouldSerializeConnectionString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -193,6 +207,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeKeyRestrictions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeKeyRestrictions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermissionAttribute.ShouldSerializeKeyRestrictions" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeKeyRestrictions () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeKeyRestrictions : unit -&gt; bool" Usage="dBDataPermissionAttribute.ShouldSerializeKeyRestrictions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void TabControlEventHandler(object sender, TabControlEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TabControlEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabControlEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub TabControlEventHandler(sender As Object, e As TabControlEventArgs)" />
+  <TypeSignature Language="F#" Value="type TabControlEventHandler = delegate of obj * TabControlEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

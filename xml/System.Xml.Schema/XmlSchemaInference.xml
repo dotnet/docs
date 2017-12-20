@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class XmlSchemaInference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlSchemaInference extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaInference" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSchemaInference" />
+  <TypeSignature Language="F#" Value="type XmlSchemaInference = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +62,7 @@
       <MemberSignature Language="C#" Value="public XmlSchemaInference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaInference.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -80,10 +83,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InferSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Infers an XML Schema Definition Language (XSD) schema from the XML document specified.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InferSchema">
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaSet InferSchema (System.Xml.XmlReader instanceDocument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Schema.XmlSchemaSet InferSchema(class System.Xml.XmlReader instanceDocument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaInference.InferSchema(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InferSchema (instanceDocument As XmlReader) As XmlSchemaSet" />
+      <MemberSignature Language="F#" Value="member this.InferSchema : System.Xml.XmlReader -&gt; System.Xml.Schema.XmlSchemaSet" Usage="xmlSchemaInference.InferSchema instanceDocument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -149,6 +164,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaSet InferSchema (System.Xml.XmlReader instanceDocument, System.Xml.Schema.XmlSchemaSet schemas);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Schema.XmlSchemaSet InferSchema(class System.Xml.XmlReader instanceDocument, class System.Xml.Schema.XmlSchemaSet schemas) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaInference.InferSchema(System.Xml.XmlReader,System.Xml.Schema.XmlSchemaSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InferSchema (instanceDocument As XmlReader, schemas As XmlSchemaSet) As XmlSchemaSet" />
+      <MemberSignature Language="F#" Value="member this.InferSchema : System.Xml.XmlReader * System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.Schema.XmlSchemaSet" Usage="xmlSchemaInference.InferSchema (instanceDocument, schemas)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -228,6 +245,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaInference.InferenceOption Occurrence { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaInference/InferenceOption Occurrence" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaInference.Occurrence" />
+      <MemberSignature Language="VB.NET" Value="Public Property Occurrence As XmlSchemaInference.InferenceOption" />
+      <MemberSignature Language="F#" Value="member this.Occurrence : System.Xml.Schema.XmlSchemaInference.InferenceOption with get, set" Usage="System.Xml.Schema.XmlSchemaInference.Occurrence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -287,6 +306,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaInference.InferenceOption TypeInference { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaInference/InferenceOption TypeInference" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaInference.TypeInference" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeInference As XmlSchemaInference.InferenceOption" />
+      <MemberSignature Language="F#" Value="member this.TypeInference : System.Xml.Schema.XmlSchemaInference.InferenceOption with get, set" Usage="System.Xml.Schema.XmlSchemaInference.TypeInference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -340,15 +361,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="InferSchema">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Infers an XML Schema Definition Language (XSD) schema from the XML document specified.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ObjectListTitleAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectListTitleAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListTitleAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class ObjectListTitleAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ObjectListTitleAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public ObjectListTitleAttribute (string title);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListTitleAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (title As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.ObjectListTitleAttribute : string -&gt; System.Web.UI.MobileControls.ObjectListTitleAttribute" Usage="new System.Web.UI.MobileControls.ObjectListTitleAttribute title" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public virtual string Title { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListTitleAttribute.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string" Usage="System.Web.UI.MobileControls.ObjectListTitleAttribute.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

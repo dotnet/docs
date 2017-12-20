@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ValidationSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidationSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Validation.ValidationSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class ValidationSettings" />
+  <TypeSignature Language="F#" Value="type ValidationSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public ValidationSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.ValidationSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;Type,System.Collections.Generic.IList&lt;System.Activities.Validation.Constraint&gt;&gt; AdditionalConstraints { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;class System.Type, class System.Collections.Generic.IList`1&lt;class System.Activities.Validation.Constraint&gt;&gt; AdditionalConstraints" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.ValidationSettings.AdditionalConstraints" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdditionalConstraints As IDictionary(Of Type, IList(Of Constraint))" />
+      <MemberSignature Language="F#" Value="member this.AdditionalConstraints : System.Collections.Generic.IDictionary&lt;Type, System.Collections.Generic.IList&lt;System.Activities.Validation.Constraint&gt;&gt;" Usage="System.Activities.Validation.ValidationSettings.AdditionalConstraints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.CancellationToken CancellationToken { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.CancellationToken CancellationToken" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.ValidationSettings.CancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property CancellationToken As CancellationToken" />
+      <MemberSignature Language="F#" Value="member this.CancellationToken : System.Threading.CancellationToken with get, set" Usage="System.Activities.Validation.ValidationSettings.CancellationToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -70,6 +77,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.LocationReferenceEnvironment Environment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.LocationReferenceEnvironment Environment" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.ValidationSettings.Environment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Environment As LocationReferenceEnvironment" />
+      <MemberSignature Language="F#" Value="member this.Environment : System.Activities.LocationReferenceEnvironment with get, set" Usage="System.Activities.Validation.ValidationSettings.Environment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -88,6 +97,8 @@
       <MemberSignature Language="C#" Value="public bool OnlyUseAdditionalConstraints { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OnlyUseAdditionalConstraints" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.ValidationSettings.OnlyUseAdditionalConstraints" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnlyUseAdditionalConstraints As Boolean" />
+      <MemberSignature Language="F#" Value="member this.OnlyUseAdditionalConstraints : bool with get, set" Usage="System.Activities.Validation.ValidationSettings.OnlyUseAdditionalConstraints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -114,6 +125,8 @@
       <MemberSignature Language="C#" Value="public bool PrepareForRuntime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PrepareForRuntime" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.ValidationSettings.PrepareForRuntime" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrepareForRuntime As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PrepareForRuntime : bool with get, set" Usage="System.Activities.Validation.ValidationSettings.PrepareForRuntime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -133,6 +146,8 @@
       <MemberSignature Language="C#" Value="public bool SingleLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SingleLevel" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.ValidationSettings.SingleLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property SingleLevel As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SingleLevel : bool with get, set" Usage="System.Activities.Validation.ValidationSettings.SingleLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -152,6 +167,8 @@
       <MemberSignature Language="C#" Value="public bool SkipValidatingRootConfiguration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SkipValidatingRootConfiguration" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.ValidationSettings.SkipValidatingRootConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkipValidatingRootConfiguration As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SkipValidatingRootConfiguration : bool with get, set" Usage="System.Activities.Validation.ValidationSettings.SkipValidatingRootConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

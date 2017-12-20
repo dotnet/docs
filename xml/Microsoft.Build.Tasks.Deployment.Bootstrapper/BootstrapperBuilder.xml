@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class BootstrapperBuilder : Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BootstrapperBuilder extends System.Object implements class Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class BootstrapperBuilder&#xA;Implements IBootstrapperBuilder" />
+  <TypeSignature Language="F#" Value="type BootstrapperBuilder = class&#xA;    interface IBootstrapperBuilder" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +33,20 @@
     <forInternalUseOnly />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="BootstrapperBuilder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BootstrapperBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -51,6 +63,8 @@
       <MemberSignature Language="C#" Value="public BootstrapperBuilder (string visualStudioVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string visualStudioVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (visualStudioVersion As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder : string -&gt; Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder" Usage="new Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder visualStudioVersion" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -70,7 +84,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults Build (Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults Build(class Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.Build(Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Build (settings As BuildSettings) As BuildResults" />
+      <MemberSignature Language="F#" Value="abstract member Build : Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings -&gt; Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults&#xA;override this.Build : Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings -&gt; Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults" Usage="bootstrapperBuilder.Build settings" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder.Build(Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +112,7 @@
       <MemberSignature Language="C#" Value="public string[] GetOutputFolders (string[] productCodes, string culture, string fallbackCulture, Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation componentsLocation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetOutputFolders(string[] productCodes, string culture, string fallbackCulture, valuetype Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation componentsLocation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.GetOutputFolders(System.String[],System.String,System.String,Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation)" />
+      <MemberSignature Language="F#" Value="member this.GetOutputFolders : string[] * string * string * Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation -&gt; string[]" Usage="bootstrapperBuilder.GetOutputFolders (productCodes, culture, fallbackCulture, componentsLocation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -122,7 +142,12 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.Path" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder.Path</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -141,7 +166,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductCollection Products { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductCollection Products" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.Products" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Products As ProductCollection" />
+      <MemberSignature Language="F#" Value="member this.Products : Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductCollection" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.Products" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder.Products</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -156,14 +186,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see langword="BootstrapperBuilder" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

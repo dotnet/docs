@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class DelegatingConfigHost : System.Configuration.Internal.IInternalConfigHost" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DelegatingConfigHost extends System.Object implements class System.Configuration.Internal.IInternalConfigHost" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.DelegatingConfigHost" />
+  <TypeSignature Language="VB.NET" Value="Public Class DelegatingConfigHost&#xA;Implements IInternalConfigHost" />
+  <TypeSignature Language="F#" Value="type DelegatingConfigHost = class&#xA;    interface IInternalConfigHost" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,7 @@
       <MemberSignature Language="C#" Value="protected DelegatingConfigHost ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="protected System.Configuration.Internal.IInternalConfigurationBuilderHost ConfigBuilderHost { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.Internal.IInternalConfigurationBuilderHost ConfigBuilderHost" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.DelegatingConfigHost.ConfigBuilderHost" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ConfigBuilderHost As IInternalConfigurationBuilderHost" />
+      <MemberSignature Language="F#" Value="member this.ConfigBuilderHost : System.Configuration.Internal.IInternalConfigurationBuilderHost" Usage="System.Configuration.Internal.DelegatingConfigHost.ConfigBuilderHost" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -67,7 +72,12 @@
       <MemberSignature Language="C#" Value="public virtual object CreateConfigurationContext (string configPath, string locationSubPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateConfigurationContext(string configPath, string locationSubPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.CreateConfigurationContext(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateConfigurationContext (configPath As String, locationSubPath As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member CreateConfigurationContext : string * string -&gt; obj&#xA;override this.CreateConfigurationContext : string * string -&gt; obj" Usage="delegatingConfigHost.CreateConfigurationContext (configPath, locationSubPath)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.CreateConfigurationContext(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,7 +106,12 @@
       <MemberSignature Language="C#" Value="public virtual object CreateDeprecatedConfigContext (string configPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateDeprecatedConfigContext(string configPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.CreateDeprecatedConfigContext(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDeprecatedConfigContext (configPath As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member CreateDeprecatedConfigContext : string -&gt; obj&#xA;override this.CreateDeprecatedConfigContext : string -&gt; obj" Usage="delegatingConfigHost.CreateDeprecatedConfigContext configPath" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.CreateDeprecatedConfigContext(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -123,7 +138,12 @@
       <MemberSignature Language="C#" Value="public virtual string DecryptSection (string encryptedXml, System.Configuration.ProtectedConfigurationProvider protectionProvider, System.Configuration.ProtectedConfigurationSection protectedSection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string DecryptSection(string encryptedXml, class System.Configuration.ProtectedConfigurationProvider protectionProvider, class System.Configuration.ProtectedConfigurationSection protectedSection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.DecryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DecryptSection (encryptedXml As String, protectionProvider As ProtectedConfigurationProvider, protectedSection As ProtectedConfigurationSection) As String" />
+      <MemberSignature Language="F#" Value="abstract member DecryptSection : string * System.Configuration.ProtectedConfigurationProvider * System.Configuration.ProtectedConfigurationSection -&gt; string&#xA;override this.DecryptSection : string * System.Configuration.ProtectedConfigurationProvider * System.Configuration.ProtectedConfigurationSection -&gt; string" Usage="delegatingConfigHost.DecryptSection (encryptedXml, protectionProvider, protectedConfigSection)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.DecryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -154,7 +174,12 @@
       <MemberSignature Language="C#" Value="public virtual void DeleteStream (string streamName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteStream(string streamName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.DeleteStream(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DeleteStream (streamName As String)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteStream : string -&gt; unit&#xA;override this.DeleteStream : string -&gt; unit" Usage="delegatingConfigHost.DeleteStream streamName" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.DeleteStream(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -180,7 +205,12 @@
       <MemberSignature Language="C#" Value="public virtual string EncryptSection (string encryptedXml, System.Configuration.ProtectedConfigurationProvider protectionProvider, System.Configuration.ProtectedConfigurationSection protectedSection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string EncryptSection(string encryptedXml, class System.Configuration.ProtectedConfigurationProvider protectionProvider, class System.Configuration.ProtectedConfigurationSection protectedSection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.EncryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function EncryptSection (encryptedXml As String, protectionProvider As ProtectedConfigurationProvider, protectedSection As ProtectedConfigurationSection) As String" />
+      <MemberSignature Language="F#" Value="abstract member EncryptSection : string * System.Configuration.ProtectedConfigurationProvider * System.Configuration.ProtectedConfigurationSection -&gt; string&#xA;override this.EncryptSection : string * System.Configuration.ProtectedConfigurationProvider * System.Configuration.ProtectedConfigurationSection -&gt; string" Usage="delegatingConfigHost.EncryptSection (clearTextXml, protectionProvider, protectedConfigSection)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.EncryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -211,7 +241,12 @@
       <MemberSignature Language="C#" Value="public virtual string GetConfigPathFromLocationSubPath (string configPath, string locatinSubPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetConfigPathFromLocationSubPath(string configPath, string locatinSubPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.GetConfigPathFromLocationSubPath(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConfigPathFromLocationSubPath (configPath As String, locatinSubPath As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigPathFromLocationSubPath : string * string -&gt; string&#xA;override this.GetConfigPathFromLocationSubPath : string * string -&gt; string" Usage="delegatingConfigHost.GetConfigPathFromLocationSubPath (configPath, locationSubPath)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.GetConfigPathFromLocationSubPath(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -240,7 +275,12 @@
       <MemberSignature Language="C#" Value="public virtual Type GetConfigType (string typeName, bool throwOnError);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetConfigType(string typeName, bool throwOnError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.GetConfigType(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConfigType (typeName As String, throwOnError As Boolean) As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigType : string * bool -&gt; Type&#xA;override this.GetConfigType : string * bool -&gt; Type" Usage="delegatingConfigHost.GetConfigType (typeName, throwOnError)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.GetConfigType(System.String,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -270,7 +310,12 @@
       <MemberSignature Language="C#" Value="public virtual string GetConfigTypeName (Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetConfigTypeName(class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.GetConfigTypeName(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConfigTypeName (t As Type) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigTypeName : Type -&gt; string&#xA;override this.GetConfigTypeName : Type -&gt; string" Usage="delegatingConfigHost.GetConfigTypeName t" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.GetConfigTypeName(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -297,7 +342,12 @@
       <MemberSignature Language="C#" Value="public virtual void GetRestrictedPermissions (System.Configuration.Internal.IInternalConfigRecord configRecord, out System.Security.PermissionSet permissionSet, out bool isHostReady);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetRestrictedPermissions(class System.Configuration.Internal.IInternalConfigRecord configRecord, [out] class System.Security.PermissionSet&amp; permissionSet, [out] bool&amp; isHostReady) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.GetRestrictedPermissions(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet@,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetRestrictedPermissions (configRecord As IInternalConfigRecord, ByRef permissionSet As PermissionSet, ByRef isHostReady As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member GetRestrictedPermissions : System.Configuration.Internal.IInternalConfigRecord *  *  -&gt; unit&#xA;override this.GetRestrictedPermissions : System.Configuration.Internal.IInternalConfigRecord *  *  -&gt; unit" Usage="delegatingConfigHost.GetRestrictedPermissions (configRecord, permissionSet, isHostReady)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.GetRestrictedPermissions(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet@,System.Boolean@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -324,7 +374,12 @@
       <MemberSignature Language="C#" Value="public virtual string GetStreamName (string configPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetStreamName(string configPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.GetStreamName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStreamName (configPath As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamName : string -&gt; string&#xA;override this.GetStreamName : string -&gt; string" Usage="delegatingConfigHost.GetStreamName configPath" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.GetStreamName(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -351,7 +406,12 @@
       <MemberSignature Language="C#" Value="public virtual string GetStreamNameForConfigSource (string streamName, string configSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetStreamNameForConfigSource(string streamName, string configSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.GetStreamNameForConfigSource(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStreamNameForConfigSource (streamName As String, configSource As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamNameForConfigSource : string * string -&gt; string&#xA;override this.GetStreamNameForConfigSource : string * string -&gt; string" Usage="delegatingConfigHost.GetStreamNameForConfigSource (streamName, configSource)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.GetStreamNameForConfigSource(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -380,7 +440,12 @@
       <MemberSignature Language="C#" Value="public virtual object GetStreamVersion (string streamName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetStreamVersion(string streamName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.GetStreamVersion(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStreamVersion (streamName As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamVersion : string -&gt; obj&#xA;override this.GetStreamVersion : string -&gt; obj" Usage="delegatingConfigHost.GetStreamVersion streamName" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.GetStreamVersion(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -407,6 +472,8 @@
       <MemberSignature Language="C#" Value="protected System.Configuration.Internal.IInternalConfigHost Host { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.Internal.IInternalConfigHost Host" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.DelegatingConfigHost.Host" />
+      <MemberSignature Language="VB.NET" Value="Protected Property Host As IInternalConfigHost" />
+      <MemberSignature Language="F#" Value="member this.Host : System.Configuration.Internal.IInternalConfigHost with get, set" Usage="System.Configuration.Internal.DelegatingConfigHost.Host" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -430,7 +497,12 @@
       <MemberSignature Language="C#" Value="public virtual IDisposable Impersonate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IDisposable Impersonate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.Impersonate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Impersonate () As IDisposable" />
+      <MemberSignature Language="F#" Value="abstract member Impersonate : unit -&gt; IDisposable&#xA;override this.Impersonate : unit -&gt; IDisposable" Usage="delegatingConfigHost.Impersonate " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.Impersonate</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -454,7 +526,12 @@
       <MemberSignature Language="C#" Value="public virtual void Init (System.Configuration.Internal.IInternalConfigRoot root, params object[] hostInitParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Init(class System.Configuration.Internal.IInternalConfigRoot root, object[] hostInitParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.Init(System.Configuration.Internal.IInternalConfigRoot,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Init (root As IInternalConfigRoot, ParamArray hostInitParams As Object())" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit&#xA;override this.Init : System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit" Usage="delegatingConfigHost.Init (configRoot, hostInitParams)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.Init(System.Configuration.Internal.IInternalConfigRoot,System.Object[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -488,7 +565,12 @@
       <MemberSignature Language="C#" Value="public virtual void InitForConfiguration (ref string locationSubPath, out string configPath, out string locationConfigPath, System.Configuration.Internal.IInternalConfigRoot root, params object[] hostInitConfigurationParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitForConfiguration(string&amp; locationSubPath, [out] string&amp; configPath, [out] string&amp; locationConfigPath, class System.Configuration.Internal.IInternalConfigRoot root, object[] hostInitConfigurationParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.InitForConfiguration(System.String@,System.String@,System.String@,System.Configuration.Internal.IInternalConfigRoot,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub InitForConfiguration (ByRef locationSubPath As String, ByRef configPath As String, ByRef locationConfigPath As String, root As IInternalConfigRoot, ParamArray hostInitConfigurationParams As Object())" />
+      <MemberSignature Language="F#" Value="abstract member InitForConfiguration :  *  *  * System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit&#xA;override this.InitForConfiguration :  *  *  * System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit" Usage="delegatingConfigHost.InitForConfiguration (locationSubPath, configPath, locationConfigPath, configRoot, hostInitConfigurationParams)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.InitForConfiguration(System.String@,System.String@,System.String@,System.Configuration.Internal.IInternalConfigRoot,System.Object[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -528,7 +610,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsAboveApplication (string configPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsAboveApplication(string configPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.IsAboveApplication(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsAboveApplication (configPath As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsAboveApplication : string -&gt; bool&#xA;override this.IsAboveApplication : string -&gt; bool" Usage="delegatingConfigHost.IsAboveApplication configPath" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.IsAboveApplication(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -556,7 +643,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsConfigRecordRequired (string configPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsConfigRecordRequired(string configPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.IsConfigRecordRequired(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsConfigRecordRequired (configPath As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsConfigRecordRequired : string -&gt; bool&#xA;override this.IsConfigRecordRequired : string -&gt; bool" Usage="delegatingConfigHost.IsConfigRecordRequired configPath" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.IsConfigRecordRequired(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -584,7 +676,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsDefinitionAllowed (string configPath, System.Configuration.ConfigurationAllowDefinition allowDefinition, System.Configuration.ConfigurationAllowExeDefinition allowExeDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsDefinitionAllowed(string configPath, valuetype System.Configuration.ConfigurationAllowDefinition allowDefinition, valuetype System.Configuration.ConfigurationAllowExeDefinition allowExeDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.IsDefinitionAllowed(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsDefinitionAllowed (configPath As String, allowDefinition As ConfigurationAllowDefinition, allowExeDefinition As ConfigurationAllowExeDefinition) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsDefinitionAllowed : string * System.Configuration.ConfigurationAllowDefinition * System.Configuration.ConfigurationAllowExeDefinition -&gt; bool&#xA;override this.IsDefinitionAllowed : string * System.Configuration.ConfigurationAllowDefinition * System.Configuration.ConfigurationAllowExeDefinition -&gt; bool" Usage="delegatingConfigHost.IsDefinitionAllowed (configPath, allowDefinition, allowExeDefinition)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.IsDefinitionAllowed(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -616,7 +713,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsFile (string streamName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsFile(string streamName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.IsFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsFile (streamName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsFile : string -&gt; bool&#xA;override this.IsFile : string -&gt; bool" Usage="delegatingConfigHost.IsFile streamName" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.IsFile(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -644,7 +746,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsFullTrustSectionWithoutAptcaAllowed (System.Configuration.Internal.IInternalConfigRecord configRecord);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsFullTrustSectionWithoutAptcaAllowed(class System.Configuration.Internal.IInternalConfigRecord configRecord) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.IsFullTrustSectionWithoutAptcaAllowed(System.Configuration.Internal.IInternalConfigRecord)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsFullTrustSectionWithoutAptcaAllowed (configRecord As IInternalConfigRecord) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsFullTrustSectionWithoutAptcaAllowed : System.Configuration.Internal.IInternalConfigRecord -&gt; bool&#xA;override this.IsFullTrustSectionWithoutAptcaAllowed : System.Configuration.Internal.IInternalConfigRecord -&gt; bool" Usage="delegatingConfigHost.IsFullTrustSectionWithoutAptcaAllowed configRecord" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.IsFullTrustSectionWithoutAptcaAllowed(System.Configuration.Internal.IInternalConfigRecord)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -672,7 +779,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsInitDelayed (System.Configuration.Internal.IInternalConfigRecord configRecord);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsInitDelayed(class System.Configuration.Internal.IInternalConfigRecord configRecord) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.IsInitDelayed(System.Configuration.Internal.IInternalConfigRecord)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsInitDelayed (configRecord As IInternalConfigRecord) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsInitDelayed : System.Configuration.Internal.IInternalConfigRecord -&gt; bool&#xA;override this.IsInitDelayed : System.Configuration.Internal.IInternalConfigRecord -&gt; bool" Usage="delegatingConfigHost.IsInitDelayed configRecord" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.IsInitDelayed(System.Configuration.Internal.IInternalConfigRecord)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -700,7 +812,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsLocationApplicable (string configPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLocationApplicable(string configPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.IsLocationApplicable(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsLocationApplicable (configPath As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsLocationApplicable : string -&gt; bool&#xA;override this.IsLocationApplicable : string -&gt; bool" Usage="delegatingConfigHost.IsLocationApplicable configPath" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.IsLocationApplicable(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -728,7 +845,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsRemote { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRemote" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.DelegatingConfigHost.IsRemote" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsRemote As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRemote : bool" Usage="System.Configuration.Internal.DelegatingConfigHost.IsRemote" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Configuration.Internal.IInternalConfigHost.IsRemote</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -752,7 +874,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsSecondaryRoot (string configPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSecondaryRoot(string configPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.IsSecondaryRoot(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsSecondaryRoot (configPath As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsSecondaryRoot : string -&gt; bool&#xA;override this.IsSecondaryRoot : string -&gt; bool" Usage="delegatingConfigHost.IsSecondaryRoot configPath" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.IsSecondaryRoot(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -780,7 +907,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsTrustedConfigPath (string configPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsTrustedConfigPath(string configPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.IsTrustedConfigPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsTrustedConfigPath (configPath As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsTrustedConfigPath : string -&gt; bool&#xA;override this.IsTrustedConfigPath : string -&gt; bool" Usage="delegatingConfigHost.IsTrustedConfigPath configPath" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.IsTrustedConfigPath(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -804,11 +936,25 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenStreamForRead">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens and returns a <see cref="T:System.IO.Stream" /> object to read a configuration file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenStreamForRead">
       <MemberSignature Language="C#" Value="public virtual System.IO.Stream OpenStreamForRead (string streamName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream OpenStreamForRead(string streamName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.OpenStreamForRead(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function OpenStreamForRead (streamName As String) As Stream" />
+      <MemberSignature Language="F#" Value="abstract member OpenStreamForRead : string -&gt; System.IO.Stream&#xA;override this.OpenStreamForRead : string -&gt; System.IO.Stream" Usage="delegatingConfigHost.OpenStreamForRead streamName" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForRead(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -835,7 +981,12 @@
       <MemberSignature Language="C#" Value="public virtual System.IO.Stream OpenStreamForRead (string streamName, bool assertPermissions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream OpenStreamForRead(string streamName, bool assertPermissions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.OpenStreamForRead(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function OpenStreamForRead (streamName As String, assertPermissions As Boolean) As Stream" />
+      <MemberSignature Language="F#" Value="abstract member OpenStreamForRead : string * bool -&gt; System.IO.Stream&#xA;override this.OpenStreamForRead : string * bool -&gt; System.IO.Stream" Usage="delegatingConfigHost.OpenStreamForRead (streamName, assertPermissions)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForRead(System.String,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -861,11 +1012,25 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenStreamForWrite">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens and returns a <see cref="T:System.IO.Stream" /> object for writing to a configuration file. Allows a <see cref="T:System.IO.Stream" /> object to be designated as a template for copying file attributes.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenStreamForWrite">
       <MemberSignature Language="C#" Value="public virtual System.IO.Stream OpenStreamForWrite (string streamName, string templateStreamName, ref object writeContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream OpenStreamForWrite(string streamName, string templateStreamName, object&amp; writeContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.OpenStreamForWrite(System.String,System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function OpenStreamForWrite (streamName As String, templateStreamName As String, ByRef writeContext As Object) As Stream" />
+      <MemberSignature Language="F#" Value="abstract member OpenStreamForWrite : string * string *  -&gt; System.IO.Stream&#xA;override this.OpenStreamForWrite : string * string *  -&gt; System.IO.Stream" Usage="delegatingConfigHost.OpenStreamForWrite (streamName, templateStreamName, writeContext)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForWrite(System.String,System.String,System.Object@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -896,7 +1061,12 @@
       <MemberSignature Language="C#" Value="public virtual System.IO.Stream OpenStreamForWrite (string streamName, string templateStreamName, ref object writeContext, bool assertPermissions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream OpenStreamForWrite(string streamName, string templateStreamName, object&amp; writeContext, bool assertPermissions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.OpenStreamForWrite(System.String,System.String,System.Object@,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function OpenStreamForWrite (streamName As String, templateStreamName As String, ByRef writeContext As Object, assertPermissions As Boolean) As Stream" />
+      <MemberSignature Language="F#" Value="abstract member OpenStreamForWrite : string * string *  * bool -&gt; System.IO.Stream&#xA;override this.OpenStreamForWrite : string * string *  * bool -&gt; System.IO.Stream" Usage="delegatingConfigHost.OpenStreamForWrite (streamName, templateStreamName, writeContext, assertPermissions)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForWrite(System.String,System.String,System.Object@,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -930,7 +1100,12 @@
       <MemberSignature Language="C#" Value="public virtual bool PrefetchAll (string configPath, string streamName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool PrefetchAll(string configPath, string streamName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.PrefetchAll(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PrefetchAll (configPath As String, streamName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member PrefetchAll : string * string -&gt; bool&#xA;override this.PrefetchAll : string * string -&gt; bool" Usage="delegatingConfigHost.PrefetchAll (configPath, streamName)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.PrefetchAll(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -960,7 +1135,12 @@
       <MemberSignature Language="C#" Value="public virtual bool PrefetchSection (string sectionGroupName, string sectionName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool PrefetchSection(string sectionGroupName, string sectionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.PrefetchSection(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PrefetchSection (sectionGroupName As String, sectionName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member PrefetchSection : string * string -&gt; bool&#xA;override this.PrefetchSection : string * string -&gt; bool" Usage="delegatingConfigHost.PrefetchSection (sectionGroupName, sectionName)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.PrefetchSection(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -990,7 +1170,12 @@
       <MemberSignature Language="C#" Value="public virtual System.Configuration.ConfigurationSection ProcessConfigurationSection (System.Configuration.ConfigurationSection configSection, System.Configuration.ConfigurationBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Configuration.ConfigurationSection ProcessConfigurationSection(class System.Configuration.ConfigurationSection configSection, class System.Configuration.ConfigurationBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.ProcessConfigurationSection(System.Configuration.ConfigurationSection,System.Configuration.ConfigurationBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ProcessConfigurationSection (configSection As ConfigurationSection, builder As ConfigurationBuilder) As ConfigurationSection" />
+      <MemberSignature Language="F#" Value="abstract member ProcessConfigurationSection : System.Configuration.ConfigurationSection * System.Configuration.ConfigurationBuilder -&gt; System.Configuration.ConfigurationSection&#xA;override this.ProcessConfigurationSection : System.Configuration.ConfigurationSection * System.Configuration.ConfigurationBuilder -&gt; System.Configuration.ConfigurationSection" Usage="delegatingConfigHost.ProcessConfigurationSection (configSection, builder)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigurationBuilderHost.ProcessConfigurationSection(System.Configuration.ConfigurationSection,System.Configuration.ConfigurationBuilder)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1015,7 +1200,12 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode ProcessRawXml (System.Xml.XmlNode rawXml, System.Configuration.ConfigurationBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode ProcessRawXml(class System.Xml.XmlNode rawXml, class System.Configuration.ConfigurationBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.ProcessRawXml(System.Xml.XmlNode,System.Configuration.ConfigurationBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ProcessRawXml (rawXml As XmlNode, builder As ConfigurationBuilder) As XmlNode" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRawXml : System.Xml.XmlNode * System.Configuration.ConfigurationBuilder -&gt; System.Xml.XmlNode&#xA;override this.ProcessRawXml : System.Xml.XmlNode * System.Configuration.ConfigurationBuilder -&gt; System.Xml.XmlNode" Usage="delegatingConfigHost.ProcessRawXml (rawXml, builder)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigurationBuilderHost.ProcessRawXml(System.Xml.XmlNode,System.Configuration.ConfigurationBuilder)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1040,7 +1230,12 @@
       <MemberSignature Language="C#" Value="public virtual void RequireCompleteInit (System.Configuration.Internal.IInternalConfigRecord configRecord);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RequireCompleteInit(class System.Configuration.Internal.IInternalConfigRecord configRecord) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.RequireCompleteInit(System.Configuration.Internal.IInternalConfigRecord)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RequireCompleteInit (configRecord As IInternalConfigRecord)" />
+      <MemberSignature Language="F#" Value="abstract member RequireCompleteInit : System.Configuration.Internal.IInternalConfigRecord -&gt; unit&#xA;override this.RequireCompleteInit : System.Configuration.Internal.IInternalConfigRecord -&gt; unit" Usage="delegatingConfigHost.RequireCompleteInit configRecord" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.RequireCompleteInit(System.Configuration.Internal.IInternalConfigRecord)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1066,7 +1261,12 @@
       <MemberSignature Language="C#" Value="public virtual object StartMonitoringStreamForChanges (string streamName, System.Configuration.Internal.StreamChangeCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object StartMonitoringStreamForChanges(string streamName, class System.Configuration.Internal.StreamChangeCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.StartMonitoringStreamForChanges(System.String,System.Configuration.Internal.StreamChangeCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartMonitoringStreamForChanges (streamName As String, callback As StreamChangeCallback) As Object" />
+      <MemberSignature Language="F#" Value="abstract member StartMonitoringStreamForChanges : string * System.Configuration.Internal.StreamChangeCallback -&gt; obj&#xA;override this.StartMonitoringStreamForChanges : string * System.Configuration.Internal.StreamChangeCallback -&gt; obj" Usage="delegatingConfigHost.StartMonitoringStreamForChanges (streamName, callback)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.StartMonitoringStreamForChanges(System.String,System.Configuration.Internal.StreamChangeCallback)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1095,7 +1295,12 @@
       <MemberSignature Language="C#" Value="public virtual void StopMonitoringStreamForChanges (string streamName, System.Configuration.Internal.StreamChangeCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopMonitoringStreamForChanges(string streamName, class System.Configuration.Internal.StreamChangeCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.StopMonitoringStreamForChanges(System.String,System.Configuration.Internal.StreamChangeCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub StopMonitoringStreamForChanges (streamName As String, callback As StreamChangeCallback)" />
+      <MemberSignature Language="F#" Value="abstract member StopMonitoringStreamForChanges : string * System.Configuration.Internal.StreamChangeCallback -&gt; unit&#xA;override this.StopMonitoringStreamForChanges : string * System.Configuration.Internal.StreamChangeCallback -&gt; unit" Usage="delegatingConfigHost.StopMonitoringStreamForChanges (streamName, callback)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.StopMonitoringStreamForChanges(System.String,System.Configuration.Internal.StreamChangeCallback)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1123,7 +1328,12 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsChangeNotifications { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsChangeNotifications" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.DelegatingConfigHost.SupportsChangeNotifications" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsChangeNotifications As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsChangeNotifications : bool" Usage="System.Configuration.Internal.DelegatingConfigHost.SupportsChangeNotifications" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Configuration.Internal.IInternalConfigHost.SupportsChangeNotifications</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1147,7 +1357,12 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsLocation" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.DelegatingConfigHost.SupportsLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsLocation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsLocation : bool" Usage="System.Configuration.Internal.DelegatingConfigHost.SupportsLocation" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Configuration.Internal.IInternalConfigHost.SupportsLocation</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1171,7 +1386,12 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsPath" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.DelegatingConfigHost.SupportsPath" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsPath As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsPath : bool" Usage="System.Configuration.Internal.DelegatingConfigHost.SupportsPath" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Configuration.Internal.IInternalConfigHost.SupportsPath</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1195,7 +1415,12 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsRefresh { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsRefresh" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.DelegatingConfigHost.SupportsRefresh" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsRefresh As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsRefresh : bool" Usage="System.Configuration.Internal.DelegatingConfigHost.SupportsRefresh" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Configuration.Internal.IInternalConfigHost.SupportsRefresh</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1219,7 +1444,12 @@
       <MemberSignature Language="C#" Value="public virtual void VerifyDefinitionAllowed (string configPath, System.Configuration.ConfigurationAllowDefinition allowDefinition, System.Configuration.ConfigurationAllowExeDefinition allowExeDefinition, System.Configuration.Internal.IConfigErrorInfo errorInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void VerifyDefinitionAllowed(string configPath, valuetype System.Configuration.ConfigurationAllowDefinition allowDefinition, valuetype System.Configuration.ConfigurationAllowExeDefinition allowExeDefinition, class System.Configuration.Internal.IConfigErrorInfo errorInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.VerifyDefinitionAllowed(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition,System.Configuration.Internal.IConfigErrorInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub VerifyDefinitionAllowed (configPath As String, allowDefinition As ConfigurationAllowDefinition, allowExeDefinition As ConfigurationAllowExeDefinition, errorInfo As IConfigErrorInfo)" />
+      <MemberSignature Language="F#" Value="abstract member VerifyDefinitionAllowed : string * System.Configuration.ConfigurationAllowDefinition * System.Configuration.ConfigurationAllowExeDefinition * System.Configuration.Internal.IConfigErrorInfo -&gt; unit&#xA;override this.VerifyDefinitionAllowed : string * System.Configuration.ConfigurationAllowDefinition * System.Configuration.ConfigurationAllowExeDefinition * System.Configuration.Internal.IConfigErrorInfo -&gt; unit" Usage="delegatingConfigHost.VerifyDefinitionAllowed (configPath, allowDefinition, allowExeDefinition, errorInfo)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.VerifyDefinitionAllowed(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition,System.Configuration.Internal.IConfigErrorInfo)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1247,11 +1477,25 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteCompleted">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates that all writing to the configuration file has completed and specifies whether permissions should be asserted.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteCompleted">
       <MemberSignature Language="C#" Value="public virtual void WriteCompleted (string streamName, bool success, object writeContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteCompleted(string streamName, bool success, object writeContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.WriteCompleted(System.String,System.Boolean,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteCompleted (streamName As String, success As Boolean, writeContext As Object)" />
+      <MemberSignature Language="F#" Value="abstract member WriteCompleted : string * bool * obj -&gt; unit&#xA;override this.WriteCompleted : string * bool * obj -&gt; unit" Usage="delegatingConfigHost.WriteCompleted (streamName, success, writeContext)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.WriteCompleted(System.String,System.Boolean,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1282,7 +1526,12 @@
       <MemberSignature Language="C#" Value="public virtual void WriteCompleted (string streamName, bool success, object writeContext, bool assertPermissions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteCompleted(string streamName, bool success, object writeContext, bool assertPermissions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.DelegatingConfigHost.WriteCompleted(System.String,System.Boolean,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteCompleted (streamName As String, success As Boolean, writeContext As Object, assertPermissions As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member WriteCompleted : string * bool * obj * bool -&gt; unit&#xA;override this.WriteCompleted : string * bool * obj * bool -&gt; unit" Usage="delegatingConfigHost.WriteCompleted (streamName, success, writeContext, assertPermissions)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.WriteCompleted(System.String,System.Boolean,System.Object,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1312,32 +1561,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteCompleted">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates that all writing to the configuration file has completed and specifies whether permissions should be asserted.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="OpenStreamForWrite">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens and returns a <see cref="T:System.IO.Stream" /> object for writing to a configuration file. Allows a <see cref="T:System.IO.Stream" /> object to be designated as a template for copying file attributes.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="OpenStreamForRead">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens and returns a <see cref="T:System.IO.Stream" /> object to read a configuration file.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

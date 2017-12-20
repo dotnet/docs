@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public enum HorizontalAlignment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HorizontalAlignment extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.HorizontalAlignment" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HorizontalAlignment" />
+  <TypeSignature Language="F#" Value="type HorizontalAlignment = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="Center" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.HorizontalAlignment Center = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.HorizontalAlignment.Center" />
+      <MemberSignature Language="VB.NET" Value="Center" />
+      <MemberSignature Language="F#" Value="Center = 1" Usage="System.Windows.HorizontalAlignment.Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.HorizontalAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An element aligned to the center of the layout slot for the parent element.</summary>
       </Docs>
@@ -48,6 +53,8 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.HorizontalAlignment Left = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.HorizontalAlignment.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 0" Usage="System.Windows.HorizontalAlignment.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.HorizontalAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An element aligned to the left of the layout slot for the parent element.</summary>
       </Docs>
@@ -64,6 +72,8 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.HorizontalAlignment Right = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.HorizontalAlignment.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 2" Usage="System.Windows.HorizontalAlignment.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.HorizontalAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>An element aligned to the right of the layout slot for the parent element.</summary>
       </Docs>
@@ -80,6 +91,8 @@
       <MemberSignature Language="C#" Value="Stretch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.HorizontalAlignment Stretch = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.HorizontalAlignment.Stretch" />
+      <MemberSignature Language="VB.NET" Value="Stretch" />
+      <MemberSignature Language="F#" Value="Stretch = 3" Usage="System.Windows.HorizontalAlignment.Stretch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.HorizontalAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>An element stretched to fill the entire layout slot of the parent element.</summary>
       </Docs>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void UploadDataCompletedEventHandler(object sender, UploadDataCompletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UploadDataCompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.UploadDataCompletedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub UploadDataCompletedEventHandler(sender As Object, e As UploadDataCompletedEventArgs)" />
+  <TypeSignature Language="F#" Value="type UploadDataCompletedEventHandler = delegate of obj * UploadDataCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

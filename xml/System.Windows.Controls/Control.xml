@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class Control : System.Windows.FrameworkElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Control extends System.Windows.FrameworkElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Control" />
+  <TypeSignature Language="VB.NET" Value="Public Class Control&#xA;Inherits FrameworkElement" />
+  <TypeSignature Language="F#" Value="type Control = class&#xA;    inherit FrameworkElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +58,7 @@
       <MemberSignature Language="C#" Value="public Control ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Control.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +74,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeBounds);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeBounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Control.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeBounds As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="control.ArrangeOverride arrangeBounds" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -100,6 +105,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Background { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Background" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.Background" />
+      <MemberSignature Language="VB.NET" Value="Public Property Background As Brush" />
+      <MemberSignature Language="F#" Value="member this.Background : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Control.Background" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -157,6 +164,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BackgroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BackgroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.BackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.BackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -174,6 +183,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush BorderBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush BorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.BorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.BorderBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Control.BorderBrush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -225,6 +236,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BorderBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BorderBrushProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.BorderBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BorderBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.BorderBrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -242,6 +255,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Thickness BorderThickness { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness BorderThickness" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.BorderThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderThickness As Thickness" />
+      <MemberSignature Language="F#" Value="member this.BorderThickness : System.Windows.Thickness with get, set" Usage="System.Windows.Controls.Control.BorderThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -293,6 +308,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BorderThicknessProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BorderThicknessProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.BorderThicknessProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BorderThicknessProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BorderThicknessProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.BorderThicknessProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -310,6 +327,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.FontFamily FontFamily { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.FontFamily FontFamily" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.FontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.FontFamily : System.Windows.Media.FontFamily with get, set" Usage="System.Windows.Controls.Control.FontFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -364,6 +383,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontFamilyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontFamilyProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.FontFamilyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontFamilyProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FontFamilyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.FontFamilyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -381,6 +402,8 @@
       <MemberSignature Language="C#" Value="public double FontSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 FontSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.FontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.FontSize : double with get, set" Usage="System.Windows.Controls.Control.FontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -469,6 +492,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontSizeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontSizeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.FontSizeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontSizeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FontSizeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.FontSizeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -486,6 +511,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.FontStretch FontStretch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStretch FontStretch" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.FontStretch" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontStretch As FontStretch" />
+      <MemberSignature Language="F#" Value="member this.FontStretch : System.Windows.FontStretch with get, set" Usage="System.Windows.Controls.Control.FontStretch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -537,6 +564,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontStretchProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontStretchProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.FontStretchProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontStretchProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FontStretchProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.FontStretchProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -554,6 +583,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.FontStyle FontStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStyle FontStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.FontStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontStyle As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.FontStyle : System.Windows.FontStyle with get, set" Usage="System.Windows.Controls.Control.FontStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -605,6 +636,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontStyleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.FontStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontStyleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FontStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.FontStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -622,6 +655,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.FontWeight FontWeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontWeight FontWeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.FontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.FontWeight : System.Windows.FontWeight with get, set" Usage="System.Windows.Controls.Control.FontWeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -673,6 +708,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontWeightProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontWeightProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.FontWeightProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontWeightProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FontWeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.FontWeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -690,6 +727,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Foreground { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Foreground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.Foreground" />
+      <MemberSignature Language="VB.NET" Value="Public Property Foreground As Brush" />
+      <MemberSignature Language="F#" Value="member this.Foreground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Control.Foreground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -741,6 +780,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ForegroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ForegroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.ForegroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForegroundProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ForegroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.ForegroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -755,9 +796,11 @@
       </Docs>
     </Member>
     <Member MemberName="HandlesScrolling">
-      <MemberSignature Language="C#" Value="protected virtual bool HandlesScrolling { get; }" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool HandlesScrolling { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HandlesScrolling" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.HandlesScrolling" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property HandlesScrolling As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HandlesScrolling : bool" Usage="System.Windows.Controls.Control.HandlesScrolling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -777,6 +820,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.HorizontalAlignment HorizontalContentAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.HorizontalAlignment HorizontalContentAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.HorizontalContentAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property HorizontalContentAlignment As HorizontalAlignment" />
+      <MemberSignature Language="F#" Value="member this.HorizontalContentAlignment : System.Windows.HorizontalAlignment with get, set" Usage="System.Windows.Controls.Control.HorizontalContentAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -830,6 +875,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HorizontalContentAlignmentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HorizontalContentAlignmentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.HorizontalContentAlignmentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontalContentAlignmentProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HorizontalContentAlignmentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.HorizontalContentAlignmentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -847,6 +894,8 @@
       <MemberSignature Language="C#" Value="public bool IsTabStop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTabStop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.IsTabStop" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsTabStop As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTabStop : bool with get, set" Usage="System.Windows.Controls.Control.IsTabStop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -899,6 +948,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsTabStopProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsTabStopProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.IsTabStopProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTabStopProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTabStopProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.IsTabStopProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -916,6 +967,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Control.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="control.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -945,6 +998,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseButtonEventHandler MouseDoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseButtonEventHandler MouseDoubleClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Control.MouseDoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDoubleClick As MouseButtonEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseDoubleClick : System.Windows.Input.MouseButtonEventHandler " Usage="member this.MouseDoubleClick : System.Windows.Input.MouseButtonEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -994,6 +1049,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent MouseDoubleClickEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent MouseDoubleClickEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.MouseDoubleClickEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseDoubleClickEvent As RoutedEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseDoubleClickEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.Control.MouseDoubleClickEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1011,6 +1068,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMouseDoubleClick (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMouseDoubleClick(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Control.OnMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMouseDoubleClick (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseDoubleClick : System.Windows.Input.MouseButtonEventArgs -&gt; unit&#xA;override this.OnMouseDoubleClick : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="control.OnMouseDoubleClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1042,6 +1101,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPreviewMouseDoubleClick (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPreviewMouseDoubleClick(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Control.OnPreviewMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPreviewMouseDoubleClick (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPreviewMouseDoubleClick : System.Windows.Input.MouseButtonEventArgs -&gt; unit&#xA;override this.OnPreviewMouseDoubleClick : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="control.OnPreviewMouseDoubleClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1073,6 +1134,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnTemplateChanged (System.Windows.Controls.ControlTemplate oldTemplate, System.Windows.Controls.ControlTemplate newTemplate);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTemplateChanged(class System.Windows.Controls.ControlTemplate oldTemplate, class System.Windows.Controls.ControlTemplate newTemplate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Control.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTemplateChanged (oldTemplate As ControlTemplate, newTemplate As ControlTemplate)" />
+      <MemberSignature Language="F#" Value="abstract member OnTemplateChanged : System.Windows.Controls.ControlTemplate * System.Windows.Controls.ControlTemplate -&gt; unit&#xA;override this.OnTemplateChanged : System.Windows.Controls.ControlTemplate * System.Windows.Controls.ControlTemplate -&gt; unit" Usage="control.OnTemplateChanged (oldTemplate, newTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1113,6 +1176,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Thickness Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness Padding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Thickness" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Thickness with get, set" Usage="System.Windows.Controls.Control.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1166,6 +1231,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PaddingProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PaddingProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.PaddingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PaddingProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PaddingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.PaddingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1183,6 +1250,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseButtonEventHandler PreviewMouseDoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseButtonEventHandler PreviewMouseDoubleClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Control.PreviewMouseDoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PreviewMouseDoubleClick As MouseButtonEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PreviewMouseDoubleClick : System.Windows.Input.MouseButtonEventHandler " Usage="member this.PreviewMouseDoubleClick : System.Windows.Input.MouseButtonEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1232,6 +1301,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent PreviewMouseDoubleClickEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent PreviewMouseDoubleClickEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.PreviewMouseDoubleClickEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewMouseDoubleClickEvent As RoutedEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviewMouseDoubleClickEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.Control.PreviewMouseDoubleClickEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1249,6 +1320,8 @@
       <MemberSignature Language="C#" Value="public int TabIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TabIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.TabIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property TabIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.TabIndex : int with get, set" Usage="System.Windows.Controls.Control.TabIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1297,6 +1370,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TabIndexProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TabIndexProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.TabIndexProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TabIndexProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TabIndexProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.TabIndexProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1314,6 +1389,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.ControlTemplate Template { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ControlTemplate Template" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.Template" />
+      <MemberSignature Language="VB.NET" Value="Public Property Template As ControlTemplate" />
+      <MemberSignature Language="F#" Value="member this.Template : System.Windows.Controls.ControlTemplate with get, set" Usage="System.Windows.Controls.Control.Template" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1356,6 +1433,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TemplateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TemplateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.TemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.TemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1373,6 +1452,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Control.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="control.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1399,6 +1480,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.VerticalAlignment VerticalContentAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.VerticalAlignment VerticalContentAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.VerticalContentAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property VerticalContentAlignment As VerticalAlignment" />
+      <MemberSignature Language="F#" Value="member this.VerticalContentAlignment : System.Windows.VerticalAlignment with get, set" Usage="System.Windows.Controls.Control.VerticalContentAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1452,6 +1535,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty VerticalContentAlignmentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty VerticalContentAlignmentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.VerticalContentAlignmentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerticalContentAlignmentProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable VerticalContentAlignmentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Control.VerticalContentAlignmentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

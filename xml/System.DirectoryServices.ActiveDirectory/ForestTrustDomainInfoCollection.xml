@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ForestTrustDomainInfoCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ForestTrustDomainInfoCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInfoCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ForestTrustDomainInfoCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ForestTrustDomainInfoCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +24,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation information);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation information) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInfoCollection.Contains(System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (information As ForestTrustDomainInformation) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation -&gt; bool" Usage="forestTrustDomainInfoCollection.Contains information" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInfoCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ForestTrustDomainInformation(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation[] * int -&gt; unit" Usage="forestTrustDomainInfoCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation information);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation information) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInfoCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (information As ForestTrustDomainInformation) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation -&gt; int" Usage="forestTrustDomainInfoCollection.IndexOf information" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInfoCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ForestTrustDomainInformation" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation" Usage="System.DirectoryServices.ActiveDirectory.ForestTrustDomainInfoCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

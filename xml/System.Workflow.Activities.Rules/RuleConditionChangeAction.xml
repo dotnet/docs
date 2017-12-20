@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class RuleConditionChangeAction : System.Workflow.ComponentModel.WorkflowChangeAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RuleConditionChangeAction extends System.Workflow.ComponentModel.WorkflowChangeAction" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleConditionChangeAction" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class RuleConditionChangeAction&#xA;Inherits WorkflowChangeAction" />
+  <TypeSignature Language="F#" Value="type RuleConditionChangeAction = class&#xA;    inherit WorkflowChangeAction" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,7 @@
       <MemberSignature Language="C#" Value="protected RuleConditionChangeAction ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionChangeAction.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="public abstract string ConditionName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConditionName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleConditionChangeAction.ConditionName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ConditionName As String" />
+      <MemberSignature Language="F#" Value="member this.ConditionName : string" Usage="System.Workflow.Activities.Rules.RuleConditionChangeAction.ConditionName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -65,6 +70,7 @@
       <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateChanges (System.Workflow.ComponentModel.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateChanges(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionChangeAction.ValidateChanges(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="F#" Value="override this.ValidateChanges : System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="ruleConditionChangeAction.ValidateChanges activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

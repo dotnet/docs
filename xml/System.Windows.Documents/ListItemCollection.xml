@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ListItemCollection : System.Windows.Documents.TextElementCollection&lt;System.Windows.Documents.ListItem&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListItemCollection extends System.Windows.Documents.TextElementCollection`1&lt;class System.Windows.Documents.ListItem&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.ListItemCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListItemCollection&#xA;Inherits TextElementCollection(Of ListItem)" />
+  <TypeSignature Language="F#" Value="type ListItemCollection = class&#xA;    inherit TextElementCollection&lt;ListItem&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.ListItem FirstListItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.ListItem FirstListItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.ListItemCollection.FirstListItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstListItem As ListItem" />
+      <MemberSignature Language="F#" Value="member this.FirstListItem : System.Windows.Documents.ListItem" Usage="System.Windows.Documents.ListItemCollection.FirstListItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.ListItem LastListItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.ListItem LastListItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.ListItemCollection.LastListItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastListItem As ListItem" />
+      <MemberSignature Language="F#" Value="member this.LastListItem : System.Windows.Documents.ListItem" Usage="System.Windows.Documents.ListItemCollection.LastListItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

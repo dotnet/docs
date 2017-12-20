@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void DataReceivedEventHandler(object sender, DataReceivedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataReceivedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DataReceivedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataReceivedEventHandler(sender As Object, e As DataReceivedEventArgs)" />
+  <TypeSignature Language="F#" Value="type DataReceivedEventHandler = delegate of obj * DataReceivedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Process</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>

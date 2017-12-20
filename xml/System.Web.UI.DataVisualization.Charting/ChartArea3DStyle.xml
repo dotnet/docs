@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ChartArea3DStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChartArea3DStyle extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChartArea3DStyle" />
+  <TypeSignature Language="F#" Value="type ChartArea3DStyle = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,10 +54,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ChartArea3DStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -71,6 +83,7 @@
       <MemberSignature Language="C#" Value="public ChartArea3DStyle (System.Web.UI.DataVisualization.Charting.ChartArea chartArea);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.DataVisualization.Charting.ChartArea chartArea) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.#ctor(System.Web.UI.DataVisualization.Charting.ChartArea)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.ChartArea3DStyle : System.Web.UI.DataVisualization.Charting.ChartArea -&gt; System.Web.UI.DataVisualization.Charting.ChartArea3DStyle" Usage="new System.Web.UI.DataVisualization.Charting.ChartArea3DStyle chartArea" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -89,6 +102,8 @@
       <MemberSignature Language="C#" Value="public bool Enable3D { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enable3D" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Enable3D" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enable3D As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enable3D : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Enable3D" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -126,6 +141,8 @@
       <MemberSignature Language="C#" Value="public int Inclination { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Inclination" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Inclination" />
+      <MemberSignature Language="VB.NET" Value="Public Property Inclination As Integer" />
+      <MemberSignature Language="F#" Value="member this.Inclination : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Inclination" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -155,6 +172,8 @@
       <MemberSignature Language="C#" Value="public bool IsClustered { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsClustered" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.IsClustered" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsClustered As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsClustered : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.IsClustered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -182,6 +201,8 @@
       <MemberSignature Language="C#" Value="public bool IsRightAngleAxes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRightAngleAxes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.IsRightAngleAxes" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsRightAngleAxes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRightAngleAxes : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.IsRightAngleAxes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -229,6 +250,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.LightStyle LightStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.LightStyle LightStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.LightStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property LightStyle As LightStyle" />
+      <MemberSignature Language="F#" Value="member this.LightStyle : System.Web.UI.DataVisualization.Charting.LightStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.LightStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -255,6 +278,8 @@
       <MemberSignature Language="C#" Value="public int Perspective { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Perspective" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Perspective" />
+      <MemberSignature Language="VB.NET" Value="Public Property Perspective As Integer" />
+      <MemberSignature Language="F#" Value="member this.Perspective : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Perspective" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -293,6 +318,8 @@
       <MemberSignature Language="C#" Value="public int PointDepth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PointDepth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.PointDepth" />
+      <MemberSignature Language="VB.NET" Value="Public Property PointDepth As Integer" />
+      <MemberSignature Language="F#" Value="member this.PointDepth : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.PointDepth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -335,6 +362,8 @@
       <MemberSignature Language="C#" Value="public int PointGapDepth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PointGapDepth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.PointGapDepth" />
+      <MemberSignature Language="VB.NET" Value="Public Property PointGapDepth As Integer" />
+      <MemberSignature Language="F#" Value="member this.PointGapDepth : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.PointGapDepth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -377,6 +406,8 @@
       <MemberSignature Language="C#" Value="public int Rotation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Rotation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Rotation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Rotation As Integer" />
+      <MemberSignature Language="F#" Value="member this.Rotation : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Rotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -406,6 +437,8 @@
       <MemberSignature Language="C#" Value="public int WallWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 WallWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.WallWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property WallWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.WallWidth : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.WallWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -438,14 +471,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

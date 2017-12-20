@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class EditorAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EditorAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.EditorAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EditorAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type EditorAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,10 +59,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EditorAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EditorAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EditorAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +98,8 @@
       <MemberSignature Language="C#" Value="public EditorAttribute (string typeName, string baseTypeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typeName, string baseTypeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EditorAttribute.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String, baseTypeName As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.EditorAttribute : string * string -&gt; System.ComponentModel.EditorAttribute" Usage="new System.ComponentModel.EditorAttribute (typeName, baseTypeName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +140,8 @@
       <MemberSignature Language="C#" Value="public EditorAttribute (string typeName, Type baseType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typeName, class System.Type baseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EditorAttribute.#ctor(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String, baseType As Type)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.EditorAttribute : string * Type -&gt; System.ComponentModel.EditorAttribute" Usage="new System.ComponentModel.EditorAttribute (typeName, baseType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +182,7 @@
       <MemberSignature Language="C#" Value="public EditorAttribute (Type type, Type baseType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Type baseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EditorAttribute.#ctor(System.Type,System.Type)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.EditorAttribute : Type * Type -&gt; System.ComponentModel.EditorAttribute" Usage="new System.ComponentModel.EditorAttribute (type, baseType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -203,6 +221,8 @@
       <MemberSignature Language="C#" Value="public string EditorBaseTypeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EditorBaseTypeName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EditorAttribute.EditorBaseTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditorBaseTypeName As String" />
+      <MemberSignature Language="F#" Value="member this.EditorBaseTypeName : string" Usage="System.ComponentModel.EditorAttribute.EditorBaseTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -237,6 +257,8 @@
       <MemberSignature Language="C#" Value="public string EditorTypeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EditorTypeName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EditorAttribute.EditorTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditorTypeName As String" />
+      <MemberSignature Language="F#" Value="member this.EditorTypeName : string" Usage="System.ComponentModel.EditorAttribute.EditorTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -264,6 +286,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EditorAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="editorAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -296,6 +320,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EditorAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="editorAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -325,6 +351,8 @@
       <MemberSignature Language="C#" Value="public override object TypeId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object TypeId" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EditorAttribute.TypeId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.ComponentModel.EditorAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -355,15 +383,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EditorAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

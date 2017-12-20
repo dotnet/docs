@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class SrgsText : System.Speech.Recognition.SrgsGrammar.SrgsElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SrgsText extends System.Speech.Recognition.SrgsGrammar.SrgsElement" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsText" />
+  <TypeSignature Language="VB.NET" Value="Public Class SrgsText&#xA;Inherits SrgsElement" />
+  <TypeSignature Language="F#" Value="type SrgsText = class&#xA;    inherit SrgsElement" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,10 +98,20 @@ writer.Close();
     <altmember cref="T:System.Speech.Recognition.SrgsGrammar.SrgsItem" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsText" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SrgsText ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsText.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -122,6 +134,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public SrgsText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsText.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsText : string -&gt; System.Speech.Recognition.SrgsGrammar.SrgsText" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsText text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -142,6 +156,8 @@ writer.Close();
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsText.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsText.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -157,14 +173,5 @@ writer.Close();
         <exception cref="T:System.ArgumentNullException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsText.Text" /> to <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsText" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

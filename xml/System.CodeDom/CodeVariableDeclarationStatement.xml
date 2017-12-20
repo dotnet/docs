@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CodeVariableDeclarationStatement : System.CodeDom.CodeStatement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeVariableDeclarationStatement extends System.CodeDom.CodeStatement" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeVariableDeclarationStatement" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeVariableDeclarationStatement&#xA;Inherits CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeVariableDeclarationStatement = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,10 +50,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeVariableDeclarationStatement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -71,6 +83,8 @@
       <MemberSignature Language="C#" Value="public CodeVariableDeclarationStatement (System.CodeDom.CodeTypeReference type, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeReference type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.CodeDom.CodeTypeReference,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As CodeTypeReference, name As String)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeVariableDeclarationStatement : System.CodeDom.CodeTypeReference * string -&gt; System.CodeDom.CodeVariableDeclarationStatement" Usage="new System.CodeDom.CodeVariableDeclarationStatement (type, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +109,8 @@
       <MemberSignature Language="C#" Value="public CodeVariableDeclarationStatement (string type, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, name As String)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeVariableDeclarationStatement : string * string -&gt; System.CodeDom.CodeVariableDeclarationStatement" Usage="new System.CodeDom.CodeVariableDeclarationStatement (type, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -119,6 +135,7 @@
       <MemberSignature Language="C#" Value="public CodeVariableDeclarationStatement (Type type, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeVariableDeclarationStatement : Type * string -&gt; System.CodeDom.CodeVariableDeclarationStatement" Usage="new System.CodeDom.CodeVariableDeclarationStatement (type, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +160,8 @@
       <MemberSignature Language="C#" Value="public CodeVariableDeclarationStatement (System.CodeDom.CodeTypeReference type, string name, System.CodeDom.CodeExpression initExpression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeReference type, string name, class System.CodeDom.CodeExpression initExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.CodeDom.CodeTypeReference,System.String,System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As CodeTypeReference, name As String, initExpression As CodeExpression)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeVariableDeclarationStatement : System.CodeDom.CodeTypeReference * string * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeVariableDeclarationStatement" Usage="new System.CodeDom.CodeVariableDeclarationStatement (type, name, initExpression)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -170,6 +189,8 @@
       <MemberSignature Language="C#" Value="public CodeVariableDeclarationStatement (string type, string name, System.CodeDom.CodeExpression initExpression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string name, class System.CodeDom.CodeExpression initExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.String,System.String,System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, name As String, initExpression As CodeExpression)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeVariableDeclarationStatement : string * string * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeVariableDeclarationStatement" Usage="new System.CodeDom.CodeVariableDeclarationStatement (type, name, initExpression)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -196,6 +217,7 @@
       <MemberSignature Language="C#" Value="public CodeVariableDeclarationStatement (Type type, string name, System.CodeDom.CodeExpression initExpression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string name, class System.CodeDom.CodeExpression initExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.Type,System.String,System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeVariableDeclarationStatement : Type * string * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeVariableDeclarationStatement" Usage="new System.CodeDom.CodeVariableDeclarationStatement (type, name, initExpression)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -222,6 +244,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression InitExpression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression InitExpression" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeVariableDeclarationStatement.InitExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Property InitExpression As CodeExpression" />
+      <MemberSignature Language="F#" Value="member this.InitExpression : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeVariableDeclarationStatement.InitExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -245,6 +269,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeVariableDeclarationStatement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.CodeDom.CodeVariableDeclarationStatement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -267,6 +293,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReference Type" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeVariableDeclarationStatement.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As CodeTypeReference" />
+      <MemberSignature Language="F#" Value="member this.Type : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeVariableDeclarationStatement.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -285,14 +313,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

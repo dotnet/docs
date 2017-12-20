@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IValueProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IValueProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.IValueProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IValueProvider" />
+  <TypeSignature Language="F#" Value="type IValueProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +18,8 @@
       <MemberSignature Language="C#" Value="public bool ContainsPrefix (string prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsPrefix(string prefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.IValueProvider.ContainsPrefix(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsPrefix (prefix As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ContainsPrefix : string -&gt; bool" Usage="iValueProvider.ContainsPrefix prefix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public System.Web.ModelBinding.ValueProviderResult GetValue (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.ModelBinding.ValueProviderResult GetValue(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.IValueProvider.GetValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValue (key As String) As ValueProviderResult" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : string -&gt; System.Web.ModelBinding.ValueProviderResult" Usage="iValueProvider.GetValue key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

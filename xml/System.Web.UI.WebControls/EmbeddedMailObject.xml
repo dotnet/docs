@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class EmbeddedMailObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EmbeddedMailObject extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EmbeddedMailObject" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EmbeddedMailObject" />
+  <TypeSignature Language="F#" Value="type EmbeddedMailObject = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -115,10 +117,20 @@
     <altmember cref="T:System.Net.Mail.MailMessage" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.EmbeddedMailObject" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EmbeddedMailObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EmbeddedMailObject.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -142,6 +154,8 @@
       <MemberSignature Language="C#" Value="public EmbeddedMailObject (string name, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EmbeddedMailObject.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, path As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.EmbeddedMailObject : string * string -&gt; System.Web.UI.WebControls.EmbeddedMailObject" Usage="new System.Web.UI.WebControls.EmbeddedMailObject (name, path)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -222,6 +236,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EmbeddedMailObject.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.WebControls.EmbeddedMailObject.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -313,6 +329,8 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EmbeddedMailObject.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Web.UI.WebControls.EmbeddedMailObject.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -400,14 +418,5 @@
         <altmember cref="P:System.Web.UI.WebControls.MailDefinition.EmbeddedObjects" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.EmbeddedMailObject" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

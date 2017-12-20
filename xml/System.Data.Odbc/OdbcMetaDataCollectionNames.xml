@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class OdbcMetaDataCollectionNames" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit OdbcMetaDataCollectionNames extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcMetaDataCollectionNames" />
+  <TypeSignature Language="VB.NET" Value="Public Class OdbcMetaDataCollectionNames" />
+  <TypeSignature Language="F#" Value="type OdbcMetaDataCollectionNames = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public static readonly string Columns;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Columns" />
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Columns" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Columns As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Columns : string" Usage="System.Data.Odbc.OdbcMetaDataCollectionNames.Columns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public static readonly string Indexes;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Indexes" />
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Indexes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Indexes As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Indexes : string" Usage="System.Data.Odbc.OdbcMetaDataCollectionNames.Indexes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public static readonly string ProcedureColumns;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string ProcedureColumns" />
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.ProcedureColumns" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ProcedureColumns As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ProcedureColumns : string" Usage="System.Data.Odbc.OdbcMetaDataCollectionNames.ProcedureColumns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -86,6 +94,8 @@
       <MemberSignature Language="C#" Value="public static readonly string ProcedureParameters;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string ProcedureParameters" />
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.ProcedureParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ProcedureParameters As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ProcedureParameters : string" Usage="System.Data.Odbc.OdbcMetaDataCollectionNames.ProcedureParameters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -107,6 +117,8 @@
       <MemberSignature Language="C#" Value="public static readonly string Procedures;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Procedures" />
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Procedures" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Procedures As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Procedures : string" Usage="System.Data.Odbc.OdbcMetaDataCollectionNames.Procedures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -128,6 +140,8 @@
       <MemberSignature Language="C#" Value="public static readonly string Tables;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Tables" />
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Tables" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Tables As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Tables : string" Usage="System.Data.Odbc.OdbcMetaDataCollectionNames.Tables" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -149,6 +163,8 @@
       <MemberSignature Language="C#" Value="public static readonly string Views;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Views" />
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Views" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Views As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Views : string" Usage="System.Data.Odbc.OdbcMetaDataCollectionNames.Views" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

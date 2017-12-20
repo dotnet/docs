@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class DesignerTransaction : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignerTransaction extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerTransaction" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerTransaction&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type DesignerTransaction = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -83,10 +85,21 @@ using (host.CreateTransaction() {
     <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerTransaction" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected DesignerTransaction ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -112,6 +125,8 @@ using (host.CreateTransaction() {
       <MemberSignature Language="C#" Value="protected DesignerTransaction (string description);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (description As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerTransaction : string -&gt; System.ComponentModel.Design.DesignerTransaction" Usage="new System.ComponentModel.Design.DesignerTransaction description" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -147,6 +162,8 @@ using (host.CreateTransaction() {
       <MemberSignature Language="C#" Value="public void Cancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Cancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cancel ()" />
+      <MemberSignature Language="F#" Value="member this.Cancel : unit -&gt; unit" Usage="designerTransaction.Cancel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -176,6 +193,8 @@ using (host.CreateTransaction() {
       <MemberSignature Language="C#" Value="public bool Canceled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Canceled" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerTransaction.Canceled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Canceled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Canceled : bool" Usage="System.ComponentModel.Design.DesignerTransaction.Canceled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -212,6 +231,8 @@ using (host.CreateTransaction() {
       <MemberSignature Language="C#" Value="public void Commit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Commit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.Commit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Commit ()" />
+      <MemberSignature Language="F#" Value="member this.Commit : unit -&gt; unit" Usage="designerTransaction.Commit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -250,6 +271,8 @@ using (host.CreateTransaction() {
       <MemberSignature Language="C#" Value="public bool Committed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Committed" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerTransaction.Committed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Committed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Committed : bool" Usage="System.ComponentModel.Design.DesignerTransaction.Committed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -286,6 +309,8 @@ using (host.CreateTransaction() {
       <MemberSignature Language="C#" Value="public string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerTransaction.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.ComponentModel.Design.DesignerTransaction.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -321,6 +346,8 @@ using (host.CreateTransaction() {
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="designerTransaction.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -368,6 +395,8 @@ using (host.CreateTransaction() {
       <MemberSignature Language="C#" Value="~DesignerTransaction ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="designerTransaction.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -407,6 +436,8 @@ using (host.CreateTransaction() {
       <MemberSignature Language="C#" Value="protected abstract void OnCancel ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.OnCancel" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnCancel ()" />
+      <MemberSignature Language="F#" Value="abstract member OnCancel : unit -&gt; unit" Usage="designerTransaction.OnCancel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -446,6 +477,8 @@ using (host.CreateTransaction() {
       <MemberSignature Language="C#" Value="protected abstract void OnCommit ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCommit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.OnCommit" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnCommit ()" />
+      <MemberSignature Language="F#" Value="abstract member OnCommit : unit -&gt; unit" Usage="designerTransaction.OnCommit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -485,7 +518,11 @@ using (host.CreateTransaction() {
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -516,15 +553,5 @@ using (host.CreateTransaction() {
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerTransaction" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

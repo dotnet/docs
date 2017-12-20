@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ServiceProcessDescriptionAttribute : System.ComponentModel.DescriptionAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceProcessDescriptionAttribute extends System.ComponentModel.DescriptionAttribute" />
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceProcessDescriptionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceProcessDescriptionAttribute&#xA;Inherits DescriptionAttribute" />
+  <TypeSignature Language="F#" Value="type ServiceProcessDescriptionAttribute = class&#xA;    inherit DescriptionAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public ServiceProcessDescriptionAttribute (string description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceProcessDescriptionAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (description As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceProcess.ServiceProcessDescriptionAttribute : string -&gt; System.ServiceProcess.ServiceProcessDescriptionAttribute" Usage="new System.ServiceProcess.ServiceProcessDescriptionAttribute description" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public override string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceProcessDescriptionAttribute.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.ServiceProcess.ServiceProcessDescriptionAttribute.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>

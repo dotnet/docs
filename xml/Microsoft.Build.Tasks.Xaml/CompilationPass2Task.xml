@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CompilationPass2Task : Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompilationPass2Task extends Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.CompilationPass2Task" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompilationPass2Task&#xA;Inherits Task" />
+  <TypeSignature Language="F#" Value="type CompilationPass2Task = class&#xA;    inherit Task" />
   <AssemblyInfo>
     <AssemblyName>XamlBuildTask</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public CompilationPass2Task ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ApplicationMarkup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ApplicationMarkup" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.ApplicationMarkup" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationMarkup As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.ApplicationMarkup : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.CompilationPass2Task.ApplicationMarkup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ApplicationMarkupWithTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ApplicationMarkupWithTypeName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.ApplicationMarkupWithTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationMarkupWithTypeName As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.ApplicationMarkupWithTypeName : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.CompilationPass2Task.ApplicationMarkupWithTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -70,6 +77,8 @@
       <MemberSignature Language="C#" Value="public string AssemblyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.AssemblyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CompilationPass2Task.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -88,6 +97,8 @@
       <MemberSignature Language="C#" Value="public string BuildTaskPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BuildTaskPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.BuildTaskPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuildTaskPath As String" />
+      <MemberSignature Language="F#" Value="member this.BuildTaskPath : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CompilationPass2Task.BuildTaskPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -106,6 +117,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="compilationPass2Task.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -126,6 +139,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ExtensionGeneratedCodeFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ExtensionGeneratedCodeFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.ExtensionGeneratedCodeFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExtensionGeneratedCodeFiles As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.ExtensionGeneratedCodeFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.CompilationPass2Task.ExtensionGeneratedCodeFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -149,6 +164,8 @@
       <MemberSignature Language="C#" Value="public bool IsInProcessXamlMarkupCompile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInProcessXamlMarkupCompile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.IsInProcessXamlMarkupCompile" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInProcessXamlMarkupCompile As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInProcessXamlMarkupCompile : bool with get, set" Usage="Microsoft.Build.Tasks.Xaml.CompilationPass2Task.IsInProcessXamlMarkupCompile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -167,6 +184,8 @@
       <MemberSignature Language="C#" Value="public string Language { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Language" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.Language" />
+      <MemberSignature Language="VB.NET" Value="Public Property Language As String" />
+      <MemberSignature Language="F#" Value="member this.Language : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CompilationPass2Task.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -185,6 +204,8 @@
       <MemberSignature Language="C#" Value="public string LocalAssemblyReference { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalAssemblyReference" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.LocalAssemblyReference" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalAssemblyReference As String" />
+      <MemberSignature Language="F#" Value="member this.LocalAssemblyReference : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CompilationPass2Task.LocalAssemblyReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -203,6 +224,8 @@
       <MemberSignature Language="C#" Value="public string MSBuildProjectDirectory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MSBuildProjectDirectory" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.MSBuildProjectDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Property MSBuildProjectDirectory As String" />
+      <MemberSignature Language="F#" Value="member this.MSBuildProjectDirectory : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CompilationPass2Task.MSBuildProjectDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -221,6 +244,8 @@
       <MemberSignature Language="C#" Value="public string OutputPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OutputPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.OutputPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputPath As String" />
+      <MemberSignature Language="F#" Value="member this.OutputPath : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CompilationPass2Task.OutputPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -239,6 +264,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] References { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] References" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.References" />
+      <MemberSignature Language="VB.NET" Value="Public Property References As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.References : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.CompilationPass2Task.References" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -257,6 +284,8 @@
       <MemberSignature Language="C#" Value="public string RootNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RootNamespace" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.RootNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property RootNamespace As String" />
+      <MemberSignature Language="F#" Value="member this.RootNamespace : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CompilationPass2Task.RootNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -275,6 +304,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] SourceCodeFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] SourceCodeFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.SourceCodeFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceCodeFiles As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.SourceCodeFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.CompilationPass2Task.SourceCodeFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -293,6 +324,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] XamlBuildTypeInspectionExtensionNames { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] XamlBuildTypeInspectionExtensionNames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.XamlBuildTypeInspectionExtensionNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property XamlBuildTypeInspectionExtensionNames As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.XamlBuildTypeInspectionExtensionNames : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.CompilationPass2Task.XamlBuildTypeInspectionExtensionNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>

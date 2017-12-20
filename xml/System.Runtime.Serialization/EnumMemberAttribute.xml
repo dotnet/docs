@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class EnumMemberAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EnumMemberAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.EnumMemberAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnumMemberAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type EnumMemberAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -52,6 +54,7 @@
       <MemberSignature Language="C#" Value="public EnumMemberAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.EnumMemberAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -77,6 +80,8 @@
       <MemberSignature Language="C#" Value="public bool IsValueSetExplicitly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsValueSetExplicitly" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.EnumMemberAttribute.IsValueSetExplicitly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValueSetExplicitly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsValueSetExplicitly : bool" Usage="System.Runtime.Serialization.EnumMemberAttribute.IsValueSetExplicitly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -106,6 +111,8 @@
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.EnumMemberAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Runtime.Serialization.EnumMemberAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>

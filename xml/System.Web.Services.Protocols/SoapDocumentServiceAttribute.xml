@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SoapDocumentServiceAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapDocumentServiceAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapDocumentServiceAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapDocumentServiceAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type SoapDocumentServiceAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,10 +40,21 @@
     <altmember cref="T:System.Web.Services.Protocols.SoapRpcServiceAttribute" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapDocumentServiceAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SoapDocumentServiceAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapDocumentServiceAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -58,6 +71,8 @@
       <MemberSignature Language="C#" Value="public SoapDocumentServiceAttribute (System.Web.Services.Description.SoapBindingUse use);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.Services.Description.SoapBindingUse use) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapDocumentServiceAttribute.#ctor(System.Web.Services.Description.SoapBindingUse)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (use As SoapBindingUse)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapDocumentServiceAttribute : System.Web.Services.Description.SoapBindingUse -&gt; System.Web.Services.Protocols.SoapDocumentServiceAttribute" Usage="new System.Web.Services.Protocols.SoapDocumentServiceAttribute use" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -77,6 +92,8 @@
       <MemberSignature Language="C#" Value="public SoapDocumentServiceAttribute (System.Web.Services.Description.SoapBindingUse use, System.Web.Services.Protocols.SoapParameterStyle paramStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.Services.Description.SoapBindingUse use, valuetype System.Web.Services.Protocols.SoapParameterStyle paramStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapDocumentServiceAttribute.#ctor(System.Web.Services.Description.SoapBindingUse,System.Web.Services.Protocols.SoapParameterStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (use As SoapBindingUse, paramStyle As SoapParameterStyle)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapDocumentServiceAttribute : System.Web.Services.Description.SoapBindingUse * System.Web.Services.Protocols.SoapParameterStyle -&gt; System.Web.Services.Protocols.SoapDocumentServiceAttribute" Usage="new System.Web.Services.Protocols.SoapDocumentServiceAttribute (use, paramStyle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.SoapParameterStyle ParameterStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Protocols.SoapParameterStyle ParameterStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapDocumentServiceAttribute.ParameterStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParameterStyle As SoapParameterStyle" />
+      <MemberSignature Language="F#" Value="member this.ParameterStyle : System.Web.Services.Protocols.SoapParameterStyle with get, set" Usage="System.Web.Services.Protocols.SoapDocumentServiceAttribute.ParameterStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -118,6 +137,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.SoapServiceRoutingStyle RoutingStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Protocols.SoapServiceRoutingStyle RoutingStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapDocumentServiceAttribute.RoutingStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property RoutingStyle As SoapServiceRoutingStyle" />
+      <MemberSignature Language="F#" Value="member this.RoutingStyle : System.Web.Services.Protocols.SoapServiceRoutingStyle with get, set" Usage="System.Web.Services.Protocols.SoapDocumentServiceAttribute.RoutingStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -137,6 +158,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.SoapBindingUse Use { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Description.SoapBindingUse Use" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapDocumentServiceAttribute.Use" />
+      <MemberSignature Language="VB.NET" Value="Public Property Use As SoapBindingUse" />
+      <MemberSignature Language="F#" Value="member this.Use : System.Web.Services.Description.SoapBindingUse with get, set" Usage="System.Web.Services.Protocols.SoapDocumentServiceAttribute.Use" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -162,15 +185,5 @@
         <altmember cref="T:System.Web.Services.Description.SoapBindingUse" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapDocumentServiceAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

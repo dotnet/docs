@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public struct STATDATA" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit STATDATA extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.STATDATA" />
+  <TypeSignature Language="VB.NET" Value="Public Structure STATDATA" />
+  <TypeSignature Language="F#" Value="type STATDATA = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.ADVF advf;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.ADVF advf" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATDATA.advf" />
+      <MemberSignature Language="VB.NET" Value="Public advf As ADVF " />
+      <MemberSignature Language="F#" Value="val mutable advf : System.Runtime.InteropServices.ComTypes.ADVF" Usage="System.Runtime.InteropServices.ComTypes.STATDATA.advf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -82,6 +86,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.IAdviseSink advSink;" />
       <MemberSignature Language="ILAsm" Value=".field public class System.Runtime.InteropServices.ComTypes.IAdviseSink advSink" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATDATA.advSink" />
+      <MemberSignature Language="VB.NET" Value="Public advSink As IAdviseSink " />
+      <MemberSignature Language="F#" Value="val mutable advSink : System.Runtime.InteropServices.ComTypes.IAdviseSink" Usage="System.Runtime.InteropServices.ComTypes.STATDATA.advSink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -120,6 +126,8 @@
       <MemberSignature Language="C#" Value="public int connection;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 connection" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATDATA.connection" />
+      <MemberSignature Language="VB.NET" Value="Public connection As Integer " />
+      <MemberSignature Language="F#" Value="val mutable connection : int" Usage="System.Runtime.InteropServices.ComTypes.STATDATA.connection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -158,6 +166,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.FORMATETC formatetc;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.FORMATETC formatetc" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATDATA.formatetc" />
+      <MemberSignature Language="VB.NET" Value="Public formatetc As FORMATETC " />
+      <MemberSignature Language="F#" Value="val mutable formatetc : System.Runtime.InteropServices.ComTypes.FORMATETC" Usage="System.Runtime.InteropServices.ComTypes.STATDATA.formatetc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

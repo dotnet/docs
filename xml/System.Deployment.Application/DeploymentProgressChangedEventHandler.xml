@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void DeploymentProgressChangedEventHandler(object sender, DeploymentProgressChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeploymentProgressChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DeploymentProgressChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DeploymentProgressChangedEventHandler(sender As Object, e As DeploymentProgressChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type DeploymentProgressChangedEventHandler = delegate of obj * DeploymentProgressChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

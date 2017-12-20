@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class CodeActivity : System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodeActivity extends System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.CodeActivity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CodeActivity&#xA;Inherits Activity" />
+  <TypeSignature Language="F#" Value="type CodeActivity = class&#xA;    inherit Activity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,10 +50,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CodeActivity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CodeActivity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -87,6 +99,8 @@ this.Airline = new CodeActivity();
       <MemberSignature Language="C#" Value="public CodeActivity (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CodeActivity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.CodeActivity : string -&gt; System.Workflow.Activities.CodeActivity" Usage="new System.Workflow.Activities.CodeActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -105,6 +119,8 @@ this.Airline = new CodeActivity();
       <MemberSignature Language="C#" Value="protected override sealed System.Workflow.ComponentModel.ActivityExecutionStatus Execute (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus Execute(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CodeActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="codeActivity.Execute executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -127,6 +143,8 @@ this.Airline = new CodeActivity();
       <MemberSignature Language="C#" Value="public event EventHandler ExecuteCode;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ExecuteCode" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.CodeActivity.ExecuteCode" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ExecuteCode As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ExecuteCode : EventHandler " Usage="member this.ExecuteCode : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -159,6 +177,8 @@ this.Airline = new CodeActivity();
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ExecuteCodeEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ExecuteCodeEvent" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.CodeActivity.ExecuteCodeEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExecuteCodeEvent As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ExecuteCodeEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.CodeActivity.ExecuteCodeEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -186,14 +206,5 @@ this.Airline = new CodeActivity();
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CodeActivity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

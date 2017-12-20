@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CodeGeneratorOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CodeGeneratorOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeGeneratorOptions" />
+  <TypeSignature Language="F#" Value="type CodeGeneratorOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,7 @@
       <MemberSignature Language="C#" Value="public CodeGeneratorOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGeneratorOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -66,6 +69,8 @@
       <MemberSignature Language="C#" Value="public bool BlankLinesBetweenMembers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BlankLinesBetweenMembers" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.BlankLinesBetweenMembers" />
+      <MemberSignature Language="VB.NET" Value="Public Property BlankLinesBetweenMembers As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BlankLinesBetweenMembers : bool with get, set" Usage="System.CodeDom.Compiler.CodeGeneratorOptions.BlankLinesBetweenMembers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -89,6 +94,8 @@
       <MemberSignature Language="C#" Value="public string BracingStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BracingStyle" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.BracingStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BracingStyle As String" />
+      <MemberSignature Language="F#" Value="member this.BracingStyle : string with get, set" Usage="System.CodeDom.Compiler.CodeGeneratorOptions.BracingStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +125,8 @@
       <MemberSignature Language="C#" Value="public bool ElseOnClosing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ElseOnClosing" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.ElseOnClosing" />
+      <MemberSignature Language="VB.NET" Value="Public Property ElseOnClosing As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ElseOnClosing : bool with get, set" Usage="System.CodeDom.Compiler.CodeGeneratorOptions.ElseOnClosing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +150,8 @@
       <MemberSignature Language="C#" Value="public string IndentString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IndentString" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.IndentString" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndentString As String" />
+      <MemberSignature Language="F#" Value="member this.IndentString : string with get, set" Usage="System.CodeDom.Compiler.CodeGeneratorOptions.IndentString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -170,6 +181,8 @@
       <MemberSignature Language="C#" Value="public object this[string index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.CodeDom.Compiler.CodeGeneratorOptions.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -203,6 +216,8 @@
       <MemberSignature Language="C#" Value="public bool VerbatimOrder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool VerbatimOrder" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.VerbatimOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property VerbatimOrder As Boolean" />
+      <MemberSignature Language="F#" Value="member this.VerbatimOrder : bool with get, set" Usage="System.CodeDom.Compiler.CodeGeneratorOptions.VerbatimOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

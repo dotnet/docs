@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class BaseEvent : System.Management.Instrumentation.IEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseEvent extends System.Object implements class System.Management.Instrumentation.IEvent" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.BaseEvent" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseEvent&#xA;Implements IEvent" />
+  <TypeSignature Language="F#" Value="type BaseEvent = class&#xA;    interface IEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,7 @@
       <MemberSignature Language="C#" Value="protected BaseEvent ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.BaseEvent.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -55,7 +58,12 @@
       <MemberSignature Language="C#" Value="public void Fire ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Fire() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.BaseEvent.Fire" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Fire ()" />
+      <MemberSignature Language="F#" Value="abstract member Fire : unit -&gt; unit&#xA;override this.Fire : unit -&gt; unit" Usage="baseEvent.Fire " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Management.Instrumentation.IEvent.Fire</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SiteMapProviderCollection : System.Configuration.Provider.ProviderCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SiteMapProviderCollection extends System.Configuration.Provider.ProviderCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.SiteMapProviderCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SiteMapProviderCollection&#xA;Inherits ProviderCollection" />
+  <TypeSignature Language="F#" Value="type SiteMapProviderCollection = class&#xA;    inherit ProviderCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,7 @@ AccessSiteMapProvider   Samples.AspNet.Controls.AccessSiteMapProvider
       <MemberSignature Language="C#" Value="public SiteMapProviderCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapProviderCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,10 +69,21 @@ AccessSiteMapProvider   Samples.AspNet.Controls.AccessSiteMapProvider
         <altmember cref="M:System.Web.SiteMapProviderCollection.Add(System.Web.SiteMapProvider)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a site map provider to the <see cref="T:System.Web.SiteMapProviderCollection" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public override void Add (System.Configuration.Provider.ProviderBase provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Configuration.Provider.ProviderBase provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (provider As ProviderBase)" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Configuration.Provider.ProviderBase -&gt; unit" Usage="siteMapProviderCollection.Add provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +123,8 @@ AccessSiteMapProvider   Samples.AspNet.Controls.AccessSiteMapProvider
       <MemberSignature Language="C#" Value="public void Add (System.Web.SiteMapProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.SiteMapProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapProviderCollection.Add(System.Web.SiteMapProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (provider As SiteMapProvider)" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Web.SiteMapProvider -&gt; unit" Usage="siteMapProviderCollection.Add provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +160,8 @@ AccessSiteMapProvider   Samples.AspNet.Controls.AccessSiteMapProvider
       <MemberSignature Language="C#" Value="public void AddArray (System.Web.SiteMapProvider[] providerArray);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddArray(class System.Web.SiteMapProvider[] providerArray) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapProviderCollection.AddArray(System.Web.SiteMapProvider[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddArray (providerArray As SiteMapProvider())" />
+      <MemberSignature Language="F#" Value="member this.AddArray : System.Web.SiteMapProvider[] -&gt; unit" Usage="siteMapProviderCollection.AddArray providerArray" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -180,6 +198,8 @@ AccessSiteMapProvider   Samples.AspNet.Controls.AccessSiteMapProvider
       <MemberSignature Language="C#" Value="public System.Web.SiteMapProvider this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SiteMapProvider Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapProviderCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As SiteMapProvider" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.SiteMapProvider" Usage="System.Web.SiteMapProviderCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -214,14 +234,5 @@ AccessSiteMapProvider   Samples.AspNet.Controls.AccessSiteMapProvider
         <altmember cref="Overload:System.Web.SiteMapProviderCollection.Add" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a site map provider to the <see cref="T:System.Web.SiteMapProviderCollection" /> collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

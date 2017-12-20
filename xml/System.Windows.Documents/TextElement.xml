@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class TextElement : System.Windows.FrameworkContentElement, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract TextElement extends System.Windows.FrameworkContentElement implements class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextElement" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextElement&#xA;Inherits FrameworkContentElement&#xA;Implements IAddChild" />
+  <TypeSignature Language="F#" Value="type TextElement = class&#xA;    inherit FrameworkContentElement&#xA;    interface IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Background { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Background" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.Background" />
+      <MemberSignature Language="VB.NET" Value="Public Property Background As Brush" />
+      <MemberSignature Language="F#" Value="member this.Background : System.Windows.Media.Brush with get, set" Usage="System.Windows.Documents.TextElement.Background" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +77,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BackgroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BackgroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextElement.BackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.TextElement.BackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +96,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer ContentEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TextPointer ContentEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.ContentEnd" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentEnd As TextPointer" />
+      <MemberSignature Language="F#" Value="member this.ContentEnd : System.Windows.Documents.TextPointer" Usage="System.Windows.Documents.TextElement.ContentEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -120,6 +128,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer ContentStart { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TextPointer ContentStart" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.ContentStart" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentStart As TextPointer" />
+      <MemberSignature Language="F#" Value="member this.ContentStart : System.Windows.Documents.TextPointer" Usage="System.Windows.Documents.TextElement.ContentStart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +160,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer ElementEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TextPointer ElementEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.ElementEnd" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementEnd As TextPointer" />
+      <MemberSignature Language="F#" Value="member this.ElementEnd : System.Windows.Documents.TextPointer" Usage="System.Windows.Documents.TextElement.ElementEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -178,6 +190,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer ElementStart { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TextPointer ElementStart" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.ElementStart" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementStart As TextPointer" />
+      <MemberSignature Language="F#" Value="member this.ElementStart : System.Windows.Documents.TextPointer" Usage="System.Windows.Documents.TextElement.ElementStart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -203,9 +217,27 @@
       </Docs>
     </Member>
     <Member MemberName="FontFamily">
+      <MemberSignature Language="C#" Value="see GetFontFamily, and SetFontFamily" />
+      <MemberSignature Language="ILAsm" Value="see GetFontFamily, and SetFontFamily" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.FontFamily" />
+      <MemberSignature Language="VB.NET" Value="see GetFontFamily, and SetFontFamily" />
+      <MemberSignature Language="F#" Value="see GetFontFamily, and SetFontFamily" Usage="see GetFontFamily, and SetFontFamily" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontFamily">
       <MemberSignature Language="C#" Value="public System.Windows.Media.FontFamily FontFamily { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.FontFamily FontFamily" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.FontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.FontFamily : System.Windows.Media.FontFamily with get, set" Usage="System.Windows.Documents.TextElement.FontFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -291,6 +323,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontFamilyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontFamilyProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextElement.FontFamilyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontFamilyProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FontFamilyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.TextElement.FontFamilyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -305,9 +339,27 @@
       </Docs>
     </Member>
     <Member MemberName="FontSize">
+      <MemberSignature Language="C#" Value="see GetFontSize, and SetFontSize" />
+      <MemberSignature Language="ILAsm" Value="see GetFontSize, and SetFontSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.FontSize" />
+      <MemberSignature Language="VB.NET" Value="see GetFontSize, and SetFontSize" />
+      <MemberSignature Language="F#" Value="see GetFontSize, and SetFontSize" Usage="see GetFontSize, and SetFontSize" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontSize">
       <MemberSignature Language="C#" Value="public double FontSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 FontSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.FontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.FontSize : double with get, set" Usage="System.Windows.Documents.TextElement.FontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -394,6 +446,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontSizeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontSizeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextElement.FontSizeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontSizeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FontSizeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.TextElement.FontSizeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -408,9 +462,27 @@
       </Docs>
     </Member>
     <Member MemberName="FontStretch">
+      <MemberSignature Language="C#" Value="see GetFontStretch, and SetFontStretch" />
+      <MemberSignature Language="ILAsm" Value="see GetFontStretch, and SetFontStretch" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.FontStretch" />
+      <MemberSignature Language="VB.NET" Value="see GetFontStretch, and SetFontStretch" />
+      <MemberSignature Language="F#" Value="see GetFontStretch, and SetFontStretch" Usage="see GetFontStretch, and SetFontStretch" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontStretch">
       <MemberSignature Language="C#" Value="public System.Windows.FontStretch FontStretch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStretch FontStretch" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.FontStretch" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontStretch As FontStretch" />
+      <MemberSignature Language="F#" Value="member this.FontStretch : System.Windows.FontStretch with get, set" Usage="System.Windows.Documents.TextElement.FontStretch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -460,6 +532,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontStretchProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontStretchProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextElement.FontStretchProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontStretchProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FontStretchProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.TextElement.FontStretchProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -474,9 +548,27 @@
       </Docs>
     </Member>
     <Member MemberName="FontStyle">
+      <MemberSignature Language="C#" Value="see GetFontStyle, and SetFontStyle" />
+      <MemberSignature Language="ILAsm" Value="see GetFontStyle, and SetFontStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.FontStyle" />
+      <MemberSignature Language="VB.NET" Value="see GetFontStyle, and SetFontStyle" />
+      <MemberSignature Language="F#" Value="see GetFontStyle, and SetFontStyle" Usage="see GetFontStyle, and SetFontStyle" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontStyle">
       <MemberSignature Language="C#" Value="public System.Windows.FontStyle FontStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStyle FontStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.FontStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontStyle As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.FontStyle : System.Windows.FontStyle with get, set" Usage="System.Windows.Documents.TextElement.FontStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -526,6 +618,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontStyleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextElement.FontStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontStyleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FontStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.TextElement.FontStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -540,9 +634,27 @@
       </Docs>
     </Member>
     <Member MemberName="FontWeight">
+      <MemberSignature Language="C#" Value="see GetFontWeight, and SetFontWeight" />
+      <MemberSignature Language="ILAsm" Value="see GetFontWeight, and SetFontWeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.FontWeight" />
+      <MemberSignature Language="VB.NET" Value="see GetFontWeight, and SetFontWeight" />
+      <MemberSignature Language="F#" Value="see GetFontWeight, and SetFontWeight" Usage="see GetFontWeight, and SetFontWeight" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontWeight">
       <MemberSignature Language="C#" Value="public System.Windows.FontWeight FontWeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontWeight FontWeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.FontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.FontWeight : System.Windows.FontWeight with get, set" Usage="System.Windows.Documents.TextElement.FontWeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -592,6 +704,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontWeightProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontWeightProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextElement.FontWeightProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontWeightProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FontWeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.TextElement.FontWeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -606,9 +720,27 @@
       </Docs>
     </Member>
     <Member MemberName="Foreground">
+      <MemberSignature Language="C#" Value="see GetForeground, and SetForeground" />
+      <MemberSignature Language="ILAsm" Value="see GetForeground, and SetForeground" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.Foreground" />
+      <MemberSignature Language="VB.NET" Value="see GetForeground, and SetForeground" />
+      <MemberSignature Language="F#" Value="see GetForeground, and SetForeground" Usage="see GetForeground, and SetForeground" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Foreground">
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Foreground { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Foreground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.Foreground" />
+      <MemberSignature Language="VB.NET" Value="Public Property Foreground As Brush" />
+      <MemberSignature Language="F#" Value="member this.Foreground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Documents.TextElement.Foreground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -661,6 +793,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ForegroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ForegroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextElement.ForegroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForegroundProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ForegroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.TextElement.ForegroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -678,6 +812,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.FontFamily GetFontFamily (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.FontFamily GetFontFamily(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.GetFontFamily(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFontFamily (element As DependencyObject) As FontFamily" />
+      <MemberSignature Language="F#" Value="static member GetFontFamily : System.Windows.DependencyObject -&gt; System.Windows.Media.FontFamily" Usage="System.Windows.Documents.TextElement.GetFontFamily element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -703,6 +839,8 @@
       <MemberSignature Language="C#" Value="public static double GetFontSize (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetFontSize(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.GetFontSize(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFontSize (element As DependencyObject) As Double" />
+      <MemberSignature Language="F#" Value="static member GetFontSize : System.Windows.DependencyObject -&gt; double" Usage="System.Windows.Documents.TextElement.GetFontSize element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -733,6 +871,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStretch GetFontStretch (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.FontStretch GetFontStretch(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.GetFontStretch(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFontStretch (element As DependencyObject) As FontStretch" />
+      <MemberSignature Language="F#" Value="static member GetFontStretch : System.Windows.DependencyObject -&gt; System.Windows.FontStretch" Usage="System.Windows.Documents.TextElement.GetFontStretch element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -758,6 +898,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStyle GetFontStyle (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.FontStyle GetFontStyle(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.GetFontStyle(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFontStyle (element As DependencyObject) As FontStyle" />
+      <MemberSignature Language="F#" Value="static member GetFontStyle : System.Windows.DependencyObject -&gt; System.Windows.FontStyle" Usage="System.Windows.Documents.TextElement.GetFontStyle element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -783,6 +925,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontWeight GetFontWeight (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.FontWeight GetFontWeight(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.GetFontWeight(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFontWeight (element As DependencyObject) As FontWeight" />
+      <MemberSignature Language="F#" Value="static member GetFontWeight : System.Windows.DependencyObject -&gt; System.Windows.FontWeight" Usage="System.Windows.Documents.TextElement.GetFontWeight element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -808,6 +952,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Brush GetForeground (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Brush GetForeground(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.GetForeground(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetForeground (element As DependencyObject) As Brush" />
+      <MemberSignature Language="F#" Value="static member GetForeground : System.Windows.DependencyObject -&gt; System.Windows.Media.Brush" Usage="System.Windows.Documents.TextElement.GetForeground element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -830,9 +976,11 @@
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
-      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator LogicalChildren { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Collections.IEnumerator LogicalChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.LogicalChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Documents.TextElement.LogicalChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -851,6 +999,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (System.Windows.DependencyPropertyChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="textElement.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -879,6 +1029,8 @@
       <MemberSignature Language="C#" Value="public static void SetFontFamily (System.Windows.DependencyObject element, System.Windows.Media.FontFamily value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFontFamily(class System.Windows.DependencyObject element, class System.Windows.Media.FontFamily value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.SetFontFamily(System.Windows.DependencyObject,System.Windows.Media.FontFamily)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFontFamily (element As DependencyObject, value As FontFamily)" />
+      <MemberSignature Language="F#" Value="static member SetFontFamily : System.Windows.DependencyObject * System.Windows.Media.FontFamily -&gt; unit" Usage="System.Windows.Documents.TextElement.SetFontFamily (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -905,6 +1057,8 @@
       <MemberSignature Language="C#" Value="public static void SetFontSize (System.Windows.DependencyObject element, double value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFontSize(class System.Windows.DependencyObject element, float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.SetFontSize(System.Windows.DependencyObject,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFontSize (element As DependencyObject, value As Double)" />
+      <MemberSignature Language="F#" Value="static member SetFontSize : System.Windows.DependencyObject * double -&gt; unit" Usage="System.Windows.Documents.TextElement.SetFontSize (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -931,6 +1085,8 @@
       <MemberSignature Language="C#" Value="public static void SetFontStretch (System.Windows.DependencyObject element, System.Windows.FontStretch value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFontStretch(class System.Windows.DependencyObject element, valuetype System.Windows.FontStretch value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.SetFontStretch(System.Windows.DependencyObject,System.Windows.FontStretch)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFontStretch (element As DependencyObject, value As FontStretch)" />
+      <MemberSignature Language="F#" Value="static member SetFontStretch : System.Windows.DependencyObject * System.Windows.FontStretch -&gt; unit" Usage="System.Windows.Documents.TextElement.SetFontStretch (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -957,6 +1113,8 @@
       <MemberSignature Language="C#" Value="public static void SetFontStyle (System.Windows.DependencyObject element, System.Windows.FontStyle value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFontStyle(class System.Windows.DependencyObject element, valuetype System.Windows.FontStyle value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.SetFontStyle(System.Windows.DependencyObject,System.Windows.FontStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFontStyle (element As DependencyObject, value As FontStyle)" />
+      <MemberSignature Language="F#" Value="static member SetFontStyle : System.Windows.DependencyObject * System.Windows.FontStyle -&gt; unit" Usage="System.Windows.Documents.TextElement.SetFontStyle (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -983,6 +1141,8 @@
       <MemberSignature Language="C#" Value="public static void SetFontWeight (System.Windows.DependencyObject element, System.Windows.FontWeight value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFontWeight(class System.Windows.DependencyObject element, valuetype System.Windows.FontWeight value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.SetFontWeight(System.Windows.DependencyObject,System.Windows.FontWeight)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFontWeight (element As DependencyObject, value As FontWeight)" />
+      <MemberSignature Language="F#" Value="static member SetFontWeight : System.Windows.DependencyObject * System.Windows.FontWeight -&gt; unit" Usage="System.Windows.Documents.TextElement.SetFontWeight (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1009,6 +1169,8 @@
       <MemberSignature Language="C#" Value="public static void SetForeground (System.Windows.DependencyObject element, System.Windows.Media.Brush value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetForeground(class System.Windows.DependencyObject element, class System.Windows.Media.Brush value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.SetForeground(System.Windows.DependencyObject,System.Windows.Media.Brush)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetForeground (element As DependencyObject, value As Brush)" />
+      <MemberSignature Language="F#" Value="static member SetForeground : System.Windows.DependencyObject * System.Windows.Media.Brush -&gt; unit" Usage="System.Windows.Documents.TextElement.SetForeground (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1035,7 +1197,11 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1056,7 +1222,11 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElement.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1077,6 +1247,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.TextEffectCollection TextEffects { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextEffectCollection TextEffects" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.TextEffects" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextEffects As TextEffectCollection" />
+      <MemberSignature Language="F#" Value="member this.TextEffects : System.Windows.Media.TextEffectCollection with get, set" Usage="System.Windows.Documents.TextElement.TextEffects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1118,6 +1290,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextEffectsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextEffectsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextElement.TextEffectsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextEffectsProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TextEffectsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.TextElement.TextEffectsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1135,6 +1309,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.Typography Typography { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.Typography Typography" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElement.Typography" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Typography As Typography" />
+      <MemberSignature Language="F#" Value="member this.Typography : System.Windows.Documents.Typography" Usage="System.Windows.Documents.TextElement.Typography" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

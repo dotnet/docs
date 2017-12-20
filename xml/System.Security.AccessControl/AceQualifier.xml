@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public enum AceQualifier" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AceQualifier extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AceQualifier" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AceQualifier" />
+  <TypeSignature Language="F#" Value="type AceQualifier = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="AccessAllowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceQualifier AccessAllowed = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceQualifier.AccessAllowed" />
+      <MemberSignature Language="VB.NET" Value="AccessAllowed" />
+      <MemberSignature Language="F#" Value="AccessAllowed = 0" Usage="System.Security.AccessControl.AceQualifier.AccessAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceQualifier</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Allow access.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="AccessDenied" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceQualifier AccessDenied = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceQualifier.AccessDenied" />
+      <MemberSignature Language="VB.NET" Value="AccessDenied" />
+      <MemberSignature Language="F#" Value="AccessDenied = 1" Usage="System.Security.AccessControl.AceQualifier.AccessDenied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceQualifier</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Deny access.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="SystemAlarm" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceQualifier SystemAlarm = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceQualifier.SystemAlarm" />
+      <MemberSignature Language="VB.NET" Value="SystemAlarm" />
+      <MemberSignature Language="F#" Value="SystemAlarm = 3" Usage="System.Security.AccessControl.AceQualifier.SystemAlarm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -82,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceQualifier</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Cause a system alarm.</summary>
       </Docs>
@@ -90,6 +101,8 @@
       <MemberSignature Language="C#" Value="SystemAudit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceQualifier SystemAudit = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceQualifier.SystemAudit" />
+      <MemberSignature Language="VB.NET" Value="SystemAudit" />
+      <MemberSignature Language="F#" Value="SystemAudit = 2" Usage="System.Security.AccessControl.AceQualifier.SystemAudit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -104,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceQualifier</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Cause a system audit.</summary>
       </Docs>

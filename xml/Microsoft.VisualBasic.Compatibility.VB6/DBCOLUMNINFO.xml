@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public struct DBCOLUMNINFO" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed DBCOLUMNINFO extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO" />
+  <TypeSignature Language="VB.NET" Value="Public Structure DBCOLUMNINFO" />
+  <TypeSignature Language="F#" Value="type DBCOLUMNINFO = struct" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public int columnFlags;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 columnFlags" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.columnFlags" />
+      <MemberSignature Language="VB.NET" Value="Public columnFlags As Integer " />
+      <MemberSignature Language="F#" Value="val mutable columnFlags : int" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.columnFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.DBID columnId;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype Microsoft.VisualBasic.Compatibility.VB6.DBID columnId" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.columnId" />
+      <MemberSignature Language="VB.NET" Value="Public columnId As DBID " />
+      <MemberSignature Language="F#" Value="val mutable columnId : Microsoft.VisualBasic.Compatibility.VB6.DBID" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.columnId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="public int columnOrdinal;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 columnOrdinal" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.columnOrdinal" />
+      <MemberSignature Language="VB.NET" Value="Public columnOrdinal As Integer " />
+      <MemberSignature Language="F#" Value="val mutable columnOrdinal : int" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.columnOrdinal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -110,6 +118,8 @@
       <MemberSignature Language="C#" Value="public int columnSize;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 columnSize" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.columnSize" />
+      <MemberSignature Language="VB.NET" Value="Public columnSize As Integer " />
+      <MemberSignature Language="F#" Value="val mutable columnSize : int" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.columnSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -135,6 +145,8 @@
       <MemberSignature Language="C#" Value="public short columnType;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 columnType" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.columnType" />
+      <MemberSignature Language="VB.NET" Value="Public columnType As Short " />
+      <MemberSignature Language="F#" Value="val mutable columnType : int16" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.columnType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -160,6 +172,8 @@
       <MemberSignature Language="C#" Value="public IntPtr name;" />
       <MemberSignature Language="ILAsm" Value=".field public native int name" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.name" />
+      <MemberSignature Language="VB.NET" Value="Public name As IntPtr " />
+      <MemberSignature Language="F#" Value="val mutable name : nativeint" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -185,6 +199,8 @@
       <MemberSignature Language="C#" Value="public byte precision;" />
       <MemberSignature Language="ILAsm" Value=".field public unsigned int8 precision" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.precision" />
+      <MemberSignature Language="VB.NET" Value="Public precision As Byte " />
+      <MemberSignature Language="F#" Value="val mutable precision : byte" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.precision" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -210,6 +226,8 @@
       <MemberSignature Language="C#" Value="public byte scale;" />
       <MemberSignature Language="ILAsm" Value=".field public unsigned int8 scale" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.scale" />
+      <MemberSignature Language="VB.NET" Value="Public scale As Byte " />
+      <MemberSignature Language="F#" Value="val mutable scale : byte" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.scale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -235,6 +253,8 @@
       <MemberSignature Language="C#" Value="public IntPtr typeInfo;" />
       <MemberSignature Language="ILAsm" Value=".field public native int typeInfo" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.typeInfo" />
+      <MemberSignature Language="VB.NET" Value="Public typeInfo As IntPtr " />
+      <MemberSignature Language="F#" Value="val mutable typeInfo : nativeint" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO.typeInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

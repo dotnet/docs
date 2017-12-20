@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ComClassAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ComClassAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ComClassAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComClassAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ComClassAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -41,10 +43,20 @@
     <altmember cref="N:System.Runtime.InteropServices" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="ComClassAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ComClassAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ComClassAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -68,6 +80,8 @@
       <MemberSignature Language="C#" Value="public ComClassAttribute (string _ClassID);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string _ClassID) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ComClassAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (_ClassID As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ComClassAttribute : string -&gt; Microsoft.VisualBasic.ComClassAttribute" Usage="new Microsoft.VisualBasic.ComClassAttribute _ClassID" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -94,6 +108,8 @@
       <MemberSignature Language="C#" Value="public ComClassAttribute (string _ClassID, string _InterfaceID);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string _ClassID, string _InterfaceID) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ComClassAttribute.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (_ClassID As String, _InterfaceID As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ComClassAttribute : string * string -&gt; Microsoft.VisualBasic.ComClassAttribute" Usage="new Microsoft.VisualBasic.ComClassAttribute (_ClassID, _InterfaceID)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -122,6 +138,8 @@
       <MemberSignature Language="C#" Value="public ComClassAttribute (string _ClassID, string _InterfaceID, string _EventId);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string _ClassID, string _InterfaceID, string _EventId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ComClassAttribute.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (_ClassID As String, _InterfaceID As String, _EventId As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ComClassAttribute : string * string * string -&gt; Microsoft.VisualBasic.ComClassAttribute" Usage="new Microsoft.VisualBasic.ComClassAttribute (_ClassID, _InterfaceID, _EventId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -152,6 +170,8 @@
       <MemberSignature Language="C#" Value="public string ClassID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClassID" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ComClassAttribute.ClassID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClassID As String" />
+      <MemberSignature Language="F#" Value="member this.ClassID : string" Usage="Microsoft.VisualBasic.ComClassAttribute.ClassID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -178,6 +198,8 @@
       <MemberSignature Language="C#" Value="public string EventID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EventID" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ComClassAttribute.EventID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventID As String" />
+      <MemberSignature Language="F#" Value="member this.EventID : string" Usage="Microsoft.VisualBasic.ComClassAttribute.EventID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -204,6 +226,8 @@
       <MemberSignature Language="C#" Value="public string InterfaceID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InterfaceID" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ComClassAttribute.InterfaceID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InterfaceID As String" />
+      <MemberSignature Language="F#" Value="member this.InterfaceID : string" Usage="Microsoft.VisualBasic.ComClassAttribute.InterfaceID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -230,6 +254,8 @@
       <MemberSignature Language="C#" Value="public bool InterfaceShadows { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool InterfaceShadows" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ComClassAttribute.InterfaceShadows" />
+      <MemberSignature Language="VB.NET" Value="Public Property InterfaceShadows As Boolean" />
+      <MemberSignature Language="F#" Value="member this.InterfaceShadows : bool with get, set" Usage="Microsoft.VisualBasic.ComClassAttribute.InterfaceShadows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -252,14 +278,5 @@
         <altmember cref="N:System.Runtime.InteropServices" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see langword="ComClassAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

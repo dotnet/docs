@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class Touch" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Touch extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Touch" />
+  <TypeSignature Language="VB.NET" Value="Public Class Touch" />
+  <TypeSignature Language="F#" Value="type Touch = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public static event System.Windows.Input.TouchFrameEventHandler FrameReported;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.TouchFrameEventHandler FrameReported" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Touch.FrameReported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Event FrameReported As TouchFrameEventHandler " />
+      <MemberSignature Language="F#" Value="member this.FrameReported : System.Windows.Input.TouchFrameEventHandler " Usage="member this.FrameReported : System.Windows.Input.TouchFrameEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

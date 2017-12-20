@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class Saml2AuthenticationStatement : System.IdentityModel.Tokens.Saml2Statement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Saml2AuthenticationStatement extends System.IdentityModel.Tokens.Saml2Statement" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2AuthenticationStatement" />
+  <TypeSignature Language="VB.NET" Value="Public Class Saml2AuthenticationStatement&#xA;Inherits Saml2Statement" />
+  <TypeSignature Language="F#" Value="type Saml2AuthenticationStatement = class&#xA;    inherit Saml2Statement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AuthenticationStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Saml2AuthenticationStatement (System.IdentityModel.Tokens.Saml2AuthenticationContext authenticationContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.Saml2AuthenticationContext authenticationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2AuthenticationStatement.#ctor(System.IdentityModel.Tokens.Saml2AuthenticationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (authenticationContext As Saml2AuthenticationContext)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2AuthenticationStatement : System.IdentityModel.Tokens.Saml2AuthenticationContext -&gt; System.IdentityModel.Tokens.Saml2AuthenticationStatement" Usage="new System.IdentityModel.Tokens.Saml2AuthenticationStatement authenticationContext" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -53,6 +66,8 @@
       <MemberSignature Language="C#" Value="public Saml2AuthenticationStatement (System.IdentityModel.Tokens.Saml2AuthenticationContext authenticationContext, DateTime authenticationInstant);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.Saml2AuthenticationContext authenticationContext, valuetype System.DateTime authenticationInstant) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2AuthenticationStatement.#ctor(System.IdentityModel.Tokens.Saml2AuthenticationContext,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (authenticationContext As Saml2AuthenticationContext, authenticationInstant As DateTime)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2AuthenticationStatement : System.IdentityModel.Tokens.Saml2AuthenticationContext * DateTime -&gt; System.IdentityModel.Tokens.Saml2AuthenticationStatement" Usage="new System.IdentityModel.Tokens.Saml2AuthenticationStatement (authenticationContext, authenticationInstant)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -75,6 +90,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.Saml2AuthenticationContext AuthenticationContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.Saml2AuthenticationContext AuthenticationContext" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthenticationStatement.AuthenticationContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property AuthenticationContext As Saml2AuthenticationContext" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationContext : System.IdentityModel.Tokens.Saml2AuthenticationContext with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthenticationStatement.AuthenticationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -101,6 +118,8 @@
       <MemberSignature Language="C#" Value="public DateTime AuthenticationInstant { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime AuthenticationInstant" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthenticationStatement.AuthenticationInstant" />
+      <MemberSignature Language="VB.NET" Value="Public Property AuthenticationInstant As DateTime" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationInstant : DateTime with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthenticationStatement.AuthenticationInstant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -126,6 +145,8 @@
       <MemberSignature Language="C#" Value="public string SessionIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SessionIndex" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthenticationStatement.SessionIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property SessionIndex As String" />
+      <MemberSignature Language="F#" Value="member this.SessionIndex : string with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthenticationStatement.SessionIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -151,6 +172,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; SessionNotOnOrAfter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; SessionNotOnOrAfter" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthenticationStatement.SessionNotOnOrAfter" />
+      <MemberSignature Language="VB.NET" Value="Public Property SessionNotOnOrAfter As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.SessionNotOnOrAfter : Nullable&lt;DateTime&gt; with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthenticationStatement.SessionNotOnOrAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -176,6 +199,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.Saml2SubjectLocality SubjectLocality { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.Saml2SubjectLocality SubjectLocality" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthenticationStatement.SubjectLocality" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubjectLocality As Saml2SubjectLocality" />
+      <MemberSignature Language="F#" Value="member this.SubjectLocality : System.IdentityModel.Tokens.Saml2SubjectLocality with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthenticationStatement.SubjectLocality" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -197,14 +222,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AuthenticationStatement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

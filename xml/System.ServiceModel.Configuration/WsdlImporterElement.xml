@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class WsdlImporterElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WsdlImporterElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WsdlImporterElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WsdlImporterElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type WsdlImporterElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,10 +27,20 @@
     <altmember cref="T:System.ServiceModel.Description.WsdlImporter" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WsdlImporterElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WsdlImporterElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WsdlImporterElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -44,6 +56,8 @@
       <MemberSignature Language="C#" Value="public WsdlImporterElement (string type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WsdlImporterElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.WsdlImporterElement : string -&gt; System.ServiceModel.Configuration.WsdlImporterElement" Usage="new System.ServiceModel.Configuration.WsdlImporterElement type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -62,6 +76,7 @@
       <MemberSignature Language="C#" Value="public WsdlImporterElement (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WsdlImporterElement.#ctor(System.Type)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.WsdlImporterElement : Type -&gt; System.ServiceModel.Configuration.WsdlImporterElement" Usage="new System.ServiceModel.Configuration.WsdlImporterElement type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -80,6 +95,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WsdlImporterElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.WsdlImporterElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WsdlImporterElement.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.ServiceModel.Configuration.WsdlImporterElement.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,14 +139,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WsdlImporterElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

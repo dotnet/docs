@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class HttpCacheVaryByHeaders" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpCacheVaryByHeaders extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheVaryByHeaders" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpCacheVaryByHeaders" />
+  <TypeSignature Language="F#" Value="type HttpCacheVaryByHeaders = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,7 @@
       <MemberSignature Language="C#" Value="public HttpCacheVaryByHeaders ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByHeaders.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="public bool AcceptTypes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AcceptTypes" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByHeaders.AcceptTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Property AcceptTypes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AcceptTypes : bool with get, set" Usage="System.Web.HttpCacheVaryByHeaders.AcceptTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +85,8 @@
       <MemberSignature Language="C#" Value="public string[] GetHeaders ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetHeaders() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByHeaders.GetHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHeaders () As String()" />
+      <MemberSignature Language="F#" Value="member this.GetHeaders : unit -&gt; string[]" Usage="httpCacheVaryByHeaders.GetHeaders " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +106,8 @@
       <MemberSignature Language="C#" Value="public bool this[string header] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByHeaders.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(header As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : bool with get, set" Usage="System.Web.HttpCacheVaryByHeaders.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -135,6 +144,8 @@
       <MemberSignature Language="C#" Value="public void SetHeaders (string[] headers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetHeaders(string[] headers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByHeaders.SetHeaders(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetHeaders (headers As String())" />
+      <MemberSignature Language="F#" Value="member this.SetHeaders : string[] -&gt; unit" Usage="httpCacheVaryByHeaders.SetHeaders headers" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +167,8 @@
       <MemberSignature Language="C#" Value="public bool UserAgent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UserAgent" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByHeaders.UserAgent" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserAgent As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UserAgent : bool with get, set" Usage="System.Web.HttpCacheVaryByHeaders.UserAgent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -192,6 +205,8 @@
       <MemberSignature Language="C#" Value="public bool UserCharSet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UserCharSet" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByHeaders.UserCharSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserCharSet As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UserCharSet : bool with get, set" Usage="System.Web.HttpCacheVaryByHeaders.UserCharSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -228,6 +243,8 @@
       <MemberSignature Language="C#" Value="public bool UserLanguage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UserLanguage" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByHeaders.UserLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserLanguage As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UserLanguage : bool with get, set" Usage="System.Web.HttpCacheVaryByHeaders.UserLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -264,6 +281,8 @@
       <MemberSignature Language="C#" Value="public void VaryByUnspecifiedParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void VaryByUnspecifiedParameters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByHeaders.VaryByUnspecifiedParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Sub VaryByUnspecifiedParameters ()" />
+      <MemberSignature Language="F#" Value="member this.VaryByUnspecifiedParameters : unit -&gt; unit" Usage="httpCacheVaryByHeaders.VaryByUnspecifiedParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

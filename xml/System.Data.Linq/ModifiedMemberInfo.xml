@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public struct ModifiedMemberInfo" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ModifiedMemberInfo extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ModifiedMemberInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ModifiedMemberInfo" />
+  <TypeSignature Language="F#" Value="type ModifiedMemberInfo = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public object CurrentValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CurrentValue" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ModifiedMemberInfo.CurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentValue As Object" />
+      <MemberSignature Language="F#" Value="member this.CurrentValue : obj" Usage="System.Data.Linq.ModifiedMemberInfo.CurrentValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo Member { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MemberInfo Member" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ModifiedMemberInfo.Member" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Member As MemberInfo" />
+      <MemberSignature Language="F#" Value="member this.Member : System.Reflection.MemberInfo" Usage="System.Data.Linq.ModifiedMemberInfo.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -55,6 +61,8 @@
       <MemberSignature Language="C#" Value="public object OriginalValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object OriginalValue" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ModifiedMemberInfo.OriginalValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalValue As Object" />
+      <MemberSignature Language="F#" Value="member this.OriginalValue : obj" Usage="System.Data.Linq.ModifiedMemberInfo.OriginalValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

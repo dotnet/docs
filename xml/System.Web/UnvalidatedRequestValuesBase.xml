@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class UnvalidatedRequestValuesBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit UnvalidatedRequestValuesBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UnvalidatedRequestValuesBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class UnvalidatedRequestValuesBase" />
+  <TypeSignature Language="F#" Value="type UnvalidatedRequestValuesBase = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="protected UnvalidatedRequestValuesBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UnvalidatedRequestValuesBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.HttpCookieCollection Cookies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpCookieCollection Cookies" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.Cookies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Cookies As HttpCookieCollection" />
+      <MemberSignature Language="F#" Value="member this.Cookies : System.Web.HttpCookieCollection" Usage="System.Web.UnvalidatedRequestValuesBase.Cookies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +68,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.HttpFileCollectionBase Files { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpFileCollectionBase Files" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.Files" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Files As HttpFileCollectionBase" />
+      <MemberSignature Language="F#" Value="member this.Files : System.Web.HttpFileCollectionBase" Usage="System.Web.UnvalidatedRequestValuesBase.Files" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +92,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Specialized.NameValueCollection Form { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameValueCollection Form" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.Form" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Form As NameValueCollection" />
+      <MemberSignature Language="F#" Value="member this.Form : System.Collections.Specialized.NameValueCollection" Usage="System.Web.UnvalidatedRequestValuesBase.Form" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +116,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Specialized.NameValueCollection Headers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameValueCollection Headers" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Headers As NameValueCollection" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Collections.Specialized.NameValueCollection" Usage="System.Web.UnvalidatedRequestValuesBase.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +140,8 @@
       <MemberSignature Language="C#" Value="public virtual string this[string field] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(field As String) As String" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string" Usage="System.Web.UnvalidatedRequestValuesBase.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +168,8 @@
       <MemberSignature Language="C#" Value="public virtual string Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="System.Web.UnvalidatedRequestValuesBase.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,6 +192,8 @@
       <MemberSignature Language="C#" Value="public virtual string PathInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PathInfo" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.PathInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PathInfo As String" />
+      <MemberSignature Language="F#" Value="member this.PathInfo : string" Usage="System.Web.UnvalidatedRequestValuesBase.PathInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -199,6 +216,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Specialized.NameValueCollection QueryString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameValueCollection QueryString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.QueryString" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property QueryString As NameValueCollection" />
+      <MemberSignature Language="F#" Value="member this.QueryString : System.Collections.Specialized.NameValueCollection" Usage="System.Web.UnvalidatedRequestValuesBase.QueryString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -221,6 +240,8 @@
       <MemberSignature Language="C#" Value="public virtual string RawUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RawUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.RawUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RawUrl As String" />
+      <MemberSignature Language="F#" Value="member this.RawUrl : string" Usage="System.Web.UnvalidatedRequestValuesBase.RawUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -250,6 +271,8 @@
       <MemberSignature Language="C#" Value="public virtual Uri Url { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Url" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Url As Uri" />
+      <MemberSignature Language="F#" Value="member this.Url : Uri" Usage="System.Web.UnvalidatedRequestValuesBase.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

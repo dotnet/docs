@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IWorkflowRootDesigner : IDisposable, System.ComponentModel.Design.IRootDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWorkflowRootDesigner implements class System.ComponentModel.Design.IDesigner, class System.ComponentModel.Design.IRootDesigner, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWorkflowRootDesigner&#xA;Implements IDisposable, IRootDesigner" />
+  <TypeSignature Language="F#" Value="type IWorkflowRootDesigner = interface&#xA;    interface IRootDesigner&#xA;    interface IDesigner&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Design.CompositeActivityDesigner InvokingDesigner { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.CompositeActivityDesigner InvokingDesigner" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.InvokingDesigner" />
+      <MemberSignature Language="VB.NET" Value="Public Property InvokingDesigner As CompositeActivityDesigner" />
+      <MemberSignature Language="F#" Value="member this.InvokingDesigner : System.Workflow.ComponentModel.Design.CompositeActivityDesigner with get, set" Usage="System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.InvokingDesigner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -64,6 +68,8 @@
       <MemberSignature Language="C#" Value="public bool IsSupportedActivityType (Type activityType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupportedActivityType(class System.Type activityType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.IsSupportedActivityType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsSupportedActivityType (activityType As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsSupportedActivityType : Type -&gt; bool" Usage="iWorkflowRootDesigner.IsSupportedActivityType activityType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter&gt; MessageFilters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter&gt; MessageFilters" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.MessageFilters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageFilters As ReadOnlyCollection(Of WorkflowDesignerMessageFilter)" />
+      <MemberSignature Language="F#" Value="member this.MessageFilters : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter&gt;" Usage="System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.MessageFilters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -105,6 +113,8 @@
       <MemberSignature Language="C#" Value="public bool SupportsLayoutPersistence { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsLayoutPersistence" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.SupportsLayoutPersistence" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsLayoutPersistence As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsLayoutPersistence : bool" Usage="System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.SupportsLayoutPersistence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

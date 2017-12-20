@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class WqlEventQuery : System.Management.EventQuery" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WqlEventQuery extends System.Management.EventQuery" />
   <TypeSignature Language="DocId" Value="T:System.Management.WqlEventQuery" />
+  <TypeSignature Language="VB.NET" Value="Public Class WqlEventQuery&#xA;Inherits EventQuery" />
+  <TypeSignature Language="F#" Value="type WqlEventQuery = class&#xA;    inherit EventQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.WqlEventQuery" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WqlEventQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -43,6 +55,8 @@
       <MemberSignature Language="C#" Value="public WqlEventQuery (string queryOrEventClassName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string queryOrEventClassName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (queryOrEventClassName As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.WqlEventQuery : string -&gt; System.Management.WqlEventQuery" Usage="new System.Management.WqlEventQuery queryOrEventClassName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -78,6 +92,8 @@
       <MemberSignature Language="C#" Value="public WqlEventQuery (string eventClassName, string condition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventClassName, string condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventClassName As String, condition As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.WqlEventQuery : string * string -&gt; System.Management.WqlEventQuery" Usage="new System.Management.WqlEventQuery (eventClassName, condition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -107,6 +123,8 @@
       <MemberSignature Language="C#" Value="public WqlEventQuery (string eventClassName, TimeSpan withinInterval);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventClassName, valuetype System.TimeSpan withinInterval) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventClassName As String, withinInterval As TimeSpan)" />
+      <MemberSignature Language="F#" Value="new System.Management.WqlEventQuery : string * TimeSpan -&gt; System.Management.WqlEventQuery" Usage="new System.Management.WqlEventQuery (eventClassName, withinInterval)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -144,6 +162,8 @@
       <MemberSignature Language="C#" Value="public WqlEventQuery (string eventClassName, string condition, TimeSpan groupWithinInterval);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventClassName, string condition, valuetype System.TimeSpan groupWithinInterval) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor(System.String,System.String,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventClassName As String, condition As String, groupWithinInterval As TimeSpan)" />
+      <MemberSignature Language="F#" Value="new System.Management.WqlEventQuery : string * string * TimeSpan -&gt; System.Management.WqlEventQuery" Usage="new System.Management.WqlEventQuery (eventClassName, condition, groupWithinInterval)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -175,6 +195,8 @@
       <MemberSignature Language="C#" Value="public WqlEventQuery (string eventClassName, TimeSpan withinInterval, string condition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventClassName, valuetype System.TimeSpan withinInterval, string condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventClassName As String, withinInterval As TimeSpan, condition As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.WqlEventQuery : string * TimeSpan * string -&gt; System.Management.WqlEventQuery" Usage="new System.Management.WqlEventQuery (eventClassName, withinInterval, condition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -214,6 +236,8 @@
       <MemberSignature Language="C#" Value="public WqlEventQuery (string eventClassName, string condition, TimeSpan groupWithinInterval, string[] groupByPropertyList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventClassName, string condition, valuetype System.TimeSpan groupWithinInterval, string[] groupByPropertyList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor(System.String,System.String,System.TimeSpan,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventClassName As String, condition As String, groupWithinInterval As TimeSpan, groupByPropertyList As String())" />
+      <MemberSignature Language="F#" Value="new System.Management.WqlEventQuery : string * string * TimeSpan * string[] -&gt; System.Management.WqlEventQuery" Usage="new System.Management.WqlEventQuery (eventClassName, condition, groupWithinInterval, groupByPropertyList)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -247,6 +271,8 @@
       <MemberSignature Language="C#" Value="public WqlEventQuery (string eventClassName, TimeSpan withinInterval, string condition, TimeSpan groupWithinInterval, string[] groupByPropertyList, string havingCondition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventClassName, valuetype System.TimeSpan withinInterval, string condition, valuetype System.TimeSpan groupWithinInterval, string[] groupByPropertyList, string havingCondition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan,System.String,System.TimeSpan,System.String[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventClassName As String, withinInterval As TimeSpan, condition As String, groupWithinInterval As TimeSpan, groupByPropertyList As String(), havingCondition As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.WqlEventQuery : string * TimeSpan * string * TimeSpan * string[] * string -&gt; System.Management.WqlEventQuery" Usage="new System.Management.WqlEventQuery (eventClassName, withinInterval, condition, groupWithinInterval, groupByPropertyList, havingCondition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -289,9 +315,11 @@
       </Docs>
     </Member>
     <Member MemberName="BuildQuery">
-      <MemberSignature Language="C#" Value="protected void BuildQuery ();" />
+      <MemberSignature Language="C#" Value="protected internal void BuildQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void BuildQuery() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.BuildQuery" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub BuildQuery ()" />
+      <MemberSignature Language="F#" Value="member this.BuildQuery : unit -&gt; unit" Usage="wqlEventQuery.BuildQuery " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -319,6 +347,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="wqlEventQuery.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -348,6 +378,8 @@
       <MemberSignature Language="C#" Value="public string Condition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Condition" />
       <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.Condition" />
+      <MemberSignature Language="VB.NET" Value="Public Property Condition As String" />
+      <MemberSignature Language="F#" Value="member this.Condition : string with get, set" Usage="System.Management.WqlEventQuery.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -387,6 +419,8 @@
       <MemberSignature Language="C#" Value="public string EventClassName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EventClassName" />
       <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.EventClassName" />
+      <MemberSignature Language="VB.NET" Value="Public Property EventClassName As String" />
+      <MemberSignature Language="F#" Value="member this.EventClassName : string with get, set" Usage="System.Management.WqlEventQuery.EventClassName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -426,6 +460,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection GroupByPropertyList { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection GroupByPropertyList" />
       <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.GroupByPropertyList" />
+      <MemberSignature Language="VB.NET" Value="Public Property GroupByPropertyList As StringCollection" />
+      <MemberSignature Language="F#" Value="member this.GroupByPropertyList : System.Collections.Specialized.StringCollection with get, set" Usage="System.Management.WqlEventQuery.GroupByPropertyList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -465,6 +501,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan GroupWithinInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan GroupWithinInterval" />
       <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.GroupWithinInterval" />
+      <MemberSignature Language="VB.NET" Value="Public Property GroupWithinInterval As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.GroupWithinInterval : TimeSpan with get, set" Usage="System.Management.WqlEventQuery.GroupWithinInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -504,6 +542,8 @@
       <MemberSignature Language="C#" Value="public string HavingCondition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HavingCondition" />
       <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.HavingCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Property HavingCondition As String" />
+      <MemberSignature Language="F#" Value="member this.HavingCondition : string with get, set" Usage="System.Management.WqlEventQuery.HavingCondition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -540,9 +580,11 @@
       </Docs>
     </Member>
     <Member MemberName="ParseQuery">
-      <MemberSignature Language="C#" Value="protected override void ParseQuery (string query);" />
+      <MemberSignature Language="C#" Value="protected internal override void ParseQuery (string query);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ParseQuery(string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.ParseQuery(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub ParseQuery (query As String)" />
+      <MemberSignature Language="F#" Value="override this.ParseQuery : string -&gt; unit" Usage="wqlEventQuery.ParseQuery query" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -573,6 +615,8 @@
       <MemberSignature Language="C#" Value="public override string QueryLanguage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string QueryLanguage" />
       <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.QueryLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property QueryLanguage As String" />
+      <MemberSignature Language="F#" Value="member this.QueryLanguage : string" Usage="System.Management.WqlEventQuery.QueryLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -603,6 +647,8 @@
       <MemberSignature Language="C#" Value="public override string QueryString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string QueryString" />
       <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.QueryString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property QueryString As String" />
+      <MemberSignature Language="F#" Value="member this.QueryString : string with get, set" Usage="System.Management.WqlEventQuery.QueryString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -641,6 +687,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan WithinInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan WithinInterval" />
       <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.WithinInterval" />
+      <MemberSignature Language="VB.NET" Value="Public Property WithinInterval As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.WithinInterval : TimeSpan with get, set" Usage="System.Management.WqlEventQuery.WithinInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -678,14 +726,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.WqlEventQuery" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

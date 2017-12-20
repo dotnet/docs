@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class EncryptionMethod" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EncryptionMethod extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.EncryptionMethod" />
+  <TypeSignature Language="VB.NET" Value="Public Class EncryptionMethod" />
+  <TypeSignature Language="F#" Value="type EncryptionMethod = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,10 +47,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptionMethod" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EncryptionMethod ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionMethod.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -75,6 +87,8 @@
       <MemberSignature Language="C#" Value="public EncryptionMethod (string strAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string strAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionMethod.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (strAlgorithm As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.EncryptionMethod : string -&gt; System.Security.Cryptography.Xml.EncryptionMethod" Usage="new System.Security.Cryptography.Xml.EncryptionMethod algorithm" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -121,6 +135,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlElement GetXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionMethod.GetXml" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetXml () As XmlElement" />
+      <MemberSignature Language="F#" Value="member this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="encryptionMethod.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -151,6 +167,8 @@
       <MemberSignature Language="C#" Value="public string KeyAlgorithm { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeyAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptionMethod.KeyAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyAlgorithm As String" />
+      <MemberSignature Language="F#" Value="member this.KeyAlgorithm : string with get, set" Usage="System.Security.Cryptography.Xml.EncryptionMethod.KeyAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -182,6 +200,8 @@
       <MemberSignature Language="C#" Value="public int KeySize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptionMethod.KeySize" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeySize As Integer" />
+      <MemberSignature Language="F#" Value="member this.KeySize : int with get, set" Usage="System.Security.Cryptography.Xml.EncryptionMethod.KeySize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -212,6 +232,8 @@
       <MemberSignature Language="C#" Value="public void LoadXml (System.Xml.XmlElement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionMethod.LoadXml(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadXml (value As XmlElement)" />
+      <MemberSignature Language="F#" Value="member this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="encryptionMethod.LoadXml value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -242,14 +264,5 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The key size expressed in the <paramref name="value" /> parameter was less than 0.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptionMethod" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

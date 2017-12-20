@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class DateTimePicker : System.Windows.Forms.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DateTimePicker extends System.Windows.Forms.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DateTimePicker" />
+  <TypeSignature Language="VB.NET" Value="Public Class DateTimePicker&#xA;Inherits Control" />
+  <TypeSignature Language="F#" Value="type DateTimePicker = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +78,7 @@
       <MemberSignature Language="C#" Value="public DateTimePicker ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +105,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DateTimePicker.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -138,6 +143,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackColorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.BackColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackColorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackColorChanged : EventHandler " Usage="member this.BackColorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -163,6 +170,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Image BackgroundImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image BackgroundImage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.BackgroundImage" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.DateTimePicker.BackgroundImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -196,6 +205,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.BackgroundImageChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -221,6 +232,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.ImageLayout BackgroundImageLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImageLayout BackgroundImageLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.BackgroundImageLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.DateTimePicker.BackgroundImageLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -254,6 +267,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageLayoutChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageLayoutChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.BackgroundImageLayoutChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -279,6 +294,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font CalendarFont { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font CalendarFont" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.CalendarFont" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalendarFont As Font" />
+      <MemberSignature Language="F#" Value="member this.CalendarFont : System.Drawing.Font with get, set" Usage="System.Windows.Forms.DateTimePicker.CalendarFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -321,6 +338,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color CalendarForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CalendarForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.CalendarForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalendarForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.CalendarForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DateTimePicker.CalendarForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -359,6 +378,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color CalendarMonthBackground { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CalendarMonthBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.CalendarMonthBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalendarMonthBackground As Color" />
+      <MemberSignature Language="F#" Value="member this.CalendarMonthBackground : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DateTimePicker.CalendarMonthBackground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -397,6 +418,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color CalendarTitleBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CalendarTitleBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.CalendarTitleBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalendarTitleBackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.CalendarTitleBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DateTimePicker.CalendarTitleBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -426,6 +449,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color CalendarTitleForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CalendarTitleForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.CalendarTitleForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalendarTitleForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.CalendarTitleForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DateTimePicker.CalendarTitleForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -455,6 +480,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color CalendarTrailingForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CalendarTrailingForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.CalendarTrailingForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalendarTrailingForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.CalendarTrailingForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DateTimePicker.CalendarTrailingForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -486,6 +513,8 @@
       <MemberSignature Language="C#" Value="public bool Checked { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Checked" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.Checked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Checked As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Checked : bool with get, set" Usage="System.Windows.Forms.DateTimePicker.Checked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -522,6 +551,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Click;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Click" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.Click" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Click As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -554,6 +585,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler CloseUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CloseUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.CloseUp" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CloseUp As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CloseUp : EventHandler " Usage="member this.CloseUp : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -589,6 +622,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.CreateAccessibilityInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="dateTimePicker.CreateAccessibilityInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -621,6 +656,8 @@
       <MemberSignature Language="C#" Value="protected override void CreateHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CreateHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.CreateHandle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateHandle ()" />
+      <MemberSignature Language="F#" Value="override this.CreateHandle : unit -&gt; unit" Usage="dateTimePicker.CreateHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -640,6 +677,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.CreateParams" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.DateTimePicker.CreateParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -659,6 +698,8 @@
       <MemberSignature Language="C#" Value="public string CustomFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CustomFormat" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.CustomFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomFormat As String" />
+      <MemberSignature Language="F#" Value="member this.CustomFormat : string with get, set" Usage="System.Windows.Forms.DateTimePicker.CustomFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -737,6 +778,8 @@
       <MemberSignature Language="C#" Value="protected static readonly System.Drawing.Color DefaultMonthBackColor;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly valuetype System.Drawing.Color DefaultMonthBackColor" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DateTimePicker.DefaultMonthBackColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly DefaultMonthBackColor As Color " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultMonthBackColor : System.Drawing.Color" Usage="System.Windows.Forms.DateTimePicker.DefaultMonthBackColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -754,6 +797,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.DateTimePicker.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -773,6 +818,8 @@
       <MemberSignature Language="C#" Value="protected static readonly System.Drawing.Color DefaultTitleBackColor;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly valuetype System.Drawing.Color DefaultTitleBackColor" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DateTimePicker.DefaultTitleBackColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly DefaultTitleBackColor As Color " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultTitleBackColor : System.Drawing.Color" Usage="System.Windows.Forms.DateTimePicker.DefaultTitleBackColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -790,6 +837,8 @@
       <MemberSignature Language="C#" Value="protected static readonly System.Drawing.Color DefaultTitleForeColor;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly valuetype System.Drawing.Color DefaultTitleForeColor" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DateTimePicker.DefaultTitleForeColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly DefaultTitleForeColor As Color " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultTitleForeColor : System.Drawing.Color" Usage="System.Windows.Forms.DateTimePicker.DefaultTitleForeColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -807,6 +856,8 @@
       <MemberSignature Language="C#" Value="protected static readonly System.Drawing.Color DefaultTrailingForeColor;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly valuetype System.Drawing.Color DefaultTrailingForeColor" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DateTimePicker.DefaultTrailingForeColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly DefaultTrailingForeColor As Color " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultTrailingForeColor : System.Drawing.Color" Usage="System.Windows.Forms.DateTimePicker.DefaultTrailingForeColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -824,6 +875,8 @@
       <MemberSignature Language="C#" Value="protected override void DestroyHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DestroyHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.DestroyHandle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DestroyHandle ()" />
+      <MemberSignature Language="F#" Value="override this.DestroyHandle : unit -&gt; unit" Usage="dateTimePicker.DestroyHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -843,6 +896,8 @@
       <MemberSignature Language="C#" Value="protected override bool DoubleBuffered { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DoubleBuffered" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.DoubleBuffered" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Property DoubleBuffered As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DoubleBuffered : bool with get, set" Usage="System.Windows.Forms.DateTimePicker.DoubleBuffered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -874,6 +929,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DoubleClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.DoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DoubleClick As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DoubleClick : EventHandler " Usage="member this.DoubleClick : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -906,6 +963,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DropDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DropDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.DropDown" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DropDown As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DropDown : EventHandler " Usage="member this.DropDown : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -940,6 +999,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.LeftRightAlignment DropDownAlign { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.LeftRightAlignment DropDownAlign" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.DropDownAlign" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropDownAlign As LeftRightAlignment" />
+      <MemberSignature Language="F#" Value="member this.DropDownAlign : System.Windows.Forms.LeftRightAlignment with get, set" Usage="System.Windows.Forms.DateTimePicker.DropDownAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -984,6 +1045,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DateTimePicker.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1022,6 +1085,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ForeColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ForeColorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.ForeColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ForeColorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1056,6 +1121,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DateTimePickerFormat Format { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DateTimePickerFormat Format" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.Format" />
+      <MemberSignature Language="VB.NET" Value="Public Property Format As DateTimePickerFormat" />
+      <MemberSignature Language="F#" Value="member this.Format : System.Windows.Forms.DateTimePickerFormat with get, set" Usage="System.Windows.Forms.DateTimePicker.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1102,6 +1169,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler FormatChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FormatChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.FormatChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event FormatChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.FormatChanged : EventHandler " Usage="member this.FormatChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1137,6 +1206,8 @@
       <MemberSignature Language="C#" Value="protected override bool IsInputKey (System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsInputKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.IsInputKey(System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsInputKey (keyData As Keys) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsInputKey : System.Windows.Forms.Keys -&gt; bool" Usage="dateTimePicker.IsInputKey keyData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1168,6 +1239,8 @@
       <MemberSignature Language="C#" Value="public DateTime MaxDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MaxDate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.MaxDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.MaxDate : DateTime with get, set" Usage="System.Windows.Forms.DateTimePicker.MaxDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1201,6 +1274,8 @@
       <MemberSignature Language="C#" Value="public static readonly DateTime MaxDateTime;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.DateTime MaxDateTime" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DateTimePicker.MaxDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxDateTime As DateTime " />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxDateTime : DateTime" Usage="System.Windows.Forms.DateTimePicker.MaxDateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1245,6 +1320,8 @@
       <MemberSignature Language="C#" Value="public static DateTime MaximumDateTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.DateTime MaximumDateTime" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.MaximumDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaximumDateTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.MaximumDateTime : DateTime" Usage="System.Windows.Forms.DateTimePicker.MaximumDateTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1270,6 +1347,8 @@
       <MemberSignature Language="C#" Value="public DateTime MinDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MinDate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.MinDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.MinDate : DateTime with get, set" Usage="System.Windows.Forms.DateTimePicker.MinDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1303,6 +1382,8 @@
       <MemberSignature Language="C#" Value="public static readonly DateTime MinDateTime;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.DateTime MinDateTime" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DateTimePicker.MinDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinDateTime As DateTime " />
+      <MemberSignature Language="F#" Value=" staticval mutable MinDateTime : DateTime" Usage="System.Windows.Forms.DateTimePicker.MinDateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1335,6 +1416,8 @@
       <MemberSignature Language="C#" Value="public static DateTime MinimumDateTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.DateTime MinimumDateTime" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.MinimumDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimumDateTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.MinimumDateTime : DateTime" Usage="System.Windows.Forms.DateTimePicker.MinimumDateTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1360,6 +1443,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.MouseClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseClick As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseClick : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1392,6 +1477,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseDoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseDoubleClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.MouseDoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDoubleClick As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1424,6 +1511,7 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCloseUp (EventArgs eventargs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCloseUp(class System.EventArgs eventargs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.OnCloseUp(System.EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnCloseUp : EventArgs -&gt; unit&#xA;override this.OnCloseUp : EventArgs -&gt; unit" Usage="dateTimePicker.OnCloseUp eventargs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1460,6 +1548,7 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDropDown (EventArgs eventargs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDropDown(class System.EventArgs eventargs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.OnDropDown(System.EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDropDown : EventArgs -&gt; unit&#xA;override this.OnDropDown : EventArgs -&gt; unit" Usage="dateTimePicker.OnDropDown eventargs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1496,6 +1585,8 @@
       <MemberSignature Language="C#" Value="protected override void OnFontChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFontChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.OnFontChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="dateTimePicker.OnFontChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1529,6 +1620,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnFormatChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFormatChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.OnFormatChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFormatChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnFormatChanged : EventArgs -&gt; unit&#xA;override this.OnFormatChanged : EventArgs -&gt; unit" Usage="dateTimePicker.OnFormatChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1566,6 +1659,8 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.OnHandleCreated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="dateTimePicker.OnHandleCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1599,6 +1694,8 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleDestroyed (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleDestroyed(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.OnHandleDestroyed(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleDestroyed (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnHandleDestroyed : EventArgs -&gt; unit" Usage="dateTimePicker.OnHandleDestroyed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1632,6 +1729,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnRightToLeftLayoutChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRightToLeftLayoutChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.OnRightToLeftLayoutChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRightToLeftLayoutChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnRightToLeftLayoutChanged : EventArgs -&gt; unit&#xA;override this.OnRightToLeftLayoutChanged : EventArgs -&gt; unit" Usage="dateTimePicker.OnRightToLeftLayoutChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1670,6 +1769,8 @@
       <MemberSignature Language="C#" Value="protected override void OnSystemColorsChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSystemColorsChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.OnSystemColorsChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSystemColorsChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnSystemColorsChanged : EventArgs -&gt; unit" Usage="dateTimePicker.OnSystemColorsChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1691,6 +1792,7 @@
       <MemberSignature Language="C#" Value="protected virtual void OnValueChanged (EventArgs eventargs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnValueChanged(class System.EventArgs eventargs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.OnValueChanged(System.EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnValueChanged : EventArgs -&gt; unit&#xA;override this.OnValueChanged : EventArgs -&gt; unit" Usage="dateTimePicker.OnValueChanged eventargs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1727,6 +1829,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Padding Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding Padding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.DateTimePicker.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1764,6 +1868,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler PaddingChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaddingChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.PaddingChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1796,6 +1902,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.PaintEventHandler Paint;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.PaintEventHandler Paint" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.Paint" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Paint As PaintEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Paint : System.Windows.Forms.PaintEventHandler " Usage="member this.Paint : System.Windows.Forms.PaintEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1821,6 +1929,8 @@
       <MemberSignature Language="C#" Value="public int PreferredHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PreferredHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.PreferredHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreferredHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.PreferredHeight : int" Usage="System.Windows.Forms.DateTimePicker.PreferredHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1854,6 +1964,8 @@
       <MemberSignature Language="C#" Value="public virtual bool RightToLeftLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RightToLeftLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.RightToLeftLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RightToLeftLayout As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayout : bool with get, set" Usage="System.Windows.Forms.DateTimePicker.RightToLeftLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1888,6 +2000,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler RightToLeftLayoutChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RightToLeftLayoutChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.RightToLeftLayoutChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event RightToLeftLayoutChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayoutChanged : EventHandler " Usage="member this.RightToLeftLayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1922,6 +2036,8 @@
       <MemberSignature Language="C#" Value="public bool ShowCheckBox { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowCheckBox" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.ShowCheckBox" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowCheckBox As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowCheckBox : bool with get, set" Usage="System.Windows.Forms.DateTimePicker.ShowCheckBox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1962,6 +2078,8 @@
       <MemberSignature Language="C#" Value="public bool ShowUpDown { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowUpDown" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.ShowUpDown" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowUpDown As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowUpDown : bool with get, set" Usage="System.Windows.Forms.DateTimePicker.ShowUpDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2005,6 +2123,8 @@
       <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.DateTimePicker.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2045,6 +2165,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.TextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2070,6 +2192,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dateTimePicker.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2089,6 +2213,8 @@
       <MemberSignature Language="C#" Value="public DateTime Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateTimePicker.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As DateTime" />
+      <MemberSignature Language="F#" Value="member this.Value : DateTime with get, set" Usage="System.Windows.Forms.DateTimePicker.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2133,6 +2259,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ValueChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ValueChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DateTimePicker.ValueChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ValueChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ValueChanged : EventHandler " Usage="member this.ValueChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2170,6 +2298,8 @@
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateTimePicker.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="dateTimePicker.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

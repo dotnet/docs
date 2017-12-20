@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class OleDbParameter : System.Data.Common.DbParameter, ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbParameter extends System.Data.Common.DbParameter implements class System.Data.IDataParameter, class System.Data.IDbDataParameter, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbParameter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbParameter&#xA;Inherits DbParameter&#xA;Implements ICloneable" />
+  <TypeSignature Language="F#" Value="type OleDbParameter = class&#xA;    inherit DbParameter&#xA;    interface ICloneable&#xA;    interface IDbDataParameter&#xA;    interface IDataParameter" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,10 +61,20 @@ OleDbDataReader reader = command.ExecuteReader();
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OleDbParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbParameter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -88,6 +100,8 @@ OleDbDataReader reader = command.ExecuteReader();
       <MemberSignature Language="C#" Value="public OleDbParameter (string name, System.Data.OleDb.OleDbType dataType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.OleDb.OleDbType dataType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbParameter.#ctor(System.String,System.Data.OleDb.OleDbType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, dataType As OleDbType)" />
+      <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbParameter : string * System.Data.OleDb.OleDbType -&gt; System.Data.OleDb.OleDbParameter" Usage="new System.Data.OleDb.OleDbParameter (name, dataType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -124,6 +138,8 @@ OleDbDataReader reader = command.ExecuteReader();
       <MemberSignature Language="C#" Value="public OleDbParameter (string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbParameter.#ctor(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As Object)" />
+      <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbParameter : string * obj -&gt; System.Data.OleDb.OleDbParameter" Usage="new System.Data.OleDb.OleDbParameter (name, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -165,6 +181,8 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public OleDbParameter (string name, System.Data.OleDb.OleDbType dataType, int size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.OleDb.OleDbType dataType, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbParameter.#ctor(System.String,System.Data.OleDb.OleDbType,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, dataType As OleDbType, size As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbParameter : string * System.Data.OleDb.OleDbType * int -&gt; System.Data.OleDb.OleDbParameter" Usage="new System.Data.OleDb.OleDbParameter (name, dataType, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -203,6 +221,8 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public OleDbParameter (string name, System.Data.OleDb.OleDbType dataType, int size, string srcColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.OleDb.OleDbType dataType, int32 size, string srcColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbParameter.#ctor(System.String,System.Data.OleDb.OleDbType,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, dataType As OleDbType, size As Integer, srcColumn As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbParameter : string * System.Data.OleDb.OleDbType * int * string -&gt; System.Data.OleDb.OleDbParameter" Usage="new System.Data.OleDb.OleDbParameter (name, dataType, size, srcColumn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -243,6 +263,8 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public OleDbParameter (string parameterName, System.Data.OleDb.OleDbType dbType, int size, System.Data.ParameterDirection direction, bool isNullable, byte precision, byte scale, string srcColumn, System.Data.DataRowVersion srcVersion, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.OleDb.OleDbType dbType, int32 size, valuetype System.Data.ParameterDirection direction, bool isNullable, unsigned int8 precision, unsigned int8 scale, string srcColumn, valuetype System.Data.DataRowVersion srcVersion, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbParameter.#ctor(System.String,System.Data.OleDb.OleDbType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameterName As String, dbType As OleDbType, size As Integer, direction As ParameterDirection, isNullable As Boolean, precision As Byte, scale As Byte, srcColumn As String, srcVersion As DataRowVersion, value As Object)" />
+      <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbParameter : string * System.Data.OleDb.OleDbType * int * System.Data.ParameterDirection * bool * byte * byte * string * System.Data.DataRowVersion * obj -&gt; System.Data.OleDb.OleDbParameter" Usage="new System.Data.OleDb.OleDbParameter (parameterName, dbType, size, direction, isNullable, precision, scale, srcColumn, srcVersion, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -301,6 +323,8 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public OleDbParameter (string parameterName, System.Data.OleDb.OleDbType dbType, int size, System.Data.ParameterDirection direction, byte precision, byte scale, string sourceColumn, System.Data.DataRowVersion sourceVersion, bool sourceColumnNullMapping, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.OleDb.OleDbType dbType, int32 size, valuetype System.Data.ParameterDirection direction, unsigned int8 precision, unsigned int8 scale, string sourceColumn, valuetype System.Data.DataRowVersion sourceVersion, bool sourceColumnNullMapping, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbParameter.#ctor(System.String,System.Data.OleDb.OleDbType,System.Int32,System.Data.ParameterDirection,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Boolean,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameterName As String, dbType As OleDbType, size As Integer, direction As ParameterDirection, precision As Byte, scale As Byte, sourceColumn As String, sourceVersion As DataRowVersion, sourceColumnNullMapping As Boolean, value As Object)" />
+      <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbParameter : string * System.Data.OleDb.OleDbType * int * System.Data.ParameterDirection * byte * byte * string * System.Data.DataRowVersion * bool * obj -&gt; System.Data.OleDb.OleDbParameter" Usage="new System.Data.OleDb.OleDbParameter (parameterName, dbType, size, direction, precision, scale, sourceColumn, sourceVersion, sourceColumnNullMapping, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -359,7 +383,12 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override System.Data.DbType DbType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DbType DbType" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbParameter.DbType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DbType As DbType" />
+      <MemberSignature Language="F#" Value="member this.DbType : System.Data.DbType with get, set" Usage="System.Data.OleDb.OleDbParameter.DbType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.DbType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -395,7 +424,12 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override System.Data.ParameterDirection Direction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ParameterDirection Direction" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbParameter.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Direction As ParameterDirection" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Data.ParameterDirection with get, set" Usage="System.Data.OleDb.OleDbParameter.Direction" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.Direction</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -448,6 +482,8 @@ public void CreateOleDbParameter()
       <MemberSignature Language="C#" Value="public override bool IsNullable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbParameter.IsNullable" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property IsNullable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNullable : bool with get, set" Usage="System.Data.OleDb.OleDbParameter.IsNullable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -496,6 +532,8 @@ public void CreateOleDbParameter()
       <MemberSignature Language="C#" Value="public int Offset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbParameter.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public Property Offset As Integer" />
+      <MemberSignature Language="F#" Value="member this.Offset : int with get, set" Usage="System.Data.OleDb.OleDbParameter.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -522,6 +560,8 @@ public void CreateOleDbParameter()
       <MemberSignature Language="C#" Value="public System.Data.OleDb.OleDbType OleDbType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.OleDb.OleDbType OleDbType" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbParameter.OleDbType" />
+      <MemberSignature Language="VB.NET" Value="Public Property OleDbType As OleDbType" />
+      <MemberSignature Language="F#" Value="member this.OleDbType : System.Data.OleDb.OleDbType with get, set" Usage="System.Data.OleDb.OleDbParameter.OleDbType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -557,7 +597,12 @@ public void CreateOleDbParameter()
       <MemberSignature Language="C#" Value="public override string ParameterName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ParameterName" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbParameter.ParameterName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ParameterName As String" />
+      <MemberSignature Language="F#" Value="member this.ParameterName : string with get, set" Usage="System.Data.OleDb.OleDbParameter.ParameterName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.ParameterName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -602,7 +647,12 @@ public void CreateOleDbParameter()
       <MemberSignature Language="C#" Value="public byte Precision { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Precision" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbParameter.Precision" />
+      <MemberSignature Language="VB.NET" Value="Public Property Precision As Byte" />
+      <MemberSignature Language="F#" Value="member this.Precision : byte with get, set" Usage="System.Data.OleDb.OleDbParameter.Precision" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbDataParameter.Precision</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -668,6 +718,8 @@ public void CreateOleDbParameter()
       <MemberSignature Language="C#" Value="public override void ResetDbType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetDbType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbParameter.ResetDbType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetDbType ()" />
+      <MemberSignature Language="F#" Value="override this.ResetDbType : unit -&gt; unit" Usage="oleDbParameter.ResetDbType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -696,6 +748,8 @@ public void CreateOleDbParameter()
       <MemberSignature Language="C#" Value="public void ResetOleDbType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetOleDbType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbParameter.ResetOleDbType" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetOleDbType ()" />
+      <MemberSignature Language="F#" Value="member this.ResetOleDbType : unit -&gt; unit" Usage="oleDbParameter.ResetOleDbType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -724,7 +778,12 @@ public void CreateOleDbParameter()
       <MemberSignature Language="C#" Value="public byte Scale { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Scale" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbParameter.Scale" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scale As Byte" />
+      <MemberSignature Language="F#" Value="member this.Scale : byte with get, set" Usage="System.Data.OleDb.OleDbParameter.Scale" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbDataParameter.Scale</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -788,7 +847,12 @@ public void CreateOleDbParameter()
       <MemberSignature Language="C#" Value="public override int Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbParameter.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Size As Integer" />
+      <MemberSignature Language="F#" Value="member this.Size : int with get, set" Usage="System.Data.OleDb.OleDbParameter.Size" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbDataParameter.Size</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -851,7 +915,12 @@ public void CreateOleDbParameter()
       <MemberSignature Language="C#" Value="public override string SourceColumn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceColumn" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbParameter.SourceColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceColumn As String" />
+      <MemberSignature Language="F#" Value="member this.SourceColumn : string with get, set" Usage="System.Data.OleDb.OleDbParameter.SourceColumn" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.SourceColumn</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -898,6 +967,8 @@ public void CreateOleDbParameter()
       <MemberSignature Language="C#" Value="public override bool SourceColumnNullMapping { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SourceColumnNullMapping" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbParameter.SourceColumnNullMapping" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceColumnNullMapping As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SourceColumnNullMapping : bool with get, set" Usage="System.Data.OleDb.OleDbParameter.SourceColumnNullMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -939,7 +1010,12 @@ FieldName = @OriginalFieldName
       <MemberSignature Language="C#" Value="public override System.Data.DataRowVersion SourceVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DataRowVersion SourceVersion" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbParameter.SourceVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceVersion As DataRowVersion" />
+      <MemberSignature Language="F#" Value="member this.SourceVersion : System.Data.DataRowVersion with get, set" Usage="System.Data.OleDb.OleDbParameter.SourceVersion" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.SourceVersion</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -987,7 +1063,11 @@ public void CreateOleDbParameter()
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbParameter.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1013,6 +1093,8 @@ public void CreateOleDbParameter()
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbParameter.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="oleDbParameter.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1032,7 +1114,12 @@ public void CreateOleDbParameter()
       <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbParameter.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Data.OleDb.OleDbParameter.Value" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.Value</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1089,14 +1176,5 @@ public void CreateOleDbParameter()
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbParameter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

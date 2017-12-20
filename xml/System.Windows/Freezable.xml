@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class Freezable : System.Windows.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Freezable extends System.Windows.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Freezable" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Freezable&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="F#" Value="type Freezable = class&#xA;    inherit DependencyObject&#xA;    interface ISealable" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +56,7 @@
       <MemberSignature Language="C#" Value="protected Freezable ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -76,6 +79,8 @@
       <MemberSignature Language="C#" Value="public bool CanFreeze { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanFreeze" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Freezable.CanFreeze" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanFreeze As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanFreeze : bool" Usage="System.Windows.Freezable.CanFreeze" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -98,6 +103,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Changed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Changed" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Freezable.Changed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Changed As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Changed : EventHandler " Usage="member this.Changed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -122,6 +129,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Freezable Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Freezable Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Freezable" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Windows.Freezable" Usage="freezable.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -165,6 +174,8 @@
       <MemberSignature Language="C#" Value="protected virtual void CloneCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CloneCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="abstract member CloneCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="freezable.CloneCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -225,6 +236,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Freezable CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Freezable CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Freezable" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Freezable" Usage="freezable.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -267,6 +280,8 @@
       <MemberSignature Language="C#" Value="protected virtual void CloneCurrentValueCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="abstract member CloneCurrentValueCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="freezable.CloneCurrentValueCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -323,6 +338,8 @@
       <MemberSignature Language="C#" Value="protected System.Windows.Freezable CreateInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Windows.Freezable CreateInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.CreateInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Function CreateInstance () As Freezable" />
+      <MemberSignature Language="F#" Value="member this.CreateInstance : unit -&gt; System.Windows.Freezable" Usage="freezable.CreateInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -350,6 +367,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="freezable.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -384,10 +403,21 @@
         <altmember cref="M:System.Windows.Freezable.CreateInstance" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Freeze">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes a <see cref="T:System.Windows.Freezable" /> object unmodifiable and sets its <see cref="P:System.Windows.Freezable.IsFrozen" /> property to <see langword="true" />, or tests whether a <see cref="T:System.Windows.Freezable" /> object can be made unmodifiable.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Freeze">
       <MemberSignature Language="C#" Value="public void Freeze ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Freeze() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.Freeze" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Freeze ()" />
+      <MemberSignature Language="F#" Value="member this.Freeze : unit -&gt; unit" Usage="freezable.Freeze " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -415,9 +445,10 @@
       </Docs>
     </Member>
     <Member MemberName="Freeze">
-      <MemberSignature Language="C#" Value="protected static bool Freeze (System.Windows.Freezable freezable, bool isChecking);" />
+      <MemberSignature Language="C#" Value="protected internal static bool Freeze (System.Windows.Freezable freezable, bool isChecking);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig bool Freeze(class System.Windows.Freezable freezable, bool isChecking) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.Freeze(System.Windows.Freezable,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member Freeze : System.Windows.Freezable * bool -&gt; bool" Usage="System.Windows.Freezable.Freeze (freezable, isChecking)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -457,6 +488,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool FreezeCore (bool isChecking);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool FreezeCore(bool isChecking) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.FreezeCore(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function FreezeCore (isChecking As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member FreezeCore : bool -&gt; bool&#xA;override this.FreezeCore : bool -&gt; bool" Usage="freezable.FreezeCore isChecking" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -495,6 +528,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Freezable GetAsFrozen ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Freezable GetAsFrozen() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.GetAsFrozen" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAsFrozen () As Freezable" />
+      <MemberSignature Language="F#" Value="member this.GetAsFrozen : unit -&gt; System.Windows.Freezable" Usage="freezable.GetAsFrozen " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -539,6 +574,8 @@
       <MemberSignature Language="C#" Value="protected virtual void GetAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="abstract member GetAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="freezable.GetAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -585,6 +622,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Freezable GetCurrentValueAsFrozen ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Freezable GetCurrentValueAsFrozen() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.GetCurrentValueAsFrozen" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCurrentValueAsFrozen () As Freezable" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentValueAsFrozen : unit -&gt; System.Windows.Freezable" Usage="freezable.GetCurrentValueAsFrozen " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -629,6 +668,8 @@
       <MemberSignature Language="C#" Value="protected virtual void GetCurrentValueAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="freezable.GetCurrentValueAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -675,6 +716,8 @@
       <MemberSignature Language="C#" Value="public bool IsFrozen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFrozen" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Freezable.IsFrozen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFrozen As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFrozen : bool" Usage="System.Windows.Freezable.IsFrozen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -703,6 +746,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.OnChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnChanged ()" />
+      <MemberSignature Language="F#" Value="abstract member OnChanged : unit -&gt; unit&#xA;override this.OnChanged : unit -&gt; unit" Usage="freezable.OnChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -728,10 +773,21 @@
         <altmember cref="E:System.Windows.Freezable.Changed" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnFreezablePropertyChanged">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Ensures that appropriate context pointers are established for a data member of type <see cref="T:System.Windows.DependencyObject" /> that has just been modified.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OnFreezablePropertyChanged">
       <MemberSignature Language="C#" Value="protected void OnFreezablePropertyChanged (System.Windows.DependencyObject oldValue, System.Windows.DependencyObject newValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnFreezablePropertyChanged(class System.Windows.DependencyObject oldValue, class System.Windows.DependencyObject newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.OnFreezablePropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnFreezablePropertyChanged (oldValue As DependencyObject, newValue As DependencyObject)" />
+      <MemberSignature Language="F#" Value="member this.OnFreezablePropertyChanged : System.Windows.DependencyObject * System.Windows.DependencyObject -&gt; unit" Usage="freezable.OnFreezablePropertyChanged (oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -764,6 +820,8 @@
       <MemberSignature Language="C#" Value="protected void OnFreezablePropertyChanged (System.Windows.DependencyObject oldValue, System.Windows.DependencyObject newValue, System.Windows.DependencyProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnFreezablePropertyChanged(class System.Windows.DependencyObject oldValue, class System.Windows.DependencyObject newValue, class System.Windows.DependencyProperty property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.OnFreezablePropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnFreezablePropertyChanged (oldValue As DependencyObject, newValue As DependencyObject, property As DependencyProperty)" />
+      <MemberSignature Language="F#" Value="member this.OnFreezablePropertyChanged : System.Windows.DependencyObject * System.Windows.DependencyObject * System.Windows.DependencyProperty -&gt; unit" Usage="freezable.OnFreezablePropertyChanged (oldValue, newValue, property)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -789,6 +847,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (System.Windows.DependencyPropertyChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="freezable.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -817,6 +877,8 @@
       <MemberSignature Language="C#" Value="protected void ReadPreamble ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ReadPreamble() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.ReadPreamble" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ReadPreamble ()" />
+      <MemberSignature Language="F#" Value="member this.ReadPreamble : unit -&gt; unit" Usage="freezable.ReadPreamble " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -841,6 +903,8 @@
       <MemberSignature Language="C#" Value="protected void WritePostscript ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WritePostscript() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.WritePostscript" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WritePostscript ()" />
+      <MemberSignature Language="F#" Value="member this.WritePostscript : unit -&gt; unit" Usage="freezable.WritePostscript " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -862,6 +926,8 @@
       <MemberSignature Language="C#" Value="protected void WritePreamble ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WritePreamble() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.WritePreamble" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WritePreamble ()" />
+      <MemberSignature Language="F#" Value="member this.WritePreamble : unit -&gt; unit" Usage="freezable.WritePreamble " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -888,23 +954,5 @@
         <altmember cref="M:System.Windows.Freezable.ReadPreamble" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Freeze">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Makes a <see cref="T:System.Windows.Freezable" /> object unmodifiable and sets its <see cref="P:System.Windows.Freezable.IsFrozen" /> property to <see langword="true" />, or tests whether a <see cref="T:System.Windows.Freezable" /> object can be made unmodifiable.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="OnFreezablePropertyChanged">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Ensures that appropriate context pointers are established for a data member of type <see cref="T:System.Windows.DependencyObject" /> that has just been modified.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

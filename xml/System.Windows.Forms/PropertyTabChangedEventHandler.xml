@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void PropertyTabChangedEventHandler(object s, PropertyTabChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyTabChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyTabChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub PropertyTabChangedEventHandler(s As Object, e As PropertyTabChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type PropertyTabChangedEventHandler = delegate of obj * PropertyTabChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class InvalidProjectFileException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit InvalidProjectFileException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Exceptions.InvalidProjectFileException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvalidProjectFileException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type InvalidProjectFileException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This constructor only exists to satisfy .NET coding guidelines. Use a rich constructor whenever possible.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InvalidProjectFileException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InvalidProjectFileException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -48,6 +60,8 @@
       <MemberSignature Language="C#" Value="public InvalidProjectFileException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InvalidProjectFileException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Exceptions.InvalidProjectFileException : string -&gt; Microsoft.Build.Exceptions.InvalidProjectFileException" Usage="new Microsoft.Build.Exceptions.InvalidProjectFileException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -73,6 +87,8 @@
       <MemberSignature Language="C#" Value="public InvalidProjectFileException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InvalidProjectFileException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Exceptions.InvalidProjectFileException : string * Exception -&gt; Microsoft.Build.Exceptions.InvalidProjectFileException" Usage="new Microsoft.Build.Exceptions.InvalidProjectFileException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -100,6 +116,8 @@
       <MemberSignature Language="C#" Value="public InvalidProjectFileException (string projectFile, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string message, string errorSubcategory, string errorCode, string helpKeyword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string projectFile, int32 lineNumber, int32 columnNumber, int32 endLineNumber, int32 endColumnNumber, string message, string errorSubcategory, string errorCode, string helpKeyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InvalidProjectFileException.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (projectFile As String, lineNumber As Integer, columnNumber As Integer, endLineNumber As Integer, endColumnNumber As Integer, message As String, errorSubcategory As String, errorCode As String, helpKeyword As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Exceptions.InvalidProjectFileException : string * int * int * int * int * string * string * string * string -&gt; Microsoft.Build.Exceptions.InvalidProjectFileException" Usage="new Microsoft.Build.Exceptions.InvalidProjectFileException (projectFile, lineNumber, columnNumber, endLineNumber, endColumnNumber, message, errorSubcategory, errorCode, helpKeyword)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -141,6 +159,8 @@
       <MemberSignature Language="C#" Value="public string BaseMessage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BaseMessage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InvalidProjectFileException.BaseMessage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseMessage As String" />
+      <MemberSignature Language="F#" Value="member this.BaseMessage : string" Usage="Microsoft.Build.Exceptions.InvalidProjectFileException.BaseMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -159,6 +179,8 @@
       <MemberSignature Language="C#" Value="public int ColumnNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InvalidProjectFileException.ColumnNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.ColumnNumber : int" Usage="Microsoft.Build.Exceptions.InvalidProjectFileException.ColumnNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -177,6 +199,8 @@
       <MemberSignature Language="C#" Value="public int EndColumnNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndColumnNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InvalidProjectFileException.EndColumnNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndColumnNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndColumnNumber : int" Usage="Microsoft.Build.Exceptions.InvalidProjectFileException.EndColumnNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -195,6 +219,8 @@
       <MemberSignature Language="C#" Value="public int EndLineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndLineNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InvalidProjectFileException.EndLineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndLineNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndLineNumber : int" Usage="Microsoft.Build.Exceptions.InvalidProjectFileException.EndLineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -213,6 +239,8 @@
       <MemberSignature Language="C#" Value="public string ErrorCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InvalidProjectFileException.ErrorCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : string" Usage="Microsoft.Build.Exceptions.InvalidProjectFileException.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -231,6 +259,8 @@
       <MemberSignature Language="C#" Value="public string ErrorSubcategory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorSubcategory" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InvalidProjectFileException.ErrorSubcategory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorSubcategory As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorSubcategory : string" Usage="Microsoft.Build.Exceptions.InvalidProjectFileException.ErrorSubcategory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -249,6 +279,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InvalidProjectFileException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="invalidProjectFileException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -272,6 +304,8 @@
       <MemberSignature Language="C#" Value="public bool HasBeenLogged { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasBeenLogged" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InvalidProjectFileException.HasBeenLogged" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasBeenLogged As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasBeenLogged : bool" Usage="Microsoft.Build.Exceptions.InvalidProjectFileException.HasBeenLogged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -290,6 +324,8 @@
       <MemberSignature Language="C#" Value="public string HelpKeyword { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpKeyword" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InvalidProjectFileException.HelpKeyword" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HelpKeyword As String" />
+      <MemberSignature Language="F#" Value="member this.HelpKeyword : string" Usage="Microsoft.Build.Exceptions.InvalidProjectFileException.HelpKeyword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -308,6 +344,8 @@
       <MemberSignature Language="C#" Value="public int LineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LineNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InvalidProjectFileException.LineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="Microsoft.Build.Exceptions.InvalidProjectFileException.LineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -326,6 +364,8 @@
       <MemberSignature Language="C#" Value="public override string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InvalidProjectFileException.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="Microsoft.Build.Exceptions.InvalidProjectFileException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -344,6 +384,8 @@
       <MemberSignature Language="C#" Value="public string ProjectFile { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProjectFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InvalidProjectFileException.ProjectFile" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectFile As String" />
+      <MemberSignature Language="F#" Value="member this.ProjectFile : string" Usage="Microsoft.Build.Exceptions.InvalidProjectFileException.ProjectFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -365,14 +407,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>This constructor only exists to satisfy .NET coding guidelines. Use a rich constructor whenever possible.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

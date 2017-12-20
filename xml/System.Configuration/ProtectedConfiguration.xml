@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class ProtectedConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ProtectedConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ProtectedConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProtectedConfiguration" />
+  <TypeSignature Language="F#" Value="type ProtectedConfiguration = class" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public const string DataProtectionProviderName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DataProtectionProviderName" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.ProtectedConfiguration.DataProtectionProviderName" />
+      <MemberSignature Language="VB.NET" Value="Public Const DataProtectionProviderName As String " />
+      <MemberSignature Language="F#" Value="val mutable DataProtectionProviderName : string" Usage="System.Configuration.ProtectedConfiguration.DataProtectionProviderName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -80,6 +84,8 @@
       <MemberSignature Language="C#" Value="public static string DefaultProvider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string DefaultProvider" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProtectedConfiguration.DefaultProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultProvider As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultProvider : string" Usage="System.Configuration.ProtectedConfiguration.DefaultProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -111,6 +117,8 @@
       <MemberSignature Language="C#" Value="public const string ProtectedDataSectionName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ProtectedDataSectionName" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.ProtectedConfiguration.ProtectedDataSectionName" />
+      <MemberSignature Language="VB.NET" Value="Public Const ProtectedDataSectionName As String " />
+      <MemberSignature Language="F#" Value="val mutable ProtectedDataSectionName : string" Usage="System.Configuration.ProtectedConfiguration.ProtectedDataSectionName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -149,6 +157,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.ProtectedConfigurationProviderCollection Providers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Configuration.ProtectedConfigurationProviderCollection Providers" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProtectedConfiguration.Providers" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Providers As ProtectedConfigurationProviderCollection" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Configuration.ProtectedConfigurationProviderCollection" Usage="System.Configuration.ProtectedConfiguration.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -182,6 +192,8 @@
       <MemberSignature Language="C#" Value="public const string RsaProviderName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string RsaProviderName" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.ProtectedConfiguration.RsaProviderName" />
+      <MemberSignature Language="VB.NET" Value="Public Const RsaProviderName As String " />
+      <MemberSignature Language="F#" Value="val mutable RsaProviderName : string" Usage="System.Configuration.ProtectedConfiguration.RsaProviderName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

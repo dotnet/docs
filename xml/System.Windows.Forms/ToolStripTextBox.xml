@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ToolStripTextBox : System.Windows.Forms.ToolStripControlHost" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripTextBox extends System.Windows.Forms.ToolStripControlHost" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripTextBox" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolStripTextBox&#xA;Inherits ToolStripControlHost" />
+  <TypeSignature Language="F#" Value="type ToolStripTextBox = class&#xA;    inherit ToolStripControlHost" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,10 +45,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripTextBox" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ToolStripTextBox ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +74,8 @@
       <MemberSignature Language="C#" Value="public ToolStripTextBox (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripTextBox : string -&gt; System.Windows.Forms.ToolStripTextBox" Usage="new System.Windows.Forms.ToolStripTextBox name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +94,8 @@
       <MemberSignature Language="C#" Value="public ToolStripTextBox (System.Windows.Forms.Control c);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Control c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.#ctor(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (c As Control)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripTextBox : System.Windows.Forms.Control -&gt; System.Windows.Forms.ToolStripTextBox" Usage="new System.Windows.Forms.ToolStripTextBox c" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +119,8 @@
       <MemberSignature Language="C#" Value="public bool AcceptsReturn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AcceptsReturn" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.AcceptsReturn" />
+      <MemberSignature Language="VB.NET" Value="Public Property AcceptsReturn As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AcceptsReturn : bool with get, set" Usage="System.Windows.Forms.ToolStripTextBox.AcceptsReturn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -142,6 +160,8 @@
       <MemberSignature Language="C#" Value="public bool AcceptsTab { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AcceptsTab" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.AcceptsTab" />
+      <MemberSignature Language="VB.NET" Value="Public Property AcceptsTab As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AcceptsTab : bool with get, set" Usage="System.Windows.Forms.ToolStripTextBox.AcceptsTab" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -182,6 +202,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler AcceptsTabChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AcceptsTabChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripTextBox.AcceptsTabChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AcceptsTabChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.AcceptsTabChanged : EventHandler " Usage="member this.AcceptsTabChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -216,6 +238,8 @@
       <MemberSignature Language="C#" Value="public void AppendText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.AppendText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AppendText (text As String)" />
+      <MemberSignature Language="F#" Value="member this.AppendText : string -&gt; unit" Usage="toolStripTextBox.AppendText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -239,6 +263,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.AutoCompleteStringCollection AutoCompleteCustomSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.AutoCompleteStringCollection AutoCompleteCustomSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoCompleteCustomSource As AutoCompleteStringCollection" />
+      <MemberSignature Language="F#" Value="member this.AutoCompleteCustomSource : System.Windows.Forms.AutoCompleteStringCollection with get, set" Usage="System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -295,6 +321,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.AutoCompleteMode AutoCompleteMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AutoCompleteMode AutoCompleteMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoCompleteMode As AutoCompleteMode" />
+      <MemberSignature Language="F#" Value="member this.AutoCompleteMode : System.Windows.Forms.AutoCompleteMode with get, set" Usage="System.Windows.Forms.ToolStripTextBox.AutoCompleteMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -345,6 +373,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.AutoCompleteSource AutoCompleteSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AutoCompleteSource AutoCompleteSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoCompleteSource As AutoCompleteSource" />
+      <MemberSignature Language="F#" Value="member this.AutoCompleteSource : System.Windows.Forms.AutoCompleteSource with get, set" Usage="System.Windows.Forms.ToolStripTextBox.AutoCompleteSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -395,6 +425,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Image BackgroundImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image BackgroundImage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.BackgroundImage" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.ToolStripTextBox.BackgroundImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -431,6 +463,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.ImageLayout BackgroundImageLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImageLayout BackgroundImageLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.BackgroundImageLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.ToolStripTextBox.BackgroundImageLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -467,6 +501,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.BorderStyle BorderStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.BorderStyle BorderStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.BorderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderStyle As BorderStyle" />
+      <MemberSignature Language="F#" Value="member this.BorderStyle : System.Windows.Forms.BorderStyle with get, set" Usage="System.Windows.Forms.ToolStripTextBox.BorderStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -508,6 +544,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BorderStyleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BorderStyleChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripTextBox.BorderStyleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BorderStyleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BorderStyleChanged : EventHandler " Usage="member this.BorderStyleChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -542,6 +580,8 @@
       <MemberSignature Language="C#" Value="public bool CanUndo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanUndo" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.CanUndo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanUndo As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanUndo : bool" Usage="System.Windows.Forms.ToolStripTextBox.CanUndo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -581,6 +621,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.CharacterCasing CharacterCasing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.CharacterCasing CharacterCasing" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.CharacterCasing" />
+      <MemberSignature Language="VB.NET" Value="Public Property CharacterCasing As CharacterCasing" />
+      <MemberSignature Language="F#" Value="member this.CharacterCasing : System.Windows.Forms.CharacterCasing with get, set" Usage="System.Windows.Forms.ToolStripTextBox.CharacterCasing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -619,6 +661,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="toolStripTextBox.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -642,6 +686,8 @@
       <MemberSignature Language="C#" Value="public void ClearUndo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearUndo() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.ClearUndo" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearUndo ()" />
+      <MemberSignature Language="F#" Value="member this.ClearUndo : unit -&gt; unit" Usage="toolStripTextBox.ClearUndo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -672,6 +718,8 @@
       <MemberSignature Language="C#" Value="public void Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
+      <MemberSignature Language="F#" Value="member this.Copy : unit -&gt; unit" Usage="toolStripTextBox.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -702,6 +750,8 @@
       <MemberSignature Language="C#" Value="public void Cut ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Cut() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.Cut" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
+      <MemberSignature Language="F#" Value="member this.Cut : unit -&gt; unit" Usage="toolStripTextBox.Cut " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -729,9 +779,11 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultMargin">
-      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.Padding DefaultMargin { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Windows.Forms.Padding DefaultMargin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding DefaultMargin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.DefaultMargin" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultMargin As Padding" />
+      <MemberSignature Language="F#" Value="member this.DefaultMargin : System.Windows.Forms.Padding" Usage="System.Windows.Forms.ToolStripTextBox.DefaultMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -750,6 +802,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.ToolStripTextBox.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -780,6 +834,8 @@
       <MemberSignature Language="C#" Value="public void DeselectAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeselectAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.DeselectAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeselectAll ()" />
+      <MemberSignature Language="F#" Value="member this.DeselectAll : unit -&gt; unit" Usage="toolStripTextBox.DeselectAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -798,6 +854,8 @@
       <MemberSignature Language="C#" Value="public char GetCharFromPosition (System.Drawing.Point pt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance char GetCharFromPosition(valuetype System.Drawing.Point pt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.GetCharFromPosition(System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCharFromPosition (pt As Point) As Char" />
+      <MemberSignature Language="F#" Value="member this.GetCharFromPosition : System.Drawing.Point -&gt; char" Usage="toolStripTextBox.GetCharFromPosition pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -834,6 +892,8 @@
       <MemberSignature Language="C#" Value="public int GetCharIndexFromPosition (System.Drawing.Point pt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetCharIndexFromPosition(valuetype System.Drawing.Point pt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.GetCharIndexFromPosition(System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCharIndexFromPosition (pt As Point) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetCharIndexFromPosition : System.Drawing.Point -&gt; int" Usage="toolStripTextBox.GetCharIndexFromPosition pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -867,6 +927,8 @@
       <MemberSignature Language="C#" Value="public int GetFirstCharIndexFromLine (int lineNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetFirstCharIndexFromLine(int32 lineNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.GetFirstCharIndexFromLine(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFirstCharIndexFromLine (lineNumber As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetFirstCharIndexFromLine : int -&gt; int" Usage="toolStripTextBox.GetFirstCharIndexFromLine lineNumber" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -902,6 +964,8 @@
       <MemberSignature Language="C#" Value="public int GetFirstCharIndexOfCurrentLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetFirstCharIndexOfCurrentLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.GetFirstCharIndexOfCurrentLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFirstCharIndexOfCurrentLine () As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetFirstCharIndexOfCurrentLine : unit -&gt; int" Usage="toolStripTextBox.GetFirstCharIndexOfCurrentLine " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -921,6 +985,8 @@
       <MemberSignature Language="C#" Value="public int GetLineFromCharIndex (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetLineFromCharIndex(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.GetLineFromCharIndex(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLineFromCharIndex (index As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetLineFromCharIndex : int -&gt; int" Usage="toolStripTextBox.GetLineFromCharIndex index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -957,6 +1023,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point GetPositionFromCharIndex (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Point GetPositionFromCharIndex(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.GetPositionFromCharIndex(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPositionFromCharIndex (index As Integer) As Point" />
+      <MemberSignature Language="F#" Value="member this.GetPositionFromCharIndex : int -&gt; System.Drawing.Point" Usage="toolStripTextBox.GetPositionFromCharIndex index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -990,6 +1058,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Size GetPreferredSize (System.Drawing.Size constrainingSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Drawing.Size GetPreferredSize(valuetype System.Drawing.Size constrainingSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.GetPreferredSize(System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPreferredSize (constrainingSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.GetPreferredSize : System.Drawing.Size -&gt; System.Drawing.Size" Usage="toolStripTextBox.GetPreferredSize constrainingSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1013,6 +1083,8 @@
       <MemberSignature Language="C#" Value="public bool HideSelection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HideSelection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.HideSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Property HideSelection As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HideSelection : bool with get, set" Usage="System.Windows.Forms.ToolStripTextBox.HideSelection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1052,6 +1124,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler HideSelectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler HideSelectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripTextBox.HideSelectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event HideSelectionChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.HideSelectionChanged : EventHandler " Usage="member this.HideSelectionChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1086,6 +1160,8 @@
       <MemberSignature Language="C#" Value="public string[] Lines { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] Lines" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.Lines" />
+      <MemberSignature Language="VB.NET" Value="Public Property Lines As String()" />
+      <MemberSignature Language="F#" Value="member this.Lines : string[] with get, set" Usage="System.Windows.Forms.ToolStripTextBox.Lines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1122,6 +1198,8 @@
       <MemberSignature Language="C#" Value="public int MaxLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxLength" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.MaxLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxLength : int with get, set" Usage="System.Windows.Forms.ToolStripTextBox.MaxLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1163,6 +1241,8 @@
       <MemberSignature Language="C#" Value="public bool Modified { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Modified" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.Modified" />
+      <MemberSignature Language="VB.NET" Value="Public Property Modified As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Modified : bool with get, set" Usage="System.Windows.Forms.ToolStripTextBox.Modified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1197,6 +1277,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ModifiedChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ModifiedChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripTextBox.ModifiedChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ModifiedChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ModifiedChanged : EventHandler " Usage="member this.ModifiedChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1231,6 +1313,8 @@
       <MemberSignature Language="C#" Value="public bool Multiline { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Multiline" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.Multiline" />
+      <MemberSignature Language="VB.NET" Value="Public Property Multiline As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Multiline : bool with get, set" Usage="System.Windows.Forms.ToolStripTextBox.Multiline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1274,6 +1358,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler MultilineChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MultilineChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripTextBox.MultilineChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MultilineChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MultilineChanged : EventHandler " Usage="member this.MultilineChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1306,6 +1392,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnAcceptsTabChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAcceptsTabChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.OnAcceptsTabChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAcceptsTabChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnAcceptsTabChanged : EventArgs -&gt; unit&#xA;override this.OnAcceptsTabChanged : EventArgs -&gt; unit" Usage="toolStripTextBox.OnAcceptsTabChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1339,6 +1427,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnBorderStyleChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBorderStyleChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.OnBorderStyleChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBorderStyleChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnBorderStyleChanged : EventArgs -&gt; unit&#xA;override this.OnBorderStyleChanged : EventArgs -&gt; unit" Usage="toolStripTextBox.OnBorderStyleChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1372,6 +1462,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnHideSelectionChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnHideSelectionChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.OnHideSelectionChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnHideSelectionChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnHideSelectionChanged : EventArgs -&gt; unit&#xA;override this.OnHideSelectionChanged : EventArgs -&gt; unit" Usage="toolStripTextBox.OnHideSelectionChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1405,6 +1497,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnModifiedChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnModifiedChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.OnModifiedChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnModifiedChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnModifiedChanged : EventArgs -&gt; unit&#xA;override this.OnModifiedChanged : EventArgs -&gt; unit" Usage="toolStripTextBox.OnModifiedChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1438,6 +1532,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMultilineChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMultilineChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.OnMultilineChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMultilineChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnMultilineChanged : EventArgs -&gt; unit&#xA;override this.OnMultilineChanged : EventArgs -&gt; unit" Usage="toolStripTextBox.OnMultilineChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1471,6 +1567,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnReadOnlyChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnReadOnlyChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.OnReadOnlyChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnReadOnlyChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnReadOnlyChanged : EventArgs -&gt; unit&#xA;override this.OnReadOnlyChanged : EventArgs -&gt; unit" Usage="toolStripTextBox.OnReadOnlyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1504,6 +1602,7 @@
       <MemberSignature Language="C#" Value="protected override void OnSubscribeControlEvents (System.Windows.Forms.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSubscribeControlEvents(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.OnSubscribeControlEvents(System.Windows.Forms.Control)" />
+      <MemberSignature Language="F#" Value="override this.OnSubscribeControlEvents : System.Windows.Forms.Control -&gt; unit" Usage="toolStripTextBox.OnSubscribeControlEvents control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1526,6 +1625,7 @@
       <MemberSignature Language="C#" Value="protected override void OnUnsubscribeControlEvents (System.Windows.Forms.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnUnsubscribeControlEvents(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.OnUnsubscribeControlEvents(System.Windows.Forms.Control)" />
+      <MemberSignature Language="F#" Value="override this.OnUnsubscribeControlEvents : System.Windows.Forms.Control -&gt; unit" Usage="toolStripTextBox.OnUnsubscribeControlEvents control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1548,6 +1648,8 @@
       <MemberSignature Language="C#" Value="public void Paste ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Paste() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.Paste" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Paste ()" />
+      <MemberSignature Language="F#" Value="member this.Paste : unit -&gt; unit" Usage="toolStripTextBox.Paste " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1578,6 +1680,8 @@
       <MemberSignature Language="C#" Value="public bool ReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="System.Windows.Forms.ToolStripTextBox.ReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1609,6 +1713,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ReadOnlyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ReadOnlyChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripTextBox.ReadOnlyChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ReadOnlyChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ReadOnlyChanged : EventHandler " Usage="member this.ReadOnlyChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1643,6 +1749,8 @@
       <MemberSignature Language="C#" Value="public void ScrollToCaret ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollToCaret() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.ScrollToCaret" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScrollToCaret ()" />
+      <MemberSignature Language="F#" Value="member this.ScrollToCaret : unit -&gt; unit" Usage="toolStripTextBox.ScrollToCaret " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1671,6 +1779,8 @@
       <MemberSignature Language="C#" Value="public void Select (int start, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Select(int32 start, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.Select(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select (start As Integer, length As Integer)" />
+      <MemberSignature Language="F#" Value="override this.Select : int * int -&gt; unit" Usage="toolStripTextBox.Select (start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1704,6 +1814,8 @@
       <MemberSignature Language="C#" Value="public void SelectAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SelectAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.SelectAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SelectAll ()" />
+      <MemberSignature Language="F#" Value="member this.SelectAll : unit -&gt; unit" Usage="toolStripTextBox.SelectAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1729,6 +1841,8 @@
       <MemberSignature Language="C#" Value="public string SelectedText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectedText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.SelectedText" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedText As String" />
+      <MemberSignature Language="F#" Value="member this.SelectedText : string with get, set" Usage="System.Windows.Forms.ToolStripTextBox.SelectedText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1764,6 +1878,8 @@
       <MemberSignature Language="C#" Value="public int SelectionLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionLength" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.SelectionLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.SelectionLength : int with get, set" Usage="System.Windows.Forms.ToolStripTextBox.SelectionLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1802,6 +1918,8 @@
       <MemberSignature Language="C#" Value="public int SelectionStart { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionStart" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.SelectionStart" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionStart As Integer" />
+      <MemberSignature Language="F#" Value="member this.SelectionStart : int with get, set" Usage="System.Windows.Forms.ToolStripTextBox.SelectionStart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1838,6 +1956,8 @@
       <MemberSignature Language="C#" Value="public bool ShortcutsEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShortcutsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.ShortcutsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShortcutsEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShortcutsEnabled : bool with get, set" Usage="System.Windows.Forms.ToolStripTextBox.ShortcutsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1889,6 +2009,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.TextBox TextBox { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TextBox TextBox" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.TextBox" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextBox As TextBox" />
+      <MemberSignature Language="F#" Value="member this.TextBox : System.Windows.Forms.TextBox" Usage="System.Windows.Forms.ToolStripTextBox.TextBox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1915,6 +2037,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HorizontalAlignment TextBoxTextAlign { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.HorizontalAlignment TextBoxTextAlign" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlign" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextBoxTextAlign As HorizontalAlignment" />
+      <MemberSignature Language="F#" Value="member this.TextBoxTextAlign : System.Windows.Forms.HorizontalAlignment with get, set" Usage="System.Windows.Forms.ToolStripTextBox.TextBoxTextAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1956,6 +2080,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler TextBoxTextAlignChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextBoxTextAlignChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlignChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TextBoxTextAlignChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TextBoxTextAlignChanged : EventHandler " Usage="member this.TextBoxTextAlignChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1990,6 +2116,8 @@
       <MemberSignature Language="C#" Value="public int TextLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TextLength" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.TextLength" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.TextLength : int" Usage="System.Windows.Forms.ToolStripTextBox.TextLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2020,6 +2148,8 @@
       <MemberSignature Language="C#" Value="public void Undo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Undo() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripTextBox.Undo" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Undo ()" />
+      <MemberSignature Language="F#" Value="member this.Undo : unit -&gt; unit" Usage="toolStripTextBox.Undo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2050,6 +2180,8 @@
       <MemberSignature Language="C#" Value="public bool WordWrap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WordWrap" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripTextBox.WordWrap" />
+      <MemberSignature Language="VB.NET" Value="Public Property WordWrap As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WordWrap : bool with get, set" Usage="System.Windows.Forms.ToolStripTextBox.WordWrap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2086,14 +2218,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripTextBox" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

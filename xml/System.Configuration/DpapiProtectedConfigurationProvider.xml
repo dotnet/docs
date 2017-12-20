@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class DpapiProtectedConfigurationProvider : System.Configuration.ProtectedConfigurationProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DpapiProtectedConfigurationProvider extends System.Configuration.ProtectedConfigurationProvider" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.DpapiProtectedConfigurationProvider" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DpapiProtectedConfigurationProvider&#xA;Inherits ProtectedConfigurationProvider" />
+  <TypeSignature Language="F#" Value="type DpapiProtectedConfigurationProvider = class&#xA;    inherit ProtectedConfigurationProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +81,7 @@
       <MemberSignature Language="C#" Value="public DpapiProtectedConfigurationProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.DpapiProtectedConfigurationProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -105,6 +108,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNode Decrypt (System.Xml.XmlNode encrypted_node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlNode Decrypt(class System.Xml.XmlNode encrypted_node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.DpapiProtectedConfigurationProvider.Decrypt(System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Decrypt (encrypted_node As XmlNode) As XmlNode" />
+      <MemberSignature Language="F#" Value="override this.Decrypt : System.Xml.XmlNode -&gt; System.Xml.XmlNode" Usage="dpapiProtectedConfigurationProvider.Decrypt encryptedNode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -141,6 +146,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNode Encrypt (System.Xml.XmlNode node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlNode Encrypt(class System.Xml.XmlNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.DpapiProtectedConfigurationProvider.Encrypt(System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Encrypt (node As XmlNode) As XmlNode" />
+      <MemberSignature Language="F#" Value="override this.Encrypt : System.Xml.XmlNode -&gt; System.Xml.XmlNode" Usage="dpapiProtectedConfigurationProvider.Encrypt node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -167,6 +174,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (string name, System.Collections.Specialized.NameValueCollection configurationValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(string name, class System.Collections.Specialized.NameValueCollection configurationValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.DpapiProtectedConfigurationProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, configurationValues As NameValueCollection)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="dpapiProtectedConfigurationProvider.Initialize (name, configurationValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -196,6 +205,8 @@
       <MemberSignature Language="C#" Value="public bool UseMachineProtection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseMachineProtection" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.DpapiProtectedConfigurationProvider.UseMachineProtection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UseMachineProtection As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseMachineProtection : bool" Usage="System.Configuration.DpapiProtectedConfigurationProvider.UseMachineProtection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class Border : System.Windows.Controls.Decorator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Border extends System.Windows.Controls.Decorator" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Border" />
+  <TypeSignature Language="VB.NET" Value="Public Class Border&#xA;Inherits Decorator" />
+  <TypeSignature Language="F#" Value="type Border = class&#xA;    inherit Decorator" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="public Border ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Border.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +58,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size finalSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size finalSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Border.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="border.ArrangeOverride finalSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +90,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Background { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Background" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Border.Background" />
+      <MemberSignature Language="VB.NET" Value="Public Property Background As Brush" />
+      <MemberSignature Language="F#" Value="member this.Background : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Border.Background" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -126,6 +133,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BackgroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BackgroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Border.BackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Border.BackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -144,6 +153,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush BorderBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush BorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Border.BorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.BorderBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Border.BorderBrush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -185,6 +196,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BorderBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BorderBrushProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Border.BorderBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BorderBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Border.BorderBrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -203,6 +216,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Thickness BorderThickness { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness BorderThickness" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Border.BorderThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderThickness As Thickness" />
+      <MemberSignature Language="F#" Value="member this.BorderThickness : System.Windows.Thickness with get, set" Usage="System.Windows.Controls.Border.BorderThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -244,6 +259,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BorderThicknessProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BorderThicknessProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Border.BorderThicknessProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BorderThicknessProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BorderThicknessProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Border.BorderThicknessProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -262,6 +279,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.CornerRadius CornerRadius { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.CornerRadius CornerRadius" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Border.CornerRadius" />
+      <MemberSignature Language="VB.NET" Value="Public Property CornerRadius As CornerRadius" />
+      <MemberSignature Language="F#" Value="member this.CornerRadius : System.Windows.CornerRadius with get, set" Usage="System.Windows.Controls.Border.CornerRadius" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -305,6 +324,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CornerRadiusProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CornerRadiusProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Border.CornerRadiusProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CornerRadiusProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CornerRadiusProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Border.CornerRadiusProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -323,6 +344,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Border.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="border.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -353,6 +376,8 @@
       <MemberSignature Language="C#" Value="protected override void OnRender (System.Windows.Media.DrawingContext dc);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRender(class System.Windows.Media.DrawingContext dc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Border.OnRender(System.Windows.Media.DrawingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRender (dc As DrawingContext)" />
+      <MemberSignature Language="F#" Value="override this.OnRender : System.Windows.Media.DrawingContext -&gt; unit" Usage="border.OnRender dc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -374,6 +399,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Thickness Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness Padding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Border.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Thickness" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Thickness with get, set" Usage="System.Windows.Controls.Border.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -415,6 +442,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PaddingProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PaddingProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Border.PaddingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PaddingProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PaddingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Border.PaddingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class InputDevice : System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit InputDevice extends System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputDevice" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class InputDevice&#xA;Inherits DispatcherObject" />
+  <TypeSignature Language="F#" Value="type InputDevice = class&#xA;    inherit DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +23,7 @@
       <MemberSignature Language="C#" Value="protected InputDevice ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputDevice.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.PresentationSource ActiveSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.PresentationSource ActiveSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputDevice.ActiveSource" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ActiveSource As PresentationSource" />
+      <MemberSignature Language="F#" Value="member this.ActiveSource : System.Windows.PresentationSource" Usage="System.Windows.Input.InputDevice.ActiveSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -56,6 +61,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.IInputElement Target { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement Target" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputDevice.Target" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Target As IInputElement" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Windows.IInputElement" Usage="System.Windows.Input.InputDevice.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

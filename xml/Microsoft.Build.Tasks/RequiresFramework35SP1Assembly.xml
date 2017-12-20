@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class RequiresFramework35SP1Assembly : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RequiresFramework35SP1Assembly extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.RequiresFramework35SP1Assembly" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RequiresFramework35SP1Assembly&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="F#" Value="type RequiresFramework35SP1Assembly = class&#xA;    inherit TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public RequiresFramework35SP1Assembly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Assemblies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Assemblies" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.Assemblies" />
+      <MemberSignature Language="VB.NET" Value="Public Property Assemblies As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.Assemblies : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.Assemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="public bool CreateDesktopShortcut { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CreateDesktopShortcut" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.CreateDesktopShortcut" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreateDesktopShortcut As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CreateDesktopShortcut : bool with get, set" Usage="Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.CreateDesktopShortcut" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -71,6 +78,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem DeploymentManifestEntryPoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem DeploymentManifestEntryPoint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.DeploymentManifestEntryPoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeploymentManifestEntryPoint As ITaskItem" />
+      <MemberSignature Language="F#" Value="member this.DeploymentManifestEntryPoint : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.DeploymentManifestEntryPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -96,6 +105,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem EntryPoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem EntryPoint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.EntryPoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property EntryPoint As ITaskItem" />
+      <MemberSignature Language="F#" Value="member this.EntryPoint : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.EntryPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -121,6 +132,8 @@
       <MemberSignature Language="C#" Value="public string ErrorReportUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorReportUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.ErrorReportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorReportUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorReportUrl : string with get, set" Usage="Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.ErrorReportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -139,6 +152,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="requiresFramework35SP1Assembly.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -159,6 +174,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Files { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Files" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.Files" />
+      <MemberSignature Language="VB.NET" Value="Public Property Files As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.Files : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.Files" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -177,6 +194,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ReferencedAssemblies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ReferencedAssemblies" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.ReferencedAssemblies" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReferencedAssemblies As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.ReferencedAssemblies : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.ReferencedAssemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -195,6 +214,8 @@
       <MemberSignature Language="C#" Value="public bool RequiresMinimumFramework35SP1 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresMinimumFramework35SP1" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.RequiresMinimumFramework35SP1" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequiresMinimumFramework35SP1 As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresMinimumFramework35SP1 : bool with get, set" Usage="Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.RequiresMinimumFramework35SP1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -219,6 +240,8 @@
       <MemberSignature Language="C#" Value="public bool SigningManifests { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SigningManifests" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.SigningManifests" />
+      <MemberSignature Language="VB.NET" Value="Public Property SigningManifests As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SigningManifests : bool with get, set" Usage="Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.SigningManifests" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -238,6 +261,8 @@
       <MemberSignature Language="C#" Value="public string SuiteName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SuiteName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.SuiteName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuiteName As String" />
+      <MemberSignature Language="F#" Value="member this.SuiteName : string with get, set" Usage="Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.SuiteName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -256,6 +281,8 @@
       <MemberSignature Language="C#" Value="public string TargetFrameworkVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetFrameworkVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.TargetFrameworkVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkVersion As String" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkVersion : string with get, set" Usage="Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.TargetFrameworkVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

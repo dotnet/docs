@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class Socket : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Socket extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.Socket" />
+  <TypeSignature Language="VB.NET" Value="Public Class Socket&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type Socket = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -74,10 +76,21 @@
     <altmember cref="T:System.Net.Sockets.SocketAsyncEventArgs" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.Socket" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Socket (System.Net.Sockets.SocketInformation socketInformation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Sockets.SocketInformation socketInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.#ctor(System.Net.Sockets.SocketInformation)" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.Socket : System.Net.Sockets.SocketInformation -&gt; System.Net.Sockets.Socket" Usage="new System.Net.Sockets.Socket socketInformation" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -112,6 +125,7 @@
       <MemberSignature Language="C#" Value="public Socket (System.Net.Sockets.SocketType socketType, System.Net.Sockets.ProtocolType protocolType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Sockets.SocketType socketType, valuetype System.Net.Sockets.ProtocolType protocolType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.#ctor(System.Net.Sockets.SocketType,System.Net.Sockets.ProtocolType)" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.Socket : System.Net.Sockets.SocketType * System.Net.Sockets.ProtocolType -&gt; System.Net.Sockets.Socket" Usage="new System.Net.Sockets.Socket (socketType, protocolType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -156,6 +170,7 @@
       <MemberSignature Language="C#" Value="public Socket (System.Net.Sockets.AddressFamily addressFamily, System.Net.Sockets.SocketType socketType, System.Net.Sockets.ProtocolType protocolType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Sockets.AddressFamily addressFamily, valuetype System.Net.Sockets.SocketType socketType, valuetype System.Net.Sockets.ProtocolType protocolType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.#ctor(System.Net.Sockets.AddressFamily,System.Net.Sockets.SocketType,System.Net.Sockets.ProtocolType)" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.Socket : System.Net.Sockets.AddressFamily * System.Net.Sockets.SocketType * System.Net.Sockets.ProtocolType -&gt; System.Net.Sockets.Socket" Usage="new System.Net.Sockets.Socket (addressFamily, socketType, protocolType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -215,6 +230,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.Socket Accept ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket Accept() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Accept" />
+      <MemberSignature Language="VB.NET" Value="Public Function Accept () As Socket" />
+      <MemberSignature Language="F#" Value="member this.Accept : unit -&gt; System.Net.Sockets.Socket" Usage="socket.Accept " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -276,6 +293,8 @@
       <MemberSignature Language="C#" Value="public bool AcceptAsync (System.Net.Sockets.SocketAsyncEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool AcceptAsync(class System.Net.Sockets.SocketAsyncEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.AcceptAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AcceptAsync (e As SocketAsyncEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AcceptAsync : System.Net.Sockets.SocketAsyncEventArgs -&gt; bool" Usage="socket.AcceptAsync e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -353,6 +372,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.AddressFamily AddressFamily { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Sockets.AddressFamily AddressFamily" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.AddressFamily" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddressFamily As AddressFamily" />
+      <MemberSignature Language="F#" Value="member this.AddressFamily : System.Net.Sockets.AddressFamily" Usage="System.Net.Sockets.Socket.AddressFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -398,6 +419,8 @@
       <MemberSignature Language="C#" Value="public int Available { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Available" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.Available" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Available As Integer" />
+      <MemberSignature Language="F#" Value="member this.Available : int" Usage="System.Net.Sockets.Socket.Available" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -447,10 +470,22 @@
         <altmember cref="F:System.Net.Sockets.SocketType.Dgram" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginAccept">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to accept an incoming connection attempt.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginAccept">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginAccept (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginAccept(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginAccept(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginAccept (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginAccept : AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginAccept (callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -537,6 +572,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginAccept (int receiveSize, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginAccept(int32 receiveSize, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginAccept(System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginAccept (receiveSize As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginAccept : int * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginAccept (receiveSize, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -628,6 +665,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginAccept (System.Net.Sockets.Socket acceptSocket, int receiveSize, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginAccept(class System.Net.Sockets.Socket acceptSocket, int32 receiveSize, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginAccept(System.Net.Sockets.Socket,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginAccept (acceptSocket As Socket, receiveSize As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginAccept : System.Net.Sockets.Socket * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginAccept (acceptSocket, receiveSize, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -717,10 +756,22 @@
         <altmember cref="P:System.Net.Sockets.Socket.RemoteEndPoint" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginConnect">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous request for a remote host connection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginConnect">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.EndPoint end_point, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.EndPoint end_point, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.EndPoint,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (end_point As EndPoint, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginConnect : System.Net.EndPoint * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginConnect (remoteEP, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -804,6 +855,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.IPAddress address, int port, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.IPAddress address, int32 port, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.IPAddress,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (address As IPAddress, port As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginConnect : System.Net.IPAddress * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginConnect (address, port, requestCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -889,6 +942,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.IPAddress[] addresses, int port, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.IPAddress[] addresses, int32 port, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.IPAddress[],System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (addresses As IPAddress(), port As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginConnect : System.Net.IPAddress[] * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginConnect (addresses, port, requestCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -974,6 +1029,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (string host, int port, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(string host, int32 port, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.String,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (host As String, port As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginConnect : string * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginConnect (host, port, requestCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1057,6 +1114,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginDisconnect (bool reuseSocket, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginDisconnect(bool reuseSocket, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginDisconnect(System.Boolean,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginDisconnect (reuseSocket As Boolean, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginDisconnect : bool * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginDisconnect (reuseSocket, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1115,10 +1174,21 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginReceive">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins to asynchronously receive data from a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginReceive">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginReceive : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.Net.Sockets.SocketFlags * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginReceive (buffers, socketFlags, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1198,6 +1268,7 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginReceive : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.Net.Sockets.SocketFlags *  * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginReceive (buffers, socketFlags, errorCode, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1279,6 +1350,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socket_flags, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginReceive : byte[] * int * int * System.Net.Sockets.SocketFlags * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginReceive (buffer, offset, size, socketFlags, callback, state)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginReceive (buffer As Byte(), offset As Integer, size As Integer, socket_flags As SocketFlags, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1388,6 +1461,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags flags, out System.Net.Sockets.SocketError error, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags flags, [out] valuetype System.Net.Sockets.SocketError&amp; error, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginReceive : byte[] * int * int * System.Net.Sockets.SocketFlags *  * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginReceive (buffer, offset, size, socketFlags, errorCode, callback, state)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginReceive (buffer As Byte(), offset As Integer, size As Integer, flags As SocketFlags, ByRef error As SocketError, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1482,6 +1557,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceiveFrom (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socket_flags, ref System.Net.EndPoint remote_end, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.Net.EndPoint&amp; remote_end, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginReceiveFrom : byte[] * int * int * System.Net.Sockets.SocketFlags *  * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginReceiveFrom (buffer, offset, size, socketFlags, remoteEP, callback, state)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginReceiveFrom (buffer As Byte(), offset As Integer, size As Integer, socket_flags As SocketFlags, ByRef remote_end As EndPoint, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1595,6 +1672,7 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceiveMessageFrom (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveMessageFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint&amp; remoteEP, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceiveMessageFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginReceiveMessageFrom : byte[] * int * int * System.Net.Sockets.SocketFlags *  * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginReceiveMessageFrom (buffer, offset, size, socketFlags, remoteEP, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1686,10 +1764,21 @@
         <exception cref="T:System.NotSupportedException">The operating system is Windows 2000 or earlier, and this method requires Windows XP.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginSend">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends data asynchronously to a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginSend">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSend (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSend(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginSend : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.Net.Sockets.SocketFlags * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginSend (buffers, socketFlags, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1769,6 +1858,7 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSend (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSend(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginSend : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.Net.Sockets.SocketFlags *  * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginSend (buffers, socketFlags, errorCode, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1855,6 +1945,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSend (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socket_flags, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginSend : byte[] * int * int * System.Net.Sockets.SocketFlags * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginSend (buffer, offset, size, socketFlags, callback, state)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginSend (buffer As Byte(), offset As Integer, size As Integer, socket_flags As SocketFlags, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1959,6 +2051,7 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSend (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginSend : byte[] * int * int * System.Net.Sockets.SocketFlags *  * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginSend (buffer, offset, size, socketFlags, errorCode, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2052,10 +2145,22 @@
         <altmember cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginSendFile">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a file asynchronously to a connected <see cref="T:System.Net.Sockets.Socket" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginSendFile">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSendFile (string fileName, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSendFile(string fileName, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSendFile(System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginSendFile (fileName As String, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginSendFile : string * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginSendFile (fileName, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2129,6 +2234,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSendFile (string fileName, byte[] preBuffer, byte[] postBuffer, System.Net.Sockets.TransmitFileOptions flags, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSendFile(string fileName, unsigned int8[] preBuffer, unsigned int8[] postBuffer, valuetype System.Net.Sockets.TransmitFileOptions flags, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSendFile(System.String,System.Byte[],System.Byte[],System.Net.Sockets.TransmitFileOptions,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginSendFile (fileName As String, preBuffer As Byte(), postBuffer As Byte(), flags As TransmitFileOptions, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginSendFile : string * byte[] * byte[] * System.Net.Sockets.TransmitFileOptions * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginSendFile (fileName, preBuffer, postBuffer, flags, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2214,6 +2321,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSendTo (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socket_flags, System.Net.EndPoint remote_end, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSendTo(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.Net.EndPoint remote_end, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginSendTo : byte[] * int * int * System.Net.Sockets.SocketFlags * System.Net.EndPoint * AsyncCallback * obj -&gt; IAsyncResult" Usage="socket.BeginSendTo (buffer, offset, size, socketFlags, remoteEP, callback, state)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginSendTo (buffer As Byte(), offset As Integer, size As Integer, socket_flags As SocketFlags, remote_end As EndPoint, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2323,6 +2432,8 @@
       <MemberSignature Language="C#" Value="public void Bind (System.Net.EndPoint localEP);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Bind(class System.Net.EndPoint localEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Bind (localEP As EndPoint)" />
+      <MemberSignature Language="F#" Value="member this.Bind : System.Net.EndPoint -&gt; unit" Usage="socket.Bind localEP" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2399,6 +2510,8 @@
       <MemberSignature Language="C#" Value="public bool Blocking { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Blocking" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.Blocking" />
+      <MemberSignature Language="VB.NET" Value="Public Property Blocking As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Blocking : bool with get, set" Usage="System.Net.Sockets.Socket.Blocking" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2445,6 +2558,8 @@
       <MemberSignature Language="C#" Value="public static void CancelConnectAsync (System.Net.Sockets.SocketAsyncEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CancelConnectAsync(class System.Net.Sockets.SocketAsyncEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.CancelConnectAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CancelConnectAsync (e As SocketAsyncEventArgs)" />
+      <MemberSignature Language="F#" Value="static member CancelConnectAsync : System.Net.Sockets.SocketAsyncEventArgs -&gt; unit" Usage="System.Net.Sockets.Socket.CancelConnectAsync e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2483,10 +2598,22 @@
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Close">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Closes the <see cref="T:System.Net.Sockets.Socket" /> connection and releases all associated resources.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Close">
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="socket.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2542,6 +2669,8 @@
       <MemberSignature Language="C#" Value="public void Close (int timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close(int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Close(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close (timeout As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Close : int -&gt; unit" Usage="socket.Close timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2596,10 +2725,22 @@
         <altmember cref="F:System.Net.Sockets.SocketOptionName.DontLinger" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Connect">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Establishes a connection to a remote host.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Connect">
       <MemberSignature Language="C#" Value="public void Connect (System.Net.EndPoint remoteEP);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Connect(class System.Net.EndPoint remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Connect (remoteEP As EndPoint)" />
+      <MemberSignature Language="F#" Value="member this.Connect : System.Net.EndPoint -&gt; unit" Usage="socket.Connect remoteEP" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2675,6 +2816,8 @@
       <MemberSignature Language="C#" Value="public void Connect (System.Net.IPAddress address, int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Connect(class System.Net.IPAddress address, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Connect(System.Net.IPAddress,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Connect (address As IPAddress, port As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Connect : System.Net.IPAddress * int -&gt; unit" Usage="socket.Connect (address, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2744,6 +2887,8 @@
       <MemberSignature Language="C#" Value="public void Connect (System.Net.IPAddress[] addresses, int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Connect(class System.Net.IPAddress[] addresses, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Connect(System.Net.IPAddress[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Connect (addresses As IPAddress(), port As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Connect : System.Net.IPAddress[] * int -&gt; unit" Usage="socket.Connect (addresses, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2813,6 +2958,8 @@
       <MemberSignature Language="C#" Value="public void Connect (string host, int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Connect(string host, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Connect(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Connect (host As String, port As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Connect : string * int -&gt; unit" Usage="socket.Connect (host, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2879,10 +3026,22 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ConnectAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous request for a connection to a remote host.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ConnectAsync">
       <MemberSignature Language="C#" Value="public bool ConnectAsync (System.Net.Sockets.SocketAsyncEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ConnectAsync(class System.Net.Sockets.SocketAsyncEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ConnectAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConnectAsync (e As SocketAsyncEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ConnectAsync : System.Net.Sockets.SocketAsyncEventArgs -&gt; bool" Usage="socket.ConnectAsync e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2964,6 +3123,7 @@
       <MemberSignature Language="C#" Value="public static bool ConnectAsync (System.Net.Sockets.SocketType socketType, System.Net.Sockets.ProtocolType protocolType, System.Net.Sockets.SocketAsyncEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ConnectAsync(valuetype System.Net.Sockets.SocketType socketType, valuetype System.Net.Sockets.ProtocolType protocolType, class System.Net.Sockets.SocketAsyncEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ConnectAsync(System.Net.Sockets.SocketType,System.Net.Sockets.ProtocolType,System.Net.Sockets.SocketAsyncEventArgs)" />
+      <MemberSignature Language="F#" Value="static member ConnectAsync : System.Net.Sockets.SocketType * System.Net.Sockets.ProtocolType * System.Net.Sockets.SocketAsyncEventArgs -&gt; bool" Usage="System.Net.Sockets.Socket.ConnectAsync (socketType, protocolType, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -3043,6 +3203,8 @@
       <MemberSignature Language="C#" Value="public bool Connected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Connected" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.Connected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Connected : bool" Usage="System.Net.Sockets.Socket.Connected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -3092,6 +3254,8 @@
       <MemberSignature Language="C#" Value="public void Disconnect (bool reuseSocket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Disconnect(bool reuseSocket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Disconnect(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Disconnect (reuseSocket As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Disconnect : bool -&gt; unit" Usage="socket.Disconnect reuseSocket" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3151,6 +3315,8 @@
       <MemberSignature Language="C#" Value="public bool DisconnectAsync (System.Net.Sockets.SocketAsyncEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool DisconnectAsync(class System.Net.Sockets.SocketAsyncEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.DisconnectAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DisconnectAsync (e As SocketAsyncEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisconnectAsync : System.Net.Sockets.SocketAsyncEventArgs -&gt; bool" Usage="socket.DisconnectAsync e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3195,11 +3361,26 @@
         <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.DisconnectReuseSocket" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Net.Sockets.Socket" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="socket.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -3239,6 +3420,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="socket.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -3289,6 +3472,8 @@
       <MemberSignature Language="C#" Value="public bool DontFragment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DontFragment" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.DontFragment" />
+      <MemberSignature Language="VB.NET" Value="Public Property DontFragment As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DontFragment : bool with get, set" Usage="System.Net.Sockets.Socket.DontFragment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -3338,6 +3523,8 @@
       <MemberSignature Language="C#" Value="public bool DualMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DualMode" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.DualMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property DualMode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DualMode : bool with get, set" Usage="System.Net.Sockets.Socket.DualMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -3367,6 +3554,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.SocketInformation DuplicateAndClose (int targetProcessId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Net.Sockets.SocketInformation DuplicateAndClose(int32 targetProcessId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.DuplicateAndClose(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DuplicateAndClose (targetProcessId As Integer) As SocketInformation" />
+      <MemberSignature Language="F#" Value="member this.DuplicateAndClose : int -&gt; System.Net.Sockets.SocketInformation" Usage="socket.DuplicateAndClose targetProcessId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3420,6 +3609,8 @@
       <MemberSignature Language="C#" Value="public bool EnableBroadcast { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableBroadcast" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.EnableBroadcast" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableBroadcast As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableBroadcast : bool with get, set" Usage="System.Net.Sockets.Socket.EnableBroadcast" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -3464,10 +3655,22 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EndAccept">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously accepts an incoming connection attempt.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EndAccept">
       <MemberSignature Language="C#" Value="public System.Net.Sockets.Socket EndAccept (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndAccept (result As IAsyncResult) As Socket" />
+      <MemberSignature Language="F#" Value="member this.EndAccept : IAsyncResult -&gt; System.Net.Sockets.Socket" Usage="socket.EndAccept asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3537,6 +3740,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.Socket EndAccept (out byte[] buffer, IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept([out] unsigned int8[]&amp; buffer, class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndAccept(System.Byte[]@,System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndAccept (ByRef buffer As Byte(), asyncResult As IAsyncResult) As Socket" />
+      <MemberSignature Language="F#" Value="member this.EndAccept :  * IAsyncResult -&gt; System.Net.Sockets.Socket" Usage="socket.EndAccept (buffer, asyncResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3604,6 +3809,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.Socket EndAccept (out byte[] buffer, out int bytesTransferred, IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept([out] unsigned int8[]&amp; buffer, [out] int32&amp; bytesTransferred, class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndAccept(System.Byte[]@,System.Int32@,System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndAccept (ByRef buffer As Byte(), ByRef bytesTransferred As Integer, asyncResult As IAsyncResult) As Socket" />
+      <MemberSignature Language="F#" Value="member this.EndAccept :  *  * IAsyncResult -&gt; System.Net.Sockets.Socket" Usage="socket.EndAccept (buffer, bytesTransferred, asyncResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3673,6 +3880,8 @@
       <MemberSignature Language="C#" Value="public void EndConnect (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndConnect(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndConnect (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndConnect : IAsyncResult -&gt; unit" Usage="socket.EndConnect asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3740,6 +3949,8 @@
       <MemberSignature Language="C#" Value="public void EndDisconnect (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndDisconnect(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndDisconnect(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndDisconnect (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndDisconnect : IAsyncResult -&gt; unit" Usage="socket.EndDisconnect asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3797,10 +4008,22 @@
         <exception cref="T:System.Net.WebException">The disconnect request has timed out.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EndReceive">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Ends a pending asynchronous read.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EndReceive">
       <MemberSignature Language="C#" Value="public int EndReceive (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceive(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndReceive (result As IAsyncResult) As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndReceive : IAsyncResult -&gt; int" Usage="socket.EndReceive asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3880,6 +4103,8 @@
       <MemberSignature Language="C#" Value="public int EndReceive (IAsyncResult asyncResult, out System.Net.Sockets.SocketError errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceive(class System.IAsyncResult asyncResult, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult,System.Net.Sockets.SocketError@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndReceive (asyncResult As IAsyncResult, ByRef errorCode As SocketError) As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndReceive : IAsyncResult *  -&gt; int" Usage="socket.EndReceive (asyncResult, errorCode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3950,6 +4175,8 @@
       <MemberSignature Language="C#" Value="public int EndReceiveFrom (IAsyncResult result, ref System.Net.EndPoint end_point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveFrom(class System.IAsyncResult result, class System.Net.EndPoint&amp; end_point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceiveFrom(System.IAsyncResult,System.Net.EndPoint@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndReceiveFrom (result As IAsyncResult, ByRef end_point As EndPoint) As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndReceiveFrom : IAsyncResult *  -&gt; int" Usage="socket.EndReceiveFrom (asyncResult, endPoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4019,6 +4246,8 @@
       <MemberSignature Language="C#" Value="public int EndReceiveMessageFrom (IAsyncResult asyncResult, ref System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint endPoint, out System.Net.Sockets.IPPacketInformation ipPacketInformation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveMessageFrom(class System.IAsyncResult asyncResult, valuetype System.Net.Sockets.SocketFlags&amp; socketFlags, class System.Net.EndPoint&amp; endPoint, [out] valuetype System.Net.Sockets.IPPacketInformation&amp; ipPacketInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceiveMessageFrom(System.IAsyncResult,System.Net.Sockets.SocketFlags@,System.Net.EndPoint@,System.Net.Sockets.IPPacketInformation@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndReceiveMessageFrom (asyncResult As IAsyncResult, ByRef socketFlags As SocketFlags, ByRef endPoint As EndPoint, ByRef ipPacketInformation As IPPacketInformation) As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndReceiveMessageFrom : IAsyncResult *  *  *  -&gt; int" Usage="socket.EndReceiveMessageFrom (asyncResult, socketFlags, endPoint, ipPacketInformation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4080,10 +4309,22 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EndSend">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Ends a pending asynchronous send.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EndSend">
       <MemberSignature Language="C#" Value="public int EndSend (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSend(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndSend (result As IAsyncResult) As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndSend : IAsyncResult -&gt; int" Usage="socket.EndSend asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4164,6 +4405,8 @@
       <MemberSignature Language="C#" Value="public int EndSend (IAsyncResult asyncResult, out System.Net.Sockets.SocketError errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSend(class System.IAsyncResult asyncResult, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult,System.Net.Sockets.SocketError@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndSend (asyncResult As IAsyncResult, ByRef errorCode As SocketError) As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndSend : IAsyncResult *  -&gt; int" Usage="socket.EndSend (asyncResult, errorCode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4237,6 +4480,8 @@
       <MemberSignature Language="C#" Value="public void EndSendFile (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndSendFile(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndSendFile(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndSendFile (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndSendFile : IAsyncResult -&gt; unit" Usage="socket.EndSendFile asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4303,6 +4548,8 @@
       <MemberSignature Language="C#" Value="public int EndSendTo (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSendTo(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndSendTo(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndSendTo (result As IAsyncResult) As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndSendTo : IAsyncResult -&gt; int" Usage="socket.EndSendTo asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4370,6 +4617,8 @@
       <MemberSignature Language="C#" Value="public bool ExclusiveAddressUse { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExclusiveAddressUse" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.ExclusiveAddressUse" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExclusiveAddressUse As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ExclusiveAddressUse : bool with get, set" Usage="System.Net.Sockets.Socket.ExclusiveAddressUse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -4422,6 +4671,8 @@
       <MemberSignature Language="C#" Value="~Socket ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="socket.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -4453,10 +4704,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSocketOption">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the value of a <see cref="T:System.Net.Sockets.Socket" /> option.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetSocketOption">
       <MemberSignature Language="C#" Value="public object GetSocketOption (System.Net.Sockets.SocketOptionLevel optionLevel, System.Net.Sockets.SocketOptionName optionName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetSocketOption(valuetype System.Net.Sockets.SocketOptionLevel optionLevel, valuetype System.Net.Sockets.SocketOptionName optionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.GetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSocketOption (optionLevel As SocketOptionLevel, optionName As SocketOptionName) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetSocketOption : System.Net.Sockets.SocketOptionLevel * System.Net.Sockets.SocketOptionName -&gt; obj" Usage="socket.GetSocketOption (optionLevel, optionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -4522,6 +4785,8 @@
       <MemberSignature Language="C#" Value="public void GetSocketOption (System.Net.Sockets.SocketOptionLevel optionLevel, System.Net.Sockets.SocketOptionName optionName, byte[] optionValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetSocketOption(valuetype System.Net.Sockets.SocketOptionLevel optionLevel, valuetype System.Net.Sockets.SocketOptionName optionName, unsigned int8[] optionValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.GetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetSocketOption (optionLevel As SocketOptionLevel, optionName As SocketOptionName, optionValue As Byte())" />
+      <MemberSignature Language="F#" Value="member this.GetSocketOption : System.Net.Sockets.SocketOptionLevel * System.Net.Sockets.SocketOptionName * byte[] -&gt; unit" Usage="socket.GetSocketOption (optionLevel, optionName, optionValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -4587,6 +4852,8 @@
       <MemberSignature Language="C#" Value="public byte[] GetSocketOption (System.Net.Sockets.SocketOptionLevel optionLevel, System.Net.Sockets.SocketOptionName optionName, int optionLength);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetSocketOption(valuetype System.Net.Sockets.SocketOptionLevel optionLevel, valuetype System.Net.Sockets.SocketOptionName optionName, int32 optionLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.GetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSocketOption (optionLevel As SocketOptionLevel, optionName As SocketOptionName, optionLength As Integer) As Byte()" />
+      <MemberSignature Language="F#" Value="member this.GetSocketOption : System.Net.Sockets.SocketOptionLevel * System.Net.Sockets.SocketOptionName * int -&gt; byte[]" Usage="socket.GetSocketOption (optionLevel, optionName, optionLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -4654,6 +4921,8 @@
       <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.Handle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.Handle : nativeint" Usage="System.Net.Sockets.Socket.Handle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4677,10 +4946,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IOControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets low-level operating modes for the <see cref="T:System.Net.Sockets.Socket" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IOControl">
       <MemberSignature Language="C#" Value="public int IOControl (int ioControlCode, byte[] optionInValue, byte[] optionOutValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IOControl(int32 ioControlCode, unsigned int8[] optionInValue, unsigned int8[] optionOutValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.IOControl(System.Int32,System.Byte[],System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function IOControl (ioControlCode As Integer, optionInValue As Byte(), optionOutValue As Byte()) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IOControl : int * byte[] * byte[] -&gt; int" Usage="socket.IOControl (ioControlCode, optionInValue, optionOutValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -4743,6 +5024,7 @@
       <MemberSignature Language="C#" Value="public int IOControl (System.Net.Sockets.IOControlCode ioControlCode, byte[] optionInValue, byte[] optionOutValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IOControl(valuetype System.Net.Sockets.IOControlCode ioControlCode, unsigned int8[] optionInValue, unsigned int8[] optionOutValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.IOControl(System.Net.Sockets.IOControlCode,System.Byte[],System.Byte[])" />
+      <MemberSignature Language="F#" Value="member this.IOControl : System.Net.Sockets.IOControlCode * byte[] * byte[] -&gt; int" Usage="socket.IOControl (ioControlCode, optionInValue, optionOutValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -4804,6 +5086,8 @@
       <MemberSignature Language="C#" Value="public bool IsBound { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBound" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.IsBound" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBound As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBound : bool" Usage="System.Net.Sockets.Socket.IsBound" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -4848,6 +5132,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.LingerOption LingerState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Sockets.LingerOption LingerState" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.LingerState" />
+      <MemberSignature Language="VB.NET" Value="Public Property LingerState As LingerOption" />
+      <MemberSignature Language="F#" Value="member this.LingerState : System.Net.Sockets.LingerOption with get, set" Usage="System.Net.Sockets.Socket.LingerState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -4911,6 +5197,8 @@
       <MemberSignature Language="C#" Value="public void Listen (int backlog);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Listen(int32 backlog) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Listen(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Listen (backlog As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Listen : int -&gt; unit" Usage="socket.Listen backlog" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -4974,6 +5262,8 @@
       <MemberSignature Language="C#" Value="public System.Net.EndPoint LocalEndPoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.EndPoint LocalEndPoint" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.LocalEndPoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalEndPoint As EndPoint" />
+      <MemberSignature Language="F#" Value="member this.LocalEndPoint : System.Net.EndPoint" Usage="System.Net.Sockets.Socket.LocalEndPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5031,6 +5321,8 @@
       <MemberSignature Language="C#" Value="public bool MulticastLoopback { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MulticastLoopback" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.MulticastLoopback" />
+      <MemberSignature Language="VB.NET" Value="Public Property MulticastLoopback As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MulticastLoopback : bool with get, set" Usage="System.Net.Sockets.Socket.MulticastLoopback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5079,6 +5371,8 @@
       <MemberSignature Language="C#" Value="public bool NoDelay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NoDelay" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.NoDelay" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoDelay As Boolean" />
+      <MemberSignature Language="F#" Value="member this.NoDelay : bool with get, set" Usage="System.Net.Sockets.Socket.NoDelay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5129,6 +5423,8 @@
       <MemberSignature Language="C#" Value="public static bool OSSupportsIPv4 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool OSSupportsIPv4" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.OSSupportsIPv4" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OSSupportsIPv4 As Boolean" />
+      <MemberSignature Language="F#" Value="member this.OSSupportsIPv4 : bool" Usage="System.Net.Sockets.Socket.OSSupportsIPv4" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5166,6 +5462,8 @@
       <MemberSignature Language="C#" Value="public static bool OSSupportsIPv6 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool OSSupportsIPv6" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.OSSupportsIPv6" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OSSupportsIPv6 As Boolean" />
+      <MemberSignature Language="F#" Value="member this.OSSupportsIPv6 : bool" Usage="System.Net.Sockets.Socket.OSSupportsIPv6" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5203,6 +5501,8 @@
       <MemberSignature Language="C#" Value="public bool Poll (int microSeconds, System.Net.Sockets.SelectMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Poll(int32 microSeconds, valuetype System.Net.Sockets.SelectMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Poll(System.Int32,System.Net.Sockets.SelectMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Poll (microSeconds As Integer, mode As SelectMode) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Poll : int * System.Net.Sockets.SelectMode -&gt; bool" Usage="socket.Poll (microSeconds, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5301,6 +5601,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.ProtocolType ProtocolType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Sockets.ProtocolType ProtocolType" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.ProtocolType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProtocolType As ProtocolType" />
+      <MemberSignature Language="F#" Value="member this.ProtocolType : System.Net.Sockets.ProtocolType" Usage="System.Net.Sockets.Socket.ProtocolType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5341,10 +5643,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Receive">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Receives data from a bound <see cref="T:System.Net.Sockets.Socket" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Receive">
       <MemberSignature Language="C#" Value="public int Receive (byte[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(unsigned int8[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Receive(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Receive (buffer As Byte()) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Receive : byte[] -&gt; int" Usage="socket.Receive buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5420,6 +5734,8 @@
       <MemberSignature Language="C#" Value="public int Receive (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Receive(System.Collections.Generic.IList{System.ArraySegment{System.Byte}})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Receive (buffers As IList(Of ArraySegment(Of Byte))) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Receive : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; -&gt; int" Usage="socket.Receive buffers" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5478,6 +5794,7 @@
       <MemberSignature Language="C#" Value="public int Receive (byte[] buffer, System.Net.Sockets.SocketFlags socketFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(unsigned int8[] buffer, valuetype System.Net.Sockets.SocketFlags socketFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Receive(System.Byte[],System.Net.Sockets.SocketFlags)" />
+      <MemberSignature Language="F#" Value="member this.Receive : byte[] * System.Net.Sockets.SocketFlags -&gt; int" Usage="socket.Receive (buffer, socketFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5555,6 +5872,7 @@
       <MemberSignature Language="C#" Value="public int Receive (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Receive(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags)" />
+      <MemberSignature Language="F#" Value="member this.Receive : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.Net.Sockets.SocketFlags -&gt; int" Usage="socket.Receive (buffers, socketFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5640,6 +5958,7 @@
       <MemberSignature Language="C#" Value="public int Receive (byte[] buffer, int size, System.Net.Sockets.SocketFlags socketFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(unsigned int8[] buffer, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Receive(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
+      <MemberSignature Language="F#" Value="member this.Receive : byte[] * int * System.Net.Sockets.SocketFlags -&gt; int" Usage="socket.Receive (buffer, size, socketFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5721,6 +6040,7 @@
       <MemberSignature Language="C#" Value="public int Receive (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Receive(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
+      <MemberSignature Language="F#" Value="member this.Receive : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.Net.Sockets.SocketFlags *  -&gt; int" Usage="socket.Receive (buffers, socketFlags, errorCode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5800,6 +6120,7 @@
       <MemberSignature Language="C#" Value="public int Receive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Receive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags)" />
+      <MemberSignature Language="F#" Value="member this.Receive : byte[] * int * int * System.Net.Sockets.SocketFlags -&gt; int" Usage="socket.Receive (buffer, offset, size, socketFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5902,6 +6223,7 @@
       <MemberSignature Language="C#" Value="public int Receive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Receive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
+      <MemberSignature Language="F#" Value="member this.Receive : byte[] * int * int * System.Net.Sockets.SocketFlags *  -&gt; int" Usage="socket.Receive (buffer, offset, size, socketFlags, errorCode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -5997,6 +6319,8 @@
       <MemberSignature Language="C#" Value="public bool ReceiveAsync (System.Net.Sockets.SocketAsyncEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ReceiveAsync(class System.Net.Sockets.SocketAsyncEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveAsync (e As SocketAsyncEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ReceiveAsync : System.Net.Sockets.SocketAsyncEventArgs -&gt; bool" Usage="socket.ReceiveAsync e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -6072,6 +6396,8 @@
       <MemberSignature Language="C#" Value="public int ReceiveBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ReceiveBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.ReceiveBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceiveBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReceiveBufferSize : int with get, set" Usage="System.Net.Sockets.Socket.ReceiveBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -6114,10 +6440,22 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a set operation is less than 0.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReceiveFrom">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Receives a datagram and stores the source endpoint.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReceiveFrom">
       <MemberSignature Language="C#" Value="public int ReceiveFrom (byte[] buffer, ref System.Net.EndPoint remoteEP);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, class System.Net.EndPoint&amp; remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Net.EndPoint@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveFrom (buffer As Byte(), ByRef remoteEP As EndPoint) As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReceiveFrom : byte[] *  -&gt; int" Usage="socket.ReceiveFrom (buffer, remoteEP)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -6205,6 +6543,7 @@
       <MemberSignature Language="C#" Value="public int ReceiveFrom (byte[] buffer, System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint&amp; remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
+      <MemberSignature Language="F#" Value="member this.ReceiveFrom : byte[] * System.Net.Sockets.SocketFlags *  -&gt; int" Usage="socket.ReceiveFrom (buffer, socketFlags, remoteEP)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -6295,6 +6634,7 @@
       <MemberSignature Language="C#" Value="public int ReceiveFrom (byte[] buffer, int size, System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint&amp; remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
+      <MemberSignature Language="F#" Value="member this.ReceiveFrom : byte[] * int * System.Net.Sockets.SocketFlags *  -&gt; int" Usage="socket.ReceiveFrom (buffer, size, socketFlags, remoteEP)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -6399,6 +6739,7 @@
       <MemberSignature Language="C#" Value="public int ReceiveFrom (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint&amp; remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
+      <MemberSignature Language="F#" Value="member this.ReceiveFrom : byte[] * int * int * System.Net.Sockets.SocketFlags *  -&gt; int" Usage="socket.ReceiveFrom (buffer, offset, size, socketFlags, remoteEP)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -6510,6 +6851,8 @@
       <MemberSignature Language="C#" Value="public bool ReceiveFromAsync (System.Net.Sockets.SocketAsyncEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ReceiveFromAsync(class System.Net.Sockets.SocketAsyncEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveFromAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveFromAsync (e As SocketAsyncEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ReceiveFromAsync : System.Net.Sockets.SocketAsyncEventArgs -&gt; bool" Usage="socket.ReceiveFromAsync e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -6585,6 +6928,8 @@
       <MemberSignature Language="C#" Value="public int ReceiveMessageFrom (byte[] buffer, int offset, int size, ref System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP, out System.Net.Sockets.IPPacketInformation ipPacketInformation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveMessageFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags&amp; socketFlags, class System.Net.EndPoint&amp; remoteEP, [out] valuetype System.Net.Sockets.IPPacketInformation&amp; ipPacketInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveMessageFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags@,System.Net.EndPoint@,System.Net.Sockets.IPPacketInformation@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveMessageFrom (buffer As Byte(), offset As Integer, size As Integer, ByRef socketFlags As SocketFlags, ByRef remoteEP As EndPoint, ByRef ipPacketInformation As IPPacketInformation) As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReceiveMessageFrom : byte[] * int * int *  *  *  -&gt; int" Usage="socket.ReceiveMessageFrom (buffer, offset, size, socketFlags, remoteEP, ipPacketInformation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -6697,6 +7042,8 @@
       <MemberSignature Language="C#" Value="public bool ReceiveMessageFromAsync (System.Net.Sockets.SocketAsyncEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ReceiveMessageFromAsync(class System.Net.Sockets.SocketAsyncEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveMessageFromAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveMessageFromAsync (e As SocketAsyncEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ReceiveMessageFromAsync : System.Net.Sockets.SocketAsyncEventArgs -&gt; bool" Usage="socket.ReceiveMessageFromAsync e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -6778,6 +7125,8 @@
       <MemberSignature Language="C#" Value="public int ReceiveTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ReceiveTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.ReceiveTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceiveTimeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReceiveTimeout : int with get, set" Usage="System.Net.Sockets.Socket.ReceiveTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -6824,6 +7173,8 @@
       <MemberSignature Language="C#" Value="public System.Net.EndPoint RemoteEndPoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.EndPoint RemoteEndPoint" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.RemoteEndPoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoteEndPoint As EndPoint" />
+      <MemberSignature Language="F#" Value="member this.RemoteEndPoint : System.Net.EndPoint" Usage="System.Net.Sockets.Socket.RemoteEndPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -6878,6 +7229,8 @@
       <MemberSignature Language="C#" Value="public static void Select (System.Collections.IList checkRead, System.Collections.IList checkWrite, System.Collections.IList checkError, int microSeconds);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Select(class System.Collections.IList checkRead, class System.Collections.IList checkWrite, class System.Collections.IList checkError, int32 microSeconds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Select(System.Collections.IList,System.Collections.IList,System.Collections.IList,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Select (checkRead As IList, checkWrite As IList, checkError As IList, microSeconds As Integer)" />
+      <MemberSignature Language="F#" Value="static member Select : System.Collections.IList * System.Collections.IList * System.Collections.IList * int -&gt; unit" Usage="System.Net.Sockets.Socket.Select (checkRead, checkWrite, checkError, microSeconds)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -6958,10 +7311,22 @@
         <altmember cref="M:System.Net.Sockets.Socket.Poll(System.Int32,System.Net.Sockets.SelectMode)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Send">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends data to a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Send">
       <MemberSignature Language="C#" Value="public int Send (byte[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(unsigned int8[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Send(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Send (buffer As Byte()) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Send : byte[] -&gt; int" Usage="socket.Send buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -7035,6 +7400,8 @@
       <MemberSignature Language="C#" Value="public int Send (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Send(System.Collections.Generic.IList{System.ArraySegment{System.Byte}})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Send (buffers As IList(Of ArraySegment(Of Byte))) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Send : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; -&gt; int" Usage="socket.Send buffers" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -7098,6 +7465,7 @@
       <MemberSignature Language="C#" Value="public int Send (byte[] buffer, System.Net.Sockets.SocketFlags socketFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(unsigned int8[] buffer, valuetype System.Net.Sockets.SocketFlags socketFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Send(System.Byte[],System.Net.Sockets.SocketFlags)" />
+      <MemberSignature Language="F#" Value="member this.Send : byte[] * System.Net.Sockets.SocketFlags -&gt; int" Usage="socket.Send (buffer, socketFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -7173,6 +7541,7 @@
       <MemberSignature Language="C#" Value="public int Send (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Send(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags)" />
+      <MemberSignature Language="F#" Value="member this.Send : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.Net.Sockets.SocketFlags -&gt; int" Usage="socket.Send (buffers, socketFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -7236,6 +7605,7 @@
       <MemberSignature Language="C#" Value="public int Send (byte[] buffer, int size, System.Net.Sockets.SocketFlags socketFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(unsigned int8[] buffer, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Send(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
+      <MemberSignature Language="F#" Value="member this.Send : byte[] * int * System.Net.Sockets.SocketFlags -&gt; int" Usage="socket.Send (buffer, size, socketFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -7320,6 +7690,7 @@
       <MemberSignature Language="C#" Value="public int Send (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Send(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
+      <MemberSignature Language="F#" Value="member this.Send : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.Net.Sockets.SocketFlags *  -&gt; int" Usage="socket.Send (buffers, socketFlags, errorCode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -7390,6 +7761,7 @@
       <MemberSignature Language="C#" Value="public int Send (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Send(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags)" />
+      <MemberSignature Language="F#" Value="member this.Send : byte[] * int * int * System.Net.Sockets.SocketFlags -&gt; int" Usage="socket.Send (buffer, offset, size, socketFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -7490,6 +7862,7 @@
       <MemberSignature Language="C#" Value="public int Send (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Send(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
+      <MemberSignature Language="F#" Value="member this.Send : byte[] * int * int * System.Net.Sockets.SocketFlags *  -&gt; int" Usage="socket.Send (buffer, offset, size, socketFlags, errorCode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -7592,6 +7965,8 @@
       <MemberSignature Language="C#" Value="public bool SendAsync (System.Net.Sockets.SocketAsyncEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SendAsync(class System.Net.Sockets.SocketAsyncEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.SendAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendAsync (e As SocketAsyncEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SendAsync : System.Net.Sockets.SocketAsyncEventArgs -&gt; bool" Usage="socket.SendAsync e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -7667,6 +8042,8 @@
       <MemberSignature Language="C#" Value="public int SendBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SendBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.SendBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.SendBufferSize : int with get, set" Usage="System.Net.Sockets.Socket.SendBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -7709,10 +8086,22 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a set operation is less than 0.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SendFile">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a file and optional data synchronously to a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SendFile">
       <MemberSignature Language="C#" Value="public void SendFile (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendFile(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.SendFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendFile (fileName As String)" />
+      <MemberSignature Language="F#" Value="member this.SendFile : string -&gt; unit" Usage="socket.SendFile fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7777,6 +8166,8 @@
       <MemberSignature Language="C#" Value="public void SendFile (string fileName, byte[] preBuffer, byte[] postBuffer, System.Net.Sockets.TransmitFileOptions flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendFile(string fileName, unsigned int8[] preBuffer, unsigned int8[] postBuffer, valuetype System.Net.Sockets.TransmitFileOptions flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.SendFile(System.String,System.Byte[],System.Byte[],System.Net.Sockets.TransmitFileOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendFile (fileName As String, preBuffer As Byte(), postBuffer As Byte(), flags As TransmitFileOptions)" />
+      <MemberSignature Language="F#" Value="member this.SendFile : string * byte[] * byte[] * System.Net.Sockets.TransmitFileOptions -&gt; unit" Usage="socket.SendFile (fileName, preBuffer, postBuffer, flags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7853,6 +8244,8 @@
       <MemberSignature Language="C#" Value="public bool SendPacketsAsync (System.Net.Sockets.SocketAsyncEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SendPacketsAsync(class System.Net.Sockets.SocketAsyncEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.SendPacketsAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendPacketsAsync (e As SocketAsyncEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SendPacketsAsync : System.Net.Sockets.SocketAsyncEventArgs -&gt; bool" Usage="socket.SendPacketsAsync e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -7933,6 +8326,8 @@
       <MemberSignature Language="C#" Value="public int SendTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SendTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.SendTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendTimeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.SendTimeout : int with get, set" Usage="System.Net.Sockets.Socket.SendTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -7975,10 +8370,22 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a set operation is less than -1.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SendTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends data to a specific endpoint.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SendTo">
       <MemberSignature Language="C#" Value="public int SendTo (byte[] buffer, System.Net.EndPoint remoteEP);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 SendTo(unsigned int8[] buffer, class System.Net.EndPoint remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.SendTo(System.Byte[],System.Net.EndPoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendTo (buffer As Byte(), remoteEP As EndPoint) As Integer" />
+      <MemberSignature Language="F#" Value="member this.SendTo : byte[] * System.Net.EndPoint -&gt; int" Usage="socket.SendTo (buffer, remoteEP)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -8057,6 +8464,7 @@
       <MemberSignature Language="C#" Value="public int SendTo (byte[] buffer, System.Net.Sockets.SocketFlags socketFlags, System.Net.EndPoint remoteEP);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 SendTo(unsigned int8[] buffer, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.SendTo(System.Byte[],System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+      <MemberSignature Language="F#" Value="member this.SendTo : byte[] * System.Net.Sockets.SocketFlags * System.Net.EndPoint -&gt; int" Usage="socket.SendTo (buffer, socketFlags, remoteEP)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -8137,6 +8545,7 @@
       <MemberSignature Language="C#" Value="public int SendTo (byte[] buffer, int size, System.Net.Sockets.SocketFlags socketFlags, System.Net.EndPoint remoteEP);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 SendTo(unsigned int8[] buffer, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.SendTo(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+      <MemberSignature Language="F#" Value="member this.SendTo : byte[] * int * System.Net.Sockets.SocketFlags * System.Net.EndPoint -&gt; int" Usage="socket.SendTo (buffer, size, socketFlags, remoteEP)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -8220,6 +8629,7 @@
       <MemberSignature Language="C#" Value="public int SendTo (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, System.Net.EndPoint remoteEP);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 SendTo(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.SendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+      <MemberSignature Language="F#" Value="member this.SendTo : byte[] * int * int * System.Net.Sockets.SocketFlags * System.Net.EndPoint -&gt; int" Usage="socket.SendTo (buffer, offset, size, socketFlags, remoteEP)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -8324,6 +8734,8 @@
       <MemberSignature Language="C#" Value="public bool SendToAsync (System.Net.Sockets.SocketAsyncEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SendToAsync(class System.Net.Sockets.SocketAsyncEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.SendToAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendToAsync (e As SocketAsyncEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SendToAsync : System.Net.Sockets.SocketAsyncEventArgs -&gt; bool" Usage="socket.SendToAsync e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -8403,6 +8815,8 @@
       <MemberSignature Language="C#" Value="public void SetIPProtectionLevel (System.Net.Sockets.IPProtectionLevel level);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetIPProtectionLevel(valuetype System.Net.Sockets.IPProtectionLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.SetIPProtectionLevel(System.Net.Sockets.IPProtectionLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetIPProtectionLevel (level As IPProtectionLevel)" />
+      <MemberSignature Language="F#" Value="member this.SetIPProtectionLevel : System.Net.Sockets.IPProtectionLevel -&gt; unit" Usage="socket.SetIPProtectionLevel level" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -8451,10 +8865,22 @@
         <altmember cref="M:System.Net.Sockets.UdpClient.AllowNatTraversal(System.Boolean)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetSocketOption">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a <see cref="T:System.Net.Sockets.Socket" /> option.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetSocketOption">
       <MemberSignature Language="C#" Value="public void SetSocketOption (System.Net.Sockets.SocketOptionLevel optionLevel, System.Net.Sockets.SocketOptionName optionName, bool optionValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSocketOption(valuetype System.Net.Sockets.SocketOptionLevel optionLevel, valuetype System.Net.Sockets.SocketOptionName optionName, bool optionValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSocketOption (optionLevel As SocketOptionLevel, optionName As SocketOptionName, optionValue As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.SetSocketOption : System.Net.Sockets.SocketOptionLevel * System.Net.Sockets.SocketOptionName * bool -&gt; unit" Usage="socket.SetSocketOption (optionLevel, optionName, optionValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -8552,6 +8978,8 @@
       <MemberSignature Language="C#" Value="public void SetSocketOption (System.Net.Sockets.SocketOptionLevel optionLevel, System.Net.Sockets.SocketOptionName optionName, byte[] optionValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSocketOption(valuetype System.Net.Sockets.SocketOptionLevel optionLevel, valuetype System.Net.Sockets.SocketOptionName optionName, unsigned int8[] optionValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSocketOption (optionLevel As SocketOptionLevel, optionName As SocketOptionName, optionValue As Byte())" />
+      <MemberSignature Language="F#" Value="member this.SetSocketOption : System.Net.Sockets.SocketOptionLevel * System.Net.Sockets.SocketOptionName * byte[] -&gt; unit" Usage="socket.SetSocketOption (optionLevel, optionName, optionValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -8614,6 +9042,8 @@
       <MemberSignature Language="C#" Value="public void SetSocketOption (System.Net.Sockets.SocketOptionLevel optionLevel, System.Net.Sockets.SocketOptionName optionName, int optionValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSocketOption(valuetype System.Net.Sockets.SocketOptionLevel optionLevel, valuetype System.Net.Sockets.SocketOptionName optionName, int32 optionValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSocketOption (optionLevel As SocketOptionLevel, optionName As SocketOptionName, optionValue As Integer)" />
+      <MemberSignature Language="F#" Value="member this.SetSocketOption : System.Net.Sockets.SocketOptionLevel * System.Net.Sockets.SocketOptionName * int -&gt; unit" Usage="socket.SetSocketOption (optionLevel, optionName, optionValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -8742,6 +9172,8 @@
       <MemberSignature Language="C#" Value="public void SetSocketOption (System.Net.Sockets.SocketOptionLevel optionLevel, System.Net.Sockets.SocketOptionName optionName, object optionValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSocketOption(valuetype System.Net.Sockets.SocketOptionLevel optionLevel, valuetype System.Net.Sockets.SocketOptionName optionName, object optionValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSocketOption (optionLevel As SocketOptionLevel, optionName As SocketOptionName, optionValue As Object)" />
+      <MemberSignature Language="F#" Value="member this.SetSocketOption : System.Net.Sockets.SocketOptionLevel * System.Net.Sockets.SocketOptionName * obj -&gt; unit" Usage="socket.SetSocketOption (optionLevel, optionName, optionValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -8803,6 +9235,8 @@
       <MemberSignature Language="C#" Value="public void Shutdown (System.Net.Sockets.SocketShutdown how);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Shutdown(valuetype System.Net.Sockets.SocketShutdown how) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Shutdown (how As SocketShutdown)" />
+      <MemberSignature Language="F#" Value="member this.Shutdown : System.Net.Sockets.SocketShutdown -&gt; unit" Usage="socket.Shutdown how" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -8882,6 +9316,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.SocketType SocketType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Sockets.SocketType SocketType" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.SocketType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SocketType As SocketType" />
+      <MemberSignature Language="F#" Value="member this.SocketType : System.Net.Sockets.SocketType" Usage="System.Net.Sockets.Socket.SocketType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -8927,6 +9363,8 @@
       <MemberSignature Language="C#" Value="public static bool SupportsIPv4 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool SupportsIPv4" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.SupportsIPv4" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SupportsIPv4 As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsIPv4 : bool" Usage="System.Net.Sockets.Socket.SupportsIPv4" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -8968,6 +9406,8 @@
       <MemberSignature Language="C#" Value="public static bool SupportsIPv6 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool SupportsIPv6" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.SupportsIPv6" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SupportsIPv6 As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsIPv6 : bool" Usage="System.Net.Sockets.Socket.SupportsIPv6" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -9010,6 +9450,8 @@
       <MemberSignature Language="C#" Value="public short Ttl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 Ttl" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.Ttl" />
+      <MemberSignature Language="VB.NET" Value="Public Property Ttl As Short" />
+      <MemberSignature Language="F#" Value="member this.Ttl : int16 with get, set" Usage="System.Net.Sockets.Socket.Ttl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -9063,6 +9505,8 @@
       <MemberSignature Language="C#" Value="public bool UseOnlyOverlappedIO { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseOnlyOverlappedIO" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.Socket.UseOnlyOverlappedIO" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseOnlyOverlappedIO As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseOnlyOverlappedIO : bool with get, set" Usage="System.Net.Sockets.Socket.UseOnlyOverlappedIO" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -9100,215 +9544,5 @@
         <exception cref="T:System.InvalidOperationException">The socket has been bound to a completion port.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="EndSend">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Ends a pending asynchronous send.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginSend">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends data asynchronously to a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginAccept">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation to accept an incoming connection attempt.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetSocketOption">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets a <see cref="T:System.Net.Sockets.Socket" /> option.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IOControl">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets low-level operating modes for the <see cref="T:System.Net.Sockets.Socket" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SendTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends data to a specific endpoint.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginConnect">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous request for a remote host connection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Close">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Closes the <see cref="T:System.Net.Sockets.Socket" /> connection and releases all associated resources.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ConnectAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous request for a connection to a remote host.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases all resources used by the current instance of the <see cref="T:System.Net.Sockets.Socket" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetSocketOption">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the value of a <see cref="T:System.Net.Sockets.Socket" /> option.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginReceive">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins to asynchronously receive data from a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="EndReceive">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Ends a pending asynchronous read.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Connect">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Establishes a connection to a remote host.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginSendFile">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends a file asynchronously to a connected <see cref="T:System.Net.Sockets.Socket" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="EndAccept">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Asynchronously accepts an incoming connection attempt.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.Socket" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Receive">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Receives data from a bound <see cref="T:System.Net.Sockets.Socket" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SendFile">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends a file and optional data synchronously to a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Send">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends data to a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReceiveFrom">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Receives a datagram and stores the source endpoint.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

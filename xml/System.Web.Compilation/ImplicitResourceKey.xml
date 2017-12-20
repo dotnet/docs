@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ImplicitResourceKey" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImplicitResourceKey extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ImplicitResourceKey" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImplicitResourceKey" />
+  <TypeSignature Language="F#" Value="type ImplicitResourceKey = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,10 +47,20 @@
     <altmember cref="T:System.Web.Compilation.IResourceProvider" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ImplicitResourceKey" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ImplicitResourceKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ImplicitResourceKey.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +78,8 @@
       <MemberSignature Language="C#" Value="public ImplicitResourceKey (string filter, string keyPrefix, string property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filter, string keyPrefix, string property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ImplicitResourceKey.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filter As String, keyPrefix As String, property As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Compilation.ImplicitResourceKey : string * string * string -&gt; System.Web.Compilation.ImplicitResourceKey" Usage="new System.Web.Compilation.ImplicitResourceKey (filter, keyPrefix, property)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +102,8 @@
       <MemberSignature Language="C#" Value="public string Filter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ImplicitResourceKey.Filter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Filter As String" />
+      <MemberSignature Language="F#" Value="member this.Filter : string with get, set" Usage="System.Web.Compilation.ImplicitResourceKey.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +140,8 @@
       <MemberSignature Language="C#" Value="public string KeyPrefix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeyPrefix" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ImplicitResourceKey.KeyPrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyPrefix As String" />
+      <MemberSignature Language="F#" Value="member this.KeyPrefix : string with get, set" Usage="System.Web.Compilation.ImplicitResourceKey.KeyPrefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +178,8 @@
       <MemberSignature Language="C#" Value="public string Property { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Property" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ImplicitResourceKey.Property" />
+      <MemberSignature Language="VB.NET" Value="Public Property Property As String" />
+      <MemberSignature Language="F#" Value="member this.Property : string with get, set" Usage="System.Web.Compilation.ImplicitResourceKey.Property" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,14 +210,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ImplicitResourceKey" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

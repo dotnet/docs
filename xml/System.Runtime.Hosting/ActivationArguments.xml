@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ActivationArguments : System.Security.Policy.EvidenceBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ActivationArguments extends System.Security.Policy.EvidenceBase" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Hosting.ActivationArguments" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivationArguments&#xA;Inherits EvidenceBase" />
+  <TypeSignature Language="F#" Value="type ActivationArguments = class&#xA;    inherit EvidenceBase" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,10 +40,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Hosting.ActivationArguments" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ActivationArguments (ActivationContext activationData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ActivationContext activationData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.#ctor(System.ActivationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (activationData As ActivationContext)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Hosting.ActivationArguments : ActivationContext -&gt; System.Runtime.Hosting.ActivationArguments" Usage="new System.Runtime.Hosting.ActivationArguments activationData" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +84,7 @@
       <MemberSignature Language="C#" Value="public ActivationArguments (ApplicationIdentity applicationIdentity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ApplicationIdentity applicationIdentity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.#ctor(System.ApplicationIdentity)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Hosting.ActivationArguments : ApplicationIdentity -&gt; System.Runtime.Hosting.ActivationArguments" Usage="new System.Runtime.Hosting.ActivationArguments applicationIdentity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +113,7 @@
       <MemberSignature Language="C#" Value="public ActivationArguments (ActivationContext activationContext, string[] activationData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ActivationContext activationContext, string[] activationData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.#ctor(System.ActivationContext,System.String[])" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Hosting.ActivationArguments : ActivationContext * string[] -&gt; System.Runtime.Hosting.ActivationArguments" Usage="new System.Runtime.Hosting.ActivationArguments (activationContext, activationData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -128,6 +144,7 @@
       <MemberSignature Language="C#" Value="public ActivationArguments (ApplicationIdentity applicationIdentity, string[] activationData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ApplicationIdentity applicationIdentity, string[] activationData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.#ctor(System.ApplicationIdentity,System.String[])" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Hosting.ActivationArguments : ApplicationIdentity * string[] -&gt; System.Runtime.Hosting.ActivationArguments" Usage="new System.Runtime.Hosting.ActivationArguments (applicationIdentity, activationData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -158,6 +175,8 @@
       <MemberSignature Language="C#" Value="public ActivationContext ActivationContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ActivationContext ActivationContext" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Hosting.ActivationArguments.ActivationContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivationContext As ActivationContext" />
+      <MemberSignature Language="F#" Value="member this.ActivationContext : ActivationContext" Usage="System.Runtime.Hosting.ActivationArguments.ActivationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -194,6 +213,8 @@
       <MemberSignature Language="C#" Value="public string[] ActivationData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ActivationData" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Hosting.ActivationArguments.ActivationData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivationData As String()" />
+      <MemberSignature Language="F#" Value="member this.ActivationData : string[]" Usage="System.Runtime.Hosting.ActivationArguments.ActivationData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -220,6 +241,8 @@
       <MemberSignature Language="C#" Value="public ApplicationIdentity ApplicationIdentity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ApplicationIdentity ApplicationIdentity" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Hosting.ActivationArguments.ApplicationIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationIdentity As ApplicationIdentity" />
+      <MemberSignature Language="F#" Value="member this.ApplicationIdentity : ApplicationIdentity" Usage="System.Runtime.Hosting.ActivationArguments.ApplicationIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -246,6 +269,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Policy.EvidenceBase Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.EvidenceBase Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As EvidenceBase" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Security.Policy.EvidenceBase" Usage="activationArguments.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -268,15 +293,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Hosting.ActivationArguments" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

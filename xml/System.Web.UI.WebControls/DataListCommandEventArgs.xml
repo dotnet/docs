@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class DataListCommandEventArgs : System.Web.UI.WebControls.CommandEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataListCommandEventArgs extends System.Web.UI.WebControls.CommandEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataListCommandEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataListCommandEventArgs&#xA;Inherits CommandEventArgs" />
+  <TypeSignature Language="F#" Value="type DataListCommandEventArgs = class&#xA;    inherit CommandEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +60,8 @@
       <MemberSignature Language="C#" Value="public DataListCommandEventArgs (System.Web.UI.WebControls.DataListItem item, object commandSource, System.Web.UI.WebControls.CommandEventArgs originalArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.DataListItem item, object commandSource, class System.Web.UI.WebControls.CommandEventArgs originalArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataListCommandEventArgs.#ctor(System.Web.UI.WebControls.DataListItem,System.Object,System.Web.UI.WebControls.CommandEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (item As DataListItem, commandSource As Object, originalArgs As CommandEventArgs)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DataListCommandEventArgs : System.Web.UI.WebControls.DataListItem * obj * System.Web.UI.WebControls.CommandEventArgs -&gt; System.Web.UI.WebControls.DataListCommandEventArgs" Usage="new System.Web.UI.WebControls.DataListCommandEventArgs (item, commandSource, originalArgs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +98,8 @@
       <MemberSignature Language="C#" Value="public object CommandSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CommandSource" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataListCommandEventArgs.CommandSource" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandSource As Object" />
+      <MemberSignature Language="F#" Value="member this.CommandSource : obj" Usage="System.Web.UI.WebControls.DataListCommandEventArgs.CommandSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +139,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataListItem Item { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataListItem Item" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataListCommandEventArgs.Item" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As DataListItem" />
+      <MemberSignature Language="F#" Value="member this.Item : System.Web.UI.WebControls.DataListItem" Usage="System.Web.UI.WebControls.DataListCommandEventArgs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

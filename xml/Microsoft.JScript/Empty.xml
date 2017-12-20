@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class Empty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Empty extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Empty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Empty" />
+  <TypeSignature Language="F#" Value="type Empty = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public static readonly Microsoft.JScript.Empty Value;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.JScript.Empty Value" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Empty.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Value As Empty " />
+      <MemberSignature Language="F#" Value=" staticval mutable Value : Microsoft.JScript.Empty" Usage="Microsoft.JScript.Empty.Value" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

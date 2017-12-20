@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IProcessInitializer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProcessInitializer" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IProcessInitializer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProcessInitializer" />
+  <TypeSignature Language="F#" Value="type IProcessInitializer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public void Shutdown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Shutdown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IProcessInitializer.Shutdown" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Shutdown ()" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit" Usage="iProcessInitializer.Shutdown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public void Startup (object punkProcessControl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Startup([in]object punkProcessControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IProcessInitializer.Startup(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Startup (punkProcessControl As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Startup : obj -&gt; unit" Usage="iProcessInitializer.Startup punkProcessControl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public enum DesignerGeometry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DesignerGeometry extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerGeometry" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DesignerGeometry" />
+  <TypeSignature Language="F#" Value="type DesignerGeometry = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="Rectangle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerGeometry Rectangle = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerGeometry.Rectangle" />
+      <MemberSignature Language="VB.NET" Value="Rectangle" />
+      <MemberSignature Language="F#" Value="Rectangle = 0" Usage="System.Workflow.ComponentModel.Design.DesignerGeometry.Rectangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerGeometry</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The corners of the design surface are straight.</summary>
       </Docs>
@@ -48,6 +53,8 @@
       <MemberSignature Language="C#" Value="RoundedRectangle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerGeometry RoundedRectangle = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerGeometry.RoundedRectangle" />
+      <MemberSignature Language="VB.NET" Value="RoundedRectangle" />
+      <MemberSignature Language="F#" Value="RoundedRectangle = 1" Usage="System.Workflow.ComponentModel.Design.DesignerGeometry.RoundedRectangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerGeometry</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The corners of the design surface are rounded.</summary>
       </Docs>

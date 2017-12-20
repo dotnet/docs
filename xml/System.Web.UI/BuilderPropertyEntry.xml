@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class BuilderPropertyEntry : System.Web.UI.PropertyEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BuilderPropertyEntry extends System.Web.UI.PropertyEntry" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.BuilderPropertyEntry" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BuilderPropertyEntry&#xA;Inherits PropertyEntry" />
+  <TypeSignature Language="F#" Value="type BuilderPropertyEntry = class&#xA;    inherit PropertyEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ControlBuilder Builder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlBuilder Builder" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BuilderPropertyEntry.Builder" />
+      <MemberSignature Language="VB.NET" Value="Public Property Builder As ControlBuilder" />
+      <MemberSignature Language="F#" Value="member this.Builder : System.Web.UI.ControlBuilder with get, set" Usage="System.Web.UI.BuilderPropertyEntry.Builder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

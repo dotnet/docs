@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class HtmlSource : System.Web.UI.HtmlControls.HtmlControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlSource extends System.Web.UI.HtmlControls.HtmlControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlSource" />
+  <TypeSignature Language="VB.NET" Value="Public Class HtmlSource&#xA;Inherits HtmlControl" />
+  <TypeSignature Language="F#" Value="type HtmlSource = class&#xA;    inherit HtmlControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,7 @@
       <MemberSignature Language="C#" Value="public HtmlSource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlSource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -39,6 +42,8 @@
       <MemberSignature Language="C#" Value="protected override void RenderAttributes (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlSource.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlSource.RenderAttributes writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +65,8 @@
       <MemberSignature Language="C#" Value="public string Src { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Src" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlSource.Src" />
+      <MemberSignature Language="VB.NET" Value="Public Property Src As String" />
+      <MemberSignature Language="F#" Value="member this.Src : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlSource.Src" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

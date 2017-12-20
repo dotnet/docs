@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class BuildParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.BuildParameters" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuildParameters" />
+  <TypeSignature Language="F#" Value="type BuildParameters = class&#xA;    interface INodePacketTranslatable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates build parameters.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BuildParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildParameters.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -41,6 +53,7 @@
       <MemberSignature Language="C#" Value="public BuildParameters (Microsoft.Build.Evaluation.ProjectCollection projectCollection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Evaluation.ProjectCollection projectCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildParameters.#ctor(Microsoft.Build.Evaluation.ProjectCollection)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Execution.BuildParameters : Microsoft.Build.Evaluation.ProjectCollection -&gt; Microsoft.Build.Execution.BuildParameters" Usage="new Microsoft.Build.Execution.BuildParameters projectCollection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -59,6 +72,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; BuildProcessEnvironment { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; BuildProcessEnvironment" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.BuildProcessEnvironment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildProcessEnvironment As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.BuildProcessEnvironment : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Microsoft.Build.Execution.BuildParameters.BuildProcessEnvironment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -77,6 +92,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.ThreadPriority BuildThreadPriority { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.ThreadPriority BuildThreadPriority" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.BuildThreadPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuildThreadPriority As ThreadPriority" />
+      <MemberSignature Language="F#" Value="member this.BuildThreadPriority : System.Threading.ThreadPriority with get, set" Usage="Microsoft.Build.Execution.BuildParameters.BuildThreadPriority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -95,6 +112,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.BuildParameters Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Execution.BuildParameters Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildParameters.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As BuildParameters" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; Microsoft.Build.Execution.BuildParameters" Usage="buildParameters.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -121,6 +140,8 @@
       <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo Culture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo Culture" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public Property Culture As CultureInfo" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="Microsoft.Build.Execution.BuildParameters.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -139,6 +160,8 @@
       <MemberSignature Language="C#" Value="public string DefaultToolsVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultToolsVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.DefaultToolsVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultToolsVersion As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultToolsVersion : string with get, set" Usage="Microsoft.Build.Execution.BuildParameters.DefaultToolsVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -157,6 +180,8 @@
       <MemberSignature Language="C#" Value="public bool DetailedSummary { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DetailedSummary" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.DetailedSummary" />
+      <MemberSignature Language="VB.NET" Value="Public Property DetailedSummary As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DetailedSummary : bool with get, set" Usage="Microsoft.Build.Execution.BuildParameters.DetailedSummary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -175,6 +200,8 @@
       <MemberSignature Language="C#" Value="public bool DisableInProcNode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisableInProcNode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.DisableInProcNode" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableInProcNode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisableInProcNode : bool with get, set" Usage="Microsoft.Build.Execution.BuildParameters.DisableInProcNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -193,6 +220,8 @@
       <MemberSignature Language="C#" Value="public bool EnableNodeReuse { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableNodeReuse" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.EnableNodeReuse" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableNodeReuse As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableNodeReuse : bool with get, set" Usage="Microsoft.Build.Execution.BuildParameters.EnableNodeReuse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -211,6 +240,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; EnvironmentProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; EnvironmentProperties" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.EnvironmentProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnvironmentProperties As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.EnvironmentProperties : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Microsoft.Build.Execution.BuildParameters.EnvironmentProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -229,6 +260,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Build.Logging.ForwardingLoggerRecord&gt; ForwardingLoggers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Build.Logging.ForwardingLoggerRecord&gt; ForwardingLoggers" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.ForwardingLoggers" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForwardingLoggers As IEnumerable(Of ForwardingLoggerRecord)" />
+      <MemberSignature Language="F#" Value="member this.ForwardingLoggers : seq&lt;Microsoft.Build.Logging.ForwardingLoggerRecord&gt; with get, set" Usage="Microsoft.Build.Execution.BuildParameters.ForwardingLoggers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -247,6 +280,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Evaluation.Toolset GetToolset (string toolsVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Evaluation.Toolset GetToolset(string toolsVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildParameters.GetToolset(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetToolset (toolsVersion As String) As Toolset" />
+      <MemberSignature Language="F#" Value="member this.GetToolset : string -&gt; Microsoft.Build.Evaluation.Toolset" Usage="buildParameters.GetToolset toolsVersion" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -269,6 +304,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; GlobalProperties { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; GlobalProperties" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.GlobalProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property GlobalProperties As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.GlobalProperties : System.Collections.Generic.IDictionary&lt;string, string&gt; with get, set" Usage="Microsoft.Build.Execution.BuildParameters.GlobalProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -287,6 +324,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.HostServices HostServices { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Execution.HostServices HostServices" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.HostServices" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostServices As HostServices" />
+      <MemberSignature Language="F#" Value="member this.HostServices : Microsoft.Build.Execution.HostServices with get, set" Usage="Microsoft.Build.Execution.BuildParameters.HostServices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -305,6 +344,8 @@
       <MemberSignature Language="C#" Value="public bool LegacyThreadingSemantics { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool LegacyThreadingSemantics" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.LegacyThreadingSemantics" />
+      <MemberSignature Language="VB.NET" Value="Public Property LegacyThreadingSemantics As Boolean" />
+      <MemberSignature Language="F#" Value="member this.LegacyThreadingSemantics : bool with get, set" Usage="Microsoft.Build.Execution.BuildParameters.LegacyThreadingSemantics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -330,6 +371,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Build.Framework.ILogger&gt; Loggers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Build.Framework.ILogger&gt; Loggers" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.Loggers" />
+      <MemberSignature Language="VB.NET" Value="Public Property Loggers As IEnumerable(Of ILogger)" />
+      <MemberSignature Language="F#" Value="member this.Loggers : seq&lt;Microsoft.Build.Framework.ILogger&gt; with get, set" Usage="Microsoft.Build.Execution.BuildParameters.Loggers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -348,6 +391,8 @@
       <MemberSignature Language="C#" Value="public bool LogInitialPropertiesAndItems { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool LogInitialPropertiesAndItems" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.LogInitialPropertiesAndItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property LogInitialPropertiesAndItems As Boolean" />
+      <MemberSignature Language="F#" Value="member this.LogInitialPropertiesAndItems : bool with get, set" Usage="Microsoft.Build.Execution.BuildParameters.LogInitialPropertiesAndItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -366,6 +411,8 @@
       <MemberSignature Language="C#" Value="public bool LogTaskInputs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool LogTaskInputs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.LogTaskInputs" />
+      <MemberSignature Language="VB.NET" Value="Public Property LogTaskInputs As Boolean" />
+      <MemberSignature Language="F#" Value="member this.LogTaskInputs : bool with get, set" Usage="Microsoft.Build.Execution.BuildParameters.LogTaskInputs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -384,6 +431,8 @@
       <MemberSignature Language="C#" Value="public int MaxNodeCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxNodeCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.MaxNodeCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxNodeCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxNodeCount : int with get, set" Usage="Microsoft.Build.Execution.BuildParameters.MaxNodeCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -402,6 +451,8 @@
       <MemberSignature Language="C#" Value="public int MemoryUseLimit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MemoryUseLimit" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.MemoryUseLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property MemoryUseLimit As Integer" />
+      <MemberSignature Language="F#" Value="member this.MemoryUseLimit : int with get, set" Usage="Microsoft.Build.Execution.BuildParameters.MemoryUseLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -420,6 +471,8 @@
       <MemberSignature Language="C#" Value="public string NodeExeLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NodeExeLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.NodeExeLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property NodeExeLocation As String" />
+      <MemberSignature Language="F#" Value="member this.NodeExeLocation : string with get, set" Usage="Microsoft.Build.Execution.BuildParameters.NodeExeLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -438,6 +491,8 @@
       <MemberSignature Language="C#" Value="public bool OnlyLogCriticalEvents { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OnlyLogCriticalEvents" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.OnlyLogCriticalEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnlyLogCriticalEvents As Boolean" />
+      <MemberSignature Language="F#" Value="member this.OnlyLogCriticalEvents : bool with get, set" Usage="Microsoft.Build.Execution.BuildParameters.OnlyLogCriticalEvents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -456,6 +511,8 @@
       <MemberSignature Language="C#" Value="public bool ResetCaches { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ResetCaches" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.ResetCaches" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResetCaches As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ResetCaches : bool with get, set" Usage="Microsoft.Build.Execution.BuildParameters.ResetCaches" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -474,6 +531,8 @@
       <MemberSignature Language="C#" Value="public bool SaveOperatingEnvironment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SaveOperatingEnvironment" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.SaveOperatingEnvironment" />
+      <MemberSignature Language="VB.NET" Value="Public Property SaveOperatingEnvironment As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SaveOperatingEnvironment : bool with get, set" Usage="Microsoft.Build.Execution.BuildParameters.SaveOperatingEnvironment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -499,6 +558,8 @@
       <MemberSignature Language="C#" Value="public bool ShutdownInProcNodeOnBuildFinish { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShutdownInProcNodeOnBuildFinish" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.ShutdownInProcNodeOnBuildFinish" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShutdownInProcNodeOnBuildFinish As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShutdownInProcNodeOnBuildFinish : bool with get, set" Usage="Microsoft.Build.Execution.BuildParameters.ShutdownInProcNodeOnBuildFinish" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -517,6 +578,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Evaluation.ToolsetDefinitionLocations ToolsetDefinitionLocations { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Evaluation.ToolsetDefinitionLocations ToolsetDefinitionLocations" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.ToolsetDefinitionLocations" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolsetDefinitionLocations As ToolsetDefinitionLocations" />
+      <MemberSignature Language="F#" Value="member this.ToolsetDefinitionLocations : Microsoft.Build.Evaluation.ToolsetDefinitionLocations with get, set" Usage="Microsoft.Build.Execution.BuildParameters.ToolsetDefinitionLocations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -535,6 +598,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.Build.Evaluation.Toolset&gt; Toolsets { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.Build.Evaluation.Toolset&gt; Toolsets" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.Toolsets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Toolsets As ICollection(Of Toolset)" />
+      <MemberSignature Language="F#" Value="member this.Toolsets : System.Collections.Generic.ICollection&lt;Microsoft.Build.Evaluation.Toolset&gt;" Usage="Microsoft.Build.Execution.BuildParameters.Toolsets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -553,6 +618,8 @@
       <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo UICulture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo UICulture" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.UICulture" />
+      <MemberSignature Language="VB.NET" Value="Public Property UICulture As CultureInfo" />
+      <MemberSignature Language="F#" Value="member this.UICulture : System.Globalization.CultureInfo with get, set" Usage="Microsoft.Build.Execution.BuildParameters.UICulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -571,6 +638,8 @@
       <MemberSignature Language="C#" Value="public bool UseSynchronousLogging { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseSynchronousLogging" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildParameters.UseSynchronousLogging" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseSynchronousLogging As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseSynchronousLogging : bool with get, set" Usage="Microsoft.Build.Execution.BuildParameters.UseSynchronousLogging" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -585,14 +654,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates build parameters.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

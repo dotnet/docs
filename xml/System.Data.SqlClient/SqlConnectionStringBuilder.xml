@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SqlConnectionStringBuilder : System.Data.Common.DbConnectionStringBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlConnectionStringBuilder extends System.Data.Common.DbConnectionStringBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlConnectionStringBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlConnectionStringBuilder&#xA;Inherits DbConnectionStringBuilder" />
+  <TypeSignature Language="F#" Value="type SqlConnectionStringBuilder = class&#xA;    inherit DbConnectionStringBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -82,10 +84,21 @@ Integrated Security=True
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlConnectionStringBuilder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SqlConnectionStringBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnectionStringBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -111,6 +124,8 @@ Integrated Security=True
       <MemberSignature Language="C#" Value="public SqlConnectionStringBuilder (string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnectionStringBuilder.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlConnectionStringBuilder : string -&gt; System.Data.SqlClient.SqlConnectionStringBuilder" Usage="new System.Data.SqlClient.SqlConnectionStringBuilder connectionString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -160,6 +175,8 @@ Integrated Security=True
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.ApplicationIntent ApplicationIntent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlClient.ApplicationIntent ApplicationIntent" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationIntent As ApplicationIntent" />
+      <MemberSignature Language="F#" Value="member this.ApplicationIntent : System.Data.SqlClient.ApplicationIntent with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -196,6 +213,8 @@ Integrated Security=True
       <MemberSignature Language="C#" Value="public string ApplicationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationName As String" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -256,6 +275,8 @@ Modified: Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security
       <MemberSignature Language="C#" Value="public bool AsynchronousProcessing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AsynchronousProcessing" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.AsynchronousProcessing" />
+      <MemberSignature Language="VB.NET" Value="Public Property AsynchronousProcessing As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AsynchronousProcessing : bool with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.AsynchronousProcessing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -301,6 +322,8 @@ Modified: Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security
       <MemberSignature Language="C#" Value="public string AttachDBFilename { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AttachDBFilename" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttachDBFilename As String" />
+      <MemberSignature Language="F#" Value="member this.AttachDBFilename : string with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -360,6 +383,8 @@ Modified: Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlAuthenticationMethod Authentication { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlClient.SqlAuthenticationMethod Authentication" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.Authentication" />
+      <MemberSignature Language="VB.NET" Value="Public Property Authentication As SqlAuthenticationMethod" />
+      <MemberSignature Language="F#" Value="member this.Authentication : System.Data.SqlClient.SqlAuthenticationMethod with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.Authentication" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -387,6 +412,8 @@ Modified: Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security
       <MemberSignature Language="C#" Value="public override void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnectionStringBuilder.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Clear ()" />
+      <MemberSignature Language="F#" Value="override this.Clear : unit -&gt; unit" Usage="sqlConnectionStringBuilder.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -430,6 +457,8 @@ Modified: Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlConnectionColumnEncryptionSetting ColumnEncryptionSetting { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlClient.SqlConnectionColumnEncryptionSetting ColumnEncryptionSetting" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.ColumnEncryptionSetting" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColumnEncryptionSetting As SqlConnectionColumnEncryptionSetting" />
+      <MemberSignature Language="F#" Value="member this.ColumnEncryptionSetting : System.Data.SqlClient.SqlConnectionColumnEncryptionSetting with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.ColumnEncryptionSetting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -457,6 +486,8 @@ Modified: Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security
       <MemberSignature Language="C#" Value="public bool ConnectionReset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ConnectionReset" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.ConnectionReset" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionReset As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ConnectionReset : bool with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.ConnectionReset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -497,6 +528,8 @@ Modified: Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security
       <MemberSignature Language="C#" Value="public int ConnectRetryCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectRetryCount" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.ConnectRetryCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectRetryCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.ConnectRetryCount : int with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.ConnectRetryCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -535,6 +568,8 @@ Modified: Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security
       <MemberSignature Language="C#" Value="public int ConnectRetryInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectRetryInterval" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.ConnectRetryInterval" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectRetryInterval As Integer" />
+      <MemberSignature Language="F#" Value="member this.ConnectRetryInterval : int with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.ConnectRetryInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -573,6 +608,8 @@ Modified: Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security
       <MemberSignature Language="C#" Value="public int ConnectTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.ConnectTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectTimeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.ConnectTimeout : int with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.ConnectTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -626,6 +663,8 @@ Modified: Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security
       <MemberSignature Language="C#" Value="public override bool ContainsKey (string keyword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ContainsKey(string keyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnectionStringBuilder.ContainsKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ContainsKey (keyword As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ContainsKey : string -&gt; bool" Usage="sqlConnectionStringBuilder.ContainsKey keyword" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -685,6 +724,8 @@ False
       <MemberSignature Language="C#" Value="public bool ContextConnection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ContextConnection" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.ContextConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextConnection As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ContextConnection : bool with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.ContextConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -722,6 +763,8 @@ False
       <MemberSignature Language="C#" Value="public string CurrentLanguage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CurrentLanguage" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.CurrentLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Property CurrentLanguage As String" />
+      <MemberSignature Language="F#" Value="member this.CurrentLanguage : string with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.CurrentLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -766,6 +809,8 @@ False
       <MemberSignature Language="C#" Value="public string DataSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataSource" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSource As String" />
+      <MemberSignature Language="F#" Value="member this.DataSource : string with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -821,6 +866,8 @@ False
       <MemberSignature Language="C#" Value="public bool Encrypt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Encrypt" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.Encrypt" />
+      <MemberSignature Language="VB.NET" Value="Public Property Encrypt As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Encrypt : bool with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.Encrypt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -864,6 +911,8 @@ False
       <MemberSignature Language="C#" Value="public bool Enlist { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enlist" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.Enlist" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enlist As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enlist : bool with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.Enlist" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -898,6 +947,8 @@ False
       <MemberSignature Language="C#" Value="public string FailoverPartner { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FailoverPartner" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.FailoverPartner" />
+      <MemberSignature Language="VB.NET" Value="Public Property FailoverPartner As String" />
+      <MemberSignature Language="F#" Value="member this.FailoverPartner : string with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.FailoverPartner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -938,6 +989,8 @@ False
       <MemberSignature Language="C#" Value="protected override void GetProperties (System.Collections.Hashtable propertyDescriptors);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetProperties(class System.Collections.Hashtable propertyDescriptors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnectionStringBuilder.GetProperties(System.Collections.Hashtable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetProperties (propertyDescriptors As Hashtable)" />
+      <MemberSignature Language="F#" Value="override this.GetProperties : System.Collections.Hashtable -&gt; unit" Usage="sqlConnectionStringBuilder.GetProperties propertyDescriptors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -960,6 +1013,8 @@ False
       <MemberSignature Language="C#" Value="public string InitialCatalog { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InitialCatalog" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.InitialCatalog" />
+      <MemberSignature Language="VB.NET" Value="Public Property InitialCatalog As String" />
+      <MemberSignature Language="F#" Value="member this.InitialCatalog : string with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.InitialCatalog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1015,6 +1070,8 @@ False
       <MemberSignature Language="C#" Value="public bool IntegratedSecurity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IntegratedSecurity" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.IntegratedSecurity" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntegratedSecurity As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IntegratedSecurity : bool with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.IntegratedSecurity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1069,6 +1126,8 @@ False
       <MemberSignature Language="C#" Value="public override bool IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsFixedSize As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.IsFixedSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1089,6 +1148,8 @@ False
       <MemberSignature Language="C#" Value="public override object this[string keyword] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overrides Property Item(keyword As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1140,6 +1201,8 @@ False
       <MemberSignature Language="C#" Value="public override System.Collections.ICollection Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Keys As ICollection" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1185,6 +1248,8 @@ False
       <MemberSignature Language="C#" Value="public int LoadBalanceTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LoadBalanceTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.LoadBalanceTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property LoadBalanceTimeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.LoadBalanceTimeout : int with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.LoadBalanceTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1228,6 +1293,8 @@ False
       <MemberSignature Language="C#" Value="public int MaxPoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPoolSize" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.MaxPoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxPoolSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxPoolSize : int with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.MaxPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1271,6 +1338,8 @@ False
       <MemberSignature Language="C#" Value="public int MinPoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinPoolSize" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.MinPoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinPoolSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.MinPoolSize : int with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.MinPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1314,6 +1383,8 @@ False
       <MemberSignature Language="C#" Value="public bool MultipleActiveResultSets { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MultipleActiveResultSets" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.MultipleActiveResultSets" />
+      <MemberSignature Language="VB.NET" Value="Public Property MultipleActiveResultSets As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MultipleActiveResultSets : bool with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.MultipleActiveResultSets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1367,6 +1438,8 @@ False
       <MemberSignature Language="C#" Value="public bool MultiSubnetFailover { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MultiSubnetFailover" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover" />
+      <MemberSignature Language="VB.NET" Value="Public Property MultiSubnetFailover As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MultiSubnetFailover : bool with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1403,6 +1476,8 @@ False
       <MemberSignature Language="C#" Value="public string NetworkLibrary { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NetworkLibrary" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.NetworkLibrary" />
+      <MemberSignature Language="VB.NET" Value="Public Property NetworkLibrary As String" />
+      <MemberSignature Language="F#" Value="member this.NetworkLibrary : string with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.NetworkLibrary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1443,6 +1518,8 @@ False
       <MemberSignature Language="C#" Value="public int PacketSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PacketSize" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.PacketSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property PacketSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.PacketSize : int with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.PacketSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1486,6 +1563,8 @@ False
       <MemberSignature Language="C#" Value="public string Password { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Password" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.Password" />
+      <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
+      <MemberSignature Language="F#" Value="member this.Password : string with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1543,6 +1622,8 @@ False
       <MemberSignature Language="C#" Value="public bool PersistSecurityInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PersistSecurityInfo" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.PersistSecurityInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property PersistSecurityInfo As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PersistSecurityInfo : bool with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.PersistSecurityInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1586,6 +1667,8 @@ False
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.PoolBlockingPeriod PoolBlockingPeriod { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlClient.PoolBlockingPeriod PoolBlockingPeriod" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.PoolBlockingPeriod" />
+      <MemberSignature Language="VB.NET" Value="Public Property PoolBlockingPeriod As PoolBlockingPeriod" />
+      <MemberSignature Language="F#" Value="member this.PoolBlockingPeriod : System.Data.SqlClient.PoolBlockingPeriod with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.PoolBlockingPeriod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1622,6 +1705,8 @@ False
       <MemberSignature Language="C#" Value="public bool Pooling { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Pooling" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.Pooling" />
+      <MemberSignature Language="VB.NET" Value="Public Property Pooling As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Pooling : bool with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.Pooling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1665,6 +1750,8 @@ False
       <MemberSignature Language="C#" Value="public override bool Remove (string keyword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Remove(string keyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnectionStringBuilder.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Remove (keyword As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Remove : string -&gt; bool" Usage="sqlConnectionStringBuilder.Remove keyword" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1757,6 +1844,8 @@ Database = AdventureWorks
       <MemberSignature Language="C#" Value="public bool Replication { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Replication" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.Replication" />
+      <MemberSignature Language="VB.NET" Value="Public Property Replication As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Replication : bool with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.Replication" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1800,6 +1889,8 @@ Database = AdventureWorks
       <MemberSignature Language="C#" Value="public override bool ShouldSerialize (string keyword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ShouldSerialize(string keyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnectionStringBuilder.ShouldSerialize(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ShouldSerialize (keyword As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ShouldSerialize : string -&gt; bool" Usage="sqlConnectionStringBuilder.ShouldSerialize keyword" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1840,6 +1931,8 @@ Database = AdventureWorks
       <MemberSignature Language="C#" Value="public string TransactionBinding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TransactionBinding" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.TransactionBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransactionBinding As String" />
+      <MemberSignature Language="F#" Value="member this.TransactionBinding : string with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.TransactionBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1881,6 +1974,8 @@ Database = AdventureWorks
       <MemberSignature Language="C#" Value="public bool TransparentNetworkIPResolution { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TransparentNetworkIPResolution" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.TransparentNetworkIPResolution" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransparentNetworkIPResolution As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TransparentNetworkIPResolution : bool with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.TransparentNetworkIPResolution" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1939,6 +2034,8 @@ Database = AdventureWorks
       <MemberSignature Language="C#" Value="public bool TrustServerCertificate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TrustServerCertificate" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.TrustServerCertificate" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrustServerCertificate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TrustServerCertificate : bool with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.TrustServerCertificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1984,6 +2081,8 @@ Database = AdventureWorks
       <MemberSignature Language="C#" Value="public override bool TryGetValue (string keyword, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetValue(string keyword, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnectionStringBuilder.TryGetValue(System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TryGetValue (keyword As String, ByRef value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TryGetValue : string *  -&gt; bool" Usage="sqlConnectionStringBuilder.TryGetValue (keyword, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2045,6 +2144,8 @@ Unable to retrieve value for null key.
       <MemberSignature Language="C#" Value="public string TypeSystemVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeSystemVersion" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.TypeSystemVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeSystemVersion As String" />
+      <MemberSignature Language="F#" Value="member this.TypeSystemVersion : string with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.TypeSystemVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2106,6 +2207,8 @@ Unable to retrieve value for null key.
       <MemberSignature Language="C#" Value="public string UserID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserID" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.UserID" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserID As String" />
+      <MemberSignature Language="F#" Value="member this.UserID : string with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.UserID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2150,6 +2253,8 @@ Unable to retrieve value for null key.
       <MemberSignature Language="C#" Value="public bool UserInstance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UserInstance" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserInstance As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UserInstance : bool with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2197,6 +2302,8 @@ Unable to retrieve value for null key.
       <MemberSignature Language="C#" Value="public override System.Collections.ICollection Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Values" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.Values" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Values As ICollection" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.ICollection" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2241,6 +2348,8 @@ Unable to retrieve value for null key.
       <MemberSignature Language="C#" Value="public string WorkstationID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string WorkstationID" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnectionStringBuilder.WorkstationID" />
+      <MemberSignature Language="VB.NET" Value="Public Property WorkstationID As String" />
+      <MemberSignature Language="F#" Value="member this.WorkstationID : string with get, set" Usage="System.Data.SqlClient.SqlConnectionStringBuilder.WorkstationID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2281,15 +2390,5 @@ Unable to retrieve value for null key.
         <exception cref="T:System.ArgumentNullException">To set the value to null, use <see cref="F:System.DBNull.Value" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlConnectionStringBuilder" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

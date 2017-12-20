@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ManagementReferenceAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManagementReferenceAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementReferenceAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementReferenceAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ManagementReferenceAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -178,6 +180,7 @@ namespace AssocExample
       <MemberSignature Language="C#" Value="public ManagementReferenceAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementReferenceAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -193,6 +196,8 @@ namespace AssocExample
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementReferenceAttribute.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Management.Instrumentation.ManagementReferenceAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

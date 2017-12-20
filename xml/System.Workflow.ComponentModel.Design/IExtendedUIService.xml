@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IExtendedUIService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtendedUIService" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IExtendedUIService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IExtendedUIService" />
+  <TypeSignature Language="F#" Value="type IExtendedUIService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,7 @@
       <MemberSignature Language="C#" Value="public void AddAssemblyReference (System.Reflection.AssemblyName assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddAssemblyReference(class System.Reflection.AssemblyName assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.AddAssemblyReference(System.Reflection.AssemblyName)" />
+      <MemberSignature Language="F#" Value="abstract member AddAssemblyReference : System.Reflection.AssemblyName -&gt; unit" Usage="iExtendedUIService.AddAssemblyReference assemblyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -53,6 +56,8 @@
       <MemberSignature Language="C#" Value="public void AddDesignerActions (System.Workflow.ComponentModel.Design.DesignerAction[] actions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddDesignerActions(class System.Workflow.ComponentModel.Design.DesignerAction[] actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.AddDesignerActions(System.Workflow.ComponentModel.Design.DesignerAction[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddDesignerActions (actions As DesignerAction())" />
+      <MemberSignature Language="F#" Value="abstract member AddDesignerActions : System.Workflow.ComponentModel.Design.DesignerAction[] -&gt; unit" Usage="iExtendedUIService.AddDesignerActions actions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -74,6 +79,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DialogResult AddWebReference (out Uri url, out Type proxyClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Forms.DialogResult AddWebReference([out] class System.Uri&amp; url, [out] class System.Type&amp; proxyClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.AddWebReference(System.Uri@,System.Type@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddWebReference (ByRef url As Uri, ByRef proxyClass As Type) As DialogResult" />
+      <MemberSignature Language="F#" Value="abstract member AddWebReference :  *  -&gt; System.Windows.Forms.DialogResult" Usage="iExtendedUIService.AddWebReference (url, proxyClass)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -98,6 +105,8 @@
       <MemberSignature Language="C#" Value="public Type GetProxyClassForUrl (Uri url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetProxyClassForUrl(class System.Uri url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.GetProxyClassForUrl(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProxyClassForUrl (url As Uri) As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetProxyClassForUrl : Uri -&gt; Type" Usage="iExtendedUIService.GetProxyClassForUrl url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -120,6 +129,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.ITypeDescriptorContext GetSelectedPropertyContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.ITypeDescriptorContext GetSelectedPropertyContext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.GetSelectedPropertyContext" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelectedPropertyContext () As ITypeDescriptorContext" />
+      <MemberSignature Language="F#" Value="abstract member GetSelectedPropertyContext : unit -&gt; System.ComponentModel.ITypeDescriptorContext" Usage="iExtendedUIService.GetSelectedPropertyContext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -139,6 +150,8 @@
       <MemberSignature Language="C#" Value="public Uri GetUrlForProxyClass (Type proxyClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Uri GetUrlForProxyClass(class System.Type proxyClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.GetUrlForProxyClass(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUrlForProxyClass (proxyClass As Type) As Uri" />
+      <MemberSignature Language="F#" Value="abstract member GetUrlForProxyClass : Type -&gt; Uri" Usage="iExtendedUIService.GetUrlForProxyClass proxyClass" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -161,6 +174,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,Type&gt; GetXsdProjectItemsInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.Dictionary`2&lt;string, class System.Type&gt; GetXsdProjectItemsInfo() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.GetXsdProjectItemsInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetXsdProjectItemsInfo () As Dictionary(Of String, Type)" />
+      <MemberSignature Language="F#" Value="abstract member GetXsdProjectItemsInfo : unit -&gt; System.Collections.Generic.Dictionary&lt;string, Type&gt;" Usage="iExtendedUIService.GetXsdProjectItemsInfo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -180,6 +195,8 @@
       <MemberSignature Language="C#" Value="public bool NavigateToProperty (string propName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool NavigateToProperty(string propName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.NavigateToProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function NavigateToProperty (propName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member NavigateToProperty : string -&gt; bool" Usage="iExtendedUIService.NavigateToProperty propName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -203,6 +220,8 @@
       <MemberSignature Language="C#" Value="public void RemoveDesignerActions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveDesignerActions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.RemoveDesignerActions" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveDesignerActions ()" />
+      <MemberSignature Language="F#" Value="abstract member RemoveDesignerActions : unit -&gt; unit" Usage="iExtendedUIService.RemoveDesignerActions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -221,6 +240,8 @@
       <MemberSignature Language="C#" Value="public void ShowToolsOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowToolsOptions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.ShowToolsOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowToolsOptions ()" />
+      <MemberSignature Language="F#" Value="abstract member ShowToolsOptions : unit -&gt; unit" Usage="iExtendedUIService.ShowToolsOptions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

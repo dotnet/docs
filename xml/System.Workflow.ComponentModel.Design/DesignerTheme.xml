@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class DesignerTheme : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignerTheme extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerTheme" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerTheme&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type DesignerTheme = class&#xA;    interface IDisposable&#xA;    interface IPropertyValueProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="protected DesignerTheme (System.Workflow.ComponentModel.Design.WorkflowTheme theme);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.WorkflowTheme theme) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.#ctor(System.Workflow.ComponentModel.Design.WorkflowTheme)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (theme As WorkflowTheme)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.DesignerTheme : System.Workflow.ComponentModel.Design.WorkflowTheme -&gt; System.Workflow.ComponentModel.Design.DesignerTheme" Usage="new System.Workflow.ComponentModel.Design.DesignerTheme theme" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public virtual string ApplyTo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplyTo" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerTheme.ApplyTo" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ApplyTo As String" />
+      <MemberSignature Language="F#" Value="member this.ApplyTo : string with get, set" Usage="System.Workflow.ComponentModel.Design.DesignerTheme.ApplyTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -96,6 +102,8 @@
       <MemberSignature Language="C#" Value="protected System.Workflow.ComponentModel.Design.WorkflowTheme ContainingTheme { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.WorkflowTheme ContainingTheme" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerTheme.ContainingTheme" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ContainingTheme As WorkflowTheme" />
+      <MemberSignature Language="F#" Value="member this.ContainingTheme : System.Workflow.ComponentModel.Design.WorkflowTheme" Usage="System.Workflow.ComponentModel.Design.DesignerTheme.ContainingTheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -129,6 +137,8 @@
       <MemberSignature Language="C#" Value="public virtual Type DesignerType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DesignerType" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerTheme.DesignerType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DesignerType As Type" />
+      <MemberSignature Language="F#" Value="member this.DesignerType : Type with get, set" Usage="System.Workflow.ComponentModel.Design.DesignerTheme.DesignerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -165,6 +175,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="designerTheme.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -187,6 +199,8 @@
       <MemberSignature Language="C#" Value="~DesignerTheme ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="designerTheme.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -212,6 +226,8 @@
       <MemberSignature Language="C#" Value="public virtual void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Initialize ()" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit&#xA;override this.Initialize : unit -&gt; unit" Usage="designerTheme.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -237,6 +253,7 @@
       <MemberSignature Language="C#" Value="public virtual void OnAmbientPropertyChanged (System.Workflow.ComponentModel.Design.AmbientProperty ambientProperty);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnAmbientPropertyChanged(valuetype System.Workflow.ComponentModel.Design.AmbientProperty ambientProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.OnAmbientPropertyChanged(System.Workflow.ComponentModel.Design.AmbientProperty)" />
+      <MemberSignature Language="F#" Value="abstract member OnAmbientPropertyChanged : System.Workflow.ComponentModel.Design.AmbientProperty -&gt; unit&#xA;override this.OnAmbientPropertyChanged : System.Workflow.ComponentModel.Design.AmbientProperty -&gt; unit" Usage="designerTheme.OnAmbientPropertyChanged ambientProperty" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -267,6 +284,8 @@
       <MemberSignature Language="C#" Value="public bool ReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerTheme.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool" Usage="System.Workflow.ComponentModel.Design.DesignerTheme.ReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -303,7 +322,11 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

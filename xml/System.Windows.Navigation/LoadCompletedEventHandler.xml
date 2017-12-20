@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void LoadCompletedEventHandler(object sender, NavigationEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LoadCompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.LoadCompletedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub LoadCompletedEventHandler(sender As Object, e As NavigationEventArgs)" />
+  <TypeSignature Language="F#" Value="type LoadCompletedEventHandler = delegate of obj * NavigationEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

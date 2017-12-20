@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class SqlWorkflowInstanceStoreElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlWorkflowInstanceStoreElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlWorkflowInstanceStoreElement&#xA;Inherits BehaviorExtensionElement" />
+  <TypeSignature Language="F#" Value="type SqlWorkflowInstanceStoreElement = class&#xA;    inherit BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public SqlWorkflowInstanceStoreElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public override Type BehaviorType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BehaviorType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.BehaviorType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
+      <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.BehaviorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.ConnectionString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -85,6 +92,8 @@
       <MemberSignature Language="C#" Value="public string ConnectionStringName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionStringName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.ConnectionStringName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionStringName As String" />
+      <MemberSignature Language="F#" Value="member this.ConnectionStringName : string with get, set" Usage="System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.ConnectionStringName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -115,9 +124,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateBehavior">
-      <MemberSignature Language="C#" Value="protected override object CreateBehavior ();" />
+      <MemberSignature Language="C#" Value="protected internal override object CreateBehavior ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object CreateBehavior() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.CreateBehavior" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="sqlWorkflowInstanceStoreElement.CreateBehavior " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -137,6 +148,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan HostLockRenewalPeriod { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan HostLockRenewalPeriod" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.HostLockRenewalPeriod" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostLockRenewalPeriod As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.HostLockRenewalPeriod : TimeSpan with get, set" Usage="System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.HostLockRenewalPeriod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -173,6 +186,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DurableInstancing.InstanceCompletionAction InstanceCompletionAction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.DurableInstancing.InstanceCompletionAction InstanceCompletionAction" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.InstanceCompletionAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceCompletionAction As InstanceCompletionAction" />
+      <MemberSignature Language="F#" Value="member this.InstanceCompletionAction : System.Activities.DurableInstancing.InstanceCompletionAction with get, set" Usage="System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.InstanceCompletionAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -203,6 +218,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DurableInstancing.InstanceEncodingOption InstanceEncodingOption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.DurableInstancing.InstanceEncodingOption InstanceEncodingOption" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.InstanceEncodingOption" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceEncodingOption As InstanceEncodingOption" />
+      <MemberSignature Language="F#" Value="member this.InstanceEncodingOption : System.Activities.DurableInstancing.InstanceEncodingOption with get, set" Usage="System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.InstanceEncodingOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -233,6 +250,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DurableInstancing.InstanceLockedExceptionAction InstanceLockedExceptionAction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.DurableInstancing.InstanceLockedExceptionAction InstanceLockedExceptionAction" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.InstanceLockedExceptionAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceLockedExceptionAction As InstanceLockedExceptionAction" />
+      <MemberSignature Language="F#" Value="member this.InstanceLockedExceptionAction : System.Activities.DurableInstancing.InstanceLockedExceptionAction with get, set" Usage="System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.InstanceLockedExceptionAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -263,6 +282,8 @@
       <MemberSignature Language="C#" Value="public int MaxConnectionRetries { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConnectionRetries" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.MaxConnectionRetries" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxConnectionRetries As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxConnectionRetries : int with get, set" Usage="System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.MaxConnectionRetries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -289,6 +310,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan RunnableInstancesDetectionPeriod { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan RunnableInstancesDetectionPeriod" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.RunnableInstancesDetectionPeriod" />
+      <MemberSignature Language="VB.NET" Value="Public Property RunnableInstancesDetectionPeriod As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.RunnableInstancesDetectionPeriod : TimeSpan with get, set" Usage="System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.RunnableInstancesDetectionPeriod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

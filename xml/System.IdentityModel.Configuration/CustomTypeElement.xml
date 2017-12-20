@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class CustomTypeElement : System.IdentityModel.Configuration.ConfigurationElementInterceptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CustomTypeElement extends System.IdentityModel.Configuration.ConfigurationElementInterceptor" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.CustomTypeElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CustomTypeElement&#xA;Inherits ConfigurationElementInterceptor" />
+  <TypeSignature Language="F#" Value="type CustomTypeElement = class&#xA;    inherit ConfigurationElementInterceptor" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="public CustomTypeElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.CustomTypeElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public bool IsConfigured { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsConfigured" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.CustomTypeElement.IsConfigured" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConfigured As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsConfigured : bool" Usage="System.IdentityModel.Configuration.CustomTypeElement.IsConfigured" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -60,6 +65,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.CustomTypeElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.IdentityModel.Configuration.CustomTypeElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -78,6 +85,7 @@
       <MemberSignature Language="C#" Value="public static T Resolve&lt;T&gt; (System.IdentityModel.Configuration.CustomTypeElement customTypeElement) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Resolve&lt;class T&gt;(class System.IdentityModel.Configuration.CustomTypeElement customTypeElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.CustomTypeElement.Resolve``1(System.IdentityModel.Configuration.CustomTypeElement)" />
+      <MemberSignature Language="F#" Value="static member Resolve : System.IdentityModel.Configuration.CustomTypeElement -&gt; 'T (requires 'T : null)" Usage="System.IdentityModel.Configuration.CustomTypeElement.Resolve customTypeElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -108,6 +116,8 @@
       <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.CustomTypeElement.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.IdentityModel.Configuration.CustomTypeElement.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

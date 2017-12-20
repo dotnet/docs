@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class DES : System.Security.Cryptography.SymmetricAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DES extends System.Security.Cryptography.SymmetricAlgorithm" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DES" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DES&#xA;Inherits SymmetricAlgorithm" />
+  <TypeSignature Language="F#" Value="type DES = class&#xA;    inherit SymmetricAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,6 +55,7 @@
       <MemberSignature Language="C#" Value="protected DES ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DES.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -88,10 +91,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of a cryptographic object to perform the Data Encryption Standard (<see cref="T:System.Security.Cryptography.DES" />) algorithm.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.DES Create ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.DES Create() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DES.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As DES" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.DES" Usage="System.Security.Cryptography.DES.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -142,6 +157,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.DES Create (string algName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.DES Create(string algName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DES.Create(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algName As String) As DES" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.DES" Usage="System.Security.Cryptography.DES.Create algName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -190,6 +207,8 @@
       <MemberSignature Language="C#" Value="public static bool IsSemiWeakKey (byte[] rgbKey);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSemiWeakKey(unsigned int8[] rgbKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DES.IsSemiWeakKey(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsSemiWeakKey (rgbKey As Byte()) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsSemiWeakKey : byte[] -&gt; bool" Usage="System.Security.Cryptography.DES.IsSemiWeakKey rgbKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -232,6 +251,8 @@
       <MemberSignature Language="C#" Value="public static bool IsWeakKey (byte[] rgbKey);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsWeakKey(unsigned int8[] rgbKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DES.IsWeakKey(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsWeakKey (rgbKey As Byte()) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsWeakKey : byte[] -&gt; bool" Usage="System.Security.Cryptography.DES.IsWeakKey rgbKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -274,6 +295,8 @@
       <MemberSignature Language="C#" Value="public override byte[] Key { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Key" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DES.Key" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Key As Byte()" />
+      <MemberSignature Language="F#" Value="member this.Key : byte[] with get, set" Usage="System.Security.Cryptography.DES.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -311,15 +334,5 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">An attempt was made to set a weak key (see <see cref="M:System.Security.Cryptography.DES.IsWeakKey(System.Byte[])" />) or a semi-weak key (see <see cref="M:System.Security.Cryptography.DES.IsSemiWeakKey(System.Byte[])" />).</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of a cryptographic object to perform the Data Encryption Standard (<see cref="T:System.Security.Cryptography.DES" />) algorithm.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

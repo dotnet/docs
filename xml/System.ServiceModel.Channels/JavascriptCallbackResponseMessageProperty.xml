@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class JavascriptCallbackResponseMessageProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JavascriptCallbackResponseMessageProperty extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JavascriptCallbackResponseMessageProperty" />
+  <TypeSignature Language="F#" Value="type JavascriptCallbackResponseMessageProperty = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,7 @@
       <MemberSignature Language="C#" Value="public JavascriptCallbackResponseMessageProperty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="public string CallbackFunctionName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CallbackFunctionName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty.CallbackFunctionName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CallbackFunctionName As String" />
+      <MemberSignature Language="F#" Value="member this.CallbackFunctionName : string with get, set" Usage="System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty.CallbackFunctionName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -62,6 +67,8 @@
       <MemberSignature Language="C#" Value="public static string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -80,6 +87,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Net.HttpStatusCode&gt; StatusCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Net.HttpStatusCode&gt; StatusCode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty.StatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property StatusCode As Nullable(Of HttpStatusCode)" />
+      <MemberSignature Language="F#" Value="member this.StatusCode : Nullable&lt;System.Net.HttpStatusCode&gt; with get, set" Usage="System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty.StatusCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

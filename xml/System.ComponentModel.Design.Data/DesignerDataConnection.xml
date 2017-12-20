@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class DesignerDataConnection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerDataConnection extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataConnection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerDataConnection" />
+  <TypeSignature Language="F#" Value="type DesignerDataConnection = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataConnection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DesignerDataConnection (string name, string providerName, string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string providerName, string connectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataConnection.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, providerName As String, connectionString As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataConnection : string * string * string -&gt; System.ComponentModel.Design.Data.DesignerDataConnection" Usage="new System.ComponentModel.Design.Data.DesignerDataConnection (name, providerName, connectionString)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -55,6 +68,8 @@
       <MemberSignature Language="C#" Value="public DesignerDataConnection (string name, string providerName, string connectionString, bool isConfigured);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string providerName, string connectionString, bool isConfigured) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataConnection.#ctor(System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, providerName As String, connectionString As String, isConfigured As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataConnection : string * string * string * bool -&gt; System.ComponentModel.Design.Data.DesignerDataConnection" Usage="new System.ComponentModel.Design.Data.DesignerDataConnection (name, providerName, connectionString, isConfigured)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -87,6 +102,8 @@
       <MemberSignature Language="C#" Value="public string ConnectionString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataConnection.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionString As String" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string" Usage="System.ComponentModel.Design.Data.DesignerDataConnection.ConnectionString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -112,6 +129,8 @@
       <MemberSignature Language="C#" Value="public bool IsConfigured { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsConfigured" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataConnection.IsConfigured" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConfigured As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsConfigured : bool" Usage="System.ComponentModel.Design.Data.DesignerDataConnection.IsConfigured" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -140,6 +159,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataConnection.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.Design.Data.DesignerDataConnection.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -165,6 +186,8 @@
       <MemberSignature Language="C#" Value="public string ProviderName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProviderName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataConnection.ProviderName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderName As String" />
+      <MemberSignature Language="F#" Value="member this.ProviderName : string" Usage="System.ComponentModel.Design.Data.DesignerDataConnection.ProviderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -179,14 +202,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataConnection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IForwardingLogger : Microsoft.Build.Framework.INodeLogger" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IForwardingLogger implements class Microsoft.Build.Framework.ILogger, class Microsoft.Build.Framework.INodeLogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IForwardingLogger" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IForwardingLogger&#xA;Implements INodeLogger" />
+  <TypeSignature Language="F#" Value="type IForwardingLogger = interface&#xA;    interface INodeLogger&#xA;    interface ILogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.IEventRedirector BuildEventRedirector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.IEventRedirector BuildEventRedirector" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IForwardingLogger.BuildEventRedirector" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuildEventRedirector As IEventRedirector" />
+      <MemberSignature Language="F#" Value="member this.BuildEventRedirector : Microsoft.Build.Framework.IEventRedirector with get, set" Usage="Microsoft.Build.Framework.IForwardingLogger.BuildEventRedirector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -38,6 +42,8 @@
       <MemberSignature Language="C#" Value="public int NodeId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NodeId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IForwardingLogger.NodeId" />
+      <MemberSignature Language="VB.NET" Value="Public Property NodeId As Integer" />
+      <MemberSignature Language="F#" Value="member this.NodeId : int with get, set" Usage="Microsoft.Build.Framework.IForwardingLogger.NodeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

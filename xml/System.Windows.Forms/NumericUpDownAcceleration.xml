@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class NumericUpDownAcceleration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumericUpDownAcceleration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NumericUpDownAcceleration" />
+  <TypeSignature Language="VB.NET" Value="Public Class NumericUpDownAcceleration" />
+  <TypeSignature Language="F#" Value="type NumericUpDownAcceleration = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public NumericUpDownAcceleration (int seconds, decimal increment);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 seconds, valuetype System.Decimal increment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAcceleration.#ctor(System.Int32,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (seconds As Integer, increment As Decimal)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.NumericUpDownAcceleration : int * decimal -&gt; System.Windows.Forms.NumericUpDownAcceleration" Usage="new System.Windows.Forms.NumericUpDownAcceleration (seconds, increment)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public decimal Increment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Decimal Increment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDownAcceleration.Increment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Increment As Decimal" />
+      <MemberSignature Language="F#" Value="member this.Increment : decimal with get, set" Usage="System.Windows.Forms.NumericUpDownAcceleration.Increment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public int Seconds { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Seconds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDownAcceleration.Seconds" />
+      <MemberSignature Language="VB.NET" Value="Public Property Seconds As Integer" />
+      <MemberSignature Language="F#" Value="member this.Seconds : int with get, set" Usage="System.Windows.Forms.NumericUpDownAcceleration.Seconds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

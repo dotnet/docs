@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class TransactionProtocol" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TransactionProtocol extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.TransactionProtocol" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TransactionProtocol" />
+  <TypeSignature Language="F#" Value="type TransactionProtocol = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,7 @@
       <MemberSignature Language="C#" Value="protected TransactionProtocol ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.TransactionProtocol.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.TransactionProtocol Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.TransactionProtocol Default" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.TransactionProtocol.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As TransactionProtocol" />
+      <MemberSignature Language="F#" Value="member this.Default : System.ServiceModel.TransactionProtocol" Usage="System.ServiceModel.TransactionProtocol.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +77,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.TransactionProtocol OleTransactions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.TransactionProtocol OleTransactions" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.TransactionProtocol.OleTransactions" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OleTransactions As TransactionProtocol" />
+      <MemberSignature Language="F#" Value="member this.OleTransactions : System.ServiceModel.TransactionProtocol" Usage="System.ServiceModel.TransactionProtocol.OleTransactions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -97,6 +104,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.TransactionProtocol WSAtomicTransaction11 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.TransactionProtocol WSAtomicTransaction11" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.TransactionProtocol.WSAtomicTransaction11" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSAtomicTransaction11 As TransactionProtocol" />
+      <MemberSignature Language="F#" Value="member this.WSAtomicTransaction11 : System.ServiceModel.TransactionProtocol" Usage="System.ServiceModel.TransactionProtocol.WSAtomicTransaction11" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,6 +124,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.TransactionProtocol WSAtomicTransactionOctober2004 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.TransactionProtocol WSAtomicTransactionOctober2004" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.TransactionProtocol.WSAtomicTransactionOctober2004" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSAtomicTransactionOctober2004 As TransactionProtocol" />
+      <MemberSignature Language="F#" Value="member this.WSAtomicTransactionOctober2004 : System.ServiceModel.TransactionProtocol" Usage="System.ServiceModel.TransactionProtocol.WSAtomicTransactionOctober2004" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class Receive : System.Activities.Activity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Receive extends System.Activities.Activity" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Receive" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Receive&#xA;Inherits Activity" />
+  <TypeSignature Language="F#" Value="type Receive = class&#xA;    inherit Activity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +86,7 @@
       <MemberSignature Language="C#" Value="public Receive ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Receive.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -108,6 +111,8 @@
       <MemberSignature Language="C#" Value="public string Action { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Action" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Receive.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="System.ServiceModel.Activities.Receive.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -138,6 +143,8 @@
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.ActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.ActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Receive.CacheMetadata(System.Activities.ActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As ActivityMetadata)" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.ActivityMetadata -&gt; unit" Usage="receive.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -159,6 +166,8 @@
       <MemberSignature Language="C#" Value="public bool CanCreateInstance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanCreateInstance" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Receive.CanCreateInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanCreateInstance As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanCreateInstance : bool with get, set" Usage="System.ServiceModel.Activities.Receive.CanCreateInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -190,6 +199,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.ReceiveContent Content { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.ReceiveContent Content" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Receive.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Property Content As ReceiveContent" />
+      <MemberSignature Language="F#" Value="member this.Content : System.ServiceModel.Activities.ReceiveContent with get, set" Usage="System.ServiceModel.Activities.Receive.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -213,6 +224,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.MessageQuerySet CorrelatesOn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.MessageQuerySet CorrelatesOn" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Receive.CorrelatesOn" />
+      <MemberSignature Language="VB.NET" Value="Public Property CorrelatesOn As MessageQuerySet" />
+      <MemberSignature Language="F#" Value="member this.CorrelatesOn : System.ServiceModel.MessageQuerySet with get, set" Usage="System.ServiceModel.Activities.Receive.CorrelatesOn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -231,6 +244,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;System.ServiceModel.Activities.CorrelationHandle&gt; CorrelatesWith { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;class System.ServiceModel.Activities.CorrelationHandle&gt; CorrelatesWith" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Receive.CorrelatesWith" />
+      <MemberSignature Language="VB.NET" Value="Public Property CorrelatesWith As InArgument(Of CorrelationHandle)" />
+      <MemberSignature Language="F#" Value="member this.CorrelatesWith : System.Activities.InArgument&lt;System.ServiceModel.Activities.CorrelationHandle&gt; with get, set" Usage="System.ServiceModel.Activities.Receive.CorrelatesWith" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -254,6 +269,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Activities.CorrelationInitializer&gt; CorrelationInitializers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Activities.CorrelationInitializer&gt; CorrelationInitializers" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Receive.CorrelationInitializers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CorrelationInitializers As Collection(Of CorrelationInitializer)" />
+      <MemberSignature Language="F#" Value="member this.CorrelationInitializers : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Activities.CorrelationInitializer&gt;" Usage="System.ServiceModel.Activities.Receive.CorrelationInitializers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -272,6 +289,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Activities.Receive FromOperationDescription (System.ServiceModel.Description.OperationDescription operation);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Activities.Receive FromOperationDescription(class System.ServiceModel.Description.OperationDescription operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Receive.FromOperationDescription(System.ServiceModel.Description.OperationDescription)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromOperationDescription (operation As OperationDescription) As Receive" />
+      <MemberSignature Language="F#" Value="static member FromOperationDescription : System.ServiceModel.Description.OperationDescription -&gt; System.ServiceModel.Activities.Receive" Usage="System.ServiceModel.Activities.Receive.FromOperationDescription operation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -294,6 +313,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;Type&gt; KnownTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Type&gt; KnownTypes" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Receive.KnownTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KnownTypes As Collection(Of Type)" />
+      <MemberSignature Language="F#" Value="member this.KnownTypes : System.Collections.ObjectModel.Collection&lt;Type&gt;" Usage="System.ServiceModel.Activities.Receive.KnownTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -319,6 +340,8 @@
       <MemberSignature Language="C#" Value="protected override void OnCreateDynamicUpdateMap (System.Activities.DynamicUpdate.UpdateMapMetadata metadata, System.Activities.Activity originalActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCreateDynamicUpdateMap(class System.Activities.DynamicUpdate.UpdateMapMetadata metadata, class System.Activities.Activity originalActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Receive.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.UpdateMapMetadata,System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateDynamicUpdateMap (metadata As UpdateMapMetadata, originalActivity As Activity)" />
+      <MemberSignature Language="F#" Value="override this.OnCreateDynamicUpdateMap : System.Activities.DynamicUpdate.UpdateMapMetadata * System.Activities.Activity -&gt; unit" Usage="receive.OnCreateDynamicUpdateMap (metadata, originalActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -342,6 +365,8 @@
       <MemberSignature Language="C#" Value="public string OperationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OperationName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Receive.OperationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property OperationName As String" />
+      <MemberSignature Language="F#" Value="member this.OperationName : string with get, set" Usage="System.ServiceModel.Activities.Receive.OperationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -372,6 +397,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Net.Security.ProtectionLevel&gt; ProtectionLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Net.Security.ProtectionLevel&gt; ProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Receive.ProtectionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As Nullable(Of ProtectionLevel)" />
+      <MemberSignature Language="F#" Value="member this.ProtectionLevel : Nullable&lt;System.Net.Security.ProtectionLevel&gt; with get, set" Usage="System.ServiceModel.Activities.Receive.ProtectionLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -402,6 +429,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.SerializerOption SerializerOption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Activities.SerializerOption SerializerOption" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Receive.SerializerOption" />
+      <MemberSignature Language="VB.NET" Value="Public Property SerializerOption As SerializerOption" />
+      <MemberSignature Language="F#" Value="member this.SerializerOption : System.ServiceModel.Activities.SerializerOption with get, set" Usage="System.ServiceModel.Activities.Receive.SerializerOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -432,6 +461,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Linq.XName ServiceContractName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XName ServiceContractName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Receive.ServiceContractName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceContractName As XName" />
+      <MemberSignature Language="F#" Value="member this.ServiceContractName : System.Xml.Linq.XName with get, set" Usage="System.ServiceModel.Activities.Receive.ServiceContractName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -465,6 +496,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeCorrelatesOn ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeCorrelatesOn() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Receive.ShouldSerializeCorrelatesOn" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeCorrelatesOn () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeCorrelatesOn : unit -&gt; bool" Usage="receive.ShouldSerializeCorrelatesOn " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

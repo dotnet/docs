@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class TypeIdentifierAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeIdentifierAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeIdentifierAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeIdentifierAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type TypeIdentifierAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,10 +52,25 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Runtime.InteropServices.TypeIdentifierAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TypeIdentifierAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.TypeIdentifierAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -90,6 +107,8 @@
       <MemberSignature Language="C#" Value="public TypeIdentifierAttribute (string scope, string identifier);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scope, string identifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.TypeIdentifierAttribute.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String, identifier As String)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.TypeIdentifierAttribute : string * string -&gt; System.Runtime.InteropServices.TypeIdentifierAttribute" Usage="new System.Runtime.InteropServices.TypeIdentifierAttribute (scope, identifier)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -133,6 +152,8 @@
       <MemberSignature Language="C#" Value="public string Identifier { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Identifier" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.TypeIdentifierAttribute.Identifier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identifier As String" />
+      <MemberSignature Language="F#" Value="member this.Identifier : string" Usage="System.Runtime.InteropServices.TypeIdentifierAttribute.Identifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -165,6 +186,8 @@
       <MemberSignature Language="C#" Value="public string Scope { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Scope" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.TypeIdentifierAttribute.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scope As String" />
+      <MemberSignature Language="F#" Value="member this.Scope : string" Usage="System.Runtime.InteropServices.TypeIdentifierAttribute.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -193,19 +216,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Runtime.InteropServices.TypeIdentifierAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

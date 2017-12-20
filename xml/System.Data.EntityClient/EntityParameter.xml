@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class EntityParameter : System.Data.Common.DbParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntityParameter extends System.Data.Common.DbParameter implements class System.Data.IDataParameter, class System.Data.IDbDataParameter" />
   <TypeSignature Language="DocId" Value="T:System.Data.EntityClient.EntityParameter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityParameter&#xA;Inherits DbParameter" />
+  <TypeSignature Language="F#" Value="type EntityParameter = class&#xA;    inherit DbParameter&#xA;    interface IDbDataParameter&#xA;    interface IDataParameter" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EntityParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -41,6 +53,7 @@
       <MemberSignature Language="C#" Value="public EntityParameter (string parameterName, System.Data.DbType dbType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.DbType dbType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.#ctor(System.String,System.Data.DbType)" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityClient.EntityParameter : string * System.Data.DbType -&gt; System.Data.EntityClient.EntityParameter" Usage="new System.Data.EntityClient.EntityParameter (parameterName, dbType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -61,6 +74,7 @@
       <MemberSignature Language="C#" Value="public EntityParameter (string parameterName, System.Data.DbType dbType, int size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.DbType dbType, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.#ctor(System.String,System.Data.DbType,System.Int32)" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityClient.EntityParameter : string * System.Data.DbType * int -&gt; System.Data.EntityClient.EntityParameter" Usage="new System.Data.EntityClient.EntityParameter (parameterName, dbType, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -83,6 +97,7 @@
       <MemberSignature Language="C#" Value="public EntityParameter (string parameterName, System.Data.DbType dbType, int size, string sourceColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.DbType dbType, int32 size, string sourceColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.#ctor(System.String,System.Data.DbType,System.Int32,System.String)" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityClient.EntityParameter : string * System.Data.DbType * int * string -&gt; System.Data.EntityClient.EntityParameter" Usage="new System.Data.EntityClient.EntityParameter (parameterName, dbType, size, sourceColumn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -107,6 +122,7 @@
       <MemberSignature Language="C#" Value="public EntityParameter (string parameterName, System.Data.DbType dbType, int size, System.Data.ParameterDirection direction, bool isNullable, byte precision, byte scale, string sourceColumn, System.Data.DataRowVersion sourceVersion, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.DbType dbType, int32 size, valuetype System.Data.ParameterDirection direction, bool isNullable, unsigned int8 precision, unsigned int8 scale, string sourceColumn, valuetype System.Data.DataRowVersion sourceVersion, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.#ctor(System.String,System.Data.DbType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Object)" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityClient.EntityParameter : string * System.Data.DbType * int * System.Data.ParameterDirection * bool * byte * byte * string * System.Data.DataRowVersion * obj -&gt; System.Data.EntityClient.EntityParameter" Usage="new System.Data.EntityClient.EntityParameter (parameterName, dbType, size, direction, isNullable, precision, scale, sourceColumn, sourceVersion, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -144,7 +160,12 @@
       <MemberSignature Language="C#" Value="public override System.Data.DbType DbType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DbType DbType" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.DbType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DbType As DbType" />
+      <MemberSignature Language="F#" Value="member this.DbType : System.Data.DbType with get, set" Usage="System.Data.EntityClient.EntityParameter.DbType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.DbType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -162,7 +183,12 @@
       <MemberSignature Language="C#" Value="public override System.Data.ParameterDirection Direction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ParameterDirection Direction" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Direction As ParameterDirection" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Data.ParameterDirection with get, set" Usage="System.Data.EntityClient.EntityParameter.Direction" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.Direction</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -185,6 +211,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EdmType EdmType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EdmType EdmType" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.EdmType" />
+      <MemberSignature Language="VB.NET" Value="Public Property EdmType As EdmType" />
+      <MemberSignature Language="F#" Value="member this.EdmType : System.Data.Metadata.Edm.EdmType with get, set" Usage="System.Data.EntityClient.EntityParameter.EdmType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -210,6 +238,8 @@
       <MemberSignature Language="C#" Value="public override bool IsNullable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.IsNullable" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property IsNullable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNullable : bool with get, set" Usage="System.Data.EntityClient.EntityParameter.IsNullable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -229,7 +259,12 @@
       <MemberSignature Language="C#" Value="public override string ParameterName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ParameterName" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.ParameterName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ParameterName As String" />
+      <MemberSignature Language="F#" Value="member this.ParameterName : string with get, set" Usage="System.Data.EntityClient.EntityParameter.ParameterName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.ParameterName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -247,7 +282,12 @@
       <MemberSignature Language="C#" Value="public byte Precision { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Precision" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Precision" />
+      <MemberSignature Language="VB.NET" Value="Public Property Precision As Byte" />
+      <MemberSignature Language="F#" Value="member this.Precision : byte with get, set" Usage="System.Data.EntityClient.EntityParameter.Precision" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbDataParameter.Precision</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -265,6 +305,8 @@
       <MemberSignature Language="C#" Value="public override void ResetDbType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetDbType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.ResetDbType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetDbType ()" />
+      <MemberSignature Language="F#" Value="override this.ResetDbType : unit -&gt; unit" Usage="entityParameter.ResetDbType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -283,7 +325,12 @@
       <MemberSignature Language="C#" Value="public byte Scale { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Scale" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Scale" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scale As Byte" />
+      <MemberSignature Language="F#" Value="member this.Scale : byte with get, set" Usage="System.Data.EntityClient.EntityParameter.Scale" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbDataParameter.Scale</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -301,7 +348,12 @@
       <MemberSignature Language="C#" Value="public override int Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Size As Integer" />
+      <MemberSignature Language="F#" Value="member this.Size : int with get, set" Usage="System.Data.EntityClient.EntityParameter.Size" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbDataParameter.Size</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -319,7 +371,12 @@
       <MemberSignature Language="C#" Value="public override string SourceColumn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceColumn" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.SourceColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceColumn As String" />
+      <MemberSignature Language="F#" Value="member this.SourceColumn : string with get, set" Usage="System.Data.EntityClient.EntityParameter.SourceColumn" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.SourceColumn</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -337,6 +394,8 @@
       <MemberSignature Language="C#" Value="public override bool SourceColumnNullMapping { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SourceColumnNullMapping" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.SourceColumnNullMapping" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceColumnNullMapping As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SourceColumnNullMapping : bool with get, set" Usage="System.Data.EntityClient.EntityParameter.SourceColumnNullMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -356,7 +415,12 @@
       <MemberSignature Language="C#" Value="public override System.Data.DataRowVersion SourceVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DataRowVersion SourceVersion" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.SourceVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceVersion As DataRowVersion" />
+      <MemberSignature Language="F#" Value="member this.SourceVersion : System.Data.DataRowVersion with get, set" Usage="System.Data.EntityClient.EntityParameter.SourceVersion" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.SourceVersion</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -374,6 +438,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="entityParameter.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -393,7 +459,12 @@
       <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Data.EntityClient.EntityParameter.Value" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.Value</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -407,14 +478,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

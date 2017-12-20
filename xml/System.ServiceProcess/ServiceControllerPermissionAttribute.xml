@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ServiceControllerPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ServiceControllerPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceControllerPermissionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceControllerPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type ServiceControllerPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public ServiceControllerPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
+      <MemberSignature Language="F#" Value="new System.ServiceProcess.ServiceControllerPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.ServiceProcess.ServiceControllerPermissionAttribute" Usage="new System.ServiceProcess.ServiceControllerPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionAttribute.CreatePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="serviceControllerPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -74,6 +80,8 @@
       <MemberSignature Language="C#" Value="public string MachineName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceControllerPermissionAttribute.MachineName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string with get, set" Usage="System.ServiceProcess.ServiceControllerPermissionAttribute.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceProcess.ServiceControllerPermissionAccess PermissionAccess { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceProcess.ServiceControllerPermissionAccess PermissionAccess" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceControllerPermissionAttribute.PermissionAccess" />
+      <MemberSignature Language="VB.NET" Value="Public Property PermissionAccess As ServiceControllerPermissionAccess" />
+      <MemberSignature Language="F#" Value="member this.PermissionAccess : System.ServiceProcess.ServiceControllerPermissionAccess with get, set" Usage="System.ServiceProcess.ServiceControllerPermissionAttribute.PermissionAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -111,6 +121,8 @@
       <MemberSignature Language="C#" Value="public string ServiceName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceControllerPermissionAttribute.ServiceName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceName As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceName : string with get, set" Usage="System.ServiceProcess.ServiceControllerPermissionAttribute.ServiceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>

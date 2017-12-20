@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class IndexedProtocolEndpointDictionary : System.Collections.Generic.SortedList&lt;int,System.IdentityModel.Metadata.IndexedProtocolEndpoint&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IndexedProtocolEndpointDictionary extends System.Collections.Generic.SortedList`2&lt;int32, class System.IdentityModel.Metadata.IndexedProtocolEndpoint&gt;" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" />
+  <TypeSignature Language="VB.NET" Value="Public Class IndexedProtocolEndpointDictionary&#xA;Inherits SortedList(Of Integer, IndexedProtocolEndpoint)" />
+  <TypeSignature Language="F#" Value="type IndexedProtocolEndpointDictionary = class&#xA;    inherit SortedList&lt;int, IndexedProtocolEndpoint&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,7 @@
       <MemberSignature Language="C#" Value="public IndexedProtocolEndpointDictionary ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Metadata.IndexedProtocolEndpoint Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Metadata.IndexedProtocolEndpoint Default" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary.Default" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Default As IndexedProtocolEndpoint" />
+      <MemberSignature Language="F#" Value="member this.Default : System.IdentityModel.Metadata.IndexedProtocolEndpoint" Usage="System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

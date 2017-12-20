@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IWin32Window" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWin32Window" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IWin32Window" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWin32Window" />
+  <TypeSignature Language="F#" Value="type IWin32Window = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.IWin32Window.Handle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.Handle : nativeint" Usage="System.Windows.Forms.IWin32Window.Handle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ColorPalette" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ColorPalette extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ColorPalette" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ColorPalette" />
+  <TypeSignature Language="F#" Value="type ColorPalette = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color[] Entries { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color[] Entries" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorPalette.Entries" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entries As Color()" />
+      <MemberSignature Language="F#" Value="member this.Entries : System.Drawing.Color[]" Usage="System.Drawing.Imaging.ColorPalette.Entries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public int Flags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Flags" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorPalette.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Flags As Integer" />
+      <MemberSignature Language="F#" Value="member this.Flags : int" Usage="System.Drawing.Imaging.ColorPalette.Flags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

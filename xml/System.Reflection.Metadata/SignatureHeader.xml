@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public struct SignatureHeader : IEquatable&lt;System.Reflection.Metadata.SignatureHeader&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SignatureHeader extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Reflection.Metadata.SignatureHeader&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.SignatureHeader" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SignatureHeader&#xA;Implements IEquatable(Of SignatureHeader)" />
+  <TypeSignature Language="F#" Value="type SignatureHeader = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public SignatureHeader (byte rawValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8 rawValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.#ctor(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (rawValue As Byte)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.SignatureHeader : byte -&gt; System.Reflection.Metadata.SignatureHeader" Usage="new System.Reflection.Metadata.SignatureHeader rawValue" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public SignatureHeader (System.Reflection.Metadata.SignatureKind kind, System.Reflection.Metadata.SignatureCallingConvention convention, System.Reflection.Metadata.SignatureAttributes attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Reflection.Metadata.SignatureKind kind, valuetype System.Reflection.Metadata.SignatureCallingConvention convention, valuetype System.Reflection.Metadata.SignatureAttributes attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.#ctor(System.Reflection.Metadata.SignatureKind,System.Reflection.Metadata.SignatureCallingConvention,System.Reflection.Metadata.SignatureAttributes)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (kind As SignatureKind, convention As SignatureCallingConvention, attributes As SignatureAttributes)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.SignatureHeader : System.Reflection.Metadata.SignatureKind * System.Reflection.Metadata.SignatureCallingConvention * System.Reflection.Metadata.SignatureAttributes -&gt; System.Reflection.Metadata.SignatureHeader" Usage="new System.Reflection.Metadata.SignatureHeader (kind, convention, attributes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -78,6 +84,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.SignatureAttributes Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.SignatureAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SignatureHeader.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As SignatureAttributes" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.Metadata.SignatureAttributes" Usage="System.Reflection.Metadata.SignatureHeader.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -99,6 +107,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.SignatureCallingConvention CallingConvention { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.SignatureCallingConvention CallingConvention" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SignatureHeader.CallingConvention" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallingConvention As SignatureCallingConvention" />
+      <MemberSignature Language="F#" Value="member this.CallingConvention : System.Reflection.Metadata.SignatureCallingConvention" Usage="System.Reflection.Metadata.SignatureHeader.CallingConvention" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -120,6 +130,8 @@
       <MemberSignature Language="C#" Value="public const byte CallingConventionOrKindMask = 15;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 CallingConventionOrKindMask = (15)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureHeader.CallingConventionOrKindMask" />
+      <MemberSignature Language="VB.NET" Value="Public Const CallingConventionOrKindMask As Byte  = 15" />
+      <MemberSignature Language="F#" Value="val mutable CallingConventionOrKindMask : byte" Usage="System.Reflection.Metadata.SignatureHeader.CallingConventionOrKindMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -141,6 +153,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="signatureHeader.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -167,7 +181,12 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Reflection.Metadata.SignatureHeader other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Reflection.Metadata.SignatureHeader other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.Equals(System.Reflection.Metadata.SignatureHeader)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As SignatureHeader) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Reflection.Metadata.SignatureHeader -&gt; bool" Usage="signatureHeader.Equals other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -193,6 +212,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="signatureHeader.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -215,6 +236,8 @@
       <MemberSignature Language="C#" Value="public bool HasExplicitThis { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasExplicitThis" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SignatureHeader.HasExplicitThis" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasExplicitThis As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasExplicitThis : bool" Usage="System.Reflection.Metadata.SignatureHeader.HasExplicitThis" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -237,6 +260,8 @@
       <MemberSignature Language="C#" Value="public bool IsGeneric { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsGeneric" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SignatureHeader.IsGeneric" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsGeneric As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsGeneric : bool" Usage="System.Reflection.Metadata.SignatureHeader.IsGeneric" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -259,6 +284,8 @@
       <MemberSignature Language="C#" Value="public bool IsInstance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInstance" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SignatureHeader.IsInstance" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInstance As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInstance : bool" Usage="System.Reflection.Metadata.SignatureHeader.IsInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -281,6 +308,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.SignatureKind Kind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.SignatureKind Kind" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SignatureHeader.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As SignatureKind" />
+      <MemberSignature Language="F#" Value="member this.Kind : System.Reflection.Metadata.SignatureKind" Usage="System.Reflection.Metadata.SignatureHeader.Kind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -302,6 +331,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.Metadata.SignatureHeader left, System.Reflection.Metadata.SignatureHeader right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.Metadata.SignatureHeader left, valuetype System.Reflection.Metadata.SignatureHeader right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.op_Equality(System.Reflection.Metadata.SignatureHeader,System.Reflection.Metadata.SignatureHeader)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As SignatureHeader, right As SignatureHeader) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.Metadata.SignatureHeader * System.Reflection.Metadata.SignatureHeader -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -330,6 +361,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.Metadata.SignatureHeader left, System.Reflection.Metadata.SignatureHeader right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Metadata.SignatureHeader left, valuetype System.Reflection.Metadata.SignatureHeader right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.op_Inequality(System.Reflection.Metadata.SignatureHeader,System.Reflection.Metadata.SignatureHeader)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As SignatureHeader, right As SignatureHeader) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.Metadata.SignatureHeader * System.Reflection.Metadata.SignatureHeader -&gt; bool" Usage="System.Reflection.Metadata.SignatureHeader.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -358,6 +391,8 @@
       <MemberSignature Language="C#" Value="public byte RawValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 RawValue" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SignatureHeader.RawValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RawValue As Byte" />
+      <MemberSignature Language="F#" Value="member this.RawValue : byte" Usage="System.Reflection.Metadata.SignatureHeader.RawValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -379,6 +414,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="signatureHeader.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

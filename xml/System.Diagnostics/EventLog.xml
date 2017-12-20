@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class EventLog : System.ComponentModel.Component, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventLog extends System.ComponentModel.Component implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLog" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventLog&#xA;Inherits Component&#xA;Implements ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type EventLog = class&#xA;    inherit Component&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -105,10 +107,20 @@
     <altmember cref="T:System.ServiceProcess.ServiceBase" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventLog" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventLog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,6 +171,8 @@
       <MemberSignature Language="C#" Value="public EventLog (string logName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string logName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (logName As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.EventLog : string -&gt; System.Diagnostics.EventLog" Usage="new System.Diagnostics.EventLog logName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -216,6 +230,8 @@
       <MemberSignature Language="C#" Value="public EventLog (string logName, string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string logName, string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (logName As String, machineName As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.EventLog : string * string -&gt; System.Diagnostics.EventLog" Usage="new System.Diagnostics.EventLog (logName, machineName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -277,6 +293,8 @@
       <MemberSignature Language="C#" Value="public EventLog (string logName, string machineName, string source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string logName, string machineName, string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (logName As String, machineName As String, source As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.EventLog : string * string * string -&gt; System.Diagnostics.EventLog" Usage="new System.Diagnostics.EventLog (logName, machineName, source)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -337,7 +355,12 @@
       <MemberSignature Language="C#" Value="public void BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="eventLog.BeginInit " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -366,6 +389,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="eventLog.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -415,6 +440,8 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="eventLog.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -440,10 +467,21 @@
         <altmember cref="M:System.Diagnostics.EventLog.Clear" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateEventSource">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Establishes an application as able to write event information to a particular log on the system.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateEventSource">
       <MemberSignature Language="C#" Value="public static void CreateEventSource (System.Diagnostics.EventSourceCreationData sourceData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateEventSource(class System.Diagnostics.EventSourceCreationData sourceData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.CreateEventSource(System.Diagnostics.EventSourceCreationData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CreateEventSource (sourceData As EventSourceCreationData)" />
+      <MemberSignature Language="F#" Value="static member CreateEventSource : System.Diagnostics.EventSourceCreationData -&gt; unit" Usage="System.Diagnostics.EventLog.CreateEventSource sourceData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -669,6 +707,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static void CreateEventSource (string source, string logName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateEventSource(string source, string logName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.CreateEventSource(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CreateEventSource (source As String, logName As String)" />
+      <MemberSignature Language="F#" Value="static member CreateEventSource : string * string -&gt; unit" Usage="System.Diagnostics.EventLog.CreateEventSource (source, logName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -776,6 +816,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static void CreateEventSource (string source, string logName, string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateEventSource(string source, string logName, string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.CreateEventSource(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CreateEventSource (source As String, logName As String, machineName As String)" />
+      <MemberSignature Language="F#" Value="static member CreateEventSource : string * string * string -&gt; unit" Usage="System.Diagnostics.EventLog.CreateEventSource (source, logName, machineName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -887,10 +929,21 @@ SVC_UPDATE.EXE
         <altmember cref="M:System.Diagnostics.EventLog.Delete(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Delete">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a log resource.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Delete">
       <MemberSignature Language="C#" Value="public static void Delete (string logName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Delete(string logName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.Delete(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Delete (logName As String)" />
+      <MemberSignature Language="F#" Value="static member Delete : string -&gt; unit" Usage="System.Diagnostics.EventLog.Delete logName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -957,6 +1010,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static void Delete (string logName, string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Delete(string logName, string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.Delete(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Delete (logName As String, machineName As String)" />
+      <MemberSignature Language="F#" Value="static member Delete : string * string -&gt; unit" Usage="System.Diagnostics.EventLog.Delete (logName, machineName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1031,10 +1086,21 @@ SVC_UPDATE.EXE
         <altmember cref="P:System.Diagnostics.EventLog.MachineName" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeleteEventSource">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an application's event source registration from the event log.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DeleteEventSource">
       <MemberSignature Language="C#" Value="public static void DeleteEventSource (string source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DeleteEventSource(string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.DeleteEventSource(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DeleteEventSource (source As String)" />
+      <MemberSignature Language="F#" Value="static member DeleteEventSource : string -&gt; unit" Usage="System.Diagnostics.EventLog.DeleteEventSource source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1095,6 +1161,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static void DeleteEventSource (string source, string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DeleteEventSource(string source, string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.DeleteEventSource(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DeleteEventSource (source As String, machineName As String)" />
+      <MemberSignature Language="F#" Value="static member DeleteEventSource : string * string -&gt; unit" Usage="System.Diagnostics.EventLog.DeleteEventSource (source, machineName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1169,6 +1237,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="eventLog.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1206,6 +1276,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public bool EnableRaisingEvents { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableRaisingEvents" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.EnableRaisingEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableRaisingEvents As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableRaisingEvents : bool with get, set" Usage="System.Diagnostics.EventLog.EnableRaisingEvents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1258,7 +1330,12 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public void EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.EndInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="eventLog.EndInit " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1285,6 +1362,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public System.Diagnostics.EventLogEntryCollection Entries { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.EventLogEntryCollection Entries" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.Entries" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entries As EventLogEntryCollection" />
+      <MemberSignature Language="F#" Value="member this.Entries : System.Diagnostics.EventLogEntryCollection" Usage="System.Diagnostics.EventLog.Entries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1346,6 +1425,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public event System.Diagnostics.EntryWrittenEventHandler EntryWritten;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Diagnostics.EntryWrittenEventHandler EntryWritten" />
       <MemberSignature Language="DocId" Value="E:System.Diagnostics.EventLog.EntryWritten" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event EntryWritten As EntryWrittenEventHandler " />
+      <MemberSignature Language="F#" Value="member this.EntryWritten : System.Diagnostics.EntryWrittenEventHandler " Usage="member this.EntryWritten : System.Diagnostics.EntryWrittenEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1386,10 +1467,21 @@ SVC_UPDATE.EXE
         <altmember cref="P:System.Diagnostics.EventLog.EnableRaisingEvents" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Exists">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified log exists.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Exists">
       <MemberSignature Language="C#" Value="public static bool Exists (string logName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Exists(string logName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.Exists(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (logName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Exists : string -&gt; bool" Usage="System.Diagnostics.EventLog.Exists logName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1439,6 +1531,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static bool Exists (string logName, string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Exists(string logName, string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.Exists(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (logName As String, machineName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Exists : string * string -&gt; bool" Usage="System.Diagnostics.EventLog.Exists (logName, machineName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1489,10 +1583,21 @@ SVC_UPDATE.EXE
         <altmember cref="P:System.Diagnostics.EventLog.MachineName" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEventLogs">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an array of the event logs.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetEventLogs">
       <MemberSignature Language="C#" Value="public static System.Diagnostics.EventLog[] GetEventLogs ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.EventLog[] GetEventLogs() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.GetEventLogs" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEventLogs () As EventLog()" />
+      <MemberSignature Language="F#" Value="static member GetEventLogs : unit -&gt; System.Diagnostics.EventLog[]" Usage="System.Diagnostics.EventLog.GetEventLogs " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1538,6 +1643,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static System.Diagnostics.EventLog[] GetEventLogs (string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.EventLog[] GetEventLogs(string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.GetEventLogs(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEventLogs (machineName As String) As EventLog()" />
+      <MemberSignature Language="F#" Value="static member GetEventLogs : string -&gt; System.Diagnostics.EventLog[]" Usage="System.Diagnostics.EventLog.GetEventLogs machineName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1595,6 +1702,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public string Log { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Log" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.Log" />
+      <MemberSignature Language="VB.NET" Value="Public Property Log As String" />
+      <MemberSignature Language="F#" Value="member this.Log : string with get, set" Usage="System.Diagnostics.EventLog.Log" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1675,6 +1784,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public string LogDisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LogDisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.LogDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogDisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.LogDisplayName : string" Usage="System.Diagnostics.EventLog.LogDisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1723,6 +1834,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static string LogNameFromSourceName (string source, string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string LogNameFromSourceName(string source, string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.LogNameFromSourceName(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LogNameFromSourceName (source As String, machineName As String) As String" />
+      <MemberSignature Language="F#" Value="static member LogNameFromSourceName : string * string -&gt; string" Usage="System.Diagnostics.EventLog.LogNameFromSourceName (source, machineName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1778,6 +1891,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public string MachineName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.MachineName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string with get, set" Usage="System.Diagnostics.EventLog.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1843,6 +1958,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public long MaximumKilobytes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaximumKilobytes" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.MaximumKilobytes" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumKilobytes As Long" />
+      <MemberSignature Language="F#" Value="member this.MaximumKilobytes : int64 with get, set" Usage="System.Diagnostics.EventLog.MaximumKilobytes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1903,6 +2020,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public int MinimumRetentionDays { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinimumRetentionDays" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.MinimumRetentionDays" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinimumRetentionDays As Integer" />
+      <MemberSignature Language="F#" Value="member this.MinimumRetentionDays : int" Usage="System.Diagnostics.EventLog.MinimumRetentionDays" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1956,6 +2075,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public void ModifyOverflowPolicy (System.Diagnostics.OverflowAction action, int retentionDays);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ModifyOverflowPolicy(valuetype System.Diagnostics.OverflowAction action, int32 retentionDays) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.ModifyOverflowPolicy(System.Diagnostics.OverflowAction,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ModifyOverflowPolicy (action As OverflowAction, retentionDays As Integer)" />
+      <MemberSignature Language="F#" Value="member this.ModifyOverflowPolicy : System.Diagnostics.OverflowAction * int -&gt; unit" Usage="eventLog.ModifyOverflowPolicy (action, retentionDays)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2034,6 +2155,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public System.Diagnostics.OverflowAction OverflowAction { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.OverflowAction OverflowAction" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.OverflowAction" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OverflowAction As OverflowAction" />
+      <MemberSignature Language="F#" Value="member this.OverflowAction : System.Diagnostics.OverflowAction" Usage="System.Diagnostics.EventLog.OverflowAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2089,6 +2212,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public void RegisterDisplayName (string resourceFile, long resourceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterDisplayName(string resourceFile, int64 resourceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.RegisterDisplayName(System.String,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterDisplayName (resourceFile As String, resourceId As Long)" />
+      <MemberSignature Language="F#" Value="member this.RegisterDisplayName : string * int64 -&gt; unit" Usage="eventLog.RegisterDisplayName (resourceFile, resourceId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2265,6 +2390,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public string Source { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Source" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Property Source As String" />
+      <MemberSignature Language="F#" Value="member this.Source : string with get, set" Usage="System.Diagnostics.EventLog.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2341,10 +2468,21 @@ SVC_UPDATE.EXE
         <altmember cref="M:System.Diagnostics.EventLog.SourceExists(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SourceExists">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches a computer's registry for a given event source.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SourceExists">
       <MemberSignature Language="C#" Value="public static bool SourceExists (string source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SourceExists(string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.SourceExists(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SourceExists (source As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member SourceExists : string -&gt; bool" Usage="System.Diagnostics.EventLog.SourceExists source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2405,6 +2543,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static bool SourceExists (string source, string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SourceExists(string source, string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.SourceExists(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SourceExists (source As String, machineName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member SourceExists : string * string -&gt; bool" Usage="System.Diagnostics.EventLog.SourceExists (source, machineName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2477,6 +2617,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public System.ComponentModel.ISynchronizeInvoke SynchronizingObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISynchronizeInvoke SynchronizingObject" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.SynchronizingObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property SynchronizingObject As ISynchronizeInvoke" />
+      <MemberSignature Language="F#" Value="member this.SynchronizingObject : System.ComponentModel.ISynchronizeInvoke with get, set" Usage="System.Diagnostics.EventLog.SynchronizingObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2516,10 +2658,21 @@ SVC_UPDATE.EXE
         <altmember cref="T:System.Threading.ThreadPool" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteEntry">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an entry in the event log.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteEntry">
       <MemberSignature Language="C#" Value="public void WriteEntry (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteEntry(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteEntry (message As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteEntry : string -&gt; unit" Usage="eventLog.WriteEntry message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2609,6 +2762,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public void WriteEntry (string message, System.Diagnostics.EventLogEntryType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteEntry(string message, valuetype System.Diagnostics.EventLogEntryType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.Diagnostics.EventLogEntryType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteEntry (message As String, type As EventLogEntryType)" />
+      <MemberSignature Language="F#" Value="member this.WriteEntry : string * System.Diagnostics.EventLogEntryType -&gt; unit" Usage="eventLog.WriteEntry (message, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2703,6 +2858,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static void WriteEntry (string source, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteEntry(string source, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteEntry (source As String, message As String)" />
+      <MemberSignature Language="F#" Value="static member WriteEntry : string * string -&gt; unit" Usage="System.Diagnostics.EventLog.WriteEntry (source, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2774,6 +2931,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public void WriteEntry (string message, System.Diagnostics.EventLogEntryType type, int eventID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteEntry(string message, valuetype System.Diagnostics.EventLogEntryType type, int32 eventID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.Diagnostics.EventLogEntryType,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteEntry (message As String, type As EventLogEntryType, eventID As Integer)" />
+      <MemberSignature Language="F#" Value="member this.WriteEntry : string * System.Diagnostics.EventLogEntryType * int -&gt; unit" Usage="eventLog.WriteEntry (message, type, eventID)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2874,6 +3033,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static void WriteEntry (string source, string message, System.Diagnostics.EventLogEntryType type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteEntry(string source, string message, valuetype System.Diagnostics.EventLogEntryType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.String,System.Diagnostics.EventLogEntryType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteEntry (source As String, message As String, type As EventLogEntryType)" />
+      <MemberSignature Language="F#" Value="static member WriteEntry : string * string * System.Diagnostics.EventLogEntryType -&gt; unit" Usage="System.Diagnostics.EventLog.WriteEntry (source, message, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2951,6 +3112,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public void WriteEntry (string message, System.Diagnostics.EventLogEntryType type, int eventID, short category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteEntry(string message, valuetype System.Diagnostics.EventLogEntryType type, int32 eventID, int16 category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteEntry (message As String, type As EventLogEntryType, eventID As Integer, category As Short)" />
+      <MemberSignature Language="F#" Value="member this.WriteEntry : string * System.Diagnostics.EventLogEntryType * int * int16 -&gt; unit" Usage="eventLog.WriteEntry (message, type, eventID, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3060,6 +3223,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static void WriteEntry (string source, string message, System.Diagnostics.EventLogEntryType type, int eventID);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteEntry(string source, string message, valuetype System.Diagnostics.EventLogEntryType type, int32 eventID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteEntry (source As String, message As String, type As EventLogEntryType, eventID As Integer)" />
+      <MemberSignature Language="F#" Value="static member WriteEntry : string * string * System.Diagnostics.EventLogEntryType * int -&gt; unit" Usage="System.Diagnostics.EventLog.WriteEntry (source, message, type, eventID)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3143,6 +3308,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public void WriteEntry (string message, System.Diagnostics.EventLogEntryType type, int eventID, short category, byte[] rawData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteEntry(string message, valuetype System.Diagnostics.EventLogEntryType type, int32 eventID, int16 category, unsigned int8[] rawData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteEntry (message As String, type As EventLogEntryType, eventID As Integer, category As Short, rawData As Byte())" />
+      <MemberSignature Language="F#" Value="member this.WriteEntry : string * System.Diagnostics.EventLogEntryType * int * int16 * byte[] -&gt; unit" Usage="eventLog.WriteEntry (message, type, eventID, category, rawData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3256,6 +3423,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static void WriteEntry (string source, string message, System.Diagnostics.EventLogEntryType type, int eventID, short category);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteEntry(string source, string message, valuetype System.Diagnostics.EventLogEntryType type, int32 eventID, int16 category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteEntry (source As String, message As String, type As EventLogEntryType, eventID As Integer, category As Short)" />
+      <MemberSignature Language="F#" Value="static member WriteEntry : string * string * System.Diagnostics.EventLogEntryType * int * int16 -&gt; unit" Usage="System.Diagnostics.EventLog.WriteEntry (source, message, type, eventID, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3347,6 +3516,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static void WriteEntry (string source, string message, System.Diagnostics.EventLogEntryType type, int eventID, short category, byte[] rawData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteEntry(string source, string message, valuetype System.Diagnostics.EventLogEntryType type, int32 eventID, int16 category, unsigned int8[] rawData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteEntry (source As String, message As String, type As EventLogEntryType, eventID As Integer, category As Short, rawData As Byte())" />
+      <MemberSignature Language="F#" Value="static member WriteEntry : string * string * System.Diagnostics.EventLogEntryType * int * int16 * byte[] -&gt; unit" Usage="System.Diagnostics.EventLog.WriteEntry (source, message, type, eventID, category, rawData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3438,10 +3609,21 @@ SVC_UPDATE.EXE
         <altmember cref="P:System.Diagnostics.EventLog.Entries" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteEvent">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a localized event entry to the event log.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteEvent">
       <MemberSignature Language="C#" Value="public void WriteEvent (System.Diagnostics.EventInstance instance, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteEvent(class System.Diagnostics.EventInstance instance, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEvent(System.Diagnostics.EventInstance,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteEvent (instance As EventInstance, ParamArray values As Object())" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : System.Diagnostics.EventInstance * obj[] -&gt; unit" Usage="eventLog.WriteEvent (instance, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3652,6 +3834,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public void WriteEvent (System.Diagnostics.EventInstance instance, byte[] data, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteEvent(class System.Diagnostics.EventInstance instance, unsigned int8[] data, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEvent(System.Diagnostics.EventInstance,System.Byte[],System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteEvent (instance As EventInstance, data As Byte(), ParamArray values As Object())" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : System.Diagnostics.EventInstance * byte[] * obj[] -&gt; unit" Usage="eventLog.WriteEvent (instance, data, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3869,6 +4053,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static void WriteEvent (string source, System.Diagnostics.EventInstance instance, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteEvent(string source, class System.Diagnostics.EventInstance instance, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEvent(System.String,System.Diagnostics.EventInstance,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteEvent (source As String, instance As EventInstance, ParamArray values As Object())" />
+      <MemberSignature Language="F#" Value="static member WriteEvent : string * System.Diagnostics.EventInstance * obj[] -&gt; unit" Usage="System.Diagnostics.EventLog.WriteEvent (source, instance, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4069,6 +4255,8 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public static void WriteEvent (string source, System.Diagnostics.EventInstance instance, byte[] data, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteEvent(string source, class System.Diagnostics.EventInstance instance, unsigned int8[] data, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEvent(System.String,System.Diagnostics.EventInstance,System.Byte[],System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteEvent (source As String, instance As EventInstance, data As Byte(), ParamArray values As Object())" />
+      <MemberSignature Language="F#" Value="static member WriteEvent : string * System.Diagnostics.EventInstance * byte[] * obj[] -&gt; unit" Usage="System.Diagnostics.EventLog.WriteEvent (source, instance, data, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4269,86 +4457,5 @@ SVC_UPDATE.EXE
         <altmember cref="T:System.Diagnostics.EventInstance" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteEvent">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a localized event entry to the event log.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventLog" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteEntry">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes an entry in the event log.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SourceExists">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Searches a computer's registry for a given event source.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DeleteEventSource">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes an application's event source registration from the event log.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetEventLogs">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an array of the event logs.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Exists">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the specified log exists.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateEventSource">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Establishes an application as able to write event information to a particular log on the system.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Delete">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes a log resource.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

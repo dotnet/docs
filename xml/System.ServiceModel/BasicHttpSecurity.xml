@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class BasicHttpSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BasicHttpSecurity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.BasicHttpSecurity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BasicHttpSecurity" />
+  <TypeSignature Language="F#" Value="type BasicHttpSecurity = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +36,7 @@
       <MemberSignature Language="C#" Value="public BasicHttpSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpSecurity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -50,6 +53,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.BasicHttpMessageSecurity Message { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.BasicHttpMessageSecurity Message" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpSecurity.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Property Message As BasicHttpMessageSecurity" />
+      <MemberSignature Language="F#" Value="member this.Message : System.ServiceModel.BasicHttpMessageSecurity with get, set" Usage="System.ServiceModel.BasicHttpSecurity.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +87,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.BasicHttpSecurityMode Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.BasicHttpSecurityMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpSecurity.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As BasicHttpSecurityMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.BasicHttpSecurityMode with get, set" Usage="System.ServiceModel.BasicHttpSecurity.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,6 +128,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeMessage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeMessage() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpSecurity.ShouldSerializeMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMessage () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMessage : unit -&gt; bool" Usage="basicHttpSecurity.ShouldSerializeMessage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,6 +155,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeTransport ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeTransport() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpSecurity.ShouldSerializeTransport" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTransport () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeTransport : unit -&gt; bool" Usage="basicHttpSecurity.ShouldSerializeTransport " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -171,6 +182,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.HttpTransportSecurity Transport { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.HttpTransportSecurity Transport" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpSecurity.Transport" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transport As HttpTransportSecurity" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.HttpTransportSecurity with get, set" Usage="System.ServiceModel.BasicHttpSecurity.Transport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

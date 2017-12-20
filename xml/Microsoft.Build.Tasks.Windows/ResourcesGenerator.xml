@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ResourcesGenerator : Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResourcesGenerator extends Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Windows.ResourcesGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResourcesGenerator&#xA;Inherits Task" />
+  <TypeSignature Language="F#" Value="type ResourcesGenerator = class&#xA;    inherit Task" />
   <AssemblyInfo>
     <AssemblyName>PresentationBuildTasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,7 @@
       <MemberSignature Language="C#" Value="public ResourcesGenerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.ResourcesGenerator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.ResourcesGenerator.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="resourcesGenerator.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="public string OutputPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OutputPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.ResourcesGenerator.OutputPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputPath As String" />
+      <MemberSignature Language="F#" Value="member this.OutputPath : string with get, set" Usage="Microsoft.Build.Tasks.Windows.ResourcesGenerator.OutputPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -88,6 +95,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] OutputResourcesFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] OutputResourcesFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.ResourcesGenerator.OutputResourcesFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputResourcesFile As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.OutputResourcesFile : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Windows.ResourcesGenerator.OutputResourcesFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -115,6 +124,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ResourceFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ResourceFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.ResourcesGenerator.ResourceFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceFiles As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.ResourceFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Windows.ResourcesGenerator.ResourceFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>

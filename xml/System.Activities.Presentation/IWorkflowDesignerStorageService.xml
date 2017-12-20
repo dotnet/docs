@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IWorkflowDesignerStorageService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWorkflowDesignerStorageService" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IWorkflowDesignerStorageService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWorkflowDesignerStorageService" />
+  <TypeSignature Language="F#" Value="type IWorkflowDesignerStorageService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public void AddData (string key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddData(string key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IWorkflowDesignerStorageService.AddData(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddData (key As String, value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member AddData : string * obj -&gt; unit" Usage="iWorkflowDesignerStorageService.AddData (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public bool ContainsKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IWorkflowDesignerStorageService.ContainsKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool" Usage="iWorkflowDesignerStorageService.ContainsKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="public object GetData (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetData(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IWorkflowDesignerStorageService.GetData(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetData (key As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetData : string -&gt; obj" Usage="iWorkflowDesignerStorageService.GetData key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -95,6 +103,8 @@
       <MemberSignature Language="C#" Value="public void RemoveData (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveData(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IWorkflowDesignerStorageService.RemoveData(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveData (key As String)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveData : string -&gt; unit" Usage="iWorkflowDesignerStorageService.RemoveData key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -117,6 +127,8 @@
       <MemberSignature Language="C#" Value="public void SetData (string key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetData(string key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IWorkflowDesignerStorageService.SetData(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetData (key As String, value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetData : string * obj -&gt; unit" Usage="iWorkflowDesignerStorageService.SetData (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

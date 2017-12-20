@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void RibbonQuickAccessToolBarCloneEventHandler(object sender, RibbonQuickAccessToolBarCloneEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RibbonQuickAccessToolBarCloneEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub RibbonQuickAccessToolBarCloneEventHandler(sender As Object, e As RibbonQuickAccessToolBarCloneEventArgs)" />
+  <TypeSignature Language="F#" Value="type RibbonQuickAccessToolBarCloneEventHandler = delegate of obj * RibbonQuickAccessToolBarCloneEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

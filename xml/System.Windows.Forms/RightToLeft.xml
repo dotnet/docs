@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public enum RightToLeft" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RightToLeft extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RightToLeft" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RightToLeft" />
+  <TypeSignature Language="F#" Value="type RightToLeft = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="Inherit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RightToLeft Inherit = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RightToLeft.Inherit" />
+      <MemberSignature Language="VB.NET" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 2" Usage="System.Windows.Forms.RightToLeft.Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The direction the text read is inherited from the parent control.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="No" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RightToLeft No = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RightToLeft.No" />
+      <MemberSignature Language="VB.NET" Value="No" />
+      <MemberSignature Language="F#" Value="No = 0" Usage="System.Windows.Forms.RightToLeft.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The text reads from left to right. This is the default.</summary>
       </Docs>
@@ -62,6 +70,8 @@
       <MemberSignature Language="C#" Value="Yes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RightToLeft Yes = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RightToLeft.Yes" />
+      <MemberSignature Language="VB.NET" Value="Yes" />
+      <MemberSignature Language="F#" Value="Yes = 1" Usage="System.Windows.Forms.RightToLeft.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The text reads from right to left.</summary>
       </Docs>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public enum SpeakOutputFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SpeakOutputFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.SpeakOutputFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SpeakOutputFormat" />
+  <TypeSignature Language="F#" Value="type SpeakOutputFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.SpeakOutputFormat Text = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.SpeakOutputFormat.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 1" Usage="System.Speech.Synthesis.TtsEngine.SpeakOutputFormat.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.SpeakOutputFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates text output.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="WaveFormat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.SpeakOutputFormat WaveFormat = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.SpeakOutputFormat.WaveFormat" />
+      <MemberSignature Language="VB.NET" Value="WaveFormat" />
+      <MemberSignature Language="F#" Value="WaveFormat = 0" Usage="System.Speech.Synthesis.TtsEngine.SpeakOutputFormat.WaveFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.SpeakOutputFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates wave (audio) output.</summary>
       </Docs>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class TickMark : System.Web.UI.DataVisualization.Charting.Grid" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TickMark extends System.Web.UI.DataVisualization.Charting.Grid" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.TickMark" />
+  <TypeSignature Language="VB.NET" Value="Public Class TickMark&#xA;Inherits Grid" />
+  <TypeSignature Language="F#" Value="type TickMark = class&#xA;    inherit Grid" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,7 @@
       <MemberSignature Language="C#" Value="public TickMark ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.TickMark.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="public float Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Size" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TickMark.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Property Size As Single" />
+      <MemberSignature Language="F#" Value="member this.Size : single with get, set" Usage="System.Web.UI.DataVisualization.Charting.TickMark.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -104,6 +109,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.TickMarkStyle TickMarkStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.TickMarkStyle TickMarkStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TickMark.TickMarkStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property TickMarkStyle As TickMarkStyle" />
+      <MemberSignature Language="F#" Value="member this.TickMarkStyle : System.Web.UI.DataVisualization.Charting.TickMarkStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.TickMark.TickMarkStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

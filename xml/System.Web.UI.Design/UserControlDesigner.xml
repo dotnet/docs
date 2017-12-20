@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class UserControlDesigner : System.Web.UI.Design.ControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserControlDesigner extends System.Web.UI.Design.ControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.UserControlDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class UserControlDesigner&#xA;Inherits ControlDesigner" />
+  <TypeSignature Language="F#" Value="type UserControlDesigner = class&#xA;    inherit ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="public UserControlDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UserControlDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.UserControlDesigner.ActionLists" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.UserControlDesigner.ActionLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,6 +72,8 @@
       <MemberSignature Language="C#" Value="public override bool AllowResize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowResize" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.UserControlDesigner.AllowResize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AllowResize As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowResize : bool" Usage="System.Web.UI.Design.UserControlDesigner.AllowResize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -86,6 +93,8 @@
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UserControlDesigner.GetDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="userControlDesigner.GetDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

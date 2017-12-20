@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="protected class XmlSerializationReader.CollectionFixup" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit XmlSerializationReader/CollectionFixup extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializationReader.CollectionFixup" />
+  <TypeSignature Language="VB.NET" Value="Protected Class XmlSerializationReader.CollectionFixup" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,8 @@
       <MemberSignature Language="C#" Value="public CollectionFixup (object collection, System.Xml.Serialization.XmlSerializationCollectionFixupCallback callback, object collectionItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object collection, class System.Xml.Serialization.XmlSerializationCollectionFixupCallback callback, object collectionItems) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.#ctor(System.Object,System.Xml.Serialization.XmlSerializationCollectionFixupCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (collection As Object, callback As XmlSerializationCollectionFixupCallback, collectionItems As Object)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializationReader.CollectionFixup : obj * System.Xml.Serialization.XmlSerializationCollectionFixupCallback * obj -&gt; System.Xml.Serialization.XmlSerializationReader.CollectionFixup" Usage="new System.Xml.Serialization.XmlSerializationReader.CollectionFixup (collection, callback, collectionItems)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -79,6 +82,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlSerializationCollectionFixupCallback Callback { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlSerializationCollectionFixupCallback Callback" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Callback" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Callback As XmlSerializationCollectionFixupCallback" />
+      <MemberSignature Language="F#" Value="member this.Callback : System.Xml.Serialization.XmlSerializationCollectionFixupCallback" Usage="System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Callback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -106,6 +111,8 @@
       <MemberSignature Language="C#" Value="public object Collection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Collection" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Collection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Collection As Object" />
+      <MemberSignature Language="F#" Value="member this.Collection : obj" Usage="System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Collection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -140,6 +147,8 @@
       <MemberSignature Language="C#" Value="public object CollectionItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CollectionItems" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.CollectionItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CollectionItems As Object" />
+      <MemberSignature Language="F#" Value="member this.CollectionItems : obj" Usage="System.Xml.Serialization.XmlSerializationReader.CollectionFixup.CollectionItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

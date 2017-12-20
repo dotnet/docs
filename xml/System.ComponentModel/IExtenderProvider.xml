@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IExtenderProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type IExtenderProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public bool CanExtend (object extendee);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExtend(object extendee) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanExtend (extendee As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool" Usage="iExtenderProvider.CanExtend extendee" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

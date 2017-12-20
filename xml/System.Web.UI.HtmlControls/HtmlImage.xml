@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class HtmlImage : System.Web.UI.HtmlControls.HtmlControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlImage extends System.Web.UI.HtmlControls.HtmlControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlImage" />
+  <TypeSignature Language="VB.NET" Value="Public Class HtmlImage&#xA;Inherits HtmlControl" />
+  <TypeSignature Language="F#" Value="type HtmlImage = class&#xA;    inherit HtmlControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,7 @@
       <MemberSignature Language="C#" Value="public HtmlImage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlImage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +82,8 @@
       <MemberSignature Language="C#" Value="public string Align { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Align" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlImage.Align" />
+      <MemberSignature Language="VB.NET" Value="Public Property Align As String" />
+      <MemberSignature Language="F#" Value="member this.Align : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlImage.Align" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -139,6 +144,8 @@
       <MemberSignature Language="C#" Value="public string Alt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Alt" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlImage.Alt" />
+      <MemberSignature Language="VB.NET" Value="Public Property Alt As String" />
+      <MemberSignature Language="F#" Value="member this.Alt : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlImage.Alt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -184,6 +191,8 @@
       <MemberSignature Language="C#" Value="public int Border { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Border" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlImage.Border" />
+      <MemberSignature Language="VB.NET" Value="Public Property Border As Integer" />
+      <MemberSignature Language="F#" Value="member this.Border : int with get, set" Usage="System.Web.UI.HtmlControls.HtmlImage.Border" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -225,6 +234,8 @@
       <MemberSignature Language="C#" Value="public int Height { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlImage.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="System.Web.UI.HtmlControls.HtmlImage.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -271,6 +282,8 @@
       <MemberSignature Language="C#" Value="protected override void RenderAttributes (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlImage.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlImage.RenderAttributes writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -316,6 +329,8 @@
       <MemberSignature Language="C#" Value="public string Src { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Src" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlImage.Src" />
+      <MemberSignature Language="VB.NET" Value="Public Property Src As String" />
+      <MemberSignature Language="F#" Value="member this.Src : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlImage.Src" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -365,6 +380,8 @@
       <MemberSignature Language="C#" Value="public int Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlImage.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="System.Web.UI.HtmlControls.HtmlImage.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

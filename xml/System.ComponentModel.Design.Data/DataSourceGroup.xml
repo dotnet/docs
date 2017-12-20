@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class DataSourceGroup" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataSourceGroup extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DataSourceGroup" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataSourceGroup" />
+  <TypeSignature Language="F#" Value="type DataSourceGroup = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="protected DataSourceGroup ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceGroup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public abstract System.ComponentModel.Design.Data.DataSourceDescriptorCollection DataSources { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.Data.DataSourceDescriptorCollection DataSources" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceGroup.DataSources" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DataSources As DataSourceDescriptorCollection" />
+      <MemberSignature Language="F#" Value="member this.DataSources : System.ComponentModel.Design.Data.DataSourceDescriptorCollection" Usage="System.ComponentModel.Design.Data.DataSourceGroup.DataSources" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Drawing.Bitmap Image { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Bitmap Image" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceGroup.Image" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Image As Bitmap" />
+      <MemberSignature Language="F#" Value="member this.Image : System.Drawing.Bitmap" Usage="System.ComponentModel.Design.Data.DataSourceGroup.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -77,6 +84,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsDefault { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDefault" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceGroup.IsDefault" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsDefault As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDefault : bool" Usage="System.ComponentModel.Design.Data.DataSourceGroup.IsDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -96,6 +105,8 @@
       <MemberSignature Language="C#" Value="public abstract string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceGroup.Name" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.Design.Data.DataSourceGroup.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

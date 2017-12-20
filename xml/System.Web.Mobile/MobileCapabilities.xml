@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class MobileCapabilities : System.Web.HttpBrowserCapabilities" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MobileCapabilities extends System.Web.HttpBrowserCapabilities" />
   <TypeSignature Language="DocId" Value="T:System.Web.Mobile.MobileCapabilities" />
+  <TypeSignature Language="VB.NET" Value="Public Class MobileCapabilities&#xA;Inherits HttpBrowserCapabilities" />
+  <TypeSignature Language="F#" Value="type MobileCapabilities = class&#xA;    inherit HttpBrowserCapabilities" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +72,7 @@ public void Page_Load(Object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public MobileCapabilities ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.MobileCapabilities.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -85,6 +88,8 @@ public void Page_Load(Object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public bool HasCapability (string delegateName, string optionalParameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasCapability(string delegateName, string optionalParameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.MobileCapabilities.HasCapability(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasCapability (delegateName As String, optionalParameter As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasCapability : string * string -&gt; bool" Usage="mobileCapabilities.HasCapability (delegateName, optionalParameter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -121,6 +126,8 @@ public void Page_Load(Object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public static readonly string PreferredRenderingTypeChtml10;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string PreferredRenderingTypeChtml10" />
       <MemberSignature Language="DocId" Value="F:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeChtml10" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreferredRenderingTypeChtml10 As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable PreferredRenderingTypeChtml10 : string" Usage="System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeChtml10" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -145,6 +152,8 @@ public void Page_Load(Object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public static readonly string PreferredRenderingTypeHtml32;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string PreferredRenderingTypeHtml32" />
       <MemberSignature Language="DocId" Value="F:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeHtml32" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreferredRenderingTypeHtml32 As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable PreferredRenderingTypeHtml32 : string" Usage="System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeHtml32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -169,6 +178,8 @@ public void Page_Load(Object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public static readonly string PreferredRenderingTypeWml11;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string PreferredRenderingTypeWml11" />
       <MemberSignature Language="DocId" Value="F:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeWml11" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreferredRenderingTypeWml11 As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable PreferredRenderingTypeWml11 : string" Usage="System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeWml11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -193,6 +204,8 @@ public void Page_Load(Object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public static readonly string PreferredRenderingTypeWml12;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string PreferredRenderingTypeWml12" />
       <MemberSignature Language="DocId" Value="F:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeWml12" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreferredRenderingTypeWml12 As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable PreferredRenderingTypeWml12 : string" Usage="System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeWml12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

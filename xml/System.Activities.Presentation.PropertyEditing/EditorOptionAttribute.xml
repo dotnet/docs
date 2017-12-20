@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class EditorOptionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EditorOptionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.EditorOptionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EditorOptionAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type EditorOptionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,7 @@
       <MemberSignature Language="C#" Value="public EditorOptionAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.EditorOptionAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -39,6 +42,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.EditorOptionAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Activities.Presentation.PropertyEditing.EditorOptionAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="public static bool TryGetOptionValue (System.Collections.IEnumerable attributes, string optionName, out object optionValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetOptionValue(class System.Collections.IEnumerable attributes, string optionName, [out] object&amp; optionValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.EditorOptionAttribute.TryGetOptionValue(System.Collections.IEnumerable,System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetOptionValue (attributes As IEnumerable, optionName As String, ByRef optionValue As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryGetOptionValue : System.Collections.IEnumerable * string *  -&gt; bool" Usage="System.Activities.Presentation.PropertyEditing.EditorOptionAttribute.TryGetOptionValue (attributes, optionName, optionValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -84,6 +91,8 @@
       <MemberSignature Language="C#" Value="public override object TypeId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object TypeId" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.EditorOptionAttribute.TypeId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.Activities.Presentation.PropertyEditing.EditorOptionAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -102,6 +111,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.EditorOptionAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Activities.Presentation.PropertyEditing.EditorOptionAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

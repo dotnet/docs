@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 11/12/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -147,7 +147,7 @@ There are a few ways you can open the circuit and test it with eShopOnContainers
 
 One option is to lower the allowed number of retries to 1 in the circuit breaker policy and redeploy the whole solution into Docker. With a single retry, there is a good chance that an HTTP request will fail during deployment, the circuit breaker will open, and you get an error.
 
-Another option is to use custom middleware that is implemented in the ordering microservice. When this middleware is enabled, it catches all HTTP requests and returns status code 500. You can enable the middleware by making a GET request to the failing URI, like the following:
+Another option is to use custom middleware that is implemented in the `Basket` microservice. When this middleware is enabled, it catches all HTTP requests and returns status code 500. You can enable the middleware by making a GET request to the failing URI, like the following:
 
 -   GET /failing
 
@@ -161,42 +161,44 @@ This request enables the middleware.
 
 This request disables the middleware.
 
-For instance, once the application is running, you can enable the middleware by making a request using the following URI in any browser. Note that the ordering microservice uses port 5102.
+For instance, once the application is running, you can enable the middleware by making a request using the following URI in any browser. Note that the ordering microservice uses port 5103.
 
-http://localhost:5102/failing?enable
+http://localhost:5103/failing?enable
 
-You can then check the status using the URI [http://localhost:5102/failing](http://localhost:5100/failing), as shown in Figure 10-4.
+You can then check the status using the URI [http://localhost:5103/failing](http://localhost:5103/failing), as shown in Figure 10-4.
 
 ![](./media/image4.png)
 
-**Figure 10-4**. Simulating a failure with ASP.NET middleware
+**Figure 10-4**. Checking the state of the “Failing” ASP.NET middleware – In this case, disabled. 
 
-At this point, the ordering microservice responds with status code 500 whenever you call invoke it.
+At this point, the Basket microservice responds with status code 500 whenever you call invoke it.
 
 Once the middleware is running, you can try making an order from the MVC web application. Because the requests fails, the circuit will open.
 
 In the following example, you can see that the MVC web application has a catch block in the logic for placing an order. If the code catches an open-circuit exception, it shows the user a friendly message telling them to wait.
 
 ```csharp
-[HttpPost]
-public async Task<IActionResult> Create(Order model, string action)
+public class CartController : Controller
 {
-    try
+    //…
+    public async Task<IActionResult> Index()
     {
-        if (ModelState.IsValid)
+        try
         {
-            var user = _appUserParser.Parse(HttpContext.User);
-            await _orderSvc.CreateOrder(model);
-            //Redirect to historic list.
-            return RedirectToAction("Index");
+            //… Other code
         }
-    }
-    catch(BrokenCircuitException ex)
+        catch (BrokenCircuitException)
+        {
+            // Catches error when Basket.api is in circuit-opened mode                 
+            HandleBrokenCircuitException();
+        }
+        return View();
+    }       
+
+    private void HandleBrokenCircuitException()
     {
-        ModelState.AddModelError("Error",
-            "It was not possible to create a new order, please try later on");
+        TempData["BasketInoperativeMsg"] = "Basket Service is inoperative, please try later on. (Business message due to Circuit-Breaker)";
     }
-    return View(model);
 }
 ```
 

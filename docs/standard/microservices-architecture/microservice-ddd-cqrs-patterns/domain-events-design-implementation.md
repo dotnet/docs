@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 12/11/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -19,7 +19,7 @@ An event is something that has happened in the past. A domain event is, logicall
 
 An important benefit of domain events is that side effects after something happened in a domain can be expressed explicitly instead of implicitly. Those side effects must be consistent so either all the operations related to the business task happen, or none of them. In addition, domain events enable a better separation of concerns among classes within the same domain.
 
-For example, if you are just using just Entity Framework and entities or even aggregates, if there have to be side effects provoked by a use case, those will be implemented as an implicit concept in the coupled code after something happened. But, if you just see that code, you might not know if that code (the side effect) is part of the main operation or if it really is a side effect. On the other hand, using domain events makes the concept explicit and part of the ubiquitous language. For example, in the eShopOnContainers application, creating an order is not just about the order; it updates or creates a buyer aggregate based on the original user, because the user is not a buyer until there is an order in place. If you use domain events, you can explicitly express that domain rule based in the ubiquitous language provided by the domain experts.
+For example, if you're just using Entity Framework and entities or even aggregates, if there have to be side effects provoked by a use case, those will be implemented as an implicit concept in the coupled code after something happened. But, if you just see that code, you might not know if that code (the side effect) is part of the main operation or if it really is a side effect. On the other hand, using domain events makes the concept explicit and part of the ubiquitous language. For example, in the eShopOnContainers application, creating an order is not just about the order; it updates or creates a buyer aggregate based on the original user, because the user is not a buyer until there is an order in place. If you use domain events, you can explicitly express that domain rule based in the ubiquitous language provided by the domain experts.
 
 Domain events are somewhat similar to messaging-style events, with one important difference. With real messaging, message queuing, message brokers, or a service bus using AMPQ, a message is always sent asynchronously and communicated across processes and machines. This is useful for integrating multiple Bounded Contexts, microservices, or even different applications. However, with domain events, you want to raise an event from the domain operation you are currently running, but you want any side effects to occur within the same domain.
 
@@ -57,7 +57,7 @@ On the other hand, if you use domain events, you can create a fine-grained and d
 2.  Receive the command in a command handler.
     -   Execute a single aggregate’s transaction.
     -   (Optional) Raise domain events for side effects (for example, OrderStartedDomainDvent).
-1.  Handle domain events (within the current process) thast will execute an open number of side effects in multiple aggregates or application actions. For example:
+1.  Handle domain events (within the current process) that will execute an open number of side effects in multiple aggregates or application actions. For example:
     -   Verify or create buyer and payment method.
     -   Create and send a related integration event to the event bus to propagate states across microservices or trigger external actions like sending an email to the buyer.
     -   Handle other side effects.
@@ -79,8 +79,9 @@ When the total amount purchased by a customer in the store, across any number of
 In C#, a domain event is simply a data-holding structure or class, like a DTO, with all the information related to what just happened in the domain, as shown in the following example:
 
 ```csharp
-public class OrderStartedDomainEvent : IAsyncNotification
+public class OrderStartedDomainEvent : INotification
 {
+    public string UserId { get; private set; }
     public int CardTypeId { get; private set; }
     public string CardNumber { get; private set; }
     public string CardSecurityNumber { get; private set; }
@@ -89,9 +90,9 @@ public class OrderStartedDomainEvent : IAsyncNotification
     public Order Order { get; private set; }
 
     public OrderStartedDomainEvent(Order order,
-        int cardTypeId, string cardNumber,
-        string cardSecurityNumber, string cardHolderName,
-        DateTime cardExpiration)
+                                   int cardTypeId, string cardNumber,
+                                   string cardSecurityNumber, string cardHolderName,
+                                   DateTime cardExpiration)
     {
         Order = order;
         CardTypeId = cardTypeId;
@@ -107,7 +108,7 @@ This is essentially a class that holds all the data related to the OrderStarted 
 
 In terms of the ubiquitous language of the domain, since an event is something that happened in the past, the class name of the event should be represented as a past-tense verb, like OrderStartedDomainEvent or OrderShippedDomainEvent. That is how the domain event is implemented in the ordering microservice in eShopOnContainers.
 
-As we have noted, an important characteristic of events is that since an event is something that happened in the past, it should not change. Therefore it must be an immutable class. You can see in the preceding code that the properties are read-only from outside of the object. The only way to update the object is through the constructor when you create the event object.
+As noted earlier, an important characteristic of events is that since an event is something that happened in the past, it should not change. Therefore it must be an immutable class. You can see in the previous code that the properties are read-only from outside of the object. The only way to update the object is through the constructor when you create the event object.
 
 ### Raising domain events
 
@@ -123,22 +124,22 @@ Instead of dispatching to a domain event handler immediately, a better approach 
 
 Deciding if you send the domain events right before or right after committing the transaction is important, since it determines whether you will include the side effects as part of the same transaction or in different transactions. In the latter case, you need to deal with eventual consistency across multiple aggregates. This topic is discussed in the next section.
 
-The deferred approach is what eShopOnContainers uses. First, you add the events happening in your entities into a collection or list of events per entity. That list should be part of the entity object, or even better, part of your base entity class, as shown in the following example:
+The deferred approach is what eShopOnContainers uses. First, you add the events happening in your entities into a collection or list of events per entity. That list should be part of the entity object, or even better, part of your base entity class, as shown in the following example of the Entity base class:
 
 ```csharp
 public abstract class Entity
 {
-    private List<IAsyncNotification> _domainEvents;
+     //... 
+    private List<INotification> _domainEvents;
+    public List<INotification> DomainEvents => _domainEvents;
 
-    public List<IAsyncNotification> DomainEvents => _domainEvents;
-
-    public void AddDomainEvent(IAsyncNotification eventItem)
+    public void AddDomainEvent(INotification eventItem)
     {
-        _domainEvents = _domainEvents ?? new List<IAsyncNotification>();
+        _domainEvents = _domainEvents ?? new List<INotification>();
         _domainEvents.Add(eventItem);
     }
 
-    public void RemoveDomainEvent(IAsyncNotification eventItem)
+    public void RemoveDomainEvent(INotification eventItem)
     {
         if (_domainEvents is null) return;
         _domainEvents.Remove(eventItem);
@@ -147,19 +148,20 @@ public abstract class Entity
 }
 ```
 
-When you want to raise an event, you just add it to the event collection to be placed within an aggregate entity method, as the following code shows:
+When you want to raise an event, you just add it to the event collection from code at any method of the aggregate-root entity.
+
+The following code, part of the [Order agregate-root at eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs), shows an example:
 
 ```csharp
 var orderStartedDomainEvent = new OrderStartedDomainEvent(this, //Order object
-    cardTypeId,
-    cardNumber,
-    cardSecurityNumber,
-    cardHolderName,
-    cardExpiration);
+                                                          cardTypeId, cardNumber,
+                                                          cardSecurityNumber,
+                                                          cardHolderName,
+                                                          cardExpiration);
 this.AddDomainEvent(orderStartedDomainEvent);
 ```
 
-Notice that the only thing that the AddDomainEvent method is doing is adding an event to the list. No event is raised yet, and no event handler is invoked yet.
+Notice that the only thing that the AddDomainEvent method is doing is adding an event to the list. No event is dispatched yet, and no event handler is invoked yet.
 
 You actually want to dispatch the events later on, when you commit the transaction to the database. If you are using Entity Framework Core, that means in the SaveChanges method of your EF DbContext, as in the following code:
 
@@ -168,7 +170,7 @@ You actually want to dispatch the events later on, when you commit the transacti
 public class OrderingContext : DbContext, IUnitOfWork
 {
     // ...
-    public async Task<int> SaveEntitiesAsync()
+    public async Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default(CancellationToken))
     {
         // Dispatch Domain Events collection.
         // Choices:
@@ -177,8 +179,9 @@ public class OrderingContext : DbContext, IUnitOfWork
         // handlers that are using the same DbContext with Scope lifetime
         // B) Right AFTER committing data (EF SaveChanges) into the DB. This makes
         // multiple transactions. You will need to handle eventual consistency and
-        // compensatory actions in case of failures.
+        // compensatory actions in case of failures.        
         await _mediator.DispatchDomainEventsAsync(this);
+
         // After this line runs, all the changes (from the Command Handler and Domain
         // event handlers) performed through the DbContext will be commited
         var result = await base.SaveChangesAsync();
@@ -196,7 +199,7 @@ Be aware that transactional boundaries come into significant play here. If your 
 
 The question of whether to perform a single transaction across aggregates versus relying on eventual consistency across those aggregates is a controversial one. Many DDD authors like Eric Evans and Vaughn Vernon advocate the rule that one transaction = one aggregate and therefore argue for eventual consistency across aggregates. For example, in his book *Domain-Driven Design*, Eric Evans says this:
 
-Any rule that spans Aggregates will not be expected to be up-to-date at all times. Through event processing, batch processing, or other update mechanisms, other dependencies can be resolved within some specific time. (pg. 128)
+Any rule that spans Aggregates will not be expected to be up-to-date at all times. Through event processing, batch processing, or other update mechanisms, other dependencies can be resolved within some specific time. (page 128)
 
 Vaughn Vernon says the following in [Effective Aggregate Design. Part II: Making Aggregates Work Together](http://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf):
 
@@ -220,7 +223,7 @@ But how do you actually dispatch those events to their respective event handlers
 
 ### The domain event dispatcher: mapping from events to event handlers
 
-Once you are able to dispatch or publish the events, you need some kind of artifact that will publish the event so that every related handler can get it and process side effects based on that event.
+Once you're able to dispatch or publish the events, you need some kind of artifact that will publish the event, so that every related handler can get it and process side effects based on that event.
 
 One approach is a real messaging system or even an event bus, possibly based on a service bus as opposed to in-memory events. However, for the first case, real messaging would be overkill for processing domain events, since you just need to process those events within the same process (that is, within the same domain and application layer).
 
@@ -232,7 +235,7 @@ Another way to map events to multiple event handlers is by using types registrat
 
 You can build all the plumbing and artifacts to implement that approach by yourself. However, you can also use available libraries like [MediatR](https://github.com/jbogard/MediatR), which underneath the covers uses your IoT container. You can therefore directly use the predefined interfaces and the mediator object’s publish/dispatch methods.
 
-In code, you first need to register the event handler types in your IoC container, as shown in the following example:
+In code, you first need to register the event handler types in your IoC container, as shown in the following example at [eShopOnContainers Ordering microservice](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Infrastructure/AutofacModules/MediatorModule.cs):
 
 ```csharp
 public class MediatorModule : Autofac.Module
@@ -240,13 +243,11 @@ public class MediatorModule : Autofac.Module
     protected override void Load(ContainerBuilder builder)
     {
         // Other registrations ...
-        // Register the DomainEventHandler classes (they implement
-        // IAsyncNotificationHandler<>) in assembly holding the Domain Events
-        builder.RegisterAssemblyTypes(
-            typeof(ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler)
-            .GetTypeInfo().Assembly)
-            .Where(t => t.IsClosedTypeOf(typeof(IAsyncNotificationHandler<>)))
-            .AsImplementedInterfaces();
+        // Register the DomainEventHandler classes (they implement IAsyncNotificationHandler<>)
+        // in assembly holding the Domain Events
+        builder.RegisterAssemblyTypes(typeof(ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler)
+                                       .GetTypeInfo().Assembly)
+                                         .AsClosedTypesOf(typeof(IAsyncNotificationHandler<>));
         // Other registrations ...
     }
 }
@@ -256,7 +257,7 @@ The code first identifies the assembly that contains the domain event handlers b
 
 ### How to subscribe to domain events
 
-When you use MediatR, each event handler must use an event type that is provided on the generic parameter of the IAsyncNotificationHandler interface, as you can see in the following code:
+When you use MediatR, each event handler must use an event type that is provided on the generic parameter of the INotificationHandler interface, as you can see in the following code:
 
 ```csharp
 public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
@@ -267,61 +268,66 @@ Based on the relationship between event and event handler, which can be consider
 
 ### How to handle domain events
 
-Finally, the event handler usually implements application layer code that uses infrastructure repositories to obtain the required additional aggregates and to execute side-effect domain logic. The following code shows an example.
+Finally, the event handler usually implements application layer code that uses infrastructure repositories to obtain the required additional aggregates and to execute side-effect domain logic. The following [domain event handler code at eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/DomainEventHandlers/OrderStartedEvent/ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler.cs), shows an implementation example.
 
 ```csharp
 public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
-    : IAsyncNotificationHandler<OrderStartedDomainEvent>
+                   : INotificationHandler<OrderStartedDomainEvent>
 {
     private readonly ILoggerFactory _logger;
     private readonly IBuyerRepository<Buyer> _buyerRepository;
     private readonly IIdentityService _identityService;
+
     public ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler(
         ILoggerFactory logger,
         IBuyerRepository<Buyer> buyerRepository,
         IIdentityService identityService)
     {
-        // Parameter validations
-        //...
+        // ...Parameter validations...
     }
 
     public async Task Handle(OrderStartedDomainEvent orderStartedEvent)
     {
-        var cardTypeId = (orderStartedEvent.CardTypeId != 0) ?
-            orderStartedEvent.CardTypeId : 1;
+        var cardTypeId = (orderStartedEvent.CardTypeId != 0) ? orderStartedEvent.CardTypeId : 1;        
         var userGuid = _identityService.GetUserIdentity();
         var buyer = await _buyerRepository.FindAsync(userGuid);
         bool buyerOriginallyExisted = (buyer == null) ? false : true;
+
         if (!buyerOriginallyExisted)
         {
             buyer = new Buyer(userGuid);
         }
+
         buyer.VerifyOrAddPaymentMethod(cardTypeId,
-            $"Payment Method on {DateTime.UtcNow}",
-            orderStartedEvent.CardNumber,
-            orderStartedEvent.CardSecurityNumber,
-            orderStartedEvent.CardHolderName,
-            orderStartedEvent.CardExpiration,
-            orderStartedEvent.Order.Id);
-        var buyerUpdated = buyerOriginallyExisted ? _buyerRepository.Update(buyer) :
-        _buyerRepository.Add(buyer);
-        await _buyerRepository.UnitOfWork.SaveEntitiesAsync();
+                                       $"Payment Method on {DateTime.UtcNow}",
+                                       orderStartedEvent.CardNumber,
+                                       orderStartedEvent.CardSecurityNumber,
+                                       orderStartedEvent.CardHolderName,
+                                       orderStartedEvent.CardExpiration,
+                                       orderStartedEvent.Order.Id);
+
+        var buyerUpdated = buyerOriginallyExisted ? _buyerRepository.Update(buyer) 
+                                                                      : _buyerRepository.Add(buyer);
+
+        await _buyerRepository.UnitOfWork
+                .SaveEntitiesAsync();
+
         // Logging code using buyerUpdated info, etc.
     }
 }
 ```
 
-This event handler code is considered application layer code because it uses infrastructure repositories, as explained in the next section on the infrastructure-persistence layer. Event handlers could also use other infrastructure components.
+The previous domain event handler code is considered application layer code because it uses infrastructure repositories, as explained in the next section on the infrastructure-persistence layer. Event handlers could also use other infrastructure components.
 
 #### Domain events can generate integration events to be published outside of the microservice boundaries
 
 Finally, is important to mention that you might sometimes want to propagate events across multiple microservices. That is considered an integration event, and it could be published through an event bus from any specific domain event handler.
 
-## Conclusions on domain events 
+## Conclusions on domain events
 
 As stated, use domain events to explicitly implement side effects of changes within your domain. To use DDD terminology, use domain events to explicitly implement side effects across one or multiple aggregates. Additionally, and for better scalability and less impact on database locks, use eventual consistency between aggregates within the same domain.
 
-#### Additional resources
+## Additional resources
 
 -   **Greg Young. What is a Domain Event?**
     [*http://codebetter.com/gregyoung/2010/04/11/what-is-a-domain-event/*](http://codebetter.com/gregyoung/2010/04/11/what-is-a-domain-event/)

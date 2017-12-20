@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 11/09/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -122,6 +122,9 @@ public class Order : Entity, IAggregateRoot
     public Address Address { get; private set; }
     private int? _buyerId; //FK pointing to a different aggregate root
     public OrderStatus OrderStatus { get; private set; }
+    private readonly List<OrderItem> _orderItems;
+    public IReadOnlyCollection<OrderItem> OrderItems => _orderItems;
+    // ... Additional code
 }
 ```
 

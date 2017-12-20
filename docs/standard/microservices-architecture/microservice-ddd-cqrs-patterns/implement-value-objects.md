@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 12/12/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -21,7 +21,7 @@ Figure 9-13 shows the Address value object within the Order aggregate.
 
 **Figure 9-13**. Address value object within the Order aggregate
 
-As shown in Figure 9-13, an entity is usually composed of multiple attributes. For example, Order can be modeled as an entity with an identity and composed internally of a set of attributes such as OrderId, OrderDate, OrderItems, etc. But the address, which is simply a complex value composed of country, street, city, etc. must be modeled and treated as a value object.
+As shown in Figure 9-13, an entity is usually composed of multiple attributes. For example, the `Order` entity can be modeled as an entity with an identity and composed internally of a set of attributes such as OrderId, OrderDate, OrderItems, etc. But the address, which is simply a complex value composed of country, street, city, etc. and has no identity in this domain,  must be modeled and treated as a value object.
 
 ## Important characteristics of value objects
 
@@ -99,8 +99,9 @@ public class Address : ValueObject
     public String Country { get; private set; }
     public String ZipCode { get; private set; }
 
-    public Address(string street, string city, string state,
-        string country, string zipcode)
+    private Address() { }
+
+    public Address(string street, string city, string state, string country, string zipcode)
     {
         Street = street;
         City = city;
@@ -111,6 +112,7 @@ public class Address : ValueObject
 
     protected override IEnumerable<object> GetAtomicValues()
     {
+        // Using a yield return statement to return each element one at a time
         yield return Street;
         yield return City;
         yield return State;
@@ -120,25 +122,177 @@ public class Address : ValueObject
 }
 ```
 
-## Hiding the identity characteristic when using EF Core to persist value objects
+## How to persist value objects in the database with EF Core 2.0
 
-A limitation when using EF Core is that in its current version (EF Core 1.1) you cannot use [complex types](https://docs.microsoft.com/de-de/dotnet/api/system.componentmodel.dataannotations.schema.complextypeattribute?view=netframework-4.7) as defined in EF 6.x. Therefore, you must store your value object as an EF entity. However, you can hide its ID so you make clear that the identity is not important in the model that the value object is part of. You hide the ID is by using the ID as a shadow property. Since that configuration for hiding the ID in the model is set up in the infrastructure level, it will be transparent for your domain model, and its infrastructure implementation could change in the future.
+You just saw how to define a value object in your domain model. But, how can you actually persist it into the database through Entity Framework (EF) Core which usually targets entities with identity?
 
-In eShopOnContainers, the hidden ID needed by EF Core infrastructure is implemented in the following way in the DbContext level, using Fluent API at the infrastructure project.
+### Background and older approaches using EF Core 1.1
+
+As background, a limitation when using EF Core 1.0 and 1.1 was that you cannot use  [complex types](https://docs.microsoft.com/dotnet/api/system.componentmodel.dataannotations.schema.complextypeattribute?view=netframework-4.7) as defined in EF 6.x in the traditional .NET Framework. Therefore, if using EF Core 1.0 or 1.1, you needed to store your value object as an EF entity with an ID field. Then, so it looked more like a value object with no identity, you could hide its ID so you make clear that the identity of a value object is not important in the domain model. You could hide that ID by using the ID as a [shadow property](https://docs.microsoft.com/ef/core/modeling/shadow-properties ). Since that configuration for hiding the ID in the model is set up in the EF infrastructure level, it would be kind of transparent for your domain model.
+
+In the initial version of eShopOnContainers (.NET Core 1.1), the hidden ID needed by EF Core infrastructure was implemented in the following way in the DbContext level, using Fluent API at the infrastructure project. Therefore, the ID was hidden from the domain model point of view, but still present in the infrastructure.
 
 ```csharp
-// Fluent API within the OrderingContext:DbContext in the
-// Ordering.Infrastructure project
-
-void ConfigureAddress(EntityTypeBuilder<Address> addressConfiguration)
+// Old approach with EF Core 1.1
+// Fluent API within the OrderingContext:DbContext in the Infrastructure project
+void ConfigureAddress(EntityTypeBuilder<Address> addressConfiguration) 
 {
-    addressConfiguration.ToTable("address", DEFAULT_SCHEMA);
-    addressConfiguration.Property<int>("Id").IsRequired();
-    addressConfiguration.HasKey("Id");
+    addressConfiguration.ToTable("address", DEFAULT_SCHEMA); 
+
+    addressConfiguration.Property<int>("Id")  // Id is a shadow property
+        .IsRequired();
+    addressConfiguration.HasKey("Id");   // Id is a shadow property
 }
 ```
 
-Therefore, the ID is hidden from the domain model point of view, and in the future, the value object infrastructure could also be implemented as a complex type or another way.
+However, the persistence of that value object into the database was performed like a regular entity in a different table.
+
+With EF Core 2.0, there are new and better ways to persist value objects.
+
+## Persist value objects as owned entity types in EF Core 2.0
+
+Even with some gaps between the canonical value object pattern in DDD and the owned entity type in EF Core, it's currently the best way to persist value objects with EF Core 2.0. You can see limitations at the end of this section.
+
+The owned entity type feature was added to EF Core since version 2.0.
+
+An owned entity type allows you to map types that do not have their own identity explicitely defined in the domain model and are used as properties, such as a value object, within any of your entities. An owned entity type shares the same CLR type with another entity type. The entity containing the defining navigation is the owner entity. When querying the owner, the owned types are included by default.
+
+Just by looking at the domain model, an owned type looks like it doesn’t have any identity.
+However, under the covers, owned types do have identity, but the owner navigation property is part of this identity.
+
+The identity of instances of own types is not completely their own. It consists of three components: 
+
+- The identity of the owner
+
+- The navigation property pointing to them
+
+- In the case of collections of owned types, an independent component (not yet supported in EF Core 2.0).
+
+For example, in the Ordering domain model at eShopOnContainers, as part of the Order entity, the Address value object is implemented as an owned entity type within the owner entity, which is the Order entity. Address is a type with no identity property defined in the domain model. It is used as a property of the Order type to specify the shipping address for a particular order.
+
+By convention, a shadow primary key is created for the owned type and it will be mapped to the same table as the owner by using table splitting. This allows to use owned types similarly to how complex types are used in EF6 in the traditional .NET Framework.
+
+It is important to note that owned types are never discovered by convention in EF Core, so you have to declare them explicitly.
+
+In eShopOnContainers, at the OrderingContext.cs, within the OnModelCreating() method, there are multiple infrastructure configuration being applied. One of them is related to the Order entity.
+
+```csharp
+// Part of the OrderingContext.cs class at the Ordering.Infrastructure project
+// 
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.ApplyConfiguration(new ClientRequestEntityTypeConfiguration());
+    modelBuilder.ApplyConfiguration(new PaymentMethodEntityTypeConfiguration());
+    modelBuilder.ApplyConfiguration(new OrderEntityTypeConfiguration());
+    modelBuilder.ApplyConfiguration(new OrderItemEntityTypeConfiguration());
+    //...Additional type configurations
+}
+```
+
+In the following code, the persistence infrastructure is defined for the Order entity:
+
+```csharp
+// Part of the OrderEntityTypeConfiguration.cs class 
+// 
+public void Configure(EntityTypeBuilder<Order> orderConfiguration)
+{
+    orderConfiguration.ToTable("orders", OrderingContext.DEFAULT_SCHEMA);
+    orderConfiguration.HasKey(o => o.Id);
+    orderConfiguration.Ignore(b => b.DomainEvents);
+    orderConfiguration.Property(o => o.Id)
+        .ForSqlServerUseSequenceHiLo("orderseq", OrderingContext.DEFAULT_SCHEMA);
+
+    //Address value object persisted as owned entity in EF Core 2.0
+    orderConfiguration.OwnsOne(o => o.Address);
+
+    orderConfiguration.Property<DateTime>("OrderDate").IsRequired();
+    
+    //...Additional validations, constraints and code...
+    //...
+}
+```
+
+In the previous code, the `orderConfiguration.OwnsOne(o => o.Address)` method specifies that the `Address` property is an owned entity of the `Order` type.
+
+By default, EF Core conventions name the database columns for the properties of the owned entity type as `EntityProperty_OwnedEntityProperty`. Therefore, the internal properties of `Address` will appear in the `Orders` table with the names `Address_Street`, `Address_City` (and so on for `State`, `Country` and `ZipCode`).
+
+You can append the `Property().HasColumnName()` fluent method to rename those columns. In the case where `Address` is a public property, the mappings would be like the following:
+
+```csharp
+orderConfiguration.OwnsOne(p => p.Address)
+                            .Property(p=>p.Street).HasColumnName("ShippingStreet");
+
+orderConfiguration.OwnsOne(p => p.Address)
+                            .Property(p=>p.City).HasColumnName("ShippingCity");
+```
+
+It is possible to chain the `OwnsOne` method in a fluent mapping. In the following hypothetical example, `OrderDetails` owns `BillingAddress` and `ShippingAddress`, which are both `Address` types. Then `OrderDetails` is owned by the `Order` type.
+
+```csharp
+orderConfiguration.OwnsOne(p => p.OrderDetails, cb =>
+    {
+        cb.OwnsOne(c => c.BillingAddress);
+        cb.OwnsOne(c => c.ShippingAddress);
+    });
+//...
+//...
+public class Order
+{
+    public int Id { get; set; }
+    public OrderDetails OrderDetails { get; set; }
+}
+
+public class OrderDetails
+{
+    public StreetAddress BillingAddress { get; set; }
+    public StreetAddress ShippingAddress { get; set; }
+}
+
+public class Address
+{
+    public string Street { get; set; }
+    public string City { get; set; }
+}
+```
+
+### Additional details on owned entity types
+
+•	Owned types are defined when you configure a navigation property to a particular type using the OwnsOne fluent API.
+
+•	The definition of an owned type in our metadata model is a composite of: the owner type, the navigation property, and the CLR type of the owned type.
+
+•	The identity (key) of an owned type instance in our stack is a composite of the identity of the owner type and the definition of the owned type.
+
+#### Owned entities capabilities:
+
+•	Owned type can reference other entities, either owned (nested owned types) or non-owned (regular reference navigation properties to other entities).
+
+•	You can map the same CLR type as different owned types in the same owner entity through separate navigation properties.
+
+•	Table splitting is setup by convention, but you can opt out by mapping the owned type to a different table using ToTable.
+
+•	Eager loading is performed automatically on owned types, i.e. no need to call Include() on the query.
+
+#### Owned entities limitations:
+
+•	You cannot create a DbSet<T> of an owned type (by design).
+
+•	You cannot call ModelBuilder.Entity<T>() on owned types (currently by design).
+
+•	No collections of owned types yet (but they will be supported in versions after EF Core 2.0).
+
+•	No support for configuring them via an attribute.
+
+•	No support for optional (i.e. nullable) owned types that are mapped with the owner in the same table (i.e. using table splitting). This is because we don't have a separate sentinel for the null.
+
+•	No inheritance mapping support for owned types, but you should be able to map two leaf types of the same inheritance hierarchies as different owned types. EF Core will not reason about the fact that they are part of the same hierarchy.
+
+#### Main differences with EF6's complex types
+
+•	Table splitting is optional, i.e. they can optionally be mapped to a separate table and still be owned types.
+
+•	They can reference other entities (i.e. they can act as the dependent side on relationships to other non-owned types).
+
 
 ## Additional resources
 
@@ -162,6 +316,7 @@ Therefore, the ID is hidden from the domain model point of view, and in the futu
 
 -   **Address class.** Sample value object class in eShopOnContainers.
     [*https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs*](https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs)
+
 
 
 >[!div class="step-by-step"]

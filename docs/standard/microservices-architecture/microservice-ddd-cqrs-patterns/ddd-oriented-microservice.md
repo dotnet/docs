@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 11/06/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -33,7 +33,7 @@ For example, an entity could be loaded from the database. Then part of that info
 
 Additionally, you need to have always-valid entities (see the [Designing validations in the domain model layer](#designing-validations-in-the-domain-model-layer) section) controlled by aggregate roots (root entities). Therefore, entities should not be bound to client views, because at the UI level some data might still not be validated. This is what the ViewModel is for. The ViewModel is a data model exclusively for presentation layer needs. The domain entities do not belong directly to the ViewModel. Instead, you need to translate between ViewModels and domain entities and vice versa.
 
-When tackling complexity, it is important to have a domain model controlled by aggregate roots (we go into this in more detail later) that make sure that all the invariants and rules related to that group of entities (aggregate) are performed through a single entry point or gate, the aggregate root.
+When tackling complexity, it is important to have a domain model controlled by aggregate roots that make sure that all the invariants and rules related to that group of entities (aggregate) are performed through a single entry-point or gate, the aggregate root.
 
 Figure 9-5 shows how a layered design is implemented in the eShopOnContainers application.
 
@@ -41,7 +41,7 @@ Figure 9-5 shows how a layered design is implemented in the eShopOnContainers ap
 
 **Figure 9-5**. DDD layers in the ordering microservice in eShopOnContainers
 
-You want to design the system so that each layer communicates only with certain other layers. That may be easier to enforce if layers are implemented as different class libraries, because you can clearly identify what dependencies are set between libraries. For instance, the domain model layer should not take a dependency on any other layer (the domain model classes should be Plain Old CLR Objects, or [POCO](https://en.wikipedia.org/wiki/Plain_Old_CLR_Object), classes). As shown in Figure 9-6, the **Ordering.Domain** layer library has dependencies only on the .NET Core libraries but not on any other custom library (data library, persistence library, etc.).
+You want to design the system so that each layer communicates only with certain other layers. That may be easier to enforce if layers are implemented as different class libraries, because you can clearly identify what dependencies are set between libraries. For instance, the domain model layer should not take a dependency on any other layer (the domain model classes should be Plain Old CLR Objects, or [POCO](https://en.wikipedia.org/wiki/Plain_Old_CLR_Object), classes). As shown in Figure 9-6, the **Ordering.Domain** layer library has dependencies only on the .NET Core libraries or NuGet packages, but not on any other custom library, such as data library or persistence library.
 
 ![](./media/image7.PNG)
 

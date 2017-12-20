@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 11/08/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -31,7 +31,7 @@ As noted earlier, if you are using the CQS/CQRS architectural pattern, the initi
 
 If the user makes changes, the data to be updated will come from the client app or presentation layer to the application layer (such as a Web API service). When you receive a command (with data) in a command handler, you use repositories to get the data you want to update from the database. You update it in memory with the information passed with the commands, and you then add or update the data (domain entities) in the database through a transaction.
 
-We must emphasize again that only one repository should be defined for each aggregate root, as shown in Figure 9-17. To achieve the goal of the aggregate root to maintain transactional consistency between all the objects within the aggregate, you should never create a repository for each table in the database.
+Remember that only one repository should be defined for each aggregate root, as shown in Figure 9-17. To achieve the goal of the aggregate root to maintain transactional consistency between all the objects within the aggregate, you should never create a repository for each table in the database.
 
 ![](./media/image18.png)
 
@@ -78,13 +78,13 @@ In terms of separation of concerns for unit tests, your logic operates on domain
 
 ### The difference between the Repository pattern and the legacy Data Access class (DAL class) pattern
 
-A data access object directly performs data access and persistence operations against storage. A repository marks the data with the operations you want to perform in the memory of a unit of work object (as in EF when using the DbContext), but these updates will not be performed immediately.
+A data access object directly performs data access and persistence operations against storage. A repository marks the data with the operations you want to perform in the memory of a unit of work object (as in EF when using the DbContext), but these updates aren't performed immediately.
 
 A unit of work is referred to as a single transaction that involves multiple insert, update, or delete operations. In simple terms, it means that for a specific user action (for example, registration on a website), all the insert, update, and delete transactions are handled in a single transaction. This is more efficient than handling multiple database transactions in a chattier way.
 
-These multiple persistence operations will be performed later in a single action when your code from the application layer commands it. The decision about applying the in-memory changes to the actual database storage is typically based on the [Unit of Work pattern](http://martinfowler.com/eaaCatalog/unitOfWork.html). In EF, the Unit of Work pattern is implemented as the DBContext.
+These multiple persistence operations are performed later in a single action when your code from the application layer commands it. The decision about applying the in-memory changes to the actual database storage is typically based on the [Unit of Work pattern](http://martinfowler.com/eaaCatalog/unitOfWork.html). In EF, the Unit of Work pattern is implemented as the DBContext.
 
-In many cases, this pattern or way of applying operations against the storage can increase application performance and reduce the possibility of inconsistencies. Also, it reduces transaction blocking in the database tables, because all the intended operations are committed as part of one transaction. This is more efficient in comparison to executing many isolated operations against the database. Therefore, the selected ORM will be able to optimize the execution against the database by grouping several update actions within the same transaction, as opposed to many small and separate transaction executions.
+In many cases, this pattern or way of applying operations against the storage can increase application performance and reduce the possibility of inconsistencies. Also, it reduces transaction blocking in the database tables, because all the intended operations are committed as part of one transaction. This is more efficient in comparison to executing many isolated operations against the database. Therefore, the selected ORM is able to optimize the execution against the database by grouping several update actions within the same transaction, as opposed to many small and separate transaction executions.
 
 ### Repositories should not be mandatory
 
@@ -96,9 +96,39 @@ This’ll probably be my biggest feedback. I’m really not a fan of repositorie
 
 We find repositories useful, but we acknowledge that they are not critical for your DDD, in the way that the Aggregate pattern and rich domain model are. Therefore, use the Repository pattern or not, as you see fit.
 
-#### Additional resources
+## The Specification pattern
 
-##### The Repository pattern
+The Specification pattern (its full name would be Query-specification pattern) is a Domain-Driven Design pattern designed as the place where you can put the definition of a query with optional sorting and paging logic.
+
+The Specification pattern defines a query in an object. For example, in order to encapsulate a paged query that searches for some products, you can create a PagedProduct specification that takes the necessary input parameters (pageNumber, pageSize, filter, etc.). Then, within any Repository method (usually a List() overload) it would accept an ISpecification and run the expected query based on that specification.
+
+There are several benefits to this approach:
+
+* The specification has a name (as opposed to just a bunch of LINQ expressions) that you can discuss about.
+
+* The specification can be unit tested in isolation to ensure it is right. It can also easily be reused if you need similar behavior. For example, on an MVC View action and a Web API action, as well as in various services.
+
+* A specification can also be used to describe the shape of the data to be returned, so that queries can return just the data they required. This eliminates the need for lazy loading in web applications (which is usually not a good idea) and helps keep repository implementations from becoming cluttered with these details.
+
+An example of a generic Specification interface is the following code from [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb ).
+
+```csharp
+// https://github.com/dotnet-architecture/eShopOnWeb 
+public interface ISpecification<T>
+{
+    Expression<Func<T, bool>> Criteria { get; }
+    List<Expression<Func<T, object>>> Includes { get; }
+    List<string> IncludeStrings { get; }
+}
+```
+
+In the upcoming sections, it is explained how to implement the Specification pattern with Entity Framework Core 2.0 and how to use it from any Repository class.
+
+**Important note:** The specification pattern is an old pattern that can be implemented in many different ways, as in the following additional resources. As a pattern/idea, older approaches are good to know, but beware of older implementations that are not taking advantage of modern language capabilities like Linq and expressions.
+
+## Additional resources
+
+### The Repository pattern
 
 -   **Edward Hieatt and Rob Mee. Repository pattern.**
     [*http://martinfowler.com/eaaCatalog/repository.html*](http://martinfowler.com/eaaCatalog/repository.html)
@@ -112,7 +142,7 @@ We find repositories useful, but we acknowledge that they are not critical for y
 -   **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of the Repository pattern)
     [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
-##### Unit of Work pattern
+### Unit of Work pattern
 
 -   **Martin Fowler. Unit of Work pattern.**
     [*http://martinfowler.com/eaaCatalog/unitOfWork.html*](http://martinfowler.com/eaaCatalog/unitOfWork.html)
@@ -122,6 +152,15 @@ We find repositories useful, but we acknowledge that they are not critical for y
 -   **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application**
     [*https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application*](https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
 
+### The Specification pattern
+
+-   **The Specification pattern.**
+    [*http://deviq.com/specification-pattern/*](http://deviq.com/specification-pattern/)
+
+-   **Evans, Eric (2004). Domain Driven Design. Addison-Wesley. p. 224.**
+
+-   **Specifications. Martin Fowler**
+    [*https://www.martinfowler.com/apsupp/spec.pdf/*](https://www.martinfowler.com/apsupp/spec.pdf)
 
 >[!div class="step-by-step"]
 [Previous] (domain-events-design-implementation.md)

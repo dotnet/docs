@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 10/30/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -20,16 +20,17 @@ In eShopOnContainers, there is a container named sql.data defined in the [docker
 The SQL Server container in the sample application is configured with the following YAML code in the docker-compose.yml file, which is executed when you run docker-compose up. Note that the YAML code has consolidated configuration information from the generic docker-compose.yml file and the docker-compose.override.yml file. (Usually you would separate the environment settings from the base or static information related to the SQL Server image.)
 
 ```yml
-sql.data:
-  image: microsoft/mssql-server-linux
-  environment:
-    - SA_PASSWORD=your@password
-    - ACCEPT_EULA=Y
-  ports:
-    - "5434:1433"
+  sql.data:
+    image: microsoft/mssql-server-linux
+    environment:
+      - MSSQL_SA_PASSWORD=Pass@word
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Developer
+    ports:
+      - "5434:1433"
 ```
 
-The following docker run command can run that container:
+In a similar way, instead of using `docker-compose`, the following `docker run` command can run that container:
 
 ```
   docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD= your@password' -p 1433:1433 -d microsoft/mssql-server-linux

@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 12/11/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -43,7 +43,7 @@ To implement a simple CRUD microservice using .NET Core and Visual Studio, you s
 
 **Figure 8-6**. Creating an ASP.NET Core Web API project in Visual Studio
 
-After creating the project, you can implement your MVC controllers as you would in any other Web API project, using the Entity Framework API or other API. In the eShopOnContainers.Catalog.API project, you can see that the main dependencies for that microservice are just ASP.NET Core itself, Entity Framework, and Swashbuckle, as shown in Figure 8-7.
+After creating the project, you can implement your MVC controllers as you would in any other Web API project, using the Entity Framework API or other API. In a new Web API project, you can see that the only dependency you have in that microservice is on ASP.NET Core itself. Internally, within the `Microsoft.AspNetCore.All` dependency, it is referencing Entity Framework and many other .NET Core Nuget packages, as shown in Figure 8-7.
 
 ![](./media/image8.PNG)
 
@@ -55,13 +55,6 @@ Entity Framework (EF) Core is a lightweight, extensible, and cross-platform vers
 
 The catalog microservice uses EF and the SQL Server provider because its database is running in a container with the SQL Server for Linux Docker image. However, the database could be deployed into any SQL Server, such as Windows on-premises or Azure SQL DB. The only thing you would need to change is the connection string in the ASP.NET Web API microservice.
 
-#### Add Entity Framework Core to your dependencies
-
-You can install the NuGet package for the database provider you want to use, in this case SQL Server, from within the Visual Studio IDE or with the NuGet console. Use the following command:
-
-```
-  Install-Package Microsoft.EntityFrameworkCore.SqlServer
-```
 
 #### The data model
 
@@ -74,12 +67,20 @@ public class CatalogItem
     public string Name { get; set; }
     public string Description { get; set; }
     public decimal Price { get; set; }
+    public string PictureFileName { get; set; }
     public string PictureUri { get; set; }
     public int CatalogTypeId { get; set; }
     public CatalogType CatalogType { get; set; }
     public int CatalogBrandId { get; set; }
     public CatalogBrand CatalogBrand { get; set; }
+    public int AvailableStock { get; set; }
+    public int RestockThreshold { get; set; }
+    public int MaxStockThreshold { get; set; }
+
+    public bool OnReorder { get; set; }
     public CatalogItem() { }
+
+    // Additional code ...
 }
 ```
 
@@ -91,7 +92,6 @@ public class CatalogContext : DbContext
     public CatalogContext(DbContextOptions<CatalogContext> options) : base(options)
     {
     }
-
     public DbSet<CatalogItem> CatalogItems { get; set; }
     public DbSet<CatalogBrand> CatalogBrands { get; set; }
     public DbSet<CatalogType> CatalogTypes { get; set; }
@@ -101,9 +101,8 @@ public class CatalogContext : DbContext
 }
 ```
 
-You can have additional code in the DbContext implementation. For example, in the sample application, we have an OnModelCreating method in the CatalogContext class that automatically populates the sample data the first time it tries to access the database. This method is useful for demo data. You can also use the OnModelCreating method to customize object/database entity mappings with many other [EF extensibility points](https://blogs.msdn.microsoft.com/dotnet/2016/09/29/implementing-seeding-custom-conventions-and-interceptors-in-ef-core-1-0/).
-
-You can see further details about OnModelCreating in the [Implementing the infrastructure-persistence layer with Entity Framework Core](#implementing_infrastructure_persistence) section later in this book.
+You can have additional `DbContext` implementations. For example, in the sample Catalog.API microservice, there's a second `DbContext` named `CatalogContextSeed` where it automatically populates the sample data the first time it tries to access the database. This method is useful for demo data and for automated testing scenarios, as well. 
+Within the `DbContext`, you use the `OnModelCreating` method to customize object/database entity mappings with and other [EF extensibility points](https://blogs.msdn.microsoft.com/dotnet/2016/09/29/implementing-seeding-custom-conventions-and-interceptors-in-ef-core-1-0/).
 
 ##### Querying data from Web API controllers
 
@@ -117,13 +116,13 @@ public class CatalogController : ControllerBase
     private readonly CatalogSettings _settings;
     private readonly ICatalogIntegrationEventService _catalogIntegrationEventService;
 
-    public CatalogController(CatalogContext context,
-        IOptionsSnapshot<CatalogSettings> settings,
-        ICatalogIntegrationEventService catalogIntegrationEventService)
+    public CatalogController(CatalogContext context, 
+                             IOptionsSnapshot<CatalogSettings> settings,
+                             ICatalogIntegrationEventService catalogIntegrationEventService)
     {
         _catalogContext = context ?? throw new ArgumentNullException(nameof(context));
-        _catalogIntegrationEventService = catalogIntegrationEventService ??
-           throw new ArgumentNullException(nameof(catalogIntegrationEventService));
+        _catalogIntegrationEventService = catalogIntegrationEventService ?? throw new ArgumentNullException(nameof(catalogIntegrationEventService));
+
         _settings = settings.Value;
         ((DbContext)context).ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
     }
@@ -131,22 +130,27 @@ public class CatalogController : ControllerBase
     // GET api/v1/[controller]/items[?pageSize=3&pageIndex=10]
     [HttpGet]
     [Route("[action]")]
-    public async Task<IActionResult> Items([FromQuery]int pageSize = 10,
-    [FromQuery]int pageIndex = 0)
+    [ProducesResponseType(typeof(PaginatedItemsViewModel<CatalogItem>), (int)HttpStatusCode.OK)]
+    public async Task<IActionResult> Items([FromQuery]int pageSize = 10, 
+                                           [FromQuery]int pageIndex = 0)
+
     {
         var totalItems = await _catalogContext.CatalogItems
             .LongCountAsync();
+
         var itemsOnPage = await _catalogContext.CatalogItems
             .OrderBy(c => c.Name)
             .Skip(pageSize * pageIndex)
             .Take(pageSize)
             .ToListAsync();
+
         itemsOnPage = ChangeUriPlaceholder(itemsOnPage);
+
         var model = new PaginatedItemsViewModel<CatalogItem>(
             pageIndex, pageSize, totalItems, itemsOnPage);
+
         return Ok(model);
     } 
-
     //...
 }
 ```
@@ -157,20 +161,23 @@ Data is created, deleted, and modified in the database using instances of your e
 
 ```csharp
 var catalogItem = new CatalogItem() {CatalogTypeId=2, CatalogBrandId=2,
-   Name="Roslyn T-Shirt", Price = 12};
+                                     Name="Roslyn T-Shirt", Price = 12};
 _context.Catalog.Add(catalogItem);
 _context.SaveChanges();
 ```
 
 ##### Dependency Injection in ASP.NET Core and Web API controllers
 
-In ASP.NET Core you can use Dependency Injection (DI) out of the box. You do not need to set up a third-party Inversion of Control (IoC) container, although you can plug your preferred IoC container into the ASP.NET Core infrastructure if you want. In this case, it means that you can directly inject the required EF DBContext or additional repositories through the controller constructor. In the example above of the CatalogController class, we are injecting an object of CatalogContext type plus other objects through the CatalogController constructor.
+In ASP.NET Core you can use Dependency Injection (DI) out of the box. You do not need to set up a third-party Inversion of Control (IoC) container, although you can plug your preferred IoC container into the ASP.NET Core infrastructure if you want. In this case, it means that you can directly inject the required EF DBContext or additional repositories through the controller constructor. 
+In the example above of the `CatalogController` class, we are injecting an object of `CatalogContext` type plus other objects through the `CatalogController()` constructor.
 
-An important configuration to set up in the Web API project is the DbContext class registration into the service’s IoC container. You typically do so in the Startup class by calling the services.AddDbContext method inside the ConfigureServices method, as shown in the following example:
+An important configuration to set up in the Web API project is the DbContext class registration into the service’s IoC container. You typically do so in the `Startup` class by calling the `services.AddDbContext<DbContext>()` method inside the `ConfigureServices()` method, as shown in the following example:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
+    // Additional code...
+
     services.AddDbContext<CatalogContext>(options =>
     {
         options.UseSqlServer(Configuration["ConnectionString"],
@@ -178,10 +185,10 @@ public void ConfigureServices(IServiceCollection services)
         {
            sqlOptions.
                MigrationsAssembly(
-               typeof(Startup).
-               GetTypeInfo().
-               Assembly.
-               GetName().Name);
+                   typeof(Startup).
+                    GetTypeInfo().
+                     Assembly.
+                      GetName().Name);
 
            //Configuring Connection Resiliency:
            sqlOptions.
@@ -229,9 +236,9 @@ You can use the ASP.NET Core settings and add a ConnectionString property to you
 }
 ```
 
-The settings.json file can have default values for the ConnectionString property or for any other property. However, those properties will be overridden by the values of environment variables that you specify in the docker-compose.override.yml file.
+The settings.json file can have default values for the ConnectionString property or for any other property. However, those properties will be overridden by the values of environment variables that you specify in the docker-compose.override.yml file, when using Docker.
 
-From your docker-compose.yml or docker-compose.override.yml files, you can initialize those environment variables so that Docker will set them up as OS environment variables for you, as shown in the following docker-compose.override.yml file (the connection string and other lines wrap in this example, but it would not wrap in your own file).
+From your docker-compose.yml or docker-compose.override.yml files, you can initialize those environment variables so that Docker will set them up as OS environment variables for you, as shown in the following docker-compose.override.yml file (the connection string and other lines wrap in this example, but it would not wrap in your own code file).
 
 ```yml
 # docker-compose.override.yml
@@ -240,14 +247,12 @@ From your docker-compose.yml or docker-compose.override.yml files, you can initi
 catalog.api:
   environment:
     - ConnectionString=Server=sql.data;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=Pass@word
-    - ExternalCatalogBaseUrl=http://10.0.75.1:5101
-    #- ExternalCatalogBaseUrl=http://dockerhoststaging.westus.cloudapp.azure.com:5101
-  
+    # Additional environment variables for this service
   ports:
-    - "5101:5101"
+    - "5101:80"
 ```
 
-The docker-compose.yml files at the solution level are not only more flexible than configuration files at the project or microservice level, but also more secure. Consider that the Docker images that you build per microservice do not contain the docker-compose.yml files, only binary files and configuration files for each microservice, including the Dockerfile. But the docker-compose.yml file is not deployed along with your application; it is used only at deployment time. Therefore, placing environment variables values in those docker-compose.yml files (even without encrypting the values) is more secure than placing those values in regular .NET configuration files that are deployed with your code.
+The docker-compose.yml files at the solution level are not only more flexible than configuration files at the project or microservice level, but also more but also more secure if you override the environment variables declared at the docker-compose files with values set from your deployment tools, like from VSTS Docker deployment tasks. 
 
 Finally, you can get that value from your code by using Configuration\["ConnectionString"\], as shown in the ConfigureServices method in an earlier code example.
 
@@ -286,7 +291,6 @@ This versioning mechanism is simple and depends on the server routing the reques
     [*http://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx*](http://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx)
 
 -   **Versioning a RESTful web API**
-
     [*https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api*](https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
 
 -   **Roy Fielding. Versioning, Hypermedia, and REST**
@@ -338,9 +342,7 @@ This means you can complement your API with a nice discovery UI to help develope
 
 The API explorer is not the most important thing here. Once you have a Web API that can describe itself in Swagger metadata, your API can be used seamlessly from Swagger-based tools, including client proxy-class code generators that can target many platforms. For example, as mentioned, [AutoRest](https://github.com/Azure/AutoRest) automatically generates .NET client classes. But additional tools like [swagger-codegen](https://github.com/swagger-api/swagger-codegen) are also available, which allow code generation of API client libraries, server stubs, and documentation automatically.
 
-Currently, Swashbuckle consists of two NuGet packages: Swashbuckle.SwaggerGen and Swashbuckle.SwaggerUi. The former provides functionality to generate one or more Swagger documents directly from your API implementation and expose them as JSON endpoints. The latter provides an embedded version of the swagger-ui tool that can be served by your application and powered by the generated Swagger documents to describe your API. However, the latest versions of Swashbuckle wrap these with the Swashbuckle.AspNetCore metapackage.
-
-Note that for .NET Core Web API projects, you need to use [Swashbuckle.AspNetCore](https://www.nuget.org/packages/Swashbuckle.AspNetCore/1.0.0) version 1.0.0 or later.
+Currently, Swashbuckle consists of two several internal NuGet packages under the high-level meta- package [Swashbuckle.Swashbuckle.AspNetCoreSwaggerGen](https://www.nuget.org/packages/Swashbuckle.AspNetCore/) version 1.0.0 or later for ASP.NET Core applications.
 
 After you have installed these NuGet packages in your Web API project, you need to configure Swagger in the Startup class, as in the following code:
 
@@ -353,18 +355,20 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         // Other ConfigureServices() code...
-        services.AddSwaggerGen();
-        services.ConfigureSwaggerGen(options =>
+
+        // Add framework services.
+        services.AddSwaggerGen(options =>
         {
             options.DescribeAllEnumsAsStrings();
-            options.SingleApiVersion(new Swashbuckle.Swagger.Model.Info()
+            options.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info
             {
                 Title = "eShopOnContainers - Catalog HTTP API",
                 Version = "v1",
-                Description = "The Catalog Microservice HTTP API",
-                TermsOfService = "eShopOnContainers terms of service"
+                Description = "The Catalog Microservice HTTP API. This is a Data-Driven/CRUD microservice sample",
+                TermsOfService = "Terms Of Service"
             });
         });
+
         // Other ConfigureServices() code...
     }
 
@@ -375,7 +379,10 @@ public class Startup
         // Other Configure() code...
         // ...
         app.UseSwagger()
-            .UseSwaggerUi();
+            .UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
     }
 }
 ```
@@ -385,7 +392,7 @@ Once this is done, you can start your application and browse the following Swagg
 ```json
   http://<your-root-url>/swagger/v1/swagger.json
   
-  http://<your-root-url>/swagger/ui
+  http://<your-root-url>/swagger/
 ```
 
 You previously saw the generated UI created by Swashbuckle for a URL like http://&lt;your-root-url&gt;/swagger/ui. In Figure 8-9 you can also see how you can test any API method.

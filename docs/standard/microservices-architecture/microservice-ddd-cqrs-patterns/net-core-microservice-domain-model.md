@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 11/09/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -42,39 +42,48 @@ If you open any of the files in an aggregate folder, you can see how it is marke
 You implement a domain model in .NET by creating POCO classes that implement your domain entities. In the following example, the Order class is defined as an entity and also as an aggregate root. Because the Order class derives from the Entity base class, it can reuse common code related to entities. Bear in mind that these base classes and interfaces are defined by you in the domain model project, so it is your code, not infrastructure code from an ORM like EF.
 
 ```csharp
-// COMPATIBLE WITH ENTITY FRAMEWORK CORE 1.0
+// COMPATIBLE WITH ENTITY FRAMEWORK CORE 2.0
 // Entity is a custom base class with the ID
 public class Order : Entity, IAggregateRoot
 {
-    public int BuyerId { get; private set; }
-    public DateTime OrderDate { get; private set; }
-    public int StatusId { get; private set; }
-    public ICollection<OrderItem> OrderItems { get; private set; }
-    public Address ShippingAddress { get; private set; }
-    public int PaymentId { get; private set; }
-    protected Order() { } //Design constraint needed only by EF Core
-    public Order(int buyerId, int paymentId)
+    private DateTime _orderDate;
+    public Address Address { get; private set; }
+    private int? _buyerId;
+
+    public OrderStatus OrderStatus { get; private set; }
+    private int _orderStatusId;
+
+    private string _description;
+    private int? _paymentMethodId;
+
+    private readonly List<OrderItem> _orderItems;
+    public IReadOnlyCollection<OrderItem> OrderItems => _orderItems;
+  
+    public Order(string userId, Address address, int cardTypeId, string cardNumber, string cardSecurityNumber,
+            string cardHolderName, DateTime cardExpiration, int? buyerId = null, int? paymentMethodId = null)
     {
-        BuyerId = buyerId;
-        PaymentId = paymentId;
-        StatusId = OrderStatus.InProcess.Id;
-        OrderDate = DateTime.UtcNow;
-        OrderItems = new List<OrderItem>();
+        _orderItems = new List<OrderItem>();
+        _buyerId = buyerId;
+        _paymentMethodId = paymentMethodId;
+        _orderStatusId = OrderStatus.Submitted.Id;
+        _orderDate = DateTime.UtcNow;
+        Address = address;
+
+        // ...Additional code ...
     }
 
-    public void AddOrderItem(productName,
-        pictureUrl,
-        unitPrice,
-        discount,
-        units)
+    public void AddOrderItem(int productId, string productName, 
+                            decimal unitPrice, decimal discount, 
+                            string pictureUrl, int units = 1)
     {
         //...
         // Domain rules/logic for adding the OrderItem to the order
         // ...
-        OrderItem item = new OrderItem(this.Id, ProductId, productName,
-            pictureUrl, unitPrice, discount, units);
+
+        var orderItem = new OrderItem(productId, productName, unitPrice, discount, pictureUrl, units);
+        
+        _orderItems.Add(orderItem);
   
-        OrderItems.Add(item);
     }
     // ...
     // Additional methods with domain rules/logic related to the Order aggregate
@@ -82,7 +91,7 @@ public class Order : Entity, IAggregateRoot
 }
 ```
 
-It is important to note that this is a domain entity implemented as a POCO class. It does not have any direct dependency on Entity Framework Core or any other infrastructure framework. This implementation is as it should be, just C\# code implementing a domain model.
+It is important to note that this is a domain entity implemented as a POCO class. It does not have any direct dependency on Entity Framework Core or any other infrastructure framework. This implementation is as it should be in DDD, just C\# code implementing a domain model.
 
 In addition, the class is decorated with an interface named IAggregateRoot. That interface is an empty interface, sometimes called a *marker interface*, that is used just to indicate that this entity class is also an aggregate root.
 
@@ -90,7 +99,13 @@ A marker interface is sometimes considered as an anti-pattern; however, it is al
 
 Having an aggregate root means that most of the code related to consistency and business rules of the aggregate’s entities should be implemented as methods in the Order aggregate root class (for example, AddOrderItem when adding an OrderItem object to the aggregate). You should not create or update OrderItems objects independently or directly; the AggregateRoot class must keep control and consistency of any update operation against its child entities.
 
-For example, you should *not* do the following from any command handler method or application layer class:
+## Encapsulating data in the Domain Entities
+
+A common problem in entity models is that they expose collection navigation properties as publicly accessible list types. This allows any collaborator developer to manipulate the contents of these collection types, which may bypass important business rules related to the collection, possibly leaving the object in an invalid state. The solution to this is to expose read-only access to related collections and explicitly provide methods that define ways in which clients can manipulate them.
+
+In the previous code, note that many attributes are read-only or private and are only updatable by the class methods, so any update takes into account business domain invariants and logic specified within the class methods.
+
+For example, following DDD patterns, you should *not* do the following from any command handler method or application layer class:
 
 ```csharp
 // WRONG ACCORDING TO DDD PATTERNS – CODE AT THE APPLICATION LAYER OR
@@ -133,88 +148,22 @@ In this snippet, most of the validations or logic related to the creation of an 
 
 In addition, the new OrderItem(params) operation will also be controlled and performed by the AddOrderItem method from the Order aggregate root. Therefore, most of the logic or validations related to that operation (especially anything that impacts the consistency between other child entities) will be in a single place within the aggregate root. That is the ultimate purpose of the aggregate root pattern.
 
-When you use Entity Framework 1.1, a DDD entity can be better expressed because one of the new features of Entity Framework Core 1.1 is that it allows [mapping to fields](https://docs.microsoft.com/ef/core/modeling/backing-field) in addition to properties. This is useful when protecting collections of child entities or value objects. With this enhancement, you can use simple private fields instead of properties and you can implement any update to the field collection in public methods and provide read-only access through the AsReadOnly method.
+When you use Entity Framework Core 1.1 or later, a DDD entity can be better expressed because it allows [mapping to fields](https://docs.microsoft.com/ef/core/modeling/backing-field) in addition to properties. This is useful when protecting collections of child entities or value objects. With this enhancement, you can use simple private fields instead of properties and you can implement any update to the field collection in public methods and provide read-only access through the AsReadOnly method.
 
 In DDD you want to update the entity only through methods in the entity (or the constructor) in order to control any invariant and the consistency of the data, so properties are defined only with a get accessor. The properties are backed by private fields. Private members can only be accessed from within the class. However, there one exception: EF Core needs to set these fields as well.
 
-```csharp
-// ENTITY FRAMEWORK CORE 1.1 OR LATER
-// Entity is a custom base class with the ID
-public class Order : Entity, IAggregateRoot
-{
-    // DDD Patterns comment
-    // Using private fields, allowed since EF Core 1.1, is a much better
-    // encapsulation aligned with DDD aggregates and domain entities (instead of
-    // properties and property collections)
-    private bool _someOrderInternalState;
-    private DateTime _orderDate;
-    public Address Address { get; private set; }
-    public Buyer Buyer { get; private set; }
-    private int _buyerId;
-    public OrderStatus OrderStatus { get; private set; }
-    private int _orderStatusId;
-
-    // DDD patterns comment
-    // Using a private collection field is better for DDD aggregate encapsulation.
-    // OrderItem objects cannot be added from outside the aggregate root
-    // directly to the collection, but only through the
-    // OrderAggrergateRoot.AddOrderItem method, which includes behavior.
-    private readonly List<OrderItem> _orderItems;
-    public IEnumerable<OrderItem> OrderItems => _orderItems.AsReadOnly();
-    // Using List<>.AsReadOnly()
-    // This will create a read-only wrapper around the private list so it is
-    // protected against external updates. It's much cheaper than .ToList(),
-    // because it will not have to copy all items in a new collection.
-    // (Just one heap alloc for the wrapper instance)
-    // https://msdn.microsoft.com/en-us/library/e78dcd75(v=vs.110).aspx
-    public PaymentMethod PaymentMethod { get; private set; }
-    private int _paymentMethodId;
-
-    protected Order() { }
-
-    public Order(int buyerId, int paymentMethodId, Address address)
-    {
-        _orderItems = new List<OrderItem>();
-        _buyerId = buyerId;
-        _paymentMethodId = paymentMethodId;
-        _orderStatusId = OrderStatus.InProcess.Id;
-        _orderDate = DateTime.UtcNow;
-        Address = address;
-    }
-
-    // DDD patterns comment
-    // The Order aggregate root method AddOrderitem() should be the only way
-    // to add items to the Order object, so that any behavior (discounts, etc.)
-    // and validations are controlled by the aggregate root in order to
-    // maintain consistency within the whole aggregate.
-    public void AddOrderItem(int productId, string productName, decimal unitPrice,
-        decimal discount, string pictureUrl, int units = 1)
-    {
-        // ...
-        // Domain rules/logic here for adding OrderItem objects to the order
-        // ...
-        OrderItem item = new OrderItem(this.Id, productId, productName,
-            pictureUrl, unitPrice, discount, units);
-        OrderItems.Add(item);
-    }
-
-    // ...
-    // Additional methods with domain rules/logic related to the Order aggregate
-    // ...
-}
-```
 
 ### Mapping properties with only get accessors to the fields in the database table
 
-Mapping properties to the database table columns is not a domain responsibility, but part of the infrastructure and persistence layer. We mention this here just so you are aware of the new capabilities in EF 1.1 related to how you can model entities. Additional details on this topic are explained in the infrastructure and persistence section.
+Mapping properties to database table columns is not a domain responsibility but part of the infrastructure and persistence layer. We mention this here just so you are aware of the new capabilities in EF Core 1.1 or later related to how you can model entities. Additional details on this topic are explained in the infrastructure and persistence section.
 
-When you use EF 1.0, within the DbContext you need to map the properties that are defined only with getters to the actual fields in the database table. This is done with the HasField method of the PropertyBuilder class.
+When you use EF Core 1.0, within the DbContext you need to map the properties that are defined only with getters to the actual fields in the database table. This is done with the HasField method of the PropertyBuilder class.
 
 ### Mapping fields without properties
 
-With the new feature in EF Core 1.1 to map columns to fields, it is also possible to not use properties. Instead, you can just map columns from a table to fields. A common use case for this is private fields for an internal state that does not need to be accessed from outside the entity.
+With the feature in EF Core 1.1 or later to map columns to fields, it is also possible to not use properties. Instead, you can just map columns from a table to fields. A common use case for this is private fields for an internal state that does not need to be accessed from outside the entity.
 
-For example, in the preceding code example, the \_someOrderInternalState field has no related property for either a setter or getter. That field will also be calculated within the order’s business logic and used from the order’s methods, but it needs to be persisted in the database as well. So, in EF 1.1 there is a way to map a field without a related property to a column in the database. This is also explained in the [Infrastructure layer](#the-infrastructure-layer) section of this guide.
+For example, in the preceding OrderAggregate code example, there are several private fields, like the the  `_paymentMethodId` field, that have no related property for either a setter or getter. That field could also be calculated within the order’s business logic and used from the order’s methods, but it needs to be persisted in the database as well. So in EF Core (since v1.1) there is a way to map a field without a related property to a column in the database. This is also explained in the [Infrastructure layer](#the-infrastructure-layer) section of this guide.
 
 ### Additional resources
 

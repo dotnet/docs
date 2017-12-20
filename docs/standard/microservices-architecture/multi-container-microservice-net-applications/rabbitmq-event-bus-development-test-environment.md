@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 12/11/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -13,7 +13,9 @@ ms.topic: article
 
 We should start by saying that if you create your custom event bus based on RabbitMQ running in a container, as the eShopOnContainers application does, it should be used only for your development and test environments. You should not use it for your production environment, unless you are building it as a part of a production-ready service bus. A simple custom event bus might be missing many production-ready critical features that a commercial service bus has.
 
-The eShopOnContainers custom implementation of an event bus is basically a library using the RabbitMQ API. The implementation lets microservices subscribe to events, publish events, and receive events, as shown in Figure 8-21.
+One of the event bus custom implementation in eShopOnContainers is basically a library using the RabbitMQ API (There’s another implementation based on Azure Service Bus). 
+
+The event bus implementation with RabbitMQ lets microservices subscribe to events, publish events, and receive events, as shown in Figure 8-21.
 
 ![](./media/image22.png)
 
@@ -32,7 +34,7 @@ The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. 
 
 ## Implementing a simple publish method with RabbitMQ
 
-The following code is part of the eShopOnContainers event bus implementation for RabbitMQ, so you usually do not need to code it unless you are making improvements. The code gets a connection and channel to RabbitMQ, creates a message, and then publishes the message into the queue.
+The following code is part is a simplified event bus implementation for RabbitMQ, improved in the [actual code](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) of eShopOnContainers. You usually do not need to code it unless you are making improvements. The code gets a connection and channel to RabbitMQ, creates a message, and then publishes the message into the queue.
 
 ```csharp
 public class EventBusRabbitMQ : IEventBus, IDisposable
@@ -73,24 +75,30 @@ public class EventBusRabbitMQ : IEventBus, IDisposable
 {
     // Member objects and other methods ...
     // ...
-    public void Subscribe<T>(IIntegrationEventHandler<T> handler)
+
+    public void Subscribe<T, TH>()
         where T : IntegrationEvent
+        where TH : IIntegrationEventHandler<T>
     {
-        var eventName = typeof(T).Name;
-        if (_handlers.ContainsKey(eventName))
+        var eventName = _subsManager.GetEventKey<T>();
+        
+        var containsKey = _subsManager.HasSubscriptionsForEvent(eventName);
+        if (!containsKey)
         {
-            _handlers[eventName].Add(handler);
+            if (!_persistentConnection.IsConnected)
+            {
+                _persistentConnection.TryConnect();
+            }
+
+            using (var channel = _persistentConnection.CreateModel())
+            {
+                channel.QueueBind(queue: _queueName,
+                                    exchange: BROKER_NAME,
+                                    routingKey: eventName);
+            }
         }
-        else
-        {
-            var channel = GetChannel();
-            channel.QueueBind(queue: _queueName,
-                exchange: _brokerName,
-                routingKey: eventName);
-            _handlers.Add(eventName, new List<IIntegrationEventHandler>());
-            _handlers[eventName].Add(handler);
-            _eventTypes.Add(typeof(T));
-        }
+
+        _subsManager.AddSubscription<T, TH>();
     }
 }
 ```

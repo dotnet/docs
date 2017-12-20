@@ -4,18 +4,20 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 12/11/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
 ---
-# Using Enumeration classes instead of enum types
+# Using enumeration classes instead of enum types
 
-[Enumerations](../../../../docs/csharp/language-reference/keywords/enum.md) (*enums* for short) are a thin language wrapper around an integral type. You might want to limit their use to when you are storing one value from a closed set of values. Classification based on gender (for example, male, female, unknown), or sizes (S, M, L, XL) are good examples. Using enums for control flow or more robust abstractions can be a [code smell](http://deviq.com/code-smells/). This type of usage will lead to fragile code with many control flow statements checking values of the enum.
+[Enumerations](../../../../docs/csharp/language-reference/keywords/enum.md) (or *enum types* for short) are a thin language wrapper around an integral type. You might want to limit their use to when you are storing one value from a closed set of values. Classification based on gender (for example, male, female, unknown) or sizes (small, medium, large) are good examples. Using enums for control flow or more robust abstractions can be a [code smell](http://deviq.com/code-smells/). This type of usage leads to fragile code with many control flow statements checking values of the enum.
 
-Instead, you can create Enumeration classes that enable all the rich features of an object-oriented language. However, this is not a critical issue and in many cases, for simplicity, you can still use regular enums if that is your preference.
+Instead, you can create Enumeration classes that enable all the rich features of an object-oriented language.
 
-## Implementing Enumeration classes
+However, this isn't a critical topic and in many cases, for simplicity, you can still use regular [enum types](../../../../docs/csharp/language-reference/keywords/enum.md) if that's your preference.
+
+## Implementing an Enumeration base class
 
 The ordering microservice in eShopOnContainers provides a sample Enumeration base class implementation, as shown in the following example:
 
@@ -78,7 +80,7 @@ public abstract class Enumeration : IComparable
 }
 ```
 
-You can use this class as a type in any entity or value object, as for the following CardType Enumeration class.
+You can use this class as a type in any entity or value object, as for the following CardType Enumeration class:
 
 ```csharp
 public class CardType : Enumeration
@@ -93,7 +95,6 @@ public class CardType : Enumeration
         : base(id, name)
     {
     }
-
 
     public static IEnumerable<CardType> List()
     {

@@ -1,15 +1,15 @@
 ---
-title: How to index (C# Guide)
-description: A collection of quick tips and 
+title: How to articles (C# Guide)
+description: A collection of quick tips and short, focused code samples
 author: billwagner
 ms.author: wiwagn
-ms.date: 08/16/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: .net
 ms.devlang: devlang-csharp
 ---
 
-# How to index
+# How to (C#)
 
 The How to section of the C# Guide is where you can find quick answers
 to common questions and scenarios. The articles in this section are

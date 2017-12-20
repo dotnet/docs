@@ -640,9 +640,7 @@ Attribute
   
 ## Remarks  
  When converting to <xref:System.Boolean> from an attribute or element, allowed values are "0", "1", and any string that produces "true" or "false" after trimming and conversion to lower case.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
+ 
 ## Examples  
  The following example creates an attribute with a <xref:System.Boolean> value, then casts it to <xref:System.Boolean>.  
   
@@ -717,9 +715,7 @@ Console.WriteLine("(bool)BoolValue={0}", bv)
  Behavior is lax when casting to a <xref:System.DateTime> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.DateTime>.  
   
  This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to convert from a <xref:System.DateTime>.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
+ 
 ## Examples  
  The following example creates an attribute with date and time content. It then casts it to <xref:System.DateTime> to retrieve the value.  
   
@@ -823,9 +819,7 @@ OrderDate=10/6/2006
   
 ## Remarks  
  This conversion operator uses the <xref:System.Xml.XmlConvert> class to do the conversion.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
+
 ## Examples  
  The following example creates an attribute with date and time content. It then casts it to <xref:System.DateTimeOffset> to retrieve the value.  
   
@@ -901,9 +895,7 @@ dt=10/6/2006 12:30:00 PM -07:00
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Decimal" />.</summary>
         <returns>A <see cref="T:System.Decimal" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with a decimal value. It then retrieves the value of the attribute by casting to <xref:System.Decimal>.  
   
 ```csharp  
@@ -969,9 +961,7 @@ value=79228162514264337593543950335
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Double" />.</summary>
         <returns>A <see cref="T:System.Double" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with <xref:System.Double> content. It then retrieves the value by casting to <xref:System.Double>.  
   
 ```csharp  
@@ -1037,9 +1027,7 @@ value=1.79769313486231E+308
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Guid" />.</summary>
         <returns>A <see cref="T:System.Guid" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with a GUID as content. It then retrieves the value by casting to <xref:System.Guid>.  
   
 ```csharp  
@@ -1105,9 +1093,7 @@ value=3c1cc55b-baff-4b7a-9d17-077af3aa5730
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to an <see cref="T:System.Int32" />.</summary>
         <returns>A <see cref="T:System.Int32" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with an integer as content. It then retrieves the value by casting to <xref:System.Int32>.  
   
 ```csharp  
@@ -1173,9 +1159,7 @@ value=2147483647
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to an <see cref="T:System.Int64" />.</summary>
         <returns>A <see cref="T:System.Int64" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with a long integer as content. It then retrieves the value of the attribute by casting to <xref:System.Int64>.  
   
 ```csharp  
@@ -1245,9 +1229,7 @@ value=9223372036854775807
   
 ## Remarks  
  When converting to <xref:System.Boolean> from an attribute or element, allowed values are "0", "1", and any string that produces "true" or "false" after trimming and conversion to lower case.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
+
 ## Examples  
  The following example creates an attribute with Boolean content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Boolean>.  
   
@@ -1328,8 +1310,6 @@ Nullable boolean: BoolValue2=False
   
  This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to convert from a <xref:System.DateTime>.  
   
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
 ## Examples  
  The following example creates an attribute with a date and time as content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.DateTime>.  
   
@@ -1399,9 +1379,7 @@ Nullable DateTime: value=10/6/2006 12:30:00 PM
   
 ## Remarks  
  This conversion operator uses the <xref:System.Xml.XmlConvert> class to do the conversion.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
+ 
 ## Examples  
  The following example creates an attribute with a date and time as content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.DateTimeOffset>.  
   
@@ -1468,9 +1446,7 @@ Nullable DateTimeOffset: value=10/6/2006 12:30:00 PM -07:00
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Decimal" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Decimal" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with decimal content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Decimal>.  
   
 ```csharp  
@@ -1535,9 +1511,7 @@ Nullable decimal: value=79228162514264337593543950335
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Double" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Double" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with double precision floating point content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Double>.  
   
 ```csharp  
@@ -1602,9 +1576,7 @@ Nullable double: value=1.79769313486231E+308
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Guid" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Guid" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with guid content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Guid>.  
   
 ```csharp  
@@ -1669,9 +1641,7 @@ Nullable Guid: value=3c1cc55b-baff-4b7a-9d17-077af3aa5730
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int32" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int32" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Int32>.  
   
 ```csharp  
@@ -1735,9 +1705,7 @@ Nullable int: value=2147483647
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int64" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int64" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with long integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Int64>.  
   
 ```csharp  
@@ -1802,9 +1770,7 @@ Nullable long: value=9223372036854775807
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Single" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Single" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with single precision floating point content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Single>.  
   
 ```csharp  
@@ -1875,9 +1841,7 @@ Nullable Single: value=3.402823E+38
  The value space of an attribute or element that contains time span content is closely related to duration content as described in ISO 8601. When creating an attribute or element that contains time span content, the attribute or element values are formatted per the W3C specification. Please see the W3C specification for more details.  
   
  Behavior is lax when casting to a <xref:System.Nullable%601> of <xref:System.TimeSpan> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.Nullable%601> of <xref:System.TimeSpan>.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
+
 ## Examples  
  The following example creates an attribute with time span content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.TimeSpan>.  
   
@@ -1943,9 +1907,7 @@ Nullable TimeSpan: value=01:05:30
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt32" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt32" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with unsigned integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.UInt32>.  
   
 ```csharp  
@@ -2010,9 +1972,7 @@ Nullable uint: value=4294967295
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt64" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt64" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with unsigned long integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.UInt64>.  
   
 ```csharp  
@@ -2077,9 +2037,7 @@ Nullable ulong: value=9223372036854775807
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Single" />.</summary>
         <returns>A <see cref="T:System.Single" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with single precision floating point content. It then retrieves the value by casting to <xref:System.Single>.  
   
 ```csharp  
@@ -2145,9 +2103,7 @@ value=3.402823E+38
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.String" />.</summary>
         <returns>A <see cref="T:System.String" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with string content. It then retrieves the value by casting to <xref:System.String>.  
   
 ```csharp  
@@ -2219,9 +2175,7 @@ Console.WriteLine("(string)att={0}", str)
  The value space of an attribute or element that contains time span content is closely related to duration content as described in ISO 8601. When creating an attribute or element that contains time span content, the attribute or element values are formatted per the W3C specification. Please see the W3C specification for more details.  
   
  Behavior is lax when casting to a <xref:System.TimeSpan> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.TimeSpan>.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
+
 ## Examples  
  The following example creates an attribute with time span content. It then retrieves the value by casting to <xref:System.TimeSpan>.  
   
@@ -2288,9 +2242,7 @@ value=01:05:30
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.UInt32" />.</summary>
         <returns>A <see cref="T:System.UInt32" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with unsigned integer content. It then retrieves the value by casting to <xref:System.UInt32>.  
   
 ```csharp  
@@ -2356,9 +2308,7 @@ value=4294967295
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.UInt64" />.</summary>
         <returns>A <see cref="T:System.UInt64" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with unsigned long integer content. It then retrieves the value by casting to <xref:System.UInt64>.  
   
 ```csharp  

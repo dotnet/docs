@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class XmlAttributeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlAttributeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlAttributeAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlAttributeAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type XmlAttributeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -78,10 +80,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlAttributeAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlAttributeAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlAttributeAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -119,6 +131,8 @@
       <MemberSignature Language="C#" Value="public XmlAttributeAttribute (string attributeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlAttributeAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlAttributeAttribute : string -&gt; System.Xml.Serialization.XmlAttributeAttribute" Usage="new System.Xml.Serialization.XmlAttributeAttribute attributeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -159,6 +173,7 @@
       <MemberSignature Language="C#" Value="public XmlAttributeAttribute (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlAttributeAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlAttributeAttribute : Type -&gt; System.Xml.Serialization.XmlAttributeAttribute" Usage="new System.Xml.Serialization.XmlAttributeAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -190,6 +205,7 @@
       <MemberSignature Language="C#" Value="public XmlAttributeAttribute (string attributeName, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlAttributeAttribute.#ctor(System.String,System.Type)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlAttributeAttribute : string * Type -&gt; System.Xml.Serialization.XmlAttributeAttribute" Usage="new System.Xml.Serialization.XmlAttributeAttribute (attributeName, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -223,6 +239,8 @@
       <MemberSignature Language="C#" Value="public string AttributeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AttributeName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAttributeAttribute.AttributeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttributeName As String" />
+      <MemberSignature Language="F#" Value="member this.AttributeName : string with get, set" Usage="System.Xml.Serialization.XmlAttributeAttribute.AttributeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -271,6 +289,8 @@
       <MemberSignature Language="C#" Value="public string DataType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAttributeAttribute.DataType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataType As String" />
+      <MemberSignature Language="F#" Value="member this.DataType : string with get, set" Usage="System.Xml.Serialization.XmlAttributeAttribute.DataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -377,6 +397,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaForm Form { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaForm Form" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAttributeAttribute.Form" />
+      <MemberSignature Language="VB.NET" Value="Public Property Form As XmlSchemaForm" />
+      <MemberSignature Language="F#" Value="member this.Form : System.Xml.Schema.XmlSchemaForm with get, set" Usage="System.Xml.Serialization.XmlAttributeAttribute.Form" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -438,6 +460,8 @@ attributeFormDefault="unqualified"... >
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAttributeAttribute.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Xml.Serialization.XmlAttributeAttribute.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -487,6 +511,8 @@ attributeFormDefault="unqualified"... >
       <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAttributeAttribute.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Xml.Serialization.XmlAttributeAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -514,14 +540,5 @@ attributeFormDefault="unqualified"... >
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlAttributeAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

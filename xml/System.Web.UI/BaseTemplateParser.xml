@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class BaseTemplateParser : System.Web.UI.TemplateParser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseTemplateParser extends System.Web.UI.TemplateParser" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.BaseTemplateParser" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseTemplateParser&#xA;Inherits TemplateParser" />
+  <TypeSignature Language="F#" Value="type BaseTemplateParser = class&#xA;    inherit TemplateParser" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,7 @@
       <MemberSignature Language="C#" Value="protected BaseTemplateParser ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.BaseTemplateParser.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="protected Type GetReferencedType (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Type GetReferencedType(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.BaseTemplateParser.GetReferencedType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetReferencedType (virtualPath As String) As Type" />
+      <MemberSignature Language="F#" Value="member this.GetReferencedType : string -&gt; Type" Usage="baseTemplateParser.GetReferencedType virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,9 +80,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetUserControlType">
-      <MemberSignature Language="C#" Value="protected Type GetUserControlType (string virtualPath);" />
+      <MemberSignature Language="C#" Value="protected internal Type GetUserControlType (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Type GetUserControlType(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.BaseTemplateParser.GetUserControlType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function GetUserControlType (virtualPath As String) As Type" />
+      <MemberSignature Language="F#" Value="member this.GetUserControlType : string -&gt; Type" Usage="baseTemplateParser.GetUserControlType virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

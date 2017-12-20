@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class XmlEntity : System.Xml.XmlNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlEntity extends System.Xml.XmlNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlEntity" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlEntity&#xA;Inherits XmlNode" />
+  <TypeSignature Language="F#" Value="type XmlEntity = class&#xA;    inherit XmlNode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public override string BaseURI { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BaseURI" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.BaseURI" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BaseURI As String" />
+      <MemberSignature Language="F#" Value="member this.BaseURI : string" Usage="System.Xml.XmlEntity.BaseURI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -120,6 +124,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNode CloneNode (bool deep);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlNode CloneNode(bool deep) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlEntity.CloneNode(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CloneNode (deep As Boolean) As XmlNode" />
+      <MemberSignature Language="F#" Value="override this.CloneNode : bool -&gt; System.Xml.XmlNode" Usage="xmlEntity.CloneNode deep" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -153,6 +159,8 @@
       <MemberSignature Language="C#" Value="public override string InnerText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerText" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.InnerText" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property InnerText As String" />
+      <MemberSignature Language="F#" Value="member this.InnerText : string with get, set" Usage="System.Xml.XmlEntity.InnerText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -190,6 +198,8 @@
       <MemberSignature Language="C#" Value="public override string InnerXml { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerXml" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.InnerXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property InnerXml As String" />
+      <MemberSignature Language="F#" Value="member this.InnerXml : string with get, set" Usage="System.Xml.XmlEntity.InnerXml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -227,6 +237,8 @@
       <MemberSignature Language="C#" Value="public override bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Xml.XmlEntity.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -264,6 +276,8 @@
       <MemberSignature Language="C#" Value="public override string LocalName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.LocalName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocalName As String" />
+      <MemberSignature Language="F#" Value="member this.LocalName : string" Usage="System.Xml.XmlEntity.LocalName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -291,6 +305,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Xml.XmlEntity.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -334,6 +350,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNodeType NodeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlNodeType NodeType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.NodeType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.XmlEntity.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -377,6 +395,8 @@
       <MemberSignature Language="C#" Value="public string NotationName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NotationName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.NotationName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NotationName As String" />
+      <MemberSignature Language="F#" Value="member this.NotationName : string" Usage="System.Xml.XmlEntity.NotationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -420,6 +440,8 @@
       <MemberSignature Language="C#" Value="public override string OuterXml { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OuterXml" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.OuterXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property OuterXml As String" />
+      <MemberSignature Language="F#" Value="member this.OuterXml : string" Usage="System.Xml.XmlEntity.OuterXml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -454,6 +476,8 @@
       <MemberSignature Language="C#" Value="public string PublicId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PublicId" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.PublicId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicId As String" />
+      <MemberSignature Language="F#" Value="member this.PublicId : string" Usage="System.Xml.XmlEntity.PublicId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -497,6 +521,8 @@
       <MemberSignature Language="C#" Value="public string SystemId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SystemId" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.SystemId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemId As String" />
+      <MemberSignature Language="F#" Value="member this.SystemId : string" Usage="System.Xml.XmlEntity.SystemId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -540,6 +566,8 @@
       <MemberSignature Language="C#" Value="public override void WriteContentTo (System.Xml.XmlWriter w);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteContentTo(class System.Xml.XmlWriter w) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlEntity.WriteContentTo(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteContentTo (w As XmlWriter)" />
+      <MemberSignature Language="F#" Value="override this.WriteContentTo : System.Xml.XmlWriter -&gt; unit" Usage="xmlEntity.WriteContentTo w" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -577,6 +605,8 @@
       <MemberSignature Language="C#" Value="public override void WriteTo (System.Xml.XmlWriter w);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteTo(class System.Xml.XmlWriter w) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlEntity.WriteTo(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (w As XmlWriter)" />
+      <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="xmlEntity.WriteTo w" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

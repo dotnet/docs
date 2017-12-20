@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface ISelectionProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISelectionProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ISelectionProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISelectionProvider" />
+  <TypeSignature Language="F#" Value="type ISelectionProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public bool CanSelectMultiple { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanSelectMultiple" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanSelectMultiple As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanSelectMultiple : bool" Usage="System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.IRawElementProviderSimple[] GetSelection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] GetSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ISelectionProvider.GetSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelection () As IRawElementProviderSimple()" />
+      <MemberSignature Language="F#" Value="abstract member GetSelection : unit -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple[]" Usage="iSelectionProvider.GetSelection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -103,6 +109,8 @@
       <MemberSignature Language="C#" Value="public bool IsSelectionRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSelectionRequired" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSelectionRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSelectionRequired : bool" Usage="System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class FontStretches" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FontStretches extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.FontStretches" />
+  <TypeSignature Language="VB.NET" Value="Public Class FontStretches" />
+  <TypeSignature Language="F#" Value="type FontStretches = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStretch Condensed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch Condensed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.Condensed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Condensed As FontStretch" />
+      <MemberSignature Language="F#" Value="member this.Condensed : System.Windows.FontStretch" Usage="System.Windows.FontStretches.Condensed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStretch Expanded { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch Expanded" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.Expanded" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Expanded As FontStretch" />
+      <MemberSignature Language="F#" Value="member this.Expanded : System.Windows.FontStretch" Usage="System.Windows.FontStretches.Expanded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -93,6 +99,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStretch ExtraCondensed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch ExtraCondensed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.ExtraCondensed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ExtraCondensed As FontStretch" />
+      <MemberSignature Language="F#" Value="member this.ExtraCondensed : System.Windows.FontStretch" Usage="System.Windows.FontStretches.ExtraCondensed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -118,6 +126,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStretch ExtraExpanded { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch ExtraExpanded" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.ExtraExpanded" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ExtraExpanded As FontStretch" />
+      <MemberSignature Language="F#" Value="member this.ExtraExpanded : System.Windows.FontStretch" Usage="System.Windows.FontStretches.ExtraExpanded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -143,6 +153,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStretch Medium { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch Medium" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.Medium" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Medium As FontStretch" />
+      <MemberSignature Language="F#" Value="member this.Medium : System.Windows.FontStretch" Usage="System.Windows.FontStretches.Medium" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -168,6 +180,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStretch Normal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch Normal" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.Normal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Normal As FontStretch" />
+      <MemberSignature Language="F#" Value="member this.Normal : System.Windows.FontStretch" Usage="System.Windows.FontStretches.Normal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -193,6 +207,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStretch SemiCondensed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch SemiCondensed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.SemiCondensed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SemiCondensed As FontStretch" />
+      <MemberSignature Language="F#" Value="member this.SemiCondensed : System.Windows.FontStretch" Usage="System.Windows.FontStretches.SemiCondensed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -218,6 +234,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStretch SemiExpanded { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch SemiExpanded" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.SemiExpanded" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SemiExpanded As FontStretch" />
+      <MemberSignature Language="F#" Value="member this.SemiExpanded : System.Windows.FontStretch" Usage="System.Windows.FontStretches.SemiExpanded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -243,6 +261,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStretch UltraCondensed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch UltraCondensed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.UltraCondensed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UltraCondensed As FontStretch" />
+      <MemberSignature Language="F#" Value="member this.UltraCondensed : System.Windows.FontStretch" Usage="System.Windows.FontStretches.UltraCondensed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -268,6 +288,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStretch UltraExpanded { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch UltraExpanded" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.UltraExpanded" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UltraExpanded As FontStretch" />
+      <MemberSignature Language="F#" Value="member this.UltraExpanded : System.Windows.FontStretch" Usage="System.Windows.FontStretches.UltraExpanded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class InheritanceAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InheritanceAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.InheritanceAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InheritanceAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type InheritanceAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,10 +43,21 @@
     <altmember cref="T:System.Attribute" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.InheritanceAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InheritanceAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InheritanceAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,6 +82,7 @@
       <MemberSignature Language="C#" Value="public InheritanceAttribute (System.ComponentModel.InheritanceLevel inheritanceLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ComponentModel.InheritanceLevel inheritanceLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InheritanceAttribute.#ctor(System.ComponentModel.InheritanceLevel)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.InheritanceAttribute : System.ComponentModel.InheritanceLevel -&gt; System.ComponentModel.InheritanceAttribute" Usage="new System.ComponentModel.InheritanceAttribute inheritanceLevel" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +111,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.InheritanceAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.InheritanceAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.InheritanceAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As InheritanceAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.InheritanceAttribute" Usage="System.ComponentModel.InheritanceAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -130,6 +146,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InheritanceAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="inheritanceAttribute.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -162,6 +180,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InheritanceAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="inheritanceAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -190,6 +210,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.InheritanceLevel InheritanceLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.InheritanceLevel InheritanceLevel" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.InheritanceAttribute.InheritanceLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InheritanceLevel As InheritanceLevel" />
+      <MemberSignature Language="F#" Value="member this.InheritanceLevel : System.ComponentModel.InheritanceLevel" Usage="System.ComponentModel.InheritanceAttribute.InheritanceLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -218,6 +240,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.InheritanceAttribute Inherited;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.InheritanceAttribute Inherited" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.InheritanceAttribute.Inherited" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Inherited As InheritanceAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Inherited : System.ComponentModel.InheritanceAttribute" Usage="System.ComponentModel.InheritanceAttribute.Inherited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -251,6 +275,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.InheritanceAttribute InheritedReadOnly;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.InheritanceAttribute InheritedReadOnly" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.InheritanceAttribute.InheritedReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InheritedReadOnly As InheritanceAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable InheritedReadOnly : System.ComponentModel.InheritanceAttribute" Usage="System.ComponentModel.InheritanceAttribute.InheritedReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -284,6 +310,8 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InheritanceAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="inheritanceAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -314,6 +342,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.InheritanceAttribute NotInherited;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.InheritanceAttribute NotInherited" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.InheritanceAttribute.NotInherited" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NotInherited As InheritanceAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable NotInherited : System.ComponentModel.InheritanceAttribute" Usage="System.ComponentModel.InheritanceAttribute.NotInherited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -347,6 +377,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InheritanceAttribute.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="inheritanceAttribute.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -371,15 +403,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.InheritanceAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

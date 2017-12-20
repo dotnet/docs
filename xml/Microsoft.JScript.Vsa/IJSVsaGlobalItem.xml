@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IJSVsaGlobalItem : Microsoft.JScript.Vsa.IJSVsaItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IJSVsaGlobalItem implements class Microsoft.JScript.Vsa.IJSVsaItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.IJSVsaGlobalItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IJSVsaGlobalItem&#xA;Implements IJSVsaItem" />
+  <TypeSignature Language="F#" Value="type IJSVsaGlobalItem = interface&#xA;    interface IJSVsaItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public bool ExposeMembers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExposeMembers" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.IJSVsaGlobalItem.ExposeMembers" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExposeMembers As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ExposeMembers : bool with get, set" Usage="Microsoft.JScript.Vsa.IJSVsaGlobalItem.ExposeMembers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public string TypeString { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeString" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.IJSVsaGlobalItem.TypeString" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeString As String" />
+      <MemberSignature Language="F#" Value="member this.TypeString : string" Usage="Microsoft.JScript.Vsa.IJSVsaGlobalItem.TypeString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

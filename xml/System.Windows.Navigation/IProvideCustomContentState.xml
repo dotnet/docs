@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IProvideCustomContentState" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProvideCustomContentState" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.IProvideCustomContentState" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProvideCustomContentState" />
+  <TypeSignature Language="F#" Value="type IProvideCustomContentState = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +60,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Navigation.CustomContentState GetContentState ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Navigation.CustomContentState GetContentState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.IProvideCustomContentState.GetContentState" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetContentState () As CustomContentState" />
+      <MemberSignature Language="F#" Value="abstract member GetContentState : unit -&gt; System.Windows.Navigation.CustomContentState" Usage="iProvideCustomContentState.GetContentState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

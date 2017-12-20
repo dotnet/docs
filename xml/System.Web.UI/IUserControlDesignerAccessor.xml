@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IUserControlDesignerAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUserControlDesignerAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IUserControlDesignerAccessor" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IUserControlDesignerAccessor" />
+  <TypeSignature Language="F#" Value="type IUserControlDesignerAccessor = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +18,8 @@
       <MemberSignature Language="C#" Value="public string InnerText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IUserControlDesignerAccessor.InnerText" />
+      <MemberSignature Language="VB.NET" Value="Public Property InnerText As String" />
+      <MemberSignature Language="F#" Value="member this.InnerText : string with get, set" Usage="System.Web.UI.IUserControlDesignerAccessor.InnerText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public string TagName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TagName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IUserControlDesignerAccessor.TagName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TagName As String" />
+      <MemberSignature Language="F#" Value="member this.TagName : string with get, set" Usage="System.Web.UI.IUserControlDesignerAccessor.TagName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

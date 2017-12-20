@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate TResult Func&lt;in T1,in T2,out TResult&gt;(T1 arg1, T2 arg2);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Func`3&lt;- T1, - T2, + TResult&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Func`3" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function Func(Of In T1, In T2, Out TResult)(arg1 As T1, arg2 As T2) As TResult " />
+  <TypeSignature Language="F#" Value="type Func&lt;'T1, 'T2, 'Result&gt; = delegate of 'T1 * 'T2 -&gt; 'Result" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

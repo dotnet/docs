@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class XmlDocument : System.Xml.XmlNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDocument extends System.Xml.XmlNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlDocument" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlDocument&#xA;Inherits XmlNode" />
+  <TypeSignature Language="F#" Value="type XmlDocument = class&#xA;    inherit XmlNode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -286,10 +288,20 @@
     <altmember cref="T:System.Xml.XmlNodeChangedEventHandler" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlDocument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlDocument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -332,9 +344,11 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected XmlDocument (System.Xml.XmlImplementation imp);" />
+      <MemberSignature Language="C#" Value="protected internal XmlDocument (System.Xml.XmlImplementation imp);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlImplementation imp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.#ctor(System.Xml.XmlImplementation)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (imp As XmlImplementation)" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlDocument : System.Xml.XmlImplementation -&gt; System.Xml.XmlDocument" Usage="new System.Xml.XmlDocument imp" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -366,6 +380,8 @@
       <MemberSignature Language="C#" Value="public XmlDocument (System.Xml.XmlNameTable nt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlNameTable nt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.#ctor(System.Xml.XmlNameTable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (nt As XmlNameTable)" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlDocument : System.Xml.XmlNameTable -&gt; System.Xml.XmlDocument" Usage="new System.Xml.XmlDocument nt" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -397,6 +413,8 @@
       <MemberSignature Language="C#" Value="public override string BaseURI { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BaseURI" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.BaseURI" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BaseURI As String" />
+      <MemberSignature Language="F#" Value="member this.BaseURI : string" Usage="System.Xml.XmlDocument.BaseURI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -439,6 +457,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNode CloneNode (bool deep);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlNode CloneNode(bool deep) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CloneNode(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CloneNode (deep As Boolean) As XmlNode" />
+      <MemberSignature Language="F#" Value="override this.CloneNode : bool -&gt; System.Xml.XmlNode" Usage="xmlDocument.CloneNode deep" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -489,10 +509,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Xml.XmlAttribute" /> with the specified name.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateAttribute">
       <MemberSignature Language="C#" Value="public System.Xml.XmlAttribute CreateAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlAttribute CreateAttribute(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateAttribute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateAttribute (name As String) As XmlAttribute" />
+      <MemberSignature Language="F#" Value="member this.CreateAttribute : string -&gt; System.Xml.XmlAttribute" Usage="xmlDocument.CreateAttribute name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -544,6 +575,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlAttribute CreateAttribute (string qualifiedName, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlAttribute CreateAttribute(string qualifiedName, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateAttribute (qualifiedName As String, namespaceURI As String) As XmlAttribute" />
+      <MemberSignature Language="F#" Value="member this.CreateAttribute : string * string -&gt; System.Xml.XmlAttribute" Usage="xmlDocument.CreateAttribute (qualifiedName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -588,6 +621,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlAttribute CreateAttribute (string prefix, string localName, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlAttribute CreateAttribute(string prefix, string localName, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateAttribute(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAttribute (prefix As String, localName As String, namespaceURI As String) As XmlAttribute" />
+      <MemberSignature Language="F#" Value="abstract member CreateAttribute : string * string * string -&gt; System.Xml.XmlAttribute&#xA;override this.CreateAttribute : string * string * string -&gt; System.Xml.XmlAttribute" Usage="xmlDocument.CreateAttribute (prefix, localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -636,6 +671,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlCDataSection CreateCDataSection (string data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlCDataSection CreateCDataSection(string data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateCDataSection(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateCDataSection (data As String) As XmlCDataSection" />
+      <MemberSignature Language="F#" Value="abstract member CreateCDataSection : string -&gt; System.Xml.XmlCDataSection&#xA;override this.CreateCDataSection : string -&gt; System.Xml.XmlCDataSection" Usage="xmlDocument.CreateCDataSection data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -689,6 +726,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlComment CreateComment (string data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlComment CreateComment(string data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateComment(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateComment (data As String) As XmlComment" />
+      <MemberSignature Language="F#" Value="abstract member CreateComment : string -&gt; System.Xml.XmlComment&#xA;override this.CreateComment : string -&gt; System.Xml.XmlComment" Usage="xmlDocument.CreateComment data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -739,9 +778,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultAttribute">
-      <MemberSignature Language="C#" Value="protected virtual System.Xml.XmlAttribute CreateDefaultAttribute (string prefix, string localName, string namespaceURI);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Xml.XmlAttribute CreateDefaultAttribute (string prefix, string localName, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Xml.XmlAttribute CreateDefaultAttribute(string prefix, string localName, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateDefaultAttribute(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateDefaultAttribute (prefix As String, localName As String, namespaceURI As String) As XmlAttribute" />
+      <MemberSignature Language="F#" Value="abstract member CreateDefaultAttribute : string * string * string -&gt; System.Xml.XmlAttribute&#xA;override this.CreateDefaultAttribute : string * string * string -&gt; System.Xml.XmlAttribute" Usage="xmlDocument.CreateDefaultAttribute (prefix, localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -784,6 +825,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlDocumentFragment CreateDocumentFragment ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlDocumentFragment CreateDocumentFragment() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateDocumentFragment" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDocumentFragment () As XmlDocumentFragment" />
+      <MemberSignature Language="F#" Value="abstract member CreateDocumentFragment : unit -&gt; System.Xml.XmlDocumentFragment&#xA;override this.CreateDocumentFragment : unit -&gt; System.Xml.XmlDocumentFragment" Usage="xmlDocument.CreateDocumentFragment " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -832,6 +875,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlDocumentType CreateDocumentType (string name, string publicId, string systemId, string internalSubset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlDocumentType CreateDocumentType(string name, string publicId, string systemId, string internalSubset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateDocumentType(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDocumentType (name As String, publicId As String, systemId As String, internalSubset As String) As XmlDocumentType" />
+      <MemberSignature Language="F#" Value="abstract member CreateDocumentType : string * string * string * string -&gt; System.Xml.XmlDocumentType&#xA;override this.CreateDocumentType : string * string * string * string -&gt; System.Xml.XmlDocumentType" Usage="xmlDocument.CreateDocumentType (name, publicId, systemId, internalSubset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -892,10 +937,21 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Xml.XmlElement" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateElement">
       <MemberSignature Language="C#" Value="public System.Xml.XmlElement CreateElement (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlElement CreateElement(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateElement(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateElement (name As String) As XmlElement" />
+      <MemberSignature Language="F#" Value="member this.CreateElement : string -&gt; System.Xml.XmlElement" Usage="xmlDocument.CreateElement name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -951,6 +1007,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlElement CreateElement (string qualifiedName, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlElement CreateElement(string qualifiedName, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateElement(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateElement (qualifiedName As String, namespaceURI As String) As XmlElement" />
+      <MemberSignature Language="F#" Value="member this.CreateElement : string * string -&gt; System.Xml.XmlElement" Usage="xmlDocument.CreateElement (qualifiedName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1011,6 +1069,8 @@ elem=doc.CreateElement("xy:item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlElement CreateElement (string prefix, string localName, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlElement CreateElement(string prefix, string localName, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateElement(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateElement (prefix As String, localName As String, namespaceURI As String) As XmlElement" />
+      <MemberSignature Language="F#" Value="abstract member CreateElement : string * string * string -&gt; System.Xml.XmlElement&#xA;override this.CreateElement : string * string * string -&gt; System.Xml.XmlElement" Usage="xmlDocument.CreateElement (prefix, localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1083,6 +1143,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlEntityReference CreateEntityReference (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlEntityReference CreateEntityReference(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateEntityReference(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateEntityReference (name As String) As XmlEntityReference" />
+      <MemberSignature Language="F#" Value="abstract member CreateEntityReference : string -&gt; System.Xml.XmlEntityReference&#xA;override this.CreateEntityReference : string -&gt; System.Xml.XmlEntityReference" Usage="xmlDocument.CreateEntityReference name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1149,10 +1211,22 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <exception cref="T:System.ArgumentException">The name is invalid (for example, names starting with'#' are invalid.)</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateNavigator">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Xml.XPath.XPathNavigator" /> object for navigating this document.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateNavigator">
       <MemberSignature Language="C#" Value="public override System.Xml.XPath.XPathNavigator CreateNavigator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XPath.XPathNavigator CreateNavigator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateNavigator" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateNavigator () As XPathNavigator" />
+      <MemberSignature Language="F#" Value="override this.CreateNavigator : unit -&gt; System.Xml.XPath.XPathNavigator" Usage="xmlDocument.CreateNavigator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1190,9 +1264,11 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       </Docs>
     </Member>
     <Member MemberName="CreateNavigator">
-      <MemberSignature Language="C#" Value="protected virtual System.Xml.XPath.XPathNavigator CreateNavigator (System.Xml.XmlNode node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Xml.XPath.XPathNavigator CreateNavigator (System.Xml.XmlNode node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Xml.XPath.XPathNavigator CreateNavigator(class System.Xml.XmlNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateNavigator(System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateNavigator (node As XmlNode) As XPathNavigator" />
+      <MemberSignature Language="F#" Value="override this.CreateNavigator : System.Xml.XmlNode -&gt; System.Xml.XPath.XPathNavigator" Usage="xmlDocument.CreateNavigator node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1232,10 +1308,21 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Xml.XmlNode" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateNode">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode CreateNode (string nodeTypeString, string name, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode CreateNode(string nodeTypeString, string name, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateNode(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateNode (nodeTypeString As String, name As String, namespaceURI As String) As XmlNode" />
+      <MemberSignature Language="F#" Value="abstract member CreateNode : string * string * string -&gt; System.Xml.XmlNode&#xA;override this.CreateNode : string * string * string -&gt; System.Xml.XmlNode" Usage="xmlDocument.CreateNode (nodeTypeString, name, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1333,6 +1420,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode CreateNode (System.Xml.XmlNodeType type, string name, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode CreateNode(valuetype System.Xml.XmlNodeType type, string name, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateNode(System.Xml.XmlNodeType,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateNode (type As XmlNodeType, name As String, namespaceURI As String) As XmlNode" />
+      <MemberSignature Language="F#" Value="abstract member CreateNode : System.Xml.XmlNodeType * string * string -&gt; System.Xml.XmlNode&#xA;override this.CreateNode : System.Xml.XmlNodeType * string * string -&gt; System.Xml.XmlNode" Usage="xmlDocument.CreateNode (type, name, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1413,6 +1502,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode CreateNode (System.Xml.XmlNodeType type, string prefix, string name, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode CreateNode(valuetype System.Xml.XmlNodeType type, string prefix, string name, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateNode(System.Xml.XmlNodeType,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateNode (type As XmlNodeType, prefix As String, name As String, namespaceURI As String) As XmlNode" />
+      <MemberSignature Language="F#" Value="abstract member CreateNode : System.Xml.XmlNodeType * string * string * string -&gt; System.Xml.XmlNode&#xA;override this.CreateNode : System.Xml.XmlNodeType * string * string * string -&gt; System.Xml.XmlNode" Usage="xmlDocument.CreateNode (type, prefix, name, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1495,6 +1586,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlProcessingInstruction CreateProcessingInstruction (string target, string data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlProcessingInstruction CreateProcessingInstruction(string target, string data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateProcessingInstruction(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateProcessingInstruction (target As String, data As String) As XmlProcessingInstruction" />
+      <MemberSignature Language="F#" Value="abstract member CreateProcessingInstruction : string * string -&gt; System.Xml.XmlProcessingInstruction&#xA;override this.CreateProcessingInstruction : string * string -&gt; System.Xml.XmlProcessingInstruction" Usage="xmlDocument.CreateProcessingInstruction (target, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1550,6 +1643,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlSignificantWhitespace CreateSignificantWhitespace (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlSignificantWhitespace CreateSignificantWhitespace(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateSignificantWhitespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSignificantWhitespace (text As String) As XmlSignificantWhitespace" />
+      <MemberSignature Language="F#" Value="abstract member CreateSignificantWhitespace : string -&gt; System.Xml.XmlSignificantWhitespace&#xA;override this.CreateSignificantWhitespace : string -&gt; System.Xml.XmlSignificantWhitespace" Usage="xmlDocument.CreateSignificantWhitespace text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1603,6 +1698,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlText CreateTextNode (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlText CreateTextNode(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateTextNode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateTextNode (text As String) As XmlText" />
+      <MemberSignature Language="F#" Value="abstract member CreateTextNode : string -&gt; System.Xml.XmlText&#xA;override this.CreateTextNode : string -&gt; System.Xml.XmlText" Usage="xmlDocument.CreateTextNode text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1656,6 +1753,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlWhitespace CreateWhitespace (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlWhitespace CreateWhitespace(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateWhitespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateWhitespace (text As String) As XmlWhitespace" />
+      <MemberSignature Language="F#" Value="abstract member CreateWhitespace : string -&gt; System.Xml.XmlWhitespace&#xA;override this.CreateWhitespace : string -&gt; System.Xml.XmlWhitespace" Usage="xmlDocument.CreateWhitespace text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1709,6 +1808,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlDeclaration CreateXmlDeclaration (string version, string encoding, string standalone);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlDeclaration CreateXmlDeclaration(string version, string encoding, string standalone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateXmlDeclaration(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateXmlDeclaration (version As String, encoding As String, standalone As String) As XmlDeclaration" />
+      <MemberSignature Language="F#" Value="abstract member CreateXmlDeclaration : string * string * string -&gt; System.Xml.XmlDeclaration&#xA;override this.CreateXmlDeclaration : string * string * string -&gt; System.Xml.XmlDeclaration" Usage="xmlDocument.CreateXmlDeclaration (version, encoding, standalone)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1774,6 +1875,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public System.Xml.XmlElement DocumentElement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlElement DocumentElement" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.DocumentElement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentElement As XmlElement" />
+      <MemberSignature Language="F#" Value="member this.DocumentElement : System.Xml.XmlElement" Usage="System.Xml.XmlDocument.DocumentElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1822,6 +1925,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlDocumentType DocumentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDocumentType DocumentType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.DocumentType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DocumentType As XmlDocumentType" />
+      <MemberSignature Language="F#" Value="member this.DocumentType : System.Xml.XmlDocumentType" Usage="System.Xml.XmlDocument.DocumentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1869,6 +1974,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlElement GetElementById (string elementId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlElement GetElementById(string elementId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.GetElementById(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetElementById (elementId As String) As XmlElement" />
+      <MemberSignature Language="F#" Value="abstract member GetElementById : string -&gt; System.Xml.XmlElement&#xA;override this.GetElementById : string -&gt; System.Xml.XmlElement" Usage="xmlDocument.GetElementById elementId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1934,10 +2041,21 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetElementsByTagName">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Xml.XmlNodeList" /> containing a list of all descendant elements that match the specified name.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetElementsByTagName">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNodeList GetElementsByTagName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNodeList GetElementsByTagName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.GetElementsByTagName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetElementsByTagName (name As String) As XmlNodeList" />
+      <MemberSignature Language="F#" Value="abstract member GetElementsByTagName : string -&gt; System.Xml.XmlNodeList&#xA;override this.GetElementsByTagName : string -&gt; System.Xml.XmlNodeList" Usage="xmlDocument.GetElementsByTagName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1996,6 +2114,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNodeList GetElementsByTagName (string localName, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNodeList GetElementsByTagName(string localName, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.GetElementsByTagName(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetElementsByTagName (localName As String, namespaceURI As String) As XmlNodeList" />
+      <MemberSignature Language="F#" Value="abstract member GetElementsByTagName : string * string -&gt; System.Xml.XmlNodeList&#xA;override this.GetElementsByTagName : string * string -&gt; System.Xml.XmlNodeList" Usage="xmlDocument.GetElementsByTagName (localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2043,6 +2163,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public System.Xml.XmlImplementation Implementation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlImplementation Implementation" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.Implementation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Implementation As XmlImplementation" />
+      <MemberSignature Language="F#" Value="member this.Implementation : System.Xml.XmlImplementation" Usage="System.Xml.XmlDocument.Implementation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2092,6 +2214,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode ImportNode (System.Xml.XmlNode node, bool deep);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode ImportNode(class System.Xml.XmlNode node, bool deep) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ImportNode (node As XmlNode, deep As Boolean) As XmlNode" />
+      <MemberSignature Language="F#" Value="abstract member ImportNode : System.Xml.XmlNode * bool -&gt; System.Xml.XmlNode&#xA;override this.ImportNode : System.Xml.XmlNode * bool -&gt; System.Xml.XmlNode" Usage="xmlDocument.ImportNode (node, deep)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2175,6 +2299,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public override string InnerText { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerText" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.InnerText" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property InnerText As String" />
+      <MemberSignature Language="F#" Value="member this.InnerText : string" Usage="System.Xml.XmlDocument.InnerText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2214,6 +2340,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public override string InnerXml { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerXml" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.InnerXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property InnerXml As String" />
+      <MemberSignature Language="F#" Value="member this.InnerXml : string with get, set" Usage="System.Xml.XmlDocument.InnerXml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2330,6 +2458,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public override bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Xml.XmlDocument.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2376,10 +2506,21 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the specified XML data from a <see cref="T:System.IO.Stream" />, a URL, a <see cref="T:System.IO.TextReader" />, or an <see cref="T:System.Xml.XmlReader" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Load">
       <MemberSignature Language="C#" Value="public virtual void Load (System.IO.Stream inStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(class System.IO.Stream inStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Load(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Load (inStream As Stream)" />
+      <MemberSignature Language="F#" Value="abstract member Load : System.IO.Stream -&gt; unit&#xA;override this.Load : System.IO.Stream -&gt; unit" Usage="xmlDocument.Load inStream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2433,6 +2574,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual void Load (System.IO.TextReader txtReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(class System.IO.TextReader txtReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Load(System.IO.TextReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Load (txtReader As TextReader)" />
+      <MemberSignature Language="F#" Value="abstract member Load : System.IO.TextReader -&gt; unit&#xA;override this.Load : System.IO.TextReader -&gt; unit" Usage="xmlDocument.Load txtReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2494,6 +2637,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual void Load (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Load(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Load (filename As String)" />
+      <MemberSignature Language="F#" Value="abstract member Load : string -&gt; unit&#xA;override this.Load : string -&gt; unit" Usage="xmlDocument.Load filename" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2566,6 +2711,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual void Load (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Load(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Load (reader As XmlReader)" />
+      <MemberSignature Language="F#" Value="abstract member Load : System.Xml.XmlReader -&gt; unit&#xA;override this.Load : System.Xml.XmlReader -&gt; unit" Usage="xmlDocument.Load reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2650,6 +2797,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual void LoadXml (string xml);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadXml(string xml) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.LoadXml(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub LoadXml (xml As String)" />
+      <MemberSignature Language="F#" Value="abstract member LoadXml : string -&gt; unit&#xA;override this.LoadXml : string -&gt; unit" Usage="xmlDocument.LoadXml xml" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2708,6 +2857,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public override string LocalName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.LocalName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocalName As String" />
+      <MemberSignature Language="F#" Value="member this.LocalName : string" Usage="System.Xml.XmlDocument.LocalName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2746,6 +2897,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public override string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Xml.XmlDocument.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2784,6 +2937,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public System.Xml.XmlNameTable NameTable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNameTable NameTable" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.NameTable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NameTable As XmlNameTable" />
+      <MemberSignature Language="F#" Value="member this.NameTable : System.Xml.XmlNameTable" Usage="System.Xml.XmlDocument.NameTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2827,6 +2982,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public event System.Xml.XmlNodeChangedEventHandler NodeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Xml.XmlNodeChangedEventHandler NodeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Xml.XmlDocument.NodeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event NodeChanged As XmlNodeChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NodeChanged : System.Xml.XmlNodeChangedEventHandler " Usage="member this.NodeChanged : System.Xml.XmlNodeChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2867,6 +3024,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public event System.Xml.XmlNodeChangedEventHandler NodeChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Xml.XmlNodeChangedEventHandler NodeChanging" />
       <MemberSignature Language="DocId" Value="E:System.Xml.XmlDocument.NodeChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event NodeChanging As XmlNodeChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NodeChanging : System.Xml.XmlNodeChangedEventHandler " Usage="member this.NodeChanging : System.Xml.XmlNodeChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2907,6 +3066,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public event System.Xml.XmlNodeChangedEventHandler NodeInserted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Xml.XmlNodeChangedEventHandler NodeInserted" />
       <MemberSignature Language="DocId" Value="E:System.Xml.XmlDocument.NodeInserted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event NodeInserted As XmlNodeChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NodeInserted : System.Xml.XmlNodeChangedEventHandler " Usage="member this.NodeInserted : System.Xml.XmlNodeChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2945,6 +3106,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public event System.Xml.XmlNodeChangedEventHandler NodeInserting;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Xml.XmlNodeChangedEventHandler NodeInserting" />
       <MemberSignature Language="DocId" Value="E:System.Xml.XmlDocument.NodeInserting" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event NodeInserting As XmlNodeChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NodeInserting : System.Xml.XmlNodeChangedEventHandler " Usage="member this.NodeInserting : System.Xml.XmlNodeChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2985,6 +3148,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public event System.Xml.XmlNodeChangedEventHandler NodeRemoved;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Xml.XmlNodeChangedEventHandler NodeRemoved" />
       <MemberSignature Language="DocId" Value="E:System.Xml.XmlDocument.NodeRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event NodeRemoved As XmlNodeChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NodeRemoved : System.Xml.XmlNodeChangedEventHandler " Usage="member this.NodeRemoved : System.Xml.XmlNodeChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3023,6 +3188,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public event System.Xml.XmlNodeChangedEventHandler NodeRemoving;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Xml.XmlNodeChangedEventHandler NodeRemoving" />
       <MemberSignature Language="DocId" Value="E:System.Xml.XmlDocument.NodeRemoving" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event NodeRemoving As XmlNodeChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NodeRemoving : System.Xml.XmlNodeChangedEventHandler " Usage="member this.NodeRemoving : System.Xml.XmlNodeChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3063,6 +3230,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNodeType NodeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlNodeType NodeType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.NodeType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.XmlDocument.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3095,6 +3264,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public override System.Xml.XmlDocument OwnerDocument { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDocument OwnerDocument" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.OwnerDocument" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property OwnerDocument As XmlDocument" />
+      <MemberSignature Language="F#" Value="member this.OwnerDocument : System.Xml.XmlDocument" Usage="System.Xml.XmlDocument.OwnerDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3126,6 +3297,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNode ParentNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode ParentNode" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.ParentNode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ParentNode As XmlNode" />
+      <MemberSignature Language="F#" Value="member this.ParentNode : System.Xml.XmlNode" Usage="System.Xml.XmlDocument.ParentNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3157,6 +3330,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public bool PreserveWhitespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PreserveWhitespace" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.PreserveWhitespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreserveWhitespace As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PreserveWhitespace : bool with get, set" Usage="System.Xml.XmlDocument.PreserveWhitespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3215,6 +3390,8 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode ReadNode (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode ReadNode(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.ReadNode(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadNode (reader As XmlReader) As XmlNode" />
+      <MemberSignature Language="F#" Value="abstract member ReadNode : System.Xml.XmlReader -&gt; System.Xml.XmlNode&#xA;override this.ReadNode : System.Xml.XmlReader -&gt; System.Xml.XmlNode" Usage="xmlDocument.ReadNode reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3289,10 +3466,21 @@ while (reader.MoveToNextAttribute())
         <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the XML document to the specified location.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Save">
       <MemberSignature Language="C#" Value="public virtual void Save (System.IO.Stream outStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.IO.Stream outStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Save(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Save (outStream As Stream)" />
+      <MemberSignature Language="F#" Value="abstract member Save : System.IO.Stream -&gt; unit&#xA;override this.Save : System.IO.Stream -&gt; unit" Usage="xmlDocument.Save outStream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3351,6 +3539,8 @@ doc.Save(Console.Out);
       <MemberSignature Language="C#" Value="public virtual void Save (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Save(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Save (writer As TextWriter)" />
+      <MemberSignature Language="F#" Value="abstract member Save : System.IO.TextWriter -&gt; unit&#xA;override this.Save : System.IO.TextWriter -&gt; unit" Usage="xmlDocument.Save writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3397,6 +3587,8 @@ doc.Save(Console.Out);
       <MemberSignature Language="C#" Value="public virtual void Save (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Save(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Save (filename As String)" />
+      <MemberSignature Language="F#" Value="abstract member Save : string -&gt; unit&#xA;override this.Save : string -&gt; unit" Usage="xmlDocument.Save filename" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3462,6 +3654,8 @@ doc.Save(Console.Out);
       <MemberSignature Language="C#" Value="public virtual void Save (System.Xml.XmlWriter w);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.Xml.XmlWriter w) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Save(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Save (w As XmlWriter)" />
+      <MemberSignature Language="F#" Value="abstract member Save : System.Xml.XmlWriter -&gt; unit&#xA;override this.Save : System.Xml.XmlWriter -&gt; unit" Usage="xmlDocument.Save w" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3535,6 +3729,8 @@ doc.Save(Console.Out);
       <MemberSignature Language="C#" Value="public override System.Xml.Schema.IXmlSchemaInfo SchemaInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.IXmlSchemaInfo SchemaInfo" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.SchemaInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SchemaInfo As IXmlSchemaInfo" />
+      <MemberSignature Language="F#" Value="member this.SchemaInfo : System.Xml.Schema.IXmlSchemaInfo" Usage="System.Xml.XmlDocument.SchemaInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3571,6 +3767,8 @@ doc.Save(Console.Out);
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaSet Schemas { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaSet Schemas" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.Schemas" />
+      <MemberSignature Language="VB.NET" Value="Public Property Schemas As XmlSchemaSet" />
+      <MemberSignature Language="F#" Value="member this.Schemas : System.Xml.Schema.XmlSchemaSet with get, set" Usage="System.Xml.XmlDocument.Schemas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3604,10 +3802,21 @@ doc.Save(Console.Out);
         <altmember cref="Overload:System.Xml.XmlDocument.Validate" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Validate">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates the <see cref="T:System.Xml.XmlDocument" /> against the XML Schema Definition Language (XSD) schemas contained in the <see cref="P:System.Xml.XmlDocument.Schemas" /> property.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="public void Validate (System.Xml.Schema.ValidationEventHandler validationEventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate(class System.Xml.Schema.ValidationEventHandler validationEventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Validate(System.Xml.Schema.ValidationEventHandler)" />
+      <MemberSignature Language="F#" Value="member this.Validate : System.Xml.Schema.ValidationEventHandler -&gt; unit" Usage="xmlDocument.Validate validationEventHandler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3671,6 +3880,7 @@ doc.Save(Console.Out);
       <MemberSignature Language="C#" Value="public void Validate (System.Xml.Schema.ValidationEventHandler validationEventHandler, System.Xml.XmlNode nodeToValidate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate(class System.Xml.Schema.ValidationEventHandler validationEventHandler, class System.Xml.XmlNode nodeToValidate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Validate(System.Xml.Schema.ValidationEventHandler,System.Xml.XmlNode)" />
+      <MemberSignature Language="F#" Value="member this.Validate : System.Xml.Schema.ValidationEventHandler * System.Xml.XmlNode -&gt; unit" Usage="xmlDocument.Validate (validationEventHandler, nodeToValidate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3728,6 +3938,8 @@ doc.Save(Console.Out);
       <MemberSignature Language="C#" Value="public override void WriteContentTo (System.Xml.XmlWriter xw);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteContentTo(class System.Xml.XmlWriter xw) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.WriteContentTo(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteContentTo (xw As XmlWriter)" />
+      <MemberSignature Language="F#" Value="override this.WriteContentTo : System.Xml.XmlWriter -&gt; unit" Usage="xmlDocument.WriteContentTo xw" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3780,6 +3992,8 @@ doc.Save(Console.Out);
       <MemberSignature Language="C#" Value="public override void WriteTo (System.Xml.XmlWriter w);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteTo(class System.Xml.XmlWriter w) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.WriteTo(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (w As XmlWriter)" />
+      <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="xmlDocument.WriteTo w" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3832,6 +4046,8 @@ doc.Save(Console.Out);
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlResolver XmlResolver { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlResolver XmlResolver" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.XmlResolver" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property XmlResolver As XmlResolver" />
+      <MemberSignature Language="F#" Value="member this.XmlResolver : System.Xml.XmlResolver" Usage="System.Xml.XmlDocument.XmlResolver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3909,88 +4125,5 @@ doc.Save(Console.Out);
         <altmember cref="T:System.Xml.XmlSecureResolver" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateNavigator">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.Xml.XPath.XPathNavigator" /> object for navigating this document.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetElementsByTagName">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an <see cref="T:System.Xml.XmlNodeList" /> containing a list of all descendant elements that match the specified name.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Validate">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Validates the <see cref="T:System.Xml.XmlDocument" /> against the XML Schema Definition Language (XSD) schemas contained in the <see cref="P:System.Xml.XmlDocument.Schemas" /> property.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlDocument" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateNode">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an <see cref="T:System.Xml.XmlNode" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Save">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Saves the XML document to the specified location.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Load">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads the specified XML data from a <see cref="T:System.IO.Stream" />, a URL, a <see cref="T:System.IO.TextReader" />, or an <see cref="T:System.Xml.XmlReader" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateElement">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an <see cref="T:System.Xml.XmlElement" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateAttribute">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an <see cref="T:System.Xml.XmlAttribute" /> with the specified name.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

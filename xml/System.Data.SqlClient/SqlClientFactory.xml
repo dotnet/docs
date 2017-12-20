@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SqlClientFactory : System.Data.Common.DbProviderFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlClientFactory extends System.Data.Common.DbProviderFactory" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlClientFactory" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlClientFactory&#xA;Inherits DbProviderFactory" />
+  <TypeSignature Language="F#" Value="type SqlClientFactory = class&#xA;    inherit DbProviderFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public override bool CanCreateDataSourceEnumerator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanCreateDataSourceEnumerator" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlClientFactory.CanCreateDataSourceEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanCreateDataSourceEnumerator As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanCreateDataSourceEnumerator : bool" Usage="System.Data.SqlClient.SqlClientFactory.CanCreateDataSourceEnumerator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbCommand CreateCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbCommand CreateCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCommand () As DbCommand" />
+      <MemberSignature Language="F#" Value="override this.CreateCommand : unit -&gt; System.Data.Common.DbCommand" Usage="sqlClientFactory.CreateCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -111,6 +117,8 @@ DbCommand cmd = newFactory.CreateCommand();
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbCommandBuilder CreateCommandBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbCommandBuilder CreateCommandBuilder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateCommandBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCommandBuilder () As DbCommandBuilder" />
+      <MemberSignature Language="F#" Value="override this.CreateCommandBuilder : unit -&gt; System.Data.Common.DbCommandBuilder" Usage="sqlClientFactory.CreateCommandBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -148,6 +156,8 @@ DbCommandBuilder cmd = newFactory.CreateCommandBuilder();
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbConnection CreateConnection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbConnection CreateConnection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateConnection () As DbConnection" />
+      <MemberSignature Language="F#" Value="override this.CreateConnection : unit -&gt; System.Data.Common.DbConnection" Usage="sqlClientFactory.CreateConnection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -195,6 +205,8 @@ DbConnection cmd = newFactory.CreateConnection();
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbConnectionStringBuilder CreateConnectionStringBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbConnectionStringBuilder CreateConnectionStringBuilder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateConnectionStringBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateConnectionStringBuilder () As DbConnectionStringBuilder" />
+      <MemberSignature Language="F#" Value="override this.CreateConnectionStringBuilder : unit -&gt; System.Data.Common.DbConnectionStringBuilder" Usage="sqlClientFactory.CreateConnectionStringBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -243,6 +255,8 @@ DbConnectionStringBuilder cmd =
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbDataAdapter CreateDataAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbDataAdapter CreateDataAdapter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateDataAdapter" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDataAdapter () As DbDataAdapter" />
+      <MemberSignature Language="F#" Value="override this.CreateDataAdapter : unit -&gt; System.Data.Common.DbDataAdapter" Usage="sqlClientFactory.CreateDataAdapter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -284,6 +298,8 @@ DbDataAdapter cmd = newFactory.CreateDataAdapter();
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbDataSourceEnumerator CreateDataSourceEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbDataSourceEnumerator CreateDataSourceEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateDataSourceEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDataSourceEnumerator () As DbDataSourceEnumerator" />
+      <MemberSignature Language="F#" Value="override this.CreateDataSourceEnumerator : unit -&gt; System.Data.Common.DbDataSourceEnumerator" Usage="sqlClientFactory.CreateDataSourceEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -314,6 +330,8 @@ DbDataAdapter cmd = newFactory.CreateDataAdapter();
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbParameter CreateParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbParameter CreateParameter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateParameter () As DbParameter" />
+      <MemberSignature Language="F#" Value="override this.CreateParameter : unit -&gt; System.Data.Common.DbParameter" Usage="sqlClientFactory.CreateParameter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -360,6 +378,8 @@ DbParameter cmd = newFactory.CreateParameter();
       <MemberSignature Language="C#" Value="public override System.Security.CodeAccessPermission CreatePermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.CodeAccessPermission CreatePermission(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreatePermission(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission (state As PermissionState) As CodeAccessPermission" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : System.Security.Permissions.PermissionState -&gt; System.Security.CodeAccessPermission" Usage="sqlClientFactory.CreatePermission state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -383,6 +403,8 @@ DbParameter cmd = newFactory.CreateParameter();
       <MemberSignature Language="C#" Value="public static readonly System.Data.SqlClient.SqlClientFactory Instance;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Data.SqlClient.SqlClientFactory Instance" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientFactory.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As SqlClientFactory " />
+      <MemberSignature Language="F#" Value=" staticval mutable Instance : System.Data.SqlClient.SqlClientFactory" Usage="System.Data.SqlClient.SqlClientFactory.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -427,7 +449,11 @@ DbCommand cmd = newFactory.CreateCommand();
       <MemberSignature Language="C#" Value="object IServiceProvider.GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IServiceProvider.GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.System#IServiceProvider#GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Function GetService (serviceType As Type) As Object Implements IServiceProvider.GetService" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IServiceProvider.GetService(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

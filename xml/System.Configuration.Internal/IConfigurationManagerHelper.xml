@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IConfigurationManagerHelper" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConfigurationManagerHelper" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IConfigurationManagerHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IConfigurationManagerHelper" />
+  <TypeSignature Language="F#" Value="type IConfigurationManagerHelper = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public void EnsureNetConfigLoaded ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnsureNetConfigLoaded() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IConfigurationManagerHelper.EnsureNetConfigLoaded" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnsureNetConfigLoaded ()" />
+      <MemberSignature Language="F#" Value="abstract member EnsureNetConfigLoaded : unit -&gt; unit" Usage="iConfigurationManagerHelper.EnsureNetConfigLoaded " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

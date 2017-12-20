@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class HttpListenerRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpListenerRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.HttpListenerRequest" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpListenerRequest" />
+  <TypeSignature Language="F#" Value="type HttpListenerRequest = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public string[] AcceptTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] AcceptTypes" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.AcceptTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AcceptTypes As String()" />
+      <MemberSignature Language="F#" Value="member this.AcceptTypes : string[]" Usage="System.Net.HttpListenerRequest.AcceptTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +99,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginGetClientCertificate (AsyncCallback requestCallback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginGetClientCertificate(class System.AsyncCallback requestCallback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerRequest.BeginGetClientCertificate(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginGetClientCertificate (requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginGetClientCertificate : AsyncCallback * obj -&gt; IAsyncResult" Usage="httpListenerRequest.BeginGetClientCertificate (requestCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -128,6 +134,8 @@
       <MemberSignature Language="C#" Value="public int ClientCertificateError { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ClientCertificateError" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.ClientCertificateError" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientCertificateError As Integer" />
+      <MemberSignature Language="F#" Value="member this.ClientCertificateError : int" Usage="System.Net.HttpListenerRequest.ClientCertificateError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -178,6 +186,8 @@
       <MemberSignature Language="C#" Value="public System.Text.Encoding ContentEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding ContentEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.ContentEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentEncoding As Encoding" />
+      <MemberSignature Language="F#" Value="member this.ContentEncoding : System.Text.Encoding" Usage="System.Net.HttpListenerRequest.ContentEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -222,6 +232,8 @@
       <MemberSignature Language="C#" Value="public long ContentLength64 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ContentLength64" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.ContentLength64" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentLength64 As Long" />
+      <MemberSignature Language="F#" Value="member this.ContentLength64 : int64" Usage="System.Net.HttpListenerRequest.ContentLength64" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -268,6 +280,8 @@
       <MemberSignature Language="C#" Value="public string ContentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string" Usage="System.Net.HttpListenerRequest.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -316,6 +330,8 @@
       <MemberSignature Language="C#" Value="public System.Net.CookieCollection Cookies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.CookieCollection Cookies" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.Cookies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cookies As CookieCollection" />
+      <MemberSignature Language="F#" Value="member this.Cookies : System.Net.CookieCollection" Usage="System.Net.HttpListenerRequest.Cookies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -360,6 +376,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2 EndGetClientCertificate (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.X509Certificates.X509Certificate2 EndGetClientCertificate(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerRequest.EndGetClientCertificate(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndGetClientCertificate (asyncResult As IAsyncResult) As X509Certificate2" />
+      <MemberSignature Language="F#" Value="member this.EndGetClientCertificate : IAsyncResult -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="httpListenerRequest.EndGetClientCertificate asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -396,6 +414,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2 GetClientCertificate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.X509Certificates.X509Certificate2 GetClientCertificate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerRequest.GetClientCertificate" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClientCertificate () As X509Certificate2" />
+      <MemberSignature Language="F#" Value="member this.GetClientCertificate : unit -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="httpListenerRequest.GetClientCertificate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -433,6 +453,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Security.Cryptography.X509Certificates.X509Certificate2&gt; GetClientCertificateAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Security.Cryptography.X509Certificates.X509Certificate2&gt; GetClientCertificateAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerRequest.GetClientCertificateAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClientCertificateAsync () As Task(Of X509Certificate2)" />
+      <MemberSignature Language="F#" Value="member this.GetClientCertificateAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Security.Cryptography.X509Certificates.X509Certificate2&gt;" Usage="httpListenerRequest.GetClientCertificateAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -473,6 +495,8 @@
       <MemberSignature Language="C#" Value="public bool HasEntityBody { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasEntityBody" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.HasEntityBody" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasEntityBody As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasEntityBody : bool" Usage="System.Net.HttpListenerRequest.HasEntityBody" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -518,6 +542,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.NameValueCollection Headers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameValueCollection Headers" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As NameValueCollection" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Collections.Specialized.NameValueCollection" Usage="System.Net.HttpListenerRequest.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -564,6 +590,8 @@
       <MemberSignature Language="C#" Value="public string HttpMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HttpMethod" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.HttpMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HttpMethod As String" />
+      <MemberSignature Language="F#" Value="member this.HttpMethod : string" Usage="System.Net.HttpListenerRequest.HttpMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -608,6 +636,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream InputStream { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream InputStream" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.InputStream" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputStream As Stream" />
+      <MemberSignature Language="F#" Value="member this.InputStream : System.IO.Stream" Usage="System.Net.HttpListenerRequest.InputStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -658,6 +688,8 @@
       <MemberSignature Language="C#" Value="public bool IsAuthenticated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAuthenticated" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.IsAuthenticated" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAuthenticated As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Net.HttpListenerRequest.IsAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -710,6 +742,8 @@
       <MemberSignature Language="C#" Value="public bool IsLocal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLocal" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.IsLocal" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLocal As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsLocal : bool" Usage="System.Net.HttpListenerRequest.IsLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -755,6 +789,8 @@
       <MemberSignature Language="C#" Value="public bool IsSecureConnection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSecureConnection" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.IsSecureConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSecureConnection As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSecureConnection : bool" Usage="System.Net.HttpListenerRequest.IsSecureConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -800,6 +836,8 @@
       <MemberSignature Language="C#" Value="public bool IsWebSocketRequest { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsWebSocketRequest" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.IsWebSocketRequest" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWebSocketRequest As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsWebSocketRequest : bool" Usage="System.Net.HttpListenerRequest.IsWebSocketRequest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -834,6 +872,8 @@
       <MemberSignature Language="C#" Value="public bool KeepAlive { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool KeepAlive" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.KeepAlive" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeepAlive As Boolean" />
+      <MemberSignature Language="F#" Value="member this.KeepAlive : bool" Usage="System.Net.HttpListenerRequest.KeepAlive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -879,6 +919,8 @@
       <MemberSignature Language="C#" Value="public System.Net.IPEndPoint LocalEndPoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPEndPoint LocalEndPoint" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.LocalEndPoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalEndPoint As IPEndPoint" />
+      <MemberSignature Language="F#" Value="member this.LocalEndPoint : System.Net.IPEndPoint" Usage="System.Net.HttpListenerRequest.LocalEndPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -923,6 +965,8 @@
       <MemberSignature Language="C#" Value="public Version ProtocolVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version ProtocolVersion" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.ProtocolVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProtocolVersion As Version" />
+      <MemberSignature Language="F#" Value="member this.ProtocolVersion : Version" Usage="System.Net.HttpListenerRequest.ProtocolVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -967,6 +1011,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.NameValueCollection QueryString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameValueCollection QueryString" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.QueryString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryString As NameValueCollection" />
+      <MemberSignature Language="F#" Value="member this.QueryString : System.Collections.Specialized.NameValueCollection" Usage="System.Net.HttpListenerRequest.QueryString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1014,6 +1060,8 @@
       <MemberSignature Language="C#" Value="public string RawUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RawUrl" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.RawUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RawUrl As String" />
+      <MemberSignature Language="F#" Value="member this.RawUrl : string" Usage="System.Net.HttpListenerRequest.RawUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1060,6 +1108,8 @@
       <MemberSignature Language="C#" Value="public System.Net.IPEndPoint RemoteEndPoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPEndPoint RemoteEndPoint" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.RemoteEndPoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoteEndPoint As IPEndPoint" />
+      <MemberSignature Language="F#" Value="member this.RemoteEndPoint : System.Net.IPEndPoint" Usage="System.Net.HttpListenerRequest.RemoteEndPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1099,6 +1149,8 @@
       <MemberSignature Language="C#" Value="public Guid RequestTraceIdentifier { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid RequestTraceIdentifier" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.RequestTraceIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestTraceIdentifier As Guid" />
+      <MemberSignature Language="F#" Value="member this.RequestTraceIdentifier : Guid" Usage="System.Net.HttpListenerRequest.RequestTraceIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1131,6 +1183,8 @@
       <MemberSignature Language="C#" Value="public string ServiceName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceName" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.ServiceName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceName As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceName : string" Usage="System.Net.HttpListenerRequest.ServiceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1177,6 +1231,8 @@
       <MemberSignature Language="C#" Value="public System.Net.TransportContext TransportContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.TransportContext TransportContext" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.TransportContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransportContext As TransportContext" />
+      <MemberSignature Language="F#" Value="member this.TransportContext : System.Net.TransportContext" Usage="System.Net.HttpListenerRequest.TransportContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1222,6 +1278,8 @@
       <MemberSignature Language="C#" Value="public Uri Url { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Url" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.Url" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Url As Uri" />
+      <MemberSignature Language="F#" Value="member this.Url : Uri" Usage="System.Net.HttpListenerRequest.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1330,6 +1388,8 @@
       <MemberSignature Language="C#" Value="public Uri UrlReferrer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri UrlReferrer" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.UrlReferrer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UrlReferrer As Uri" />
+      <MemberSignature Language="F#" Value="member this.UrlReferrer : Uri" Usage="System.Net.HttpListenerRequest.UrlReferrer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1380,6 +1440,8 @@
       <MemberSignature Language="C#" Value="public string UserAgent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserAgent" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.UserAgent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserAgent As String" />
+      <MemberSignature Language="F#" Value="member this.UserAgent : string" Usage="System.Net.HttpListenerRequest.UserAgent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1428,6 +1490,8 @@
       <MemberSignature Language="C#" Value="public string UserHostAddress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserHostAddress" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.UserHostAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserHostAddress As String" />
+      <MemberSignature Language="F#" Value="member this.UserHostAddress : string" Usage="System.Net.HttpListenerRequest.UserHostAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1472,6 +1536,8 @@
       <MemberSignature Language="C#" Value="public string UserHostName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserHostName" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.UserHostName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserHostName As String" />
+      <MemberSignature Language="F#" Value="member this.UserHostName : string" Usage="System.Net.HttpListenerRequest.UserHostName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1520,6 +1586,8 @@
       <MemberSignature Language="C#" Value="public string[] UserLanguages { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] UserLanguages" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerRequest.UserLanguages" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserLanguages As String()" />
+      <MemberSignature Language="F#" Value="member this.UserLanguages : string[]" Usage="System.Net.HttpListenerRequest.UserLanguages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

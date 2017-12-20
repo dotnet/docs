@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class SeekableXPathNavigator : System.Xml.XPath.XPathNavigator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SeekableXPathNavigator extends System.Xml.XPath.XPathNavigator" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.SeekableXPathNavigator" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SeekableXPathNavigator&#xA;Inherits XPathNavigator" />
+  <TypeSignature Language="F#" Value="type SeekableXPathNavigator = class&#xA;    inherit XPathNavigator" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,7 @@
       <MemberSignature Language="C#" Value="protected SeekableXPathNavigator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +48,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Xml.XmlNodeOrder ComparePosition (long first, long second);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Xml.XmlNodeOrder ComparePosition(int64 first, int64 second) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.ComparePosition(System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ComparePosition (first As Long, second As Long) As XmlNodeOrder" />
+      <MemberSignature Language="F#" Value="override this.ComparePosition : int64 * int64 -&gt; System.Xml.XmlNodeOrder" Usage="seekableXPathNavigator.ComparePosition (firstPosition, secondPosition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +79,8 @@
       <MemberSignature Language="C#" Value="public abstract long CurrentPosition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 CurrentPosition" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.SeekableXPathNavigator.CurrentPosition" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property CurrentPosition As Long" />
+      <MemberSignature Language="F#" Value="member this.CurrentPosition : int64 with get, set" Usage="System.ServiceModel.Dispatcher.SeekableXPathNavigator.CurrentPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -108,6 +115,8 @@
       <MemberSignature Language="C#" Value="public abstract string GetLocalName (long node_position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetLocalName(int64 node_position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetLocalName(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetLocalName (node_position As Long) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetLocalName : int64 -&gt; string" Usage="seekableXPathNavigator.GetLocalName nodePosition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -132,6 +141,8 @@
       <MemberSignature Language="C#" Value="public abstract string GetName (long node_position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetName(int64 node_position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetName(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetName (node_position As Long) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetName : int64 -&gt; string" Usage="seekableXPathNavigator.GetName nodePosition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -163,6 +174,8 @@
       <MemberSignature Language="C#" Value="public abstract string GetNamespace (long node_position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetNamespace(int64 node_position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetNamespace(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetNamespace (node_position As Long) As String" />
+      <MemberSignature Language="F#" Value="override this.GetNamespace : int64 -&gt; string" Usage="seekableXPathNavigator.GetNamespace nodePosition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -187,6 +200,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Xml.XPath.XPathNodeType GetNodeType (long node_position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Xml.XPath.XPathNodeType GetNodeType(int64 node_position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetNodeType(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetNodeType (node_position As Long) As XPathNodeType" />
+      <MemberSignature Language="F#" Value="abstract member GetNodeType : int64 -&gt; System.Xml.XPath.XPathNodeType" Usage="seekableXPathNavigator.GetNodeType nodePosition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -211,6 +226,8 @@
       <MemberSignature Language="C#" Value="public abstract string GetValue (long node_position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetValue(int64 node_position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetValue(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValue (node_position As Long) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : int64 -&gt; string" Usage="seekableXPathNavigator.GetValue nodePosition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class NamedServiceModelExtensionCollectionElement&lt;TServiceModelExtensionElement&gt; : System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement&lt;TServiceModelExtensionElement&gt; where TServiceModelExtensionElement : ServiceModelExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit NamedServiceModelExtensionCollectionElement`1&lt;(class System.ServiceModel.Configuration.ServiceModelExtensionElement) TServiceModelExtensionElement&gt; extends System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1&lt;!TServiceModelExtensionElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class NamedServiceModelExtensionCollectionElement(Of TServiceModelExtensionElement)&#xA;Inherits ServiceModelExtensionCollectionElement(Of TServiceModelExtensionElement)" />
+  <TypeSignature Language="F#" Value="type NamedServiceModelExtensionCollectionElement&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; ServiceModelExtensionElement)&gt; = class&#xA;    inherit ServiceModelExtensionCollectionElement&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; ServiceModelExtensionElement)&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; System.ServiceModel.Configuration.ServiceModelExtensionElement)&gt;.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; System.ServiceModel.Configuration.ServiceModelExtensionElement)&gt;.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class RotateTransform : System.Windows.Media.Transform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RotateTransform extends System.Windows.Media.Transform" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.RotateTransform" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RotateTransform&#xA;Inherits Transform" />
+  <TypeSignature Language="F#" Value="type RotateTransform = class&#xA;    inherit Transform" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,7 @@
       <MemberSignature Language="C#" Value="public RotateTransform ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RotateTransform.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="public RotateTransform (double angle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 angle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RotateTransform.#ctor(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (angle As Double)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.RotateTransform : double -&gt; System.Windows.Media.RotateTransform" Usage="new System.Windows.Media.RotateTransform angle" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +85,8 @@
       <MemberSignature Language="C#" Value="public RotateTransform (double angle, double centerX, double centerY);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 angle, float64 centerX, float64 centerY) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RotateTransform.#ctor(System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (angle As Double, centerX As Double, centerY As Double)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.RotateTransform : double * double * double -&gt; System.Windows.Media.RotateTransform" Usage="new System.Windows.Media.RotateTransform (angle, centerX, centerY)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +109,8 @@
       <MemberSignature Language="C#" Value="public double Angle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Angle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.RotateTransform.Angle" />
+      <MemberSignature Language="VB.NET" Value="Public Property Angle As Double" />
+      <MemberSignature Language="F#" Value="member this.Angle : double with get, set" Usage="System.Windows.Media.RotateTransform.Angle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -135,6 +144,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AngleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AngleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.RotateTransform.AngleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AngleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable AngleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.RotateTransform.AngleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -152,6 +163,8 @@
       <MemberSignature Language="C#" Value="public double CenterX { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 CenterX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.RotateTransform.CenterX" />
+      <MemberSignature Language="VB.NET" Value="Public Property CenterX As Double" />
+      <MemberSignature Language="F#" Value="member this.CenterX : double with get, set" Usage="System.Windows.Media.RotateTransform.CenterX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -185,6 +198,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CenterXProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CenterXProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.RotateTransform.CenterXProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CenterXProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CenterXProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.RotateTransform.CenterXProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -202,6 +217,8 @@
       <MemberSignature Language="C#" Value="public double CenterY { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 CenterY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.RotateTransform.CenterY" />
+      <MemberSignature Language="VB.NET" Value="Public Property CenterY As Double" />
+      <MemberSignature Language="F#" Value="member this.CenterY : double with get, set" Usage="System.Windows.Media.RotateTransform.CenterY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -235,6 +252,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CenterYProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CenterYProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.RotateTransform.CenterYProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CenterYProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CenterYProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.RotateTransform.CenterYProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -259,6 +278,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.RotateTransform Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.RotateTransform Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RotateTransform.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As RotateTransform" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.RotateTransform" Usage="rotateTransform.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -289,6 +310,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.RotateTransform CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.RotateTransform CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RotateTransform.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As RotateTransform" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.RotateTransform" Usage="rotateTransform.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -317,6 +340,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RotateTransform.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="rotateTransform.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -336,6 +361,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Media.Matrix Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Matrix Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.RotateTransform.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Matrix" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Windows.Media.Matrix" Usage="System.Windows.Media.RotateTransform.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

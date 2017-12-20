@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class GetManifestCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GetManifestCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.GetManifestCompletedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class GetManifestCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type GetManifestCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public ActivationContext ActivationContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ActivationContext ActivationContext" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.ActivationContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivationContext As ActivationContext" />
+      <MemberSignature Language="F#" Value="member this.ActivationContext : ActivationContext" Usage="System.Deployment.Application.GetManifestCompletedEventArgs.ActivationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public ApplicationIdentity ApplicationIdentity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ApplicationIdentity ApplicationIdentity" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.ApplicationIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationIdentity As ApplicationIdentity" />
+      <MemberSignature Language="F#" Value="member this.ApplicationIdentity : ApplicationIdentity" Usage="System.Deployment.Application.GetManifestCompletedEventArgs.ApplicationIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -70,6 +76,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlReader ApplicationManifest { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlReader ApplicationManifest" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.ApplicationManifest" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationManifest As XmlReader" />
+      <MemberSignature Language="F#" Value="member this.ApplicationManifest : System.Xml.XmlReader" Usage="System.Deployment.Application.GetManifestCompletedEventArgs.ApplicationManifest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlReader DeploymentManifest { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlReader DeploymentManifest" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.DeploymentManifest" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeploymentManifest As XmlReader" />
+      <MemberSignature Language="F#" Value="member this.DeploymentManifest : System.Xml.XmlReader" Usage="System.Deployment.Application.GetManifestCompletedEventArgs.DeploymentManifest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -121,6 +131,8 @@
       <MemberSignature Language="C#" Value="public bool IsCached { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCached" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.IsCached" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCached As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCached : bool" Usage="System.Deployment.Application.GetManifestCompletedEventArgs.IsCached" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -140,6 +152,8 @@
       <MemberSignature Language="C#" Value="public string LogFilePath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LogFilePath" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.LogFilePath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogFilePath As String" />
+      <MemberSignature Language="F#" Value="member this.LogFilePath : string" Usage="System.Deployment.Application.GetManifestCompletedEventArgs.LogFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -158,6 +172,8 @@
       <MemberSignature Language="C#" Value="public string ProductName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProductName" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.ProductName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductName As String" />
+      <MemberSignature Language="F#" Value="member this.ProductName : string" Usage="System.Deployment.Application.GetManifestCompletedEventArgs.ProductName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -176,6 +192,8 @@
       <MemberSignature Language="C#" Value="public string SubscriptionIdentity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SubscriptionIdentity" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubscriptionIdentity As String" />
+      <MemberSignature Language="F#" Value="member this.SubscriptionIdentity : string" Usage="System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -194,6 +212,8 @@
       <MemberSignature Language="C#" Value="public Uri SupportUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri SupportUri" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.SupportUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.SupportUri : Uri" Usage="System.Deployment.Application.GetManifestCompletedEventArgs.SupportUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -212,6 +232,8 @@
       <MemberSignature Language="C#" Value="public Version Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version Version" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Version" />
+      <MemberSignature Language="F#" Value="member this.Version : Version" Usage="System.Deployment.Application.GetManifestCompletedEventArgs.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

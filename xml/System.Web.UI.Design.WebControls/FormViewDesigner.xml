@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class FormViewDesigner : System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormViewDesigner extends System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.FormViewDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class FormViewDesigner&#xA;Inherits DataBoundControlDesigner" />
+  <TypeSignature Language="F#" Value="type FormViewDesigner = class&#xA;    inherit DataBoundControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +64,7 @@
       <MemberSignature Language="C#" Value="public FormViewDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.FormViewDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -90,6 +93,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.FormViewDesigner.ActionLists" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.WebControls.FormViewDesigner.ActionLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -113,6 +118,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.FormViewDesigner.AutoFormats" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AutoFormats As DesignerAutoFormatCollection" />
+      <MemberSignature Language="F#" Value="member this.AutoFormats : System.Web.UI.Design.DesignerAutoFormatCollection" Usage="System.Web.UI.Design.WebControls.FormViewDesigner.AutoFormats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -141,6 +148,8 @@
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.FormViewDesigner.GetDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="formViewDesigner.GetDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -187,6 +196,8 @@
       <MemberSignature Language="C#" Value="protected override string GetEmptyDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetEmptyDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.FormViewDesigner.GetEmptyDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetEmptyDesignTimeHtml () As String" />
+      <MemberSignature Language="F#" Value="override this.GetEmptyDesignTimeHtml : unit -&gt; string" Usage="formViewDesigner.GetEmptyDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -217,6 +228,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.FormViewDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="formViewDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -252,6 +265,8 @@
       <MemberSignature Language="C#" Value="protected override void OnSchemaRefreshed ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSchemaRefreshed() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.FormViewDesigner.OnSchemaRefreshed" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSchemaRefreshed ()" />
+      <MemberSignature Language="F#" Value="override this.OnSchemaRefreshed : unit -&gt; unit" Usage="formViewDesigner.OnSchemaRefreshed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -280,6 +295,8 @@
       <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.FormViewDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="formViewDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -301,6 +318,8 @@
       <MemberSignature Language="C#" Value="public bool RenderOuterTable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RenderOuterTable" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.FormViewDesigner.RenderOuterTable" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderOuterTable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RenderOuterTable : bool with get, set" Usage="System.Web.UI.Design.WebControls.FormViewDesigner.RenderOuterTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -327,6 +346,8 @@
       <MemberSignature Language="C#" Value="protected override int SampleRowCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SampleRowCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.FormViewDesigner.SampleRowCount" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property SampleRowCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.SampleRowCount : int" Usage="System.Web.UI.Design.WebControls.FormViewDesigner.SampleRowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -364,6 +385,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.TemplateGroupCollection TemplateGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.TemplateGroupCollection TemplateGroups" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.FormViewDesigner.TemplateGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TemplateGroups As TemplateGroupCollection" />
+      <MemberSignature Language="F#" Value="member this.TemplateGroups : System.Web.UI.Design.TemplateGroupCollection" Usage="System.Web.UI.Design.WebControls.FormViewDesigner.TemplateGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -394,6 +417,8 @@
       <MemberSignature Language="C#" Value="protected override bool UsePreviewControl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UsePreviewControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.FormViewDesigner.UsePreviewControl" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UsePreviewControl As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UsePreviewControl : bool" Usage="System.Web.UI.Design.WebControls.FormViewDesigner.UsePreviewControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

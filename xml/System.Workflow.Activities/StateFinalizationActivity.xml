@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class StateFinalizationActivity : System.Workflow.Activities.SequenceActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StateFinalizationActivity extends System.Workflow.Activities.SequenceActivity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.StateFinalizationActivity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StateFinalizationActivity&#xA;Inherits SequenceActivity" />
+  <TypeSignature Language="F#" Value="type StateFinalizationActivity = class&#xA;    inherit SequenceActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +52,7 @@
       <MemberSignature Language="C#" Value="public StateFinalizationActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.StateFinalizationActivity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -65,6 +68,8 @@
       <MemberSignature Language="C#" Value="public StateFinalizationActivity (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.StateFinalizationActivity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.StateFinalizationActivity : string -&gt; System.Workflow.Activities.StateFinalizationActivity" Usage="new System.Workflow.Activities.StateFinalizationActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ProfilePropertyMetadata : System.Runtime.Serialization.IExtensibleDataObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProfilePropertyMetadata extends System.Object implements class System.Runtime.Serialization.IExtensibleDataObject" />
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.ProfilePropertyMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProfilePropertyMetadata&#xA;Implements IExtensibleDataObject" />
+  <TypeSignature Language="F#" Value="type ProfilePropertyMetadata = class&#xA;    interface IExtensibleDataObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,7 @@
       <MemberSignature Language="C#" Value="public ProfilePropertyMetadata ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ProfilePropertyMetadata.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -54,6 +57,8 @@
       <MemberSignature Language="C#" Value="public bool AllowAnonymousAccess { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowAnonymousAccess" />
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.ProfilePropertyMetadata.AllowAnonymousAccess" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowAnonymousAccess As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowAnonymousAccess : bool with get, set" Usage="System.Web.ApplicationServices.ProfilePropertyMetadata.AllowAnonymousAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -85,6 +90,8 @@
       <MemberSignature Language="C#" Value="public string DefaultValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.ProfilePropertyMetadata.DefaultValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultValue As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultValue : string with get, set" Usage="System.Web.ApplicationServices.ProfilePropertyMetadata.DefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -115,7 +122,12 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Serialization.ExtensionDataObject ExtensionData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.ExtensionDataObject ExtensionData" />
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.ProfilePropertyMetadata.ExtensionData" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExtensionData As ExtensionDataObject" />
+      <MemberSignature Language="F#" Value="member this.ExtensionData : System.Runtime.Serialization.ExtensionDataObject with get, set" Usage="System.Web.ApplicationServices.ProfilePropertyMetadata.ExtensionData" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -134,6 +146,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.ProfilePropertyMetadata.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool with get, set" Usage="System.Web.ApplicationServices.ProfilePropertyMetadata.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -165,6 +179,8 @@
       <MemberSignature Language="C#" Value="public string PropertyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.ProfilePropertyMetadata.PropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropertyName As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string with get, set" Usage="System.Web.ApplicationServices.ProfilePropertyMetadata.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -195,6 +211,8 @@
       <MemberSignature Language="C#" Value="public int SerializeAs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SerializeAs" />
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.ProfilePropertyMetadata.SerializeAs" />
+      <MemberSignature Language="VB.NET" Value="Public Property SerializeAs As Integer" />
+      <MemberSignature Language="F#" Value="member this.SerializeAs : int with get, set" Usage="System.Web.ApplicationServices.ProfilePropertyMetadata.SerializeAs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -225,6 +243,8 @@
       <MemberSignature Language="C#" Value="public string TypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.ProfilePropertyMetadata.TypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeName As String" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string with get, set" Usage="System.Web.ApplicationServices.ProfilePropertyMetadata.TypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

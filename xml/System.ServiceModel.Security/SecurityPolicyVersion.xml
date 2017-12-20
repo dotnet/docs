@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class SecurityPolicyVersion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract SecurityPolicyVersion extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityPolicyVersion" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityPolicyVersion" />
+  <TypeSignature Language="F#" Value="type SecurityPolicyVersion = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="protected SecurityPolicyVersion ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityPolicyVersion.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +45,8 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityPolicyVersion.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string" Usage="System.ServiceModel.Security.SecurityPolicyVersion.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +72,8 @@
       <MemberSignature Language="C#" Value="public string Prefix { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Prefix" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityPolicyVersion.Prefix" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Prefix As String" />
+      <MemberSignature Language="F#" Value="member this.Prefix : string" Usage="System.ServiceModel.Security.SecurityPolicyVersion.Prefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +99,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityPolicyVersion WSSecurityPolicy11 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityPolicyVersion WSSecurityPolicy11" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityPolicyVersion.WSSecurityPolicy11" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSSecurityPolicy11 As SecurityPolicyVersion" />
+      <MemberSignature Language="F#" Value="member this.WSSecurityPolicy11 : System.ServiceModel.Security.SecurityPolicyVersion" Usage="System.ServiceModel.Security.SecurityPolicyVersion.WSSecurityPolicy11" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,6 +126,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityPolicyVersion WSSecurityPolicy12 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityPolicyVersion WSSecurityPolicy12" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityPolicyVersion.WSSecurityPolicy12" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSSecurityPolicy12 As SecurityPolicyVersion" />
+      <MemberSignature Language="F#" Value="member this.WSSecurityPolicy12 : System.ServiceModel.Security.SecurityPolicyVersion" Usage="System.ServiceModel.Security.SecurityPolicyVersion.WSSecurityPolicy12" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

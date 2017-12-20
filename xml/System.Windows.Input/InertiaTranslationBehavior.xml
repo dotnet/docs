@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class InertiaTranslationBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InertiaTranslationBehavior extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InertiaTranslationBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Class InertiaTranslationBehavior" />
+  <TypeSignature Language="F#" Value="type InertiaTranslationBehavior = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,7 @@
       <MemberSignature Language="C#" Value="public InertiaTranslationBehavior ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InertiaTranslationBehavior.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +62,8 @@
       <MemberSignature Language="C#" Value="public double DesiredDeceleration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 DesiredDeceleration" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaTranslationBehavior.DesiredDeceleration" />
+      <MemberSignature Language="VB.NET" Value="Public Property DesiredDeceleration As Double" />
+      <MemberSignature Language="F#" Value="member this.DesiredDeceleration : double with get, set" Usage="System.Windows.Input.InertiaTranslationBehavior.DesiredDeceleration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +96,8 @@
       <MemberSignature Language="C#" Value="public double DesiredDisplacement { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 DesiredDisplacement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaTranslationBehavior.DesiredDisplacement" />
+      <MemberSignature Language="VB.NET" Value="Public Property DesiredDisplacement As Double" />
+      <MemberSignature Language="F#" Value="member this.DesiredDisplacement : double with get, set" Usage="System.Windows.Input.InertiaTranslationBehavior.DesiredDisplacement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -123,6 +130,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Vector InitialVelocity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Vector InitialVelocity" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaTranslationBehavior.InitialVelocity" />
+      <MemberSignature Language="VB.NET" Value="Public Property InitialVelocity As Vector" />
+      <MemberSignature Language="F#" Value="member this.InitialVelocity : System.Windows.Vector with get, set" Usage="System.Windows.Input.InertiaTranslationBehavior.InitialVelocity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

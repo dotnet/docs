@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class DBConvert" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DBConvert extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.DBConvert" />
+  <TypeSignature Language="VB.NET" Value="Public Class DBConvert" />
+  <TypeSignature Language="F#" Value="type DBConvert = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,7 @@
       <MemberSignature Language="C#" Value="public static object ChangeType (object value, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ChangeType(object value, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DBConvert.ChangeType(System.Object,System.Type)" />
+      <MemberSignature Language="F#" Value="static member ChangeType : obj * Type -&gt; obj" Usage="System.Data.Linq.DBConvert.ChangeType (value, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -45,6 +48,8 @@
       <MemberSignature Language="C#" Value="public static T ChangeType&lt;T&gt; (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T ChangeType&lt;T&gt;(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DBConvert.ChangeType``1(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ChangeType(Of T) (value As Object) As T" />
+      <MemberSignature Language="F#" Value="static member ChangeType : obj -&gt; 'T" Usage="System.Data.Linq.DBConvert.ChangeType value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

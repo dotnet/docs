@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CodeWhen : Mono.CodeGeneration.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CodeWhen extends Mono.CodeGeneration.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeWhen" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeWhen&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeWhen = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public CodeWhen (Mono.CodeGeneration.CodeExpression condition, Mono.CodeGeneration.CodeExpression trueResult, Mono.CodeGeneration.CodeExpression falseResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Mono.CodeGeneration.CodeExpression condition, class Mono.CodeGeneration.CodeExpression trueResult, class Mono.CodeGeneration.CodeExpression falseResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWhen.#ctor(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (condition As CodeExpression, trueResult As CodeExpression, falseResult As CodeExpression)" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeWhen : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeWhen" Usage="new Mono.CodeGeneration.CodeWhen (condition, trueResult, falseResult)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +47,8 @@
       <MemberSignature Language="C#" Value="public override void Generate (System.Reflection.Emit.ILGenerator gen);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Generate(class System.Reflection.Emit.ILGenerator gen) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWhen.Generate(System.Reflection.Emit.ILGenerator)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Generate (gen As ILGenerator)" />
+      <MemberSignature Language="F#" Value="override this.Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeWhen.Generate gen" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public override Type GetResultType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetResultType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWhen.GetResultType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultType () As Type" />
+      <MemberSignature Language="F#" Value="override this.GetResultType : unit -&gt; Type" Usage="codeWhen.GetResultType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="public override void PrintCode (Mono.CodeGeneration.CodeWriter cp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PrintCode(class Mono.CodeGeneration.CodeWriter cp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWhen.PrintCode(Mono.CodeGeneration.CodeWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub PrintCode (cp As CodeWriter)" />
+      <MemberSignature Language="F#" Value="override this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeWhen.PrintCode cp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

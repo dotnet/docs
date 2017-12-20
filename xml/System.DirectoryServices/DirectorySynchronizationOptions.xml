@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public enum DirectorySynchronizationOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DirectorySynchronizationOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectorySynchronizationOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DirectorySynchronizationOptions" />
+  <TypeSignature Language="F#" Value="type DirectorySynchronizationOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="IncrementalValues" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DirectorySynchronizationOptions IncrementalValues = int64(2147483648)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectorySynchronizationOptions.IncrementalValues" />
+      <MemberSignature Language="VB.NET" Value="IncrementalValues" />
+      <MemberSignature Language="F#" Value="IncrementalValues = 2147483648" Usage="System.DirectoryServices.DirectorySynchronizationOptions.IncrementalValues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DirectorySynchronizationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2147483648</MemberValue>
       <Docs>
         <summary>If this flag is not present, all of the values, up to a server-specified limit, in a multi-valued attribute are returned when any value changes. If this flag is present, only the changed values are returned.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DirectorySynchronizationOptions None = int64(0)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectorySynchronizationOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.DirectoryServices.DirectorySynchronizationOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -50,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DirectorySynchronizationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No flags are set.</summary>
       </Docs>
@@ -58,6 +66,8 @@
       <MemberSignature Language="C#" Value="ObjectSecurity" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DirectorySynchronizationOptions ObjectSecurity = int64(1)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectorySynchronizationOptions.ObjectSecurity" />
+      <MemberSignature Language="VB.NET" Value="ObjectSecurity" />
+      <MemberSignature Language="F#" Value="ObjectSecurity = 1" Usage="System.DirectoryServices.DirectorySynchronizationOptions.ObjectSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DirectorySynchronizationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>If this flag is not present, the caller must have the right to replicate changes. If this flag is present, the caller requires no rights, but is allowed to see only objects and attributes that are accessible to the caller.</summary>
       </Docs>
@@ -75,6 +86,8 @@
       <MemberSignature Language="C#" Value="ParentsFirst" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DirectorySynchronizationOptions ParentsFirst = int64(2048)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectorySynchronizationOptions.ParentsFirst" />
+      <MemberSignature Language="VB.NET" Value="ParentsFirst" />
+      <MemberSignature Language="F#" Value="ParentsFirst = 2048" Usage="System.DirectoryServices.DirectorySynchronizationOptions.ParentsFirst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -84,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DirectorySynchronizationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>Return parents before children, when parents would otherwise appear later in the replication stream.</summary>
       </Docs>
@@ -92,6 +106,8 @@
       <MemberSignature Language="C#" Value="PublicDataOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DirectorySynchronizationOptions PublicDataOnly = int64(8192)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectorySynchronizationOptions.PublicDataOnly" />
+      <MemberSignature Language="VB.NET" Value="PublicDataOnly" />
+      <MemberSignature Language="F#" Value="PublicDataOnly = 8192" Usage="System.DirectoryServices.DirectorySynchronizationOptions.PublicDataOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -101,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DirectorySynchronizationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>Do not return private data in the search results.</summary>
       </Docs>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SqlMethodAttribute : Microsoft.SqlServer.Server.SqlFunctionAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SqlMethodAttribute extends Microsoft.SqlServer.Server.SqlFunctionAttribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SqlMethodAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlMethodAttribute&#xA;Inherits SqlFunctionAttribute" />
+  <TypeSignature Language="F#" Value="type SqlMethodAttribute = class&#xA;    inherit SqlFunctionAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +44,7 @@
       <MemberSignature Language="C#" Value="public SqlMethodAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMethodAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -58,6 +61,8 @@
       <MemberSignature Language="C#" Value="public bool InvokeIfReceiverIsNull { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool InvokeIfReceiverIsNull" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMethodAttribute.InvokeIfReceiverIsNull" />
+      <MemberSignature Language="VB.NET" Value="Public Property InvokeIfReceiverIsNull As Boolean" />
+      <MemberSignature Language="F#" Value="member this.InvokeIfReceiverIsNull : bool with get, set" Usage="Microsoft.SqlServer.Server.SqlMethodAttribute.InvokeIfReceiverIsNull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -87,6 +92,8 @@
       <MemberSignature Language="C#" Value="public bool IsMutator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMutator" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMethodAttribute.IsMutator" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsMutator As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsMutator : bool with get, set" Usage="Microsoft.SqlServer.Server.SqlMethodAttribute.IsMutator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -118,6 +125,8 @@
       <MemberSignature Language="C#" Value="public bool OnNullCall { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OnNullCall" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMethodAttribute.OnNullCall" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnNullCall As Boolean" />
+      <MemberSignature Language="F#" Value="member this.OnNullCall : bool with get, set" Usage="Microsoft.SqlServer.Server.SqlMethodAttribute.OnNullCall" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

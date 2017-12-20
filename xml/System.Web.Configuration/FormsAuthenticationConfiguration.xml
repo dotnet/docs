@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class FormsAuthenticationConfiguration : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormsAuthenticationConfiguration extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.FormsAuthenticationConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormsAuthenticationConfiguration&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type FormsAuthenticationConfiguration = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +60,7 @@
       <MemberSignature Language="C#" Value="public FormsAuthenticationConfiguration ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.FormsAuthenticationConfiguration.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +86,8 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpCookieMode Cookieless { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.HttpCookieMode Cookieless" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Cookieless" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cookieless As HttpCookieMode" />
+      <MemberSignature Language="F#" Value="member this.Cookieless : System.Web.HttpCookieMode with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Cookieless" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +127,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.FormsAuthenticationCredentials Credentials { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.FormsAuthenticationCredentials Credentials" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Credentials" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Credentials As FormsAuthenticationCredentials" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Web.Configuration.FormsAuthenticationCredentials" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Credentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -163,6 +170,8 @@
       <MemberSignature Language="C#" Value="public string DefaultUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.DefaultUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultUrl As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultUrl : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.DefaultUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,6 +213,8 @@
       <MemberSignature Language="C#" Value="public string Domain { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Domain" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Domain" />
+      <MemberSignature Language="VB.NET" Value="Public Property Domain As String" />
+      <MemberSignature Language="F#" Value="member this.Domain : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Domain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -246,6 +257,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElementProperty ElementProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationElementProperty ElementProperty" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.ElementProperty" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementProperty As ConfigurationElementProperty" />
+      <MemberSignature Language="F#" Value="member this.ElementProperty : System.Configuration.ConfigurationElementProperty" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.ElementProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -264,6 +277,8 @@
       <MemberSignature Language="C#" Value="public bool EnableCrossAppRedirects { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableCrossAppRedirects" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.EnableCrossAppRedirects" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableCrossAppRedirects As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableCrossAppRedirects : bool with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.EnableCrossAppRedirects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -307,6 +322,8 @@
       <MemberSignature Language="C#" Value="public string LoginUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LoginUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.LoginUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property LoginUrl As String" />
+      <MemberSignature Language="F#" Value="member this.LoginUrl : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.LoginUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -348,6 +365,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -384,6 +403,8 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -426,6 +447,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -444,6 +467,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.FormsProtectionEnum Protection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Configuration.FormsProtectionEnum Protection" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Protection" />
+      <MemberSignature Language="VB.NET" Value="Public Property Protection As FormsProtectionEnum" />
+      <MemberSignature Language="F#" Value="member this.Protection : System.Web.Configuration.FormsProtectionEnum with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Protection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -481,6 +506,8 @@
       <MemberSignature Language="C#" Value="public bool RequireSSL { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequireSSL" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.RequireSSL" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequireSSL As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequireSSL : bool with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.RequireSSL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -521,6 +548,8 @@
       <MemberSignature Language="C#" Value="public bool SlidingExpiration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SlidingExpiration" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.SlidingExpiration" />
+      <MemberSignature Language="VB.NET" Value="Public Property SlidingExpiration As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SlidingExpiration : bool with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.SlidingExpiration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -560,6 +589,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.TicketCompatibilityMode TicketCompatibilityMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Configuration.TicketCompatibilityMode TicketCompatibilityMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.TicketCompatibilityMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property TicketCompatibilityMode As TicketCompatibilityMode" />
+      <MemberSignature Language="F#" Value="member this.TicketCompatibilityMode : System.Web.Configuration.TicketCompatibilityMode with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.TicketCompatibilityMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -597,6 +628,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan Timeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Timeout" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property Timeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.Timeout : TimeSpan with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

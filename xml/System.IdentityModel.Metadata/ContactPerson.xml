@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ContactPerson" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContactPerson extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.ContactPerson" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContactPerson" />
+  <TypeSignature Language="F#" Value="type ContactPerson = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.ContactPerson" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ContactPerson ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.ContactPerson.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -41,6 +53,7 @@
       <MemberSignature Language="C#" Value="public ContactPerson (System.IdentityModel.Metadata.ContactType contactType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.IdentityModel.Metadata.ContactType contactType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.ContactPerson.#ctor(System.IdentityModel.Metadata.ContactType)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.ContactPerson : System.IdentityModel.Metadata.ContactType -&gt; System.IdentityModel.Metadata.ContactPerson" Usage="new System.IdentityModel.Metadata.ContactPerson contactType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -59,6 +72,8 @@
       <MemberSignature Language="C#" Value="public string Company { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Company" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ContactPerson.Company" />
+      <MemberSignature Language="VB.NET" Value="Public Property Company As String" />
+      <MemberSignature Language="F#" Value="member this.Company : string with get, set" Usage="System.IdentityModel.Metadata.ContactPerson.Company" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -84,6 +99,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;string&gt; EmailAddresses { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;string&gt; EmailAddresses" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ContactPerson.EmailAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EmailAddresses As ICollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.EmailAddresses : System.Collections.Generic.ICollection&lt;string&gt;" Usage="System.IdentityModel.Metadata.ContactPerson.EmailAddresses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -109,6 +126,8 @@
       <MemberSignature Language="C#" Value="public string GivenName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string GivenName" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ContactPerson.GivenName" />
+      <MemberSignature Language="VB.NET" Value="Public Property GivenName As String" />
+      <MemberSignature Language="F#" Value="member this.GivenName : string with get, set" Usage="System.IdentityModel.Metadata.ContactPerson.GivenName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -134,6 +153,8 @@
       <MemberSignature Language="C#" Value="public string Surname { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Surname" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ContactPerson.Surname" />
+      <MemberSignature Language="VB.NET" Value="Public Property Surname As String" />
+      <MemberSignature Language="F#" Value="member this.Surname : string with get, set" Usage="System.IdentityModel.Metadata.ContactPerson.Surname" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -159,6 +180,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;string&gt; TelephoneNumbers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;string&gt; TelephoneNumbers" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ContactPerson.TelephoneNumbers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TelephoneNumbers As ICollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.TelephoneNumbers : System.Collections.Generic.ICollection&lt;string&gt;" Usage="System.IdentityModel.Metadata.ContactPerson.TelephoneNumbers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -184,6 +207,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Metadata.ContactType Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IdentityModel.Metadata.ContactType Type" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ContactPerson.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As ContactType" />
+      <MemberSignature Language="F#" Value="member this.Type : System.IdentityModel.Metadata.ContactType with get, set" Usage="System.IdentityModel.Metadata.ContactPerson.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -205,14 +230,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.ContactPerson" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

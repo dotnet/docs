@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class BinaryKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BinaryKeyIdentifierClause extends System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.BinaryKeyIdentifierClause" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BinaryKeyIdentifierClause&#xA;Inherits SecurityKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type BinaryKeyIdentifierClause = class&#xA;    inherit SecurityKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BinaryKeyIdentifierClause" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected BinaryKeyIdentifierClause (string clauseType, byte[] identificationData, bool cloneBuffer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string clauseType, unsigned int8[] identificationData, bool cloneBuffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.#ctor(System.String,System.Byte[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (clauseType As String, identificationData As Byte(), cloneBuffer As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.BinaryKeyIdentifierClause : string * byte[] * bool -&gt; System.IdentityModel.Tokens.BinaryKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.BinaryKeyIdentifierClause (clauseType, identificationData, cloneBuffer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -53,6 +66,8 @@
       <MemberSignature Language="C#" Value="protected BinaryKeyIdentifierClause (string clauseType, byte[] identificationData, bool cloneBuffer, byte[] derivationNonce, int derivationLength);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string clauseType, unsigned int8[] identificationData, bool cloneBuffer, unsigned int8[] derivationNonce, int32 derivationLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.#ctor(System.String,System.Byte[],System.Boolean,System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (clauseType As String, identificationData As Byte(), cloneBuffer As Boolean, derivationNonce As Byte(), derivationLength As Integer)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.BinaryKeyIdentifierClause : string * byte[] * bool * byte[] * int -&gt; System.IdentityModel.Tokens.BinaryKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.BinaryKeyIdentifierClause (clauseType, identificationData, cloneBuffer, derivationNonce, derivationLength)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -93,6 +108,8 @@
       <MemberSignature Language="C#" Value="public byte[] GetBuffer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetBuffer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBuffer () As Byte()" />
+      <MemberSignature Language="F#" Value="member this.GetBuffer : unit -&gt; byte[]" Usage="binaryKeyIdentifierClause.GetBuffer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -120,6 +137,8 @@
       <MemberSignature Language="C#" Value="protected byte[] GetRawBuffer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance unsigned int8[] GetRawBuffer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetRawBuffer" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetRawBuffer () As Byte()" />
+      <MemberSignature Language="F#" Value="member this.GetRawBuffer : unit -&gt; byte[]" Usage="binaryKeyIdentifierClause.GetRawBuffer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -145,10 +164,21 @@
         <altmember cref="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Matches">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the key identifier for this instance matches the specified object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Matches">
       <MemberSignature Language="C#" Value="public bool Matches (byte[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(unsigned int8[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.Matches(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Matches (data As Byte()) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Matches : byte[] -&gt; bool" Usage="binaryKeyIdentifierClause.Matches data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -172,6 +202,8 @@
       <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (clause As SecurityKeyIdentifierClause) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="binaryKeyIdentifierClause.Matches keyIdentifierClause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -195,6 +227,8 @@
       <MemberSignature Language="C#" Value="public bool Matches (byte[] data, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(unsigned int8[] data, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.Matches(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Matches (data As Byte(), offset As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Matches : byte[] * int -&gt; bool" Usage="binaryKeyIdentifierClause.Matches (data, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -216,23 +250,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Matches">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the key identifier for this instance matches the specified object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BinaryKeyIdentifierClause" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

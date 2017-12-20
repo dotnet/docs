@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void RenewedSecurityTokenHandler(SecurityToken newSecurityToken, SecurityToken oldSecurityToken);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RenewedSecurityTokenHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.RenewedSecurityTokenHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub RenewedSecurityTokenHandler(newSecurityToken As SecurityToken, oldSecurityToken As SecurityToken)" />
+  <TypeSignature Language="F#" Value="type RenewedSecurityTokenHandler = delegate of SecurityToken * SecurityToken -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class RequestContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RequestContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class RequestContext" />
+  <TypeSignature Language="F#" Value="type RequestContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +31,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RequestContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RequestContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RequestContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +60,7 @@
       <MemberSignature Language="C#" Value="public RequestContext (System.Web.HttpContextBase httpContext, System.Web.Routing.RouteData routeData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContextBase httpContext, class System.Web.Routing.RouteData routeData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RequestContext.#ctor(System.Web.HttpContextBase,System.Web.Routing.RouteData)" />
+      <MemberSignature Language="F#" Value="new System.Web.Routing.RequestContext : System.Web.HttpContextBase * System.Web.Routing.RouteData -&gt; System.Web.Routing.RequestContext" Usage="new System.Web.Routing.RequestContext (httpContext, routeData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +83,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.HttpContextBase HttpContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContextBase HttpContext" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RequestContext.HttpContext" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HttpContext As HttpContextBase" />
+      <MemberSignature Language="F#" Value="member this.HttpContext : System.Web.HttpContextBase with get, set" Usage="System.Web.Routing.RequestContext.HttpContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +110,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.Routing.RouteData RouteData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Routing.RouteData RouteData" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RequestContext.RouteData" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RouteData As RouteData" />
+      <MemberSignature Language="F#" Value="member this.RouteData : System.Web.Routing.RouteData with get, set" Usage="System.Web.Routing.RequestContext.RouteData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -116,14 +133,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RequestContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

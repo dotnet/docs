@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IAccessibleHandler" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAccessibleHandler" />
   <TypeSignature Language="DocId" Value="T:Accessibility.IAccessibleHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAccessibleHandler" />
+  <TypeSignature Language="F#" Value="type IAccessibleHandler = interface" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public void AccessibleObjectFromID (int hwnd, int lObjectID, out Accessibility.IAccessible pIAccessible);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AccessibleObjectFromID([in]int32 hwnd, [in]int32 lObjectID, [out] class Accessibility.IAccessible&amp; pIAccessible) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccessibleHandler.AccessibleObjectFromID(System.Int32,System.Int32,Accessibility.IAccessible@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AccessibleObjectFromID (hwnd As Integer, lObjectID As Integer, ByRef pIAccessible As IAccessible)" />
+      <MemberSignature Language="F#" Value="abstract member AccessibleObjectFromID : int * int *  -&gt; unit" Usage="iAccessibleHandler.AccessibleObjectFromID (hwnd, lObjectID, pIAccessible)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>

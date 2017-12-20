@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class Network" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Network extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Network" />
+  <TypeSignature Language="VB.NET" Value="Public Class Network" />
+  <TypeSignature Language="F#" Value="type Network = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="public Network ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -51,10 +54,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DownloadFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads the specified remote file and saves it in the specified location.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DownloadFile">
       <MemberSignature Language="C#" Value="public void DownloadFile (string address, string destinationFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(string address, string destinationFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadFile (address As String, destinationFileName As String)" />
+      <MemberSignature Language="F#" Value="member this.DownloadFile : string * string -&gt; unit" Usage="network.DownloadFile (address, destinationFileName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -116,6 +130,8 @@
       <MemberSignature Language="C#" Value="public void DownloadFile (Uri address, string destinationFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(class System.Uri address, string destinationFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.Uri,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadFile (address As Uri, destinationFileName As String)" />
+      <MemberSignature Language="F#" Value="member this.DownloadFile : Uri * string -&gt; unit" Usage="network.DownloadFile (address, destinationFileName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -175,6 +191,8 @@
       <MemberSignature Language="C#" Value="public void DownloadFile (string address, string destinationFileName, string userName, string password);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(string address, string destinationFileName, string userName, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadFile (address As String, destinationFileName As String, userName As String, password As String)" />
+      <MemberSignature Language="F#" Value="member this.DownloadFile : string * string * string * string -&gt; unit" Usage="network.DownloadFile (address, destinationFileName, userName, password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -243,6 +261,8 @@
       <MemberSignature Language="C#" Value="public void DownloadFile (Uri address, string destinationFileName, string userName, string password);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(class System.Uri address, string destinationFileName, string userName, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.Uri,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadFile (address As Uri, destinationFileName As String, userName As String, password As String)" />
+      <MemberSignature Language="F#" Value="member this.DownloadFile : Uri * string * string * string -&gt; unit" Usage="network.DownloadFile (address, destinationFileName, userName, password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -311,6 +331,8 @@
       <MemberSignature Language="C#" Value="public void DownloadFile (Uri address, string destinationFileName, System.Net.ICredentials networkCredentials, bool showUI, int connectionTimeout, bool overwrite);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(class System.Uri address, string destinationFileName, class System.Net.ICredentials networkCredentials, bool showUI, int32 connectionTimeout, bool overwrite) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.Uri,System.String,System.Net.ICredentials,System.Boolean,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadFile (address As Uri, destinationFileName As String, networkCredentials As ICredentials, showUI As Boolean, connectionTimeout As Integer, overwrite As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.DownloadFile : Uri * string * System.Net.ICredentials * bool * int * bool -&gt; unit" Usage="network.DownloadFile (address, destinationFileName, networkCredentials, showUI, connectionTimeout, overwrite)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -393,6 +415,8 @@
       <MemberSignature Language="C#" Value="public void DownloadFile (string address, string destinationFileName, string userName, string password, bool showUI, int connectionTimeout, bool overwrite);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(string address, string destinationFileName, string userName, string password, bool showUI, int32 connectionTimeout, bool overwrite) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.String,System.String,System.String,System.String,System.Boolean,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadFile (address As String, destinationFileName As String, userName As String, password As String, showUI As Boolean, connectionTimeout As Integer, overwrite As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.DownloadFile : string * string * string * string * bool * int * bool -&gt; unit" Usage="network.DownloadFile (address, destinationFileName, userName, password, showUI, connectionTimeout, overwrite)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -475,6 +499,8 @@
       <MemberSignature Language="C#" Value="public void DownloadFile (Uri address, string destinationFileName, System.Net.ICredentials networkCredentials, bool showUI, int connectionTimeout, bool overwrite, Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(class System.Uri address, string destinationFileName, class System.Net.ICredentials networkCredentials, bool showUI, int32 connectionTimeout, bool overwrite, valuetype Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.Uri,System.String,System.Net.ICredentials,System.Boolean,System.Int32,System.Boolean,Microsoft.VisualBasic.FileIO.UICancelOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadFile (address As Uri, destinationFileName As String, networkCredentials As ICredentials, showUI As Boolean, connectionTimeout As Integer, overwrite As Boolean, onUserCancel As UICancelOption)" />
+      <MemberSignature Language="F#" Value="member this.DownloadFile : Uri * string * System.Net.ICredentials * bool * int * bool * Microsoft.VisualBasic.FileIO.UICancelOption -&gt; unit" Usage="network.DownloadFile (address, destinationFileName, networkCredentials, showUI, connectionTimeout, overwrite, onUserCancel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -561,6 +587,8 @@
       <MemberSignature Language="C#" Value="public void DownloadFile (Uri address, string destinationFileName, string userName, string password, bool showUI, int connectionTimeout, bool overwrite);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(class System.Uri address, string destinationFileName, string userName, string password, bool showUI, int32 connectionTimeout, bool overwrite) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.Uri,System.String,System.String,System.String,System.Boolean,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadFile (address As Uri, destinationFileName As String, userName As String, password As String, showUI As Boolean, connectionTimeout As Integer, overwrite As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.DownloadFile : Uri * string * string * string * bool * int * bool -&gt; unit" Usage="network.DownloadFile (address, destinationFileName, userName, password, showUI, connectionTimeout, overwrite)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -642,6 +670,8 @@
       <MemberSignature Language="C#" Value="public void DownloadFile (string address, string destinationFileName, string userName, string password, bool showUI, int connectionTimeout, bool overwrite, Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(string address, string destinationFileName, string userName, string password, bool showUI, int32 connectionTimeout, bool overwrite, valuetype Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.String,System.String,System.String,System.String,System.Boolean,System.Int32,System.Boolean,Microsoft.VisualBasic.FileIO.UICancelOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadFile (address As String, destinationFileName As String, userName As String, password As String, showUI As Boolean, connectionTimeout As Integer, overwrite As Boolean, onUserCancel As UICancelOption)" />
+      <MemberSignature Language="F#" Value="member this.DownloadFile : string * string * string * string * bool * int * bool * Microsoft.VisualBasic.FileIO.UICancelOption -&gt; unit" Usage="network.DownloadFile (address, destinationFileName, userName, password, showUI, connectionTimeout, overwrite, onUserCancel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -725,6 +755,8 @@
       <MemberSignature Language="C#" Value="public void DownloadFile (Uri address, string destinationFileName, string userName, string password, bool showUI, int connectionTimeout, bool overwrite, Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(class System.Uri address, string destinationFileName, string userName, string password, bool showUI, int32 connectionTimeout, bool overwrite, valuetype Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.Uri,System.String,System.String,System.String,System.Boolean,System.Int32,System.Boolean,Microsoft.VisualBasic.FileIO.UICancelOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadFile (address As Uri, destinationFileName As String, userName As String, password As String, showUI As Boolean, connectionTimeout As Integer, overwrite As Boolean, onUserCancel As UICancelOption)" />
+      <MemberSignature Language="F#" Value="member this.DownloadFile : Uri * string * string * string * bool * int * bool * Microsoft.VisualBasic.FileIO.UICancelOption -&gt; unit" Usage="network.DownloadFile (address, destinationFileName, userName, password, showUI, connectionTimeout, overwrite, onUserCancel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -808,6 +840,8 @@
       <MemberSignature Language="C#" Value="public bool IsAvailable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAvailable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Network.IsAvailable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAvailable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAvailable : bool" Usage="Microsoft.VisualBasic.Devices.Network.IsAvailable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -849,6 +883,8 @@
       <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler NetworkAvailabilityChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler NetworkAvailabilityChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event NetworkAvailabilityChanged As NetworkAvailableEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NetworkAvailabilityChanged : Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler " Usage="member this.NetworkAvailabilityChanged : Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -894,10 +930,21 @@
         <altmember cref="T:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Ping">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Pings the specified server.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Ping">
       <MemberSignature Language="C#" Value="public bool Ping (string hostNameOrAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool Ping(string hostNameOrAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.Ping(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Ping (hostNameOrAddress As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Ping : string -&gt; bool" Usage="network.Ping hostNameOrAddress" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -954,6 +1001,8 @@
       <MemberSignature Language="C#" Value="public bool Ping (Uri address);" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool Ping(class System.Uri address) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.Ping(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Ping (address As Uri) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Ping : Uri -&gt; bool" Usage="network.Ping address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1010,6 +1059,8 @@
       <MemberSignature Language="C#" Value="public bool Ping (string hostNameOrAddress, int timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool Ping(string hostNameOrAddress, int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.Ping(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Ping (hostNameOrAddress As String, timeout As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Ping : string * int -&gt; bool" Usage="network.Ping (hostNameOrAddress, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1068,6 +1119,8 @@
       <MemberSignature Language="C#" Value="public bool Ping (Uri address, int timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool Ping(class System.Uri address, int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.Ping(System.Uri,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Ping (address As Uri, timeout As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Ping : Uri * int -&gt; bool" Usage="network.Ping (address, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1122,10 +1175,21 @@
         <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="UploadFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends the specified file to the specified host address.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="UploadFile">
       <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, string address);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, string address) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UploadFile (sourceFileName As String, address As String)" />
+      <MemberSignature Language="F#" Value="member this.UploadFile : string * string -&gt; unit" Usage="network.UploadFile (sourceFileName, address)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1186,6 +1250,8 @@
       <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, Uri address);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, class System.Uri address) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UploadFile (sourceFileName As String, address As Uri)" />
+      <MemberSignature Language="F#" Value="member this.UploadFile : string * Uri -&gt; unit" Usage="network.UploadFile (sourceFileName, address)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1246,6 +1312,8 @@
       <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, string address, string userName, string password);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, string address, string userName, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UploadFile (sourceFileName As String, address As String, userName As String, password As String)" />
+      <MemberSignature Language="F#" Value="member this.UploadFile : string * string * string * string -&gt; unit" Usage="network.UploadFile (sourceFileName, address, userName, password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1314,6 +1382,8 @@
       <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, Uri address, string userName, string password);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, class System.Uri address, string userName, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.Uri,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UploadFile (sourceFileName As String, address As Uri, userName As String, password As String)" />
+      <MemberSignature Language="F#" Value="member this.UploadFile : string * Uri * string * string -&gt; unit" Usage="network.UploadFile (sourceFileName, address, userName, password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1382,6 +1452,8 @@
       <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, Uri address, System.Net.ICredentials networkCredentials, bool showUI, int connectionTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, class System.Uri address, class System.Net.ICredentials networkCredentials, bool showUI, int32 connectionTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.Uri,System.Net.ICredentials,System.Boolean,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UploadFile (sourceFileName As String, address As Uri, networkCredentials As ICredentials, showUI As Boolean, connectionTimeout As Integer)" />
+      <MemberSignature Language="F#" Value="member this.UploadFile : string * Uri * System.Net.ICredentials * bool * int -&gt; unit" Usage="network.UploadFile (sourceFileName, address, networkCredentials, showUI, connectionTimeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1456,6 +1528,8 @@
       <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, string address, string userName, string password, bool showUI, int connectionTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, string address, string userName, string password, bool showUI, int32 connectionTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.String,System.String,System.String,System.Boolean,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UploadFile (sourceFileName As String, address As String, userName As String, password As String, showUI As Boolean, connectionTimeout As Integer)" />
+      <MemberSignature Language="F#" Value="member this.UploadFile : string * string * string * string * bool * int -&gt; unit" Usage="network.UploadFile (sourceFileName, address, userName, password, showUI, connectionTimeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1532,6 +1606,8 @@
       <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, Uri address, System.Net.ICredentials networkCredentials, bool showUI, int connectionTimeout, Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, class System.Uri address, class System.Net.ICredentials networkCredentials, bool showUI, int32 connectionTimeout, valuetype Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.Uri,System.Net.ICredentials,System.Boolean,System.Int32,Microsoft.VisualBasic.FileIO.UICancelOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UploadFile (sourceFileName As String, address As Uri, networkCredentials As ICredentials, showUI As Boolean, connectionTimeout As Integer, onUserCancel As UICancelOption)" />
+      <MemberSignature Language="F#" Value="member this.UploadFile : string * Uri * System.Net.ICredentials * bool * int * Microsoft.VisualBasic.FileIO.UICancelOption -&gt; unit" Usage="network.UploadFile (sourceFileName, address, networkCredentials, showUI, connectionTimeout, onUserCancel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1608,6 +1684,8 @@
       <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, Uri address, string userName, string password, bool showUI, int connectionTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, class System.Uri address, string userName, string password, bool showUI, int32 connectionTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.Uri,System.String,System.String,System.Boolean,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UploadFile (sourceFileName As String, address As Uri, userName As String, password As String, showUI As Boolean, connectionTimeout As Integer)" />
+      <MemberSignature Language="F#" Value="member this.UploadFile : string * Uri * string * string * bool * int -&gt; unit" Usage="network.UploadFile (sourceFileName, address, userName, password, showUI, connectionTimeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1684,6 +1762,8 @@
       <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, string address, string userName, string password, bool showUI, int connectionTimeout, Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, string address, string userName, string password, bool showUI, int32 connectionTimeout, valuetype Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.String,System.String,System.String,System.Boolean,System.Int32,Microsoft.VisualBasic.FileIO.UICancelOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UploadFile (sourceFileName As String, address As String, userName As String, password As String, showUI As Boolean, connectionTimeout As Integer, onUserCancel As UICancelOption)" />
+      <MemberSignature Language="F#" Value="member this.UploadFile : string * string * string * string * bool * int * Microsoft.VisualBasic.FileIO.UICancelOption -&gt; unit" Usage="network.UploadFile (sourceFileName, address, userName, password, showUI, connectionTimeout, onUserCancel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1761,6 +1841,8 @@
       <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, Uri address, string userName, string password, bool showUI, int connectionTimeout, Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, class System.Uri address, string userName, string password, bool showUI, int32 connectionTimeout, valuetype Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.Uri,System.String,System.String,System.Boolean,System.Int32,Microsoft.VisualBasic.FileIO.UICancelOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UploadFile (sourceFileName As String, address As Uri, userName As String, password As String, showUI As Boolean, connectionTimeout As Integer, onUserCancel As UICancelOption)" />
+      <MemberSignature Language="F#" Value="member this.UploadFile : string * Uri * string * string * bool * int * Microsoft.VisualBasic.FileIO.UICancelOption -&gt; unit" Usage="network.UploadFile (sourceFileName, address, userName, password, showUI, connectionTimeout, onUserCancel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1834,32 +1916,5 @@
         <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="UploadFile">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends the specified file to the specified host address.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DownloadFile">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Downloads the specified remote file and saves it in the specified location.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Ping">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Pings the specified server.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

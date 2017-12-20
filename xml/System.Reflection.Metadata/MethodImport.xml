@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public struct MethodImport" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MethodImport extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MethodImport" />
+  <TypeSignature Language="VB.NET" Value="Public Structure MethodImport" />
+  <TypeSignature Language="F#" Value="type MethodImport = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodImportAttributes Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.MethodImportAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodImport.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As MethodImportAttributes" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.MethodImportAttributes" Usage="System.Reflection.Metadata.MethodImport.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.ModuleReferenceHandle Module { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.ModuleReferenceHandle Module" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodImport.Module" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Module As ModuleReferenceHandle" />
+      <MemberSignature Language="F#" Value="member this.Module : System.Reflection.Metadata.ModuleReferenceHandle" Usage="System.Reflection.Metadata.MethodImport.Module" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -61,6 +67,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StringHandle Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.StringHandle Name" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodImport.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As StringHandle" />
+      <MemberSignature Language="F#" Value="member this.Name : System.Reflection.Metadata.StringHandle" Usage="System.Reflection.Metadata.MethodImport.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

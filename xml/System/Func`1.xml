@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate TResult Func&lt;out TResult&gt;();" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Func`1&lt;+ TResult&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Func`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function Func(Of Out TResult)() As TResult " />
+  <TypeSignature Language="F#" Value="type Func&lt;'Result&gt; = delegate of unit -&gt; 'Result" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

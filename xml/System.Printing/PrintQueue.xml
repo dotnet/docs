@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class PrintQueue : System.Printing.PrintSystemObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi PrintQueue extends System.Printing.PrintSystemObject" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintQueue" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrintQueue&#xA;Inherits PrintSystemObject" />
+  <TypeSignature Language="F#" Value="type PrintQueue = class&#xA;    inherit PrintSystemObject" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,20 @@
     <altmember cref="T:System.Printing.PrintServer" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintQueue" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PrintQueue (System.Printing.PrintServer printServer, string printQueueName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Printing.PrintServer printServer, string printQueueName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueue : System.Printing.PrintServer * string -&gt; System.Printing.PrintQueue" Usage="new System.Printing.PrintQueue (printServer, printQueueName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -64,6 +76,7 @@
       <MemberSignature Language="C#" Value="public PrintQueue (System.Printing.PrintServer printServer, string printQueueName, int printSchemaVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Printing.PrintServer printServer, string printQueueName, int32 printSchemaVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.Int32)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueue : System.Printing.PrintServer * string * int -&gt; System.Printing.PrintQueue" Usage="new System.Printing.PrintQueue (printServer, printQueueName, printSchemaVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -100,6 +113,7 @@
       <MemberSignature Language="C#" Value="public PrintQueue (System.Printing.PrintServer printServer, string printQueueName, System.Printing.PrintQueueIndexedProperty[] propertyFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Printing.PrintServer printServer, string printQueueName, valuetype System.Printing.PrintQueueIndexedProperty[] propertyFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.Printing.PrintQueueIndexedProperty[])" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueue : System.Printing.PrintServer * string * System.Printing.PrintQueueIndexedProperty[] -&gt; System.Printing.PrintQueue" Usage="new System.Printing.PrintQueue (printServer, printQueueName, propertyFilter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -136,6 +150,7 @@
       <MemberSignature Language="C#" Value="public PrintQueue (System.Printing.PrintServer printServer, string printQueueName, System.Printing.PrintSystemDesiredAccess desiredAccess);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Printing.PrintServer printServer, string printQueueName, valuetype System.Printing.PrintSystemDesiredAccess desiredAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.Printing.PrintSystemDesiredAccess)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueue : System.Printing.PrintServer * string * System.Printing.PrintSystemDesiredAccess -&gt; System.Printing.PrintQueue" Usage="new System.Printing.PrintQueue (printServer, printQueueName, desiredAccess)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -165,6 +180,7 @@
       <MemberSignature Language="C#" Value="public PrintQueue (System.Printing.PrintServer printServer, string printQueueName, string[] propertyFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Printing.PrintServer printServer, string printQueueName, string[] propertyFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.String[])" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueue : System.Printing.PrintServer * string * string[] -&gt; System.Printing.PrintQueue" Usage="new System.Printing.PrintQueue (printServer, printQueueName, propertyFilter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -201,6 +217,7 @@
       <MemberSignature Language="C#" Value="public PrintQueue (System.Printing.PrintServer printServer, string printQueueName, int printSchemaVersion, System.Printing.PrintSystemDesiredAccess desiredAccess);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Printing.PrintServer printServer, string printQueueName, int32 printSchemaVersion, valuetype System.Printing.PrintSystemDesiredAccess desiredAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.Int32,System.Printing.PrintSystemDesiredAccess)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueue : System.Printing.PrintServer * string * int * System.Printing.PrintSystemDesiredAccess -&gt; System.Printing.PrintQueue" Usage="new System.Printing.PrintQueue (printServer, printQueueName, printSchemaVersion, desiredAccess)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -239,6 +256,7 @@
       <MemberSignature Language="C#" Value="public PrintQueue (System.Printing.PrintServer printServer, string printQueueName, System.Printing.PrintQueueIndexedProperty[] propertyFilter, System.Printing.PrintSystemDesiredAccess desiredAccess);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Printing.PrintServer printServer, string printQueueName, valuetype System.Printing.PrintQueueIndexedProperty[] propertyFilter, valuetype System.Printing.PrintSystemDesiredAccess desiredAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.Printing.PrintQueueIndexedProperty[],System.Printing.PrintSystemDesiredAccess)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueue : System.Printing.PrintServer * string * System.Printing.PrintQueueIndexedProperty[] * System.Printing.PrintSystemDesiredAccess -&gt; System.Printing.PrintQueue" Usage="new System.Printing.PrintQueue (printServer, printQueueName, propertyFilter, desiredAccess)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -277,6 +295,7 @@
       <MemberSignature Language="C#" Value="public PrintQueue (System.Printing.PrintServer printServer, string printQueueName, string[] propertyFilter, System.Printing.PrintSystemDesiredAccess desiredAccess);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Printing.PrintServer printServer, string printQueueName, string[] propertyFilter, valuetype System.Printing.PrintSystemDesiredAccess desiredAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.String[],System.Printing.PrintSystemDesiredAccess)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueue : System.Printing.PrintServer * string * string[] * System.Printing.PrintSystemDesiredAccess -&gt; System.Printing.PrintQueue" Usage="new System.Printing.PrintQueue (printServer, printQueueName, propertyFilter, desiredAccess)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -334,6 +353,8 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintSystemJobInfo AddJob ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Printing.PrintSystemJobInfo AddJob() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.AddJob" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddJob () As PrintSystemJobInfo" />
+      <MemberSignature Language="F#" Value="member this.AddJob : unit -&gt; System.Printing.PrintSystemJobInfo" Usage="printQueue.AddJob " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -382,6 +403,8 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintSystemJobInfo AddJob (string jobName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Printing.PrintSystemJobInfo AddJob(string jobName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.AddJob(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddJob (jobName As String) As PrintSystemJobInfo" />
+      <MemberSignature Language="F#" Value="member this.AddJob : string -&gt; System.Printing.PrintSystemJobInfo" Usage="printQueue.AddJob jobName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -431,6 +454,7 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintSystemJobInfo AddJob (string jobName, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Printing.PrintSystemJobInfo AddJob(string jobName, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.AddJob(System.String,System.Printing.PrintTicket)" />
+      <MemberSignature Language="F#" Value="member this.AddJob : string * System.Printing.PrintTicket -&gt; System.Printing.PrintSystemJobInfo" Usage="printQueue.AddJob (jobName, printTicket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -467,6 +491,8 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintSystemJobInfo AddJob (string jobName, string documentPath, bool fastCopy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Printing.PrintSystemJobInfo AddJob(string jobName, string documentPath, bool fastCopy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.AddJob(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddJob (jobName As String, documentPath As String, fastCopy As Boolean) As PrintSystemJobInfo" />
+      <MemberSignature Language="F#" Value="member this.AddJob : string * string * bool -&gt; System.Printing.PrintSystemJobInfo" Usage="printQueue.AddJob (jobName, documentPath, fastCopy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -527,6 +553,7 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintSystemJobInfo AddJob (string jobName, string documentPath, bool fastCopy, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Printing.PrintSystemJobInfo AddJob(string jobName, string documentPath, bool fastCopy, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.AddJob(System.String,System.String,System.Boolean,System.Printing.PrintTicket)" />
+      <MemberSignature Language="F#" Value="member this.AddJob : string * string * bool * System.Printing.PrintTicket -&gt; System.Printing.PrintSystemJobInfo" Usage="printQueue.AddJob (jobName, documentPath, fastCopy, printTicket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -568,6 +595,8 @@
       <MemberSignature Language="C#" Value="public virtual int AveragePagesPerMinute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AveragePagesPerMinute" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.AveragePagesPerMinute" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AveragePagesPerMinute As Integer" />
+      <MemberSignature Language="F#" Value="member this.AveragePagesPerMinute : int" Usage="System.Printing.PrintQueue.AveragePagesPerMinute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -586,6 +615,8 @@
       <MemberSignature Language="C#" Value="public int ClientPrintSchemaVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ClientPrintSchemaVersion" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.ClientPrintSchemaVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientPrintSchemaVersion As Integer" />
+      <MemberSignature Language="F#" Value="member this.ClientPrintSchemaVersion : int" Usage="System.Printing.PrintQueue.ClientPrintSchemaVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -611,6 +642,8 @@
       <MemberSignature Language="C#" Value="public virtual string Comment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.Comment" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Comment As String" />
+      <MemberSignature Language="F#" Value="member this.Comment : string with get, set" Usage="System.Printing.PrintQueue.Comment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -636,6 +669,8 @@
       <MemberSignature Language="C#" Value="public override void Commit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Commit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.Commit" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Commit ()" />
+      <MemberSignature Language="F#" Value="override this.Commit : unit -&gt; unit" Usage="printQueue.Commit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -679,10 +714,21 @@
         <altmember cref="M:System.Printing.PrintQueue.Refresh" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateXpsDocumentWriter">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Windows.Xps.XpsDocumentWriter" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateXpsDocumentWriter">
       <MemberSignature Language="C#" Value="public static System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter (ref System.Printing.PrintDocumentImageableArea documentImageableArea);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(class System.Printing.PrintDocumentImageableArea&amp; documentImageableArea) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Printing.PrintDocumentImageableArea@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateXpsDocumentWriter (ByRef documentImageableArea As PrintDocumentImageableArea) As XpsDocumentWriter" />
+      <MemberSignature Language="F#" Value="static member CreateXpsDocumentWriter :  -&gt; System.Windows.Xps.XpsDocumentWriter" Usage="System.Printing.PrintQueue.CreateXpsDocumentWriter documentImageableArea" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -721,6 +767,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter (System.Printing.PrintQueue printQueue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(class System.Printing.PrintQueue printQueue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Printing.PrintQueue)" />
+      <MemberSignature Language="F#" Value="static member CreateXpsDocumentWriter : System.Printing.PrintQueue -&gt; System.Windows.Xps.XpsDocumentWriter" Usage="System.Printing.PrintQueue.CreateXpsDocumentWriter printQueue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -753,6 +800,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter (ref double width, ref double height);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(float64&amp; width, float64&amp; height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Double@,System.Double@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateXpsDocumentWriter (ByRef width As Double, ByRef height As Double) As XpsDocumentWriter" />
+      <MemberSignature Language="F#" Value="static member CreateXpsDocumentWriter :  *  -&gt; System.Windows.Xps.XpsDocumentWriter" Usage="System.Printing.PrintQueue.CreateXpsDocumentWriter (width, height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -789,6 +838,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter (string jobDescription, ref System.Printing.PrintDocumentImageableArea documentImageableArea);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(string jobDescription, class System.Printing.PrintDocumentImageableArea&amp; documentImageableArea) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.CreateXpsDocumentWriter(System.String,System.Printing.PrintDocumentImageableArea@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateXpsDocumentWriter (jobDescription As String, ByRef documentImageableArea As PrintDocumentImageableArea) As XpsDocumentWriter" />
+      <MemberSignature Language="F#" Value="static member CreateXpsDocumentWriter : string *  -&gt; System.Windows.Xps.XpsDocumentWriter" Usage="System.Printing.PrintQueue.CreateXpsDocumentWriter (jobDescription, documentImageableArea)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -829,6 +880,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter (ref System.Printing.PrintDocumentImageableArea documentImageableArea, ref System.Windows.Controls.PageRangeSelection pageRangeSelection, ref System.Windows.Controls.PageRange pageRange);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(class System.Printing.PrintDocumentImageableArea&amp; documentImageableArea, valuetype System.Windows.Controls.PageRangeSelection&amp; pageRangeSelection, valuetype System.Windows.Controls.PageRange&amp; pageRange) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Printing.PrintDocumentImageableArea@,System.Windows.Controls.PageRangeSelection@,System.Windows.Controls.PageRange@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateXpsDocumentWriter (ByRef documentImageableArea As PrintDocumentImageableArea, ByRef pageRangeSelection As PageRangeSelection, ByRef pageRange As PageRange) As XpsDocumentWriter" />
+      <MemberSignature Language="F#" Value="static member CreateXpsDocumentWriter :  *  *  -&gt; System.Windows.Xps.XpsDocumentWriter" Usage="System.Printing.PrintQueue.CreateXpsDocumentWriter (documentImageableArea, pageRangeSelection, pageRange)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -871,6 +924,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter (string jobDescription, ref System.Printing.PrintDocumentImageableArea documentImageableArea, ref System.Windows.Controls.PageRangeSelection pageRangeSelection, ref System.Windows.Controls.PageRange pageRange);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(string jobDescription, class System.Printing.PrintDocumentImageableArea&amp; documentImageableArea, valuetype System.Windows.Controls.PageRangeSelection&amp; pageRangeSelection, valuetype System.Windows.Controls.PageRange&amp; pageRange) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.CreateXpsDocumentWriter(System.String,System.Printing.PrintDocumentImageableArea@,System.Windows.Controls.PageRangeSelection@,System.Windows.Controls.PageRange@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateXpsDocumentWriter (jobDescription As String, ByRef documentImageableArea As PrintDocumentImageableArea, ByRef pageRangeSelection As PageRangeSelection, ByRef pageRange As PageRange) As XpsDocumentWriter" />
+      <MemberSignature Language="F#" Value="static member CreateXpsDocumentWriter : string *  *  *  -&gt; System.Windows.Xps.XpsDocumentWriter" Usage="System.Printing.PrintQueue.CreateXpsDocumentWriter (jobDescription, documentImageableArea, pageRangeSelection, pageRange)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -915,6 +970,8 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintJobSettings CurrentJobSettings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintJobSettings CurrentJobSettings" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.CurrentJobSettings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentJobSettings As PrintJobSettings" />
+      <MemberSignature Language="F#" Value="member this.CurrentJobSettings : System.Printing.PrintJobSettings" Usage="System.Printing.PrintQueue.CurrentJobSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -939,6 +996,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Printing.PrintTicket DefaultPrintTicket { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintTicket DefaultPrintTicket" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.DefaultPrintTicket" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DefaultPrintTicket As PrintTicket" />
+      <MemberSignature Language="F#" Value="member this.DefaultPrintTicket : System.Printing.PrintTicket with get, set" Usage="System.Printing.PrintQueue.DefaultPrintTicket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -989,6 +1048,8 @@
       <MemberSignature Language="C#" Value="public virtual int DefaultPriority { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultPriority" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.DefaultPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DefaultPriority As Integer" />
+      <MemberSignature Language="F#" Value="member this.DefaultPriority : int with get, set" Usage="System.Printing.PrintQueue.DefaultPriority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1014,6 +1075,8 @@
       <MemberSignature Language="C#" Value="public virtual string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Printing.PrintQueue.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1039,6 +1102,8 @@
       <MemberSignature Language="C#" Value="public string FullName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FullName" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.FullName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="System.Printing.PrintQueue.FullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1074,6 +1139,8 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintSystemJobInfo GetJob (int jobId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Printing.PrintSystemJobInfo GetJob(int32 jobId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.GetJob(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetJob (jobId As Integer) As PrintSystemJobInfo" />
+      <MemberSignature Language="F#" Value="member this.GetJob : int -&gt; System.Printing.PrintSystemJobInfo" Usage="printQueue.GetJob jobId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1109,10 +1176,21 @@
         <altmember cref="M:System.Printing.PrintSystemJobInfo.Get(System.Printing.PrintQueue,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPrintCapabilities">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Printing.PrintCapabilities" /> object that identifies the capabilities of the printer or device, such as whether it prints in color or is capable of two-sided printing.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetPrintCapabilities">
       <MemberSignature Language="C#" Value="public System.Printing.PrintCapabilities GetPrintCapabilities ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Printing.PrintCapabilities GetPrintCapabilities() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.GetPrintCapabilities" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPrintCapabilities () As PrintCapabilities" />
+      <MemberSignature Language="F#" Value="member this.GetPrintCapabilities : unit -&gt; System.Printing.PrintCapabilities" Usage="printQueue.GetPrintCapabilities " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1149,6 +1227,7 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintCapabilities GetPrintCapabilities (System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Printing.PrintCapabilities GetPrintCapabilities(class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.GetPrintCapabilities(System.Printing.PrintTicket)" />
+      <MemberSignature Language="F#" Value="member this.GetPrintCapabilities : System.Printing.PrintTicket -&gt; System.Printing.PrintCapabilities" Usage="printQueue.GetPrintCapabilities printTicket" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1206,6 +1285,8 @@
       <MemberSignature Language="C#" Value="public System.IO.MemoryStream GetPrintCapabilitiesAsXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.MemoryStream GetPrintCapabilitiesAsXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.GetPrintCapabilitiesAsXml" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPrintCapabilitiesAsXml () As MemoryStream" />
+      <MemberSignature Language="F#" Value="member this.GetPrintCapabilitiesAsXml : unit -&gt; System.IO.MemoryStream" Usage="printQueue.GetPrintCapabilitiesAsXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1232,6 +1313,7 @@
       <MemberSignature Language="C#" Value="public System.IO.MemoryStream GetPrintCapabilitiesAsXml (System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.MemoryStream GetPrintCapabilitiesAsXml(class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.GetPrintCapabilitiesAsXml(System.Printing.PrintTicket)" />
+      <MemberSignature Language="F#" Value="member this.GetPrintCapabilitiesAsXml : System.Printing.PrintTicket -&gt; System.IO.MemoryStream" Usage="printQueue.GetPrintCapabilitiesAsXml printTicket" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1272,6 +1354,8 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintJobInfoCollection GetPrintJobInfoCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Printing.PrintJobInfoCollection GetPrintJobInfoCollection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.GetPrintJobInfoCollection" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPrintJobInfoCollection () As PrintJobInfoCollection" />
+      <MemberSignature Language="F#" Value="member this.GetPrintJobInfoCollection : unit -&gt; System.Printing.PrintJobInfoCollection" Usage="printQueue.GetPrintJobInfoCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1302,6 +1386,8 @@
       <MemberSignature Language="C#" Value="public bool HasPaperProblem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasPaperProblem" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.HasPaperProblem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasPaperProblem As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasPaperProblem : bool" Usage="System.Printing.PrintQueue.HasPaperProblem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1339,6 +1425,8 @@
       <MemberSignature Language="C#" Value="public bool HasToner { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasToner" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.HasToner" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasToner As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasToner : bool" Usage="System.Printing.PrintQueue.HasToner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1376,6 +1464,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Printing.PrintServer HostingPrintServer { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintServer HostingPrintServer" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.HostingPrintServer" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HostingPrintServer As PrintServer" />
+      <MemberSignature Language="F#" Value="member this.HostingPrintServer : System.Printing.PrintServer with get, set" Usage="System.Printing.PrintQueue.HostingPrintServer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1401,6 +1491,8 @@
       <MemberSignature Language="C#" Value="public bool InPartialTrust { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool InPartialTrust" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.InPartialTrust" />
+      <MemberSignature Language="VB.NET" Value="Public Property InPartialTrust As Boolean" />
+      <MemberSignature Language="F#" Value="member this.InPartialTrust : bool with get, set" Usage="System.Printing.PrintQueue.InPartialTrust" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1435,6 +1527,8 @@
       <MemberSignature Language="C#" Value="protected override sealed void InternalDispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InternalDispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.InternalDispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub InternalDispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.InternalDispose : bool -&gt; unit" Usage="printQueue.InternalDispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1462,6 +1556,8 @@
       <MemberSignature Language="C#" Value="public bool IsBidiEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBidiEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsBidiEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBidiEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBidiEnabled : bool" Usage="System.Printing.PrintQueue.IsBidiEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1481,6 +1577,8 @@
       <MemberSignature Language="C#" Value="public bool IsBusy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBusy" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsBusy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBusy As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBusy : bool" Usage="System.Printing.PrintQueue.IsBusy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1509,6 +1607,8 @@
       <MemberSignature Language="C#" Value="public bool IsDevQueryEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDevQueryEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsDevQueryEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDevQueryEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDevQueryEnabled : bool" Usage="System.Printing.PrintQueue.IsDevQueryEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1528,6 +1628,8 @@
       <MemberSignature Language="C#" Value="public bool IsDirect { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDirect" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsDirect" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDirect As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDirect : bool" Usage="System.Printing.PrintQueue.IsDirect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1554,6 +1656,8 @@
       <MemberSignature Language="C#" Value="public bool IsDoorOpened { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDoorOpened" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsDoorOpened" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDoorOpened As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDoorOpened : bool" Usage="System.Printing.PrintQueue.IsDoorOpened" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1589,6 +1693,8 @@
       <MemberSignature Language="C#" Value="public bool IsHidden { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsHidden" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsHidden" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsHidden As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsHidden : bool" Usage="System.Printing.PrintQueue.IsHidden" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1617,6 +1723,8 @@
       <MemberSignature Language="C#" Value="public bool IsInError { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInError" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsInError" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInError As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInError : bool" Usage="System.Printing.PrintQueue.IsInError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1652,6 +1760,8 @@
       <MemberSignature Language="C#" Value="public bool IsInitializing { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInitializing" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsInitializing" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInitializing As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInitializing : bool" Usage="System.Printing.PrintQueue.IsInitializing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1678,6 +1788,8 @@
       <MemberSignature Language="C#" Value="public bool IsIOActive { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsIOActive" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsIOActive" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIOActive As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsIOActive : bool" Usage="System.Printing.PrintQueue.IsIOActive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1704,6 +1816,8 @@
       <MemberSignature Language="C#" Value="public bool IsManualFeedRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsManualFeedRequired" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsManualFeedRequired" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsManualFeedRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsManualFeedRequired : bool" Usage="System.Printing.PrintQueue.IsManualFeedRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1730,6 +1844,8 @@
       <MemberSignature Language="C#" Value="public bool IsNotAvailable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNotAvailable" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsNotAvailable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNotAvailable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNotAvailable : bool" Usage="System.Printing.PrintQueue.IsNotAvailable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1765,6 +1881,8 @@
       <MemberSignature Language="C#" Value="public bool IsOffline { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOffline" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsOffline" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOffline As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsOffline : bool" Usage="System.Printing.PrintQueue.IsOffline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1800,6 +1918,8 @@
       <MemberSignature Language="C#" Value="public bool IsOutOfMemory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOutOfMemory" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsOutOfMemory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOutOfMemory As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsOutOfMemory : bool" Usage="System.Printing.PrintQueue.IsOutOfMemory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1835,6 +1955,8 @@
       <MemberSignature Language="C#" Value="public bool IsOutOfPaper { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOutOfPaper" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsOutOfPaper" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOutOfPaper As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsOutOfPaper : bool" Usage="System.Printing.PrintQueue.IsOutOfPaper" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1870,6 +1992,8 @@
       <MemberSignature Language="C#" Value="public bool IsOutputBinFull { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOutputBinFull" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsOutputBinFull" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOutputBinFull As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsOutputBinFull : bool" Usage="System.Printing.PrintQueue.IsOutputBinFull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1905,6 +2029,8 @@
       <MemberSignature Language="C#" Value="public bool IsPaperJammed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPaperJammed" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsPaperJammed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPaperJammed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPaperJammed : bool" Usage="System.Printing.PrintQueue.IsPaperJammed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1940,6 +2066,8 @@
       <MemberSignature Language="C#" Value="public bool IsPaused { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPaused" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsPaused" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPaused As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPaused : bool" Usage="System.Printing.PrintQueue.IsPaused" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1975,6 +2103,8 @@
       <MemberSignature Language="C#" Value="public bool IsPendingDeletion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPendingDeletion" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsPendingDeletion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPendingDeletion As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPendingDeletion : bool" Usage="System.Printing.PrintQueue.IsPendingDeletion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2001,6 +2131,8 @@
       <MemberSignature Language="C#" Value="public bool IsPowerSaveOn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPowerSaveOn" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsPowerSaveOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPowerSaveOn As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPowerSaveOn : bool" Usage="System.Printing.PrintQueue.IsPowerSaveOn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2027,6 +2159,8 @@
       <MemberSignature Language="C#" Value="public bool IsPrinting { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrinting" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsPrinting" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrinting As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPrinting : bool" Usage="System.Printing.PrintQueue.IsPrinting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2053,6 +2187,8 @@
       <MemberSignature Language="C#" Value="public bool IsProcessing { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsProcessing" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsProcessing" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsProcessing As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsProcessing : bool" Usage="System.Printing.PrintQueue.IsProcessing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2081,6 +2217,8 @@
       <MemberSignature Language="C#" Value="public bool IsPublished { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPublished" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsPublished" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPublished As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPublished : bool" Usage="System.Printing.PrintQueue.IsPublished" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2100,6 +2238,8 @@
       <MemberSignature Language="C#" Value="public bool IsQueued { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsQueued" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsQueued" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsQueued As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsQueued : bool" Usage="System.Printing.PrintQueue.IsQueued" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2126,6 +2266,8 @@
       <MemberSignature Language="C#" Value="public bool IsRawOnlyEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRawOnlyEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsRawOnlyEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRawOnlyEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRawOnlyEnabled : bool" Usage="System.Printing.PrintQueue.IsRawOnlyEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2145,6 +2287,8 @@
       <MemberSignature Language="C#" Value="public bool IsServerUnknown { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsServerUnknown" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsServerUnknown" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsServerUnknown As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsServerUnknown : bool" Usage="System.Printing.PrintQueue.IsServerUnknown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2171,6 +2315,8 @@
       <MemberSignature Language="C#" Value="public bool IsShared { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsShared" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsShared" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsShared As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsShared : bool" Usage="System.Printing.PrintQueue.IsShared" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2197,6 +2343,8 @@
       <MemberSignature Language="C#" Value="public bool IsTonerLow { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTonerLow" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsTonerLow" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTonerLow As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTonerLow : bool" Usage="System.Printing.PrintQueue.IsTonerLow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2234,6 +2382,8 @@
       <MemberSignature Language="C#" Value="public bool IsWaiting { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsWaiting" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsWaiting" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWaiting As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsWaiting : bool" Usage="System.Printing.PrintQueue.IsWaiting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2260,6 +2410,8 @@
       <MemberSignature Language="C#" Value="public bool IsWarmingUp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsWarmingUp" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsWarmingUp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWarmingUp As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsWarmingUp : bool" Usage="System.Printing.PrintQueue.IsWarmingUp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2286,6 +2438,8 @@
       <MemberSignature Language="C#" Value="public bool IsXpsDevice { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsXpsDevice" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.IsXpsDevice" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsXpsDevice As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsXpsDevice : bool" Usage="System.Printing.PrintQueue.IsXpsDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2317,6 +2471,8 @@
       <MemberSignature Language="C#" Value="public bool KeepPrintedJobs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool KeepPrintedJobs" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.KeepPrintedJobs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeepPrintedJobs As Boolean" />
+      <MemberSignature Language="F#" Value="member this.KeepPrintedJobs : bool" Usage="System.Printing.PrintQueue.KeepPrintedJobs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2343,6 +2499,8 @@
       <MemberSignature Language="C#" Value="public virtual string Location { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Location" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.Location" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Location As String" />
+      <MemberSignature Language="F#" Value="member this.Location : string with get, set" Usage="System.Printing.PrintQueue.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2372,6 +2530,8 @@
       <MemberSignature Language="C#" Value="public static int MaxPrintSchemaVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 MaxPrintSchemaVersion" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.MaxPrintSchemaVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaxPrintSchemaVersion As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxPrintSchemaVersion : int" Usage="System.Printing.PrintQueue.MaxPrintSchemaVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2398,10 +2558,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MergeAndValidatePrintTicket">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Merges two <see cref="T:System.Printing.PrintTicket" />s and guarantees that the resulting <see cref="T:System.Printing.PrintTicket" /> is valid and does not ask for any printing functionality that the printer does not support.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="MergeAndValidatePrintTicket">
       <MemberSignature Language="C#" Value="public System.Printing.ValidationResult MergeAndValidatePrintTicket (System.Printing.PrintTicket basePrintTicket, System.Printing.PrintTicket deltaPrintTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Printing.ValidationResult MergeAndValidatePrintTicket(class System.Printing.PrintTicket basePrintTicket, class System.Printing.PrintTicket deltaPrintTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.MergeAndValidatePrintTicket(System.Printing.PrintTicket,System.Printing.PrintTicket)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MergeAndValidatePrintTicket (basePrintTicket As PrintTicket, deltaPrintTicket As PrintTicket) As ValidationResult" />
+      <MemberSignature Language="F#" Value="member this.MergeAndValidatePrintTicket : System.Printing.PrintTicket * System.Printing.PrintTicket -&gt; System.Printing.ValidationResult" Usage="printQueue.MergeAndValidatePrintTicket (basePrintTicket, deltaPrintTicket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2459,6 +2630,8 @@
       <MemberSignature Language="C#" Value="public System.Printing.ValidationResult MergeAndValidatePrintTicket (System.Printing.PrintTicket basePrintTicket, System.Printing.PrintTicket deltaPrintTicket, System.Printing.PrintTicketScope scope);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Printing.ValidationResult MergeAndValidatePrintTicket(class System.Printing.PrintTicket basePrintTicket, class System.Printing.PrintTicket deltaPrintTicket, valuetype System.Printing.PrintTicketScope scope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.MergeAndValidatePrintTicket(System.Printing.PrintTicket,System.Printing.PrintTicket,System.Printing.PrintTicketScope)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MergeAndValidatePrintTicket (basePrintTicket As PrintTicket, deltaPrintTicket As PrintTicket, scope As PrintTicketScope) As ValidationResult" />
+      <MemberSignature Language="F#" Value="member this.MergeAndValidatePrintTicket : System.Printing.PrintTicket * System.Printing.PrintTicket * System.Printing.PrintTicketScope -&gt; System.Printing.ValidationResult" Usage="printQueue.MergeAndValidatePrintTicket (basePrintTicket, deltaPrintTicket, scope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2511,6 +2684,8 @@
       <MemberSignature Language="C#" Value="public override sealed string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Printing.PrintQueue.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2547,6 +2722,8 @@
       <MemberSignature Language="C#" Value="public bool NeedUserIntervention { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NeedUserIntervention" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.NeedUserIntervention" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NeedUserIntervention As Boolean" />
+      <MemberSignature Language="F#" Value="member this.NeedUserIntervention : bool" Usage="System.Printing.PrintQueue.NeedUserIntervention" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2582,6 +2759,8 @@
       <MemberSignature Language="C#" Value="public virtual int NumberOfJobs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfJobs" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.NumberOfJobs" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NumberOfJobs As Integer" />
+      <MemberSignature Language="F#" Value="member this.NumberOfJobs : int" Usage="System.Printing.PrintQueue.NumberOfJobs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2600,6 +2779,8 @@
       <MemberSignature Language="C#" Value="public bool PagePunt { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PagePunt" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.PagePunt" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PagePunt As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PagePunt : bool" Usage="System.Printing.PrintQueue.PagePunt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2626,6 +2807,8 @@
       <MemberSignature Language="C#" Value="public virtual void Pause ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Pause() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.Pause" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Pause ()" />
+      <MemberSignature Language="F#" Value="abstract member Pause : unit -&gt; unit&#xA;override this.Pause : unit -&gt; unit" Usage="printQueue.Pause " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2646,6 +2829,8 @@
       <MemberSignature Language="C#" Value="public bool PrintingIsCancelled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PrintingIsCancelled" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.PrintingIsCancelled" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrintingIsCancelled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PrintingIsCancelled : bool with get, set" Usage="System.Printing.PrintQueue.PrintingIsCancelled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2665,6 +2850,8 @@
       <MemberSignature Language="C#" Value="public virtual int Priority { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Priority As Integer" />
+      <MemberSignature Language="F#" Value="member this.Priority : int with get, set" Usage="System.Printing.PrintQueue.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2690,6 +2877,8 @@
       <MemberSignature Language="C#" Value="public virtual void Purge ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Purge() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.Purge" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Purge ()" />
+      <MemberSignature Language="F#" Value="abstract member Purge : unit -&gt; unit&#xA;override this.Purge : unit -&gt; unit" Usage="printQueue.Purge " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2709,6 +2898,8 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintQueueAttributes QueueAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Printing.PrintQueueAttributes QueueAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.QueueAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueueAttributes As PrintQueueAttributes" />
+      <MemberSignature Language="F#" Value="member this.QueueAttributes : System.Printing.PrintQueueAttributes" Usage="System.Printing.PrintQueue.QueueAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2727,6 +2918,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Printing.PrintDriver QueueDriver { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintDriver QueueDriver" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.QueueDriver" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property QueueDriver As PrintDriver" />
+      <MemberSignature Language="F#" Value="member this.QueueDriver : System.Printing.PrintDriver with get, set" Usage="System.Printing.PrintQueue.QueueDriver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2745,6 +2938,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Printing.PrintPort QueuePort { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintPort QueuePort" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.QueuePort" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property QueuePort As PrintPort" />
+      <MemberSignature Language="F#" Value="member this.QueuePort : System.Printing.PrintPort with get, set" Usage="System.Printing.PrintQueue.QueuePort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2763,6 +2958,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Printing.PrintProcessor QueuePrintProcessor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintProcessor QueuePrintProcessor" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.QueuePrintProcessor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property QueuePrintProcessor As PrintProcessor" />
+      <MemberSignature Language="F#" Value="member this.QueuePrintProcessor : System.Printing.PrintProcessor with get, set" Usage="System.Printing.PrintQueue.QueuePrintProcessor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2781,6 +2978,8 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintQueueStatus QueueStatus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Printing.PrintQueueStatus QueueStatus" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.QueueStatus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueueStatus As PrintQueueStatus" />
+      <MemberSignature Language="F#" Value="member this.QueueStatus : System.Printing.PrintQueueStatus" Usage="System.Printing.PrintQueue.QueueStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2810,6 +3009,8 @@
       <MemberSignature Language="C#" Value="public override void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Refresh ()" />
+      <MemberSignature Language="F#" Value="override this.Refresh : unit -&gt; unit" Usage="printQueue.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2846,6 +3047,8 @@
       <MemberSignature Language="C#" Value="public virtual void Resume ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Resume() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.Resume" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Resume ()" />
+      <MemberSignature Language="F#" Value="abstract member Resume : unit -&gt; unit&#xA;override this.Resume : unit -&gt; unit" Usage="printQueue.Resume " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2877,6 +3080,8 @@
       <MemberSignature Language="C#" Value="public bool ScheduleCompletedJobsFirst { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ScheduleCompletedJobsFirst" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.ScheduleCompletedJobsFirst" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScheduleCompletedJobsFirst As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ScheduleCompletedJobsFirst : bool" Usage="System.Printing.PrintQueue.ScheduleCompletedJobsFirst" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2896,6 +3101,8 @@
       <MemberSignature Language="C#" Value="public virtual string SeparatorFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SeparatorFile" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.SeparatorFile" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SeparatorFile As String" />
+      <MemberSignature Language="F#" Value="member this.SeparatorFile : string with get, set" Usage="System.Printing.PrintQueue.SeparatorFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2921,6 +3128,8 @@
       <MemberSignature Language="C#" Value="public virtual string ShareName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ShareName" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.ShareName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShareName As String" />
+      <MemberSignature Language="F#" Value="member this.ShareName : string with get, set" Usage="System.Printing.PrintQueue.ShareName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2946,6 +3155,8 @@
       <MemberSignature Language="C#" Value="public virtual int StartTimeOfDay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartTimeOfDay" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.StartTimeOfDay" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StartTimeOfDay As Integer" />
+      <MemberSignature Language="F#" Value="member this.StartTimeOfDay : int with get, set" Usage="System.Printing.PrintQueue.StartTimeOfDay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -2986,6 +3197,8 @@
       <MemberSignature Language="C#" Value="public virtual int UntilTimeOfDay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 UntilTimeOfDay" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.UntilTimeOfDay" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property UntilTimeOfDay As Integer" />
+      <MemberSignature Language="F#" Value="member this.UntilTimeOfDay : int with get, set" Usage="System.Printing.PrintQueue.UntilTimeOfDay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -3026,6 +3239,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Printing.PrintTicket UserPrintTicket { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintTicket UserPrintTicket" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.UserPrintTicket" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property UserPrintTicket As PrintTicket" />
+      <MemberSignature Language="F#" Value="member this.UserPrintTicket : System.Printing.PrintTicket with get, set" Usage="System.Printing.PrintQueue.UserPrintTicket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -3066,41 +3281,5 @@
         <altmember cref="P:System.Printing.PrintQueue.DefaultPrintTicket" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintQueue" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateXpsDocumentWriter">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an <see cref="T:System.Windows.Xps.XpsDocumentWriter" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetPrintCapabilities">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.Printing.PrintCapabilities" /> object that identifies the capabilities of the printer or device, such as whether it prints in color or is capable of two-sided printing.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="MergeAndValidatePrintTicket">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Merges two <see cref="T:System.Printing.PrintTicket" />s and guarantees that the resulting <see cref="T:System.Printing.PrintTicket" /> is valid and does not ask for any printing functionality that the printer does not support.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

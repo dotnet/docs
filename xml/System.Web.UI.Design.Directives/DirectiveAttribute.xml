@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class DirectiveAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DirectiveAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.Directives.DirectiveAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DirectiveAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type DirectiveAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,7 @@
       <MemberSignature Language="C#" Value="public DirectiveAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.Directives.DirectiveAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -39,6 +42,8 @@
       <MemberSignature Language="C#" Value="public bool AllowedOnMobilePages { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowedOnMobilePages" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.Directives.DirectiveAttribute.AllowedOnMobilePages" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowedOnMobilePages As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowedOnMobilePages : bool with get, set" Usage="System.Web.UI.Design.Directives.DirectiveAttribute.AllowedOnMobilePages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -58,6 +63,8 @@
       <MemberSignature Language="C#" Value="public string BuilderType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BuilderType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.Directives.DirectiveAttribute.BuilderType" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuilderType As String" />
+      <MemberSignature Language="F#" Value="member this.BuilderType : string with get, set" Usage="System.Web.UI.Design.Directives.DirectiveAttribute.BuilderType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -76,6 +83,8 @@
       <MemberSignature Language="C#" Value="public bool Culture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Culture" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.Directives.DirectiveAttribute.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public Property Culture As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Culture : bool with get, set" Usage="System.Web.UI.Design.Directives.DirectiveAttribute.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -95,6 +104,8 @@
       <MemberSignature Language="C#" Value="public string RenameType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RenameType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.Directives.DirectiveAttribute.RenameType" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenameType As String" />
+      <MemberSignature Language="F#" Value="member this.RenameType : string with get, set" Usage="System.Web.UI.Design.Directives.DirectiveAttribute.RenameType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -113,6 +124,8 @@
       <MemberSignature Language="C#" Value="public bool ServerLanguageExtensions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ServerLanguageExtensions" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.Directives.DirectiveAttribute.ServerLanguageExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerLanguageExtensions As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ServerLanguageExtensions : bool with get, set" Usage="System.Web.UI.Design.Directives.DirectiveAttribute.ServerLanguageExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -132,6 +145,8 @@
       <MemberSignature Language="C#" Value="public bool ServerLanguageNames { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ServerLanguageNames" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.Directives.DirectiveAttribute.ServerLanguageNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerLanguageNames As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ServerLanguageNames : bool with get, set" Usage="System.Web.UI.Design.Directives.DirectiveAttribute.ServerLanguageNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

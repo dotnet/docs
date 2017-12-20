@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class PolylineAnnotation : System.Windows.Forms.DataVisualization.Charting.Annotation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PolylineAnnotation extends System.Windows.Forms.DataVisualization.Charting.Annotation" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation" />
+  <TypeSignature Language="VB.NET" Value="Public Class PolylineAnnotation&#xA;Inherits Annotation" />
+  <TypeSignature Language="F#" Value="type PolylineAnnotation = class&#xA;    inherit Annotation" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public PolylineAnnotation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.ContentAlignment Alignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.ContentAlignment Alignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.Alignment" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Alignment As ContentAlignment" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Drawing.ContentAlignment with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -60,6 +65,8 @@
       <MemberSignature Language="C#" Value="public override string AnnotationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AnnotationType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.AnnotationType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AnnotationType As String" />
+      <MemberSignature Language="F#" Value="member this.AnnotationType : string" Usage="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.AnnotationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -99,6 +106,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -134,6 +143,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.BackGradientStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackGradientStyle As GradientStyle" />
+      <MemberSignature Language="F#" Value="member this.BackGradientStyle : System.Windows.Forms.DataVisualization.Charting.GradientStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.BackGradientStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -173,6 +184,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.BackHatchStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackHatchStyle As ChartHatchStyle" />
+      <MemberSignature Language="F#" Value="member this.BackHatchStyle : System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.BackHatchStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -212,6 +225,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackSecondaryColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackSecondaryColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.BackSecondaryColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackSecondaryColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackSecondaryColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.BackSecondaryColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -254,6 +269,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="polylineAnnotation.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -276,6 +293,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle EndCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle EndCap" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.EndCap" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EndCap As LineAnchorCapStyle" />
+      <MemberSignature Language="F#" Value="member this.EndCap : System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.EndCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -299,6 +318,8 @@
       <MemberSignature Language="C#" Value="public override void EndPlacement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndPlacement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.EndPlacement" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndPlacement ()" />
+      <MemberSignature Language="F#" Value="override this.EndPlacement : unit -&gt; unit" Usage="polylineAnnotation.EndPlacement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -326,6 +347,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Font As Font" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -359,6 +382,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -398,6 +423,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Drawing2D.GraphicsPath GraphicsPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Drawing2D.GraphicsPath GraphicsPath" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPath" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property GraphicsPath As GraphicsPath" />
+      <MemberSignature Language="F#" Value="member this.GraphicsPath : System.Drawing.Drawing2D.GraphicsPath with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -436,6 +463,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection GraphicsPathPoints { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection GraphicsPathPoints" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPathPoints" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GraphicsPathPoints As AnnotationPathPointCollection" />
+      <MemberSignature Language="F#" Value="member this.GraphicsPathPoints : System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection" Usage="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPathPoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -474,6 +503,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsFreeDrawPlacement { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFreeDrawPlacement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.IsFreeDrawPlacement" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property IsFreeDrawPlacement As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFreeDrawPlacement : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.IsFreeDrawPlacement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -507,6 +538,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle StartCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle StartCap" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.StartCap" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StartCap As LineAnchorCapStyle" />
+      <MemberSignature Language="F#" Value="member this.StartCap : System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.StartCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -530,6 +563,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.TextStyle TextStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.TextStyle TextStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.TextStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property TextStyle As TextStyle" />
+      <MemberSignature Language="F#" Value="member this.TextStyle : System.Windows.Forms.DataVisualization.Charting.TextStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.TextStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

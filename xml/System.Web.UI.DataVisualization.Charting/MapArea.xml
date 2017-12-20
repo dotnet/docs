@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class MapArea : System.Web.UI.DataVisualization.Charting.ChartNamedElement, System.Web.UI.DataVisualization.Charting.IChartMapArea" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MapArea extends System.Web.UI.DataVisualization.Charting.ChartNamedElement implements class System.Web.UI.DataVisualization.Charting.IChartMapArea" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.MapArea" />
+  <TypeSignature Language="VB.NET" Value="Public Class MapArea&#xA;Inherits ChartNamedElement&#xA;Implements IChartMapArea" />
+  <TypeSignature Language="F#" Value="type MapArea = class&#xA;    inherit ChartNamedElement&#xA;    interface IChartMapArea" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,10 +51,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.MapArea" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MapArea ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.MapArea.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -77,6 +89,8 @@
       <MemberSignature Language="C#" Value="public MapArea (string url, System.Drawing.Drawing2D.GraphicsPath path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, class System.Drawing.Drawing2D.GraphicsPath path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.MapArea.#ctor(System.String,System.Drawing.Drawing2D.GraphicsPath)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, path As GraphicsPath)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.MapArea : string * System.Drawing.Drawing2D.GraphicsPath -&gt; System.Web.UI.DataVisualization.Charting.MapArea" Usage="new System.Web.UI.DataVisualization.Charting.MapArea (url, path)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -97,6 +111,8 @@
       <MemberSignature Language="C#" Value="public MapArea (string url, System.Drawing.RectangleF rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, valuetype System.Drawing.RectangleF rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.MapArea.#ctor(System.String,System.Drawing.RectangleF)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, rect As RectangleF)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.MapArea : string * System.Drawing.RectangleF -&gt; System.Web.UI.DataVisualization.Charting.MapArea" Usage="new System.Web.UI.DataVisualization.Charting.MapArea (url, rect)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -117,6 +133,8 @@
       <MemberSignature Language="C#" Value="public MapArea (System.Web.UI.DataVisualization.Charting.MapAreaShape shape, string url, float[] coordinates);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.DataVisualization.Charting.MapAreaShape shape, string url, float32[] coordinates) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.MapArea.#ctor(System.Web.UI.DataVisualization.Charting.MapAreaShape,System.String,System.Single[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (shape As MapAreaShape, url As String, coordinates As Single())" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.MapArea : System.Web.UI.DataVisualization.Charting.MapAreaShape * string * single[] -&gt; System.Web.UI.DataVisualization.Charting.MapArea" Usage="new System.Web.UI.DataVisualization.Charting.MapArea (shape, url, coordinates)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -139,6 +157,8 @@
       <MemberSignature Language="C#" Value="public MapArea (string toolTip, string url, string attributes, string postBackValue, System.Drawing.Drawing2D.GraphicsPath path, object tag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string toolTip, string url, string attributes, string postBackValue, class System.Drawing.Drawing2D.GraphicsPath path, object tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.MapArea.#ctor(System.String,System.String,System.String,System.String,System.Drawing.Drawing2D.GraphicsPath,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (toolTip As String, url As String, attributes As String, postBackValue As String, path As GraphicsPath, tag As Object)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.MapArea : string * string * string * string * System.Drawing.Drawing2D.GraphicsPath * obj -&gt; System.Web.UI.DataVisualization.Charting.MapArea" Usage="new System.Web.UI.DataVisualization.Charting.MapArea (toolTip, url, attributes, postBackValue, path, tag)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -167,6 +187,8 @@
       <MemberSignature Language="C#" Value="public MapArea (string toolTip, string url, string attributes, string postBackValue, System.Drawing.RectangleF rect, object tag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string toolTip, string url, string attributes, string postBackValue, valuetype System.Drawing.RectangleF rect, object tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.MapArea.#ctor(System.String,System.String,System.String,System.String,System.Drawing.RectangleF,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (toolTip As String, url As String, attributes As String, postBackValue As String, rect As RectangleF, tag As Object)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.MapArea : string * string * string * string * System.Drawing.RectangleF * obj -&gt; System.Web.UI.DataVisualization.Charting.MapArea" Usage="new System.Web.UI.DataVisualization.Charting.MapArea (toolTip, url, attributes, postBackValue, rect, tag)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -195,6 +217,8 @@
       <MemberSignature Language="C#" Value="public MapArea (System.Web.UI.DataVisualization.Charting.MapAreaShape shape, string toolTip, string url, string attributes, string postBackValue, float[] coordinates, object tag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.DataVisualization.Charting.MapAreaShape shape, string toolTip, string url, string attributes, string postBackValue, float32[] coordinates, object tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.MapArea.#ctor(System.Web.UI.DataVisualization.Charting.MapAreaShape,System.String,System.String,System.String,System.String,System.Single[],System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (shape As MapAreaShape, toolTip As String, url As String, attributes As String, postBackValue As String, coordinates As Single(), tag As Object)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.MapArea : System.Web.UI.DataVisualization.Charting.MapAreaShape * string * string * string * string * single[] * obj -&gt; System.Web.UI.DataVisualization.Charting.MapArea" Usage="new System.Web.UI.DataVisualization.Charting.MapArea (shape, toolTip, url, attributes, postBackValue, coordinates, tag)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -225,6 +249,8 @@
       <MemberSignature Language="C#" Value="public float[] Coordinates { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32[] Coordinates" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.Coordinates" />
+      <MemberSignature Language="VB.NET" Value="Public Property Coordinates As Single()" />
+      <MemberSignature Language="F#" Value="member this.Coordinates : single[] with get, set" Usage="System.Web.UI.DataVisualization.Charting.MapArea.Coordinates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -282,6 +308,8 @@
       <MemberSignature Language="C#" Value="public bool IsCustom { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCustom" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.IsCustom" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCustom As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCustom : bool" Usage="System.Web.UI.DataVisualization.Charting.MapArea.IsCustom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -312,7 +340,12 @@
       <MemberSignature Language="C#" Value="public string MapAreaAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MapAreaAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.MapAreaAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property MapAreaAttributes As String" />
+      <MemberSignature Language="F#" Value="member this.MapAreaAttributes : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.MapArea.MapAreaAttributes" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.MapAreaAttributes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -373,6 +406,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.MapArea.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -402,7 +437,12 @@
       <MemberSignature Language="C#" Value="public string PostBackValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PostBackValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.PostBackValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property PostBackValue As String" />
+      <MemberSignature Language="F#" Value="member this.PostBackValue : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.MapArea.PostBackValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.PostBackValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -425,6 +465,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.MapAreaShape Shape { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.MapAreaShape Shape" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.Shape" />
+      <MemberSignature Language="VB.NET" Value="Public Property Shape As MapAreaShape" />
+      <MemberSignature Language="F#" Value="member this.Shape : System.Web.UI.DataVisualization.Charting.MapAreaShape with get, set" Usage="System.Web.UI.DataVisualization.Charting.MapArea.Shape" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -473,7 +515,12 @@
       <MemberSignature Language="C#" Value="public string ToolTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.ToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTip As String" />
+      <MemberSignature Language="F#" Value="member this.ToolTip : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.MapArea.ToolTip" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.ToolTip</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -519,7 +566,12 @@
       <MemberSignature Language="C#" Value="public string Url { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.MapArea.Url" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.Url</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -566,14 +618,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.MapArea" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

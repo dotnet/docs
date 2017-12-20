@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void QueryAccessibilityHelpEventHandler(object sender, QueryAccessibilityHelpEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueryAccessibilityHelpEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.QueryAccessibilityHelpEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub QueryAccessibilityHelpEventHandler(sender As Object, e As QueryAccessibilityHelpEventArgs)" />
+  <TypeSignature Language="F#" Value="type QueryAccessibilityHelpEventHandler = delegate of obj * QueryAccessibilityHelpEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

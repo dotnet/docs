@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class BlurEffect : System.Windows.Media.Effects.Effect" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BlurEffect extends System.Windows.Media.Effects.Effect" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.BlurEffect" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BlurEffect&#xA;Inherits Effect" />
+  <TypeSignature Language="F#" Value="type BlurEffect = class&#xA;    inherit Effect" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +23,7 @@
       <MemberSignature Language="C#" Value="public BlurEffect ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BlurEffect.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.BlurEffect Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.BlurEffect Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BlurEffect.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As BlurEffect" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Effects.BlurEffect" Usage="blurEffect.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +64,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.BlurEffect CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.BlurEffect CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BlurEffect.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BlurEffect" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Effects.BlurEffect" Usage="blurEffect.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +87,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BlurEffect.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="blurEffect.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -99,6 +108,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.KernelType KernelType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Effects.KernelType KernelType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BlurEffect.KernelType" />
+      <MemberSignature Language="VB.NET" Value="Public Property KernelType As KernelType" />
+      <MemberSignature Language="F#" Value="member this.KernelType : System.Windows.Media.Effects.KernelType with get, set" Usage="System.Windows.Media.Effects.BlurEffect.KernelType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -120,6 +131,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KernelTypeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KernelTypeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BlurEffect.KernelTypeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KernelTypeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable KernelTypeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BlurEffect.KernelTypeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +152,8 @@
       <MemberSignature Language="C#" Value="public double Radius { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Radius" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BlurEffect.Radius" />
+      <MemberSignature Language="VB.NET" Value="Public Property Radius As Double" />
+      <MemberSignature Language="F#" Value="member this.Radius : double with get, set" Usage="System.Windows.Media.Effects.BlurEffect.Radius" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -159,6 +174,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RadiusProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RadiusProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BlurEffect.RadiusProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RadiusProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RadiusProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BlurEffect.RadiusProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -178,6 +195,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.RenderingBias RenderingBias { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Effects.RenderingBias RenderingBias" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BlurEffect.RenderingBias" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderingBias As RenderingBias" />
+      <MemberSignature Language="F#" Value="member this.RenderingBias : System.Windows.Media.Effects.RenderingBias with get, set" Usage="System.Windows.Media.Effects.BlurEffect.RenderingBias" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -198,6 +217,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RenderingBiasProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RenderingBiasProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BlurEffect.RenderingBiasProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RenderingBiasProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RenderingBiasProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BlurEffect.RenderingBiasProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

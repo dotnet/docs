@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class WebHttpElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebHttpElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WebHttpElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebHttpElement&#xA;Inherits BehaviorExtensionElement" />
+  <TypeSignature Language="F#" Value="type WebHttpElement = class&#xA;    inherit BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,7 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="C#" Value="public WebHttpElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebHttpElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -89,6 +92,8 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="C#" Value="public bool AutomaticFormatSelectionEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutomaticFormatSelectionEnabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpElement.AutomaticFormatSelectionEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutomaticFormatSelectionEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutomaticFormatSelectionEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.WebHttpElement.AutomaticFormatSelectionEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -113,6 +118,8 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="C#" Value="public override Type BehaviorType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BehaviorType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpElement.BehaviorType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
+      <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Configuration.WebHttpElement.BehaviorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -153,9 +160,11 @@ using System.ServiceModel.Configuration;
       </Docs>
     </Member>
     <Member MemberName="CreateBehavior">
-      <MemberSignature Language="C#" Value="protected override object CreateBehavior ();" />
+      <MemberSignature Language="C#" Value="protected internal override object CreateBehavior ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object CreateBehavior() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebHttpElement.CreateBehavior" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="webHttpElement.CreateBehavior " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -175,6 +184,8 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="C#" Value="public System.ServiceModel.Web.WebMessageBodyStyle DefaultBodyStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Web.WebMessageBodyStyle DefaultBodyStyle" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpElement.DefaultBodyStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultBodyStyle As WebMessageBodyStyle" />
+      <MemberSignature Language="F#" Value="member this.DefaultBodyStyle : System.ServiceModel.Web.WebMessageBodyStyle with get, set" Usage="System.ServiceModel.Configuration.WebHttpElement.DefaultBodyStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -198,6 +209,8 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="C#" Value="public System.ServiceModel.Web.WebMessageFormat DefaultOutgoingResponseFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Web.WebMessageFormat DefaultOutgoingResponseFormat" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpElement.DefaultOutgoingResponseFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultOutgoingResponseFormat As WebMessageFormat" />
+      <MemberSignature Language="F#" Value="member this.DefaultOutgoingResponseFormat : System.ServiceModel.Web.WebMessageFormat with get, set" Usage="System.ServiceModel.Configuration.WebHttpElement.DefaultOutgoingResponseFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -221,6 +234,8 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="C#" Value="public bool FaultExceptionEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool FaultExceptionEnabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpElement.FaultExceptionEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property FaultExceptionEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.FaultExceptionEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.WebHttpElement.FaultExceptionEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -244,6 +259,8 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="C#" Value="public bool HelpEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HelpEnabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpElement.HelpEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property HelpEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HelpEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.WebHttpElement.HelpEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -268,6 +285,8 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.WebHttpElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

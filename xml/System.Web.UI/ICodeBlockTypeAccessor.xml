@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface ICodeBlockTypeAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICodeBlockTypeAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ICodeBlockTypeAccessor" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICodeBlockTypeAccessor" />
+  <TypeSignature Language="F#" Value="type ICodeBlockTypeAccessor = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +18,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.CodeBlockType BlockType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.CodeBlockType BlockType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ICodeBlockTypeAccessor.BlockType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlockType As CodeBlockType" />
+      <MemberSignature Language="F#" Value="member this.BlockType : System.Web.UI.CodeBlockType" Usage="System.Web.UI.ICodeBlockTypeAccessor.BlockType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

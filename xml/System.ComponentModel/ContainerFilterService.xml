@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class ContainerFilterService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ContainerFilterService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ContainerFilterService" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContainerFilterService" />
+  <TypeSignature Language="F#" Value="type ContainerFilterService = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +37,7 @@
       <MemberSignature Language="C#" Value="protected ContainerFilterService ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ContainerFilterService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -59,6 +62,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.ComponentCollection FilterComponents (System.ComponentModel.ComponentCollection components);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.ComponentCollection FilterComponents(class System.ComponentModel.ComponentCollection components) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ContainerFilterService.FilterComponents(System.ComponentModel.ComponentCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function FilterComponents (components As ComponentCollection) As ComponentCollection" />
+      <MemberSignature Language="F#" Value="abstract member FilterComponents : System.ComponentModel.ComponentCollection -&gt; System.ComponentModel.ComponentCollection&#xA;override this.FilterComponents : System.ComponentModel.ComponentCollection -&gt; System.ComponentModel.ComponentCollection" Usage="containerFilterService.FilterComponents components" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

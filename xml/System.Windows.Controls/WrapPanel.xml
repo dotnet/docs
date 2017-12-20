@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class WrapPanel : System.Windows.Controls.Panel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WrapPanel extends System.Windows.Controls.Panel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.WrapPanel" />
+  <TypeSignature Language="VB.NET" Value="Public Class WrapPanel&#xA;Inherits Panel" />
+  <TypeSignature Language="F#" Value="type WrapPanel = class&#xA;    inherit Panel" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,7 @@
       <MemberSignature Language="C#" Value="public WrapPanel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WrapPanel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -53,6 +56,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size finalSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size finalSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WrapPanel.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="wrapPanel.ArrangeOverride finalSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,6 +81,8 @@
       <MemberSignature Language="C#" Value="public double ItemHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ItemHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.WrapPanel.ItemHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.ItemHeight : double with get, set" Usage="System.Windows.Controls.WrapPanel.ItemHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -164,6 +171,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ItemHeightProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ItemHeightProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.WrapPanel.ItemHeightProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemHeightProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemHeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.WrapPanel.ItemHeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -181,6 +190,8 @@
       <MemberSignature Language="C#" Value="public double ItemWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ItemWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.WrapPanel.ItemWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.ItemWidth : double with get, set" Usage="System.Windows.Controls.WrapPanel.ItemWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -269,6 +280,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ItemWidthProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ItemWidthProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.WrapPanel.ItemWidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemWidthProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.WrapPanel.ItemWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -286,6 +299,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WrapPanel.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="wrapPanel.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -309,6 +324,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Orientation Orientation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Orientation Orientation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.WrapPanel.Orientation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Orientation As Orientation" />
+      <MemberSignature Language="F#" Value="member this.Orientation : System.Windows.Controls.Orientation with get, set" Usage="System.Windows.Controls.WrapPanel.Orientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -357,6 +374,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OrientationProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OrientationProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.WrapPanel.OrientationProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OrientationProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable OrientationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.WrapPanel.OrientationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void KeyPressEventHandler(object sender, KeyPressEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KeyPressEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.KeyPressEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub KeyPressEventHandler(sender As Object, e As KeyPressEventArgs)" />
+  <TypeSignature Language="F#" Value="type KeyPressEventHandler = delegate of obj * KeyPressEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

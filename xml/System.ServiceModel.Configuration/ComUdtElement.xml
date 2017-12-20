@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ComUdtElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComUdtElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ComUdtElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComUdtElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ComUdtElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,10 +49,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ComUdtElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ComUdtElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ComUdtElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +78,8 @@
       <MemberSignature Language="C#" Value="public ComUdtElement (string typeDefID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typeDefID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ComUdtElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (typeDefID As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ComUdtElement : string -&gt; System.ServiceModel.Configuration.ComUdtElement" Usage="new System.ServiceModel.Configuration.ComUdtElement typeDefID" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +98,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Configuration.ComUdtElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -110,6 +126,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ComUdtElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,6 +146,8 @@
       <MemberSignature Language="C#" Value="public string TypeDefID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeDefID" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.TypeDefID" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeDefID As String" />
+      <MemberSignature Language="F#" Value="member this.TypeDefID : string with get, set" Usage="System.ServiceModel.Configuration.ComUdtElement.TypeDefID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -154,6 +174,8 @@
       <MemberSignature Language="C#" Value="public string TypeLibID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeLibID" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.TypeLibID" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeLibID As String" />
+      <MemberSignature Language="F#" Value="member this.TypeLibID : string with get, set" Usage="System.ServiceModel.Configuration.ComUdtElement.TypeLibID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -180,6 +202,8 @@
       <MemberSignature Language="C#" Value="public string TypeLibVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeLibVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.TypeLibVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeLibVersion As String" />
+      <MemberSignature Language="F#" Value="member this.TypeLibVersion : string with get, set" Usage="System.ServiceModel.Configuration.ComUdtElement.TypeLibVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -202,14 +226,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ComUdtElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

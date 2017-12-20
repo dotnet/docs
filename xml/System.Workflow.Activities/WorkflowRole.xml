@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class WorkflowRole" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit WorkflowRole extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WorkflowRole" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowRole" />
+  <TypeSignature Language="F#" Value="type WorkflowRole = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,7 @@
       <MemberSignature Language="C#" Value="protected WorkflowRole ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowRole.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -50,6 +53,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IList&lt;string&gt; GetIdentities ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;string&gt; GetIdentities() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowRole.GetIdentities" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetIdentities () As IList(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member GetIdentities : unit -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="workflowRole.GetIdentities " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -69,6 +74,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IncludesIdentity (string identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IncludesIdentity(string identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowRole.IncludesIdentity(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IncludesIdentity (identity As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IncludesIdentity : string -&gt; bool" Usage="workflowRole.IncludesIdentity identity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -92,6 +99,8 @@
       <MemberSignature Language="C#" Value="public abstract string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WorkflowRole.Name" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.Activities.WorkflowRole.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

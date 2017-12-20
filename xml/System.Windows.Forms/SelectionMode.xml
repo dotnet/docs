@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public enum SelectionMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SelectionMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SelectionMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SelectionMode" />
+  <TypeSignature Language="F#" Value="type SelectionMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="MultiExtended" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SelectionMode MultiExtended = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SelectionMode.MultiExtended" />
+      <MemberSignature Language="VB.NET" Value="MultiExtended" />
+      <MemberSignature Language="F#" Value="MultiExtended = 3" Usage="System.Windows.Forms.SelectionMode.MultiExtended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SelectionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Multiple items can be selected, and the user can use the SHIFT, CTRL, and arrow keys to make selections</summary>
       </Docs>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="MultiSimple" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SelectionMode MultiSimple = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SelectionMode.MultiSimple" />
+      <MemberSignature Language="VB.NET" Value="MultiSimple" />
+      <MemberSignature Language="F#" Value="MultiSimple = 2" Usage="System.Windows.Forms.SelectionMode.MultiSimple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SelectionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Multiple items can be selected.</summary>
       </Docs>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SelectionMode None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SelectionMode.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.SelectionMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SelectionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No items can be selected.</summary>
       </Docs>
@@ -89,6 +100,8 @@
       <MemberSignature Language="C#" Value="One" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SelectionMode One = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SelectionMode.One" />
+      <MemberSignature Language="VB.NET" Value="One" />
+      <MemberSignature Language="F#" Value="One = 1" Usage="System.Windows.Forms.SelectionMode.One" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +110,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SelectionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Only one item can be selected.</summary>
       </Docs>

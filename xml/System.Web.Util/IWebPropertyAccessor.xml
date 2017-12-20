@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IWebPropertyAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebPropertyAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Web.Util.IWebPropertyAccessor" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWebPropertyAccessor" />
+  <TypeSignature Language="F#" Value="type IWebPropertyAccessor = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,6 +19,8 @@
       <MemberSignature Language="C#" Value="public object GetProperty (object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetProperty(object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.IWebPropertyAccessor.GetProperty(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (target As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : obj -&gt; obj" Usage="iWebPropertyAccessor.GetProperty target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -40,6 +44,8 @@
       <MemberSignature Language="C#" Value="public void SetProperty (object target, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetProperty(object target, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.IWebPropertyAccessor.SetProperty(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (target As Object, value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetProperty : obj * obj -&gt; unit" Usage="iWebPropertyAccessor.SetProperty (target, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

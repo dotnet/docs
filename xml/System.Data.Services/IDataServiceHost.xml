@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IDataServiceHost" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataServiceHost" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.IDataServiceHost" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataServiceHost" />
+  <TypeSignature Language="F#" Value="type IDataServiceHost = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public Uri AbsoluteRequestUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri AbsoluteRequestUri" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.AbsoluteRequestUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AbsoluteRequestUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.AbsoluteRequestUri : Uri" Usage="System.Data.Services.IDataServiceHost.AbsoluteRequestUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public Uri AbsoluteServiceUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri AbsoluteServiceUri" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.AbsoluteServiceUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AbsoluteServiceUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.AbsoluteServiceUri : Uri" Usage="System.Data.Services.IDataServiceHost.AbsoluteServiceUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -73,6 +79,8 @@
       <MemberSignature Language="C#" Value="public string GetQueryStringItem (string item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetQueryStringItem(string item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IDataServiceHost.GetQueryStringItem(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetQueryStringItem (item As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetQueryStringItem : string -&gt; string" Usage="iDataServiceHost.GetQueryStringItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -102,6 +110,8 @@
       <MemberSignature Language="C#" Value="public void ProcessException (System.Data.Services.HandleExceptionArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessException(class System.Data.Services.HandleExceptionArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IDataServiceHost.ProcessException(System.Data.Services.HandleExceptionArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ProcessException (args As HandleExceptionArgs)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessException : System.Data.Services.HandleExceptionArgs -&gt; unit" Usage="iDataServiceHost.ProcessException args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -124,6 +134,8 @@
       <MemberSignature Language="C#" Value="public string RequestAccept { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RequestAccept" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestAccept" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestAccept As String" />
+      <MemberSignature Language="F#" Value="member this.RequestAccept : string" Usage="System.Data.Services.IDataServiceHost.RequestAccept" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -149,6 +161,8 @@
       <MemberSignature Language="C#" Value="public string RequestAcceptCharSet { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RequestAcceptCharSet" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestAcceptCharSet" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestAcceptCharSet As String" />
+      <MemberSignature Language="F#" Value="member this.RequestAcceptCharSet : string" Usage="System.Data.Services.IDataServiceHost.RequestAcceptCharSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -174,6 +188,8 @@
       <MemberSignature Language="C#" Value="public string RequestContentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RequestContentType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestContentType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestContentType As String" />
+      <MemberSignature Language="F#" Value="member this.RequestContentType : string" Usage="System.Data.Services.IDataServiceHost.RequestContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -199,6 +215,8 @@
       <MemberSignature Language="C#" Value="public string RequestHttpMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RequestHttpMethod" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestHttpMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestHttpMethod As String" />
+      <MemberSignature Language="F#" Value="member this.RequestHttpMethod : string" Usage="System.Data.Services.IDataServiceHost.RequestHttpMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -224,6 +242,8 @@
       <MemberSignature Language="C#" Value="public string RequestIfMatch { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RequestIfMatch" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestIfMatch" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestIfMatch As String" />
+      <MemberSignature Language="F#" Value="member this.RequestIfMatch : string" Usage="System.Data.Services.IDataServiceHost.RequestIfMatch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -242,6 +262,8 @@
       <MemberSignature Language="C#" Value="public string RequestIfNoneMatch { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RequestIfNoneMatch" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestIfNoneMatch" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestIfNoneMatch As String" />
+      <MemberSignature Language="F#" Value="member this.RequestIfNoneMatch : string" Usage="System.Data.Services.IDataServiceHost.RequestIfNoneMatch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -260,6 +282,8 @@
       <MemberSignature Language="C#" Value="public string RequestMaxVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RequestMaxVersion" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestMaxVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestMaxVersion As String" />
+      <MemberSignature Language="F#" Value="member this.RequestMaxVersion : string" Usage="System.Data.Services.IDataServiceHost.RequestMaxVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -278,6 +302,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream RequestStream { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream RequestStream" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestStream" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestStream As Stream" />
+      <MemberSignature Language="F#" Value="member this.RequestStream : System.IO.Stream" Usage="System.Data.Services.IDataServiceHost.RequestStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -297,6 +323,8 @@
       <MemberSignature Language="C#" Value="public string RequestVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RequestVersion" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestVersion As String" />
+      <MemberSignature Language="F#" Value="member this.RequestVersion : string" Usage="System.Data.Services.IDataServiceHost.RequestVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -322,6 +350,8 @@
       <MemberSignature Language="C#" Value="public string ResponseCacheControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResponseCacheControl" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.ResponseCacheControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseCacheControl As String" />
+      <MemberSignature Language="F#" Value="member this.ResponseCacheControl : string with get, set" Usage="System.Data.Services.IDataServiceHost.ResponseCacheControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -340,6 +370,8 @@
       <MemberSignature Language="C#" Value="public string ResponseContentType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResponseContentType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.ResponseContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ResponseContentType : string with get, set" Usage="System.Data.Services.IDataServiceHost.ResponseContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -365,6 +397,8 @@
       <MemberSignature Language="C#" Value="public string ResponseETag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResponseETag" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.ResponseETag" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseETag As String" />
+      <MemberSignature Language="F#" Value="member this.ResponseETag : string with get, set" Usage="System.Data.Services.IDataServiceHost.ResponseETag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -383,6 +417,8 @@
       <MemberSignature Language="C#" Value="public string ResponseLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResponseLocation" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.ResponseLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseLocation As String" />
+      <MemberSignature Language="F#" Value="member this.ResponseLocation : string with get, set" Usage="System.Data.Services.IDataServiceHost.ResponseLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -418,6 +454,8 @@ http://myhost/myservice.svc/Customers, the response location would be http://myh
       <MemberSignature Language="C#" Value="public int ResponseStatusCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ResponseStatusCode" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.ResponseStatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseStatusCode As Integer" />
+      <MemberSignature Language="F#" Value="member this.ResponseStatusCode : int with get, set" Usage="System.Data.Services.IDataServiceHost.ResponseStatusCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -436,6 +474,8 @@ http://myhost/myservice.svc/Customers, the response location would be http://myh
       <MemberSignature Language="C#" Value="public System.IO.Stream ResponseStream { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream ResponseStream" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.ResponseStream" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResponseStream As Stream" />
+      <MemberSignature Language="F#" Value="member this.ResponseStream : System.IO.Stream" Usage="System.Data.Services.IDataServiceHost.ResponseStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -462,6 +502,8 @@ http://myhost/myservice.svc/Customers, the response location would be http://myh
       <MemberSignature Language="C#" Value="public string ResponseVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResponseVersion" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.ResponseVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseVersion As String" />
+      <MemberSignature Language="F#" Value="member this.ResponseVersion : string with get, set" Usage="System.Data.Services.IDataServiceHost.ResponseVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

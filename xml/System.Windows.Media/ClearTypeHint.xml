@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public enum ClearTypeHint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClearTypeHint extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ClearTypeHint" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ClearTypeHint" />
+  <TypeSignature Language="F#" Value="type ClearTypeHint = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.ClearTypeHint Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ClearTypeHint.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Windows.Media.ClearTypeHint.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -34,6 +38,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.ClearTypeHint</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The rendering engine uses ClearType when it is possible. If opacity is introduced, ClearType is disabled for that subtree.</summary>
       </Docs>
@@ -42,6 +47,8 @@
       <MemberSignature Language="C#" Value="Enabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.ClearTypeHint Enabled = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ClearTypeHint.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Enabled" />
+      <MemberSignature Language="F#" Value="Enabled = 1" Usage="System.Windows.Media.ClearTypeHint.Enabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -50,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.ClearTypeHint</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The rendering engine re-enables ClearType for the current subtree. Where opacity is introduced in this subtree, ClearType is disabled.</summary>
       </Docs>

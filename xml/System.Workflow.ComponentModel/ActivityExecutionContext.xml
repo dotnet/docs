@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ActivityExecutionContext : IDisposable, IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityExecutionContext extends System.Object implements class System.IDisposable, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityExecutionContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityExecutionContext&#xA;Implements IDisposable, IServiceProvider" />
+  <TypeSignature Language="F#" Value="type ActivityExecutionContext = class&#xA;    interface IServiceProvider&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity Activity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Activity Activity" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activity As Activity" />
+      <MemberSignature Language="F#" Value="member this.Activity : System.Workflow.ComponentModel.Activity" Usage="System.Workflow.ComponentModel.ActivityExecutionContext.Activity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -63,6 +67,7 @@
       <MemberSignature Language="C#" Value="public void CancelActivity (System.Workflow.ComponentModel.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelActivity(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.CancelActivity(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="F#" Value="member this.CancelActivity : System.Workflow.ComponentModel.Activity -&gt; unit" Usage="activityExecutionContext.CancelActivity activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -91,6 +96,8 @@
       <MemberSignature Language="C#" Value="public void CloseActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CloseActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.CloseActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CloseActivity ()" />
+      <MemberSignature Language="F#" Value="member this.CloseActivity : unit -&gt; unit" Usage="activityExecutionContext.CloseActivity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -111,6 +118,8 @@
       <MemberSignature Language="C#" Value="public Guid ContextGuid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ContextGuid" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityExecutionContext.ContextGuid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextGuid As Guid" />
+      <MemberSignature Language="F#" Value="member this.ContextGuid : Guid" Usage="System.Workflow.ComponentModel.ActivityExecutionContext.ContextGuid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -129,6 +138,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty CurrentExceptionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty CurrentExceptionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionContext.CurrentExceptionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CurrentExceptionProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CurrentExceptionProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.ActivityExecutionContext.CurrentExceptionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -146,6 +157,7 @@
       <MemberSignature Language="C#" Value="public void ExecuteActivity (System.Workflow.ComponentModel.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExecuteActivity(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.ExecuteActivity(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="F#" Value="member this.ExecuteActivity : System.Workflow.ComponentModel.Activity -&gt; unit" Usage="activityExecutionContext.ExecuteActivity activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -180,6 +192,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityExecutionContextManager ExecutionContextManager { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.ActivityExecutionContextManager ExecutionContextManager" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityExecutionContext.ExecutionContextManager" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecutionContextManager As ActivityExecutionContextManager" />
+      <MemberSignature Language="F#" Value="member this.ExecutionContextManager : System.Workflow.ComponentModel.ActivityExecutionContextManager" Usage="System.Workflow.ComponentModel.ActivityExecutionContext.ExecutionContextManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -198,7 +212,12 @@
       <MemberSignature Language="C#" Value="public object GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="activityExecutionContext.GetService serviceType" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IServiceProvider.GetService(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -221,6 +240,8 @@
       <MemberSignature Language="C#" Value="public T GetService&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetService&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.GetService``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetService(Of T) () As T" />
+      <MemberSignature Language="F#" Value="member this.GetService : unit -&gt; 'T" Usage="activityExecutionContext.GetService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -245,7 +266,11 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -259,10 +284,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TrackData">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the track method for the associated <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TrackData">
       <MemberSignature Language="C#" Value="public void TrackData (object userData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TrackData(object userData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackData (userData As Object)" />
+      <MemberSignature Language="F#" Value="member this.TrackData : obj -&gt; unit" Usage="activityExecutionContext.TrackData userData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -293,6 +329,8 @@
       <MemberSignature Language="C#" Value="public void TrackData (string userDataKey, object userData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TrackData(string userDataKey, object userData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackData (userDataKey As String, userData As Object)" />
+      <MemberSignature Language="F#" Value="member this.TrackData : string * obj -&gt; unit" Usage="activityExecutionContext.TrackData (userDataKey, userData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -321,14 +359,5 @@
         <exception cref="T:System.ObjectDisposedException">If the <see cref="T:System.Workflow.ComponentModel.Activity" /> associated with this instance is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TrackData">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the track method for the associated <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

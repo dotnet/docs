@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate int Comparison&lt;in T&gt;(T x, T y);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Comparison`1&lt;- T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Comparison`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function Comparison(Of In T)(x As T, y As T) As Integer " />
+  <TypeSignature Language="F#" Value="type Comparison&lt;'T&gt; = delegate of 'T * 'T -&gt; int" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

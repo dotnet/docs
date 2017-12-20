@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public struct ArrayShape" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ArrayShape extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ArrayShape" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ArrayShape" />
+  <TypeSignature Language="F#" Value="type ArrayShape = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public ArrayShape (int rank, System.Collections.Immutable.ImmutableArray&lt;int&gt; sizes, System.Collections.Immutable.ImmutableArray&lt;int&gt; lowerBounds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 rank, valuetype System.Collections.Immutable.ImmutableArray`1&lt;int32&gt; sizes, valuetype System.Collections.Immutable.ImmutableArray`1&lt;int32&gt; lowerBounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ArrayShape.#ctor(System.Int32,System.Collections.Immutable.ImmutableArray{System.Int32},System.Collections.Immutable.ImmutableArray{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (rank As Integer, sizes As ImmutableArray(Of Integer), lowerBounds As ImmutableArray(Of Integer))" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.ArrayShape : int * System.Collections.Immutable.ImmutableArray&lt;int&gt; * System.Collections.Immutable.ImmutableArray&lt;int&gt; -&gt; System.Reflection.Metadata.ArrayShape" Usage="new System.Reflection.Metadata.ArrayShape (rank, sizes, lowerBounds)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -45,6 +49,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;int&gt; LowerBounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;int32&gt; LowerBounds" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ArrayShape.LowerBounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LowerBounds As ImmutableArray(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.LowerBounds : System.Collections.Immutable.ImmutableArray&lt;int&gt;" Usage="System.Reflection.Metadata.ArrayShape.LowerBounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public int Rank { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Rank" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ArrayShape.Rank" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rank As Integer" />
+      <MemberSignature Language="F#" Value="member this.Rank : int" Usage="System.Reflection.Metadata.ArrayShape.Rank" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;int&gt; Sizes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;int32&gt; Sizes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ArrayShape.Sizes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sizes As ImmutableArray(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Sizes : System.Collections.Immutable.ImmutableArray&lt;int&gt;" Usage="System.Reflection.Metadata.ArrayShape.Sizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ClaimTypeElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClaimTypeElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ClaimTypeElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClaimTypeElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ClaimTypeElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +18,20 @@
     <altmember cref="P:System.IdentityModel.Claims.Claim.ClaimType" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ClaimTypeElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ClaimTypeElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ClaimTypeElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -35,6 +47,8 @@
       <MemberSignature Language="C#" Value="public ClaimTypeElement (string claimType, bool isOptional);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string claimType, bool isOptional) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ClaimTypeElement.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String, isOptional As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ClaimTypeElement : string * bool -&gt; System.ServiceModel.Configuration.ClaimTypeElement" Usage="new System.ServiceModel.Configuration.ClaimTypeElement (claimType, isOptional)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -55,6 +69,8 @@
       <MemberSignature Language="C#" Value="public string ClaimType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClaimType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ClaimTypeElement.ClaimType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClaimType As String" />
+      <MemberSignature Language="F#" Value="member this.ClaimType : string with get, set" Usage="System.ServiceModel.Configuration.ClaimTypeElement.ClaimType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,6 +104,8 @@
       <MemberSignature Language="C#" Value="public bool IsOptional { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOptional" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ClaimTypeElement.IsOptional" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsOptional As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsOptional : bool with get, set" Usage="System.ServiceModel.Configuration.ClaimTypeElement.IsOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -112,6 +130,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ClaimTypeElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ClaimTypeElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -126,14 +146,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ClaimTypeElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

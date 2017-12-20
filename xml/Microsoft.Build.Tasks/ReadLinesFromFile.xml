@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ReadLinesFromFile : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReadLinesFromFile extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ReadLinesFromFile" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReadLinesFromFile&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="F#" Value="type ReadLinesFromFile = class&#xA;    inherit TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,7 @@
       <MemberSignature Language="C#" Value="public ReadLinesFromFile ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ReadLinesFromFile.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ReadLinesFromFile.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="readLinesFromFile.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem File { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem File" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ReadLinesFromFile.File" />
+      <MemberSignature Language="VB.NET" Value="Public Property File As ITaskItem" />
+      <MemberSignature Language="F#" Value="member this.File : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.ReadLinesFromFile.File" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -88,6 +95,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Lines { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Lines" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ReadLinesFromFile.Lines" />
+      <MemberSignature Language="VB.NET" Value="Public Property Lines As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.Lines : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ReadLinesFromFile.Lines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

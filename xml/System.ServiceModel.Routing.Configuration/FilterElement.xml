@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class FilterElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FilterElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.Configuration.FilterElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class FilterElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type FilterElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public FilterElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.FilterElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public string CustomType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CustomType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterElement.CustomType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomType As String" />
+      <MemberSignature Language="F#" Value="member this.CustomType : string with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterElement.CustomType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="public string Filter1 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Filter1" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterElement.Filter1" />
+      <MemberSignature Language="VB.NET" Value="Public Property Filter1 As String" />
+      <MemberSignature Language="F#" Value="member this.Filter1 : string with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterElement.Filter1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -96,6 +103,8 @@
       <MemberSignature Language="C#" Value="public string Filter2 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Filter2" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterElement.Filter2" />
+      <MemberSignature Language="VB.NET" Value="Public Property Filter2 As String" />
+      <MemberSignature Language="F#" Value="member this.Filter2 : string with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterElement.Filter2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -126,6 +135,8 @@
       <MemberSignature Language="C#" Value="public string FilterData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FilterData" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterElement.FilterData" />
+      <MemberSignature Language="VB.NET" Value="Public Property FilterData As String" />
+      <MemberSignature Language="F#" Value="member this.FilterData : string with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterElement.FilterData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -167,6 +178,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Routing.Configuration.FilterType FilterType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Routing.Configuration.FilterType FilterType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterElement.FilterType" />
+      <MemberSignature Language="VB.NET" Value="Public Property FilterType As FilterType" />
+      <MemberSignature Language="F#" Value="member this.FilterType : System.ServiceModel.Routing.Configuration.FilterType with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterElement.FilterType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -190,6 +203,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

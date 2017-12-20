@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class WorkflowCommandExtensionItem : System.Activities.Presentation.ContextItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowCommandExtensionItem extends System.Activities.Presentation.ContextItem" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowCommandExtensionItem&#xA;Inherits ContextItem" />
+  <TypeSignature Language="F#" Value="type WorkflowCommandExtensionItem = class&#xA;    inherit ContextItem" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowCommandExtensionItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -34,6 +46,8 @@
       <MemberSignature Language="C#" Value="public WorkflowCommandExtensionItem (System.Activities.Presentation.Hosting.IWorkflowCommandExtensionCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Presentation.Hosting.IWorkflowCommandExtensionCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem.#ctor(System.Activities.Presentation.Hosting.IWorkflowCommandExtensionCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callback As IWorkflowCommandExtensionCallback)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem : System.Activities.Presentation.Hosting.IWorkflowCommandExtensionCallback -&gt; System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem" Usage="new System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem callback" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -52,6 +66,8 @@
       <MemberSignature Language="C#" Value="public override Type ItemType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ItemType" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem.ItemType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ItemType As Type" />
+      <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -66,14 +82,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

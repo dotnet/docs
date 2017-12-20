@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IItemContainerProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IItemContainerProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IItemContainerProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IItemContainerProvider" />
+  <TypeSignature Language="F#" Value="type IItemContainerProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.IRawElementProviderSimple FindItemByProperty (System.Windows.Automation.Provider.IRawElementProviderSimple startAfter, int propertyId, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple FindItemByProperty(class System.Windows.Automation.Provider.IRawElementProviderSimple startAfter, int32 propertyId, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IItemContainerProvider.FindItemByProperty(System.Windows.Automation.Provider.IRawElementProviderSimple,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindItemByProperty (startAfter As IRawElementProviderSimple, propertyId As Integer, value As Object) As IRawElementProviderSimple" />
+      <MemberSignature Language="F#" Value="abstract member FindItemByProperty : System.Windows.Automation.Provider.IRawElementProviderSimple * int * obj -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple" Usage="iItemContainerProvider.FindItemByProperty (startAfter, propertyId, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

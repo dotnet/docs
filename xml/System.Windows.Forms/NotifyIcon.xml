@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class NotifyIcon : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NotifyIcon extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NotifyIcon" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NotifyIcon&#xA;Inherits Component" />
+  <TypeSignature Language="F#" Value="type NotifyIcon = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,10 +48,20 @@
     <permission cref="T:System.Security.Permissions.UIPermission">to create the <see cref="T:System.Windows.Forms.NotifyIcon" /> component. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.NotifyIcon" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NotifyIcon ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NotifyIcon.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +84,8 @@
       <MemberSignature Language="C#" Value="public NotifyIcon (System.ComponentModel.IContainer container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IContainer container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NotifyIcon.#ctor(System.ComponentModel.IContainer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (container As IContainer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.NotifyIcon : System.ComponentModel.IContainer -&gt; System.Windows.Forms.NotifyIcon" Usage="new System.Windows.Forms.NotifyIcon container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -106,6 +120,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BalloonTipClicked;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BalloonTipClicked" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.NotifyIcon.BalloonTipClicked" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BalloonTipClicked As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BalloonTipClicked : EventHandler " Usage="member this.BalloonTipClicked : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -140,6 +156,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BalloonTipClosed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BalloonTipClosed" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.NotifyIcon.BalloonTipClosed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BalloonTipClosed As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BalloonTipClosed : EventHandler " Usage="member this.BalloonTipClosed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -172,6 +190,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolTipIcon BalloonTipIcon { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolTipIcon BalloonTipIcon" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NotifyIcon.BalloonTipIcon" />
+      <MemberSignature Language="VB.NET" Value="Public Property BalloonTipIcon As ToolTipIcon" />
+      <MemberSignature Language="F#" Value="member this.BalloonTipIcon : System.Windows.Forms.ToolTipIcon with get, set" Usage="System.Windows.Forms.NotifyIcon.BalloonTipIcon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -206,6 +226,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BalloonTipShown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BalloonTipShown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.NotifyIcon.BalloonTipShown" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BalloonTipShown As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BalloonTipShown : EventHandler " Usage="member this.BalloonTipShown : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -240,6 +262,8 @@
       <MemberSignature Language="C#" Value="public string BalloonTipText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BalloonTipText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NotifyIcon.BalloonTipText" />
+      <MemberSignature Language="VB.NET" Value="Public Property BalloonTipText As String" />
+      <MemberSignature Language="F#" Value="member this.BalloonTipText : string with get, set" Usage="System.Windows.Forms.NotifyIcon.BalloonTipText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -279,6 +303,8 @@
       <MemberSignature Language="C#" Value="public string BalloonTipTitle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BalloonTipTitle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NotifyIcon.BalloonTipTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BalloonTipTitle As String" />
+      <MemberSignature Language="F#" Value="member this.BalloonTipTitle : string with get, set" Usage="System.Windows.Forms.NotifyIcon.BalloonTipTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -320,6 +346,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Click;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Click" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.NotifyIcon.Click" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Click As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -354,6 +382,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ContextMenu ContextMenu { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ContextMenu ContextMenu" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NotifyIcon.ContextMenu" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextMenu As ContextMenu" />
+      <MemberSignature Language="F#" Value="member this.ContextMenu : System.Windows.Forms.ContextMenu with get, set" Usage="System.Windows.Forms.NotifyIcon.ContextMenu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -397,6 +427,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ContextMenuStrip ContextMenuStrip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ContextMenuStrip ContextMenuStrip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NotifyIcon.ContextMenuStrip" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextMenuStrip As ContextMenuStrip" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStrip : System.Windows.Forms.ContextMenuStrip with get, set" Usage="System.Windows.Forms.NotifyIcon.ContextMenuStrip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -420,6 +452,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NotifyIcon.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="notifyIcon.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -441,6 +475,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DoubleClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.NotifyIcon.DoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DoubleClick As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DoubleClick : EventHandler " Usage="member this.DoubleClick : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -475,6 +511,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Icon Icon { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Icon Icon" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NotifyIcon.Icon" />
+      <MemberSignature Language="VB.NET" Value="Public Property Icon As Icon" />
+      <MemberSignature Language="F#" Value="member this.Icon : System.Drawing.Icon with get, set" Usage="System.Windows.Forms.NotifyIcon.Icon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -513,6 +551,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.NotifyIcon.MouseClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseClick As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseClick : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -547,6 +587,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseDoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseDoubleClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.NotifyIcon.MouseDoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDoubleClick As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -581,6 +623,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.NotifyIcon.MouseDown" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDown As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseDown : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDown : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -617,6 +661,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseMove;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseMove" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.NotifyIcon.MouseMove" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseMove As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseMove : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseMove : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -653,6 +699,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.NotifyIcon.MouseUp" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseUp As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseUp : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseUp : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -685,10 +733,21 @@
         <altmember cref="E:System.Windows.Forms.NotifyIcon.MouseMove" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ShowBalloonTip">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays the balloon tip in the taskbar.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ShowBalloonTip">
       <MemberSignature Language="C#" Value="public void ShowBalloonTip (int timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowBalloonTip(int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NotifyIcon.ShowBalloonTip(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowBalloonTip (timeout As Integer)" />
+      <MemberSignature Language="F#" Value="member this.ShowBalloonTip : int -&gt; unit" Usage="notifyIcon.ShowBalloonTip timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -736,6 +795,8 @@
       <MemberSignature Language="C#" Value="public void ShowBalloonTip (int timeout, string tipTitle, string tipText, System.Windows.Forms.ToolTipIcon tipIcon);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowBalloonTip(int32 timeout, string tipTitle, string tipText, valuetype System.Windows.Forms.ToolTipIcon tipIcon) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NotifyIcon.ShowBalloonTip(System.Int32,System.String,System.String,System.Windows.Forms.ToolTipIcon)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowBalloonTip (timeout As Integer, tipTitle As String, tipText As String, tipIcon As ToolTipIcon)" />
+      <MemberSignature Language="F#" Value="member this.ShowBalloonTip : int * string * string * System.Windows.Forms.ToolTipIcon -&gt; unit" Usage="notifyIcon.ShowBalloonTip (timeout, tipTitle, tipText, tipIcon)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -794,6 +855,8 @@
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NotifyIcon.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.NotifyIcon.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -826,6 +889,8 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NotifyIcon.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.NotifyIcon.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -872,6 +937,8 @@
       <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NotifyIcon.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Windows.Forms.NotifyIcon.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -911,23 +978,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ShowBalloonTip">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Displays the balloon tip in the taskbar.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.NotifyIcon" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

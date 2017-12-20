@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ScriptResourceDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptResourceDefinition extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptResourceDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScriptResourceDefinition" />
+  <TypeSignature Language="F#" Value="type ScriptResourceDefinition = class&#xA;    interface IScriptResourceDefinition" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="public ScriptResourceDefinition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceDefinition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public string CdnDebugPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CdnDebugPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.CdnDebugPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property CdnDebugPath As String" />
+      <MemberSignature Language="F#" Value="member this.CdnDebugPath : string with get, set" Usage="System.Web.UI.ScriptResourceDefinition.CdnDebugPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="public string CdnPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CdnPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.CdnPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property CdnPath As String" />
+      <MemberSignature Language="F#" Value="member this.CdnPath : string with get, set" Usage="System.Web.UI.ScriptResourceDefinition.CdnPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -91,6 +98,8 @@
       <MemberSignature Language="C#" Value="public bool CdnSupportsSecureConnection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CdnSupportsSecureConnection" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.CdnSupportsSecureConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Property CdnSupportsSecureConnection As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CdnSupportsSecureConnection : bool with get, set" Usage="System.Web.UI.ScriptResourceDefinition.CdnSupportsSecureConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -117,6 +126,8 @@
       <MemberSignature Language="C#" Value="public string DebugPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DebugPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.DebugPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property DebugPath As String" />
+      <MemberSignature Language="F#" Value="member this.DebugPath : string with get, set" Usage="System.Web.UI.ScriptResourceDefinition.DebugPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -135,6 +146,8 @@
       <MemberSignature Language="C#" Value="public string LoadSuccessExpression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LoadSuccessExpression" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.LoadSuccessExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Property LoadSuccessExpression As String" />
+      <MemberSignature Language="F#" Value="member this.LoadSuccessExpression : string with get, set" Usage="System.Web.UI.ScriptResourceDefinition.LoadSuccessExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -164,6 +177,8 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Web.UI.ScriptResourceDefinition.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -182,6 +197,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Assembly ResourceAssembly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly ResourceAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.ResourceAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceAssembly As Assembly" />
+      <MemberSignature Language="F#" Value="member this.ResourceAssembly : System.Reflection.Assembly with get, set" Usage="System.Web.UI.ScriptResourceDefinition.ResourceAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -200,6 +217,8 @@
       <MemberSignature Language="C#" Value="public string ResourceName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResourceName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.ResourceName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceName As String" />
+      <MemberSignature Language="F#" Value="member this.ResourceName : string with get, set" Usage="System.Web.UI.ScriptResourceDefinition.ResourceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

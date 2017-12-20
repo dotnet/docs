@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SoapServerMethod" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapServerMethod extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapServerMethod" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapServerMethod" />
+  <TypeSignature Language="F#" Value="type SoapServerMethod = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Web.Services.Protocols.SoapServerMethod" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SoapServerMethod ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapServerMethod.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -34,6 +46,8 @@
       <MemberSignature Language="C#" Value="public SoapServerMethod (Type serverType, System.Web.Services.Protocols.LogicalMethodInfo methodInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type serverType, class System.Web.Services.Protocols.LogicalMethodInfo methodInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapServerMethod.#ctor(System.Type,System.Web.Services.Protocols.LogicalMethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serverType As Type, methodInfo As LogicalMethodInfo)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapServerMethod : Type * System.Web.Services.Protocols.LogicalMethodInfo -&gt; System.Web.Services.Protocols.SoapServerMethod" Usage="new System.Web.Services.Protocols.SoapServerMethod (serverType, methodInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -54,6 +68,8 @@
       <MemberSignature Language="C#" Value="public string Action { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Action" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapServerMethod.Action" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As String" />
+      <MemberSignature Language="F#" Value="member this.Action : string" Usage="System.Web.Services.Protocols.SoapServerMethod.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -72,6 +88,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.SoapBindingUse BindingUse { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Description.SoapBindingUse BindingUse" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapServerMethod.BindingUse" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingUse As SoapBindingUse" />
+      <MemberSignature Language="F#" Value="member this.BindingUse : System.Web.Services.Description.SoapBindingUse" Usage="System.Web.Services.Protocols.SoapServerMethod.BindingUse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -90,6 +108,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.SoapHeaderMapping[] InHeaderMappings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Protocols.SoapHeaderMapping[] InHeaderMappings" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapServerMethod.InHeaderMappings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InHeaderMappings As SoapHeaderMapping()" />
+      <MemberSignature Language="F#" Value="member this.InHeaderMappings : System.Web.Services.Protocols.SoapHeaderMapping[]" Usage="System.Web.Services.Protocols.SoapServerMethod.InHeaderMappings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -108,6 +128,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlSerializer InHeaderSerializer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlSerializer InHeaderSerializer" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapServerMethod.InHeaderSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InHeaderSerializer As XmlSerializer" />
+      <MemberSignature Language="F#" Value="member this.InHeaderSerializer : System.Xml.Serialization.XmlSerializer" Usage="System.Web.Services.Protocols.SoapServerMethod.InHeaderSerializer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -126,6 +148,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.LogicalMethodInfo MethodInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Protocols.LogicalMethodInfo MethodInfo" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapServerMethod.MethodInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodInfo As LogicalMethodInfo" />
+      <MemberSignature Language="F#" Value="member this.MethodInfo : System.Web.Services.Protocols.LogicalMethodInfo" Usage="System.Web.Services.Protocols.SoapServerMethod.MethodInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -144,6 +168,8 @@
       <MemberSignature Language="C#" Value="public bool OneWay { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OneWay" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapServerMethod.OneWay" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OneWay As Boolean" />
+      <MemberSignature Language="F#" Value="member this.OneWay : bool" Usage="System.Web.Services.Protocols.SoapServerMethod.OneWay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -163,6 +189,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.SoapHeaderMapping[] OutHeaderMappings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Protocols.SoapHeaderMapping[] OutHeaderMappings" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapServerMethod.OutHeaderMappings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutHeaderMappings As SoapHeaderMapping()" />
+      <MemberSignature Language="F#" Value="member this.OutHeaderMappings : System.Web.Services.Protocols.SoapHeaderMapping[]" Usage="System.Web.Services.Protocols.SoapServerMethod.OutHeaderMappings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -181,6 +209,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlSerializer OutHeaderSerializer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlSerializer OutHeaderSerializer" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapServerMethod.OutHeaderSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutHeaderSerializer As XmlSerializer" />
+      <MemberSignature Language="F#" Value="member this.OutHeaderSerializer : System.Xml.Serialization.XmlSerializer" Usage="System.Web.Services.Protocols.SoapServerMethod.OutHeaderSerializer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -199,6 +229,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlSerializer ParameterSerializer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlSerializer ParameterSerializer" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapServerMethod.ParameterSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterSerializer As XmlSerializer" />
+      <MemberSignature Language="F#" Value="member this.ParameterSerializer : System.Xml.Serialization.XmlSerializer" Usage="System.Web.Services.Protocols.SoapServerMethod.ParameterSerializer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -217,6 +249,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.SoapParameterStyle ParameterStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Protocols.SoapParameterStyle ParameterStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapServerMethod.ParameterStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterStyle As SoapParameterStyle" />
+      <MemberSignature Language="F#" Value="member this.ParameterStyle : System.Web.Services.Protocols.SoapParameterStyle" Usage="System.Web.Services.Protocols.SoapServerMethod.ParameterStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -235,6 +269,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlSerializer ReturnSerializer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlSerializer ReturnSerializer" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapServerMethod.ReturnSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnSerializer As XmlSerializer" />
+      <MemberSignature Language="F#" Value="member this.ReturnSerializer : System.Xml.Serialization.XmlSerializer" Usage="System.Web.Services.Protocols.SoapServerMethod.ReturnSerializer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -253,6 +289,8 @@
       <MemberSignature Language="C#" Value="public bool Rpc { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Rpc" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapServerMethod.Rpc" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rpc As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Rpc : bool" Usage="System.Web.Services.Protocols.SoapServerMethod.Rpc" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -272,6 +310,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.WsiProfiles WsiClaims { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.WsiProfiles WsiClaims" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapServerMethod.WsiClaims" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WsiClaims As WsiProfiles" />
+      <MemberSignature Language="F#" Value="member this.WsiClaims : System.Web.Services.WsiProfiles" Usage="System.Web.Services.Protocols.SoapServerMethod.WsiClaims" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -286,14 +326,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.Web.Services.Protocols.SoapServerMethod" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

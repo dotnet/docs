@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ListViewItem : System.Web.UI.Control, System.Web.UI.IDataItemContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewItem extends System.Web.UI.Control implements class System.Web.UI.IDataItemContainer, class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListViewItem&#xA;Inherits Control&#xA;Implements IDataItemContainer" />
+  <TypeSignature Language="F#" Value="type ListViewItem = class&#xA;    inherit Control&#xA;    interface INamingContainer&#xA;    interface IDataItemContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +67,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (System.Web.UI.WebControls.ListViewItemType itemType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.WebControls.ListViewItemType itemType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewItem.#ctor(System.Web.UI.WebControls.ListViewItemType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (itemType As ListViewItemType)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListViewItem : System.Web.UI.WebControls.ListViewItemType -&gt; System.Web.UI.WebControls.ListViewItem" Usage="new System.Web.UI.WebControls.ListViewItem itemType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -98,6 +102,8 @@
       <MemberSignature Language="C#" Value="public virtual object DataItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataItem" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewItem.DataItem" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataItem As Object" />
+      <MemberSignature Language="F#" Value="member this.DataItem : obj with get, set" Usage="System.Web.UI.WebControls.ListViewItem.DataItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -116,7 +122,12 @@
       <MemberSignature Language="C#" Value="public virtual int DataItemIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DataItemIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewItem.DataItemIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataItemIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.DataItemIndex : int" Usage="System.Web.UI.WebControls.ListViewItem.DataItemIndex" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IDataItemContainer.DataItemIndex</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -134,7 +145,12 @@
       <MemberSignature Language="C#" Value="public virtual int DisplayIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DisplayIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewItem.DisplayIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.DisplayIndex : int" Usage="System.Web.UI.WebControls.ListViewItem.DisplayIndex" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IDataItemContainer.DisplayIndex</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -152,6 +168,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ListViewItemType ItemType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ListViewItemType ItemType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewItem.ItemType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemType As ListViewItemType" />
+      <MemberSignature Language="F#" Value="member this.ItemType : System.Web.UI.WebControls.ListViewItemType" Usage="System.Web.UI.WebControls.ListViewItem.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -194,6 +212,8 @@
       <MemberSignature Language="C#" Value="protected override bool OnBubbleEvent (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnBubbleEvent(object source, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewItem.OnBubbleEvent(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="listViewItem.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

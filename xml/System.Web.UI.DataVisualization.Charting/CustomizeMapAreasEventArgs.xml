@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CustomizeMapAreasEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomizeMapAreasEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class CustomizeMapAreasEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type CustomizeMapAreasEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public CustomizeMapAreasEventArgs (System.Web.UI.DataVisualization.Charting.MapAreasCollection areaItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.DataVisualization.Charting.MapAreasCollection areaItems) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs.#ctor(System.Web.UI.DataVisualization.Charting.MapAreasCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (areaItems As MapAreasCollection)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs : System.Web.UI.DataVisualization.Charting.MapAreasCollection -&gt; System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs" Usage="new System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs areaItems" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.MapAreasCollection MapAreaItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.MapAreasCollection MapAreaItems" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs.MapAreaItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MapAreaItems As MapAreasCollection" />
+      <MemberSignature Language="F#" Value="member this.MapAreaItems : System.Web.UI.DataVisualization.Charting.MapAreasCollection" Usage="System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs.MapAreaItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IAccessible" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAccessible" />
   <TypeSignature Language="DocId" Value="T:Accessibility.IAccessible" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAccessible" />
+  <TypeSignature Language="F#" Value="type IAccessible = interface" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public object accChild[object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object accChild(object)" />
       <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accChild(varChild As Object) As Object" />
+      <MemberSignature Language="F#" Value="member this.accChild(obj) : obj" Usage="Accessibility.IAccessible.accChild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -71,6 +75,8 @@
       <MemberSignature Language="C#" Value="public int accChildCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 accChildCount" />
       <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accChildCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accChildCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.accChildCount : int" Usage="Accessibility.IAccessible.accChildCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -107,6 +113,8 @@
       <MemberSignature Language="C#" Value="public string accDefaultAction[object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string accDefaultAction(object)" />
       <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accDefaultAction(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accDefaultAction(Optional varChild As Object) As String" />
+      <MemberSignature Language="F#" Value="member this.accDefaultAction(obj) : string" Usage="Accessibility.IAccessible.accDefaultAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -147,6 +155,8 @@
       <MemberSignature Language="C#" Value="public string accDescription[object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string accDescription(object)" />
       <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accDescription(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accDescription(Optional varChild As Object) As String" />
+      <MemberSignature Language="F#" Value="member this.accDescription(obj) : string" Usage="Accessibility.IAccessible.accDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -187,6 +197,8 @@
       <MemberSignature Language="C#" Value="public void accDoDefaultAction (object varChild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accDoDefaultAction([in]object varChild) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accDoDefaultAction(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub accDoDefaultAction (Optional varChild As Object)" />
+      <MemberSignature Language="F#" Value="abstract member accDoDefaultAction : obj -&gt; unit" Usage="iAccessible.accDoDefaultAction varChild" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -223,6 +235,8 @@
       <MemberSignature Language="C#" Value="public object accFocus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object accFocus" />
       <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accFocus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accFocus As Object" />
+      <MemberSignature Language="F#" Value="member this.accFocus : obj" Usage="Accessibility.IAccessible.accFocus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -259,6 +273,8 @@
       <MemberSignature Language="C#" Value="public string accHelp[object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string accHelp(object)" />
       <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accHelp(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accHelp(Optional varChild As Object) As String" />
+      <MemberSignature Language="F#" Value="member this.accHelp(obj) : string" Usage="Accessibility.IAccessible.accHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -299,6 +315,8 @@
       <MemberSignature Language="C#" Value="public int accHelpTopic[out string pszHelpFile, object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 accHelpTopic(string, object)" />
       <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accHelpTopic(System.String@,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accHelpTopic(ByRef pszHelpFile As String, Optional varChild As Object) As Integer" />
+      <MemberSignature Language="F#" Value="member this.accHelpTopic( * obj) : int" Usage="Accessibility.IAccessible.accHelpTopic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -341,6 +359,8 @@
       <MemberSignature Language="C#" Value="public object accHitTest (int xLeft, int yTop);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object accHitTest([in]int32 xLeft, [in]int32 yTop) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accHitTest(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function accHitTest (xLeft As Integer, yTop As Integer) As Object" />
+      <MemberSignature Language="F#" Value="abstract member accHitTest : int * int -&gt; obj" Usage="iAccessible.accHitTest (xLeft, yTop)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -380,6 +400,8 @@
       <MemberSignature Language="C#" Value="public string accKeyboardShortcut[object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string accKeyboardShortcut(object)" />
       <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accKeyboardShortcut(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accKeyboardShortcut(Optional varChild As Object) As String" />
+      <MemberSignature Language="F#" Value="member this.accKeyboardShortcut(obj) : string" Usage="Accessibility.IAccessible.accKeyboardShortcut" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -420,6 +442,8 @@
       <MemberSignature Language="C#" Value="public void accLocation (out int pxLeft, out int pyTop, out int pcxWidth, out int pcyHeight, object varChild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accLocation([out] int32&amp; pxLeft, [out] int32&amp; pyTop, [out] int32&amp; pcxWidth, [out] int32&amp; pcyHeight, [in]object varChild) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accLocation(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub accLocation (ByRef pxLeft As Integer, ByRef pyTop As Integer, ByRef pcxWidth As Integer, ByRef pcyHeight As Integer, Optional varChild As Object)" />
+      <MemberSignature Language="F#" Value="abstract member accLocation :  *  *  *  * obj -&gt; unit" Usage="iAccessible.accLocation (pxLeft, pyTop, pcxWidth, pcyHeight, varChild)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -464,6 +488,8 @@
       <MemberSignature Language="C#" Value="public string accName[object varChild] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string accName(object)" />
       <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accName(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Property accName(Optional varChild As Object) As String" />
+      <MemberSignature Language="F#" Value="member this.accName(obj) : string with get, set" Usage="Accessibility.IAccessible.accName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -510,6 +536,8 @@
       <MemberSignature Language="C#" Value="public object accNavigate (int navDir, object varStart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object accNavigate([in]int32 navDir, [in]object varStart) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accNavigate(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function accNavigate (navDir As Integer, Optional varStart As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member accNavigate : int * obj -&gt; obj" Usage="iAccessible.accNavigate (navDir, varStart)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -549,6 +577,8 @@
       <MemberSignature Language="C#" Value="public object accParent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object accParent" />
       <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accParent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accParent As Object" />
+      <MemberSignature Language="F#" Value="member this.accParent : obj" Usage="Accessibility.IAccessible.accParent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -585,6 +615,8 @@
       <MemberSignature Language="C#" Value="public object accRole[object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object accRole(object)" />
       <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accRole(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accRole(Optional varChild As Object) As Object" />
+      <MemberSignature Language="F#" Value="member this.accRole(obj) : obj" Usage="Accessibility.IAccessible.accRole" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -625,6 +657,8 @@
       <MemberSignature Language="C#" Value="public void accSelect (int flagsSelect, object varChild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accSelect([in]int32 flagsSelect, [in]object varChild) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accSelect(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub accSelect (flagsSelect As Integer, Optional varChild As Object)" />
+      <MemberSignature Language="F#" Value="abstract member accSelect : int * obj -&gt; unit" Usage="iAccessible.accSelect (flagsSelect, varChild)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -663,6 +697,8 @@
       <MemberSignature Language="C#" Value="public object accSelection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object accSelection" />
       <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accSelection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accSelection As Object" />
+      <MemberSignature Language="F#" Value="member this.accSelection : obj" Usage="Accessibility.IAccessible.accSelection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -699,6 +735,8 @@
       <MemberSignature Language="C#" Value="public object accState[object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object accState(object)" />
       <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accState(Optional varChild As Object) As Object" />
+      <MemberSignature Language="F#" Value="member this.accState(obj) : obj" Usage="Accessibility.IAccessible.accState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -739,6 +777,8 @@
       <MemberSignature Language="C#" Value="public string accValue[object varChild] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string accValue(object)" />
       <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Property accValue(Optional varChild As Object) As String" />
+      <MemberSignature Language="F#" Value="member this.accValue(obj) : string with get, set" Usage="Accessibility.IAccessible.accValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>

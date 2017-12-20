@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ScriptMethodAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScriptMethodAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Services.ScriptMethodAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScriptMethodAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ScriptMethodAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +62,7 @@
       <MemberSignature Language="C#" Value="public ScriptMethodAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Services.ScriptMethodAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -75,6 +78,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Script.Services.ResponseFormat ResponseFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Script.Services.ResponseFormat ResponseFormat" />
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseFormat As ResponseFormat" />
+      <MemberSignature Language="F#" Value="member this.ResponseFormat : System.Web.Script.Services.ResponseFormat with get, set" Usage="System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -111,6 +116,8 @@
       <MemberSignature Language="C#" Value="public bool UseHttpGet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseHttpGet" />
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.ScriptMethodAttribute.UseHttpGet" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseHttpGet As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseHttpGet : bool with get, set" Usage="System.Web.Script.Services.ScriptMethodAttribute.UseHttpGet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -151,6 +158,8 @@
       <MemberSignature Language="C#" Value="public bool XmlSerializeString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool XmlSerializeString" />
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.ScriptMethodAttribute.XmlSerializeString" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlSerializeString As Boolean" />
+      <MemberSignature Language="F#" Value="member this.XmlSerializeString : bool with get, set" Usage="System.Web.Script.Services.ScriptMethodAttribute.XmlSerializeString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

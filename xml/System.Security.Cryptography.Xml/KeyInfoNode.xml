@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class KeyInfoNode : System.Security.Cryptography.Xml.KeyInfoClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyInfoNode extends System.Security.Cryptography.Xml.KeyInfoClause" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.KeyInfoNode" />
+  <TypeSignature Language="VB.NET" Value="Public Class KeyInfoNode&#xA;Inherits KeyInfoClause" />
+  <TypeSignature Language="F#" Value="type KeyInfoNode = class&#xA;    inherit KeyInfoClause" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoNode" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public KeyInfoNode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoNode.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -51,6 +63,8 @@
       <MemberSignature Language="C#" Value="public KeyInfoNode (System.Xml.XmlElement node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlElement node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoNode.#ctor(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (node As XmlElement)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.KeyInfoNode : System.Xml.XmlElement -&gt; System.Security.Cryptography.Xml.KeyInfoNode" Usage="new System.Security.Cryptography.Xml.KeyInfoNode node" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -73,6 +87,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlElement GetXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoNode.GetXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetXml () As XmlElement" />
+      <MemberSignature Language="F#" Value="override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="keyInfoNode.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -103,6 +119,8 @@
       <MemberSignature Language="C#" Value="public override void LoadXml (System.Xml.XmlElement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoNode.LoadXml(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadXml (value As XmlElement)" />
+      <MemberSignature Language="F#" Value="override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="keyInfoNode.LoadXml value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -128,6 +146,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlElement Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlElement Value" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoNode.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As XmlElement" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Xml.XmlElement with get, set" Usage="System.Security.Cryptography.Xml.KeyInfoNode.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -146,14 +166,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoNode" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

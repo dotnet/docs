@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CodeParameterDeclarationExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeParameterDeclarationExpression extends System.CodeDom.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeParameterDeclarationExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeParameterDeclarationExpression&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeParameterDeclarationExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,10 +48,20 @@
     <altmember cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeParameterDeclarationExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,6 +81,8 @@
       <MemberSignature Language="C#" Value="public CodeParameterDeclarationExpression (System.CodeDom.CodeTypeReference type, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeReference type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpression.#ctor(System.CodeDom.CodeTypeReference,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As CodeTypeReference, name As String)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeParameterDeclarationExpression : System.CodeDom.CodeTypeReference * string -&gt; System.CodeDom.CodeParameterDeclarationExpression" Usage="new System.CodeDom.CodeParameterDeclarationExpression (type, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -93,6 +107,8 @@
       <MemberSignature Language="C#" Value="public CodeParameterDeclarationExpression (string type, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpression.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, name As String)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeParameterDeclarationExpression : string * string -&gt; System.CodeDom.CodeParameterDeclarationExpression" Usage="new System.CodeDom.CodeParameterDeclarationExpression (type, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -129,6 +145,7 @@
       <MemberSignature Language="C#" Value="public CodeParameterDeclarationExpression (Type type, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpression.#ctor(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeParameterDeclarationExpression : Type * string -&gt; System.CodeDom.CodeParameterDeclarationExpression" Usage="new System.CodeDom.CodeParameterDeclarationExpression (type, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -153,6 +170,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeAttributeDeclarationCollection CustomAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeAttributeDeclarationCollection CustomAttributes" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeParameterDeclarationExpression.CustomAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomAttributes As CodeAttributeDeclarationCollection" />
+      <MemberSignature Language="F#" Value="member this.CustomAttributes : System.CodeDom.CodeAttributeDeclarationCollection with get, set" Usage="System.CodeDom.CodeParameterDeclarationExpression.CustomAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -176,6 +195,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.FieldDirection Direction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.CodeDom.FieldDirection Direction" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeParameterDeclarationExpression.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Direction As FieldDirection" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.CodeDom.FieldDirection with get, set" Usage="System.CodeDom.CodeParameterDeclarationExpression.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -199,6 +220,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeParameterDeclarationExpression.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.CodeDom.CodeParameterDeclarationExpression.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -221,6 +244,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReference Type" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeParameterDeclarationExpression.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As CodeTypeReference" />
+      <MemberSignature Language="F#" Value="member this.Type : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeParameterDeclarationExpression.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -239,14 +264,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

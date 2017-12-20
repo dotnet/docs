@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SoapFieldAttribute : System.Runtime.Remoting.Metadata.SoapAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapFieldAttribute extends System.Runtime.Remoting.Metadata.SoapAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.SoapFieldAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapFieldAttribute&#xA;Inherits SoapAttribute" />
+  <TypeSignature Language="F#" Value="type SoapFieldAttribute = class&#xA;    inherit SoapAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +46,7 @@
       <MemberSignature Language="C#" Value="public SoapFieldAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.SoapFieldAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +63,8 @@
       <MemberSignature Language="C#" Value="public bool IsInteropXmlElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsInteropXmlElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.SoapFieldAttribute.IsInteropXmlElement" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsInteropXmlElement () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInteropXmlElement : unit -&gt; bool" Usage="soapFieldAttribute.IsInteropXmlElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -81,6 +86,8 @@
       <MemberSignature Language="C#" Value="public int Order { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Order" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapFieldAttribute.Order" />
+      <MemberSignature Language="VB.NET" Value="Public Property Order As Integer" />
+      <MemberSignature Language="F#" Value="member this.Order : int with get, set" Usage="System.Runtime.Remoting.Metadata.SoapFieldAttribute.Order" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +114,8 @@
       <MemberSignature Language="C#" Value="public string XmlElementName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlElementName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapFieldAttribute.XmlElementName" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlElementName As String" />
+      <MemberSignature Language="F#" Value="member this.XmlElementName : string with get, set" Usage="System.Runtime.Remoting.Metadata.SoapFieldAttribute.XmlElementName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ApplicationManifest : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationManifest extends Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationManifest&#xA;Inherits AssemblyManifest" />
+  <TypeSignature Language="F#" Value="type ApplicationManifest = class&#xA;    inherit AssemblyManifest" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,10 +25,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ApplicationManifest ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -42,6 +54,8 @@
       <MemberSignature Language="C#" Value="public ApplicationManifest (string targetFrameworkVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string targetFrameworkVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetFrameworkVersion As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest : string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" Usage="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest targetFrameworkVersion" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -60,6 +74,8 @@
       <MemberSignature Language="C#" Value="public string ConfigFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConfigFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.ConfigFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigFile As String" />
+      <MemberSignature Language="F#" Value="member this.ConfigFile : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.ConfigFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -90,6 +106,8 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference EntryPoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference EntryPoint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.EntryPoint" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property EntryPoint As AssemblyReference" />
+      <MemberSignature Language="F#" Value="member this.EntryPoint : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.EntryPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -113,6 +131,8 @@
       <MemberSignature Language="C#" Value="public string ErrorReportUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorReportUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.ErrorReportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorReportUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorReportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.ErrorReportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -136,6 +156,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociationCollection FileAssociations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociationCollection FileAssociations" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.FileAssociations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileAssociations As FileAssociationCollection" />
+      <MemberSignature Language="F#" Value="member this.FileAssociations : Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociationCollection" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.FileAssociations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -159,6 +181,8 @@
       <MemberSignature Language="C#" Value="public bool HostInBrowser { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HostInBrowser" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostInBrowser As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HostInBrowser : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -194,6 +218,8 @@
       <MemberSignature Language="C#" Value="public string IconFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IconFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.IconFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property IconFile As String" />
+      <MemberSignature Language="F#" Value="member this.IconFile : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.IconFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -224,6 +250,8 @@
       <MemberSignature Language="C#" Value="public bool IsClickOnceManifest { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsClickOnceManifest" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.IsClickOnceManifest" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsClickOnceManifest As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsClickOnceManifest : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.IsClickOnceManifest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -247,6 +275,8 @@
       <MemberSignature Language="C#" Value="public int MaxTargetPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxTargetPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.MaxTargetPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxTargetPath As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxTargetPath : int with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.MaxTargetPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -270,6 +300,8 @@
       <MemberSignature Language="C#" Value="public string OSDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OSDescription" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.OSDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property OSDescription As String" />
+      <MemberSignature Language="F#" Value="member this.OSDescription : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.OSDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -293,6 +325,8 @@
       <MemberSignature Language="C#" Value="public string OSSupportUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OSSupportUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.OSSupportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property OSSupportUrl As String" />
+      <MemberSignature Language="F#" Value="member this.OSSupportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.OSSupportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -316,6 +350,8 @@
       <MemberSignature Language="C#" Value="public string OSVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OSVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.OSVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property OSVersion As String" />
+      <MemberSignature Language="F#" Value="member this.OSVersion : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.OSVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -346,6 +382,8 @@
       <MemberSignature Language="C#" Value="public string Product { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Product" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Product" />
+      <MemberSignature Language="VB.NET" Value="Public Property Product As String" />
+      <MemberSignature Language="F#" Value="member this.Product : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Product" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -376,6 +414,8 @@
       <MemberSignature Language="C#" Value="public string Publisher { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Publisher" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Publisher" />
+      <MemberSignature Language="VB.NET" Value="Public Property Publisher As String" />
+      <MemberSignature Language="F#" Value="member this.Publisher : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Publisher" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -406,6 +446,8 @@
       <MemberSignature Language="C#" Value="public string SuiteName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SuiteName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.SuiteName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuiteName As String" />
+      <MemberSignature Language="F#" Value="member this.SuiteName : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.SuiteName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -429,6 +471,8 @@
       <MemberSignature Language="C#" Value="public string SupportUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SupportUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.SupportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportUrl As String" />
+      <MemberSignature Language="F#" Value="member this.SupportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.SupportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -459,6 +503,8 @@
       <MemberSignature Language="C#" Value="public string TargetFrameworkVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetFrameworkVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.TargetFrameworkVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkVersion As String" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkVersion : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.TargetFrameworkVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -482,6 +528,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo TrustInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo TrustInfo" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.TrustInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrustInfo As TrustInfo" />
+      <MemberSignature Language="F#" Value="member this.TrustInfo : Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.TrustInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -505,6 +553,8 @@
       <MemberSignature Language="C#" Value="public bool UseApplicationTrust { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseApplicationTrust" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.UseApplicationTrust" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseApplicationTrust As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseApplicationTrust : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.UseApplicationTrust" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -539,6 +589,8 @@
       <MemberSignature Language="C#" Value="public override void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="applicationManifest.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -564,6 +616,8 @@
       <MemberSignature Language="C#" Value="public string XmlConfigFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlConfigFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlConfigFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlConfigFile As String" />
+      <MemberSignature Language="F#" Value="member this.XmlConfigFile : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlConfigFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -593,6 +647,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity XmlEntryPointIdentity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity XmlEntryPointIdentity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlEntryPointIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlEntryPointIdentity As AssemblyIdentity" />
+      <MemberSignature Language="F#" Value="member this.XmlEntryPointIdentity : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlEntryPointIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -622,6 +678,8 @@
       <MemberSignature Language="C#" Value="public string XmlEntryPointParameters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlEntryPointParameters" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlEntryPointParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlEntryPointParameters As String" />
+      <MemberSignature Language="F#" Value="member this.XmlEntryPointParameters : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlEntryPointParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -651,6 +709,8 @@
       <MemberSignature Language="C#" Value="public string XmlEntryPointPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlEntryPointPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlEntryPointPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlEntryPointPath As String" />
+      <MemberSignature Language="F#" Value="member this.XmlEntryPointPath : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlEntryPointPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -680,6 +740,8 @@
       <MemberSignature Language="C#" Value="public string XmlErrorReportUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlErrorReportUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlErrorReportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlErrorReportUrl As String" />
+      <MemberSignature Language="F#" Value="member this.XmlErrorReportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlErrorReportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -709,6 +771,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation[] XmlFileAssociations { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation[] XmlFileAssociations" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlFileAssociations" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlFileAssociations As FileAssociation()" />
+      <MemberSignature Language="F#" Value="member this.XmlFileAssociations : Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation[] with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlFileAssociations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -738,6 +802,8 @@
       <MemberSignature Language="C#" Value="public string XmlHostInBrowser { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlHostInBrowser" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlHostInBrowser" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlHostInBrowser As String" />
+      <MemberSignature Language="F#" Value="member this.XmlHostInBrowser : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlHostInBrowser" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -768,6 +834,8 @@
       <MemberSignature Language="C#" Value="public string XmlIconFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlIconFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlIconFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlIconFile As String" />
+      <MemberSignature Language="F#" Value="member this.XmlIconFile : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlIconFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -797,6 +865,8 @@
       <MemberSignature Language="C#" Value="public string XmlIsClickOnceManifest { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlIsClickOnceManifest" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlIsClickOnceManifest" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlIsClickOnceManifest As String" />
+      <MemberSignature Language="F#" Value="member this.XmlIsClickOnceManifest : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlIsClickOnceManifest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -827,6 +897,8 @@
       <MemberSignature Language="C#" Value="public string XmlOSBuild { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlOSBuild" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlOSBuild" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlOSBuild As String" />
+      <MemberSignature Language="F#" Value="member this.XmlOSBuild : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlOSBuild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -856,6 +928,8 @@
       <MemberSignature Language="C#" Value="public string XmlOSDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlOSDescription" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlOSDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlOSDescription As String" />
+      <MemberSignature Language="F#" Value="member this.XmlOSDescription : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlOSDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -885,6 +959,8 @@
       <MemberSignature Language="C#" Value="public string XmlOSMajor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlOSMajor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlOSMajor" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlOSMajor As String" />
+      <MemberSignature Language="F#" Value="member this.XmlOSMajor : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlOSMajor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -914,6 +990,8 @@
       <MemberSignature Language="C#" Value="public string XmlOSMinor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlOSMinor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlOSMinor" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlOSMinor As String" />
+      <MemberSignature Language="F#" Value="member this.XmlOSMinor : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlOSMinor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -943,6 +1021,8 @@
       <MemberSignature Language="C#" Value="public string XmlOSRevision { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlOSRevision" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlOSRevision" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlOSRevision As String" />
+      <MemberSignature Language="F#" Value="member this.XmlOSRevision : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlOSRevision" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -972,6 +1052,8 @@
       <MemberSignature Language="C#" Value="public string XmlOSSupportUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlOSSupportUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlOSSupportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlOSSupportUrl As String" />
+      <MemberSignature Language="F#" Value="member this.XmlOSSupportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlOSSupportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1001,6 +1083,8 @@
       <MemberSignature Language="C#" Value="public string XmlProduct { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlProduct" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlProduct" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlProduct As String" />
+      <MemberSignature Language="F#" Value="member this.XmlProduct : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlProduct" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1030,6 +1114,8 @@
       <MemberSignature Language="C#" Value="public string XmlPublisher { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlPublisher" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlPublisher" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlPublisher As String" />
+      <MemberSignature Language="F#" Value="member this.XmlPublisher : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlPublisher" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1059,6 +1145,8 @@
       <MemberSignature Language="C#" Value="public string XmlSuiteName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlSuiteName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlSuiteName" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlSuiteName As String" />
+      <MemberSignature Language="F#" Value="member this.XmlSuiteName : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlSuiteName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1088,6 +1176,8 @@
       <MemberSignature Language="C#" Value="public string XmlSupportUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlSupportUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlSupportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlSupportUrl As String" />
+      <MemberSignature Language="F#" Value="member this.XmlSupportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlSupportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1117,6 +1207,8 @@
       <MemberSignature Language="C#" Value="public string XmlUseApplicationTrust { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlUseApplicationTrust" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlUseApplicationTrust" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlUseApplicationTrust As String" />
+      <MemberSignature Language="F#" Value="member this.XmlUseApplicationTrust : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.XmlUseApplicationTrust" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1142,14 +1234,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

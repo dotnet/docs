@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ComponentResourceKey : System.Windows.ResourceKey" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentResourceKey extends System.Windows.ResourceKey" />
   <TypeSignature Language="DocId" Value="T:System.Windows.ComponentResourceKey" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComponentResourceKey&#xA;Inherits ResourceKey" />
+  <TypeSignature Language="F#" Value="type ComponentResourceKey = class&#xA;    inherit ResourceKey" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +37,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.ComponentResourceKey" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ComponentResourceKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ComponentResourceKey.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -61,6 +73,8 @@
       <MemberSignature Language="C#" Value="public ComponentResourceKey (Type typeInTargetAssembly, object resourceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type typeInTargetAssembly, object resourceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ComponentResourceKey.#ctor(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (typeInTargetAssembly As Type, resourceId As Object)" />
+      <MemberSignature Language="F#" Value="new System.Windows.ComponentResourceKey : Type * obj -&gt; System.Windows.ComponentResourceKey" Usage="new System.Windows.ComponentResourceKey (typeInTargetAssembly, resourceId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -100,6 +114,8 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.Assembly Assembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly Assembly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.ComponentResourceKey.Assembly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Assembly As Assembly" />
+      <MemberSignature Language="F#" Value="member this.Assembly : System.Reflection.Assembly" Usage="System.Windows.ComponentResourceKey.Assembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -118,6 +134,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ComponentResourceKey.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="componentResourceKey.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -148,6 +166,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ComponentResourceKey.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="componentResourceKey.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -167,6 +187,8 @@
       <MemberSignature Language="C#" Value="public object ResourceId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ResourceId" />
       <MemberSignature Language="DocId" Value="P:System.Windows.ComponentResourceKey.ResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceId As Object" />
+      <MemberSignature Language="F#" Value="member this.ResourceId : obj with get, set" Usage="System.Windows.ComponentResourceKey.ResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -199,6 +221,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ComponentResourceKey.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="componentResourceKey.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -218,6 +242,8 @@
       <MemberSignature Language="C#" Value="public Type TypeInTargetAssembly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TypeInTargetAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.ComponentResourceKey.TypeInTargetAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeInTargetAssembly As Type" />
+      <MemberSignature Language="F#" Value="member this.TypeInTargetAssembly : Type with get, set" Usage="System.Windows.ComponentResourceKey.TypeInTargetAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -246,14 +272,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.ComponentResourceKey" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

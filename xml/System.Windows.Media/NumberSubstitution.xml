@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class NumberSubstitution" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumberSubstitution extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.NumberSubstitution" />
+  <TypeSignature Language="VB.NET" Value="Public Class NumberSubstitution" />
+  <TypeSignature Language="F#" Value="type NumberSubstitution = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,10 +38,20 @@ Example of the appearance of digits in different cultures
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.NumberSubstitution" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NumberSubstitution ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.NumberSubstitution.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -55,6 +67,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="public NumberSubstitution (System.Windows.Media.NumberCultureSource source, System.Globalization.CultureInfo cultureOverride, System.Windows.Media.NumberSubstitutionMethod substitution);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.NumberCultureSource source, class System.Globalization.CultureInfo cultureOverride, valuetype System.Windows.Media.NumberSubstitutionMethod substitution) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.NumberSubstitution.#ctor(System.Windows.Media.NumberCultureSource,System.Globalization.CultureInfo,System.Windows.Media.NumberSubstitutionMethod)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (source As NumberCultureSource, cultureOverride As CultureInfo, substitution As NumberSubstitutionMethod)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.NumberSubstitution : System.Windows.Media.NumberCultureSource * System.Globalization.CultureInfo * System.Windows.Media.NumberSubstitutionMethod -&gt; System.Windows.Media.NumberSubstitution" Usage="new System.Windows.Media.NumberSubstitution (source, cultureOverride, substitution)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -74,9 +88,27 @@ Example of the appearance of digits in different cultures
       </Docs>
     </Member>
     <Member MemberName="CultureOverride">
+      <MemberSignature Language="C#" Value="see GetCultureOverride, and SetCultureOverride" />
+      <MemberSignature Language="ILAsm" Value="see GetCultureOverride, and SetCultureOverride" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.NumberSubstitution.CultureOverride" />
+      <MemberSignature Language="VB.NET" Value="see GetCultureOverride, and SetCultureOverride" />
+      <MemberSignature Language="F#" Value="see GetCultureOverride, and SetCultureOverride" Usage="see GetCultureOverride, and SetCultureOverride" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CultureOverride">
       <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo CultureOverride { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo CultureOverride" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.NumberSubstitution.CultureOverride" />
+      <MemberSignature Language="VB.NET" Value="Public Property CultureOverride As CultureInfo" />
+      <MemberSignature Language="F#" Value="member this.CultureOverride : System.Globalization.CultureInfo with get, set" Usage="System.Windows.Media.NumberSubstitution.CultureOverride" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -135,6 +167,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CultureOverrideProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CultureOverrideProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.NumberSubstitution.CultureOverrideProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CultureOverrideProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CultureOverrideProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.NumberSubstitution.CultureOverrideProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,9 +183,27 @@ Example of the appearance of digits in different cultures
       </Docs>
     </Member>
     <Member MemberName="CultureSource">
+      <MemberSignature Language="C#" Value="see GetCultureSource, and SetCultureSource" />
+      <MemberSignature Language="ILAsm" Value="see GetCultureSource, and SetCultureSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.NumberSubstitution.CultureSource" />
+      <MemberSignature Language="VB.NET" Value="see GetCultureSource, and SetCultureSource" />
+      <MemberSignature Language="F#" Value="see GetCultureSource, and SetCultureSource" Usage="see GetCultureSource, and SetCultureSource" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CultureSource">
       <MemberSignature Language="C#" Value="public System.Windows.Media.NumberCultureSource CultureSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.NumberCultureSource CultureSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.NumberSubstitution.CultureSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property CultureSource As NumberCultureSource" />
+      <MemberSignature Language="F#" Value="member this.CultureSource : System.Windows.Media.NumberCultureSource with get, set" Usage="System.Windows.Media.NumberSubstitution.CultureSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -195,6 +247,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CultureSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CultureSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.NumberSubstitution.CultureSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CultureSourceProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CultureSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.NumberSubstitution.CultureSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -212,6 +266,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.NumberSubstitution.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="numberSubstitution.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -248,6 +304,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo GetCultureOverride (System.Windows.DependencyObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.CultureInfo GetCultureOverride(class System.Windows.DependencyObject target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.NumberSubstitution.GetCultureOverride(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCultureOverride (target As DependencyObject) As CultureInfo" />
+      <MemberSignature Language="F#" Value="static member GetCultureOverride : System.Windows.DependencyObject -&gt; System.Globalization.CultureInfo" Usage="System.Windows.Media.NumberSubstitution.GetCultureOverride target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -278,6 +336,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="public static System.Windows.Media.NumberCultureSource GetCultureSource (System.Windows.DependencyObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.NumberCultureSource GetCultureSource(class System.Windows.DependencyObject target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.NumberSubstitution.GetCultureSource(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCultureSource (target As DependencyObject) As NumberCultureSource" />
+      <MemberSignature Language="F#" Value="static member GetCultureSource : System.Windows.DependencyObject -&gt; System.Windows.Media.NumberCultureSource" Usage="System.Windows.Media.NumberSubstitution.GetCultureSource target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -305,6 +365,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.NumberSubstitution.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="numberSubstitution.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -324,6 +386,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="public static System.Windows.Media.NumberSubstitutionMethod GetSubstitution (System.Windows.DependencyObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.NumberSubstitutionMethod GetSubstitution(class System.Windows.DependencyObject target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.NumberSubstitution.GetSubstitution(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSubstitution (target As DependencyObject) As NumberSubstitutionMethod" />
+      <MemberSignature Language="F#" Value="static member GetSubstitution : System.Windows.DependencyObject -&gt; System.Windows.Media.NumberSubstitutionMethod" Usage="System.Windows.Media.NumberSubstitution.GetSubstitution target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -351,6 +415,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="public static void SetCultureOverride (System.Windows.DependencyObject target, System.Globalization.CultureInfo value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCultureOverride(class System.Windows.DependencyObject target, class System.Globalization.CultureInfo value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.NumberSubstitution.SetCultureOverride(System.Windows.DependencyObject,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCultureOverride (target As DependencyObject, value As CultureInfo)" />
+      <MemberSignature Language="F#" Value="static member SetCultureOverride : System.Windows.DependencyObject * System.Globalization.CultureInfo -&gt; unit" Usage="System.Windows.Media.NumberSubstitution.SetCultureOverride (target, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -374,6 +440,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="public static void SetCultureSource (System.Windows.DependencyObject target, System.Windows.Media.NumberCultureSource value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCultureSource(class System.Windows.DependencyObject target, valuetype System.Windows.Media.NumberCultureSource value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.NumberSubstitution.SetCultureSource(System.Windows.DependencyObject,System.Windows.Media.NumberCultureSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCultureSource (target As DependencyObject, value As NumberCultureSource)" />
+      <MemberSignature Language="F#" Value="static member SetCultureSource : System.Windows.DependencyObject * System.Windows.Media.NumberCultureSource -&gt; unit" Usage="System.Windows.Media.NumberSubstitution.SetCultureSource (target, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -397,6 +465,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="public static void SetSubstitution (System.Windows.DependencyObject target, System.Windows.Media.NumberSubstitutionMethod value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSubstitution(class System.Windows.DependencyObject target, valuetype System.Windows.Media.NumberSubstitutionMethod value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.NumberSubstitution.SetSubstitution(System.Windows.DependencyObject,System.Windows.Media.NumberSubstitutionMethod)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetSubstitution (target As DependencyObject, value As NumberSubstitutionMethod)" />
+      <MemberSignature Language="F#" Value="static member SetSubstitution : System.Windows.DependencyObject * System.Windows.Media.NumberSubstitutionMethod -&gt; unit" Usage="System.Windows.Media.NumberSubstitution.SetSubstitution (target, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -417,9 +487,27 @@ Example of the appearance of digits in different cultures
       </Docs>
     </Member>
     <Member MemberName="Substitution">
+      <MemberSignature Language="C#" Value="see GetSubstitution, and SetSubstitution" />
+      <MemberSignature Language="ILAsm" Value="see GetSubstitution, and SetSubstitution" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.NumberSubstitution.Substitution" />
+      <MemberSignature Language="VB.NET" Value="see GetSubstitution, and SetSubstitution" />
+      <MemberSignature Language="F#" Value="see GetSubstitution, and SetSubstitution" Usage="see GetSubstitution, and SetSubstitution" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Substitution">
       <MemberSignature Language="C#" Value="public System.Windows.Media.NumberSubstitutionMethod Substitution { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.NumberSubstitutionMethod Substitution" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.NumberSubstitution.Substitution" />
+      <MemberSignature Language="VB.NET" Value="Public Property Substitution As NumberSubstitutionMethod" />
+      <MemberSignature Language="F#" Value="member this.Substitution : System.Windows.Media.NumberSubstitutionMethod with get, set" Usage="System.Windows.Media.NumberSubstitution.Substitution" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -463,6 +551,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SubstitutionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SubstitutionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.NumberSubstitution.SubstitutionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SubstitutionProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SubstitutionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.NumberSubstitution.SubstitutionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -476,14 +566,5 @@ Example of the appearance of digits in different cultures
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.NumberSubstitution" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

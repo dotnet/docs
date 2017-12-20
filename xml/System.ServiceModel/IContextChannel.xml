@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IContextChannel : System.ServiceModel.Channels.IChannel, System.ServiceModel.IExtensibleObject&lt;System.ServiceModel.IContextChannel&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContextChannel implements class System.ServiceModel.Channels.IChannel, class System.ServiceModel.ICommunicationObject, class System.ServiceModel.IExtensibleObject`1&lt;class System.ServiceModel.IContextChannel&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.IContextChannel" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IContextChannel&#xA;Implements IChannel, IExtensibleObject(Of IContextChannel)" />
+  <TypeSignature Language="F#" Value="type IContextChannel = interface&#xA;    interface IChannel&#xA;    interface ICommunicationObject&#xA;    interface IExtensibleObject&lt;IContextChannel&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public bool AllowOutputBatching { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowOutputBatching" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IContextChannel.AllowOutputBatching" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowOutputBatching As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowOutputBatching : bool with get, set" Usage="System.ServiceModel.IContextChannel.AllowOutputBatching" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +79,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.IInputSession InputSession { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.IInputSession InputSession" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IContextChannel.InputSession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputSession As IInputSession" />
+      <MemberSignature Language="F#" Value="member this.InputSession : System.ServiceModel.Channels.IInputSession" Usage="System.ServiceModel.IContextChannel.InputSession" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,6 +106,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress LocalAddress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress LocalAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IContextChannel.LocalAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalAddress As EndpointAddress" />
+      <MemberSignature Language="F#" Value="member this.LocalAddress : System.ServiceModel.EndpointAddress" Usage="System.ServiceModel.IContextChannel.LocalAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -125,6 +133,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan OperationTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan OperationTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IContextChannel.OperationTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property OperationTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.OperationTimeout : TimeSpan with get, set" Usage="System.ServiceModel.IContextChannel.OperationTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -157,6 +167,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.IOutputSession OutputSession { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.IOutputSession OutputSession" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IContextChannel.OutputSession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputSession As IOutputSession" />
+      <MemberSignature Language="F#" Value="member this.OutputSession : System.ServiceModel.Channels.IOutputSession" Usage="System.ServiceModel.IContextChannel.OutputSession" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -182,6 +194,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress RemoteAddress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress RemoteAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IContextChannel.RemoteAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoteAddress As EndpointAddress" />
+      <MemberSignature Language="F#" Value="member this.RemoteAddress : System.ServiceModel.EndpointAddress" Usage="System.ServiceModel.IContextChannel.RemoteAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -207,6 +221,8 @@
       <MemberSignature Language="C#" Value="public string SessionId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SessionId" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IContextChannel.SessionId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionId As String" />
+      <MemberSignature Language="F#" Value="member this.SessionId : string" Usage="System.ServiceModel.IContextChannel.SessionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

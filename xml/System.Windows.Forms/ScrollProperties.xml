@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class ScrollProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ScrollProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollProperties" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ScrollProperties" />
+  <TypeSignature Language="F#" Value="type ScrollProperties = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="protected ScrollProperties (System.Windows.Forms.ScrollableControl container);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ScrollableControl container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollProperties.#ctor(System.Windows.Forms.ScrollableControl)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (container As ScrollableControl)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ScrollProperties : System.Windows.Forms.ScrollableControl -&gt; System.Windows.Forms.ScrollProperties" Usage="new System.Windows.Forms.ScrollProperties container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Windows.Forms.ScrollProperties.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="public int LargeChange { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LargeChange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.LargeChange" />
+      <MemberSignature Language="VB.NET" Value="Public Property LargeChange As Integer" />
+      <MemberSignature Language="F#" Value="member this.LargeChange : int with get, set" Usage="System.Windows.Forms.ScrollProperties.LargeChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -110,6 +118,8 @@
       <MemberSignature Language="C#" Value="public int Maximum { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Maximum" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.Maximum" />
+      <MemberSignature Language="VB.NET" Value="Public Property Maximum As Integer" />
+      <MemberSignature Language="F#" Value="member this.Maximum : int with get, set" Usage="System.Windows.Forms.ScrollProperties.Maximum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +153,8 @@
       <MemberSignature Language="C#" Value="public int Minimum { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Minimum" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.Minimum" />
+      <MemberSignature Language="VB.NET" Value="Public Property Minimum As Integer" />
+      <MemberSignature Language="F#" Value="member this.Minimum : int with get, set" Usage="System.Windows.Forms.ScrollProperties.Minimum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -178,6 +190,8 @@
       <MemberSignature Language="C#" Value="protected System.Windows.Forms.ScrollableControl ParentControl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ScrollableControl ParentControl" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.ParentControl" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ParentControl As ScrollableControl" />
+      <MemberSignature Language="F#" Value="member this.ParentControl : System.Windows.Forms.ScrollableControl" Usage="System.Windows.Forms.ScrollProperties.ParentControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -196,6 +210,8 @@
       <MemberSignature Language="C#" Value="public int SmallChange { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SmallChange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.SmallChange" />
+      <MemberSignature Language="VB.NET" Value="Public Property SmallChange As Integer" />
+      <MemberSignature Language="F#" Value="member this.SmallChange : int with get, set" Usage="System.Windows.Forms.ScrollProperties.SmallChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -226,6 +242,8 @@
       <MemberSignature Language="C#" Value="public int Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Integer" />
+      <MemberSignature Language="F#" Value="member this.Value : int with get, set" Usage="System.Windows.Forms.ScrollProperties.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -252,6 +270,8 @@
       <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Windows.Forms.ScrollProperties.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

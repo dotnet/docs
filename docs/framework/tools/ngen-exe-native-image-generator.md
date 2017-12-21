@@ -54,7 +54,7 @@ The Native Image Generator (Ngen.exe) is a tool that improves the performance of
   
  On Windows 8, see [Native Image Task](http://msdn.microsoft.com/en-us/9b1f7590-4e0d-4737-90ef-eaf696932afb).  
   
- For additional information on using Ngen.exe and the native image service, see [Native Image Service](http://msdn.microsoft.com/en-us/b15e0e32-59cb-4ae4-967c-6c9527781309).  
+ For additional information on using Ngen.exe and the native image service, see [Native Image Service](https://msdn.microsoft.com/library/ms165074(v=vs.100).aspx).  
   
 > [!NOTE]
 >  Ngen.exe syntax for versions 1.0 and 1.1 of the .NET Framework can be found in [Native Image Generator (Ngen.exe) Legacy Syntax](http://msdn.microsoft.com/en-us/5a69fc7a-103f-4afc-8ab4-606adcb46324).  

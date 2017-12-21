@@ -20,7 +20,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # SOS.dll (SOS Debugging Extension)
-The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual Studio and in the Windows debugger (WinDbg.exe) by providing information about the internal common language runtime (CLR) environment. This tool requires your project to have unmanaged debugging enabled. SOS.dll is automatically installed with the .NET Framework. To use SOS.dll in Visual Studio, install the [Windows Driver Kit (WDK)](http://msdn.microsoft.com/windows/hardware/hh852362).  
+The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual Studio and in the Windows debugger (WinDbg.exe) by providing information about the internal Common Language Runtime (CLR) environment. This tool requires your project to have unmanaged debugging enabled. SOS.dll is automatically installed with the .NET Framework. To use SOS.dll in Visual Studio, install the [Windows Driver Kit (WDK)](http://msdn.microsoft.com/windows/hardware/hh852362).  
   
 > [!NOTE]
 >  If you are using [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], SOS.dll is supported in the Windows Debugger within Visual Studio, but not in the Immediate window of the Visual Studio debugger.  
@@ -101,7 +101,7 @@ The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual
 |**VMStat**|Provides a summary view of the virtual address space, ordered by each type of protection applied to that memory (free, reserved, committed, private, mapped, image). The TOTAL column displays the result of the AVERAGE column multiplied by the BLK COUNT column.|  
   
 ## Remarks  
- The SOS Debugging Extension lets you view information about code that is running inside the common language runtime. For example, you can use the SOS Debugging Extension to display information about the managed heap, look for heap corruptions, display internal data types used by the runtime, and view information about all managed code running inside the runtime.  
+ The SOS Debugging Extension lets you view information about code that is running inside the Common Language Runtime. For example, you can use the SOS Debugging Extension to display information about the managed heap, look for heap corruptions, display internal data types used by the runtime, and view information about all managed code running inside the runtime.  
   
  To use the SOS Debugging Extension in Visual Studio, install the [Windows Driver Kit (WDK)](http://msdn.microsoft.com/windows/hardware/hh852362). For information about the integrated debugging environment in Visual Studio, see [Debugging Environments](http://msdn.microsoft.com/library/windows/hardware/hh406268.aspx) in the Windows Dev Center.  
   

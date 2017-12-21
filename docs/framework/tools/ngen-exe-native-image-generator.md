@@ -379,7 +379,7 @@ using namespace System::Runtime::CompilerServices;
 ### Opting out of native image generation  
  In some cases, NGen.exe may have difficulty generating a native image for a specific method, or you may prefer that the method be JIT compiled rather then compiled to a native image. In this case, you can use the `System.Runtime.BypassNGenAttribute` attribute to prevent NGen.exe from generating a native image for a particular method. The attribute must be applied individually to each method whose code you do not want to include in the native image. NGen.exe recognizes the attribute and does not generate code in the native image for the corresponding method.  
   
- Note, however, that `BypassNGenAttribute` is not defined as a type in the .NET Framework Class library. In order to consume the attribute in your code, you must first define it as follows:  
+ Note, however, that `BypassNGenAttribute` is not defined as a type in the .NET Framework Class Library. In order to consume the attribute in your code, you must first define it as follows:  
   
  [!code-csharp[System.Runtime.BypassNGenAttribute#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/System.Runtime.BypassNGenAttribute/cs/Optout1.cs#1)]
  [!code-vb[System.Runtime.BypassNGenAttribute#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Runtime.BypassNGenAttribute/vb/Optout1.vb#1)]  

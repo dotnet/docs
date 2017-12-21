@@ -13,16 +13,16 @@ ms.technology: dotnet-standard
 
 The .NET API Analyzer is a Roslyn analyzer that discovers potential compatibility risks for APIs with different platforms and detects calls to deprecated APIs. It can be useful for any developers of the .NET family at any stage of development.
 
-API Analyzer comes as [NuGet package](https://www.nuget.org/packages/Microsoft.DotNet.Analyzers.Compatibility/) and after you reference it in a project, it automatically monitors the code and indicates problematic API usage. You can also get suggestions on possible fixes by clicking on the light bulb.The drop-down menu includes an option to suppress the warnings.
+API Analyzer comes as a [NuGet package](https://www.nuget.org/packages/Microsoft.DotNet.Analyzers.Compatibility/) and after you reference it in a project, it automatically monitors the code and indicates problematic API usage. You can also get suggestions on possible fixes by clicking on the light bulb. The drop-down menu includes an option to suppress the warnings.
 
 ## Discovering deprecated APIs
-When a deprecated API (for example `WebClient`)is used in a code, API Analyzer highlights it with a green squiggly line and shows a light bulb on the left
+When a deprecated API, such as \<xref:System.Net.WebClient>, is used in a code, API Analyzer highlights it with a green squiggly line and shows a light bulb on the left as in the following example:
 
-![](media/api-analyzer/green-squiggle.jpg) !
+!["Screenshot of WebClient API with green squiggly line and light bulb on the left"](media/api-analyzer/green-squiggle.jpg)
 
-The Error List window contains warnings with a unique ID per deprecated API (in our example `DE004`). By clicking on the ID, you go to a webpage with detailed information about why the API was deprecated and what alternative APIs should be used.
+The Error List window contains warnings with a unique ID per deprecated API (in the following example `DE004`). By clicking on the ID, you go to a webpage with detailed information about why the API was deprecated and suggestions regarding alternative APIs that can be used.
 
-![](media/api-analyzer/warnings.jpg)
+!["Screenshot of the Error List window showing warning's ID and description"](media/api-analyzer/warnings.jpg)
 
 Any warnings can be suppressed by right-clicking on the highlighted member and selecting **Quick Actions and Refactorings**. Here you get two suppression options: locally (in source) or globally (in a suppression file). We encourage developers to use global suppression to ensure consistency of API usage across their project.
 
@@ -46,7 +46,7 @@ You can also conditionally compile per target framework/operating system, but yo
 
 ## Supported diagnostics
 Right now the analyzer handles the following cases:
-* Usage of a .NET Standard API that throws `PlatformNoSupportedException` (PC001).
+* Usage of a .NET Standard API that throws \<xref:System.PlatformNotSupportedException> (PC001).
 * Usage of a .NET Standard API that isn't available on the .NET Framework 4.6.1 (PC002).
 * Usage of a native API that doesn’t exist in UWP (PC003).
 * Usage of an API that is marked as deprecated (DEXXXX).
@@ -55,7 +55,10 @@ Right now the analyzer handles the following cases:
 All these diagnostics are available not only in the IDE, but also on the command line as part of building your project, which includes the CI server.
 
 ## Configuration
-It is up to a user to decide how the diagnostics should be treated: as warnings, errors, suggestions, or to be turned off. For example, as an architect, you can decide that compatibility issues should be treated as errors, calls to some deprecated APIs generate warnings, while others only generate suggestions. You can configure this separately by diagnostic ID and by project. To do so in your project tree -> Dependencies -> Analyzers -> Microsoft.DotNet.Analyzers.Compatibility, right click on the diagnostic ID and Set Rule Set Severity and pick a desired option. 
+The user decides how the diagnostics should be treated: as warnings, errors, suggestions, or to be turned off. For example, as an architect, you can decide that compatibility issues should be treated as errors, calls to some deprecated APIs generate warnings, while others only generate suggestions. You can configure this separately by diagnostic ID and by project. To do so in Solution Explorer, navigate to the **Dependencies** node under your project. Expand the nodes **Dependencies** > **Analyzers** > **Microsoft.DotNet.Analyzers.Compatibility**, right click on the diagnostic ID and **Set Rule Set Severity** and pick a desired option. 
+
+!["Screenshot of the Solution Explorer showing diagnostics and pop-up dialog with Rule Set Sevirity"](media/api-analyzer/disable-notifications.jpg)
+ 
 
 ## See also:
 * [Introducing API Analyzer](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/) blog post.

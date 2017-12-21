@@ -15,6 +15,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Override Encoded SOAP XML Serialization
 [Code Example](#tskhowtooverrideencodedsoapxmlserializationanchor1)  

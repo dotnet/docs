@@ -8,6 +8,8 @@ ms.date: 12/11/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
+ms.workload: 
+  - dotnet
 ---
 # Creating a simple data-driven CRUD microservice
 

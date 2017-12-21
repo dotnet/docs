@@ -13,6 +13,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Developing for Multiple Platforms with the .NET Framework
 You can develop apps for both Microsoft and non-Microsoft platforms by using the .NET Framework and Visual Studio.  

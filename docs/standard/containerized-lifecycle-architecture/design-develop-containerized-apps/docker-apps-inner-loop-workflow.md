@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
+ms.workload: 
+  - dotnet
 ---
 # Inner-loop development workflow for Docker apps
 

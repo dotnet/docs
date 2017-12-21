@@ -13,6 +13,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Resolving External XSLT Style Sheets and Documents
 There are several times during a transformation when you may need to resolve external resources.  

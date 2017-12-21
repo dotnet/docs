@@ -13,6 +13,8 @@ caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Removing Attributes from an Element Node in the DOM
 There are many ways to remove attributes. One technique is to remove them from the attribute collection. To do this, the following steps are performed:  

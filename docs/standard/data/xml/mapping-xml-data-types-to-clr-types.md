@@ -13,6 +13,8 @@ caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Mapping XML Data Types to CLR Types
 The following table describes the default mapping between the XML data types and the common language runtime (CLR) types.  

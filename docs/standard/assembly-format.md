@@ -10,6 +10,8 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 6520323e-ff28-4c8a-ba80-e64a413199e6
+ms.workload: 
+  - dotnet
 ---
 
 # .NET Assembly File Format

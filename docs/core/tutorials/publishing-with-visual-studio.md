@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: a19545d3-24af-4a32-9778-cfb5ae938287
+ms.workload: 
+  - dotnetcore
 ---
 
 # Publish your Hello World application with Visual Studio 2017

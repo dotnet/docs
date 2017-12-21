@@ -13,6 +13,8 @@ caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # XSLT Transformations Over Different Stores
 > [!NOTE]

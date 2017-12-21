@@ -21,6 +21,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Handling and throwing exceptions in .NET
 

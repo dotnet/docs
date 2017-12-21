@@ -1,9 +1,11 @@
 ---
 title: How to deploy existing .NET apps to Azure App Service
-description: .NET Microservices Architecture for Containerized .NET Applications | How to deploy existing .NET apps to Azure App Service 
+description: .NET Microservices Architecture for Containerized .NET Applications | How to deploy existing .NET apps to Azure App Service
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - dotnet
 ---
 # How to deploy existing .NET apps to Azure App Service 
 

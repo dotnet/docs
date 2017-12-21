@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 9f6e8679-bd7e-4317-b3f9-7255a260d9cf
+ms.workload: 
+  - dotnetcore
 ---
 
 # Developing Libraries with Cross Platform Tools

@@ -10,6 +10,8 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
+ms.workload: 
+  - dotnet
 ---
 
 # .NET Guide

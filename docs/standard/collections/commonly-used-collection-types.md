@@ -22,6 +22,8 @@ caps.latest.revision: 29
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Commonly Used Collection Types
 Collection types are the common variations of data collections, such as hash tables, queues, stacks, bags, dictionaries, and lists.  

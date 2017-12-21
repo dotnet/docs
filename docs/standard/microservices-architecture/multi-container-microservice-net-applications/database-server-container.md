@@ -8,6 +8,8 @@ ms.date: 10/30/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
+ms.workload: 
+  - dotnet
 ---
 # Using a database server running as a container
 

@@ -13,6 +13,8 @@ caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using the XslCompiledTransform Class
 The <xref:System.Xml.Xsl.XslCompiledTransform> class is the Microsoft .NET Framework XSLT processor. This class is used to compile style sheets and execute XSLT transformations.  

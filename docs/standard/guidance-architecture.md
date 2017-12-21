@@ -7,6 +7,8 @@ ms.author: wiwagn
 ms.date: 10/26/2017
 ms.prod: .net
 ms.technology: dotnet
+ms.workload: 
+  - dotnet
 ---
 # .NET Architecture Guidance
 

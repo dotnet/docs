@@ -8,6 +8,8 @@ ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
+ms.workload: 
+  - dotnet
 ---
 # Applying CQRS and CQS approaches in a DDD microservice in eShopOnContainers
 

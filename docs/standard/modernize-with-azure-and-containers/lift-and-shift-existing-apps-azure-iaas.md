@@ -4,6 +4,8 @@ description: Modernize Existing .NET Applications With Azure Cloud and Windows C
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - dotnet
 ---
 # Lift and shift existing apps Azure IaaS
 

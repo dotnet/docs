@@ -13,6 +13,8 @@ caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Modifying Nodes, Content, and Values in an XML Document
 There are many ways you can modify the nodes and content in a document. You can:  

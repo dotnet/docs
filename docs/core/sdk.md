@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 26bc9822-e42b-48ec-b0d6-499dc604add7
+ms.workload: 
+  - dotnetcore
 ---
 
 # .NET Core SDK Overview 

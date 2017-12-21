@@ -18,6 +18,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Pipe Operations in the .NET Framework
 Pipes provide a means for interprocess communication. There are two types of pipes:  

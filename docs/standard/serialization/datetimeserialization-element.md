@@ -16,6 +16,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;dateTimeSerialization&gt; Element
 Determines the serialization mode of <xref:System.DateTime> objects.  

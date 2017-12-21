@@ -4,6 +4,8 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/2/2017
+ms.workload: 
+  - dotnet
 ---
 # Migrate to hybrid cloud scenarios
 

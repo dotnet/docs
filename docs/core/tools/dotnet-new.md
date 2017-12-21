@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
+ms.workload: 
+  - dotnetcore
 ---
 # dotnet new
 

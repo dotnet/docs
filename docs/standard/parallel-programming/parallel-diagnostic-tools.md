@@ -15,6 +15,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Parallel Diagnostic Tools
 [!INCLUDE[vs_dev10_ext](../../../includes/vs-dev10-ext-md.md)] provides extensive support for debugging and profiling multi-threaded applications.  

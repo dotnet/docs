@@ -7,6 +7,8 @@ ms.date: 08/23/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
+ms.workload: 
+  - dotnet
 ---
 # .NET architectural components
 

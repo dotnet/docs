@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 52ff1be3-d92e-4477-9c84-8c1771e87ab5
+ms.workload: 
+  - dotnetcore
 ---
 
 # Organizing and testing projects with the .NET Core command line

@@ -13,6 +13,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # XML Processing Options
 See the following tables for a list of Microsoft technologies you can use to process XML data.  

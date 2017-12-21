@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 916251e3-87f9-4eee-81ec-94076215e6fa
+ms.workload: 
+  - dotnetcore
 ---
 
 # Reducing Package Dependencies with project.json

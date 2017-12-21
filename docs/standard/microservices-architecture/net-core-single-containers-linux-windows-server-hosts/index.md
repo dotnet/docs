@@ -8,6 +8,8 @@ ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
+ms.workload: 
+  - dotnet
 ---
 # Deploying Single-Container-Based .NET Core Web Applications on Linux or Windows Nano Server Hosts
 

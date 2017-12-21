@@ -5,10 +5,11 @@ ms.date: "11/08/2017"
 ms.prod: ".net"
 ms.topic: "article"
 ms.technology: dotnet-standard
-ms.##devlang: dotnet
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # What's new in the .NET Standard

@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.workload: 
+  - dotnet
 ---
 # Orchestrating microservices and multicontainer applications for high scalability and availability
 

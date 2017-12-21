@@ -10,6 +10,8 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 1e38e9d9-8284-46ee-a15f-199adc4f26f4
+ms.workload: 
+  - dotnet
 ---
 
 # Async Overview

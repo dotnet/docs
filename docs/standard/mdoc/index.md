@@ -6,6 +6,8 @@ ms.author: ronpet
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: .net
+ms.workload: 
+  - dotnet
 ---
 # Building documentation with mdoc
 

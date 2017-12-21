@@ -8,6 +8,8 @@ ms.date: 10/18/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
+ms.workload: 
+  - dotnet
 ---
 # Orchestrating microservices and multi-container applications for high scalability and availability
 

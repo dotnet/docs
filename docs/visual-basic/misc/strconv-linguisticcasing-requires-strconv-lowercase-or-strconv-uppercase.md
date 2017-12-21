@@ -20,5 +20,5 @@ You have attempted to use `StrConv.LinguisticCasing`, which is only valid in com
 1.  Use `StrConv.LowerCase` or `StrConv.UpperCase` in conjunction with `StrConv.LinguisticCasing`.  
   
 ## See Also  
- [NOT IN BUILD: StrConv Function](http://msdn.microsoft.com/en-us/31ceb44b-005b-455f-b344-9dd06efbf660)  
+   
  [StrConv Constant Changes in Visual Basic .NET](http://msdn.microsoft.com/en-us/7a8c2781-2716-40dd-90c1-96c1548516e2)

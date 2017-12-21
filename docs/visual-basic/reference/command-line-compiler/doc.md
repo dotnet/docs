@@ -51,7 +51,7 @@ Processes documentation comments to an XML file.
   
 |To set /doc in the Visual Studio integrated development environment|  
 |---|  
-|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **Compile** tab.<br />3.  Set the value in the **Generate XML documentation file** box.|  
+|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **Compile** tab.<br />3.  Set the value in the **Generate XML documentation file** box.|  
   
 ## Example  
  See [Documenting Your Code with XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md) for a sample.  

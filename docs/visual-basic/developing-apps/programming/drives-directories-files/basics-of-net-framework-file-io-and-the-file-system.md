@@ -42,7 +42,7 @@ Classes in the <xref:System.IO> namespace are used to work with drives, files, a
   
 -   **Seeking**. You can query and modify your position in the stream.  
   
- For more information, see [Composing Streams](../../../../../docs/standard/io/composing-streams.md).  
+ For more information, see [Composing Streams](../../../../standard/io/composing-streams.md).  
   
 ## Types of Streams  
  In the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], a stream is represented by the <xref:System.IO.Stream> class, which forms the abstract class for all other streams. You cannot directly create an instance of the <xref:System.IO.Stream> class, but must use one of the classes it implements.  
@@ -61,13 +61,13 @@ Classes in the <xref:System.IO> namespace are used to work with drives, files, a
   
 |To|See|
 |---|---|   
-|Read and write to a data file|[How to: Read and Write to a Newly Created Data File](../../../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
-|Read text from a file|[How to: Read Text from a File](../../../../../docs/standard/io/how-to-read-text-from-a-file.md)|  
-|Write text to a file|[How to: Write Text to a File](../../../../../docs/standard/io/how-to-write-text-to-a-file.md)|  
-|Read characters from a string|[How to: Read Characters from a String](../../../../../docs/standard/io/how-to-read-characters-from-a-string.md)|  
-|Write characters to a string|[How to: Write Characters to a String](../../../../../docs/standard/io/how-to-write-characters-to-a-string.md)|  
-|Encrypt data|[Encrypting Data](../../../../../docs/standard/security/encrypting-data.md)|  
-|Decrypt data|[Decrypting Data](../../../../../docs/standard/security/decrypting-data.md)|  
+|Read and write to a data file|[How to: Read and Write to a Newly Created Data File](../../../../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Read text from a file|[How to: Read Text from a File](../../../../standard/io/how-to-read-text-from-a-file.md)|  
+|Write text to a file|[How to: Write Text to a File](../../../../standard/io/how-to-write-text-to-a-file.md)|  
+|Read characters from a string|[How to: Read Characters from a String](../../../../standard/io/how-to-read-characters-from-a-string.md)|  
+|Write characters to a string|[How to: Write Characters to a String](../../../../standard/io/how-to-write-characters-to-a-string.md)|  
+|Encrypt data|[Encrypting Data](../../../../standard/security/encrypting-data.md)|  
+|Decrypt data|[Decrypting Data](../../../../standard/security/decrypting-data.md)|  
   
 ## File Access and Attributes  
  You can control how files are created, opened, and shared with the <xref:System.IO.FileAccess>, <xref:System.IO.FileMode>, and <xref:System.IO.FileShare> enumerations, which contain the flags used by the constructors of the <xref:System.IO.FileStream> class. For example, when you open or create a new <xref:System.IO.FileStream>, the <xref:System.IO.FileMode> enumeration allows you to specify whether the file is opened for appending, whether a new file is created if the specified file does not exist, whether the file is overwritten, and so forth.  
@@ -78,11 +78,11 @@ Classes in the <xref:System.IO> namespace are used to work with drives, files, a
   
 |To|See|  
 |---|---|
-|Open and append text to a log file|[How to: Open and Append to a Log File](../../../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)|  
+|Open and append text to a log file|[How to: Open and Append to a Log File](../../../../standard/io/how-to-open-and-append-to-a-log-file.md)|  
 |Determine the attributes of a file|<xref:System.IO.FileAttributes>|  
   
 ## File Permissions  
- Controlling access to files and directories can be done with the <xref:System.Security.Permissions.FileIOPermission> class. This may be particularly important for developers working with Web Forms, which by default run within the context of a special local user account named ASPNET, which is created as part of the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] and [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] installations. When such an application requests access to a resource, the ASPNET user account has limited permissions, which may prevent the user from performing actions such as writing to a file from a Web application. For more information, see [Security Permissions](http://msdn.microsoft.com/en-us/b03757b4-e926-4196-b738-3733ced2bda0), and the <xref:System.Security.Permissions.FileIOPermission>.  
+ Controlling access to files and directories can be done with the <xref:System.Security.Permissions.FileIOPermission> class. This may be particularly important for developers working with Web Forms, which by default run within the context of a special local user account named ASPNET, which is created as part of the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] and [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] installations. When such an application requests access to a resource, the ASPNET user account has limited permissions, which may prevent the user from performing actions such as writing to a file from a Web application. For more information, see <xref:System.Security.Permissions.FileIOPermission>.  
   
 ## Isolated File Storage  
  Isolated storage is an attempt to solve problems created when working with files where the user or code may lack necessary permissions. Isolated storage assigns each user a data compartment, which can hold one or more stores. Stores can be isolated from each other by user and by assembly. Only the user and assembly that created a store have access to it. A store acts as a complete virtual file system—within one store you can create and manipulate directories and files.  
@@ -91,19 +91,19 @@ Classes in the <xref:System.IO> namespace are used to work with drives, files, a
   
 |To|See|
 |---|---|  
-|Create an isolated store|[How to: Obtain Stores for Isolated Storage](../../../../../docs/standard/io/how-to-obtain-stores-for-isolated-storage.md)|  
-|Enumerate isolated stores|[How to: Enumerate Stores for Isolated Storage](../../../../../docs/standard/io/how-to-enumerate-stores-for-isolated-storage.md)|  
-|Delete an isolated store|[How to: Delete Stores in Isolated Storage](../../../../../docs/standard/io/how-to-delete-stores-in-isolated-storage.md)|  
-|Create a file or directory in isolated storage|[How to: Create Files and Directories in Isolated Storage](../../../../../docs/standard/io/how-to-create-files-and-directories-in-isolated-storage.md)|  
-|Find a file in isolated storage|[How to: Find Existing Files and Directories in Isolated Storage](../../../../../docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)|  
-|Read from or write to a file in insolated storage|[How to: Read and Write to Files in Isolated Storage](../../../../../docs/standard/io/how-to-read-and-write-to-files-in-isolated-storage.md)|  
-|Delete a file or directory in isolated storage|[How to: Delete Files and Directories in Isolated Storage](../../../../../docs/standard/io/how-to-delete-files-and-directories-in-isolated-storage.md)|  
+|Create an isolated store|[How to: Obtain Stores for Isolated Storage](../../../../standard/io/how-to-obtain-stores-for-isolated-storage.md)|  
+|Enumerate isolated stores|[How to: Enumerate Stores for Isolated Storage](../../../../standard/io/how-to-enumerate-stores-for-isolated-storage.md)|  
+|Delete an isolated store|[How to: Delete Stores in Isolated Storage](../../../../standard/io/how-to-delete-stores-in-isolated-storage.md)|  
+|Create a file or directory in isolated storage|[How to: Create Files and Directories in Isolated Storage](../../../../standard/io/how-to-create-files-and-directories-in-isolated-storage.md)|  
+|Find a file in isolated storage|[How to: Find Existing Files and Directories in Isolated Storage](../../../../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)|  
+|Read from or write to a file in insolated storage|[How to: Read and Write to Files in Isolated Storage](../../../../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md)|  
+|Delete a file or directory in isolated storage|[How to: Delete Files and Directories in Isolated Storage](../../../../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md)|  
   
 ## File Events  
  The <xref:System.IO.FileSystemWatcher> component allows you to watch for changes in files and directories on your system or on any computer to which you have network access. For example, if a file is modified, you might want to send a user an alert that the change has taken place. When changes occur, one or more events are raised, stored in a buffer, and handed to the <xref:System.IO.FileSystemWatcher> component for processing.  
   
 ## See Also  
- [Composing Streams](../../../../../docs/standard/io/composing-streams.md)  
- [File and Stream I/O](https://msdn.microsoft.com/library/k3352a4t)  
- [Asynchronous File I/O](https://msdn.microsoft.com/library/kztecsys)  
+ [Composing Streams](../../../../standard/io/composing-streams.md)  
+ [File and Stream I/O](../../../../standard/io/index.md)  
+ [Asynchronous File I/O](../../../../standard/io/asynchronous-file-i-o.md)  
  [Classes Used in .NET Framework File I/O and the File System (Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/classes-used-in-net-framework-file-io-and-the-file-system.md)

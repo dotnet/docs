@@ -26,11 +26,11 @@ ms.author: dotnetcontent
  [LINQ](../../visual-basic/programming-guide/language-features/linq/index.md)  
  Provides links to topics that describe how to use LINQ with Visual Basic.  
   
- [LINQ to SQL](../../../docs/framework/data/adonet/sql/linq/index.md)  
+ [LINQ to SQL](../../framework/data/adonet/sql/linq/index.md)  
  Provides information about [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)]. Includes programming examples.  
   
  [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)  
- Provides links to topics about how to create a [LINQ to SQL](../../../docs/framework/data/adonet/sql/linq/index.md) object model in applications.  
+ Provides links to topics about how to create a [LINQ to SQL](../../framework/data/adonet/sql/linq/index.md) object model in applications.  
   
  [Work with datasets in n-tier applications](/visualstudio/data-tools/work-with-datasets-in-n-tier-applications)  
  Provides links to topics about how to create multitiered data applications.  
@@ -53,7 +53,7 @@ ms.author: dotnetcontent
  [Save data back to the database](/visualstudio/data-tools/save-data-back-to-the-database)  
  Provides links to pages explaining how to send updated data from an application to the database.  
   
- [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx)  
+ [ADO.NET](../../framework/data/adonet/index.md)  
  Describes the ADO.NET classes, which expose data-access services to the .NET Framework programmer.
 
  [Data in Office Solutions](https://msdn.microsoft.com/library/xx069ybh)  

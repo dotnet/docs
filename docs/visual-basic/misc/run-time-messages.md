@@ -300,7 +300,7 @@ This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error mess
   
  [Method or data member not found](../../visual-basic/misc/method-or-data-member-not-found.md)  
   
- [My.Application.Log cannot determine the amount of free disk space](../../visual-basic/misc/my-application-log-cannot-determine-the-amount-of-free-disk-space.md)  
+ [My.Application.Log](xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log)  
   
  [Named argument '\<argumentname>' specified multiple times](../../visual-basic/misc/named-argument-argumentname-specified-multiple-times.md)  
   
@@ -555,5 +555,5 @@ This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error mess
  [You must specify a path that is under the current folder or one of its sub-folders](../../visual-basic/misc/you-must-specify-path-that-is-under-the-current-folder-or-one-of-sub-folders.md)  
   
 ## See Also  
- [NOTINBUILD How to: Get Information about Visual Basic Run-Time Errors](http://msdn.microsoft.com/en-us/22a7d0a6-b7d7-4c5d-971c-52ff0583c656)  
+   
  [Error Messages](../../visual-basic/language-reference/error-messages/index.md)

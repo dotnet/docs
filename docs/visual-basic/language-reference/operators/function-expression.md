@@ -88,7 +88,7 @@ Dim londonCusts = db.Customers.
                   Select(Function(cust) cust)  
 ```  
   
- For more information about query methods, see [Queries](../../../visual-basic/language-reference/queries/queries.md). For more information about standard query operators, see [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2).  
+ For more information about query methods, see [Queries](../../../visual-basic/language-reference/queries/queries.md). For more information about standard query operators, see [Standard Query Operators Overview](../../programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
 ## See Also  
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  

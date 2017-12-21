@@ -170,7 +170,7 @@ A2
  <xref:System.Attribute>  
  <xref:System.Reflection>  
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)  
- [Attributes](../../../../../docs/standard/attributes/index.md)  
+ [Attributes](../../../../standard/attributes/index.md)  
  [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)  
  [Attributes (Visual Basic)](../../../../visual-basic/language-reference/attributes.md)  
  [Creating Custom Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)  

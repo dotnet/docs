@@ -24,11 +24,11 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler calls the Assembly Link
   
 ## To correct this error  
   
-1.  Examine the quoted error message and consult the topic [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b) for further explanation and advice.  
+1.  Examine the quoted error message and consult the topic [Al.exe](../../../framework/tools/al-exe-assembly-linker.md). for further explanation and advice.  
   
 2.  If the error persists, gather information about the circumstances and notify Microsoft Product Support Services.  
   
 ## See Also  
- [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/c405shex)  
- [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b)  
+
+ [Al.exe](../../../framework/tools/al-exe-assembly-linker.md).  
  [Talk to Us](/visualstudio/ide/talk-to-us)

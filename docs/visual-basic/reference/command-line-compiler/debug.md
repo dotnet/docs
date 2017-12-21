@@ -44,7 +44,7 @@ Causes the compiler to generate debugging information and place it in the output
   
 |To set /debug in the Visual Studio integrated development environment|  
 |---|  
-|1.  With a project selected in **Solution Explorer**, on the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **Compile** tab.<br />3.  Click **Advanced Compile Options**.<br />4.  Modify the value in the **Generate Debug Info** box.|  
+|1.  With a project selected in **Solution Explorer**, on the **Project** menu, click **Properties**. <br />2.  Click the **Compile** tab.<br />3.  Click **Advanced Compile Options**.<br />4.  Modify the value in the **Generate Debug Info** box.|  
   
 ## Example  
  The following example puts debugging information in output file `App.exe`.  

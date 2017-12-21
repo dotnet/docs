@@ -112,7 +112,7 @@ Option Strict { On | Off }
 ### To set Option Strict in the IDE  
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
-1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
   
 2.  On the **Compile** tab, set the value in the **Option Strict** box.  
   

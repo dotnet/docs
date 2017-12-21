@@ -23,4 +23,4 @@ The dynamic-link library (DLL) in a user library reference was found, but the DL
   
 ## See Also  
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
- [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)
+

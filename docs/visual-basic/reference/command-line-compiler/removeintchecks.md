@@ -36,7 +36,7 @@ Turns overflow-error checking for integer operations on or off.
   
 |To set /removeintchecks in the Visual Studio integrated development environment|  
 |---|  
-|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **Compile** tab.<br />3.  Click the **Advanced** button.<br />4.  Modify the value of the **Remove integer overflow checks** box.|  
+|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **Compile** tab.<br />3.  Click the **Advanced** button.<br />4.  Modify the value of the **Remove integer overflow checks** box.|  
   
 ## Example  
  The following code compiles `Test.vb` and turns off integer overflow-error checking.  

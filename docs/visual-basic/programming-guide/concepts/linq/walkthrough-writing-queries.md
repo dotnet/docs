@@ -141,7 +141,7 @@ This walkthrough demonstrates how you can use Visual Basic language features to 
   
  [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9)  
   
- [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)  
+ [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
   
  [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13)  
   

@@ -31,14 +31,14 @@ When you want to use COM objects and .NET Framework objects in the same applicat
  [COM Interop Wrapper Error](/cpp/misc/com-interop-wrapper-error)  
  Describes the consequences and options if the project system cannot create a COM interoperability wrapper for a particular component.  
   
- [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)  
+ [Interoperating with Unmanaged Code](../../../framework/interop/index.md)  
  Briefly describes some of the interaction issues between managed and unmanaged code, and provides links for further study.  
   
  [COM Wrappers](../../../framework/interop/com-wrappers.md)  
  Discusses runtime callable wrappers, which allow managed code to call COM methods, and COM callable wrappers, which allow COM clients to call .NET object methods.  
   
- [Advanced COM Interoperability](http://msdn.microsoft.com/en-us/3ada36e5-2390-4d70-b490-6ad8de92f2fb)  
+ [Advanced COM Interoperability](../../../framework/interop/index.md)  
  Provides links to topics covering COM interoperability with respect to wrappers, exceptions, inheritance, threading, events, conversions, and marshaling.  
   
- [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/library/ec0a8d63-11b3-4acd-b398-da1e37e97382)  
+ [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md)  
  Discusses the tool you can use to convert the type definitions found within a COM type library into equivalent definitions in a common language runtime assembly.

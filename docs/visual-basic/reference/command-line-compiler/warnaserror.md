@@ -44,7 +44,7 @@ Causes the compiler to treat the first occurrence of a warning as an error.
   
 |To set /warnaserror to treat all warnings as errors in the Visual Studio IDE|  
 |---|  
-|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **Compile** tab.<br />3.  Make sure the **Disable all warnings** check box is unchecked.<br />4.  Check the **Treat all warnings as errors** check box.|  
+|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **Compile** tab.<br />3.  Make sure the **Disable all warnings** check box is unchecked.<br />4.  Check the **Treat all warnings as errors** check box.|  
   
 |To set /warnaserror to treat specific warnings as errors in the Visual Studio IDE|  
 |---|  

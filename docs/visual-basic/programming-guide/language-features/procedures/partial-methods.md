@@ -79,5 +79,5 @@ End Sub
  [Sub Procedures](./sub-procedures.md)  
  [Optional Parameters](./optional-parameters.md)  
  [Partial](../../../../visual-basic/language-reference/modifiers/partial.md)  
- [Code Generation in LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)  
- [Adding Business Logic By Using Partial Methods](../../../../../docs/framework/data/adonet/sql/linq/adding-business-logic-by-using-partial-methods.md)
+ [Code Generation in LINQ to SQL](../../../../framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)  
+ [Adding Business Logic By Using Partial Methods](../../../../framework/data/adonet/sql/linq/adding-business-logic-by-using-partial-methods.md)

@@ -52,5 +52,5 @@ This section contains overviews, examples, and background information that will 
 ## See Also  
  [LINQ (Language-Integrated Query)](../../../../visual-basic/programming-guide/concepts/linq/index.md)  
  [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)  
- [LINQ to DataSet Overview](../../../../../docs/framework/data/adonet/linq-to-dataset-overview.md)  
- [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)
+ [LINQ to DataSet Overview](../../../../framework/data/adonet/linq-to-dataset-overview.md)  
+ [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)

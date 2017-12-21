@@ -109,5 +109,5 @@ While you might visualize a [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] project 
 |[How to: Declare Custom Events To Conserve Memory](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)|Demonstrates how to define a custom event that uses memory only when the event is handled.|  
 |[Troubleshooting Inherited Event Handlers in Visual Basic](../../../../visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)|Lists common issues that arise with event handlers in inherited components.|  
 |[Events](../../../../standard/events/index.md)|Provides an overview of the event model in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].|  
-|[Creating Event Handlers in Windows Forms](../../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)|Describes how to work with events associated with Windows Forms objects.|  
+|[Creating Event Handlers in Windows Forms](../../../../framework/winforms/creating-event-handlers-in-windows-forms.md)|Describes how to work with events associated with Windows Forms objects.|  
 |[Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)|Provides an overview of delegates in Visual Basic.|

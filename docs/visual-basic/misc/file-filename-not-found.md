@@ -20,4 +20,4 @@ A file name is incorrect or the file does not exist.
 1.  Ensure that the file name is correct and that it exists.  
   
 ## See Also  
- [My.Computer.FileSystem Object](../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)
+ [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)

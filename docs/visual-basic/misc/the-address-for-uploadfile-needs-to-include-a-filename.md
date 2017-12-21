@@ -21,6 +21,6 @@ When uploading files with the `UploadFile` method, you must supply a file name i
   
 ## See Also  
  [Network Operations in the .NET Framework with Visual Basic](http://msdn.microsoft.com/en-us/c5379021-44ef-4d6a-acf5-e951fdcab6b2)  
- [My.Computer.Network Object](../../visual-basic/language-reference/objects/my-computer-network-object.md)  
+ [My.Computer.Network](xref:Microsoft.VisualBasic.Devices.Network)  
  [How to: Upload a File](../../visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)  
- [My.Computer.Network.UploadFile Method](http://msdn.microsoft.com/en-us/5505ea3e-3dbd-460b-9f8f-62c84c0a4de6)
+ [My.Computer.Network.UploadFile](xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A)

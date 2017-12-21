@@ -117,7 +117,6 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
  <xref:System.Array.Length%2A>  
  <xref:Microsoft.VisualBasic.Information.UBound%2A>  
  [Structure of a Visual Basic Program](../../../visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)  
- [NIB: Visual Basic Version of Hello, World](http://msdn.microsoft.com/en-us/9d030b60-e148-4366-a462-69532f02294c)  
  [/main](../../../visual-basic/reference/command-line-compiler/main.md)  
  [Shared](../../../visual-basic/language-reference/modifiers/shared.md)  
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  

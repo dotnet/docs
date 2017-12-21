@@ -81,7 +81,7 @@ You can define a class from which you can create objects that provide identical 
 ## See Also  
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
  [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [Language Independence and Language-Independent Components](../../../../../docs/standard/language-independence-and-language-independent-components.md)  
+ [Language Independence and Language-Independent Components](../../../../standard/language-independence-and-language-independent-components.md)  
  [Of](../../../../visual-basic/language-reference/statements/of-clause.md)  
  [Type List](../../../../visual-basic/language-reference/statements/type-list.md)  
  [How to: Use a Generic Class](../../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)  

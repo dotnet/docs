@@ -37,11 +37,11 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
  To ensure that `My.Application.Log` uses your log listener, you should strongly name the assembly that contains your log listener.  
   
- The next procedure provides some simple steps for creating a strongly named log-listener assembly. For more information, see [Creating and Using Strong-Named Assemblies](../../../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md).  
+ The next procedure provides some simple steps for creating a strongly named log-listener assembly. For more information, see [Creating and Using Strong-Named Assemblies](../../../../framework/app-domains/create-and-use-strong-named-assemblies.md).  
   
 #### To strongly name the log-listener assembly  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, choose **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+1.  Have a project selected in **Solution Explorer**. On the **Project** menu, choose **Properties**.   
   
 2.  Click the **Signing** tab.  
   

@@ -22,5 +22,5 @@ The `FileGet` method includes an argument of type `Object`. `FileGetObject` shou
 2.  Cast the `Object` argument to a more specific type.  
   
 ## See Also  
- [NOT IN BUILD: FileGetObject Function](http://msdn.microsoft.com/en-us/3eda786b-d1ee-4b44-9dd7-0ea6bff072c0)  
- [My.Computer.FileSystem Object](../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)
+   
+ [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)

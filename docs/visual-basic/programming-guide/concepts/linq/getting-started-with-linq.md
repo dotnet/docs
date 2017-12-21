@@ -49,7 +49,7 @@ This section contains overviews, examples, and background information that will 
  [LINQ to DataSet Overview](../../../../framework/data/adonet/linq-to-dataset-overview.md)  
  Provides a conceptual overview of LINQ to DataSet.  
   
- [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)  
+ [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
  Explains the LINQ to SQL technology and provides links to topics that help you use LINQ to SQL.  
   
  [Visual Studio IDE and Tools Support for LINQ (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/visual-studio-ide-and-tools-support-for-linq.md)  

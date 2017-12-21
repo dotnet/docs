@@ -20,5 +20,5 @@ A path name contains one or more characters that are not valid.
 -   Remove the character from the path name.  
   
 ## See Also  
- [My.Application.Info.DirectoryPath Property](http://msdn.microsoft.com/en-us/660586b9-638e-42a7-ae21-5eee34a3fccf)  
+ [My.Application.Info.DirectoryPath](xref:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.DirectoryPath)  
  [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

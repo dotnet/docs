@@ -1,3 +1,4 @@
+---
 title: Using Microsoft XML Serializer Generator on .NET Core
 description: An overview of the Microsoft XML Serializer Generator.
 author: mlacouture
@@ -19,15 +20,13 @@ This tutorial teaches you how to use the Microsoft XML Serializer Generator in a
 > * How to add a class and an XmlSerializer
 > * How to build and run the application 
 
-Like the [Xml Serializer Generator (sgen.exe)](https://docs.microsoft.com/en-us/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe) for .NET Framework, <xref:System.Xml.Serialization.XmlSerializer> NuGet package is the equivalent for .NET Core and .NET Standard Libraries. It creates an XML serialization assembly for types contained in an assembly to improve the startup performance of XML serialization when serializing or de-serializing objects of those types using XmlSerializer.
-
-You can start using the tool today following the instructions below. 
+Like the [Xml Serializer Generator (sgen.exe)](https://docs.microsoft.com/en-us/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe) for .NET Framework, <xref:System.Xml.Serialization.XmlSerializer> NuGet package is the equivalent for .NET Core and .NET Standard projects. It creates an XML serialization assembly for types contained in an assembly to improve the startup performance of XML serialization when serializing or de-serializing objects of those types using XmlSerializer.
 
 ## Prerequisites
 
 To complete this tutorial:
 
-* [.NET Core SDK 2.1.3 or later](https://www.microsoft.com/net/download/windows)
+* [.NET Core SDK 2.1.3 or later](https://www.microsoft.com/net/download)
 * Install your favorite code editor, if you haven't already.
 
 > [!TIP]
@@ -35,7 +34,7 @@ To complete this tutorial:
   
 ## Use Microsoft XML Serializer Generator in a .NET Core console application 
 
-Here are the step by step instructions on how to use XML Serializer Generator in a .NET Core console application.
+The following instructions show you how to use XML Serializer Generator in a .NET Core console application.
 
 ### Create a .NET Core console application
 
@@ -53,11 +52,11 @@ dotnet new console --name MyApp
  dotnet add MyApp package Microsoft.XmlSerializer.Generator -v 1.0.0-preview1-25915-02
  ```
  
-### Edit MyApp.csproj 
+### Verify changes to MyApp.csproj after adding the package
 
 Open your text editor and let's get started! We're still working from the *MyApp* directory we built the app in.
 
-Add the following lines in *MyApp.csproj*.
+After running the command, the following lines are added to your *MyApp.csproj* project file:
 
  ```xml
  <ItemGroup>
@@ -69,7 +68,7 @@ Add the following lines in *MyApp.csproj*.
 
 Open *Program.cs* in your text editor. Add the class named *MyClass* in *Program.cs*.
 
-```c#
+```csharp
 public class MyClass
  {
     public int Value;
@@ -78,23 +77,25 @@ public class MyClass
 
 ### Create an `XmlSerializer` for MyClass.  
 
-Add the following line inside *MyClass*
+Add the following line inside *Main* to create an `XmlSerializer` for MyClass:
 
-```c#
+```csharp
 var serializer = new System.Xml.Serialization.XmlSerializer(typeof(MyClass));
 ```    
 
 ### Build and run the application
 
-   [`dotnet run`](../tools/dotnet-run.md) calls [`dotnet build`](../tools/dotnet-build.md) to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
+Still within the *myApp* folder, run the application via [`dotnet run`](../tools/dotnet-run.md)  and it will automatically load and use the pre-generated serializers at runtime.
 
-Run the application and it will automatically load and use the pre-generated serializers at runtime.
+Type the following in your console window:
 
  ```console
  $ dotnet run
  ```
+> [!NOTE]
+> [`dotnet run`](../tools/dotnet-run.md) calls [`dotnet build`](../tools/dotnet-build.md) to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
 
-If everything succeeds, an assembly named *MyApp.XmlSerializers.dll* will be generated in the output folder. You will see warnings in the build output if the tool failed to generate the assembly.
+If everything succeeds, an assembly named *MyApp.XmlSerializers.dll* is generated in the output folder. 
 
 Congratulations! you have just:
 > [!div class="checklist"]

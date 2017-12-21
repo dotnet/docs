@@ -26,6 +26,8 @@ caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # METAHOST_POLICY_FLAGS Enumeration
 Provides binding policies that are common to most runtime hosts. This enumeration is used by the [ICLRMetaHostPolicy::GetRequestedRuntime](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md) method.  

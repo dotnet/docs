@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorEventAttr Enumeration
 Contains values that describe the metadata of an event.  

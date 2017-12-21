@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;endpointDiscovery&gt;
 Specifies the various discovery settings for an endpoint, such as its discoverability, scopes, and any custom extensions to its metadata.  

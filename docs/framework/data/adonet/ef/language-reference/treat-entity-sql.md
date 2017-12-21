@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # TREAT (Entity SQL)
 Treats an object of a particular base type as an object of the specified derived type.  

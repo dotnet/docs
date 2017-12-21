@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "projection [WCF Data Services]"
   - "WCF Data Services, projection"
@@ -22,6 +22,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Project Query Results (WCF Data Services)
 Projection provides a mechanism to reduce the amount of data returned by a query by specifying that only certain properties of an entity are returned in the response. You can perform projections on the results of an [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] query either by using the `$select` query option or by using the [select](~/docs/csharp/language-reference/keywords/select-clause.md) clause ([Select](~/docs/visual-basic/language-reference/queries/select-clause.md) in Visual Basic) in a LINQ query. For more information, see [Querying the Data Service](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md).  

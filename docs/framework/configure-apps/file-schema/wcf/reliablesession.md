@@ -14,6 +14,8 @@ caps.latest.revision: 19
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;reliableSession&gt;
 Defines setting for WS-Reliable Messaging. When this element is added to a custom binding, the resulting channel can support exactly-once delivery assurances.  

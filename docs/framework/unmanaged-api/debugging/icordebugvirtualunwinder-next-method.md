@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugVirtualUnwinder::Next Method
 Advances to the caller's context.  

@@ -26,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugJITCompilerFlags Enumeration
 Contains values that influence the behavior of the managed just-in-time (JIT) compiler.  

@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::GetPermissionSetProps Method
 Gets the metadata associated with the <xref:System.Security.PermissionSet?displayProperty=nameWithType> represented by the specified Permission token.  

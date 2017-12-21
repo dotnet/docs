@@ -21,6 +21,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COM Wrappers
 COM differs from the .NET Framework object model in several important ways:  

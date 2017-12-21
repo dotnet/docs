@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataInfo::GetFileMapping Method
 Gets the memory region of the mapped file, and the type of mapping.  

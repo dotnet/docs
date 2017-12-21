@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugRemote Interface
 Provides the ability to launch or attach a managed debugger to a remote target process.  

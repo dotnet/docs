@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 4ff084d5-5956-4db1-8e18-c5a66b000882
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Polling in Console Applications
 Asynchronous operations in ADO.NET allow you to initiate time-consuming database operations on one thread while performing other tasks on another thread. In most scenarios, however, you will eventually reach a point where your application should not continue until the database operation is complete. For such cases, it is useful to poll the asynchronous operation to determine whether the operation has completed or not.  

@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorRuntimeHost::CloseEnum Method
 Resets a domain enumerator back to the beginning of the domain list.  

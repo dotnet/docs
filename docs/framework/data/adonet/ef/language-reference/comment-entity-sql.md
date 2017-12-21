@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # -- (Comment) (Entity SQL)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] queries can contain comments. Two dashes (`--`) start a comment line.  

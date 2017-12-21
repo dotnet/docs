@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Entity SQL Language
 Entity SQL is a storage-independent query language that is similar to SQL. Entity SQL allows you to query entity data, either as objects or in a tabular form. You should consider using Entity SQL in the following cases:  

@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Identity Foundation Configuration Schema
 The topics in this section provide information about the Windows Identity Foundation (WIF) configuration schema. You can also configure an application to use WIF through classes exposed by the framework,. These classes are noted in the sections that treat relevant elements in the schema. The following shows the basic XML tag structure exposed by the WIF configuration schema. Attributes are omitted. Highlighted comments indicate major components of the schema.  

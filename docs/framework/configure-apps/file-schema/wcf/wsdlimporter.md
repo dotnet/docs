@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;wsdlImporter&gt;
 Specifies all the WSDL importers that imports Web Services Description Language (WSDL) 1.1 metadata with WS-Policy attachments.  

@@ -25,6 +25,8 @@ caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Sockets
 The <xref:System.Net.Sockets> namespace contains a managed implementation of the Windows Sockets interface. All other network-access classes in the <xref:System.Net> namespace are built on top of this implementation of sockets.  

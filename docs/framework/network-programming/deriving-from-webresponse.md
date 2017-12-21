@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Deriving from WebResponse
 The <xref:System.Net.WebResponse> class is an abstract base class that provides the basic methods and properties for creating a protocol-specific response that fits the .NET Framework pluggable protocol model. Applications that use the <xref:System.Net.WebRequest> class to request data from resources receive the responses in a **WebResponse**. Protocol-specific **WebResponse** descendants must implement the abstract members of the **WebResponse** class.  

@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;httpDigest&gt; Element
 Specifies a digest type credential used when authenticating the client to a service.  

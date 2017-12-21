@@ -9,8 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs:
- - "cpp"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "ICorDebugProcess5.GetTypeID"
 api_location: 
@@ -29,6 +29,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess5::GetTypeID Method
 Converts an object address to a [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md) identifier.  

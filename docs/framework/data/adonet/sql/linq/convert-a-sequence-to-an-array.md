@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: bf0af444-890d-43e2-aeca-98589dd74ddf
 caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Convert a Sequence to an Array
 Use <xref:System.Linq.Enumerable.ToArray%2A> to create an array from a sequence.  

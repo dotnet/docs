@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Detect Network Availability and Address Changes
 This sample shows how to detect changes in the network address of an interface.  

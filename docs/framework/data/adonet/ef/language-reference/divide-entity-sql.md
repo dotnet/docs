@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # / (Divide) (Entity SQL)
 Divides one number by another.  

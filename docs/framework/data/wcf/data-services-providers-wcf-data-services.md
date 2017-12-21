@@ -16,6 +16,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Services Providers (WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] supports multiple provider models for exposing data as an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed. This topic provides information to enable you to select the best [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] provider for your data source.  

@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostCrst Interface
 Serves as the host's representation of a critical section for threading.  

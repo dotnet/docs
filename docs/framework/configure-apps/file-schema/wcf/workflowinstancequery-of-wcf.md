@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;workflowInstanceQuery&gt; of WCF
 Represents a query that tracks workflow instance life cycle changes such as a started or completed event.  

@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostThreadPoolManager::GetMaxThreads Method
 Gets the maximum number of threads that the host maintains concurrently in the thread pool.  

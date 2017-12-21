@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugType::GetRank Method
 Gets the number of dimensions in an array type.  

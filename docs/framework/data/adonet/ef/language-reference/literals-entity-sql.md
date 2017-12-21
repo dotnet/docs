@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Literals (Entity SQL)
 This topic describes [!INCLUDE[esql](../../../../../../includes/esql-md.md)] support for literals.  

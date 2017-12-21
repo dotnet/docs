@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;servicePrincipalName&gt;
 Specifies the identity of a service by its Service Principal Name (SPN).  

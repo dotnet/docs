@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;TypeParameter&gt; Element (.NET Native)
 Applies policy to the type represented by a Type argument passed to a method.  

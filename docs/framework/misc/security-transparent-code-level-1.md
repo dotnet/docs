@@ -21,6 +21,8 @@ caps.latest.revision: 32
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Security-Transparent Code, Level 1
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

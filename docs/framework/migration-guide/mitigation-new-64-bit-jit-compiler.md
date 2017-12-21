@@ -19,6 +19,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Mitigation: New 64-bit JIT Compiler
 Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT compiler for just-in-time compilation. This change does not affect compilation with the  32-bit JIT compiler.  

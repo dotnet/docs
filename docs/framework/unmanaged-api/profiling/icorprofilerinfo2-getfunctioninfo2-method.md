@@ -27,6 +27,8 @@ caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo2::GetFunctionInfo2 Method
 Gets the parent class, the metadata token, and the `ClassID` of each type argument, if present, of a function.  

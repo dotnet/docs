@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "projection [WCF Data Services]"
   - "WCF Data Services, projection"
@@ -22,6 +22,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Query Projections (WCF Data Services)
 Projection provides a mechanism in the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] to reduce the amount of data in the feed returned by a query by specifying that only certain properties of an entity are returned in the response. For more information, see [OData: Select System Query Option ($select)](http://go.microsoft.com/fwlink/?LinkId=186076).  

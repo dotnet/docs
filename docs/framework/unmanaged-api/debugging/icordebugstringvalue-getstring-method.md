@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugStringValue::GetString Method
 Gets the string referenced by this ICorDebugStringValue.  

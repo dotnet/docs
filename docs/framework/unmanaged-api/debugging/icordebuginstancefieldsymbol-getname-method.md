@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugInstanceFieldSymbol::GetName Method
 Gets the name of the instance field.  

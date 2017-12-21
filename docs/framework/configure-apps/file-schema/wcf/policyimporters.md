@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;policyImporters&gt;
 This configuration element specifies all the policy importers that control the import of custom policy assertions about bindings. Each child element is a <`policyImporter`> that is used to search custom policy assertions about binding features, as well as attach a custom binding element that implements the features the assertion requires.  

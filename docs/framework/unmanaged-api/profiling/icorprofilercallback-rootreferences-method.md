@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::RootReferences Method
 Notifies the profiler with information about root references after garbage collection.  

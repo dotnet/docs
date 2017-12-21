@@ -17,6 +17,8 @@ caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;remove&gt; Element for &lt;namedCaches&gt;
 Removes a named cache entry from the `namedCaches` collection for a memory cache.  

@@ -21,6 +21,8 @@ caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Ildasm.exe (IL Disassembler)
 

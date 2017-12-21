@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # How To: Build Claims-Aware ASP.NET Application Using Forms-Based Authentication
 ## Applies To  

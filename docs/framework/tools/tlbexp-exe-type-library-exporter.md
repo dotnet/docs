@@ -20,6 +20,8 @@ caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Tlbexp.exe (Type Library Exporter)
 The Type Library Exporter generates a type library that describes the types defined in a common language runtime assembly.  

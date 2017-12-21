@@ -27,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::GetSectionCreate Method
 Generates and gets a code section using the specified name and flag values.  

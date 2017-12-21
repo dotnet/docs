@@ -18,6 +18,8 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Performance Counters in the .NET Framework
 This topic provides a list of performance counters you can find in the [Performance Monitor](http://technet.microsoft.com/library/cc749249.aspx).  

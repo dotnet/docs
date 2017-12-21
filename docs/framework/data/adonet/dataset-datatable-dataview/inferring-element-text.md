@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Inferring Element Text
 If an element contains text and has no child elements to be inferred as tables (such as elements with attributes or repeated elements), a new column with the name **TableName_Text** will be added to the table that is inferred for the element. The text contained in the element will be added to a row in the table and stored in the new column. The **ColumnMapping** property of the new column will be set to **MappingType.SimpleContent**.  

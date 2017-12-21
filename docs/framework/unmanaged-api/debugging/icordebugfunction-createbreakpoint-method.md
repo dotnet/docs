@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFunction::CreateBreakpoint Method
 Creates a breakpoint at the beginning of this function.  

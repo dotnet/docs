@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Supported and Unsupported LINQ Methods (LINQ to Entities)
 This section provides information about the Language-Integrated Query (LINQ) standard query operators that are supported or unsupported in [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] queries. Many of the LINQ standard query operators have an overloaded version that accepts an integer argument. The integer argument corresponds to a zero-based index in the sequence that is being operated on, an <xref:System.Collections.Generic.IEqualityComparer%601>, or <xref:System.Collections.Generic.IComparer%601>. Unless otherwise specified, these overloaded versions of the LINQ standard query operators are not supported, and attempting to use them will throw an exception.  

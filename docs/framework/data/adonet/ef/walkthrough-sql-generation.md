@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Walkthrough: SQL Generation
 This topic illustrates how SQL generation occurs in the [Sample Provider](http://go.microsoft.com/fwlink/?LinkId=180616). The following Entity SQL query uses the model that is included with the sample provider:  

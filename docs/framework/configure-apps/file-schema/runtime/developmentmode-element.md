@@ -21,6 +21,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;developmentMode&gt; Element
 Specifies whether the runtime searches for assemblies in directories specified by the DEVPATH environment variable.  

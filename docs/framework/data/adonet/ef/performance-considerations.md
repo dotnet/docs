@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Performance Considerations (Entity Framework)
 This topic describes performance characteristics of the ADO.NET Entity Framework and provides some considerations to help improve the performance of Entity Framework applications.  

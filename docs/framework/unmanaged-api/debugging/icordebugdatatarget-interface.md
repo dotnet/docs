@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugDataTarget Interface
 Provides a callback interface that provides access to a particular target process.  

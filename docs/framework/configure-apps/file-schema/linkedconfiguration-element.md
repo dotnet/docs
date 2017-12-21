@@ -23,6 +23,8 @@ caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 
 # \<linkedConfiguration> element

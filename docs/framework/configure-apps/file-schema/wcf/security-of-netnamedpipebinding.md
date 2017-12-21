@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;security&gt; of &lt;netNamedPipeBinding&gt;
 Defines the security settings for a binding.  

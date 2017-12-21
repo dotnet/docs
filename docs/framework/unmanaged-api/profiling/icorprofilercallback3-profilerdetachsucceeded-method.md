@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback3::ProfilerDetachSucceeded Method
 Notifies the profiler that the common language runtime (CLR) is about to unload the profiler DLL.  

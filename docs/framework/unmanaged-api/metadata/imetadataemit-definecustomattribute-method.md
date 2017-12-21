@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::DefineCustomAttribute Method
 Creates a definition for a custom attribute with the specified metadata signature, to be attached to the specified object, and gets a token to that custom attribute definition.  

@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::UnmanagedToManagedTransition Method
 Notifies the profiler that a transition from unmanaged code to managed code has occurred.  

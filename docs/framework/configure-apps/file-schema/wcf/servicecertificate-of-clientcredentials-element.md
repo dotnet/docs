@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceCertificate&gt; of &lt;clientCredentials&gt; Element
 Specifies a certificate to use when authenticating a service to the client.  

@@ -9,10 +9,10 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "obtaining assembly information"
   - "assemblies [.NET Framework], obtaining information from"
@@ -21,6 +21,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Obtain Type and Member Information from an Assembly
 The <xref:System.Reflection> namespace contains many methods for obtaining information from an assembly. This section demonstrates one of these methods. For additional information, see [Reflection Overview](../../../docs/framework/reflection-and-codedom/reflection.md).  

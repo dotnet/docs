@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFrame::GetFunctionToken Method
 Gets the metadata token for the function that contains the code associated with this stack frame.  

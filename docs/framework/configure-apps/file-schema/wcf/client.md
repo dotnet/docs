@@ -17,6 +17,8 @@ caps.latest.revision: 18
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;client&gt;
 The `client` element defines a list of endpoints that a client can connect to.  

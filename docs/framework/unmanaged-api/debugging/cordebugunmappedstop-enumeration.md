@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugUnmappedStop Enumeration
 Specifies the type of unmapped code that can trigger a halt in code execution by the stepper.  

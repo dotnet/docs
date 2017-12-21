@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess3::SetEnableCustomNotification Method
 Enables and disables custom debugger notifications of the specified type.  

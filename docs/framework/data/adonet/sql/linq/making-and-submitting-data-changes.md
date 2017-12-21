@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Making and Submitting Data Changes
 The topics in this section describe how to make and transmit changes to the database and how to handle optimistic concurrency conflicts.  

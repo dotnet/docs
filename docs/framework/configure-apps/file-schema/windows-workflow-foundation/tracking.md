@@ -12,6 +12,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;tracking&gt;
 Represents a configuration section for defining tracking settings for a workflow service.  

@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::AppDomainShutdownStarted Method
 Notifies the profiler that an application domain is being unloaded from a process.  

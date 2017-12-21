@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # HttpListener
 The <xref:System.Net.HttpListener> class provides a programmatically controlled HTTP protocol listener. The listener is active for the lifetime of the <xref:System.Net.HttpListener> object and runs within your application.  

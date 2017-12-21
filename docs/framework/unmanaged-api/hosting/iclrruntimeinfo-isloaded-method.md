@@ -27,6 +27,8 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRRuntimeInfo::IsLoaded Method
 Indicates whether the common language runtime (CLR) associated with the [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) interface is loaded into a process. A runtime can be loaded without also being started.  

@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::GetCustomAttributeByName Method
 Gets the custom attribute, given its name and owner.  

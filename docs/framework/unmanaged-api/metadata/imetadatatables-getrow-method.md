@@ -27,6 +27,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataTables::GetRow Method
 Gets the row at the specified row index, in the table at the specified table index.  

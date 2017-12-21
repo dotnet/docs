@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::DefineSecurityAttributeSet Method
 Creates a set of security permissions to attach to the object referenced by the specified token.  

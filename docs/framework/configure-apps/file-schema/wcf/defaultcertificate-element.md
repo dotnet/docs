@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;defaultCertificate&gt; Element
 Specifies an X.509 certificate to be used when a service or STS does not provide one via a negotiation protocol.  

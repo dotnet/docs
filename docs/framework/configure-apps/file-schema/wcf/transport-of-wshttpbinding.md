@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;transport&gt; of &lt;wsHttpBinding&gt;
 Defines authentication settings for the HTTP transport.  

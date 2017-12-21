@@ -12,6 +12,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Features Provided by System.Transactions
 This section describes how you can use the features provided by the <xref:System.Transactions> namespace to write your own transactional application and resource manager. Specifically, this section covers how to create and participate in a transaction (local or distributed) with one or multiple participants.  

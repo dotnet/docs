@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorImportOptions Enumeration
 Contains flag values that control the behavior during importation of an assembly outside the current scope.  

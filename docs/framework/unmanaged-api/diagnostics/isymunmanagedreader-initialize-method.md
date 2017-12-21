@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedReader::Initialize Method
 Initializes the symbol reader with the metadata importer interface that this reader will be associated with, along with the file name of the module.  

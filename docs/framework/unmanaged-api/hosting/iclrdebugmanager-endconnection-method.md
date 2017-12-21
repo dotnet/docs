@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDebugManager::EndConnection Method
 Removes the association between a list of tasks and an identifier and a friendly name.  

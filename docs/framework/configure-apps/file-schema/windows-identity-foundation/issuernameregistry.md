@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;issuerNameRegistry&gt;
 Configures the issuer name registry that is used by handlers in the token handler collection.  

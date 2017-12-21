@@ -26,6 +26,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerFunctionEnum Interface
 Provides methods to sequentially iterate through a collection of functions in the common language runtime.  

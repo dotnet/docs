@@ -17,6 +17,8 @@ caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Network Programming How-to Topics
 The following list includes links to the How-to topics found in the conceptual documentation for network programming.  

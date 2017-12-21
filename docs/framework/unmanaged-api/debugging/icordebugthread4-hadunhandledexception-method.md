@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread4::HadUnhandledException Method
 Indicates whether the thread has ever had an unhandled exception.  

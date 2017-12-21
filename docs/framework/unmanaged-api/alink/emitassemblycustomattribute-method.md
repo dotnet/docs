@@ -27,6 +27,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EmitAssemblyCustomAttribute Method
 Call to set assembly-level custom attributes.  

@@ -9,8 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs:
-- "cpp"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "ICLRDataTarget3.GetContextRecord"
 api_location: 
@@ -24,6 +24,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDataTarget3::GetExceptionContextRecord Method
 Called by the common language runtime (CLR) data access services to retrieve the context record associated with the target process. For example, for a dump target, this would be equivalent to the context record passed in via the `ExceptionParam` argument to the [MiniDumpWriteDump](http://msdn.microsoft.com/library/windows/desktop/ms680360\(v=vs.85\).aspx) function in the Windows Debug Help Library (DbgHelp).  

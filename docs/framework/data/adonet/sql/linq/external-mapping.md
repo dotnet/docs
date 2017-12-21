@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # External Mapping
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports *external mapping*, a process by which you use a separate XML file to specify mapping between the data model of the database and your object model. Advantages of using an external mapping file include the following:  

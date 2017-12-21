@@ -21,6 +21,8 @@ caps.latest.revision: 19
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;startup&gt; Element
 Specifies common language runtime startup information.  

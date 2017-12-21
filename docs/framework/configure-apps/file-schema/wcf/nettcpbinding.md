@@ -16,6 +16,8 @@ caps.latest.revision: 33
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;netTcpBinding&gt;
 Specifies a secure, reliable, optimized binding suitable for cross-machine communication. By default, it generates a runtime communication stack with Windows Security for message security and authentication, TCP for message delivery, and binary message encoding.  

@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRAppDomainResourceMonitor::GetCurrentCpuTime Method
 Gets the total processor time that has been used by all threads while executing in the current application domain, since the application domain was created.  

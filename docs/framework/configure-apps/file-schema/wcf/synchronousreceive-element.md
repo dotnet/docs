@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;synchronousReceive&gt; element
 This configuration element is used to specify run-time behavior for receiving messages in either a service or client application. It does not have any attributes or child elements.  

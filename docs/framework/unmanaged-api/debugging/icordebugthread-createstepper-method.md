@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread::CreateStepper Method
 Creates an ICorDebugStepper object that allows stepping through the active frame of this ICorDebugThread.  

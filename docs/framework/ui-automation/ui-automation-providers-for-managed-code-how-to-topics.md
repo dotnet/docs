@@ -20,6 +20,8 @@ caps.latest.revision: 60
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Providers for Managed Code How-to Topics
 > [!NOTE]

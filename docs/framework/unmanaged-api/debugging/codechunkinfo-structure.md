@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CodeChunkInfo Structure1
 Represents a single chunk of code in memory.  

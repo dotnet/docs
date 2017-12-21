@@ -20,6 +20,8 @@ caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;bypasslist&gt; Element (Network Settings)
 Provides a set of regular expressions that describe addresses that do not use a proxy.  

@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAppDomain::GetProcess Method
 Gets the process containing the application domain.  

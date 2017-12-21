@@ -21,6 +21,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Proxy Configuration
 A proxy server handles client requests for resources. A proxy can return a requested resource from its cache or forward the request to the server where the resource resides. Proxies can improve network performance by reducing the number of requests sent to remote servers. Proxies can also be used to restrict access to resources.  

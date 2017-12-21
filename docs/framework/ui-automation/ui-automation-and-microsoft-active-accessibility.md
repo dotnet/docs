@@ -19,6 +19,8 @@ caps.latest.revision: 24
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation and Microsoft Active Accessibility
 > [!NOTE]

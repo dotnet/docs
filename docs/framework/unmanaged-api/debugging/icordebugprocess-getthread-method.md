@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess::GetThread Method
 Gets this process's thread that has the specified operating system (OS) thread ID.  

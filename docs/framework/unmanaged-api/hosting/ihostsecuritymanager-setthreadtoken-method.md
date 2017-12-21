@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostSecurityManager::SetThreadToken Method
 Sets a handle for the currently executing thread.  

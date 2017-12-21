@@ -27,6 +27,8 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRGCManager::SetGCStartupLimits Method
 Sets the size of a garbage collection segment and the maximum size of the garbage collection system's generation 0.  

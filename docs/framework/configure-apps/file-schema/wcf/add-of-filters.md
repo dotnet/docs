@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; of &lt;filters&gt;
 A XPath filter that specifies the kind of message to be logged.  

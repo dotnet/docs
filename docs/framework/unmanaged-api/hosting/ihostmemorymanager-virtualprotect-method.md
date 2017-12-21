@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostMemoryManager::VirtualProtect Method
 Serves as a logical wrapper for the corresponding Win32 function. The Win32 implementation of `VirtualProtect` changes the protection on a region of committed pages in the virtual address space of the calling process.  

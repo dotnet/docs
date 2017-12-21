@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;knownType&gt;
 Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSerializer> during deserialization. The element specifies a "known type" that is returned by a field or property of a "declared type." For more information, see [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  

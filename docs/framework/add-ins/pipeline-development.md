@@ -21,6 +21,8 @@ caps.latest.revision: 31
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Pipeline Development
 The add-in pipeline is the path of pipeline segments that the host application and its add-in must use to communicate with each other.  

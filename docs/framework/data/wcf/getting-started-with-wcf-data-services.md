@@ -16,6 +16,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Getting Started with WCF Data Services
 The topics in this section help you quickly understand [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] and how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] to expose and consume [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feeds by explaining the underlying technologies. This section includes both conceptual content and a [quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md) tutorial.  

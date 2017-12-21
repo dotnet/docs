@@ -19,6 +19,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;clear&gt; Element for &lt;listeners&gt; for &lt;trace&gt;
 Clears the `Listeners` collection for trace.  

@@ -26,6 +26,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorLocalRefPreservation Enumeration
 Contains flag values for the treatment of local references.  

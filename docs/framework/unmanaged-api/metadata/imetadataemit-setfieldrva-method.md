@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::SetFieldRVA Method
 Sets a global variable value for the relative virtual address of the field referenced by the specified token.  

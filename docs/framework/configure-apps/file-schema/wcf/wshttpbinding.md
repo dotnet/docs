@@ -16,6 +16,8 @@ caps.latest.revision: 30
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;wsHttpBinding&gt;
 Defines a secure, reliable, interoperable binding suitable for non-duplex service contracts. The binding implements the following specifications: WS-Reliable Messaging for reliability, and WS-Security for message security and authentication. The transport is HTTP, and message encoding is Text/XML encoding.  

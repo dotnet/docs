@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_IL_MAP Structure
 Specifies changes in the relative offset of a function.  

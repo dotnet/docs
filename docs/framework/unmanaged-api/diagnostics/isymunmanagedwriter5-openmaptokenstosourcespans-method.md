@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedWriter5::OpenMapTokensToSourceSpans Method
 Open a special custom data section to emit token-to-source span mapping information into. Opening this section when a method is already open, or vice versa, is an error.  

@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # OFTYPE (Entity SQL)
 Returns a collection of objects from a query expression that is of a specific type.  

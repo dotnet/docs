@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;userNameAuthentication&gt;
 Specifies a service's credentials based on user name and password.  

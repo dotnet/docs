@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;additionalRequestParameters&gt; element
 This contains a collection of configuration elements that specify additional request parameters.  

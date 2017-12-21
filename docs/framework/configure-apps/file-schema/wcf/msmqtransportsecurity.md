@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;msmqTransportSecurity&gt;
 Specifies MSMQ transport security settings for a custom binding.  

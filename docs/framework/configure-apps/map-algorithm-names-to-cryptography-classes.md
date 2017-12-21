@@ -19,6 +19,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Mapping Algorithm Names to Cryptography Classes
 There are four ways a developer can create a cryptography object using the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)]:  

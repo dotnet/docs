@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;userDefinedType&gt;
 Represents a User Defined Type (UDT) that is to be included in the service contract.  

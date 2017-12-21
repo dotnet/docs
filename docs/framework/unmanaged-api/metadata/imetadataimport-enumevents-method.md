@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::EnumEvents Method
 Enumerates event definition tokens for the specified TypeDef token.  

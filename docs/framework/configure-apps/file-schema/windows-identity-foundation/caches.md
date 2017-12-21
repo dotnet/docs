@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;caches&gt;
 Registers the caches used for session tokens and token replay detection.  

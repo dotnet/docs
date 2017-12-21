@@ -26,6 +26,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval Interface1
 Provides methods to enable the debugger to execute code within the context of the code being debugged.  

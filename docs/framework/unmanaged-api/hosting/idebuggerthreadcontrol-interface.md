@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IDebuggerThreadControl Interface
 Provides methods for notifying the host about the blocking and unblocking of threads by the debugging services.  

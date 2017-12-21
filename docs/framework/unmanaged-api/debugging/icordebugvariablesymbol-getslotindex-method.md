@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugVariableSymbol::GetSlotIndex Method
 Gets the managed slot index of a local variable.  

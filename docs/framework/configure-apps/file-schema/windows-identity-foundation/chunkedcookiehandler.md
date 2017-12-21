@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;chunkedCookieHandler&gt;
 Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is "Default" or "Chunked".  

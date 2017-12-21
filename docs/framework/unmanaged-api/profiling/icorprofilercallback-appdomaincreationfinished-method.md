@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::AppDomainCreationFinished Method
 Notifies the profiler that an application domain has been created.  

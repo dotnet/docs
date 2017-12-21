@@ -26,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread4 Interface
 Provides thread blocking information.  

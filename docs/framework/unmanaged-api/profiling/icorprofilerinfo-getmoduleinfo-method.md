@@ -27,6 +27,8 @@ caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetModuleInfo Method
 Given a module ID, returns the file name of the module and the ID of the module's parent assembly.  

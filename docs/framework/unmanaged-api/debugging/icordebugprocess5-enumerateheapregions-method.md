@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess5::EnumerateHeapRegions Method
 Gets an enumerator for the memory ranges of the managed heap.  

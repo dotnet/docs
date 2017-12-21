@@ -26,6 +26,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugILFrame Interface1
 Represents a stack frame of Microsoft intermediate language (MSIL) code. This interface is a subclass of the ICorDebugFrame interface.  

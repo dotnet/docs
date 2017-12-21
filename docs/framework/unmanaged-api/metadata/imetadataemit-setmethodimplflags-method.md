@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::SetMethodImplFlags Method
 Sets or updates the metadata signature of the inherited method implementation that is referenced by the specified token.  

@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval::IsActive Method
 Gets a value that indicates whether this ICorDebugEval object is currently executing.  

@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugClass2::SetJMCStatus Method
 For each method of the class, sets a value that indicates whether the method is user-defined code.  

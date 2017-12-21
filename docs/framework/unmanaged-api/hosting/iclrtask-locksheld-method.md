@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRTask::LocksHeld Method
 Gets the number of locks currently held on the task.  

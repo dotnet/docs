@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugMetaDataLocator Interface
 Provides metadata information to the debugger.  

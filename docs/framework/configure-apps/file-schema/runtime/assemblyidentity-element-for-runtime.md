@@ -21,6 +21,8 @@ caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;assemblyIdentity&gt; Element for &lt;runtime&gt;
 Contains identifying information about the assembly.  

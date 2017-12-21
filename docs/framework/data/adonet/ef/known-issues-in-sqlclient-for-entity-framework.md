@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Known Issues in SqlClient for Entity Framework
 This section describes known issues related to the .NET Framework Data Provider for SQL Server (SqlClient).  

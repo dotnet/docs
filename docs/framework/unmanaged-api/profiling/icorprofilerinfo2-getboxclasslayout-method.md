@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo2::GetBoxClassLayout Method
 Gets information about where the specified value type is located when it is boxed.  

@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugBlockingReason Enumeration
 Specifies the reasons why a thread may become blocked on a given object.  

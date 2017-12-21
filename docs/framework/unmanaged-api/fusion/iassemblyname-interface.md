@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAssemblyName Interface
 Provides methods for describing and working with an assembly's unique identity.  

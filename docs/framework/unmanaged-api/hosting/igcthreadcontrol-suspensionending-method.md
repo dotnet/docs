@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IGCThreadControl::SuspensionEnding Method
 Notifies the host that the runtime is resuming threads after a garbage collection or other suspension.  

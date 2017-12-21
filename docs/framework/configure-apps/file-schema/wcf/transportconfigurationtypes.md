@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;transportConfigurationTypes&gt;
 Represents a collection of configuration elements that identify the type of a particular transport. This can be used to add custom WAS protocols.  

@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerFunctionControl::SetILInstrumentedCodeMap Method
 Sets a code map for the specified function by using the specified Common Intermediate Language (CIL) map entries.  

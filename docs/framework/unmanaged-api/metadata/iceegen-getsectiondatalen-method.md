@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::GetSectionDataLen Method
 Gets the length of the specified section.  

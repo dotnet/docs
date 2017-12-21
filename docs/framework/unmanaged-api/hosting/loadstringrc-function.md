@@ -26,6 +26,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # LoadStringRC Function
 Translates an HRESULT value into an error message by using the default culture of the current thread.  

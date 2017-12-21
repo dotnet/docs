@@ -26,6 +26,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_HEAPOBJECT Structure
 Provides information about an object on the managed heap.  

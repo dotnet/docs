@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRStrongName::StrongNameSignatureVerificationEx Method
 Gets a value that indicates whether the assembly manifest at the supplied path contains a strong name signature.  

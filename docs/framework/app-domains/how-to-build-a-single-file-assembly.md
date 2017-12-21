@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "assembly manifest, single-file assemblies"
   - "library assemblies"
@@ -25,6 +25,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Build a Single-File Assembly
 A single-file assembly, which is the simplest type of assembly, contains type information and implementation, as well as the [assembly manifest](../../../docs/framework/app-domains/assembly-manifest.md). You can use command-line compilers or [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] to create a single-file assembly. By default, the compiler creates an assembly file with an .exe extension.  

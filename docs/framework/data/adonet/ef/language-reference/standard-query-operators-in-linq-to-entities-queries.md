@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Standard Query Operators in LINQ to Entities Queries
 In a query, you specify the information that you want to retrieve from the data source. A query can also specify how that information should be sorted, grouped, and shaped before it is returned. LINQ provides a set of standard query methods that you can use in a query. Most of these methods operate on sequences; in this context, a sequence is an object whose type implements the <xref:System.Collections.Generic.IEnumerable%601> interface or the <xref:System.Linq.IQueryable%601> interface. The standard query operators query functionality includes filtering, projection, aggregation, sorting, grouping, paging, and more. Some of the more frequently used standard query operators have dedicated keyword syntax so that they can be called by using query expression syntax. A query expression is a different, more readable way to express a query than the method-based equivalent. Query expression clauses are translated into calls to the query methods at compile time. For a list of standard query operators that have equivalent query expression clauses, see [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2).  

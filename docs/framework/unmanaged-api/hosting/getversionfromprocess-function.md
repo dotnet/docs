@@ -27,6 +27,8 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetVersionFromProcess Function
 Gets the version number of the common language runtime (CLR) that is associated with the specified process handle.  

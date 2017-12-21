@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFrameEnum::Next Method
 Gets the specified number of ICorDebugFrame instances, starting at the current position.  

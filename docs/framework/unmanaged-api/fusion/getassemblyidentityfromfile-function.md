@@ -28,6 +28,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetAssemblyIdentityFromFile Function
 Gets a pointer to an `IUnknown` object with the specified `IID` in the assembly at the specified file path.  

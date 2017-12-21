@@ -18,6 +18,8 @@ caps.latest.revision: 20
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Support for the List Control Type
 > [!NOTE]

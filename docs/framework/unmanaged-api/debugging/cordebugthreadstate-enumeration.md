@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugThreadState Enumeration
 Specifies the state of a thread for debugging.  

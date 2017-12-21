@@ -22,6 +22,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Multifile Assemblies
 You can create multifile assemblies using command-line compilers or [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] with Visual C++. One file in the assembly must contain the assembly manifest. An assembly that starts an application must also contain an entry point, such as a Main or WinMain method.  

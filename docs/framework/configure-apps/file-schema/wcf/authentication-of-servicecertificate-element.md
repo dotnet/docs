@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;authentication&gt; of &lt;serviceCertificate&gt; Element
 Specifies the settings used by the client proxy to authenticate service certificates that are obtained using SSL/TLS negotiation.  

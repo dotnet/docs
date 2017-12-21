@@ -27,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionCatcherEnter Method
 Notifies the profiler that control is being passed to the appropriate `catch` block.  

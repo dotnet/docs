@@ -11,10 +11,12 @@ helpviewer_keywords:
   - ".NET Framework, installing"
   - "installing .NET Framework"
   - "installation [.NET Framework]"
-ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c 
+ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # Install the .NET Framework for developers

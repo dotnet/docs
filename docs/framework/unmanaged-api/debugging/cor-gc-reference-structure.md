@@ -26,6 +26,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_GC_REFERENCE Structure
 Contains information about an object that is to be garbage-collected.  

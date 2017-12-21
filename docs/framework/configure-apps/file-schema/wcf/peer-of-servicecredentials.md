@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;peer&gt; of &lt;serviceCredentials&gt;
 Specifies the current credentials for a peer node.  

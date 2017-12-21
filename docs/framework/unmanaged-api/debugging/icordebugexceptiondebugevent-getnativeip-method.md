@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugExceptionDebugEvent::GetNativeIP Method
 Gets the native instruction pointer for this exception debug event.  

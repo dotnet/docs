@@ -18,6 +18,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Metadata Unions
 This section describes the unmanaged unions that the metadata API uses.  

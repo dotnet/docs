@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit2::SaveDeltaToStream Method
 Saves changes from the current edit-and-continue session to the specified stream.  

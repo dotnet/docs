@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # .NET Native and Compilation
 Windows 8.1 applications and Windows Desktop applications that target the.NET Framework are written in a particular programming language and compiled into intermediate language (IL). At runtime, a just-in-time (JIT) compiler is responsible for compiling the IL into native code for the local machine just before a method is executed for the first time. In contrast, the .NET Native tool chain converts source code to native code at compile time. This topic compares .NET Native with other compilation technologies available for .NET Framework apps, and also provides a practical overview of how .NET Native produces native code that can help you understand why exceptions that occur in code compiled with .NET Native do not occur in JIT-compiled code.  

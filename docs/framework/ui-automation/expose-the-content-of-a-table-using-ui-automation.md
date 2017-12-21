@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "tables, exposing content of"
   - "UI Automation, exposing content of tables"
@@ -21,6 +21,8 @@ caps.latest.revision: 12
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Expose the Content of a Table Using UI Automation
 > [!NOTE]

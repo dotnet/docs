@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostMemoryManager::NeedsVirtualAddressSpace Method
 Notifies the host that the common language runtime (CLR) is going to attempt to use the specified memory.  

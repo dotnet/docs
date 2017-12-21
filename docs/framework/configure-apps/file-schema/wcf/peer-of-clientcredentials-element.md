@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;peer&gt; of &lt;clientCredentials&gt; Element
 Specifies credentials used when authenticating peer-to-peer clients.  

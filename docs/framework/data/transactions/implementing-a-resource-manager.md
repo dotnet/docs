@@ -12,6 +12,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Implementing a Resource Manager
 Each resource used in a transaction is managed by a resource manager, whose actions are coordinated by a transaction manager. Resource managers work in cooperation with the transaction manager to provide the application with a guarantee of atomicity and isolation. Microsoft SQL Server, durable message queues, in-memory hash tables are all examples of resource managers.  

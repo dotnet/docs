@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugILFrame::GetIP Method
 Gets the value of the instruction pointer and a bitwise combination value that describes how the value of the instruction pointer was obtained.  

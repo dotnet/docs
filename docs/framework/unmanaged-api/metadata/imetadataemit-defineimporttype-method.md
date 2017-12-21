@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::DefineImportType Method
 Creates a reference to the specified type that is defined outside the current scope, and defines a token for that reference.  

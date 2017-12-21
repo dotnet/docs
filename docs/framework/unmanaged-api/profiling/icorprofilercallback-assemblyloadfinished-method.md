@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::AssemblyLoadFinished Method
 Notifies the profiler that an assembly has finished loading.  

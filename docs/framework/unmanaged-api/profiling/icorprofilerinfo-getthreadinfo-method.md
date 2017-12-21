@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetThreadInfo Method
 Gets the current Win32 thread identity for the specified thread.  

@@ -26,6 +26,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostControl Interface
 Provides methods for configuring the loading of assemblies, and for determining which hosting interfaces the host supports.  

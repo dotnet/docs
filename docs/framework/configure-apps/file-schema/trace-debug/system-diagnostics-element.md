@@ -20,6 +20,8 @@ caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;system.diagnostics&gt; Element
 Specifies trace listeners that collect, store, and route messages and the level where a trace switch is set.  

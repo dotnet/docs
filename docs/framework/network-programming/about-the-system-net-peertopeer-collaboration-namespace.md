@@ -12,6 +12,8 @@ caps.latest.revision: 4
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # About the System.Net.PeerToPeer.Collaboration Namespace
 The <xref:System.Net.PeerToPeer.Collaboration> namespace provides classes and APIs that are used to implement peer collaboration activities using the Peer-to-Peer Collaboration Infrastructure.  

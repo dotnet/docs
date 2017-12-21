@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;localClientSettings&gt; element
 Specifies the security settings of a local client for this binding.  

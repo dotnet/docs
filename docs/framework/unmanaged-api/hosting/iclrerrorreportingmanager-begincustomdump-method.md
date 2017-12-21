@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRErrorReportingManager::BeginCustomDump Method
 Specifies the configuration of custom heap dumps for error reporting.  

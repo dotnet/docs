@@ -26,6 +26,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # FreeWin32ResBlob Method
 Releases the Win32 resource blob and associated resources.  

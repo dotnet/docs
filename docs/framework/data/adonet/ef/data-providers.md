@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Entity Framework Data Providers
 This section provides information on data providers that support the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  

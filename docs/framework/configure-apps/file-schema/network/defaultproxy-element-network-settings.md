@@ -20,6 +20,8 @@ caps.latest.revision: 21
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;defaultProxy&gt; Element (Network Settings)
 Configures the Hypertext Transfer Protocol (HTTP) proxy server.  

@@ -20,6 +20,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Reliability
 It is important that code executing in server environments such as SQL Server protect against asynchronous exceptions. Reliability, as discussed here, is not specific to SQL Server but to writing reliable code for any host executing in a .NET Framework version 2.0 environment. However, SQL Server is the first service making extensive use of the new reliability features of version 2.0, so it is used as an example.  

@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::DefineParam Method
 Creates a parameter definition with the specified signature for the method referenced by the specified token, and gets a token for that parameter definition.  

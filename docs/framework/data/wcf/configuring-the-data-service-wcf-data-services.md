@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, configuring"
 ms.assetid: 59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c
@@ -19,6 +19,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring the Data Service (WCF Data Services)
 With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can create data services that expose [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feeds. Data in these feeds can come from a variety of data sources. [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] uses data providers to expose this data as an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed. These providers include an [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider, a reflection provider, and a set of custom data service provider interfaces. The provider implementation defines the data model for the service. For more information, see [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md).  

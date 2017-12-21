@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostTaskManager::CallNeedsHostHook Method
 Enables the host to specify whether the common language runtime (CLR) can inline the specified call to an unmanaged function.  

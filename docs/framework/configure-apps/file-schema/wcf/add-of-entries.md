@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; of &lt;entries&gt;
 Represents a routing entry that maps a filter to a client endpoint that was previously defined. Messages matching this filter will be sent to this destination.  

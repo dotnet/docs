@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EmitManifest Method
 Emits the final manifest. Call this method after importing all other files and setting all options. Do not call this method for unbound modules.  

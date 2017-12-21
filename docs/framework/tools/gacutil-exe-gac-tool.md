@@ -29,6 +29,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Gacutil.exe (Global Assembly Cache Tool)
 The Global Assembly Cache tool allows you to view and manipulate the contents of the global assembly cache and download cache.  

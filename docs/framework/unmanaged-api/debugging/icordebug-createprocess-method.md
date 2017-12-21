@@ -27,6 +27,8 @@ caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebug::CreateProcess Method
 Launches a process and its primary thread under the control of the debugger.  

@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFunction2::GetJMCStatus Method
 Gets a value that indicates whether the function that is represented by this ICorDebugFunction2 object is marked as user code.  

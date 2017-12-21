@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;peerTransport&gt;
 Defines a peer transport for a custom binding.  

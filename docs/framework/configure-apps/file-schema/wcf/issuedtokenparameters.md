@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;issuedTokenParameters&gt;
 Specifies the parameters for a security token issued in a Federated security scenario.  

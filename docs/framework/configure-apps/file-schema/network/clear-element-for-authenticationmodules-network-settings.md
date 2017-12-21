@@ -22,6 +22,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;clear&gt; Element for authenticationModules (Network Settings)
 Clears all authentication modules from the application.  

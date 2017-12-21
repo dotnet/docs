@@ -27,6 +27,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CloseEnum Method
 Closes the indicated enumeration and frees associated resources.  

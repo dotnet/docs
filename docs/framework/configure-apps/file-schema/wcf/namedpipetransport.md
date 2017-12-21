@@ -14,6 +14,8 @@ caps.latest.revision: 15
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;namedPipeTransport&gt;
 Defines a transport that causes a channel to transfer messages using named pipes when it is included in a custom binding.  

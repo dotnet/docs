@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Canonical Functions
 This section discusses canonical functions that are supported by all data providers, and can be used by all querying technologies. Canonical functions cannot be extended by a provider.  

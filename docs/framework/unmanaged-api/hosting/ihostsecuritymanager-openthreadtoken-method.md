@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostSecurityManager::OpenThreadToken Method
 Opens the discretionary access token associated with the currently executing thread.  

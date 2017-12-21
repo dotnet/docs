@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;states&gt; of WCF, &lt;workflowInstanceQuery&gt;
 Represents a collection of subscribed states from the tracked workflow instance when the tracking records are created.  

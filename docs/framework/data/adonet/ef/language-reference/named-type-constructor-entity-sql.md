@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Named Type Constructor (Entity SQL)
 Used to create instances of conceptual model nominal types such as Entity or Complex types.  

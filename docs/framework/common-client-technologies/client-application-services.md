@@ -29,6 +29,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Client Application Services
 Client application services make it easy for you to create Windows-based applications that use the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] login, roles, and profile application services included in the Microsoft ASP.NET 2.0 AJAX Extensions. These services enable multiple Web and Windows-based applications to share user information and user-management functionality from a single server. For example, you can use these services to perform the following tasks:  

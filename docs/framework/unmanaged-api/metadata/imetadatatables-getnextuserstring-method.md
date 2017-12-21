@@ -27,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataTables::GetNextUserString Method
 Gets the index of the row that contains the next hard-coded string in the current table column.  

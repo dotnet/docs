@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::GetRVA Method
 Gets the relative virtual address (RVA) and the implementation flags of the method or field represented by the specified token.  

@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRAppDomainResourceMonitor Interface
 Provides methods that inspect an application domain's memory and CPU usage.  

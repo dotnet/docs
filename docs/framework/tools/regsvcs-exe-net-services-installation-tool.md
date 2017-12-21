@@ -21,6 +21,8 @@ caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Regsvcs.exe (.NET Services Installation Tool)
 The .NET Services Installation tool performs the following actions:  

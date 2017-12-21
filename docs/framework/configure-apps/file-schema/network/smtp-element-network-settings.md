@@ -20,6 +20,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;smtp&gt; Element (Network Settings)
 Configures the delivery format, delivery method, and from address for sending e-mails.  

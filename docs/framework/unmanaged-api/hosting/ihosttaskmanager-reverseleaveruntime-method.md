@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostTaskManager::ReverseLeaveRuntime Method
 Notifies the host that control is leaving the common language runtime (CLR) and entering an unmanaged function that was, in turn, called from managed code.  

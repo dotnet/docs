@@ -14,6 +14,8 @@ caps.latest.revision: 28
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceMetadata&gt;
 Specifies the publication of service metadata and associated information.  

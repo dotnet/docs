@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;issuedTokenAuthentication&gt; of &lt;serviceCredentials&gt;
 Specifies a custom token issued as a service credential.  

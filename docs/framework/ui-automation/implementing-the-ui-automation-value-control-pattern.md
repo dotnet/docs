@@ -18,6 +18,8 @@ caps.latest.revision: 25
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Implementing the UI Automation Value Control Pattern
 > [!NOTE]

@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugRegisterSet::GetRegisters Method
 Gets the value of each register (on the computer that is currently executing code) that is specified by the bit mask.  

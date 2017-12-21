@@ -24,6 +24,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Network Settings Schema
 Network settings specify how the .NET Framework connects to the Internet. The following table describes the function of each child configuration element under the [\<system.Net> Element (Network Settings)](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md).  

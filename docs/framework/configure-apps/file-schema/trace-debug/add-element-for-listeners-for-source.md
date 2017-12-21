@@ -20,6 +20,8 @@ caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; Element for &lt;listeners&gt; for &lt;source&gt;
 Adds a listener to the `Listeners` collection for a trace source.  

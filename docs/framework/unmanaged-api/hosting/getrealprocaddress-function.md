@@ -26,6 +26,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetRealProcAddress Function
 Gets the address of the specified function that is exported from the latest installed version of the common language runtime (CLR).  

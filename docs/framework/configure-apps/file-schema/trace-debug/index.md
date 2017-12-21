@@ -23,6 +23,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Trace and Debug Settings Schema
 Trace and debug settings specify trace listeners that collect, store, and route messages, and the level where a trace switch is set.  

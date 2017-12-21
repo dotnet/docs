@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugRegisterSet2::SetRegisters Method
 `SetRegisters` is not implemented in the .NET Framework version 2.0. Do not call this method.  

@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval2::NewParameterizedObjectNoConstructor Method
 Instantiates a new parameterized type object of the specified class without attempting to call a constructor method.  

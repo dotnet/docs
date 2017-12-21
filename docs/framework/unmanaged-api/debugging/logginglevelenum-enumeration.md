@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # LoggingLevelEnum Enumeration
 Indicates the severity level of a descriptive message that is written to the event log when a managed thread logs an event.  

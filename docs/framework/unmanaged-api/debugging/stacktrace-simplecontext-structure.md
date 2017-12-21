@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StackTrace_SimpleContext Structure
 Provides a simple context that can be used in place of a full `CONTEXT` structure.  

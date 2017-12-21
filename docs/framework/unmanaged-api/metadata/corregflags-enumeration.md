@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorRegFlags Enumeration
 Provides flag values used for registration when installing a module or composite image.  

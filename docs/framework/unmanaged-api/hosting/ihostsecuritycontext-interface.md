@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostSecurityContext Interface
 Allows the common language runtime (CLR) to maintain security context information implemented by the host.  

@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport2::EnumGenericParams Method
 Gets an enumerator for an array of generic parameter tokens associated with the specified TypeDef or MethodDef token.  

@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule2::GetJITCompilerFlags Method
 Gets the flags that control the just-in-time (JIT) compilation of this ICorDebugModule2.  

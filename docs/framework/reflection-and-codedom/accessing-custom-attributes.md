@@ -9,10 +9,10 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "custom attributes, accessibility"
   - "attributes [.NET Framework], accessing"
@@ -22,6 +22,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Accessing Custom Attributes
 After attributes have been associated with program elements, reflection can be used to query their existence and values. In the .NET Framework version 1.0 and 1.1, custom attributes are examined in the execution context. The .NET Framework version 2.0 provides a new load context, the reflection-only context, which can be used to examine code that cannot be loaded for execution.  

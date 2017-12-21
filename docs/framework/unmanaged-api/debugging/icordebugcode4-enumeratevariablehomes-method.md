@@ -27,6 +27,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugCode4::EnumerateVariableHomes Method
 Gets an enumerator to the local variables and arguments in a function.  

@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Use EdmGen.exe to Generate the Model and Mapping Files
 This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the following files based on the School database:  

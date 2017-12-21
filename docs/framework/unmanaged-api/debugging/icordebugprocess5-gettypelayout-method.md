@@ -27,6 +27,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess5::GetTypeLayout Method
 Gets information about the layout of an object in memory based on its type identifier.  

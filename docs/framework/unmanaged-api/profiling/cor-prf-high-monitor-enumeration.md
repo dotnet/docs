@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_HIGH_MONITOR Enumeration
 [Supported in the .NET Framework 4.5.2 and later versions]  

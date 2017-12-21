@@ -14,6 +14,8 @@ caps.latest.revision: 17
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceSecurityAudit&gt;
 Specifies settings that enable auditing of security events during service operations.  

@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Hosting (Unmanaged API Reference)
 The hosting API enables unmanaged hosts to integrate the common language runtime (CLR) into their applications.  

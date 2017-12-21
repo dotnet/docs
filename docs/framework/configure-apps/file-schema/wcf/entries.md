@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;entries&gt;
 A routing entry that contain mappings between the routing filters and the target endpoints to send messages to when the filter matches.  

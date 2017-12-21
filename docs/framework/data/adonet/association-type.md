@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # association type
 An *association type* (also called an association) is the fundamental building block for describing relationships in the Entity Data Model (EDM). In a conceptual model, an association represents a relationship between two [entity types](../../../../docs/framework/data/adonet/entity-type.md) (such as `Customer` and `Order`). In an application, an instance of an association represents a specific association (such as an association between an instance of `Customer` and an instance of `Order`). Association instances are logically grouped in an [association set](../../../../docs/framework/data/adonet/association-set.md).  

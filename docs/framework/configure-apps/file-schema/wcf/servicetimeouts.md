@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceTimeouts&gt;
 Specifies the timeout for a service.  

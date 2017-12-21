@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceCredentials&gt;
 Specifies the credential to be used in authenticating the service and the client credential validation-related settings.  

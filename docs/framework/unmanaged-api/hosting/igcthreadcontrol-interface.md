@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IGCThreadControl Interface
 Provides methods for participating in the scheduling of threads that would otherwise be blocked for a garbage collection.  

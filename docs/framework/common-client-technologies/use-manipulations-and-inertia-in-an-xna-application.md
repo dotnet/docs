@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Manipulations and Inertia in an XNA Application
 This article describes how you can use manipulations and inertia processing in a Microsoft XNA application to control the movement of game pieces. Before you read this article, you should be familiar with the [Manipulations and Inertia Overview](../../../docs/framework/common-client-technologies/manipulations-and-inertia-overview.md) topic, and be familiar with basic XNA programming concepts.  

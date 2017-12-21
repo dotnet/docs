@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "granting permissions, overriding security checks"
   - "code access security, overriding security checks"
@@ -28,6 +28,8 @@ caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using the Assert Method
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IGCHost::GetStats Method
 Gets the statistics for the current state of the garbage collection system.  

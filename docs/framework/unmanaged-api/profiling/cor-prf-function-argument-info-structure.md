@@ -26,6 +26,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_FUNCTION_ARGUMENT_INFO Structure
 Represents a function's arguments, in left-to-right order.  

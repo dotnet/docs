@@ -6,9 +6,9 @@ ms.technology: ""
 ms.topic: "reference"
 topic_type: 
   - "apiref"
-api_name:
+api_name: 
   - "System.Net.ServicePoint.m_ConnectionGroupList"
-api_location:
+api_location: 
   - "System.dll"
 api_type: 
   - "Assembly"
@@ -16,6 +16,8 @@ ms.assetid: df8afb59-f0f6-4ddc-b3c1-839b9fc601d8
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # ServicePoint.m\_ConnectionGroupList Field

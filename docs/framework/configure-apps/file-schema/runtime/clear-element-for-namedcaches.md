@@ -17,6 +17,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;clear&gt; Element for &lt;namedCaches&gt;
 Clears all `namedCache` entries in the `namedCaches` collection for a memory cache.  

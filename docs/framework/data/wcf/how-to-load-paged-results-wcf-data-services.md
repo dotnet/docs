@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, deferred content"
   - "WCF Data Services, loading data"
@@ -20,6 +20,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Load Paged Results (WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] enables the data service to limit the number of entities that are returned in a single response feed. When this happens, the final entry in the feed contains a link to the next page of data. The URI for the next page of data is obtained by calling the <xref:System.Data.Services.Client.QueryOperationResponse%601.GetContinuation%2A> method of the <xref:System.Data.Services.Client.QueryOperationResponse%601>, which is returned when the <xref:System.Data.Services.Client.DataServiceQuery%601> is executed. The URI represented by this object is then used to load the next page of results. For more information, see [Loading Deferred Content](../../../../docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md).  

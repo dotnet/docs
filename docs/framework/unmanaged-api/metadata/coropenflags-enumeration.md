@@ -26,6 +26,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorOpenFlags Enumeration
 Contains flag values that control metadata behavior upon opening manifest files.  

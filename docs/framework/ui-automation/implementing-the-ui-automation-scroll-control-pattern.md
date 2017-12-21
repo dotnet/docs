@@ -18,6 +18,8 @@ caps.latest.revision: 23
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Implementing the UI Automation Scroll Control Pattern
 > [!NOTE]

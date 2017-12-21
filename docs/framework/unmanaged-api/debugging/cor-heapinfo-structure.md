@@ -26,6 +26,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_HEAPINFO Structure
 Provides general information about the garbage collection heap, including whether it is enumerable.  

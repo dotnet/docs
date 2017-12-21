@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRRuntimeInfo::BindAsLegacyV2Runtime Method
 Binds the current runtime for all legacy common language runtime (CLR) version 2 activation policy decisions.  

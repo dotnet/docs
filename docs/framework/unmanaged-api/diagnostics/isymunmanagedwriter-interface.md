@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedWriter Interface
 Represents a symbol writer, and provides methods to define documents, sequence points, lexical scopes, and variables.  

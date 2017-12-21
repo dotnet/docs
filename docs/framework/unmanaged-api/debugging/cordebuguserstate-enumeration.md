@@ -26,6 +26,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugUserState Enumeration
 Indicates the user state of a thread.  

@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Downloading the Validating Issuer Name Registry Package
 This topic discusses how to download and use the Validating Issuer Name Registry (VINR) in your project.  

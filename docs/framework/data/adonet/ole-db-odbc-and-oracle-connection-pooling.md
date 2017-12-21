@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # OLE DB, ODBC, and Oracle Connection Pooling
 Pooling connections can significantly enhance the performance and scalability of your application. This section discusses connection pooling for the .NET Framework data providers for OLE DB, ODBC and Oracle.  

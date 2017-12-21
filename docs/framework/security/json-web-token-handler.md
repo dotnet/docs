@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # JSON Web Token Handler
 The JSON Web Token Handler extension for Windows Identity Foundation enables you to create and validate JSON Web Tokens (JWT) in your applications. The JWT Token Handler can be configured to run in the WIF pipeline like other built-in security token handlers, but it can also be used independently to perform token validation in lightweight applications. The JWT Token Handler is particularly useful when using an OAuth 2.0 bearer token scheme, such as authenticating to Windows Azure Active Directory.  

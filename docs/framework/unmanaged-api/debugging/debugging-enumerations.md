@@ -18,6 +18,8 @@ caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Debugging Enumerations
 This section describes the unmanaged enumerations that the debugging API uses.  

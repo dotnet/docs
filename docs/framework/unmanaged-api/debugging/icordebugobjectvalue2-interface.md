@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugObjectValue2 Interface1
 Extends the "ICorDebugObjectValue" interface to support inheritance and overrides.  

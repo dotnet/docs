@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;enableWebScript&gt;
 This element enables the endpoint behavior that makes it possible to consume the service from ASP.NET AJAX web pages.  

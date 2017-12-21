@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 6819a16f-8656-41af-a54d-dfec0cb66366
 caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Cross-Table Queries (LINQ to DataSet)
 In addition to querying a single table, you can also perform cross-table queries in [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)]. This is done by using a *join*. A join is the association of objects in one data source with objects that share a common attribute in another data source, such as a product or contact ID. In object-oriented programming, relationships between objects are relatively easy to navigate because each object has a member that references another object. In external database tables, however, navigating relationships is not as straightforward. Database tables do not contain built-in relationships. In these cases, the join operation can be used to match elements from each source. For example, given two tables that contain product information and sales information, you could use a join operation to match sales information and products for the same sales order.  

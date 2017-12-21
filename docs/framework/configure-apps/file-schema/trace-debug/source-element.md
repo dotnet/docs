@@ -14,6 +14,8 @@ helpviewer_keywords:
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;source&gt; Element
 Specifies a trace source that initiates tracing messages.  

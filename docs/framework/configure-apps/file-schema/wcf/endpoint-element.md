@@ -14,6 +14,8 @@ caps.latest.revision: 23
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;endpoint&gt; element
 Specifies binding, contract, and address properties for a service endpoint, which is used to expose services.  

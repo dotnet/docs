@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;message&gt; of &lt;wsDualHttpBinding&gt;
 Defines message-level security for the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).  

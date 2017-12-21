@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Debugging LINQ to DataSet Queries
 [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] supports the debugging of [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] code. However, there are some differences between debugging [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] code and non-[!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] managed code. Most debugging features work with [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] statements, including stepping, setting breakpoints, and viewing results that are shown in debugger windows. However, deferred query execution in has some side effects that you should consider while debugging [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] code and there are some limitations to using Edit and Continue. This topic discusses aspects of debugging that are unique to [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] compared to non-[!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] managed code.  

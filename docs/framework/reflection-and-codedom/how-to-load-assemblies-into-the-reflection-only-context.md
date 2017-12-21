@@ -9,10 +9,10 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "reflection, reflection-only loader context"
   - "assemblies [.NET Framework], loading for reflection"
@@ -24,6 +24,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Load Assemblies into the Reflection-Only Context
 The reflection-only load context allows you to examine assemblies compiled for other platforms or for other versions of the .NET Framework. Code loaded into this context can only be examined; it cannot be executed. This means that objects cannot be created, because constructors cannot be executed. Because the code cannot be executed, dependencies are not automatically loaded. If you need to examine them, you must load them yourself.  

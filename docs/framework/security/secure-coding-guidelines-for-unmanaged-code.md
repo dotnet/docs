@@ -19,6 +19,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Secure Coding Guidelines for Unmanaged Code
 Some library code needs to call into unmanaged code (for example, native code APIs, such as Win32). Because this means going outside the security perimeter for managed code, due caution is required. If your code is security-neutral, both your code and any code that calls it must have unmanaged code permission (<xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> flag specified).  

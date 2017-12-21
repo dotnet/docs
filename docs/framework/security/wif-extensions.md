@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WIF Extensions
 This section describes the extensions for Windows Identity Foundation.  

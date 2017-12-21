@@ -22,6 +22,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;remove&gt; Element for authenticationModules (Network Settings)
 Removes an authentication module from the application.  

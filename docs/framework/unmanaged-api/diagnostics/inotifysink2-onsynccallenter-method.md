@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # INotifySink2::OnSyncCallEnter Method
 Gets invoked when entering a call.  

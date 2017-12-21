@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerFunctionEnum::Next Method
 Gets the specified number of contiguous functions from a sequential collection of functions, starting at the enumerator's current position in the sequence.  

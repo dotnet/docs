@@ -17,6 +17,8 @@ caps.latest.revision: 32
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Events for Clients
 > [!NOTE]

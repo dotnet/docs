@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedReader::GetMethod Method
 Gets a symbol reader method, given a method token.  

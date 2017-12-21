@@ -26,6 +26,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugBlockingObject Structure
 Defines an object that is blocking a thread and the specific reason that the thread is blocked.  

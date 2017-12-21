@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerFunctionEnum::Reset Method
 Moves the enumerator's cursor to the starting position of the sequence.  

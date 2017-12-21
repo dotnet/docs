@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: c788f2f9-65cc-4455-9907-e8388a268e00
 caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Object Identity
 Objects in the runtime have unique identities. Two variables that refer to the same object actually refer to the same instance of the object. Because of this fact, changes that you make by way of a path through one variable are immediately visible through the other.  

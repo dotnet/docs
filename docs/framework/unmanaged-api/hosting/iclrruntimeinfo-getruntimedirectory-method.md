@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRRuntimeInfo::GetRuntimeDirectory Method
 Gets the installation directory of the common language runtime (CLR) associated with this interface.  

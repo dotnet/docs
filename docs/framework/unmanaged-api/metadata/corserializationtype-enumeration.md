@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorSerializationType Enumeration
 Specifies how an object is serialized by the common language runtime.  

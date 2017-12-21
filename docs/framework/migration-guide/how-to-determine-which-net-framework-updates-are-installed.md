@@ -6,9 +6,9 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "updates, determining for .NET Framework"
   - ".NET Framework, determining updates"
@@ -16,6 +16,8 @@ ms.assetid: 53c7b5f7-d47a-402a-b194-7244a696a88b
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Determine which .NET Framework security updates and hotfixes are installed
 

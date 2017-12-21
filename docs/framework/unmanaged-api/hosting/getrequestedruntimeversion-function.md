@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetRequestedRuntimeVersion Function
 Gets the version number of the common language runtime (CLR) requested by the specified application. If that version is not installed, gets the most recent version that is installed before the requested version.  

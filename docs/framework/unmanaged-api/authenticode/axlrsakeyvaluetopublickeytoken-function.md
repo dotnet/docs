@@ -20,6 +20,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # _AxlRSAKeyValueToPublicKeyToken Function
 Converts a Modulus and Exponent to a strong name public key token.  

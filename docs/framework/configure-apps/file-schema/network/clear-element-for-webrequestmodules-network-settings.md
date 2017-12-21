@@ -22,6 +22,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;clear&gt; Element for webRequestModules (Network Settings)
 Removes all registered Web request modules from the application.  

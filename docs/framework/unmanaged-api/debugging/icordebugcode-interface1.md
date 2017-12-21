@@ -26,6 +26,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugCode Interface1
 Represents a segment of either Microsoft intermediate language (MSIL) code or native code.  

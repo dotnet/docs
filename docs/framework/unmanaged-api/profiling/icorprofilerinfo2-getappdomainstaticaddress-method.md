@@ -27,6 +27,8 @@ caps.latest.revision: 22
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo2::GetAppDomainStaticAddress Method
 Gets the address of the specified application domain-static field that is in the scope of the specified application domain.  

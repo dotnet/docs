@@ -24,6 +24,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Lc.exe (License Compiler)
 The License Compiler reads text files that contain licensing information and produces a binary file that can be embedded in a common language runtime executable as a resource.  

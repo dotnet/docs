@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating Application Roles in SQL Server
 Application roles provide a way to assign permissions to an application instead of a database role or user. Users can connect to the database, activate the application role, and assume the permissions granted to the application. The permissions granted to the application role are in force for the duration of the connection.  

@@ -20,6 +20,8 @@ caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Install an Assembly into the Global Assembly Cache
 There are two ways to install a strong-named assembly into the global assembly cache (GAC):  

@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFunction2::SetJMCStatus Method
 Marks the function represented by this ICorDebugFunction2 for Just My Code stepping.  

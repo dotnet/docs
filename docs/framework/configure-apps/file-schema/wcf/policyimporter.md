@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;policyImporter&gt;
 Specifies a policy importer that controls the import of custom policy assertions about bindings.  

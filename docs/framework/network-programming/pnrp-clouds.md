@@ -12,6 +12,8 @@ caps.latest.revision: 4
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # PNRP Clouds
 A PNRP "cloud" represents a set of nodes that can communicate with each other through the network. The term "cloud" is synonymous with "peer mesh" and "peer-to-peer graph".  

@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;messageSenderAuthentication&gt; element
 Specifies authentication options for peer-to-peer message senders.  

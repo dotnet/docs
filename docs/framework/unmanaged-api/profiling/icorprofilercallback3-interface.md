@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback3 Interface
 Provides callback methods that the common language runtime (CLR) uses to communicate attach and detach state information to the profiler.  

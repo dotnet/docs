@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; of &lt;defaultPorts&gt;
 A default communications endpoint that the client application listens to.  

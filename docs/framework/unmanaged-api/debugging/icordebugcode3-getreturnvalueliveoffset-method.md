@@ -9,8 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs:
- - "cpp"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "ICorDebugCode3.GetReturnValueLiveOffset"
 api_location: 
@@ -29,6 +29,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugCode3::GetReturnValueLiveOffset Method
 For a specified IL offset, gets the native offsets where a breakpoint should be placed so that the debugger can obtain the return value from a function.  

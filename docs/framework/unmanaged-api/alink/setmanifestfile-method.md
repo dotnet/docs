@@ -26,6 +26,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # SetManifestFile Method
 Enables you to specify or reset the manifest file that the linker uses when it creates the assembly.  

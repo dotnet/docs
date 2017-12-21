@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;compositeDuplex&gt;
 Defines the binding element that is used when the client must expose an endpoint for the service to send messages back to the client.  

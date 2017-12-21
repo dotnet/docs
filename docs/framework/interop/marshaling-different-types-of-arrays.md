@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "marshaling, Arrays sample"
   - "data marshaling, Arrays sample"
@@ -20,6 +20,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Marshaling Different Types of Arrays
 An array is a reference type in managed code that contains one or more elements of the same type. Although arrays are reference types, they are passed as In parameters to unmanaged functions. This behavior is inconsistent with way managed arrays are passed to managed objects, which is as In/Out parameters. For additional details, see [Copying and Pinning](../../../docs/framework/interop/copying-and-pinning.md).  

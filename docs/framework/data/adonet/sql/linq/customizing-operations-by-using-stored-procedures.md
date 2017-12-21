@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Customizing Operations By Using Stored Procedures
 Stored procedures represent a common approach to overriding default behavior. The examples in this topic show how you can use generated method wrappers for stored procedures, and how you can call stored procedures directly.  

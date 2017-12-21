@@ -17,6 +17,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Security ETW Events
 <a name="top"></a> Security events are raised during strong name verification and Authenticode verification.  

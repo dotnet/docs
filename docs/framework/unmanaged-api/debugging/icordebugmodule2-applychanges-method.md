@@ -27,6 +27,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule2::ApplyChanges Method
 Applies the changes in the metadata and the changes in the Microsoft intermediate language (MSIL) code to the running process.  

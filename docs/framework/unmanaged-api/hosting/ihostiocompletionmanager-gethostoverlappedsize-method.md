@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostIoCompletionManager::GetHostOverlappedSize Method
 Gets the size of any custom data the host intends to append to I/O requests.  

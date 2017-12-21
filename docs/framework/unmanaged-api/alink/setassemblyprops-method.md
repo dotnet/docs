@@ -26,6 +26,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # SetAssemblyProps Method
 Assigns assembly-level properties.  

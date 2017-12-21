@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # AddImport Method1
 Adds imports to the assembly.  

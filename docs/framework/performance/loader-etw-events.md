@@ -17,6 +17,8 @@ caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Loader ETW Events
 <a name="top"></a> These events collect information relating to loading and unloading application domains, assemblies, and modules.  

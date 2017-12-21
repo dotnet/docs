@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;udpBinding&gt;
 A configuration element used to configure the <xref:System.ServiceModel.UdpBinding> binding.  

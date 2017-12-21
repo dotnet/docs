@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugSetContextFlag Enumeration
 Indicates whether the context is from the active (or leaf) frame on the stack or has been computed by unwinding from another frame.  

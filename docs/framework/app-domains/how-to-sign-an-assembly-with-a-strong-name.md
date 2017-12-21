@@ -9,10 +9,10 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "strong-named assemblies, signing with strong names"
   - "signing assemblies"
@@ -23,6 +23,8 @@ caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Sign an Assembly with a Strong Name
 There are a number of ways to sign an assembly with a strong name:  

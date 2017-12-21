@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugStepper::SetUnmappedStopMask Method
 Sets a value that specifies the type of unmapped code in which execution will halt.  

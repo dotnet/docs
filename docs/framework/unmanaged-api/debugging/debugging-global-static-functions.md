@@ -18,6 +18,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Debugging Global Static Functions
 This section describes the unmanaged global static functions that the debugging API uses.  

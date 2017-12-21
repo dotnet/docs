@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "<CompatSortNLSVersion> element"
   - "CompatSortNLSVersion element"
@@ -20,6 +20,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;CompatSortNLSVersion&gt; Element
 Specifies that the runtime should use legacy sort orders when performing string comparisons.  

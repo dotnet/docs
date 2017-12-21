@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedDocument::GetDocumentType Method
 Gets the document type of this document.  

@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::DefineMethodImpl Method
 Creates a definition for implementation of a method inherited from an interface, and returns a token to that method-implementation definition.  

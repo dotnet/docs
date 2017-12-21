@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "elements, finding by property conditions"
   - "UI Automation, finding elements by property conditions"
@@ -20,6 +20,8 @@ caps.latest.revision: 19
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Find a UI Automation Element Based on a Property Condition
 > [!NOTE]

@@ -20,6 +20,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;disableCommitThreadStack&gt; Element
 Specifies whether the full thread stack is committed when a thread is started.  

@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataFilter::UnmarkAll Method
 Removes the processing marks from all the tokens in the current metadata scope.  

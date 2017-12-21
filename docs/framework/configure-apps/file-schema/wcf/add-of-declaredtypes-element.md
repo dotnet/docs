@@ -19,6 +19,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; of &lt;declaredTypes&gt; Element
 Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerializer> during deserialization. Each declared type includes the known types that will be returned as a field or property of the declared type.  

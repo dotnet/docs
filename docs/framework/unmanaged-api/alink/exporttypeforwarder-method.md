@@ -26,6 +26,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ExportTypeForwarder Method
 Adds a type forwarder to the type table of the given assembly.  

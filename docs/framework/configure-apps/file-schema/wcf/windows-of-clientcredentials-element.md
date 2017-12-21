@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;windows&gt; of &lt;clientCredentials&gt; Element
 Specifies the settings for a Windows credential to be used to represent the client.  

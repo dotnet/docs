@@ -27,6 +27,8 @@ caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ObjectReferences Method
 Notifies the profiler about objects in memory that are being referenced by the specified object.  

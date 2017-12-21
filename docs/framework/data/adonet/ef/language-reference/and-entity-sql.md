@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # &amp;&amp; (AND) (Entity SQL)
 Returns `true` if both expressions are `true`; otherwise, `false` or `NULL`.  

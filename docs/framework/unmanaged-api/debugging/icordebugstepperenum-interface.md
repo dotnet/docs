@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugStepperEnum Interface1
 Implements ICorDebugEnum methods, and enumerates ICorDebugStepper arrays.  

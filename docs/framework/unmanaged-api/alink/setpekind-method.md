@@ -26,6 +26,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # SetPEKind Method
 Determines the portable executable type, either machine-specific or machine-agnostic.  

@@ -24,6 +24,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDomainManager Interface
 Enables the host to specify the application domain manager that will be used to initialize the default application domain, and to specify initialization properties.  

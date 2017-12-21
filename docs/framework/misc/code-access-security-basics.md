@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "security [.NET Framework], code access security"
 ms.assetid: 4eaa6535-d9fe-41a1-91d8-b437cfc16921
@@ -19,6 +19,8 @@ caps.latest.revision: 21
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Code Access Security Basics
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

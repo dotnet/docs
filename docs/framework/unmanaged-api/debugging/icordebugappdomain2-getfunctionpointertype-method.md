@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAppDomain2::GetFunctionPointerType Method
 Gets a pointer to a function that has a given signature.  

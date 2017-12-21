@@ -9,10 +9,10 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "examples [.NET Framework], platform invoke"
   - "unmanaged functions"
@@ -25,6 +25,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Platform Invoke Examples
 The following examples demonstrate how to define and call the **MessageBox** function in User32.dll, passing a simple string as an argument. In the examples, the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field is set to **Auto** to let the target platform determine the character width and string marshaling.  

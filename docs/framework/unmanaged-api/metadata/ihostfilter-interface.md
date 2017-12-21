@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostFilter Interface
 Provides a method to indicate that a specified token will be processed.  

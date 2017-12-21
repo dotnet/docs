@@ -16,6 +16,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Security and Public Read-only Array Fields
 Never use read-only public array fields from managed libraries to define the boundary behavior or security of your applications because read-only public array fields can be modified.  

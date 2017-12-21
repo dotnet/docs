@@ -26,6 +26,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CVStruct Structure
 Contains information that is used when installing a module or a composite image.  

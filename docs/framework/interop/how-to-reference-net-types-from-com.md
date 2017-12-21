@@ -9,8 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "cpp"
+dev_langs: 
+  - "cpp"
 helpviewer_keywords: 
   - "importing type library"
   - "COM interop, referencing .NET types"
@@ -24,6 +24,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Reference .NET Types from COM
 From the point of view of client and server code, the differences between COM and the .NET Framework are largely invisible. Microsoft Visual Basic clients can view a .NET object in the object browser, which exposes the object methods and syntax, properties, and fields exactly as if it were any other COM object.  

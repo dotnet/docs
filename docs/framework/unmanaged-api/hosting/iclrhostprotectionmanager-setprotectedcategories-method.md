@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRHostProtectionManager::SetProtectedCategories Method
 Specifies which categories of managed types and members should be blocked from running in partially trusted code.  

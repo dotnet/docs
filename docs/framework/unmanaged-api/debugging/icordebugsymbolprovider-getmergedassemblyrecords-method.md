@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugSymbolProvider::GetMergedAssemblyRecords Method
 Gets the symbol records for all the merged assemblies.  

@@ -26,6 +26,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetCLRIdentityManager Function
 Gets a pointer to an interface that allows the common language runtime (CLR) to manage identities.  

@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;connectionPoolSettings&gt; of &lt;tcpTransport&gt;
 Specifies additional connection pool settings for a TCP transport.  

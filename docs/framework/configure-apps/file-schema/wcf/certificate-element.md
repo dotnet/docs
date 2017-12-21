@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;certificate&gt; Element
 Specifies an X.509 certificate to use for signing and encrypting messages for peer-to-peer clients.  

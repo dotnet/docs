@@ -23,6 +23,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Identifying Functions in DLLs
 The identity of a DLL function consists of the following elements:  

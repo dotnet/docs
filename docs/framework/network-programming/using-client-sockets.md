@@ -7,9 +7,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "application protocols, sockets"
   - "sending data, sockets"
@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Client Sockets
 Before you can initiate a conversation through a <xref:System.Net.Sockets.Socket>, you must create a data pipe between your application and the remote device. Although other network address families and protocols exist, this example shows how to create a TCP/IP connection to a remote service.  

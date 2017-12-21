@@ -26,6 +26,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GUID_ManagedName Attribute
 Defines a custom interface attribute that specifies the managed namespace name for a component object model (COM) library.  

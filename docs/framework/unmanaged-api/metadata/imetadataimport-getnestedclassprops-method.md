@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::GetNestedClassProps Method
 Gets the TypeDef token for the parent <xref:System.Type> of the specified nested type.  

@@ -17,6 +17,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;etwEnable&gt; Element
 Specifies whether to enable event tracing for Windows (ETW) for common language runtime events.  

@@ -26,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PUB_ENUMPROCESS Enumeration
 Identifies the type of process to be enumerated.  

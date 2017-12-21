@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRTaskManager::SetUILocale Method
 Notifies the common language runtime (CLR) that the host has modified the user interface (UI) locale, or culture, on the currently executing task.  

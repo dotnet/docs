@@ -12,6 +12,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;factorySettings&gt;
 Specifies the settings of the channel factory cache.  

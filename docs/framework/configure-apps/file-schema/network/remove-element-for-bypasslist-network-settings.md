@@ -22,6 +22,8 @@ caps.latest.revision: 16
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;remove&gt; Element for bypasslist (Network Settings)
 Removes an IP address or DNS name from the proxy bypass list.  

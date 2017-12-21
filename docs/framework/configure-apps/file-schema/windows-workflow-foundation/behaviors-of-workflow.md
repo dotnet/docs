@@ -12,6 +12,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;behaviors&gt; of workflow
 This element contains the **serviceBehaviors** collection.  Each element in the collection defines behavior elements consumed by workflow services. Each behavior element is identified by its unique **name** attribute.  

@@ -22,6 +22,8 @@ caps.latest.revision: 16
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; Element for webRequestModules (Network Settings)
 Adds a custom Web request module to the application.  

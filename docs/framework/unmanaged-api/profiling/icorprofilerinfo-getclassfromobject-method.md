@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetClassFromObject Method
 Gets the `ClassID` of an object, given its `ObjectID`.  

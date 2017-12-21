@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "properties, UI Automation clients"
   - "UI Automation, client properties"
@@ -20,6 +20,8 @@ caps.latest.revision: 17
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Properties for Clients
 > [!NOTE]

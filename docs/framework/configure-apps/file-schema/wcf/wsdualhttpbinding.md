@@ -16,6 +16,8 @@ caps.latest.revision: 25
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;wsDualHttpBinding&gt;
 Defines a secure, reliable and interoperable binding that is suitable for duplex service contracts or communication through SOAP intermediaries.  

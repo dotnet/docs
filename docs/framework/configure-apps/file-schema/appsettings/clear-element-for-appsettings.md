@@ -14,6 +14,8 @@ ms.assetid: 6d18c7be-27db-438b-8fb5-765d396b0b7b
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # \<clear> element for \<appSettings>

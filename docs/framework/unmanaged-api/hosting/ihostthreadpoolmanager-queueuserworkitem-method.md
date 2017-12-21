@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostThreadPoolManager::QueueUserWorkItem Method
 Queues a function for execution, and specifies an object containing data to be used by that function. The function executes when a thread becomes available.  

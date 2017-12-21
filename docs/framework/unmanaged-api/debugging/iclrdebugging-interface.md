@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDebugging Interface
 Provides methods that handle loading and unloading modules for debugging.  

@@ -22,6 +22,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugStateChange Enumeration
 Describes the amount of cached data that must be discarded based on changes to the process.  

@@ -15,6 +15,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Mitigation: Pool Blocking Period
 The connection pool blocking period has been removed for connections to Azure SQL databases.  

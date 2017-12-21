@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Generating SQL from Command Trees - Best Practices
 Output query command trees closely model queries expressible in SQL. However, there are certain common challenges for provider writers when generating SQL from an output command tree. This topic discusses these challenges. In the next topic, the sample provider shows how to address these challenges.  

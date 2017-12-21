@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModuleDebugEvent::GetModule Method
 Gets the merged module that was just loaded or unloaded.  

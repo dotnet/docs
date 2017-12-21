@@ -18,6 +18,8 @@ caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Hosting Interfaces
 This section describes the interfaces that unmanaged hosts can use to integrate the common language runtime (CLR) into their applications.  

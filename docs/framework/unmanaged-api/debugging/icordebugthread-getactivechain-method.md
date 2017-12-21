@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread::GetActiveChain Method
 Gets an interface pointer to the active (most recent) stack chain on this ICorDebugThread object.  

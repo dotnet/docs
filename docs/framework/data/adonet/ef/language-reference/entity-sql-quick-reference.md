@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Entity SQL Quick Reference
 This topic provides a quick reference to [!INCLUDE[esql](../../../../../../includes/esql-md.md)] queries. The queries in this topic are based on the AdventureWorks Sales model.  

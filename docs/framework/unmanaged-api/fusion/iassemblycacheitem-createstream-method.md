@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAssemblyCacheItem::CreateStream Method
 Creates a stream with the specified name and format.  

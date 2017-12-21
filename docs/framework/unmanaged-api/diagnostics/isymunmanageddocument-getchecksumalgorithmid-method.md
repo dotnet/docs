@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedDocument::GetCheckSumAlgorithmId Method
 Gets the checksum algorithm identifier, or returns a GUID of all zeros if there is no checksum.  

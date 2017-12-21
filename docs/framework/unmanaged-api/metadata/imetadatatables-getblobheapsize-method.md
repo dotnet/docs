@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataTables::GetBlobHeapSize Method
 Gets the size, in bytes, of the binary large object (BLOB) heap.  

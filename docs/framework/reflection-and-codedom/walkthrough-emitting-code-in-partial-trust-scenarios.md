@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "reflection emit, anonymously hosted dynamic methods"
   - "partial trust, reflection"
@@ -26,6 +26,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Walkthrough: Emitting Code in Partial Trust Scenarios
 Reflection emit uses the same API set in full or partial trust, but some features require special permissions in partially trusted code. In addition, reflection emit has a feature, anonymously hosted dynamic methods, that is designed to be used with partial trust and by security-transparent assemblies.  

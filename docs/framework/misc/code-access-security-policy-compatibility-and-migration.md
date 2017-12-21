@@ -13,6 +13,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Code Access Security Policy Compatibility and Migration
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

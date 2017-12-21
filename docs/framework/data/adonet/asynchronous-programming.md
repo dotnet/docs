@@ -10,6 +10,8 @@ caps.latest.revision: 30
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Asynchronous Programming
 

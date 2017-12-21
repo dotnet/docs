@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAssembly3::EnumerateContainedAssemblies Method
 Gets an enumerator for the assemblies contained in this assembly.  

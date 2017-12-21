@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyImport::GetExportedTypeProps Method
 Gets the set of properties of the exported type with the specified metadata signature.  

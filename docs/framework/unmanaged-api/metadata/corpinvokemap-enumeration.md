@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorPinvokeMap Enumeration
 Specifies options for a PInvoke call.  

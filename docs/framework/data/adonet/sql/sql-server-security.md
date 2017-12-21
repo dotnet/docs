@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # SQL Server Security
 [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] has many features that support creating secure database applications.  

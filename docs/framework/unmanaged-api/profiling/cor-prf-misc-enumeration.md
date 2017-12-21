@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_MISC Enumeration
 Contains constant values that specify special identifiers.  

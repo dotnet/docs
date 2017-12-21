@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; Element for schemeSettings (Uri Settings)
 Adds a scheme setting for a scheme name.  

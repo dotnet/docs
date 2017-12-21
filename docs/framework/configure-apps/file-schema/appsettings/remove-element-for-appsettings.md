@@ -14,6 +14,8 @@ ms.assetid: 218c4464-e007-4539-803f-7c8b0a909fd8
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # \<remove> element for \<appSettings>

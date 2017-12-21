@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;Subtypes&gt; Element (.NET Native)
 Applies runtime policy to all classes inherited from the containing type.  

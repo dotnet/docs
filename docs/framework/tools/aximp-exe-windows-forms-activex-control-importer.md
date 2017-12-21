@@ -20,6 +20,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Aximp.exe (Windows Forms ActiveX Control Importer)
 The ActiveX Control Importer converts type definitions in a COM type library for an ActiveX control into a Windows Forms control.  

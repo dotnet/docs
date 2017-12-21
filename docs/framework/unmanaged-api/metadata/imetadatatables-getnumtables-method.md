@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataTables::GetNumTables Method
 Gets the number of tables in the scope of the current `IMetaDataTables` instance.  

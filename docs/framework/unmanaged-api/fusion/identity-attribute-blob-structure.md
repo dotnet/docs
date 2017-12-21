@@ -9,8 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs:
-- "cpp"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "IDENTITY_ATTRIBUTE_BLOB"
 api_location: 
@@ -28,6 +28,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IDENTITY_ATTRIBUTE_BLOB Structure
 Contains information about a single attribute in an assembly, and consists of three `DWORD`s. Each `DWORD` is an offset into a character buffer produced by the `CurrentIntoBuffer` method of the [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md) interface  

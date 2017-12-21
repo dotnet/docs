@@ -26,6 +26,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugGCType Enumeration
 Indicates whether the garbage collector is running on a workstation or a server.  

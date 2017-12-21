@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Binding and LINQ to DataSet
 *Data binding* is the process that establishes a connection between the application UI and business logic. If the binding has the correct settings and the data provides the proper notifications, when the data changes its value, the elements that are bound to the data reflect changes automatically. The <xref:System.Data.DataSet> is an in- memory representation of data that provides a consistent relational programming model, regardless of the source of the data it contains. The ADO.NET 2.0 <xref:System.Data.DataView> enables you to sort and filter the data stored in a <xref:System.Data.DataTable>. This functionality is often used in data-binding applications. By using a <xref:System.Data.DataView>, you can expose the data in a table with different sort orders, and you can filter the data by row state or based on a filter expression. For more information about the <xref:System.Data.DataView> object, see [DataViews](../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md).  

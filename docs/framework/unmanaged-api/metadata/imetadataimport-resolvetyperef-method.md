@@ -27,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::ResolveTypeRef Method
 Resolves a <xref:System.Type> reference represented by the specified TypeRef token.  

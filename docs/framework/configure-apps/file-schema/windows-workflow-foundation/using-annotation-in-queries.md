@@ -12,6 +12,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Annotation in Queries
 Annotations allow you to arbitrarily tag tracking records with a value that can be configured after build time. For example, you might want several tracking records across several workflows to be tagged with "Mail Server" == "Mail Server1". This makes it easy to find all records with this tag when querying tracking records later.  

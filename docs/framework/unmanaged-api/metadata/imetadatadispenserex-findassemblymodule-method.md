@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataDispenserEx::FindAssemblyModule Method
 This method is not implemented. If called, it returns E_NOTIMPL.  

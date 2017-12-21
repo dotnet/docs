@@ -14,6 +14,8 @@ caps.latest.revision: 15
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;transport&gt; of &lt;msmqIntegrationBinding&gt;
 Defines the security settings for the Message Queuing integration transport.  

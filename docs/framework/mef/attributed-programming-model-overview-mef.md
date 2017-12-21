@@ -5,9 +5,9 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "MEF, attributed programming model"
   - "attributed programming model [MEF]"
@@ -16,6 +16,8 @@ caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Attributed Programming Model Overview (MEF)
 In the Managed Extensibility Framework (MEF), a *programming model* is a particular method of defining the set of conceptual objects on which MEF operates. These conceptual objects include parts, imports, and exports. MEF uses these objects, but does not specify how they should be represented. Therefore, a wide variety of programming models are possible, including customized programming models.  

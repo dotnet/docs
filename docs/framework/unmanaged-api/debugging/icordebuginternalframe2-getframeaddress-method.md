@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugInternalFrame2::GetFrameAddress Method
 Returns the stack address of the internal frame.  

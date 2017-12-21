@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Runtime Exceptions in .NET Native Apps
 It is important to test the release builds of your Universal Windows Platform app on their target platforms because the debug and release configurations are completely different. By default, the debug configuration uses the .NET Core runtime to compile your app, but the release configuration uses .NET Native to compile your app to native code.  

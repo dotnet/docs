@@ -17,6 +17,8 @@ caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;generatePublisherEvidence&gt; Element
 Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> evidence for code access security (CAS).  

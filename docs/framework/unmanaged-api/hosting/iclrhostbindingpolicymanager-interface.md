@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRHostBindingPolicyManager Interface
 Provides methods for the host to evaluate current binding policy and communicate policy changes for a specified assembly.  

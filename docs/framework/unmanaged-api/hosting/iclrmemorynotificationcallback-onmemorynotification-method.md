@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRMemoryNotificationCallback::OnMemoryNotification Method
 Notifies the common language runtime (CLR) of the memory load on the computer.  

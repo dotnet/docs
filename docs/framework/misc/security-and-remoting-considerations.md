@@ -19,6 +19,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Security and Remoting Considerations
 Remoting allows you to set up transparent calling between application domains, processes, or computers. However, the code access security stack walk cannot cross process or machine boundaries (it does apply between application domains of the same process).  

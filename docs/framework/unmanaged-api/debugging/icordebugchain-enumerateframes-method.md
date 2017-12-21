@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugChain::EnumerateFrames Method
 Gets an enumerator that contains all the managed stack frames in the chain, starting with the most recent frame.  

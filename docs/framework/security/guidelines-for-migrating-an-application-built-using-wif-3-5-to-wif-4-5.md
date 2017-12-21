@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5
 ## Applies To  

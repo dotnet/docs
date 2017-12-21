@@ -21,6 +21,8 @@ caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;system.codedom&gt; Element
 Specifies compiler configuration settings for available language providers.  

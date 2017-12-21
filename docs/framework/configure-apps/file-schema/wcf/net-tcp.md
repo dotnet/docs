@@ -14,6 +14,8 @@ caps.latest.revision: 15
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;net.tcp&gt;
 Specifies configuration settings for the NET.TCP Port Sharing Service, which allows multiple processes to share the same TCP port.  

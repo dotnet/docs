@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRPolicyManager::SetUnhandledExceptionPolicy Method
 Specifies the behavior of the common language runtime (CLR) when an unhandled exception occurs.  

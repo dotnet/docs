@@ -18,6 +18,8 @@ caps.latest.revision: 15
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Implementing the UI Automation GridItem Control Pattern
 > [!NOTE]

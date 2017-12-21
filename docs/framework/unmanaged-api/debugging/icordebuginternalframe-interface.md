@@ -26,6 +26,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugInternalFrame Interface1
 Represents a runtime-internal frame on the stack. This interface is a subclass of the ICorDebugFrame interface.  

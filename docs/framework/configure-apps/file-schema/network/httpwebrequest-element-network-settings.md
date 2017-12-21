@@ -20,6 +20,8 @@ caps.latest.revision: 18
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;httpWebRequest&gt; Element (Network Settings)
 Customizes Web request parameters.  

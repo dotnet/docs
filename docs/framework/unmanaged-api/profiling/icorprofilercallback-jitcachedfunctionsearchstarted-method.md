@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::JITCachedFunctionSearchStarted Method
 Notifies the profiler that a search has started for a function that was compiled previously using the Native Image Generator (NGen.exe).  

@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # DiffGrams
 A DiffGram is an XML format that identifies current and original versions of data elements. The <xref:System.Data.DataSet> uses the DiffGram format to load and persist its contents, and to serialize its contents for transport across a network connection. When a <xref:System.Data.DataSet> is written as a DiffGram, it populates the DiffGram with all the necessary information to accurately recreate the contents, though not the schema, of the <xref:System.Data.DataSet>, including column values from both the **Original** and **Current** row versions, row error information, and row order.  

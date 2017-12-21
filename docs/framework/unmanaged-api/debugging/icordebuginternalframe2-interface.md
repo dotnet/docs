@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugInternalFrame2 Interface
 Provides information about internal frames, including stack address and position in relation to ICorDebugFrame objects.  

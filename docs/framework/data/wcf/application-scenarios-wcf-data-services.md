@@ -17,6 +17,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Application Scenarios (WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] supports a core set of scenarios for exposing and consuming data as [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feeds. This topic points you to the topics relevant to these scenarios.  

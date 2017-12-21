@@ -12,6 +12,8 @@ caps.latest.revision: 5
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Peer Name Publication and Resolution
 ## Publishing a Peer Name  

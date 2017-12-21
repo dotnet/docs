@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionSearchFunctionEnter Method
 Notifies the profiler that the search phase of exception handling has begun searching a function to find a handler for the current exception.  

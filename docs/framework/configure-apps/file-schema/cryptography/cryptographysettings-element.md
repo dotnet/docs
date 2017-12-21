@@ -20,6 +20,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;cryptographySettings&gt; Element
 Contains cryptography settings.  

@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;baseAddresses&gt;
 Represents a collection of `baseAddress` elements, which are base addresses for a service host in a self-hosted environment. If a base address is present, endpoints can be configured with addresses relative to the base address.  

@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostIoCompletionManager::CreateIoCompletionPort Method
 Requests that the host create a new I/O completion port.  

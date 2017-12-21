@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugMDAFlags Enumeration
 Specifies the status of the thread on which the managed debugging assistant (MDA) is fired.  

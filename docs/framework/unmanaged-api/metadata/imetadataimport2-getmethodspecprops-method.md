@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport2::GetMethodSpecProps Method
 Gets the metadata signature of the method referenced by the specified MethodSpec token.  

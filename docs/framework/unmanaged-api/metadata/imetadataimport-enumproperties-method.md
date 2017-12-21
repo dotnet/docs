@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::EnumProperties Method
 Enumerates PropertyDef tokens representing the properties of the type referenced by the specified TypeDef token.  

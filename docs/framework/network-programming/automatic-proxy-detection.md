@@ -7,9 +7,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "automatic proxy detections"
   - "Web Proxy Auto-Discovery"
@@ -24,6 +24,8 @@ caps.latest.revision: 18
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Automatic Proxy Detection
 Automatic proxy detection is a process by which a Web proxy server is identified by the system and used to send requests on behalf of the client. This feature is also known as Web Proxy Auto-Discovery (WPAD). When automatic proxy detection is enabled, the system attempts to locate a proxy configuration script that is responsible for returning the set of proxies that can be used for the request. If the proxy configuration script is found, the script is downloaded, compiled, and run on the local computer when proxy information, the request stream, or the response is obtained for a request that uses a <xref:System.Net.WebProxy> instance.  

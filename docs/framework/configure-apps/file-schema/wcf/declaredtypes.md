@@ -20,6 +20,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;declaredTypes&gt;
 Contains the known types that the <xref:System.Runtime.Serialization.DataContractSerializer> uses when deserializing.  

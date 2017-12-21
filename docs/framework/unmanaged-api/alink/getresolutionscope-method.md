@@ -26,6 +26,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetResolutionScope Method
 Retrieves the scope of a given type.  

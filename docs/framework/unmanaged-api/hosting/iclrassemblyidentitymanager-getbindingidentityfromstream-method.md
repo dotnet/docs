@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRAssemblyIdentityManager::GetBindingIdentityFromStream Method
 Gets the canonical assembly identity data for the assembly in the specified stream.  

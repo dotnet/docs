@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;workflowControlEndpoint&gt;
 This configuration element defines a standard endpoint for controlling the execution of workflow instances (create, run, suspend, terminate, etc).  

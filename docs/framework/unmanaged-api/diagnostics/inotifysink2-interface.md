@@ -26,6 +26,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # INotifySink2 Interface
 Declares methods for sink notification.  

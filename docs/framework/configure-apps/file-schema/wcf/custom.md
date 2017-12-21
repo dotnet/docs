@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;custom&gt;
 Specifies settings for a custom peer resolver service.  

@@ -33,6 +33,8 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Reflection in the .NET Framework
 The classes in the <xref:System.Reflection> namespace, together with <xref:System.Type?displayProperty=nameWithType>, enable you to obtain information about loaded [assemblies](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md) and the types defined within them, such as [classes](http://msdn.microsoft.com/en-us/ad7d3561-271e-4546-82fc-e00b059f27a9), [interfaces](http://msdn.microsoft.com/en-us/fd9d5975-5363-4bc9-b883-609f887895e5), and [value types](http://msdn.microsoft.com/en-us/c9c567f8-8ab1-4d88-834d-00f7d92418de). You can also use reflection to create type instances at run time, and to invoke and access them. For topics about specific aspects of reflection, see [Related Topics](#related_topics) at the end of this overview.  

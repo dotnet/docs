@@ -14,6 +14,8 @@ caps.latest.revision: 19
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;behavior&gt; of &lt;endpointBehaviors&gt;
 The `behavior` element contains a collection of settings for the behavior of an endpoint. Each behavior is indexed by its `name`. Endpoints can link to each behavior through this name. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  

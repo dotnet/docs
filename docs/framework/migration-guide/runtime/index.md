@@ -2,7 +2,7 @@
 title: Runtime Changes in the .NET Framework
 ms.date: "06/14/2017"
 ms.prod: ".net-framework"
-ms.technology:
+ms.technology: 
   - "dotnet-clr"
   - "app-compat"
 ms.topic: "article"
@@ -11,6 +11,8 @@ ms.assetid: 2bc008db-ad60-4a01-8ccc-f4a3171b36f4
 author: "conniey"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # Runtime Changes in the .NET Framework

@@ -26,6 +26,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugType2 Interface
 Extends the ICorDebugType interface to retrieve the type identifier  of a base type or complex (user-defined) type.  

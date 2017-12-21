@@ -26,6 +26,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # OSINFO Structure
 Contains details about the operating system for an assembly or module.  

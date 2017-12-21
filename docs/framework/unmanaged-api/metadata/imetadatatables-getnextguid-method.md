@@ -27,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataTables::GetNextGuid Method
 Gets the index of the next GUID value in the current table column.  

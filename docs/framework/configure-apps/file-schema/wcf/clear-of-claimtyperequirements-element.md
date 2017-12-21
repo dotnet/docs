@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;clear&gt; of &lt;claimTypeRequirements&gt; element
 Specifies that all the claim types to be removed in the federated credential. This ensures that the collection starts empty.  

@@ -20,6 +20,8 @@ caps.latest.revision: 21
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;settings&gt; Element (Network Settings)
 Configures basic network options for the <xref:System.Net?displayProperty=nameWithType> namespace.  

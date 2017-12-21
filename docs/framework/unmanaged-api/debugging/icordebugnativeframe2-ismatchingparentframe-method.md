@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugNativeFrame2::IsMatchingParentFrame Method
 Determines whether the specified frame is the parent of the current frame.  

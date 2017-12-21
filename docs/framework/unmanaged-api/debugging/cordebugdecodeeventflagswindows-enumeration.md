@@ -22,6 +22,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugDecodeEventFlagsWindows Enumeration
 Provides additional information about debug events on the Windows platform.  

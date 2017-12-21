@@ -26,6 +26,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataTables Interface
 Provides methods for the storage and retrieval of metadata information in tables.  

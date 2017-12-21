@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugHeapValue3::GetThreadOwningMonitorLock Method
 Returns the managed thread that owns the monitor lock on this object.  

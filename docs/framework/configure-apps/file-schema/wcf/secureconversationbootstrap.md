@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;secureConversationBootstrap&gt;
 Specifies the default values used for initiating a secure conversation service.  

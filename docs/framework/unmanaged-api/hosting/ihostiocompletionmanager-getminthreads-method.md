@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostIoCompletionManager::GetMinThreads Method
 Gets the minimum number of threads that the host provides for processing I/O requests.  

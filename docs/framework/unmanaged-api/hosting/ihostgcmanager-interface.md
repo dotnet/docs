@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostGCManager Interface
 Provides methods that notify the host of events in the garbage collection mechanism implemented by the common language runtime (CLR).  

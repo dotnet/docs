@@ -17,6 +17,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Timing Behaviors Overview
 This topic describes the timing behaviors of animations and other <xref:System.Windows.Media.Animation.Timeline> objects.  

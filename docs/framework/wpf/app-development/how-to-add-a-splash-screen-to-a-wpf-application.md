@@ -19,6 +19,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add a Splash Screen to a WPF Application
 This topic shows how to add a startup window, or *splash screen*, to a Windows Presentation Foundation (WPF) application.  

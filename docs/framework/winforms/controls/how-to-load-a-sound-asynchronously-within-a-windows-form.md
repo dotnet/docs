@@ -21,6 +21,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Load a Sound Asynchronously within a Windows Form
 The following code example asynchronously loads a sound from an URL and then plays it on a new thread.  

@@ -19,6 +19,8 @@ caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # BindingSource Component Architecture
 With the <xref:System.Windows.Forms.BindingSource> component, you can universally bind  all Windows Forms controls to data sources.  

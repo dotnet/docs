@@ -17,6 +17,8 @@ caps.latest.revision: 36
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Guide to the Documentation
 Provided here is guidance about the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] documentation. The linked documents are recommended starting points grouped according to specific interests and levels of expertise.  

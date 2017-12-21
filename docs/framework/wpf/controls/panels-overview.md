@@ -21,6 +21,8 @@ caps.latest.revision: 48
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Panels Overview
 <xref:System.Windows.Controls.Panel> elements are components that control the rendering of elements—their size and dimensions, their position, and the arrangement of their child content. The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a number of predefined <xref:System.Windows.Controls.Panel> elements as well as the ability to construct custom <xref:System.Windows.Controls.Panel> elements.  

@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Extending Encoders and Serializers
 The topics in this section describe how to extend the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] serialization system.  

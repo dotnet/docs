@@ -16,6 +16,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # GetCustomUI
 Called by PresentationHost.exe to get custom progress and error messages from the host, if implemented.  

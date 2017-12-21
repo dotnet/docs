@@ -12,6 +12,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Durable Delay
 This sample demonstrates how to use a durable delay, which is a delay that persists the workflow to a durable device during the delay. The sample workflow contains two messages to the console that are separated by a delay. When the delay is triggered, the workflow is unloaded and waits 5 seconds in the workflow instance store before being reloaded in memory.  

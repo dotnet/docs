@@ -19,6 +19,8 @@ caps.latest.revision: 67
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ListBox How-to Topics
 The topics in this section describe how to use the <xref:System.Windows.Controls.ListBox> control to display selectable lists of items.  

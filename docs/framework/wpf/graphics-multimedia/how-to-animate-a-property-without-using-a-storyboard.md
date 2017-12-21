@@ -22,6 +22,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate a Property Without Using a Storyboard
 This example shows one way to apply an animation to a property without using a <xref:System.Windows.Media.Animation.Storyboard>.  

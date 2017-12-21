@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "queues [WCF]. grouping messages"
 ms.assetid: 63b23b36-261f-4c37-99a2-cc323cd72a1a
@@ -19,6 +19,8 @@ caps.latest.revision: 30
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Grouping Queued Messages in a Session
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a session that allows you to group a set of related messages together for processing by a single receiving application. Messages that are part of a session must be part of the same transaction. Because all messages are part of the same transaction, if one message fails to be processed the entire session is rolled back. Sessions have similar behaviors with regard to dead-letter queues and poison queues. The Time to Live (TTL) property set on a queued binding configured for sessions is applied to the session as a whole. If only some of the messages in the session are sent before the TTL expires, the entire session is placed in the dead-letter queue. Similarly, when messages in a session fail to be sent to an application from the application queue, the entire session is placed in the poison queue (if available).  

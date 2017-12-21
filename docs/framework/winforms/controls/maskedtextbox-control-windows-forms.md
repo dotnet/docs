@@ -21,6 +21,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # MaskedTextBox Control (Windows Forms)
 This topic links to others about the `MaskedTextBox` control.  

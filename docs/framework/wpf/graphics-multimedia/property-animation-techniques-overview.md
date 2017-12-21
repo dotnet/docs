@@ -21,6 +21,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Property Animation Techniques Overview
 This topic describes the different approaches for animating properties: storyboards, local animations, clocks, and per-frame animations.  

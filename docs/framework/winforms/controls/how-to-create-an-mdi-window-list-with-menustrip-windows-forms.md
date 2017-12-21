@@ -20,6 +20,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create an MDI Window List with MenuStrip (Windows Forms)
 Use the multiple-document interface (MDI) to create applications that can open several documents at the same time and copy and paste content from one document to the other.  

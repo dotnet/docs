@@ -12,6 +12,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # DynamicActivity Creation
 This sample demonstrates two different ways to create an activity at runtime using the <xref:System.Activities.DynamicActivity> activity.  

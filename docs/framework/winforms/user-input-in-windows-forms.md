@@ -19,6 +19,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # User Input in Windows Forms
 Windows Forms includes a user input model based on events that are raised while processing related Windows messages. The topics in this section provide information on mouse and keyboard user input, including code examples that demonstrate how to perform specific tasks.  

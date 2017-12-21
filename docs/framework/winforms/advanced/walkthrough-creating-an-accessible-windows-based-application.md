@@ -18,6 +18,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Creating an Accessible Windows-based Application
 Creating an accessible application has important business implications. Many governments have accessibility regulations for software purchase. The Certified for Windows logo includes accessibility requirements. An estimated 30 million residents of the U.S. alone, many of them potential customers, are affected by the accessibility of software.  

@@ -20,6 +20,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Detect When the Enter Key Pressed
 This example shows how to detect when the <xref:System.Windows.Input.Key.Enter> key is pressed on the keyboard.  

@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Routing Contracts
 Routing contracts define the message patterns that the Routing Service can process.  Each contract is typeless and allows the service to receive a message without knowledge of the message schema or action. This allows the Routing Service to generically route messages without additional configuration for the specifics of the underlying messages being routed.  

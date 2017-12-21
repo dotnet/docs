@@ -22,6 +22,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use a Custom Context Menu with a TextBox
 This example shows how to define and implement a simple custom context menu for a <xref:System.Windows.Controls.TextBox>.  

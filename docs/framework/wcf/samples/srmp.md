@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # SRMP
 This sample demonstrates how to perform transacted queued communication by using Message Queuing (MSMQ) over HTTP.  

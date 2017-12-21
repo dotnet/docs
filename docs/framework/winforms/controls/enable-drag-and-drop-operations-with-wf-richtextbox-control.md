@@ -23,6 +23,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Enable Drag-and-Drop Operations with the Windows Forms RichTextBox Control
 Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichTextBox> control are done by handling the <xref:System.Windows.Forms.RichTextBox.DragEnter> and <xref:System.Windows.Forms.RichTextBox.DragDrop> events. Thus, drag-and-drop operations are extremely simple with the <xref:System.Windows.Forms.RichTextBox> control.  

@@ -19,6 +19,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Dialog-Box Controls and Components (Windows Forms)
 The following Windows Forms controls and components present standard dialog boxes. Follow the links for more information about the functions available in each dialog box.  

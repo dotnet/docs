@@ -14,6 +14,8 @@ caps.latest.revision: 22
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Internet Information Services Hosting Best Practices
 This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services.  

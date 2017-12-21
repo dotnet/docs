@@ -14,6 +14,8 @@ caps.latest.revision: 27
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Sessions and Queues
 This sample demonstrates how to send and receive a set of related messages in queued communication over the Message Queuing (MSMQ) transport. This sample uses the `netMsmqBinding` binding. The service is a self-hosted console application to enable you to observe the service receiving queued messages.  

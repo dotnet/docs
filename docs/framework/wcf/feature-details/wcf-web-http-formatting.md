@@ -10,6 +10,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Web HTTP formatting
 The WCF Web HTTP programming model allows you to dynamically determine the best format for a service operation to return its response in. Two methods for determining an appropriate format are supported: automatic and explicit.  

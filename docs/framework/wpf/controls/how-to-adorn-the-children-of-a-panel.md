@@ -20,6 +20,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Adorn the Children of a Panel
 This example shows how to programmatically bind an adorner to the children of a specified <xref:System.Windows.Controls.Panel>.  

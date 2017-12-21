@@ -17,6 +17,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Feedback and Community
 We appreciate your comments and concerns about the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] or [!INCLUDE[infocard](../../../includes/infocard-md.md)] documentation. On the bottom of every page in the SDK is the sentence "Send comments about this topic to Microsoft." Click the "comments" link to send your views or suggestions about the specific topic.  

@@ -17,6 +17,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Copy Controls Between Windows Forms
 A control may be copied onto the same form, onto another form within the project, or onto the Clipboard for use in other solutions.  

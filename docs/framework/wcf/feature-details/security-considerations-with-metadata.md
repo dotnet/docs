@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Considerations with Metadata
 When using the metadata features in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], consider the security implications of publishing, retrieving, and using service metadata.  

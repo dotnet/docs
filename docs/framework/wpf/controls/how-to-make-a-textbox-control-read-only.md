@@ -17,6 +17,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Make a TextBox Control Read-Only
 This example shows how to configure a <xref:System.Windows.Controls.TextBox> control to not allow user input or modification.  

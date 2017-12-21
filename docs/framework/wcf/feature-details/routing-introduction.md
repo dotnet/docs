@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Routing Introduction
 The Routing Service provides a generic pluggable SOAP intermediary that is capable of routing messages based on message content. With the Routing Service, you can create complex routing logic that allows you to implement scenarios such as service aggregation, service versioning, priority routing, and multicast routing. The Routing Service also provides error handling that allows you to set up lists of backup endpoints, to which messages are sent if a failure occurs when sending to the primary destination endpoint.  

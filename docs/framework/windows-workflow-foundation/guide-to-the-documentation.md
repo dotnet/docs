@@ -15,6 +15,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Guide to the Windows Workflow Documentation
 This topic contains information about how to use the Windows Workflow Foundation documentation. The linked documents are recommended starting points grouped according to specific interests and levels of expertise.  

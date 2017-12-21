@@ -18,6 +18,8 @@ caps.latest.revision: 75
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Events How-to Topics
 The topics in this section describe how to use events in WPF.  

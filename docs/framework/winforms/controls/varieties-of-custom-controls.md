@@ -23,6 +23,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Varieties of Custom Controls
 With the .NET Framework, you can develop and implement new controls. You can extend the functionality of the familiar user control as well as existing controls through inheritance. You can also write custom controls that perform their own painting.  

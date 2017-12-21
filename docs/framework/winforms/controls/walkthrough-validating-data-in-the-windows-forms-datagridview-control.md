@@ -24,6 +24,8 @@ caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Validating Data in the Windows Forms DataGridView Control
 When you display data entry functionality to users, you frequently have to validate the data entered into your form. The <xref:System.Windows.Forms.DataGridView> class provides a convenient way to perform validation before data is committed to the data store. You can validate data by handling the <xref:System.Windows.Forms.DataGridView.CellValidating> event, which is raised by the <xref:System.Windows.Forms.DataGridView> when the current cell changes.  

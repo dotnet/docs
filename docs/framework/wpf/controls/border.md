@@ -20,6 +20,8 @@ caps.latest.revision: 69
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Border
 The following sample demonstrates how to dynamically change properties of the <xref:System.Windows.Controls.Border> element.  

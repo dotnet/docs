@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Message Logging
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides the capability to log incoming and outgoing messages for offline consumption. Message logging enables you to see what the message and message body looks like. This type of logging is particularly helpful in letting you know what arguments were passed in and how the receiving endpoint saw the arguments expressed as XML. In addition, logging the message as it was received allows you to diagnose malformed messages as well as to see how the message arrived. You can also examine the security tokens used, parts encrypted and signed, and parts left intact.  

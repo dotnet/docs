@@ -12,6 +12,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Exposing data with CacheMetadata
 Before executing an activity, the workflow runtime obtains all of the information about the activity that it needs in order to maintain its execution. The workflow runtime gets this information during the execution of the <xref:System.Activities.Activity.CacheMetadata%2A> method. The default implementation of this method provides the runtime with all of the public arguments, variables, and child activities exposed by the activity at the time it is executed; if the activity needs to give more information to the runtime than this (such as private members, or activities to be scheduled by the activity), this method can be overridden to provide it.  

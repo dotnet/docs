@@ -20,6 +20,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Bitmap at Run Time
 This example creates and draws in a <xref:System.Drawing.Bitmap> object and displays it in an existing Windows Forms <xref:System.Windows.Forms.PictureBox> control.  

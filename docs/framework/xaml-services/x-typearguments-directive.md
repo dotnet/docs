@@ -22,6 +22,8 @@ caps.latest.revision: 18
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:TypeArguments Directive
 Passes constraining type arguments of a generic to the constructor of the generic type.  

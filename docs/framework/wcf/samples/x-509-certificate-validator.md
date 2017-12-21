@@ -14,6 +14,8 @@ caps.latest.revision: 21
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # X.509 Certificate Validator
 This sample demonstrates how to implement a custom X.509 Certificate Validator. This is useful in cases where none of the built-in X.509 Certificate Validation modes is appropriate for the requirements of the application. This sample shows a service that has a custom validator that accepts self-issued certificates. The client uses such a certificate to authenticate to the service.  

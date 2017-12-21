@@ -14,6 +14,8 @@ caps.latest.revision: 25
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Selecting a Credential Type
 *Credentials* are the data [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses to establish either a claimed identity or capabilities. For example, a passport is a credential a government issues to prove citizenship in a country or region. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], credentials can take many forms, such as user name tokens and X.509 certificates. This topic discusses credentials, how they are used in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], and how to select the right credential for your application.  

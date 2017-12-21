@@ -18,6 +18,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use FlowDocument Column-Separating Attributes
 This example shows how to use the column-separating features of a <xref:System.Windows.Documents.FlowDocument>.  

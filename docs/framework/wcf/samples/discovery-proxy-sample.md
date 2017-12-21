@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Discovery Proxy Sample
 This sample shows how to create an implementation of a Discovery proxy to store information about existing services and how clients can query that proxy for information. This sample consists of three projects:  

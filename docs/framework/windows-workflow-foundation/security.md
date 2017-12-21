@@ -12,6 +12,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Security
 The SQL Workflow Instance Store uses the following database security roles to secure access to instance state information in the persistence database.  

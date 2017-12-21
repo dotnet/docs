@@ -19,6 +19,8 @@ caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Windows Forms Data Binding
 Data binding in Windows Forms gives you the means to display and make changes to information from a data source in controls on the form. You can bind to both traditional data sources as well as almost any structure that contains data.  

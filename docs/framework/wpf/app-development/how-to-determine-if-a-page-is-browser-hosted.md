@@ -20,6 +20,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Determine If a Page is Browser Hosted
 This example demonstrates how to determine if a <xref:System.Windows.Controls.Page> is hosted in a browser.  

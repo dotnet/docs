@@ -21,6 +21,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Get and Set the Current Cell in the Windows Forms DataGridView Control
 Interaction with the <xref:System.Windows.Forms.DataGridView> often requires that you programmatically discover which cell is currently active. You may also need to change the current cell. You can perform these tasks with the <xref:System.Windows.Forms.DataGridView.CurrentCell%2A> property.  

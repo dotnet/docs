@@ -21,6 +21,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Rollover Effect Using Events
 This example shows how to change the color of an element as the mouse pointer enters and leaves the area occupied by the element.  

@@ -32,6 +32,8 @@ caps.latest.revision: 23
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # XML Character Entities and XAML
 XAML uses character entities defined in XML for special characters. This topic describes some specific character entities and general considerations for other XML concepts in XAML.  

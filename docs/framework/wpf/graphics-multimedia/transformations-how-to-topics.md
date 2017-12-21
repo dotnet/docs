@@ -21,6 +21,8 @@ caps.latest.revision: 77
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Transformations How-to Topics
 The topics in this section describe how to apply different transformations to objects.  

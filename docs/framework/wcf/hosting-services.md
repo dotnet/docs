@@ -16,6 +16,8 @@ caps.latest.revision: 31
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Hosting Services
 To become active, a service must be hosted within a run-time environment that creates it and controls its context and lifetime. [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] services are designed to run in any Windows process that supports managed code.  

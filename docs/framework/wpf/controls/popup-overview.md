@@ -17,6 +17,8 @@ caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Popup Overview
 The <xref:System.Windows.Controls.Primitives.Popup> control provides a way to display content in a separate window that floats over the current application window relative to a designated element or screen coordinate. This topic introduces the <xref:System.Windows.Controls.Primitives.Popup> control and provides information about its use.  

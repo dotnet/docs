@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Contracts in Workflow
 When implementing a service, you define a number of contracts that describe the service and the data that it sends and receives. The data is represented as data contracts and message contracts; both [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and workflow services use data contract and message contract definitions as part of service descriptions. The service itself exposes metadata (in the form of WSDL) in order to describe the operations of the service. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], service contracts and operation contracts define the service and the operations it supports. However, in a workflow service, these contracts are part of the business process itself; they are exposed in metadata by a process called contract inference.  

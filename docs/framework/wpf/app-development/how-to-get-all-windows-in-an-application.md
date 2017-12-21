@@ -19,6 +19,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Get all Windows in an Application
 This example shows how to get all <xref:System.Windows.Window> objects in an application.  

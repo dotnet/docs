@@ -19,6 +19,8 @@ caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # XAML Resources
 A resource is an object that can be reused in different places in your application. Examples of resources include brushes and styles. This overview describes how to use resources in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. You can also create and access resources by using code, or interchangeably between code and [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. For more information, see [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md).  

@@ -19,6 +19,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Trigger Media Playback with a User Event
 This example shows how to synchronize media playback with an event.  

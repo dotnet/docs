@@ -19,6 +19,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Repeat Media Playback
 This example shows how to playback media indefinitely, that is, to set media so that it plays in an infinite loop.  

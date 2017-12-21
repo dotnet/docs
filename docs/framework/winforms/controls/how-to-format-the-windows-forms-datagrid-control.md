@@ -26,6 +26,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Format the Windows Forms DataGrid Control
 > [!NOTE]

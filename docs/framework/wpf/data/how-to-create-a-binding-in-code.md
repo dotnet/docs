@@ -20,6 +20,8 @@ caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Binding in Code
 This example shows how to create and set a <xref:System.Windows.Data.Binding> in code.  

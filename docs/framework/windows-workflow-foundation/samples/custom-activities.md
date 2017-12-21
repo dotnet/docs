@@ -12,6 +12,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Activities
 This section contains samples that demonstrate how to create custom activities in [!INCLUDE[wf](../../../../includes/wf-md.md)].  

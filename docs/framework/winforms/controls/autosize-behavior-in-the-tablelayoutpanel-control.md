@@ -23,6 +23,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # AutoSize Behavior in the TableLayoutPanel Control
 ## Distinct AutoSize Behaviors  

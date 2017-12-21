@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Workflow Service Host Extensibility
 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] provides the <xref:System.ServiceModel.Activities.WorkflowServiceHost> class for hosting workflow services. This class is used when you are self-hosting a workflow service in a managed application or a Windows service. This class is also used when hosting a workflow service with Internet Information Services (IIS) or Windows Process Activation Service (WAS). The <xref:System.ServiceModel.Activities.WorkflowServiceHost> class provides extension points that allow you to add custom extensions, change the idle behavior, and host non-service workflows (workflows that do not use messaging activities).  

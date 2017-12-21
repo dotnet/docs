@@ -12,6 +12,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Basic Usage of SendParameters and ReceiveParameters Activities
 This sample shows the use of <xref:System.ServiceModel.Activities.SendParametersContent> and <xref:System.ServiceModel.Activities.ReceiveParametersContent> activities. The service exposes one operation that takes a string argument and echoes the input back to the client. The sample shows how to set up the parameters for these messaging activities.  

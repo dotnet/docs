@@ -14,6 +14,8 @@ caps.latest.revision: 18
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Internet Information Services (IIS) Server Certificate Installation Instructions
 To run the samples that securely communicate with Internet Information Services (IIS), you must create and install a server certificate.  

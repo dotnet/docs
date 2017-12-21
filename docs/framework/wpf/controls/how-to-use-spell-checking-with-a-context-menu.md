@@ -21,6 +21,8 @@ caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use Spell Checking with a Context Menu
 By default, when you enable spell checking in an editing control like <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox>, you get spell-checking choices in the context menu. For example, when users right-click a misspelled word, they get a set of spelling suggestions or the option to **Ignore All**. However, when you override the default context menu with your own custom context menu, this functionality is lost, and you need to write code to reenable the spell-checking feature in the context menu. The following example shows how to enable this on a <xref:System.Windows.Controls.TextBox>.  

@@ -19,6 +19,8 @@ caps.latest.revision: 74
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # TextBox
 The <xref:System.Windows.Controls.TextBox> control provides support for basic text input in WPF applications.  

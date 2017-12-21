@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Accessing WCF Services with a Windows Store Client App
 Windows 8 introduces a new type of application called Windows Store applications. These applications are designed around a touch screen interface. .NET Framework 4.5 enables Windows Store applications to call WCF services.  

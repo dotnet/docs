@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Dispatch by Body Element
 This sample demonstrates how to implement an alternate algorithm for assigning incoming messages to operations.  

@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using and Creating Activities
 The topics in this section describe the system-provided activities available in [!INCLUDE[wf](../../../includes/wf-md.md)].  

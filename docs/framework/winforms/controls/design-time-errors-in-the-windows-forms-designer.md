@@ -20,6 +20,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Design-Time Errors in the Windows Forms Designer
 This topic explains the meaning and use of the design-time error list that appears in Microsoft Visual Studio when the Windows Forms Designer fails to load. If this error list appears, you should not interpret it as a bug in the designer, but as an aid to correcting errors in your code.  

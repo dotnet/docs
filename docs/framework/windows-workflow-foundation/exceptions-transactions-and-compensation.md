@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Exceptions, Transactions, and Compensation
 [!INCLUDE[wf1](../../../includes/wf1-md.md)] provides several different mechanisms for handling run-time error conditions in workflows. Workflows can use a combination of exception handlers, transactions, cancellation, and compensation to handle and recover gracefully from error conditions.  

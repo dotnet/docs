@@ -21,6 +21,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Translate Image Colors
 A translation adds a value to one or more of the four color components. The color matrix entries that represent translations are given in the following table.  

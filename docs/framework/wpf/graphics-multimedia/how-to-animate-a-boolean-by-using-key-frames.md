@@ -21,6 +21,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate a Boolean by Using Key Frames
 This example shows how to animate the Boolean property value of a <xref:System.Windows.Controls.Button> control by using key frames.  

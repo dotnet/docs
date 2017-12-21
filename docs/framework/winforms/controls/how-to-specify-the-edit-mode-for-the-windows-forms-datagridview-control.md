@@ -20,6 +20,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Specify the Edit Mode for the Windows Forms DataGridView Control
 By default, users can edit the contents of the current <xref:System.Windows.Forms.DataGridView> text box cell by typing in it or pressing F2. This puts the cell in edit mode if all of the following conditions are met:  

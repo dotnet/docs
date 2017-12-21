@@ -19,6 +19,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add a Control to a ToolStripContentPanel
 You can programmatically add one or more controls to a <xref:System.Windows.Forms.ToolStripContentPanel>.  

@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using a Data Contract Resolver
 A data contract resolver allows you to configure known types dynamically. Known types are required when serializing or deserializing a type not expected by a data contract. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] known types, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md). Known types are normally specified statically. This means you would have to know all the possible types an operation may receive while implementing the operation. There are scenarios in which this is not true and being able to specify known types dynamically is important.  

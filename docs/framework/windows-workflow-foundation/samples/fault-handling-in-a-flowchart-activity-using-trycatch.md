@@ -12,6 +12,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Fault Handling in a Flowchart Activity Using TryCatch
 This sample shows how the <xref:System.Activities.Statements.TryCatch> activity can be used within a complex control flow activity.  

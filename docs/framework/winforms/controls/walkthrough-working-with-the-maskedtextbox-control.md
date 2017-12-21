@@ -23,6 +23,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Working with the MaskedTextBox Control
 Tasks illustrated in this walkthrough include:  

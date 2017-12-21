@@ -22,6 +22,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Play a Sound Embedded in a Resource from a Windows Form
 You can use the <xref:System.Media.SoundPlayer> class to play a sound from an embedded resource.  

@@ -17,6 +17,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Net.TCP Port Sharing
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a new TCP-based network protocol (net.tcp://) for high-performance communication. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also introduces a new system component, the Net.TCP Port Sharing Service that enables net.tcp ports to be shared across multiple user processes.  

@@ -18,6 +18,8 @@ caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Key-Frame Animations Overview
 This topic introduces you to key-frame animations. Key-frame animations enable you to animate using more than two target values, and control an animation's interpolation method.  

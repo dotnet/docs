@@ -20,6 +20,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Globalizing Windows Forms
 *Globalization* is the process of designing and developing a software product that functions for multiple cultures.  

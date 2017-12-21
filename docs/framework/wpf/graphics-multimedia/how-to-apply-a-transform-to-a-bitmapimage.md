@@ -20,6 +20,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Apply a Transform to a BitmapImage
 This example demonstrates how to apply a <xref:System.Windows.Media.Transform> to a <xref:System.Windows.Media.Imaging.BitmapImage>.  

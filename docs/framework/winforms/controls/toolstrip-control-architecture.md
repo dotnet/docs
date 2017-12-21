@@ -16,6 +16,8 @@ caps.latest.revision: 32
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ToolStrip Control Architecture
 The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStripItem> classes provide a flexible, extensible system for displaying toolbar, status, and menu items. These classes are all contained in the <xref:System.Windows.Forms> namespace and they are all typically named with the "ToolStrip" prefix (such as <xref:System.Windows.Forms.ToolStripOverflow>) or with the "Strip" suffix (such as <xref:System.Windows.Forms.MenuStrip>).  

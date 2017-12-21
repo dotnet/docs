@@ -12,6 +12,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Tracking
 This section contains samples that demonstrate workflow tracking in [!INCLUDE[wf](../../../../includes/wf-md.md)].  

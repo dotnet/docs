@@ -16,6 +16,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Changing the Appearance of Windows Forms
 You can customize the look of your Windows Forms applications in many different ways, such as changing the border, opacity, shape, style, or setting a background image for your Windows Forms application.  

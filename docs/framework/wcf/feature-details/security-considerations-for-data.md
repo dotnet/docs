@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: a7eb98da-4a93-4692-8b59-9d670c79ffb2
 caps.latest.revision: 23
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Considerations for Data
 When dealing with data in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], you must consider a number of threat categories. The following table lists the most important threat classes that relate to data processing. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides tools to mitigate these threats.  

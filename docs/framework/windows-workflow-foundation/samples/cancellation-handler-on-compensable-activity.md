@@ -12,6 +12,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Cancellation Handler on Compensable Activity
 This sample demonstrates the use of a cancellation handler on a <xref:System.Activities.Statements.CompensableActivity>.  

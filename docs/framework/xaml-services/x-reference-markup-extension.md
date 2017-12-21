@@ -18,6 +18,8 @@ caps.latest.revision: 8
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Reference Markup Extension
 References an instance that is declared elsewhere in XAML markup. The reference refers to an element's `x:Name`.  

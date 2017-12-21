@@ -17,6 +17,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate a Popup
 This example shows two ways to animate a <xref:System.Windows.Controls.Primitives.Popup> control.  

@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # QualifierSet_Put function
 Writes the named qualifier and value. The new qualifier overwrites the previous value of the same name. If the qualifier does not exist, it is created. 

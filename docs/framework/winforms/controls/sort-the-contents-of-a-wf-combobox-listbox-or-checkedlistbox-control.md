@@ -20,6 +20,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Sort the Contents of a Windows Forms ComboBox, ListBox, or CheckedListBox Control
 Windows Forms controls do not sort when they are data-bound. To display sorted data, use a data source that supports sorting and then have the data source sort it. Data sources that support sorting are data views, data view managers, and sorted arrays.  

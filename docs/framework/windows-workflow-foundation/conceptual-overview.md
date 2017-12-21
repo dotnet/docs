@@ -15,6 +15,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Workflow Conceptual Overview
 This section contains a set of topics discussing the larger concepts behind [!INCLUDE[wf](../../../includes/wf-md.md)].  

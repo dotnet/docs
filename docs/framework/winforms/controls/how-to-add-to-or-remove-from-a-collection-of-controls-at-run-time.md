@@ -24,6 +24,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add to or Remove from a Collection of Controls at Run Time
 Common tasks in application development are adding controls to and removing controls from any container control on your forms (such as the <xref:System.Windows.Forms.Panel> or <xref:System.Windows.Forms.GroupBox> control, or even the form itself). At design time, controls can be dragged directly onto a panel or group box. At run time, these controls maintain a `Controls` collection, which keeps track of what controls are placed on them.  

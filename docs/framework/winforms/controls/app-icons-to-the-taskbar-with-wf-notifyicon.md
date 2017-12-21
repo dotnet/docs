@@ -25,6 +25,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add Application Icons to the TaskBar with the Windows Forms NotifyIcon Component
 The Windows Forms <xref:System.Windows.Forms.NotifyIcon> component displays a single icon in the status notification area of the taskbar. To display multiple icons in the status area, you must have multiple <xref:System.Windows.Forms.NotifyIcon> components on your form. To set the icon displayed for a control, use the <xref:System.Windows.Forms.NotifyIcon.Icon%2A> property. You can also write code in the <xref:System.Windows.Forms.NotifyIcon.DoubleClick> event handler so that something happens when the user double-clicks the icon. For example, you could make a dialog box appear for the user to configure the background process represented by the icon.  

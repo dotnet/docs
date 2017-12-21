@@ -19,6 +19,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Displaying Data in the Windows Forms DataGridView Control
 The `DataGridView` control is used to display data from a variety of external data sources. Alternatively, you can add rows and columns to the control and manually populate it with data.  

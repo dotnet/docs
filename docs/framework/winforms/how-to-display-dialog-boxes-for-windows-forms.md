@@ -23,6 +23,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Display Dialog Boxes for Windows Forms
 You display a dialog box in the same way you display any other form in an application. The startup form loads automatically when the application is run. To make a second form or dialog box appear in the application, write code to load and display it. Similarly, to make the form or dialog box disappear, write code to unload or hide it.  

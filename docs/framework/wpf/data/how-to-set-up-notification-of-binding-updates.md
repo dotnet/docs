@@ -18,6 +18,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set Up Notification of Binding Updates
 This example shows how to set up to be notified when the binding target (target) or the binding source (source) property of a binding has been updated.  

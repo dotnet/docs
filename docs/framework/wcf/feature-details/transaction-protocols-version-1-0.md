@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Transaction Protocols version 1.0
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] version 1 implements version 1.0 of the WS-Atomic Transaction and WS-Coordination protocols. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] version 1.1, see [Transaction Protocols](../../../../docs/framework/wcf/feature-details/transaction-protocols.md).  

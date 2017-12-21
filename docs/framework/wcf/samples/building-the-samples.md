@@ -14,6 +14,8 @@ caps.latest.revision: 33
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Building the Windows Communication Foundation Samples
 The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples can be built using Visual Studio 2010 or using the **msbuild** command from the command line. Both procedures are described in this topic.  

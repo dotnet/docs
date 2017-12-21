@@ -12,6 +12,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using the Pick Activity
 This sample demonstrates how to use the <xref:System.Activities.Statements.Pick> activity.  

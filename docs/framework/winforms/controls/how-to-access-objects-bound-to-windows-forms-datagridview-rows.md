@@ -21,6 +21,8 @@ caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Access Objects Bound to Windows Forms DataGridView Rows
 Sometimes it is useful to display a table of information stored in a collection of business objects. When you bind a <xref:System.Windows.Forms.DataGridView> control to such a collection, each public property is displayed in its own column unless the property has been marked non-browsable with a <xref:System.ComponentModel.BrowsableAttribute>. For example, a collection of `Customer` objects would have columns such as **Name** and **Address**.  

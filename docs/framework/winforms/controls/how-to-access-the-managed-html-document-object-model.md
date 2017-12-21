@@ -20,6 +20,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Access the Managed HTML Document Object Model
 You can access the managed HTML Document Object Model (DOM) from two types of applications:  

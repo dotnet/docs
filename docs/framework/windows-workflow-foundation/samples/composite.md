@@ -12,6 +12,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Composite
 This section contains custom activity samples composed of other activities in [!INCLUDE[wf](../../../../includes/wf-md.md)].  

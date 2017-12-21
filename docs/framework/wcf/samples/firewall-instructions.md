@@ -14,6 +14,8 @@ caps.latest.revision: 32
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Firewall Instructions
 You must enable several ports or programs in the firewall so that the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples can function. Many of the samples communicate by using ports in the range 8000-8003, and port 9000. The firewall is turned on by default and prevents access to these ports. To enable the firewall for the samples, complete one of the following procedures, depending on your requirements and security environment:  

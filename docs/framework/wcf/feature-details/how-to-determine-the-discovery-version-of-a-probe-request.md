@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to:Determine the Discovery Version of a Probe Request
 A discovery proxy may expose multiple discovery endpoints using different discovery versions. When a UDP multicast Probe request arrives at the proxy the proxy should respond with a multicast suppression message. In order to do this it would have to know the discovery version of the request.  

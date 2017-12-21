@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # UriTemplate Sample
 The <xref:System.UriTemplate> class provides methods for working with sets of URIs that share a common structure. This sample demonstrates the following key concepts relating to `UriTemplate`:  

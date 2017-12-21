@@ -12,6 +12,8 @@ caps.latest.revision: 27
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Fundamental Windows Workflow Concepts
 Workflow development in the [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] uses concepts that may be new to some developers. This topic describes some of the concepts and how they are implemented.  

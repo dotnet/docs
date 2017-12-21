@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo4::InitializeCurrentThread Method
 Initializes the current thread in advance of subsequent profiler API calls on the same thread, so that deadlock can be avoided.  

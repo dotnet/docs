@@ -20,6 +20,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Produce a Value Based on a List of Bound Items
 <xref:System.Windows.Data.MultiBinding> allows you to bind a binding target property to a list of source properties and then apply logic to produce a value with the given inputs. This example demonstrates how to use <xref:System.Windows.Data.MultiBinding>.  

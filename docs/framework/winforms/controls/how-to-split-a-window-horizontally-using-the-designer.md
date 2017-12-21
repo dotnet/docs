@@ -18,6 +18,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Split a Window Horizontally Using the Designer
 This example makes the splitter that divides the <xref:System.Windows.Forms.SplitContainer> control horizontal.  

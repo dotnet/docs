@@ -14,6 +14,8 @@ caps.latest.revision: 20
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring the Net.TCP Port Sharing Service
 Self-hosted services that use the Net.TCP transport can control several advanced settings, such as `ListenBacklog` and `MaxPendingAccepts`, which govern the behavior of the underlying TCP socket used for network communication. However, these settings for each socket only apply at the binding level if the transport binding has disabled port sharing, which is enabled by default.  

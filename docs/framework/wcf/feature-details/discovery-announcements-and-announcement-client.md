@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Discovery Announcements and Announcement Client
 The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] discovery feature enables components to announce their availability. If configured to do so, a service sends Hello and Bye announcements. Clients or other components can listen for such announcement messages and act on them. This provides an alternative method for clients to be aware of services. Announcement functionality has several uses, for example, if the services enter and leave a network frequently, announcements may be a better alternative than searching for services. With this approach, the network traffic is reduced and the client can learn about the presence or departure of the service as soon as announcements are received.  

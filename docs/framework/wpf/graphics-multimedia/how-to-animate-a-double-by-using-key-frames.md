@@ -21,6 +21,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate a Double by Using Key Frames
 This example shows how to animate the value of a property that takes a <xref:System.Double> by using key frames.  

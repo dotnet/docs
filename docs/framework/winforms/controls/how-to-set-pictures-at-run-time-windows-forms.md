@@ -25,6 +25,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set Pictures at Run Time (Windows Forms)
 You can programmatically set the image displayed by a Windows Forms <xref:System.Windows.Forms.PictureBox> control.  

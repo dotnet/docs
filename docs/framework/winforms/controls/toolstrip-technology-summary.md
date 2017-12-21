@@ -19,6 +19,8 @@ caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ToolStrip Technology Summary
 This topic summarizes information about the `ToolStrip` control and the classes that support its use.  

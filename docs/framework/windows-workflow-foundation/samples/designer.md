@@ -12,6 +12,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Designer
 This section contains samples that demonstrate how to use [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)].  

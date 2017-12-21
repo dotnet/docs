@@ -23,6 +23,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # TextBox Control Overview (Windows Forms)
 Windows Forms text boxes are used to get input from the user or to display text. The <xref:System.Windows.Forms.TextBox> control is generally used for editable text, although it can also be made read-only. Text boxes can display multiple lines, wrap text to the size of the control, and add basic formatting. The <xref:System.Windows.Forms.TextBox> control provides a single format style for text displayed or entered into the control. To display multiple types of formatted text, use the <xref:System.Windows.Forms.RichTextBox> control. For more information, see [RichTextBox Control Overview](../../../../docs/framework/winforms/controls/richtextbox-control-overview-windows-forms.md).  

@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Profiling Global Static Functions
 This section describes the unmanaged API functions that the profiling API uses.  

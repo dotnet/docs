@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Extensibility
 This section contains samples that demonstrate custom security in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

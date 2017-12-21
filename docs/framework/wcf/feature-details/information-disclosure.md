@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Information Disclosure
 Information disclosure enables an attacker to gain valuable information about a system. Therefore, always consider what information you are revealing and whether it can be used by a malicious user. The following lists possible information disclosure attacks and provides mitigations for each.  

@@ -20,6 +20,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Creating New WPF Content on Windows Forms at Design Time
 This topic shows you how to create a Windows Presentation Foundation (WPF) control for use in your Windows Forms-based applications.  

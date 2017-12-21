@@ -23,6 +23,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Read Metadata from a Bitmap
 This example shows how to read bitmap metadata using the metadata query language.  

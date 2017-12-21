@@ -21,6 +21,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Windows Forms Security
 Windows Forms features a security model that is code-based (security levels are set for code, regardless of the user running the code). This is in addition to any security schemas that may be in place already on your computer system. These can include those in the browser (such as the zone-based security available in Internet Explorer) or the operating system (such as the credential-based security of Windows NT).  

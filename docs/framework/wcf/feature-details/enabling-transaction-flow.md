@@ -16,6 +16,8 @@ caps.latest.revision: 17
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Enabling Transaction Flow
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides highly flexible options for controlling transaction flow. A service's transaction flow settings can be expressed using a combination of attributes and configuration.  

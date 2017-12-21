@@ -26,6 +26,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Lookup Table for a Windows Forms ComboBox, ListBox, or CheckedListBox Control
 Sometimes it is useful to display data in a user-friendly format on a Windows Form, but store the data in a format that is more meaningful to your program. For example, an order form for food might display the menu items by name in a list box. However, the data table recording the order would contain the unique ID numbers representing the food. The following tables show an example of how to store and display order-form data for food.  

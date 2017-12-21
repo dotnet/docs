@@ -17,6 +17,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Working with NATs and Firewalls
 The client and server of a network connection frequently do not have a direct and open path for communication. Packets are filtered, routed, analyzed, and transformed both on the endpoint machines and by intermediate machines on the network. Network address translations (NATs) and firewalls are common examples of intermediate applications that can participate in network communication.  

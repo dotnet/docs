@@ -16,6 +16,8 @@ caps.latest.revision: 7
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Guidance and Best Practices
 The topics in this section present guidance for and items to consider when creating secure [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] applications. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] Windows Server AppFabric and security see, [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  

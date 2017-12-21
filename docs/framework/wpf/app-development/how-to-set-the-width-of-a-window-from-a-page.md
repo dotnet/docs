@@ -18,6 +18,8 @@ caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set the Width of a Window from a Page
 This example illustrates how to set the width of the window from a <xref:System.Windows.Controls.Page>.  

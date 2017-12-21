@@ -21,6 +21,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Retrieve Data in a Particular Data Format
 The following examples show how to retrieve data from a data object in a specified format.  

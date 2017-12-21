@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Ordered Processing of Messages in Single Concurrency Mode
 WCF makes no guarantees about the order in which messages are processed, unless the underlying channel is sessionful.  For instance, a WCF service that uses MsmqInputChannel, which is not a sessionful channel, will fail to process messages in order. There are some circumstances where a developer may want the in order processing behavior but not want to use sessions. This topic describes how to configure this behavior when a service is running in Single Concurrency Mode.  

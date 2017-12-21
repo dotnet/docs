@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WS-MetadataExchange Bindings
 This topic describes how the default metadata exchange bindings are constructed for various transports.  

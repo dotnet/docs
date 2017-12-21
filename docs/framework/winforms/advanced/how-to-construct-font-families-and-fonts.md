@@ -20,6 +20,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Construct Font Families and Fonts
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] groups fonts with the same typeface but different styles into font families. For example, the Arial font family contains the following fonts:  

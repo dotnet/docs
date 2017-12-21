@@ -28,6 +28,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Ensure the Selected Row in a Child Table Remains at the Correct Position
 Oftentimes when you work with data binding in Windows Forms, you will display data in what is called a parent/child or master/details view. This refers to a data-binding scenario where data from the same source is displayed in two controls. Changing the selection in one control causes the data displayed in the second control to change. For example, the first control might contain a list of customers and the second a list of orders related to the selected customer in the first control.  

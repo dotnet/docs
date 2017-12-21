@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Secure Sessions
 A feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is reliable sessions that guarantee messages are received in the order they were sent. The topics in this section discuss the security implications to consider when creating a reliable session. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] reliable sessions, see [Using Sessions](../../../../docs/framework/wcf/using-sessions.md).  

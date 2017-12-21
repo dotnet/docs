@@ -18,6 +18,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Differences Between the Windows Forms DataGridView and DataGrid Controls
 The <xref:System.Windows.Forms.DataGridView> control is a new control that replaces the <xref:System.Windows.Forms.DataGrid> control. The <xref:System.Windows.Forms.DataGridView> control provides numerous basic and advanced features that are missing in the <xref:System.Windows.Forms.DataGrid> control. Additionally, the architecture of the <xref:System.Windows.Forms.DataGridView> control makes it much easier to extend and customize than the <xref:System.Windows.Forms.DataGrid> control.  

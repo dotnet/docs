@@ -25,6 +25,8 @@ caps.latest.revision: 41
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Migration and Interoperability
 This page contains links to documents that discuss how to implement interoperation between [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications and other types of [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] applications.  

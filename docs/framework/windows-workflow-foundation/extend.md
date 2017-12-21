@@ -16,6 +16,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Extending Windows Workflow Foundation
 The following section describes how to extend [!INCLUDE[wf](../../../includes/wf-md.md)] with custom activities and designers in rehosted environments outside [!INCLUDE[vs2010](../../../includes/vs2010-md.md)].  

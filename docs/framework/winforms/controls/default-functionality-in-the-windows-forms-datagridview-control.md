@@ -17,6 +17,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Default Functionality in the Windows Forms DataGridView Control
 The Windows Forms <xref:System.Windows.Forms.DataGridView> control provides users with a significant amount of default functionality.  

@@ -17,6 +17,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Using WPF Controls
 You can use Windows Presentation Foundation (WPF) controls in your Windows Forms-based applications. Although these are two different view technologies, they interoperate smoothly.  

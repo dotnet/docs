@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Message Contracts
 This section contains samples that demonstrate message contracts in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

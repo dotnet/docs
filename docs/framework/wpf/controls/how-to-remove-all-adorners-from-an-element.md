@@ -19,6 +19,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Remove all Adorners from an Element
 This example shows how to programmatically remove all adorners from a specified <xref:System.Windows.UIElement>.  

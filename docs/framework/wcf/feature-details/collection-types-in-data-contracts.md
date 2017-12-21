@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "collection types [WCF], data contracts"
   - "data contracts [WCF], collection types"
@@ -21,6 +21,8 @@ caps.latest.revision: 19
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Collection Types in Data Contracts
 A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], such lists can be represented using arrays or a variety of other types (Generic List, Generic <xref:System.ComponentModel.BindingList%601>, <xref:System.Collections.Specialized.StringCollection>, or <xref:System.Collections.ArrayList>). For example, a collection may hold a list of Addresses for a given Customer. These collections are called *list collections*, regardless of their actual type.  

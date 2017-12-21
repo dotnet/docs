@@ -12,6 +12,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Simple Policy
 This sample shows how to use a <xref:System.Workflow.Activities.PolicyActivity> activity in a workflow.  

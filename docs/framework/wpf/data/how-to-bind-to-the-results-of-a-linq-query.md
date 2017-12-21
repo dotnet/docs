@@ -17,6 +17,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Bind to the Results of a LINQ Query
 This example demonstrates how to run a LINQ query and then bind to the results.  

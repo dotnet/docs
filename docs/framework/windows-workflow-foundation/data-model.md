@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Workflow Foundation Data Model
 The Windows Workflow Foundation data model is composed of three concepts: variables, arguments, and expressions. Variables represent the storage of data and arguments represent the flow of data into and out of an activity. Arguments are bound (assigned a value) using expressions that may reference variables.  

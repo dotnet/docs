@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CloneEnumWbemClassObject function
 Makes a logical copy of an enumerator, retaining its current position in an enumeration.  

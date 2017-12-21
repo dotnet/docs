@@ -19,6 +19,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Images, Bitmaps, and Metafiles
 The `Image` class is an abstract base class that provides methods for working with raster images (bitmaps) and vector images (metafiles). The `Bitmap` class and the <xref:System.Drawing.Imaging.Metafile> class both inherit from the `Image` class. The `Bitmap` class expands on the capabilities of the `Image` class by providing additional methods for loading, saving, and manipulating raster images. The <xref:System.Drawing.Imaging.Metafile> class expands on the capabilities of the `Image` class by providing additional methods for recording and examining vector images.  

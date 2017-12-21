@@ -12,6 +12,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Required Arguments and Overload Groups
 Activities can be configured so that certain arguments are required to be bound for the activity to be valid for execution. The `RequiredArgument` attribute is used to indicate that certain arguments on an activity are required and the `OverloadGroup` attribute is used to group categories of required arguments together. By using the attributes, activity authors can provide simple or complex activity validation configurations.  

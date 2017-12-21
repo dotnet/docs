@@ -18,6 +18,8 @@ caps.latest.revision: 17
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring System-Provided Bindings
 Bindings specify the communication mechanism to use when talking to an endpoint and indicate how to connect to an endpoint. Bindings consist of elements that define how the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] channels are layered up to provide the required communication features. A binding contains three types of elements:  

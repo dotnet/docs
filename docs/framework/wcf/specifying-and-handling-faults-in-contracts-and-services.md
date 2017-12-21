@@ -16,6 +16,8 @@ caps.latest.revision: 22
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Specifying and Handling Faults in Contracts and Services
 [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications handle error situations by mapping managed exception objects to SOAP fault objects and SOAP fault objects to managed exception objects. The topics in this section discuss how to design contracts to expose error conditions as custom SOAP faults, how to return such faults as part of service implementation, and how clients catch such faults.  

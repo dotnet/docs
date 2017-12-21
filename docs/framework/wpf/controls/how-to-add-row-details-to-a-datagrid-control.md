@@ -21,6 +21,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add Row Details to a DataGrid Control
 When using the <xref:System.Windows.Controls.DataGrid> control, you can customize the data presentation by adding a row details section. Adding a row details section enables you to group some data in a template that is optionally visible or collapsed. For example, you can add row details to a <xref:System.Windows.Controls.DataGrid> that presents only a summary of the data for each row in the <xref:System.Windows.Controls.DataGrid>, but presents more data fields when the user selects a row. You define the template for the row details section in the <xref:System.Windows.Controls.DataGrid.RowDetailsTemplate%2A> property. The following illustration shows an example of a row details section.  

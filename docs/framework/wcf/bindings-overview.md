@@ -16,6 +16,8 @@ caps.latest.revision: 16
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Communication Foundation Bindings Overview
 Bindings are objects that are used to specify the communication details that are required to connect to the endpoint of a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service. Each endpoint in a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service requires a binding to be well-specified. This topic outlines the types of communication details that the bindings define, the elements of a binding, what bindings are included in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], and how a binding can be specified for an endpoint.  

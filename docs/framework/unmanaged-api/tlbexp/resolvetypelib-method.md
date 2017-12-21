@@ -25,6 +25,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ResolveTypeLib Method
 Resolves the simple name of a type library by returning its fully qualified path.  

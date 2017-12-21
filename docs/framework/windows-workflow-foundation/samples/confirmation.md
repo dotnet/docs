@@ -12,6 +12,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Confirmation
 This sample shows four common scenarios surrounding the use of <xref:System.Activities.Statements.CompensableActivity> and confirmation. The sample runs four workflows to show confirmation. This sample is available in declarative and imperative versions.  

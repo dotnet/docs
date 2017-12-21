@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Conditional Get and Put
 This sample demonstrates how to use the new conditional retrieve and update APIs for the WCF REST programming model. Because conditional retrieve and update are most appropriate for resource-oriented and REST services, this sample extends the [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample. This sample focuses on adding support for conditional retrieve and update to the [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample using the new APIs introduced in [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)].  

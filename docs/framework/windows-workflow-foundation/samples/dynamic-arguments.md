@@ -12,6 +12,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Dynamic Arguments
 This sample demonstrates how to implement an activity for which the arguments are defined by the activity consumer rather than the activity author. It does this by overriding the way the runtime constructs the activity’s metadata.  

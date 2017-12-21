@@ -12,6 +12,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Migration
 This section contains samples that demonstrate how to migrate [!INCLUDE[wf](../../../../includes/wf-md.md)] content written using [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] to [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)].  

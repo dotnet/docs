@@ -19,6 +19,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set a Property After Animating It with a Storyboard
 In some cases, it might appear that you can't change the value of a property after it has been animated.  

@@ -17,6 +17,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate in a ControlTemplate
 This example shows how to use <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.EventTrigger>, and <xref:System.Windows.Trigger> objects to animate within a <xref:System.Windows.Controls.ControlTemplate>.  

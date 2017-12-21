@@ -19,6 +19,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Respond to Font Scheme Changes in a Windows Forms Application
 In the Windows operating systems, a user can change the system-wide font settings to make the default font appear larger or smaller. Changing these font settings is critical for users who are visually impaired and require larger type to read the text on their screens. You can adjust your Windows Forms application to react to these changes by increasing or decreasing the size of the form and all contained text whenever the font scheme changes. If you want your form to accommodate changes in font sizes dynamically, you can add code to your form.  

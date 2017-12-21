@@ -16,6 +16,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Extending Bindings
 Bindings specify the transport, encoding, and protocol required to connect to an endpoint. Binding extensions and custom bindings implement custom communication functionality required to support application features.  

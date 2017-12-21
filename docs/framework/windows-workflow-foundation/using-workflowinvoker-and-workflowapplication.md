@@ -12,6 +12,8 @@ caps.latest.revision: 19
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using WorkflowInvoker and WorkflowApplication
 [!INCLUDE[wf](../../../includes/wf-md.md)] provides several methods of hosting workflows. <xref:System.Activities.WorkflowInvoker> provides a simple way for invoking a workflow as if it were a method call and can be used only for workflows that do not use persistence. <xref:System.Activities.WorkflowApplication> provides a richer model for executing workflows that includes notification of lifecycle events, execution control, bookmark resumption, and persistence. <xref:System.ServiceModel.Activities.WorkflowServiceHost> provides support for messaging activities and is primarily used with workflow services. This topic introduces you to workflow hosting with <xref:System.Activities.WorkflowInvoker> and <xref:System.Activities.WorkflowApplication>. [!INCLUDE[crabout](../../../includes/crabout-md.md)] hosting workflows with <xref:System.ServiceModel.Activities.WorkflowServiceHost>, see [Workflow Services](../../../docs/framework/wcf/feature-details/workflow-services.md) and [Hosting Workflow Services Overview](../../../docs/framework/wcf/feature-details/hosting-workflow-services-overview.md).  

@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Metadata
 Service metadata contains a machine-readable description of the service. Service metadata includes descriptions of the service endpoints, bindings, contracts, operations, and messages. You can use service metadata for a variety of purposes, including automatically generating a client for consuming the service, implementing the service description, and dynamically updating the binding for a client.  

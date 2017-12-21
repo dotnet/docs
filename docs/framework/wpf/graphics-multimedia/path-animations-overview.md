@@ -20,6 +20,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Path Animations Overview
 <a name="introduction"></a> This topic introduces path animations, which enable you to use a geometric path to generate output values. Path animations are useful for moving and rotating objects along complex paths.  

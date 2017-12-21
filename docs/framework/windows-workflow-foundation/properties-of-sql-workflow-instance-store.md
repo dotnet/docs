@@ -12,6 +12,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Properties of SQL Workflow Instance Store
 The topics in this section provide details about properties of the SQL Workflow Instance Store.  

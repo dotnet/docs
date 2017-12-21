@@ -12,6 +12,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Error handling in asynchronous activities
 Providing error handling in an <xref:System.Activities.AsyncCodeActivity> involves routing the error through the activity’s callback system. This topic describes how to get an error that is thrown in an asynchronous operation back to the host, using the SendMail activity sample.  

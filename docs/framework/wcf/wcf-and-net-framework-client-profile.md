@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF and .NET Framework Client Profile
 [!INCLUDE[arrowhead](../../../includes/arrowhead-md.md)] is a lightweight version of the full .Net Framework designed for clients that don’t need the entire framework. Not all of Windows Communication Foundation is supported by the client framework.  

@@ -16,6 +16,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # GetRawInputDevices
 Allows PresentationHost.exe to discover the raw input devices (Human Interface Devices) that the host application is interested in.  

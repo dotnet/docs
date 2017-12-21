@@ -22,6 +22,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Loop a Sound Playing on a Windows Form
 The following code example plays a sound repeatedly. When the code in the `stopPlayingButton_Click` event handler runs, any sound currently playing stops. If no sound is playing, nothing happens.  

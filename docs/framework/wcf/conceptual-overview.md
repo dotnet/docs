@@ -17,6 +17,8 @@ caps.latest.revision: 24
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Conceptual Overview
 This topic summarizes information about the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] messaging system and the classes that support its use.  

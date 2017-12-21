@@ -12,6 +12,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Instance Locked Exception Action
 The <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceLockedExceptionAction%2A> property of the SQL Workflow Instance Store lets you specify what action the SQL persistence provider should take when it receives an <xref:System.Runtime.DurableInstancing.InstanceLockedException>. The persistence provider receives this exception when it tries to lock a workflow service instance that is currently locked by another service host. The values for this property are <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry>, <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.BasicRetry>, and <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.AggressiveRetry>. The default value is <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry>. The following list describes the three options:  

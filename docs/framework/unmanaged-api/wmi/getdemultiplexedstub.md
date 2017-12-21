@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetDemultiplexedStub function
 Creates an object forwarder sink to assist a client in receiving asynchronous calls from Windows Management.

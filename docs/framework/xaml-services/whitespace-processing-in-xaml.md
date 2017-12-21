@@ -19,6 +19,8 @@ caps.latest.revision: 20
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Whitespace Processing in XAML
 The language rules for XAML state that significant whitespace must be processed by a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processor implementation. This topic documents these XAML language rules. It also documents additional whitespace handling that is defined by the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] implementation of the XAML processor and the XAML writer for serialization.  

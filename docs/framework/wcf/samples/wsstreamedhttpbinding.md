@@ -14,6 +14,8 @@ caps.latest.revision: 27
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WSStreamedHttpBinding
 The sample demonstrates how to create a binding that is designed to support streaming scenarios when the HTTP transport is used.  

@@ -12,6 +12,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Transacted Queues
 This sample shows how to integrate queues and transactions in [!INCLUDE[wf](../../../../includes/wf-md.md)] to create reliable and scalable services. A <!--zz <xref:System.Activities.TransactionScope>--> `System.Activities.TransactionScope` is used in the client workflow to send message to a queue under a transaction using the <xref:System.ServiceModel.NetMsmqBinding>. A <xref:System.ServiceModel.Activities.TransactedReceiveScope> is used on the server to receive messages from the queue and update the state of the workflow under the same transaction.  

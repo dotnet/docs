@@ -19,6 +19,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Changing Properties of a Hosted WPF Element at Design Time
 This walkthrough shows you how to change property values of a Windows Presentation Foundation (WPF) control hosted on a Windows Form.  

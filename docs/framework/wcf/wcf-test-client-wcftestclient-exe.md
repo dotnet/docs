@@ -14,6 +14,8 @@ caps.latest.revision: 45
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Test Client (WcfTestClient.exe)
 [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] Test Client (WcfTestClient.exe) is a GUI tool that enables users to input test parameters, submit that input to the service, and view the response that the service sends back. It provides a seamless service testing experience when combined with [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Host.  

@@ -17,6 +17,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Apply Animations to Text
 Animations can alter the display and appearance of text in your application. The following examples use different types of animations to affect the display of text in a <xref:System.Windows.Controls.TextBlock> control.  

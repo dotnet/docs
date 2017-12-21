@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Syndication Overview
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides support for exposing syndication feeds from a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service. Syndication is a mechanism of application integration in which a server exposes some application data in an interoperable format known as a feed. A feed is a collection of application data that consists of some feed-level metadata (title, author, URL, and other metadata) and a series of feed items. Within the feed, the feed items are usually time-ordered in reverse chronological order. A feed item consists of a standard set of item-level metadata (title, URL, creation date, category, and other item-level metadata) and an arbitrary amount of application specific data. The two most common types of syndication feeds are Really Simple Syndication (RSS) 2.0 and Atom 1.0, both of which are supported by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  

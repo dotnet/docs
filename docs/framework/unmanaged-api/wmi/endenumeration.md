@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EndEnumeration function
 Terminates an enumeration sequence started with a call to the [BeginEnumeration function](beginenumeration.md).  

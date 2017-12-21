@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Implementing a Discovery Proxy
 This section describes the steps required to implement a discovery proxy. A discovery proxy is a standalone service that contains a repository of services. Clients can query a discovery proxy to find discoverable services that the proxy is aware of. How a proxy is populated with services is up to the implementer. For example, a discovery proxy can connect to an existing service repository and make that information discoverable, an administrator can use a management API to add discoverable services to a proxy, or a discovery proxy can use the announcement functionality to update its internal cache.  

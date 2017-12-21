@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Client Interoperability
 This section contains samples that demonstrate interoperability between [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and other technologies.  

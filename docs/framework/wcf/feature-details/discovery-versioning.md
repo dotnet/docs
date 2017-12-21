@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Discovery Versioning
 This topic provides a brief overview of the implementation of some new discovery features. It also gives an overview on how to select the discovery version to use.  

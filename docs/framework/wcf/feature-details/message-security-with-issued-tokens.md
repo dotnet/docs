@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Message Security with Issued Tokens
 The issued token client enables the federated security scenario in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

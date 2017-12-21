@@ -12,6 +12,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Scenario
 This section contains examples of [!INCLUDE[wf](../../../../includes/wf-md.md)] scenarios.  

@@ -21,6 +21,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Test Point4D structures for equality and inequality
 This example shows how to test <xref:System.Windows.Media.Media3D.Point4D> structures for equality and inequality.  

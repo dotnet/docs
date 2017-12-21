@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Metadata Formats
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] supports the metadata formats in the following table.  

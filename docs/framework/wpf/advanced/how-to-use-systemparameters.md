@@ -19,6 +19,8 @@ caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use SystemParameters
 This example shows how to access and use the properties of <xref:System.Windows.SystemParameters> in order to style or customize a button.  

@@ -24,6 +24,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Customizing the Appearance of an Existing Control by Creating a ControlTemplate
 <a name="introduction"></a> A <xref:System.Windows.Controls.ControlTemplate> specifies the visual structure and visual behavior of a control. You can customize the appearance of a control by giving it a new <xref:System.Windows.Controls.ControlTemplate>. When you create a <xref:System.Windows.Controls.ControlTemplate>, you replace the appearance of an existing control without changing its functionality. For example, you can make the buttons in your application round instead of the default square shape, but the button will still raise the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  

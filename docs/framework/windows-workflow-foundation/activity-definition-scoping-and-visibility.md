@@ -12,6 +12,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Activity Definition Scoping and Visibility
 Activity definition scoping and visibility, just like scoping and visibility of an object, is the ability of other objects or activities to access members of the activity. Activity definition is performed by the following implementations:  

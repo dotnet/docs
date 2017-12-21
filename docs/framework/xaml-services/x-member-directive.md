@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Member Directive
 Declares a XAML member in markup.  

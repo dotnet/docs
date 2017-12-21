@@ -17,6 +17,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Customize the Ticks on a Slider
 This example shows how to create a <xref:System.Windows.Controls.Slider> control that has tick marks.  

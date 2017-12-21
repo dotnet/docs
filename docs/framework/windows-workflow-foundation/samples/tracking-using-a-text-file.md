@@ -12,6 +12,8 @@ caps.latest.revision: 13
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Tracking Using a Text File
 This sample demonstrates how to extend tracking in [!INCLUDE[wf](../../../../includes/wf-md.md)] by creating a custom tracking participant. Tracking participants are .NET Framework classes that receive tracking records from the runtime as they are emitted. You can create a tracking participant to transport the tracking events to whichever destination is required for your scenario. For example, ETW (Event Tracing for Windows) Tracking Participant is provided as part of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]. The tracking participant in this sample writes the records in XML format to a text file.  

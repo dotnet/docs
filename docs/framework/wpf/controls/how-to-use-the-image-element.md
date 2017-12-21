@@ -21,6 +21,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use the Image Element
 This example shows how to include images in an application by using the <xref:System.Windows.Controls.Image> element.  

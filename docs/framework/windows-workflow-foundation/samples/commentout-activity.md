@@ -12,6 +12,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CommentOut Activity
 This sample demonstrates how to write a custom activity that removes other activities from the path of execution, effectively commenting them out.  

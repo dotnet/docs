@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: d1d62bfb-2aa3-4170-b6f8-c93d3afdbbed
 caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using the Message Class
 The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. All communication between clients and services ultimately results in <xref:System.ServiceModel.Channels.Message> instances being sent and received.  

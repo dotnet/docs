@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.DurableParticipantReplayWhilePreparing
 The WS-AT protocol service received a Replay message from a durable participant, which did not respond to Prepare. Consequently, the transaction was aborted.  

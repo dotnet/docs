@@ -26,6 +26,8 @@ caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add and Remove Items from a Windows Forms ComboBox, ListBox, or CheckedListBox Control
 Items can be added to a Windows Forms combo box, list box, or checked list box in a variety of ways, because these controls can be bound to a variety of data sources. However, this topic demonstrates the simplest method and requires no data binding. The items displayed are usually strings; however, any object can be used. The text that is displayed in the control is the value returned by the object's `ToString` method.  

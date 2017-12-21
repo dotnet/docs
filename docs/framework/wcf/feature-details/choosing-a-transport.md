@@ -16,6 +16,8 @@ caps.latest.revision: 25
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Choosing a Transport
 This topic discusses criteria for choosing among the three main transports that are included in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]: HTTP, TCP, and named pipes. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also includes a message queuing (also known as MSMQ) transport, but this document does not cover message queuing.  

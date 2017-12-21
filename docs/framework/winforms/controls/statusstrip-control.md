@@ -17,6 +17,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # StatusStrip Control
 The Windows Forms `StatusStrip` control is used on forms as an area, usually displayed at the bottom of a window, in which an application can display various kinds of status information. `StatusStrip` controls typically have `ToolStripStatusLabel` controls on them that display text or icons to indicate state, or a <xref:System.Windows.Forms.ToolStripProgressBar> that graphically displays the completion state of a process.  

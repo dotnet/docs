@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Streaming Message Transfer
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] transports support two modes for transferring messages:  

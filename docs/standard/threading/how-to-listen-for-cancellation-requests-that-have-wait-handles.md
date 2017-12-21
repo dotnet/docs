@@ -20,6 +20,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Listen for Cancellation Requests That Have Wait Handles
 If a method is blocked while it is waiting for an event to be signaled, it cannot check the value of the cancellation token and respond in a timely manner. The first example shows how to solve this problem when you are working with events such as <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> that do not natively support the unified cancellation framework. The second example shows a more streamlined approach that uses <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType>, which does support unified cancellation.  

@@ -25,6 +25,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Convert Numeric User Input in Web Controls to Numbers
 Because a Web page can be displayed anywhere in the world, users can input numeric data into a <xref:System.Web.UI.WebControls.TextBox> control in an almost unlimited number of formats. As a result, it is very important to determine the locale and culture of the Web page's user. When you parse user input, you can then apply the formatting conventions defined by the user's locale and culture.  

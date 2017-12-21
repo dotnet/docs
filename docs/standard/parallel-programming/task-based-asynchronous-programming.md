@@ -20,6 +20,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Task-based Asynchronous Programming
 The Task Parallel Library (TPL) is based on the concept of a *task*, which represents an asynchronous operation. In some ways, a task resembles a thread or <xref:System.Threading.ThreadPool> work item, but at a higher level of abstraction. The term *task parallelism* refers to one or more independent tasks running concurrently. Tasks provide two primary benefits:  

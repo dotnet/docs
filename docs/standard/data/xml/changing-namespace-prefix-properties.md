@@ -18,6 +18,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Changing Namespace Prefix Properties
 The **XmlNode** class allows you to change the namespace prefix associated with a given node. For example, the following code shows the prefix of an element being changed.  

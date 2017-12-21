@@ -20,6 +20,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Exception Handling (Task Parallel Library)
 Unhandled exceptions that are thrown by user code that is running inside a task are propagated back to the calling thread, except in certain scenarios that are described later in this topic. Exceptions are propagated when you use one of the static or instance <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> or <!--zz <xref:System.Threading.Tasks.Task%601.Wait%2A?displayProperty=nameWithType>  --> `Wait` methods, and you handle them by enclosing the call in a `try`/`catch` statement. If a task is the parent of attached child tasks, or if you are waiting on multiple tasks, multiple exceptions could be thrown.  

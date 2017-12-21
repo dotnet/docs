@@ -23,6 +23,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to use specific exceptions in a catch block
 

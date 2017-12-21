@@ -5,7 +5,8 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Lift and shift existing apps DevOps
 > Vision: Lift and shift your existing .NET Framework applications to Cloud DevOps-Ready applications to drastically improve your deployment agility, so you can ship faster and lower app delivery costs.

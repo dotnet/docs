@@ -23,6 +23,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Common Language Runtime (CLR)
 The .NET Framework provides a run-time environment called the common language runtime, which runs the code and provides services that make the development process easier.  

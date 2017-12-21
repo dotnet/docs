@@ -22,6 +22,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Applying Attributes
 Use the following process to apply an attribute to an element of your code.  

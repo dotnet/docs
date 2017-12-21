@@ -5,7 +5,8 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Build resilient services ready for the cloud: Embrace transient failures in the cloud 
 

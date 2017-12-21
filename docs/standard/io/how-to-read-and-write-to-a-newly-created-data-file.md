@@ -25,6 +25,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Read and Write to a Newly Created Data File
 The <xref:System.IO.BinaryWriter> and <xref:System.IO.BinaryReader?displayProperty=nameWithType> classes are used for writing and reading data rather than character strings. The following example demonstrates how to write data to, and read data from, a new, empty file stream called `Test.data`. After creating the data file in the current directory, the associated <xref:System.IO.BinaryWriter> and <xref:System.IO.BinaryReader> objects are created, and the <xref:System.IO.BinaryWriter> object is used to write the integers 0 through 10 to `Test.data`, which leaves the file pointer at the end of the file. After setting the file pointer back to the origin, the <xref:System.IO.BinaryReader> object reads out the specified content.  

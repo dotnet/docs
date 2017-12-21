@@ -6,7 +6,8 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/21/2017
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Docker terminology
 

@@ -6,7 +6,8 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Run composed and microservices-based applications in production environments
 

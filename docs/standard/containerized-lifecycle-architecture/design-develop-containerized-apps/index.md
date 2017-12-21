@@ -6,7 +6,8 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 95/21/2017
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Designing and developing containerized apps using Docker and Microsoft Azure

@@ -21,6 +21,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Use Parallel.Invoke to Execute Parallel Operations
 This example shows how to parallelize operations by using <xref:System.Threading.Tasks.Parallel.Invoke%2A> in the Task Parallel Library. Three operations are performed on a shared data source. Because none of the operations modifies the source, they can be executed in parallel in a straightforward manner.  

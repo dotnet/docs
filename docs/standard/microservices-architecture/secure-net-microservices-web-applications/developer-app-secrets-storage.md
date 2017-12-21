@@ -9,7 +9,8 @@ ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Storing application secrets safely during development
 

@@ -15,6 +15,7 @@ ms.author: "dotnetcontent"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Basic serialization
 

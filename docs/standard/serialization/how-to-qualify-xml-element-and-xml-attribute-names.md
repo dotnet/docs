@@ -21,6 +21,7 @@ ms.author: "dotnetcontent"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Qualify XML Element and XML Attribute Names
 [Code Example](#cpconworkingwithxmlnamespacesanchor1)  

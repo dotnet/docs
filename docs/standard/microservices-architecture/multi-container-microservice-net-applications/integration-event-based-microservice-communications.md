@@ -9,7 +9,8 @@ ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Implementing event-based communication between microservices (integration events)
 

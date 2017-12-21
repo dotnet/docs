@@ -22,6 +22,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) Method
 [Supported in the .NET Framework 4.5.1 and later versions]  

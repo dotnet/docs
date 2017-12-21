@@ -19,6 +19,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Regular Expression Examples
 This section contains code examples that illustrate the use of regular expressions in common applications.  

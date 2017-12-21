@@ -21,6 +21,7 @@ ms.author: "dotnetcontent"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Serialize an Object as a SOAP-Encoded XML Stream
   

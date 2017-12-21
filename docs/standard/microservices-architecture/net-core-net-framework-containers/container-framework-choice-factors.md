@@ -9,7 +9,8 @@ ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Decision table: .NET frameworks to use for Docker
 

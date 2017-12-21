@@ -5,7 +5,8 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Modernize existing .NET applications with Azure cloud and Windows Containers (v1.0)  
 

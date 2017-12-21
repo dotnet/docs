@@ -21,6 +21,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Listen for Multiple Cancellation Requests
 This example shows how to listen to two cancellation tokens simultaneously so that you can cancel an operation if either token requests it.  

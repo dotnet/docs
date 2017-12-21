@@ -18,6 +18,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # XSLT Stylesheet Scripting Using &lt;msxsl:script&gt;
 The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using the `script` element.  

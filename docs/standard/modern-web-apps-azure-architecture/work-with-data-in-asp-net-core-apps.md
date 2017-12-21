@@ -7,7 +7,8 @@ ms.date: 10/07/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Working with Data in ASP.NET Core Apps
 

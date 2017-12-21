@@ -14,6 +14,7 @@ ms.author: "dotnetcontent"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Serialization Samples for the .NET Framework
 This section demonstrates serializing objects in the .NET Framework.  

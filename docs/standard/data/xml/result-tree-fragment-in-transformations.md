@@ -15,6 +15,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Result Tree Fragment in Transformations
 > [!NOTE]

@@ -22,6 +22,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Generic Collections in the .NET Framework
 This topic provides an overview of the generic collection classes and other generic types in the .NET Framework.  

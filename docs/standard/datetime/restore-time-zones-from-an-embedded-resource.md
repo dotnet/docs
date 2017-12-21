@@ -21,6 +21,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 
 # How to: Restore time zones from an embedded resource

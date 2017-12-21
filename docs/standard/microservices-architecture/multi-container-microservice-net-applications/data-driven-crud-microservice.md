@@ -9,7 +9,8 @@ ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Creating a simple data-driven CRUD microservice
 

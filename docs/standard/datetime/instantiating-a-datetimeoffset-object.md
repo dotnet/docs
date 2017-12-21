@@ -23,6 +23,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 
 # Instantiating a DateTimeOffset object

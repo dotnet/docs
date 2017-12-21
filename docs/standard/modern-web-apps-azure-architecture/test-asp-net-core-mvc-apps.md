@@ -7,7 +7,8 @@ ms.date: 10/08/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Test ASP.NET Core MVC Apps
 

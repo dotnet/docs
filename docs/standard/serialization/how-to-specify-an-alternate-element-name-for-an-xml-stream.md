@@ -24,6 +24,7 @@ ms.author: "dotnetcontent"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Specify an Alternate Element Name for an XML Stream
 [Code Example](#cpconoverridingserializationofclasseswithxmlattributeoverridesclassanchor1)  

@@ -7,7 +7,8 @@ ms.date: 10/06/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Architect Modern Web Applications with ASP.NET Core and Azure
 

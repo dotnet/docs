@@ -18,6 +18,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Resolving External Resources During XSLT Processing
 There are several times during an XSLT transformation when you may need to resolve external resources.  

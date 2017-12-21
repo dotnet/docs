@@ -15,6 +15,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Developing for Multiple Platforms with the .NET Framework
 You can develop apps for both Microsoft and non-Microsoft platforms by using the .NET Framework and Visual Studio.  

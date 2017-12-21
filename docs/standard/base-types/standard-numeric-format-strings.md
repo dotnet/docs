@@ -23,6 +23,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Standard Numeric Format Strings
 Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form `Axx`, where:  

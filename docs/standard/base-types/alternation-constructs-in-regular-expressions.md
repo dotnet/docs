@@ -26,6 +26,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Alternation Constructs in Regular Expressions
 <a name="top"></a> Alternation constructs modify a regular expression to enable either/or or conditional matching. .NET supports three alternation constructs:  

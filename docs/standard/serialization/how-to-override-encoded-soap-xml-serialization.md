@@ -17,6 +17,7 @@ ms.author: "dotnetcontent"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Override Encoded SOAP XML Serialization
 [Code Example](#tskhowtooverrideencodedsoapxmlserializationanchor1)  

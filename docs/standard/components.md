@@ -8,7 +8,8 @@ ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # .NET architectural components
 

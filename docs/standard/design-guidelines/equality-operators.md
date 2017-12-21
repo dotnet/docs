@@ -21,6 +21,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Equality Operators
 This section discusses overloading equality operators and refers to `operator==` and `operator!=` as equality operators.  

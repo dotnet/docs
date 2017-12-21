@@ -18,6 +18,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Saving and Writing a Document
 When you load and save an <xref:System.Xml.XmlDocument>, the saved document may differ from the original in the following ways:  

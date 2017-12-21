@@ -20,6 +20,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # BlockingCollection Overview
 <xref:System.Collections.Concurrent.BlockingCollection%601> is a thread-safe collection class that provides the following features:  

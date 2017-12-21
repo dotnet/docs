@@ -22,6 +22,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Abstract Class Design
 **X DO NOT** define public or protected internal constructors in abstract types.  

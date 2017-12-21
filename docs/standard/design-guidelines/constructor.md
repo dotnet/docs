@@ -24,6 +24,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Constructor Design
 There are two kinds of constructors: type constructors and instance constructors.  

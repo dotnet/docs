@@ -18,6 +18,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Convert Between .NET Framework Streams and Windows Runtime Streams
 The .NET Framework for Windows Store apps is a subset of the full .NET Framework. Because of security and other requirements for Windows Store apps, you cannot use the full set of .NET Framework APIs to open and read files. For more information, see [.NET for Windows Store apps overview](http://msdn.microsoft.com/library/windows/apps/br230302.aspx). However, you may want to use .NET Framework APIs for other stream manipulation operations. To manipulate these streams, you may find it necessary to convert between a .NET Framework stream type such as <xref:System.IO.MemoryStream> or <xref:System.IO.FileStream>, and a Windows Runtime stream such as [IInputStream](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.iinputstream.aspx), [IOutputStream](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.ioutputstream.aspx), or [IRandomAccessStream](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.irandomaccessstream.aspx).  

@@ -18,6 +18,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # XmlSchemaCollection Schema Compilation
 The **XmlSchemaCollection** is a cache or library where XML-Data Reduced (XDR) and XML Schema definition language (XSD) schemas can be stored and validated. **XmlSchemaCollection** improves performance by caching schemas in memory instead of accessing them from a file or URL.  

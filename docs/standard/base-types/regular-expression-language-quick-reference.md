@@ -26,6 +26,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Regular Expression Language - Quick Reference
 <a name="top"></a> A regular expression is a pattern that the regular expression engine attempts to match in input text. A pattern consists of one or more character literals, operators, or constructs.  For a brief introduction, see [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md).  

@@ -20,6 +20,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Specify the Execution Mode in PLINQ
 This example shows how to force PLINQ to bypass its default heuristics and parallelize a query regardless of the query's shape.  

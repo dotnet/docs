@@ -20,6 +20,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Unwrap a Nested Task
 You can return a task from a method, and then wait on or continue from that task, as shown in the following example:  

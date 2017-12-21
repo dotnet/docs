@@ -20,6 +20,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Weak References
 The garbage collector cannot collect an object in use by an application while the application's code can reach that object. The application is said to have a strong reference to the object.  

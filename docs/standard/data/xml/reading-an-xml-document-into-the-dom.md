@@ -18,6 +18,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Reading an XML Document into the DOM
 XML information is read into memory from different formats. It can be read from a string, stream, URL, text reader, or a class derived from the <xref:System.Xml.XmlReader>.  

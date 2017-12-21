@@ -19,6 +19,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Interface Design
 Although most APIs are best modeled using classes and structs, there are cases in which interfaces are more appropriate or are the only option.  

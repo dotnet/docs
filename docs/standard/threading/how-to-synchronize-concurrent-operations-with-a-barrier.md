@@ -20,6 +20,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Synchronize Concurrent Operations with a Barrier
 The following example shows how to synchronize concurrent tasks with a <xref:System.Threading.Barrier>.  

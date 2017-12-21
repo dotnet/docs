@@ -26,6 +26,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Character Escapes in Regular Expressions
 The backslash (\\) in a regular expression indicates one of the following:  

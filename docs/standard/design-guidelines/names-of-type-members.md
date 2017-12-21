@@ -24,6 +24,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Names of Type Members
 Types are made of members: methods, properties, events, constructors, and fields. The following sections describe guidelines for naming type members.  

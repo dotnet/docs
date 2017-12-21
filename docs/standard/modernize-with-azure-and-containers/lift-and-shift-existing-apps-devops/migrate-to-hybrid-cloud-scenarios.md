@@ -5,7 +5,8 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/2/2017
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Migrate to hybrid cloud scenarios
 

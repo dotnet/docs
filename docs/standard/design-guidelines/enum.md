@@ -21,6 +21,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Enum Design
 Enums are a special kind of value type. There are two kinds of enums: simple enums and flag enums.  

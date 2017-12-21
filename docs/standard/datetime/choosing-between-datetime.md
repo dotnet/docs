@@ -25,6 +25,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 
 # Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo

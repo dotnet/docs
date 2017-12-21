@@ -21,6 +21,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # .NET Framework Support for Windows Store Apps and Windows Runtime
 The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] supports a number of software development scenarios with the [!INCLUDE[wrt](../../../includes/wrt-md.md)]. These scenarios fall into three categories:  

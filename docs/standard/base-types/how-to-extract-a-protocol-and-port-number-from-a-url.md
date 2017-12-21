@@ -25,6 +25,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Extract a Protocol and Port Number from a URL
 The following example extracts a protocol and port number from a URL.  

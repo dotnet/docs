@@ -22,6 +22,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Unlink Dataflow Blocks
 This document describes how to unlink a target dataflow block from its source.  

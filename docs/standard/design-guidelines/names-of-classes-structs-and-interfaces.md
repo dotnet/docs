@@ -26,6 +26,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Names of Classes, Structs, and Interfaces
 The naming guidelines that follow apply to general type naming.  

@@ -16,6 +16,7 @@ ms.author: "dotnetcontent"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Serialization guidelines
 This document lists the guidelines to consider when designing an API to be serialized.  

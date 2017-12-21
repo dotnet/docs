@@ -30,6 +30,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Verify that Strings Are in Valid Email Format
 The following example uses a regular expression to verify that a string is in valid email format.  

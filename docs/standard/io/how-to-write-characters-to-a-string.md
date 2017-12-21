@@ -23,6 +23,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Write Characters to a String
 The following code examples write characters synchronously and asynchronously from a character array into a string.  

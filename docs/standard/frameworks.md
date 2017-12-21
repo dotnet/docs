@@ -9,7 +9,8 @@ ms.custom: "updateeachrelease"
 ms.prod: .net
 ms.technology: dotnet-standard
 ms.workload: 
-  - dotnet
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Target frameworks
 

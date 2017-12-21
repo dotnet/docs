@@ -25,6 +25,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Read Characters from a String
 The following code examples show how to read characters synchronously and asynchronously from a string.  

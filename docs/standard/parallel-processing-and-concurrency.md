@@ -20,6 +20,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Parallel Processing and Concurrency in the .NET Framework
 The .NET Framework provides several ways for you to use multiple threads of execution to keep your application responsive to your user while maximizing the performance of your user's computer.  

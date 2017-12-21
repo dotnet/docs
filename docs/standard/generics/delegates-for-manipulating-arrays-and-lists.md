@@ -22,6 +22,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Generic Delegates for Manipulating Arrays and Lists
 This topic provides an overview of generic delegates for conversions, search predicates, and actions to be taken on elements of an array or collection.  

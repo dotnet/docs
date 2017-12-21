@@ -15,6 +15,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Modifying Nodes, Content, and Values in an XML Document
 There are many ways you can modify the nodes and content in a document. You can:  

@@ -16,6 +16,7 @@ author: "ViktorHofer"
 ms.author: "mairaw"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Binary serialization
 

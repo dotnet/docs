@@ -20,6 +20,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # Best Practices for Developing World-Ready Applications
 This section describes the best practices to follow when developing world-ready applications.  

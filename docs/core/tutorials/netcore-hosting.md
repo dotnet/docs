@@ -10,7 +10,7 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 13edec8b-614d-47ed-9e95-ed6d3b94ec0c
 ms.workload: 
-  - mikerou
+  - "dotnetcore"
 ---
 
 # Hosting .NET Core

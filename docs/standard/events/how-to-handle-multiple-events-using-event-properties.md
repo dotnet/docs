@@ -24,6 +24,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Handle Multiple Events Using Event Properties
 To use event properties, you define the event properties in the class that raises the events, and then set the delegates for the event properties in classes that handle the events. To implement multiple event properties in a class, the class must internally store and maintain the delegate defined for each event. A typical approach is to implement a delegate collection that is indexed by an event key.  

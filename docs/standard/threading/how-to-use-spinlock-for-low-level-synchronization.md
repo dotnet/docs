@@ -20,6 +20,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Use SpinLock for Low-Level Synchronization
 The following example demonstrates how to use a <xref:System.Threading.SpinLock>.  

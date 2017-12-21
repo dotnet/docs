@@ -20,8 +20,7 @@ ms.author: dotnetcontent
 -   Check the address you have specified to determine where it fails, and supply the necessary information.  
   
 ## See Also  
- [My.Computer.Network.UploadFile Method](http://msdn.microsoft.com/en-us/5505ea3e-3dbd-460b-9f8f-62c84c0a4de6)  
- [My.Computer.Network.DownloadFile Method](http://msdn.microsoft.com/en-us/aeb7ed8f-1ac9-4242-ae57-9f35914eb329)  
- [How to: Upload a File](../../visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)  
+ [My.Computer.Network.UploadFile](xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A)  
+ [My.Computer.Network.DownloadFile](xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A)  
  [How to: Download a File](../../visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)  
- [Network Operations in the .NET Framework with Visual Basic](http://msdn.microsoft.com/en-us/c5379021-44ef-4d6a-acf5-e951fdcab6b2)
+

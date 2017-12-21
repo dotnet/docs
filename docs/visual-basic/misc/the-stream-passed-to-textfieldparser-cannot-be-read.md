@@ -21,6 +21,6 @@ The [TextFieldParser Object](../../visual-basic/language-reference/objects/textf
   
 ## See Also  
  [How to: Read From Text Files with Multiple Formats](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md)  
- [My.Computer.FileSystem.OpenTextFieldParser Method](http://msdn.microsoft.com/en-us/e5869f85-c078-485f-8323-8dc716494546)  
+ [My.Computer.FileSystem.OpenTextFieldParser](xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser%2A)  
  [Parsing Text Files with the TextFieldParser Object](../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)  
  [TextFieldParser Object](../../visual-basic/language-reference/objects/textfieldparser-object.md)

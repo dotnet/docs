@@ -33,5 +33,5 @@ The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class could not wr
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize%2A>  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A>  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>  
- [My.Application.Log Object](../../visual-basic/language-reference/objects/my-application-log-object.md)  
- [My.Log Object](../../visual-basic/language-reference/objects/my-log-object.md)
+ [My.Application.Log](xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log)  
+ [My.Application.Info.DirectoryPath](xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log)

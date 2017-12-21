@@ -50,7 +50,7 @@ Specifies the location of referenced assemblies.
   
 |To set /libpath in the Visual Studio integrated development environment|  
 |---|  
-|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **References** tab.<br />3.  Click the **Reference Paths...** button.<br />4.  In the **Reference Paths** dialog box, enter the directory name in the **Folder:** box.<br />5.  Click **Add Folder**.|  
+|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **References** tab.<br />3.  Click the **Reference Paths...** button.<br />4.  In the **Reference Paths** dialog box, enter the directory name in the **Folder:** box.<br />5.  Click **Add Folder**.|  
   
 ## Example  
  The following code compiles `T2.vb` to create an .exe file. The compiler looks in the working directory, in the root directory of the C: drive, and in the New Assemblies directory of the C: drive for assembly references.  

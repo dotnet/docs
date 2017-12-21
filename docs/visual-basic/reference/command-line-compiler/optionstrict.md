@@ -42,7 +42,7 @@ Enforces strict type semantics to restrict implicit type conversions.
   
 ### To set /optionstrict in the Visual Studio IDE  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties.** For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties.**   
   
 2.  Click the **Compile** tab.  
   

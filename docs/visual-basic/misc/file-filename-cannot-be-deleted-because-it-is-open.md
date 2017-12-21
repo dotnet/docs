@@ -20,6 +20,6 @@ A deletion is being attempted on an open file.
 -   Close the file before deleting it.  
   
 ## See Also  
- [NOT IN BUILD: FileClose Function](http://msdn.microsoft.com/en-us/f307b39f-a996-4ff6-ab13-e0b05ea5ab91)  
- [My.Computer.FileSystem.DeleteFile Method](http://msdn.microsoft.com/en-us/07637b38-bd99-49b1-8cc0-dc37cdb14dba)  
- [My.Computer.FileSystem Object](../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)
+   
+ [My.Computer.FileSystem.DeleteFile](xref:Microsoft.VisualBasic.FileIO.FileSystem.DeleteFile%2A)  
+ [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)

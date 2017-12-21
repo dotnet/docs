@@ -22,4 +22,4 @@ The property requires a value other than `Nothing`. This may be a result of inco
 ## See Also  
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
  [Nothing](../../visual-basic/language-reference/nothing.md)  
- [Troubleshooting Exceptions: System.NullReferenceException](http://msdn.microsoft.com/library/4822b0b4-8105-43fb-887a-3cc51ff02899)
+ <xref:System.NullReferenceException>

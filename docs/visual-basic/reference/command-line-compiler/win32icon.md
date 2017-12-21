@@ -38,7 +38,7 @@ Inserts an .ico file in the output file. This .ico file represents the output fi
   
 |To set /win32icon in the Visual Studio IDE|  
 |---|  
-|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **Application** tab.<br />3.  Modify the value in the **Icon** box.|  
+|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **Application** tab.<br />3.  Modify the value in the **Icon** box.|  
   
 ## Example  
  The following code compiles `In.vb` and attaches an .ico file, `Rf.ico`.  

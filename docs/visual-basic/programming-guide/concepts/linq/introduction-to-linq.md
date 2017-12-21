@@ -30,7 +30,7 @@ Language-Integrated Query (LINQ) is an innovation introduced in the .NET Framewo
 ## Next Steps  
  To learn more details about LINQ, start by becoming familiar with some basic concepts in the Getting Started section [Getting Started with LINQ in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md), and then read the documentation for the LINQ technology in which you are interested:  
   
--   SQL Server databases: [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)  
+-   SQL Server databases: [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
   
 -   XML documents: [LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md)  
   

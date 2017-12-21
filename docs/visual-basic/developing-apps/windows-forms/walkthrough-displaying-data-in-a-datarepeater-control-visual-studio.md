@@ -22,7 +22,7 @@ This walkthrough provides a basic start-to-finish scenario for displaying bound 
 ## Prerequisite  
  This walkthrough requires the Northwind sample database.  
   
- If you do not have this database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088). For instructions, see [Downloading Sample Databases](../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
+ If you do not have this database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088). For instructions, see [Downloading Sample Databases](../../../framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   
 ## Overview  
  The first part of this walkthrough consists of four main tasks:  
@@ -90,7 +90,7 @@ This walkthrough provides a basic start-to-finish scenario for displaying bound 
   
          -or-  
   
-    -   Click **New Connection** to configure a new data connection. For more information, see [How to: Create Connections to SQL Server Databases](http://msdn.microsoft.com/en-us/360c340d-e5a6-4a7e-a569-e95d500be43d).  
+    -   Click **New Connection** to configure a new data connection. For more information, see [Add new connections](/visualstudio/data-tools/add-new-connections).  
   
 5.  If the database requires a password, select the option to include sensitive data, and then click **Next**.  
   

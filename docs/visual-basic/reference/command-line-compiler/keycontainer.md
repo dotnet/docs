@@ -32,7 +32,7 @@ Specifies a key container name for a key pair to give an assembly a strong name.
 |`container`|Required. Container file that contains the key. Enclose the file name in quotation marks ("") if the name contains a space.|  
   
 ## Remarks  
- The compiler creates the sharable component by inserting a public key into the assembly manifest and by signing the final assembly with the private key. To generate a key file, type `sn -k``file` at the command line. The `-i` option installs the key pair into a container. For more information, see [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23).  
+ The compiler creates the sharable component by inserting a public key into the assembly manifest and by signing the final assembly with the private key. To generate a key file, type `sn -k``file` at the command line. The `-i` option installs the key pair into a container. For more information, see [Sn.exe (Strong Name Tool)][Sn.exe (Strong Name Tool)](../../../framework/tools/sn-exe-strong-name-tool.md)).  
   
  If you compile with `/target:module`, the name of the key file is held in the module and incorporated into the assembly that is created when you compile an assembly with [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md).  
   
@@ -40,7 +40,7 @@ Specifies a key container name for a key pair to give an assembly a strong name.
   
  You can also pass your encryption information to the compiler with [/keyfile](../../../visual-basic/reference/command-line-compiler/keyfile.md). Use [/delaysign](../../../visual-basic/reference/command-line-compiler/delaysign.md) if you want a partially signed assembly.  
   
- See [Creating and Using Strong-Named Assemblies](../../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md) for more information on signing an assembly.  
+ See [Creating and Using Strong-Named Assemblies](../../../framework/app-domains/create-and-use-strong-named-assemblies.md) for more information on signing an assembly.  
   
 > [!NOTE]
 >  The `/keycontainer` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  

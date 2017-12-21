@@ -29,6 +29,6 @@ Reference required to assembly '\<assemblyname>' containing the base class '\<cl
 -   Include the name of the unreferenced DLL or assembly in your project references.  
   
 ## See Also  
- [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)  
+   
  [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)  
  [Troubleshooting Broken References](/visualstudio/ide/troubleshooting-broken-references)

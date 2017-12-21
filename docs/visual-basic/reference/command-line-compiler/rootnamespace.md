@@ -41,7 +41,7 @@ Specifies a namespace for all type declarations.
   
 |To set /rootnamespace in the Visual Studio integrated development environment|  
 |---|  
-|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **Application** tab.<br />3.  Modify the value in the **Root Namespace** box.|  
+|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **Application** tab.<br />3.  Modify the value in the **Root Namespace** box.|  
   
 ## Example  
  The following code compiles `In.vb` and encloses all type declarations in the namespace `mynamespace`.  

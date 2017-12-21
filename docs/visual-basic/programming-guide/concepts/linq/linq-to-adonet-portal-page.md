@@ -34,7 +34,7 @@ ms.author: dotnetcontent
   
  [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] includes support for stored procedures and user-defined functions in the database, and for inheritance in the object model.  
   
- For more information, see [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md).  
+ For more information, see [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md).  
   
 ## LINQ to Entities  
  Through the [!INCLUDE[adonet_edm](~/includes/adonet-edm-md.md)], relational data is exposed as objects in the .NET environment. This makes the object layer an ideal target for [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] support, allowing developers to formulate queries against the database from the language used to build the business logic. This capability is known as [!INCLUDE[linq_entities](~/includes/linq-entities-md.md)]. See [LINQ to Entities](../../../../framework/data/adonet/ef/language-reference/linq-to-entities.md) for more information.  

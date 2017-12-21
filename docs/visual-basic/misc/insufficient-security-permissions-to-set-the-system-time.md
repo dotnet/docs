@@ -21,5 +21,3 @@ The security permissions are insufficient to set the system time.
   
 ## See Also  
  <xref:System.Security.Permissions>  
- [NIB:Configuring Security Policy Using the .NET Framework Configuration Tool (Mscorcfg.msc)](http://msdn.microsoft.com/en-us/3c6ad87f-2c88-4f7b-87e6-8228c5d09866)  
- [NIB: Security Policy Levels](http://msdn.microsoft.com/en-us/5ebf4b78-548d-484d-b1e3-8325138b7413)

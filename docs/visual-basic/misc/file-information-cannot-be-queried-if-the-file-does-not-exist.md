@@ -18,6 +18,6 @@ An attempt has been made to query a <xref:System.IO.FileInfo> object for informa
 -   Check that you are supplying the correct file name.  
   
 ## See Also  
- [My.Computer.FileSystem Object](../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)  
+ [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)  
  [How to: Get Information About a File in Visual Basic](http://msdn.microsoft.com/en-us/ca0720ec-f40e-4c11-9748-0ce1685c78f0)  
  [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

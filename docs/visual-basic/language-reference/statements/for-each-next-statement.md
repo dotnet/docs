@@ -69,7 +69,7 @@ Next [ element ]
   
  [!code-vb[VbVbalrStatements#121](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_1.vb)]  
   
- For more examples, see [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b) and [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
+ For more examples, see [Collections](../../../standard/collections/index.md) and [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
   
 ## Nested Loops  
  You can nest `For Each` loops by putting one loop within another.  
@@ -110,7 +110,7 @@ Next [ element ]
   
  [!code-vb[VbVbalrStatements#127](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_4.vb)]  
   
- For more information, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7), [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md), and [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md).  
+ For more information, see [Iterators](../../programming-guide/concepts/iterators.md), [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md), and [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md).  
   
 ## Technical Implementation  
  When a `For Each`…`Next` statement runs, Visual Basic evaluates the collection only one time, before the loop starts. If your statement block changes `element` or `group`, these changes don't affect the iteration of the loop.  
@@ -176,7 +176,7 @@ End Sub
  [!code-vb[VbVbalrStatements#125](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_7.vb)]  
   
 ## See Also  
- [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
+ [Collections](../../../standard/collections/index.md)  
  [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
  [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
  [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)  

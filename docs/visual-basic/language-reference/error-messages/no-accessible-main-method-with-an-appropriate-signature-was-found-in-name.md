@@ -20,8 +20,6 @@ ms.author: dotnetcontent
 # No accessible &#39;Main&#39; method with an appropriate signature was found in &#39;&lt;name&gt;&#39;
 Command-line applications must have a `Sub Main` defined. `Main` must be declared as `Public Shared` if it is defined in a class, or as `Public` if defined in a module.  
   
- For more information on `Main`, see [NIB: Visual Basic Version of Hello, World](http://msdn.microsoft.com/en-us/9d030b60-e148-4366-a462-69532f02294c).  
-  
  **Error ID:** BC30737  
   
 ## To correct this error  
@@ -29,6 +27,5 @@ Command-line applications must have a `Sub Main` defined. `Main` must be declare
 -   Define a `Public Sub Main` procedure for your project. Declare it as `Shared` if and only if you define it inside a class.  
   
 ## See Also  
- [NIB: Visual Basic Version of Hello, World](http://msdn.microsoft.com/en-us/9d030b60-e148-4366-a462-69532f02294c)  
  [Structure of a Visual Basic Program](../../../visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)  
  [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)

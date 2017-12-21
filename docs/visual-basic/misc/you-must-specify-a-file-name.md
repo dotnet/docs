@@ -21,5 +21,5 @@ You attempted an operation, such as moving or copying a file, which requires sup
   
 ## See Also  
  [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)  
- [My.Computer.FileSystem Object](../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)  
+ [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)  
  [File Access with Visual Basic](../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)

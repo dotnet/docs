@@ -20,11 +20,11 @@ An important part of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is the ability 
 ## Designing Windows Forms Applications  
  You can create Windows Forms and Windows service applications with [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)]. For more information, see the following topics:  
   
--   [Getting Started with Windows Forms](../../../../docs/framework/winforms/getting-started-with-windows-forms.md). Provides information on how to create and program Windows Forms.  
+-   [Getting Started with Windows Forms](../../../framework/winforms/getting-started-with-windows-forms.md). Provides information on how to create and program Windows Forms.  
    
--   [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md). Collection of topics detailing the use of Windows Forms controls.  
+-   [Windows Forms Controls](../../../framework/winforms/controls/index.md). Collection of topics detailing the use of Windows Forms controls.  
   
--   [Windows Service Applications](../../../../docs/framework/windows-services/index.md). Lists topics that explain how to create Windows services.  
+-   [Windows Service Applications](../../../framework/windows-services/index.md). Lists topics that explain how to create Windows services.  
   
 ## Building Rich, Interactive User Interfaces  
  Windows Forms is the smart-client component of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], a set of managed libraries that enable common application tasks such as reading and writing to the file system. Using a development environment like [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], you can create Windows Forms applications that display information, request input from users, and communicate with remote computers over a network.  
@@ -32,10 +32,10 @@ An important part of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is the ability 
  In Windows Forms, a form is a visual surface on which you display information to the user. You commonly build Windows Forms applications by placing controls on forms and developing responses to user actions, such as mouse clicks or key presses. A *control* is a discrete user interface (UI) element that displays data or accepts data input.  
   
 ### Events  
- When a user does something to your form or one of its controls, it generates an event. Your application reacts to these events by using code, and processes the events when they occur. For more information, see [Creating Event Handlers in Windows Forms](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md).  
+ When a user does something to your form or one of its controls, it generates an event. Your application reacts to these events by using code, and processes the events when they occur. For more information, see [Creating Event Handlers in Windows Forms](../../../framework/winforms/creating-event-handlers-in-windows-forms.md).  
   
 ### Controls  
- Windows Forms contains a variety of controls that you can place on forms: controls that display text boxes, buttons, drop-down boxes, radio buttons, and even Web pages. For a list of all the controls you can use on a form, see [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md). If an existing control does not meet your needs, Windows Forms also supports creating your own custom controls using the <xref:System.Windows.Forms.UserControl> class.  
+ Windows Forms contains a variety of controls that you can place on forms: controls that display text boxes, buttons, drop-down boxes, radio buttons, and even Web pages. For a list of all the controls you can use on a form, see [Controls to Use on Windows Forms](../../../framework/winforms/controls/controls-to-use-on-windows-forms.md). If an existing control does not meet your needs, Windows Forms also supports creating your own custom controls using the <xref:System.Windows.Forms.UserControl> class.  
   
  Windows Forms has rich UI controls that emulate features in high-end applications like Microsoft Office. Using the <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.MenuStrip> control, you can create toolbars and menus that contain text and images, display submenus, and host other controls such as text boxes and combo boxes.  
   
@@ -49,9 +49,9 @@ An important part of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is the ability 
 |To|See|  
 |--------|---------|  
 |Create a new Windows Forms application with [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)]|[Walkthrough: Creating a Simple Windows Form](http://msdn.microsoft.com/en-us/2d9daec0-0543-41d0-acb1-964f685bddbb)|  
-|Use controls on forms|[How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)|   
-|Create graphics with <xref:System.Drawing>|[Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)|  
-|Create custom controls|[How to: Inherit from the UserControl Class](../../../../docs/framework/winforms/controls/how-to-inherit-from-the-usercontrol-class.md)|  
+|Use controls on forms|[How to: Add Controls to Windows Forms](../../../framework/winforms/controls/how-to-add-controls-to-windows-forms.md)|   
+|Create graphics with <xref:System.Drawing>|[Getting Started with Graphics Programming](../../../framework/winforms/advanced/getting-started-with-graphics-programming.md)|  
+|Create custom controls|[How to: Inherit from the UserControl Class](../../../framework/winforms/controls/how-to-inherit-from-the-usercontrol-class.md)|  
   
 ## Displaying and Manipulating Data  
  Many applications must display data from a database, XML file, XML Web service, or other data source. Windows Forms provides a flexible control called the <xref:System.Windows.Forms.DataGridView> control for rendering such tabular data in a traditional row and column format, so that every piece of data occupies its own cell. Using <xref:System.Windows.Forms.DataGridView> you can customize the appearance of individual cells, lock arbitrary rows and columns in place, and display complex controls inside cells, among other features.  
@@ -68,7 +68,7 @@ An important part of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is the ability 
   
 |To|See|  
 |--------|---------|  
-|Use the <xref:System.Windows.Forms.BindingSource> component|[How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](../../../../docs/framework/winforms/controls/bind-wf-controls-with-the-bindingsource.md)|  
+|Use the <xref:System.Windows.Forms.BindingSource> component|[How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](../../../framework/winforms/controls/bind-wf-controls-with-the-bindingsource.md)|  
 |Work with [!INCLUDE[vstecado](~/includes/vstecado-md.md)] data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](https://msdn.microsoft.com/library/ya3sah92.aspx)|  
 |Use the Data Sources window|[Walkthrough: Displaying Data on a Windows Form](/visualstudio/data-tools/accessing-data-in-visual-studio)|  
   
@@ -94,10 +94,10 @@ An important part of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is the ability 
   
 |To|See|  
 |--------|---------|  
-|Print the contents of a form|[How to: Print Graphics in Windows Forms](../../../../docs/framework/winforms/advanced/how-to-print-graphics-in-windows-forms.md)<br /><br /> [How to: Print a Multi-Page Text File in Windows Forms](../../../../docs/framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md)|   
-|Learn more about Windows Forms security|[Security in Windows Forms Overview](../../../../docs/framework/winforms/security-in-windows-forms-overview.md)|  
+|Print the contents of a form|[How to: Print Graphics in Windows Forms](../../../framework/winforms/advanced/how-to-print-graphics-in-windows-forms.md)<br /><br /> [How to: Print a Multi-Page Text File in Windows Forms](../../../framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md)|   
+|Learn more about Windows Forms security|[Security in Windows Forms Overview](../../../framework/winforms/security-in-windows-forms-overview.md)|  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>  
- [Windows Forms Overview](../../../../docs/framework/winforms/windows-forms-overview.md)  
+ [Windows Forms Overview](../../../framework/winforms/windows-forms-overview.md)  
  [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)

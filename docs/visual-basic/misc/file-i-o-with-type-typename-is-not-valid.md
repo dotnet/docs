@@ -20,5 +20,5 @@ You are attempting to write an unsupported type to a file.
 -   Check the structure to determine where the unsupported type occurs, and then change it to a valid type.  
   
 ## See Also  
- [My.Computer.FileSystem Object](../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)  
- [My.Computer.FileSystem.WriteAllBytes Method](http://msdn.microsoft.com/en-us/b1a24dc1-eac8-4e22-8ffa-cc3bacbaf826)
+ [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)  
+ [My.Computer.FileSystem.WriteAllBytes](xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.WriteAllBytes%2A)

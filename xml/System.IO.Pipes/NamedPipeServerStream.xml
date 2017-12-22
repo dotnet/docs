@@ -36,7 +36,7 @@
    
   
 ## Examples  
- The following example demonstrates a way to send a string from a parent process to a child process on the same computer using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeServerStream> object in a parent process with a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.Out>. The server then waits for a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process to connect to it. In this example, both processes are on the same computer and the <xref:System.IO.Pipes.NamedPipeClientStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.In>. The parent process then sends a user-supplied string to the child process. The string is displayed to the console.  
+ The following example demonstrates a way to send a string from a parent process to a child process on the same computer using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeServerStream> object in a parent process with a <xref:System.IO.Pipes.PipeDirection> value of [PipeDirection.Out](xref:System.IO.Pipes.PipeDirection). The server then waits for a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process to connect to it. In this example, both processes are on the same computer and the <xref:System.IO.Pipes.NamedPipeClientStream> object has a <xref:System.IO.Pipes.PipeDirection> value of [PipeDirection.In](xref:System.IO.Pipes.PipeDirection.In). The parent process then sends a user-supplied string to the child process. The string is displayed to the console.  
   
  This example is for the server process, which uses the <xref:System.IO.Pipes.NamedPipeServerStream> class. For the entire code example, including the code for both the pipe client and server, see [How to: Use Named Pipes for Network Interprocess Communication](~/docs/standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md).  
   
@@ -78,7 +78,7 @@
 ## Remarks  
  This constructor creates a <xref:System.IO.Pipes.NamedPipeServerStream> object that has the following characteristics:  
   
--   A default pipe direction of <xref:System.IO.Pipes.PipeDirection.InOut>.  
+-   A default pipe direction of [PipeDirection.InOut](xref:System.IO.Pipes.PipeDirection.InOut).
   
 -   The maximum number of server instances that share the same name set to 1.  
   

@@ -2049,7 +2049,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
   
  For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
  > [!WARNING]
- > Do not use `PreSendRequestContent` with managed modules that implement `IHttpModule`. Setting these properties can cause issues with asynchronous requests. We have seen instances where the combination of Application Requested Routing(ARR) and websockets lead to access violation exceptions (iiscore!W3_CONTEXT_BASE::GetIsLastNotification+68 in iiscore.dll has caused an access violation exception (0xC0000005)) that lead to w3wp crashing.
+ > Do not use `PreSendRequestContent` with managed modules that implement `IHttpModule`. Setting these properties can cause issues with asynchronous requests. The combination of Application Requested Routing (ARR) and websockets might lead to access violation exceptions that can cause w3wp to crash. For example, iiscore!W3_CONTEXT_BASE::GetIsLastNotification+68 in iiscore.dll has caused an access violation exception (0xC0000005).
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.HttpApplication.PreSendRequestHeaders" />
@@ -2075,7 +2075,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
 ## Remarks  
  For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
  > [!WARNING]
- > Do not use `PreSendRequestHeaders` with managed modules that implement `IHttpModule`. Setting these properties can cause issues with asynchronous requests. We have seen instances where the combination of Application Requested Routing(ARR) and websockets lead to access violation exceptions (iiscore!W3_CONTEXT_BASE::GetIsLastNotification+68 in iiscore.dll has caused an access violation exception (0xC0000005)) that lead to w3wp crashing.
+ > Do not use `PreSendRequestHeaders` with managed modules that implement `IHttpModule`. Setting these properties can cause issues with asynchronous requests. The combination of Application Requested Routing (ARR) and websockets might lead to access violation exceptions that can cause w3wp to crash. For example, iiscore!W3_CONTEXT_BASE::GetIsLastNotification+68 in iiscore.dll has caused an access violation exception (0xC0000005).
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.HttpApplication.PreSendRequestContent" />

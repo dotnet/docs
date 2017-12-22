@@ -20,6 +20,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DynamicResource Markup Extension
 Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] property attribute by deferring that value to be a reference to a defined resource. Lookup behavior for that resource is analogous to run-time lookup.  

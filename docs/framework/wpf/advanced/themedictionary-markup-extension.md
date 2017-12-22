@@ -20,6 +20,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ThemeDictionary Markup Extension
 Provides a way for custom control authors or applications that integrate third-party controls to load theme-specific resource dictionaries to use in styling the control.  

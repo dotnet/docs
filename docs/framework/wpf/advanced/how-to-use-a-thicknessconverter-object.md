@@ -20,6 +20,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use a ThicknessConverter Object
 ## Example  

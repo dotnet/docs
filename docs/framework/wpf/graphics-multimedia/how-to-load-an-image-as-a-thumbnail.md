@@ -21,6 +21,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Load an Image as a Thumbnail
 The following examples show how to load an <xref:System.Windows.Controls.Image> as a thumbnail to conserve application memory.  

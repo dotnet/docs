@@ -21,6 +21,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate an Object Along a Path (Matrix Animation with Offset Accumulation)
 This example shows how to use the <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> class to animate an object along a path and have that animation accumulate its offset values as it repeats.  

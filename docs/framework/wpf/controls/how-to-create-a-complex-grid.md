@@ -18,6 +18,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Complex Grid
 This example shows how to use a <xref:System.Windows.Controls.Grid> to create layout that looks like a monthly calendar.  

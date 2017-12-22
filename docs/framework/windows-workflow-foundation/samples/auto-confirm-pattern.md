@@ -12,6 +12,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Auto-Confirm Pattern
 This sample consists of three scenarios that run illustrating a custom `AutoConfirmScope` activity. The first sample shows the successful execution of a sequence of four compensable activities where the second and third are nested in an `AutoConfirmScope`. The second sample shows the same sequence with an exception occurring after the execution of the fourth <xref:System.Activities.Statements.CompensableActivity>. The third scenario shows the same sequence with an exception occurring in the `AutoConfirmScope` after the second <xref:System.Activities.Statements.CompensableActivity> completes.  

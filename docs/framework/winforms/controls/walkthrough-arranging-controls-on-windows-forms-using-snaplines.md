@@ -19,6 +19,8 @@ caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Arranging Controls on Windows Forms Using Snaplines
 Precise placement of controls on your form is a high priority for many applications. The Windows Forms Designer gives you many layout tools to accomplish this. One of the most important is the <xref:System.Windows.Forms.Design.Behavior.SnapLine> feature.  

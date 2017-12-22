@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Serializable Types
 By default, the <xref:System.Runtime.Serialization.DataContractSerializer> serializes all publicly visible types. All public read/write properties and fields of the type are serialized.  

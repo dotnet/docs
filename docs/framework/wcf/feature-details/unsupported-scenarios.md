@@ -14,6 +14,8 @@ caps.latest.revision: 43
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Unsupported Scenarios
 For various reasons, [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] does not support some specific security scenarios. For example, [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Home Edition does not implement the SSPI or Kerberos authentication protocols, and therefore [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not support running a service with Windows authentication on that platform. Other authentication mechanisms, such as username/password and HTTP/HTTPS integrated authentication are supported when running [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] under Windows XP Home Edition.  

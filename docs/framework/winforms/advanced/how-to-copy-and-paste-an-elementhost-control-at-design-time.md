@@ -19,6 +19,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Copy and Paste an ElementHost Control at Design Time
 This procedure shows you how to copy a Windows Presentation Foundation (WPF) control on a Windows Form.  

@@ -16,6 +16,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Federation and Trust
 This topic covers various aspects related to federated applications, trust boundaries and configuration, and use of issued tokens in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

@@ -21,6 +21,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ListBox Control (Windows Forms)
 A Windows Forms `ListBox` control displays a list of items from which the user can select one or more.  

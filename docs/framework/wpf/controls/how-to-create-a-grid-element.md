@@ -19,6 +19,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Grid Element
 ## Example  

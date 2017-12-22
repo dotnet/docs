@@ -18,6 +18,8 @@ caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Bind to XML Data Using an XMLDataProvider and XPath Queries
 This example shows how to bind to [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] data using an <xref:System.Windows.Data.XmlDataProvider>.  

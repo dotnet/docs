@@ -19,6 +19,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # TreeView Control (Windows Forms)
 The Windows Forms `TreeView` control displays a hierarchy of nodes, like the way files and folders are displayed in the left pane of the Windows Explorer feature in Windows operating systems.  

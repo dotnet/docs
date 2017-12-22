@@ -12,6 +12,8 @@ caps.latest.revision: 22
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Flowchart Workflows
 A flowchart is a well-known paradigm for designing programs. The Flowchart activity is typically used to implement non-sequential workflows, but can be used for sequential workflows if no `FlowDecision` nodes are used.  

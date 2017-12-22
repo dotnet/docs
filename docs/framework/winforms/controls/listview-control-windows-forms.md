@@ -23,6 +23,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ListView Control (Windows Forms)
 The Windows Forms `ListView` control displays a list of items with icons. You can use a list view to create a user interface like the right pane of Windows Explorer.  

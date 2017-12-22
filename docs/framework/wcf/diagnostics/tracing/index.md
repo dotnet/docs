@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Tracing
 [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] provides application instrumentation and diagnostic data for fault monitoring and analysis. You can use tracing instead of a debugger to understand how an application is behaving, or why it faults. You can also correlate faults and processing across components to provide an end-to-end experience.  

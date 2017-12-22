@@ -18,6 +18,8 @@ caps.latest.revision: 73
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Fonts How-to Topics
 The topics in this section demonstrate how to use the font features included with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  

@@ -14,6 +14,8 @@ caps.latest.revision: 20
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Web Services Protocols Interoperability Guide
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implements a number of Web services protocols. Many of these protocols include a number of options and extensibility points left to the discretion of the implementer. This topic provides a list of Web services protocols [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implements. Other topics within this section provide implementation details for each protocol supported.  

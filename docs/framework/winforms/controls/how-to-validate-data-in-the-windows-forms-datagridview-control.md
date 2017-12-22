@@ -22,6 +22,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Validate Data in the Windows Forms DataGridView Control
 The following code example demonstrates how to validate data entered by a user into a <xref:System.Windows.Forms.DataGridView> control. In this example, the <xref:System.Windows.Forms.DataGridView> is populated with rows from the `Customers` table of the Northwind sample database. When the user edits a cell in the `CompanyName` column, its value is tested for validity by checking that it is not empty. If the event handler for the <xref:System.Windows.Forms.DataGridView.CellValidating> event finds that the value is an empty string, the <xref:System.Windows.Forms.DataGridView> prevents the user from exiting the cell until a non-empty string is entered.  

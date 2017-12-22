@@ -22,6 +22,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Open and Closed Curves in GDI+
 The following illustration shows two curves: one open and one closed.  

@@ -21,6 +21,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Optimizing Performance: Layout and Design
 The design of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application can impact its performance by creating unnecessary overhead in calculating layout and validating object references. The construction of objects, particularly at run time, can affect the performance characteristics of your application.  

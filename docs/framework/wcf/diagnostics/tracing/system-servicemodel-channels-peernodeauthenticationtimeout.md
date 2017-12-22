@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # System.ServiceModel.Channels.PeerNodeAuthenticationTimeout
 The security handshake did not succeed within the specified time limit.  

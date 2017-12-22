@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Waiting for Input in a Workflow
 The topics in this section discuss how to use bookmarks and messaging activities.  

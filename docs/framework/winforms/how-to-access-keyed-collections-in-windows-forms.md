@@ -20,6 +20,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Access Keyed Collections in Windows Forms
 -   You can access individual collection items by key. This functionality has been added to many collection classes that are typically used by Windows Forms applications. The following list shows some of the collection classes that have accessible keyed collections:  

@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerThreadEnum::Next Method
 Gets the specified number of contiguous threads from a sequential collection of threads, starting at the enumerator's current position in the sequence.  

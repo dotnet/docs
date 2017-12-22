@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo3::EnumModules Method
 Returns an enumerator that provides methods to sequentially iterate through a collection of managed modules that are loaded into the application.  

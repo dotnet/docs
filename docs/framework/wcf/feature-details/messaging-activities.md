@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Messaging Activities
 Messaging activities allow workflows to send and receive WCF messages. By adding messaging activities to a workflow you can model any arbitrarily complex message exchange patterns (MEP).  

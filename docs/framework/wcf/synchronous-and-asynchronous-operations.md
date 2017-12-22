@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "service contracts [WCF], synchronous operations"
   - "service contracts [WCF], asynchronous operations"
@@ -20,6 +20,8 @@ caps.latest.revision: 24
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Synchronous and Asynchronous Operations
 This topic discusses implementing and calling asynchronous service operations.  

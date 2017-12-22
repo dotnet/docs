@@ -18,6 +18,8 @@ caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Document Serialization and Storage
 [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)] provides a powerful environment for creating and displaying high quality documents.  Enhanced features that support both fixed-documents and flow-documents, advanced viewing controls, combined with powerful 2D and 3D graphic capabilities take [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] applications to a new level of quality and user experience.  Being able to flexibly manage an in-memory representation of a document is a key feature of [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)], and being able to efficiently save and load documents from a data store is a need of almost every application.  The process of converting a document from an internal in-memory representation to an external data store is termed serialization.  The reverse process of reading a data store and recreating the original in-memory instance is termed deserialization.  

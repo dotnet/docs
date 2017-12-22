@@ -17,6 +17,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Drag-and-Drop Functionality in Windows Forms
 Windows Forms includes a set of methods, events, and classes that implement drag-and-drop behavior. This topic provides an overview of the drag-and-drop support in Windows Forms.  Also see [Drag-and-Drop Operations and Clipboard Support](http://msdn.microsoft.com/library/fe5ebfwe\(v=vs.110\)).  

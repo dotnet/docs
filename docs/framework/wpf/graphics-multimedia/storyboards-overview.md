@@ -21,6 +21,8 @@ caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Storyboards Overview
 This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> objects to organize and apply animations. It describes how to interactively manipulate <xref:System.Windows.Media.Animation.Storyboard> objects and describes indirect property targeting syntax.  

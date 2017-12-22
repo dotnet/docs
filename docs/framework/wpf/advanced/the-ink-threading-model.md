@@ -25,6 +25,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # The Ink Threading Model
 One of the benefits of ink on a Tablet PC is that it feels a lot like writing with a regular pen and paper.  To accomplish this, the tablet pen collects input data at a much higher rate than a mouse does and renders the ink as the user writes.  The application's user interface (UI) thread is not sufficient for collecting pen data and rendering ink, because it can become blocked.  To solve this, a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application uses two additional threads when a user writes ink.  

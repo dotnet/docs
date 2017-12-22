@@ -21,6 +21,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Optimizing Performance: Application Resources
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] allows you to share application resources so that you can support a consistent look or behavior across similar-typed elements. This topic provides a few recommendations in this area that can help you improve the performance of your applications.  

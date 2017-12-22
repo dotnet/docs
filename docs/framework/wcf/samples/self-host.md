@@ -17,6 +17,8 @@ caps.latest.revision: 38
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Self-Host
 This sample demonstrates how to implement a self-hosted service in a console application. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). The service configuration file has been renamed from Web.config to App.config and modified to configure a base address, which the host uses. The service source code has been modified to implement a static `Main` function that creates and opens a service host that provides the configured base address. The service implementation has been modified to write output to the console for each operation. The client has been unmodified, except for configuring the correct endpoint address of the service.  

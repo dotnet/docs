@@ -18,6 +18,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Bound Control and Format the Displayed Data
 With Windows Forms data binding, you can format the data displayed in a data-bound control by using the **Formatting and Advanced Binding** dialog box.  

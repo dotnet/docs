@@ -24,6 +24,8 @@ caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Shapes and Basic Drawing in WPF Overview
 This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Shape> objects. A <xref:System.Windows.Shapes.Shape> is a type of <xref:System.Windows.UIElement> that enables you to draw a shape to the screen. Because they are UI elements, <xref:System.Windows.Shapes.Shape> objects can be used inside <xref:System.Windows.Controls.Panel> elements and most controls.  

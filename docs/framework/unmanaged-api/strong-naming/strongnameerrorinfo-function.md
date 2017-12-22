@@ -30,6 +30,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StrongNameErrorInfo Function
 Gets the last error code that was raised by one of the strong name functions.  

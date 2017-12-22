@@ -26,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StrongNameSignatureVerificationFromImage Function
 Verifies that an assembly that has already been mapped to memory is valid for the associated public key.  

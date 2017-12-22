@@ -22,6 +22,8 @@ caps.latest.revision: 27
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Name Directive
 Uniquely identifies XAML-defined elements in a XAML namescope. XAML namescopes and their uniqueness models can be applied to the instantiated objects, when frameworks provide APIs or implement behaviors that access the XAML-created object graph at run time.  

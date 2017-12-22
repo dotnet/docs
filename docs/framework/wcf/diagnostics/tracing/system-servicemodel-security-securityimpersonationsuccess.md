@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # System.ServiceModel.Security.SecurityImpersonationSuccess
 System.ServiceModel.Security.SecurityImpersonationSuccess  

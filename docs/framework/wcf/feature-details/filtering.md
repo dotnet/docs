@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Filtering
 The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] filtering system can use declarative filters to match messages and make operational decisions. You can use filters to determine what to do with a message by examining part of the message. A queuing process, for example, can use an XPath 1.0 query to check the priority element of a known header to determine whether to move a message to the front of the queue.  

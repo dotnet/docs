@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "handling faults [WCF], sending"
 ms.assetid: 7be6fb96-ce2a-450b-aebe-f932c6a4bc5d
@@ -19,6 +19,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Sending and Receiving Faults
 SOAP faults convey error condition information from a service to a client and in the duplex case from a client to a service in an interoperable way. Typically a service defines custom fault content and specifies which operations can return them. (For more information, see [Defining and Specifying Faults](../../../docs/framework/wcf/defining-and-specifying-faults.md).) This topic discusses how a service or duplex client can send those faults when the corresponding error condition has occurred and how a client or service application handles these faults. For an overview of error handling in [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications, see [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  

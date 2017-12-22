@@ -16,6 +16,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Retrieving Metadata
 Metadata retrieval is the process of requesting and retrieving metadata from a metadata endpoint, such as a WS-MetadataExchange (MEX) metadata endpoint or an HTTP/GET metadata endpoint.  

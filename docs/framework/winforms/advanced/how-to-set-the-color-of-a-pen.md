@@ -21,6 +21,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set the Color of a Pen
 This example changes the color of a pre-existing <xref:System.Drawing.Pen> object  

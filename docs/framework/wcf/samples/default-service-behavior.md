@@ -17,6 +17,8 @@ caps.latest.revision: 28
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Default Service Behavior
 This sample demonstrates how service behavior settings can be configured. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which implements the `ICalculator` service contract. This sample explicitly defines service behaviors and operation behaviors using the <xref:System.ServiceModel.ServiceBehaviorAttribute> and <xref:System.ServiceModel.OperationBehaviorAttribute> attributes. You can configure behaviors in configuration files or imperatively in code (as this sample demonstrates).  

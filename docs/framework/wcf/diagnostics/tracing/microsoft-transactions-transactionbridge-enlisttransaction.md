@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.EnlistTransaction
 The WS-Atomic Transaction protocol service successfully enlisted on a transaction that uses the provided coordination context.  

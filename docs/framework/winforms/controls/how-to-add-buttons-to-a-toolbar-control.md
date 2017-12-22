@@ -24,6 +24,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add Buttons to a ToolBar Control
 > [!NOTE]

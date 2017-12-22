@@ -16,6 +16,8 @@ caps.latest.revision: 34
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # NetNamedPipeBinding
 This sample demonstrates the `netNamedPipeBinding` binding, which provides cross-process communication on the same machine. Named pipes do not work across machines. This sample is based on The [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) calculator service.  

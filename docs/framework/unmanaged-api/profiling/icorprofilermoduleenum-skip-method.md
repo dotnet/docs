@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerModuleEnum::Skip Method
 Advances the enumerator's cursor from its current position so that the specified number of elements are skipped.  

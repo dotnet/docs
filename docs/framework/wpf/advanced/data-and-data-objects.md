@@ -21,6 +21,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Data and Data Objects
 Data that is transferred as part of a drag-and-drop operation is stored in a data object.  Conceptually, a data object consists of one or more of the following pairs:  

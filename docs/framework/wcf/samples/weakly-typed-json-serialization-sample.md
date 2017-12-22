@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Weakly-typed JSON Serialization Sample
 When serializing a user-defined type to a given wire format, or deserializing a wire format back into a user-defined type, the given user-defined type must be available on both the service and the client. Usually to accomplish this, the <xref:System.Runtime.Serialization.DataContractAttribute> attribute is applied to these user-defined types and the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute is applied to their members. This mechanism also applies when working with JavaScript Object Notation (JSON) objects, as described in the topic [How to: Serialize and Deserialize JSON Data](../../../../docs/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data.md).  

@@ -12,6 +12,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # LINQ to Objects Activity
 This sample demonstrates how to create an activity to use LINQ to Objects to query elements in a collection.  

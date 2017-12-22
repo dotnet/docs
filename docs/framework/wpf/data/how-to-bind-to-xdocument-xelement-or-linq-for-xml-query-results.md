@@ -20,6 +20,8 @@ caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Bind to XDocument, XElement, or LINQ for XML Query Results
 This example demonstrates how to bind XML data to an <xref:System.Windows.Controls.ItemsControl> using <xref:System.Xml.Linq.XDocument>.  

@@ -22,6 +22,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Manipulate a Table&#39;s Columns through the Columns Property
 This example demonstrates some of the more common operations that can be performed on a table's columns through the <xref:System.Windows.Documents.Table.Columns%2A> property.  

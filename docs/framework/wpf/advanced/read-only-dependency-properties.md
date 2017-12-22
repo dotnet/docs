@@ -17,6 +17,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Read-Only Dependency Properties
 This topic describes read-only dependency properties, including existing read-only dependency properties and the scenarios and techniques for creating a custom read-only dependency property.  

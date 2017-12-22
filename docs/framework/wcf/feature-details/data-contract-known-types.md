@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "data contracts [WCF], known types"
   - "KnownTypeAttribute [WCF]"
@@ -21,6 +21,8 @@ caps.latest.revision: 42
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Contract Known Types
 The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to specify, in advance, the types that should be included for consideration during deserialization. For a working example, see the [Known Types](../../../../docs/framework/wcf/samples/known-types.md) example.  

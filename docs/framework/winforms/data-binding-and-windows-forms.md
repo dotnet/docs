@@ -24,6 +24,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Data Binding and Windows Forms
 In Windows Forms, you can bind to not just traditional data sources, but also to almost any structure that contains data. You can bind to an array of values that you calculate at run time, read from a file, or derive from the values of other controls.  

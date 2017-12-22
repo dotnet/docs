@@ -14,6 +14,8 @@ caps.latest.revision: 19
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Service Versioning
 After initial deployment, and potentially several times during their lifetime, services (and the endpoints they expose) may need to be changed for a variety of reasons, such as changing business needs, information technology requirements, or to address other issues. Each change introduces a new version of the service. This topic explains how to consider versioning in [!INCLUDE[indigo1](../../../includes/indigo1-md.md)].  

@@ -17,6 +17,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How To: Create a New Setting at Design Time
 You can create a new setting at design time by using the Settings designer. The Settings designer is a grid-style interface that allows you to create new settings and specify properties for those settings. You must specify Name, Value, Type and Scope for your new settings. Once a setting is created, it is accessible in code.  

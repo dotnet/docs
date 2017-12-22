@@ -18,6 +18,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # General Reference
 The section [\<system.serviceModel>](../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) describes the elements that are used to configure [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] clients and services.

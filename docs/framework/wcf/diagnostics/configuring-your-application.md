@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring Your Application
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses the .NET configuration system and allows you to configure services at both the machine and application scope.  

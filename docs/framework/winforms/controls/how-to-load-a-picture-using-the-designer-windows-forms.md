@@ -20,6 +20,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Load a Picture Using the Designer (Windows Forms)
 With the Windows Forms <xref:System.Windows.Forms.PictureBox> control, you can load and display a picture on a form at design time by setting the <xref:System.Windows.Forms.PictureBox.Image%2A> property to a valid picture. The following table shows the acceptable file types.  

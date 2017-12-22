@@ -18,6 +18,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Windows Forms Controls
 As you design and modify the user interface of your Windows Forms applications, you will need to add, align, and position controls. Controls are objects that are contained within form objects. Each type of control has its own set of properties, methods, and events that make it suitable for a particular purpose. You can manipulate controls in the designer and write code to add controls dynamically at run time.  

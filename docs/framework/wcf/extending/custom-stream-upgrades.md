@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Stream Upgrades
 Stream-oriented transports such as TCP and Named Pipes operate on a continuous stream of bytes between the client and server. This stream is realized by a  <xref:System.IO.Stream> object. In a stream upgrade, the client wants to add an optional protocol layer to the channel stack, and asks the other end of the communication channel to do so. The stream upgrade consists in replacing the original <xref:System.IO.Stream> object with an upgraded one.  

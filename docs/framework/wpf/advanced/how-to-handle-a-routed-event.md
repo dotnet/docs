@@ -20,6 +20,8 @@ caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Handle a Routed Event
 This example shows how bubbling events work and how to write a handler that can process the routed event data.  

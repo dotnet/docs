@@ -16,6 +16,8 @@ caps.latest.revision: 40
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring Message Logging
 This topic describes how you can configure message logging for different scenarios.  

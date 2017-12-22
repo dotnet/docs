@@ -16,6 +16,8 @@ caps.latest.revision: 30
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WS Reliable Session
 This sample demonstrates the use of reliable sessions. Reliable sessions provide support for reliable messaging and sessions. Reliable messaging retries communication on failure and allows delivery assurances to be specified, such as in-order arrival of messages. Sessions maintain state for clients between calls. The sample implements sessions for maintaining client state and specifies in-order delivery assurances.  

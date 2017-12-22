@@ -20,6 +20,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DataGrid Control (Windows Forms)
 > [!NOTE]

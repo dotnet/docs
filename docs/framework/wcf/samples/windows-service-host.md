@@ -17,6 +17,8 @@ caps.latest.revision: 40
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Service Host
 This sample demonstrates a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service hosted in a managed Windows Service. Windows Services are controlled using the Services applet in **Control Panel** and can be configured to start up automatically after a system reboot. The sample consists of a client program and an Windows Service program. The service is implemented as an .exe program and contains its own hosting code. In other hosting environments, such as Windows Process Activation Services (WAS) or Internet Information Services (IIS), it is not necessary for you to write hosting code.  

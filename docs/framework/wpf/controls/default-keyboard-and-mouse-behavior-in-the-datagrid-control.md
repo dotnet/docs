@@ -19,6 +19,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Default Keyboard and Mouse Behavior in the DataGrid Control
 This topic describes how users can interact with the <xref:System.Windows.Controls.DataGrid> control by using the keyboard and mouse.  

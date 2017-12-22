@@ -23,6 +23,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Modify the Size or Placement of a Picture at Run Time (Windows Forms)
 If you use the Windows Forms <xref:System.Windows.Forms.PictureBox> control on a form, you can set the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property on it to:  

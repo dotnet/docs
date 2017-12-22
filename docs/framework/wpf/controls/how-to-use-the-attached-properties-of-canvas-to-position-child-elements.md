@@ -21,6 +21,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use the Attached Properties of Canvas to Position Child Elements
 This example shows how to use the attached properties of <xref:System.Windows.Controls.Canvas> to position child elements.  

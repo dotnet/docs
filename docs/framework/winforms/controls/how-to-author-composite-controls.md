@@ -19,6 +19,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Author Composite Controls
 Composite controls can be employed in many ways. You can author them as part of a Windows desktop application project, and use them only on forms in the project. Or you can author them in a Windows Control Library project, compile the project into an assembly, and use the controls in other projects. You can even inherit from them, and use visual inheritance to customize them quickly for special purposes.  

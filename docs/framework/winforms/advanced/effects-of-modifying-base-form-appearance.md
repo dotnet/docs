@@ -20,6 +20,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Effects of Modifying a Base Form&#39;s Appearance
 During application development, you may often need to change the appearance of the base form from which other forms in the project (or in other projects) are inheriting.  

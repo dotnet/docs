@@ -22,6 +22,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Providing Standard Menu Items to a Form
 You can provide a standard menu for your forms with the <xref:System.Windows.Forms.MenuStrip> control.  

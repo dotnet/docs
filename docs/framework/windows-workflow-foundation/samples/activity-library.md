@@ -12,6 +12,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Activity Library
 This section contains samples that demonstrate advanced custom activities in [!INCLUDE[wf](../../../../includes/wf-md.md)].  

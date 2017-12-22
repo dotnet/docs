@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # System.ServiceModel.Channels.PeerNeighborNotAccepted
 A peer neighbor was not accepted.  

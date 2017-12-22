@@ -20,6 +20,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a 3-D Scene
 This example shows how to create a 3-D object that looks like a flat sheet of paper which has been rotated. A <xref:System.Windows.Controls.Viewport3D> along with the following components are used to create this simple 3-D scene:  

@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.PrepareMessageRetry
 A prepare message retry was sent to an unresponsive participant.  

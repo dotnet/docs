@@ -18,6 +18,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Property Value Inheritance
 Property value inheritance is a feature of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] property system. Property value inheritance enables child elements in a tree of elements to obtain the value of a particular property from parent elements, inheriting that value as it was set anywhere in the nearest parent element. The parent element might also have obtained its value through property value inheritance, so the system potentially recurses all the way to the page root. Property value inheritance is not the default property system behavior; a property must be established with a particular metadata setting in order to cause that property to initiate property value inheritance on child elements.  

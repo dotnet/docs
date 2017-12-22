@@ -26,6 +26,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerModuleEnum Interface
 Provides methods to sequentially iterate through a collection of modules loaded by the application or the profiler.  

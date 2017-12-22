@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WS Transport With Message Credential
 This sample demonstrates the use of SSL transport security in combination with client credential being carried in the message. This sample uses the `wsHttpBinding` binding.  

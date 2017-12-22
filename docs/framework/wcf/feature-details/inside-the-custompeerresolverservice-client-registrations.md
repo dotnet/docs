@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Inside the CustomPeerResolverService: Client Registrations
 Each node in the mesh publishes its endpoint information to the resolver service through the `Register` function. The resolver service stores this information as a registration record. This record contains a unique identifier (RegistrationID) and endpoint information (PeerNodeAddress) for the node.  

@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo3::EnumJITedFunctions Method
 Returns an enumerator for all functions that were previously JIT-compiled.  

@@ -21,6 +21,8 @@ caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Sizing Options in the Windows Forms DataGridView Control
 <xref:System.Windows.Forms.DataGridView> rows, columns, and headers can change size as a result of many different occurrences. The following table shows these occurrences.  

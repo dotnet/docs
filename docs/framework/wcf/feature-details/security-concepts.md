@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Concepts
 This section briefly explains the concepts associated with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security.  

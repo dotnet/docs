@@ -21,6 +21,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Hit Test in a Viewport3D
 This example shows how to hit test for 3D Visuals in a <xref:System.Windows.Controls.Viewport3D>.  

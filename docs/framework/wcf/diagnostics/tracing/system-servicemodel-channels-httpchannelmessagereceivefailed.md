@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # System.ServiceModel.Channels.HttpChannelMessageReceiveFailed
 Failed to receive a message over an HTTP channel.  

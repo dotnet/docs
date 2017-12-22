@@ -16,6 +16,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # IEnumRAWINPUTDEVICE
 This interface enumerates the raw input devices, and is only used by PresentationHost.exe.  

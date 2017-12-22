@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Importing Custom Metadata for a WCF Extension
 In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], metadata import is the process of generating an abstract representation of a service or its component parts from its metadata. For example, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can import <xref:System.ServiceModel.Description.ServiceEndpoint> instances, <xref:System.ServiceModel.Channels.Binding> instances or <xref:System.ServiceModel.Description.ContractDescription> instances from a WSDL document for a service. To import service metadata in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], use an implementation of the <xref:System.ServiceModel.Description.MetadataImporter?displayProperty=nameWithType> abstract class. Types that derive from the <xref:System.ServiceModel.Description.MetadataImporter> class implement support for importing metadata formats that take advantage of the WS-Policy import logic in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  

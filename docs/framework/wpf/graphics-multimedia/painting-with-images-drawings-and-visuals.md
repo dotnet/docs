@@ -24,6 +24,8 @@ caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Painting with Images, Drawings, and Visuals
 This topic describes how to use <xref:System.Windows.Media.ImageBrush>, <xref:System.Windows.Media.DrawingBrush>, and <xref:System.Windows.Media.VisualBrush> objects to paint an area with an image, a <xref:System.Windows.Media.Drawing>, or a <xref:System.Windows.Media.Visual>.  

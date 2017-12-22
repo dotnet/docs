@@ -19,6 +19,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # StatusBar Control Overview (Windows Forms)
 > [!IMPORTANT]

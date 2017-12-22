@@ -20,6 +20,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # From/To/By Animations Overview
 This topic describes how to use From/To/By animations to animate dependency properties. A From/To/By animation creates a transition between two values.  

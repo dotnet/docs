@@ -17,6 +17,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Get a Collection of Lines from a TextBox
 This example shows how to get a collection of lines of text from a <xref:System.Windows.Controls.TextBox>.  

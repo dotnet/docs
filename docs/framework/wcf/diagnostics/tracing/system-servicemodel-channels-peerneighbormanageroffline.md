@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # System.ServiceModel.Channels.PeerNeighborManagerOffline
 The PeerNode is now offline, indicating that there are no currently connected neighbors.  

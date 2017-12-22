@@ -24,6 +24,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set Options with Windows Forms CheckBox Controls
 A Windows Forms <xref:System.Windows.Forms.CheckBox> control is used to give users True/False or Yes/No options. The control displays a check mark when it is selected.  

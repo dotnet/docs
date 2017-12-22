@@ -19,6 +19,8 @@ caps.latest.revision: 82
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Build and Deploy How-to Topics
 The following topics show how to create project files for the various [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application types.  

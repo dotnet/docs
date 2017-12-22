@@ -28,6 +28,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Implement a Form That Uses a Background Operation
 The following example program creates a form that calculates Fibonacci numbers. The calculation runs on a thread that is separate from the user interface thread, so the user interface continues to run without delays as the calculation proceeds.  

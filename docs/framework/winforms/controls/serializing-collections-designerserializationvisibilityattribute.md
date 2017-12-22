@@ -23,6 +23,8 @@ caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute
 Your custom controls will sometimes expose a collection as a property. This walkthrough demonstrates how to use the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> class to control how a collection is serialized at design time. Applying the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content> value to your collection property ensures that the property will be serialized.  

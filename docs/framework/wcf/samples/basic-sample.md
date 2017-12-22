@@ -14,6 +14,8 @@ caps.latest.revision: 17
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Basic Sample
 This sample shows how to make a service discoverable and how to search for and call a discoverable service. This sample is composed of two projects: service and client.  

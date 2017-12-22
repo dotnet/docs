@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Dynamically Enabling Analytic Tracing
 Using tools that ship with the Windows operating system, you can enable or disable tracing dynamically using Event Tracing for Windows (ETW). For all [!INCLUDE[netfx_current_long](../../../../../includes/netfx-current-long-md.md)] [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] services, analytic tracing can be enabled and disabled dynamically without modifying the application’s Web.config file or restarting the service. This allows the application that emits the trace events to remain undisturbed.  

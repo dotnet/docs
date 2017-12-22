@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Queued Rejected Messages Per Second
 Counter Name: Queued Messages Rejected Per Second.  

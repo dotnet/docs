@@ -16,6 +16,8 @@ caps.latest.revision: 17
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Implementing Service Contracts
 A service is a class that exposes functionality available to clients at one or more endpoints. To create a service, write a class that implements a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] contract. You can do this in one of two ways. You can define the contract separately as an interface and then create a class that implements that interface. Alternatively, you can create the class and contract directly by placing the <xref:System.ServiceModel.ServiceContractAttribute> attribute on the class itself and the <xref:System.ServiceModel.OperationContractAttribute> attribute on the methods available to the clients of the service.  

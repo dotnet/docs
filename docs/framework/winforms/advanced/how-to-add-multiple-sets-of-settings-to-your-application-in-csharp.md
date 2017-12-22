@@ -17,6 +17,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How To: Add Multiple Sets of Settings To Your Application in C# #
 In some cases, you might want to have multiple sets of settings in an application. For example, if you are developing an application where a particular group of settings is expected to change frequently, it might be wise to separate them all into a single file so that the file can be replaced wholesale, leaving other settings unaffected. Visual Studio allows you to add multiple sets of settings to your project. Additional sets of settings can be accessed via the Properties.Settings object.  

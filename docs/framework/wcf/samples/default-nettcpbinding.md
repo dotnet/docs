@@ -16,6 +16,8 @@ caps.latest.revision: 39
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Default NetTcpBinding
 This sample demonstrates the use of the <xref:System.ServiceModel.NetTcpBinding> binding. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service. In this sample, the service is self-hosted. Both the client and service are console applications.  

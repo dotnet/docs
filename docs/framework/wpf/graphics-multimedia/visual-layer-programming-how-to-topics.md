@@ -20,6 +20,8 @@ caps.latest.revision: 77
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Visual Layer Programming How-to Topics
 The topics in this section demonstrate how to use the visual layer for hit-testing and low-level composition.  

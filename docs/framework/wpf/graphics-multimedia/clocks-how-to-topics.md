@@ -21,6 +21,8 @@ caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Clocks How-to Topics
 The following topics describe how to use a <xref:System.Windows.Media.Animation.Clock> object to maintain timing state information for a <xref:System.Windows.Media.Animation.Timeline>.  

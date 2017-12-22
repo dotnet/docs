@@ -1,6 +1,6 @@
 ---
 title: FormatFromRawValue function (Unmanaged API Reference)
-description: The FormatFromRawValue function converts raw performance data to a specified format. 
+description: The FormatFromRawValue function converts raw performance data to a specified format.
 ms.date: "11/21/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # FormatFromRawValue function
 Converts one raw performance data value to the specified format, or two raw performance data values if the format conversion is time-based.   

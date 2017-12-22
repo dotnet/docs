@@ -10,10 +10,12 @@ helpviewer_keywords:
   - "obsolete [.NET Framework]"
   - "what's obsolete [.NET Framework]"
   - "deprecated [.NET Framework]"
-ms.assetid: d356a43a-73df-4ae2-a457-b9628074c7cd 
+ms.assetid: d356a43a-73df-4ae2-a457-b9628074c7cd
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # What&#39;s Obsolete in the .NET Framework Class Library
 The .NET Framework changes over time. Each new version adds new types and type members that provide new functionality. Existing types and their members also change over time. For example, some types become less important as the technology they support is replaced by a new technology, and some methods are superseded by newer methods that are either more convenient or more full-featured.  

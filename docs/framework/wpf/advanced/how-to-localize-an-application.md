@@ -17,6 +17,8 @@ ms.assetid: 5001227e-9326-48a4-9dcd-ba1b89ee6653
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Localize an Application
 This tutorial explains how to create a localized application by using the LocBaml tool.  

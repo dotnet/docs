@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # PutInstanceWmi function
 Creates or updates an instance of an existing class. The instance is written to the WMI repository. 

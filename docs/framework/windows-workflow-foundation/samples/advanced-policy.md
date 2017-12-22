@@ -12,6 +12,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Advanced Policy
 This sample extends the Simple Policy sample. In addition to the residential discount and business discount rules from the Simple Policy example, several new rules have been added.  

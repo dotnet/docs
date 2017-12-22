@@ -17,6 +17,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Define a GroupBox Template
 This example shows how to create a template for a <xref:System.Windows.Controls.GroupBox> control.  

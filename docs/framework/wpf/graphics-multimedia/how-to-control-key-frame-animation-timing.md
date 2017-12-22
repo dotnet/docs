@@ -20,6 +20,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Control Key-Frame Animation Timing
 This example shows how to control the timing of key frames within a key-frame animation. Like other animations, key-frame animations have a <xref:System.Windows.Media.Animation.Timeline.Duration%2A> property. In addition to specifying the duration of an animation, you need to specify what part of that duration is allotted to each of its key frames. To allot the time, you specify a <xref:System.Windows.Media.Animation.KeyTime> for each key frame in the animation.  

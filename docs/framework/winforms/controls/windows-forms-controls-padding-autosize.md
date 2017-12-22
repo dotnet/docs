@@ -27,6 +27,8 @@ caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property
 Precise placement of controls on your form is a high priority for many applications. The **Windows Forms Designer** gives you many layout tools to accomplish this. Three of the most important are the <xref:System.Windows.Forms.Control.Margin%2A>, <xref:System.Windows.Forms.Control.Padding%2A>, and <xref:System.Windows.Forms.Control.AutoSize%2A> properties, which are present on all Windows Forms controls.  

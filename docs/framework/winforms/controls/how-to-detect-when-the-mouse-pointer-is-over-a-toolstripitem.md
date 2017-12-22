@@ -19,6 +19,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Detect When the Mouse Pointer Is Over a ToolStripItem
 Use the following procedure to detect when the mouse pointer is over a <xref:System.Windows.Forms.ToolStripItem>.  

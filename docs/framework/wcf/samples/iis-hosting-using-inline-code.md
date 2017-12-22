@@ -17,6 +17,8 @@ caps.latest.revision: 40
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IIS Hosting Using Inline Code
 This sample demonstrates how to implement a service hosted by Internet Information Services (IIS), where the service code is contained in-line in a .svc file and is compiled on demand. Service code can also be implemented directly in source code files located in the application's \App_Code directory, or compiled into assembly deployed in \bin. This sample does not demonstrate these techniques.  

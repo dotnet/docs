@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF, authentication"
 ms.assetid: 10e245f7-d31e-42e7-82a2-d5780325d372
@@ -19,6 +19,8 @@ caps.latest.revision: 12
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create a Custom Security Token Authenticator
 This topic shows how to create a custom security token authenticator and how to integrate it with a custom security token manager. A security token authenticator validates the content of a security token provided with an incoming message. If the validation succeeds, the authenticator returns a collection of <xref:System.IdentityModel.Policy.IAuthorizationPolicy> instances that, when evaluated, returns a set of claims.  

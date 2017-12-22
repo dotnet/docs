@@ -26,6 +26,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StrongNameKeyGenEx Function
 Generates a new public/private key pair with the specified key size, for strong name use.  

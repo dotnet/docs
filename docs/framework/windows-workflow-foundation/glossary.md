@@ -15,6 +15,8 @@ caps.latest.revision: 259
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Workflow Foundation Glossary for .NET Framework 4.5
 The following terms are used in the Windows Workflow Foundation documentation.  

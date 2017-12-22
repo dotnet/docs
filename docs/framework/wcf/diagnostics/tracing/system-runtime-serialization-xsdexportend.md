@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # System.Runtime.Serialization.XsdExportEnd
 System.Runtime.Serialization.XsdExportEnd  

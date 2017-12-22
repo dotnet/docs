@@ -12,6 +12,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using the ExpressionTextBox in a Custom Activity Designer
 This sample shows how to use the <xref:System.Activities.Presentation.View.ExpressionTextBox> in a custom activity designer. The custom activity, `MultiAssign`, assigns two string values to two string variables. Some <xref:System.Activities.Presentation.View.ExpressionTextBox> controls bind to <xref:System.Activities.InArgument>s and some bind to <xref:System.Activities.OutArgument>s.  

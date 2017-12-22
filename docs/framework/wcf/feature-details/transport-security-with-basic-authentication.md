@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: b54f491d-196b-4279-876c-76b83ec0442c
 caps.latest.revision: 18
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Transport Security with Basic Authentication
 The following illustration shows a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service and client. The server needs a valid X.509 certificate that can be used for Secure Sockets Layer (SSL), and the clients must trust the server’s certificate. Further, the Web service already has an SSL implementation that can be used. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] enabling basic authentication on Internet Information Services (IIS), see [http://go.microsoft.com/fwlink/?LinkId=83822](http://go.microsoft.com/fwlink/?LinkId=83822).  

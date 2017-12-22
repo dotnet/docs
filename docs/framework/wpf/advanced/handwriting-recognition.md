@@ -20,6 +20,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Handwriting Recognition
 This section discusses the fundamentals of recognition as it pertains to digital ink in the WPF platform.  

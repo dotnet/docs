@@ -9,8 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "cpp"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "ICorProfilerInfo7.ApplyMetaData"
 api_location: 
@@ -22,6 +22,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo7::ApplyMetaData Method
 [Supported in the .NET Framework 4.6.1 and later versions]  

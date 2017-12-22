@@ -20,6 +20,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Define a Rectangle Using a RectangleGeometry
 This example describes how to use the <xref:System.Windows.Media.RectangleGeometry> class to describe a rectangle.  

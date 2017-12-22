@@ -19,6 +19,8 @@ caps.latest.revision: 62
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ScrollViewer How-to Topics
 The topics in this section demonstrate how to use the <xref:System.Windows.Controls.ScrollViewer> element to create scrollable regions in your applications.  

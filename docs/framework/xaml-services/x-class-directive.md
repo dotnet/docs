@@ -22,6 +22,8 @@ caps.latest.revision: 27
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Class Directive
 Configures XAML markup compilation to join partial classes between markup and code-behind. The code partial class is defined in a separate code file in a [!INCLUDE[TLA#tla_cls](../../../includes/tlasharptla-cls-md.md)] language, whereas the markup partial class is typically created by code generation during XAML compilation.  

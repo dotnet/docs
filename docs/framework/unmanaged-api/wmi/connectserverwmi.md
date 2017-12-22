@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ConnectServerWmi function
 Creates a connection through DCOM to a WMI namespace on a specified computer.  

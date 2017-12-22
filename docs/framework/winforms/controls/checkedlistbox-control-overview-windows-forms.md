@@ -20,6 +20,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # CheckedListBox Control Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.CheckedListBox> control extends the <xref:System.Windows.Forms.ListBox> control. It does almost everything that a list box does and also can display a check mark next to items in the list. Other differences between the two controls are that checked list boxes only support <xref:System.Windows.Forms.DrawMode.Normal?displayProperty=nameWithType>; and that checked list boxes can only have one item or none selected. Note that a selected item appears highlighted on the form and is not the same as a checked item.  

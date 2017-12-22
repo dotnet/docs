@@ -22,6 +22,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Select an Item in the Windows Forms ListView Control
 This example demonstrates how to programmatically select an item in a Windows Forms <xref:System.Windows.Forms.ListView> control. Selecting an item programmatically does not automatically change the focus to the <xref:System.Windows.Forms.ListView> control. For this reason, you will typically also want to set the item as focused when selecting an item.  

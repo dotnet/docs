@@ -22,6 +22,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Display Web-Style Links with the Windows Forms RichTextBox Control
 The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display Web links as colored and underlined. You can write code that opens a browser window showing the Web site specified in the link text when the link is clicked.  

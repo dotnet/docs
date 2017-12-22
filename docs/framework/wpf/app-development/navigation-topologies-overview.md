@@ -21,6 +21,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Navigation Topologies Overview
 <a name="introduction"></a> This overview provides an introduction to navigation topologies in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]. Three common navigation topologies, with samples, are subsequently discussed.  

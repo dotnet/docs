@@ -12,6 +12,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Workflow Tracing
 Workflow tracing offers a way to capture diagnostic information using .NET Framework trace listeners. Tracing can be enabled if a problem is detected with the application and then disabled again once the problem is resolved. There are two ways you could enable debug tracing for workflows. You can configure it using the Event Trace viewer or you can use <xref:System.Diagnostics> to send trace events to a file.  

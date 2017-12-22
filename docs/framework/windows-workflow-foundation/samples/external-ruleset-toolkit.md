@@ -12,6 +12,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # External Ruleset Toolkit
 Normally when rules are used within a workflow application, the rules are part of the assembly. In some scenarios, you may want to maintain the RuleSets separately from the assembly so that they can be updated without rebuilding and deploying the workflow assembly. This sample allows you to manage and edit RuleSets in a database and access those RuleSets from a workflow at runtime. This enables running workflow instances to automatically incorporate RuleSet changes.  

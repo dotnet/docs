@@ -12,6 +12,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Dynamic Update
 Dynamic update provides a mechanism for workflow application developers to update the workflow definition of a persisted workflow instance. This can be to implement a bug fix, new requirements, or to accommodate unexpected changes. This topic provides an overview of the dynamic update functionality introduced in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)].  

@@ -14,6 +14,8 @@ caps.latest.revision: 29
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Pooling
 This sample demonstrates how to extend [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] to support object pooling. The sample demonstrates how to create an attribute that is syntactically and semantically similar to the `ObjectPoolingAttribute` attribute functionality of Enterprise Services. Object pooling can provide a dramatic boost to an application's performance. However, it can have the opposite effect if it is not used properly. Object pooling helps reduce the overhead of recreating frequently used objects that require extensive initialization. However, if a call to a method on a pooled object takes a considerable amount of time to complete, object pooling queues additional requests as soon as the maximum pool size is reached. Thus it may fail to serve some object creation requests by throwing a timeout exception.  

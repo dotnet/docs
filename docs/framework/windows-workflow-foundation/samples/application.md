@@ -12,6 +12,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Application
 This section contains samples related to workflow applications in [!INCLUDE[wf](../../../../includes/wf-md.md)].  

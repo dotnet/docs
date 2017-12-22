@@ -16,6 +16,8 @@ caps.latest.revision: 28
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Queues Overview
 This section introduces the general and core concepts behind queued communication. Subsequent sections go into details about how the queuing concepts described here are manifested in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

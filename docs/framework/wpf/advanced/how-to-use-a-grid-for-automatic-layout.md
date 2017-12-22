@@ -17,6 +17,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use a Grid for Automatic Layout
 This example describes how to use a grid in the automatic layout approach to creating a localizable application.  

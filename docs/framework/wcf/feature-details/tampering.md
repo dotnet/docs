@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Tampering
 *Tampering* is the act of altering a message, or the delivery of a message, and using the altered message for a purpose other than what it was intended for.  

@@ -22,6 +22,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Change the Appearance of the Windows Forms ColorDialog Component
 You can configure the appearance of the Windows Forms <xref:System.Windows.Forms.ColorDialog> component with a number of its properties. The dialog box has two sections — one that shows basic colors and one that allows the user to define custom colors.  

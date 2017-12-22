@@ -17,6 +17,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Scale an Element
 This example shows how to use a <xref:System.Windows.Media.ScaleTransform> to scale an element.  

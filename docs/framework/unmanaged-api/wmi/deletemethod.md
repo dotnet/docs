@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # DeleteMethod function
 Deletes the specified method from a CIM class definition.

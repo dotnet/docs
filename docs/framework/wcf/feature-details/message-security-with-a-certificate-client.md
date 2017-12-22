@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 99770573-c815-4428-a38c-e4335c8bd7ce
 caps.latest.revision: 16
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Message Security with a Certificate Client
 The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client and service secured using message security mode. Both the client and the service are authenticated with certificates. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md).  

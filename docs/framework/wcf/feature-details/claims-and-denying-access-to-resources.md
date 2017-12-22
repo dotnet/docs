@@ -16,6 +16,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Claims and Denying Access to Resources
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] supports a claims-based authorization mechanism. As well as allowing access to resources based on the presence of claims, systems often deny access to resources based on the presence of claims. Such systems should examine the <xref:System.IdentityModel.Policy.AuthorizationContext> for claims that result in access being denied before looking for claims that result in access being allowed.  

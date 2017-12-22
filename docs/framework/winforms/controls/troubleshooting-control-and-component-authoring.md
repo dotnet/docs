@@ -23,6 +23,8 @@ caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Troubleshooting Control and Component Authoring
 This topic lists the following common problems that arise when developing components and controls. For more information, see [Programming with Components](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3).  

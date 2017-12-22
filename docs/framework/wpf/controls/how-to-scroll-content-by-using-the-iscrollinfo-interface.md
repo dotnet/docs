@@ -21,6 +21,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Scroll Content by Using the IScrollInfo Interface
 This example shows how to scroll content by using the <xref:System.Windows.Controls.Primitives.IScrollInfo> interface.  

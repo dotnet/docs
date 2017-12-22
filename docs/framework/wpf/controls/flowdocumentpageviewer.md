@@ -19,6 +19,8 @@ caps.latest.revision: 65
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # FlowDocumentPageViewer
 The <xref:System.Windows.Controls.FlowDocumentPageViewer> control is used to view <xref:System.Windows.Documents.FlowDocument> content on a per page basis. Contrast with the <xref:System.Windows.Controls.FlowDocumentScrollViewer>, which presents <xref:System.Windows.Documents.FlowDocument> content in a scrolling viewer.  

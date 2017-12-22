@@ -12,6 +12,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Activity Extensions
 Activities can interact with workflow application extensions that allow the host to provide additional functionality that is not explicitly modeled in the workflow.  This topic describes how to create and use an extension to count the number of times the activity executes.  

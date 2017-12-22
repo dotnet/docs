@@ -21,6 +21,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set ToolTips for Controls on a Windows Form at Design Time
 You can set a <xref:System.Windows.Forms.ToolTip> string in code or in the Windows Forms Designer. For more information about the <xref:System.Windows.Forms.ToolTip> component, see [ToolTip Component Overview](../../../../docs/framework/winforms/controls/tooltip-component-overview-windows-forms.md).  

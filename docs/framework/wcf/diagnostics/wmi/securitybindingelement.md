@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # SecurityBindingElement
 SecurityBindingElement  

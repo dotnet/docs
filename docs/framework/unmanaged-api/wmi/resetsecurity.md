@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ResetSecurity function
 Assigns the supplied impersonation token to the current thread.   

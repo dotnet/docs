@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "SecurityTokenParameters class"
   - "security [WCF], creating custom tokens"
@@ -22,6 +22,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create a Custom Token
 This topic shows how to create a custom security token using the <xref:System.IdentityModel.Tokens.SecurityToken> class, and how to integrate it with a custom security token provider and authenticator. For a complete code example see the [Custom Token](../../../../docs/framework/wcf/samples/custom-token.md) sample.  

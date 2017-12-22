@@ -5,9 +5,9 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Windows Service applications, walkthroughs"
   - "Windows Service applications, creating"
@@ -16,6 +16,8 @@ caps.latest.revision: 57
 author: "ghogen"
 ms.author: "ghogen"
 manager: "douge"
+ms.workload: 
+  - "dotnet"
 ---
 # Walkthrough: Creating a Windows Service Application in the Component Designer
 This article demonstrates how to create a simple Windows Service application in Visual Studio that writes messages to an event log. Here are the basic steps that you perform to create and use your service:  

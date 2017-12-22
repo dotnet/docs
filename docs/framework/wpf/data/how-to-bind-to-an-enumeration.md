@@ -18,6 +18,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Bind to an Enumeration
 This example shows how to bind to an enumeration by binding to the enumeration's GetValues method.  

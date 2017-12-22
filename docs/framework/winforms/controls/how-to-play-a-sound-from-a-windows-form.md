@@ -23,6 +23,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Play a Sound from a Windows Form
 This example plays a sound at a given path at run time.  

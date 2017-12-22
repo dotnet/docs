@@ -1,5 +1,5 @@
 ---
-title: BlessIWbemServices function (Unmanaged API Reference) 
+title: BlessIWbemServices function (Unmanaged API Reference)
 description: The BlessIWbemServices function indicates whether user credentials permit access to an IWbemServices class.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # BlessIWbemServices function
 Indicates whether the user credentials permit access to the specified [IWbemServices](https://msdn.microsoft.com/library/aa392093(v=vs.85).aspx) class.   

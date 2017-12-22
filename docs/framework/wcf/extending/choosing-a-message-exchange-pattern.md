@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Choosing a Message Exchange Pattern
 The first step in writing a custom transport is to decide which *message exchange patterns* (or MEPs) are required for the channel you are developing. This topic describes the options available and discusses the various requirements. This is the first task in the channel development task list described in [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md).  

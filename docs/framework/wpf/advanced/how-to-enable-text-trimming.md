@@ -21,6 +21,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Enable Text Trimming
 This example demonstrates the usage and effects of the values available in the <xref:System.Windows.TextTrimming> enumeration.  

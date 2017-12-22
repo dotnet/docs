@@ -18,6 +18,8 @@ caps.latest.revision: 47
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Getting Started Tutorial
 The topics contained in this section are intended to give you quick exposure to the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] programming experience. They are designed to be completed in the order of the list at the bottom of this topic. Working through this tutorial gives you an introductory understanding of the steps required to create [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service and client applications. A service exposes one or more endpoints, each of which exposes one or more service operations. The *endpoint* of a service specifies an address where the service can be found, a binding that contains the information that describes how a client must communicate with the service, and a contract that defines the functionality provided by the service to its clients.  

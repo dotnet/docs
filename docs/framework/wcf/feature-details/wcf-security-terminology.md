@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Security Terminology
 Some of the terminology used when discussing security may be unfamiliar. This topic provides short explanations of some of security terms, but is not intended to provide comprehensive documentation for every item.  

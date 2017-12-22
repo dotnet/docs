@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Scenario
 This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] scenarios.  

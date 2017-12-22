@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerModuleEnum::Next Method
 Gets the specified number of contiguous modules from a sequential collection of modules, starting at the enumerator's current position in the sequence.  

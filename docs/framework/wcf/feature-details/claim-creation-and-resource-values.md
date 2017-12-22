@@ -16,6 +16,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Claim Creation and Resource Values
 The <xref:System.IdentityModel.Claims.Claim> class provides several methods for creating instances of built-in claims types. Of these methods, the following perform no semantic or format checking on the supplied resource:  

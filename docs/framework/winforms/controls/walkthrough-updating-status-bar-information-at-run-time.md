@@ -23,6 +23,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Updating Status Bar Information at Run Time
 > [!IMPORTANT]

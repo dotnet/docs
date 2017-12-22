@@ -17,6 +17,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Transactions in WCF
 The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] transactions feature allows several components to concurrently participate in a data operation. The topics in this section examine the feature in detail.  

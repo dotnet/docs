@@ -16,6 +16,8 @@ caps.latest.revision: 8
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Generics in XAML
 The .NET Framework XAML Services as implemented in System.Xaml provides support for using generic CLR types. This support includes specifying the constraints of generics as a type argument and enforcing the constraint by calling the appropriate `Add` method for generic collection cases. This topic describes aspects of using and referencing generic types in XAML.  

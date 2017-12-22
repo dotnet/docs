@@ -19,6 +19,8 @@ caps.latest.revision: 12
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Uid Directive
 Provides a unique identifier for markup elements. In many scenarios, this unique identifier is used by XAML localization processes and tools.  

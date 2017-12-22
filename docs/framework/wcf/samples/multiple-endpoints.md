@@ -16,6 +16,8 @@ caps.latest.revision: 31
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Multiple Endpoints
 The Multiple Endpoints sample demonstrates how to configure multiple endpoints on a service and how to communicate with each endpoint from a client. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). The service configuration has been modified to define two endpoints that support the `ICalculator` contract, but each at a different address using a different binding. The client configuration and code have been modified to communicate with both of the service endpoints.  

@@ -20,6 +20,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Using Transformations to Scale Colors
 A scaling transformation multiplies one or more of the four color components by a number. The color matrix entries that represent scaling are given in the following table.  

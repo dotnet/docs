@@ -12,6 +12,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Workflow Foundation Feature Specifics
 [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)] adds a number of features to Windows Workflow Foundation. This document describes a number of the new features, and gives details about scenarios in which they may be useful.  

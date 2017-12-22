@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Programmatically Add Discoverability to a WCF Service and Client
 This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service discoverable. It is based on the [Self-Host](http://go.microsoft.com/fwlink/?LinkId=145523) sample.  

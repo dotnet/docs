@@ -24,6 +24,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Password Text Box with the Windows Forms TextBox Control
 A password box is a Windows Forms text box that displays placeholder characters while a user types a string.  

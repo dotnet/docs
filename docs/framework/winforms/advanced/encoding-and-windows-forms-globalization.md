@@ -31,6 +31,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Encoding and Windows Forms Globalization
 Windows Forms applications are entirely Unicode-enabled, meaning that each character is represented by a unique number, no matter what the platform, program, or language. For more information about Unicode, see the [Unicode consortium Web site](http://www.unicode.org).  

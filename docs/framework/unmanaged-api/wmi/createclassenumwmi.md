@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CreateClassEnumWmi function
 Returns an enumerator for all classes that satisfy the specified selection criteria.  

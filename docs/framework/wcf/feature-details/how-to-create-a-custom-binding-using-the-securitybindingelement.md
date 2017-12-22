@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "security [WCF], creating custom bindings"
 ms.assetid: 203a9f9e-3a73-427c-87aa-721c56265b29
@@ -19,6 +19,8 @@ caps.latest.revision: 19
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create a Custom Binding Using the SecurityBindingElement
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] includes several system-provided bindings that can be configured but do not provide full flexibility when configuring all the security options that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports. This topic demonstrates how to create a custom binding directly from individual binding elements and highlights some of the security settings that can be specified when creating such a binding. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating custom bindings, see [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md).  

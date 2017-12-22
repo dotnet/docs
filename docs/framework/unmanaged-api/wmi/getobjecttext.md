@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetObjectText function
 Returns a textual rendering of the object in the Managed Object Format (MOF) syntax.

@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Hierarchical Configuration Model
 This sample demonstrates how to implement a hierarchy of configuration files for services. It also shows how bindings, service behaviors, and endpoint behaviors are inherited from higher levels in the hierarchy.  

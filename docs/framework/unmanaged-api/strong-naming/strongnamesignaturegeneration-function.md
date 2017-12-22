@@ -25,6 +25,8 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StrongNameSignatureGeneration Function
 Generates a strong name signature for the specified assembly.  

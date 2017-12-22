@@ -18,6 +18,8 @@ caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Binding Sources Overview
 In data binding, the binding source object refers to the object you obtain data from. This topic discusses the types of objects you can use as the binding source.  

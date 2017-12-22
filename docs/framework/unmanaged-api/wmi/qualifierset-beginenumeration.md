@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # QualifierSet_BeginEnumeration function
 Resets an enumerator of the qualifiers of an object to the beginning of the enumeration.  

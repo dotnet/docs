@@ -27,6 +27,8 @@ caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo2::GetGenerationBounds Method
 Gets the memory regions, which are segments of the heap, that make up the various garbage collection generations.  

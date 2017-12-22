@@ -18,6 +18,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Draw a Line
 This example shows you how to draw lines by using the <xref:System.Windows.Shapes.Line> element.  

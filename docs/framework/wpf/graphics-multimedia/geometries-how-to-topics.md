@@ -18,6 +18,8 @@ caps.latest.revision: 72
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Geometries How-to Topics
 The topics in this section demonstrate how to use <xref:System.Windows.Media.Geometry> objects in your applications.  

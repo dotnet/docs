@@ -19,6 +19,8 @@ caps.latest.revision: 24
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Best Practices: Data Contract Versioning
 This topic lists the best practices for creating data contracts that can evolve easily over time. [!INCLUDE[crabout](../../../includes/crabout-md.md)] data contracts, see the topics in [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md).  

@@ -17,6 +17,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add Custom Data to Ink Data
 You can add custom data to ink that will be saved when the ink is saved as ink serialized format (ISF).  You can save the custom data to the <xref:System.Windows.Ink.DrawingAttributes>, the <xref:System.Windows.Ink.StrokeCollection>, or the <xref:System.Windows.Ink.Stroke>.  Being able to save custom data on three objects gives you the ability to decide the best place to save the data.  All three classes use similar methods to store and access custom data.  

@@ -28,6 +28,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # WPF Architecture
 This topic provides a guided tour of the [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] class hierarchy. It covers most of the major subsystems of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], and describes how they interact. It also details some of the choices made by the architects of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)].  

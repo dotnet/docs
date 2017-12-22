@@ -8,6 +8,8 @@ caps.latest.revision: 13
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Workflow (WF) Samples
 These samples provide instruction on various aspects of [!INCLUDE[wf](../../../../includes/wf-md.md)].  

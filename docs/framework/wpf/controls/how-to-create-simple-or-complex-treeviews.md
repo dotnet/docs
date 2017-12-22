@@ -17,6 +17,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create Simple or Complex TreeViews
 This example shows how to create simple or complex <xref:System.Windows.Controls.TreeView> controls.  

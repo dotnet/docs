@@ -9,8 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "vb"
+dev_langs: 
+  - "vb"
 f1_keywords: 
   - "ServiceController.Continue"
 helpviewer_keywords: 
@@ -21,6 +21,8 @@ caps.latest.revision: 16
 author: "ghogen"
 ms.author: "ghogen"
 manager: "douge"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Continue a Windows Service (Visual Basic)
 This example uses the <xref:System.ServiceProcess.ServiceController> component to continue the IIS Admin service on the local computer.  

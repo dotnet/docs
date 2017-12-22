@@ -12,6 +12,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Bookmarks
 This sample demonstrates how to write a custom activity that creates a bookmark to receive external input. The sample also includes a basic console application that uses the custom activity in a workflow and shows how to discover and resume bookmarks associated with a running workflow instance. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] bookmarks, see [Bookmarks](../../../../docs/framework/windows-workflow-foundation/bookmarks.md).  

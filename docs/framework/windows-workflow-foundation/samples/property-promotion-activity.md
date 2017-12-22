@@ -12,6 +12,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Property Promotion Activity
 This sample provides an end-to-end solution that integrates the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> Promotion feature directly into the workflow authoring experience. A collection of configuration elements, workflow activities, and workflow extensions that simplify the use of the Promotion feature are provided. Additionally, the sample contains a simple workflow that demonstrates how to use this collection.  

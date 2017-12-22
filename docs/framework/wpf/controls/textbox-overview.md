@@ -17,6 +17,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # TextBox Overview
 The <xref:System.Windows.Controls.TextBox> class enables you to display or edit unformatted text. A common use of a <xref:System.Windows.Controls.TextBox> is editing unformatted text in a form. For example, a form asking for the user's name, phone number, etc would use <xref:System.Windows.Controls.TextBox> controls for text input. This topic introduces the <xref:System.Windows.Controls.TextBox> class and provides examples of how to use it in both [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and [!INCLUDE[TLA#tla_lhcshrp](../../../../includes/tlasharptla-lhcshrp-md.md)].  

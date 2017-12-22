@@ -18,6 +18,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create Multiple Subpaths Within a PathGeometry
 This example shows how to create multiple subpaths in a <xref:System.Windows.Media.PathGeometry>. To create multiple subpaths, you create a <xref:System.Windows.Media.PathFigure> for each subpath.  

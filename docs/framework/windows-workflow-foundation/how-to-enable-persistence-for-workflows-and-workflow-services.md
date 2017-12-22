@@ -12,6 +12,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Enable Persistence for Workflows and Workflow Services
 This topic describes how to enable persistence for workflows and workflow services.  

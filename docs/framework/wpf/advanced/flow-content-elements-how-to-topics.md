@@ -19,6 +19,8 @@ caps.latest.revision: 62
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Flow Content Elements How-to Topics
 The topics in this section describe how to accomplish common tasks using various flow content elements and related features.  

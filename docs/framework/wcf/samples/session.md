@@ -16,6 +16,8 @@ caps.latest.revision: 31
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Session
 The Session sample demonstrates how to implement a contract that requires a session. A session provides context for performing multiple operations. This allows a service to associate state with a given session, such that subsequent operations can use the state of a previous operation. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which implements a calculator service. The `ICalculator` contract has been modified to allow a set of arithmetic operations to be performed, while keeping a running result. This functionality is defined by the `ICalculatorSession` contract. The service maintains the state for a client as multiple service operations are called to perform a calculation. The client can retrieve the current result by calling `Result()` and clear the result to zero by calling `Clear()`.  

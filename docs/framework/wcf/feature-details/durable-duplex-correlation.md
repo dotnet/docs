@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Durable Duplex Correlation
 Durable duplex correlation, also known as callback correlation, is useful when a workflow service has a requirement to send a callback to the initial caller. Unlike WCF duplex, the callback can happen at any time in the future and is not tied to the same channel or the channel lifetime; the only requirement is that the caller have an active endpoint listening for the callback message. This allows two workflow services to communicate in a long-running conversation. This topic provides an overview of durable duplex correlation.  

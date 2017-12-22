@@ -14,6 +14,8 @@ caps.latest.revision: 35
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Validation
 This sample demonstrates how to use a custom behavior to validate services on a computer to ensure they meet specific criteria. In this sample, services are validated by the custom behavior by scanning through each endpoint on the service and checking to see whether they contain secure binding elements. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  

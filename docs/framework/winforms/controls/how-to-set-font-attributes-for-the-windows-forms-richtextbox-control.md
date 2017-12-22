@@ -26,6 +26,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set Font Attributes for the Windows Forms RichTextBox Control
 The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous options for formatting the text it displays. You can make the selected characters bold, underlined, or italic, using the <xref:System.Windows.Forms.RichTextBox.SelectionFont%2A> property. You can also use this property to change the size and typeface of the selected characters. The <xref:System.Windows.Forms.RichTextBox.SelectionColor%2A> property enables you to change the selected characters' color.  

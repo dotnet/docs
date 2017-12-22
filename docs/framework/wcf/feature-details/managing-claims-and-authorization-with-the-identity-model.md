@@ -20,6 +20,8 @@ caps.latest.revision: 20
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Managing Claims and Authorization with the Identity Model
 Authorization is the process of determining which entities have permission to change, view, or otherwise access a computer resource. For example, in a business, only managers may be allowed to access the files of their employees. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] supports two mechanisms for performing authorization processing. The first mechanism enables you to control authorization using existing common language runtime (CLR) constructs. The second is a claims-based model known as the *Identity Model*. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses the Identity Model to create claims from incoming messages; Identity Model classes can be extended to support new claim types for custom authorization schemes. This topic presents an overview of the major programming concepts of the Identity Model feature, as well as a listing of the most important classes the feature uses.  

@@ -14,6 +14,8 @@ caps.latest.revision: 22
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Token Provider
 This sample demonstrates how to implement a custom token provider. A token provider in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is used for supplying credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ships with the default Credential Manager Token Provider. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also ships with an [!INCLUDE[infocard](../../../../includes/infocard-md.md)] token provider. Custom token providers are useful in the following cases:  

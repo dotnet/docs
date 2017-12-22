@@ -17,6 +17,8 @@ caps.latest.revision: 16
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Elevation of Privilege
 *Elevation of privilege* results from giving an attacker authorization permissions beyond those initially granted. For example, an attacker with a privilege set of "read only" permissions somehow elevates the set to include "read and write."  

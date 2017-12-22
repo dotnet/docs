@@ -22,6 +22,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Implement Validation Logic on Custom Objects
 This example shows how to implement validation logic on a custom object and then bind to it.  

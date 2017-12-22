@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Web HTTP Service Help Page
 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] provides an automatic help page for WCF WEB HTTP services. This help page lists a description of each operation, request and response formats, and schemas. This functionality is turned off by default. When a user browses to a WCF WEB HTTP service and appends "/Help" on to the end of the URL, for example http://localhost:8000/Customers/Help, a help page like the following is displayed.  

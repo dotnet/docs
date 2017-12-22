@@ -17,6 +17,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use Automatic Layout to Create a Button
 This example describes how to use the automatic layout approach to create a button in a localizable application.  

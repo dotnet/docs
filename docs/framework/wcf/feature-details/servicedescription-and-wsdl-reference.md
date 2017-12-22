@@ -14,6 +14,8 @@ caps.latest.revision: 15
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ServiceDescription and WSDL Reference
 This topic describes how [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] maps Web Services Description Language (WSDL) documents to and from <xref:System.ServiceModel.Description.ServiceDescription> instances.  

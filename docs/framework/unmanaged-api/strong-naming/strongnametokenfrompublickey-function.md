@@ -30,6 +30,8 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StrongNameTokenFromPublicKey Function
 Gets a token representing a public key. A strong name token is the shortened form of a public key.  

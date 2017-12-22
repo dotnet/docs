@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WSDL and Policy
 This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] WSDL 1.1, WS-Policy and WS-PolicyAttachment implementation details, as well as additional WS-Policy assertions and WSDL 1.1 extensions introduced by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  

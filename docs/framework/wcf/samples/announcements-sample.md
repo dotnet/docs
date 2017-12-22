@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Announcements Sample
 This sample shows how to use the Announcement functionality of the Discovery feature. Announcements allow services to send out announcement messages that contain metadata about the service. By default a hello announcement is sent when the service starts up and a bye announcement is sent when the service shuts down. These announcements can be multicast or they can be sent point-to-point. This sample consists of two projects service and client.  

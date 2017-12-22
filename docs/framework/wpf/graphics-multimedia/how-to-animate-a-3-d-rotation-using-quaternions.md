@@ -18,6 +18,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate a 3-D Rotation Using Quaternions
 This example shows how to animate a rotation of a 3-D object using quaternions.  

@@ -21,6 +21,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Layout Considerations for the WindowsFormsHost Element
 This topic describes how the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element interacts with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout system.  

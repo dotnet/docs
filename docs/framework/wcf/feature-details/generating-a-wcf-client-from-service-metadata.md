@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Generating a WCF Client from Service Metadata
 This topic describes how to use the various switches in Svcutil.exe to generate clients from metadata documents.  

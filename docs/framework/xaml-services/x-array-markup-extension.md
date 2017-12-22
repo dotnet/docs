@@ -20,6 +20,8 @@ caps.latest.revision: 20
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Array Markup Extension
 Provides general support for arrays of objects in XAML through a markup extension. This corresponds to the `x:ArrayExtension` XAML type in [MS-XAML].  

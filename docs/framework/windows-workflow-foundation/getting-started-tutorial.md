@@ -15,6 +15,8 @@ caps.latest.revision: 21
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Getting Started Tutorial
 This section contains a set of walkthrough topics that introduce you to programming [!INCLUDE[wf](../../../includes/wf-md.md)] applications. By following the procedures in these topics, you will build an application that is a number guessing game. The first topic in the tutorial leads you through the steps to create the custom activities required for the workflow. In the second topic, these activities are assembled along with built-in workflow activities into a flowchart workflow. In the third topic, the host application is configured to run the workflow, and in the final topic persistence is introduced. Each step in this process depends on the previous steps, so we recommend that you complete them in order.  

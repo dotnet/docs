@@ -25,6 +25,8 @@ caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Creating an Explorer Style Interface with the ListView and TreeView Controls Using the Designer
 One of the benefits of Visual Studio is the ability to create professional-looking Windows Forms applications in a short of amount of time. A common scenario is creating a user interface (UI) with <xref:System.Windows.Forms.ListView> and <xref:System.Windows.Forms.TreeView> controls that resembles the Windows Explorer feature of Windows operating systems. Windows Explorer displays a hierarchical structure of the files and folders on a user's computer.  

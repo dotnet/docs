@@ -24,6 +24,8 @@ caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Drag and Drop Overview
 This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. Drag-and-drop commonly refers to a method of data transfer that involves using a mouse (or some other pointing device) to select one or more objects, dragging these objects over some desired drop target in the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)], and dropping them.  

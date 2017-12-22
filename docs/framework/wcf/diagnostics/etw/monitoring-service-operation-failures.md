@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Monitoring Service Operation Failures
 If analytic tracing is enabled for an application, service failures can easily be monitored in the event viewer.  This topic demonstrates how to determine when a service operation fails, and how to determine what caused the failure.  

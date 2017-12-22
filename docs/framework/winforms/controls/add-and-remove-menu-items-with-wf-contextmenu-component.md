@@ -28,6 +28,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add and Remove Menu Items with the Windows Forms ContextMenu Component
 Explains how to add and remove shortcut menu items in Windows Forms.  

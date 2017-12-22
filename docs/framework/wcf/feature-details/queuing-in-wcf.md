@@ -14,6 +14,8 @@ caps.latest.revision: 21
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Queuing in WCF
 This section describes how to use queued communication in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

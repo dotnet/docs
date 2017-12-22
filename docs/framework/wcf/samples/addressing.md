@@ -14,6 +14,8 @@ caps.latest.revision: 21
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Addressing
 The Addressing sample demonstrates various aspects and features of endpoint addresses. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). In this sample the service is self-hosted. Both the service and the client are console applications. The service defines multiple endpoints using a combination of relative and absolute endpoint addresses.  

@@ -17,6 +17,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Planning for Application Performance
 The success of achieving your performance goals depends on how well you develop your performance strategy. Planning is the first stage in developing any product. This topic describes a few very simple rules for developing a good performance strategy.  

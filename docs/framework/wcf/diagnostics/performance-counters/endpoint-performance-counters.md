@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Endpoint Performance Counters
 Endpoint performance counters capture data that reveals how an endpoint is accepting messages. They can be found under the `ServiceModelEndpoint 4.0.0.0` performance object when viewing with the Performance Monitor. The instances are named using this pattern:  

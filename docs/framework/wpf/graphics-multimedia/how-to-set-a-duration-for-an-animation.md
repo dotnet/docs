@@ -18,6 +18,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set a Duration for an Animation
 A <xref:System.Windows.Media.Animation.Timeline> represents a segment of time and the length of that segment is determined by the timeline's <xref:System.Windows.Duration>. When a <xref:System.Windows.Media.Animation.Timeline> reaches the end of its duration, it stops playing. If the <xref:System.Windows.Media.Animation.Timeline> has child timelines, they stop playing as well. In the case of an animation, the <xref:System.Windows.Duration> specifies how long the animation takes to transition from its starting value to its ending value.  

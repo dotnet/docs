@@ -28,6 +28,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Custom Draw a ToolStrip Control
 The <xref:System.Windows.Forms.ToolStrip> controls have the following associated rendering (painting) classes:  

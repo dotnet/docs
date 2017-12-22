@@ -19,6 +19,8 @@ caps.latest.revision: 40
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ServiceModel Metadata Utility Tool (Svcutil.exe)
 The ServiceModel Metadata Utility tool is used to generate service model code from metadata documents and metadata documents from service model code.  

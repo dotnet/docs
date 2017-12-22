@@ -21,6 +21,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Apply the PropertyNameChanged Pattern
 The following code example demonstrates how to apply the *PropertyName*Changed pattern to a custom control. Apply this pattern when you implement custom controls that are used with the Windows Forms data binding engine.  

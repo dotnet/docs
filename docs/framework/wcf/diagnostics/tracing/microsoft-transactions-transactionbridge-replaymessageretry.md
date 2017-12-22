@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.ReplayMessageRetry
 A replay message retry was sent to an unresponsive coordinator.  

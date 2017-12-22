@@ -12,6 +12,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Debugging Workflows
 [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] offers several options for debugging running workflows from the development environment. Workflows can be debugged in the designer, in XAML, and in code.  

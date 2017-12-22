@@ -32,6 +32,8 @@ caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DataGrid Control Overview (Windows Forms)
 > [!NOTE]

@@ -12,6 +12,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Rules Samples
 This section contains samples that demonstrate using the workflow rules engine from [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)].  

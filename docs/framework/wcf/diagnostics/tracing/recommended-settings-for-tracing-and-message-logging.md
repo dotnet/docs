@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Recommended Settings for Tracing and Message Logging
 This topic describes recommended tracing and message logging settings for different operating environments.  

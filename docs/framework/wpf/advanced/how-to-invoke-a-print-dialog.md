@@ -20,6 +20,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Invoke a Print Dialog
 To provide the ability to print from you application, you can simply create and open a <xref:System.Windows.Controls.PrintDialog> object.  

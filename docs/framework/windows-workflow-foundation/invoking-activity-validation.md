@@ -12,6 +12,8 @@ caps.latest.revision: 15
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Invoking Activity Validation
 Activity validation provides a method to identify and report errors in any activity’s configuration prior to its execution. Validation occurs when a workflow is modified in the workflow designer and any validation errors or warnings are displayed in the workflow designer. Validation also occurs at run time when a workflow is invoked and if any validation errors occur, an <xref:System.Activities.InvalidWorkflowException> is thrown by the default validation logic. [!INCLUDE[wf](../../../includes/wf-md.md)] provides the <xref:System.Activities.Validation.ActivityValidationServices> class that can be used by workflow application and tooling developers to explicitly validate an activity. This topic describes how to use <xref:System.Activities.Validation.ActivityValidationServices> to perform activity validation.  

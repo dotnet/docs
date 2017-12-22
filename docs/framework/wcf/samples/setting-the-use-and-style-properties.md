@@ -14,6 +14,8 @@ caps.latest.revision: 28
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Setting the Use and Style Properties
 This sample demonstrates how to use the Use and Style properties on the <xref:System.ServiceModel.XmlSerializerFormatAttribute> and the <xref:System.ServiceModel.DataContractFormatAttribute>. These properties affect how messages are formatted. By default, the message body is formatted with the style set to <xref:System.ServiceModel.OperationFormatStyle.Document>. These settings can be specified at either the service contract level or the operation contract level.  

@@ -19,6 +19,8 @@ caps.latest.revision: 55
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Key-Frame Animation How-to Topics
 The topics in this section demonstrate how to use key frame animations to animate more than two property values and control interpolation.  

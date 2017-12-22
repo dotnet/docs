@@ -14,6 +14,8 @@ caps.latest.revision: 27
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Large Data and Streaming
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is an XML-based communications infrastructure. Because XML data is commonly encoded in the standard text format defined in the [XML 1.0 specification](http://go.microsoft.com/fwlink/?LinkId=94838), connected systems developers and architects are typically concerned about the wire footprint (or size) of messages sent across the network, and the text-based encoding of XML poses special challenges for the efficient transfer of binary data.  

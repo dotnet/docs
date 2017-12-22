@@ -24,6 +24,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Enable AutoComplete in ToolStrip Controls in Windows Forms
 The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> with a <xref:System.Windows.Forms.ToolStripComboBox> that can be dropped down to show a list of items, such as recently visited Web sites. If the user types a character that matches the first character of one of the items in the list, the item is immediately displayed.  

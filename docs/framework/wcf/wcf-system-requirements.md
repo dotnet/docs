@@ -16,6 +16,8 @@ caps.latest.revision: 20
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF System Requirements
 [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] is a communication infrastructure that is used to create distributed applications. The following lists the requirements that enable [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] to run.  

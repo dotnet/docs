@@ -17,6 +17,8 @@ caps.latest.revision: 34
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Communication Foundation Tools
 Microsoft [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] tools are designed to make it easier for you to create, deploy, and manage [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications. This section contains detailed information about the tools. Please note that the tools are not supported.  

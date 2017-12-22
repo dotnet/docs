@@ -21,6 +21,8 @@ caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Bind a Windows Forms Control to a Type
 When you are building controls that interact with data, you will sometimes find it necessary to bind a control to a type, rather than an object. This situation arises especially at design time, when data may not be available, but your data-bound controls still need to display information from a type's public interface. For example, you may bind a <xref:System.Windows.Forms.DataGridView> control to an object exposed by a Web service and want the <xref:System.Windows.Forms.DataGridView> control to label its columns at design time with the member names of a custom type.  

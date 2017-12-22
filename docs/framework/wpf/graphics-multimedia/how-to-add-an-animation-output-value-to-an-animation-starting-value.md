@@ -16,6 +16,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add an Animation Output Value to an Animation Starting Value
 This example shows how to add an animation output value to an animation starting value.  

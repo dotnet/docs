@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: b044b1c9-c1e5-4c9f-84d8-0f02f4537f8b
 caps.latest.revision: 28
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Host a WCF Service in IIS
 This topic outlines the basic steps required to create a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service that is hosted in Internet Information Services (IIS). This topic assumes you are familiar with IIS and understand how to use the IIS management tool to create and manage IIS applications. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] IIS see [Internet Information Services](http://go.microsoft.com/fwlink/?LinkId=132449). A [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service that runs in the IIS environment takes full advantage of IIS features, such as process recycling, idle shutdown, process health monitoring, and message-based activation. This hosting option requires that IIS be properly configured, but it does not require that any hosting code be written as part of the application. You can use IIS hosting only with an HTTP transport.  

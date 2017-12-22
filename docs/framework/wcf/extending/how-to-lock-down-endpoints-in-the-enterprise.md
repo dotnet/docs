@@ -14,6 +14,8 @@ caps.latest.revision: 21
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Lock Down Endpoints in the Enterprise
 Large enterprises often require that applications are developed in compliance with enterprise security policies. The following topic discusses how to develop and install a client endpoint validator that can be used to validate all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client applications installed on computers.  

@@ -18,6 +18,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Strong Naming (Unmanaged API Reference)
 The strong naming API enables a client to administer strong name signing for assemblies.  

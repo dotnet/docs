@@ -14,6 +14,8 @@ caps.latest.revision: 23
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Behaviors in WCF
 In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], behaviors modify run-time behavior at the service level or at the endpoint level. ([!INCLUDE[crabout](../../../../includes/crabout-md.md)] behaviors in general, see [Specifying Service Run-Time Behavior](../../../../docs/framework/wcf/specifying-service-run-time-behavior.md).) *Security behaviors* allow control over credentials, authentication, authorization, and auditing logs. You can use behaviors either by programming or through configuration. This topic focuses on configuring the following behaviors related to security functions:  

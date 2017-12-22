@@ -19,6 +19,8 @@ caps.latest.revision: 61
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Image
 The <xref:System.Windows.Controls.Image> element is used to display bitmap images in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications.  

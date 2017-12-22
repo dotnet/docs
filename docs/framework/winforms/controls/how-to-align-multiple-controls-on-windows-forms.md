@@ -19,6 +19,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Align Multiple Controls on Windows Forms
 To standardize the layout of the user interface (UI) of your Windows-based application, you can position groups of controls with a single command.  

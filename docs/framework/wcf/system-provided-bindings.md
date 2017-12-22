@@ -16,6 +16,8 @@ caps.latest.revision: 60
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # System-Provided Bindings
 Bindings specify the communication mechanism to use when talking to an endpoint and indicate how to connect to an endpoint. A binding contains the following elements:  

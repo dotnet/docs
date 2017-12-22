@@ -28,6 +28,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Convert a BitmapSource to an Indexed Pixel Format
 This example shows how to convert a <xref:System.Windows.Media.Imaging.BitmapSource> to an indexed pixel format.  

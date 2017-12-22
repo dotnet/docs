@@ -21,6 +21,8 @@ caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance
 The <xref:System.Windows.Forms.DataGridView> control provides a number of ways to customize its appearance and behavior using properties, events, and companion classes. Occasionally, you may have requirements for your cells that go beyond what these features can provide. You can create your own custom <xref:System.Windows.Forms.DataGridViewCell> class to provide extended functionality.  

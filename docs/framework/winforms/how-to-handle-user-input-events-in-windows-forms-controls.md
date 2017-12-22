@@ -21,6 +21,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Handle User Input Events in Windows Forms Controls
 This example demonstrates how to handle most keyboard, mouse, focus, and validation events that can occur in a Windows Forms control. The text box named `TextBoxInput` receives the events when it has focus, and information about each event is written in the text box named `TextBoxOutput` in the order in which the events are raised. The application also includes a set of check boxes that can be used to filter which events to report.  

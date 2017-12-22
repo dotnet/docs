@@ -12,6 +12,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Activity Delegates
 Activity delegates enable activity authors to expose callbacks with specific signatures, for which users of the activity can provide activity-based handlers. Two types of activity delegates are available: <xref:System.Activities.ActivityAction%601> is used to define activity delegates that do not have a return value, and <xref:System.Activities.ActivityFunc%601> is used to define activity delegates that do have a return value.  

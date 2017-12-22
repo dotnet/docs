@@ -18,6 +18,8 @@ caps.latest.revision: 13
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # XAML Services
 This topic describes the capabilities of a technology set known as .NET Framework XAML Services. The majority of the services and APIs described are located in the assembly System.Xaml, which is an assembly introduced with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] set of .NET core assemblies. Services include readers and writers, schema classes and schema support, factories, attributing of classes, XAML language intrinsic support, and other XAML language features.  

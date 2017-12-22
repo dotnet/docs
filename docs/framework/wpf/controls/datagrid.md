@@ -22,6 +22,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DataGrid
 The <xref:System.Windows.Controls.DataGrid> control enables you to display and edit data from many different sources, such as from a SQL database, LINQ query, or any other bindable data source. For more information, see [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md).  

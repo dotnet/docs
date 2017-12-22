@@ -23,6 +23,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Make Your Control Invisible at Run Time
 There are times when you might want to create a user control that is invisible at run time. For example, a control that is an alarm clock might be invisible except when the alarm was sounding. This is easily accomplished by setting the <xref:System.Windows.Forms.Control.Visible%2A> property. If the <xref:System.Windows.Forms.Control.Visible%2A> property is `true`, your control will appear as normal. If `false`, your control will be hidden. Although code in your control may still run while invisible, you will not be able to interact with the control through the user interface. If you want to create an invisible control that still responds to user input (for example, mouse clicks), you should create a transparent control. For more information, see [Giving Your Control a Transparent Background](../../../../docs/framework/winforms/controls/how-to-give-your-control-a-transparent-background.md).  

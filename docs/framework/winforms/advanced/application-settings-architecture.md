@@ -19,6 +19,8 @@ caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Application Settings Architecture
 This topic describes how the Application Settings architecture works, and explores advanced features of the architecture, such as grouped settings and settings keys.  

@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Chunking Channel
 When sending large messages using [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], it is often desirable to limit the amount of memory used to buffer those messages. One possible solution is to stream the message body (assuming the bulk of the data is in the body). However some protocols require buffering of the entire message. Reliable messaging and security are two such examples. Another possible solution is to divide up the large message into smaller messages called chunks, send those chunks one chunk at a time, and reconstitute the large message on the receiving side. The application itself could do this chunking and de-chunking or it could use a custom channel to do it. The chunking channel sample shows how a custom protocol or layered channel can be used to do chunking and de-chunking of arbitrarily large messages.  

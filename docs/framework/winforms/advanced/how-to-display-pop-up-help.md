@@ -23,6 +23,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Display Pop-up Help
 One way to display Help on Windows Forms is through the **Help** button, located on the right side of the title bar, accessible through the <xref:System.Windows.Forms.Form.HelpButton%2A> property. This type of Help display is well-suited for use with dialog boxes. Dialog boxes shown modally (with the <xref:System.Windows.Forms.Form.ShowDialog%2A> method) have trouble bringing up external Help systems, because modal dialog boxes need to be closed before focus can shift to another window. Additionally, using the **Help** button requires that there is no **Minimize** button or **Maximize** button shown in the title bar. This is a standard dialog-box convention, whereas forms usually have **Minimize** and **Maximize** buttons.  

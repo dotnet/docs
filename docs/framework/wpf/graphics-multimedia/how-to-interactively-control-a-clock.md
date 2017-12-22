@@ -20,6 +20,8 @@ caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Interactively Control a Clock
 A <xref:System.Windows.Media.Animation.Clock> object's <xref:System.Windows.Media.Animation.ClockController> property enables you to interactively start, pause, resume, seek, advance the clock to its fill period, and stop the clock. Only the root clock of a timing tree can be interactively controlled.  

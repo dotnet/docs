@@ -12,6 +12,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Tracking Records
 This topic demonstrates how to create custom tracking records and populate them with data to be emitted along with the records.  

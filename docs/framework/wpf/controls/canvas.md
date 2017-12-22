@@ -20,6 +20,8 @@ caps.latest.revision: 63
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Canvas
 <xref:System.Windows.Controls.Canvas> is a layout control that enables absolute positioning of child elements.  

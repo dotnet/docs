@@ -20,6 +20,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Render on a Per Frame Interval Using CompositionTarget
 The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation engine provides many features for creating frame-based animation. However, there are application scenarios in which you need finer-grained control over rendering on a per frame basis. The <xref:System.Windows.Media.CompositionTarget> object provides the ability to create custom animations based on a per-frame callback.  

@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo3::GetAppDomainsContainingModule Method
 Gets the identifiers of the application domains in which the given module has been loaded.  

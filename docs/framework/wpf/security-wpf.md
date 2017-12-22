@@ -25,6 +25,8 @@ caps.latest.revision: 38
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Security (WPF)
 <a name="introduction"></a> When developing [!INCLUDE[TLA#tla_wpf](../../../includes/tlasharptla-wpf-md.md)] standalone and browser-hosted applications, you must consider the security model. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] standalone applications execute with unrestricted permissions ( [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)]**FullTrust** permission set), whether deployed using Windows Installer (.msi), XCopy, or [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]. Deploying partial-trust, standalone WPF applications with ClickOnce is unsupported. However, a full-trust host application can create a partial-trust <xref:System.AppDomain> using the .NET Framework Add-in model. For more information, see [WPF Add-Ins Overview](../../../docs/framework/wpf/app-development/wpf-add-ins-overview.md).  

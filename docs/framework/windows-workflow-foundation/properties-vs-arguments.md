@@ -12,6 +12,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Properties vs. Arguments
 There are several options available for passing data into an activity. In addition to using <xref:System.Activities.InArgument>, activities can also be developed that receive data using either standard CLR Properties or public <xref:System.Activities.ActivityAction> properties. This topic discusses how to select the appropriate method type.  

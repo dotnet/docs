@@ -22,6 +22,8 @@ caps.latest.revision: 20
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Subclass Directive
 Modifies XAML markup compile behavior when `x:Class` is also provided. Instead of creating a partial class that is based on `x:Class`, the provided `x:Class` is created as an intermediate class, and then your provided derived class is expected to be based on `x:Class`.  

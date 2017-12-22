@@ -19,6 +19,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Preview Events
 Preview events, also known as tunneling events, are routed events where the direction of the route travels from the application root towards the element that raised the event and is reported as the source in event data. Not all event scenarios support or require preview events; this topic describes the situations where preview events exist, how applications or components should handle them, and cases where creating preview events in custom components or classes might be appropriate.  

@@ -31,6 +31,8 @@ caps.latest.revision: 57
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # XAML Overview (WPF)
 This topic describes the features of the XAML language and demonstrates how you can use XAML to write [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. This topic specifically describes XAML as implemented by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. XAML itself is a larger language concept than [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  

@@ -17,6 +17,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set the Tile Size for a TileBrush
 This example shows how to set the tile size for a <xref:System.Windows.Media.TileBrush>. By default, a <xref:System.Windows.Media.TileBrush> produces a single tile that completely fills the area that you are painting. You can override this behavior by setting the <xref:System.Windows.Media.TileBrush.Viewport%2A> and <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> properties.  

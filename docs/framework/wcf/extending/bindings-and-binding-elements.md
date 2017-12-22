@@ -16,6 +16,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Bindings and Binding Elements
 Bindings are collections of special configuration elements, called *binding elements*, which are evaluated by the service runtime whenever a client or service endpoint is being constructed. The type and order of the binding elements within a binding determines the selection and stacking order of the protocol and transport channels in an endpoint's channel stack.  

@@ -16,6 +16,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a StackPanel
 This example shows how to create a <xref:System.Windows.Controls.StackPanel>.  

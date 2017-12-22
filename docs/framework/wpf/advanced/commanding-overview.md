@@ -25,6 +25,8 @@ caps.latest.revision: 35
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Commanding Overview
 <a name="introduction"></a> Commanding is an input mechanism in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] which provides input handling at a more semantic level than device input. Examples of commands are the **Copy**, **Cut**, and **Paste** operations found on many applications.  

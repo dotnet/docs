@@ -12,6 +12,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Securing Workflow Services
 The Secured Workflow Service sample shows the following procedures:  

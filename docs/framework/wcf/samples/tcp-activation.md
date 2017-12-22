@@ -14,6 +14,8 @@ caps.latest.revision: 34
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # TCP Activation
 This sample demonstrates hosting a service that uses Windows Process Activation Services (WAS) to activate a service that communicates over the net.tcp protocol. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  

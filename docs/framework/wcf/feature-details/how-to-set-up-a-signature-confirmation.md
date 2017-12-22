@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "signature confirmation"
   - "WCF, security"
@@ -20,6 +20,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Set Up a Signature Confirmation
 *Signature confirmation* is a mechanism for a message initiator to ensure that a received reply was generated in response to the sender's original message. Signature confirmation is defined in the WS-Security 1.1 specification. If an endpoint supports WS-Security 1.0, you cannot use signature confirmation.  

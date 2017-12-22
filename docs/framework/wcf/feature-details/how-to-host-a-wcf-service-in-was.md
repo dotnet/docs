@@ -14,6 +14,8 @@ caps.latest.revision: 25
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Host a WCF Service in WAS
 This topic outlines the basic steps required to create a Windows Process Activation Services (also known as WAS) hosted [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service. WAS is the new process activation service that is a generalization of Internet Information Services (IIS) features that work with non-HTTP transport protocols. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses the listener adapter interface to communicate activation requests that are received over the non-HTTP protocols supported by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], such as TCP, named pipes, and Message Queuing.  

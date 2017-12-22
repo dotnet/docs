@@ -22,6 +22,8 @@ caps.latest.revision: 19
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Code Intrinsic XAML Type
 Allows placement of code within a XAML production. Such code can either be compiled by any XAML processor implementation that compiles XAML, or left in the XAML production for later uses such as interpretation by a runtime.  

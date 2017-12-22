@@ -20,6 +20,8 @@ caps.latest.revision: 42
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Hit Testing in the Visual Layer
 This topic provides an overview of hit testing functionality provided by the visual layer. Hit testing support allows you to determine whether a geometry or point value falls within the rendered content of a <xref:System.Windows.Media.Visual>, allowing you to implement user interface behavior such as a selection rectangle to select multiple objects.  

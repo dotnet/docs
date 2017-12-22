@@ -14,6 +14,8 @@ caps.latest.revision: 18
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # User Name Password Validator
 This sample demonstrates how to implement a custom UserNamePassword Validator. This is useful in cases where none of the built-in UserNamePassword Validation modes is appropriate for the requirements of the application; for example, when username/password pairs are stored in some external store, such as a database. This sample shows a service that has a custom validator that checks for two particular username/password pairs. The client uses such a username/password pair to authenticate to the service.  

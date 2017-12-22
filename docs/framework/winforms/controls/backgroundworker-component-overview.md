@@ -29,6 +29,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # BackgroundWorker Component Overview
 There are many commonly performed operations that can take a long time to execute. For example:  

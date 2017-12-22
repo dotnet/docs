@@ -18,6 +18,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Bind to a Method
 The following example shows how to bind to a method using <xref:System.Windows.Data.ObjectDataProvider>.  

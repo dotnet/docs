@@ -17,6 +17,8 @@ caps.latest.revision: 35
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # What&#39;s New in Windows Communication Foundation 4.5
 This topic discusses features new to [!INCLUDE[indigo1](../../../includes/indigo1-md.md)].  

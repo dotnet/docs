@@ -21,6 +21,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use Compositing Mode to Control Alpha Blending
 There may be times when you want to create an off-screen bitmap that has the following characteristics:  

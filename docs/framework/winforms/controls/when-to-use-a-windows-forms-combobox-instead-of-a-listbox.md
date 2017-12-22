@@ -23,6 +23,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # When to Use a Windows Forms ComboBox Instead of a ListBox
 The <xref:System.Windows.Forms.ComboBox> and the <xref:System.Windows.Forms.ListBox> controls have similar behaviors, and in some cases may be interchangeable. There are times, however, when one or the other is more appropriate to a task.  

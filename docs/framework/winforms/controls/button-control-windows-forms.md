@@ -17,6 +17,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Button Control (Windows Forms)
 The Windows Forms `Button` control allows the user to click it to perform an action. The `Button` control can display both text and images. When the button is clicked, it looks as if it is being pushed in and released.  

@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CustomDiscoveryMetadata
 This sample shows how to insert custom XML metadata into the discovery metadata for a discoverable endpoint exposed by a service. The sample then shows how a client can search for the service and extract this custom data. This sample consists of two projects, service and client.  

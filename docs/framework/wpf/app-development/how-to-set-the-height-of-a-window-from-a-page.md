@@ -18,6 +18,8 @@ caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set the Height of a Window from a Page
 This example illustrates how to set the height of the window from a <xref:System.Windows.Controls.Page>.  

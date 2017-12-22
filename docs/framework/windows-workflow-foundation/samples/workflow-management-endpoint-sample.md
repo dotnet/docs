@@ -12,6 +12,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Workflow Management Endpoint Sample
 This sample shows how a workflow control endpoint can be used to create and run workflows both locally and remotely. The sample demonstrates how to host a control endpoint and write clients that call the control endpoint to create and run the instance of a workflow. The workflow is not a service.  

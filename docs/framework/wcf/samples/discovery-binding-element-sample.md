@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Discovery Binding Element Sample
 This sample demonstrates how to use the discovery client binding element to discover a service. This feature enables developers to add a discovery client channel to their existing client channel stack, making the programming model very intuitive. When the associated channel is opened, the address of the service is resolved using discovery. This sample consists of the following projects:  

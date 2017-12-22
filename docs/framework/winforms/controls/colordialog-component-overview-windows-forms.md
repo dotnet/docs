@@ -19,6 +19,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ColorDialog Component Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.ColorDialog> component is a pre-configured dialog box that allows the user to select a color from a palette and to add custom colors to that palette. It is the same dialog box that you see in other Windows-based applications to select colors. Use it within your Windows-based application as a simple solution in lieu of configuring your own dialog box.  

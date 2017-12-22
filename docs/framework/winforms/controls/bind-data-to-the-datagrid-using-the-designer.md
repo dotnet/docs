@@ -18,6 +18,8 @@ caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Bind Data to the Windows Forms DataGridView Control Using the Designer
 You can use the designer to connect a <xref:System.Windows.Forms.DataGridView> control to data sources of several different varieties, including databases, business objects, or Web services. When you bind the control to a data source using the designer, the control is automatically bound to a <xref:System.Windows.Forms.BindingSource> component that represents the data source. Additionally, columns are automatically generated in the control to match the schema information provided by the data source.  

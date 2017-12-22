@@ -16,6 +16,8 @@ caps.latest.revision: 36
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring Bindings for Windows Communication Foundation Services
 When creating an application, you often want to defer decisions to the administrator after the deployment of the application. For example, there is often no way of knowing in advance what a service address, or Uniform Resource Identifier (URI), will be. Instead of hard-coding an address, it is preferable to allow an administrator to do so after creating a service. This flexibility is accomplished through configuration.  

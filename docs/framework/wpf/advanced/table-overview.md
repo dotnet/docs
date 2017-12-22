@@ -21,6 +21,8 @@ caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Table Overview
 <xref:System.Windows.Documents.Table> is a block level element that supports grid-based presentation of Flow document content. The flexibility of this element makes it very useful, but also makes it more complicated to understand and use correctly.  

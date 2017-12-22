@@ -17,6 +17,8 @@ caps.latest.revision: 16
 author: "ghogen"
 ms.author: "ghogen"
 manager: "douge"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Start Services
 After a service is installed, it must be started. Starting calls the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method on the service class. Usually, the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method defines the useful work the service will perform. After a service starts, it remains active until it is manually paused or stopped.  

@@ -14,6 +14,8 @@ caps.latest.revision: 26
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # BasicBinding with Transport Security
 This sample demonstrates the use of SSL transport security with the basic binding. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service.  

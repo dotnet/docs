@@ -26,6 +26,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Bind the Windows Forms DataGrid Control to a Data Source
 > [!NOTE]

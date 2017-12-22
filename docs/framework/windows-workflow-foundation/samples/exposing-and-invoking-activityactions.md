@@ -12,6 +12,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Exposing and Invoking ActivityActions
 This sample demonstrates how to develop a custom activity that has an <xref:System.Activities.ActivityAction>. It also demonstrates how to use this activity by providing an implementation of the <xref:System.Activities.ActivityAction>.  

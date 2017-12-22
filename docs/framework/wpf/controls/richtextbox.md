@@ -19,6 +19,8 @@ caps.latest.revision: 68
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # RichTextBox
 The <xref:System.Windows.Controls.RichTextBox> element defines an editing control with built-in support for features such as cut and paste, rich document presentation, and content selection.  

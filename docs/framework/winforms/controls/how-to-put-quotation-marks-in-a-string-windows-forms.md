@@ -22,6 +22,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Put Quotation Marks in a String (Windows Forms)
 Sometimes you might want to place quotation marks (" ") in a string of text. For example:  

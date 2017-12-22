@@ -18,6 +18,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Copy ToolStripMenuItems
 At design time, you can copy entire top-level menus and their submenu items to a different place on the <xref:System.Windows.Forms.MenuStrip>. You can also copy individual menu items between top-level menus or change the position of menu items within a menu.  

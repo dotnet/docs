@@ -18,6 +18,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Draw a Rectangle
 This example shows how to draw a rectangle by using the <xref:System.Windows.Shapes.Rectangle> element.  

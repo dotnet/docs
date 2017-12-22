@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuration Channel Factory
 This sample covers the usage of the <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601>. The <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601> allows central management of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client configuration. This can also be useful in scenarios in which configuration is selected or changed after the application domain load time.  

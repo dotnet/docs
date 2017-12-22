@@ -14,6 +14,8 @@ caps.latest.revision: 21
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuration Sample
 This sample demonstrates the use of a configuration file to make a service discoverable.  

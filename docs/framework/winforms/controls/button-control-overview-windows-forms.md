@@ -19,6 +19,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Button Control Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.Button> control allows the user to click it to perform an action. When the button is clicked, it looks as if it is being pushed in and released. Whenever the user clicks a button, the <xref:System.Windows.Forms.Control.Click> event handler is invoked. You place code in the <xref:System.Windows.Forms.Control.Click> event handler to perform any action you choose.  

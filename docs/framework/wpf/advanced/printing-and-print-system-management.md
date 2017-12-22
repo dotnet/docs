@@ -17,6 +17,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Printing and Print System Management
 [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] and [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)] introduce a new print path — an alternative to [!INCLUDE[TLA#tla_gdi](../../../../includes/tlasharptla-gdi-md.md)] printing — and a vastly expanded set of print system management [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)].  

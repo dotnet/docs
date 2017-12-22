@@ -18,6 +18,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Data Entry in the Windows Forms DataGridView Control
 The `DataGridView` control provides several features that let you change how users add or modify data in the control. For example, you can make data entry more efficient by providing default values for new rows and by alerting users when errors occur.  

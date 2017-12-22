@@ -20,6 +20,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Power Management in Windows Forms
 Your Windows Forms applications can take advantage of the power management features in the Windows operating system. Your applications can monitor the power status of a computer and take action when a status change occurs. For example, if your application is running on a portable computer, you might want to disable certain features in your application when the computer's battery charge falls under a certain level.  

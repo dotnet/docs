@@ -16,6 +16,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ServiceModel Transaction Configuration
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides three attributes for configuring transactions for a service: `transactionFlow`, `transactionProtocol`, and `transactionTimeout`.  

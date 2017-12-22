@@ -17,6 +17,8 @@ caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # PropertyPath XAML Syntax
 The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax for setting various properties that take the <xref:System.Windows.PropertyPath> type as their value. This topic documents the <xref:System.Windows.PropertyPath> syntax as applied to binding and animation syntaxes.  

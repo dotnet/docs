@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Next function
 Retrieves the next property in an enumeration that begins with a call to [BeginEnumeration](beginenumeration.md).  

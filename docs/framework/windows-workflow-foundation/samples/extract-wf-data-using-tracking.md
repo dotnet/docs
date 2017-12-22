@@ -12,6 +12,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Extract WF Data using Tracking
 This sample demonstrates how to use workflow tracking to extract workflow variables and arguments from activities. It also shows the addition of annotations to tracking records and the extraction of data payload within custom tracking records. The sample uses the Event Tracing for Windows (ETW) tracking participant to extract data from the workflow.  

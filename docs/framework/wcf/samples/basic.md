@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Basic
 This section includes sections of samples that demonstrate basic [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]functionality.  

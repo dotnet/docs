@@ -22,6 +22,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create Variable Sized Text in a ComboBox Control
 This example demonstrates custom drawing of text in a <xref:System.Windows.Forms.ComboBox> control. When an item meets a certain criteria, it is drawn in a larger font and turned red.  

@@ -21,6 +21,8 @@ caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Freezable Objects Overview
 This topic describes how to effectively use and create <xref:System.Windows.Freezable> objects, which provide special features that can help improve application performance. Examples of freezable objects include brushes, pens, transformations, geometries, and animations.  

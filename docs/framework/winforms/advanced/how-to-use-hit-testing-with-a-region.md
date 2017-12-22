@@ -20,6 +20,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use Hit Testing with a Region
 The purpose of hit testing is to determine whether the cursor is over a given object, such as an icon or a button.  

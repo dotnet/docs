@@ -17,6 +17,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Position a ToolStripItem on a ToolStrip
 You can move or add a <xref:System.Windows.Forms.ToolStripItem> to the left or right side of a <xref:System.Windows.Forms.ToolStrip>.  

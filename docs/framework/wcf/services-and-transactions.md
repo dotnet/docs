@@ -16,6 +16,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Services and Transactions
 [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications can initiate a transaction from within a client and coordinate the transaction within the service operation. Clients can initiate a transaction and invoke several service operations and ensure that the service operations are either committed or rolled back as a single unit.  

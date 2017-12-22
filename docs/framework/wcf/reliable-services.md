@@ -20,6 +20,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Reliable Services
 Queues and reliable sessions are the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] features that implement reliable messaging. This topic explains the reliable messaging features of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)].  

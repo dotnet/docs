@@ -21,6 +21,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Define Resize and Positioning Behavior in a Split Window
 The panels of the <xref:System.Windows.Forms.SplitContainer> control lend themselves well to being resized and manipulated by users. However, there will be times when you will want to programmatically control the splitter—where it is positioned and to what degree it can be moved.  

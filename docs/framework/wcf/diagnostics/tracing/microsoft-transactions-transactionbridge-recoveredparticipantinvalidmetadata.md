@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.RecoveredParticipantInvalidMetadata
 The endpoint reference found in a participant recovery log entry contained invalid or incompatible metadata.  

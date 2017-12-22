@@ -23,6 +23,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Dependency Property Callbacks and Validation
 This topic describes how to create dependency properties using alternative custom implementations for property-related features such as validation determination, callbacks that are invoked whenever the property's effective value is changed, and overriding possible outside influences on value determination. This topic also discusses scenarios where expanding on the default property system behaviors by using these techniques is appropriate.  

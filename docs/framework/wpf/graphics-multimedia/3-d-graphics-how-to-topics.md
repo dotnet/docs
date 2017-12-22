@@ -19,6 +19,8 @@ caps.latest.revision: 73
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # 3-D Graphics How-to Topics
 The topics in this section demonstrate how to use [!INCLUDE[TLA#tla_3d](../../../../includes/tlasharptla-3d-md.md)] graphics in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications.  

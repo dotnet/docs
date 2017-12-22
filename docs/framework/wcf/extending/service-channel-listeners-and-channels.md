@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Service: Channel Listeners and Channels
 There are three categories of channel objects: channels, channel listeners and channel factories. Channels are the interface between the application and the channel stack. Channel listeners are responsible for creating channels on the receive (or listen) side, typically in response to a new incoming message or connection. Channel factories are responsible for creating channels on the send side to initiate communication with an endpoint.  

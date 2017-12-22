@@ -24,6 +24,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Delete or Hide Columns in the Windows Forms DataGrid Control
 > [!NOTE]

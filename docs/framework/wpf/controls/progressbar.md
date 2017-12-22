@@ -19,6 +19,8 @@ caps.latest.revision: 65
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ProgressBar
 A <xref:System.Windows.Controls.ProgressBar> indicates the progress of an operation. The <xref:System.Windows.Controls.ProgressBar> control consists of a window that is filled with the system highlight color as an operation progresses.  

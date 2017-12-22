@@ -14,6 +14,8 @@ caps.latest.revision: 24
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Publish Metadata for a Service Using a Configuration File
 This is one of two how-to topics that demonstrate publishing metadata for a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service. There are two ways to specify how a service should publish metadata, using a configuration file and using code. This topic shows how to publish metadata for a service using a configuration file.  

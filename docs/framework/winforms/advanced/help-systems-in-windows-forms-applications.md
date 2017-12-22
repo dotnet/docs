@@ -20,6 +20,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Help Systems in Windows Forms Applications
 One of the most important courtesies you, as a developer of applications, can furnish your users with is a competent Help system. This is where they will turn when they become confused or disoriented. Providing a Help system in a Windows-based application is easily done by using the [HelpProvider Component](../../../../docs/framework/winforms/controls/helpprovider-component-windows-forms.md).  

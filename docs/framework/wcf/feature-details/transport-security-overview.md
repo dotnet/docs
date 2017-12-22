@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 00959326-aa9d-44d0-af61-54933d4adc7f
 caps.latest.revision: 23
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Transport Security Overview
 Transport security mechanisms in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] depend on the binding and transport being used. For example, when using the <xref:System.ServiceModel.WSHttpBinding> class, the transport is HTTP, and the primary mechanism for securing the transport is Secure Sockets Layer (SSL) over HTTP, commonly called HTTPS. This topic discusses the major transport security mechanisms used in the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] system-provided bindings.  

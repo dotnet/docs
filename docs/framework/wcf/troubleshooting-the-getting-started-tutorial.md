@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Troubleshooting the Getting Started Tutorial
 This topic lists the most common problems encountered when working through the Getting Started Tutorial and how to resolve them.  

@@ -24,6 +24,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Implementing Virtual Mode with Just-In-Time Data Loading in the Windows Forms DataGridView Control
 One reason to implement virtual mode in the <xref:System.Windows.Forms.DataGridView> control is to retrieve data only as it is needed. This is called *just-in-time data loading*.  

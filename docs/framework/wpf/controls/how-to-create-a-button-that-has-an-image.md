@@ -19,6 +19,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Button That Has an Image
 This example shows how to include an image on a <xref:System.Windows.Controls.Button>.  

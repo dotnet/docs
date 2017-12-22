@@ -14,6 +14,8 @@ caps.latest.revision: 18
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Controlling Resource Consumption and Improving Performance
 This topic describes various properties in different areas of the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] architecture that work to control resource consumption and affect performance metrics.  

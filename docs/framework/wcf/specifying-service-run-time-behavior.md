@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 5c5450ea-6af1-4b75-a267-613d0ac54707
 caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Specifying Service Run-Time Behavior
 Once you have designed a service contract ([Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)) and implemented your service contract ([Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md)) you can configure the operation behavior of the service runtime. This topic discusses system-provided service and operation behaviors and describes where to find more information to create new behaviors. While some behaviors are applied as attributes, many are applied using an application configuration file or programmatically. [!INCLUDE[crabout](../../../includes/crabout-md.md)] configuring your service application, see [Configuring Services](../../../docs/framework/wcf/configuring-services.md).  

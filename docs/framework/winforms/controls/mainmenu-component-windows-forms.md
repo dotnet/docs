@@ -16,6 +16,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # MainMenu Component (Windows Forms)
 > [!NOTE]

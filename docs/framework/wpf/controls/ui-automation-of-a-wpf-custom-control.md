@@ -22,6 +22,8 @@ caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # UI Automation of a WPF Custom Control
 [!INCLUDE[TLA#tla_uiautomation](../../../../includes/tlasharptla-uiautomation-md.md)] provides a single, generalized interface that automation clients can use to examine or operate the user interfaces of a variety of platforms and frameworks. [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] enables both quality-assurance (test) code and accessibility applications such as screen readers to examine user-interface elements and simulate user interaction with them from other code. For information about [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] across all platforms, see Accessibility.  

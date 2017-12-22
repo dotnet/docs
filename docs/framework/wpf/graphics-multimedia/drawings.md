@@ -25,6 +25,8 @@ caps.latest.revision: 53
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Drawings
 <xref:System.Windows.Media.Drawing> objects are used to efficiently draw shapes, images, or text. Drawings are used when painting with a <xref:System.Windows.Media.DrawingBrush> or programming with <xref:System.Windows.Media.Visual> objects.  

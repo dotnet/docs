@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ExecNotificationQueryWmi function
 Executes a query to receive events. The call returns immediately, and the caller can poll the returned enumerator for events as they arrive. Releasing the returned enumerator cancels the query.  

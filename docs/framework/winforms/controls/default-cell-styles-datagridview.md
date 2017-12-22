@@ -19,6 +19,8 @@ caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set Default Cell Styles and Data Formats for the Windows Forms DataGridView Control Using the Designer
 The <xref:System.Windows.Forms.DataGridView> control lets you specify default cell styles and cell data formats for the entire control, for specific columns, for row and column headers, and for alternating rows to create a ledger effect. Default styles set for the entire control are overridden by default styles set for columns and alternating rows. Additionally, styles that you set in code for individual rows and cells override the default styles.  

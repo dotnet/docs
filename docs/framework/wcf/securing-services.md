@@ -18,6 +18,8 @@ caps.latest.revision: 28
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Securing Services
 Security of a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service consists of two primary requirements: transfer security and authorization. (A third requirement, auditing of security events, is described in [Auditing](../../../docs/framework/wcf/feature-details/auditing-security-events.md).) In brief, transfer security includes authentication (verifying the identity of both the service and the client), confidentiality (message encryption), and integrity (digital signing to detect tampering). Authorization is the control of access to resources, for example, allowing only privileged users to read a file. Using features of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], the two primary requirements are easily implemented.  

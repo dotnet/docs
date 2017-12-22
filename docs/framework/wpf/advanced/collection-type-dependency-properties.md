@@ -22,6 +22,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Collection-Type Dependency Properties
 This topic provides guidance and suggested patterns for how to implement a dependency property where the type of the property is a collection type.  

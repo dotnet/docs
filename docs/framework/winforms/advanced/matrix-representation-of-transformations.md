@@ -28,6 +28,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Matrix Representation of Transformations
 An m×n matrix is a set of numbers arranged in m rows and n columns. The following illustration shows several matrices.  

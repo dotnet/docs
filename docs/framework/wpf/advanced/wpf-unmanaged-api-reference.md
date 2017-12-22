@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # WPF Unmanaged API Reference
 Windows Presentation Foundation (WPF) libraries expose a number of unmanaged functions that are intended for internal use only. They should not be called from user code.  

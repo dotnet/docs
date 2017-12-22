@@ -12,6 +12,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IfElse With Rules
 This sample shows the use of a rule condition with an <xref:System.Workflow.Activities.IfElseActivity> activity.  

@@ -21,6 +21,8 @@ caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use SystemFonts
 This example shows how to use the static resources of the <xref:System.Windows.SystemFonts> class in order to style or customize a button.  

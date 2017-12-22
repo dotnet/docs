@@ -12,6 +12,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Error Handling Activities in WF
 [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] provides several system-provided activities for implementing error handling and recovery. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Exceptions](../../../docs/framework/windows-workflow-foundation/exceptions.md).  

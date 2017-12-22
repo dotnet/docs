@@ -17,6 +17,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # TextBox Control (Windows Forms)
 Windows Forms text boxes are used to get input from the user or to display text. The `TextBox` control is generally used for editable text, although it can also be made read-only. Text boxes can display multiple lines, wrap text to the size of the control, and add basic formatting. The `TextBox` control allows a single format for text displayed or entered in the control.  

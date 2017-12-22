@@ -23,6 +23,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Save Files Using the SaveFileDialog Component
 The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse the file system and select files to be saved. The dialog box returns the path and name of the file the user has selected in the dialog box. However, you must write the code to actually write the files to disk.  

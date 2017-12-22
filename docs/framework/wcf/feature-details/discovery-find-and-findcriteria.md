@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Discovery Find and FindCriteria
 A discovery find operation is initiated by a client to discover one or more services and is one of the main actions in discovery. Performing a find sends a WS-Discovery Probe message over the network. Services that match the criteria specified reply with WS-Discovery ProbeMatch messages. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] discovery messages, see the [WS-Discovery specification](http://go.microsoft.com/fwlink/?LinkID=122347).  

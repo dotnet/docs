@@ -16,6 +16,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Claims and Tokens
 This topic describes the various claim types that [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] creates from the default tokens that it supports.  

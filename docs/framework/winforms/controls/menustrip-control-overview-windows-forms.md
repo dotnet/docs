@@ -19,6 +19,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # MenuStrip Control Overview (Windows Forms)
 Menus expose functionality to your users by holding commands that are grouped by a common theme.  

@@ -17,6 +17,8 @@ caps.latest.revision: 11
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # XAMLServices Class and Basic XAML Reading or Writing
 <xref:System.Xaml.XamlServices> is a class provided by .NET Framework XAML Services that can be used to address XAML scenarios that do not require specific access to the XAML node stream, or XAML type system information obtained from those nodes. <xref:System.Xaml.XamlServices> API can be summarized as the following: `Load` or `Parse` to support a XAML load path, `Save` to support a XAML save path, and `Transform` to provide a technique that joins a load path and save path. `Transform` can be used to change from one XAML schema to another. This topic summarizes each of these API classifications and describes the differences between particular method overloads.  

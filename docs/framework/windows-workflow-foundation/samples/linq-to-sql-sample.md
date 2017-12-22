@@ -12,6 +12,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # LINQ to SQL Sample
 This sample demonstrates how to create an activity to use LINQ to SQL query entities from tables in SQL Server databases.  

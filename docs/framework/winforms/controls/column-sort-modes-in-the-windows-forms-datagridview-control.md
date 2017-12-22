@@ -17,6 +17,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Column Sort Modes in the Windows Forms DataGridView Control
 <xref:System.Windows.Forms.DataGridView> columns have three sort modes. The sort mode for each column is specified through the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property of the column, which can be set to one of the following <xref:System.Windows.Forms.DataGridViewColumnSortMode> enumeration values.  

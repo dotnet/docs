@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Middle-Tier Client Applications
 This topic discusses various issues specific to middle-tier client applications that use [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

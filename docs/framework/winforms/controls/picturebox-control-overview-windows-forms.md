@@ -20,6 +20,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # PictureBox Control Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.PictureBox> control is used to display graphics in bitmap, GIF, JPEG, metafile, or icon format.  

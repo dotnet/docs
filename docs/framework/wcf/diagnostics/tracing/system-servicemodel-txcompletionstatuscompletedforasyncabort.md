@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # System.ServiceModel.TxCompletionStatusCompletedForAsyncAbort
 The specified transaction for the specified operation was completed due to asynchronous abort.  

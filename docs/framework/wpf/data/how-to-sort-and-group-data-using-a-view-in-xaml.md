@@ -23,6 +23,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Sort and Group Data Using a View in XAML
 This example shows how to create a view of a data collection in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. Views allow for the functionalities of grouping, sorting, filtering, and the notion of a current item.  

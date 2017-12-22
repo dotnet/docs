@@ -20,6 +20,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Crop an Image
 This example shows how to crop an image using <xref:System.Windows.Media.Imaging.CroppedBitmap>.  

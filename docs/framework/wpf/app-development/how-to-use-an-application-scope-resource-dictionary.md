@@ -21,6 +21,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use an Application-Scope Resource Dictionary
 This example shows how to define and use an application-scope custom resource dictionary.  

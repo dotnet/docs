@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Types Migrated from WPF to System.Xaml
 In [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)] and [!INCLUDE[net_v30_long](../../../includes/net-v30-long-md.md)], both [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] and [!INCLUDE[TLA#tla_workflow](../../../includes/tlasharptla-workflow-md.md)] included a XAML language implementation. Many of the public types that provided extensibility for the WPF XAML implementation existed in the WindowsBase, PresentationCore, and PresentationFramework assemblies. Likewise, public types that provided extensibility for [!INCLUDE[TLA#tla_workflow](../../../includes/tlasharptla-workflow-md.md)] XAML existed in the System.Workflow.ComponentModel assembly. In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], some of the XAML-related types are migrated to the System.Xaml assembly. A common .NET Framework implementation of XAML language services enables many XAML extensibility scenarios that were originally defined by a specific framework's XAML implementation but are now part of overall [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] XAML language support. This topic lists the types that are migrated and discusses issues related to the migration.  

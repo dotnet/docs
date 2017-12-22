@@ -12,6 +12,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # RangeEnumeration Activity
 This sample demonstrates how to create a custom activity that iterates over a collection of numbers.The following table details the main files included in the sample.  

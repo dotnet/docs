@@ -17,6 +17,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How Mouse Input Works in Windows Forms
 Receiving and handling mouse input is an important part of every Windows application. You can handle mouse events to perform an action in your application, or use mouse location information to perform hit testing or other actions. In addition, you can change the way the controls in your application handle mouse input. This topic describes these mouse events in detail, and how to obtain and change system settings for the mouse. For more information about the data provided with the mouse events and the order in which the mouse click events are raised, see [Mouse Events in Windows Forms](../../../docs/framework/winforms/mouse-events-in-windows-forms.md).  

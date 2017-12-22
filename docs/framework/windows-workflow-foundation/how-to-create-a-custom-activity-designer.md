@@ -12,6 +12,8 @@ caps.latest.revision: 25
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create a Custom Activity Designer
 Custom activity designers are typically implemented so that their associated activities are composable with other activities whose designers can be dropped on to the design surface with them. This functionality requires that a custom activity designer provide a "drop zone" where an arbitrary activity can be placed and also the means to manage the resulting collection of elements on the design surface. This topic describes how to create a custom activity designer that contains such a drop zone and how to create a custom activity designer that provides that editing functionality needed to manage the collection of designer elements.  

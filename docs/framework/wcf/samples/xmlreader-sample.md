@@ -16,6 +16,8 @@ caps.latest.revision: 32
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # XmlReader Sample
 The XmlReader sample demonstrates the processing of a message body using an <xref:System.Xml.XmlReader>. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which implements a calculator service. An additional service operation, `Sum`, has been added that accepts a message that contains an array of values to add together. The service reads the message using an <xref:System.Xml.XmlReader>.  

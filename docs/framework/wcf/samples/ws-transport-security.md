@@ -14,6 +14,8 @@ caps.latest.revision: 22
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # WS Transport Security
 This sample demonstrates the use of SSL transport security with the <xref:System.ServiceModel.WSHttpBinding> binding. By default, the `wsHttpBinding` binding provides HTTP communication. When configured for transport security, the binding supports HTTPS communication. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service. The `wsHttpBinding` is specified and configured in the application configuration files for the client and service.  

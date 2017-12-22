@@ -14,6 +14,8 @@ caps.latest.revision: 22
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Viewing Message Logs
 This topic describes how you can view message logs.  

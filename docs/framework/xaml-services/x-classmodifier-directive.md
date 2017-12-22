@@ -22,6 +22,8 @@ caps.latest.revision: 22
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:ClassModifier Directive
 Modifies XAML compilation behavior when `x:Class` is also provided. Specifically, instead of creating a partial `class` that has a `Public` access level (the default), the provided `x:Class` is created with a `NotPublic` access level. This behavior affects the access level for the class in the generated assemblies.  

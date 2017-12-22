@@ -21,6 +21,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Convert Bound Data
 This example shows how to apply conversion to data that is used in bindings.  

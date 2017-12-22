@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Use MetadataExchangeClient to Retrieve Metadata
 Use the <xref:System.ServiceModel.Description.MetadataExchangeClient> class to download metadata using the WS-MetadataExchange (MEX) protocol. The retrieved metadata files are returned as a <xref:System.ServiceModel.Description.MetadataSet> object. The returned <xref:System.ServiceModel.Description.MetadataSet> object contains a collection of <xref:System.ServiceModel.Description.MetadataSection> objects, each of which contains a specific metadata dialect and an identifier. You can write the returned metadata to files or, if the returned metadata contains Web Services Description Language (WSDL) documents, you can import the metadata using the <xref:System.ServiceModel.Description.WsdlImporter>.  

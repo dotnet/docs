@@ -17,6 +17,8 @@ caps.latest.revision: 243
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Communication Foundation Glossary for .NET Framework 4.5
 The following terms are defined for Windows Communication Foundation documentation.  

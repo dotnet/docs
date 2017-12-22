@@ -22,6 +22,8 @@ caps.latest.revision: 25
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Static Markup Extension
 References any static by-value code entity that is defined in a [!INCLUDE[TLA#tla_cls](../../../includes/tlasharptla-cls-md.md)]–compliant way. The static property that is referenced can be used to provide the value of a property in XAML.  

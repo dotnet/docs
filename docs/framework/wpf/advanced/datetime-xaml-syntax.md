@@ -21,6 +21,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DateTime XAML Syntax
 Some controls, such as <xref:System.Windows.Controls.Calendar> and <xref:System.Windows.Controls.DatePicker>, have properties that use the <xref:System.DateTime> type. Although you typically specify an initial date or time for these controls in the code-behind at run time, you can specify an initial date or time in XAML. The WPF XAML parser handles parsing of <xref:System.DateTime> values using a built-in XAML text syntax. This topic describes the specifics of the <xref:System.DateTime> XAML text syntax.  

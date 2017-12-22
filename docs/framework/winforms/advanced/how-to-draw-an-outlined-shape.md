@@ -31,6 +31,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Draw an Outlined Shape
 This example draws outlined ellipses and rectangles on a form.  

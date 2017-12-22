@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Extensibility
 This section contains samples that deal with custom extensibility and other features of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

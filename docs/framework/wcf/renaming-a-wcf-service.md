@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Renaming a WCF Service
 This topic describes how you can rename a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service.  

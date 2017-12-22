@@ -18,6 +18,8 @@ caps.latest.revision: 12
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Arguments Directive
 Packages construction arguments for a non-default constructor object element declaration in XAML, or for a factory method object declaration.  

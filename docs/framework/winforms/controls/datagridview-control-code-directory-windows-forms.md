@@ -19,6 +19,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DataGridView Control Code Directory (Windows Forms)
 This topic provides links to <xref:System.Windows.Forms.DataGridView>-related code examples available in the documentation.  

@@ -18,6 +18,8 @@ caps.latest.revision: 21
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Profiling Enumerations
 This section describes the unmanaged enumerations that the profiling API uses.  

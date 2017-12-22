@@ -24,6 +24,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set Icons for the Windows Forms TreeView Control
 The Windows Forms <xref:System.Windows.Forms.TreeView> control can display icons next to each node. The icons are positioned to the immediate left of the node text. To display these icons, you must associate the tree view with an <xref:System.Windows.Forms.ImageList> control. For more information about image lists, see [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md) and [How to: Add or Remove Images with the Windows Forms ImageList Component](../../../../docs/framework/winforms/controls/how-to-add-or-remove-images-with-the-windows-forms-imagelist-component.md).  

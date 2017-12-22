@@ -12,6 +12,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Property Grid Extensibliity
 A developer can customize the property grid that is displayed when a given activity is selected within the designer. This can be done to create a rich editing experience. This sample shows how this can be done.  

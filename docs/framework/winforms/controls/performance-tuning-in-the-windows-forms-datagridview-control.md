@@ -18,6 +18,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Performance Tuning in the Windows Forms DataGridView Control
 When working with large amounts of data, the `DataGridView` control can consume a large amount of memory in overhead, unless you use it carefully. On clients with limited memory, you can avoid some of this overhead by avoiding features that have a high memory cost. You can also manage some or all of the data maintenance and retrieval tasks yourself using virtual mode in order to customize the memory usage for your scenario.  

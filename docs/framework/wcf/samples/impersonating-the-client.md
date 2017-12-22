@@ -18,6 +18,8 @@ caps.latest.revision: 25
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Impersonating the Client
 The Impersonation sample demonstrates how to impersonate the caller application at the service so that the service can access system resources on behalf of the caller.  

@@ -24,6 +24,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Sort Data in a View
 This example describes how to sort data in a view.  

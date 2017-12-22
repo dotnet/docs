@@ -18,6 +18,8 @@ caps.latest.revision: 18
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # One-Way Services
 The default behavior of a service operation is the request-reply pattern. In a request-reply pattern, the client waits for the reply message, even if the service operation is represented in code as a `void` method. With a one-way operation, only one message is transmitted. The receiver does not send a reply message, nor does the sender expect one.  

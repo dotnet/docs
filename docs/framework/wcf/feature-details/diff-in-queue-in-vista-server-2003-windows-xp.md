@@ -16,6 +16,8 @@ caps.latest.revision: 21
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP
 This topic summarizes the differences in the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] queues feature between [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  

@@ -16,6 +16,8 @@ caps.latest.revision: 13
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Service Contexts Available to Type Converters and Markup Extensions
 Authors of the types that support type converter and markup extension usages must often have contextual information about where a usage is located in the markup, or in surrounding object graph structure. Information might be needed so that the provided object is instantiated correctly or so that object references to existing objects in the object graph can be made. When using .NET Framework XAML Services, the context that might be required is exposed as a series of service interfaces. Type converter or markup extension support code can query for a service by using a service provider context that is available and passed through from <xref:System.Xaml.XamlObjectWriter> or related types. The XAML schema context is directly available through one such service. This topic describes how to access service contexts from a value converter implementation, and lists typically available services and their roles.  

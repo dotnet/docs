@@ -18,6 +18,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Windows Explorer–Style Interface on a Windows Form
 Windows Explorer is a common user-interface choice for applications because of its ready familiarity.  

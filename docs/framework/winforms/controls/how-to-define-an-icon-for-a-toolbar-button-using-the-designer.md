@@ -21,6 +21,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Define an Icon for a ToolBar Button Using the Designer
 > [!NOTE]

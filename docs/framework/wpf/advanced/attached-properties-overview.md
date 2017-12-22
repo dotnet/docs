@@ -19,6 +19,8 @@ caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Attached Properties Overview
 An attached property is a concept defined by XAML. An attached property is intended to be used as a type of global property that is settable on any object. In [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], attached properties are typically defined as a specialized form of dependency property that does not have the conventional property "wrapper".  

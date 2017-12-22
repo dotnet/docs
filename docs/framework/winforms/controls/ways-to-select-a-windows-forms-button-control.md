@@ -16,6 +16,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Ways to Select a Windows Forms Button Control
 A Windows Forms button can be selected in the following ways:  

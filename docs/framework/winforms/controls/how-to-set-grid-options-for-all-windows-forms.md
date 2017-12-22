@@ -20,6 +20,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set Grid Options for All Windows Forms
 As you become used to working in the [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] development environment, you can set preferences for all the forms and projects you work with in the Windows Forms Designer.  

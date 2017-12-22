@@ -20,6 +20,8 @@ caps.latest.revision: 64
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Grid
 The <xref:System.Windows.Controls.Grid> element is used to precisely position content in rows and columns.  

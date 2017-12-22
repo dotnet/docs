@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating Multicasting Applications using the UDP Transport
 Multicasting applications send small messages to a large number of recipients at the same time without the need to establish point to point connections. The emphasis of such applications is speed over reliability. In other words, it is more important to send timely data than to ensure any specific message is actually received. WCF now supports writing multicasting applications using the <xref:System.ServiceModel.UdpBinding>. This transport is useful in scenarios where a service needs to send out small messages to a number of clients simultaneously. A stock ticker application is an example of such a service.  

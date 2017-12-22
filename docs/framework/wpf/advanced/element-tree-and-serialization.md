@@ -20,6 +20,8 @@ caps.latest.revision: 71
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Element Tree and Serialization
 WPF programming elements often exist in some form of tree relationship to each other. For instance, an application UI created in XAML can be conceptualized as an object tree. The element tree can be further divided into two discrete yet sometimes parallel trees: the logical tree and the visual tree. Serialization in WPF involves saving the state of these two trees as well as application state and writing it to a file, potentially as XAML.  

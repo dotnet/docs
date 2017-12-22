@@ -16,6 +16,8 @@ caps.latest.revision: 50
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Analytic Trace Event Reference
 The following table defines the event levels, identifiers, and messages associated with the [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] Analytic Tracing.  

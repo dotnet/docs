@@ -22,6 +22,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add Panels to a StatusBar Control
 > [!IMPORTANT]

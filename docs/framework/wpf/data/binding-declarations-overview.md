@@ -24,6 +24,8 @@ caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Binding Declarations Overview
 This topic discusses the different ways you can declare a binding.  

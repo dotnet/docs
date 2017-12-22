@@ -12,6 +12,8 @@ caps.latest.revision: 13
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Hiring Process
 This sample demonstrates how to implement a business process using messaging activities and two workflows hosted as workflow services. These workflows are part of the IT infrastructure of a fictional company called Contoso, Inc.  

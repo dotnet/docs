@@ -18,6 +18,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Column Types in the Windows Forms DataGridView Control
 The <xref:System.Windows.Forms.DataGridView> control uses several column types to display its information and enable users to modify or add information.  

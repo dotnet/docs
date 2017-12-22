@@ -21,6 +21,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Specify the Binding Source
 In data binding, the binding source object refers to the object you obtain your data from. This topic describes the different ways of specifying the binding source.  

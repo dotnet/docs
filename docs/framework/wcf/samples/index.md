@@ -14,6 +14,8 @@ caps.latest.revision: 17
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Communication Foundation (WCF) Samples
 These samples provide instruction on various aspects of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

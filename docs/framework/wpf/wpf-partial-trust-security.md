@@ -27,6 +27,8 @@ caps.latest.revision: 40
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # WPF Partial Trust Security
 <a name="introduction"></a> In general, Internet applications should be restricted from having direct access to critical system resources, to prevent malicious damage. By default, [!INCLUDE[TLA#tla_html](../../../includes/tlasharptla-html-md.md)] and client-side scripting languages are not able to access critical system resources. Because [!INCLUDE[TLA#tla_wpf](../../../includes/tlasharptla-wpf-md.md)] browser-hosted applications can be launched from the browser, they should conform to a similar set of restrictions. To enforce these restrictions, [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] relies on both [!INCLUDE[TLA#tla_cas](../../../includes/tlasharptla-cas-md.md)] and [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)] (see [WPF Security Strategy - Platform Security](../../../docs/framework/wpf/wpf-security-strategy-platform-security.md)). By default, browser-hosted applications request the Internet zone [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] set of permissions, irrespective of whether they are launched from the Internet, the local intranet, or the local computer. Applications that run with anything less than the full set of permissions are said to be running with partial trust.  

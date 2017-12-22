@@ -16,6 +16,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Translate an Element
 This example shows how to translate (move) an element by using a <xref:System.Windows.Media.TranslateTransform>.  

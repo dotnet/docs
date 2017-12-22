@@ -12,6 +12,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WorkflowApplication ReadLine Host
 This sample is a generic ReadLine host. You can load and run any workflow using the included `ReadLine` activity (or other activities like it that get data from bookmarks resumed with strings). Output from the `WriteLine` activity or anything writing to the <xref:System.Activities.Statements.WriteLine.TextWriter%2A> extension is directed to the host window. When an instance is idle, the available bookmarks for that instance appear in a combo box. Selecting a bookmark, inputting some text, and pressing the resume bookmark button continue the execution of the workflow. You can also cancel, abort, or terminate a selected workflow. Persistence is on by default – you can shut down the host and bring it back, and the instance list is populated with the instances stored in the database. Tracking is used to output <xref:System.Activities.WorkflowApplication>-level events to the host with the option to add detailed tracking at the activity level.  

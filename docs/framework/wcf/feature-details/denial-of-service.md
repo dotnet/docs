@@ -16,6 +16,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Denial of Service
 Denial of service occurs when a system is overwhelmed in such a way that messages cannot be processed, or they are processed extremely slowly.  

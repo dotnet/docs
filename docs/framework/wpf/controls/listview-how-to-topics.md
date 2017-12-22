@@ -19,6 +19,8 @@ caps.latest.revision: 68
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ListView How-to Topics
 The topics in this section describe how to use the <xref:System.Windows.Controls.ListView> control to display a set of data items.  

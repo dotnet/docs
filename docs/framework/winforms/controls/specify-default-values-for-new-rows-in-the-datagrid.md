@@ -22,6 +22,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Specify Default Values for New Rows in the Windows Forms DataGridView Control
 You can make data entry more convenient when the application fills in default values for newly added rows. With the <xref:System.Windows.Forms.DataGridView> class, you can fill in default values with the <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded> event. This event is raised when the user enters the row for new records. When your code handles this event, you can populate desired cells with values of your choosing.  

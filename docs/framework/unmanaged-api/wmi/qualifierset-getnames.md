@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # QualifierSet_GetNames function
 Retrieves the names of all the qualifiers or of certain qualifiers that are available from the current object or property. 

@@ -17,6 +17,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use the Master-Detail Pattern with Hierarchical Data
 This example shows how to implement the master-detail scenario.  

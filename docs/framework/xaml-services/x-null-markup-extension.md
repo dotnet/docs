@@ -24,6 +24,8 @@ caps.latest.revision: 20
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Null Markup Extension
 Specifies `null` as a value for a XAML member.  

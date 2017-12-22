@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Migrating ASP.NET Web Services to WCF
 ASP.NET provides .NET Framework class libraries and tools for building Web services, as well as facilities for hosting services within Internet Information Services (IIS). [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides .NET Framework class libraries, tools and hosting facilities for enabling software entities to communicate using any protocols, including those used by Web services.  Migrating ASP.NET Web Services to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] allows your applications to take advantage of new features and improvements that are unique to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  

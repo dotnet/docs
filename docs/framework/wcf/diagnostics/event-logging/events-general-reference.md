@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Events General Reference
 This section lists all the events that are emitted by [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)].

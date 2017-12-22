@@ -20,6 +20,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Application Startup Time
 The amount of time that is required for a WPF application to start can vary greatly. This topic describes various techniques for reducing the perceived and actual startup time for a Windows Presentation Foundation (WPF) application.  

@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Considerations for Secure Sessions
 You should consider the following items that affect security when implementing secure sessions. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] security considerations, see [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md) and [Best Practices for Security](../../../../docs/framework/wcf/feature-details/best-practices-for-security-in-wcf.md).  

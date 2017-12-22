@@ -21,6 +21,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add Menu Items to a ContextMenuStrip
 You can add just one menu item or several items at a time to a <xref:System.Windows.Forms.ContextMenuStrip>.  

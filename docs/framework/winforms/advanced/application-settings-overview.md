@@ -20,6 +20,8 @@ caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Application Settings Overview
 This topic discusses how to create and store settings data on behalf of your application and your users.  

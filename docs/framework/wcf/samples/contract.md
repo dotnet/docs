@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Contract
 This section contains samples that demonstrate contracts in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

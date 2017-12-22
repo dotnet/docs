@@ -12,6 +12,8 @@ caps.latest.revision: 20
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Tracking Records
 The workflow runtime is instrumented to emit tracking records to follow the execution of a workflow instance.  

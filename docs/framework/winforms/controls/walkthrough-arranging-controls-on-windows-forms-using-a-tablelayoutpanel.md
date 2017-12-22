@@ -18,6 +18,8 @@ caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel
 Some applications require a form with a layout that arranges itself appropriately as the form is resized or as the contents change in size. When you need a dynamic layout and you do not want to handle <xref:System.Windows.Forms.Control.Layout> events explicitly in your code, consider using a layout panel.  

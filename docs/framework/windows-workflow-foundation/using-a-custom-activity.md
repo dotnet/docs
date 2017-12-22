@@ -12,6 +12,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using a custom activity
 Activities that derive from <xref:System.Activities.Activity> or its subclasses can be composed into larger workflows, or created directly in code. This topic describes how to use custom activities in workflows created either in code or in the designer.  

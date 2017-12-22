@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Draw a Filled Ellipse on a Windows Form
 This example draws a filled ellipse on a form.  

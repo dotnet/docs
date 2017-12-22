@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Type Converters for XAML Overview
 Type converters supply logic for an object writer that converts from a string in XAML markup into particular objects in an object graph. In .NET Framework XAML Services, the type converter must be a class that derives from <xref:System.ComponentModel.TypeConverter>. Some converters also support the XAML save path and can be used to serialize an object into a string form in serialization markup. This topic describes how and when type converters in XAML are invoked, and provides implementation advice for the method overrides of <xref:System.ComponentModel.TypeConverter>.  

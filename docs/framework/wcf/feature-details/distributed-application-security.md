@@ -17,6 +17,8 @@ caps.latest.revision: 32
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Distributed Application Security
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security is broken into three major functional areas: transfer security, access control, and auditing. Transfer security provides integrity, confidentiality, and authentication. Transfer security is provided by one of the following: transport security, message security, or `TransportWithMessageCredential`.  

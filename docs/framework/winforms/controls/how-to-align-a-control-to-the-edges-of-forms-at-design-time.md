@@ -17,6 +17,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Align a Control to the Edges of Forms at Design Time
 You can make your control align to the edge of your forms by setting the <xref:System.Windows.Forms.Control.Dock%2A>. This property designates where your control resides in the form. The <xref:System.Windows.Forms.Control.Dock%2A> property can be set to the following values:  

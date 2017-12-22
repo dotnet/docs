@@ -16,6 +16,8 @@ caps.latest.revision: 17
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Queues in Windows Communication Foundation
 The topics in this section discuss [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] support for queues. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides support for queuing by leveraging Microsoft Message Queuing (previously known as MSMQ) as a transport and enables the following scenarios:  

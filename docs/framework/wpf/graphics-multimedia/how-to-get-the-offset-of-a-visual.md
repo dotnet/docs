@@ -22,6 +22,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Get the Offset of a Visual
 These examples show how to retrieve the offset value of a visual object that is relative to its parent, or any ancestor or descendant.  

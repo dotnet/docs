@@ -20,6 +20,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ListView Control Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.ListView> control displays a list of items with icons. You can use a list view to create a user interface like the right pane of Windows Explorer. The control has four view modes: LargeIcon, SmallIcon, List, and Details.  

@@ -18,6 +18,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Sizing Options in the DataGrid Control
 Various options are available to control how the <xref:System.Windows.Controls.DataGrid> sizes itself. The <xref:System.Windows.Controls.DataGrid>, and individual rows and columns in the <xref:System.Windows.Controls.DataGrid>, can be set to size automatically to their contents or can be set to specific values. By default, the <xref:System.Windows.Controls.DataGrid> will grow and shrink to fit the size of its contents.  

@@ -14,6 +14,8 @@ caps.latest.revision: 19
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create a Request-Reply Contract
 A request-reply contract specifies a method that returns a reply. The reply must be sent and correlated to the request under the terms of this contract. Even if the method returns no reply (`void` in C#, or a `Sub` in Visual Basic), the infrastructure creates and sends an empty message to the caller. To prevent the sending of an empty reply message, use a one-way contract for the operation.  

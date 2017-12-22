@@ -20,6 +20,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate a Property by Using an AnimationClock
 This example shows how to use <xref:System.Windows.Media.Animation.Clock> objects to animate a property.  

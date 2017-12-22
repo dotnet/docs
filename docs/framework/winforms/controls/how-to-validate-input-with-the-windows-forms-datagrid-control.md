@@ -23,6 +23,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Validate Input with the Windows Forms DataGrid Control
 > [!NOTE]

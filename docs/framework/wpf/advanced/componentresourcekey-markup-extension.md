@@ -20,6 +20,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ComponentResourceKey Markup Extension
 Defines and references keys for resources that are loaded from external assemblies. This enables a resource lookup to specify a target type in an assembly, rather than an explicit resource dictionary in an assembly or on a class.  

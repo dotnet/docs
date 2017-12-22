@@ -23,6 +23,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # BackgroundWorker Component
 The `BackgroundWorker` component enables your form or control to run an operation asynchronously.  

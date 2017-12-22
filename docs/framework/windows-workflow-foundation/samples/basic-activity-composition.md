@@ -12,6 +12,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Basic Activity Composition
 This sample demonstrates how to compose custom activities and system-provided activities to build more custom activities.  

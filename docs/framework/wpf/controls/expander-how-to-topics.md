@@ -19,6 +19,8 @@ caps.latest.revision: 62
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Expander How-to Topics
 The topics in this section describe how to use the <xref:System.Windows.Controls.Expander> control.  

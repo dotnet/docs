@@ -20,6 +20,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Find the Source Element in an Event Handler
 This example shows how to find the source element in an event handler.  

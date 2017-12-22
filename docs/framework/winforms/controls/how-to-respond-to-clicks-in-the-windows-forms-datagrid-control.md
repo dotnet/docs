@@ -24,6 +24,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Respond to Clicks in the Windows Forms DataGrid Control
 > [!NOTE]

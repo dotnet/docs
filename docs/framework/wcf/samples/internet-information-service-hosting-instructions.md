@@ -14,6 +14,8 @@ caps.latest.revision: 30
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Internet Information Service Hosting Instructions
 To run the samples that are hosted by Internet Information Services (IIS), you must make sure that IIS is properly installed and is running.  

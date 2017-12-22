@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationInstanceReleased
 System.ServiceModel.ComIntegration.ComIntegrationInstanceReleased  

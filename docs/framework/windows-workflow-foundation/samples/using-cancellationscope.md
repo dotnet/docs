@@ -12,6 +12,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using CancellationScope
 This sample demonstrates how to use the <xref:System.Activities.Statements.CancellationScope> activity to cancel work in an application.  

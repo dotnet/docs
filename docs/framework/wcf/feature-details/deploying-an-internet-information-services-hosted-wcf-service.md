@@ -14,6 +14,8 @@ caps.latest.revision: 30
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Deploying an Internet Information Services-Hosted WCF Service
 Developing and deploying a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service that is hosted in Internet Information Services (IIS) consists of the following tasks:  

@@ -20,6 +20,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Three Categories of Graphics Services
 The graphics offerings in Windows Forms fall into the following three broad categories:  

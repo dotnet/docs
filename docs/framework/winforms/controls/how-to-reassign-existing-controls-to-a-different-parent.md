@@ -18,6 +18,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Reassign Existing Controls to a Different Parent
 You can assign controls that exist on your form to a new container control.  

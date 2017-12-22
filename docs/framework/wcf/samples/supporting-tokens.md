@@ -14,6 +14,8 @@ caps.latest.revision: 29
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Supporting Tokens
 The Supporting Tokens sample demonstrates how to add additional tokens to a message that uses WS-Security. The example adds an X.509 binary security token in addition to a username security token. The token is passed in a WS-Security message header from the client to the service and part of the message is signed with the private key associated with the X.509 security token to prove the possession of the X.509 certificate to the receiver. This is useful in the case when there is a requirement to have multiple claims associated with a message to authenticate or authorize the sender. The service implements a contract that defines a request-reply communication pattern.  

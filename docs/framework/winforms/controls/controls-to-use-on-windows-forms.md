@@ -17,6 +17,8 @@ caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Controls to Use on Windows Forms
 The following is an alphabetic list of controls and components that can be used on Windows Forms. In addition to the Windows Forms controls covered in this section, you can add ActiveX and custom controls to Windows Forms. If you do not find the control you need listed here, you can also create your own. For details, see [Developing Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md). For more information about choosing the control you need, see [Windows Forms Controls by Function](../../../../docs/framework/winforms/controls/windows-forms-controls-by-function.md).  

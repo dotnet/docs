@@ -14,6 +14,8 @@ caps.latest.revision: 26
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Workflow Persistence
 Workflow persistence is the durable capture of a workflow instance's state, independent of process or computer information. This is done to provide a well-known point of recovery for the workflow instance in the event of system failure, or to preserve memory by unloading workflow instances that are not actively doing work, or to move the state of the workflow instance from one node to another node in a server farm.  

@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.EnlistmentIdentityCheckFailed
 The identity of the incoming message sender did not match the identity derived from the enlistment's endpoint reference.  

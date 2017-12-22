@@ -22,6 +22,8 @@ caps.latest.revision: 46
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features
 The design-time experience for a custom control can be enhanced by authoring an associated custom designer.  

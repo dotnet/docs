@@ -21,6 +21,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CreateInstanceEnumWmi function
 Returns an enumerator that returns the instances of a specified class that meet specified selection criteria. 

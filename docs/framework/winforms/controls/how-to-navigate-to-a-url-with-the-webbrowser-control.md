@@ -24,6 +24,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Navigate to a URL with the WebBrowser Control
 The following code example demonstrates how to navigate the <xref:System.Windows.Forms.WebBrowser> control to a specific URL.  

@@ -18,6 +18,8 @@ caps.latest.revision: 34
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Communication Foundation Privacy Information
 Microsoft is committed to protecting end-users' privacy. When you build an application using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], version 3.0, your application may impact your end-users' privacy. For example, your application may explicitly collect user contact information, or it may request or send information over the Internet to your Web site. If you embed Microsoft technology in your application, that technology may have its own behavior that might affect privacy. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] does not send any information to Microsoft from your application unless you or the end-user choose to send it to us.  

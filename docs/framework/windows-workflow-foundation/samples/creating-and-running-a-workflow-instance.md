@@ -12,6 +12,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating and Running a Workflow Instance
 This sample shows how to run a workflow instance. It shows how to execute it synchronously and asynchronously.  

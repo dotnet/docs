@@ -23,6 +23,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Write Metadata to a Bitmap
 This example shows how to write metadata to a bitmap using the metadata query language.  

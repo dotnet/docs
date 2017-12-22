@@ -21,6 +21,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Automatically Size a Window to Fit Its Content
 This example shows how to set the <xref:System.Windows.Window.SizeToContent%2A> property to specify how a window resizes to fit its content.  

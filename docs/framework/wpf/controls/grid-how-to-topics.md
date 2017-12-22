@@ -19,6 +19,8 @@ caps.latest.revision: 63
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Grid How-to Topics
 The topics in this section describe how to position elements using the <xref:System.Windows.Controls.Grid> element.  

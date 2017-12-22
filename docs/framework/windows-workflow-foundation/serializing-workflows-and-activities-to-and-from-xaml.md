@@ -12,6 +12,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Serializing Workflows and Activities to and from XAML
 In addition to being compiled into types that are contained in assemblies, workflow definitions can also be serialized to XAML. These serialized definitions can be reloaded for editing or inspection, passed to a build system for compilation, or loaded and invoked. This topic provides an overview of serializing workflow definitions and working with XAML workflow definitions.  

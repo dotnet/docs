@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # System.ServiceModel.Channels.ConnectionPoolLeaseTimeoutReached
 System.ServiceModel.Channels.ConnectionPoolLeaseTimeoutReached  

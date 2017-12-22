@@ -20,6 +20,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # TemplateBinding Markup Extension
 Links the value of a property in a control template to be the value of another property on the templated control.  

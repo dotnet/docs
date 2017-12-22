@@ -17,6 +17,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Get the Binding Object from a Bound Target Property
 This example shows how to obtain the binding object from a data-bound target property.  

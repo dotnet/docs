@@ -16,6 +16,8 @@ caps.latest.revision: 37
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Basic Data Contract
 This sample demonstrates how to implement a data contract. Data contracts allow you to pass structured data to and from services. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) but uses complex numbers instead of basic numeric types.  

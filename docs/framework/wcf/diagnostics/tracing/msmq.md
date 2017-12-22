@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # MSMQ
 In an MSMQ application, no additional activity is transferred from the queued channel to MSMQ and from MSMQ to the queued channel.  

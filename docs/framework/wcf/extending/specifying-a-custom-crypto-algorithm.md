@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Specifying a Custom Crypto Algorithm
 WCF allows you to specify a custom crypto algorithm to use when encrypting data or computing digital signatures. This is done by the following steps:  

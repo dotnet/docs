@@ -14,6 +14,8 @@ caps.latest.revision: 22
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting
 This topic describes the format of trace data, how to view it, and approaches that use the Service Trace Viewer to troubleshoot your application.  

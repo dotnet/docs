@@ -18,6 +18,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Sorting Data in the Windows Forms DataGridView Control
 By default, users can sort the data in a `DataGridView` control by clicking the header of a text box column. You can modify the `SortMode` property of specific columns to allow users to sort by other column types when it makes sense to do so. You can also sort the data programmatically by any column, or by multiple columns.  

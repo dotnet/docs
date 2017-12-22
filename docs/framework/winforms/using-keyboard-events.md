@@ -21,6 +21,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Using Keyboard Events
 Most Windows Forms programs process keyboard input by handling the keyboard events. This topic provides an overview of the keyboard events, including details on when to use each event and the data that is supplied for each event.  Also see [Event Handlers Overview (Windows Forms)](http://msdn.microsoft.com/library/be6fx1bb\(v=vs.110\)), [Events Overview (Windows Forms)](http://msdn.microsoft.com/library/1h12f09z\(v=vs.110\)).  

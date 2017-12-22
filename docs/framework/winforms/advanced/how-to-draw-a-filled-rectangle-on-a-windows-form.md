@@ -24,6 +24,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Draw a Filled Rectangle on a Windows Form
 This example draws a filled rectangle on a form.  

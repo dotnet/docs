@@ -22,6 +22,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Span Rows and Columns in a TableLayoutPanel Control
 Controls in a <xref:System.Windows.Forms.TableLayoutPanel> control can span adjacent rows and columns.  

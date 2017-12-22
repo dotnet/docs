@@ -21,6 +21,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Control When the TextBox Text Updates the Source
 This topic describes how to use the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property to control the timing of binding source updates. The topic uses the <xref:System.Windows.Controls.TextBox> control as an example.  

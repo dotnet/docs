@@ -21,6 +21,8 @@ caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Best Practices for Scaling the Windows Forms DataGridView Control
 The <xref:System.Windows.Forms.DataGridView> control is designed to provide maximum scalability. If you need to display large amounts of data, you should follow the guidelines described in this topic to avoid consuming large amounts of memory or degrading the responsiveness of the user interface (UI). This topic discusses the following issues:  

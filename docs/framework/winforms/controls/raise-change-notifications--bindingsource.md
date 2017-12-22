@@ -25,6 +25,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Raise Change Notifications Using a BindingSource and the INotifyPropertyChanged Interface
 The <xref:System.Windows.Forms.BindingSource> component will automatically detect changes in a data source when the type contained in the data source implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface and raises <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> events when a property value is changed. This is useful because controls bound to the <xref:System.Windows.Forms.BindingSource> will then automatically update as the data source values change.  

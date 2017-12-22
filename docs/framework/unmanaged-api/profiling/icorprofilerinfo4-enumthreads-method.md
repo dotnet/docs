@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo4::EnumThreads Method
 Returns an enumerator that provides methods to sequentially iterate through the collection of all managed threads in the profiled process.  

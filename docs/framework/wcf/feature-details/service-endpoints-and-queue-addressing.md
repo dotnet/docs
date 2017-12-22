@@ -14,6 +14,8 @@ caps.latest.revision: 18
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Service Endpoints and Queue Addressing
 This topic discusses how clients address services that read from queues and how service endpoints map to queues. As a reminder, the following illustration shows the classic [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] queued application deployment.  

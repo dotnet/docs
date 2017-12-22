@@ -26,6 +26,8 @@ caps.latest.revision: 27
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Type Markup Extension
 Supplies the CLR <xref:System.Type> object that is the underlying type for a specified XAML type.  

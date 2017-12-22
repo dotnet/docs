@@ -14,6 +14,8 @@ caps.latest.revision: 15
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Concepts Used in WCF
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security is built upon concepts already in use and deployed in various security infrastructures.  

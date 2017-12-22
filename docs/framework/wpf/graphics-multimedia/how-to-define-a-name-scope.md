@@ -21,6 +21,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Define a Name Scope
 To animate with <xref:System.Windows.Media.Animation.Storyboard> in code, you must create a <xref:System.Windows.NameScope> and register the target objects' names with the element that owns that name scope. In the following example, a <xref:System.Windows.NameScope> is created for `myMainPanel`. Two buttons, `button1` and `button2`, are added to the panel, and their names registered. Several animations and a <xref:System.Windows.Media.Animation.Storyboard> are created. The storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method is used to start the animations.  

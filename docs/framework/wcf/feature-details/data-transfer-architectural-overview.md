@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "data transfer [WCF], architectural overview"
 ms.assetid: 343c2ca2-af53-4936-a28c-c186b3524ee9
@@ -19,6 +19,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Transfer Architectural Overview
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] can be thought of as a messaging infrastructure. It can receive messages, process them, and dispatch them to user code for further action, or it can construct messages from data given by user code and deliver them to a destination. This topic, which is intended for advanced developers, describes the architecture for handling messages and the contained data. For a simpler, task-oriented view of how to send and receive data, see [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).  

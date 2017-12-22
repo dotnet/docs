@@ -18,6 +18,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Contract Serializer
 The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] infrastructure uses the <xref:System.Runtime.Serialization.DataContractSerializer> class as the default serializer. The topics in this section provide more details for using it as a stand-alone serializer.  

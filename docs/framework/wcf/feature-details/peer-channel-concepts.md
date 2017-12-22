@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Peer Channel Concepts
 This section briefly explains the concepts that make up the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Peer Channel.  

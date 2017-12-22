@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # NetTCPBinding
 This section contains samples that demonstrate using TCP binding in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

@@ -20,6 +20,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Defining an Event in Windows Forms Controls
 For details about defining custom events, see [Events](../../../../docs/standard/events/index.md). If you define an event that does not have any associated data, use the base type for event data, <xref:System.EventArgs>, and use <xref:System.EventHandler> as the event delegate. All that remains to do is to define an event member and a protected `On`*EventName* method that raises the event.  

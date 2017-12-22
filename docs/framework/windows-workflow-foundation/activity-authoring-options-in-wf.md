@@ -12,6 +12,8 @@ caps.latest.revision: 20
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Activity Authoring Options in WF
 [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] provides several options for creating custom activities. The correct method to use for authoring a given activity depends on what run-time features are required.  

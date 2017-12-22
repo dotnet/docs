@@ -12,6 +12,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WPF and WF Integration in XAML
 This sample demonstrates how to create an application that uses [!INCLUDE[avalon1](../../../../includes/avalon1-md.md)] and [!INCLUDE[wf](../../../../includes/wf-md.md)] features in a single XAML document. To accomplish this, the sample uses [!INCLUDE[wf](../../../../includes/wf-md.md)] and XAML extensibility.  

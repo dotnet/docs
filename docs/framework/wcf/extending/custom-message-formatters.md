@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Message Formatters
 The content in a message is often in the form of XML, which is usually not a convenient format for an application. Applications manipulate objects, getting and setting their properties. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses the *Data Contract* to convert a <xref:System.ServiceModel.Channels.Message> object into an object easily handled by an application. These processes are called serialization and deserialization. Note that these same terms are used to describe the serialization and deserialization done by the transport layer to and from the message wire format, which is an unrelated process.  

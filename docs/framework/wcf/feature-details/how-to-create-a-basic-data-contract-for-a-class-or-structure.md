@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataMemberAttribute"
   - "DataContractAttribute class"
@@ -21,6 +21,8 @@ caps.latest.revision: 25
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create a Basic Data Contract for a Class or Structure
 This topic shows the basic steps to create a data contract using a class or structure. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] data contracts and how they are used, see [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md).  

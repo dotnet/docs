@@ -19,6 +19,8 @@ caps.latest.revision: 61
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # XAML Namespace (x:) Language Features
 ## In This Section  

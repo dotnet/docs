@@ -21,6 +21,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Navigate Through the Objects in a Data CollectionView
 Views allow the same data collection to be viewed in different ways, depending on sorting, filtering, or grouping. Views also provide a current record pointer concept and enable moving the pointer. This example shows how to get the current object as well as navigate through the objects in a data collection using the functionality provided in the <xref:System.Windows.Data.CollectionView> class.  

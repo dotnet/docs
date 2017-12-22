@@ -22,6 +22,8 @@ caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component
 > [!NOTE]

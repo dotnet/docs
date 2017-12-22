@@ -18,6 +18,8 @@ caps.latest.revision: 27
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Profiling Structures
 This section describes the unmanaged structures that the profiling API uses.  

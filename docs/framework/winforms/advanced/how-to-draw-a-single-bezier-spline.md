@@ -20,6 +20,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Draw a Single B&#233;zier Spline
 A Bézier spline is defined by four points: a start point, two control points, and an endpoint.  

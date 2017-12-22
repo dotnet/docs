@@ -18,6 +18,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Group Controls with the Windows Forms GroupBox Control
 Windows Forms <xref:System.Windows.Forms.GroupBox> controls are used to group other controls. There are three reasons to group controls:  

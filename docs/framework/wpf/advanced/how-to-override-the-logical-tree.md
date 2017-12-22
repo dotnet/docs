@@ -17,6 +17,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Override the Logical Tree
 Although it is not necessary in most cases, advanced control authors have the option to override the logical tree.  

@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating a custom header that is signed and-or encrypted
 When calling a non-WCF service using a WCF client it is sometimes necessary to use custom SOAP headers. There is a canonicalization bug in WCF that prevents custom headers that are signed and encrypted from working with a non-WCF service. The problem is caused by the incorrect canonicalization of default XML namespaces. This is only problematic when calling non-WCF services with custom headers that are signed and/or encrypted.  When the service receives the message containing the signed and/or encrypted custom header it is unable to verify the signature. This workaround avoids the canonicalization bug, allows interoperability with non-WCF services, but does not prevent interoperability with WCF services.  

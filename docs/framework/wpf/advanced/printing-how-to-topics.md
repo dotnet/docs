@@ -17,6 +17,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Printing How-to Topics
 The topics in this section demonstrate how to use the printing and print system management features included with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] as well as the new [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] print path.  

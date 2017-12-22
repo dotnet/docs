@@ -14,6 +14,8 @@ caps.latest.revision: 16
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Installing Message Queuing (MSMQ)
 The following procedures show how to install Message Queuing 4.0 and Message Queuing 3.0.  

@@ -23,6 +23,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Storing Ink
 The <xref:System.Windows.Ink.StrokeCollection.Save%2A> methods provide support for storing ink as Ink Serialized Format (ISF). Constructors for the <xref:System.Windows.Ink.StrokeCollection> class provide support for reading ink data.  

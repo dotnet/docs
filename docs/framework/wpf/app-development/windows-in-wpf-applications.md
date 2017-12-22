@@ -19,6 +19,8 @@ caps.latest.revision: 67
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Windows in WPF Applications
 Users interact with applications through windows. The fundamental purpose of a window is to host and display content. The type of content that a window hosts depends on the type of data that an application operates over, which can include media, Extensible Application Markup Language (XAML) pages, Web pages, documents, database tables and records, and system information.  

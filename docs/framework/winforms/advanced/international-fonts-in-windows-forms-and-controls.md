@@ -22,6 +22,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # International Fonts in Windows Forms and Controls
 In International applications the recommended method of selecting fonts is to use font fallback wherever possible. Font fallback means that the system determines what script the character belongs to.  

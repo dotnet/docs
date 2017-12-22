@@ -27,6 +27,8 @@ caps.latest.revision: 35
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Printing Overview
 With [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)], application developers using [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] have a rich new set of printing and print system management [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)]. With [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)], some of these print system enhancements are also available to developers creating [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] applications and developers using unmanaged code. At the core of this new functionality is the new [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] file format and the [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] print path.  

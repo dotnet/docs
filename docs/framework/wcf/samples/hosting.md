@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Hosting
 This section contains samples that demonstrate hosting [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services.  

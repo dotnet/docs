@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo3::GetThreadStaticAddress2 Method
 Gets the address of the specified thread-static field that is in the scope of the specified thread and application domain.  

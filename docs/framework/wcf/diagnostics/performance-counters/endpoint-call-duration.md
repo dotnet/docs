@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Endpoint: Call Duration
 The average duration of calls to this endpoint.  The average duration is calculated based on this equation: (N1-N0)/(D1-D0).  

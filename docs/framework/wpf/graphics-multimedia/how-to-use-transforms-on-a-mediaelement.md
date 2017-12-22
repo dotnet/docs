@@ -18,6 +18,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use Transforms on a MediaElement
 This example shows how to use a <xref:System.Windows.Media.RotateTransform> on a <xref:System.Windows.Controls.MediaElement>.  

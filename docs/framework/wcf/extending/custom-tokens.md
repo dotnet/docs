@@ -16,6 +16,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Tokens
 Although [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] natively supports X.509 certificates, Security Context Tokens, Kerberos tickets, and user name tokens as credentials, it is flexible enough to allow you to use your own custom credentials.  

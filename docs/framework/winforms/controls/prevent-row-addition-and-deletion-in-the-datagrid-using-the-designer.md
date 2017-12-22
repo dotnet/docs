@@ -16,6 +16,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Prevent Row Addition and Deletion in the Windows Forms DataGridView Control Using the Designer
 Sometimes you will want to prevent users from entering new rows of data or deleting existing rows in your <xref:System.Windows.Forms.DataGridView> control. New rows are entered in the special row for new records at the bottom of the control. When you disable row addition, the row for new records is not displayed. You can then make the control entirely read-only by disabling row deletion and cell editing.  

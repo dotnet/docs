@@ -14,6 +14,8 @@ caps.latest.revision: 16
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Migrating WSE 3.0 Web Services to WCF
 The benefits of migrating WSE 3.0 Web services to [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] include improved performance and the support of additional transports, additional security scenarios, and WS-* specifications. A Web service that is migrated from WSE 3.0 to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can experience up to a 200% to 400% performance improvement. For more information about the transports supported by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], see [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md). For a list of the scenarios supported by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], see [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md). For a list of the specifications that are supported by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], see [Web Services Protocols Interoperability Guide](../../../../docs/framework/wcf/feature-details/web-services-protocols-interoperability-guide.md).  

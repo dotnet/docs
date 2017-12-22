@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Controlling Serialization and Deserialization with SerializationBinder
 During serialization, a formatter transmits the information required to create an instance of an object of the correct type and version. This information generally includes the full type name and assembly name of the object. By default, deserialization uses this information to create an instance of an identical object. Some users may need to control which class to serialize and deserialize, either because the original class may not exist on the machine performing deserialization, the original class has moved between assemblies, or a different version of the class is required on the server and client. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Usage of Serialization Binder](../../../../docs/framework/wcf/samples/usage-of-serialization-binder.md).  

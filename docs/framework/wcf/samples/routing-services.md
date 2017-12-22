@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Routing Services
 This section includes samples that demonstrate how to use the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Router.  

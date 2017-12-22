@@ -16,6 +16,8 @@ caps.latest.revision: 22
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Event Logging in WCF
 [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] traces internal events in the Windows event log.  

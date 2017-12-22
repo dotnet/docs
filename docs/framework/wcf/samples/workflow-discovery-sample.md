@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Workflow Discovery Sample
 This sample demonstrates how to make a workflow service discoverable and how to author a custom code activity that searches for a particular service.  

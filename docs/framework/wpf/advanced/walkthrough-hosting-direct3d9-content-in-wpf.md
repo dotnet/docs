@@ -17,6 +17,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Hosting Direct3D9 Content in WPF
 This walkthrough shows how to host Direct3D9 content in a Windows Presentation Foundation (WPF) application.  

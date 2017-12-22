@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Usage of Standard Endpoints
 This sample demonstrates how to use standard endpoints in service configuration files. A standard endpoint allows the user to simplify endpoint definitions by using a single property to describe an address, binding and contract combination with additional properties associated to it. This sample demonstrates how to define and implement a custom standard endpoint and how to define specific properties in the endpoint.  

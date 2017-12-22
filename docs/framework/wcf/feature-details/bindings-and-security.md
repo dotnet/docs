@@ -19,6 +19,8 @@ caps.latest.revision: 42
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Bindings and Security
 The system-provided bindings included with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] offer a quick way to program [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications. With one exception, all the bindings have a default security scheme enabled. This topic helps you select the right binding for your security needs.  

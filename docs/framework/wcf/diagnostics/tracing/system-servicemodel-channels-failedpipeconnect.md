@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # System.ServiceModel.Channels.FailedPipeConnect
 An attempt to connect to the named pipe endpoint failed. Another attempt is made within the specified timeout period.  

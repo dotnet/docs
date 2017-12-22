@@ -17,6 +17,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DataGridView Control Technology Summary (Windows Forms)
 This topic summarizes information about the `DataGridView` control and the classes that support its use.  

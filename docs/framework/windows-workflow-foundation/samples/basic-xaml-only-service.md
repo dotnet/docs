@@ -12,6 +12,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Basic XAML only Service
 This sample demonstrates how to create a XAML only service. The scenario is a diagnostics service for car-related problems. The service is implemented as a workflow that asks the client a series of questions to diagnose the problem. There are two types of issues the service can diagnose (car does not start or air conditioning not working). The workflow uses Request/Reply template from the designer to expose three simple service operations. The service is hosted in IIS by creating a virtual directory in IIS and copying the service1.xamlx and Web.config files into the virtual directory, no compiled code is required. By default this sample will automatically copy the needed files into the virtual directory created when you follow the setup instructions for the WCF and WF samples: [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md) when built in Visual Studio 2010.  

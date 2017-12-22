@@ -12,6 +12,8 @@ caps.latest.revision: 10
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Visual Workflow Tracking
 This sample demonstrates how to write a visual workflow tracking application using the debug functionality available through the [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)].  

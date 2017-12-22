@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Multiple Authentication Schemes with WCF
 WCF now allows you to specify multiple authentication schemes on a single endpoint. Furthermore web hosted services can inherit their authentication settings directly from IIS. Self-hosted services can specify what authentication schemes can be used. For more information about setting authentication settings in IIS, see [IIS Authentication](http://go.microsoft.com/fwlink/?LinkId=232458)  

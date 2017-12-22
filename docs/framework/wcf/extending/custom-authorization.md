@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Authorization
 Authorization is the process of controlling access to resources and tasks. The topics in this section enable you to create to implement different claim types, or policies.  

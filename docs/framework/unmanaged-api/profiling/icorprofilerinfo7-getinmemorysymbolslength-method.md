@@ -21,6 +21,8 @@ caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo7::GetInMemorySymbolsLength Method
 [Supported in the .NET Framework 4.6.1 and later versions]  

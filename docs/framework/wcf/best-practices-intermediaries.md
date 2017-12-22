@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Best Practices: Intermediaries
 Care must be taken to handle faults correctly when calling intermediaries to make sure service side channels on the intermediary are closed properly.  

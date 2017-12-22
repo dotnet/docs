@@ -12,6 +12,8 @@ caps.latest.revision: 16
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Control Flow Activities in WF
 The [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] provides several activities for controlling flow of execution within a workflow. Some of these activities (such as `Switch` and `If`) implement flow control structures similar to those in programming environments such as [!INCLUDE[csprcs](../../../includes/csprcs-md.md)], while others (such as `Pick`) model new programming structures.  

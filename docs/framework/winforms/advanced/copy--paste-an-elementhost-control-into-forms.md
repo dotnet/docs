@@ -19,6 +19,8 @@ caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Copying and Pasting an ElementHost Control into Separate Windows Forms
 This walkthrough shows you how to copy a Windows Presentation Foundation (WPF) control from one Windows Form to another.  

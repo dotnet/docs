@@ -14,6 +14,8 @@ caps.latest.revision: 19
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Choosing a Message Encoder
 This topic discusses criteria for choosing among the message encoders that are included in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]: binary, text, and Message Transmission Optimization Mechanism (MTOM).  

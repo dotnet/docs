@@ -14,6 +14,8 @@ caps.latest.revision: 16
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WAS Activation Architecture
 This topic itemizes and discusses the components of the Windows Process Activation Service (also known as WAS).  

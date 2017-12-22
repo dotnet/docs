@@ -12,6 +12,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Persistence
 This section contains samples that demonstrate persisting workflows to a durable medium in [!INCLUDE[wf](../../../../includes/wf-md.md)].  

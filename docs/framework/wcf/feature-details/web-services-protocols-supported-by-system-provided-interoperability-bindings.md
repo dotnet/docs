@@ -18,6 +18,8 @@ caps.latest.revision: 39
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Web Services Protocols Supported by System-Provided Interoperability Bindings
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is built to interoperate with Web services that support a set of specifications known as Web services specifications. To simplify service configuration for interoperability best practices, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] introduces three interoperable system-provided bindings: <xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType>, <xref:System.ServiceModel.WSHttpBinding?displayProperty=nameWithType>, and <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType>. For interoperability with Organization for the Advancement of Structured Information Standards (OASIS) standards, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] includes one interoperable system-provided binding: <xref:System.ServiceModel.WS2007HttpBinding?displayProperty=nameWithType>. For metadata publication, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] includes two interoperable system-provided bindings: [\<mexHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md) and [\<mexHttpsBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md). This topic lists specifications that system-provided interoperable bindings support.  

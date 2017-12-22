@@ -17,6 +17,8 @@ caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Calendar
 A calendar enables a user to select a date by using a visual calendar display.  

@@ -27,6 +27,8 @@ caps.latest.revision: 21
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo2::GetRVAStaticAddress Method
 Gets the address of the specified relative virtual address (RVA) static field.  

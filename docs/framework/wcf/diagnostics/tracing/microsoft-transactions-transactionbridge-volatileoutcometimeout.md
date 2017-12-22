@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.VolatileOutcomeTimeout
 The WS-AT protocol service timed out waiting for a response to an outcome message from a volatile participant. The transaction outcome may be in doubt if the participant returns.  

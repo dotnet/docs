@@ -22,6 +22,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Implement the ITypedList Interface
 Implement the <xref:System.ComponentModel.ITypedList> interface to enable discovery of the schema for a bindable list.  

@@ -25,6 +25,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Determine Which Panel in the Windows Forms StatusBar Control Was Clicked
 > [!IMPORTANT]

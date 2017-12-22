@@ -21,6 +21,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use the Content-Scrolling Methods of ScrollViewer
 This example shows how to use the scrolling methods of the <xref:System.Windows.Controls.ScrollViewer> element. These methods provide incremental scrolling of content, either by line or by page, in a <xref:System.Windows.Controls.ScrollViewer>.  

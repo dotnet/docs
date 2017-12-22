@@ -18,6 +18,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How Keyboard Input Works
 Windows Forms processes keyboard input by raising keyboard events in response to Windows messages. Most Windows Forms applications process keyboard input exclusively by handling the keyboard events. However, you need to understand how keyboard messages work so you can implement more advanced keyboard-input scenarios, such as intercepting keys before they reach a control. This topic describes the types of key data that Windows Forms recognizes and provides an overview of how keyboard messages are routed. For information about keyboard events, see [Using Keyboard Events](../../../docs/framework/winforms/using-keyboard-events.md).  

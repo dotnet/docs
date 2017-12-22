@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # System.ServiceModel.TxCompletionStatusCompletedForAutocomplete
 The specified transaction for the specified operation was completed due to the `OperationBehaviorAttribute.TransactionAutoComplete` member being set to `true`.  

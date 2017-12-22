@@ -16,6 +16,8 @@ caps.latest.revision: 16
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Hosting in Windows Process Activation Service
 The Windows Process Activation Service (WAS) manages the activation and lifetime of the worker processes that contain applications that host [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services. The WAS process model generalizes the [!INCLUDE[iis601](../../../../includes/iis601-md.md)] process model for the HTTP server by removing the dependency on HTTP. This allows [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services to use both HTTP and non-HTTP protocols, such as Net.TCP, in a hosting environment that supports message-based activation and offers the ability to host a large number of applications on a given machine.  

@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Discovery Extensibility
 The sample in this section show how to extend the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] discovery feature.  

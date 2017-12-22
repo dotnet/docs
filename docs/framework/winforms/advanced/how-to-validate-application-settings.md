@@ -21,6 +21,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Validate Application Settings
 This topic demonstrates how to validate application settings before they are persisted.  

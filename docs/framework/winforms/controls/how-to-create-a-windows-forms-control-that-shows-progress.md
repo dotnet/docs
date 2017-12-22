@@ -22,6 +22,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Windows Forms Control That Shows Progress
 The following code example shows a custom control called `FlashTrackBar` that can be used to show the user the level or the progress of an application. It uses a gradient to visually represent progress.  

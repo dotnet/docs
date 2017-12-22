@@ -18,6 +18,8 @@ caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Optimizing Performance: Controls
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] includes many of the common user-interface (UI) components that are used in most Windows applications. This topic contains techniques for improving the performance of your UI.  

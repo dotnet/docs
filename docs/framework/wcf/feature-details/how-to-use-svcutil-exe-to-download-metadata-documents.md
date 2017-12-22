@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Use Svcutil.exe to Download Metadata Documents
 You can use Svcutil.exe to download metadata from running services and to save the metadata to local files. For HTTP and HTTPS URL schemes, Svcutil.exe attempts to retrieve metadata using WS-MetadataExchange and [XML Web Service Discovery](http://go.microsoft.com/fwlink/?LinkId=94950). For all other URL schemes, Svcutil.exe uses only WS-MetadataExchange.  

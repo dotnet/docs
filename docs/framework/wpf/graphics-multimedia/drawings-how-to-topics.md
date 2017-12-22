@@ -23,6 +23,8 @@ caps.latest.revision: 75
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Drawings How-to Topics
 The topics in this section describe how to use <xref:System.Windows.Media.Drawing> objects to draw shapes, images, or text.  

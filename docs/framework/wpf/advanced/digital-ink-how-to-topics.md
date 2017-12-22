@@ -19,6 +19,8 @@ caps.latest.revision: 40
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Digital Ink How-to Topics
 ## In This Section  

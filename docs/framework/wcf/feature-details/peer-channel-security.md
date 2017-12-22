@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Peer Channel Security
 Peer Channel enables a variety of distributed application types that depend on multiparty messaging. Some examples include Internet-scale content distribution, where a trusted source distributes content (such as media or software updates), a group of friends exchange music and photos, or a team of colleagues collaboratively edit a document. Each of these scenarios requires a unique security model. The Peer Channel security model is designed to address these scenarios and provides a sound security model for the respective needs of different identity, authentication, and authorization models.  

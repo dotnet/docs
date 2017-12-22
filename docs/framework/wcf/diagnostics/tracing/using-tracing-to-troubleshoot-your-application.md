@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Tracing to Troubleshoot Your Application
 This section contains various topics that describe how you can use tracing to troubleshoot your application.  

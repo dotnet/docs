@@ -12,6 +12,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Instance Stores
 An instance store is a logical container of instances. It is the place where the instance data and metadata is stored. An instance store does not imply dedicated physical storage. An instance store could contain durable information in a SQL Server database or non-durable state information in a memory. The [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] ships with the SQL Workflow Instance Store, which is a concrete implementation of an instance store that allows workflows to persist instance data and metadata into a SQL Server 2005 or SQL Server 2008 database. In addition Windows Server App Fabric also provides a concrete implementation of an instance store. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Windows Server App Fabric Instance Store, Query, and Control Providers](http://go.microsoft.com/fwlink/?LinkID=201201&clcid=0x409).  

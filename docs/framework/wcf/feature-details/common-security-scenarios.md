@@ -16,6 +16,8 @@ caps.latest.revision: 18
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Common Security Scenarios
 The topics in this section catalog a number of possible client and service security configurations. Configurations vary according to a number of factors. For example, whether a service or client is on an intranet, or whether the security is provided by Windows or transport (such as HTTPS).  

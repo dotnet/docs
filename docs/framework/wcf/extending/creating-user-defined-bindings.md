@@ -16,6 +16,8 @@ caps.latest.revision: 19
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating User-Defined Bindings
 There are several ways to create bindings not provided by the system:  

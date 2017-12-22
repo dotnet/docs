@@ -18,6 +18,8 @@ caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Specify the Direction of the Binding
 This example shows how to specify whether the binding updates only the binding target (target) property, the binding source (source) property, or both the target property and the source property.  

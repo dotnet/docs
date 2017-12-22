@@ -22,6 +22,8 @@ caps.latest.revision: 29
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Setting Up a Profiling Environment
 > [!NOTE]

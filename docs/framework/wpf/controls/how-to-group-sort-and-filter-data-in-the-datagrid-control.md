@@ -21,6 +21,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Group, Sort, and Filter Data in the DataGrid Control
 It is often useful to view data in a <xref:System.Windows.Controls.DataGrid> in different ways by grouping, sorting, and filtering the data. To group, sort, and filter the data in a <xref:System.Windows.Controls.DataGrid>, you bind it to a <xref:System.Windows.Data.CollectionView> that supports these functions. You can then work with the data in the <xref:System.Windows.Data.CollectionView> without affecting the underlying source data. The changes in the collection view are reflected in the <xref:System.Windows.Controls.DataGrid> user interface (UI).  

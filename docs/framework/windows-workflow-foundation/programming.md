@@ -16,6 +16,8 @@ caps.latest.revision: 16
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Workflow Foundation Programming
 This section contains a set of primer topics that you should understand to become a proficient [!INCLUDE[wf](../../../includes/wf-md.md)] programmer.  

@@ -22,6 +22,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ComboBox Control (Windows Forms)
 The Windows Forms `ComboBox` control is used to display data in a drop-down combo box. By default, the `ComboBox` control appears in two parts: the top part is a text box that allows the user to type a list item. The second part is a list box that displays a list of items from which the user can select one.  

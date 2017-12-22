@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using the Discovery Client Channel
 When writing a WCF client application you need to know the endpoint address of the service you are calling. In many situations the endpoint address of a service is not known in advance or the address of the service changes over time. The Discovery Client Channel allows you to write a WCF client application, describe the service you want to call, and the client channel automatically sends a probe request. When a service responds, the discovery client channel retrieves the endpoint address for the service from the probe response and uses it to call the service.  

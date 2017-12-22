@@ -13,6 +13,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Automatic scaling in Windows Forms
 Automatic scaling enables a form and its controls, designed on one machine with a certain display resolution or system font, to be displayed appropriately on another machine with a different display resolution or system font. It assures that the form and its controls will intelligently resize to be consistent with native windows and other applications on both the users' and other developers' machines. The support of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] for automatic scaling and visual styles enables [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] applications to maintain a consistent look and feel when compared to native Windows applications on each user's machine.

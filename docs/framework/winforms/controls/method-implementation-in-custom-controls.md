@@ -23,6 +23,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Method Implementation in Custom Controls
 A method is implemented in a control in the same manner a method would be implemented in any other component.  

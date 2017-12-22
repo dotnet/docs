@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Endpoint: Reliable Messaging Messages Dropped Per Second
 Counter Name: Reliable Messaging Sessions Dropped Per Second.  

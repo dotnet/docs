@@ -14,6 +14,8 @@ caps.latest.revision: 16
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Interoperability and Integration
 This section covers interoperability and integration with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

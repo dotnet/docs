@@ -18,6 +18,8 @@ caps.latest.revision: 18
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Transports in Windows Communication Foundation
 The transport layer is at the lowest level of the channel stack. The main transports used in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] are HTTP, HTTPS, TCP, and named pipes. The topics in this section discuss choosing among these transports, configuring the transport, and setting tuning properties.  

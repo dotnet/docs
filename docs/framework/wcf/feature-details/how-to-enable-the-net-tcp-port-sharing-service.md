@@ -17,6 +17,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Enable the Net.TCP Port Sharing Service
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses a Windows service called the Net.TCP Port Sharing Service to facilitate the sharing of TCP ports across multiple processes. This service is installed as part of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], but the service is not enabled by default as a security precaution and so must be manually enabled prior to first use. This topic describes how to configure the Net TCP Port Sharing Service using the Microsoft Management Console (MMC) snap-In.  

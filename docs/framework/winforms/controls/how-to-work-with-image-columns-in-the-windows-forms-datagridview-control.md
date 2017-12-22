@@ -22,6 +22,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Work with Image Columns in the Windows Forms DataGridView Control
 The following code example shows how to use the <xref:System.Windows.Forms.DataGridView> image columns in an interactive user interface (UI). The example also demonstrates image sizing and layout possibilities with the <xref:System.Windows.Forms.DataGridViewImageColumn>.  

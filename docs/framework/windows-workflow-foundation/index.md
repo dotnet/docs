@@ -15,6 +15,8 @@ caps.latest.revision: 16
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Workflow Foundation
 This section describes the programming model, samples, and tools of the [!INCLUDE[wf](../../../includes/wf-md.md)].  

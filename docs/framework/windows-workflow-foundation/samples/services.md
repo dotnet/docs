@@ -12,6 +12,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Services
 This section contains links to samples that demonstrate [!INCLUDE[wf](../../../../includes/wf-md.md)] service functionality.  

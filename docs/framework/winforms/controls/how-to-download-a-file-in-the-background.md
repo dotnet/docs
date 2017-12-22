@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Download a File in the Background
 Downloading a file is a common task, and it is often useful to run this potentially time-consuming operation on a separate thread. Use the <xref:System.ComponentModel.BackgroundWorker> component to accomplish this task with very little code.  

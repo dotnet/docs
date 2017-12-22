@@ -22,6 +22,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control
 > [!NOTE]

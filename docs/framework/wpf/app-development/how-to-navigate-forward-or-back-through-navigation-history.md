@@ -20,6 +20,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Navigate Forward or Back Through Navigation History
 This example illustrates how to navigate forward or back to entries in navigation history.  

@@ -19,6 +19,8 @@ caps.latest.revision: 54
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Path Animation How-to Topics
 The topics in this section demonstrate how to animate an object along a path.  

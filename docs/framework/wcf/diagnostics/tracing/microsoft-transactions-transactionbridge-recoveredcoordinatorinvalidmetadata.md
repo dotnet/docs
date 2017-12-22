@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.RecoveredCoordinatorInvalidMetadata
 The endpoint reference found in a coordinator recovery log entry contained invalid or incompatible metadata.  

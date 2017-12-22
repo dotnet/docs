@@ -22,6 +22,8 @@ caps.latest.revision: 25
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Key Directive
 Uniquely identifies elements that are created and referenced in a XAML-defined dictionary. Adding an `x:Key` value to a XAML object element is the most common way to identify a resource in a resource dictionary, for example in a WPF <xref:System.Windows.ResourceDictionary>.  

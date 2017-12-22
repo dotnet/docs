@@ -16,6 +16,8 @@ caps.latest.revision: 24
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Types Supported by the Data Contract Serializer
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses the <xref:System.Runtime.Serialization.DataContractSerializer> as its default serialization engine to convert data into XML and to convert XML back into data. The <xref:System.Runtime.Serialization.DataContractSerializer> is designed to serialize *data contract* types. However, it supports many other types, which can be thought of as having an implicit data contract. The following is a complete list of types that can be serialized:  

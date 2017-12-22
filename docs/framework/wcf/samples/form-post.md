@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Form Post
 This sample demonstrates how to extend the WCF REST programming model to support new incoming request formats. The sample also includes an implementation of a formatter that can deserialize a request from an HTML form post into a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type. In addition, the sample uses a T4 Template to return an HTML page, which provides the HTML form that users can post back to the WCF REST service.  

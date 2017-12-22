@@ -14,6 +14,8 @@ caps.latest.revision: 26
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Federation Sample
 This sample demonstrates federated security.  

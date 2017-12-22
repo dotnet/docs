@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Interoperability with Web Services Enhancements 3.0
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] clients and services are wire-level compatible with Web Services Enhancements 3.0 for Microsoft .NET (WSE) clients and services when [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients and services are configured to use the August 2004 version of the WS-Addressing specification.  

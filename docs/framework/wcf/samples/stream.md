@@ -14,6 +14,8 @@ caps.latest.revision: 22
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Stream
 The Stream sample demonstrates the use of streaming transfer mode communication. The service exposes several operations that send and receive streams. This sample is self-hosted. Both the client and service are console programs.  

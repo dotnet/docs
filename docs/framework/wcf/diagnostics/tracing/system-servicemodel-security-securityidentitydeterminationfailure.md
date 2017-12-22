@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # System.ServiceModel.Security.SecurityIdentityDeterminationFailure
 System.ServiceModel.Security.SecurityIdentityDeterminationFailure  

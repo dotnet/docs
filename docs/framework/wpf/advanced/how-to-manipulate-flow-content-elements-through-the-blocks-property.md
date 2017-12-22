@@ -22,6 +22,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Manipulate Flow Content Elements through the Blocks Property
 These examples demonstrate some of the more common operations that can be performed on flow content elements through the **Blocks** property. This property is used to add and remove items from <xref:System.Windows.Documents.BlockCollection>. Flow content elements that feature a **Blocks** property include:  

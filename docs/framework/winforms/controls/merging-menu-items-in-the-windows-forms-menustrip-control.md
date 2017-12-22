@@ -17,6 +17,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Merging Menu Items in the Windows Forms MenuStrip Control
 If you have a multiple-document interface (MDI) application, you can merge menu items or whole menus from the child form into the menus of the parent form.  

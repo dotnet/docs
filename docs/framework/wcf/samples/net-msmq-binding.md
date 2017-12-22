@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Net MSMQ Binding
 This section contains samples that demonstrate using MSMQ binding attributes of an endpoint element.  

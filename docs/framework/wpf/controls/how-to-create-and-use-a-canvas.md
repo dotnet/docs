@@ -21,6 +21,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create and Use a Canvas
 This example shows how to create and use an instance of <xref:System.Windows.Controls.Canvas>.  

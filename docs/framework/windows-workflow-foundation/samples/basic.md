@@ -12,6 +12,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Basic
 This section provides samples that demonstrate basic [!INCLUDE[wf](../../../../includes/wf-md.md)] functionality.  

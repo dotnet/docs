@@ -24,6 +24,8 @@ caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Bind to a Web Service Using the Windows Forms BindingSource
 If you want to bind a Windows Form control to the results obtained from calling an XML Web service, you can use a <xref:System.Windows.Forms.BindingSource> component. This procedure is similar to binding a <xref:System.Windows.Forms.BindingSource> component to a type. You must create a client-side proxy that contains the methods and types exposed by the Web service. You generate a client-side proxy from the Web service (.asmx) itself, or its Web Services Description Language (WSDL) file. Additionally, your client-side proxy must expose the fields of complex types used by the Web service as public properties. You then bind the <xref:System.Windows.Forms.BindingSource> to one of the types exposed in the Web service proxy.  

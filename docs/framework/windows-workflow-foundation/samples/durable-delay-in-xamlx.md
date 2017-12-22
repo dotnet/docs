@@ -12,6 +12,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Durable Delay in XAMLX
 This sample demonstrates how to use a durable delay, which is a delay that persists the workflow to a durable device during the delay.  

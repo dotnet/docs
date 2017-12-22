@@ -22,6 +22,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Associate a ContextMenuStrip with a Control
 After creating your controls and shortcut menus, use the following procedures to display a given shortcut menu when the user right-clicks the control. These procedures associate a <xref:System.Windows.Forms.ContextMenuStrip> with a Windows Form and with a <xref:System.Windows.Forms.ToolStrip> control.  

@@ -25,6 +25,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add Custom Information to a TreeView or ListView Control (Windows Forms)
 You can create a derived node in a Windows Forms <xref:System.Windows.Forms.TreeView> control or a derived item in a <xref:System.Windows.Forms.ListView> control. Derivation allows you to add any fields you require, as well as custom methods and constructors for handling them. One use of this feature is to attach a Customer object to each tree node or list item. The examples here are for a <xref:System.Windows.Forms.TreeView> control, but the same approach can be used for a <xref:System.Windows.Forms.ListView> control.  

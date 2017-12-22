@@ -14,6 +14,8 @@ caps.latest.revision: 50
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Transacted MSMQ Binding
 This sample demonstrates how to perform transacted queued communication by using Message Queuing (MSMQ).  

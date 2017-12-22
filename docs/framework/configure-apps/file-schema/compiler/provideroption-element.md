@@ -20,6 +20,8 @@ caps.latest.revision: 22
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;providerOption&gt; Element
 Specifies the compiler version attributes for a language provider.  

@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CloseAssembly Method
 Finalizes assembly operations. Call this method before beginning a new assembly or unbound module.  

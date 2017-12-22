@@ -17,6 +17,8 @@ caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;NetFx40_LegacySecurityPolicy&gt; Element
 Specifies whether the runtime uses legacy code access security (CAS) policy.  

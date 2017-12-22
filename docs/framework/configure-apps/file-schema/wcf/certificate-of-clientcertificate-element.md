@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;certificate&gt; of &lt;clientCertificate&gt; Element
 Specifies an X.509 certificate used to sign and encrypt messages.  

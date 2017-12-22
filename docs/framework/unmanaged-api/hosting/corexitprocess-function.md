@@ -29,6 +29,8 @@ caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorExitProcess Function
 Shuts down the current unmanaged process.  

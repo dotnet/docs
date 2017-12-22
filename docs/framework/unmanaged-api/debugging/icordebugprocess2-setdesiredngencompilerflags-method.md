@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess2::SetDesiredNGENCompilerFlags Method
 Sets the flags that must be embedded in a precompiled image in order for the runtime to load that image into the current process.  

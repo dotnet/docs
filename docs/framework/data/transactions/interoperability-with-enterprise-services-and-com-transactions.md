@@ -12,6 +12,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Interoperability with Enterprise Services and COM+ Transactions
 The <xref:System.Transactions> namespace supports interoperability between transaction objects created using this namespace and transactions created through COM+.  

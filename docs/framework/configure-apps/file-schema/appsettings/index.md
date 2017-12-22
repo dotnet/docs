@@ -14,6 +14,8 @@ ms.assetid: 99347d62-3ea5-40b6-bfec-c31431011422
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # App Settings schema

@@ -18,6 +18,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Debugging Structures
 This section describes the unmanaged structures that the debugging API uses.  

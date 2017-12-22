@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "views [.NET Framework], add-in pipeline"
   - "host-side adapters for add-ins [.NET Framework]"
@@ -23,6 +23,8 @@ caps.latest.revision: 32
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Walkthrough: Creating an Extensible Application
 This walkthrough describes how to create a pipeline for an add-in that performs simple calculator functions. It does not demonstrate a real-world scenario; rather, it demonstrates the basic functionality of a pipeline and how an add-in can provide services for a host.  

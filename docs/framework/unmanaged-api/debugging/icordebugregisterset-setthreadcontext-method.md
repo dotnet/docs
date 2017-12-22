@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugRegisterSet::SetThreadContext Method
 `SetThreadContext` is not implemented in the .NET Framework version 2.0. Do not call this method.  

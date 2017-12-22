@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::COMClassicVTableCreated Method
 Notifies the profiler that a COM interop vtable for the specified IID and class has been created.  

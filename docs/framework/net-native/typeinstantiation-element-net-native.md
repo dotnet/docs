@@ -14,6 +14,8 @@ caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;TypeInstantiation&gt; Element (.NET Native)
 Applies runtime reflection policy to a constructed generic type.  

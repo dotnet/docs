@@ -14,6 +14,8 @@ caps.latest.revision: 35
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;netMsmqBinding&gt;
 Defines a queued binding suitable for cross-machine communication.  

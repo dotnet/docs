@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFunctionBreakpoint::GetFunction Method
 Gets an interface pointer to an ICorDebugFunction that references the function in which the breakpoint is set.  

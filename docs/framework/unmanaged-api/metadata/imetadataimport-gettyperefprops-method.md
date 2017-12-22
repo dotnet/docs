@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::GetTypeRefProps Method
 Gets the metadata associated with the <xref:System.Type> referenced by the specified TypeRef token.  

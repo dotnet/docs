@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # CLR User-Defined Functions
 User-defined functions are routines that can take parameters, perform calculations or other actions, and return a result. You can write user-defined functions in any Microsoft .NET Framework programming language, such as Microsoft Visual Basic .NET or Microsoft Visual C#.  

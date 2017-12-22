@@ -21,6 +21,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;switches&gt; Element
 Contains trace switches and the level where the trace switches are set.  

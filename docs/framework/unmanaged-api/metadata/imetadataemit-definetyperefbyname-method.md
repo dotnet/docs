@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::DefineTypeRefByName Method
 Gets a metadata token for a type that is defined in the specified scope, which is outside the current scope.  

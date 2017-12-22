@@ -19,6 +19,8 @@ caps.latest.revision: 36
 author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
+ms.workload: 
+  - "wiwagn"
 ---
 # .NET Performance Tips
 The term *performance* generally refers to the execution speed of a program. You can sometimes increase execution speed by following certain basic rules in your source code. In some programs, it is important to examine code closely and use profilers to make sure that it is running as fast as possible. In other programs, you do not have to perform such optimization because the code is running acceptably fast as it is written. This article lists some common areas where performance can suffer and tips for improving it as well as links to additional performance topics. For more information about planning and measuring for performance, see [Performance](../../../docs/framework/performance/index.md)  

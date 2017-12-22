@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceCertificate&gt; of &lt;serviceCredentials&gt;
 Specify an X.509 certificate that will be used to authenticate the service to clients using Message security mode.  

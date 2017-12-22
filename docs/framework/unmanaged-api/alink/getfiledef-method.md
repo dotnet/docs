@@ -26,6 +26,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetFileDef Method
 Retrieves the actual FileDef token used in metadata (as opposed to the token assigned by ALink).  

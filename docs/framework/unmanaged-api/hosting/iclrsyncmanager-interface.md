@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRSyncManager Interface
 Defines methods that allow the host to get information about requested tasks and to detect deadlocks in its synchronization implementation.  

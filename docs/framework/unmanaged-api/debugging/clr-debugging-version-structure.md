@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CLR_DEBUGGING_VERSION Structure
 Defines the product version of the common language runtime (CLR) for debugging purposes.  

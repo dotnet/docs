@@ -12,6 +12,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Transaction Management Escalation
 Windows hosts a set of services and modules that together constitute a transaction manager. Transaction management escalation describes the process of migrating a transaction from one of the transaction manager's components to another.  

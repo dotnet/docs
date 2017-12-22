@@ -27,6 +27,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EmitInternalExportedTypes Method
 Emits types added to the assembly. Call this method after known internal types have been added.  

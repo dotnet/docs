@@ -14,6 +14,8 @@ caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
+ms.workload: 
+  - "wiwagn"
 ---
 # Writing Large, Responsive .NET Framework Apps
 This article provides tips for improving the performance of large .NET Framework apps, or apps that process a large amount of data such as files or databases. These tips come from rewriting the C# and Visual Basic compilers in managed code, and this article includes several real examples from the C# compiler.  

@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;discoveryClientSettings&gt;
 Contains the settings needed by an application to participate in the service discovery process as a client.  

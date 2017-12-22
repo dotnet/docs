@@ -17,6 +17,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Winmdexp.exe (Windows Runtime Metadata Export Tool)
 The [!INCLUDE[wrt](../../../includes/wrt-md.md)] Metadata Export Tool (Winmdexp.exe) transforms a .NET Framework module into a file that contains [!INCLUDE[wrt](../../../includes/wrt-md.md)] metadata. Although .NET Framework assemblies and [!INCLUDE[wrt](../../../includes/wrt-md.md)] metadata files use the same physical format, there are differences in the content of the metadata tables, which means that .NET Framework assemblies are not automatically usable as [!INCLUDE[wrt](../../../includes/wrt-md.md)] Components. The process of turning a .NET Framework module into a [!INCLUDE[wrt](../../../includes/wrt-md.md)] component is referred to as *exporting*. In the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], the resulting Windows metadata (.winmd) file contains both metadata and implementation.  

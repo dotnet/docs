@@ -20,6 +20,8 @@ caps.latest.revision: 24
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; Element for &lt;listeners&gt; for &lt;trace&gt;
 Adds a listener to the **Listeners** collection.  

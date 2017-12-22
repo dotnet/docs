@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess6::DecodeEvent Method
 Decodes managed debug events that have been encapsulated in the payload of specially crafted native exception debug events.  

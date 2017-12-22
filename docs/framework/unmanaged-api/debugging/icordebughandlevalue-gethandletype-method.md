@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugHandleValue::GetHandleType Method
 Gets a value that indicates the kind of handle referenced by this ICorDebugHandleValue object.  

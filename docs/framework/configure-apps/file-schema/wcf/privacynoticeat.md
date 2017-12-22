@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;privacyNoticeAt&gt;
 Represents a configuration element that specifies a privacy notice used in `wsFederationHttp` binding.  

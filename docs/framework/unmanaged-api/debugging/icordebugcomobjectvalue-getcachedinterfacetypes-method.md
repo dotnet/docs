@@ -25,6 +25,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugComObjectValue::GetCachedInterfaceTypes Method
 Provides an enumerator for the interface types that the current object has been cast to or used as.  

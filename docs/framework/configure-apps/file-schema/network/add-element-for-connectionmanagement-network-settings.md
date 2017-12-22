@@ -22,6 +22,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; Element for connectionManagement (Network Settings)
 Adds an IP address or DNS name to the connection management list.  

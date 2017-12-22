@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; of &lt;namespaceTable&gt;
 Represents a configuration element that contains a namespace to prefix mapping that can then be used in XPath filters for routing.  

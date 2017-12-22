@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Ping a Host
 This sample shows how to ping a remote host.  

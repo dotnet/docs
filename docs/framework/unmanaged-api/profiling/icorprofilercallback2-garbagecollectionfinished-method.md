@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback2::GarbageCollectionFinished Method
 Notifies the profiler that garbage collection has completed and all garbage collection callbacks have been issued for it.  

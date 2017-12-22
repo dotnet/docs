@@ -16,6 +16,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Batching Operations (WCF Data Services)
 The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] supports batch processing of requests to an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]-based service. For more information, see [OData: Batch Processing](http://go.microsoft.com/fwlink/?LinkId=186075). In [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], each operation that uses the <xref:System.Data.Services.Client.DataServiceContext>, such as executing a query or saving changes, results in a separate request being sent to the data service. In order to maintain a logical scope for sets of operations, you can explicitly define operational batches. This ensures that all operations in the batch are sent to the data service in a single HTTP request, enables the server to process the operations atomically, and reduces the number of round trips to the data service.  

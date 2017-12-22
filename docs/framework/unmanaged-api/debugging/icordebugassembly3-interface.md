@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAssembly3 Interface
 Logically extends the ICorDebugAssembly interface to provide support for container assemblies and their contained assemblies.  

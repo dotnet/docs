@@ -20,6 +20,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;module&gt; Element (Network Settings)
 Adds a new proxy module to the application.  

@@ -21,6 +21,8 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;gcConcurrent&gt; Element
 Specifies whether the common language runtime runs garbage collection on a separate thread.  

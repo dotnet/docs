@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;unrecognizedPolicyAssertion&gt;
 Represents a binding element that specifies policy assertion. This element has no attribute and is present as an empty switch.  

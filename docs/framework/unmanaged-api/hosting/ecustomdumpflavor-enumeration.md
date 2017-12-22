@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ECustomDumpFlavor Enumeration
 Contains values that indicate which items to include in a custom subset of a heap dump when reporting errors.  

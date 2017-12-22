@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFunction::GetCurrentVersionNumber Method
 Gets the version number of the latest edit made to the function represented by this ICorDebugFunction object.  

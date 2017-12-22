@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt; (Less Than) (Entity SQL)
 Compares two expressions to determine whether the left expression has a value less than the right expression.  

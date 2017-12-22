@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Development and Deployment Considerations
 Topics in this section address issues to consider when developing or deploying an application that is based on the ADO.NET Entity Framework.  

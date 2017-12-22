@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule3::CreateReaderForInMemorySymbols Method
 Creates a debug symbol reader for a dynamic module.  

@@ -16,6 +16,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Data Services Resources
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] introductory topics can be found in the following locations. Many of these topics also contain links to related topics that contain more detailed information.  

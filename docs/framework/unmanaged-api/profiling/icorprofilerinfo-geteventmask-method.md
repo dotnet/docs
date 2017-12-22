@@ -27,6 +27,8 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetEventMask Method
 Gets the current event categories for which the profiler wants to receive event notifications from the common language runtime (CLR).  

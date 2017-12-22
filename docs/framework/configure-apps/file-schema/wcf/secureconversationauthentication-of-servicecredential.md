@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;secureConversationAuthentication&gt; of &lt;serviceCredential&gt;
 Specifies the settings for a secure conversation service.  

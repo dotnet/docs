@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;xmlElement&gt;
 Specifies an XML element that is sent in the message body to the Security Token Service when requesting a token.  

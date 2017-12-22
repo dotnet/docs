@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;headers&gt; element
 This contains a collection of address headers that are required in order to correctly address the local issuer. You can use the `add` keyword to add a header to this collection.  

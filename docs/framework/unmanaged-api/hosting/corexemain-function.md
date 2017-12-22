@@ -29,6 +29,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # _CorExeMain Function
 Initializes the common language runtime (CLR), locates the managed entry point in the executable assembly's CLR header, and begins execution.  

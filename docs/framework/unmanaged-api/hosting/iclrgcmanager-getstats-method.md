@@ -27,6 +27,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRGCManager::GetStats Method
 Gets a set of current statistics about the common language runtime's garbage collection system.  

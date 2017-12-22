@@ -20,6 +20,8 @@ caps.latest.revision: 21
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;socket&gt; Element (Network Settings)
 Specifies whether socket operations use completion ports.  

@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IEnumReferenceIdentity Interface
 Serves as an enumerator for a collection of `IReferenceIdentity` objects.  

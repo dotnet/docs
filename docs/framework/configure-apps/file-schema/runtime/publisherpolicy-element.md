@@ -22,6 +22,8 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;publisherPolicy&gt; Element
 Specifies whether the runtime applies publisher policy.  

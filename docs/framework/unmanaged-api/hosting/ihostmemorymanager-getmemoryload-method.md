@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostMemoryManager::GetMemoryLoad Method
 Gets the amount of physical memory that is currently in use, and therefore unavailable, as reported by the host.  

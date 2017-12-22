@@ -17,6 +17,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # Run .NET Framework 1.1 apps on Windows 8, Windows 8.1, or Windows 10

@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRAppDomainResourceMonitor::GetCurrentSurvived Method
 Gets the number of bytes that survived the last full, blocking garbage collection and that are referenced by the current application domain.  

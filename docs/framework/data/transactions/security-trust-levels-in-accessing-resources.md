@@ -12,6 +12,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Trust Levels in Accessing Resources
 This topic discusses how access is restricted on the types of resources that <xref:System.Transactions> exposes.  

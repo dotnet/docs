@@ -26,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule Interface1
 Represents a common language runtime (CLR) module, which is either an executable file or a dynamic-link library (DLL).  

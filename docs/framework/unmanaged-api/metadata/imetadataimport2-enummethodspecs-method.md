@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport2::EnumMethodSpecs Method
 Gets an enumerator for an array of MethodSpec tokens associated with the specified MethodDef or MemberRef token.  

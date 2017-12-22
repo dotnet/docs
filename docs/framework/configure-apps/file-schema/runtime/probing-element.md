@@ -21,6 +21,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;probing&gt; Element
 Specifies application base subdirectories for the common language runtime to search when loading assemblies.  

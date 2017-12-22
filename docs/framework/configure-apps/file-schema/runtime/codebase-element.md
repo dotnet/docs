@@ -21,6 +21,8 @@ caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;codeBase&gt; Element
 Specifies where the common language runtime can find an assembly.  

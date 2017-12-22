@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugDataTarget2::CreateVirtualUnwinder Method
 Creates a new stack unwinder that starts unwinding from an initial context (which isn't necessarily the leaf of a thread).  

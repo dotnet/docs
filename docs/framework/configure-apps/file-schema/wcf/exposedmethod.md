@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;exposedMethod&gt;
 Represents a COM+ method that is exposed when the interface on a COM+ component is exposed as a Web service.  

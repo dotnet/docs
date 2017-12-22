@@ -6,6 +6,8 @@ ms.author: mairaw
 ms.date: 11/27/2017
 ms.topic: article
 ms.prod: .net-framework
+ms.workload: 
+  - dotnet
 ---
 
 # Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8

@@ -14,6 +14,8 @@ caps.latest.revision: 19
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;clientCertificate&gt; of &lt;serviceCredentials&gt;
 Defines an X.509 certificate used to sign and encrypt messages to a client form a service in a duplex communication pattern.  

@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::GetParamForMethodIndex Method
 Gets the token that represents a specified parameter of the method represented by the specified MethodDef token.  

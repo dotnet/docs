@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFunction2 Interface1
 Logically extends the ICorDebugFunction interface to provide support for Just My Code step-through debugging, which skips non-user code.  

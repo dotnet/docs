@@ -26,6 +26,8 @@ caps.latest.revision: 28
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorBindToRuntimeHost Function
 Enables hosts to load a specified version of the common language runtime (CLR) into a process.  

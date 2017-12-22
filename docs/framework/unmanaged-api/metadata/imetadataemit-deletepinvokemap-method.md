@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::DeletePinvokeMap Method
 Destroys the PInvoke mapping metadata for the object referenced by the specified token.  

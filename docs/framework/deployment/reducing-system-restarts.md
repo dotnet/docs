@@ -18,6 +18,8 @@ caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Reducing System Restarts During .NET Framework 4.5 Installations
 The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] installer uses the [Restart Manager](http://go.microsoft.com/fwlink/?LinkId=231425) to prevent system restarts whenever possible during installation. If your app setup program installs the .NET Framework, it can interface with the Restart Manager to take advantage of this feature. For more information, see [How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md).  

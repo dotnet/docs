@@ -26,6 +26,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetAssemblyRefHash Method
 Retrieves a hash blob for a given assembly.  

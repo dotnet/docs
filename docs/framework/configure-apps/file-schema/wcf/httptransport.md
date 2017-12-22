@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;httpTransport&gt;
 Specifies an HTTP transport for transmitting SOAP messages for a custom binding.  

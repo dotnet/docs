@@ -18,6 +18,8 @@ caps.latest.revision: 36
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Support for the DataItem Control Type
 > [!NOTE]

@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ASSEMBLYMETADATA Structure
 Contains information about the referenced assembly, including its version and its level of support for locales, processors, and operating systems.  

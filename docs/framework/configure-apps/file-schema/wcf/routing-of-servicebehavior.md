@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;routing&gt; of &lt;serviceBehavior&gt;
 Provides run-time access to the routing service to allow dynamic modification of the routing configuration.  

@@ -17,6 +17,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Interop ETW Events
 <a name="top"></a> Interop events capture information about Microsoft intermediate language (MSIL) stub generation and caching.  

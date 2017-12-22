@@ -17,6 +17,8 @@ caps.latest.revision: 34
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Control Patterns Overview
 > [!NOTE]

@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # _EFN_GetManagedObjectFieldInfo Function
 Gets the offset from the start of an object to a field and the field's value, using the provided object pointer and field name.  

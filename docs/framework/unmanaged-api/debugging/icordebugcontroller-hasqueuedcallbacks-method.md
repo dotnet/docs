@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugController::HasQueuedCallbacks Method
 Gets a value that indicates whether any managed callbacks are currently queued for the specified thread.  

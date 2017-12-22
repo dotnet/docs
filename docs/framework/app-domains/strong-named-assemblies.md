@@ -17,6 +17,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Strong-Named Assemblies
 Strong-naming an assembly creates a unique identity for the assembly, and can prevent assembly conflicts.  

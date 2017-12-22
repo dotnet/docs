@@ -28,6 +28,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetCachePath Function
 Gets the path to the cached assembly, using the specified flags.  

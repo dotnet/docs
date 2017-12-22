@@ -27,6 +27,8 @@ caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataDispenserEx::SetOption Method
 Sets the specified option to a given value for the current metadata scope. The option controls how calls to the current metadata scope are handled.  

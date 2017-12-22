@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # SYMLINEDELTA Structure
 Provides information to the symbol handler about methods that were moved as a result of edits.  

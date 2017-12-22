@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRMetadataLocator::GetMetadata Method
 Called by the common language runtime (CLR) data access services to retrieve the metadata of an image.  

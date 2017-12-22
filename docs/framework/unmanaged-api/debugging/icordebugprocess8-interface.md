@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess8 Interface
 [Supported in the [!INCLUDE[net_v46](../../../../includes/net-v46-md.md)] and later versions]  

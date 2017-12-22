@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostMAlloc::DebugAlloc Method
 Requests that the host allocate the specified amount of memory from the heap, and additionally track where the memory was allocated.  

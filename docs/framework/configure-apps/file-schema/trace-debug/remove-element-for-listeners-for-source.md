@@ -19,6 +19,8 @@ caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;remove&gt; Element for &lt;listeners&gt; for &lt;source&gt;
 Removes a listener from the `Listeners` collection for a trace source.  

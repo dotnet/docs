@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;headers&gt;
 An endpoint can be addressed by one or more SOAP headers in addition to its basic URI. One set of scenarios where this is useful is a set of SOAP intermediary scenarios where an endpoint requires clients of that endpoint to include SOAP headers targeted at intermediaries. This configuration element can be used to define such custom address headers. Entries in the endpoint header collection are user-defined XML elements. Each element has to be well-formed XML.  

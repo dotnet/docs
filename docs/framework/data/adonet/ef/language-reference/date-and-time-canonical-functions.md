@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Date and Time Canonical Functions
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] includes date and time canonical functions.  

@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugInstanceFieldSymbol::GetOffset Method
 Gets the offset in bytes of this instance field in its parent class.  

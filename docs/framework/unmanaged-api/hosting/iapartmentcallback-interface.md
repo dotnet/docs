@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IApartmentCallback Interface
 Provides methods for making callbacks within an apartment. An *apartment* is a logical container within a process for objects that share the same thread access requirements.  

@@ -28,6 +28,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CreateVersionStringFromModule Function
 Creates a version string from a common language runtime (CLR) path in a target process.  

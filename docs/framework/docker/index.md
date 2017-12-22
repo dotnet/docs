@@ -10,6 +10,8 @@ ms.prod: .net-framework
 ms.technology: dotnet-docker
 ms.devlang: dotnet
 ms.assetid: a27b2ae4-154e-4b2b-b221-0c4c05185274
+ms.workload: 
+  - wiwagn
 ---
 
 # Deploying .NET Framework applications with Docker

@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::DefinePermissionSet Method
 Creates a definition for a permission set with the specified metadata signature, and gets a token to that permission set definition.  

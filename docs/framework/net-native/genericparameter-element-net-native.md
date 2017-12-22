@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;GenericParameter&gt; Element (.NET Native)
 Applies policy to the parameter type of a generic type or method.  

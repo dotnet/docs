@@ -27,6 +27,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread::GetCurrentException Method
 Gets an interface pointer to an ICorDebugValue object that represents an exception that is currently being thrown by managed code.  

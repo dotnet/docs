@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::GetFieldMarshal Method
 Gets a pointer to the native, unmanaged type of the field represented by the specified field metadata token.  

@@ -18,6 +18,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorFlags.exe (CorFlags Conversion Tool)
 The CorFlags Conversion tool allows you to configure the CorFlags section of the header of a portable executable image.  

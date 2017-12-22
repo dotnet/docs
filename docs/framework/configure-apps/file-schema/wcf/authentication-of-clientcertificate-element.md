@@ -14,6 +14,8 @@ caps.latest.revision: 16
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;authentication&gt; of &lt;clientCertificate&gt; Element
 Specifies authentication behaviors for client certificates used by a service.  

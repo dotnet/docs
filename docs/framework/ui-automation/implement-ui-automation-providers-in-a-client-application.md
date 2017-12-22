@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "client-side UI Automation provider, implementation within applications"
   - "UI Automation, implementing client-side provider within application"
@@ -20,6 +20,8 @@ caps.latest.revision: 6
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Implement UI Automation Providers in a Client Application
 > [!NOTE]

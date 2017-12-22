@@ -19,6 +19,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Deprecated CLR Hosting Interfaces and Coclasses
 This section describes the interfaces that unmanaged hosts can use to integrate the common language runtime (CLR) in the .NET Framework versions 1.0 and 1.1 into their applications. These interfaces provide methods for a host to configure and load the runtime into a process.  

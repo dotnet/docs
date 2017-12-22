@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDataTarget::GetPointerSize Method
 Gets the size, in bytes, of the pointer type that the target process uses. This method is called by the common language runtime data access services.  

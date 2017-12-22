@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataTables2::GetMetaDataStreamInfo Method
 Gets the name, size, and contents of the metadata stream at the specified index.  

@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::DefineImportMember Method
 Creates a reference to the specified member of a type or module that is defined outside the current scope, and defines a token for that reference.  

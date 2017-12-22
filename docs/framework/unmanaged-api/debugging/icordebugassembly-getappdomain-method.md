@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAssembly::GetAppDomain Method
 Gets an interface pointer to the application domain that contains this `ICorDebugAssembly` instance.  

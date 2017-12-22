@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionUnwindFinallyLeave Method
 Notifies the profiler that the unwind phase of exception handling has left a `finally` clause.  

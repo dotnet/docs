@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedAsyncMethodPropertiesWriter::DefineCatchHandlerILOffset Method
 Sets the IL offset for the compiler-generated catch handler that wraps an async method.  

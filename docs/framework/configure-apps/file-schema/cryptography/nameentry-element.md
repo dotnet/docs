@@ -20,6 +20,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;nameEntry&gt; Element
 Maps a class name to a friendly algorithm name, which allows one class to have many friendly names.  

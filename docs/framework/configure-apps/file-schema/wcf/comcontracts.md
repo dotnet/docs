@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;comContracts&gt;
 The `comContracts` configuration section contains elements that allow you to specify various properties of a COM+ integration service contract.  

@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostMemoryManager::AcquiredVirtualAddressSpace Method
 Notifies the host that the common language runtime (CLR) has acquired the specified memory from the operating system.  

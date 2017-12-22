@@ -21,6 +21,8 @@ caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;sources&gt; Element
 Specifies trace sources that initiate tracing messages.  

@@ -17,6 +17,8 @@ caps.latest.revision: 24
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Caching in UI Automation Clients
 > [!NOTE]

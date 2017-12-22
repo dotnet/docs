@@ -26,6 +26,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostMalloc Interface
 Provides methods that allow the common language runtime (CLR) to request fine-grained allocations from the heap through the host.  

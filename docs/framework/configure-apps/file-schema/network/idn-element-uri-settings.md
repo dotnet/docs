@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;idn&gt; Element (Uri Settings)
 Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain name.  

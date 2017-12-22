@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::RemotingServerSendingReply Method
 Notifies the profiler that the process has finished processing a remote method invocation request and is about to transmit the reply through a channel.  

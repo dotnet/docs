@@ -21,6 +21,8 @@ author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
 robots: noindex,nofollow
+ms.workload: 
+  - dotnet
 ---
 
 # s_isDebuggerCheckDisabledForTestPurposes Field

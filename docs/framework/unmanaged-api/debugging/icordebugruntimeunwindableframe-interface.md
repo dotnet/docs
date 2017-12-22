@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugRuntimeUnwindableFrame Interface
 Provides support for unmanaged methods that require the common language runtime (CLR) to unwind a frame.  

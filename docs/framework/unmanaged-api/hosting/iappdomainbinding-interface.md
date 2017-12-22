@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAppDomainBinding Interface
 Provides a method that is called by the common language runtime (CLR) to notify the host application that an application domain has been created.  

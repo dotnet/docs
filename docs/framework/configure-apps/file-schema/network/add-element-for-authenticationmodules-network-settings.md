@@ -22,6 +22,8 @@ caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; Element for authenticationModules (Network Settings)
 Adds an authentication module to the application.  

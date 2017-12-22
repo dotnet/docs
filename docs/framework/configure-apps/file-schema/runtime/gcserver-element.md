@@ -20,6 +20,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;gcServer&gt; Element
 Specifies whether the common language runtime runs server garbage collection.  

@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugManagedCallback::DebuggerError Method
 Notifies the debugger that an error has occurred while attempting to handle an event from the common language runtime (CLR).  

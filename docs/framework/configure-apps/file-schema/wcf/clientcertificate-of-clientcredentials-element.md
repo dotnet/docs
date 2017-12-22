@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;clientCertificate&gt; of &lt;clientCredentials&gt; Element
 Defines an X.509 certificate used to authenticate a client to a service.  

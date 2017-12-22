@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Transports
 The transport layer is at the lowest level of the channel stack. The main transports used in [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] are HTTP, HTTPS, TCP, and Named Pipes. This section lists all the configuration elements that allow you to configure different types of transports.  

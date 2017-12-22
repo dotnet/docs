@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;clientVia&gt;
 Specifies the URI for which the transport channel should be created. For more information, see <xref:System.ServiceModel.Description.ClientViaBehavior>.  

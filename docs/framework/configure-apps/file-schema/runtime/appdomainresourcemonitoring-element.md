@@ -17,6 +17,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;appDomainResourceMonitoring&gt; Element
 Instructs the runtime to collect statistics on all application domains in the process for the life of the process.  

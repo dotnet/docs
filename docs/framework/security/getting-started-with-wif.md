@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Getting Started With WIF
 -   [Building My First Claims-Aware ASP.NET Web Application](../../../docs/framework/security/building-my-first-claims-aware-aspnet-web-app.md)  

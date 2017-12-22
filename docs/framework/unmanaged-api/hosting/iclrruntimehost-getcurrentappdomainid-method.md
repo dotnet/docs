@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRRuntimeHost::GetCurrentAppDomainId Method
 Gets the numeric identifier of the <xref:System.AppDomain> that is currently executing.  

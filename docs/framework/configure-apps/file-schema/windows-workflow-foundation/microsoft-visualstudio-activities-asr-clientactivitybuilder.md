@@ -18,6 +18,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder
 Use this class to create and configure a <xref:System.Activities.ActivityBuilder> object that provides data for a workflow activity.  

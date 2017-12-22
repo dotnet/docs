@@ -27,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::EndInprocDebugging Method
 Shuts down an in-process debugging session. This method is obsolete in the .NET Framework version 2.0.  

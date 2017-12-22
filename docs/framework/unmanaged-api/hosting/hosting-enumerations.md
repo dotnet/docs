@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Hosting Enumerations
 This section describes the unmanaged enumerations that the hosting API uses.  

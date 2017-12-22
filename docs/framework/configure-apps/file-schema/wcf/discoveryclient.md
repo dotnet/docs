@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;discoveryClient&gt;
 A configuration element for creating a custom binding that enables a client application to automatically search for a discoverable service and find its address at runtime.  

@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread::GetRegisterSet Method
 Gets an interface pointer to the register set that is associated with the active part of this ICorDebugThread object.  

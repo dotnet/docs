@@ -27,6 +27,8 @@ caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo2::GetCodeInfo2 Method
 Gets the extents of native code associated with the specified `FunctionID`.  

@@ -17,6 +17,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Guidelines for Creating Components for Side-by-Side Execution
 Follow these general guidelines to create managed applications or components designed for side-by-side execution:  

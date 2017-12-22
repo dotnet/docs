@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugValue2 Interface
 Extends the "ICorDebugValue" interface to provide support for "ICorDebugType" objects.  

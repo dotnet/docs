@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugHeapEnum Interface
 Provides an enumerator for objects on the managed heap. This interface is a subclass of the ICorDebugEnum interface.  

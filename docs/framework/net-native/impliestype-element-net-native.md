@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;ImpliesType&gt; Element (.NET Native)
 Applies policy to a type, if that policy has been applied to the containing type or method.  

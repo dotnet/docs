@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "reflection, Windows Store apps"
   - ".NET for Windows Store apps, TypeInfo class"
@@ -20,6 +20,8 @@ caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Reflection in the .NET Framework for Windows Store Apps
 Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], the .NET Framework includes a set of reflection types and members for use in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. These types and members are available in the full .NET Framework as well as in the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=225700). This document explains the major differences between these and their counterparts in the .NET Framework 4 and earlier versions.  

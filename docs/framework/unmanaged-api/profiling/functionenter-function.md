@@ -26,6 +26,8 @@ caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # FunctionEnter Function
 Notifies the profiler that control is being passed to a function.  

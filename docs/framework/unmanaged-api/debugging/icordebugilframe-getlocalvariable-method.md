@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugILFrame::GetLocalVariable Method
 Gets the value of the specified local variable in this Microsoft intermediate language (MSIL) stack frame.  

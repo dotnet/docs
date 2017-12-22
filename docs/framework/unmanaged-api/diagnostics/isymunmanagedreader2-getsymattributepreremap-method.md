@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedReader2::GetSymAttributePreRemap Method
 Gets a custom attribute based upon its name. Unlike metadata custom attributes, these attributes are held in the symbol store.  

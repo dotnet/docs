@@ -26,6 +26,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # SetNonAssemblyFlags Method
 Sets flags that are not assembly-specific.  

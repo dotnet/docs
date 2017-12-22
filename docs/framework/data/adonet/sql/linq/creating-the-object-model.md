@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating the Object Model
 You can create your object model from an existing database and use the model in its default state. You can also customize many aspects of the model and its behavior.  

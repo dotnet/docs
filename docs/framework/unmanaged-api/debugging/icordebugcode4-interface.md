@@ -26,6 +26,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugCode4 Interface
 Provides a method that enables a debugger to enumerate the local variables and arguments in a function.  

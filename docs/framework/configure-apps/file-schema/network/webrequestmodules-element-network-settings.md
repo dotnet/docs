@@ -20,6 +20,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;webRequestModules&gt; Element (Network Settings)
 Specifies modules to use to request information from network hosts.  

@@ -27,6 +27,8 @@ caps.latest.revision: 25
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo2::DoStackSnapshot Method
 Walks the managed frames on the stack for the specified thread, and sends information to the profiler through a callback.  

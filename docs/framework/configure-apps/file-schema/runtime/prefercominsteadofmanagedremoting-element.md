@@ -17,6 +17,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;PreferComInsteadOfManagedRemoting&gt; Element
 Specifies whether the runtime will use COM interop instead of remoting for all calls across application domain boundaries.  

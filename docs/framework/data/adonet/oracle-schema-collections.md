@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Oracle Schema Collections
 The Microsoft .NET Framework Data Provider for Oracle supports the following specific schema collections in addition to the common schema collections:  

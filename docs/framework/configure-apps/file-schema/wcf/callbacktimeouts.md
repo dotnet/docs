@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;callbackTimeouts&gt;
 Specifies the timeout value when flowing transactions from server to client.in a duplex callback contract scenario.  

@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;userPrincipalName&gt;
 Specifies the User Principal Name (UPN) of a service to be authenticated by the client.  

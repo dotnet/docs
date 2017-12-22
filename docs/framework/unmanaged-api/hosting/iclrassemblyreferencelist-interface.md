@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRAssemblyReferenceList Interface
 Manages a list of assemblies that are loaded by the common language runtime (CLR) and not by the host.  

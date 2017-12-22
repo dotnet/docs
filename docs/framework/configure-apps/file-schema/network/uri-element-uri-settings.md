@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;Uri&gt; Element (Uri Settings)
 Contains settings that specify how the .NET Framework handles web addresses expressed using uniform resource identifiers (URIs).  

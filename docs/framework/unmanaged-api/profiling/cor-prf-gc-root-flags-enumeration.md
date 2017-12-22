@@ -26,6 +26,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_GC_ROOT_FLAGS Enumeration
 Indicates a property of a garbage collection root.  

@@ -26,6 +26,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # FunctionTailcall2 Function
 Notifies the profiler that the currently executing function is about to perform a tail call to another function and provides information about the stack frame.  

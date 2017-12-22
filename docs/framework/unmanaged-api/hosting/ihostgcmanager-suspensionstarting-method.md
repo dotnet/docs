@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostGCManager::SuspensionStarting Method
 Notifies the host that the common language runtime (CLR) is suspending execution of tasks, to perform a garbage collection.  

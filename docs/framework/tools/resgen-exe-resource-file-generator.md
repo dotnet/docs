@@ -27,6 +27,8 @@ caps.latest.revision: 46
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Resgen.exe (Resource File Generator)
 The Resource File Generator (Resgen.exe) converts text (.txt or .restext) files and XML-based resource format (.resx) files to common language runtime binary (.resources) files that can be embedded in a runtime binary executable or satellite assembly. (See [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md).)  

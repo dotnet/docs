@@ -21,6 +21,8 @@ caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;bindingRedirect&gt; Element
 Redirects one assembly version to another.  

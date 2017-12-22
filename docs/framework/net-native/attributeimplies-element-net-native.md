@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;AttributeImplies&gt; Element (.NET Native)
 Defines policy for code elements the containing attribute is applied to.  

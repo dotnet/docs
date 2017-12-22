@@ -19,6 +19,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Diagnostics Symbol Store Enumerations
 This topic describes the unmanaged enumerations that the diagnostics symbol store API uses.  

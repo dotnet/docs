@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostThreadPoolManager::GetMinThreads Method
 Gets the minimum number of idle threads that the host maintains in the thread pool in anticipation of requests.  

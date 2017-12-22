@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, batch requests"
 ms.assetid: 3b4db7df-bd33-43a1-8ea4-63a18e131f97
@@ -19,6 +19,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Execute Queries in a Batch (WCF Data Services)
 By using the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library, you can execute more than one query against the data service in a single batch. For more information, see [Batching Operations](../../../../docs/framework/data/wcf/batching-operations-wcf-data-services.md).  

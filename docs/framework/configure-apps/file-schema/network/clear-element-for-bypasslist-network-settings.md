@@ -22,6 +22,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;clear&gt; Element for bypasslist (Network Settings)
 Clears the proxy bypass list.  

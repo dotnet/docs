@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Tracing in ADO.NET
 ADO.NET features built-in data tracing functionality that is supported by the .NET data providers for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)], Oracle, OLE DB and ODBC, as well as the ADO.NET <xref:System.Data.DataSet>, and the [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] network protocols.  

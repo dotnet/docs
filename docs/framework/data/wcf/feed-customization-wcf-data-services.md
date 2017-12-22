@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, feeds"
   - "WCF Data Services, Atom protocol"
@@ -22,6 +22,8 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Feed Customization (WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] uses the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] to expose data as a feed. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] supports both Atom and JavaScript Object Notation (JSON) formats for data feeds. When you use an Atom feed, [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] provides a standard method to serialize data, such as entities and relationships, into an XML format that can be included in the body of HTTP message. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] defines a default entity-property mapping between the data that is contained in entities and Atom elements. For more information, see [OData: Atom Format](http://go.microsoft.com/fwlink/?LinkID=185794).  

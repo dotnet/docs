@@ -19,6 +19,8 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Deprecated CLR Hosting Functions
 This section describes the unmanaged global static functions that earlier versions of the hosting API used.  

@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::EnumUnresolvedMethods Method
 Enumerates MemberDef tokens representing the unresolved methods in the current metadata scope.  

@@ -9,10 +9,12 @@ ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework, migrating applications to"
   - "migration, .NET Framework"
-ms.assetid: 02d55147-9b3a-4557-a45f-fa936fadae3b 
+ms.assetid: 02d55147-9b3a-4557-a45f-fa936fadae3b
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Migration Guide to the .NET Framework 4.7, 4.6, and 4.5 
 If you created your app using an earlier version of the .NET Framework, you can generally upgrade it to the .NET Framework 4.5 and its point releases (4.5.1 and 4.5.2), the .NET Framework 4.6 and its point releases (4.6.1 and 4.6.2), or the .NET Framework 4.7 and its point release, the .NET Framework 4.7.1, easily. Open your project in Visual Studio. If your project was created in an earlier version of Visual Studio, the **Project Compatibility** dialog box automatically opens. For more information about upgrading a project in Visual Studio, see [Port, Migrate, and Upgrade Visual Studio Projects](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects) and [Visual Studio 2017 Platform Targeting and Compatibility](https://www.visualstudio.com/en-us/productinfo/vs2017-compatibility-vs).  

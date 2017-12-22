@@ -20,6 +20,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;network&gt; Element (Network Settings)
 Configures the network options for an external Simple Mail Transport Protocol (SMTP) server.  

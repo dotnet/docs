@@ -18,6 +18,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Service Versioning (WCF Data Services)
 The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] enables you to create data services so that clients can access data as resources using URIs that are based on a data model. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] also supports the definition of service operations. After initial deployment, and potentially several times during their lifetime, these data services may need to be changed for a variety of reasons, such as changing business needs, information technology requirements, or to address other issues. When you make changes to an existing data service, you must consider whether to define a new version of your data service and how best to minimize the impact on existing client applications. This topic provides guidance on when and how to create a new version of a data service. It also describes how [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] handles an exchange between clients and data services that support different versions of the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol.  

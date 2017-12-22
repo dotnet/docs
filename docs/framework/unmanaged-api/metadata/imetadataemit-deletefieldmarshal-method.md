@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::DeleteFieldMarshal Method
 Destroys the PInvoke marshaling metadata signature for the object referenced by the specified token.  

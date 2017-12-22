@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;timeOuts&gt;
 Represents a configuration element that specifies the interval of time allowed for the service host to open or close.  

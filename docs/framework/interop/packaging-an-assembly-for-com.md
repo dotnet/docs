@@ -28,6 +28,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Packaging an Assembly for COM
 COM developers can benefit from the following information about the managed types they plan to incorporate in their application:  

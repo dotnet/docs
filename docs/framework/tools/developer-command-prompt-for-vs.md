@@ -22,6 +22,8 @@ caps.latest.revision: 45
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Developer Command Prompt for Visual Studio
 The Developer Command Prompt for Visual Studio automatically sets the environment variables that enable you to easily use .NET Framework tools. The Developer Command Prompt is installed with full or community editions of Visual Studio. It is not installed with the Express versions of Visual Studio.  

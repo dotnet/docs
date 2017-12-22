@@ -26,6 +26,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IGCHost2 Interface
 Provides methods for obtaining information about the garbage collection system and for controlling some aspects of garbage collection.  

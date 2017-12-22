@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDebugManager::BeginConnection Method
 Establishes a new connection between the host and the debugger to associate a list of tasks with an identifier and a friendly name.  

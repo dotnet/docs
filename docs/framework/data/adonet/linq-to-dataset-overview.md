@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # LINQ to DataSet Overview
 The <xref:System.Data.DataSet> is one of the more widely used components of [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)]. It is a key element of the disconnected programming model that [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] is based on, and it enables you to explicitly cache data from different data sources. For the presentation tier, the <xref:System.Data.DataSet> is tightly integrated with GUI controls for data-binding. For the middle-tier, it provides a cache that preserves the relational shape of data, and includes fast simple query and hierarchy navigation services. A common technique used to lower the number of requests on a database is to use the <xref:System.Data.DataSet> for caching in the middle-tier. For example, consider a data-driven [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web application. Often, a significant portion of the application data does not change frequently and is common across sessions or users. This data can be kept in memory on the Web server, which reduces the number of requests against the database and speeds up the user’s interactions. Another useful aspect of the <xref:System.Data.DataSet> is that it allows an application to bring subsets of data from one or more data source into the application space. The application can then manipulate the data in-memory, while retaining its relational shape.  

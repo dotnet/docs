@@ -14,6 +14,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;Method&gt; Element (.NET Native)
 Applies runtime reflection policy to a constructor or method.  

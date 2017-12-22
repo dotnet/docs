@@ -26,6 +26,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugCode2 Interface1
 Provides methods that extend the capabilities of "ICorDebugCode".  

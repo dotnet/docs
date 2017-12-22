@@ -20,6 +20,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Accessing Data Service Resources (WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] supports the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] to expose your data as a feed with resources that are addressable by URIs. These resources are represented according to the entity-relationship conventions of the [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md). In this model, entities represent operational units of data that are data types in an application domain, such as customers, orders, items, and products. Entity data is accessed and changed by using the semantics of representational state transfer (REST), specifically the standard HTTP verbs of GET, PUT, POST, and DELETE.  

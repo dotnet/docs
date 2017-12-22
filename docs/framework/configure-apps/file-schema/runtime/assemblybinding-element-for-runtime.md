@@ -20,6 +20,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;assemblyBinding&gt; Element for &lt;runtime&gt;
 Contains information about assembly version redirection and the locations of assemblies.  

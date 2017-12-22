@@ -25,6 +25,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugComObjectValue::GetCachedInterfacePointers Method
 Gets the raw interface pointers cached on the current runtime callable wrapper (RCW).  

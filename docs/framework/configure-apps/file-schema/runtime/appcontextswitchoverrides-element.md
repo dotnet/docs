@@ -20,6 +20,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;AppContextSwitchOverrides&gt; Element
 Defines one or more switches used by the <xref:System.AppContext> class to provide an opt-out mechanism for new functionality.  

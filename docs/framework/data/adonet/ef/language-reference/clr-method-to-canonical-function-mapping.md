@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # CLR Method to Canonical Function Mapping
 The Entity Framework provides a set of canonical functions that implement functionality that is common across many database systems, such as string manipulation and mathematical functions. This enables developers to target a broad range of database systems. When called from a querying technology, such as LINQ to Entities, these canonical functions are translated to the correct corresponding store function for the provider being used. This allows function invocations to be expressed in a common form across data sources, providing a consistent query experience across data sources. The bitwise AND, OR, NOT, and XOR operators are also mapped to canonical functions when the operand is a numeric type. For Boolean operands, the bitwise AND, OR, NOT, and XOR operators compute the logical AND, OR, NOT, and XOR operations of their operands. For more information, see [Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md).  

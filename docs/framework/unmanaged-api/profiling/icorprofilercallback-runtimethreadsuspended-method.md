@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::RuntimeThreadSuspended Method
 Notifies the profiler that the specified thread has been suspended or is about to be suspended.  

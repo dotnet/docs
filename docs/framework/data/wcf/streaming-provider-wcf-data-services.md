@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, providers"
   - "WCF Data Services, binary data"
@@ -22,6 +22,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Streaming Provider (WCF Data Services)
 A data service can expose large object binary data. This binary data might represent video and audio streams, images, document files, or other types of binary media. When an entity in the data model includes one or more binary properties, the data service returns this binary data encoded as base-64 inside the entry in the response feed. Because loading and serializing large binary data in this manner can affect performance, the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] defines a mechanism for retrieving binary data independent of the entity to which it belongs. This is accomplished by separating the binary data from the entity into one or more data streams.  

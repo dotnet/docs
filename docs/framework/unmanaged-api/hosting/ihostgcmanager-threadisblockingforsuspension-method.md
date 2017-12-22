@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostGCManager::ThreadIsBlockingForSuspension Method
 Notifies the host that the thread from which the method call was made is about to block for a garbage collection.  

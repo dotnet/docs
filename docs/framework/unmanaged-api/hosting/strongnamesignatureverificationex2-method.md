@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StrongNameSignatureVerificationEx2 Method
 Verifies the signature of a strongly named assembly, and provides a mapping from the ECMA key to a real key.  

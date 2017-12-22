@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IInstallReferenceEnum Interface
 Represents an enumerator for the referenced assemblies installed in the global assembly cache.  

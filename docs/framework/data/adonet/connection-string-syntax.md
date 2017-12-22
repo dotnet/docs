@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Connection String Syntax
 Each .NET Framework data provider has a `Connection` object that inherits from <xref:System.Data.Common.DbConnection> as well as a provider-specific <xref:System.Data.Common.DbConnection.ConnectionString%2A> property. The specific connection string syntax for each provider is documented in its `ConnectionString` property. The following table lists the four data providers that are included in the .NET Framework.  

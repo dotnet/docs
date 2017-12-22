@@ -19,6 +19,8 @@ caps.latest.revision: 17
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;dataContractSerializer&gt;
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>. This element occurs in two different hierarchies. One is listed the following Schema Hierarchy section and the other is listed in the Remarks section.  

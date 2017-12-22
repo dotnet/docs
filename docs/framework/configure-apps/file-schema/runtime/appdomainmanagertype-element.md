@@ -17,6 +17,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;appDomainManagerType&gt; Element
 Specifies the type that serves as the application domain manager for the default application domain.  

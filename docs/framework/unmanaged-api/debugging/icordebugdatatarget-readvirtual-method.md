@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugDataTarget::ReadVirtual Method
 Gets a block of contiguous memory starting at the specified address, and returns it in the supplied buffer.  

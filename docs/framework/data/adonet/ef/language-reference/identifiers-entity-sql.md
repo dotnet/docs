@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Identifiers (Entity SQL)
 Identifiers are used in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] to represent query expression aliases, variable references, properties of objects, functions, and so on. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] provides two kinds of identifiers: simple identifiers and quoted identifiers.  

@@ -25,6 +25,8 @@ caps.latest.revision: 40
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Installutil.exe (Installer Tool)
 The Installer tool is a command-line utility that allows you to install and uninstall server resources by executing the installer components in specified assemblies. This tool works in conjunction with classes in the <xref:System.Configuration.Install> namespace.  

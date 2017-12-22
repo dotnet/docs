@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Conceptual Model Canonical to SQL Server Functions Mapping
 This topic describes how conceptual model canonical functions map to the corresponding SQL Server functions.  

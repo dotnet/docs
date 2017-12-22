@@ -17,6 +17,8 @@ caps.latest.revision: 24
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Security-Transparent Code
 <a name="top"></a>

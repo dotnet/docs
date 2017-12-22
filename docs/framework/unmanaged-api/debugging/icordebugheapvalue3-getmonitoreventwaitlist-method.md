@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugHeapValue3::GetMonitorEventWaitList Method
 Provides an ordered list of threads that are queued on the event that is associated with a monitor lock.  

@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::SetHandler Method
 Sets the method referenced by the specified `IUnknown` pointer as a notification callback for token remaps.  

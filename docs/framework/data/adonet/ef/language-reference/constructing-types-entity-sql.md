@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Constructing Types (Entity SQL)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] provides three kinds of constructors: row constructors, named type constructors, and collection constructors.  

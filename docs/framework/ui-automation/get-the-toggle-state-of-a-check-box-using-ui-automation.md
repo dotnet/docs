@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "UI Automation, getting toggle states of check boxes"
   - "check boxes, getting toggle states of"
@@ -21,6 +21,8 @@ caps.latest.revision: 10
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Get the Toggle State of a Check Box Using UI Automation
 > [!NOTE]

@@ -9,10 +9,10 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "debugger, display attributes"
   - "DebuggerTypeProxyAttribute attribute"
@@ -25,6 +25,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Enhancing Debugging with the Debugger Display Attributes
 Debugger display attributes allow the developer of the type, who specifies and best understands the runtime behavior of that type, to also specify what that type will look like when it is displayed in a debugger. In addition, debugger display attributes that provide a `Target` property can be applied at the assembly level by users without knowledge of the source code. The <xref:System.Diagnostics.DebuggerDisplayAttribute> attribute controls how a type or member is displayed in the debugger variable windows. The <xref:System.Diagnostics.DebuggerBrowsableAttribute> attribute determines if and how a field or property is displayed in the debugger variable windows. The <xref:System.Diagnostics.DebuggerTypeProxyAttribute> attribute specifies a substitute type, or a proxy, for a type and changes the way the type is displayed in debugger windows. When you view a variable that has a proxy, or substitute type, the proxy stands in for the original type in the debugger display window**.** The debugger variable windowdisplays only the public members of the proxy type. Private members are not displayed.  

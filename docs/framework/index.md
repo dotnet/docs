@@ -11,10 +11,12 @@ f1_keywords:
 helpviewer_keywords: 
   - ".NET Framework, documentation"
   - "documentation, .NET Framework"
-ms.assetid: f61f02f2-2f20-483d-8f56-a9c8f3a54986 
+ms.assetid: f61f02f2-2f20-483d-8f56-a9c8f3a54986
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # .NET Framework Guide

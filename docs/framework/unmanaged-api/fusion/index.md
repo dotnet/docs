@@ -18,6 +18,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Fusion (Unmanaged API Reference)
 The fusion API enables a runtime host to access the properties of an application's resources in order to locate the correct versions of those resources for the application.  

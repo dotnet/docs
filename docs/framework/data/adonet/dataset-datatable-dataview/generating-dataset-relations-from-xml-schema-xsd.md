@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Generating DataSet Relations from XML Schema (XSD)
 In a <xref:System.Data.DataSet>, you form an association between two or more columns by creating a parent-child relation. There are three ways to represent a **DataSet** relation within an XML Schema definition language (XSD) schema:  

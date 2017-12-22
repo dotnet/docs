@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFrame::CreateStepper Method
 Gets a stepper that allows the debugger to perform stepping operations relative to this ICorDebugFrame.  

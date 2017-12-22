@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugManagedCallback2::MDANotification Method
 Provides notification that code execution has encountered a managed debugging assistant (MDA) in the application that is being debugged.  

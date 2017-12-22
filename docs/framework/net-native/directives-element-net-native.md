@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;Directives&gt; Element (.NET Native)
 The root element in every runtime directives file for [!INCLUDE[net_native](../../../includes/net-native-md.md)].  

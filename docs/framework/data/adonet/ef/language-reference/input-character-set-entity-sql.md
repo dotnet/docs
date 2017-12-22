@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Input Character Set (Entity SQL)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] accepts UNICODE characters encoded in UTF-16.  

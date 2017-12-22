@@ -27,6 +27,8 @@ caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo2::GetContextStaticAddress Method
 Gets the address for the specified context-static field that is in the scope of the specified context.  

@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRAssemblyReferenceList::IsAssemblyReferenceInList Method
 Gets a value that indicates whether the supplied pointer refers to an assembly in the list.  

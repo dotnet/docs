@@ -8,6 +8,8 @@ ms.date: 11/17/2017
 ms.topic: article
 ms.custom: "updateeachrelease"
 ms.prod: .net-framework
+ms.workload: 
+  - dotnet
 ---
 # Install the .NET Framework on Windows 10 and Windows Server 2016
 

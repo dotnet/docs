@@ -12,6 +12,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Optimization using Single Phase Commit and Promotable Single Phase Notification
 This topic describes the mechanisms provided by the <xref:System.Transactions> infrastructure to optimize performance.  

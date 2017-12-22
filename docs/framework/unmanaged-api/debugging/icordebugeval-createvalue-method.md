@@ -27,6 +27,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval::CreateValue Method
 Creates a value of the specified type, with an initial value of zero or null.  

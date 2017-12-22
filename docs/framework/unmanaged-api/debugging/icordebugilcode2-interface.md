@@ -22,6 +22,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugILCode2 Interface
 [Supported in the .NET Framework 4.5.2 and later versions]  

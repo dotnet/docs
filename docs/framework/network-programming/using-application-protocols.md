@@ -23,6 +23,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Application Protocols
 The .NET Framework supports commonly used Internet application protocols. This section includes information on using the [HTTP](../../../docs/framework/network-programming/http.md), "TCP", and "UDP" protocols, as well as information on using the [Windows Sockets](../../../docs/framework/network-programming/sockets.md) interface to implement custom protocols.  

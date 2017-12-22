@@ -27,6 +27,8 @@ caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetAppDomainInfo Method
 Accepts an application domain ID. Returns an application domain name and the ID of the process that contains it.  

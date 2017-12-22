@@ -20,6 +20,8 @@ caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 
 # \<configuration> element

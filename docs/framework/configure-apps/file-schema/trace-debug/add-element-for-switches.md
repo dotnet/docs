@@ -19,6 +19,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; Element for &lt;switches&gt;
 Specifies the level where a trace switch is set.  

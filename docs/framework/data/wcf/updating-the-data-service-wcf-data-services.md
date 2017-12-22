@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, changing data"
   - "WCF Data Services, client library"
@@ -20,6 +20,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Updating the Data Service (WCF Data Services)
 When you use the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library to consume an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed, the library translates the entries in the feed into instances of client data service classes. These data service classes are tracked by using the <xref:System.Data.Services.Client.DataServiceContext> to which the <xref:System.Data.Services.Client.DataServiceQuery%601> belongs. The client tracks changes to entities that you report by using methods on <xref:System.Data.Services.Client.DataServiceContext>. These methods enable the client to track added and deleted entities and also changes that you make to property values or to relationships between entity instances. Those tracked changes are sent back to the data service as REST-based operations when you call the <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> method.  

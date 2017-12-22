@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Calling Functions in LINQ to Entities Queries
 The topics in this section describe how to call functions in LINQ to Entities queries.  

@@ -22,6 +22,8 @@ caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;remove&gt; Element for connectionManagement (Network Settings)
 Removes an IP address or DNS name from the connection management list.  

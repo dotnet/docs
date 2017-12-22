@@ -19,6 +19,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Diagnostics Symbol Store Structures
 This topic describes the unmanaged structures that the diagnostics symbol store API uses.  

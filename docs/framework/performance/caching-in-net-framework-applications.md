@@ -18,6 +18,8 @@ caps.latest.revision: 26
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
+ms.workload: 
+  - "tdykstra"
 ---
 # Caching in .NET Framework Applications
 Caching enables you to store data in memory for rapid access. When the data is accessed again, applications can get the data from the cache instead of retrieving it from the original source. This can improve performance and scalability. In addition, caching makes data available when the data source is temporarily unavailable.  

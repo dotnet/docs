@@ -14,6 +14,8 @@ caps.latest.revision: 24
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceHostingEnvironment&gt;
 This element defines the type the service hosting environment instantiates for a particular transport. If this element is empty, the default type is used. This element can only be used at the application or machine level configuration files.  

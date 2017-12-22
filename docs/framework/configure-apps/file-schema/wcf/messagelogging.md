@@ -14,6 +14,8 @@ caps.latest.revision: 16
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;messageLogging&gt;
 This element defines the settings for the message-logging capabilities of Windows Communication Foundation (WCF).  

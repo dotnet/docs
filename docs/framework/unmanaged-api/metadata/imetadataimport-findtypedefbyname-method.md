@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::FindTypeDefByName Method
 Gets a pointer to the TypeDef metadata token for the <xref:System.Type> with the specified name.  

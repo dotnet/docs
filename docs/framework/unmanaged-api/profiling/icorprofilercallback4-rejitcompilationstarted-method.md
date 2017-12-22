@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback4::ReJITCompilationStarted Method
 Notifies the profiler that the just-in-time (JIT) compiler has started to recompile a function.  

@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # MDAInfo Structure
 Provides details about the `Event_MDAFired` event, which triggers the creation of a managed debugging assistant (MDA).  

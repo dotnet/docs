@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Full Code Listings
 This topic contains the entire code listing for an application that uses [Manipulations and Inertia](../../../docs/framework/common-client-technologies/manipulations-and-inertia.md) processors.  

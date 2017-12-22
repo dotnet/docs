@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;remove&gt; Element for schemeSettings (Uri Settings)
 Removes a scheme setting for a scheme name.  

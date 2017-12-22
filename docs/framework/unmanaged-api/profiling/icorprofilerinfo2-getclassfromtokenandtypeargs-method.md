@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo2::GetClassFromTokenAndTypeArgs Method
 Gets the `ClassID` of a type by using the specified metadata token and the `ClassID` values of any type arguments.  

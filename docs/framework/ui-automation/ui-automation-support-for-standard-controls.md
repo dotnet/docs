@@ -17,6 +17,8 @@ caps.latest.revision: 11
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Support for Standard Controls
 > [!NOTE]

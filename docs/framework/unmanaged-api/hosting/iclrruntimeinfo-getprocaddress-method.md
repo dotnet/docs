@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRRuntimeInfo::GetProcAddress Method
 Gets the address of a specified function that was exported from the common language runtime (CLR) associated with this interface.  

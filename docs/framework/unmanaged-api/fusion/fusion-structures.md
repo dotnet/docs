@@ -18,6 +18,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Fusion Structures
 This section describes the unmanaged structures that the fusion API uses.  

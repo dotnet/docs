@@ -27,6 +27,8 @@ caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::GetNameFromToken Method
 Gets the UTF-8 name of the object referenced by the specified metadata token. This method is obsolete.  

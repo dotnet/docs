@@ -18,6 +18,8 @@ caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Startup Settings Schema
 Startup settings specify the version of the common language runtime that should run the application.  

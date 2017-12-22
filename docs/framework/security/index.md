@@ -14,6 +14,8 @@ caps.latest.revision: 15
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Identity Foundation
 -   [What's New in Windows Identity Foundation 4.5](../../../docs/framework/security/whats-new-in-wif.md)  

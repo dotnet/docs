@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;Parameter&gt; Element (.NET Native)
 Applies reflection policy to the type of the argument passed to a method.  

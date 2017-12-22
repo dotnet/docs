@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRAssemblyIdentityManager Interface
 Provides methods that support communication between the host and the common language runtime (CLR) about assemblies.  

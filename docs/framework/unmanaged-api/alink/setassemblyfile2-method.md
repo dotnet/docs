@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # SetAssemblyFile2 Method
 Sets the name of and options for a new assembly. Do not call this method when you produce unbound modules.  

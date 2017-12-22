@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;windowsAuthentication&gt; of &lt;serviceCredentials&gt;
 Specifies the settings of a Windows service credential.  

@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # CLR Triggers
 A trigger is a special type of stored procedure that automatically runs when a language event executes. Because of the Microsoft SQL Server integration with the .NET Framework common language runtime (CLR), you can use any .NET Framework language to create CLR triggers.  

@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_DEBUG_IL_TO_NATIVE_MAP Structure
 Contains the offsets that are used to map Microsoft intermediate language (MSIL) code to native code.  

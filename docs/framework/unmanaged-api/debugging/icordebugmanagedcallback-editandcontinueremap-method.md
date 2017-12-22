@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugManagedCallback::EditAndContinueRemap Method
 This method has been deprecated. It notifies the debugger that a remap event has been sent to the integrated development environment (IDE).  

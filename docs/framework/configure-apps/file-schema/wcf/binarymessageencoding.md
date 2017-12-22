@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;binaryMessageEncoding&gt;
 Defines a binary message encoder that encodes Windows Communication Foundation (WCF) messages in binary on the wire.  

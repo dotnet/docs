@@ -21,6 +21,8 @@ caps.latest.revision: 25
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Libraries from Partially Trusted Code
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

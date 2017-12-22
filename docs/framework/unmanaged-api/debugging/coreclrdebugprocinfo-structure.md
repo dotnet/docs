@@ -28,6 +28,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CoreClrDebugProcInfo Structure
 Represents a process that is running on a remote machine.  

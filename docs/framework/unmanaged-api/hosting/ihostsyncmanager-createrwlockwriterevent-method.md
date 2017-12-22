@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostSyncManager::CreateRWLockWriterEvent Method
 Creates an auto-reset event object for the implementation of a writer lock.  

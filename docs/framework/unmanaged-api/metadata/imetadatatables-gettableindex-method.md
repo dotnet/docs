@@ -27,6 +27,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataTables::GetTableIndex Method
 Gets the index for the table referenced by the specified token.  

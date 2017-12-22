@@ -27,6 +27,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAppDomain::GetObject Method
 Gets an interface pointer to the common language runtime (CLR) application domain.  

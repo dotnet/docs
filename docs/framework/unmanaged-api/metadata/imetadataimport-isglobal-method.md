@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::IsGlobal Method
 Gets a value indicating whether the field, method, or type represented by the specified metadata token has global scope.  

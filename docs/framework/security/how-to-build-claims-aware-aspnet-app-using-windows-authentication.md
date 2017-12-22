@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # How To: Build Claims-Aware ASP.NET Application Using Windows Authentication
 ## Applies To  

@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;identityConfiguration&gt;
 Specifies service-level identity settings.  

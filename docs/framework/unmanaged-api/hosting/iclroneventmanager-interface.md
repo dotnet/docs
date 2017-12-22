@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLROnEventManager Interface
 Provides methods that allow the host to register and unregister callbacks for common language runtime (CLR) events.  

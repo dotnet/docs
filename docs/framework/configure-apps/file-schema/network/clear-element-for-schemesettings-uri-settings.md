@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;clear&gt; Element for schemeSettings (Uri Settings)
 Clears all existing scheme settings.  

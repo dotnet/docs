@@ -26,6 +26,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyEmit Interface
 Provides methods that support the self-description model used by the common language runtime to resolve and consume resources.  

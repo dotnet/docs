@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::EnumMethodsWithName Method
 Enumerates methods that have the specified name and that are defined by the type referenced by the specified TypeDef token.  

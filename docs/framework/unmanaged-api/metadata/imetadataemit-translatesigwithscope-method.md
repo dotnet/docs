@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::TranslateSigWithScope Method
 Imports an assembly into the current scope and gets a new metadata signature for the merged scope.  

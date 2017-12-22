@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit2::GetDeltaSaveSize Method
 Gets a value indicating any change in metadata size that results from the current edit-and-continue session.  

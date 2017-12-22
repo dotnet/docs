@@ -12,6 +12,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Performing Recovery
 A resource manager facilitates resolution of durable enlistments in a transaction by reenlisting the transaction participant after resource failure.  

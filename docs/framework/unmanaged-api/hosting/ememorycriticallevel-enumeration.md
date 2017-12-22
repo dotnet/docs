@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EMemoryCriticalLevel Enumeration
 Contains values that indicate the impact of a failure when a specific memory allocation has been requested but cannot be satisfied.  

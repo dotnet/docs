@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugILFrame::SetIP Method
 Sets the instruction pointer to the specified offset location in the Microsoft intermediate language (MSIL) code.  

@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # SET (Entity SQL)
 The SET expression is used to convert a collection of objects into a set by yielding a new collection with all duplicate elements removed.  

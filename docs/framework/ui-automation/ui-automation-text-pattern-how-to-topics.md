@@ -20,6 +20,8 @@ caps.latest.revision: 62
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Text Pattern-How-to Topics
 > [!NOTE]

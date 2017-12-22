@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # FLockClrVersionCallback Function Pointer
 Points to a function that the common language runtime (CLR) calls to indicate that initialization has either started or completed.  

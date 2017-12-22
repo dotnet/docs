@@ -17,6 +17,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;gcAllowVeryLargeObjects&gt; Element
 On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in total size.  

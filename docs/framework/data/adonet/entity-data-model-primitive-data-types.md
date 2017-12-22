@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Entity Data Model: Primitive Data Types
 The Entity Data Model (EDM) supports a set of abstract primitive data types (such as String, Boolean, Int32, and so on) that are used to define [properties](../../../../docs/framework/data/adonet/property.md) in a conceptual model. These primitive data types are proxies for actual primitive data types that are supported in the storage or hosting environment, such as a SQL Server database or the common language runtime (CLR). The EDM does not define the semantics of operations or conversions over primitive data types; these semantics are defined by the storage or hosting environment. Typically, primitive data types in the EDM are mapped to corresponding primitive data types in the storage or hosting environment. For information about how the Entity Framework maps primitive types in the EDM to SQL Server data types, see [SqlClient for Entity FrameworkTypes](../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-types.md).  

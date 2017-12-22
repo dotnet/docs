@@ -14,6 +14,8 @@ caps.latest.revision: 19
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # The .NET Framework and Out-of-Band Releases
 The .NET Framework is evolving to accommodate different platforms such as Windows Phone and Windows Store apps as well as traditional desktop and web apps, and to maximize code reuse. In addition to our regular .NET Framework releases, we release new features out of band (OOB) to improve cross-platform development or to introduce new functionality. This topic discusses the future direction of the .NET Framework and its OOB releases.  

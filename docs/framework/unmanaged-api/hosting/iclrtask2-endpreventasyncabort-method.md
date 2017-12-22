@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRTask2::EndPreventAsyncAbort Method
 Allows new or pending thread abort requests to result in thread aborts on the current thread.  

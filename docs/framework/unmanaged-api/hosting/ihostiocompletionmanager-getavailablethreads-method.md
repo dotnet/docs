@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostIoCompletionManager::GetAvailableThreads Method
 Gets the number of I/O completion threads, of the total number of threads managed by the host, that are not currently servicing requests.  

@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "client applications, WCF Data Services"
   - "WCF Data Services, client library"
@@ -21,6 +21,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Binding Data to Controls (WCF Data Services)
 With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can bind controls such as the `ComboBox` and `ListView` controls to an instance of the <xref:System.Data.Services.Client.DataServiceCollection%601> class. This collection, which inherits from the <xref:System.Collections.ObjectModel.ObservableCollection%601> class, contains the data from an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed. This class represents a dynamic data collection that provides notifications when items get added or removed. When you use an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> for data binding, the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client libraries handle these events to ensure that objects tracked by the <xref:System.Data.Services.Client.DataServiceContext> remain synchronized with the data in the bound UI element.  

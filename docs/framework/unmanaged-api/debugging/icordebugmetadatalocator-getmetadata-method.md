@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugMetaDataLocator::GetMetaData Method
 Asks the debugger to return the full path to a module whose metadata is needed to complete an operation the debugger requested.  

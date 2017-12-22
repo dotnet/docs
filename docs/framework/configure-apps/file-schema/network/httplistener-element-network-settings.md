@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;httpListener&gt; Element (Network Settings)
 Customizes parameters used by the <xref:System.Net.HttpListener> class.  

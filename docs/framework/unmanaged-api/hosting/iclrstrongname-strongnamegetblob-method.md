@@ -28,6 +28,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRStrongName::StrongNameGetBlob Method
 Fills the specified buffer with the binary representation of the executable file at the specified address.  

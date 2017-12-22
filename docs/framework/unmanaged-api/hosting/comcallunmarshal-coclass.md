@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ComCallUnmarshal Coclass
 Provides interfaces for managing the marshaling of interface pointers.  

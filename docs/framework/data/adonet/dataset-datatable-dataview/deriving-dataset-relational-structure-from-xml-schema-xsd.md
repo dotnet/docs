@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Deriving DataSet Relational Structure from XML Schema (XSD)
 This section provides an overview of how the relational schema of a `DataSet` is built from an XML Schema definition language (XSD) schema document. In general, for each `complexType` child element of a schema element, a table is generated in the `DataSet`. The table structure is determined by the definition of the complex type. Tables are created in the `DataSet` for top-level elements in the schema. However, a table is only created for a top-level `complexType` element when the `complexType` element is nested inside another `complexType` element, in which case the nested `complexType` element is mapped to a `DataTable` within the `DataSet`.  

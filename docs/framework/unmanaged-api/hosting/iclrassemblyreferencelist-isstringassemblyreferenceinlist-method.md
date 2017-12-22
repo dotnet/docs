@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList Method
 Gets a value that indicates whether the supplied name matches the name of an assembly in the list.  

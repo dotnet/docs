@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::SetFieldMarshal Method
 Sets the PInvoke marshaling information for the field, method return, or method parameter referenced by the specified token.  

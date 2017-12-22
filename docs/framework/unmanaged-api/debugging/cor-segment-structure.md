@@ -26,6 +26,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_SEGMENT Structure
 Contains information about a region of memory in the managed heap.  

@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;endToEndTracing&gt;
 A configuration element that allows you to enable and disable different aspects of end-to-end tracing during the running of a service application.  

@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # LPOVERLAPPED_COMPLETION_ROUTINE Function Pointer
 Points to a function that notifies the host when an overlapped (that is, asynchronous) I/O to a device has completed.  

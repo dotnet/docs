@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # ORDER BY (Entity SQL)
 Specifies the sort order used on objects returned in a SELECT statement.  

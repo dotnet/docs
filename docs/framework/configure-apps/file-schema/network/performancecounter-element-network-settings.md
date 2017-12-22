@@ -20,6 +20,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;performanceCounter&gt; Element (Network Settings)
 Enables or disables networking performance counters.  

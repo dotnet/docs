@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: c4577590-7b12-42e1-84a6-95aa2562727e
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Implementing Business Logic (LINQ to SQL)
 The term "business logic" in this topic refers to any custom rules or validation tests that you apply to data before it is inserted, updated or deleted from the database. Business logic is also sometimes referred to as "business rules" or "domain logic." In n-tier applications it is typically designed as a logical layer so that it can be modified independently of the presentation layer or data access layer. The business logic can be invoked by the data access layer before or after any update, insertion, or deletion of data in the database.  

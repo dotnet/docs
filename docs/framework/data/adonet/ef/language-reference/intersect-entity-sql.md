@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # INTERSECT (Entity SQL)
 Returns a collection of any distinct values that are returned by both the query expressions on the left and right sides of the INTERSECT operand. All expressions must be of the same type or of a common base or derived type as `expression`.  

@@ -12,10 +12,12 @@ f1_keywords:
 helpviewer_keywords: 
   - "supportedRuntime element"
   - "<supportedRuntime> element"
-ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f 
+ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;supportedRuntime&gt; Element
 Specifies which versions of the common language runtime the application supports. This element should be used by all applications built with version 1.1 or later of the .NET Framework.  

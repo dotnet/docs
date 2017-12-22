@@ -7,9 +7,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "request cache policies"
 ms.assetid: 39c15e40-586b-4ac9-9cce-146f74b7e545
@@ -17,6 +17,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Set Cache Policy for a Request
 The following example demonstrates setting a cache policy for a request. The example input is a URI such as http://www.contoso.com/.  

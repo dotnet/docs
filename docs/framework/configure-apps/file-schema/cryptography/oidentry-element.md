@@ -20,6 +20,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;oidEntry&gt; Element
 Maps an ASN.1 object identifier (OID) to a friendly name.  

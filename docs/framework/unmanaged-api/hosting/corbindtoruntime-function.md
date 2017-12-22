@@ -27,6 +27,8 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorBindToRuntime Function
 Enables unmanaged hosts to load the common language runtime (CLR) into a process.  

@@ -16,6 +16,8 @@ caps.latest.revision: 20
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;mailSettings&gt; Element (Network Settings)
 Configures mail sending options.  

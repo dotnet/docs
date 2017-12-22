@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugCode3 Interface
 Provides a method that extends "ICorDebugCode" and "ICorDebugCode2" to provide information about a managed return value.  

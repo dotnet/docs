@@ -22,6 +22,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugCodeInvokePurpose Enumeration
 Describes why an exported function calls managed code.  

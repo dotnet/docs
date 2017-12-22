@@ -27,6 +27,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback2::SurvivingReferences Method
 Reports the layout of objects in the heap as a result of a non-compacting garbage collection.  

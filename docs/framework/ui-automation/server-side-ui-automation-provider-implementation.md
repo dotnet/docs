@@ -18,6 +18,8 @@ caps.latest.revision: 39
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Server-Side UI Automation Provider Implementation
 > [!NOTE]

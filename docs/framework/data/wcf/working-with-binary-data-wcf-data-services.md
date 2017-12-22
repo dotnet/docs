@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, binary data"
   - "WCF Data Services, streams"
@@ -20,6 +20,8 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Working with Binary Data (WCF Data Services)
 The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to retrieve and update binary data from an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed in one of the following ways:  

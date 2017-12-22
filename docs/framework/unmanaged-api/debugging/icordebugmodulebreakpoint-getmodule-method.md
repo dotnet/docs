@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModuleBreakpoint::GetModule Method
 Gets an interface pointer to an "ICorDebugModule" that references the module in which this breakpoint is set.  

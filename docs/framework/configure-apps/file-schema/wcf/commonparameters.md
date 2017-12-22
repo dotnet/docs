@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;commonParameters&gt;
 Represents a collection of parameters that are used globally across multiple services. This collection will typically include the database connection string that might be shared by durable services.  

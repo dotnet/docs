@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionUnwindFunctionEnter Method
 Notifies the profiler that the unwind phase of exception handling has begun to unwind a function.  

@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 api_name: 
   - "ICorDebugILFrame3.GetReturnValueForILOffset"
 api_location: 
@@ -25,6 +25,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugILFrame3::GetReturnValueForILOffset Method
 Gets an "ICorDebugValue" object that encapsulates the return value of a function.  

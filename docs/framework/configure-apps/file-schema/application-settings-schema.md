@@ -19,6 +19,8 @@ caps.latest.revision: 3
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 
 # Application Settings schema

@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Numeric and Comparison Operators
 Arithmetic and comparison operators work as expected in the common language runtime (CLR) except as follows:  

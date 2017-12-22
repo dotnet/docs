@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataValidate::ValidatorInit Method
 Sets a flag that specifies the type of the module in the current metadata scope, and registers the specified callback method for validation errors.  

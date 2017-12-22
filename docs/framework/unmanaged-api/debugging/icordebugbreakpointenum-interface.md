@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugBreakpointEnum Interface1
 Implements ICorDebugEnum methods, and enumerates ICorDebugBreakpoint arrays.  

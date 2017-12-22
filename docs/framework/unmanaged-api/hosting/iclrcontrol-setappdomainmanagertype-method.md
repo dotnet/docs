@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRControl::SetAppDomainManagerType Method
 Sets a type derived from <xref:System.AppDomainManager> as the type for application domain managers.  

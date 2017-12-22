@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Type System (Entity SQL)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports a number of types:  

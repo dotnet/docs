@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # GROUPPARTITION (Entity SQL)
 Returns a collection of argument values that are projected off the current group partition to which the aggregate is related. The `GroupPartition` aggregate is a group-based aggregate and has no collection-based form.  

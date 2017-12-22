@@ -14,6 +14,8 @@ caps.latest.revision: 15
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;security&gt; of &lt;netMsmqBinding&gt;
 Defines the security settings for a MSMQ binding. It specifies whether transport or SOAP security is enabled and, if so, what authentication mode and protection levels are in use.  

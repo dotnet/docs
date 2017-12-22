@@ -26,6 +26,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyImport Interface
 Provides methods to access and examine the contents of an assembly manifest.  

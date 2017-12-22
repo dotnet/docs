@@ -26,6 +26,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugErrorInfoEnum Interface1
 `ICorDebugErrorInfoEnum` is obsolete. Do not use this interface.  

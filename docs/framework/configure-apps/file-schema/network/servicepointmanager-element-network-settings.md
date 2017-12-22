@@ -20,6 +20,8 @@ caps.latest.revision: 16
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;servicePointManager&gt; Element (Network Settings)
 Configures connections to network resources.  

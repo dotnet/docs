@@ -27,6 +27,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRRuntimeHost::ExecuteInAppDomain Method
 Specifies the <xref:System.AppDomain> in which to execute the specified managed code.  

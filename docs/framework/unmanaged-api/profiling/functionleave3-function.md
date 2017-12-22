@@ -26,6 +26,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # FunctionLeave3 Function
 Notifies the profiler that control is being returned from a function.  

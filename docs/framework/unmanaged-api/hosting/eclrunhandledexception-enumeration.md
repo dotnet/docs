@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EClrUnhandledException Enumeration
 Describes the available options for managing exceptions that are unhandled in user code.  

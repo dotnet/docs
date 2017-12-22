@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;transport&gt; of &lt;webHttpBinding&gt;
 Defines the transport-level security settings for a service endpoint configured to receive HTTP requests.  

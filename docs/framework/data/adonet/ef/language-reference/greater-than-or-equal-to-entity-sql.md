@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # &gt;= (Greater Than or Equal To) (Entity SQL)
 Compares two expressions to determine whether the left expression has a value greater than or equal to the right expression.  

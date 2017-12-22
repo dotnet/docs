@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionSearchFilterEnter Method
 Notifies the profiler that the search phase of exception handling has begun executing a user-defined exception filter.  

@@ -24,6 +24,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EInitializeNewDomainFlags Enumeration
 Enables the host to provide the runtime with information about the initialization of an application domain.  

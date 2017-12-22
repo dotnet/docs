@@ -14,6 +14,8 @@ caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;Type&gt; Element (.NET Native)
 Applies runtime policy to a particular type, such as a class or structure.  

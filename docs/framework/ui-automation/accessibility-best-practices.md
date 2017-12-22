@@ -17,6 +17,8 @@ caps.latest.revision: 16
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Accessibility Best Practices
 > [!NOTE]

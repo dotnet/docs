@@ -19,6 +19,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Assembly Contents
 In general, a static assembly can consist of four elements:  

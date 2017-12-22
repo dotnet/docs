@@ -28,6 +28,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ClearDownloadCache Function
 Clears the global assembly cache of downloaded assemblies.  

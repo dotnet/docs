@@ -22,6 +22,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;disableCachingBindingFailures&gt; Element
 Specifies whether to disable the caching of binding failures that occur because the assembly was not found by probing.  

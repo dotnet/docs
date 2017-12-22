@@ -14,6 +14,8 @@ caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;Assembly&gt; Element (.NET Native)
 Applies runtime reflection policy to all the types in a specified assembly.  

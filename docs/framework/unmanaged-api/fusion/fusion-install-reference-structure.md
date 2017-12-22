@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # FUSION_INSTALL_REFERENCE Structure
 Represents a reference that an application makes to an assembly that the application has installed in the global assembly cache.  

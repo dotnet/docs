@@ -18,6 +18,8 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Debugging (Unmanaged API Reference)
 The debugging API enables a debugger to debug code that runs in the common language runtime (CLR) environment. The code to be debugged can be any type of code that the CLR supports.  

@@ -21,6 +21,8 @@ caps.latest.revision: 70
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;runtime&gt; Element
 Provides information used by the common language runtime to configure applications.  

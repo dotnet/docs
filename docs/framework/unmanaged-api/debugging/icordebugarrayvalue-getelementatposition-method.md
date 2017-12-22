@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugArrayValue::GetElementAtPosition Method
 Gets the element at the given position, treating the array as a zero-based, single-dimensional array.  

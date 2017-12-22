@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Working with Objects
 The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] enables you to query, insert, update, and delete data, which is expressed as typed common language runtime (CLR) objects that are instances of entity types. The entity types represent the entities defined in the conceptual model. The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] maps entities and relationships that are defined in a conceptual model to a data source. The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] provides facilities to do the following: materialize data returned from the data source as objects; track changes that were made to the objects; handle concurrency; propagate object changes back to the data source; and bind objects to controls.  

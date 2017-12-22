@@ -26,6 +26,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_SUSPEND_REASON Enumeration
 Indicates the reason that the runtime is suspended.  

@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CLSID_RESOLUTION_FLAGS Enumeration
 Contains values that indicate how the common language runtime (CLR) should resolve a `CLSID`.  

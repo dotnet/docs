@@ -17,6 +17,8 @@ caps.latest.revision: 31
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;loadFromRemoteSources&gt; Element
 Specifies whether assemblies from remote sources should be granted full trust.  

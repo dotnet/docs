@@ -9,13 +9,15 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "vb"
+dev_langs: 
+  - "vb"
 ms.assetid: 5a736a30-ba66-4adb-b87c-57d19476e862
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Walkthrough: Using Only Stored Procedures (Visual Basic)
 This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] scenario for accessing data by using stored procedures only. This approach is often used by database administrators to limit how the datastore is accessed.  

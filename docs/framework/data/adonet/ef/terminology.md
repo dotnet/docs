@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Entity Framework Terminology
 This topic defines terms frequently referenced in [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] documentation. Links are provided to relevant topics where additional information is available.  

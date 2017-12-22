@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Nullable Structured Types (Entity SQL)
 A `null` instance of a structured type is an instance that does not exist. This is different from an existing instance in which all properties have `null` values.  

@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugBoxValue Interface1
 A subclass of "ICorDebugHeapValue" that represents a boxed value class object.  

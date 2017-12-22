@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRTask::NeedsPriorityScheduling Method
 Gets a value that indicates whether the current task, which is being switched out, needs to be marked as a high priority for rescheduling.  

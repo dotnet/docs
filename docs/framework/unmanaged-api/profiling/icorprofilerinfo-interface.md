@@ -26,6 +26,8 @@ caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo Interface
 Provides methods for use by code profilers to communicate with the common language runtime (CLR) to control event monitoring and request information.  

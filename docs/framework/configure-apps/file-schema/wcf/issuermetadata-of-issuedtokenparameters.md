@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;issuerMetadata&gt; of &lt;issuedTokenParameters&gt;
 \<system.serviceModel>  

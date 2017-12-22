@@ -9,10 +9,12 @@ ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework, getting started"
   - "getting started [.NET Framework]"
-ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7 
+ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # Get started with the .NET Framework

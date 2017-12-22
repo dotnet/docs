@@ -26,6 +26,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugComObjectValue Interface
 Provides methods to retrieve information associated with a runtime callable wrapper (RCW).  

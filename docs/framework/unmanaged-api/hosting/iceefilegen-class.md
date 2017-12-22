@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeFileGen Class
 Provides functionality for creating a native portable executable (PE) file. The interface will typically be used by compilers to generate their compiled output executable.  

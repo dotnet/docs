@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRPolicyManager Interface
 Provides methods that allow the host to specify policy actions to be taken in the event of failures and timeouts.  

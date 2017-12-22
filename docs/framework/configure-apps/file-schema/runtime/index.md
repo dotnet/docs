@@ -18,6 +18,8 @@ caps.latest.revision: 49
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Runtime Settings Schema
 Runtime settings are used by the common language runtime to configure applications that target the .NET Framework.  

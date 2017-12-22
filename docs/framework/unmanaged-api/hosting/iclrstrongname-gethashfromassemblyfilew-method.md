@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRStrongName::GetHashFromAssemblyFileW Method
 Generates a hash over the contents of the file specified by a Unicode string.  

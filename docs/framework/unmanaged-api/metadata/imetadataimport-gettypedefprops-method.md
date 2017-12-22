@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::GetTypeDefProps Method
 Returns metadata information for the <xref:System.Type> represented by the specified TypeDef token.  

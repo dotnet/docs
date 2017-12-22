@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # ISOF (Entity SQL)
 Determines whether the type of an expression is of the specified type or one of its subtypes.  

@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymENCUnmanagedMethod::GetDocumentsForMethodCount Method
 Gets the number of documents that this method has lines in.  

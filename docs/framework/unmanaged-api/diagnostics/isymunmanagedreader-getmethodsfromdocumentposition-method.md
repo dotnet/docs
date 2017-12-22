@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedReader::GetMethodsFromDocumentPosition Method
 Returns an array of methods, each of which contains the breakpoint at the given position in a document.  

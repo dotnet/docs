@@ -20,6 +20,8 @@ caps.latest.revision: 20
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;proxy&gt; Element (Network Settings)
 Defines a proxy server.  

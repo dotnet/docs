@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport2::EnumGenericParamConstraints Method
 Gets an enumerator for an array of generic parameter constraints associated with the generic parameter represented by the specified token.  

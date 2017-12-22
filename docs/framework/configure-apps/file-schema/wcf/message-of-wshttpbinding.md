@@ -14,6 +14,8 @@ caps.latest.revision: 22
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;message&gt; of &lt;wsHttpBinding&gt;
 Defines settings for message-level security of the [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).  

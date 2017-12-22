@@ -26,6 +26,8 @@ caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_MONITOR Enumeration
 Contains values that are used to specify behavior, capabilities, or events to which the profiler wishes to subscribe.  

@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;Library&gt; Element (.NET Native)
 Defines the assembly that contains types and type members whose metadata is available for reflection at run time.  

@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Background Information
 The topics in this section pertain to concepts and procedures that extend beyond the basics about using [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  

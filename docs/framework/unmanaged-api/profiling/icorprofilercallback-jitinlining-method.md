@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::JITInlining Method
 Notifies the profiler that the just-in-time (JIT) compiler is about to insert a function in line with another function.  

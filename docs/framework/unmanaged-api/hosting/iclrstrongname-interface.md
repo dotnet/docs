@@ -26,6 +26,8 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRStrongName Interface
 Provides basic global static functions for signing assemblies with strong names. All `ICLRStrongName` methods return standard COM HRESULTs.  

@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;msmqTransport&gt;
 Causes a channel to transfers messages on the MSMQ transport when it is included in a custom binding.  

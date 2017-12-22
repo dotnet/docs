@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Application Security Scenarios in SQL Server
 There is no single correct way to create a secure SQL Server client application. Every application is unique in its requirements, deployment environment, and user population. An application that is reasonably secure when it is initially deployed can become less secure over time. It is impossible to predict with any accuracy what threats may emerge in the future.  

@@ -12,6 +12,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;states&gt; of &lt;activityStateQuery&gt;
 A collection of configuration elements that contain the states of the subscribed activity for which a tracking record should be emitted.  

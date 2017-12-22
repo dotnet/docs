@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostAssemblyStore Interface
 Provides methods that allow a host to load assemblies and modules independently of the common language runtime (CLR).  

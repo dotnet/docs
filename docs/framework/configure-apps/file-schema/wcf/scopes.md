@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;scopes&gt;
 Contains a collection of configuration elements that specify custom scope Uris that can be used to filter service endpoints during query.  

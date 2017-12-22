@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StrongNameGetPublicKeyEx Method
 Gets the public key from a public/private key pair, and specifies a hash algorithm and a signature algorithm.  

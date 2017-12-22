@@ -13,6 +13,8 @@ ms.assetid: e62056c6-b351-40eb-afc0-cc13fc44e45e
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # Custom element for SingleTagSectionHandler

@@ -27,6 +27,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataDispenserEx::GetOption Method
 Gets the value of the specified option for the current metadata scope. The option controls how calls to the current metadata scope are handled.  

@@ -16,6 +16,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ETW Events in Task Parallel Library and PLINQ
 Both the Task Parallel Library and PLINQ generate Event Trace for Windows (ETW) events that you can use to profile and troubleshoot applications by using tools such as the Windows Performance Analyzer. However, in most scenarios, the best way to profile parallel application code is to use the [Concurrency Visualizer](/visualstudio/profiling/concurrency-visualizer) in [!INCLUDE[vsUltShort](../../../includes/vsultshort-md.md)].  

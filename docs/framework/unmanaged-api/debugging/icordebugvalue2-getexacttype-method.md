@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugValue2::GetExactType Method
 Gets an interface pointer to an "ICorDebugType" object that represents the <xref:System.Type> of this value.  

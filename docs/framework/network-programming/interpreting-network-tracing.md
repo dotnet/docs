@@ -19,6 +19,8 @@ caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Interpreting Network Tracing
 When network tracing is enabled, you can use tracing to capture calls your application makes to various <xref:System.Net> class members. The output from these calls may be similar to the following examples.  

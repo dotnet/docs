@@ -14,6 +14,8 @@ caps.latest.revision: 22
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;endpoint&gt; of &lt;client&gt;
 Specifies contract, binding, and address properties of the channel endpoint, which is used by clients to connect to service endpoints on the server.  

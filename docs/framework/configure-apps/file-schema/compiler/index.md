@@ -23,6 +23,8 @@ caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Compiler and Language Provider Settings Schema
 Compiler and language provider settings specify compiler configuration elements for available language providers. Each compiler configuration element specifies the code provider type name, compiler parameters, supported language names, and supported file extensions.  

@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRAssemblyIdentityManager::GetBindingIdentityFromFile Method
 Gets the assembly identity binding data for the assembly at the specified file path.  

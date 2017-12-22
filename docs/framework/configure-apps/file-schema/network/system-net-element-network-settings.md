@@ -20,6 +20,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;system.Net&gt; Element (Network Settings)
 Contains settings that specify how the .NET Framework connects to the network.  

@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataDispenser Interface
 Provides methods to create a new metadata scope, or open an existing one.  

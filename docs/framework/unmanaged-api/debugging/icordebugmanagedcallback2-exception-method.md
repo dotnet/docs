@@ -27,6 +27,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugManagedCallback2::Exception Method
 Notifies the debugger that a search for an exception handler has started.  

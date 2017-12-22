@@ -14,6 +14,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;MethodInstantiation&gt; Element (.NET Native)
 Applies runtime reflection policy to a constructed generic method.  

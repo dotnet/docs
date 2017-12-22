@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;clear&gt;
 Clears all security token handlers from the current token handler collection.  

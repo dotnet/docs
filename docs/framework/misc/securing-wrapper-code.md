@@ -19,6 +19,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Securing Wrapper Code
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

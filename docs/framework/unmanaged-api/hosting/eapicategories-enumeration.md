@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EApiCategories Enumeration
 Describes the categories of capabilities that the host can block from running in partially trusted code.  

@@ -18,6 +18,8 @@ caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Specifying an Assembly&#39;s Location
 There are two ways to specify an assembly's location:  

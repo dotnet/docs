@@ -19,6 +19,8 @@ caps.latest.revision: 17
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # TextPattern and Embedded Objects Overview
 > [!NOTE]

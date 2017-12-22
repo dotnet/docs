@@ -7,9 +7,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "sockets, code examples"
   - "synchronous client sockets"
@@ -19,6 +19,8 @@ caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Synchronous Client Socket Example
 The following example program creates a client that connects to a server. The client is built with a synchronous socket, so execution of the client application is suspended until the server returns a response. The application sends a string to the server and then displays the string returned by the server on the console.  

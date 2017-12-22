@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 697a3991-b660-4a5a-8a54-1a2304ff158e
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Modifying DataViews
 You can use the <xref:System.Data.DataView> to add, delete, or modify rows of data in the underlying table. The ability to use the **DataView** to modify data in the underlying table is controlled by setting one of three Boolean properties of the **DataView**. These properties are <xref:System.Data.DataView.AllowNew%2A>, <xref:System.Data.DataView.AllowEdit%2A>, and <xref:System.Data.DataView.AllowDelete%2A>. They are set to **true** by default.  

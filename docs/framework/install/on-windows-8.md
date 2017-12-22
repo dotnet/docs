@@ -9,6 +9,8 @@ ms.date: 10/17/2017
 ms.topic: article
 ms.prod: .net-framework
 ms.devlang: dotnet
+ms.workload: 
+  - dotnet
 ---
 
 # Install the .NET Framework on Windows 8 and Windows Server 2012

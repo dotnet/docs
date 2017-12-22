@@ -26,6 +26,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # INotifySource2 Interface
 Declares a method for setting notification filters.  

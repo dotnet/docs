@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Authentication in SQL Server
 [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] supports two authentication modes, Windows authentication mode and mixed mode.  

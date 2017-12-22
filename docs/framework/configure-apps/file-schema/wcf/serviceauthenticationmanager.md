@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceAuthenticationManager&gt;
 Provides a workflow configuration element that establishes at the service level the validity of a transmission, message, or originator..  

@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback3::InitializeForAttach Method
 Called by the common language runtime (CLR) to give the profiler an opportunity to initialize its state after an attach operation.  

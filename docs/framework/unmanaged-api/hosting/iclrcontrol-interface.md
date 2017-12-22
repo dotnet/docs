@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRControl Interface
 Provides methods that allow a host to get references to, and configure aspects of, the common language runtime (CLR).  

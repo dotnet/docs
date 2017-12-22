@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostTaskManager::LeaveRuntime Method
 Notifies the host that the currently executing task is about to leave the common language runtime (CLR) and enter unmanaged code.  

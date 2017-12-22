@@ -27,6 +27,8 @@ caps.latest.revision: 26
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::MovedReferences Method
 Called to report the new layout of objects in the heap as a result of a compacting garbage collection.  

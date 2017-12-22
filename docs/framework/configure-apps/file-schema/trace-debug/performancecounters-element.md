@@ -20,6 +20,8 @@ caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;performanceCounters&gt; Element
 Specifies the size of the global memory shared by performance counters.  

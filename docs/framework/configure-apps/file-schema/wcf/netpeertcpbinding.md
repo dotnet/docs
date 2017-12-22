@@ -16,6 +16,8 @@ caps.latest.revision: 20
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;netPeerTcpBinding&gt;
 Defines a binding for peer channel specific TCP messaging.  

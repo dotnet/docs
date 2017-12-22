@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Oracle Data Type Mappings
 The following table lists Oracle data types and their mappings to the <xref:System.Data.OracleClient.OracleDataReader>.  

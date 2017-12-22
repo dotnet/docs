@@ -5,17 +5,19 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.custom: "updateeachrelease"
 helpviewer_keywords: 
   - "versions, determining for .NET Framework"
   - ".NET Framework, determining version"
-ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d 
+ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Determine Which .NET Framework Versions Are Installed
 Users can install and run multiple versions of the .NET Framework on their computers. When you develop or deploy your app, you might need to know which .NET Framework versions are installed on the user’s computer. Note that the .NET Framework consists of two main components, which are versioned separately:  

@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;certificate&gt; for &lt;identity&gt;
 Specifies an X.509 certificate used to validate a server to a client.  

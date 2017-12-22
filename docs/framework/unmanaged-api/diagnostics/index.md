@@ -18,6 +18,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Diagnostics Symbol Store (Unmanaged API Reference)
 The diagnostics symbol store API enables a compiler to generate symbol information for use by a debugger.  

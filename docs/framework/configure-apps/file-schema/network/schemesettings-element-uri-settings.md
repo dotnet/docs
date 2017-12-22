@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;schemeSettings&gt; Element (Uri Settings)
 Specifies how a <xref:System.Uri> will be parsed for specific schemes.  

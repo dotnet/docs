@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetTokenAndMetadataFromFunction Method
 Gets the metadata token and a metadata interface instance that can be used against the token for the specified function.  

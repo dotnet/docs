@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 538def39-8399-46fb-b02d-60ede4e050af
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Map Database Relationships
 You can encode as property references in your entity class any data relationships that will always be the same. In the Northwind sample database, for example, because customers typically place orders, there is always a relationship in the model between customers and their orders.  

@@ -26,6 +26,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # FunctionLeave2 Function
 Notifies the profiler that a function is about to return to the caller and provides information about the stack frame and function return value.  

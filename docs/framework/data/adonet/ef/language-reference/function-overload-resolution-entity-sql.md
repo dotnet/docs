@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Function Overload Resolution (Entity SQL)
 This topic describes how [!INCLUDE[esql](../../../../../../includes/esql-md.md)] functions are resolved.  

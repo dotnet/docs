@@ -20,6 +20,8 @@ caps.latest.revision: 20
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;requestCaching&gt; Element (Network Settings)
 Controls the caching mechanism for network requests.  

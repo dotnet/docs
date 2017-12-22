@@ -12,6 +12,8 @@ caps.latest.revision: 13
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;binding&gt;
 You can use the `binding` element to configure different types of predefined bindings provided by Windows Communication Foundation (WCF).  

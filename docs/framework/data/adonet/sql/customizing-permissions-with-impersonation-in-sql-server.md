@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Customizing Permissions with Impersonation in SQL Server
 Many applications use stored procedures to access data, relying on ownership chaining to restrict access to base tables. You can grant EXECUTE permissions on stored procedures, revoking or denying permissions on the base tables. SQL Server does not check the permissions of the caller if the stored procedure and tables have the same owner. However, ownership chaining doesn't work if objects have different owners or in the case of dynamic SQL.  

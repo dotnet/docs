@@ -19,6 +19,8 @@ caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;listeners&gt; Element for &lt;trace&gt;
 Specifies a listener that collects, stores, and routes messages. Listeners direct the tracing output to an appropriate target.  

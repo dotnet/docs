@@ -12,6 +12,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;bufferReceive&gt;
 A service behavior that enables a service to use buffered receive processing, which enables a workflow service to process out-of-order messages.  

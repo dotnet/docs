@@ -25,6 +25,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDomainManager::SetPropertiesForDefaultAppDomain Method
 Sets properties that will be used to initialize the default application domain.  

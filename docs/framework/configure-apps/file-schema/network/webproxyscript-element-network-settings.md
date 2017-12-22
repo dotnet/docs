@@ -20,6 +20,8 @@ caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;webProxyScript&gt; Element (Network Settings)
 Configures the characteristics of the script used to discover Web proxies.  

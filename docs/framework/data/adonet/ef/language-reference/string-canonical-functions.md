@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # String Canonical Functions
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] includes string canonical functions.  

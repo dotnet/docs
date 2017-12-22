@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;system.serviceModel.activation&gt;
 This configuration section represents the configuration settings for the SMSvcHost.exe tool. The configuration elements can be configured in the SMSvcHost.exe.config file. Specifically, it includes all machine-wide settings that must be configured.  

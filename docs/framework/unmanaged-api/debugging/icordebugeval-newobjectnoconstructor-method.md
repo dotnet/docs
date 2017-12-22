@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval::NewObjectNoConstructor Method
 Allocates a new object instance of the specified type, without attempting to call a constructor method.  

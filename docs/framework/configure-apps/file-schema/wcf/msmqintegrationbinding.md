@@ -16,6 +16,8 @@ caps.latest.revision: 34
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;msmqIntegrationBinding&gt;
 Defines a binding that provides queuing support by routing messages through MSMQ.  

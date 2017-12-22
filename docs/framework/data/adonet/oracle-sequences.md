@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Oracle Sequences
 The .NET Framework Data Provider for Oracle provides support for retrieving the server-generated key Oracle Sequence values after performing inserts by using the <xref:System.Data.OracleClient.OracleDataAdapter>.  

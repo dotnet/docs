@@ -16,6 +16,8 @@ caps.latest.revision: 28
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;wsFederationHttpBinding&gt;
 Defines a binding that supports WS-Federation.  

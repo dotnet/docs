@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::RuntimeSuspendFinished Method
 Notifies the profiler that the runtime has completed suspension of all runtime threads.  

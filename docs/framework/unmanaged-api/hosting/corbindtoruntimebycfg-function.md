@@ -26,6 +26,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorBindToRuntimeByCfg Function
 Loads the common language runtime (CLR) into a process by using version information that is read from an XML file.  

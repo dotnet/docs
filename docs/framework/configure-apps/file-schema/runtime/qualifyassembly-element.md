@@ -21,6 +21,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;qualifyAssembly&gt; Element
 Specifies the full name of the assembly that should be dynamically loaded when a partial name is used.  

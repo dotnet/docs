@@ -20,6 +20,8 @@ caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;cryptoNameMapping&gt; Element
 Contains mappings of classes to friendly names.  

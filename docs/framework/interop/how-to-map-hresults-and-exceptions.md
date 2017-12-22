@@ -9,8 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "cpp"
+dev_langs: 
+  - "cpp"
 helpviewer_keywords: 
   - "interoperation with unmanaged code, HRESULTs"
   - "exceptions, HRESULTs"
@@ -23,6 +23,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Map HRESULTs and Exceptions
 COM methods report errors by returning HRESULTs; .NET methods report them by throwing exceptions. The runtime handles the transition between the two. Each exception class in the .NET Framework maps to an HRESULT.  

@@ -14,6 +14,8 @@ caps.latest.revision: 18
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;tcpTransport&gt;
 Defines a TCP transport that can be used by a channel to transfers messages for a custom binding.  

@@ -18,6 +18,8 @@ caps.latest.revision: 17
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Data and Modeling in the .NET Framework
 This section provides information on how to access data using ADO.NET, Language Integrated Query (LINQ), WCF Data Services, and XML.  

@@ -27,6 +27,8 @@ caps.latest.revision: 25
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Code Access Security
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

@@ -14,6 +14,8 @@ caps.latest.revision: 20
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;diagnostics&gt;
 The `diagnostics` element defines settings that can be used by an administrator for run-time inspection and control.  

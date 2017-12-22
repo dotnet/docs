@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Token Handlers
 This topic discusses token handlers in WIF and how they are used to process tokens. The topic also covers what is necessary to create custom token handlers for token types that are not supported by default in WIF.  

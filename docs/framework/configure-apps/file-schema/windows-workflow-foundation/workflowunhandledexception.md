@@ -12,6 +12,8 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;workflowUnhandledException&gt;
 A service behavior that enables you to specify the action to take when an unhandled exception occurs within a workflow service.  

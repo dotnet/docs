@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;remove&gt; of &lt;claimTypeRequirements&gt; element
 Specifies the types of claims to be removed in the federated credential.  

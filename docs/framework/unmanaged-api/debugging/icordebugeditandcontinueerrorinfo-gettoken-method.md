@@ -27,6 +27,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEditAndContinueErrorInfo::GetToken Method
 `GetToken` is obsolete. Do not call this method.  

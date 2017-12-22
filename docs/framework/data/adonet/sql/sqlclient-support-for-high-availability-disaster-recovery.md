@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # SqlClient Support for High Availability, Disaster Recovery
 This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../../includes/net-v45-md.md)]) for high-availability, disaster recovery -- AlwaysOn Availability Groups.  AlwaysOn Availability Groups feature was added to [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] 2012. For more information about AlwaysOn Availability Groups, see [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] Books Online.  

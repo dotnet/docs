@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ITypeName::GetTypeArgumentCount Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

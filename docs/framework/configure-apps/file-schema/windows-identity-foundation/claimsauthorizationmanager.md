@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;claimsAuthorizationManager&gt;
 Registers a claims authorization manager for the incoming claims.  

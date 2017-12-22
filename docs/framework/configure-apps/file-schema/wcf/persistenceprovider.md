@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;persistenceProvider&gt;
 Specifies the type of the persistence provider implementation to use, as well as the time-out to use for persistence operations.  

@@ -27,6 +27,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EndMerge Method
 Indicates that all custom attributes have been merged into the emit scope.  

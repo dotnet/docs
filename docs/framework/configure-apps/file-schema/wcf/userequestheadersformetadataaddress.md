@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;useRequestHeadersForMetadataAddress&gt;
 Enables the retrieval of metadata address information from the request message headers.  

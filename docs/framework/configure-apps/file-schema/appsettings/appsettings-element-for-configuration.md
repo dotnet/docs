@@ -14,6 +14,8 @@ ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # \<appSettings> element for \<configuration>

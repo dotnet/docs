@@ -20,6 +20,8 @@ caps.latest.revision: 19
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;defaultHttpCachePolicy&gt; Element (Network Settings)
 Describes whether HTTP caching is active and describes the default caching policy.  

@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback4::ReJITError Method
 Notifies the profiler that the just-in-time (JIT) compiler encountered an error in the recompilation process.  

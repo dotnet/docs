@@ -20,6 +20,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;defaultFtpCachePolicy&gt; Element (Network Settings)
 Describes whether FTP caching is active and describes the default caching policy.  

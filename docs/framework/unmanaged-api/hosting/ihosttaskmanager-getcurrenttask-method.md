@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostTaskManager::GetCurrentTask Method
 Gets an interface pointer to the task that is currently executing on the operating system thread from which this call is made.  

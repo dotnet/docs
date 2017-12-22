@@ -20,6 +20,8 @@ caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Storeadm.exe (Isolated Storage Tool)
 The Isolated Storage tool lists or removes all existing stores for the current user.  

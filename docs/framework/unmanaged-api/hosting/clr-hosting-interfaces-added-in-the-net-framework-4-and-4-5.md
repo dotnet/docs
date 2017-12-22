@@ -18,6 +18,8 @@ caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CLR Hosting Interfaces Added in the .NET Framework 4 and 4.5
 This section describes interfaces that unmanaged hosts can use to integrate the common language runtime (CLR) in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)], [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], and later versions into their applications. These interfaces provide methods for a host to configure and load the runtime into a process.  

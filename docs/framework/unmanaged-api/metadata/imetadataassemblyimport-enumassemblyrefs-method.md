@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyImport::EnumAssemblyRefs Method
 Enumerates the `mdAssemblyRef` instances that are defined in the assembly manifest.  

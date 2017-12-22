@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::RemotingServerReceivingMessage Method
 Notifies the profiler that the process has received a remote method invocation or activation request.  

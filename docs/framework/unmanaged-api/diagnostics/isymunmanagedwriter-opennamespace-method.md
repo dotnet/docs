@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedWriter::OpenNamespace Method
 Opens a new namespace. Call this method before defining methods or variables that occupy a namespace. Namespaces can be nested.  

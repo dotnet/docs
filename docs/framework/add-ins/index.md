@@ -24,6 +24,8 @@ caps.latest.revision: 42
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Add-ins and Extensibility
 <a name="top"></a> Add-ins provide extended features or services for a host application. The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides a programming model that developers can use to develop add-ins and activate them in their host application. The model achieves this by constructing a communication pipeline between the host and the add-in. The model is implemented by using the types in the <xref:System.AddIn>, <xref:System.AddIn.Hosting>, <xref:System.AddIn.Pipeline>, and <xref:System.AddIn.Contract> namespaces.  

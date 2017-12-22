@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::EnumMethodImpls Method
 Enumerates MethodBody and MethodDeclaration tokens representing methods of the specified type.  

@@ -26,6 +26,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugExceptionObjectValue Interface
 Extends the "ICorDebugObjectValue" interface to provide stack trace information from a managed exception object.  

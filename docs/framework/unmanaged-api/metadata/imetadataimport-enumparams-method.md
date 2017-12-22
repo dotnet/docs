@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::EnumParams Method
 Enumerates ParamDef tokens representing the parameters of the method referenced by the specified MethodDef token.  

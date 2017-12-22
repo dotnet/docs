@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport2::GetGenericParamConstraintProps Method
 Gets the metadata associated with the generic parameter constraint represented by the specified constraint token.  

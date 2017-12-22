@@ -12,6 +12,8 @@ caps.latest.revision: 4
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Peer-to-Peer Networking Scenarios
 Peer-to-peer networking enables or enhances the following scenarios:  

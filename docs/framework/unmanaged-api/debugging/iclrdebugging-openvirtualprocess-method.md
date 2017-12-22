@@ -27,6 +27,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDebugging::OpenVirtualProcess Method
 Gets the ICorDebugProcess interface that corresponds to a common language runtime (CLR) module loaded in the process.  

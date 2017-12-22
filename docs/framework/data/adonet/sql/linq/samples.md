@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Samples
 This topic provides links to the [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)] and C# solutions that contain [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] sample code.  

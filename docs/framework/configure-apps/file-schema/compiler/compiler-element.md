@@ -22,6 +22,8 @@ caps.latest.revision: 20
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;compiler&gt; Element
 Specifies the compiler configuration attributes for a language provider.  

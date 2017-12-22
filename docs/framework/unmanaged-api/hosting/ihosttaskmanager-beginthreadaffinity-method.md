@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostTaskManager::BeginThreadAffinity Method
 Notifies the host that managed code is entering a period in which the current task must not be moved to another operating system thread.  

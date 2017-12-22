@@ -12,6 +12,8 @@ caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;state&gt; of &lt;states&gt;
 A configuration element that contains the state of the subscribed activity for which a tracking record should be emitted.  

@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: ef88af8c-8dfe-4556-8b56-81df960a900b
 caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Null Comparisons
 A `null` value in the data source indicates that the value is unknown. In [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] queries, you can check for null values so that certain calculations or comparisons are only performed on rows that have valid, or non-null, data. CLR null semantics, however, may differ from the null semantics of the data source. Most databases use a version of three-valued logic to handle null comparisons. That is, a comparison against a null value does not evaluate to `true` or `false`, it evaluates to `unknown`. Often this is an implementation of ANSI nulls, but this is not always the case.  

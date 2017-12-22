@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedVariable::GetAddressField1 Method
 Gets the first address field for this variable. Its meaning depends on the kind of address.  

@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::AllocateMethodBuffer Method
 Creates a buffer of the specified size for a method, and gets the relative virtual address of the method.  

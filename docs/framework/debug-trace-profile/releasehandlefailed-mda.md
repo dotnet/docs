@@ -22,6 +22,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # releaseHandleFailed MDA
 The `releaseHandleFailed` managed debugging assistant (MDA) is activated is to notify developers when the <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A> method of a class derived from <xref:System.Runtime.InteropServices.SafeHandle> or <xref:System.Runtime.InteropServices.CriticalHandle> returns `false`.  

@@ -26,6 +26,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetWin32ResBlob Method
 Retrieves Win32 resource blob. Call this method after setting assembly options.  

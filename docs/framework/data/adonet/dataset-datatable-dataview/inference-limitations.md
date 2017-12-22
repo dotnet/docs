@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Inference Limitations
 The process of inferring a <xref:System.Data.DataSet> schema from XML can result in different schemas depending on the XML elements in each document. For example, consider the following XML documents.  

@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # ADO.NET Entity Framework
 The [msdn.com/data/ef](http://msdn.microsoft.com/data/ef) site is now the main location for the Entity Framework content.  

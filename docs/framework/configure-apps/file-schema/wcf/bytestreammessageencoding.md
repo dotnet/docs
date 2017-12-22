@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;byteStreamMessageEncoding&gt;
 Specifies the message encoding as a stream of bytes, with the option to specify the character encoding.  

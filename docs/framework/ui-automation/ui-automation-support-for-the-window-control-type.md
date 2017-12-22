@@ -18,6 +18,8 @@ caps.latest.revision: 19
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Support for the Window Control Type
 > [!NOTE]

@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: a15ae411-8dc2-4ca3-84d2-01c9d5f1972a
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
+ms.workload: 
+  - "dotnet"
 ---
 # Serialization
 This topic describes [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] serialization capabilities. The paragraphs that follow provide information about how to add serialization during code generation at design time and the run-time serialization behavior of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] classes.  

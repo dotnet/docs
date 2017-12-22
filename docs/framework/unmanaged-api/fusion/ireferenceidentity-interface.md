@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IReferenceIdentity Interface
 Represents a reference to the unique signature of a code object.  

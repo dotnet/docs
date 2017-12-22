@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugNativeFrame2::GetStackParameterSize Method
 Returns the cumulative size of the parameters on the stack on x86 operating systems.  

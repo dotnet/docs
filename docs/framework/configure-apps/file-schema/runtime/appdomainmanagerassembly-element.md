@@ -17,6 +17,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;appDomainManagerAssembly&gt; Element
 Specifies the assembly that provides the application domain manager for the default application domain in the process.  

@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugManagedCallback::ControlCTrap Method
 Notifies the debugger that a CTRL+C is trapped in the process that is being debugged.  

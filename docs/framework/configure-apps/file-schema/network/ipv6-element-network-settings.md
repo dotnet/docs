@@ -20,6 +20,8 @@ caps.latest.revision: 19
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;ipv6&gt; Element (Network Settings)
 Enables Internet Protocol version 6 (IPv6) responses from obsolete members of the <xref:System.Net.Dns> class.  

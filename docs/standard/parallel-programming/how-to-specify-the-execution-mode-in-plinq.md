@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "PLINQ queries, how to use execution mode"
 ms.assetid: e52ff26c-c5d3-4fab-9fec-c937fb387963
@@ -18,6 +18,9 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Specify the Execution Mode in PLINQ
 This example shows how to force PLINQ to bypass its default heuristics and parallelize a query regardless of the query's shape.  

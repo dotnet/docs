@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 api_name: 
   - "System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream"
 api_location: 
@@ -20,6 +20,9 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) Method
 [Supported in the .NET Framework 4.5.1 and later versions]  

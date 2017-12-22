@@ -17,10 +17,13 @@ helpviewer_keywords:
   - "managed code"
   - "source code execution"
   - "code, runtime functionality"
-ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482 
+ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Common Language Runtime (CLR)
 The .NET Framework provides a run-time environment called the common language runtime, which runs the code and provides services that make the development process easier.  

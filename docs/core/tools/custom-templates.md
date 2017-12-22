@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
+ms.workload: 
+  - dotnetcore
 ---
 
 # Custom templates for dotnet new

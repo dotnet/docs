@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 79c50621-a24a-4e64-bbb9-b953113e841c
+ms.workload: 
+  - dotnetcore
 ---
 
 # A mapping between project.json and csproj properties

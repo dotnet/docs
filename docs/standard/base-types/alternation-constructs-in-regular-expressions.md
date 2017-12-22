@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "either/or matching"
   - "alternative matching patterns"
@@ -24,6 +24,9 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Alternation Constructs in Regular Expressions
 <a name="top"></a> Alternation constructs modify a regular expression to enable either/or or conditional matching. .NET supports three alternation constructs:  

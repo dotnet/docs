@@ -8,6 +8,9 @@ ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Tackling Business Complexity in a Microservice with DDD and CQRS Patterns
 

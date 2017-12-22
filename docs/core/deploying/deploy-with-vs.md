@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 01049a21-fd50-4419-9ab2-0e4a2e091050
+ms.workload: 
+  - dotnetcore
 ---
 
 # Deploying .NET Core apps with Visual Studio

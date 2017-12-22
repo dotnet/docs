@@ -19,6 +19,9 @@ caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Attributes That Control XML Serialization
 You can apply the attributes in the following table to classes and class members to control the way in which the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an instance of the class. To understand how these attributes control XML serialization, see [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md).  

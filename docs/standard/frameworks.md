@@ -8,6 +8,9 @@ ms.topic: article
 ms.custom: "updateeachrelease"
 ms.prod: .net
 ms.technology: dotnet-standard
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Target frameworks
 

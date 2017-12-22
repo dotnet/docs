@@ -10,6 +10,9 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: d095b0b6-2454-4e23-80b4-c9e8a447116c
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Automatic memory management and garbage collection

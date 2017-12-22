@@ -6,6 +6,9 @@ ms.author: mairaw
 ms.date: 08/15/2016
 ms.topic: article
 ms.prod: .net
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Choosing between .NET Core and .NET Framework for server apps
 

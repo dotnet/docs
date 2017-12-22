@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "format spexifiers, custom time interval"
   - "format strings"
@@ -23,6 +23,9 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Custom TimeSpan Format Strings
 A <xref:System.TimeSpan> format string defines the string representation of a <xref:System.TimeSpan> value that results from a formatting operation. A custom format string consists of one or more custom <xref:System.TimeSpan> format specifiers along with any number of literal characters. Any string that is not a [standard TimeSpan format string](../../../docs/standard/base-types/standard-timespan-format-strings.md) is interpreted as a custom <xref:System.TimeSpan> format string.  

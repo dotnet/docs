@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.devlang: dotnet
 ms.assetid: cae32148-aef4-4e64-a7f0-88072bad4400
+ms.workload: 
+  - shboyer
 ---
 
 # Docker and .NET Core 

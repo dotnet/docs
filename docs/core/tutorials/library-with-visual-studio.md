@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: c849ca26-6a25-4d35-9544-f343af88e0e7
+ms.workload: 
+  - dotnetcore
 ---
 # Building a class library with C# and .NET Core in Visual Studio 2017
 

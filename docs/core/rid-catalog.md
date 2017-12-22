@@ -6,6 +6,8 @@ ms.author: mairaw
 ms.date: 09/07/2017
 ms.topic: article
 ms.prod: .net-core
+ms.workload: 
+  - dotnetcore
 ---
 # .NET Core RID Catalog
 

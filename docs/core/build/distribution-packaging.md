@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 71b9d722-c5a8-4271-9ce1-d87e7ae2494d
+ms.workload: 
+  - dotnetcore
 ---
 
 # .NET Core distribution packaging

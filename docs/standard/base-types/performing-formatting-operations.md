@@ -20,6 +20,9 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Performing Formatting Operations
 The following topics provide step-by-step instructions for performing specific formatting operations.  

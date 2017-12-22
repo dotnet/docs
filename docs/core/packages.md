@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 609b0845-49e7-4864-957b-21ffe1b93bf2
+ms.workload: 
+  - dotnetcore
 ---
 
 # Packages, Metapackages and Frameworks

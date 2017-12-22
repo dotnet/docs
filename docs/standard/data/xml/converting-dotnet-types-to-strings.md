@@ -13,6 +13,9 @@ caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Converting .NET Framework Types to Strings
 If you want to convert a .NET Framework type to a string, use the **ToString** method. The **ToString** method returns a string representation of the type passed in. The following table lists the .NET Framework types that return a string in a format that maps to the XML Schema (XSD) specifications.  

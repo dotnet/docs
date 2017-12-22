@@ -1,11 +1,14 @@
 ---
-title: Architect modern web applications with ASP.NET Core and Azure  
+title: Architect modern web applications with ASP.NET Core and Azure
 description: Architect Modern Web Applications with ASP.NET Core and Azure | introduction
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Architect Modern Web Applications with ASP.NET Core and Azure
 

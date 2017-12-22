@@ -15,6 +15,9 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Using TPL with Other Asynchronous Patterns
 The Task Parallel Library can be used with traditional .NET Framework asynchronous programming patterns in various ways.  

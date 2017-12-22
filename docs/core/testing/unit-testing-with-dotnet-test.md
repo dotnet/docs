@@ -6,6 +6,8 @@ ms.author: wiwagn
 ms.date: 11/29/2017
 ms.topic: article
 ms.prod: .net-core
+ms.workload: 
+  - dotnetcore
 ---
 # Unit testing C# in .NET Core using dotnet test and xUnit
 

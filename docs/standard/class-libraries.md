@@ -10,6 +10,9 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a67484c3-fe92-44d8-8fa3-36fa2071d880
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # .NET Class Libraries

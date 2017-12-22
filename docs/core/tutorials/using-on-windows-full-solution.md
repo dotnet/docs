@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: ba7e082c-a7c8-431e-a342-f67734b660f6
+ms.workload: 
+  - dotnetcore
 ---
 
 # Building a complete .NET Core solution on Windows, using Visual Studio 2017

@@ -15,6 +15,9 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # .NET Framework Application Essentials
 This section of the .NET Framework documentation provides information about basic application development tasks in the .NET Framework.  

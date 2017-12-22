@@ -18,6 +18,9 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Operator Overloads
 Operator overloads allow framework types to appear as if they were built-in language primitives.  

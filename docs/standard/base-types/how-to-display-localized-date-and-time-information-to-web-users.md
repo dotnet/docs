@@ -20,6 +20,9 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Display Localized Date and Time Information to Web Users
 Because a Web page can be displayed anywhere in the world, operations that parse and format date and time values should not rely on a default format (which most often is the format of the Web server's local culture) when interacting with the user. Instead, Web forms that handle date and time strings input by the user should parse the strings using the user's preferred culture. Similarly, date and time data should be displayed to the user in a format that conforms to the user's culture. This topic shows how to do this.  

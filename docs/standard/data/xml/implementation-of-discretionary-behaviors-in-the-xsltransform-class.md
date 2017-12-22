@@ -13,6 +13,9 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Implementation of Discretionary Behaviors in the XslTransform Class
 > [!NOTE]

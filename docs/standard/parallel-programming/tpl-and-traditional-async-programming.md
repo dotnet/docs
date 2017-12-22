@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "tasks, with other asynchronous models"
 ms.assetid: e7b31170-a156-433f-9f26-b1fc7cd1776f
@@ -18,6 +18,9 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # TPL and Traditional .NET Framework Asynchronous Programming
 The .NET Framework provides the following two standard patterns for performing I/O-bound and compute-bound asynchronous operations:  

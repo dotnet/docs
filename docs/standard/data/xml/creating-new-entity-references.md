@@ -13,6 +13,9 @@ caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Creating New Entity References
 The **CreateEntityReference** method creates a new **XmlEntityReference** node. The XML Document Object Model (DOM) looks to see if the entity name being referenced has already been declared. If it has, the child nodes of **XmlEntityReference** node are copied from the entity declaration node. If there is no entity declaration that matches, an empty text node is attached as the only child of the entity reference node. Because the child nodes of the **XmlEntityReference** node are copies of other nodes, these child nodes are read-only and cannot be modified.  

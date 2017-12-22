@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: bdc29497-64f2-4d11-a21b-4097e0bdf5c9
+ms.workload: 
+  - dotnetcore
 ---
 
 # Additions to the csproj format for .NET Core

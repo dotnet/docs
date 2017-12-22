@@ -1,12 +1,14 @@
 ---
 title: dotnet publish command - .NET Core CLI
-description: The dotnet publish command publishes your .NET Core project into a directory. 
+description: The dotnet publish command publishes your .NET Core project into a directory.
 author: mairaw
 ms.author: mairaw
 ms.date: 09/01/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
+ms.workload: 
+  - dotnetcore
 ---
 # dotnet publish
 

@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 00d00d38-99af-44f4-a75f-defcd9729dc5
+ms.workload: 
+  - dotnetcore
 ---
 
 # Porting to .NET Core from .NET Framework

@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 0d6e1e34-277c-4aaf-9880-3ebf81023857
+ms.workload: 
+  - dotnetcore
 ---
 
 # Using .NET Core SDK and tools in Continuous Integration (CI)

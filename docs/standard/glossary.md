@@ -9,6 +9,9 @@ ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # .NET Glossary

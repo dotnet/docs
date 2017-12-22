@@ -13,6 +13,9 @@ caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Namespaces and DTDs in the DOM
 Document type definitions (DTDs) complicate namespace support. For example, the following XML contains default attributes containing colons in their names.  

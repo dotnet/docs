@@ -13,6 +13,9 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Copying Existing Nodes from One Document to Another
 The **ImportNode** method is the mechanism by which a node or entire node subtree is copied from one **XmlDocument** to another. The node returned from the call is a copy of the node from the source document, including attribute values, the node name, node type, and all namespace-related attributes such as the prefix, local name, and namespace Uniform Resource Identifier (URI). The source document is not changed. After you have imported the node, you still have to add it to the tree using one of the methods used to insert nodes.  

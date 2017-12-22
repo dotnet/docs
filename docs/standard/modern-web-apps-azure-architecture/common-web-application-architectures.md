@@ -1,11 +1,14 @@
 ---
-title: Common web application architectures  
+title: Common web application architectures
 description: Architect modern web applications with ASP.NET Core and Microsoft Azure | common web application architectures
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 #Common Web Application Architectures
 

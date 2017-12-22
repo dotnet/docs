@@ -10,6 +10,9 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c00939e1-59e3-4e61-8fe9-08ad6b3f1295
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # LINQ (Language Integrated Query)

@@ -13,6 +13,9 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # White Space and Significant White Space Handling when Loading the DOM
 When loading the document, you can set the option to preserve white space and create **XmlWhitespace** nodes in the document tree. To create white space nodes, set the **PreserveWhitespace** property to true. If the property is set to **false**, which is the default, white space nodes are not created. Significant white spaces nodes are always preserved, and **XmlSignificantWhitespace** nodes are always created in memory to represent this data, regardless of the setting of the **PreserveWhitespace** flag.  

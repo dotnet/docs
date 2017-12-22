@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 74b87cdb-a244-4c13-908c-539118bfeef9
+ms.workload: 
+  - dotnetcore
 ---
 
 # Managing dependencies with .NET Core SDK 1.0

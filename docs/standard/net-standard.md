@@ -1,6 +1,6 @@
 ---
 title: .NET Standard
-description: Learn about .NET Standard, its versions and the .NET implementations that support it.   
+description: Learn about .NET Standard, its versions and the .NET implementations that support it.
 keywords: .NET Standard, PCL, .NET
 author: mairaw
 ms.author: mairaw
@@ -10,6 +10,9 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # .NET Standard
 

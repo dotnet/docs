@@ -1,6 +1,6 @@
 ---
 title: Tour of .NET
-description: A guided tour through some of the prominent features of .NET.   
+description: A guided tour through some of the prominent features of .NET.
 keywords: .NET, .NET Core, Tour, Programming Languages, Unsafe, Memory Management, Type Safety, Async
 author: cartermp
 ms.author: wiwagn
@@ -10,6 +10,9 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Tour of .NET

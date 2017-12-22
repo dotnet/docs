@@ -12,6 +12,8 @@ ms.devlang: dotnet
 ms.assetid: 03c28597-7e73-46d6-a9c3-f9cb55642739
 manager: wpickett
 ms.custom: mvc
+ms.workload: 
+  - dotnetcore
 ---
 # Introduction to .NET and Docker
 

@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 97aa50bf-bdf8-416d-a56c-ac77504c14ea
+ms.workload: 
+  - dotnetcore
 ---
 
 # Build a C# Hello World application with .NET Core in Visual Studio 2017

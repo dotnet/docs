@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: ed447641-3e85-4e50-b7ed-004630048a3e
+ms.workload: 
+  - dotnetcore
 ---
 
 # Unit testing C# with MSTest and .NET Core

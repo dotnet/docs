@@ -1,11 +1,14 @@
 ---
-title: Choose between traditional web apps and single page apps  
+title: Choose between traditional web apps and single page apps
 description: Architect modern web applications with ASP.NET Core and Microsoft Azure
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Choose Between Traditional Web Apps and Single Page Apps (SPAs)
 

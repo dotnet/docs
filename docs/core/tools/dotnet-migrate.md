@@ -1,12 +1,14 @@
 ---
 title: dotnet migrate command - .NET Core CLI
-description: The dotnet migrate command migrates a project and all of its dependencies. 
+description: The dotnet migrate command migrates a project and all of its dependencies.
 author: mairaw
 ms.author: mairaw
 ms.date: 08/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
+ms.workload: 
+  - dotnetcore
 ---
 # dotnet migrate
 

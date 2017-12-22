@@ -12,6 +12,9 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Serialization Tools
 This section contains detailed information about the serialization tools. You can run all the tools from the command line.  

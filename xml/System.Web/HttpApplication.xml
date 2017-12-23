@@ -2048,7 +2048,8 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
  The <xref:System.Web.HttpApplication.PreSendRequestContent> event may occur multiple times.  
   
  For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+ > [!WARNING]
+ > Do not use `PreSendRequestContent` with managed modules that implement `IHttpModule`. Setting these properties can cause issues with asynchronous requests. The combination of Application Requested Routing (ARR) and websockets might lead to access violation exceptions that can cause w3wp to crash. For example, iiscore!W3_CONTEXT_BASE::GetIsLastNotification+68 in iiscore.dll has caused an access violation exception (0xC0000005).
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.HttpApplication.PreSendRequestHeaders" />
@@ -2073,7 +2074,8 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
   
 ## Remarks  
  For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+ > [!WARNING]
+ > Do not use `PreSendRequestHeaders` with managed modules that implement `IHttpModule`. Setting these properties can cause issues with asynchronous requests. The combination of Application Requested Routing (ARR) and websockets might lead to access violation exceptions that can cause w3wp to crash. For example, iiscore!W3_CONTEXT_BASE::GetIsLastNotification+68 in iiscore.dll has caused an access violation exception (0xC0000005).
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.HttpApplication.PreSendRequestContent" />

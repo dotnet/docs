@@ -22,7 +22,7 @@ You may have arrived on this page after trying to run an application and seeing 
 The .NET Framework 4.7.1 is included with:
 
 * [Windows 10 Fall Creators Update (version 1709)](https://www.microsoft.com/software-download/windows10)
-* [Windows Server (version 1709)](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709)
+* [Windows Server, version 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709)
 
 > [!div class="button"]
 [Download .NET Framework 4.7.1](https://www.microsoft.com/net/download/thank-you/net471?utm_source=ms-docs&utm_medium=referral)

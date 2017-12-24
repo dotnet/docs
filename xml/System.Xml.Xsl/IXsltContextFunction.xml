@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IXsltContextFunction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXsltContextFunction" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.IXsltContextFunction" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXsltContextFunction" />
+  <TypeSignature Language="F#" Value="type IXsltContextFunction = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathResultType[] ArgTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XPath.XPathResultType[] ArgTypes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextFunction.ArgTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArgTypes As XPathResultType()" />
+      <MemberSignature Language="F#" Value="member this.ArgTypes : System.Xml.XPath.XPathResultType[]" Usage="System.Xml.Xsl.IXsltContextFunction.ArgTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -59,6 +63,7 @@
       <MemberSignature Language="C#" Value="public object Invoke (System.Xml.Xsl.XsltContext xsltContext, object[] args, System.Xml.XPath.XPathNavigator docContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Invoke(class System.Xml.Xsl.XsltContext xsltContext, object[] args, class System.Xml.XPath.XPathNavigator docContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.IXsltContextFunction.Invoke(System.Xml.Xsl.XsltContext,System.Object[],System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : System.Xml.Xsl.XsltContext * obj[] * System.Xml.XPath.XPathNavigator -&gt; obj" Usage="iXsltContextFunction.Invoke (xsltContext, args, docContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -101,6 +106,8 @@
       <MemberSignature Language="C#" Value="public int Maxargs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Maxargs" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextFunction.Maxargs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Maxargs As Integer" />
+      <MemberSignature Language="F#" Value="member this.Maxargs : int" Usage="System.Xml.Xsl.IXsltContextFunction.Maxargs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -128,6 +135,8 @@
       <MemberSignature Language="C#" Value="public int Minargs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Minargs" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextFunction.Minargs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Minargs As Integer" />
+      <MemberSignature Language="F#" Value="member this.Minargs : int" Usage="System.Xml.Xsl.IXsltContextFunction.Minargs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -155,6 +164,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathResultType ReturnType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XPath.XPathResultType ReturnType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextFunction.ReturnType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnType As XPathResultType" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : System.Xml.XPath.XPathResultType" Usage="System.Xml.Xsl.IXsltContextFunction.ReturnType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

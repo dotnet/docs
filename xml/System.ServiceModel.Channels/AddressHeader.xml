@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class AddressHeader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AddressHeader extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.AddressHeader" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class AddressHeader" />
+  <TypeSignature Language="F#" Value="type AddressHeader = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +45,7 @@
       <MemberSignature Language="C#" Value="protected AddressHeader ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +93,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.AddressHeader CreateAddressHeader (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.AddressHeader CreateAddressHeader(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAddressHeader (value As Object) As AddressHeader" />
+      <MemberSignature Language="F#" Value="static member CreateAddressHeader : obj -&gt; System.ServiceModel.Channels.AddressHeader" Usage="System.ServiceModel.Channels.AddressHeader.CreateAddressHeader value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -125,6 +130,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.AddressHeader CreateAddressHeader (object value, System.Runtime.Serialization.XmlObjectSerializer serializer);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.AddressHeader CreateAddressHeader(object value, class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader(System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAddressHeader (value As Object, serializer As XmlObjectSerializer) As AddressHeader" />
+      <MemberSignature Language="F#" Value="static member CreateAddressHeader : obj * System.Runtime.Serialization.XmlObjectSerializer -&gt; System.ServiceModel.Channels.AddressHeader" Usage="System.ServiceModel.Channels.AddressHeader.CreateAddressHeader (value, serializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -163,6 +170,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.AddressHeader CreateAddressHeader (string name, string ns, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.AddressHeader CreateAddressHeader(string name, string ns, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader(System.String,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAddressHeader (name As String, ns As String, value As Object) As AddressHeader" />
+      <MemberSignature Language="F#" Value="static member CreateAddressHeader : string * string * obj -&gt; System.ServiceModel.Channels.AddressHeader" Usage="System.ServiceModel.Channels.AddressHeader.CreateAddressHeader (name, ns, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -209,6 +218,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.AddressHeader CreateAddressHeader (string name, string ns, object value, System.Runtime.Serialization.XmlObjectSerializer serializer);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.AddressHeader CreateAddressHeader(string name, string ns, object value, class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader(System.String,System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAddressHeader (name As String, ns As String, value As Object, serializer As XmlObjectSerializer) As AddressHeader" />
+      <MemberSignature Language="F#" Value="static member CreateAddressHeader : string * string * obj * System.Runtime.Serialization.XmlObjectSerializer -&gt; System.ServiceModel.Channels.AddressHeader" Usage="System.ServiceModel.Channels.AddressHeader.CreateAddressHeader (name, ns, value, serializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -258,6 +269,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="addressHeader.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -302,6 +315,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlDictionaryReader GetAddressHeaderReader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlDictionaryReader GetAddressHeaderReader() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.GetAddressHeaderReader" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAddressHeaderReader () As XmlDictionaryReader" />
+      <MemberSignature Language="F#" Value="abstract member GetAddressHeaderReader : unit -&gt; System.Xml.XmlDictionaryReader&#xA;override this.GetAddressHeaderReader : unit -&gt; System.Xml.XmlDictionaryReader" Usage="addressHeader.GetAddressHeaderReader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -337,6 +352,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="addressHeader.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -397,6 +414,8 @@
       <MemberSignature Language="C#" Value="public T GetValue&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetValue&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.GetValue``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValue(Of T) () As T" />
+      <MemberSignature Language="F#" Value="member this.GetValue : unit -&gt; 'T" Usage="addressHeader.GetValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -446,6 +465,8 @@
       <MemberSignature Language="C#" Value="public T GetValue&lt;T&gt; (System.Runtime.Serialization.XmlObjectSerializer serializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetValue&lt;T&gt;(class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.GetValue``1(System.Runtime.Serialization.XmlObjectSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValue(Of T) (serializer As XmlObjectSerializer) As T" />
+      <MemberSignature Language="F#" Value="member this.GetValue : System.Runtime.Serialization.XmlObjectSerializer -&gt; 'T" Usage="addressHeader.GetValue serializer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -496,6 +517,8 @@
       <MemberSignature Language="C#" Value="public abstract string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.AddressHeader.Name" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Channels.AddressHeader.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -533,6 +556,8 @@
       <MemberSignature Language="C#" Value="public abstract string Namespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.AddressHeader.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string" Usage="System.ServiceModel.Channels.AddressHeader.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -570,6 +595,8 @@
       <MemberSignature Language="C#" Value="protected abstract void OnWriteAddressHeaderContents (System.Xml.XmlDictionaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteAddressHeaderContents(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.OnWriteAddressHeaderContents(System.Xml.XmlDictionaryWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnWriteAddressHeaderContents (writer As XmlDictionaryWriter)" />
+      <MemberSignature Language="F#" Value="abstract member OnWriteAddressHeaderContents : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="addressHeader.OnWriteAddressHeaderContents writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -598,6 +625,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnWriteStartAddressHeader (System.Xml.XmlDictionaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteStartAddressHeader(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.OnWriteStartAddressHeader(System.Xml.XmlDictionaryWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWriteStartAddressHeader (writer As XmlDictionaryWriter)" />
+      <MemberSignature Language="F#" Value="abstract member OnWriteStartAddressHeader : System.Xml.XmlDictionaryWriter -&gt; unit&#xA;override this.OnWriteStartAddressHeader : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="addressHeader.OnWriteStartAddressHeader writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -626,6 +655,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.MessageHeader ToMessageHeader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.MessageHeader ToMessageHeader() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.ToMessageHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToMessageHeader () As MessageHeader" />
+      <MemberSignature Language="F#" Value="member this.ToMessageHeader : unit -&gt; System.ServiceModel.Channels.MessageHeader" Usage="addressHeader.ToMessageHeader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -679,6 +710,8 @@
       <MemberSignature Language="C#" Value="public void WriteAddressHeader (System.Xml.XmlDictionaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAddressHeader(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.WriteAddressHeader(System.Xml.XmlDictionaryWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteAddressHeader (writer As XmlDictionaryWriter)" />
+      <MemberSignature Language="F#" Value="member this.WriteAddressHeader : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="addressHeader.WriteAddressHeader writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -724,6 +757,8 @@
       <MemberSignature Language="C#" Value="public void WriteAddressHeader (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAddressHeader(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.WriteAddressHeader(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteAddressHeader (writer As XmlWriter)" />
+      <MemberSignature Language="F#" Value="member this.WriteAddressHeader : System.Xml.XmlWriter -&gt; unit" Usage="addressHeader.WriteAddressHeader writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -769,6 +804,8 @@
       <MemberSignature Language="C#" Value="public void WriteAddressHeaderContents (System.Xml.XmlDictionaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAddressHeaderContents(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.WriteAddressHeaderContents(System.Xml.XmlDictionaryWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteAddressHeaderContents (writer As XmlDictionaryWriter)" />
+      <MemberSignature Language="F#" Value="member this.WriteAddressHeaderContents : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="addressHeader.WriteAddressHeaderContents writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -807,6 +844,8 @@
       <MemberSignature Language="C#" Value="public void WriteStartAddressHeader (System.Xml.XmlDictionaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartAddressHeader(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.WriteStartAddressHeader(System.Xml.XmlDictionaryWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartAddressHeader (writer As XmlDictionaryWriter)" />
+      <MemberSignature Language="F#" Value="member this.WriteStartAddressHeader : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="addressHeader.WriteStartAddressHeader writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

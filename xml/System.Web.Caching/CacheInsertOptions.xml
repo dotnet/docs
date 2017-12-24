@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CacheInsertOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CacheInsertOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheInsertOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class CacheInsertOptions" />
+  <TypeSignature Language="F#" Value="type CacheInsertOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public CacheInsertOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheInsertOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public DateTime AbsoluteExpiration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime AbsoluteExpiration" />
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.CacheInsertOptions.AbsoluteExpiration" />
+      <MemberSignature Language="VB.NET" Value="Public Property AbsoluteExpiration As DateTime" />
+      <MemberSignature Language="F#" Value="member this.AbsoluteExpiration : DateTime with get, set" Usage="System.Web.Caching.CacheInsertOptions.AbsoluteExpiration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Caching.CacheDependency Dependencies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Caching.CacheDependency Dependencies" />
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.CacheInsertOptions.Dependencies" />
+      <MemberSignature Language="VB.NET" Value="Public Property Dependencies As CacheDependency" />
+      <MemberSignature Language="F#" Value="member this.Dependencies : System.Web.Caching.CacheDependency with get, set" Usage="System.Web.Caching.CacheInsertOptions.Dependencies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +77,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Caching.CacheItemRemovedCallback OnRemovedCallback { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Caching.CacheItemRemovedCallback OnRemovedCallback" />
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.CacheInsertOptions.OnRemovedCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnRemovedCallback As CacheItemRemovedCallback" />
+      <MemberSignature Language="F#" Value="member this.OnRemovedCallback : System.Web.Caching.CacheItemRemovedCallback with get, set" Usage="System.Web.Caching.CacheInsertOptions.OnRemovedCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +97,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Caching.CacheItemPriority Priority { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Caching.CacheItemPriority Priority" />
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.CacheInsertOptions.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As CacheItemPriority" />
+      <MemberSignature Language="F#" Value="member this.Priority : System.Web.Caching.CacheItemPriority with get, set" Usage="System.Web.Caching.CacheInsertOptions.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +117,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan SlidingExpiration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan SlidingExpiration" />
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.CacheInsertOptions.SlidingExpiration" />
+      <MemberSignature Language="VB.NET" Value="Public Property SlidingExpiration As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.SlidingExpiration : TimeSpan with get, set" Usage="System.Web.Caching.CacheInsertOptions.SlidingExpiration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

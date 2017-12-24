@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class FlowSwitch&lt;T&gt; : System.Activities.Statements.FlowNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FlowSwitch`1&lt;T&gt; extends System.Activities.Statements.FlowNode" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.FlowSwitch`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FlowSwitch(Of T)&#xA;Inherits FlowNode" />
+  <TypeSignature Language="F#" Value="type FlowSwitch&lt;'T&gt; = class&#xA;    inherit FlowNode&#xA;    interface IFlowSwitch" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,7 @@
       <MemberSignature Language="C#" Value="public FlowSwitch ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.FlowSwitch`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -61,6 +64,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;T,System.Activities.Statements.FlowNode&gt; Cases { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;!T, class System.Activities.Statements.FlowNode&gt; Cases" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.FlowSwitch`1.Cases" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cases As IDictionary(Of T, FlowNode)" />
+      <MemberSignature Language="F#" Value="member this.Cases : System.Collections.Generic.IDictionary&lt;'T, System.Activities.Statements.FlowNode&gt;" Usage="System.Activities.Statements.FlowSwitch&lt;'T&gt;.Cases" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -93,6 +98,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Statements.FlowNode Default { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Statements.FlowNode Default" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.FlowSwitch`1.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Property Default As FlowNode" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Activities.Statements.FlowNode with get, set" Usage="System.Activities.Statements.FlowSwitch&lt;'T&gt;.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -125,6 +132,8 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.FlowSwitch`1.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="System.Activities.Statements.FlowSwitch&lt;'T&gt;.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -148,6 +157,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Activity&lt;T&gt; Expression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity`1&lt;!T&gt; Expression" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.FlowSwitch`1.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expression As Activity(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Activities.Activity&lt;'T&gt; with get, set" Usage="System.Activities.Statements.FlowSwitch&lt;'T&gt;.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

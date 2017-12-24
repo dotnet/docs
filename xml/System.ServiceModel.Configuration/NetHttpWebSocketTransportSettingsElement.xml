@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class NetHttpWebSocketTransportSettingsElement : System.ServiceModel.Configuration.WebSocketTransportSettingsElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NetHttpWebSocketTransportSettingsElement extends System.ServiceModel.Configuration.WebSocketTransportSettingsElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetHttpWebSocketTransportSettingsElement&#xA;Inherits WebSocketTransportSettingsElement" />
+  <TypeSignature Language="F#" Value="type NetHttpWebSocketTransportSettingsElement = class&#xA;    inherit WebSocketTransportSettingsElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public NetHttpWebSocketTransportSettingsElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="public override string SubProtocol { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SubProtocol" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement.SubProtocol" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SubProtocol As String" />
+      <MemberSignature Language="F#" Value="member this.SubProtocol : string with get, set" Usage="System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement.SubProtocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +85,8 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.WebSocketTransportUsage TransportUsage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Channels.WebSocketTransportUsage TransportUsage" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement.TransportUsage" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property TransportUsage As WebSocketTransportUsage" />
+      <MemberSignature Language="F#" Value="member this.TransportUsage : System.ServiceModel.Channels.WebSocketTransportUsage with get, set" Usage="System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement.TransportUsage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

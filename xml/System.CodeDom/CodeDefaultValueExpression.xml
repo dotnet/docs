@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CodeDefaultValueExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeDefaultValueExpression extends System.CodeDom.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeDefaultValueExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeDefaultValueExpression&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeDefaultValueExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,10 +87,20 @@ dict.Print<System.Decimal, int>();
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDefaultValueExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeDefaultValueExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDefaultValueExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -108,6 +120,8 @@ dict.Print<System.Decimal, int>();
       <MemberSignature Language="C#" Value="public CodeDefaultValueExpression (System.CodeDom.CodeTypeReference type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeReference type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDefaultValueExpression.#ctor(System.CodeDom.CodeTypeReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As CodeTypeReference)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeDefaultValueExpression : System.CodeDom.CodeTypeReference -&gt; System.CodeDom.CodeDefaultValueExpression" Usage="new System.CodeDom.CodeDefaultValueExpression type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -130,6 +144,8 @@ dict.Print<System.Decimal, int>();
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReference Type" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDefaultValueExpression.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As CodeTypeReference" />
+      <MemberSignature Language="F#" Value="member this.Type : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeDefaultValueExpression.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,14 +164,5 @@ dict.Print<System.Decimal, int>();
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDefaultValueExpression" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

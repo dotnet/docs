@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IComponentDesignerDebugService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponentDesignerDebugService" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IComponentDesignerDebugService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComponentDesignerDebugService" />
+  <TypeSignature Language="F#" Value="type IComponentDesignerDebugService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="public void Assert (bool condition, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Assert(bool condition, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentDesignerDebugService.Assert(System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Assert (condition As Boolean, message As String)" />
+      <MemberSignature Language="F#" Value="abstract member Assert : bool * string -&gt; unit" Usage="iComponentDesignerDebugService.Assert (condition, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public void Fail (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Fail(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentDesignerDebugService.Fail(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Fail (message As String)" />
+      <MemberSignature Language="F#" Value="abstract member Fail : string -&gt; unit" Usage="iComponentDesignerDebugService.Fail message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -81,6 +87,8 @@
       <MemberSignature Language="C#" Value="public int IndentLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 IndentLevel" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IComponentDesignerDebugService.IndentLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndentLevel As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndentLevel : int with get, set" Usage="System.ComponentModel.Design.IComponentDesignerDebugService.IndentLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -108,6 +116,8 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.TraceListenerCollection Listeners { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.TraceListenerCollection Listeners" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IComponentDesignerDebugService.Listeners" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Listeners As TraceListenerCollection" />
+      <MemberSignature Language="F#" Value="member this.Listeners : System.Diagnostics.TraceListenerCollection" Usage="System.ComponentModel.Design.IComponentDesignerDebugService.Listeners" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -135,6 +145,8 @@
       <MemberSignature Language="C#" Value="public void Trace (string message, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Trace(string message, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentDesignerDebugService.Trace(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Trace (message As String, category As String)" />
+      <MemberSignature Language="F#" Value="abstract member Trace : string * string -&gt; unit" Usage="iComponentDesignerDebugService.Trace (message, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

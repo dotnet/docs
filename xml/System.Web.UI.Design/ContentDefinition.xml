@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ContentDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentDefinition extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ContentDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContentDefinition" />
+  <TypeSignature Language="F#" Value="type ContentDefinition = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public ContentDefinition (string id, string content, string designTimeHtml);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string content, string designTimeHtml) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ContentDefinition.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (id As String, content As String, designTimeHtml As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.ContentDefinition : string * string * string -&gt; System.Web.UI.Design.ContentDefinition" Usage="new System.Web.UI.Design.ContentDefinition (id, content, designTimeHtml)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public string ContentPlaceHolderID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentPlaceHolderID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ContentDefinition.ContentPlaceHolderID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentPlaceHolderID As String" />
+      <MemberSignature Language="F#" Value="member this.ContentPlaceHolderID : string" Usage="System.Web.UI.Design.ContentDefinition.ContentPlaceHolderID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -60,6 +66,8 @@
       <MemberSignature Language="C#" Value="public string DefaultContent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultContent" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ContentDefinition.DefaultContent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultContent As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultContent : string" Usage="System.Web.UI.Design.ContentDefinition.DefaultContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -78,6 +86,8 @@
       <MemberSignature Language="C#" Value="public string DefaultDesignTimeHtml { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultDesignTimeHtml" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ContentDefinition.DefaultDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultDesignTimeHtml As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultDesignTimeHtml : string" Usage="System.Web.UI.Design.ContentDefinition.DefaultDesignTimeHtml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

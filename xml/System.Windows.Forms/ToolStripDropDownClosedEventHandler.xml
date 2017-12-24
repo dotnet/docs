@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void ToolStripDropDownClosedEventHandler(object sender, ToolStripDropDownClosedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripDropDownClosedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDownClosedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ToolStripDropDownClosedEventHandler(sender As Object, e As ToolStripDropDownClosedEventArgs)" />
+  <TypeSignature Language="F#" Value="type ToolStripDropDownClosedEventHandler = delegate of obj * ToolStripDropDownClosedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

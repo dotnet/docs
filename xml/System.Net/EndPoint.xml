@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class EndPoint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit EndPoint extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.EndPoint" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class EndPoint" />
+  <TypeSignature Language="F#" Value="type EndPoint = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -37,6 +39,7 @@
       <MemberSignature Language="C#" Value="protected EndPoint ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.EndPoint.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Net.Sockets.AddressFamily AddressFamily { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Sockets.AddressFamily AddressFamily" />
       <MemberSignature Language="DocId" Value="P:System.Net.EndPoint.AddressFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AddressFamily As AddressFamily" />
+      <MemberSignature Language="F#" Value="member this.AddressFamily : System.Net.Sockets.AddressFamily" Usage="System.Net.EndPoint.AddressFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Net.EndPoint Create (System.Net.SocketAddress socketAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.EndPoint Create(class System.Net.SocketAddress socketAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.EndPoint.Create(System.Net.SocketAddress)" />
+      <MemberSignature Language="F#" Value="abstract member Create : System.Net.SocketAddress -&gt; System.Net.EndPoint&#xA;override this.Create : System.Net.SocketAddress -&gt; System.Net.EndPoint" Usage="endPoint.Create socketAddress" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -131,6 +137,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Net.SocketAddress Serialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.SocketAddress Serialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.EndPoint.Serialize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Serialize () As SocketAddress" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : unit -&gt; System.Net.SocketAddress&#xA;override this.Serialize : unit -&gt; System.Net.SocketAddress" Usage="endPoint.Serialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

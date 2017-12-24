@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class Configuration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Configuration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.Configuration" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Configuration" />
+  <TypeSignature Language="F#" Value="type Configuration = class" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +88,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.AppSettingsSection AppSettings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.AppSettingsSection AppSettings" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.AppSettings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppSettings As AppSettingsSection" />
+      <MemberSignature Language="F#" Value="member this.AppSettings : System.Configuration.AppSettingsSection" Usage="System.Configuration.Configuration.AppSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -123,6 +127,8 @@
       <MemberSignature Language="C#" Value="public Func&lt;string,string&gt; AssemblyStringTransformer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;string, string&gt; AssemblyStringTransformer" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.AssemblyStringTransformer" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssemblyStringTransformer As Func(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.AssemblyStringTransformer : Func&lt;string, string&gt; with get, set" Usage="System.Configuration.Configuration.AssemblyStringTransformer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -152,6 +158,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConnectionStringsSection ConnectionStrings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConnectionStringsSection ConnectionStrings" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.ConnectionStrings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionStrings As ConnectionStringsSection" />
+      <MemberSignature Language="F#" Value="member this.ConnectionStrings : System.Configuration.ConnectionStringsSection" Usage="System.Configuration.Configuration.ConnectionStrings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -189,6 +197,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ContextInformation EvaluationContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ContextInformation EvaluationContext" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.EvaluationContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvaluationContext As ContextInformation" />
+      <MemberSignature Language="F#" Value="member this.EvaluationContext : System.Configuration.ContextInformation" Usage="System.Configuration.Configuration.EvaluationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -227,6 +237,8 @@
       <MemberSignature Language="C#" Value="public string FilePath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FilePath" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.FilePath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilePath As String" />
+      <MemberSignature Language="F#" Value="member this.FilePath : string" Usage="System.Configuration.Configuration.FilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -264,6 +276,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSection GetSection (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSection GetSection(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.GetSection(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSection (path As String) As ConfigurationSection" />
+      <MemberSignature Language="F#" Value="member this.GetSection : string -&gt; System.Configuration.ConfigurationSection" Usage="configuration.GetSection sectionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -305,6 +319,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSectionGroup GetSectionGroup (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSectionGroup GetSectionGroup(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.GetSectionGroup(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSectionGroup (path As String) As ConfigurationSectionGroup" />
+      <MemberSignature Language="F#" Value="member this.GetSectionGroup : string -&gt; System.Configuration.ConfigurationSectionGroup" Usage="configuration.GetSectionGroup sectionGroupName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -338,6 +354,8 @@
       <MemberSignature Language="C#" Value="public bool HasFile { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasFile" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.HasFile" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasFile As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasFile : bool" Usage="System.Configuration.Configuration.HasFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -378,6 +396,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationLocationCollection Locations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationLocationCollection Locations" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.Locations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Locations As ConfigurationLocationCollection" />
+      <MemberSignature Language="F#" Value="member this.Locations : System.Configuration.ConfigurationLocationCollection" Usage="System.Configuration.Configuration.Locations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -407,6 +427,8 @@
       <MemberSignature Language="C#" Value="public bool NamespaceDeclared { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NamespaceDeclared" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.NamespaceDeclared" />
+      <MemberSignature Language="VB.NET" Value="Public Property NamespaceDeclared As Boolean" />
+      <MemberSignature Language="F#" Value="member this.NamespaceDeclared : bool with get, set" Usage="System.Configuration.Configuration.NamespaceDeclared" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -437,6 +459,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSectionGroup RootSectionGroup { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationSectionGroup RootSectionGroup" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.RootSectionGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootSectionGroup As ConfigurationSectionGroup" />
+      <MemberSignature Language="F#" Value="member this.RootSectionGroup : System.Configuration.ConfigurationSectionGroup" Usage="System.Configuration.Configuration.RootSectionGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -455,10 +479,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the configuration settings contained within this <see cref="T:System.Configuration.Configuration" /> object to the current XML configuration file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Save">
       <MemberSignature Language="C#" Value="public void Save ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.Save" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
+      <MemberSignature Language="F#" Value="member this.Save : unit -&gt; unit" Usage="configuration.Save " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -498,6 +533,8 @@
       <MemberSignature Language="C#" Value="public void Save (System.Configuration.ConfigurationSaveMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(valuetype System.Configuration.ConfigurationSaveMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.Save(System.Configuration.ConfigurationSaveMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (mode As ConfigurationSaveMode)" />
+      <MemberSignature Language="F#" Value="member this.Save : System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="configuration.Save saveMode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -550,6 +587,8 @@
       <MemberSignature Language="C#" Value="public void Save (System.Configuration.ConfigurationSaveMode mode, bool forceUpdateAll);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(valuetype System.Configuration.ConfigurationSaveMode mode, bool forceUpdateAll) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.Save(System.Configuration.ConfigurationSaveMode,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (mode As ConfigurationSaveMode, forceUpdateAll As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Save : System.Configuration.ConfigurationSaveMode * bool -&gt; unit" Usage="configuration.Save (saveMode, forceSaveAll)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -592,10 +631,21 @@
  The configuration file has changed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SaveAs">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the configuration settings contained within this <see cref="T:System.Configuration.Configuration" /> object to the specified XML configuration file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SaveAs">
       <MemberSignature Language="C#" Value="public void SaveAs (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAs(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.SaveAs(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (filename As String)" />
+      <MemberSignature Language="F#" Value="member this.SaveAs : string -&gt; unit" Usage="configuration.SaveAs filename" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -639,6 +689,8 @@
       <MemberSignature Language="C#" Value="public void SaveAs (string filename, System.Configuration.ConfigurationSaveMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAs(string filename, valuetype System.Configuration.ConfigurationSaveMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.SaveAs(System.String,System.Configuration.ConfigurationSaveMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (filename As String, mode As ConfigurationSaveMode)" />
+      <MemberSignature Language="F#" Value="member this.SaveAs : string * System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="configuration.SaveAs (filename, saveMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -682,6 +734,8 @@
       <MemberSignature Language="C#" Value="public void SaveAs (string filename, System.Configuration.ConfigurationSaveMode mode, bool forceUpdateAll);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAs(string filename, valuetype System.Configuration.ConfigurationSaveMode mode, bool forceUpdateAll) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.SaveAs(System.String,System.Configuration.ConfigurationSaveMode,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (filename As String, mode As ConfigurationSaveMode, forceUpdateAll As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.SaveAs : string * System.Configuration.ConfigurationSaveMode * bool -&gt; unit" Usage="configuration.SaveAs (filename, saveMode, forceSaveAll)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -732,6 +786,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSectionGroupCollection SectionGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationSectionGroupCollection SectionGroups" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.SectionGroups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SectionGroups As ConfigurationSectionGroupCollection" />
+      <MemberSignature Language="F#" Value="member this.SectionGroups : System.Configuration.ConfigurationSectionGroupCollection" Usage="System.Configuration.Configuration.SectionGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -769,6 +825,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSectionCollection Sections { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationSectionCollection Sections" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.Sections" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sections As ConfigurationSectionCollection" />
+      <MemberSignature Language="F#" Value="member this.Sections : System.Configuration.ConfigurationSectionCollection" Usage="System.Configuration.Configuration.Sections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -806,6 +864,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Versioning.FrameworkName TargetFramework { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Versioning.FrameworkName TargetFramework" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.TargetFramework" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetFramework As FrameworkName" />
+      <MemberSignature Language="F#" Value="member this.TargetFramework : System.Runtime.Versioning.FrameworkName with get, set" Usage="System.Configuration.Configuration.TargetFramework" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -837,6 +897,8 @@
       <MemberSignature Language="C#" Value="public Func&lt;string,string&gt; TypeStringTransformer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;string, string&gt; TypeStringTransformer" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.TypeStringTransformer" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeStringTransformer As Func(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.TypeStringTransformer : Func&lt;string, string&gt; with get, set" Usage="System.Configuration.Configuration.TypeStringTransformer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -862,23 +924,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SaveAs">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the configuration settings contained within this <see cref="T:System.Configuration.Configuration" /> object to the specified XML configuration file.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Save">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the configuration settings contained within this <see cref="T:System.Configuration.Configuration" /> object to the current XML configuration file.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

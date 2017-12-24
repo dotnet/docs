@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class LinkTarget" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LinkTarget extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.LinkTarget" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LinkTarget" />
+  <TypeSignature Language="F#" Value="type LinkTarget = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="public LinkTarget ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.LinkTarget.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.LinkTarget.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Documents.LinkTarget.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

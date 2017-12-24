@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class AuthorizationContext : System.IdentityModel.Policy.IAuthorizationComponent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AuthorizationContext extends System.Object implements class System.IdentityModel.Policy.IAuthorizationComponent" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Policy.AuthorizationContext" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class AuthorizationContext&#xA;Implements IAuthorizationComponent" />
+  <TypeSignature Language="F#" Value="type AuthorizationContext = class&#xA;    interface IAuthorizationComponent" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="protected AuthorizationContext ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Policy.AuthorizationContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Claims.ClaimSet&gt; ClaimSets { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Claims.ClaimSet&gt; ClaimSets" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.AuthorizationContext.ClaimSets" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ClaimSets As ReadOnlyCollection(Of ClaimSet)" />
+      <MemberSignature Language="F#" Value="member this.ClaimSets : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Claims.ClaimSet&gt;" Usage="System.IdentityModel.Policy.AuthorizationContext.ClaimSets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -93,6 +98,8 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Policy.AuthorizationContext CreateDefaultAuthorizationContext (System.Collections.Generic.IList&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; policies);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Policy.AuthorizationContext CreateDefaultAuthorizationContext(class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; policies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Policy.AuthorizationContext.CreateDefaultAuthorizationContext(System.Collections.Generic.IList{System.IdentityModel.Policy.IAuthorizationPolicy})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDefaultAuthorizationContext (policies As IList(Of IAuthorizationPolicy)) As AuthorizationContext" />
+      <MemberSignature Language="F#" Value="static member CreateDefaultAuthorizationContext : System.Collections.Generic.IList&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; -&gt; System.IdentityModel.Policy.AuthorizationContext" Usage="System.IdentityModel.Policy.AuthorizationContext.CreateDefaultAuthorizationContext authorizationPolicies" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -122,6 +129,8 @@
       <MemberSignature Language="C#" Value="public abstract DateTime ExpirationTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ExpirationTime" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.AuthorizationContext.ExpirationTime" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ExpirationTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.ExpirationTime : DateTime" Usage="System.IdentityModel.Policy.AuthorizationContext.ExpirationTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -150,7 +159,12 @@
       <MemberSignature Language="C#" Value="public abstract string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.AuthorizationContext.Id" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.IdentityModel.Policy.AuthorizationContext.Id" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IdentityModel.Policy.IAuthorizationComponent.Id</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -175,6 +189,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IDictionary&lt;string,object&gt; Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Properties" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.AuthorizationContext.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Properties As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.IdentityModel.Policy.AuthorizationContext.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

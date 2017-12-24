@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ExeConfigurationFileMap : System.Configuration.ConfigurationFileMap" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExeConfigurationFileMap extends System.Configuration.ConfigurationFileMap" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ExeConfigurationFileMap" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExeConfigurationFileMap&#xA;Inherits ConfigurationFileMap" />
+  <TypeSignature Language="F#" Value="type ExeConfigurationFileMap = class&#xA;    inherit ConfigurationFileMap" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,10 +35,20 @@
     <altmember cref="T:System.Web.Configuration.WebConfigurationFileMap" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ExeConfigurationFileMap" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ExeConfigurationFileMap ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ExeConfigurationFileMap.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -56,6 +68,8 @@
       <MemberSignature Language="C#" Value="public ExeConfigurationFileMap (string machineConfigFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string machineConfigFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ExeConfigurationFileMap.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (machineConfigFileName As String)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ExeConfigurationFileMap : string -&gt; System.Configuration.ExeConfigurationFileMap" Usage="new System.Configuration.ExeConfigurationFileMap machineConfigFileName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -85,6 +99,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ExeConfigurationFileMap.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="exeConfigurationFileMap.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -108,6 +124,8 @@
       <MemberSignature Language="C#" Value="public string ExeConfigFilename { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExeConfigFilename" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ExeConfigurationFileMap.ExeConfigFilename" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExeConfigFilename As String" />
+      <MemberSignature Language="F#" Value="member this.ExeConfigFilename : string with get, set" Usage="System.Configuration.ExeConfigurationFileMap.ExeConfigFilename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -130,6 +148,8 @@
       <MemberSignature Language="C#" Value="public string LocalUserConfigFilename { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalUserConfigFilename" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ExeConfigurationFileMap.LocalUserConfigFilename" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalUserConfigFilename As String" />
+      <MemberSignature Language="F#" Value="member this.LocalUserConfigFilename : string with get, set" Usage="System.Configuration.ExeConfigurationFileMap.LocalUserConfigFilename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -152,6 +172,8 @@
       <MemberSignature Language="C#" Value="public string RoamingUserConfigFilename { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RoamingUserConfigFilename" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ExeConfigurationFileMap.RoamingUserConfigFilename" />
+      <MemberSignature Language="VB.NET" Value="Public Property RoamingUserConfigFilename As String" />
+      <MemberSignature Language="F#" Value="member this.RoamingUserConfigFilename : string with get, set" Usage="System.Configuration.ExeConfigurationFileMap.RoamingUserConfigFilename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -170,14 +192,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ExeConfigurationFileMap" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

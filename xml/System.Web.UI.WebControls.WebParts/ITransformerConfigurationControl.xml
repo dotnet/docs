@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface ITransformerConfigurationControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITransformerConfigurationControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITransformerConfigurationControl" />
+  <TypeSignature Language="F#" Value="type ITransformerConfigurationControl = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,9 +24,11 @@
   </Docs>
   <Members>
     <Member MemberName="Cancelled">
-      <MemberSignature Language="C#" Value="public event EventHandler Cancelled;" />
+      <MemberSignature Language="C#" Value="event EventHandler Cancelled;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Cancelled" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl.Cancelled" />
+      <MemberSignature Language="VB.NET" Value="Event Cancelled As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Cancelled : EventHandler " Usage="member this.Cancelled : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,9 +50,11 @@
       </Docs>
     </Member>
     <Member MemberName="Succeeded">
-      <MemberSignature Language="C#" Value="public event EventHandler Succeeded;" />
+      <MemberSignature Language="C#" Value="event EventHandler Succeeded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Succeeded" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl.Succeeded" />
+      <MemberSignature Language="VB.NET" Value="Event Succeeded As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Succeeded : EventHandler " Usage="member this.Succeeded : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

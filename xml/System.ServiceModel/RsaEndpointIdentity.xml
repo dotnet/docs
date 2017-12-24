@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class RsaEndpointIdentity : System.ServiceModel.EndpointIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RsaEndpointIdentity extends System.ServiceModel.EndpointIdentity" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.RsaEndpointIdentity" />
+  <TypeSignature Language="VB.NET" Value="Public Class RsaEndpointIdentity&#xA;Inherits EndpointIdentity" />
+  <TypeSignature Language="F#" Value="type RsaEndpointIdentity = class&#xA;    inherit EndpointIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.RsaEndpointIdentity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RsaEndpointIdentity (System.IdentityModel.Claims.Claim identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Claims.Claim identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.RsaEndpointIdentity.#ctor(System.IdentityModel.Claims.Claim)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As Claim)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.RsaEndpointIdentity : System.IdentityModel.Claims.Claim -&gt; System.ServiceModel.RsaEndpointIdentity" Usage="new System.ServiceModel.RsaEndpointIdentity identity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -47,6 +60,8 @@
       <MemberSignature Language="C#" Value="public RsaEndpointIdentity (System.Security.Cryptography.X509Certificates.X509Certificate2 cert);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate2 cert) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.RsaEndpointIdentity.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cert As X509Certificate2)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.RsaEndpointIdentity : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.ServiceModel.RsaEndpointIdentity" Usage="new System.ServiceModel.RsaEndpointIdentity certificate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +91,8 @@
       <MemberSignature Language="C#" Value="public RsaEndpointIdentity (string publicKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string publicKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.RsaEndpointIdentity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (publicKey As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.RsaEndpointIdentity : string -&gt; System.ServiceModel.RsaEndpointIdentity" Usage="new System.ServiceModel.RsaEndpointIdentity publicKey" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,14 +116,5 @@
           <paramref name="publicKey" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.RsaEndpointIdentity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

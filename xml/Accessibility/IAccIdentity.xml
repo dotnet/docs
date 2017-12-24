@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IAccIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAccIdentity" />
   <TypeSignature Language="DocId" Value="T:Accessibility.IAccIdentity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAccIdentity" />
+  <TypeSignature Language="F#" Value="type IAccIdentity = interface" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public void GetIdentityString (uint dwIDChild, IntPtr ppIDString, out uint pdwIDStringLen);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetIdentityString([in]unsigned int32 dwIDChild, [out] native int ppIDString, [out] unsigned int32&amp; pdwIDStringLen) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccIdentity.GetIdentityString(System.UInt32,System.IntPtr,System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetIdentityString (dwIDChild As UInteger, ppIDString As IntPtr, ByRef pdwIDStringLen As UInteger)" />
+      <MemberSignature Language="F#" Value="abstract member GetIdentityString : uint32 * nativeint *  -&gt; unit" Usage="iAccIdentity.GetIdentityString (dwIDChild, ppIDString, pdwIDStringLen)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class CspParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CspParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CspParameters" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CspParameters" />
+  <TypeSignature Language="F#" Value="type CspParameters = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,10 +62,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CspParameters" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CspParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CspParameters.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -107,6 +120,8 @@
       <MemberSignature Language="C#" Value="public CspParameters (int dwTypeIn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 dwTypeIn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CspParameters.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dwTypeIn As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CspParameters : int -&gt; System.Security.Cryptography.CspParameters" Usage="new System.Security.Cryptography.CspParameters dwTypeIn" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -157,6 +172,8 @@
       <MemberSignature Language="C#" Value="public CspParameters (int dwTypeIn, string strProviderNameIn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 dwTypeIn, string strProviderNameIn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CspParameters.#ctor(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dwTypeIn As Integer, strProviderNameIn As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CspParameters : int * string -&gt; System.Security.Cryptography.CspParameters" Usage="new System.Security.Cryptography.CspParameters (dwTypeIn, strProviderNameIn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -211,6 +228,8 @@
       <MemberSignature Language="C#" Value="public CspParameters (int dwTypeIn, string strProviderNameIn, string strContainerNameIn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 dwTypeIn, string strProviderNameIn, string strContainerNameIn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CspParameters.#ctor(System.Int32,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dwTypeIn As Integer, strProviderNameIn As String, strContainerNameIn As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CspParameters : int * string * string -&gt; System.Security.Cryptography.CspParameters" Usage="new System.Security.Cryptography.CspParameters (dwTypeIn, strProviderNameIn, strContainerNameIn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -260,6 +279,7 @@
       <MemberSignature Language="C#" Value="public CspParameters (int providerType, string providerName, string keyContainerName, System.Security.AccessControl.CryptoKeySecurity cryptoKeySecurity, IntPtr parentWindowHandle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 providerType, string providerName, string keyContainerName, class System.Security.AccessControl.CryptoKeySecurity cryptoKeySecurity, native int parentWindowHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CspParameters.#ctor(System.Int32,System.String,System.String,System.Security.AccessControl.CryptoKeySecurity,System.IntPtr)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CspParameters : int * string * string * System.Security.AccessControl.CryptoKeySecurity * nativeint -&gt; System.Security.Cryptography.CspParameters" Usage="new System.Security.Cryptography.CspParameters (providerType, providerName, keyContainerName, cryptoKeySecurity, parentWindowHandle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -302,6 +322,7 @@
       <MemberSignature Language="C#" Value="public CspParameters (int providerType, string providerName, string keyContainerName, System.Security.AccessControl.CryptoKeySecurity cryptoKeySecurity, System.Security.SecureString keyPassword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 providerType, string providerName, string keyContainerName, class System.Security.AccessControl.CryptoKeySecurity cryptoKeySecurity, class System.Security.SecureString keyPassword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CspParameters.#ctor(System.Int32,System.String,System.String,System.Security.AccessControl.CryptoKeySecurity,System.Security.SecureString)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CspParameters : int * string * string * System.Security.AccessControl.CryptoKeySecurity * System.Security.SecureString -&gt; System.Security.Cryptography.CspParameters" Usage="new System.Security.Cryptography.CspParameters (providerType, providerName, keyContainerName, cryptoKeySecurity, keyPassword)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -344,6 +365,8 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.CryptoKeySecurity CryptoKeySecurity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.AccessControl.CryptoKeySecurity CryptoKeySecurity" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspParameters.CryptoKeySecurity" />
+      <MemberSignature Language="VB.NET" Value="Public Property CryptoKeySecurity As CryptoKeySecurity" />
+      <MemberSignature Language="F#" Value="member this.CryptoKeySecurity : System.Security.AccessControl.CryptoKeySecurity with get, set" Usage="System.Security.Cryptography.CspParameters.CryptoKeySecurity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -370,6 +393,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CspProviderFlags Flags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.CspProviderFlags Flags" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspParameters.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public Property Flags As CspProviderFlags" />
+      <MemberSignature Language="F#" Value="member this.Flags : System.Security.Cryptography.CspProviderFlags with get, set" Usage="System.Security.Cryptography.CspParameters.Flags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -399,6 +424,8 @@
       <MemberSignature Language="C#" Value="public string KeyContainerName;" />
       <MemberSignature Language="ILAsm" Value=".field public string KeyContainerName" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspParameters.KeyContainerName" />
+      <MemberSignature Language="VB.NET" Value="Public KeyContainerName As String " />
+      <MemberSignature Language="F#" Value="val mutable KeyContainerName : string" Usage="System.Security.Cryptography.CspParameters.KeyContainerName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -444,6 +471,8 @@
       <MemberSignature Language="C#" Value="public int KeyNumber;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 KeyNumber" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspParameters.KeyNumber" />
+      <MemberSignature Language="VB.NET" Value="Public KeyNumber As Integer " />
+      <MemberSignature Language="F#" Value="val mutable KeyNumber : int" Usage="System.Security.Cryptography.CspParameters.KeyNumber" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -493,6 +522,8 @@
       <MemberSignature Language="C#" Value="public System.Security.SecureString KeyPassword { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.SecureString KeyPassword" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspParameters.KeyPassword" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyPassword As SecureString" />
+      <MemberSignature Language="F#" Value="member this.KeyPassword : System.Security.SecureString with get, set" Usage="System.Security.Cryptography.CspParameters.KeyPassword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -527,6 +558,8 @@
       <MemberSignature Language="C#" Value="public IntPtr ParentWindowHandle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int ParentWindowHandle" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspParameters.ParentWindowHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentWindowHandle As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.ParentWindowHandle : nativeint with get, set" Usage="System.Security.Cryptography.CspParameters.ParentWindowHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -564,6 +597,8 @@
       <MemberSignature Language="C#" Value="public string ProviderName;" />
       <MemberSignature Language="ILAsm" Value=".field public string ProviderName" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspParameters.ProviderName" />
+      <MemberSignature Language="VB.NET" Value="Public ProviderName As String " />
+      <MemberSignature Language="F#" Value="val mutable ProviderName : string" Usage="System.Security.Cryptography.CspParameters.ProviderName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -598,6 +633,8 @@
       <MemberSignature Language="C#" Value="public int ProviderType;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 ProviderType" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspParameters.ProviderType" />
+      <MemberSignature Language="VB.NET" Value="Public ProviderType As Integer " />
+      <MemberSignature Language="F#" Value="val mutable ProviderType : int" Usage="System.Security.Cryptography.CspParameters.ProviderType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -657,15 +694,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CspParameters" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

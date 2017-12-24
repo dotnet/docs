@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class TypeSchema : System.Web.UI.Design.IDataSourceSchema" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeSchema extends System.Object implements class System.Web.UI.Design.IDataSourceSchema" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TypeSchema" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeSchema&#xA;Implements IDataSourceSchema" />
+  <TypeSignature Language="F#" Value="type TypeSchema = class&#xA;    interface IDataSourceSchema" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,7 @@
       <MemberSignature Language="C#" Value="public TypeSchema (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TypeSchema.#ctor(System.Type)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.TypeSchema : Type -&gt; System.Web.UI.Design.TypeSchema" Usage="new System.Web.UI.Design.TypeSchema type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -54,7 +57,12 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.IDataSourceViewSchema[] GetViews ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.IDataSourceViewSchema[] GetViews() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TypeSchema.GetViews" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetViews () As IDataSourceViewSchema()" />
+      <MemberSignature Language="F#" Value="abstract member GetViews : unit -&gt; System.Web.UI.Design.IDataSourceViewSchema[]&#xA;override this.GetViews : unit -&gt; System.Web.UI.Design.IDataSourceViewSchema[]" Usage="typeSchema.GetViews " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.Design.IDataSourceSchema.GetViews</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

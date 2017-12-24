@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void StatusBarPanelClickEventHandler(object sender, StatusBarPanelClickEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatusBarPanelClickEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanelClickEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub StatusBarPanelClickEventHandler(sender As Object, e As StatusBarPanelClickEventArgs)" />
+  <TypeSignature Language="F#" Value="type StatusBarPanelClickEventHandler = delegate of obj * StatusBarPanelClickEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class FormatNumberEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormatNumberEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.FormatNumberEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class FormatNumberEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type FormatNumberEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartElementType ElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartElementType ElementType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.FormatNumberEventArgs.ElementType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementType As ChartElementType" />
+      <MemberSignature Language="F#" Value="member this.ElementType : System.Web.UI.DataVisualization.Charting.ChartElementType" Usage="System.Web.UI.DataVisualization.Charting.FormatNumberEventArgs.ElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public string Format { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Format" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.FormatNumberEventArgs.Format" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As String" />
+      <MemberSignature Language="F#" Value="member this.Format : string" Usage="System.Web.UI.DataVisualization.Charting.FormatNumberEventArgs.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -55,6 +61,8 @@
       <MemberSignature Language="C#" Value="public string LocalizedValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalizedValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.FormatNumberEventArgs.LocalizedValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalizedValue As String" />
+      <MemberSignature Language="F#" Value="member this.LocalizedValue : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.FormatNumberEventArgs.LocalizedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="public object SenderTag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SenderTag" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.FormatNumberEventArgs.SenderTag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SenderTag As Object" />
+      <MemberSignature Language="F#" Value="member this.SenderTag : obj" Usage="System.Web.UI.DataVisualization.Charting.FormatNumberEventArgs.SenderTag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -91,6 +101,8 @@
       <MemberSignature Language="C#" Value="public double Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Value" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.FormatNumberEventArgs.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Double" />
+      <MemberSignature Language="F#" Value="member this.Value : double" Usage="System.Web.UI.DataVisualization.Charting.FormatNumberEventArgs.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -109,6 +121,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartValueType ValueType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartValueType ValueType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.FormatNumberEventArgs.ValueType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueType As ChartValueType" />
+      <MemberSignature Language="F#" Value="member this.ValueType : System.Web.UI.DataVisualization.Charting.ChartValueType" Usage="System.Web.UI.DataVisualization.Charting.FormatNumberEventArgs.ValueType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

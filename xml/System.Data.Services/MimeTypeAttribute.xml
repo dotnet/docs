@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class MimeTypeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MimeTypeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.MimeTypeAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MimeTypeAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type MimeTypeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public MimeTypeAttribute (string memberName, string mimeType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string memberName, string mimeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.MimeTypeAttribute.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (memberName As String, mimeType As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.MimeTypeAttribute : string * string -&gt; System.Data.Services.MimeTypeAttribute" Usage="new System.Data.Services.MimeTypeAttribute (memberName, mimeType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public string MemberName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MemberName" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.MimeTypeAttribute.MemberName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberName As String" />
+      <MemberSignature Language="F#" Value="member this.MemberName : string" Usage="System.Data.Services.MimeTypeAttribute.MemberName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -69,6 +75,8 @@
       <MemberSignature Language="C#" Value="public string MimeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MimeType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.MimeTypeAttribute.MimeType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MimeType As String" />
+      <MemberSignature Language="F#" Value="member this.MimeType : string" Usage="System.Data.Services.MimeTypeAttribute.MimeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

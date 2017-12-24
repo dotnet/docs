@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class X509SubjectKeyIdentifierClause : System.IdentityModel.Tokens.BinaryKeyIdentifierClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509SubjectKeyIdentifierClause extends System.IdentityModel.Tokens.BinaryKeyIdentifierClause" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause" />
+  <TypeSignature Language="VB.NET" Value="Public Class X509SubjectKeyIdentifierClause&#xA;Inherits BinaryKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type X509SubjectKeyIdentifierClause = class&#xA;    inherit BinaryKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public X509SubjectKeyIdentifierClause (byte[] certificateSubject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] certificateSubject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (certificateSubject As Byte())" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause : byte[] -&gt; System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause ski" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public static bool CanCreateFrom (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanCreateFrom(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.CanCreateFrom(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CanCreateFrom (certificate As X509Certificate2) As Boolean" />
+      <MemberSignature Language="F#" Value="static member CanCreateFrom : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; bool" Usage="System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.CanCreateFrom certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="public byte[] GetX509SubjectKeyIdentifier ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetX509SubjectKeyIdentifier() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.GetX509SubjectKeyIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetX509SubjectKeyIdentifier () As Byte()" />
+      <MemberSignature Language="F#" Value="member this.GetX509SubjectKeyIdentifier : unit -&gt; byte[]" Usage="x509SubjectKeyIdentifierClause.GetX509SubjectKeyIdentifier " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -107,6 +115,8 @@
       <MemberSignature Language="C#" Value="public bool Matches (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.Matches(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Matches (certificate As X509Certificate2) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; bool" Usage="x509SubjectKeyIdentifierClause.Matches certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -139,6 +149,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="x509SubjectKeyIdentifierClause.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -165,6 +177,8 @@
       <MemberSignature Language="C#" Value="public static bool TryCreateFrom (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, out System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause clause);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreateFrom(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, [out] class System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause&amp; clause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.TryCreateFrom(System.Security.Cryptography.X509Certificates.X509Certificate2,System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryCreateFrom (certificate As X509Certificate2, ByRef clause As X509SubjectKeyIdentifierClause) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryCreateFrom : System.Security.Cryptography.X509Certificates.X509Certificate2 *  -&gt; bool" Usage="System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.TryCreateFrom (certificate, keyIdentifierClause)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

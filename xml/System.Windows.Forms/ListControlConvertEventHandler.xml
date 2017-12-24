@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void ListControlConvertEventHandler(object sender, ListControlConvertEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListControlConvertEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListControlConvertEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ListControlConvertEventHandler(sender As Object, e As ListControlConvertEventArgs)" />
+  <TypeSignature Language="F#" Value="type ListControlConvertEventHandler = delegate of obj * ListControlConvertEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

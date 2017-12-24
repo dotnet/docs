@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class DynamicUpdateMapBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicUpdateMapBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicUpdateMapBuilder" />
+  <TypeSignature Language="F#" Value="type DynamicUpdateMapBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,7 @@
       <MemberSignature Language="C#" Value="public DynamicUpdateMapBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -55,10 +58,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateMap">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates map for the <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateMap">
       <MemberSignature Language="C#" Value="public System.Activities.DynamicUpdate.DynamicUpdateMap CreateMap ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.DynamicUpdate.DynamicUpdateMap CreateMap() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.CreateMap" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateMap () As DynamicUpdateMap" />
+      <MemberSignature Language="F#" Value="member this.CreateMap : unit -&gt; System.Activities.DynamicUpdate.DynamicUpdateMap" Usage="dynamicUpdateMapBuilder.CreateMap " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -78,6 +92,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DynamicUpdate.DynamicUpdateMap CreateMap (out System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt; activitiesBlockingUpdate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.DynamicUpdate.DynamicUpdateMap CreateMap([out] class System.Collections.Generic.IList`1&lt;class System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;&amp; activitiesBlockingUpdate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.CreateMap(System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateMap (ByRef activitiesBlockingUpdate As IList(Of ActivityBlockingUpdate)) As DynamicUpdateMap" />
+      <MemberSignature Language="F#" Value="member this.CreateMap :  -&gt; System.Activities.DynamicUpdate.DynamicUpdateMap" Usage="dynamicUpdateMapBuilder.CreateMap activitiesBlockingUpdate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -100,6 +116,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ISet&lt;System.Activities.Activity&gt; DisallowUpdateInside { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ISet`1&lt;class System.Activities.Activity&gt; DisallowUpdateInside" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.DisallowUpdateInside" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisallowUpdateInside As ISet(Of Activity)" />
+      <MemberSignature Language="F#" Value="member this.DisallowUpdateInside : System.Collections.Generic.ISet&lt;System.Activities.Activity&gt;" Usage="System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.DisallowUpdateInside" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -118,6 +136,8 @@
       <MemberSignature Language="C#" Value="public bool ForImplementation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ForImplementation" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.ForImplementation" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForImplementation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ForImplementation : bool with get, set" Usage="System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.ForImplementation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -137,6 +157,8 @@
       <MemberSignature Language="C#" Value="public Func&lt;System.Activities.Activity,System.Activities.DynamicUpdate.DynamicUpdateMap&gt; LookupImplementationMap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;class System.Activities.Activity, class System.Activities.DynamicUpdate.DynamicUpdateMap&gt; LookupImplementationMap" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.LookupImplementationMap" />
+      <MemberSignature Language="VB.NET" Value="Public Property LookupImplementationMap As Func(Of Activity, DynamicUpdateMap)" />
+      <MemberSignature Language="F#" Value="member this.LookupImplementationMap : Func&lt;System.Activities.Activity, System.Activities.DynamicUpdate.DynamicUpdateMap&gt; with get, set" Usage="System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.LookupImplementationMap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -155,6 +177,8 @@
       <MemberSignature Language="C#" Value="public Func&lt;object,System.Activities.DynamicUpdate.DynamicUpdateMapItem&gt; LookupMapItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;object, class System.Activities.DynamicUpdate.DynamicUpdateMapItem&gt; LookupMapItem" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.LookupMapItem" />
+      <MemberSignature Language="VB.NET" Value="Public Property LookupMapItem As Func(Of Object, DynamicUpdateMapItem)" />
+      <MemberSignature Language="F#" Value="member this.LookupMapItem : Func&lt;obj, System.Activities.DynamicUpdate.DynamicUpdateMapItem&gt; with get, set" Usage="System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.LookupMapItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -173,6 +197,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.LocationReferenceEnvironment OriginalEnvironment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.LocationReferenceEnvironment OriginalEnvironment" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.OriginalEnvironment" />
+      <MemberSignature Language="VB.NET" Value="Public Property OriginalEnvironment As LocationReferenceEnvironment" />
+      <MemberSignature Language="F#" Value="member this.OriginalEnvironment : System.Activities.LocationReferenceEnvironment with get, set" Usage="System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.OriginalEnvironment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -191,6 +217,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Activity OriginalWorkflowDefinition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity OriginalWorkflowDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.OriginalWorkflowDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property OriginalWorkflowDefinition As Activity" />
+      <MemberSignature Language="F#" Value="member this.OriginalWorkflowDefinition : System.Activities.Activity with get, set" Usage="System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.OriginalWorkflowDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -209,6 +237,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.LocationReferenceEnvironment UpdatedEnvironment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.LocationReferenceEnvironment UpdatedEnvironment" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.UpdatedEnvironment" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdatedEnvironment As LocationReferenceEnvironment" />
+      <MemberSignature Language="F#" Value="member this.UpdatedEnvironment : System.Activities.LocationReferenceEnvironment with get, set" Usage="System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.UpdatedEnvironment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -227,6 +257,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Activity UpdatedWorkflowDefinition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity UpdatedWorkflowDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.UpdatedWorkflowDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdatedWorkflowDefinition As Activity" />
+      <MemberSignature Language="F#" Value="member this.UpdatedWorkflowDefinition : System.Activities.Activity with get, set" Usage="System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.UpdatedWorkflowDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -241,14 +273,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateMap">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates map for the <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

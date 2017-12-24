@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ChtmlFormAdapter : System.Web.UI.MobileControls.Adapters.HtmlFormAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChtmlFormAdapter extends System.Web.UI.MobileControls.Adapters.HtmlFormAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.ChtmlFormAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChtmlFormAdapter&#xA;Inherits HtmlFormAdapter" />
+  <TypeSignature Language="F#" Value="type ChtmlFormAdapter = class&#xA;    inherit HtmlFormAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,7 @@
       <MemberSignature Language="C#" Value="public ChtmlFormAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlFormAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="protected override bool RenderExtraHeadElements (System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool RenderExtraHeadElements(class System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlFormAdapter.RenderExtraHeadElements(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function RenderExtraHeadElements (writer As HtmlMobileTextWriter) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.RenderExtraHeadElements : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; bool" Usage="chtmlFormAdapter.RenderExtraHeadElements writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -61,9 +66,11 @@
       </Docs>
     </Member>
     <Member MemberName="RenderPagerTag">
-      <MemberSignature Language="C#" Value="protected override void RenderPagerTag (System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer, int pageToNavigate, string text);" />
+      <MemberSignature Language="C#" Value="protected internal override void RenderPagerTag (System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer, int pageToNavigate, string text);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderPagerTag(class System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer, int32 pageToNavigate, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlFormAdapter.RenderPagerTag(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderPagerTag (writer As HtmlMobileTextWriter, pageToNavigate As Integer, text As String)" />
+      <MemberSignature Language="F#" Value="override this.RenderPagerTag : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter * int * string -&gt; unit" Usage="chtmlFormAdapter.RenderPagerTag (writer, pageToNavigate, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -90,6 +97,8 @@
       <MemberSignature Language="C#" Value="protected override bool ShouldRenderFormTag ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ShouldRenderFormTag() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlFormAdapter.ShouldRenderFormTag" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ShouldRenderFormTag () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ShouldRenderFormTag : unit -&gt; bool" Usage="chtmlFormAdapter.ShouldRenderFormTag " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

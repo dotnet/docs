@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class RSAKeyValue : System.Security.Cryptography.Xml.KeyInfoClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RSAKeyValue extends System.Security.Cryptography.Xml.KeyInfoClause" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.RSAKeyValue" />
+  <TypeSignature Language="VB.NET" Value="Public Class RSAKeyValue&#xA;Inherits KeyInfoClause" />
+  <TypeSignature Language="F#" Value="type RSAKeyValue = class&#xA;    inherit KeyInfoClause" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,10 +49,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.RSAKeyValue" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RSAKeyValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.RSAKeyValue.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -77,6 +89,8 @@
       <MemberSignature Language="C#" Value="public RSAKeyValue (System.Security.Cryptography.RSA key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.RSA key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.RSAKeyValue.#ctor(System.Security.Cryptography.RSA)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (key As RSA)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.RSAKeyValue : System.Security.Cryptography.RSA -&gt; System.Security.Cryptography.Xml.RSAKeyValue" Usage="new System.Security.Cryptography.Xml.RSAKeyValue key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -116,6 +130,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlElement GetXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.RSAKeyValue.GetXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetXml () As XmlElement" />
+      <MemberSignature Language="F#" Value="override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="rSAKeyValue.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -139,6 +155,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.RSA Key { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.RSA Key" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.RSAKeyValue.Key" />
+      <MemberSignature Language="VB.NET" Value="Public Property Key As RSA" />
+      <MemberSignature Language="F#" Value="member this.Key : System.Security.Cryptography.RSA with get, set" Usage="System.Security.Cryptography.Xml.RSAKeyValue.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -170,6 +188,8 @@
       <MemberSignature Language="C#" Value="public override void LoadXml (System.Xml.XmlElement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.RSAKeyValue.LoadXml(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadXml (value As XmlElement)" />
+      <MemberSignature Language="F#" Value="override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="rSAKeyValue.LoadXml value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -193,14 +213,5 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">The <paramref name="value" /> parameter is not a valid <see cref="T:System.Security.Cryptography.RSA" /> key clause XML element.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.RSAKeyValue" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IXamlSchemaContextProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlSchemaContextProvider" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlSchemaContextProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXamlSchemaContextProvider" />
+  <TypeSignature Language="F#" Value="type IXamlSchemaContextProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public System.Xaml.XamlSchemaContext SchemaContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlSchemaContext SchemaContext" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.IXamlSchemaContextProvider.SchemaContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaContext As XamlSchemaContext" />
+      <MemberSignature Language="F#" Value="member this.SchemaContext : System.Xaml.XamlSchemaContext" Usage="System.Xaml.IXamlSchemaContextProvider.SchemaContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

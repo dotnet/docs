@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class CompositionContract" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CompositionContract extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.CompositionContract" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompositionContract" />
+  <TypeSignature Language="F#" Value="type CompositionContract = class" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Runtime</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public CompositionContract (Type contractType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type contractType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contractType As Type)" />
+      <MemberSignature Language="F#" Value="new System.Composition.Hosting.Core.CompositionContract : Type -&gt; System.Composition.Hosting.Core.CompositionContract" Usage="new System.Composition.Hosting.Core.CompositionContract contractType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public CompositionContract (Type contractType, string contractName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type contractType, string contractName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.#ctor(System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contractType As Type, contractName As String)" />
+      <MemberSignature Language="F#" Value="new System.Composition.Hosting.Core.CompositionContract : Type * string -&gt; System.Composition.Hosting.Core.CompositionContract" Usage="new System.Composition.Hosting.Core.CompositionContract (contractType, contractName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -63,6 +69,8 @@
       <MemberSignature Language="C#" Value="public CompositionContract (Type contractType, string contractName, System.Collections.Generic.IDictionary&lt;string,object&gt; metadataConstraints);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type contractType, string contractName, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; metadataConstraints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.#ctor(System.Type,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contractType As Type, contractName As String, metadataConstraints As IDictionary(Of String, Object))" />
+      <MemberSignature Language="F#" Value="new System.Composition.Hosting.Core.CompositionContract : Type * string * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Composition.Hosting.Core.CompositionContract" Usage="new System.Composition.Hosting.Core.CompositionContract (contractType, contractName, metadataConstraints)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -87,6 +95,8 @@
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.Core.CompositionContract ChangeType (Type newContractType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.Core.CompositionContract ChangeType(class System.Type newContractType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.ChangeType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ChangeType (newContractType As Type) As CompositionContract" />
+      <MemberSignature Language="F#" Value="member this.ChangeType : Type -&gt; System.Composition.Hosting.Core.CompositionContract" Usage="compositionContract.ChangeType newContractType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -111,6 +121,8 @@
       <MemberSignature Language="C#" Value="public string ContractName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContractName" />
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.CompositionContract.ContractName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractName As String" />
+      <MemberSignature Language="F#" Value="member this.ContractName : string" Usage="System.Composition.Hosting.Core.CompositionContract.ContractName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -131,6 +143,8 @@
       <MemberSignature Language="C#" Value="public Type ContractType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ContractType" />
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.CompositionContract.ContractType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractType As Type" />
+      <MemberSignature Language="F#" Value="member this.ContractType : Type" Usage="System.Composition.Hosting.Core.CompositionContract.ContractType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -151,6 +165,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="compositionContract.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -176,6 +192,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="compositionContract.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -197,6 +215,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; MetadataConstraints { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; MetadataConstraints" />
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.CompositionContract.MetadataConstraints" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataConstraints As IEnumerable(Of KeyValuePair(Of String, Object))" />
+      <MemberSignature Language="F#" Value="member this.MetadataConstraints : seq&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt;" Usage="System.Composition.Hosting.Core.CompositionContract.MetadataConstraints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -217,6 +237,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="compositionContract.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -238,6 +260,8 @@
       <MemberSignature Language="C#" Value="public bool TryUnwrapMetadataConstraint&lt;T&gt; (string constraintName, out T constraintValue, out System.Composition.Hosting.Core.CompositionContract remainingContract);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryUnwrapMetadataConstraint&lt;T&gt;(string constraintName, [out] !!T&amp; constraintValue, [out] class System.Composition.Hosting.Core.CompositionContract&amp; remainingContract) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.TryUnwrapMetadataConstraint``1(System.String,``0@,System.Composition.Hosting.Core.CompositionContract@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryUnwrapMetadataConstraint(Of T) (constraintName As String, ByRef constraintValue As T, ByRef remainingContract As CompositionContract) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryUnwrapMetadataConstraint : string *  *  -&gt; bool" Usage="compositionContract.TryUnwrapMetadataConstraint (constraintName, constraintValue, remainingContract)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>

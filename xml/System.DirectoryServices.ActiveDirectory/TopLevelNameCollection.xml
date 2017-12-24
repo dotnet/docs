@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class TopLevelNameCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TopLevelNameCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.TopLevelNameCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class TopLevelNameCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type TopLevelNameCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.ActiveDirectory.TopLevelName name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.ActiveDirectory.TopLevelName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.TopLevelNameCollection.Contains(System.DirectoryServices.ActiveDirectory.TopLevelName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (name As TopLevelName) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.TopLevelName -&gt; bool" Usage="topLevelNameCollection.Contains name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -47,6 +51,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.ActiveDirectory.TopLevelName[] names, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.ActiveDirectory.TopLevelName[] names, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.TopLevelNameCollection.CopyTo(System.DirectoryServices.ActiveDirectory.TopLevelName[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (names As TopLevelName(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.TopLevelName[] * int -&gt; unit" Usage="topLevelNameCollection.CopyTo (names, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.DirectoryServices.ActiveDirectory.TopLevelName name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.ActiveDirectory.TopLevelName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.TopLevelNameCollection.IndexOf(System.DirectoryServices.ActiveDirectory.TopLevelName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (name As TopLevelName) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.TopLevelName -&gt; int" Usage="topLevelNameCollection.IndexOf name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -104,6 +112,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.TopLevelName this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.TopLevelName Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.TopLevelNameCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As TopLevelName" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.TopLevelName" Usage="System.DirectoryServices.ActiveDirectory.TopLevelNameCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

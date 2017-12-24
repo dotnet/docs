@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IComponentConnector" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponentConnector" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IComponentConnector" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComponentConnector" />
+  <TypeSignature Language="F#" Value="type IComponentConnector = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public void Connect (int connectionId, object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Connect(int32 connectionId, object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IComponentConnector.Connect(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Connect (connectionId As Integer, target As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Connect : int * obj -&gt; unit" Usage="iComponentConnector.Connect (connectionId, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public void InitializeComponent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeComponent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IComponentConnector.InitializeComponent" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InitializeComponent ()" />
+      <MemberSignature Language="F#" Value="abstract member InitializeComponent : unit -&gt; unit" Usage="iComponentConnector.InitializeComponent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

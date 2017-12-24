@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IJSVsaSite" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IJSVsaSite" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.IJSVsaSite" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IJSVsaSite" />
+  <TypeSignature Language="F#" Value="type IJSVsaSite = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public void GetCompiledState (out byte[] pe, out byte[] debugInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetCompiledState([out] unsigned int8[]&amp; pe, [out] unsigned int8[]&amp; debugInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.IJSVsaSite.GetCompiledState(System.Byte[]@,System.Byte[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetCompiledState (ByRef pe As Byte(), ByRef debugInfo As Byte())" />
+      <MemberSignature Language="F#" Value="abstract member GetCompiledState :  *  -&gt; unit" Usage="iJSVsaSite.GetCompiledState (pe, debugInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public object GetEventSourceInstance (string itemName, string eventSourceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetEventSourceInstance(string itemName, string eventSourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.IJSVsaSite.GetEventSourceInstance(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEventSourceInstance (itemName As String, eventSourceName As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetEventSourceInstance : string * string -&gt; obj" Usage="iJSVsaSite.GetEventSourceInstance (itemName, eventSourceName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public object GetGlobalInstance (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetGlobalInstance(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.IJSVsaSite.GetGlobalInstance(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGlobalInstance (name As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetGlobalInstance : string -&gt; obj" Usage="iJSVsaSite.GetGlobalInstance name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -99,6 +107,8 @@
       <MemberSignature Language="C#" Value="public void Notify (string notify, object info);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Notify(string notify, object info) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.IJSVsaSite.Notify(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Notify (notify As String, info As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Notify : string * obj -&gt; unit" Usage="iJSVsaSite.Notify (notify, info)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -122,6 +132,8 @@
       <MemberSignature Language="C#" Value="public bool OnCompilerError (Microsoft.JScript.Vsa.IJSVsaError error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OnCompilerError(class Microsoft.JScript.Vsa.IJSVsaError error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.IJSVsaSite.OnCompilerError(Microsoft.JScript.Vsa.IJSVsaError)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OnCompilerError (error As IJSVsaError) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnCompilerError : Microsoft.JScript.Vsa.IJSVsaError -&gt; bool" Usage="iJSVsaSite.OnCompilerError error" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

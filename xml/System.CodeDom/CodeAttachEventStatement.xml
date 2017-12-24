@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CodeAttachEventStatement : System.CodeDom.CodeStatement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeAttachEventStatement extends System.CodeDom.CodeStatement" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeAttachEventStatement" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeAttachEventStatement&#xA;Inherits CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeAttachEventStatement = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,10 +45,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttachEventStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeAttachEventStatement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttachEventStatement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -66,6 +78,8 @@
       <MemberSignature Language="C#" Value="public CodeAttachEventStatement (System.CodeDom.CodeEventReferenceExpression eventRef, System.CodeDom.CodeExpression listener);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeEventReferenceExpression eventRef, class System.CodeDom.CodeExpression listener) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttachEventStatement.#ctor(System.CodeDom.CodeEventReferenceExpression,System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventRef As CodeEventReferenceExpression, listener As CodeExpression)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeAttachEventStatement : System.CodeDom.CodeEventReferenceExpression * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeAttachEventStatement" Usage="new System.CodeDom.CodeAttachEventStatement (eventRef, listener)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +105,8 @@
       <MemberSignature Language="C#" Value="public CodeAttachEventStatement (System.CodeDom.CodeExpression targetObject, string eventName, System.CodeDom.CodeExpression listener);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression targetObject, string eventName, class System.CodeDom.CodeExpression listener) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttachEventStatement.#ctor(System.CodeDom.CodeExpression,System.String,System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression, eventName As String, listener As CodeExpression)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeAttachEventStatement : System.CodeDom.CodeExpression * string * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeAttachEventStatement" Usage="new System.CodeDom.CodeAttachEventStatement (targetObject, eventName, listener)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,6 +133,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeEventReferenceExpression Event { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeEventReferenceExpression Event" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAttachEventStatement.Event" />
+      <MemberSignature Language="VB.NET" Value="Public Property Event As CodeEventReferenceExpression" />
+      <MemberSignature Language="F#" Value="member this.Event : System.CodeDom.CodeEventReferenceExpression with get, set" Usage="System.CodeDom.CodeAttachEventStatement.Event" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -139,6 +157,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Listener { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Listener" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAttachEventStatement.Listener" />
+      <MemberSignature Language="VB.NET" Value="Public Property Listener As CodeExpression" />
+      <MemberSignature Language="F#" Value="member this.Listener : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeAttachEventStatement.Listener" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -157,14 +177,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttachEventStatement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ActivityAction&lt;T1,T2,T3,T4&gt; : System.Activities.ActivityDelegate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityAction`4&lt;T1, T2, T3, T4&gt; extends System.Activities.ActivityDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.ActivityAction`4" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityAction(Of T1, T2, T3, T4)&#xA;Inherits ActivityDelegate" />
+  <TypeSignature Language="F#" Value="type ActivityAction&lt;'T1, 'T2, 'T3, 'T4&gt; = class&#xA;    inherit ActivityDelegate" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +55,7 @@
       <MemberSignature Language="C#" Value="public ActivityAction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityAction`4.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,6 +71,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T1&gt; Argument1 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T1&gt; Argument1" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`4.Argument1" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument1 As DelegateInArgument(Of T1)" />
+      <MemberSignature Language="F#" Value="member this.Argument1 : System.Activities.DelegateInArgument&lt;'T1&gt; with get, set" Usage="System.Activities.ActivityAction&lt;'T1, 'T2, 'T3, 'T4&gt;.Argument1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -91,6 +96,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T2&gt; Argument2 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T2&gt; Argument2" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`4.Argument2" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument2 As DelegateInArgument(Of T2)" />
+      <MemberSignature Language="F#" Value="member this.Argument2 : System.Activities.DelegateInArgument&lt;'T2&gt; with get, set" Usage="System.Activities.ActivityAction&lt;'T1, 'T2, 'T3, 'T4&gt;.Argument2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -114,6 +121,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T3&gt; Argument3 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T3&gt; Argument3" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`4.Argument3" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument3 As DelegateInArgument(Of T3)" />
+      <MemberSignature Language="F#" Value="member this.Argument3 : System.Activities.DelegateInArgument&lt;'T3&gt; with get, set" Usage="System.Activities.ActivityAction&lt;'T1, 'T2, 'T3, 'T4&gt;.Argument3" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -137,6 +146,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T4&gt; Argument4 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T4&gt; Argument4" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`4.Argument4" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument4 As DelegateInArgument(Of T4)" />
+      <MemberSignature Language="F#" Value="member this.Argument4 : System.Activities.DelegateInArgument&lt;'T4&gt; with get, set" Usage="System.Activities.ActivityAction&lt;'T1, 'T2, 'T3, 'T4&gt;.Argument4" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

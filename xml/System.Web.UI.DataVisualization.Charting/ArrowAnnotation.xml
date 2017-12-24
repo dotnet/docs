@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ArrowAnnotation : System.Web.UI.DataVisualization.Charting.Annotation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArrowAnnotation extends System.Web.UI.DataVisualization.Charting.Annotation" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ArrowAnnotation" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArrowAnnotation&#xA;Inherits Annotation" />
+  <TypeSignature Language="F#" Value="type ArrowAnnotation = class&#xA;    inherit Annotation" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,7 @@
       <MemberSignature Language="C#" Value="public ArrowAnnotation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ArrowAnnotation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.ContentAlignment AnchorAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.ContentAlignment AnchorAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ArrowAnnotation.AnchorAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AnchorAlignment As ContentAlignment" />
+      <MemberSignature Language="F#" Value="member this.AnchorAlignment : System.Drawing.ContentAlignment with get, set" Usage="System.Web.UI.DataVisualization.Charting.ArrowAnnotation.AnchorAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -81,6 +86,8 @@
       <MemberSignature Language="C#" Value="public override string AnnotationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AnnotationType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ArrowAnnotation.AnnotationType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AnnotationType As String" />
+      <MemberSignature Language="F#" Value="member this.AnnotationType : string" Usage="System.Web.UI.DataVisualization.Charting.ArrowAnnotation.AnnotationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -122,6 +129,8 @@
       <MemberSignature Language="C#" Value="public virtual int ArrowSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ArrowSize" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ArrowAnnotation.ArrowSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ArrowSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.ArrowSize : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ArrowAnnotation.ArrowSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -151,6 +160,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.DataVisualization.Charting.ArrowStyle ArrowStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ArrowStyle ArrowStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ArrowAnnotation.ArrowStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ArrowStyle As ArrowStyle" />
+      <MemberSignature Language="F#" Value="member this.ArrowStyle : System.Web.UI.DataVisualization.Charting.ArrowStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.ArrowAnnotation.ArrowStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

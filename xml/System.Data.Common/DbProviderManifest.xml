@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class DbProviderManifest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbProviderManifest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbProviderManifest" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbProviderManifest" />
+  <TypeSignature Language="F#" Value="type DbProviderManifest = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="protected DbProviderManifest ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public static readonly string ConceptualSchemaDefinition;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string ConceptualSchemaDefinition" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbProviderManifest.ConceptualSchemaDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ConceptualSchemaDefinition As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ConceptualSchemaDefinition : string" Usage="System.Data.Common.DbProviderManifest.ConceptualSchemaDefinition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -58,6 +63,8 @@
       <MemberSignature Language="C#" Value="public static readonly string ConceptualSchemaDefinitionVersion3;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string ConceptualSchemaDefinitionVersion3" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbProviderManifest.ConceptualSchemaDefinitionVersion3" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ConceptualSchemaDefinitionVersion3 As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ConceptualSchemaDefinitionVersion3 : string" Usage="System.Data.Common.DbProviderManifest.ConceptualSchemaDefinitionVersion3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -75,6 +82,8 @@
       <MemberSignature Language="C#" Value="public virtual string EscapeLikeArgument (string argument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string EscapeLikeArgument(string argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.EscapeLikeArgument(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function EscapeLikeArgument (argument As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member EscapeLikeArgument : string -&gt; string&#xA;override this.EscapeLikeArgument : string -&gt; string" Usage="dbProviderManifest.EscapeLikeArgument argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -97,6 +106,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.Xml.XmlReader GetDbInformation (string informationType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xml.XmlReader GetDbInformation(string informationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.GetDbInformation(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetDbInformation (informationType As String) As XmlReader" />
+      <MemberSignature Language="F#" Value="abstract member GetDbInformation : string -&gt; System.Xml.XmlReader" Usage="dbProviderManifest.GetDbInformation informationType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -119,6 +130,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Data.Metadata.Edm.TypeUsage GetEdmType (System.Data.Metadata.Edm.TypeUsage storeType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Metadata.Edm.TypeUsage GetEdmType(class System.Data.Metadata.Edm.TypeUsage storeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.GetEdmType(System.Data.Metadata.Edm.TypeUsage)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEdmType (storeType As TypeUsage) As TypeUsage" />
+      <MemberSignature Language="F#" Value="abstract member GetEdmType : System.Data.Metadata.Edm.TypeUsage -&gt; System.Data.Metadata.Edm.TypeUsage" Usage="dbProviderManifest.GetEdmType storeType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -141,6 +154,7 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.FacetDescription&gt; GetFacetDescriptions (System.Data.Metadata.Edm.EdmType edmType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.FacetDescription&gt; GetFacetDescriptions(class System.Data.Metadata.Edm.EdmType edmType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.GetFacetDescriptions(System.Data.Metadata.Edm.EdmType)" />
+      <MemberSignature Language="F#" Value="abstract member GetFacetDescriptions : System.Data.Metadata.Edm.EdmType -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.FacetDescription&gt;" Usage="dbProviderManifest.GetFacetDescriptions edmType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -163,6 +177,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlReader GetInformation (string informationType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlReader GetInformation(string informationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.GetInformation(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInformation (informationType As String) As XmlReader" />
+      <MemberSignature Language="F#" Value="member this.GetInformation : string -&gt; System.Xml.XmlReader" Usage="dbProviderManifest.GetInformation informationType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -185,6 +201,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt; GetStoreFunctions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.EdmFunction&gt; GetStoreFunctions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.GetStoreFunctions" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetStoreFunctions () As ReadOnlyCollection(Of EdmFunction)" />
+      <MemberSignature Language="F#" Value="abstract member GetStoreFunctions : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt;" Usage="dbProviderManifest.GetStoreFunctions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -204,6 +222,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Data.Metadata.Edm.TypeUsage GetStoreType (System.Data.Metadata.Edm.TypeUsage edmType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Metadata.Edm.TypeUsage GetStoreType(class System.Data.Metadata.Edm.TypeUsage edmType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.GetStoreType(System.Data.Metadata.Edm.TypeUsage)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetStoreType (edmType As TypeUsage) As TypeUsage" />
+      <MemberSignature Language="F#" Value="abstract member GetStoreType : System.Data.Metadata.Edm.TypeUsage -&gt; System.Data.Metadata.Edm.TypeUsage" Usage="dbProviderManifest.GetStoreType edmType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -226,6 +246,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.PrimitiveType&gt; GetStoreTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.PrimitiveType&gt; GetStoreTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.GetStoreTypes" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetStoreTypes () As ReadOnlyCollection(Of PrimitiveType)" />
+      <MemberSignature Language="F#" Value="abstract member GetStoreTypes : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.PrimitiveType&gt;" Usage="dbProviderManifest.GetStoreTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -245,6 +267,8 @@
       <MemberSignature Language="C#" Value="public abstract string NamespaceName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NamespaceName" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbProviderManifest.NamespaceName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NamespaceName As String" />
+      <MemberSignature Language="F#" Value="member this.NamespaceName : string" Usage="System.Data.Common.DbProviderManifest.NamespaceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -263,6 +287,8 @@
       <MemberSignature Language="C#" Value="public static readonly string StoreSchemaDefinition;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string StoreSchemaDefinition" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbProviderManifest.StoreSchemaDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StoreSchemaDefinition As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable StoreSchemaDefinition : string" Usage="System.Data.Common.DbProviderManifest.StoreSchemaDefinition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -280,6 +306,8 @@
       <MemberSignature Language="C#" Value="public static readonly string StoreSchemaDefinitionVersion3;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string StoreSchemaDefinitionVersion3" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbProviderManifest.StoreSchemaDefinitionVersion3" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StoreSchemaDefinitionVersion3 As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable StoreSchemaDefinitionVersion3 : string" Usage="System.Data.Common.DbProviderManifest.StoreSchemaDefinitionVersion3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -297,6 +325,8 @@
       <MemberSignature Language="C#" Value="public static readonly string StoreSchemaMapping;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string StoreSchemaMapping" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbProviderManifest.StoreSchemaMapping" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StoreSchemaMapping As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable StoreSchemaMapping : string" Usage="System.Data.Common.DbProviderManifest.StoreSchemaMapping" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -314,6 +344,8 @@
       <MemberSignature Language="C#" Value="public static readonly string StoreSchemaMappingVersion3;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string StoreSchemaMappingVersion3" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbProviderManifest.StoreSchemaMappingVersion3" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StoreSchemaMappingVersion3 As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable StoreSchemaMappingVersion3 : string" Usage="System.Data.Common.DbProviderManifest.StoreSchemaMappingVersion3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -331,6 +363,8 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsEscapingLikeArgument (out char escapeCharacter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsEscapingLikeArgument([out] char&amp; escapeCharacter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.SupportsEscapingLikeArgument(System.Char@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SupportsEscapingLikeArgument (ByRef escapeCharacter As Char) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member SupportsEscapingLikeArgument :  -&gt; bool&#xA;override this.SupportsEscapingLikeArgument :  -&gt; bool" Usage="dbProviderManifest.SupportsEscapingLikeArgument escapeCharacter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class OleDbConnectionStringBuilder : System.Data.Common.DbConnectionStringBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OleDbConnectionStringBuilder extends System.Data.Common.DbConnectionStringBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbConnectionStringBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbConnectionStringBuilder&#xA;Inherits DbConnectionStringBuilder" />
+  <TypeSignature Language="F#" Value="type OleDbConnectionStringBuilder = class&#xA;    inherit DbConnectionStringBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,10 +80,20 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbConnectionStringBuilder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OleDbConnectionStringBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnectionStringBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -97,6 +109,8 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       <MemberSignature Language="C#" Value="public OleDbConnectionStringBuilder (string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnectionStringBuilder.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbConnectionStringBuilder : string -&gt; System.Data.OleDb.OleDbConnectionStringBuilder" Usage="new System.Data.OleDb.OleDbConnectionStringBuilder connectionString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -136,6 +150,8 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       <MemberSignature Language="C#" Value="public override void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnectionStringBuilder.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Clear ()" />
+      <MemberSignature Language="F#" Value="override this.Clear : unit -&gt; unit" Usage="oleDbConnectionStringBuilder.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -172,6 +188,8 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       <MemberSignature Language="C#" Value="public override bool ContainsKey (string keyword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ContainsKey(string keyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnectionStringBuilder.ContainsKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ContainsKey (keyword As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ContainsKey : string -&gt; bool" Usage="oleDbConnectionStringBuilder.ContainsKey keyword" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -208,6 +226,8 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       <MemberSignature Language="C#" Value="public string DataSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataSource" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbConnectionStringBuilder.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSource As String" />
+      <MemberSignature Language="F#" Value="member this.DataSource : string with get, set" Usage="System.Data.OleDb.OleDbConnectionStringBuilder.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -249,6 +269,8 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbConnectionStringBuilder.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="System.Data.OleDb.OleDbConnectionStringBuilder.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -287,6 +309,8 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       <MemberSignature Language="C#" Value="protected override void GetProperties (System.Collections.Hashtable propertyDescriptors);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetProperties(class System.Collections.Hashtable propertyDescriptors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnectionStringBuilder.GetProperties(System.Collections.Hashtable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetProperties (propertyDescriptors As Hashtable)" />
+      <MemberSignature Language="F#" Value="override this.GetProperties : System.Collections.Hashtable -&gt; unit" Usage="oleDbConnectionStringBuilder.GetProperties propertyDescriptors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -308,6 +332,8 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       <MemberSignature Language="C#" Value="public override object this[string keyword] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbConnectionStringBuilder.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overrides Property Item(keyword As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Data.OleDb.OleDbConnectionStringBuilder.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -348,6 +374,8 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       <MemberSignature Language="C#" Value="public override System.Collections.ICollection Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbConnectionStringBuilder.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Keys As ICollection" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Data.OleDb.OleDbConnectionStringBuilder.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -384,6 +412,8 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       <MemberSignature Language="C#" Value="public int OleDbServices { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 OleDbServices" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbConnectionStringBuilder.OleDbServices" />
+      <MemberSignature Language="VB.NET" Value="Public Property OleDbServices As Integer" />
+      <MemberSignature Language="F#" Value="member this.OleDbServices : int with get, set" Usage="System.Data.OleDb.OleDbConnectionStringBuilder.OleDbServices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -428,6 +458,8 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       <MemberSignature Language="C#" Value="public bool PersistSecurityInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PersistSecurityInfo" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbConnectionStringBuilder.PersistSecurityInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property PersistSecurityInfo As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PersistSecurityInfo : bool with get, set" Usage="System.Data.OleDb.OleDbConnectionStringBuilder.PersistSecurityInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -469,6 +501,8 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       <MemberSignature Language="C#" Value="public string Provider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Provider" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbConnectionStringBuilder.Provider" />
+      <MemberSignature Language="VB.NET" Value="Public Property Provider As String" />
+      <MemberSignature Language="F#" Value="member this.Provider : string with get, set" Usage="System.Data.OleDb.OleDbConnectionStringBuilder.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -520,6 +554,8 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       <MemberSignature Language="C#" Value="public override bool Remove (string keyword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Remove(string keyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnectionStringBuilder.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Remove (keyword As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Remove : string -&gt; bool" Usage="oleDbConnectionStringBuilder.Remove keyword" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -560,6 +596,8 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       <MemberSignature Language="C#" Value="public override bool TryGetValue (string keyword, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetValue(string keyword, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnectionStringBuilder.TryGetValue(System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TryGetValue (keyword As String, ByRef value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TryGetValue : string *  -&gt; bool" Usage="oleDbConnectionStringBuilder.TryGetValue (keyword, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -598,14 +636,5 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
           <paramref name="keyword" /> contains a null value (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbConnectionStringBuilder" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

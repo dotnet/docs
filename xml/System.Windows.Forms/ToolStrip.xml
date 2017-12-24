@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ToolStrip : System.Windows.Forms.ScrollableControl, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStrip extends System.Windows.Forms.ScrollableControl implements class System.ComponentModel.IComponent, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStrip" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolStrip&#xA;Inherits ScrollableControl&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type ToolStrip = class&#xA;    inherit ScrollableControl&#xA;    interface IArrangedElement&#xA;    interface IComponent&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,10 +90,20 @@
     <altmember cref="T:System.Windows.Forms.ToolStripContainer" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStrip" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ToolStrip ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +119,8 @@
       <MemberSignature Language="C#" Value="public ToolStrip (params System.Windows.Forms.ToolStripItem[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ToolStripItem[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.#ctor(System.Windows.Forms.ToolStripItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray items As ToolStripItem())" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStrip : System.Windows.Forms.ToolStripItem[] -&gt; System.Windows.Forms.ToolStrip" Usage="new System.Windows.Forms.ToolStrip items" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -131,6 +145,8 @@
       <MemberSignature Language="C#" Value="public override bool AllowDrop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowDrop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.AllowDrop" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AllowDrop As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowDrop : bool with get, set" Usage="System.Windows.Forms.ToolStrip.AllowDrop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -175,6 +191,8 @@
       <MemberSignature Language="C#" Value="public bool AllowItemReorder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowItemReorder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.AllowItemReorder" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowItemReorder As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowItemReorder : bool with get, set" Usage="System.Windows.Forms.ToolStrip.AllowItemReorder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -224,6 +242,8 @@
       <MemberSignature Language="C#" Value="public bool AllowMerge { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowMerge" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.AllowMerge" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowMerge As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowMerge : bool with get, set" Usage="System.Windows.Forms.ToolStrip.AllowMerge" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -263,6 +283,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AnchorStyles Anchor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AnchorStyles Anchor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.Anchor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Anchor As AnchorStyles" />
+      <MemberSignature Language="F#" Value="member this.Anchor : System.Windows.Forms.AnchorStyles with get, set" Usage="System.Windows.Forms.ToolStrip.Anchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -299,6 +321,8 @@
       <MemberSignature Language="C#" Value="public override bool AutoScroll { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoScroll" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.AutoScroll" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoScroll As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoScroll : bool with get, set" Usage="System.Windows.Forms.ToolStrip.AutoScroll" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -337,6 +361,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Size AutoScrollMargin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size AutoScrollMargin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.AutoScrollMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoScrollMargin As Size" />
+      <MemberSignature Language="F#" Value="member this.AutoScrollMargin : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ToolStrip.AutoScrollMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -373,6 +399,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Size AutoScrollMinSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size AutoScrollMinSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.AutoScrollMinSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoScrollMinSize As Size" />
+      <MemberSignature Language="F#" Value="member this.AutoScrollMinSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ToolStrip.AutoScrollMinSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -409,6 +437,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point AutoScrollPosition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point AutoScrollPosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.AutoScrollPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoScrollPosition As Point" />
+      <MemberSignature Language="F#" Value="member this.AutoScrollPosition : System.Drawing.Point with get, set" Usage="System.Windows.Forms.ToolStrip.AutoScrollPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -445,6 +475,8 @@
       <MemberSignature Language="C#" Value="public override bool AutoSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.AutoSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="System.Windows.Forms.ToolStrip.AutoSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -503,6 +535,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler AutoSizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AutoSizeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.AutoSizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AutoSizeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.AutoSizeChanged : EventHandler " Usage="member this.AutoSizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -545,6 +579,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ToolStrip.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -575,6 +611,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BeginDrag;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BeginDrag" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.BeginDrag" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BeginDrag As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BeginDrag : EventHandler " Usage="member this.BeginDrag : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -607,6 +645,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.BindingContext BindingContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.BindingContext BindingContext" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.BindingContext" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BindingContext As BindingContext" />
+      <MemberSignature Language="F#" Value="member this.BindingContext : System.Windows.Forms.BindingContext with get, set" Usage="System.Windows.Forms.ToolStrip.BindingContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -637,6 +677,8 @@
       <MemberSignature Language="C#" Value="public bool CanOverflow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanOverflow" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.CanOverflow" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanOverflow As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanOverflow : bool with get, set" Usage="System.Windows.Forms.ToolStrip.CanOverflow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -679,6 +721,8 @@
       <MemberSignature Language="C#" Value="public bool CausesValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.CausesValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Property CausesValidation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Windows.Forms.ToolStrip.CausesValidation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -706,6 +750,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler CausesValidationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CausesValidationChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.CausesValidationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CausesValidationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CausesValidationChanged : EventHandler " Usage="member this.CausesValidationChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -745,6 +791,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ControlEventHandler ControlAdded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ControlEventHandler ControlAdded" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.ControlAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ControlAdded As ControlEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -777,6 +825,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ControlEventHandler ControlRemoved;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ControlEventHandler ControlRemoved" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.ControlRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ControlRemoved As ControlEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -809,6 +859,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Control.ControlCollection Controls { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control/ControlCollection Controls" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.Controls" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Controls As Control.ControlCollection" />
+      <MemberSignature Language="F#" Value="member this.Controls : System.Windows.Forms.Control.ControlCollection" Usage="System.Windows.Forms.ToolStrip.Controls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -842,6 +894,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.CreateAccessibilityInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="toolStrip.CreateAccessibilityInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -861,6 +915,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.Control.ControlCollection CreateControlsInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.Control/ControlCollection CreateControlsInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.CreateControlsInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlsInstance () As Control.ControlCollection" />
+      <MemberSignature Language="F#" Value="override this.CreateControlsInstance : unit -&gt; System.Windows.Forms.Control.ControlCollection" Usage="toolStrip.CreateControlsInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -877,9 +933,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultItem">
-      <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.ToolStripItem CreateDefaultItem (string text, System.Drawing.Image image, EventHandler onClick);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Windows.Forms.ToolStripItem CreateDefaultItem (string text, System.Drawing.Image image, EventHandler onClick);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Windows.Forms.ToolStripItem CreateDefaultItem(string text, class System.Drawing.Image image, class System.EventHandler onClick) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.CreateDefaultItem(System.String,System.Drawing.Image,System.EventHandler)" />
+      <MemberSignature Language="F#" Value="abstract member CreateDefaultItem : string * System.Drawing.Image * EventHandler -&gt; System.Windows.Forms.ToolStripItem&#xA;override this.CreateDefaultItem : string * System.Drawing.Image * EventHandler -&gt; System.Windows.Forms.ToolStripItem" Usage="toolStrip.CreateDefaultItem (text, image, onClick)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -906,6 +963,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.LayoutSettings CreateLayoutSettings (System.Windows.Forms.ToolStripLayoutStyle layoutStyle);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Forms.LayoutSettings CreateLayoutSettings(valuetype System.Windows.Forms.ToolStripLayoutStyle layoutStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.CreateLayoutSettings(System.Windows.Forms.ToolStripLayoutStyle)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateLayoutSettings (layoutStyle As ToolStripLayoutStyle) As LayoutSettings" />
+      <MemberSignature Language="F#" Value="abstract member CreateLayoutSettings : System.Windows.Forms.ToolStripLayoutStyle -&gt; System.Windows.Forms.LayoutSettings&#xA;override this.CreateLayoutSettings : System.Windows.Forms.ToolStripLayoutStyle -&gt; System.Windows.Forms.LayoutSettings" Usage="toolStrip.CreateLayoutSettings layoutStyle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -928,6 +987,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.Cursor Cursor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Cursor Cursor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.Cursor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Cursor As Cursor" />
+      <MemberSignature Language="F#" Value="member this.Cursor : System.Windows.Forms.Cursor with get, set" Usage="System.Windows.Forms.ToolStrip.Cursor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -969,6 +1030,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler CursorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CursorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.CursorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CursorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CursorChanged : EventHandler " Usage="member this.CursorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1008,6 +1071,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.DockStyle DefaultDock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DockStyle DefaultDock" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.DefaultDock" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DefaultDock As DockStyle" />
+      <MemberSignature Language="F#" Value="member this.DefaultDock : System.Windows.Forms.DockStyle" Usage="System.Windows.Forms.ToolStrip.DefaultDock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1026,6 +1091,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ToolStripDropDownDirection DefaultDropDownDirection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolStripDropDownDirection DefaultDropDownDirection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.DefaultDropDownDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DefaultDropDownDirection As ToolStripDropDownDirection" />
+      <MemberSignature Language="F#" Value="member this.DefaultDropDownDirection : System.Windows.Forms.ToolStripDropDownDirection with get, set" Usage="System.Windows.Forms.ToolStrip.DefaultDropDownDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1065,6 +1132,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.Padding DefaultGripMargin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding DefaultGripMargin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.DefaultGripMargin" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DefaultGripMargin As Padding" />
+      <MemberSignature Language="F#" Value="member this.DefaultGripMargin : System.Windows.Forms.Padding" Usage="System.Windows.Forms.ToolStrip.DefaultGripMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1084,6 +1153,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.Padding DefaultMargin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding DefaultMargin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.DefaultMargin" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultMargin As Padding" />
+      <MemberSignature Language="F#" Value="member this.DefaultMargin : System.Windows.Forms.Padding" Usage="System.Windows.Forms.ToolStrip.DefaultMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1102,6 +1173,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.Padding DefaultPadding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding DefaultPadding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.DefaultPadding" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultPadding As Padding" />
+      <MemberSignature Language="F#" Value="member this.DefaultPadding : System.Windows.Forms.Padding" Usage="System.Windows.Forms.ToolStrip.DefaultPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1127,6 +1200,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool DefaultShowItemToolTips { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DefaultShowItemToolTips" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.DefaultShowItemToolTips" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DefaultShowItemToolTips As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DefaultShowItemToolTips : bool" Usage="System.Windows.Forms.ToolStrip.DefaultShowItemToolTips" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1146,6 +1221,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.ToolStrip.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1174,9 +1251,11 @@
       </Docs>
     </Member>
     <Member MemberName="DisplayedItems">
-      <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.ToolStripItemCollection DisplayedItems { get; }" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Windows.Forms.ToolStripItemCollection DisplayedItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripItemCollection DisplayedItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.DisplayedItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property DisplayedItems As ToolStripItemCollection" />
+      <MemberSignature Language="F#" Value="member this.DisplayedItems : System.Windows.Forms.ToolStripItemCollection" Usage="System.Windows.Forms.ToolStrip.DisplayedItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1205,7 +1284,12 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Rectangle DisplayRectangle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle DisplayRectangle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.DisplayRectangle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DisplayRectangle As Rectangle" />
+      <MemberSignature Language="F#" Value="member this.DisplayRectangle : System.Drawing.Rectangle" Usage="System.Windows.Forms.ToolStrip.DisplayRectangle" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Forms.Layout.IArrangedElement.DisplayRectangle</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1230,6 +1314,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="toolStrip.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1267,6 +1353,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DockStyle Dock { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DockStyle Dock" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.Dock" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Dock As DockStyle" />
+      <MemberSignature Language="F#" Value="member this.Dock : System.Windows.Forms.DockStyle with get, set" Usage="System.Windows.Forms.ToolStrip.Dock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1312,6 +1400,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler EndDrag;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler EndDrag" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.EndDrag" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event EndDrag As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.EndDrag : EventHandler " Usage="member this.EndDrag : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1344,6 +1434,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Font As Font" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.ToolStrip.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1362,6 +1454,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ToolStrip.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1385,6 +1479,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ForeColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ForeColorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.ForeColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ForeColorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1420,10 +1516,20 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetChildAtPoint">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the child control at a specified location.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetChildAtPoint">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Control GetChildAtPoint (System.Drawing.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Control GetChildAtPoint(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.GetChildAtPoint(System.Drawing.Point)" />
+      <MemberSignature Language="F#" Value="override this.GetChildAtPoint : System.Drawing.Point -&gt; System.Windows.Forms.Control" Usage="toolStrip.GetChildAtPoint point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1458,6 +1564,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Control GetChildAtPoint (System.Drawing.Point pt, System.Windows.Forms.GetChildAtPointSkip skipValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Control GetChildAtPoint(valuetype System.Drawing.Point pt, valuetype System.Windows.Forms.GetChildAtPointSkip skipValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.GetChildAtPoint(System.Drawing.Point,System.Windows.Forms.GetChildAtPointSkip)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChildAtPoint (pt As Point, skipValue As GetChildAtPointSkip) As Control" />
+      <MemberSignature Language="F#" Value="override this.GetChildAtPoint : System.Drawing.Point * System.Windows.Forms.GetChildAtPointSkip -&gt; System.Windows.Forms.Control" Usage="toolStrip.GetChildAtPoint (pt, skipValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1490,10 +1598,20 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetItemAt">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the item located at the specified location.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetItemAt">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripItem GetItemAt (System.Drawing.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ToolStripItem GetItemAt(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.GetItemAt(System.Drawing.Point)" />
+      <MemberSignature Language="F#" Value="member this.GetItemAt : System.Drawing.Point -&gt; System.Windows.Forms.ToolStripItem" Usage="toolStrip.GetItemAt point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1516,6 +1634,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripItem GetItemAt (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ToolStripItem GetItemAt(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.GetItemAt(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItemAt (x As Integer, y As Integer) As ToolStripItem" />
+      <MemberSignature Language="F#" Value="member this.GetItemAt : int * int -&gt; System.Windows.Forms.ToolStripItem" Usage="toolStrip.GetItemAt (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1540,6 +1660,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ToolStripItem GetNextItem (System.Windows.Forms.ToolStripItem start, System.Windows.Forms.ArrowDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.ToolStripItem GetNextItem(class System.Windows.Forms.ToolStripItem start, valuetype System.Windows.Forms.ArrowDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.GetNextItem(System.Windows.Forms.ToolStripItem,System.Windows.Forms.ArrowDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNextItem (start As ToolStripItem, direction As ArrowDirection) As ToolStripItem" />
+      <MemberSignature Language="F#" Value="abstract member GetNextItem : System.Windows.Forms.ToolStripItem * System.Windows.Forms.ArrowDirection -&gt; System.Windows.Forms.ToolStripItem&#xA;override this.GetNextItem : System.Windows.Forms.ToolStripItem * System.Windows.Forms.ArrowDirection -&gt; System.Windows.Forms.ToolStripItem" Usage="toolStrip.GetNextItem (start, direction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1572,6 +1694,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripGripDisplayStyle GripDisplayStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolStripGripDisplayStyle GripDisplayStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.GripDisplayStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GripDisplayStyle As ToolStripGripDisplayStyle" />
+      <MemberSignature Language="F#" Value="member this.GripDisplayStyle : System.Windows.Forms.ToolStripGripDisplayStyle" Usage="System.Windows.Forms.ToolStrip.GripDisplayStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1595,6 +1719,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Padding GripMargin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding GripMargin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.GripMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property GripMargin As Padding" />
+      <MemberSignature Language="F#" Value="member this.GripMargin : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.ToolStrip.GripMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1629,6 +1755,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GripRectangle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle GripRectangle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.GripRectangle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GripRectangle As Rectangle" />
+      <MemberSignature Language="F#" Value="member this.GripRectangle : System.Drawing.Rectangle" Usage="System.Windows.Forms.ToolStrip.GripRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1659,6 +1787,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripGripStyle GripStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolStripGripStyle GripStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.GripStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property GripStyle As ToolStripGripStyle" />
+      <MemberSignature Language="F#" Value="member this.GripStyle : System.Windows.Forms.ToolStripGripStyle with get, set" Usage="System.Windows.Forms.ToolStrip.GripStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1690,6 +1820,8 @@
       <MemberSignature Language="C#" Value="public bool HasChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasChildren" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.HasChildren" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasChildren As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasChildren : bool" Usage="System.Windows.Forms.ToolStrip.HasChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1727,6 +1859,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HScrollProperties HorizontalScroll { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HScrollProperties HorizontalScroll" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.HorizontalScroll" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalScroll As HScrollProperties" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScroll : System.Windows.Forms.HScrollProperties" Usage="System.Windows.Forms.ToolStrip.HorizontalScroll" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1760,6 +1894,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ImageList ImageList { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ImageList ImageList" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.ImageList" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageList As ImageList" />
+      <MemberSignature Language="F#" Value="member this.ImageList : System.Windows.Forms.ImageList with get, set" Usage="System.Windows.Forms.ToolStrip.ImageList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1801,6 +1937,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Size ImageScalingSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size ImageScalingSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.ImageScalingSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageScalingSize As Size" />
+      <MemberSignature Language="F#" Value="member this.ImageScalingSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ToolStrip.ImageScalingSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1849,6 +1987,8 @@
       <MemberSignature Language="C#" Value="public bool IsCurrentlyDragging { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCurrentlyDragging" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.IsCurrentlyDragging" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCurrentlyDragging As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCurrentlyDragging : bool" Usage="System.Windows.Forms.ToolStrip.IsCurrentlyDragging" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1876,6 +2016,8 @@
       <MemberSignature Language="C#" Value="public bool IsDropDown { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDropDown" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.IsDropDown" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDropDown As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDropDown : bool" Usage="System.Windows.Forms.ToolStrip.IsDropDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1900,6 +2042,8 @@
       <MemberSignature Language="C#" Value="protected override bool IsInputChar (char charCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsInputChar(char charCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.IsInputChar(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsInputChar (charCode As Char) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsInputChar : char -&gt; bool" Usage="toolStrip.IsInputChar charCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1930,6 +2074,8 @@
       <MemberSignature Language="C#" Value="protected override bool IsInputKey (System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsInputKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.IsInputKey(System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsInputKey (keyData As Keys) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsInputKey : System.Windows.Forms.Keys -&gt; bool" Usage="toolStrip.IsInputKey keyData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1953,6 +2099,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ToolStripItemEventHandler ItemAdded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ToolStripItemEventHandler ItemAdded" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.ItemAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemAdded As ToolStripItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemAdded : System.Windows.Forms.ToolStripItemEventHandler " Usage="member this.ItemAdded : System.Windows.Forms.ToolStripItemEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1987,6 +2135,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ToolStripItemClickedEventHandler ItemClicked;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ToolStripItemClickedEventHandler ItemClicked" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.ItemClicked" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemClicked As ToolStripItemClickedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemClicked : System.Windows.Forms.ToolStripItemClickedEventHandler " Usage="member this.ItemClicked : System.Windows.Forms.ToolStripItemClickedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2021,6 +2171,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ToolStripItemEventHandler ItemRemoved;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ToolStripItemEventHandler ItemRemoved" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.ItemRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemRemoved As ToolStripItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemRemoved : System.Windows.Forms.ToolStripItemEventHandler " Usage="member this.ItemRemoved : System.Windows.Forms.ToolStripItemEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2055,6 +2207,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ToolStripItemCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripItemCollection Items" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.Items" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Items As ToolStripItemCollection" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Windows.Forms.ToolStripItemCollection" Usage="System.Windows.Forms.ToolStrip.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2099,6 +2253,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler LayoutCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LayoutCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.LayoutCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LayoutCompleted As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.LayoutCompleted : EventHandler " Usage="member this.LayoutCompleted : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2137,6 +2293,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.Layout.LayoutEngine LayoutEngine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Layout.LayoutEngine LayoutEngine" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.LayoutEngine" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LayoutEngine As LayoutEngine" />
+      <MemberSignature Language="F#" Value="member this.LayoutEngine : System.Windows.Forms.Layout.LayoutEngine" Usage="System.Windows.Forms.ToolStrip.LayoutEngine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2155,6 +2313,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.LayoutSettings LayoutSettings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.LayoutSettings LayoutSettings" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.LayoutSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property LayoutSettings As LayoutSettings" />
+      <MemberSignature Language="F#" Value="member this.LayoutSettings : System.Windows.Forms.LayoutSettings with get, set" Usage="System.Windows.Forms.ToolStrip.LayoutSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2184,6 +2344,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripLayoutStyle LayoutStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolStripLayoutStyle LayoutStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.LayoutStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property LayoutStyle As ToolStripLayoutStyle" />
+      <MemberSignature Language="F#" Value="member this.LayoutStyle : System.Windows.Forms.ToolStripLayoutStyle with get, set" Usage="System.Windows.Forms.ToolStrip.LayoutStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2223,6 +2385,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler LayoutStyleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LayoutStyleChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.LayoutStyleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LayoutStyleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.LayoutStyleChanged : EventHandler " Usage="member this.LayoutStyleChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2254,9 +2418,11 @@
       </Docs>
     </Member>
     <Member MemberName="MaxItemSize">
-      <MemberSignature Language="C#" Value="protected virtual System.Drawing.Size MaxItemSize { get; }" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Drawing.Size MaxItemSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size MaxItemSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.MaxItemSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property MaxItemSize As Size" />
+      <MemberSignature Language="F#" Value="member this.MaxItemSize : System.Drawing.Size" Usage="System.Windows.Forms.ToolStrip.MaxItemSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2275,6 +2441,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnBeginDrag (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBeginDrag(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnBeginDrag(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeginDrag (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginDrag : EventArgs -&gt; unit&#xA;override this.OnBeginDrag : EventArgs -&gt; unit" Usage="toolStrip.OnBeginDrag e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2308,6 +2476,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDockChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDockChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnDockChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDockChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnDockChanged : EventArgs -&gt; unit" Usage="toolStrip.OnDockChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2341,6 +2511,8 @@
       <MemberSignature Language="C#" Value="protected override void OnEnabledChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEnabledChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnEnabledChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEnabledChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnEnabledChanged : EventArgs -&gt; unit" Usage="toolStrip.OnEnabledChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2374,6 +2546,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnEndDrag (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndDrag(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnEndDrag(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEndDrag (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnEndDrag : EventArgs -&gt; unit&#xA;override this.OnEndDrag : EventArgs -&gt; unit" Usage="toolStrip.OnEndDrag e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2407,6 +2581,8 @@
       <MemberSignature Language="C#" Value="protected override void OnFontChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFontChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnFontChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="toolStrip.OnFontChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2428,6 +2604,8 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnHandleCreated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="toolStrip.OnHandleCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2461,6 +2639,8 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleDestroyed (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleDestroyed(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnHandleDestroyed(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleDestroyed (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnHandleDestroyed : EventArgs -&gt; unit" Usage="toolStrip.OnHandleDestroyed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2494,6 +2674,8 @@
       <MemberSignature Language="C#" Value="protected override void OnInvalidated (System.Windows.Forms.InvalidateEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInvalidated(class System.Windows.Forms.InvalidateEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnInvalidated(System.Windows.Forms.InvalidateEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInvalidated (e As InvalidateEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnInvalidated : System.Windows.Forms.InvalidateEventArgs -&gt; unit" Usage="toolStrip.OnInvalidated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2512,9 +2694,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnItemAdded">
-      <MemberSignature Language="C#" Value="protected virtual void OnItemAdded (System.Windows.Forms.ToolStripItemEventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnItemAdded (System.Windows.Forms.ToolStripItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnItemAdded(class System.Windows.Forms.ToolStripItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnItemAdded(System.Windows.Forms.ToolStripItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnItemAdded (e As ToolStripItemEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnItemAdded : System.Windows.Forms.ToolStripItemEventArgs -&gt; unit&#xA;override this.OnItemAdded : System.Windows.Forms.ToolStripItemEventArgs -&gt; unit" Usage="toolStrip.OnItemAdded e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2548,6 +2732,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnItemClicked (System.Windows.Forms.ToolStripItemClickedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemClicked(class System.Windows.Forms.ToolStripItemClickedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnItemClicked(System.Windows.Forms.ToolStripItemClickedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemClicked (e As ToolStripItemClickedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnItemClicked : System.Windows.Forms.ToolStripItemClickedEventArgs -&gt; unit&#xA;override this.OnItemClicked : System.Windows.Forms.ToolStripItemClickedEventArgs -&gt; unit" Usage="toolStrip.OnItemClicked e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2578,9 +2764,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnItemRemoved">
-      <MemberSignature Language="C#" Value="protected virtual void OnItemRemoved (System.Windows.Forms.ToolStripItemEventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnItemRemoved (System.Windows.Forms.ToolStripItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnItemRemoved(class System.Windows.Forms.ToolStripItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnItemRemoved(System.Windows.Forms.ToolStripItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnItemRemoved (e As ToolStripItemEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnItemRemoved : System.Windows.Forms.ToolStripItemEventArgs -&gt; unit&#xA;override this.OnItemRemoved : System.Windows.Forms.ToolStripItemEventArgs -&gt; unit" Usage="toolStrip.OnItemRemoved e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2614,6 +2802,8 @@
       <MemberSignature Language="C#" Value="protected override void OnLayout (System.Windows.Forms.LayoutEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLayout(class System.Windows.Forms.LayoutEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (e As LayoutEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit" Usage="toolStrip.OnLayout e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2647,6 +2837,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnLayoutCompleted (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLayoutCompleted(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnLayoutCompleted(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLayoutCompleted (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnLayoutCompleted : EventArgs -&gt; unit&#xA;override this.OnLayoutCompleted : EventArgs -&gt; unit" Usage="toolStrip.OnLayoutCompleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2680,6 +2872,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnLayoutStyleChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLayoutStyleChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnLayoutStyleChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLayoutStyleChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnLayoutStyleChanged : EventArgs -&gt; unit&#xA;override this.OnLayoutStyleChanged : EventArgs -&gt; unit" Usage="toolStrip.OnLayoutStyleChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2713,6 +2907,8 @@
       <MemberSignature Language="C#" Value="protected override void OnLeave (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLeave(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnLeave(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLeave (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnLeave : EventArgs -&gt; unit" Usage="toolStrip.OnLeave e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2746,6 +2942,8 @@
       <MemberSignature Language="C#" Value="protected override void OnLostFocus (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLostFocus(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnLostFocus(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostFocus (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnLostFocus : EventArgs -&gt; unit" Usage="toolStrip.OnLostFocus e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2779,6 +2977,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseCaptureChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseCaptureChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnMouseCaptureChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseCaptureChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseCaptureChanged : EventArgs -&gt; unit" Usage="toolStrip.OnMouseCaptureChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2800,6 +3000,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseDown (System.Windows.Forms.MouseEventArgs mea);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDown(class System.Windows.Forms.MouseEventArgs mea) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (mea As MouseEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseDown : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="toolStrip.OnMouseDown mea" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2833,6 +3035,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseLeave (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeave(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnMouseLeave(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeave : EventArgs -&gt; unit" Usage="toolStrip.OnMouseLeave e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2866,6 +3070,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseMove (System.Windows.Forms.MouseEventArgs mea);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseMove(class System.Windows.Forms.MouseEventArgs mea) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (mea As MouseEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseMove : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="toolStrip.OnMouseMove mea" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2899,6 +3105,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseUp (System.Windows.Forms.MouseEventArgs mea);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseUp(class System.Windows.Forms.MouseEventArgs mea) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (mea As MouseEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseUp : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="toolStrip.OnMouseUp mea" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2932,6 +3140,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPaint (System.Windows.Forms.PaintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Windows.Forms.PaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="toolStrip.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2965,6 +3175,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPaintBackground (System.Windows.Forms.PaintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaintBackground(class System.Windows.Forms.PaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaintBackground (e As PaintEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPaintBackground : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="toolStrip.OnPaintBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3000,9 +3212,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnPaintGrip">
-      <MemberSignature Language="C#" Value="protected virtual void OnPaintGrip (System.Windows.Forms.PaintEventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnPaintGrip (System.Windows.Forms.PaintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnPaintGrip(class System.Windows.Forms.PaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnPaintGrip(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnPaintGrip (e As PaintEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPaintGrip : System.Windows.Forms.PaintEventArgs -&gt; unit&#xA;override this.OnPaintGrip : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="toolStrip.OnPaintGrip e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3038,6 +3252,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnRendererChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRendererChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnRendererChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRendererChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnRendererChanged : EventArgs -&gt; unit&#xA;override this.OnRendererChanged : EventArgs -&gt; unit" Usage="toolStrip.OnRendererChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3071,6 +3287,8 @@
       <MemberSignature Language="C#" Value="protected override void OnRightToLeftChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRightToLeftChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnRightToLeftChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRightToLeftChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnRightToLeftChanged : EventArgs -&gt; unit" Usage="toolStrip.OnRightToLeftChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3109,6 +3327,8 @@
       <MemberSignature Language="C#" Value="protected override void OnScroll (System.Windows.Forms.ScrollEventArgs se);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnScroll(class System.Windows.Forms.ScrollEventArgs se) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnScroll(System.Windows.Forms.ScrollEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnScroll (se As ScrollEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnScroll : System.Windows.Forms.ScrollEventArgs -&gt; unit" Usage="toolStrip.OnScroll se" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3130,6 +3350,8 @@
       <MemberSignature Language="C#" Value="protected override void OnTabStopChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnTabStopChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnTabStopChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTabStopChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnTabStopChanged : EventArgs -&gt; unit" Usage="toolStrip.OnTabStopChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3163,6 +3385,8 @@
       <MemberSignature Language="C#" Value="protected override void OnVisibleChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnVisibleChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.OnVisibleChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnVisibleChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnVisibleChanged : EventArgs -&gt; unit" Usage="toolStrip.OnVisibleChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3198,6 +3422,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Orientation Orientation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Orientation Orientation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.Orientation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Orientation As Orientation" />
+      <MemberSignature Language="F#" Value="member this.Orientation : System.Windows.Forms.Orientation" Usage="System.Windows.Forms.ToolStrip.Orientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3221,6 +3447,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripOverflowButton OverflowButton { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripOverflowButton OverflowButton" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.OverflowButton" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OverflowButton As ToolStripOverflowButton" />
+      <MemberSignature Language="F#" Value="member this.OverflowButton : System.Windows.Forms.ToolStripOverflowButton" Usage="System.Windows.Forms.ToolStrip.OverflowButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3247,6 +3475,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.PaintEventHandler PaintGrip;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.PaintEventHandler PaintGrip" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.PaintGrip" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PaintGrip As PaintEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PaintGrip : System.Windows.Forms.PaintEventHandler " Usage="member this.PaintGrip : System.Windows.Forms.PaintEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3281,6 +3511,8 @@
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message m, System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessCmdKey (ByRef m As Message, keyData As Keys) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ProcessCmdKey :  * System.Windows.Forms.Keys -&gt; bool" Usage="toolStrip.ProcessCmdKey (m, keyData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3307,6 +3539,8 @@
       <MemberSignature Language="C#" Value="protected override bool ProcessDialogKey (System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessDialogKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.ProcessDialogKey(System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessDialogKey (keyData As Keys) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ProcessDialogKey : System.Windows.Forms.Keys -&gt; bool" Usage="toolStrip.ProcessDialogKey keyData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3337,9 +3571,11 @@
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
-      <MemberSignature Language="C#" Value="protected override bool ProcessMnemonic (char charCode);" />
+      <MemberSignature Language="C#" Value="protected internal override bool ProcessMnemonic (char charCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool ProcessMnemonic(char charCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.ProcessMnemonic(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ProcessMnemonic (charCode As Char) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ProcessMnemonic : char -&gt; bool" Usage="toolStrip.ProcessMnemonic charCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3374,6 +3610,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripRenderer Renderer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripRenderer Renderer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.Renderer" />
+      <MemberSignature Language="VB.NET" Value="Public Property Renderer As ToolStripRenderer" />
+      <MemberSignature Language="F#" Value="member this.Renderer : System.Windows.Forms.ToolStripRenderer with get, set" Usage="System.Windows.Forms.ToolStrip.Renderer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3409,6 +3647,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler RendererChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RendererChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStrip.RendererChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event RendererChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.RendererChanged : EventHandler " Usage="member this.RendererChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3443,6 +3683,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripRenderMode RenderMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolStripRenderMode RenderMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.RenderMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderMode As ToolStripRenderMode" />
+      <MemberSignature Language="F#" Value="member this.RenderMode : System.Windows.Forms.ToolStripRenderMode with get, set" Usage="System.Windows.Forms.ToolStrip.RenderMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3480,6 +3722,8 @@
       <MemberSignature Language="C#" Value="public void ResetMinimumSize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetMinimumSize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.ResetMinimumSize" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetMinimumSize ()" />
+      <MemberSignature Language="F#" Value="member this.ResetMinimumSize : unit -&gt; unit" Usage="toolStrip.ResetMinimumSize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3510,6 +3754,8 @@
       <MemberSignature Language="C#" Value="protected virtual void RestoreFocus ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RestoreFocus() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.RestoreFocus" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RestoreFocus ()" />
+      <MemberSignature Language="F#" Value="abstract member RestoreFocus : unit -&gt; unit&#xA;override this.RestoreFocus : unit -&gt; unit" Usage="toolStrip.RestoreFocus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3540,6 +3786,8 @@
       <MemberSignature Language="C#" Value="protected override void Select (bool directed, bool forward);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Select(bool directed, bool forward) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.Select(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Select (directed As Boolean, forward As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Select : bool * bool -&gt; unit" Usage="toolStrip.Select (directed, forward)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3574,6 +3822,8 @@
       <MemberSignature Language="C#" Value="public void SetAutoScrollMargin (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAutoScrollMargin(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.SetAutoScrollMargin(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAutoScrollMargin (x As Integer, y As Integer)" />
+      <MemberSignature Language="F#" Value="override this.SetAutoScrollMargin : int * int -&gt; unit" Usage="toolStrip.SetAutoScrollMargin (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3609,6 +3859,8 @@
       <MemberSignature Language="C#" Value="protected override void SetBoundsCore (int x, int y, int width, int height, System.Windows.Forms.BoundsSpecified specified);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetBoundsCore(int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetBoundsCore (x As Integer, y As Integer, width As Integer, height As Integer, specified As BoundsSpecified)" />
+      <MemberSignature Language="F#" Value="override this.SetBoundsCore : int * int * int * int * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="toolStrip.SetBoundsCore (x, y, width, height, specified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3638,6 +3890,8 @@
       <MemberSignature Language="C#" Value="protected virtual void SetDisplayedItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetDisplayedItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.SetDisplayedItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetDisplayedItems ()" />
+      <MemberSignature Language="F#" Value="abstract member SetDisplayedItems : unit -&gt; unit&#xA;override this.SetDisplayedItems : unit -&gt; unit" Usage="toolStrip.SetDisplayedItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3653,9 +3907,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetItemLocation">
-      <MemberSignature Language="C#" Value="protected void SetItemLocation (System.Windows.Forms.ToolStripItem item, System.Drawing.Point location);" />
+      <MemberSignature Language="C#" Value="protected internal void SetItemLocation (System.Windows.Forms.ToolStripItem item, System.Drawing.Point location);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void SetItemLocation(class System.Windows.Forms.ToolStripItem item, valuetype System.Drawing.Point location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.SetItemLocation(System.Windows.Forms.ToolStripItem,System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub SetItemLocation (item As ToolStripItem, location As Point)" />
+      <MemberSignature Language="F#" Value="member this.SetItemLocation : System.Windows.Forms.ToolStripItem * System.Drawing.Point -&gt; unit" Usage="toolStrip.SetItemLocation (item, location)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3681,6 +3937,8 @@
       <MemberSignature Language="C#" Value="protected static void SetItemParent (System.Windows.Forms.ToolStripItem item, System.Windows.Forms.ToolStrip parent);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig void SetItemParent(class System.Windows.Forms.ToolStripItem item, class System.Windows.Forms.ToolStrip parent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.SetItemParent(System.Windows.Forms.ToolStripItem,System.Windows.Forms.ToolStrip)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Sub SetItemParent (item As ToolStripItem, parent As ToolStrip)" />
+      <MemberSignature Language="F#" Value="static member SetItemParent : System.Windows.Forms.ToolStripItem * System.Windows.Forms.ToolStrip -&gt; unit" Usage="System.Windows.Forms.ToolStrip.SetItemParent (item, parent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3711,6 +3969,8 @@
       <MemberSignature Language="C#" Value="protected override void SetVisibleCore (bool visible);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetVisibleCore(bool visible) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.SetVisibleCore(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetVisibleCore (visible As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.SetVisibleCore : bool -&gt; unit" Usage="toolStrip.SetVisibleCore visible" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3740,6 +4000,8 @@
       <MemberSignature Language="C#" Value="public bool ShowItemToolTips { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowItemToolTips" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.ShowItemToolTips" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowItemToolTips As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowItemToolTips : bool with get, set" Usage="System.Windows.Forms.ToolStrip.ShowItemToolTips" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3779,6 +4041,8 @@
       <MemberSignature Language="C#" Value="public bool Stretch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Stretch" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.Stretch" />
+      <MemberSignature Language="VB.NET" Value="Public Property Stretch As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Stretch : bool with get, set" Usage="System.Windows.Forms.ToolStrip.Stretch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3818,6 +4082,8 @@
       <MemberSignature Language="C#" Value="public bool TabStop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TabStop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.TabStop" />
+      <MemberSignature Language="VB.NET" Value="Public Property TabStop As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TabStop : bool with get, set" Usage="System.Windows.Forms.ToolStrip.TabStop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3860,6 +4126,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ToolStripTextDirection TextDirection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolStripTextDirection TextDirection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.TextDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property TextDirection As ToolStripTextDirection" />
+      <MemberSignature Language="F#" Value="member this.TextDirection : System.Windows.Forms.ToolStripTextDirection with get, set" Usage="System.Windows.Forms.ToolStrip.TextDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3899,6 +4167,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="toolStrip.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3918,6 +4188,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.VScrollProperties VerticalScroll { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.VScrollProperties VerticalScroll" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.VerticalScroll" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalScroll As VScrollProperties" />
+      <MemberSignature Language="F#" Value="member this.VerticalScroll : System.Windows.Forms.VScrollProperties" Usage="System.Windows.Forms.ToolStrip.VerticalScroll" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3951,6 +4223,8 @@
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="toolStrip.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3989,32 +4263,5 @@
         </block>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStrip" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetItemAt">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the item located at the specified location.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetChildAtPoint">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the child control at a specified location.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

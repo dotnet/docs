@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class FlatButtonAppearance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FlatButtonAppearance extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlatButtonAppearance" />
+  <TypeSignature Language="VB.NET" Value="Public Class FlatButtonAppearance" />
+  <TypeSignature Language="F#" Value="type FlatButtonAppearance = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.BorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BorderColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.FlatButtonAppearance.BorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public int BorderSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BorderSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.BorderSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.BorderSize : int with get, set" Usage="System.Windows.Forms.FlatButtonAppearance.BorderSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color CheckedBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CheckedBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.CheckedBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property CheckedBackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.CheckedBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.FlatButtonAppearance.CheckedBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -120,6 +128,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color MouseDownBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MouseDownBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.MouseDownBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property MouseDownBackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.MouseDownBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.FlatButtonAppearance.MouseDownBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -152,6 +162,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color MouseOverBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MouseOverBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.MouseOverBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property MouseOverBackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.MouseOverBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.FlatButtonAppearance.MouseOverBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

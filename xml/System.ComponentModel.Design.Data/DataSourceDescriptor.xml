@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class DataSourceDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataSourceDescriptor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DataSourceDescriptor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataSourceDescriptor" />
+  <TypeSignature Language="F#" Value="type DataSourceDescriptor = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="protected DataSourceDescriptor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceDescriptor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Drawing.Bitmap Image { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Bitmap Image" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceDescriptor.Image" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Image As Bitmap" />
+      <MemberSignature Language="F#" Value="member this.Image : System.Drawing.Bitmap" Usage="System.ComponentModel.Design.Data.DataSourceDescriptor.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -59,6 +64,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsDesignable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDesignable" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceDescriptor.IsDesignable" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsDesignable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDesignable : bool" Usage="System.ComponentModel.Design.Data.DataSourceDescriptor.IsDesignable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -85,6 +92,8 @@
       <MemberSignature Language="C#" Value="public abstract string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceDescriptor.Name" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.Design.Data.DataSourceDescriptor.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -110,6 +119,8 @@
       <MemberSignature Language="C#" Value="public abstract string TypeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceDescriptor.TypeName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TypeName As String" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string" Usage="System.ComponentModel.Design.Data.DataSourceDescriptor.TypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

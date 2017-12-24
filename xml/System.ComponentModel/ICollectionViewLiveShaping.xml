@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface ICollectionViewLiveShaping" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICollectionViewLiveShaping" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ICollectionViewLiveShaping" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICollectionViewLiveShaping" />
+  <TypeSignature Language="F#" Value="type ICollectionViewLiveShaping = interface" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public bool CanChangeLiveFiltering { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanChangeLiveFiltering" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveFiltering" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanChangeLiveFiltering As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanChangeLiveFiltering : bool" Usage="System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveFiltering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public bool CanChangeLiveGrouping { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanChangeLiveGrouping" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveGrouping" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanChangeLiveGrouping As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanChangeLiveGrouping : bool" Usage="System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveGrouping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -84,6 +90,8 @@
       <MemberSignature Language="C#" Value="public bool CanChangeLiveSorting { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanChangeLiveSorting" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveSorting" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanChangeLiveSorting As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanChangeLiveSorting : bool" Usage="System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveSorting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -112,6 +120,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsLiveFiltering { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsLiveFiltering" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.IsLiveFiltering" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsLiveFiltering As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsLiveFiltering : Nullable&lt;bool&gt; with get, set" Usage="System.ComponentModel.ICollectionViewLiveShaping.IsLiveFiltering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -140,6 +150,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsLiveGrouping { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsLiveGrouping" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.IsLiveGrouping" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsLiveGrouping As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsLiveGrouping : Nullable&lt;bool&gt; with get, set" Usage="System.ComponentModel.ICollectionViewLiveShaping.IsLiveGrouping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -168,6 +180,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsLiveSorting { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsLiveSorting" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.IsLiveSorting" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsLiveSorting As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsLiveSorting : Nullable&lt;bool&gt; with get, set" Usage="System.ComponentModel.ICollectionViewLiveShaping.IsLiveSorting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -196,6 +210,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ObservableCollection&lt;string&gt; LiveFilteringProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ObservableCollection`1&lt;string&gt; LiveFilteringProperties" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.LiveFilteringProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LiveFilteringProperties As ObservableCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.LiveFilteringProperties : System.Collections.ObjectModel.ObservableCollection&lt;string&gt;" Usage="System.ComponentModel.ICollectionViewLiveShaping.LiveFilteringProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -214,6 +230,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ObservableCollection&lt;string&gt; LiveGroupingProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ObservableCollection`1&lt;string&gt; LiveGroupingProperties" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.LiveGroupingProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LiveGroupingProperties As ObservableCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.LiveGroupingProperties : System.Collections.ObjectModel.ObservableCollection&lt;string&gt;" Usage="System.ComponentModel.ICollectionViewLiveShaping.LiveGroupingProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -232,6 +250,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ObservableCollection&lt;string&gt; LiveSortingProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ObservableCollection`1&lt;string&gt; LiveSortingProperties" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.LiveSortingProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LiveSortingProperties As ObservableCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.LiveSortingProperties : System.Collections.ObjectModel.ObservableCollection&lt;string&gt;" Usage="System.ComponentModel.ICollectionViewLiveShaping.LiveSortingProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

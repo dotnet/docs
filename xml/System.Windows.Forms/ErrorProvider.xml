@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ErrorProvider : System.ComponentModel.Component, System.ComponentModel.IExtenderProvider, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorProvider extends System.ComponentModel.Component implements class System.ComponentModel.IExtenderProvider, class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ErrorProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class ErrorProvider&#xA;Inherits Component&#xA;Implements IExtenderProvider, ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type ErrorProvider = class&#xA;    inherit Component&#xA;    interface IExtenderProvider&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,10 +68,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ErrorProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ErrorProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +110,8 @@
       <MemberSignature Language="C#" Value="public ErrorProvider (System.ComponentModel.IContainer container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IContainer container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.#ctor(System.ComponentModel.IContainer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (container As IContainer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ErrorProvider : System.ComponentModel.IContainer -&gt; System.Windows.Forms.ErrorProvider" Usage="new System.Windows.Forms.ErrorProvider container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,6 +137,8 @@
       <MemberSignature Language="C#" Value="public ErrorProvider (System.Windows.Forms.ContainerControl parentControl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ContainerControl parentControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.#ctor(System.Windows.Forms.ContainerControl)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parentControl As ContainerControl)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ErrorProvider : System.Windows.Forms.ContainerControl -&gt; System.Windows.Forms.ErrorProvider" Usage="new System.Windows.Forms.ErrorProvider parentControl" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,6 +164,8 @@
       <MemberSignature Language="C#" Value="public void BindToDataAndErrors (object newDataSource, string newDataMember);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BindToDataAndErrors(object newDataSource, string newDataMember) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.BindToDataAndErrors(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BindToDataAndErrors (newDataSource As Object, newDataMember As String)" />
+      <MemberSignature Language="F#" Value="member this.BindToDataAndErrors : obj * string -&gt; unit" Usage="errorProvider.BindToDataAndErrors (newDataSource, newDataMember)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -178,6 +196,8 @@
       <MemberSignature Language="C#" Value="public int BlinkRate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BlinkRate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ErrorProvider.BlinkRate" />
+      <MemberSignature Language="VB.NET" Value="Public Property BlinkRate As Integer" />
+      <MemberSignature Language="F#" Value="member this.BlinkRate : int with get, set" Usage="System.Windows.Forms.ErrorProvider.BlinkRate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -222,6 +242,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ErrorBlinkStyle BlinkStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ErrorBlinkStyle BlinkStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ErrorProvider.BlinkStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BlinkStyle As ErrorBlinkStyle" />
+      <MemberSignature Language="F#" Value="member this.BlinkStyle : System.Windows.Forms.ErrorBlinkStyle with get, set" Usage="System.Windows.Forms.ErrorProvider.BlinkStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -264,7 +286,12 @@
       <MemberSignature Language="C#" Value="public bool CanExtend (object extendee);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExtend(object extendee) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.CanExtend(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanExtend (extendee As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="errorProvider.CanExtend extendee" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -296,6 +323,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="errorProvider.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -321,6 +350,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ContainerControl ContainerControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ContainerControl ContainerControl" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ErrorProvider.ContainerControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainerControl As ContainerControl" />
+      <MemberSignature Language="F#" Value="member this.ContainerControl : System.Windows.Forms.ContainerControl with get, set" Usage="System.Windows.Forms.ErrorProvider.ContainerControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -352,6 +383,8 @@
       <MemberSignature Language="C#" Value="public string DataMember { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataMember" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ErrorProvider.DataMember" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataMember As String" />
+      <MemberSignature Language="F#" Value="member this.DataMember : string with get, set" Usage="System.Windows.Forms.ErrorProvider.DataMember" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -396,6 +429,8 @@
       <MemberSignature Language="C#" Value="public object DataSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ErrorProvider.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSource As Object" />
+      <MemberSignature Language="F#" Value="member this.DataSource : obj with get, set" Usage="System.Windows.Forms.ErrorProvider.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -442,6 +477,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="errorProvider.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -465,6 +502,7 @@
       <MemberSignature Language="C#" Value="public string GetError (System.Windows.Forms.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetError(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.GetError(System.Windows.Forms.Control)" />
+      <MemberSignature Language="F#" Value="member this.GetError : System.Windows.Forms.Control -&gt; string" Usage="errorProvider.GetError control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -509,6 +547,7 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ErrorIconAlignment GetIconAlignment (System.Windows.Forms.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Forms.ErrorIconAlignment GetIconAlignment(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.GetIconAlignment(System.Windows.Forms.Control)" />
+      <MemberSignature Language="F#" Value="member this.GetIconAlignment : System.Windows.Forms.Control -&gt; System.Windows.Forms.ErrorIconAlignment" Usage="errorProvider.GetIconAlignment control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -543,6 +582,7 @@
       <MemberSignature Language="C#" Value="public int GetIconPadding (System.Windows.Forms.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetIconPadding(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.GetIconPadding(System.Windows.Forms.Control)" />
+      <MemberSignature Language="F#" Value="member this.GetIconPadding : System.Windows.Forms.Control -&gt; int" Usage="errorProvider.GetIconPadding control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -583,6 +623,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Icon Icon { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Icon Icon" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ErrorProvider.Icon" />
+      <MemberSignature Language="VB.NET" Value="Public Property Icon As Icon" />
+      <MemberSignature Language="F#" Value="member this.Icon : System.Drawing.Icon with get, set" Usage="System.Windows.Forms.ErrorProvider.Icon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -615,6 +657,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnRightToLeftChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRightToLeftChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.OnRightToLeftChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRightToLeftChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnRightToLeftChanged : EventArgs -&gt; unit&#xA;override this.OnRightToLeftChanged : EventArgs -&gt; unit" Usage="errorProvider.OnRightToLeftChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -653,6 +697,8 @@
       <MemberSignature Language="C#" Value="public virtual bool RightToLeft { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RightToLeft" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ErrorProvider.RightToLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RightToLeft As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RightToLeft : bool with get, set" Usage="System.Windows.Forms.ErrorProvider.RightToLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -687,6 +733,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler RightToLeftChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RightToLeftChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ErrorProvider.RightToLeftChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event RightToLeftChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.RightToLeftChanged : EventHandler " Usage="member this.RightToLeftChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -721,6 +769,7 @@
       <MemberSignature Language="C#" Value="public void SetError (System.Windows.Forms.Control control, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetError(class System.Windows.Forms.Control control, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.SetError(System.Windows.Forms.Control,System.String)" />
+      <MemberSignature Language="F#" Value="member this.SetError : System.Windows.Forms.Control * string -&gt; unit" Usage="errorProvider.SetError (control, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -763,6 +812,7 @@
       <MemberSignature Language="C#" Value="public void SetIconAlignment (System.Windows.Forms.Control control, System.Windows.Forms.ErrorIconAlignment value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetIconAlignment(class System.Windows.Forms.Control control, valuetype System.Windows.Forms.ErrorIconAlignment value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.SetIconAlignment(System.Windows.Forms.Control,System.Windows.Forms.ErrorIconAlignment)" />
+      <MemberSignature Language="F#" Value="member this.SetIconAlignment : System.Windows.Forms.Control * System.Windows.Forms.ErrorIconAlignment -&gt; unit" Usage="errorProvider.SetIconAlignment (control, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -806,6 +856,7 @@
       <MemberSignature Language="C#" Value="public void SetIconPadding (System.Windows.Forms.Control control, int padding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetIconPadding(class System.Windows.Forms.Control control, int32 padding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.SetIconPadding(System.Windows.Forms.Control,System.Int32)" />
+      <MemberSignature Language="F#" Value="member this.SetIconPadding : System.Windows.Forms.Control * int -&gt; unit" Usage="errorProvider.SetIconPadding (control, padding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -849,6 +900,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.ISite Site { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ErrorProvider.Site" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Site As ISite" />
+      <MemberSignature Language="F#" Value="member this.Site : System.ComponentModel.ISite" Usage="System.Windows.Forms.ErrorProvider.Site" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -868,7 +921,11 @@
       <MemberSignature Language="C#" Value="void ISupportInitialize.BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.System#ComponentModel#ISupportInitialize#BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Sub BeginInit () Implements ISupportInitialize.BeginInit" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -886,7 +943,11 @@
       <MemberSignature Language="C#" Value="void ISupportInitialize.EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.System#ComponentModel#ISupportInitialize#EndInit" />
+      <MemberSignature Language="VB.NET" Value="Sub EndInit () Implements ISupportInitialize.EndInit" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -904,6 +965,8 @@
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ErrorProvider.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.ErrorProvider.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -943,6 +1006,8 @@
       <MemberSignature Language="C#" Value="public void UpdateBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateBinding() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ErrorProvider.UpdateBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateBinding ()" />
+      <MemberSignature Language="F#" Value="member this.UpdateBinding : unit -&gt; unit" Usage="errorProvider.UpdateBinding " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -964,14 +1029,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ErrorProvider" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

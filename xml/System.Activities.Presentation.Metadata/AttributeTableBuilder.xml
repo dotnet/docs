@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class AttributeTableBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AttributeTableBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Metadata.AttributeTableBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class AttributeTableBuilder" />
+  <TypeSignature Language="F#" Value="type AttributeTableBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="public AttributeTableBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -41,6 +44,7 @@
       <MemberSignature Language="C#" Value="public void AddCallback (Type type, System.Activities.Presentation.Metadata.AttributeCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCallback(class System.Type type, class System.Activities.Presentation.Metadata.AttributeCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback(System.Type,System.Activities.Presentation.Metadata.AttributeCallback)" />
+      <MemberSignature Language="F#" Value="member this.AddCallback : Type * System.Activities.Presentation.Metadata.AttributeCallback -&gt; unit" Usage="attributeTableBuilder.AddCallback (type, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type type, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Type type, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes(System.Type,System.Attribute[])" />
+      <MemberSignature Language="F#" Value="member this.AddCustomAttributes : Type * Attribute[] -&gt; unit" Usage="attributeTableBuilder.AddCustomAttributes (type, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -130,6 +135,8 @@
       <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type ownerType, System.ComponentModel.MemberDescriptor descriptor, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Type ownerType, class System.ComponentModel.MemberDescriptor descriptor, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes(System.Type,System.ComponentModel.MemberDescriptor,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCustomAttributes (ownerType As Type, descriptor As MemberDescriptor, ParamArray attributes As Attribute())" />
+      <MemberSignature Language="F#" Value="member this.AddCustomAttributes : Type * System.ComponentModel.MemberDescriptor * Attribute[] -&gt; unit" Usage="attributeTableBuilder.AddCustomAttributes (ownerType, descriptor, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -172,6 +179,8 @@
       <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type ownerType, System.Reflection.MemberInfo member, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Type ownerType, class System.Reflection.MemberInfo member, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes(System.Type,System.Reflection.MemberInfo,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCustomAttributes (ownerType As Type, member As MemberInfo, ParamArray attributes As Attribute())" />
+      <MemberSignature Language="F#" Value="member this.AddCustomAttributes : Type * System.Reflection.MemberInfo * Attribute[] -&gt; unit" Usage="attributeTableBuilder.AddCustomAttributes (ownerType, member, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -214,6 +223,8 @@
       <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type ownerType, string memberName, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Type ownerType, string memberName, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes(System.Type,System.String,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCustomAttributes (ownerType As Type, memberName As String, ParamArray attributes As Attribute())" />
+      <MemberSignature Language="F#" Value="member this.AddCustomAttributes : Type * string * Attribute[] -&gt; unit" Usage="attributeTableBuilder.AddCustomAttributes (ownerType, memberName, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -256,6 +267,8 @@
       <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type ownerType, System.Windows.DependencyProperty dp, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Type ownerType, class System.Windows.DependencyProperty dp, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes(System.Type,System.Windows.DependencyProperty,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCustomAttributes (ownerType As Type, dp As DependencyProperty, ParamArray attributes As Attribute())" />
+      <MemberSignature Language="F#" Value="member this.AddCustomAttributes : Type * System.Windows.DependencyProperty * Attribute[] -&gt; unit" Usage="attributeTableBuilder.AddCustomAttributes (ownerType, dp, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -298,6 +311,8 @@
       <MemberSignature Language="C#" Value="public void AddTable (System.Activities.Presentation.Metadata.AttributeTable table);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddTable(class System.Activities.Presentation.Metadata.AttributeTable table) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddTable(System.Activities.Presentation.Metadata.AttributeTable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddTable (table As AttributeTable)" />
+      <MemberSignature Language="F#" Value="member this.AddTable : System.Activities.Presentation.Metadata.AttributeTable -&gt; unit" Usage="attributeTableBuilder.AddTable table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -328,6 +343,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.Metadata.AttributeTable CreateTable ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Presentation.Metadata.AttributeTable CreateTable() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.CreateTable" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateTable () As AttributeTable" />
+      <MemberSignature Language="F#" Value="member this.CreateTable : unit -&gt; System.Activities.Presentation.Metadata.AttributeTable" Usage="attributeTableBuilder.CreateTable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -356,6 +373,8 @@
       <MemberSignature Language="C#" Value="public void ValidateTable ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateTable() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.ValidateTable" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateTable ()" />
+      <MemberSignature Language="F#" Value="member this.ValidateTable : unit -&gt; unit" Usage="attributeTableBuilder.ValidateTable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

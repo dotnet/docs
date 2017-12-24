@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class MouseGesture : System.Windows.Input.InputGesture" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MouseGesture extends System.Windows.Input.InputGesture" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseGesture" />
+  <TypeSignature Language="VB.NET" Value="Public Class MouseGesture&#xA;Inherits InputGesture" />
+  <TypeSignature Language="F#" Value="type MouseGesture = class&#xA;    inherit InputGesture" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,10 +72,20 @@
     <altmember cref="T:System.Windows.Input.CommandBinding" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.MouseGesture" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MouseGesture ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseGesture.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -94,6 +106,7 @@
       <MemberSignature Language="C#" Value="public MouseGesture (System.Windows.Input.MouseAction mouseAction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Input.MouseAction mouseAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseGesture.#ctor(System.Windows.Input.MouseAction)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.MouseGesture : System.Windows.Input.MouseAction -&gt; System.Windows.Input.MouseGesture" Usage="new System.Windows.Input.MouseGesture mouseAction" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -119,6 +132,7 @@
       <MemberSignature Language="C#" Value="public MouseGesture (System.Windows.Input.MouseAction mouseAction, System.Windows.Input.ModifierKeys modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Input.MouseAction mouseAction, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseGesture.#ctor(System.Windows.Input.MouseAction,System.Windows.Input.ModifierKeys)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.MouseGesture : System.Windows.Input.MouseAction * System.Windows.Input.ModifierKeys -&gt; System.Windows.Input.MouseGesture" Usage="new System.Windows.Input.MouseGesture (mouseAction, modifiers)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +165,7 @@
       <MemberSignature Language="C#" Value="public override bool Matches (object targetElement, System.Windows.Input.InputEventArgs inputEventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(object targetElement, class System.Windows.Input.InputEventArgs inputEventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.Matches : obj * System.Windows.Input.InputEventArgs -&gt; bool" Usage="mouseGesture.Matches (targetElement, inputEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -186,6 +201,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.ModifierKeys Modifiers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.ModifierKeys Modifiers" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseGesture.Modifiers" />
+      <MemberSignature Language="VB.NET" Value="Public Property Modifiers As ModifierKeys" />
+      <MemberSignature Language="F#" Value="member this.Modifiers : System.Windows.Input.ModifierKeys with get, set" Usage="System.Windows.Input.MouseGesture.Modifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -238,6 +255,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.MouseAction MouseAction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.MouseAction MouseAction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseGesture.MouseAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property MouseAction As MouseAction" />
+      <MemberSignature Language="F#" Value="member this.MouseAction : System.Windows.Input.MouseAction with get, set" Usage="System.Windows.Input.MouseGesture.MouseAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -272,14 +291,5 @@
         <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.MouseGesture" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

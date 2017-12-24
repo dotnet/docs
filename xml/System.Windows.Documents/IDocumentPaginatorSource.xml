@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IDocumentPaginatorSource" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDocumentPaginatorSource" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.IDocumentPaginatorSource" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDocumentPaginatorSource" />
+  <TypeSignature Language="F#" Value="type IDocumentPaginatorSource = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.DocumentPaginator DocumentPaginator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.DocumentPaginator DocumentPaginator" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.IDocumentPaginatorSource.DocumentPaginator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentPaginator As DocumentPaginator" />
+      <MemberSignature Language="F#" Value="member this.DocumentPaginator : System.Windows.Documents.DocumentPaginator" Usage="System.Windows.Documents.IDocumentPaginatorSource.DocumentPaginator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

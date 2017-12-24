@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ReplicationCursorCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReplicationCursorCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReplicationCursorCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ReplicationCursorCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.ActiveDirectory.ReplicationCursor cursor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.ActiveDirectory.ReplicationCursor cursor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection.Contains(System.DirectoryServices.ActiveDirectory.ReplicationCursor)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (cursor As ReplicationCursor) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.ReplicationCursor -&gt; bool" Usage="replicationCursorCollection.Contains cursor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -47,6 +51,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.ActiveDirectory.ReplicationCursor[] values, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.ActiveDirectory.ReplicationCursor[] values, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ReplicationCursor[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (values As ReplicationCursor(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.ReplicationCursor[] * int -&gt; unit" Usage="replicationCursorCollection.CopyTo (values, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.DirectoryServices.ActiveDirectory.ReplicationCursor cursor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.ActiveDirectory.ReplicationCursor cursor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ReplicationCursor)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (cursor As ReplicationCursor) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.ReplicationCursor -&gt; int" Usage="replicationCursorCollection.IndexOf cursor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -104,6 +112,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ReplicationCursor this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ReplicationCursor Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ReplicationCursor" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.ReplicationCursor" Usage="System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

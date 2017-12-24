@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class StreamWriter : System.IO.TextWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit StreamWriter extends System.IO.TextWriter" />
   <TypeSignature Language="DocId" Value="T:System.IO.StreamWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Class StreamWriter&#xA;Inherits TextWriter" />
+  <TypeSignature Language="F#" Value="type StreamWriter = class&#xA;    inherit TextWriter" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,10 +69,22 @@
     <altmember cref="T:System.Text.Encoding" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.StreamWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StreamWriter (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamWriter : System.IO.Stream -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -130,6 +144,8 @@
       <MemberSignature Language="C#" Value="public StreamWriter (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamWriter : string -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -196,6 +212,7 @@
       <MemberSignature Language="C#" Value="public StreamWriter (System.IO.Stream stream, System.Text.Encoding encoding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.IO.Stream,System.Text.Encoding)" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamWriter : System.IO.Stream * System.Text.Encoding -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter (stream, encoding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -258,6 +275,8 @@
       <MemberSignature Language="C#" Value="public StreamWriter (string path, bool append);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, bool append) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, append As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamWriter : string * bool -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter (path, append)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -327,6 +346,7 @@
       <MemberSignature Language="C#" Value="public StreamWriter (System.IO.Stream stream, System.Text.Encoding encoding, int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.IO.Stream,System.Text.Encoding,System.Int32)" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamWriter : System.IO.Stream * System.Text.Encoding * int -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter (stream, encoding, bufferSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -393,6 +413,7 @@
       <MemberSignature Language="C#" Value="public StreamWriter (string path, bool append, System.Text.Encoding encoding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, bool append, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.String,System.Boolean,System.Text.Encoding)" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamWriter : string * bool * System.Text.Encoding -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter (path, append, encoding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -465,6 +486,7 @@
       <MemberSignature Language="C#" Value="public StreamWriter (System.IO.Stream stream, System.Text.Encoding encoding, int bufferSize, bool leaveOpen);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding, int32 bufferSize, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.IO.Stream,System.Text.Encoding,System.Int32,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamWriter : System.IO.Stream * System.Text.Encoding * int * bool -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter (stream, encoding, bufferSize, leaveOpen)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -531,6 +553,7 @@
       <MemberSignature Language="C#" Value="public StreamWriter (string path, bool append, System.Text.Encoding encoding, int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, bool append, class System.Text.Encoding encoding, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.String,System.Boolean,System.Text.Encoding,System.Int32)" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamWriter : string * bool * System.Text.Encoding * int -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter (path, append, encoding, bufferSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -612,6 +635,8 @@
       <MemberSignature Language="C#" Value="public virtual bool AutoFlush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoFlush" />
       <MemberSignature Language="DocId" Value="P:System.IO.StreamWriter.AutoFlush" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AutoFlush As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoFlush : bool with get, set" Usage="System.IO.StreamWriter.AutoFlush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -668,6 +693,8 @@
       <MemberSignature Language="C#" Value="public virtual System.IO.Stream BaseStream { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream BaseStream" />
       <MemberSignature Language="DocId" Value="P:System.IO.StreamWriter.BaseStream" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BaseStream As Stream" />
+      <MemberSignature Language="F#" Value="member this.BaseStream : System.IO.Stream" Usage="System.IO.StreamWriter.BaseStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -708,6 +735,8 @@
       <MemberSignature Language="C#" Value="public override void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="streamWriter.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -758,6 +787,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="streamWriter.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -809,6 +840,8 @@
       <MemberSignature Language="C#" Value="public override System.Text.Encoding Encoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding Encoding" />
       <MemberSignature Language="DocId" Value="P:System.IO.StreamWriter.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Encoding As Encoding" />
+      <MemberSignature Language="F#" Value="member this.Encoding : System.Text.Encoding" Usage="System.IO.StreamWriter.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -860,6 +893,8 @@
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="streamWriter.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -908,6 +943,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task FlushAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task FlushAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.FlushAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function FlushAsync () As Task" />
+      <MemberSignature Language="F#" Value="override this.FlushAsync : unit -&gt; System.Threading.Tasks.Task" Usage="streamWriter.FlushAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -948,6 +985,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.IO.StreamWriter Null;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.IO.StreamWriter Null" />
       <MemberSignature Language="DocId" Value="F:System.IO.StreamWriter.Null" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As StreamWriter " />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.IO.StreamWriter" Usage="System.IO.StreamWriter.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -996,10 +1035,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to the stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public override void Write (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Char)" />
+      <MemberSignature Language="F#" Value="override this.Write : char -&gt; unit" Usage="streamWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1052,6 +1104,8 @@
       <MemberSignature Language="C#" Value="public override void Write (char[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char())" />
+      <MemberSignature Language="F#" Value="override this.Write : char[] -&gt; unit" Usage="streamWriter.Write buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1106,6 +1160,8 @@
       <MemberSignature Language="C#" Value="public override void Write (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As String)" />
+      <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="streamWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1160,6 +1216,8 @@
       <MemberSignature Language="C#" Value="public override void Write (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char(), index As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="override this.Write : char[] * int * int -&gt; unit" Usage="streamWriter.Write (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1226,10 +1284,23 @@
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and the contents of the buffer cannot be written to the underlying fixed size stream because the <see cref="T:System.IO.StreamWriter" /> is at the end the stream.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to the stream asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteAsync">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteAsync(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (value As Char) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : char -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteAsync value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1284,6 +1355,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (value As String) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : string -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteAsync value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1338,6 +1411,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteAsync(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (buffer As Char(), index As Integer, count As Integer) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : char[] * int * int -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1397,10 +1472,23 @@
         <exception cref="T:System.InvalidOperationException">The stream writer is currently in use by a previous write operation.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteLineAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data followed by a line terminator asynchronously to the stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteLineAsync">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLineAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync () As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : unit -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteLineAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1449,6 +1537,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLineAsync(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (value As Char) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : char -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteLineAsync value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1508,6 +1598,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLineAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (value As String) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : string -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteLineAsync value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1567,6 +1659,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLineAsync(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (buffer As Char(), index As Integer, count As Integer) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : char[] * int * int -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteLineAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1631,49 +1725,5 @@
         <exception cref="T:System.InvalidOperationException">The stream writer is currently in use by a previous write operation.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System.IO</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes data to the stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.IO</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes data to the stream asynchronously.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteLineAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.IO</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes data followed by a line terminator asynchronously to the stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IO</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.StreamWriter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

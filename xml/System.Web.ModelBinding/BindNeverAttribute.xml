@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class BindNeverAttribute : System.Web.ModelBinding.BindingBehaviorAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BindNeverAttribute extends System.Web.ModelBinding.BindingBehaviorAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.BindNeverAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BindNeverAttribute&#xA;Inherits BindingBehaviorAttribute" />
+  <TypeSignature Language="F#" Value="type BindNeverAttribute = class&#xA;    inherit BindingBehaviorAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,7 @@
       <MemberSignature Language="C#" Value="public BindNeverAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.BindNeverAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

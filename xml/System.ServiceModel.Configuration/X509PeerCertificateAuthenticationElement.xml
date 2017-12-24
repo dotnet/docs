@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class X509PeerCertificateAuthenticationElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit X509PeerCertificateAuthenticationElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X509PeerCertificateAuthenticationElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type X509PeerCertificateAuthenticationElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public X509PeerCertificateAuthenticationElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.X509CertificateValidationMode CertificateValidationMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Security.X509CertificateValidationMode CertificateValidationMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement.CertificateValidationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property CertificateValidationMode As X509CertificateValidationMode" />
+      <MemberSignature Language="F#" Value="member this.CertificateValidationMode : System.ServiceModel.Security.X509CertificateValidationMode with get, set" Usage="System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement.CertificateValidationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="public void Copy (System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement from);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Copy(class System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement from) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement.Copy(System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy (from As X509PeerCertificateAuthenticationElement)" />
+      <MemberSignature Language="F#" Value="member this.Copy : System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement -&gt; unit" Usage="x509PeerCertificateAuthenticationElement.Copy from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +88,8 @@
       <MemberSignature Language="C#" Value="public string CustomCertificateValidatorType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CustomCertificateValidatorType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement.CustomCertificateValidatorType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomCertificateValidatorType As String" />
+      <MemberSignature Language="F#" Value="member this.CustomCertificateValidatorType : string with get, set" Usage="System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement.CustomCertificateValidatorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +123,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -132,6 +143,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509RevocationMode RevocationMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.X509RevocationMode RevocationMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement.RevocationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property RevocationMode As X509RevocationMode" />
+      <MemberSignature Language="F#" Value="member this.RevocationMode : System.Security.Cryptography.X509Certificates.X509RevocationMode with get, set" Usage="System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement.RevocationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -162,6 +175,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.StoreLocation TrustedStoreLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.StoreLocation TrustedStoreLocation" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement.TrustedStoreLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrustedStoreLocation As StoreLocation" />
+      <MemberSignature Language="F#" Value="member this.TrustedStoreLocation : System.Security.Cryptography.X509Certificates.StoreLocation with get, set" Usage="System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement.TrustedStoreLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

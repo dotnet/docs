@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class FlowLayoutPanel : System.Windows.Forms.Panel, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FlowLayoutPanel extends System.Windows.Forms.Panel implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlowLayoutPanel" />
+  <TypeSignature Language="VB.NET" Value="Public Class FlowLayoutPanel&#xA;Inherits Panel&#xA;Implements IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type FlowLayoutPanel = class&#xA;    inherit Panel&#xA;    interface IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +69,7 @@
       <MemberSignature Language="C#" Value="public FlowLayoutPanel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FlowLayoutPanel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -91,6 +94,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.FlowDirection FlowDirection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.FlowDirection FlowDirection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlowLayoutPanel.FlowDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Property FlowDirection As FlowDirection" />
+      <MemberSignature Language="F#" Value="member this.FlowDirection : System.Windows.Forms.FlowDirection with get, set" Usage="System.Windows.Forms.FlowLayoutPanel.FlowDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="C#" Value="public bool GetFlowBreak (System.Windows.Forms.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetFlowBreak(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FlowLayoutPanel.GetFlowBreak(System.Windows.Forms.Control)" />
+      <MemberSignature Language="F#" Value="member this.GetFlowBreak : System.Windows.Forms.Control -&gt; bool" Usage="flowLayoutPanel.GetFlowBreak control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -165,6 +171,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.Layout.LayoutEngine LayoutEngine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Layout.LayoutEngine LayoutEngine" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlowLayoutPanel.LayoutEngine" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LayoutEngine As LayoutEngine" />
+      <MemberSignature Language="F#" Value="member this.LayoutEngine : System.Windows.Forms.Layout.LayoutEngine" Usage="System.Windows.Forms.FlowLayoutPanel.LayoutEngine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -183,6 +191,7 @@
       <MemberSignature Language="C#" Value="public void SetFlowBreak (System.Windows.Forms.Control control, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFlowBreak(class System.Windows.Forms.Control control, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FlowLayoutPanel.SetFlowBreak(System.Windows.Forms.Control,System.Boolean)" />
+      <MemberSignature Language="F#" Value="member this.SetFlowBreak : System.Windows.Forms.Control * bool -&gt; unit" Usage="flowLayoutPanel.SetFlowBreak (control, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -211,7 +220,11 @@
       <MemberSignature Language="C#" Value="bool IExtenderProvider.CanExtend (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.IExtenderProvider.CanExtend(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FlowLayoutPanel.System#ComponentModel#IExtenderProvider#CanExtend(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function CanExtend (obj As Object) As Boolean Implements IExtenderProvider.CanExtend" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -241,6 +254,8 @@
       <MemberSignature Language="C#" Value="public bool WrapContents { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WrapContents" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlowLayoutPanel.WrapContents" />
+      <MemberSignature Language="VB.NET" Value="Public Property WrapContents As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WrapContents : bool with get, set" Usage="System.Windows.Forms.FlowLayoutPanel.WrapContents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

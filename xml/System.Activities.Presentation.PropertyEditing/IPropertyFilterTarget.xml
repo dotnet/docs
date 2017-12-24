@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IPropertyFilterTarget" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPropertyFilterTarget" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPropertyFilterTarget" />
+  <TypeSignature Language="F#" Value="type IPropertyFilterTarget = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public void ApplyFilter (System.Activities.Presentation.PropertyEditing.PropertyFilter filter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyFilter(class System.Activities.Presentation.PropertyEditing.PropertyFilter filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.ApplyFilter(System.Activities.Presentation.PropertyEditing.PropertyFilter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyFilter (filter As PropertyFilter)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyFilter : System.Activities.Presentation.PropertyEditing.PropertyFilter -&gt; unit" Usage="iPropertyFilterTarget.ApplyFilter filter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -41,9 +45,11 @@
       </Docs>
     </Member>
     <Member MemberName="FilterApplied">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Activities.Presentation.PropertyEditing.PropertyFilterAppliedEventArgs&gt; FilterApplied;" />
+      <MemberSignature Language="C#" Value="event EventHandler&lt;System.Activities.Presentation.PropertyEditing.PropertyFilterAppliedEventArgs&gt; FilterApplied;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Activities.Presentation.PropertyEditing.PropertyFilterAppliedEventArgs&gt; FilterApplied" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.FilterApplied" />
+      <MemberSignature Language="VB.NET" Value="Event FilterApplied As EventHandler(Of PropertyFilterAppliedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.FilterApplied : EventHandler&lt;System.Activities.Presentation.PropertyEditing.PropertyFilterAppliedEventArgs&gt; " Usage="member this.FilterApplied : System.EventHandler&lt;System.Activities.Presentation.PropertyEditing.PropertyFilterAppliedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -61,6 +67,8 @@
       <MemberSignature Language="C#" Value="public bool MatchesFilter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MatchesFilter" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.MatchesFilter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatchesFilter As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MatchesFilter : bool" Usage="System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.MatchesFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -80,6 +88,8 @@
       <MemberSignature Language="C#" Value="public bool MatchesPredicate (System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate predicate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MatchesPredicate(class System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate predicate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.MatchesPredicate(System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MatchesPredicate (predicate As PropertyFilterPredicate) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member MatchesPredicate : System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate -&gt; bool" Usage="iPropertyFilterTarget.MatchesPredicate predicate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

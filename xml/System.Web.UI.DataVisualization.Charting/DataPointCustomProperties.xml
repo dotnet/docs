@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class DataPointCustomProperties : System.Web.UI.DataVisualization.Charting.ChartNamedElement, System.Web.UI.DataVisualization.Charting.IChartMapArea" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPointCustomProperties extends System.Web.UI.DataVisualization.Charting.ChartNamedElement implements class System.Web.UI.DataVisualization.Charting.IChartMapArea" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataPointCustomProperties&#xA;Inherits ChartNamedElement&#xA;Implements IChartMapArea" />
+  <TypeSignature Language="F#" Value="type DataPointCustomProperties = class&#xA;    inherit ChartNamedElement&#xA;    interface IChartMapArea" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,10 +38,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataPointCustomProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -55,6 +67,7 @@
       <MemberSignature Language="C#" Value="public DataPointCustomProperties (System.Web.UI.DataVisualization.Charting.Series series, bool pointProperties);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.DataVisualization.Charting.Series series, bool pointProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.#ctor(System.Web.UI.DataVisualization.Charting.Series,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.DataPointCustomProperties : System.Web.UI.DataVisualization.Charting.Series * bool -&gt; System.Web.UI.DataVisualization.Charting.DataPointCustomProperties" Usage="new System.Web.UI.DataVisualization.Charting.DataPointCustomProperties (series, pointProperties)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -75,6 +88,8 @@
       <MemberSignature Language="C#" Value="public virtual string AxisLabel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AxisLabel" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.AxisLabel" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AxisLabel As String" />
+      <MemberSignature Language="F#" Value="member this.AxisLabel : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.AxisLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -115,6 +130,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.GradientStyle BackGradientStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.GradientStyle BackGradientStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackGradientStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackGradientStyle As GradientStyle" />
+      <MemberSignature Language="F#" Value="member this.BackGradientStyle : System.Web.UI.DataVisualization.Charting.GradientStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackGradientStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -144,6 +161,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartHatchStyle BackHatchStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartHatchStyle BackHatchStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackHatchStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackHatchStyle As ChartHatchStyle" />
+      <MemberSignature Language="F#" Value="member this.BackHatchStyle : System.Web.UI.DataVisualization.Charting.ChartHatchStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackHatchStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -173,6 +192,8 @@
       <MemberSignature Language="C#" Value="public string BackImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BackImage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackImage" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImage As String" />
+      <MemberSignature Language="F#" Value="member this.BackImage : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -202,6 +223,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartImageAlignmentStyle BackImageAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartImageAlignmentStyle BackImageAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackImageAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageAlignment As ChartImageAlignmentStyle" />
+      <MemberSignature Language="F#" Value="member this.BackImageAlignment : System.Web.UI.DataVisualization.Charting.ChartImageAlignmentStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackImageAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -231,6 +254,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackImageTransparentColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackImageTransparentColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackImageTransparentColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageTransparentColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackImageTransparentColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackImageTransparentColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -266,6 +291,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartImageWrapMode BackImageWrapMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartImageWrapMode BackImageWrapMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackImageWrapMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageWrapMode As ChartImageWrapMode" />
+      <MemberSignature Language="F#" Value="member this.BackImageWrapMode : System.Web.UI.DataVisualization.Charting.ChartImageWrapMode with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackImageWrapMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -292,6 +319,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackSecondaryColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackSecondaryColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackSecondaryColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackSecondaryColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackSecondaryColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackSecondaryColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -324,6 +353,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BorderColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -356,6 +387,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartDashStyle BorderDashStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle BorderDashStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BorderDashStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderDashStyle As ChartDashStyle" />
+      <MemberSignature Language="F#" Value="member this.BorderDashStyle : System.Web.UI.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BorderDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -382,6 +415,8 @@
       <MemberSignature Language="C#" Value="public int BorderWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BorderWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BorderWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.BorderWidth : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -408,6 +443,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color Color { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color Color" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Color" />
+      <MemberSignature Language="VB.NET" Value="Public Property Color As Color" />
+      <MemberSignature Language="F#" Value="member this.Color : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -440,6 +477,8 @@
       <MemberSignature Language="C#" Value="public string CustomProperties { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CustomProperties" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.CustomProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomProperties As String" />
+      <MemberSignature Language="F#" Value="member this.CustomProperties : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.CustomProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -472,6 +511,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.CustomProperties CustomPropertiesExtended { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.CustomProperties CustomPropertiesExtended" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.CustomPropertiesExtended" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomPropertiesExtended As CustomProperties" />
+      <MemberSignature Language="F#" Value="member this.CustomPropertiesExtended : System.Web.UI.DataVisualization.Charting.CustomProperties with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.CustomPropertiesExtended" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -516,6 +557,8 @@
       <MemberSignature Language="C#" Value="public virtual void DeleteCustomProperty (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteCustomProperty(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.DeleteCustomProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DeleteCustomProperty (name As String)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteCustomProperty : string -&gt; unit&#xA;override this.DeleteCustomProperty : string -&gt; unit" Usage="dataPointCustomProperties.DeleteCustomProperty name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -537,6 +580,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -563,6 +608,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetCustomProperty (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCustomProperty(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.GetCustomProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCustomProperty (name As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomProperty : string -&gt; string&#xA;override this.GetCustomProperty : string -&gt; string" Usage="dataPointCustomProperties.GetCustomProperty name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -585,6 +632,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsCustomPropertySet (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsCustomPropertySet(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.IsCustomPropertySet(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsCustomPropertySet (name As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsCustomPropertySet : string -&gt; bool&#xA;override this.IsCustomPropertySet : string -&gt; bool" Usage="dataPointCustomProperties.IsCustomPropertySet name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -608,6 +657,8 @@
       <MemberSignature Language="C#" Value="public bool IsValueShownAsLabel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsValueShownAsLabel" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.IsValueShownAsLabel" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsValueShownAsLabel As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsValueShownAsLabel : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.IsValueShownAsLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -635,6 +686,8 @@
       <MemberSignature Language="C#" Value="public bool IsVisibleInLegend { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsVisibleInLegend" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.IsVisibleInLegend" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsVisibleInLegend As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsVisibleInLegend : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.IsVisibleInLegend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -661,10 +714,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public string this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : string" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -687,6 +751,8 @@
       <MemberSignature Language="C#" Value="public string this[string name] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As String" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -709,6 +775,8 @@
       <MemberSignature Language="C#" Value="public virtual string Label { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Label" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Label As String" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -738,6 +806,8 @@
       <MemberSignature Language="C#" Value="public int LabelAngle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LabelAngle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelAngle" />
+      <MemberSignature Language="VB.NET" Value="Public Property LabelAngle As Integer" />
+      <MemberSignature Language="F#" Value="member this.LabelAngle : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelAngle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -764,6 +834,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color LabelBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color LabelBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property LabelBackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.LabelBackColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -799,6 +871,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color LabelBorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color LabelBorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelBorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property LabelBorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.LabelBorderColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelBorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -834,6 +908,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartDashStyle LabelBorderDashStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle LabelBorderDashStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelBorderDashStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property LabelBorderDashStyle As ChartDashStyle" />
+      <MemberSignature Language="F#" Value="member this.LabelBorderDashStyle : System.Web.UI.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelBorderDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -863,6 +939,8 @@
       <MemberSignature Language="C#" Value="public int LabelBorderWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LabelBorderWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelBorderWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property LabelBorderWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.LabelBorderWidth : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelBorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -892,6 +970,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color LabelForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color LabelForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property LabelForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.LabelForeColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -924,6 +1004,8 @@
       <MemberSignature Language="C#" Value="public string LabelFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LabelFormat" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property LabelFormat As String" />
+      <MemberSignature Language="F#" Value="member this.LabelFormat : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -950,6 +1032,8 @@
       <MemberSignature Language="C#" Value="public string LabelMapAreaAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LabelMapAreaAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelMapAreaAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property LabelMapAreaAttributes As String" />
+      <MemberSignature Language="F#" Value="member this.LabelMapAreaAttributes : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelMapAreaAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -979,6 +1063,8 @@
       <MemberSignature Language="C#" Value="public string LabelPostBackValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LabelPostBackValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelPostBackValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property LabelPostBackValue As String" />
+      <MemberSignature Language="F#" Value="member this.LabelPostBackValue : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelPostBackValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1005,6 +1091,8 @@
       <MemberSignature Language="C#" Value="public string LabelToolTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LabelToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Property LabelToolTip As String" />
+      <MemberSignature Language="F#" Value="member this.LabelToolTip : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1037,6 +1125,8 @@
       <MemberSignature Language="C#" Value="public string LabelUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LabelUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property LabelUrl As String" />
+      <MemberSignature Language="F#" Value="member this.LabelUrl : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LabelUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1069,6 +1159,8 @@
       <MemberSignature Language="C#" Value="public string LegendMapAreaAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LegendMapAreaAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendMapAreaAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property LegendMapAreaAttributes As String" />
+      <MemberSignature Language="F#" Value="member this.LegendMapAreaAttributes : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendMapAreaAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1101,6 +1193,8 @@
       <MemberSignature Language="C#" Value="public string LegendPostBackValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LegendPostBackValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendPostBackValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property LegendPostBackValue As String" />
+      <MemberSignature Language="F#" Value="member this.LegendPostBackValue : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendPostBackValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1127,6 +1221,8 @@
       <MemberSignature Language="C#" Value="public string LegendText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LegendText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendText" />
+      <MemberSignature Language="VB.NET" Value="Public Property LegendText As String" />
+      <MemberSignature Language="F#" Value="member this.LegendText : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1159,6 +1255,8 @@
       <MemberSignature Language="C#" Value="public string LegendToolTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LegendToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Property LegendToolTip As String" />
+      <MemberSignature Language="F#" Value="member this.LegendToolTip : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1191,6 +1289,8 @@
       <MemberSignature Language="C#" Value="public string LegendUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LegendUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property LegendUrl As String" />
+      <MemberSignature Language="F#" Value="member this.LegendUrl : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1223,7 +1323,12 @@
       <MemberSignature Language="C#" Value="public string MapAreaAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MapAreaAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MapAreaAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property MapAreaAttributes As String" />
+      <MemberSignature Language="F#" Value="member this.MapAreaAttributes : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MapAreaAttributes" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.MapAreaAttributes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1255,6 +1360,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color MarkerBorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MarkerBorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerBorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property MarkerBorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.MarkerBorderColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerBorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1290,6 +1397,8 @@
       <MemberSignature Language="C#" Value="public int MarkerBorderWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MarkerBorderWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerBorderWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property MarkerBorderWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.MarkerBorderWidth : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerBorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1316,6 +1425,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color MarkerColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MarkerColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property MarkerColor As Color" />
+      <MemberSignature Language="F#" Value="member this.MarkerColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1351,6 +1462,8 @@
       <MemberSignature Language="C#" Value="public string MarkerImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MarkerImage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerImage" />
+      <MemberSignature Language="VB.NET" Value="Public Property MarkerImage As String" />
+      <MemberSignature Language="F#" Value="member this.MarkerImage : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1383,6 +1496,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color MarkerImageTransparentColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MarkerImageTransparentColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerImageTransparentColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property MarkerImageTransparentColor As Color" />
+      <MemberSignature Language="F#" Value="member this.MarkerImageTransparentColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerImageTransparentColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1418,6 +1533,8 @@
       <MemberSignature Language="C#" Value="public int MarkerSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MarkerSize" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MarkerSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.MarkerSize : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1447,6 +1564,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.MarkerStyle MarkerStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.MarkerStyle MarkerStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property MarkerStyle As MarkerStyle" />
+      <MemberSignature Language="F#" Value="member this.MarkerStyle : System.Web.UI.DataVisualization.Charting.MarkerStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1479,7 +1598,12 @@
       <MemberSignature Language="C#" Value="public string PostBackValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PostBackValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.PostBackValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property PostBackValue As String" />
+      <MemberSignature Language="F#" Value="member this.PostBackValue : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.PostBackValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.PostBackValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1505,6 +1629,8 @@
       <MemberSignature Language="C#" Value="public void ResetIsValueShownAsLabel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetIsValueShownAsLabel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.ResetIsValueShownAsLabel" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetIsValueShownAsLabel ()" />
+      <MemberSignature Language="F#" Value="member this.ResetIsValueShownAsLabel : unit -&gt; unit" Usage="dataPointCustomProperties.ResetIsValueShownAsLabel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1523,6 +1649,8 @@
       <MemberSignature Language="C#" Value="public void ResetIsVisibleInLegend ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetIsVisibleInLegend() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.ResetIsVisibleInLegend" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetIsVisibleInLegend ()" />
+      <MemberSignature Language="F#" Value="member this.ResetIsVisibleInLegend : unit -&gt; unit" Usage="dataPointCustomProperties.ResetIsVisibleInLegend " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1541,6 +1669,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetCustomProperty (string name, string propertyValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCustomProperty(string name, string propertyValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.SetCustomProperty(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetCustomProperty (name As String, propertyValue As String)" />
+      <MemberSignature Language="F#" Value="abstract member SetCustomProperty : string * string -&gt; unit&#xA;override this.SetCustomProperty : string * string -&gt; unit" Usage="dataPointCustomProperties.SetCustomProperty (name, propertyValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1564,6 +1694,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetDefault (bool clearAll);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDefault(bool clearAll) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.SetDefault(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetDefault (clearAll As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SetDefault : bool -&gt; unit&#xA;override this.SetDefault : bool -&gt; unit" Usage="dataPointCustomProperties.SetDefault clearAll" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1592,7 +1724,12 @@
       <MemberSignature Language="C#" Value="public string ToolTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.ToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTip As String" />
+      <MemberSignature Language="F#" Value="member this.ToolTip : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.ToolTip" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.ToolTip</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1624,7 +1761,12 @@
       <MemberSignature Language="C#" Value="public string Url { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Url" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.Url</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1652,23 +1794,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the <see cref="T:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

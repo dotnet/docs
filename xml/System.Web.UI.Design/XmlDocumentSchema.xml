@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class XmlDocumentSchema : System.Web.UI.Design.IDataSourceSchema" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlDocumentSchema extends System.Object implements class System.Web.UI.Design.IDataSourceSchema" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.XmlDocumentSchema" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlDocumentSchema&#xA;Implements IDataSourceSchema" />
+  <TypeSignature Language="F#" Value="type XmlDocumentSchema = class&#xA;    interface IDataSourceSchema" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="public XmlDocumentSchema (System.Xml.XmlDocument xmlDocument, string xPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlDocument xmlDocument, string xPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.XmlDocumentSchema.#ctor(System.Xml.XmlDocument,System.String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.XmlDocumentSchema : System.Xml.XmlDocument * string -&gt; System.Web.UI.Design.XmlDocumentSchema" Usage="new System.Web.UI.Design.XmlDocumentSchema (xmlDocument, xPath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -69,7 +72,12 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.IDataSourceViewSchema[] GetViews ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.IDataSourceViewSchema[] GetViews() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.XmlDocumentSchema.GetViews" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetViews () As IDataSourceViewSchema()" />
+      <MemberSignature Language="F#" Value="abstract member GetViews : unit -&gt; System.Web.UI.Design.IDataSourceViewSchema[]&#xA;override this.GetViews : unit -&gt; System.Web.UI.Design.IDataSourceViewSchema[]" Usage="xmlDocumentSchema.GetViews " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.Design.IDataSourceSchema.GetViews</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class AsymmetricSecurityKey : System.IdentityModel.Tokens.SecurityKey" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AsymmetricSecurityKey extends System.IdentityModel.Tokens.SecurityKey" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.AsymmetricSecurityKey" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class AsymmetricSecurityKey&#xA;Inherits SecurityKey" />
+  <TypeSignature Language="F#" Value="type AsymmetricSecurityKey = class&#xA;    inherit SecurityKey" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="protected AsymmetricSecurityKey ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AsymmetricSecurityKey.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Security.Cryptography.AsymmetricAlgorithm GetAsymmetricAlgorithm (string algorithm, bool privateKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.AsymmetricAlgorithm GetAsymmetricAlgorithm(string algorithm, bool privateKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AsymmetricSecurityKey.GetAsymmetricAlgorithm(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAsymmetricAlgorithm (algorithm As String, privateKey As Boolean) As AsymmetricAlgorithm" />
+      <MemberSignature Language="F#" Value="abstract member GetAsymmetricAlgorithm : string * bool -&gt; System.Security.Cryptography.AsymmetricAlgorithm" Usage="asymmetricSecurityKey.GetAsymmetricAlgorithm (algorithm, privateKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -75,6 +80,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Security.Cryptography.HashAlgorithm GetHashAlgorithmForSignature (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.HashAlgorithm GetHashAlgorithmForSignature(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AsymmetricSecurityKey.GetHashAlgorithmForSignature(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetHashAlgorithmForSignature (algorithm As String) As HashAlgorithm" />
+      <MemberSignature Language="F#" Value="abstract member GetHashAlgorithmForSignature : string -&gt; System.Security.Cryptography.HashAlgorithm" Usage="asymmetricSecurityKey.GetHashAlgorithmForSignature algorithm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -104,6 +111,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Security.Cryptography.AsymmetricSignatureDeformatter GetSignatureDeformatter (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.AsymmetricSignatureDeformatter GetSignatureDeformatter(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AsymmetricSecurityKey.GetSignatureDeformatter(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetSignatureDeformatter (algorithm As String) As AsymmetricSignatureDeformatter" />
+      <MemberSignature Language="F#" Value="abstract member GetSignatureDeformatter : string -&gt; System.Security.Cryptography.AsymmetricSignatureDeformatter" Usage="asymmetricSecurityKey.GetSignatureDeformatter algorithm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -135,6 +144,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Security.Cryptography.AsymmetricSignatureFormatter GetSignatureFormatter (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.AsymmetricSignatureFormatter GetSignatureFormatter(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AsymmetricSecurityKey.GetSignatureFormatter(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetSignatureFormatter (algorithm As String) As AsymmetricSignatureFormatter" />
+      <MemberSignature Language="F#" Value="abstract member GetSignatureFormatter : string -&gt; System.Security.Cryptography.AsymmetricSignatureFormatter" Usage="asymmetricSecurityKey.GetSignatureFormatter algorithm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -166,6 +177,8 @@
       <MemberSignature Language="C#" Value="public abstract bool HasPrivateKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasPrivateKey() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AsymmetricSecurityKey.HasPrivateKey" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function HasPrivateKey () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member HasPrivateKey : unit -&gt; bool" Usage="asymmetricSecurityKey.HasPrivateKey " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

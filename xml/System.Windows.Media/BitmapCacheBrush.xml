@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class BitmapCacheBrush : System.Windows.Media.Brush" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BitmapCacheBrush extends System.Windows.Media.Brush" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.BitmapCacheBrush" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BitmapCacheBrush&#xA;Inherits Brush" />
+  <TypeSignature Language="F#" Value="type BitmapCacheBrush = class&#xA;    inherit Brush&#xA;    interface ICyclicBrush" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,10 +66,20 @@
     <altmember cref="T:System.Windows.Media.Visual" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.BitmapCacheBrush" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BitmapCacheBrush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCacheBrush.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +95,7 @@
       <MemberSignature Language="C#" Value="public BitmapCacheBrush (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCacheBrush.#ctor(System.Windows.Media.Visual)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.BitmapCacheBrush : System.Windows.Media.Visual -&gt; System.Windows.Media.BitmapCacheBrush" Usage="new System.Windows.Media.BitmapCacheBrush visual" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -101,6 +114,8 @@
       <MemberSignature Language="C#" Value="public bool AutoLayoutContent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoLayoutContent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.BitmapCacheBrush.AutoLayoutContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoLayoutContent As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoLayoutContent : bool with get, set" Usage="System.Windows.Media.BitmapCacheBrush.AutoLayoutContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -127,6 +142,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AutoLayoutContentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AutoLayoutContentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapCacheBrush.AutoLayoutContentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AutoLayoutContentProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable AutoLayoutContentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.BitmapCacheBrush.AutoLayoutContentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +161,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.BitmapCache BitmapCache { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.BitmapCache BitmapCache" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.BitmapCacheBrush.BitmapCache" />
+      <MemberSignature Language="VB.NET" Value="Public Property BitmapCache As BitmapCache" />
+      <MemberSignature Language="F#" Value="member this.BitmapCache : System.Windows.Media.BitmapCache with get, set" Usage="System.Windows.Media.BitmapCacheBrush.BitmapCache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -171,6 +190,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BitmapCacheProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BitmapCacheProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapCacheBrush.BitmapCacheProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BitmapCacheProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BitmapCacheProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.BitmapCacheBrush.BitmapCacheProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -188,6 +209,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.BitmapCacheBrush Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.BitmapCacheBrush Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCacheBrush.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As BitmapCacheBrush" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.BitmapCacheBrush" Usage="bitmapCacheBrush.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -207,6 +230,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.BitmapCacheBrush CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.BitmapCacheBrush CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCacheBrush.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BitmapCacheBrush" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.BitmapCacheBrush" Usage="bitmapCacheBrush.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -226,6 +251,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCacheBrush.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="bitmapCacheBrush.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -245,6 +272,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (System.Windows.DependencyPropertyChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCacheBrush.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="bitmapCacheBrush.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -266,6 +295,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Visual Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Visual Target" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.BitmapCacheBrush.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As Visual" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Windows.Media.Visual with get, set" Usage="System.Windows.Media.BitmapCacheBrush.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -293,6 +324,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TargetProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TargetProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapCacheBrush.TargetProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TargetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.BitmapCacheBrush.TargetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -306,14 +339,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.BitmapCacheBrush" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

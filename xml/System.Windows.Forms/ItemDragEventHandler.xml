@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void ItemDragEventHandler(object sender, ItemDragEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ItemDragEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemDragEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ItemDragEventHandler(sender As Object, e As ItemDragEventArgs)" />
+  <TypeSignature Language="F#" Value="type ItemDragEventHandler = delegate of obj * ItemDragEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

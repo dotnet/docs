@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ValidationError" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidationError extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ValidationError" />
+  <TypeSignature Language="VB.NET" Value="Public Class ValidationError" />
+  <TypeSignature Language="F#" Value="type ValidationError = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,10 +46,21 @@
     <altmember cref="M:System.Windows.Controls.Validation.MarkInvalid(System.Windows.Data.BindingExpressionBase,System.Windows.Controls.ValidationError)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ValidationError" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ValidationError (System.Windows.Controls.ValidationRule ruleInError, object bindingInError);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.ValidationRule ruleInError, object bindingInError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationError.#ctor(System.Windows.Controls.ValidationRule,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ruleInError As ValidationRule, bindingInError As Object)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.ValidationError : System.Windows.Controls.ValidationRule * obj -&gt; System.Windows.Controls.ValidationError" Usage="new System.Windows.Controls.ValidationError (ruleInError, bindingInError)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +81,7 @@
       <MemberSignature Language="C#" Value="public ValidationError (System.Windows.Controls.ValidationRule ruleInError, object bindingInError, object errorContent, Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.ValidationRule ruleInError, object bindingInError, object errorContent, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationError.#ctor(System.Windows.Controls.ValidationRule,System.Object,System.Object,System.Exception)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.ValidationError : System.Windows.Controls.ValidationRule * obj * obj * Exception -&gt; System.Windows.Controls.ValidationError" Usage="new System.Windows.Controls.ValidationError (ruleInError, bindingInError, errorContent, exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -92,6 +106,8 @@
       <MemberSignature Language="C#" Value="public object BindingInError { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object BindingInError" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationError.BindingInError" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingInError As Object" />
+      <MemberSignature Language="F#" Value="member this.BindingInError : obj" Usage="System.Windows.Controls.ValidationError.BindingInError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -110,6 +126,8 @@
       <MemberSignature Language="C#" Value="public object ErrorContent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ErrorContent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationError.ErrorContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorContent As Object" />
+      <MemberSignature Language="F#" Value="member this.ErrorContent : obj with get, set" Usage="System.Windows.Controls.ValidationError.ErrorContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -145,6 +163,8 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationError.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public Property Exception As Exception" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception with get, set" Usage="System.Windows.Controls.ValidationError.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -163,6 +183,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.ValidationRule RuleInError { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ValidationRule RuleInError" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationError.RuleInError" />
+      <MemberSignature Language="VB.NET" Value="Public Property RuleInError As ValidationRule" />
+      <MemberSignature Language="F#" Value="member this.RuleInError : System.Windows.Controls.ValidationRule with get, set" Usage="System.Windows.Controls.ValidationError.RuleInError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -177,14 +199,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ValidationError" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

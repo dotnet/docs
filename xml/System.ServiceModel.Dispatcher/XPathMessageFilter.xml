@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class XPathMessageFilter : System.ServiceModel.Dispatcher.MessageFilter, System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XPathMessageFilter extends System.ServiceModel.Dispatcher.MessageFilter implements class System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.XPathMessageFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Class XPathMessageFilter&#xA;Inherits MessageFilter&#xA;Implements IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type XPathMessageFilter = class&#xA;    inherit MessageFilter&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,10 +40,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XPathMessageFilter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -64,6 +76,8 @@
       <MemberSignature Language="C#" Value="public XPathMessageFilter (string xpath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string xpath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (xpath As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.XPathMessageFilter : string -&gt; System.ServiceModel.Dispatcher.XPathMessageFilter" Usage="new System.ServiceModel.Dispatcher.XPathMessageFilter xpath" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -93,6 +107,8 @@
       <MemberSignature Language="C#" Value="public XPathMessageFilter (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reader As XmlReader)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.XPathMessageFilter : System.Xml.XmlReader -&gt; System.ServiceModel.Dispatcher.XPathMessageFilter" Usage="new System.ServiceModel.Dispatcher.XPathMessageFilter reader" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -122,6 +138,8 @@
       <MemberSignature Language="C#" Value="public XPathMessageFilter (string xpath, System.Xml.XmlNamespaceManager namespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string xpath, class System.Xml.XmlNamespaceManager namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor(System.String,System.Xml.XmlNamespaceManager)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (xpath As String, namespaces As XmlNamespaceManager)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.XPathMessageFilter : string * System.Xml.XmlNamespaceManager -&gt; System.ServiceModel.Dispatcher.XPathMessageFilter" Usage="new System.ServiceModel.Dispatcher.XPathMessageFilter (xpath, namespaces)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +171,8 @@
       <MemberSignature Language="C#" Value="public XPathMessageFilter (string xpath, System.Xml.Xsl.XsltContext namespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string xpath, class System.Xml.Xsl.XsltContext namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor(System.String,System.Xml.Xsl.XsltContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (xpath As String, namespaces As XsltContext)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.XPathMessageFilter : string * System.Xml.Xsl.XsltContext -&gt; System.ServiceModel.Dispatcher.XPathMessageFilter" Usage="new System.ServiceModel.Dispatcher.XPathMessageFilter (xpath, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -173,6 +193,8 @@
       <MemberSignature Language="C#" Value="public XPathMessageFilter (System.Xml.XmlReader reader, System.Xml.XmlNamespaceManager namespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlReader reader, class System.Xml.XmlNamespaceManager namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor(System.Xml.XmlReader,System.Xml.XmlNamespaceManager)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reader As XmlReader, namespaces As XmlNamespaceManager)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.XPathMessageFilter : System.Xml.XmlReader * System.Xml.XmlNamespaceManager -&gt; System.ServiceModel.Dispatcher.XPathMessageFilter" Usage="new System.ServiceModel.Dispatcher.XPathMessageFilter (reader, namespaces)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -207,6 +229,8 @@
       <MemberSignature Language="C#" Value="public XPathMessageFilter (System.Xml.XmlReader reader, System.Xml.Xsl.XsltContext namespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlReader reader, class System.Xml.Xsl.XsltContext namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor(System.Xml.XmlReader,System.Xml.Xsl.XsltContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reader As XmlReader, namespaces As XsltContext)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.XPathMessageFilter : System.Xml.XmlReader * System.Xml.Xsl.XsltContext -&gt; System.ServiceModel.Dispatcher.XPathMessageFilter" Usage="new System.ServiceModel.Dispatcher.XPathMessageFilter (reader, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -235,9 +259,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateFilterTable&lt;FilterData&gt;">
-      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Dispatcher.IMessageFilterTable&lt;FilterData&gt; CreateFilterTable&lt;FilterData&gt; ();" />
+      <MemberSignature Language="C#" Value="protected internal override System.ServiceModel.Dispatcher.IMessageFilterTable&lt;FilterData&gt; CreateFilterTable&lt;FilterData&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.ServiceModel.Dispatcher.IMessageFilterTable`1&lt;!!FilterData&gt; CreateFilterTable&lt;FilterData&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.CreateFilterTable``1" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateFilterTable(Of FilterData) () As IMessageFilterTable(Of FilterData)" />
+      <MemberSignature Language="F#" Value="override this.CreateFilterTable : unit -&gt; System.ServiceModel.Dispatcher.IMessageFilterTable&lt;'FilterData&gt;" Usage="xPathMessageFilter.CreateFilterTable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -291,6 +317,7 @@
       <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.Match(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.Message -&gt; bool" Usage="xPathMessageFilter.Match message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -325,6 +352,7 @@
       <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.MessageBuffer messageBuffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.MessageBuffer messageBuffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.MessageBuffer -&gt; bool" Usage="xPathMessageFilter.Match messageBuffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -358,6 +386,8 @@
       <MemberSignature Language="C#" Value="public bool Match (System.ServiceModel.Dispatcher.SeekableXPathNavigator navigator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Match(class System.ServiceModel.Dispatcher.SeekableXPathNavigator navigator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.Match(System.ServiceModel.Dispatcher.SeekableXPathNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Match (navigator As SeekableXPathNavigator) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Dispatcher.SeekableXPathNavigator -&gt; bool" Usage="xPathMessageFilter.Match navigator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -391,6 +421,8 @@
       <MemberSignature Language="C#" Value="public bool Match (System.Xml.XPath.XPathNavigator navigator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Match(class System.Xml.XPath.XPathNavigator navigator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.Match(System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Match (navigator As XPathNavigator) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Match : System.Xml.XPath.XPathNavigator -&gt; bool" Usage="xPathMessageFilter.Match navigator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -417,6 +449,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlNamespaceManager Namespaces { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNamespaceManager Namespaces" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.XPathMessageFilter.Namespaces" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespaces As XmlNamespaceManager" />
+      <MemberSignature Language="F#" Value="member this.Namespaces : System.Xml.XmlNamespaceManager" Usage="System.ServiceModel.Dispatcher.XPathMessageFilter.Namespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -444,6 +478,8 @@
       <MemberSignature Language="C#" Value="public int NodeQuota { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NodeQuota" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.XPathMessageFilter.NodeQuota" />
+      <MemberSignature Language="VB.NET" Value="Public Property NodeQuota As Integer" />
+      <MemberSignature Language="F#" Value="member this.NodeQuota : int with get, set" Usage="System.ServiceModel.Dispatcher.XPathMessageFilter.NodeQuota" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -472,6 +508,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Xml.Schema.XmlSchema OnGetSchema ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xml.Schema.XmlSchema OnGetSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.OnGetSchema" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetSchema () As XmlSchema" />
+      <MemberSignature Language="F#" Value="abstract member OnGetSchema : unit -&gt; System.Xml.Schema.XmlSchema&#xA;override this.OnGetSchema : unit -&gt; System.Xml.Schema.XmlSchema" Usage="xPathMessageFilter.OnGetSchema " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -491,6 +529,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnReadXml (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnReadXml(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.OnReadXml(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnReadXml (reader As XmlReader)" />
+      <MemberSignature Language="F#" Value="abstract member OnReadXml : System.Xml.XmlReader -&gt; unit&#xA;override this.OnReadXml : System.Xml.XmlReader -&gt; unit" Usage="xPathMessageFilter.OnReadXml reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -517,6 +557,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnWriteXml (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteXml(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.OnWriteXml(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWriteXml (writer As XmlWriter)" />
+      <MemberSignature Language="F#" Value="abstract member OnWriteXml : System.Xml.XmlWriter -&gt; unit&#xA;override this.OnWriteXml : System.Xml.XmlWriter -&gt; unit" Usage="xPathMessageFilter.OnWriteXml writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -540,6 +582,8 @@
       <MemberSignature Language="C#" Value="protected void ReadXPath (System.Xml.XmlReader reader, System.Xml.XmlNamespaceManager namespaces);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ReadXPath(class System.Xml.XmlReader reader, class System.Xml.XmlNamespaceManager namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.ReadXPath(System.Xml.XmlReader,System.Xml.XmlNamespaceManager)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ReadXPath (reader As XmlReader, namespaces As XmlNamespaceManager)" />
+      <MemberSignature Language="F#" Value="member this.ReadXPath : System.Xml.XmlReader * System.Xml.XmlNamespaceManager -&gt; unit" Usage="xPathMessageFilter.ReadXPath (reader, namespaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -570,6 +614,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlSchemaType StaticGetSchema (System.Xml.Schema.XmlSchemaSet schemas);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlSchemaType StaticGetSchema(class System.Xml.Schema.XmlSchemaSet schemas) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.StaticGetSchema(System.Xml.Schema.XmlSchemaSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StaticGetSchema (schemas As XmlSchemaSet) As XmlSchemaType" />
+      <MemberSignature Language="F#" Value="static member StaticGetSchema : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.Schema.XmlSchemaType" Usage="System.ServiceModel.Dispatcher.XPathMessageFilter.StaticGetSchema schemas" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -594,7 +640,11 @@
       <MemberSignature Language="C#" Value="System.Xml.Schema.XmlSchema IXmlSerializable.GetSchema ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Xml.Schema.XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.System#Xml#Serialization#IXmlSerializable#GetSchema" />
+      <MemberSignature Language="VB.NET" Value="Function GetSchema () As XmlSchema Implements IXmlSerializable.GetSchema" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -613,7 +663,11 @@
       <MemberSignature Language="C#" Value="void IXmlSerializable.ReadXml (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.ReadXml(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Sub ReadXml (reader As XmlReader) Implements IXmlSerializable.ReadXml" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -634,7 +688,11 @@
       <MemberSignature Language="C#" Value="void IXmlSerializable.WriteXml (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.WriteXml(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Sub WriteXml (writer As XmlWriter) Implements IXmlSerializable.WriteXml" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -655,6 +713,8 @@
       <MemberSignature Language="C#" Value="public void TrimToSize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TrimToSize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.TrimToSize" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrimToSize ()" />
+      <MemberSignature Language="F#" Value="member this.TrimToSize : unit -&gt; unit" Usage="xPathMessageFilter.TrimToSize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -681,6 +741,8 @@
       <MemberSignature Language="C#" Value="protected void WriteXPath (System.Xml.XmlWriter writer, System.Xml.IXmlNamespaceResolver resolver);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteXPath(class System.Xml.XmlWriter writer, class System.Xml.IXmlNamespaceResolver resolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.WriteXPath(System.Xml.XmlWriter,System.Xml.IXmlNamespaceResolver)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteXPath (writer As XmlWriter, resolver As IXmlNamespaceResolver)" />
+      <MemberSignature Language="F#" Value="member this.WriteXPath : System.Xml.XmlWriter * System.Xml.IXmlNamespaceResolver -&gt; unit" Usage="xPathMessageFilter.WriteXPath (writer, resolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -711,6 +773,8 @@
       <MemberSignature Language="C#" Value="public void WriteXPathTo (System.Xml.XmlWriter writer, string prefix, string localName, string ns, bool writeNamespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteXPathTo(class System.Xml.XmlWriter writer, string prefix, string localName, string ns, bool writeNamespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.WriteXPathTo(System.Xml.XmlWriter,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteXPathTo (writer As XmlWriter, prefix As String, localName As String, ns As String, writeNamespaces As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.WriteXPathTo : System.Xml.XmlWriter * string * string * string * bool -&gt; unit" Usage="xPathMessageFilter.WriteXPathTo (writer, prefix, localName, ns, writeNamespaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -752,6 +816,8 @@
       <MemberSignature Language="C#" Value="public string XPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XPath" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.XPathMessageFilter.XPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XPath As String" />
+      <MemberSignature Language="F#" Value="member this.XPath : string" Usage="System.ServiceModel.Dispatcher.XPathMessageFilter.XPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -766,14 +832,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public enum ExecutionType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExecutionType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ExecutionType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ExecutionType" />
+  <TypeSignature Language="F#" Value="type ExecutionType = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="Parallel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Activities.ExecutionType Parallel = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ExecutionType.Parallel" />
+      <MemberSignature Language="VB.NET" Value="Parallel" />
+      <MemberSignature Language="F#" Value="Parallel = 1" Usage="System.Workflow.Activities.ExecutionType.Parallel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -48,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.Activities.ExecutionType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Executes activities in parallel.</summary>
       </Docs>
@@ -56,6 +61,8 @@
       <MemberSignature Language="C#" Value="Sequence" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Activities.ExecutionType Sequence = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ExecutionType.Sequence" />
+      <MemberSignature Language="VB.NET" Value="Sequence" />
+      <MemberSignature Language="F#" Value="Sequence = 0" Usage="System.Workflow.Activities.ExecutionType.Sequence" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -64,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.Activities.ExecutionType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Executes activities in sequential order. Each activity is executed in turn, after the previous activity has finished running.</summary>
       </Docs>

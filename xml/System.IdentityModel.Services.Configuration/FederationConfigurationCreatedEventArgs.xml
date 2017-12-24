@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class FederationConfigurationCreatedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FederationConfigurationCreatedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class FederationConfigurationCreatedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type FederationConfigurationCreatedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public FederationConfigurationCreatedEventArgs (System.IdentityModel.Services.Configuration.FederationConfiguration config);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Services.Configuration.FederationConfiguration config) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.#ctor(System.IdentityModel.Services.Configuration.FederationConfiguration)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (config As FederationConfiguration)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs : System.IdentityModel.Services.Configuration.FederationConfiguration -&gt; System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs" Usage="new System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs config" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Services.Configuration.FederationConfiguration FederationConfiguration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Services.Configuration.FederationConfiguration FederationConfiguration" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property FederationConfiguration As FederationConfiguration" />
+      <MemberSignature Language="F#" Value="member this.FederationConfiguration : System.IdentityModel.Services.Configuration.FederationConfiguration with get, set" Usage="System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

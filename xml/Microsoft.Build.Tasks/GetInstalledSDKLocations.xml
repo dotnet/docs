@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class GetInstalledSDKLocations : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GetInstalledSDKLocations extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.GetInstalledSDKLocations" />
+  <TypeSignature Language="VB.NET" Value="Public Class GetInstalledSDKLocations&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="F#" Value="type GetInstalledSDKLocations = class&#xA;    inherit TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,7 @@
       <MemberSignature Language="C#" Value="public GetInstalledSDKLocations ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GetInstalledSDKLocations.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -42,6 +45,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GetInstalledSDKLocations.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="getInstalledSDKLocations.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -61,6 +66,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] InstalledSDKs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] InstalledSDKs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.InstalledSDKs" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstalledSDKs As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.InstalledSDKs : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.GetInstalledSDKLocations.InstalledSDKs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -86,6 +93,8 @@
       <MemberSignature Language="C#" Value="public string[] SDKDirectoryRoots { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] SDKDirectoryRoots" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.SDKDirectoryRoots" />
+      <MemberSignature Language="VB.NET" Value="Public Property SDKDirectoryRoots As String()" />
+      <MemberSignature Language="F#" Value="member this.SDKDirectoryRoots : string[] with get, set" Usage="Microsoft.Build.Tasks.GetInstalledSDKLocations.SDKDirectoryRoots" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -104,6 +113,8 @@
       <MemberSignature Language="C#" Value="public string SDKRegistryRoot { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SDKRegistryRoot" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.SDKRegistryRoot" />
+      <MemberSignature Language="VB.NET" Value="Public Property SDKRegistryRoot As String" />
+      <MemberSignature Language="F#" Value="member this.SDKRegistryRoot : string with get, set" Usage="Microsoft.Build.Tasks.GetInstalledSDKLocations.SDKRegistryRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -122,6 +133,8 @@
       <MemberSignature Language="C#" Value="public string TargetPlatformIdentifier { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetPlatformIdentifier" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.TargetPlatformIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetPlatformIdentifier As String" />
+      <MemberSignature Language="F#" Value="member this.TargetPlatformIdentifier : string with get, set" Usage="Microsoft.Build.Tasks.GetInstalledSDKLocations.TargetPlatformIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -145,6 +158,8 @@
       <MemberSignature Language="C#" Value="public string TargetPlatformVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetPlatformVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.TargetPlatformVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetPlatformVersion As String" />
+      <MemberSignature Language="F#" Value="member this.TargetPlatformVersion : string with get, set" Usage="Microsoft.Build.Tasks.GetInstalledSDKLocations.TargetPlatformVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

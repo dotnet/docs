@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class SecurityTokenTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SecurityTokenTypes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityTokenTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenTypes" />
+  <TypeSignature Language="F#" Value="type SecurityTokenTypes = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public static string Kerberos { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Kerberos" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenTypes.Kerberos" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Kerberos As String" />
+      <MemberSignature Language="F#" Value="member this.Kerberos : string" Usage="System.IdentityModel.Tokens.SecurityTokenTypes.Kerberos" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public static string Rsa { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Rsa" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenTypes.Rsa" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Rsa As String" />
+      <MemberSignature Language="F#" Value="member this.Rsa : string" Usage="System.IdentityModel.Tokens.SecurityTokenTypes.Rsa" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -76,6 +82,8 @@
       <MemberSignature Language="C#" Value="public static string Saml { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Saml" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenTypes.Saml" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Saml As String" />
+      <MemberSignature Language="F#" Value="member this.Saml : string" Usage="System.IdentityModel.Tokens.SecurityTokenTypes.Saml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -101,6 +109,8 @@
       <MemberSignature Language="C#" Value="public static string UserName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string UserName" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenTypes.UserName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserName As String" />
+      <MemberSignature Language="F#" Value="member this.UserName : string" Usage="System.IdentityModel.Tokens.SecurityTokenTypes.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -126,6 +136,8 @@
       <MemberSignature Language="C#" Value="public static string X509Certificate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string X509Certificate" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenTypes.X509Certificate" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property X509Certificate As String" />
+      <MemberSignature Language="F#" Value="member this.X509Certificate : string" Usage="System.IdentityModel.Tokens.SecurityTokenTypes.X509Certificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

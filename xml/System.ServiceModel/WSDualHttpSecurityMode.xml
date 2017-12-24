@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public enum WSDualHttpSecurityMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WSDualHttpSecurityMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSDualHttpSecurityMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WSDualHttpSecurityMode" />
+  <TypeSignature Language="F#" Value="type WSDualHttpSecurityMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="Message" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.WSDualHttpSecurityMode Message = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.WSDualHttpSecurityMode.Message" />
+      <MemberSignature Language="VB.NET" Value="Message" />
+      <MemberSignature Language="F#" Value="Message = 1" Usage="System.ServiceModel.WSDualHttpSecurityMode.Message" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.WSDualHttpSecurityMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>SOAP message-level security is used and the settings in the <see cref="P:System.ServiceModel.WSDualHttpSecurity.Message" /> property become effective.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.WSDualHttpSecurityMode None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.WSDualHttpSecurityMode.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ServiceModel.WSDualHttpSecurityMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.WSDualHttpSecurityMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No security is used.</summary>
       </Docs>

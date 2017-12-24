@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class Ports" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Ports extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Ports" />
+  <TypeSignature Language="VB.NET" Value="Public Class Ports" />
+  <TypeSignature Language="F#" Value="type Ports = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -60,6 +62,7 @@
       <MemberSignature Language="C#" Value="public Ports ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Ports.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -71,10 +74,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenSerialPort">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates and opens a <see cref="T:System.IO.Ports.SerialPort" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenSerialPort">
       <MemberSignature Language="C#" Value="public System.IO.Ports.SerialPort OpenSerialPort (string portName);" />
       <MemberSignature Language="ILAsm" Value=".method public instance class System.IO.Ports.SerialPort OpenSerialPort(string portName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenSerialPort (portName As String) As SerialPort" />
+      <MemberSignature Language="F#" Value="member this.OpenSerialPort : string -&gt; System.IO.Ports.SerialPort" Usage="ports.OpenSerialPort portName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -146,6 +160,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Ports.SerialPort OpenSerialPort (string portName, int baudRate);" />
       <MemberSignature Language="ILAsm" Value=".method public instance class System.IO.Ports.SerialPort OpenSerialPort(string portName, int32 baudRate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenSerialPort (portName As String, baudRate As Integer) As SerialPort" />
+      <MemberSignature Language="F#" Value="member this.OpenSerialPort : string * int -&gt; System.IO.Ports.SerialPort" Usage="ports.OpenSerialPort (portName, baudRate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -222,6 +238,7 @@
       <MemberSignature Language="C#" Value="public System.IO.Ports.SerialPort OpenSerialPort (string portName, int baudRate, System.IO.Ports.Parity parity);" />
       <MemberSignature Language="ILAsm" Value=".method public instance class System.IO.Ports.SerialPort OpenSerialPort(string portName, int32 baudRate, valuetype System.IO.Ports.Parity parity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort(System.String,System.Int32,System.IO.Ports.Parity)" />
+      <MemberSignature Language="F#" Value="member this.OpenSerialPort : string * int * System.IO.Ports.Parity -&gt; System.IO.Ports.SerialPort" Usage="ports.OpenSerialPort (portName, baudRate, parity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -303,6 +320,7 @@
       <MemberSignature Language="C#" Value="public System.IO.Ports.SerialPort OpenSerialPort (string portName, int baudRate, System.IO.Ports.Parity parity, int dataBits);" />
       <MemberSignature Language="ILAsm" Value=".method public instance class System.IO.Ports.SerialPort OpenSerialPort(string portName, int32 baudRate, valuetype System.IO.Ports.Parity parity, int32 dataBits) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort(System.String,System.Int32,System.IO.Ports.Parity,System.Int32)" />
+      <MemberSignature Language="F#" Value="member this.OpenSerialPort : string * int * System.IO.Ports.Parity * int -&gt; System.IO.Ports.SerialPort" Usage="ports.OpenSerialPort (portName, baudRate, parity, dataBits)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -387,6 +405,7 @@
       <MemberSignature Language="C#" Value="public System.IO.Ports.SerialPort OpenSerialPort (string portName, int baudRate, System.IO.Ports.Parity parity, int dataBits, System.IO.Ports.StopBits stopBits);" />
       <MemberSignature Language="ILAsm" Value=".method public instance class System.IO.Ports.SerialPort OpenSerialPort(string portName, int32 baudRate, valuetype System.IO.Ports.Parity parity, int32 dataBits, valuetype System.IO.Ports.StopBits stopBits) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort(System.String,System.Int32,System.IO.Ports.Parity,System.Int32,System.IO.Ports.StopBits)" />
+      <MemberSignature Language="F#" Value="member this.OpenSerialPort : string * int * System.IO.Ports.Parity * int * System.IO.Ports.StopBits -&gt; System.IO.Ports.SerialPort" Usage="ports.OpenSerialPort (portName, baudRate, parity, dataBits, stopBits)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -474,6 +493,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; SerialPortNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; SerialPortNames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Ports.SerialPortNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerialPortNames As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.SerialPortNames : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="Microsoft.VisualBasic.Devices.Ports.SerialPortNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -536,14 +557,5 @@
         <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="OpenSerialPort">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates and opens a <see cref="T:System.IO.Ports.SerialPort" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

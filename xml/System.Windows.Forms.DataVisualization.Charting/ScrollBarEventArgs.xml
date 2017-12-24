@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ScrollBarEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollBarEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScrollBarEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type ScrollBarEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="public ScrollBarEventArgs (System.Windows.Forms.DataVisualization.Charting.Axis axis, int x, int y, System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType buttonType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.Axis axis, int32 x, int32 y, valuetype System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType buttonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.Axis,System.Int32,System.Int32,System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs : System.Windows.Forms.DataVisualization.Charting.Axis * int * int * System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType -&gt; System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs" Usage="new System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs (axis, x, y, buttonType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -64,6 +67,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Axis Axis { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Axis Axis" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.Axis" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Axis As Axis" />
+      <MemberSignature Language="F#" Value="member this.Axis : System.Windows.Forms.DataVisualization.Charting.Axis" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.Axis" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -95,6 +100,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType ButtonType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType ButtonType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.ButtonType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ButtonType As ScrollBarButtonType" />
+      <MemberSignature Language="F#" Value="member this.ButtonType : System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.ButtonType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -120,6 +127,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartArea ChartArea { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.ChartArea ChartArea" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.ChartArea" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartArea As ChartArea" />
+      <MemberSignature Language="F#" Value="member this.ChartArea : System.Windows.Forms.DataVisualization.Charting.ChartArea" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.ChartArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -147,6 +156,8 @@
       <MemberSignature Language="C#" Value="public bool IsHandled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsHandled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.IsHandled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsHandled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsHandled : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.IsHandled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -185,6 +196,8 @@
       <MemberSignature Language="C#" Value="public int MousePositionX { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MousePositionX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.MousePositionX" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MousePositionX As Integer" />
+      <MemberSignature Language="F#" Value="member this.MousePositionX : int" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.MousePositionX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -210,6 +223,8 @@
       <MemberSignature Language="C#" Value="public int MousePositionY { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MousePositionY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.MousePositionY" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MousePositionY As Integer" />
+      <MemberSignature Language="F#" Value="member this.MousePositionY : int" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.MousePositionY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

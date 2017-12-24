@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class IssuedTokenClientBehaviorsElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IssuedTokenClientBehaviorsElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IssuedTokenClientBehaviorsElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type IssuedTokenClientBehaviorsElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public IssuedTokenClientBehaviorsElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public string BehaviorConfiguration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BehaviorConfiguration" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement.BehaviorConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property BehaviorConfiguration As String" />
+      <MemberSignature Language="F#" Value="member this.BehaviorConfiguration : string with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement.BehaviorConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +65,8 @@
       <MemberSignature Language="C#" Value="public string IssuerAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IssuerAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement.IssuerAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property IssuerAddress As String" />
+      <MemberSignature Language="F#" Value="member this.IssuerAddress : string with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement.IssuerAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +93,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class HttpWebRequestElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpWebRequestElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.HttpWebRequestElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpWebRequestElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type HttpWebRequestElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,7 @@
       <MemberSignature Language="C#" Value="public HttpWebRequestElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.HttpWebRequestElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -54,6 +57,8 @@
       <MemberSignature Language="C#" Value="public int MaximumErrorResponseLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumErrorResponseLength" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.MaximumErrorResponseLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumErrorResponseLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaximumErrorResponseLength : int with get, set" Usage="System.Net.Configuration.HttpWebRequestElement.MaximumErrorResponseLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -77,6 +82,8 @@
       <MemberSignature Language="C#" Value="public int MaximumResponseHeadersLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumResponseHeadersLength" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.MaximumResponseHeadersLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumResponseHeadersLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaximumResponseHeadersLength : int with get, set" Usage="System.Net.Configuration.HttpWebRequestElement.MaximumResponseHeadersLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +117,8 @@
       <MemberSignature Language="C#" Value="public int MaximumUnauthorizedUploadLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumUnauthorizedUploadLength" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.MaximumUnauthorizedUploadLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumUnauthorizedUploadLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaximumUnauthorizedUploadLength : int with get, set" Usage="System.Net.Configuration.HttpWebRequestElement.MaximumUnauthorizedUploadLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,6 +147,8 @@
       <MemberSignature Language="C#" Value="protected override void PostDeserialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PostDeserialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.HttpWebRequestElement.PostDeserialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
+      <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="httpWebRequestElement.PostDeserialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -161,6 +172,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.HttpWebRequestElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -179,6 +192,8 @@
       <MemberSignature Language="C#" Value="public bool UseUnsafeHeaderParsing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseUnsafeHeaderParsing" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.UseUnsafeHeaderParsing" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseUnsafeHeaderParsing As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseUnsafeHeaderParsing : bool with get, set" Usage="System.Net.Configuration.HttpWebRequestElement.UseUnsafeHeaderParsing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

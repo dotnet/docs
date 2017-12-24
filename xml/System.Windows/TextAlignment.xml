@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public enum TextAlignment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextAlignment extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.TextAlignment" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TextAlignment" />
+  <TypeSignature Language="F#" Value="type TextAlignment = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="Center" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextAlignment Center = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextAlignment.Center" />
+      <MemberSignature Language="VB.NET" Value="Center" />
+      <MemberSignature Language="F#" Value="Center = 2" Usage="System.Windows.TextAlignment.Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -45,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Text is centered.</summary>
       </Docs>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="Justify" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextAlignment Justify = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextAlignment.Justify" />
+      <MemberSignature Language="VB.NET" Value="Justify" />
+      <MemberSignature Language="F#" Value="Justify = 3" Usage="System.Windows.TextAlignment.Justify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Text is justified.</summary>
       </Docs>
@@ -69,6 +77,8 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextAlignment Left = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextAlignment.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 0" Usage="System.Windows.TextAlignment.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Default. Text is aligned to the left.</summary>
       </Docs>
@@ -85,6 +96,8 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextAlignment Right = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextAlignment.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 1" Usage="System.Windows.TextAlignment.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -93,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Text is aligned to the right.</summary>
       </Docs>

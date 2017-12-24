@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class CollectionViewGroup : System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CollectionViewGroup extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.CollectionViewGroup" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class CollectionViewGroup&#xA;Implements INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type CollectionViewGroup = class&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="protected CollectionViewGroup (object name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionViewGroup.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (name As Object)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Data.CollectionViewGroup : obj -&gt; System.Windows.Data.CollectionViewGroup" Usage="new System.Windows.Data.CollectionViewGroup name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsBottomLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBottomLevel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewGroup.IsBottomLevel" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsBottomLevel As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBottomLevel : bool" Usage="System.Windows.Data.CollectionViewGroup.IsBottomLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +77,8 @@
       <MemberSignature Language="C#" Value="public int ItemCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewGroup.ItemCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.ItemCount : int" Usage="System.Windows.Data.CollectionViewGroup.ItemCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +104,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;object&gt; Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyObservableCollection`1&lt;object&gt; Items" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewGroup.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ReadOnlyObservableCollection(Of Object)" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;obj&gt;" Usage="System.Windows.Data.CollectionViewGroup.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +131,8 @@
       <MemberSignature Language="C#" Value="public object Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewGroup.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As Object" />
+      <MemberSignature Language="F#" Value="member this.Name : obj" Usage="System.Windows.Data.CollectionViewGroup.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +151,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (System.ComponentModel.PropertyChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(class System.ComponentModel.PropertyChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionViewGroup.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (e As PropertyChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="collectionViewGroup.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -161,7 +175,12 @@
       <MemberSignature Language="C#" Value="protected virtual event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Data.CollectionViewGroup.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -179,6 +198,8 @@
       <MemberSignature Language="C#" Value="protected int ProtectedItemCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ProtectedItemCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewGroup.ProtectedItemCount" />
+      <MemberSignature Language="VB.NET" Value="Protected Property ProtectedItemCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.ProtectedItemCount : int with get, set" Usage="System.Windows.Data.CollectionViewGroup.ProtectedItemCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -204,6 +225,8 @@
       <MemberSignature Language="C#" Value="protected System.Collections.ObjectModel.ObservableCollection&lt;object&gt; ProtectedItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ObservableCollection`1&lt;object&gt; ProtectedItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewGroup.ProtectedItems" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ProtectedItems As ObservableCollection(Of Object)" />
+      <MemberSignature Language="F#" Value="member this.ProtectedItems : System.Collections.ObjectModel.ObservableCollection&lt;obj&gt;" Usage="System.Windows.Data.CollectionViewGroup.ProtectedItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -223,6 +246,27 @@
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.INotifyPropertyChanged.PropertyChanged">
+      <MemberSignature Language="C#" Value="event System.ComponentModel.PropertyChangedEventHandler System.ComponentModel.INotifyPropertyChanged.PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Data.CollectionViewGroup.System#ComponentModel#INotifyPropertyChanged#PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Custom Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class PingOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PingOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.PingOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class PingOptions" />
+  <TypeSignature Language="F#" Value="type PingOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Ping</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,10 +50,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Ping</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.PingOptions" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PingOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.PingOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -99,6 +112,8 @@
       <MemberSignature Language="C#" Value="public PingOptions (int ttl, bool dontFragment);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 ttl, bool dontFragment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.PingOptions.#ctor(System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ttl As Integer, dontFragment As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Net.NetworkInformation.PingOptions : int * bool -&gt; System.Net.NetworkInformation.PingOptions" Usage="new System.Net.NetworkInformation.PingOptions (ttl, dontFragment)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -147,6 +162,8 @@
       <MemberSignature Language="C#" Value="public bool DontFragment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DontFragment" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.PingOptions.DontFragment" />
+      <MemberSignature Language="VB.NET" Value="Public Property DontFragment As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DontFragment : bool with get, set" Usage="System.Net.NetworkInformation.PingOptions.DontFragment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -191,6 +208,8 @@
       <MemberSignature Language="C#" Value="public int Ttl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Ttl" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.PingOptions.Ttl" />
+      <MemberSignature Language="VB.NET" Value="Public Property Ttl As Integer" />
+      <MemberSignature Language="F#" Value="member this.Ttl : int with get, set" Usage="System.Net.NetworkInformation.PingOptions.Ttl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -231,15 +250,5 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a set operation is less than or equal to zero.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Ping</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.PingOptions" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class DbProviderConfigurationHandler : System.Configuration.IConfigurationSectionHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DbProviderConfigurationHandler extends System.Object implements class System.Configuration.IConfigurationSectionHandler" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbProviderConfigurationHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class DbProviderConfigurationHandler&#xA;Implements IConfigurationSectionHandler" />
+  <TypeSignature Language="F#" Value="type DbProviderConfigurationHandler = class&#xA;    interface IConfigurationSectionHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,7 @@
       <MemberSignature Language="C#" Value="public DbProviderConfigurationHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderConfigurationHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -40,7 +43,12 @@
       <MemberSignature Language="C#" Value="public virtual object Create (object parent, object configContext, System.Xml.XmlNode section);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Create(object parent, object configContext, class System.Xml.XmlNode section) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderConfigurationHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Create (parent As Object, configContext As Object, section As XmlNode) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Create : obj * obj * System.Xml.XmlNode -&gt; obj&#xA;override this.Create : obj * obj * System.Xml.XmlNode -&gt; obj" Usage="dbProviderConfigurationHandler.Create (parent, configContext, section)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.IConfigurationSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

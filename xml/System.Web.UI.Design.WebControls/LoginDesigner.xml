@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class LoginDesigner : System.Web.UI.Design.WebControls.CompositeControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LoginDesigner extends System.Web.UI.Design.WebControls.CompositeControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.LoginDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class LoginDesigner&#xA;Inherits CompositeControlDesigner" />
+  <TypeSignature Language="F#" Value="type LoginDesigner = class&#xA;    inherit CompositeControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +73,7 @@
       <MemberSignature Language="C#" Value="public LoginDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -98,6 +101,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LoginDesigner.ActionLists" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.WebControls.LoginDesigner.ActionLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -128,6 +133,8 @@
       <MemberSignature Language="C#" Value="public override bool AllowResize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowResize" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LoginDesigner.AllowResize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AllowResize As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowResize : bool" Usage="System.Web.UI.Design.WebControls.LoginDesigner.AllowResize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -154,6 +161,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LoginDesigner.AutoFormats" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AutoFormats As DesignerAutoFormatCollection" />
+      <MemberSignature Language="F#" Value="member this.AutoFormats : System.Web.UI.Design.DesignerAutoFormatCollection" Usage="System.Web.UI.Design.WebControls.LoginDesigner.AutoFormats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -182,6 +191,8 @@
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml (System.Web.UI.Design.DesignerRegionCollection regions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml(class System.Web.UI.Design.DesignerRegionCollection regions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml (regions As DesignerRegionCollection) As String" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : System.Web.UI.Design.DesignerRegionCollection -&gt; string" Usage="loginDesigner.GetDesignTimeHtml regions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -227,6 +238,8 @@
       <MemberSignature Language="C#" Value="public override string GetEditableDesignerRegionContent (System.Web.UI.Design.EditableDesignerRegion region);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetEditableDesignerRegionContent(class System.Web.UI.Design.EditableDesignerRegion region) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditableDesignerRegionContent (region As EditableDesignerRegion) As String" />
+      <MemberSignature Language="F#" Value="override this.GetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion -&gt; string" Usage="loginDesigner.GetEditableDesignerRegionContent region" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -266,6 +279,8 @@
       <MemberSignature Language="C#" Value="protected override string GetErrorDesignTimeHtml (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetErrorDesignTimeHtml(class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginDesigner.GetErrorDesignTimeHtml(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetErrorDesignTimeHtml (e As Exception) As String" />
+      <MemberSignature Language="F#" Value="override this.GetErrorDesignTimeHtml : Exception -&gt; string" Usage="loginDesigner.GetErrorDesignTimeHtml e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -305,6 +320,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="loginDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -340,6 +357,8 @@
       <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="loginDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -386,6 +405,8 @@
       <MemberSignature Language="C#" Value="public bool RenderOuterTable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RenderOuterTable" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LoginDesigner.RenderOuterTable" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderOuterTable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RenderOuterTable : bool with get, set" Usage="System.Web.UI.Design.WebControls.LoginDesigner.RenderOuterTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -412,6 +433,8 @@
       <MemberSignature Language="C#" Value="public override void SetEditableDesignerRegionContent (System.Web.UI.Design.EditableDesignerRegion region, string content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetEditableDesignerRegionContent(class System.Web.UI.Design.EditableDesignerRegion region, string content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetEditableDesignerRegionContent (region As EditableDesignerRegion, content As String)" />
+      <MemberSignature Language="F#" Value="override this.SetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion * string -&gt; unit" Usage="loginDesigner.SetEditableDesignerRegionContent (region, content)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -449,6 +472,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.TemplateGroupCollection TemplateGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.TemplateGroupCollection TemplateGroups" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LoginDesigner.TemplateGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TemplateGroups As TemplateGroupCollection" />
+      <MemberSignature Language="F#" Value="member this.TemplateGroups : System.Web.UI.Design.TemplateGroupCollection" Usage="System.Web.UI.Design.WebControls.LoginDesigner.TemplateGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -479,6 +504,8 @@
       <MemberSignature Language="C#" Value="protected override bool UsePreviewControl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UsePreviewControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LoginDesigner.UsePreviewControl" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UsePreviewControl As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UsePreviewControl : bool" Usage="System.Web.UI.Design.WebControls.LoginDesigner.UsePreviewControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

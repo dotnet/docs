@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IEnvoyInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnvoyInfo" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.IEnvoyInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IEnvoyInfo" />
+  <TypeSignature Language="F#" Value="type IEnvoyInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Messaging.IMessageSink EnvoySinks { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Remoting.Messaging.IMessageSink EnvoySinks" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.IEnvoyInfo.EnvoySinks" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnvoySinks As IMessageSink" />
+      <MemberSignature Language="F#" Value="member this.EnvoySinks : System.Runtime.Remoting.Messaging.IMessageSink with get, set" Usage="System.Runtime.Remoting.IEnvoyInfo.EnvoySinks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

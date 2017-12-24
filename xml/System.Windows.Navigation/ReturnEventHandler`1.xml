@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void ReturnEventHandler&lt;T&gt;(object sender, ReturnEventArgs&lt;T&gt; e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ReturnEventHandler`1&lt;T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.ReturnEventHandler`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ReturnEventHandler(Of T)(sender As Object, e As ReturnEventArgs(Of T))" />
+  <TypeSignature Language="F#" Value="type ReturnEventHandler&lt;'T&gt; = delegate of obj * ReturnEventArgs&lt;'T&gt; -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class DeflateCookieTransform : System.IdentityModel.CookieTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DeflateCookieTransform extends System.IdentityModel.CookieTransform" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.DeflateCookieTransform" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeflateCookieTransform&#xA;Inherits CookieTransform" />
+  <TypeSignature Language="F#" Value="type DeflateCookieTransform = class&#xA;    inherit CookieTransform" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,7 @@
       <MemberSignature Language="C#" Value="public DeflateCookieTransform ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DeflateCookieTransform.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="public override byte[] Decode (byte[] encoded);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] Decode(unsigned int8[] encoded) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DeflateCookieTransform.Decode(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Decode (encoded As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.Decode : byte[] -&gt; byte[]" Usage="deflateCookieTransform.Decode encoded" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -62,6 +67,8 @@
       <MemberSignature Language="C#" Value="public override byte[] Encode (byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] Encode(unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DeflateCookieTransform.Encode(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Encode (value As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.Encode : byte[] -&gt; byte[]" Usage="deflateCookieTransform.Encode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -88,6 +95,8 @@
       <MemberSignature Language="C#" Value="public int MaxDecompressedSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxDecompressedSize" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.DeflateCookieTransform.MaxDecompressedSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxDecompressedSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxDecompressedSize : int with get, set" Usage="System.IdentityModel.DeflateCookieTransform.MaxDecompressedSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

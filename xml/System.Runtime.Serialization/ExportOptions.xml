@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ExportOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExportOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ExportOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExportOptions" />
+  <TypeSignature Language="F#" Value="type ExportOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +56,7 @@
       <MemberSignature Language="C#" Value="public ExportOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ExportOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -78,6 +81,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Serialization.IDataContractSurrogate DataContractSurrogate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.IDataContractSurrogate DataContractSurrogate" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ExportOptions.DataContractSurrogate" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataContractSurrogate As IDataContractSurrogate" />
+      <MemberSignature Language="F#" Value="member this.DataContractSurrogate : System.Runtime.Serialization.IDataContractSurrogate with get, set" Usage="System.Runtime.Serialization.ExportOptions.DataContractSurrogate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -97,6 +102,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;Type&gt; KnownTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Type&gt; KnownTypes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ExportOptions.KnownTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KnownTypes As Collection(Of Type)" />
+      <MemberSignature Language="F#" Value="member this.KnownTypes : System.Collections.ObjectModel.Collection&lt;Type&gt;" Usage="System.Runtime.Serialization.ExportOptions.KnownTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

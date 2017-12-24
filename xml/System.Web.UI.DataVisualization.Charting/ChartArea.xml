@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ChartArea : System.Web.UI.DataVisualization.Charting.ChartNamedElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChartArea extends System.Web.UI.DataVisualization.Charting.ChartNamedElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartArea" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChartArea&#xA;Inherits ChartNamedElement" />
+  <TypeSignature Language="F#" Value="type ChartArea = class&#xA;    inherit ChartNamedElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,10 +57,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.ChartArea" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ChartArea ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartArea.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -84,6 +96,8 @@
       <MemberSignature Language="C#" Value="public ChartArea (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartArea.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.ChartArea : string -&gt; System.Web.UI.DataVisualization.Charting.ChartArea" Usage="new System.Web.UI.DataVisualization.Charting.ChartArea name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -102,6 +116,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.AreaAlignmentOrientations AlignmentOrientation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.AreaAlignmentOrientations AlignmentOrientation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.AlignmentOrientation" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlignmentOrientation As AreaAlignmentOrientations" />
+      <MemberSignature Language="F#" Value="member this.AlignmentOrientation : System.Web.UI.DataVisualization.Charting.AreaAlignmentOrientations with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.AlignmentOrientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -145,6 +161,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.AreaAlignmentStyles AlignmentStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.AreaAlignmentStyles AlignmentStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.AlignmentStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlignmentStyle As AreaAlignmentStyles" />
+      <MemberSignature Language="F#" Value="member this.AlignmentStyle : System.Web.UI.DataVisualization.Charting.AreaAlignmentStyles with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.AlignmentStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -194,6 +212,8 @@
       <MemberSignature Language="C#" Value="public string AlignWithChartArea { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AlignWithChartArea" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.AlignWithChartArea" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlignWithChartArea As String" />
+      <MemberSignature Language="F#" Value="member this.AlignWithChartArea : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.AlignWithChartArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -237,6 +257,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartArea3DStyle Area3DStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.ChartArea3DStyle Area3DStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.Area3DStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property Area3DStyle As ChartArea3DStyle" />
+      <MemberSignature Language="F#" Value="member this.Area3DStyle : System.Web.UI.DataVisualization.Charting.ChartArea3DStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.Area3DStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -281,6 +303,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.Axis[] Axes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.Axis[] Axes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.Axes" />
+      <MemberSignature Language="VB.NET" Value="Public Property Axes As Axis()" />
+      <MemberSignature Language="F#" Value="member this.Axes : System.Web.UI.DataVisualization.Charting.Axis[] with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.Axes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -324,6 +348,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.Axis AxisX { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.Axis AxisX" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.AxisX" />
+      <MemberSignature Language="VB.NET" Value="Public Property AxisX As Axis" />
+      <MemberSignature Language="F#" Value="member this.AxisX : System.Web.UI.DataVisualization.Charting.Axis with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.AxisX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -363,6 +389,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.Axis AxisX2 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.Axis AxisX2" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.AxisX2" />
+      <MemberSignature Language="VB.NET" Value="Public Property AxisX2 As Axis" />
+      <MemberSignature Language="F#" Value="member this.AxisX2 : System.Web.UI.DataVisualization.Charting.Axis with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.AxisX2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -402,6 +430,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.Axis AxisY { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.Axis AxisY" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.AxisY" />
+      <MemberSignature Language="VB.NET" Value="Public Property AxisY As Axis" />
+      <MemberSignature Language="F#" Value="member this.AxisY : System.Web.UI.DataVisualization.Charting.Axis with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.AxisY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -441,6 +471,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.Axis AxisY2 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.Axis AxisY2" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.AxisY2" />
+      <MemberSignature Language="VB.NET" Value="Public Property AxisY2 As Axis" />
+      <MemberSignature Language="F#" Value="member this.AxisY2 : System.Web.UI.DataVisualization.Charting.Axis with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.AxisY2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -480,6 +512,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -529,6 +563,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.GradientStyle BackGradientStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.GradientStyle BackGradientStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.BackGradientStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackGradientStyle As GradientStyle" />
+      <MemberSignature Language="F#" Value="member this.BackGradientStyle : System.Web.UI.DataVisualization.Charting.GradientStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.BackGradientStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -581,6 +617,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartHatchStyle BackHatchStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartHatchStyle BackHatchStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.BackHatchStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackHatchStyle As ChartHatchStyle" />
+      <MemberSignature Language="F#" Value="member this.BackHatchStyle : System.Web.UI.DataVisualization.Charting.ChartHatchStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.BackHatchStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -628,6 +666,8 @@
       <MemberSignature Language="C#" Value="public string BackImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BackImage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.BackImage" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImage As String" />
+      <MemberSignature Language="F#" Value="member this.BackImage : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.BackImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -678,6 +718,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartImageAlignmentStyle BackImageAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartImageAlignmentStyle BackImageAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.BackImageAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageAlignment As ChartImageAlignmentStyle" />
+      <MemberSignature Language="F#" Value="member this.BackImageAlignment : System.Web.UI.DataVisualization.Charting.ChartImageAlignmentStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.BackImageAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -719,6 +761,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackImageTransparentColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackImageTransparentColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.BackImageTransparentColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageTransparentColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackImageTransparentColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.BackImageTransparentColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -757,6 +801,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartImageWrapMode BackImageWrapMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartImageWrapMode BackImageWrapMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.BackImageWrapMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageWrapMode As ChartImageWrapMode" />
+      <MemberSignature Language="F#" Value="member this.BackImageWrapMode : System.Web.UI.DataVisualization.Charting.ChartImageWrapMode with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.BackImageWrapMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -802,6 +848,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackSecondaryColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackSecondaryColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.BackSecondaryColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackSecondaryColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackSecondaryColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.BackSecondaryColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -859,6 +907,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.BorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BorderColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.BorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -909,6 +959,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartDashStyle BorderDashStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle BorderDashStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.BorderDashStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderDashStyle As ChartDashStyle" />
+      <MemberSignature Language="F#" Value="member this.BorderDashStyle : System.Web.UI.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.BorderDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -950,6 +1002,8 @@
       <MemberSignature Language="C#" Value="public int BorderWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BorderWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.BorderWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.BorderWidth : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.BorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -989,6 +1043,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartArea.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="chartArea.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1011,6 +1067,7 @@
       <MemberSignature Language="C#" Value="public float GetSeriesDepth (System.Web.UI.DataVisualization.Charting.Series series);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 GetSeriesDepth(class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartArea.GetSeriesDepth(System.Web.UI.DataVisualization.Charting.Series)" />
+      <MemberSignature Language="F#" Value="member this.GetSeriesDepth : System.Web.UI.DataVisualization.Charting.Series -&gt; single" Usage="chartArea.GetSeriesDepth series" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1049,6 +1106,7 @@
       <MemberSignature Language="C#" Value="public float GetSeriesZPosition (System.Web.UI.DataVisualization.Charting.Series series);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 GetSeriesZPosition(class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartArea.GetSeriesZPosition(System.Web.UI.DataVisualization.Charting.Series)" />
+      <MemberSignature Language="F#" Value="member this.GetSeriesZPosition : System.Web.UI.DataVisualization.Charting.Series -&gt; single" Usage="chartArea.GetSeriesZPosition series" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1085,6 +1143,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ElementPosition InnerPlotPosition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.ElementPosition InnerPlotPosition" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.InnerPlotPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property InnerPlotPosition As ElementPosition" />
+      <MemberSignature Language="F#" Value="member this.InnerPlotPosition : System.Web.UI.DataVisualization.Charting.ElementPosition with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.InnerPlotPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1133,6 +1193,8 @@
       <MemberSignature Language="C#" Value="public bool IsSameFontSizeForAllAxes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSameFontSizeForAllAxes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.IsSameFontSizeForAllAxes" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSameFontSizeForAllAxes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSameFontSizeForAllAxes : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.IsSameFontSizeForAllAxes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1175,6 +1237,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1215,6 +1279,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ElementPosition Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.ElementPosition Position" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Property Position As ElementPosition" />
+      <MemberSignature Language="F#" Value="member this.Position : System.Web.UI.DataVisualization.Charting.ElementPosition with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1256,6 +1322,8 @@
       <MemberSignature Language="C#" Value="public void RecalculateAxesScale ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RecalculateAxesScale() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartArea.RecalculateAxesScale" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RecalculateAxesScale ()" />
+      <MemberSignature Language="F#" Value="member this.RecalculateAxesScale : unit -&gt; unit" Usage="chartArea.RecalculateAxesScale " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1283,6 +1351,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ShadowColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ShadowColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.ShadowColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShadowColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ShadowColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.ShadowColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1332,6 +1402,8 @@
       <MemberSignature Language="C#" Value="public int ShadowOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ShadowOffset" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.ShadowOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShadowOffset As Integer" />
+      <MemberSignature Language="F#" Value="member this.ShadowOffset : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.ShadowOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1371,6 +1443,8 @@
       <MemberSignature Language="C#" Value="public void TransformPoints (System.Web.UI.DataVisualization.Charting.Point3D[] points);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TransformPoints(class System.Web.UI.DataVisualization.Charting.Point3D[] points) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints(System.Web.UI.DataVisualization.Charting.Point3D[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TransformPoints (points As Point3D())" />
+      <MemberSignature Language="F#" Value="member this.TransformPoints : System.Web.UI.DataVisualization.Charting.Point3D[] -&gt; unit" Usage="chartArea.TransformPoints points" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1392,6 +1466,8 @@
       <MemberSignature Language="C#" Value="public virtual bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Visible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1422,14 +1498,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.ChartArea" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

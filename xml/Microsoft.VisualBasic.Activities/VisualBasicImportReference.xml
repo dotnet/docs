@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class VisualBasicImportReference : IEquatable&lt;Microsoft.VisualBasic.Activities.VisualBasicImportReference&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualBasicImportReference extends System.Object implements class System.IEquatable`1&lt;class Microsoft.VisualBasic.Activities.VisualBasicImportReference&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualBasicImportReference&#xA;Implements IEquatable(Of VisualBasicImportReference)" />
+  <TypeSignature Language="F#" Value="type VisualBasicImportReference = class&#xA;    interface IEquatable&lt;VisualBasicImportReference&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,7 @@
       <MemberSignature Language="C#" Value="public VisualBasicImportReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicImportReference.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -45,6 +48,8 @@
       <MemberSignature Language="C#" Value="public string Assembly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Assembly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Activities.VisualBasicImportReference.Assembly" />
+      <MemberSignature Language="VB.NET" Value="Public Property Assembly As String" />
+      <MemberSignature Language="F#" Value="member this.Assembly : string with get, set" Usage="Microsoft.VisualBasic.Activities.VisualBasicImportReference.Assembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -63,7 +68,12 @@
       <MemberSignature Language="C#" Value="public bool Equals (Microsoft.VisualBasic.Activities.VisualBasicImportReference other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.VisualBasic.Activities.VisualBasicImportReference other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicImportReference.Equals(Microsoft.VisualBasic.Activities.VisualBasicImportReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As VisualBasicImportReference) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.VisualBasic.Activities.VisualBasicImportReference -&gt; bool" Usage="visualBasicImportReference.Equals other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +96,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicImportReference.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="visualBasicImportReference.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -105,6 +117,8 @@
       <MemberSignature Language="C#" Value="public string Import { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Import" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Activities.VisualBasicImportReference.Import" />
+      <MemberSignature Language="VB.NET" Value="Public Property Import As String" />
+      <MemberSignature Language="F#" Value="member this.Import : string with get, set" Usage="Microsoft.VisualBasic.Activities.VisualBasicImportReference.Import" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

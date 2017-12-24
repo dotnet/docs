@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class XamlInstanceCreator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XamlInstanceCreator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlInstanceCreator" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XamlInstanceCreator" />
+  <TypeSignature Language="F#" Value="type XamlInstanceCreator = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,7 @@
       <MemberSignature Language="C#" Value="protected XamlInstanceCreator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlInstanceCreator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public abstract object CreateObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlInstanceCreator.CreateObject" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateObject () As Object" />
+      <MemberSignature Language="F#" Value="abstract member CreateObject : unit -&gt; obj" Usage="xamlInstanceCreator.CreateObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

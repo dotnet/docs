@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void EventHandler(object sender, EventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed EventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.EventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub EventHandler(sender As Object, e As EventArgs)" />
+  <TypeSignature Language="F#" Value="type EventHandler = delegate of obj * EventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

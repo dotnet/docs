@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ManagementEventWatcher : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagementEventWatcher extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementEventWatcher" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagementEventWatcher&#xA;Inherits Component" />
+  <TypeSignature Language="F#" Value="type ManagementEventWatcher = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,10 +32,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementEventWatcher" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ManagementEventWatcher ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -66,6 +78,8 @@
       <MemberSignature Language="C#" Value="public ManagementEventWatcher (System.Management.EventQuery query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.EventQuery query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.#ctor(System.Management.EventQuery)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (query As EventQuery)" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementEventWatcher : System.Management.EventQuery -&gt; System.Management.ManagementEventWatcher" Usage="new System.Management.ManagementEventWatcher query" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -102,6 +116,8 @@
       <MemberSignature Language="C#" Value="public ManagementEventWatcher (string query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (query As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementEventWatcher : string -&gt; System.Management.ManagementEventWatcher" Usage="new System.Management.ManagementEventWatcher query" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -138,6 +154,8 @@
       <MemberSignature Language="C#" Value="public ManagementEventWatcher (System.Management.ManagementScope scope, System.Management.EventQuery query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementScope scope, class System.Management.EventQuery query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.#ctor(System.Management.ManagementScope,System.Management.EventQuery)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scope As ManagementScope, query As EventQuery)" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementEventWatcher : System.Management.ManagementScope * System.Management.EventQuery -&gt; System.Management.ManagementEventWatcher" Usage="new System.Management.ManagementEventWatcher (scope, query)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -175,6 +193,8 @@
       <MemberSignature Language="C#" Value="public ManagementEventWatcher (string scope, string query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scope, string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String, query As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementEventWatcher : string * string -&gt; System.Management.ManagementEventWatcher" Usage="new System.Management.ManagementEventWatcher (scope, query)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -212,6 +232,8 @@
       <MemberSignature Language="C#" Value="public ManagementEventWatcher (System.Management.ManagementScope scope, System.Management.EventQuery query, System.Management.EventWatcherOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementScope scope, class System.Management.EventQuery query, class System.Management.EventWatcherOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.#ctor(System.Management.ManagementScope,System.Management.EventQuery,System.Management.EventWatcherOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scope As ManagementScope, query As EventQuery, options As EventWatcherOptions)" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementEventWatcher : System.Management.ManagementScope * System.Management.EventQuery * System.Management.EventWatcherOptions -&gt; System.Management.ManagementEventWatcher" Usage="new System.Management.ManagementEventWatcher (scope, query, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -251,6 +273,8 @@
       <MemberSignature Language="C#" Value="public ManagementEventWatcher (string scope, string query, System.Management.EventWatcherOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scope, string query, class System.Management.EventWatcherOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.#ctor(System.String,System.String,System.Management.EventWatcherOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String, query As String, options As EventWatcherOptions)" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementEventWatcher : string * string * System.Management.EventWatcherOptions -&gt; System.Management.ManagementEventWatcher" Usage="new System.Management.ManagementEventWatcher (scope, query, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -290,6 +314,8 @@
       <MemberSignature Language="C#" Value="public event System.Management.EventArrivedEventHandler EventArrived;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Management.EventArrivedEventHandler EventArrived" />
       <MemberSignature Language="DocId" Value="E:System.Management.ManagementEventWatcher.EventArrived" />
+      <MemberSignature Language="VB.NET" Value="Public Event EventArrived As EventArrivedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.EventArrived : System.Management.EventArrivedEventHandler " Usage="member this.EventArrived : System.Management.EventArrivedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -324,6 +350,8 @@
       <MemberSignature Language="C#" Value="~ManagementEventWatcher ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="managementEventWatcher.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -351,6 +379,8 @@
       <MemberSignature Language="C#" Value="public System.Management.EventWatcherOptions Options { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.EventWatcherOptions Options" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementEventWatcher.Options" />
+      <MemberSignature Language="VB.NET" Value="Public Property Options As EventWatcherOptions" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Management.EventWatcherOptions with get, set" Usage="System.Management.ManagementEventWatcher.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -389,6 +419,8 @@
       <MemberSignature Language="C#" Value="public System.Management.EventQuery Query { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.EventQuery Query" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementEventWatcher.Query" />
+      <MemberSignature Language="VB.NET" Value="Public Property Query As EventQuery" />
+      <MemberSignature Language="F#" Value="member this.Query : System.Management.EventQuery with get, set" Usage="System.Management.ManagementEventWatcher.Query" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -427,6 +459,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementScope Scope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementScope Scope" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementEventWatcher.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scope As ManagementScope" />
+      <MemberSignature Language="F#" Value="member this.Scope : System.Management.ManagementScope with get, set" Usage="System.Management.ManagementEventWatcher.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -465,6 +499,8 @@
       <MemberSignature Language="C#" Value="public void Start ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="managementEventWatcher.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -492,6 +528,8 @@
       <MemberSignature Language="C#" Value="public void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="managementEventWatcher.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -527,6 +565,8 @@
       <MemberSignature Language="C#" Value="public event System.Management.StoppedEventHandler Stopped;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Management.StoppedEventHandler Stopped" />
       <MemberSignature Language="DocId" Value="E:System.Management.ManagementEventWatcher.Stopped" />
+      <MemberSignature Language="VB.NET" Value="Public Event Stopped As StoppedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Stopped : System.Management.StoppedEventHandler " Usage="member this.Stopped : System.Management.StoppedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -561,6 +601,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementBaseObject WaitForNextEvent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementBaseObject WaitForNextEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.WaitForNextEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Function WaitForNextEvent () As ManagementBaseObject" />
+      <MemberSignature Language="F#" Value="member this.WaitForNextEvent : unit -&gt; System.Management.ManagementBaseObject" Usage="managementEventWatcher.WaitForNextEvent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -594,14 +636,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementEventWatcher" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

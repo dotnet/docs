@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void StateChangeEventHandler(object sender, StateChangeEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StateChangeEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Data.StateChangeEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub StateChangeEventHandler(sender As Object, e As StateChangeEventArgs)" />
+  <TypeSignature Language="F#" Value="type StateChangeEventHandler = delegate of obj * StateChangeEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>

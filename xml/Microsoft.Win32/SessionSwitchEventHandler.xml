@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void SessionSwitchEventHandler(object sender, SessionSwitchEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SessionSwitchEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SessionSwitchEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub SessionSwitchEventHandler(sender As Object, e As SessionSwitchEventArgs)" />
+  <TypeSignature Language="F#" Value="type SessionSwitchEventHandler = delegate of obj * SessionSwitchEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

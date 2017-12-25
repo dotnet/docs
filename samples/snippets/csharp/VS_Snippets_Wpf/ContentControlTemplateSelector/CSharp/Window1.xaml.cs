@@ -30,14 +30,14 @@ namespace ContentControlNew
     }
 
     //<Snippet2>
-    public class NumderDataTemplateSelector : DataTemplateSelector
+    public class NumberDataTemplateSelector : DataTemplateSelector
     {
         public DataTemplate NumberTemplate { get; set; }
         public DataTemplate LargeNumberTemplate { get; set; }
 
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
-            //null value will be used in design mode
+            // Null value can be passed by IDE designer
             if (item == null) return null;
 
             var num = Convert.ToInt32((string)item);

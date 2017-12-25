@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IAnchorInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAnchorInfo" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.IAnchorInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAnchorInfo" />
+  <TypeSignature Language="F#" Value="type IAnchorInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Annotations.AnnotationResource Anchor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Annotations.AnnotationResource Anchor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.IAnchorInfo.Anchor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Anchor As AnnotationResource" />
+      <MemberSignature Language="F#" Value="member this.Anchor : System.Windows.Annotations.AnnotationResource" Usage="System.Windows.Annotations.IAnchorInfo.Anchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Annotations.Annotation Annotation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Annotations.Annotation Annotation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.IAnchorInfo.Annotation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Annotation As Annotation" />
+      <MemberSignature Language="F#" Value="member this.Annotation : System.Windows.Annotations.Annotation" Usage="System.Windows.Annotations.IAnchorInfo.Annotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="public object ResolvedAnchor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ResolvedAnchor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.IAnchorInfo.ResolvedAnchor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResolvedAnchor As Object" />
+      <MemberSignature Language="F#" Value="member this.ResolvedAnchor : obj" Usage="System.Windows.Annotations.IAnchorInfo.ResolvedAnchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

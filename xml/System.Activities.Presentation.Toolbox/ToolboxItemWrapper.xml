@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ToolboxItemWrapper : System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ToolboxItemWrapper extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ToolboxItemWrapper&#xA;Implements INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type ToolboxItemWrapper = class&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +28,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ToolboxItemWrapper ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -52,6 +64,8 @@
       <MemberSignature Language="C#" Value="public ToolboxItemWrapper (Type toolType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type toolType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (toolType As Type)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Toolbox.ToolboxItemWrapper : Type -&gt; System.Activities.Presentation.Toolbox.ToolboxItemWrapper" Usage="new System.Activities.Presentation.Toolbox.ToolboxItemWrapper toolType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -77,6 +91,8 @@
       <MemberSignature Language="C#" Value="public ToolboxItemWrapper (Type toolType, string displayName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type toolType, string displayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.#ctor(System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (toolType As Type, displayName As String)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Toolbox.ToolboxItemWrapper : Type * string -&gt; System.Activities.Presentation.Toolbox.ToolboxItemWrapper" Usage="new System.Activities.Presentation.Toolbox.ToolboxItemWrapper (toolType, displayName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -104,6 +120,8 @@
       <MemberSignature Language="C#" Value="public ToolboxItemWrapper (Type toolType, string bitmapName, string displayName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type toolType, string bitmapName, string displayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.#ctor(System.Type,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (toolType As Type, bitmapName As String, displayName As String)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Toolbox.ToolboxItemWrapper : Type * string * string -&gt; System.Activities.Presentation.Toolbox.ToolboxItemWrapper" Usage="new System.Activities.Presentation.Toolbox.ToolboxItemWrapper (toolType, bitmapName, displayName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -133,6 +151,8 @@
       <MemberSignature Language="C#" Value="public ToolboxItemWrapper (string toolName, string assemblyName, string bitmapName, string displayName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string toolName, string assemblyName, string bitmapName, string displayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (toolName As String, assemblyName As String, bitmapName As String, displayName As String)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Toolbox.ToolboxItemWrapper : string * string * string * string -&gt; System.Activities.Presentation.Toolbox.ToolboxItemWrapper" Usage="new System.Activities.Presentation.Toolbox.ToolboxItemWrapper (toolName, assemblyName, bitmapName, displayName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -157,6 +177,8 @@
       <MemberSignature Language="C#" Value="public string AssemblyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -183,6 +205,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Bitmap Bitmap { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Bitmap Bitmap" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.Bitmap" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bitmap As Bitmap" />
+      <MemberSignature Language="F#" Value="member this.Bitmap : System.Drawing.Bitmap" Usage="System.Activities.Presentation.Toolbox.ToolboxItemWrapper.Bitmap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -201,6 +225,8 @@
       <MemberSignature Language="C#" Value="public string BitmapName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BitmapName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName" />
+      <MemberSignature Language="VB.NET" Value="Public Property BitmapName As String" />
+      <MemberSignature Language="F#" Value="member this.BitmapName : string with get, set" Usage="System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -226,6 +252,8 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="System.Activities.Presentation.Toolbox.ToolboxItemWrapper.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -251,6 +279,8 @@
       <MemberSignature Language="C#" Value="public bool IsValid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.IsValid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="System.Activities.Presentation.Toolbox.ToolboxItemWrapper.IsValid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -277,7 +307,12 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -301,6 +336,8 @@
       <MemberSignature Language="C#" Value="public string ToolName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolName As String" />
+      <MemberSignature Language="F#" Value="member this.ToolName : string with get, set" Usage="System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -327,6 +364,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="toolboxItemWrapper.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -346,6 +385,8 @@
       <MemberSignature Language="C#" Value="public Type Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Activities.Presentation.Toolbox.ToolboxItemWrapper.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -360,14 +401,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

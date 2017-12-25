@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class EncryptedKeyIdentifierClause : System.IdentityModel.Tokens.BinaryKeyIdentifierClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EncryptedKeyIdentifierClause extends System.IdentityModel.Tokens.BinaryKeyIdentifierClause" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncryptedKeyIdentifierClause&#xA;Inherits BinaryKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type EncryptedKeyIdentifierClause = class&#xA;    inherit BinaryKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EncryptedKeyIdentifierClause (byte[] encryptedKey, string encryptionMethod);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] encryptedKey, string encryptionMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.#ctor(System.Byte[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encryptedKey As Byte(), encryptionMethod As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause : byte[] * string -&gt; System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause (encryptedKey, encryptionMethod)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -63,6 +76,8 @@
       <MemberSignature Language="C#" Value="public EncryptedKeyIdentifierClause (byte[] encryptedKey, string encryptionMethod, System.IdentityModel.Tokens.SecurityKeyIdentifier identifier);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] encryptedKey, string encryptionMethod, class System.IdentityModel.Tokens.SecurityKeyIdentifier identifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.#ctor(System.Byte[],System.String,System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encryptedKey As Byte(), encryptionMethod As String, identifier As SecurityKeyIdentifier)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause : byte[] * string * System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause (encryptedKey, encryptionMethod, identifier)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -100,6 +115,8 @@
       <MemberSignature Language="C#" Value="public EncryptedKeyIdentifierClause (byte[] encryptedKey, string encryptionMethod, System.IdentityModel.Tokens.SecurityKeyIdentifier identifier, string carriedKeyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] encryptedKey, string encryptionMethod, class System.IdentityModel.Tokens.SecurityKeyIdentifier identifier, string carriedKeyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.#ctor(System.Byte[],System.String,System.IdentityModel.Tokens.SecurityKeyIdentifier,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encryptedKey As Byte(), encryptionMethod As String, identifier As SecurityKeyIdentifier, carriedKeyName As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause : byte[] * string * System.IdentityModel.Tokens.SecurityKeyIdentifier * string -&gt; System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause (encryptedKey, encryptionMethod, identifier, carriedKeyName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -139,6 +156,8 @@
       <MemberSignature Language="C#" Value="public EncryptedKeyIdentifierClause (byte[] encryptedKey, string encryptionMethod, System.IdentityModel.Tokens.SecurityKeyIdentifier identifier, string carriedKeyName, byte[] derivationNonce, int derivationLength);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] encryptedKey, string encryptionMethod, class System.IdentityModel.Tokens.SecurityKeyIdentifier identifier, string carriedKeyName, unsigned int8[] derivationNonce, int32 derivationLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.#ctor(System.Byte[],System.String,System.IdentityModel.Tokens.SecurityKeyIdentifier,System.String,System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encryptedKey As Byte(), encryptionMethod As String, identifier As SecurityKeyIdentifier, carriedKeyName As String, derivationNonce As Byte(), derivationLength As Integer)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause : byte[] * string * System.IdentityModel.Tokens.SecurityKeyIdentifier * string * byte[] * int -&gt; System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause (encryptedKey, encryptionMethod, identifier, carriedKeyName, derivationNonce, derivationLength)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -184,6 +203,8 @@
       <MemberSignature Language="C#" Value="public string CarriedKeyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CarriedKeyName" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.CarriedKeyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CarriedKeyName As String" />
+      <MemberSignature Language="F#" Value="member this.CarriedKeyName : string" Usage="System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.CarriedKeyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -209,6 +230,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityKeyIdentifier EncryptingKeyIdentifier { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityKeyIdentifier EncryptingKeyIdentifier" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptingKeyIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncryptingKeyIdentifier As SecurityKeyIdentifier" />
+      <MemberSignature Language="F#" Value="member this.EncryptingKeyIdentifier : System.IdentityModel.Tokens.SecurityKeyIdentifier" Usage="System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptingKeyIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -227,6 +250,8 @@
       <MemberSignature Language="C#" Value="public string EncryptionMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EncryptionMethod" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncryptionMethod As String" />
+      <MemberSignature Language="F#" Value="member this.EncryptionMethod : string" Usage="System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -252,6 +277,8 @@
       <MemberSignature Language="C#" Value="public byte[] GetEncryptedKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetEncryptedKey() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEncryptedKey () As Byte()" />
+      <MemberSignature Language="F#" Value="member this.GetEncryptedKey : unit -&gt; byte[]" Usage="encryptedKeyIdentifierClause.GetEncryptedKey " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -274,10 +301,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Matches">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Matches">
       <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (clause As SecurityKeyIdentifierClause) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="encryptedKeyIdentifierClause.Matches clause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -306,6 +344,8 @@
       <MemberSignature Language="C#" Value="public bool Matches (byte[] encryptedKey, string encryptionMethod, string carriedKeyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(unsigned int8[] encryptedKey, string encryptionMethod, string carriedKeyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.Matches(System.Byte[],System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Matches (encryptedKey As Byte(), encryptionMethod As String, carriedKeyName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Matches : byte[] * string * string -&gt; bool" Usage="encryptedKeyIdentifierClause.Matches (encryptedKey, encryptionMethod, carriedKeyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -333,6 +373,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="encryptedKeyIdentifierClause.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -355,23 +397,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Matches">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

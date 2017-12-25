@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void SubscribeContextCallback&lt;TContextItemType&gt;(TContextItemType item) where TContextItemType : ContextItem;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SubscribeContextCallback`1&lt;(class System.Activities.Presentation.ContextItem) TContextItemType&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.SubscribeContextCallback`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub SubscribeContextCallback(Of TContextItemType)(item As TContextItemType)" />
+  <TypeSignature Language="F#" Value="type SubscribeContextCallback&lt;'ContextItemType (requires 'ContextItemType :&gt; ContextItem)&gt; = delegate of 'ContextItemType -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

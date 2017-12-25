@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void ProjectFinishedEventHandler(object sender, ProjectFinishedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProjectFinishedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ProjectFinishedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ProjectFinishedEventHandler(sender As Object, e As ProjectFinishedEventArgs)" />
+  <TypeSignature Language="F#" Value="type ProjectFinishedEventHandler = delegate of obj * ProjectFinishedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

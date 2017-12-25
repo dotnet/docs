@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class DbExpressionVisitor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbExpressionVisitor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbExpressionVisitor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbExpressionVisitor" />
+  <TypeSignature Language="F#" Value="type DbExpressionVisitor = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="protected DbExpressionVisitor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -30,10 +33,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Visit">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Implements the visitor pattern for expressions.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Visit">
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbAndExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbAndExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbAndExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbAndExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbAndExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -55,6 +69,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbApplyExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbApplyExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbApplyExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbApplyExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbApplyExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -76,6 +92,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbArithmeticExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbArithmeticExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbArithmeticExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbArithmeticExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbArithmeticExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -97,6 +115,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbCaseExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbCaseExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbCaseExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbCaseExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbCaseExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -118,6 +138,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbCastExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbCastExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbCastExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbCastExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbCastExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -139,6 +161,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbComparisonExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbComparisonExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbComparisonExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbComparisonExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbComparisonExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -160,6 +184,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbConstantExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbConstantExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbConstantExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbConstantExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbConstantExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -181,6 +207,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbCrossJoinExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbCrossJoinExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbCrossJoinExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbCrossJoinExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbCrossJoinExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -202,6 +230,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbDerefExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbDerefExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbDerefExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbDerefExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbDerefExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -223,6 +253,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbDistinctExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbDistinctExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbDistinctExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbDistinctExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbDistinctExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -244,6 +276,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbElementExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbElementExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbElementExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbElementExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbElementExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -265,6 +299,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbEntityRefExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbEntityRefExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbEntityRefExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbEntityRefExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbEntityRefExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -286,6 +322,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbExceptExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbExceptExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbExceptExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbExceptExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbExceptExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -307,6 +345,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -335,6 +375,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbFilterExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbFilterExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbFilterExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbFilterExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbFilterExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -356,6 +398,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbFunctionExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbFunctionExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbFunctionExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbFunctionExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbFunctionExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -377,6 +421,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbGroupByExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbGroupByExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbGroupByExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbGroupByExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbGroupByExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -398,6 +444,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbIntersectExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbIntersectExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIntersectExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbIntersectExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbIntersectExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -419,6 +467,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbIsEmptyExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbIsEmptyExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIsEmptyExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbIsEmptyExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbIsEmptyExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -440,6 +490,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbIsNullExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbIsNullExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIsNullExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbIsNullExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbIsNullExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -461,6 +513,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbIsOfExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbIsOfExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIsOfExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbIsOfExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbIsOfExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -482,6 +536,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbJoinExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbJoinExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbJoinExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbJoinExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbJoinExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -503,6 +559,8 @@
       <MemberSignature Language="C#" Value="public virtual void Visit (System.Data.Common.CommandTrees.DbLambdaExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbLambdaExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbLambdaExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Visit (expression As DbLambdaExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbLambdaExpression -&gt; unit&#xA;override this.Visit : System.Data.Common.CommandTrees.DbLambdaExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -524,6 +582,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbLikeExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbLikeExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbLikeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbLikeExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbLikeExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -545,6 +605,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbLimitExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbLimitExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbLimitExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbLimitExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbLimitExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -566,6 +628,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbNewInstanceExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbNewInstanceExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbNewInstanceExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbNewInstanceExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbNewInstanceExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -587,6 +651,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbNotExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbNotExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbNotExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbNotExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbNotExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -608,6 +674,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbNullExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbNullExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbNullExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbNullExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbNullExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -629,6 +697,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbOfTypeExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbOfTypeExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbOfTypeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbOfTypeExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbOfTypeExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -650,6 +720,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbOrExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbOrExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbOrExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbOrExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbOrExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -671,6 +743,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbParameterReferenceExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbParameterReferenceExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbParameterReferenceExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbParameterReferenceExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbParameterReferenceExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -692,6 +766,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbProjectExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbProjectExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbProjectExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbProjectExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbProjectExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -713,6 +789,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbPropertyExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbPropertyExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbPropertyExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbPropertyExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbPropertyExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -734,6 +812,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbQuantifierExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbQuantifierExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbQuantifierExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbQuantifierExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbQuantifierExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -755,6 +835,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbRefExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbRefExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbRefExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbRefExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbRefExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -776,6 +858,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbRefKeyExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbRefKeyExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbRefKeyExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbRefKeyExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbRefKeyExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -797,6 +881,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbRelationshipNavigationExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbRelationshipNavigationExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbRelationshipNavigationExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbRelationshipNavigationExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbRelationshipNavigationExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -818,6 +904,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbScanExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbScanExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbScanExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbScanExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbScanExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -839,6 +927,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbSkipExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbSkipExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbSkipExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbSkipExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbSkipExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -860,6 +950,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbSortExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbSortExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbSortExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbSortExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbSortExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -881,6 +973,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbTreatExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbTreatExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbTreatExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbTreatExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbTreatExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -902,6 +996,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbUnionAllExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbUnionAllExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbUnionAllExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbUnionAllExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbUnionAllExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -923,6 +1019,8 @@
       <MemberSignature Language="C#" Value="public abstract void Visit (System.Data.Common.CommandTrees.DbVariableReferenceExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Visit(class System.Data.Common.CommandTrees.DbVariableReferenceExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbVariableReferenceExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbVariableReferenceExpression)" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbVariableReferenceExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -940,14 +1038,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Visit">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Implements the visitor pattern for expressions.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

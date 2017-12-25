@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void WriteHandler(string message);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WriteHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.WriteHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub WriteHandler(message As String)" />
+  <TypeSignature Language="F#" Value="type WriteHandler = delegate of string -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SubclassTypeValidatorAttribute : System.Configuration.ConfigurationValidatorAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SubclassTypeValidatorAttribute extends System.Configuration.ConfigurationValidatorAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SubclassTypeValidatorAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SubclassTypeValidatorAttribute&#xA;Inherits ConfigurationValidatorAttribute" />
+  <TypeSignature Language="F#" Value="type SubclassTypeValidatorAttribute = class&#xA;    inherit ConfigurationValidatorAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public SubclassTypeValidatorAttribute (Type baseClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type baseClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SubclassTypeValidatorAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseClass As Type)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SubclassTypeValidatorAttribute : Type -&gt; System.Configuration.SubclassTypeValidatorAttribute" Usage="new System.Configuration.SubclassTypeValidatorAttribute baseClass" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public Type BaseClass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BaseClass" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SubclassTypeValidatorAttribute.BaseClass" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseClass As Type" />
+      <MemberSignature Language="F#" Value="member this.BaseClass : Type" Usage="System.Configuration.SubclassTypeValidatorAttribute.BaseClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationValidatorBase ValidatorInstance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationValidatorBase ValidatorInstance" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SubclassTypeValidatorAttribute.ValidatorInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidatorInstance As ConfigurationValidatorBase" />
+      <MemberSignature Language="F#" Value="member this.ValidatorInstance : System.Configuration.ConfigurationValidatorBase" Usage="System.Configuration.SubclassTypeValidatorAttribute.ValidatorInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

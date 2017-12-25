@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class RegistryPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit RegistryPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.RegistryPermissionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistryPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type RegistryPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public RegistryPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.RegistryPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.RegistryPermissionAttribute" Usage="new System.Security.Permissions.RegistryPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public string All { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string All" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.RegistryPermissionAttribute.All" />
+      <MemberSignature Language="VB.NET" Value="Public Property All As String" />
+      <MemberSignature Language="F#" Value="member this.All : string with get, set" Usage="System.Security.Permissions.RegistryPermissionAttribute.All" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -103,6 +109,8 @@
       <MemberSignature Language="C#" Value="public string ChangeAccessControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ChangeAccessControl" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.RegistryPermissionAttribute.ChangeAccessControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChangeAccessControl As String" />
+      <MemberSignature Language="F#" Value="member this.ChangeAccessControl : string with get, set" Usage="System.Security.Permissions.RegistryPermissionAttribute.ChangeAccessControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -136,6 +144,8 @@
       <MemberSignature Language="C#" Value="public string Create { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Create" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.RegistryPermissionAttribute.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Property Create As String" />
+      <MemberSignature Language="F#" Value="member this.Create : string with get, set" Usage="System.Security.Permissions.RegistryPermissionAttribute.Create" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -166,6 +176,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermissionAttribute.CreatePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="registryPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -199,6 +211,8 @@
       <MemberSignature Language="C#" Value="public string Read { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Read" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.RegistryPermissionAttribute.Read" />
+      <MemberSignature Language="VB.NET" Value="Public Property Read As String" />
+      <MemberSignature Language="F#" Value="member this.Read : string with get, set" Usage="System.Security.Permissions.RegistryPermissionAttribute.Read" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -229,6 +243,8 @@
       <MemberSignature Language="C#" Value="public string ViewAccessControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ViewAccessControl" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.RegistryPermissionAttribute.ViewAccessControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ViewAccessControl As String" />
+      <MemberSignature Language="F#" Value="member this.ViewAccessControl : string with get, set" Usage="System.Security.Permissions.RegistryPermissionAttribute.ViewAccessControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -262,6 +278,8 @@
       <MemberSignature Language="C#" Value="public string ViewAndModify { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ViewAndModify" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.RegistryPermissionAttribute.ViewAndModify" />
+      <MemberSignature Language="VB.NET" Value="Public Property ViewAndModify As String" />
+      <MemberSignature Language="F#" Value="member this.ViewAndModify : string with get, set" Usage="System.Security.Permissions.RegistryPermissionAttribute.ViewAndModify" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -298,6 +316,8 @@
       <MemberSignature Language="C#" Value="public string Write { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Write" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.RegistryPermissionAttribute.Write" />
+      <MemberSignature Language="VB.NET" Value="Public Property Write As String" />
+      <MemberSignature Language="F#" Value="member this.Write : string with get, set" Usage="System.Security.Permissions.RegistryPermissionAttribute.Write" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

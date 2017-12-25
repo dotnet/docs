@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void RetrieveVirtualItemEventHandler(object sender, RetrieveVirtualItemEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RetrieveVirtualItemEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RetrieveVirtualItemEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub RetrieveVirtualItemEventHandler(sender As Object, e As RetrieveVirtualItemEventArgs)" />
+  <TypeSignature Language="F#" Value="type RetrieveVirtualItemEventHandler = delegate of obj * RetrieveVirtualItemEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class RangeValidator : System.Web.UI.WebControls.BaseCompareValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RangeValidator extends System.Web.UI.WebControls.BaseCompareValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RangeValidator" />
+  <TypeSignature Language="VB.NET" Value="Public Class RangeValidator&#xA;Inherits BaseCompareValidator" />
+  <TypeSignature Language="F#" Value="type RangeValidator = class&#xA;    inherit BaseCompareValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +81,7 @@
       <MemberSignature Language="C#" Value="public RangeValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RangeValidator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +97,8 @@
       <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RangeValidator.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="rangeValidator.AddAttributesToRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -130,6 +135,8 @@
       <MemberSignature Language="C#" Value="protected override bool ControlPropertiesValid ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ControlPropertiesValid() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RangeValidator.ControlPropertiesValid" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ControlPropertiesValid () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ControlPropertiesValid : unit -&gt; bool" Usage="rangeValidator.ControlPropertiesValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +157,8 @@
       <MemberSignature Language="C#" Value="protected override bool EvaluateIsValid ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EvaluateIsValid() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RangeValidator.EvaluateIsValid" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function EvaluateIsValid () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.EvaluateIsValid : unit -&gt; bool" Usage="rangeValidator.EvaluateIsValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -182,6 +191,8 @@
       <MemberSignature Language="C#" Value="public string MaximumValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MaximumValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RangeValidator.MaximumValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumValue As String" />
+      <MemberSignature Language="F#" Value="member this.MaximumValue : string with get, set" Usage="System.Web.UI.WebControls.RangeValidator.MaximumValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,6 +246,8 @@
       <MemberSignature Language="C#" Value="public string MinimumValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MinimumValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RangeValidator.MinimumValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinimumValue As String" />
+      <MemberSignature Language="F#" Value="member this.MinimumValue : string with get, set" Usage="System.Web.UI.WebControls.RangeValidator.MinimumValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

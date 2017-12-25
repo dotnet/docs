@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CodeFieldReference : Mono.CodeGeneration.CodeValueReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CodeFieldReference extends Mono.CodeGeneration.CodeValueReference" />
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeFieldReference" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeFieldReference&#xA;Inherits CodeValueReference" />
+  <TypeSignature Language="F#" Value="type CodeFieldReference = class&#xA;    inherit CodeValueReference" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public CodeFieldReference (System.Reflection.FieldInfo field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.FieldInfo field) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFieldReference.#ctor(System.Reflection.FieldInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (field As FieldInfo)" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeFieldReference : System.Reflection.FieldInfo -&gt; Mono.CodeGeneration.CodeFieldReference" Usage="new Mono.CodeGeneration.CodeFieldReference field" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public CodeFieldReference (Mono.CodeGeneration.CodeExpression target, System.Reflection.FieldInfo field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Mono.CodeGeneration.CodeExpression target, class System.Reflection.FieldInfo field) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFieldReference.#ctor(Mono.CodeGeneration.CodeExpression,System.Reflection.FieldInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (target As CodeExpression, field As FieldInfo)" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeFieldReference : Mono.CodeGeneration.CodeExpression * System.Reflection.FieldInfo -&gt; Mono.CodeGeneration.CodeFieldReference" Usage="new Mono.CodeGeneration.CodeFieldReference (target, field)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +66,8 @@
       <MemberSignature Language="C#" Value="public override void Generate (System.Reflection.Emit.ILGenerator gen);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Generate(class System.Reflection.Emit.ILGenerator gen) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFieldReference.Generate(System.Reflection.Emit.ILGenerator)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Generate (gen As ILGenerator)" />
+      <MemberSignature Language="F#" Value="override this.Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeFieldReference.Generate gen" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="public override void GenerateSet (System.Reflection.Emit.ILGenerator gen, Mono.CodeGeneration.CodeExpression value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateSet(class System.Reflection.Emit.ILGenerator gen, class Mono.CodeGeneration.CodeExpression value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFieldReference.GenerateSet(System.Reflection.Emit.ILGenerator,Mono.CodeGeneration.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateSet (gen As ILGenerator, value As CodeExpression)" />
+      <MemberSignature Language="F#" Value="override this.GenerateSet : System.Reflection.Emit.ILGenerator * Mono.CodeGeneration.CodeExpression -&gt; unit" Usage="codeFieldReference.GenerateSet (gen, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -106,6 +116,8 @@
       <MemberSignature Language="C#" Value="public override Type GetResultType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetResultType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFieldReference.GetResultType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultType () As Type" />
+      <MemberSignature Language="F#" Value="override this.GetResultType : unit -&gt; Type" Usage="codeFieldReference.GetResultType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -126,6 +138,8 @@
       <MemberSignature Language="C#" Value="public override void PrintCode (Mono.CodeGeneration.CodeWriter cp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PrintCode(class Mono.CodeGeneration.CodeWriter cp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFieldReference.PrintCode(Mono.CodeGeneration.CodeWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub PrintCode (cp As CodeWriter)" />
+      <MemberSignature Language="F#" Value="override this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeFieldReference.PrintCode cp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

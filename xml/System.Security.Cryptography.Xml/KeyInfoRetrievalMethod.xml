@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class KeyInfoRetrievalMethod : System.Security.Cryptography.Xml.KeyInfoClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyInfoRetrievalMethod extends System.Security.Cryptography.Xml.KeyInfoClause" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod" />
+  <TypeSignature Language="VB.NET" Value="Public Class KeyInfoRetrievalMethod&#xA;Inherits KeyInfoClause" />
+  <TypeSignature Language="F#" Value="type KeyInfoRetrievalMethod = class&#xA;    inherit KeyInfoClause" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,10 +32,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public KeyInfoRetrievalMethod ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -53,6 +65,8 @@
       <MemberSignature Language="C#" Value="public KeyInfoRetrievalMethod (string strUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string strUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (strUri As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.KeyInfoRetrievalMethod : string -&gt; System.Security.Cryptography.Xml.KeyInfoRetrievalMethod" Usage="new System.Security.Cryptography.Xml.KeyInfoRetrievalMethod strUri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -75,6 +89,8 @@
       <MemberSignature Language="C#" Value="public KeyInfoRetrievalMethod (string strUri, string strType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string strUri, string strType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (strUri As String, strType As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.KeyInfoRetrievalMethod : string * string -&gt; System.Security.Cryptography.Xml.KeyInfoRetrievalMethod" Usage="new System.Security.Cryptography.Xml.KeyInfoRetrievalMethod (strUri, strType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -99,6 +115,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlElement GetXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.GetXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetXml () As XmlElement" />
+      <MemberSignature Language="F#" Value="override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="keyInfoRetrievalMethod.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -129,6 +147,8 @@
       <MemberSignature Language="C#" Value="public override void LoadXml (System.Xml.XmlElement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.LoadXml(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadXml (value As XmlElement)" />
+      <MemberSignature Language="F#" Value="override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="keyInfoRetrievalMethod.LoadXml value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -162,6 +182,8 @@
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -189,6 +211,8 @@
       <MemberSignature Language="C#" Value="public string Uri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Uri" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.Uri" />
+      <MemberSignature Language="VB.NET" Value="Public Property Uri As String" />
+      <MemberSignature Language="F#" Value="member this.Uri : string with get, set" Usage="System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -207,14 +231,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

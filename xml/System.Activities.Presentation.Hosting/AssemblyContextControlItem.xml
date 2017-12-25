@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class AssemblyContextControlItem : System.Activities.Presentation.ContextItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyContextControlItem extends System.Activities.Presentation.ContextItem" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.AssemblyContextControlItem" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyContextControlItem&#xA;Inherits ContextItem" />
+  <TypeSignature Language="F#" Value="type AssemblyContextControlItem = class&#xA;    inherit ContextItem" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public AssemblyContextControlItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.AssemblyContextControlItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; AllAssemblyNamesInContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; AllAssemblyNamesInContext" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.AssemblyContextControlItem.AllAssemblyNamesInContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllAssemblyNamesInContext As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="member this.AllAssemblyNamesInContext : seq&lt;string&gt;" Usage="System.Activities.Presentation.Hosting.AssemblyContextControlItem.AllAssemblyNamesInContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -57,6 +62,7 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.Assembly GetAssembly (System.Reflection.AssemblyName assemblyName, System.Activities.Presentation.Hosting.IMultiTargetingSupportService multiTargetingService);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Assembly GetAssembly(class System.Reflection.AssemblyName assemblyName, class System.Activities.Presentation.Hosting.IMultiTargetingSupportService multiTargetingService) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.AssemblyContextControlItem.GetAssembly(System.Reflection.AssemblyName,System.Activities.Presentation.Hosting.IMultiTargetingSupportService)" />
+      <MemberSignature Language="F#" Value="static member GetAssembly : System.Reflection.AssemblyName * System.Activities.Presentation.Hosting.IMultiTargetingSupportService -&gt; System.Reflection.Assembly" Usage="System.Activities.Presentation.Hosting.AssemblyContextControlItem.GetAssembly (assemblyName, multiTargetingService)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt; GetEnvironmentAssemblies (System.Activities.Presentation.Hosting.IMultiTargetingSupportService multiTargetingService);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.Assembly&gt; GetEnvironmentAssemblies(class System.Activities.Presentation.Hosting.IMultiTargetingSupportService multiTargetingService) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.AssemblyContextControlItem.GetEnvironmentAssemblies(System.Activities.Presentation.Hosting.IMultiTargetingSupportService)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnvironmentAssemblies (multiTargetingService As IMultiTargetingSupportService) As IEnumerable(Of Assembly)" />
+      <MemberSignature Language="F#" Value="member this.GetEnvironmentAssemblies : System.Activities.Presentation.Hosting.IMultiTargetingSupportService -&gt; seq&lt;System.Reflection.Assembly&gt;" Usage="assemblyContextControlItem.GetEnvironmentAssemblies multiTargetingService" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -110,6 +118,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Reflection.AssemblyName&gt; GetEnvironmentAssemblyNames ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.AssemblyName&gt; GetEnvironmentAssemblyNames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.AssemblyContextControlItem.GetEnvironmentAssemblyNames" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnvironmentAssemblyNames () As IEnumerable(Of AssemblyName)" />
+      <MemberSignature Language="F#" Value="member this.GetEnvironmentAssemblyNames : unit -&gt; seq&lt;System.Reflection.AssemblyName&gt;" Usage="assemblyContextControlItem.GetEnvironmentAssemblyNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -129,6 +139,8 @@
       <MemberSignature Language="C#" Value="public override Type ItemType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ItemType" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.AssemblyContextControlItem.ItemType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ItemType As Type" />
+      <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.Activities.Presentation.Hosting.AssemblyContextControlItem.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -147,6 +159,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.AssemblyName LocalAssemblyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.AssemblyName LocalAssemblyName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.AssemblyContextControlItem.LocalAssemblyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalAssemblyName As AssemblyName" />
+      <MemberSignature Language="F#" Value="member this.LocalAssemblyName : System.Reflection.AssemblyName with get, set" Usage="System.Activities.Presentation.Hosting.AssemblyContextControlItem.LocalAssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -165,6 +179,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Reflection.AssemblyName&gt; ReferencedAssemblyNames { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Reflection.AssemblyName&gt; ReferencedAssemblyNames" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.AssemblyContextControlItem.ReferencedAssemblyNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReferencedAssemblyNames As IList(Of AssemblyName)" />
+      <MemberSignature Language="F#" Value="member this.ReferencedAssemblyNames : System.Collections.Generic.IList&lt;System.Reflection.AssemblyName&gt; with get, set" Usage="System.Activities.Presentation.Hosting.AssemblyContextControlItem.ReferencedAssemblyNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class WorkflowServiceAttributes : System.Workflow.ComponentModel.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowServiceAttributes extends System.Workflow.ComponentModel.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WorkflowServiceAttributes" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowServiceAttributes&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="F#" Value="type WorkflowServiceAttributes = class&#xA;    inherit DependencyObject&#xA;    interface IServiceDescriptionBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +58,7 @@
       <MemberSignature Language="C#" Value="public WorkflowServiceAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowServiceAttributes.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -86,6 +89,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.AddressFilterMode AddressFilterMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.AddressFilterMode AddressFilterMode" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WorkflowServiceAttributes.AddressFilterMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddressFilterMode As AddressFilterMode" />
+      <MemberSignature Language="F#" Value="member this.AddressFilterMode : System.ServiceModel.AddressFilterMode with get, set" Usage="System.Workflow.Activities.WorkflowServiceAttributes.AddressFilterMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -124,6 +129,8 @@
       <MemberSignature Language="C#" Value="public string ConfigurationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConfigurationName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WorkflowServiceAttributes.ConfigurationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigurationName As String" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationName : string with get, set" Usage="System.Workflow.Activities.WorkflowServiceAttributes.ConfigurationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -162,6 +169,8 @@
       <MemberSignature Language="C#" Value="public bool IgnoreExtensionDataObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreExtensionDataObject" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WorkflowServiceAttributes.IgnoreExtensionDataObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreExtensionDataObject As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IgnoreExtensionDataObject : bool with get, set" Usage="System.Workflow.Activities.WorkflowServiceAttributes.IgnoreExtensionDataObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -201,6 +210,8 @@
       <MemberSignature Language="C#" Value="public bool IncludeExceptionDetailInFaults { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IncludeExceptionDetailInFaults" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WorkflowServiceAttributes.IncludeExceptionDetailInFaults" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeExceptionDetailInFaults As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeExceptionDetailInFaults : bool with get, set" Usage="System.Workflow.Activities.WorkflowServiceAttributes.IncludeExceptionDetailInFaults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -240,6 +251,8 @@
       <MemberSignature Language="C#" Value="public int MaxItemsInObjectGraph { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxItemsInObjectGraph" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WorkflowServiceAttributes.MaxItemsInObjectGraph" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxItemsInObjectGraph As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxItemsInObjectGraph : int with get, set" Usage="System.Workflow.Activities.WorkflowServiceAttributes.MaxItemsInObjectGraph" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -278,6 +291,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WorkflowServiceAttributes.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.Activities.WorkflowServiceAttributes.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -316,6 +331,8 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WorkflowServiceAttributes.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Workflow.Activities.WorkflowServiceAttributes.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -354,6 +371,8 @@
       <MemberSignature Language="C#" Value="public bool UseSynchronizationContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseSynchronizationContext" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WorkflowServiceAttributes.UseSynchronizationContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseSynchronizationContext As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseSynchronizationContext : bool with get, set" Usage="System.Workflow.Activities.WorkflowServiceAttributes.UseSynchronizationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -393,6 +412,8 @@
       <MemberSignature Language="C#" Value="public bool ValidateMustUnderstand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ValidateMustUnderstand" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WorkflowServiceAttributes.ValidateMustUnderstand" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidateMustUnderstand As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ValidateMustUnderstand : bool with get, set" Usage="System.Workflow.Activities.WorkflowServiceAttributes.ValidateMustUnderstand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

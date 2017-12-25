@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class WindowClass" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WindowClass extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass" />
+  <TypeSignature Language="VB.NET" Value="Public Class WindowClass" />
+  <TypeSignature Language="F#" Value="type WindowClass = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,10 +23,20 @@
     <forInternalUseOnly />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WindowClass ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -41,6 +53,8 @@
       <MemberSignature Language="C#" Value="public WindowClass (string name, bool versioned);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, bool versioned) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, versioned As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass : string * bool -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass" Usage="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass (name, versioned)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -69,6 +83,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -93,6 +109,8 @@
       <MemberSignature Language="C#" Value="public bool Versioned { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Versioned" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.Versioned" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Versioned As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Versioned : bool" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.Versioned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -125,6 +143,8 @@
       <MemberSignature Language="C#" Value="public string XmlName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.XmlName" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlName As String" />
+      <MemberSignature Language="F#" Value="member this.XmlName : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.XmlName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -155,6 +175,8 @@
       <MemberSignature Language="C#" Value="public string XmlVersioned { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlVersioned" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.XmlVersioned" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlVersioned As String" />
+      <MemberSignature Language="F#" Value="member this.XmlVersioned : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.XmlVersioned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -181,14 +203,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

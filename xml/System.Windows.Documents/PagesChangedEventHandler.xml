@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void PagesChangedEventHandler(object sender, PagesChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PagesChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.PagesChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub PagesChangedEventHandler(sender As Object, e As PagesChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type PagesChangedEventHandler = delegate of obj * PagesChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

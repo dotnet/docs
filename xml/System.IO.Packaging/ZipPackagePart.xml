@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ZipPackagePart : System.IO.Packaging.PackagePart" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ZipPackagePart extends System.IO.Packaging.PackagePart" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.ZipPackagePart" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ZipPackagePart&#xA;Inherits PackagePart" />
+  <TypeSignature Language="F#" Value="type ZipPackagePart = class&#xA;    inherit PackagePart" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="protected override System.IO.Stream GetStreamCore (System.IO.FileMode mode, System.IO.FileAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IO.Stream GetStreamCore(valuetype System.IO.FileMode mode, valuetype System.IO.FileAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.ZipPackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetStreamCore (mode As FileMode, access As FileAccess) As Stream" />
+      <MemberSignature Language="F#" Value="override this.GetStreamCore : System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.Stream" Usage="zipPackagePart.GetStreamCore (mode, access)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>

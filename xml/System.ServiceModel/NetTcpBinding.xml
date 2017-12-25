@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class NetTcpBinding : System.ServiceModel.Channels.Binding, System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetTcpBinding extends System.ServiceModel.Channels.Binding implements class System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.NetTcpBinding" />
+  <TypeSignature Language="VB.NET" Value="Public Class NetTcpBinding&#xA;Inherits Binding&#xA;Implements IBindingRuntimePreferences" />
+  <TypeSignature Language="F#" Value="type NetTcpBinding = class&#xA;    inherit Binding&#xA;    interface IBindingRuntimePreferences" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +69,7 @@
       <MemberSignature Language="C#" Value="public NetTcpBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="C#" Value="public NetTcpBinding (System.ServiceModel.SecurityMode securityMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.SecurityMode securityMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.#ctor(System.ServiceModel.SecurityMode)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.NetTcpBinding : System.ServiceModel.SecurityMode -&gt; System.ServiceModel.NetTcpBinding" Usage="new System.ServiceModel.NetTcpBinding securityMode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -142,6 +146,8 @@
       <MemberSignature Language="C#" Value="public NetTcpBinding (string configurationName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (configurationName As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.NetTcpBinding : string -&gt; System.ServiceModel.NetTcpBinding" Usage="new System.ServiceModel.NetTcpBinding configurationName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="C#" Value="public NetTcpBinding (System.ServiceModel.SecurityMode securityMode, bool reliableSessionEnabled);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.SecurityMode securityMode, bool reliableSessionEnabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.#ctor(System.ServiceModel.SecurityMode,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.NetTcpBinding : System.ServiceModel.SecurityMode * bool -&gt; System.ServiceModel.NetTcpBinding" Usage="new System.ServiceModel.NetTcpBinding (securityMode, reliableSessionEnabled)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -217,6 +224,8 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElementCollection CreateBindingElements ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElementCollection CreateBindingElements() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.CreateBindingElements" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateBindingElements () As BindingElementCollection" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElements : unit -&gt; System.ServiceModel.Channels.BindingElementCollection" Usage="netTcpBinding.CreateBindingElements " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -252,6 +261,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EnvelopeVersion EnvelopeVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EnvelopeVersion EnvelopeVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.EnvelopeVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnvelopeVersion As EnvelopeVersion" />
+      <MemberSignature Language="F#" Value="member this.EnvelopeVersion : System.ServiceModel.EnvelopeVersion" Usage="System.ServiceModel.NetTcpBinding.EnvelopeVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -291,6 +302,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.HostNameComparisonMode HostNameComparisonMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.HostNameComparisonMode HostNameComparisonMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.HostNameComparisonMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostNameComparisonMode As HostNameComparisonMode" />
+      <MemberSignature Language="F#" Value="member this.HostNameComparisonMode : System.ServiceModel.HostNameComparisonMode with get, set" Usage="System.ServiceModel.NetTcpBinding.HostNameComparisonMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -319,6 +332,8 @@
       <MemberSignature Language="C#" Value="public int ListenBacklog { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ListenBacklog" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.ListenBacklog" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListenBacklog As Integer" />
+      <MemberSignature Language="F#" Value="member this.ListenBacklog : int with get, set" Usage="System.ServiceModel.NetTcpBinding.ListenBacklog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -353,6 +368,8 @@
       <MemberSignature Language="C#" Value="public long MaxBufferPoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxBufferPoolSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.MaxBufferPoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxBufferPoolSize As Long" />
+      <MemberSignature Language="F#" Value="member this.MaxBufferPoolSize : int64 with get, set" Usage="System.ServiceModel.NetTcpBinding.MaxBufferPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -392,6 +409,8 @@
       <MemberSignature Language="C#" Value="public int MaxBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.MaxBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxBufferSize : int with get, set" Usage="System.ServiceModel.NetTcpBinding.MaxBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -431,6 +450,8 @@
       <MemberSignature Language="C#" Value="public int MaxConnections { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConnections" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.MaxConnections" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxConnections As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxConnections : int with get, set" Usage="System.ServiceModel.NetTcpBinding.MaxConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -464,6 +485,8 @@
       <MemberSignature Language="C#" Value="public long MaxReceivedMessageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxReceivedMessageSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxReceivedMessageSize As Long" />
+      <MemberSignature Language="F#" Value="member this.MaxReceivedMessageSize : int64 with get, set" Usage="System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -498,6 +521,8 @@
       <MemberSignature Language="C#" Value="public bool PortSharingEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PortSharingEnabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.PortSharingEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property PortSharingEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PortSharingEnabled : bool with get, set" Usage="System.ServiceModel.NetTcpBinding.PortSharingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -534,6 +559,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryReaderQuotas ReaderQuotas { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDictionaryReaderQuotas ReaderQuotas" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.ReaderQuotas" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReaderQuotas As XmlDictionaryReaderQuotas" />
+      <MemberSignature Language="F#" Value="member this.ReaderQuotas : System.Xml.XmlDictionaryReaderQuotas with get, set" Usage="System.ServiceModel.NetTcpBinding.ReaderQuotas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -583,6 +610,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.OptionalReliableSession ReliableSession { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.OptionalReliableSession ReliableSession" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.ReliableSession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReliableSession As OptionalReliableSession" />
+      <MemberSignature Language="F#" Value="member this.ReliableSession : System.ServiceModel.OptionalReliableSession" Usage="System.ServiceModel.NetTcpBinding.ReliableSession" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -611,6 +640,8 @@
       <MemberSignature Language="C#" Value="public override string Scheme { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.Scheme" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Scheme As String" />
+      <MemberSignature Language="F#" Value="member this.Scheme : string" Usage="System.ServiceModel.NetTcpBinding.Scheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -650,6 +681,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.NetTcpSecurity Security { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.NetTcpSecurity Security" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.Security" />
+      <MemberSignature Language="VB.NET" Value="Public Property Security As NetTcpSecurity" />
+      <MemberSignature Language="F#" Value="member this.Security : System.ServiceModel.NetTcpSecurity with get, set" Usage="System.ServiceModel.NetTcpBinding.Security" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -689,6 +722,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeListenBacklog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeListenBacklog() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.ShouldSerializeListenBacklog" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeListenBacklog () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeListenBacklog : unit -&gt; bool" Usage="netTcpBinding.ShouldSerializeListenBacklog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -714,6 +749,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeMaxConnections ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeMaxConnections() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.ShouldSerializeMaxConnections" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMaxConnections () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMaxConnections : unit -&gt; bool" Usage="netTcpBinding.ShouldSerializeMaxConnections " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -739,6 +776,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeReaderQuotas ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeReaderQuotas() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.ShouldSerializeReaderQuotas" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeReaderQuotas () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeReaderQuotas : unit -&gt; bool" Usage="netTcpBinding.ShouldSerializeReaderQuotas " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -764,6 +803,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeReliableSession ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeReliableSession() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.ShouldSerializeReliableSession" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeReliableSession () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeReliableSession : unit -&gt; bool" Usage="netTcpBinding.ShouldSerializeReliableSession " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -789,6 +830,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeSecurity() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.ShouldSerializeSecurity" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeSecurity () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeSecurity : unit -&gt; bool" Usage="netTcpBinding.ShouldSerializeSecurity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -814,6 +857,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeTransactionProtocol ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeTransactionProtocol() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.ShouldSerializeTransactionProtocol" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTransactionProtocol () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeTransactionProtocol : unit -&gt; bool" Usage="netTcpBinding.ShouldSerializeTransactionProtocol " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -839,7 +884,12 @@
       <MemberSignature Language="C#" Value="bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.System#ServiceModel#Channels#IBindingRuntimePreferences#ReceiveSynchronously" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ReceiveSynchronously As Boolean Implements IBindingRuntimePreferences.ReceiveSynchronously" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.NetTcpBinding.System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -873,6 +923,8 @@
       <MemberSignature Language="C#" Value="public bool TransactionFlow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TransactionFlow" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.TransactionFlow" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransactionFlow As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TransactionFlow : bool with get, set" Usage="System.ServiceModel.NetTcpBinding.TransactionFlow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -902,6 +954,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.TransactionProtocol TransactionProtocol { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.TransactionProtocol TransactionProtocol" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.TransactionProtocol" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransactionProtocol As TransactionProtocol" />
+      <MemberSignature Language="F#" Value="member this.TransactionProtocol : System.ServiceModel.TransactionProtocol with get, set" Usage="System.ServiceModel.NetTcpBinding.TransactionProtocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -929,6 +983,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.TransferMode TransferMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.TransferMode TransferMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.TransferMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransferMode As TransferMode" />
+      <MemberSignature Language="F#" Value="member this.TransferMode : System.ServiceModel.TransferMode with get, set" Usage="System.ServiceModel.NetTcpBinding.TransferMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

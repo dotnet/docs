@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IStructuralComparable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStructuralComparable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.IStructuralComparable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IStructuralComparable" />
+  <TypeSignature Language="F#" Value="type IStructuralComparable = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +62,8 @@
       <MemberSignature Language="C#" Value="public int CompareTo (object other, System.Collections.IComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object other, class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.IStructuralComparable.CompareTo(System.Object,System.Collections.IComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (other As Object, comparer As IComparer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj * System.Collections.IComparer -&gt; int" Usage="iStructuralComparable.CompareTo (other, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

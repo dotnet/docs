@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public struct TransactionOptions" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit TransactionOptions extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Structure TransactionOptions" />
+  <TypeSignature Language="F#" Value="type TransactionOptions = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionOptions.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="transactionOptions.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionOptions.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="transactionOptions.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -95,6 +101,8 @@
       <MemberSignature Language="C#" Value="public System.Transactions.IsolationLevel IsolationLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Transactions.IsolationLevel IsolationLevel" />
       <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionOptions.IsolationLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsolationLevel As IsolationLevel" />
+      <MemberSignature Language="F#" Value="member this.IsolationLevel : System.Transactions.IsolationLevel with get, set" Usage="System.Transactions.TransactionOptions.IsolationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -122,6 +130,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Transactions.TransactionOptions o1, System.Transactions.TransactionOptions o2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Transactions.TransactionOptions o1, valuetype System.Transactions.TransactionOptions o2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionOptions.op_Equality(System.Transactions.TransactionOptions,System.Transactions.TransactionOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (o1 As TransactionOptions, o2 As TransactionOptions) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Transactions.TransactionOptions * System.Transactions.TransactionOptions -&gt; bool" Usage="o1 = o2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -158,6 +168,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Transactions.TransactionOptions o1, System.Transactions.TransactionOptions o2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Transactions.TransactionOptions o1, valuetype System.Transactions.TransactionOptions o2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionOptions.op_Inequality(System.Transactions.TransactionOptions,System.Transactions.TransactionOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (o1 As TransactionOptions, o2 As TransactionOptions) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Transactions.TransactionOptions * System.Transactions.TransactionOptions -&gt; bool" Usage="System.Transactions.TransactionOptions.op_Inequality (o1, o2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -194,6 +206,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan Timeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Timeout" />
       <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionOptions.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property Timeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.Timeout : TimeSpan with get, set" Usage="System.Transactions.TransactionOptions.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

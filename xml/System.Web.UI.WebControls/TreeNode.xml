@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class TreeNode : ICloneable, System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TreeNode extends System.Object implements class System.ICloneable, class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TreeNode" />
+  <TypeSignature Language="VB.NET" Value="Public Class TreeNode&#xA;Implements ICloneable, IStateManager" />
+  <TypeSignature Language="F#" Value="type TreeNode = class&#xA;    interface IStateManager&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -97,10 +99,20 @@
     <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TreeNode" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TreeNode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,6 +149,8 @@
       <MemberSignature Language="C#" Value="public TreeNode (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.TreeNode : string -&gt; System.Web.UI.WebControls.TreeNode" Usage="new System.Web.UI.WebControls.TreeNode text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -180,6 +194,8 @@
       <MemberSignature Language="C#" Value="public TreeNode (string text, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.TreeNode : string * string -&gt; System.Web.UI.WebControls.TreeNode" Usage="new System.Web.UI.WebControls.TreeNode (text, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -224,9 +240,11 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected TreeNode (System.Web.UI.WebControls.TreeView owner, bool isRoot);" />
+      <MemberSignature Language="C#" Value="protected internal TreeNode (System.Web.UI.WebControls.TreeView owner, bool isRoot);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.TreeView owner, bool isRoot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.#ctor(System.Web.UI.WebControls.TreeView,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (owner As TreeView, isRoot As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.TreeNode : System.Web.UI.WebControls.TreeView * bool -&gt; System.Web.UI.WebControls.TreeNode" Usage="new System.Web.UI.WebControls.TreeNode (owner, isRoot)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -249,6 +267,8 @@
       <MemberSignature Language="C#" Value="public TreeNode (string text, string value, string imageUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string value, string imageUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String, imageUrl As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.TreeNode : string * string * string -&gt; System.Web.UI.WebControls.TreeNode" Usage="new System.Web.UI.WebControls.TreeNode (text, value, imageUrl)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,6 +320,8 @@
       <MemberSignature Language="C#" Value="public TreeNode (string text, string value, string imageUrl, string navigateUrl, string target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string value, string imageUrl, string navigateUrl, string target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.#ctor(System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String, imageUrl As String, navigateUrl As String, target As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.TreeNode : string * string * string * string * string -&gt; System.Web.UI.WebControls.TreeNode" Usage="new System.Web.UI.WebControls.TreeNode (text, value, imageUrl, navigateUrl, target)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -359,6 +381,8 @@
       <MemberSignature Language="C#" Value="public bool Checked { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Checked" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Checked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Checked As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Checked : bool with get, set" Usage="System.Web.UI.WebControls.TreeNode.Checked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -415,6 +439,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TreeNodeCollection ChildNodes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TreeNodeCollection ChildNodes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.ChildNodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildNodes As TreeNodeCollection" />
+      <MemberSignature Language="F#" Value="member this.ChildNodes : System.Web.UI.WebControls.TreeNodeCollection" Usage="System.Web.UI.WebControls.TreeNode.ChildNodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -470,7 +496,12 @@
       <MemberSignature Language="C#" Value="protected virtual object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.Clone" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="treeNode.Clone " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -497,6 +528,8 @@
       <MemberSignature Language="C#" Value="public void Collapse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Collapse() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.Collapse" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Collapse ()" />
+      <MemberSignature Language="F#" Value="member this.Collapse : unit -&gt; unit" Usage="treeNode.Collapse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -560,6 +593,8 @@
       <MemberSignature Language="C#" Value="public void CollapseAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CollapseAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.CollapseAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CollapseAll ()" />
+      <MemberSignature Language="F#" Value="member this.CollapseAll : unit -&gt; unit" Usage="treeNode.CollapseAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -623,6 +658,8 @@
       <MemberSignature Language="C#" Value="public bool DataBound { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DataBound" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.DataBound" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataBound As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DataBound : bool" Usage="System.Web.UI.WebControls.TreeNode.DataBound" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -663,6 +700,8 @@
       <MemberSignature Language="C#" Value="public object DataItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataItem" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.DataItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataItem As Object" />
+      <MemberSignature Language="F#" Value="member this.DataItem : obj" Usage="System.Web.UI.WebControls.TreeNode.DataItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -701,6 +740,8 @@
       <MemberSignature Language="C#" Value="public string DataPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.DataPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataPath As String" />
+      <MemberSignature Language="F#" Value="member this.DataPath : string" Usage="System.Web.UI.WebControls.TreeNode.DataPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -742,6 +783,8 @@
       <MemberSignature Language="C#" Value="public int Depth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Depth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Depth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Depth As Integer" />
+      <MemberSignature Language="F#" Value="member this.Depth : int" Usage="System.Web.UI.WebControls.TreeNode.Depth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -794,6 +837,8 @@
       <MemberSignature Language="C#" Value="public void Expand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Expand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.Expand" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Expand ()" />
+      <MemberSignature Language="F#" Value="member this.Expand : unit -&gt; unit" Usage="treeNode.Expand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -859,6 +904,8 @@
       <MemberSignature Language="C#" Value="public void ExpandAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExpandAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.ExpandAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExpandAll ()" />
+      <MemberSignature Language="F#" Value="member this.ExpandAll : unit -&gt; unit" Usage="treeNode.ExpandAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -922,6 +969,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Expanded { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Expanded" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Expanded" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expanded As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Expanded : Nullable&lt;bool&gt; with get, set" Usage="System.Web.UI.WebControls.TreeNode.Expanded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1014,6 +1063,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public string ImageToolTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImageToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.ImageToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageToolTip As String" />
+      <MemberSignature Language="F#" Value="member this.ImageToolTip : string with get, set" Usage="System.Web.UI.WebControls.TreeNode.ImageToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1061,6 +1112,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public string ImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ImageUrl : string with get, set" Usage="System.Web.UI.WebControls.TreeNode.ImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1126,7 +1179,12 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="protected bool IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsTrackingViewState As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTrackingViewState : bool" Usage="System.Web.UI.WebControls.TreeNode.IsTrackingViewState" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1146,7 +1204,12 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="protected virtual void LoadViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void LoadViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LoadViewState (state As Object)" />
+      <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="treeNode.LoadViewState state" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1175,6 +1238,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public string NavigateUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NavigateUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property NavigateUrl As String" />
+      <MemberSignature Language="F#" Value="member this.NavigateUrl : string with get, set" Usage="System.Web.UI.WebControls.TreeNode.NavigateUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1231,6 +1296,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TreeNode Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TreeNode Parent" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As TreeNode" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Web.UI.WebControls.TreeNode" Usage="System.Web.UI.WebControls.TreeNode.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1279,6 +1346,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public bool PopulateOnDemand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PopulateOnDemand" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.PopulateOnDemand" />
+      <MemberSignature Language="VB.NET" Value="Public Property PopulateOnDemand As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PopulateOnDemand : bool with get, set" Usage="System.Web.UI.WebControls.TreeNode.PopulateOnDemand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1325,6 +1394,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="protected virtual void RenderPostText (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderPostText(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.RenderPostText(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderPostText (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="abstract member RenderPostText : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderPostText : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="treeNode.RenderPostText writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1354,6 +1425,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="protected virtual void RenderPreText (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderPreText(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.RenderPreText(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderPreText (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="abstract member RenderPreText : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderPreText : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="treeNode.RenderPreText writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1383,7 +1456,12 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="protected virtual object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function SaveViewState () As Object" />
+      <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="treeNode.SaveViewState " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1410,6 +1488,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public void Select ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Select() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.Select" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
+      <MemberSignature Language="F#" Value="member this.Select : unit -&gt; unit" Usage="treeNode.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1448,6 +1528,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TreeNodeSelectAction SelectAction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.TreeNodeSelectAction SelectAction" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.SelectAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectAction As TreeNodeSelectAction" />
+      <MemberSignature Language="F#" Value="member this.SelectAction : System.Web.UI.WebControls.TreeNodeSelectAction with get, set" Usage="System.Web.UI.WebControls.TreeNode.SelectAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1508,6 +1590,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public bool Selected { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Selected" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Selected" />
+      <MemberSignature Language="VB.NET" Value="Public Property Selected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Selected : bool with get, set" Usage="System.Web.UI.WebControls.TreeNode.Selected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1561,6 +1645,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ShowCheckBox { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ShowCheckBox" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.ShowCheckBox" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowCheckBox As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ShowCheckBox : Nullable&lt;bool&gt; with get, set" Usage="System.Web.UI.WebControls.TreeNode.ShowCheckBox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1649,7 +1735,11 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1676,7 +1766,12 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="bool System.Web.UI.IStateManager.IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.System#Web#UI#IStateManager#IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.TreeNode.System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1702,7 +1797,11 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="void IStateManager.LoadViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub LoadViewState (state As Object) Implements IStateManager.LoadViewState" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1725,7 +1824,11 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="object IStateManager.SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.System#Web#UI#IStateManager#SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Function SaveViewState () As Object Implements IStateManager.SaveViewState" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1746,7 +1849,11 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="void IStateManager.TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.System#Web#UI#IStateManager#TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Sub TrackViewState () Implements IStateManager.TrackViewState" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1773,6 +1880,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public string Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Web.UI.WebControls.TreeNode.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1850,6 +1959,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.WebControls.TreeNode.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1900,6 +2011,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public void ToggleExpandState ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ToggleExpandState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.ToggleExpandState" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ToggleExpandState ()" />
+      <MemberSignature Language="F#" Value="member this.ToggleExpandState : unit -&gt; unit" Usage="treeNode.ToggleExpandState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1942,6 +2055,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public string ToolTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTip As String" />
+      <MemberSignature Language="F#" Value="member this.ToolTip : string with get, set" Usage="System.Web.UI.WebControls.TreeNode.ToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1987,7 +2102,12 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="protected void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub TrackViewState ()" />
+      <MemberSignature Language="F#" Value="member this.TrackViewState : unit -&gt; unit" Usage="treeNode.TrackViewState " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2006,6 +2126,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Web.UI.WebControls.TreeNode.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2059,6 +2181,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="C#" Value="public string ValuePath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValuePath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.ValuePath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValuePath As String" />
+      <MemberSignature Language="F#" Value="member this.ValuePath : string" Usage="System.Web.UI.WebControls.TreeNode.ValuePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2104,14 +2228,5 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
         <altmember cref="M:System.Web.UI.WebControls.TreeView.FindNode(System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TreeNode" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class TcpClient : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TcpClient extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.TcpClient" />
+  <TypeSignature Language="VB.NET" Value="Public Class TcpClient&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type TcpClient = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -66,10 +68,21 @@
     <altmember cref="M:System.Net.Sockets.NetworkStream.Read(System.Byte[],System.Int32,System.Int32)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.TcpClient" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TcpClient ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -118,6 +131,8 @@
       <MemberSignature Language="C#" Value="public TcpClient (System.Net.IPEndPoint localEP);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.IPEndPoint localEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.#ctor(System.Net.IPEndPoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (localEP As IPEndPoint)" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.TcpClient : System.Net.IPEndPoint -&gt; System.Net.Sockets.TcpClient" Usage="new System.Net.Sockets.TcpClient localEP" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,6 +184,8 @@
       <MemberSignature Language="C#" Value="public TcpClient (System.Net.Sockets.AddressFamily family);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Sockets.AddressFamily family) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.#ctor(System.Net.Sockets.AddressFamily)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (family As AddressFamily)" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.TcpClient : System.Net.Sockets.AddressFamily -&gt; System.Net.Sockets.TcpClient" Usage="new System.Net.Sockets.TcpClient family" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -220,6 +237,8 @@
       <MemberSignature Language="C#" Value="public TcpClient (string hostname, int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string hostname, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (hostname As String, port As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.TcpClient : string * int -&gt; System.Net.Sockets.TcpClient" Usage="new System.Net.Sockets.TcpClient (hostname, port)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -278,6 +297,8 @@
       <MemberSignature Language="C#" Value="protected bool Active { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Active" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.Active" />
+      <MemberSignature Language="VB.NET" Value="Protected Property Active As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Active : bool with get, set" Usage="System.Net.Sockets.TcpClient.Active" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -316,6 +337,8 @@
       <MemberSignature Language="C#" Value="public int Available { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Available" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.Available" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Available As Integer" />
+      <MemberSignature Language="F#" Value="member this.Available : int" Usage="System.Net.Sockets.TcpClient.Available" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -359,10 +382,22 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginConnect">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous request for a remote host connection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginConnect">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.IPAddress address, int port, AsyncCallback requestCallback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.IPAddress address, int32 port, class System.AsyncCallback requestCallback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.BeginConnect(System.Net.IPAddress,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (address As IPAddress, port As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginConnect : System.Net.IPAddress * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="tcpClient.BeginConnect (address, port, requestCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -424,6 +459,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.IPAddress[] addresses, int port, AsyncCallback requestCallback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.IPAddress[] addresses, int32 port, class System.AsyncCallback requestCallback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.BeginConnect(System.Net.IPAddress[],System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (addresses As IPAddress(), port As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginConnect : System.Net.IPAddress[] * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="tcpClient.BeginConnect (addresses, port, requestCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -487,6 +524,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (string host, int port, AsyncCallback requestCallback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(string host, int32 port, class System.AsyncCallback requestCallback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.BeginConnect(System.String,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (host As String, port As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginConnect : string * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="tcpClient.BeginConnect (host, port, requestCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -548,6 +587,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.Socket Client { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Sockets.Socket Client" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.Client" />
+      <MemberSignature Language="VB.NET" Value="Public Property Client As Socket" />
+      <MemberSignature Language="F#" Value="member this.Client : System.Net.Sockets.Socket with get, set" Usage="System.Net.Sockets.TcpClient.Client" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -592,6 +633,8 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="tcpClient.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -635,10 +678,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Connect">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Connects the client to a remote TCP host using the specified host name and port number.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Connect">
       <MemberSignature Language="C#" Value="public void Connect (System.Net.IPEndPoint remoteEP);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Connect(class System.Net.IPEndPoint remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Connect(System.Net.IPEndPoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Connect (remoteEP As IPEndPoint)" />
+      <MemberSignature Language="F#" Value="member this.Connect : System.Net.IPEndPoint -&gt; unit" Usage="tcpClient.Connect remoteEP" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -696,6 +751,8 @@
       <MemberSignature Language="C#" Value="public void Connect (System.Net.IPAddress address, int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Connect(class System.Net.IPAddress address, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Connect(System.Net.IPAddress,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Connect (address As IPAddress, port As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Connect : System.Net.IPAddress * int -&gt; unit" Usage="tcpClient.Connect (address, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -756,6 +813,8 @@
       <MemberSignature Language="C#" Value="public void Connect (System.Net.IPAddress[] ipAddresses, int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Connect(class System.Net.IPAddress[] ipAddresses, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Connect(System.Net.IPAddress[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Connect (ipAddresses As IPAddress(), port As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Connect : System.Net.IPAddress[] * int -&gt; unit" Usage="tcpClient.Connect (ipAddresses, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -816,6 +875,8 @@
       <MemberSignature Language="C#" Value="public void Connect (string hostname, int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Connect(string hostname, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Connect(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Connect (hostname As String, port As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Connect : string * int -&gt; unit" Usage="tcpClient.Connect (hostname, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -875,10 +936,22 @@
         <altmember cref="M:System.Net.Sockets.TcpClient.GetStream" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ConnectAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Connects the client to a remote TCP host using the specified host name and port number as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ConnectAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ConnectAsync (System.Net.IPAddress address, int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ConnectAsync(class System.Net.IPAddress address, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.ConnectAsync(System.Net.IPAddress,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConnectAsync (address As IPAddress, port As Integer) As Task" />
+      <MemberSignature Language="F#" Value="member this.ConnectAsync : System.Net.IPAddress * int -&gt; System.Threading.Tasks.Task" Usage="tcpClient.ConnectAsync (address, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -936,6 +1009,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ConnectAsync (System.Net.IPAddress[] addresses, int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ConnectAsync(class System.Net.IPAddress[] addresses, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.ConnectAsync(System.Net.IPAddress[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConnectAsync (addresses As IPAddress(), port As Integer) As Task" />
+      <MemberSignature Language="F#" Value="member this.ConnectAsync : System.Net.IPAddress[] * int -&gt; System.Threading.Tasks.Task" Usage="tcpClient.ConnectAsync (addresses, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -994,6 +1069,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ConnectAsync (string host, int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ConnectAsync(string host, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.ConnectAsync(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConnectAsync (host As String, port As Integer) As Task" />
+      <MemberSignature Language="F#" Value="member this.ConnectAsync : string * int -&gt; System.Threading.Tasks.Task" Usage="tcpClient.ConnectAsync (host, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1054,6 +1131,8 @@
       <MemberSignature Language="C#" Value="public bool Connected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Connected" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.Connected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Connected : bool" Usage="System.Net.Sockets.TcpClient.Connected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1100,7 +1179,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="tcpClient.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1128,6 +1212,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="tcpClient.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1177,6 +1263,8 @@
       <MemberSignature Language="C#" Value="public void EndConnect (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndConnect(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.EndConnect(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndConnect (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndConnect : IAsyncResult -&gt; unit" Usage="tcpClient.EndConnect asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1230,6 +1318,8 @@
       <MemberSignature Language="C#" Value="public bool ExclusiveAddressUse { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExclusiveAddressUse" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.ExclusiveAddressUse" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExclusiveAddressUse As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ExclusiveAddressUse : bool with get, set" Usage="System.Net.Sockets.TcpClient.ExclusiveAddressUse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1278,6 +1368,8 @@
       <MemberSignature Language="C#" Value="~TcpClient ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="tcpClient.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1318,6 +1410,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.NetworkStream GetStream ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.NetworkStream GetStream() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.GetStream" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStream () As NetworkStream" />
+      <MemberSignature Language="F#" Value="member this.GetStream : unit -&gt; System.Net.Sockets.NetworkStream" Usage="tcpClient.GetStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1382,6 +1476,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.LingerOption LingerState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Sockets.LingerOption LingerState" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.LingerState" />
+      <MemberSignature Language="VB.NET" Value="Public Property LingerState As LingerOption" />
+      <MemberSignature Language="F#" Value="member this.LingerState : System.Net.Sockets.LingerOption with get, set" Usage="System.Net.Sockets.TcpClient.LingerState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1445,6 +1541,8 @@
       <MemberSignature Language="C#" Value="public bool NoDelay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NoDelay" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.NoDelay" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoDelay As Boolean" />
+      <MemberSignature Language="F#" Value="member this.NoDelay : bool with get, set" Usage="System.Net.Sockets.TcpClient.NoDelay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1490,6 +1588,8 @@
       <MemberSignature Language="C#" Value="public int ReceiveBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ReceiveBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.ReceiveBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceiveBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReceiveBufferSize : int with get, set" Usage="System.Net.Sockets.TcpClient.ReceiveBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1545,6 +1645,8 @@
       <MemberSignature Language="C#" Value="public int ReceiveTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ReceiveTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.ReceiveTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceiveTimeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReceiveTimeout : int with get, set" Usage="System.Net.Sockets.TcpClient.ReceiveTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1591,6 +1693,8 @@
       <MemberSignature Language="C#" Value="public int SendBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SendBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.SendBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.SendBufferSize : int with get, set" Usage="System.Net.Sockets.TcpClient.SendBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1641,6 +1745,8 @@
       <MemberSignature Language="C#" Value="public int SendTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SendTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.SendTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendTimeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.SendTimeout : int with get, set" Usage="System.Net.Sockets.TcpClient.SendTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1689,7 +1795,11 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1703,45 +1813,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ConnectAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Connects the client to a remote TCP host using the specified host name and port number as an asynchronous operation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.TcpClient" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Connect">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Connects the client to a remote TCP host using the specified host name and port number.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginConnect">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous request for a remote host connection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

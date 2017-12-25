@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class FederatedMessageSecurityOverHttpElement : System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FederatedMessageSecurityOverHttpElement extends System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FederatedMessageSecurityOverHttpElement&#xA;Inherits ServiceModelConfigurationElement" />
+  <TypeSignature Language="F#" Value="type FederatedMessageSecurityOverHttpElement = class&#xA;    inherit ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public FederatedMessageSecurityOverHttpElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityAlgorithmSuite AlgorithmSuite { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityAlgorithmSuite AlgorithmSuite" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.AlgorithmSuite" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlgorithmSuite As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="member this.AlgorithmSuite : System.ServiceModel.Security.SecurityAlgorithmSuite with get, set" Usage="System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.AlgorithmSuite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +65,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.ClaimTypeElementCollection ClaimTypeRequirements { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.ClaimTypeElementCollection ClaimTypeRequirements" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.ClaimTypeRequirements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClaimTypeRequirements As ClaimTypeElementCollection" />
+      <MemberSignature Language="F#" Value="member this.ClaimTypeRequirements : System.ServiceModel.Configuration.ClaimTypeElementCollection" Usage="System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.ClaimTypeRequirements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,6 +90,8 @@
       <MemberSignature Language="C#" Value="public bool EstablishSecurityContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EstablishSecurityContext" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.EstablishSecurityContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property EstablishSecurityContext As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EstablishSecurityContext : bool with get, set" Usage="System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.EstablishSecurityContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +116,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityKeyType IssuedKeyType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IdentityModel.Tokens.SecurityKeyType IssuedKeyType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.IssuedKeyType" />
+      <MemberSignature Language="VB.NET" Value="Public Property IssuedKeyType As SecurityKeyType" />
+      <MemberSignature Language="F#" Value="member this.IssuedKeyType : System.IdentityModel.Tokens.SecurityKeyType with get, set" Usage="System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.IssuedKeyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -130,6 +141,8 @@
       <MemberSignature Language="C#" Value="public string IssuedTokenType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IssuedTokenType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.IssuedTokenType" />
+      <MemberSignature Language="VB.NET" Value="Public Property IssuedTokenType As String" />
+      <MemberSignature Language="F#" Value="member this.IssuedTokenType : string with get, set" Usage="System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.IssuedTokenType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -156,6 +169,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement Issuer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement Issuer" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.Issuer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Issuer As IssuedTokenParametersEndpointAddressElement" />
+      <MemberSignature Language="F#" Value="member this.Issuer : System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement" Usage="System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.Issuer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -179,6 +194,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.EndpointAddressElementBase IssuerMetadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.EndpointAddressElementBase IssuerMetadata" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.IssuerMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuerMetadata As EndpointAddressElementBase" />
+      <MemberSignature Language="F#" Value="member this.IssuerMetadata : System.ServiceModel.Configuration.EndpointAddressElementBase" Usage="System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.IssuerMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -202,6 +219,8 @@
       <MemberSignature Language="C#" Value="public bool NegotiateServiceCredential { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NegotiateServiceCredential" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.NegotiateServiceCredential" />
+      <MemberSignature Language="VB.NET" Value="Public Property NegotiateServiceCredential As Boolean" />
+      <MemberSignature Language="F#" Value="member this.NegotiateServiceCredential : bool with get, set" Usage="System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.NegotiateServiceCredential" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -235,6 +254,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -253,6 +274,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.XmlElementElementCollection TokenRequestParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.XmlElementElementCollection TokenRequestParameters" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.TokenRequestParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TokenRequestParameters As XmlElementElementCollection" />
+      <MemberSignature Language="F#" Value="member this.TokenRequestParameters : System.ServiceModel.Configuration.XmlElementElementCollection" Usage="System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.TokenRequestParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

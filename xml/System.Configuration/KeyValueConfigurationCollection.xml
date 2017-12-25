@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class KeyValueConfigurationCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyValueConfigurationCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.KeyValueConfigurationCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class KeyValueConfigurationCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type KeyValueConfigurationCollection = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,7 @@
       <MemberSignature Language="C#" Value="public KeyValueConfigurationCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.KeyValueConfigurationCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -68,10 +71,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Configuration.KeyValueConfigurationElement" /> object to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (System.Configuration.KeyValueConfigurationElement keyValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Configuration.KeyValueConfigurationElement keyValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.KeyValueConfigurationCollection.Add(System.Configuration.KeyValueConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (keyValue As KeyValueConfigurationElement)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Configuration.KeyValueConfigurationElement -&gt; unit" Usage="keyValueConfigurationCollection.Add keyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -112,6 +126,8 @@
       <MemberSignature Language="C#" Value="public void Add (string key, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string key, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.KeyValueConfigurationCollection.Add(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, value As String)" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; unit" Usage="keyValueConfigurationCollection.Add (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -139,6 +155,8 @@
       <MemberSignature Language="C#" Value="public string[] AllKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] AllKeys" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.KeyValueConfigurationCollection.AllKeys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllKeys As String()" />
+      <MemberSignature Language="F#" Value="member this.AllKeys : string[]" Usage="System.Configuration.KeyValueConfigurationCollection.AllKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -161,6 +179,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.KeyValueConfigurationCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="keyValueConfigurationCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -190,6 +210,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.KeyValueConfigurationCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="keyValueConfigurationCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -220,6 +242,8 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.KeyValueConfigurationCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="keyValueConfigurationCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -246,6 +270,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.KeyValueConfigurationElement this[string key] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.KeyValueConfigurationElement Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.KeyValueConfigurationCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As String) As KeyValueConfigurationElement" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Configuration.KeyValueConfigurationElement" Usage="System.Configuration.KeyValueConfigurationCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -276,9 +302,11 @@
       </Docs>
     </Member>
     <Member MemberName="Properties">
-      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.KeyValueConfigurationCollection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.KeyValueConfigurationCollection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -301,6 +329,8 @@
       <MemberSignature Language="C#" Value="public void Remove (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.KeyValueConfigurationCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (key As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="keyValueConfigurationCollection.Remove key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -326,6 +356,8 @@
       <MemberSignature Language="C#" Value="protected override bool ThrowOnDuplicate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThrowOnDuplicate" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.KeyValueConfigurationCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ThrowOnDuplicate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ThrowOnDuplicate : bool" Usage="System.Configuration.KeyValueConfigurationCollection.ThrowOnDuplicate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -345,14 +377,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a <see cref="T:System.Configuration.KeyValueConfigurationElement" /> object to the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

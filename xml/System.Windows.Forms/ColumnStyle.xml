@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ColumnStyle : System.Windows.Forms.TableLayoutStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ColumnStyle extends System.Windows.Forms.TableLayoutStyle" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Class ColumnStyle&#xA;Inherits TableLayoutStyle" />
+  <TypeSignature Language="F#" Value="type ColumnStyle = class&#xA;    inherit TableLayoutStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,10 +39,20 @@
     <altmember cref="T:System.Windows.Forms.RowStyle" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Windows.Forms.ColumnStyle" /> class to its default state.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ColumnStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnStyle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +76,7 @@
       <MemberSignature Language="C#" Value="public ColumnStyle (System.Windows.Forms.SizeType sizeType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.SizeType sizeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnStyle.#ctor(System.Windows.Forms.SizeType)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ColumnStyle : System.Windows.Forms.SizeType -&gt; System.Windows.Forms.ColumnStyle" Usage="new System.Windows.Forms.ColumnStyle sizeType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +103,7 @@
       <MemberSignature Language="C#" Value="public ColumnStyle (System.Windows.Forms.SizeType sizeType, float width);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.SizeType sizeType, float32 width) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnStyle.#ctor(System.Windows.Forms.SizeType,System.Single)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ColumnStyle : System.Windows.Forms.SizeType * single -&gt; System.Windows.Forms.ColumnStyle" Usage="new System.Windows.Forms.ColumnStyle (sizeType, width)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +135,8 @@
       <MemberSignature Language="C#" Value="public float Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Width" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnStyle.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="System.Windows.Forms.ColumnStyle.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -150,14 +166,5 @@
         <altmember cref="P:System.Windows.Forms.TableLayoutStyle.SizeType" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.Windows.Forms.ColumnStyle" /> class to its default state.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

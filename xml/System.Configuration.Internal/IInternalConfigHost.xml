@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IInternalConfigHost" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInternalConfigHost" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IInternalConfigHost" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInternalConfigHost" />
+  <TypeSignature Language="F#" Value="type IInternalConfigHost = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public object CreateConfigurationContext (string configPath, string locationSubPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateConfigurationContext(string configPath, string locationSubPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.CreateConfigurationContext(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateConfigurationContext (configPath As String, locationSubPath As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member CreateConfigurationContext : string * string -&gt; obj" Usage="iInternalConfigHost.CreateConfigurationContext (configPath, locationSubPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public object CreateDeprecatedConfigContext (string configPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateDeprecatedConfigContext(string configPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.CreateDeprecatedConfigContext(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateDeprecatedConfigContext (configPath As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member CreateDeprecatedConfigContext : string -&gt; obj" Usage="iInternalConfigHost.CreateDeprecatedConfigContext configPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public string DecryptSection (string encryptedXml, System.Configuration.ProtectedConfigurationProvider protectionProvider, System.Configuration.ProtectedConfigurationSection protectedSection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string DecryptSection(string encryptedXml, class System.Configuration.ProtectedConfigurationProvider protectionProvider, class System.Configuration.ProtectedConfigurationSection protectedSection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.DecryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecryptSection (encryptedXml As String, protectionProvider As ProtectedConfigurationProvider, protectedSection As ProtectedConfigurationSection) As String" />
+      <MemberSignature Language="F#" Value="abstract member DecryptSection : string * System.Configuration.ProtectedConfigurationProvider * System.Configuration.ProtectedConfigurationSection -&gt; string" Usage="iInternalConfigHost.DecryptSection (encryptedXml, protectionProvider, protectedSection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -109,6 +117,8 @@
       <MemberSignature Language="C#" Value="public void DeleteStream (string streamName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteStream(string streamName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.DeleteStream(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteStream (streamName As String)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteStream : string -&gt; unit" Usage="iInternalConfigHost.DeleteStream streamName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -134,6 +144,8 @@
       <MemberSignature Language="C#" Value="public string EncryptSection (string encryptedXml, System.Configuration.ProtectedConfigurationProvider protectionProvider, System.Configuration.ProtectedConfigurationSection protectedSection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string EncryptSection(string encryptedXml, class System.Configuration.ProtectedConfigurationProvider protectionProvider, class System.Configuration.ProtectedConfigurationSection protectedSection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.EncryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EncryptSection (encryptedXml As String, protectionProvider As ProtectedConfigurationProvider, protectedSection As ProtectedConfigurationSection) As String" />
+      <MemberSignature Language="F#" Value="abstract member EncryptSection : string * System.Configuration.ProtectedConfigurationProvider * System.Configuration.ProtectedConfigurationSection -&gt; string" Usage="iInternalConfigHost.EncryptSection (encryptedXml, protectionProvider, protectedSection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -164,6 +176,8 @@
       <MemberSignature Language="C#" Value="public string GetConfigPathFromLocationSubPath (string configPath, string locatinSubPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetConfigPathFromLocationSubPath(string configPath, string locatinSubPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetConfigPathFromLocationSubPath(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConfigPathFromLocationSubPath (configPath As String, locatinSubPath As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigPathFromLocationSubPath : string * string -&gt; string" Usage="iInternalConfigHost.GetConfigPathFromLocationSubPath (configPath, locatinSubPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -192,6 +206,8 @@
       <MemberSignature Language="C#" Value="public Type GetConfigType (string typeName, bool throwOnError);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetConfigType(string typeName, bool throwOnError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetConfigType(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConfigType (typeName As String, throwOnError As Boolean) As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigType : string * bool -&gt; Type" Usage="iInternalConfigHost.GetConfigType (typeName, throwOnError)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -221,6 +237,8 @@
       <MemberSignature Language="C#" Value="public string GetConfigTypeName (Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetConfigTypeName(class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetConfigTypeName(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConfigTypeName (t As Type) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigTypeName : Type -&gt; string" Usage="iInternalConfigHost.GetConfigTypeName t" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -247,6 +265,8 @@
       <MemberSignature Language="C#" Value="public void GetRestrictedPermissions (System.Configuration.Internal.IInternalConfigRecord configRecord, out System.Security.PermissionSet permissionSet, out bool isHostReady);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetRestrictedPermissions(class System.Configuration.Internal.IInternalConfigRecord configRecord, [out] class System.Security.PermissionSet&amp; permissionSet, [out] bool&amp; isHostReady) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetRestrictedPermissions(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet@,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetRestrictedPermissions (configRecord As IInternalConfigRecord, ByRef permissionSet As PermissionSet, ByRef isHostReady As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member GetRestrictedPermissions : System.Configuration.Internal.IInternalConfigRecord *  *  -&gt; unit" Usage="iInternalConfigHost.GetRestrictedPermissions (configRecord, permissionSet, isHostReady)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -273,6 +293,8 @@
       <MemberSignature Language="C#" Value="public string GetStreamName (string configPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetStreamName(string configPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetStreamName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStreamName (configPath As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamName : string -&gt; string" Usage="iInternalConfigHost.GetStreamName configPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -299,6 +321,8 @@
       <MemberSignature Language="C#" Value="public string GetStreamNameForConfigSource (string streamName, string configSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetStreamNameForConfigSource(string streamName, string configSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetStreamNameForConfigSource(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStreamNameForConfigSource (streamName As String, configSource As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamNameForConfigSource : string * string -&gt; string" Usage="iInternalConfigHost.GetStreamNameForConfigSource (streamName, configSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -327,6 +351,8 @@
       <MemberSignature Language="C#" Value="public object GetStreamVersion (string streamName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetStreamVersion(string streamName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetStreamVersion(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStreamVersion (streamName As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamVersion : string -&gt; obj" Usage="iInternalConfigHost.GetStreamVersion streamName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -353,6 +379,8 @@
       <MemberSignature Language="C#" Value="public IDisposable Impersonate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IDisposable Impersonate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.Impersonate" />
+      <MemberSignature Language="VB.NET" Value="Public Function Impersonate () As IDisposable" />
+      <MemberSignature Language="F#" Value="abstract member Impersonate : unit -&gt; IDisposable" Usage="iInternalConfigHost.Impersonate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -376,6 +404,8 @@
       <MemberSignature Language="C#" Value="public void Init (System.Configuration.Internal.IInternalConfigRoot root, params object[] hostInitParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Init(class System.Configuration.Internal.IInternalConfigRoot root, object[] hostInitParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.Init(System.Configuration.Internal.IInternalConfigRoot,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Init (root As IInternalConfigRoot, ParamArray hostInitParams As Object())" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit" Usage="iInternalConfigHost.Init (root, hostInitParams)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -409,6 +439,8 @@
       <MemberSignature Language="C#" Value="public void InitForConfiguration (ref string locationSubPath, out string configPath, out string locationConfigPath, System.Configuration.Internal.IInternalConfigRoot root, params object[] hostInitConfigurationParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitForConfiguration(string&amp; locationSubPath, [out] string&amp; configPath, [out] string&amp; locationConfigPath, class System.Configuration.Internal.IInternalConfigRoot root, object[] hostInitConfigurationParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.InitForConfiguration(System.String@,System.String@,System.String@,System.Configuration.Internal.IInternalConfigRoot,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InitForConfiguration (ByRef locationSubPath As String, ByRef configPath As String, ByRef locationConfigPath As String, root As IInternalConfigRoot, ParamArray hostInitConfigurationParams As Object())" />
+      <MemberSignature Language="F#" Value="abstract member InitForConfiguration :  *  *  * System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit" Usage="iInternalConfigHost.InitForConfiguration (locationSubPath, configPath, locationConfigPath, root, hostInitConfigurationParams)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -448,6 +480,8 @@
       <MemberSignature Language="C#" Value="public bool IsAboveApplication (string configPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsAboveApplication(string configPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsAboveApplication(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsAboveApplication (configPath As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsAboveApplication : string -&gt; bool" Usage="iInternalConfigHost.IsAboveApplication configPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -475,6 +509,8 @@
       <MemberSignature Language="C#" Value="public bool IsConfigRecordRequired (string configPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsConfigRecordRequired(string configPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsConfigRecordRequired(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsConfigRecordRequired (configPath As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsConfigRecordRequired : string -&gt; bool" Usage="iInternalConfigHost.IsConfigRecordRequired configPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -502,6 +538,8 @@
       <MemberSignature Language="C#" Value="public bool IsDefinitionAllowed (string configPath, System.Configuration.ConfigurationAllowDefinition allowDefinition, System.Configuration.ConfigurationAllowExeDefinition allowExeDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsDefinitionAllowed(string configPath, valuetype System.Configuration.ConfigurationAllowDefinition allowDefinition, valuetype System.Configuration.ConfigurationAllowExeDefinition allowExeDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsDefinitionAllowed(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsDefinitionAllowed (configPath As String, allowDefinition As ConfigurationAllowDefinition, allowExeDefinition As ConfigurationAllowExeDefinition) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsDefinitionAllowed : string * System.Configuration.ConfigurationAllowDefinition * System.Configuration.ConfigurationAllowExeDefinition -&gt; bool" Usage="iInternalConfigHost.IsDefinitionAllowed (configPath, allowDefinition, allowExeDefinition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -533,6 +571,8 @@
       <MemberSignature Language="C#" Value="public bool IsFile (string streamName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsFile(string streamName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsFile (streamName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsFile : string -&gt; bool" Usage="iInternalConfigHost.IsFile streamName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -560,6 +600,8 @@
       <MemberSignature Language="C#" Value="public bool IsFullTrustSectionWithoutAptcaAllowed (System.Configuration.Internal.IInternalConfigRecord configRecord);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsFullTrustSectionWithoutAptcaAllowed(class System.Configuration.Internal.IInternalConfigRecord configRecord) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsFullTrustSectionWithoutAptcaAllowed(System.Configuration.Internal.IInternalConfigRecord)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsFullTrustSectionWithoutAptcaAllowed (configRecord As IInternalConfigRecord) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsFullTrustSectionWithoutAptcaAllowed : System.Configuration.Internal.IInternalConfigRecord -&gt; bool" Usage="iInternalConfigHost.IsFullTrustSectionWithoutAptcaAllowed configRecord" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -587,6 +629,8 @@
       <MemberSignature Language="C#" Value="public bool IsInitDelayed (System.Configuration.Internal.IInternalConfigRecord configRecord);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsInitDelayed(class System.Configuration.Internal.IInternalConfigRecord configRecord) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsInitDelayed(System.Configuration.Internal.IInternalConfigRecord)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsInitDelayed (configRecord As IInternalConfigRecord) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsInitDelayed : System.Configuration.Internal.IInternalConfigRecord -&gt; bool" Usage="iInternalConfigHost.IsInitDelayed configRecord" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -614,6 +658,8 @@
       <MemberSignature Language="C#" Value="public bool IsLocationApplicable (string configPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLocationApplicable(string configPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsLocationApplicable(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsLocationApplicable (configPath As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsLocationApplicable : string -&gt; bool" Usage="iInternalConfigHost.IsLocationApplicable configPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -641,6 +687,8 @@
       <MemberSignature Language="C#" Value="public bool IsRemote { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRemote" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigHost.IsRemote" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRemote As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRemote : bool" Usage="System.Configuration.Internal.IInternalConfigHost.IsRemote" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -664,6 +712,8 @@
       <MemberSignature Language="C#" Value="public bool IsSecondaryRoot (string configPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSecondaryRoot(string configPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsSecondaryRoot(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsSecondaryRoot (configPath As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsSecondaryRoot : string -&gt; bool" Usage="iInternalConfigHost.IsSecondaryRoot configPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -691,6 +741,8 @@
       <MemberSignature Language="C#" Value="public bool IsTrustedConfigPath (string configPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsTrustedConfigPath(string configPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsTrustedConfigPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsTrustedConfigPath (configPath As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsTrustedConfigPath : string -&gt; bool" Usage="iInternalConfigHost.IsTrustedConfigPath configPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -714,10 +766,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenStreamForRead">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a <see cref="T:System.IO.Stream" /> object to read a configuration file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenStreamForRead">
       <MemberSignature Language="C#" Value="public System.IO.Stream OpenStreamForRead (string streamName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream OpenStreamForRead(string streamName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForRead(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenStreamForRead (streamName As String) As Stream" />
+      <MemberSignature Language="F#" Value="abstract member OpenStreamForRead : string -&gt; System.IO.Stream" Usage="iInternalConfigHost.OpenStreamForRead streamName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -744,6 +807,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream OpenStreamForRead (string streamName, bool assertPermissions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream OpenStreamForRead(string streamName, bool assertPermissions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForRead(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenStreamForRead (streamName As String, assertPermissions As Boolean) As Stream" />
+      <MemberSignature Language="F#" Value="abstract member OpenStreamForRead : string * bool -&gt; System.IO.Stream" Usage="iInternalConfigHost.OpenStreamForRead (streamName, assertPermissions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -769,10 +834,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenStreamForWrite">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a <see cref="T:System.IO.Stream" /> object for writing to a configuration file. Allows a <see cref="T:System.IO.Stream" /> object to be designated as a template for copying file attributes.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenStreamForWrite">
       <MemberSignature Language="C#" Value="public System.IO.Stream OpenStreamForWrite (string streamName, string templateStreamName, ref object writeContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream OpenStreamForWrite(string streamName, string templateStreamName, object&amp; writeContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForWrite(System.String,System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenStreamForWrite (streamName As String, templateStreamName As String, ByRef writeContext As Object) As Stream" />
+      <MemberSignature Language="F#" Value="abstract member OpenStreamForWrite : string * string *  -&gt; System.IO.Stream" Usage="iInternalConfigHost.OpenStreamForWrite (streamName, templateStreamName, writeContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -803,6 +879,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream OpenStreamForWrite (string streamName, string templateStreamName, ref object writeContext, bool assertPermissions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream OpenStreamForWrite(string streamName, string templateStreamName, object&amp; writeContext, bool assertPermissions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForWrite(System.String,System.String,System.Object@,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenStreamForWrite (streamName As String, templateStreamName As String, ByRef writeContext As Object, assertPermissions As Boolean) As Stream" />
+      <MemberSignature Language="F#" Value="abstract member OpenStreamForWrite : string * string *  * bool -&gt; System.IO.Stream" Usage="iInternalConfigHost.OpenStreamForWrite (streamName, templateStreamName, writeContext, assertPermissions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -836,6 +914,8 @@
       <MemberSignature Language="C#" Value="public bool PrefetchAll (string configPath, string streamName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool PrefetchAll(string configPath, string streamName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.PrefetchAll(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PrefetchAll (configPath As String, streamName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member PrefetchAll : string * string -&gt; bool" Usage="iInternalConfigHost.PrefetchAll (configPath, streamName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -865,6 +945,8 @@
       <MemberSignature Language="C#" Value="public bool PrefetchSection (string sectionGroupName, string sectionName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool PrefetchSection(string sectionGroupName, string sectionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.PrefetchSection(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PrefetchSection (sectionGroupName As String, sectionName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member PrefetchSection : string * string -&gt; bool" Usage="iInternalConfigHost.PrefetchSection (sectionGroupName, sectionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -894,6 +976,8 @@
       <MemberSignature Language="C#" Value="public void RequireCompleteInit (System.Configuration.Internal.IInternalConfigRecord configRecord);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RequireCompleteInit(class System.Configuration.Internal.IInternalConfigRecord configRecord) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.RequireCompleteInit(System.Configuration.Internal.IInternalConfigRecord)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RequireCompleteInit (configRecord As IInternalConfigRecord)" />
+      <MemberSignature Language="F#" Value="abstract member RequireCompleteInit : System.Configuration.Internal.IInternalConfigRecord -&gt; unit" Usage="iInternalConfigHost.RequireCompleteInit configRecord" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -919,6 +1003,8 @@
       <MemberSignature Language="C#" Value="public object StartMonitoringStreamForChanges (string streamName, System.Configuration.Internal.StreamChangeCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object StartMonitoringStreamForChanges(string streamName, class System.Configuration.Internal.StreamChangeCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.StartMonitoringStreamForChanges(System.String,System.Configuration.Internal.StreamChangeCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartMonitoringStreamForChanges (streamName As String, callback As StreamChangeCallback) As Object" />
+      <MemberSignature Language="F#" Value="abstract member StartMonitoringStreamForChanges : string * System.Configuration.Internal.StreamChangeCallback -&gt; obj" Usage="iInternalConfigHost.StartMonitoringStreamForChanges (streamName, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -947,6 +1033,8 @@
       <MemberSignature Language="C#" Value="public void StopMonitoringStreamForChanges (string streamName, System.Configuration.Internal.StreamChangeCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopMonitoringStreamForChanges(string streamName, class System.Configuration.Internal.StreamChangeCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.StopMonitoringStreamForChanges(System.String,System.Configuration.Internal.StreamChangeCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StopMonitoringStreamForChanges (streamName As String, callback As StreamChangeCallback)" />
+      <MemberSignature Language="F#" Value="abstract member StopMonitoringStreamForChanges : string * System.Configuration.Internal.StreamChangeCallback -&gt; unit" Usage="iInternalConfigHost.StopMonitoringStreamForChanges (streamName, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -974,6 +1062,8 @@
       <MemberSignature Language="C#" Value="public bool SupportsChangeNotifications { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsChangeNotifications" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigHost.SupportsChangeNotifications" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsChangeNotifications As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsChangeNotifications : bool" Usage="System.Configuration.Internal.IInternalConfigHost.SupportsChangeNotifications" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -997,6 +1087,8 @@
       <MemberSignature Language="C#" Value="public bool SupportsLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsLocation" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigHost.SupportsLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsLocation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsLocation : bool" Usage="System.Configuration.Internal.IInternalConfigHost.SupportsLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1020,6 +1112,8 @@
       <MemberSignature Language="C#" Value="public bool SupportsPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsPath" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigHost.SupportsPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsPath As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsPath : bool" Usage="System.Configuration.Internal.IInternalConfigHost.SupportsPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1043,6 +1137,8 @@
       <MemberSignature Language="C#" Value="public bool SupportsRefresh { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsRefresh" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigHost.SupportsRefresh" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsRefresh As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsRefresh : bool" Usage="System.Configuration.Internal.IInternalConfigHost.SupportsRefresh" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1066,6 +1162,8 @@
       <MemberSignature Language="C#" Value="public void VerifyDefinitionAllowed (string configPath, System.Configuration.ConfigurationAllowDefinition allowDefinition, System.Configuration.ConfigurationAllowExeDefinition allowExeDefinition, System.Configuration.Internal.IConfigErrorInfo errorInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void VerifyDefinitionAllowed(string configPath, valuetype System.Configuration.ConfigurationAllowDefinition allowDefinition, valuetype System.Configuration.ConfigurationAllowExeDefinition allowExeDefinition, class System.Configuration.Internal.IConfigErrorInfo errorInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.VerifyDefinitionAllowed(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition,System.Configuration.Internal.IConfigErrorInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub VerifyDefinitionAllowed (configPath As String, allowDefinition As ConfigurationAllowDefinition, allowExeDefinition As ConfigurationAllowExeDefinition, errorInfo As IConfigErrorInfo)" />
+      <MemberSignature Language="F#" Value="abstract member VerifyDefinitionAllowed : string * System.Configuration.ConfigurationAllowDefinition * System.Configuration.ConfigurationAllowExeDefinition * System.Configuration.Internal.IConfigErrorInfo -&gt; unit" Usage="iInternalConfigHost.VerifyDefinitionAllowed (configPath, allowDefinition, allowExeDefinition, errorInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1093,10 +1191,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteCompleted">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates that all writing to the configuration file has completed and specifies whether permissions should be asserted.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteCompleted">
       <MemberSignature Language="C#" Value="public void WriteCompleted (string streamName, bool success, object writeContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteCompleted(string streamName, bool success, object writeContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.WriteCompleted(System.String,System.Boolean,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteCompleted (streamName As String, success As Boolean, writeContext As Object)" />
+      <MemberSignature Language="F#" Value="abstract member WriteCompleted : string * bool * obj -&gt; unit" Usage="iInternalConfigHost.WriteCompleted (streamName, success, writeContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1127,6 +1236,8 @@
       <MemberSignature Language="C#" Value="public void WriteCompleted (string streamName, bool success, object writeContext, bool assertPermissions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteCompleted(string streamName, bool success, object writeContext, bool assertPermissions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.WriteCompleted(System.String,System.Boolean,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteCompleted (streamName As String, success As Boolean, writeContext As Object, assertPermissions As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member WriteCompleted : string * bool * obj * bool -&gt; unit" Usage="iInternalConfigHost.WriteCompleted (streamName, success, writeContext, assertPermissions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1156,32 +1267,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="OpenStreamForWrite">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens a <see cref="T:System.IO.Stream" /> object for writing to a configuration file. Allows a <see cref="T:System.IO.Stream" /> object to be designated as a template for copying file attributes.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteCompleted">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates that all writing to the configuration file has completed and specifies whether permissions should be asserted.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="OpenStreamForRead">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens a <see cref="T:System.IO.Stream" /> object to read a configuration file.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

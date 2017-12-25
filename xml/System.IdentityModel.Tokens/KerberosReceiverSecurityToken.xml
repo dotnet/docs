@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class KerberosReceiverSecurityToken : System.IdentityModel.Tokens.WindowsSecurityToken" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KerberosReceiverSecurityToken extends System.IdentityModel.Tokens.WindowsSecurityToken" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.KerberosReceiverSecurityToken" />
+  <TypeSignature Language="VB.NET" Value="Public Class KerberosReceiverSecurityToken&#xA;Inherits WindowsSecurityToken" />
+  <TypeSignature Language="F#" Value="type KerberosReceiverSecurityToken = class&#xA;    inherit WindowsSecurityToken" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.KerberosReceiverSecurityToken" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public KerberosReceiverSecurityToken (byte[] request);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] request) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.KerberosReceiverSecurityToken.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (request As Byte())" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.KerberosReceiverSecurityToken : byte[] -&gt; System.IdentityModel.Tokens.KerberosReceiverSecurityToken" Usage="new System.IdentityModel.Tokens.KerberosReceiverSecurityToken request" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -55,6 +68,8 @@
       <MemberSignature Language="C#" Value="public KerberosReceiverSecurityToken (byte[] request, string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] request, string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.KerberosReceiverSecurityToken.#ctor(System.Byte[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (request As Byte(), id As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.KerberosReceiverSecurityToken : byte[] * string -&gt; System.IdentityModel.Tokens.KerberosReceiverSecurityToken" Usage="new System.IdentityModel.Tokens.KerberosReceiverSecurityToken (request, id)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -75,6 +90,8 @@
       <MemberSignature Language="C#" Value="public KerberosReceiverSecurityToken (byte[] request, string id, string valueTypeUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] request, string id, string valueTypeUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.KerberosReceiverSecurityToken.#ctor(System.Byte[],System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (request As Byte(), id As String, valueTypeUri As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.KerberosReceiverSecurityToken : byte[] * string * string -&gt; System.IdentityModel.Tokens.KerberosReceiverSecurityToken" Usage="new System.IdentityModel.Tokens.KerberosReceiverSecurityToken (request, id, valueTypeUri)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -97,6 +114,8 @@
       <MemberSignature Language="C#" Value="public override bool CanCreateKeyIdentifierClause&lt;T&gt; () where T : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanCreateKeyIdentifierClause&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.KerberosReceiverSecurityToken.CanCreateKeyIdentifierClause``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanCreateKeyIdentifierClause(Of T As SecurityKeyIdentifierClause) () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanCreateKeyIdentifierClause : unit -&gt; bool (requires 'T :&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" Usage="kerberosReceiverSecurityToken.CanCreateKeyIdentifierClause " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -132,6 +151,8 @@
       <MemberSignature Language="C#" Value="public override T CreateKeyIdentifierClause&lt;T&gt; () where T : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!T CreateKeyIdentifierClause&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.KerberosReceiverSecurityToken.CreateKeyIdentifierClause``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateKeyIdentifierClause(Of T As SecurityKeyIdentifierClause) () As T" />
+      <MemberSignature Language="F#" Value="override this.CreateKeyIdentifierClause : unit -&gt; 'T (requires 'T :&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" Usage="kerberosReceiverSecurityToken.CreateKeyIdentifierClause " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -166,6 +187,8 @@
       <MemberSignature Language="C#" Value="public byte[] GetRequest ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetRequest() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.KerberosReceiverSecurityToken.GetRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRequest () As Byte()" />
+      <MemberSignature Language="F#" Value="member this.GetRequest : unit -&gt; byte[]" Usage="kerberosReceiverSecurityToken.GetRequest " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -192,6 +215,8 @@
       <MemberSignature Language="C#" Value="public override bool MatchesKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.KerberosReceiverSecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function MatchesKeyIdentifierClause (skiClause As SecurityKeyIdentifierClause) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.MatchesKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="kerberosReceiverSecurityToken.MatchesKeyIdentifierClause skiClause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -215,6 +240,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SymmetricSecurityKey SecurityKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SymmetricSecurityKey SecurityKey" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.KerberosReceiverSecurityToken.SecurityKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityKey As SymmetricSecurityKey" />
+      <MemberSignature Language="F#" Value="member this.SecurityKey : System.IdentityModel.Tokens.SymmetricSecurityKey" Usage="System.IdentityModel.Tokens.KerberosReceiverSecurityToken.SecurityKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -240,6 +267,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.KerberosReceiverSecurityToken.SecurityKeys" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SecurityKeys As ReadOnlyCollection(Of SecurityKey)" />
+      <MemberSignature Language="F#" Value="member this.SecurityKeys : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;" Usage="System.IdentityModel.Tokens.KerberosReceiverSecurityToken.SecurityKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -265,6 +294,8 @@
       <MemberSignature Language="C#" Value="public override DateTime ValidFrom { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidFrom" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.KerberosReceiverSecurityToken.ValidFrom" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidFrom As DateTime" />
+      <MemberSignature Language="F#" Value="member this.ValidFrom : DateTime" Usage="System.IdentityModel.Tokens.KerberosReceiverSecurityToken.ValidFrom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -283,6 +314,8 @@
       <MemberSignature Language="C#" Value="public override DateTime ValidTo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidTo" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.KerberosReceiverSecurityToken.ValidTo" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidTo As DateTime" />
+      <MemberSignature Language="F#" Value="member this.ValidTo : DateTime" Usage="System.IdentityModel.Tokens.KerberosReceiverSecurityToken.ValidTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -301,6 +334,8 @@
       <MemberSignature Language="C#" Value="public string ValueTypeUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValueTypeUri" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.KerberosReceiverSecurityToken.ValueTypeUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueTypeUri As String" />
+      <MemberSignature Language="F#" Value="member this.ValueTypeUri : string" Usage="System.IdentityModel.Tokens.KerberosReceiverSecurityToken.ValueTypeUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -319,6 +354,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Principal.WindowsIdentity WindowsIdentity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.WindowsIdentity WindowsIdentity" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.KerberosReceiverSecurityToken.WindowsIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property WindowsIdentity As WindowsIdentity" />
+      <MemberSignature Language="F#" Value="member this.WindowsIdentity : System.Security.Principal.WindowsIdentity" Usage="System.IdentityModel.Tokens.KerberosReceiverSecurityToken.WindowsIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -333,14 +370,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.KerberosReceiverSecurityToken" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

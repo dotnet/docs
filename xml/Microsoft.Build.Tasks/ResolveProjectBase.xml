@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class ResolveProjectBase : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ResolveProjectBase extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ResolveProjectBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ResolveProjectBase&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="F#" Value="type ResolveProjectBase = class&#xA;    inherit TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,7 @@
       <MemberSignature Language="C#" Value="protected ResolveProjectBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveProjectBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="protected void AddSyntheticProjectReferences (string currentProjectAbsolutePath);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddSyntheticProjectReferences(string currentProjectAbsolutePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveProjectBase.AddSyntheticProjectReferences(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AddSyntheticProjectReferences (currentProjectAbsolutePath As String)" />
+      <MemberSignature Language="F#" Value="member this.AddSyntheticProjectReferences : string -&gt; unit" Usage="resolveProjectBase.AddSyntheticProjectReferences currentProjectAbsolutePath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -58,6 +63,8 @@
       <MemberSignature Language="C#" Value="protected System.Xml.XmlElement GetProjectElement (Microsoft.Build.Framework.ITaskItem projectRef);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Xml.XmlElement GetProjectElement(class Microsoft.Build.Framework.ITaskItem projectRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveProjectBase.GetProjectElement(Microsoft.Build.Framework.ITaskItem)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetProjectElement (projectRef As ITaskItem) As XmlElement" />
+      <MemberSignature Language="F#" Value="member this.GetProjectElement : Microsoft.Build.Framework.ITaskItem -&gt; System.Xml.XmlElement" Usage="resolveProjectBase.GetProjectElement projectRef" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -81,6 +88,8 @@
       <MemberSignature Language="C#" Value="protected string GetProjectItem (Microsoft.Build.Framework.ITaskItem projectRef);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetProjectItem(class Microsoft.Build.Framework.ITaskItem projectRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveProjectBase.GetProjectItem(Microsoft.Build.Framework.ITaskItem)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetProjectItem (projectRef As ITaskItem) As String" />
+      <MemberSignature Language="F#" Value="member this.GetProjectItem : Microsoft.Build.Framework.ITaskItem -&gt; string" Usage="resolveProjectBase.GetProjectItem projectRef" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -104,6 +113,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ProjectReferences { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ProjectReferences" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveProjectBase.ProjectReferences" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProjectReferences As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.ProjectReferences : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveProjectBase.ProjectReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

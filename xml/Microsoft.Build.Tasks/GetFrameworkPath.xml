@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class GetFrameworkPath : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GetFrameworkPath extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.GetFrameworkPath" />
+  <TypeSignature Language="VB.NET" Value="Public Class GetFrameworkPath&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="F#" Value="type GetFrameworkPath = class&#xA;    inherit TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,7 @@
       <MemberSignature Language="C#" Value="public GetFrameworkPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GetFrameworkPath.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GetFrameworkPath.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="getFrameworkPath.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -64,6 +69,8 @@
       <MemberSignature Language="C#" Value="public string FrameworkVersion11Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FrameworkVersion11Path" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetFrameworkPath.FrameworkVersion11Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FrameworkVersion11Path As String" />
+      <MemberSignature Language="F#" Value="member this.FrameworkVersion11Path : string" Usage="Microsoft.Build.Tasks.GetFrameworkPath.FrameworkVersion11Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -88,6 +95,8 @@
       <MemberSignature Language="C#" Value="public string FrameworkVersion20Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FrameworkVersion20Path" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetFrameworkPath.FrameworkVersion20Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FrameworkVersion20Path As String" />
+      <MemberSignature Language="F#" Value="member this.FrameworkVersion20Path : string" Usage="Microsoft.Build.Tasks.GetFrameworkPath.FrameworkVersion20Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -112,6 +121,8 @@
       <MemberSignature Language="C#" Value="public string FrameworkVersion30Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FrameworkVersion30Path" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetFrameworkPath.FrameworkVersion30Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FrameworkVersion30Path As String" />
+      <MemberSignature Language="F#" Value="member this.FrameworkVersion30Path : string" Usage="Microsoft.Build.Tasks.GetFrameworkPath.FrameworkVersion30Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -136,6 +147,8 @@
       <MemberSignature Language="C#" Value="public string FrameworkVersion35Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FrameworkVersion35Path" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetFrameworkPath.FrameworkVersion35Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FrameworkVersion35Path As String" />
+      <MemberSignature Language="F#" Value="member this.FrameworkVersion35Path : string" Usage="Microsoft.Build.Tasks.GetFrameworkPath.FrameworkVersion35Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -160,6 +173,8 @@
       <MemberSignature Language="C#" Value="public string FrameworkVersion40Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FrameworkVersion40Path" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetFrameworkPath.FrameworkVersion40Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FrameworkVersion40Path As String" />
+      <MemberSignature Language="F#" Value="member this.FrameworkVersion40Path : string" Usage="Microsoft.Build.Tasks.GetFrameworkPath.FrameworkVersion40Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -184,6 +199,8 @@
       <MemberSignature Language="C#" Value="public string FrameworkVersion45Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FrameworkVersion45Path" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetFrameworkPath.FrameworkVersion45Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FrameworkVersion45Path As String" />
+      <MemberSignature Language="F#" Value="member this.FrameworkVersion45Path : string" Usage="Microsoft.Build.Tasks.GetFrameworkPath.FrameworkVersion45Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -208,6 +225,8 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetFrameworkPath.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="Microsoft.Build.Tasks.GetFrameworkPath.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IEnumConnections" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnumConnections" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IEnumConnections" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IEnumConnections" />
+  <TypeSignature Language="F#" Value="type IEnumConnections = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public void Clone (out Microsoft.VisualBasic.Compatibility.VB6.IEnumConnections ec);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Clone([out] class Microsoft.VisualBasic.Compatibility.VB6.IEnumConnections&amp; ec) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IEnumConnections.Clone(Microsoft.VisualBasic.Compatibility.VB6.IEnumConnections@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ec As IEnumConnections)" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="iEnumConnections.Clone ec" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public void Next (int cConnections, out Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA[] cd, out int cFetched);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Next([in]int32 cConnections, [out] valuetype Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA[]&amp; cd, [out] int32&amp; cFetched) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IEnumConnections.Next(System.Int32,Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA[]@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Next (cConnections As Integer, ByRef cd As CONNECTDATA(), ByRef cFetched As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Next : int *  *  -&gt; unit" Usage="iEnumConnections.Next (cConnections, cd, cFetched)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -101,6 +107,8 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IEnumConnections.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="iEnumConnections.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -128,6 +136,8 @@
       <MemberSignature Language="C#" Value="public void Skip (int cConnections);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Skip([in]int32 cConnections) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IEnumConnections.Skip(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Skip (cConnections As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Skip : int -&gt; unit" Usage="iEnumConnections.Skip cConnections" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

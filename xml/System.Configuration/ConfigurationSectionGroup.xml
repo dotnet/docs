@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ConfigurationSectionGroup" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConfigurationSectionGroup extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConfigurationSectionGroup" />
+  <TypeSignature Language="F#" Value="type ConfigurationSectionGroup = class" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +70,7 @@
       <MemberSignature Language="C#" Value="public ConfigurationSectionGroup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -83,10 +86,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ForceDeclaration">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Forces the declaration for this <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ForceDeclaration">
       <MemberSignature Language="C#" Value="public void ForceDeclaration ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroup.ForceDeclaration" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration ()" />
+      <MemberSignature Language="F#" Value="member this.ForceDeclaration : unit -&gt; unit" Usage="configurationSectionGroup.ForceDeclaration " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -127,6 +141,8 @@
       <MemberSignature Language="C#" Value="public void ForceDeclaration (bool require);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration(bool require) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroup.ForceDeclaration(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration (require As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ForceDeclaration : bool -&gt; unit" Usage="configurationSectionGroup.ForceDeclaration require" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -179,6 +195,8 @@
       <MemberSignature Language="C#" Value="public bool IsDeclarationRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDeclarationRequired" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.IsDeclarationRequired" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeclarationRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDeclarationRequired : bool" Usage="System.Configuration.ConfigurationSectionGroup.IsDeclarationRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -215,6 +233,8 @@
       <MemberSignature Language="C#" Value="public bool IsDeclared { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDeclared" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.IsDeclared" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeclared As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDeclared : bool" Usage="System.Configuration.ConfigurationSectionGroup.IsDeclared" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -258,6 +278,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Configuration.ConfigurationSectionGroup.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -298,6 +320,8 @@
       <MemberSignature Language="C#" Value="public string SectionGroupName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SectionGroupName" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.SectionGroupName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SectionGroupName As String" />
+      <MemberSignature Language="F#" Value="member this.SectionGroupName : string" Usage="System.Configuration.ConfigurationSectionGroup.SectionGroupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -338,6 +362,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSectionGroupCollection SectionGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationSectionGroupCollection SectionGroups" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.SectionGroups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SectionGroups As ConfigurationSectionGroupCollection" />
+      <MemberSignature Language="F#" Value="member this.SectionGroups : System.Configuration.ConfigurationSectionGroupCollection" Usage="System.Configuration.ConfigurationSectionGroup.SectionGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -373,6 +399,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSectionCollection Sections { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationSectionCollection Sections" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.Sections" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sections As ConfigurationSectionCollection" />
+      <MemberSignature Language="F#" Value="member this.Sections : System.Configuration.ConfigurationSectionCollection" Usage="System.Configuration.ConfigurationSectionGroup.Sections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -405,9 +433,11 @@
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeSectionGroupInTargetVersion">
-      <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeSectionGroupInTargetVersion (System.Runtime.Versioning.FrameworkName targetFramework);" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool ShouldSerializeSectionGroupInTargetVersion (System.Runtime.Versioning.FrameworkName targetFramework);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ShouldSerializeSectionGroupInTargetVersion(class System.Runtime.Versioning.FrameworkName targetFramework) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroup.ShouldSerializeSectionGroupInTargetVersion(System.Runtime.Versioning.FrameworkName)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ShouldSerializeSectionGroupInTargetVersion (targetFramework As FrameworkName) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ShouldSerializeSectionGroupInTargetVersion : System.Runtime.Versioning.FrameworkName -&gt; bool&#xA;override this.ShouldSerializeSectionGroupInTargetVersion : System.Runtime.Versioning.FrameworkName -&gt; bool" Usage="configurationSectionGroup.ShouldSerializeSectionGroupInTargetVersion targetFramework" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -444,6 +474,8 @@
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Configuration.ConfigurationSectionGroup.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -486,14 +518,5 @@
         <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ForceDeclaration">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Forces the declaration for this <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

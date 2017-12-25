@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ResXResourceReader : System.Resources.IResourceReader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResXResourceReader extends System.Object implements class System.Collections.IEnumerable, class System.IDisposable, class System.Resources.IResourceReader" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXResourceReader" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResXResourceReader&#xA;Implements IResourceReader" />
+  <TypeSignature Language="F#" Value="type ResXResourceReader = class&#xA;    interface IResourceReader&#xA;    interface IEnumerable&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,10 +66,20 @@
     <altmember cref="T:System.Resources.ResXResourceWriter" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXResourceReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ResXResourceReader (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXResourceReader : System.IO.Stream -&gt; System.Resources.ResXResourceReader" Usage="new System.Resources.ResXResourceReader stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +109,8 @@
       <MemberSignature Language="C#" Value="public ResXResourceReader (System.IO.TextReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.#ctor(System.IO.TextReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reader As TextReader)" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXResourceReader : System.IO.TextReader -&gt; System.Resources.ResXResourceReader" Usage="new System.Resources.ResXResourceReader reader" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -117,6 +131,8 @@
       <MemberSignature Language="C#" Value="public ResXResourceReader (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXResourceReader : string -&gt; System.Resources.ResXResourceReader" Usage="new System.Resources.ResXResourceReader fileName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,6 +164,7 @@
       <MemberSignature Language="C#" Value="public ResXResourceReader (System.IO.Stream stream, System.ComponentModel.Design.ITypeResolutionService typeResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.ComponentModel.Design.ITypeResolutionService typeResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.#ctor(System.IO.Stream,System.ComponentModel.Design.ITypeResolutionService)" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXResourceReader : System.IO.Stream * System.ComponentModel.Design.ITypeResolutionService -&gt; System.Resources.ResXResourceReader" Usage="new System.Resources.ResXResourceReader (stream, typeResolver)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -170,6 +187,7 @@
       <MemberSignature Language="C#" Value="public ResXResourceReader (System.IO.Stream stream, System.Reflection.AssemblyName[] assemblyNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Reflection.AssemblyName[] assemblyNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.#ctor(System.IO.Stream,System.Reflection.AssemblyName[])" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXResourceReader : System.IO.Stream * System.Reflection.AssemblyName[] -&gt; System.Resources.ResXResourceReader" Usage="new System.Resources.ResXResourceReader (stream, assemblyNames)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -192,6 +210,8 @@
       <MemberSignature Language="C#" Value="public ResXResourceReader (System.IO.TextReader reader, System.ComponentModel.Design.ITypeResolutionService typeResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextReader reader, class System.ComponentModel.Design.ITypeResolutionService typeResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.#ctor(System.IO.TextReader,System.ComponentModel.Design.ITypeResolutionService)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reader As TextReader, typeResolver As ITypeResolutionService)" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXResourceReader : System.IO.TextReader * System.ComponentModel.Design.ITypeResolutionService -&gt; System.Resources.ResXResourceReader" Usage="new System.Resources.ResXResourceReader (reader, typeResolver)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -214,6 +234,8 @@
       <MemberSignature Language="C#" Value="public ResXResourceReader (System.IO.TextReader reader, System.Reflection.AssemblyName[] assemblyNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextReader reader, class System.Reflection.AssemblyName[] assemblyNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.#ctor(System.IO.TextReader,System.Reflection.AssemblyName[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reader As TextReader, assemblyNames As AssemblyName())" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXResourceReader : System.IO.TextReader * System.Reflection.AssemblyName[] -&gt; System.Resources.ResXResourceReader" Usage="new System.Resources.ResXResourceReader (reader, assemblyNames)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -236,6 +258,8 @@
       <MemberSignature Language="C#" Value="public ResXResourceReader (string fileName, System.ComponentModel.Design.ITypeResolutionService typeResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, class System.ComponentModel.Design.ITypeResolutionService typeResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.#ctor(System.String,System.ComponentModel.Design.ITypeResolutionService)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, typeResolver As ITypeResolutionService)" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXResourceReader : string * System.ComponentModel.Design.ITypeResolutionService -&gt; System.Resources.ResXResourceReader" Usage="new System.Resources.ResXResourceReader (fileName, typeResolver)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -258,6 +282,8 @@
       <MemberSignature Language="C#" Value="public ResXResourceReader (string fileName, System.Reflection.AssemblyName[] assemblyNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, class System.Reflection.AssemblyName[] assemblyNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.#ctor(System.String,System.Reflection.AssemblyName[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, assemblyNames As AssemblyName())" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXResourceReader : string * System.Reflection.AssemblyName[] -&gt; System.Resources.ResXResourceReader" Usage="new System.Resources.ResXResourceReader (fileName, assemblyNames)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -280,6 +306,8 @@
       <MemberSignature Language="C#" Value="public string BasePath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BasePath" />
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXResourceReader.BasePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property BasePath As String" />
+      <MemberSignature Language="F#" Value="member this.BasePath : string with get, set" Usage="System.Resources.ResXResourceReader.BasePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -317,7 +345,12 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="resXResourceReader.Close " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Resources.IResourceReader.Close</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -351,6 +384,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="resXResourceReader.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -388,6 +423,8 @@
       <MemberSignature Language="C#" Value="~ResXResourceReader ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="resXResourceReader.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -402,10 +439,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromFileContents">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Resources.ResXResourceReader" /> object and initializes it to read a string whose contents are in the form of an XML resource file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromFileContents">
       <MemberSignature Language="C#" Value="public static System.Resources.ResXResourceReader FromFileContents (string fileContents);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Resources.ResXResourceReader FromFileContents(string fileContents) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.FromFileContents(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromFileContents (fileContents As String) As ResXResourceReader" />
+      <MemberSignature Language="F#" Value="static member FromFileContents : string -&gt; System.Resources.ResXResourceReader" Usage="System.Resources.ResXResourceReader.FromFileContents fileContents" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -430,6 +478,8 @@
       <MemberSignature Language="C#" Value="public static System.Resources.ResXResourceReader FromFileContents (string fileContents, System.ComponentModel.Design.ITypeResolutionService typeResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Resources.ResXResourceReader FromFileContents(string fileContents, class System.ComponentModel.Design.ITypeResolutionService typeResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.FromFileContents(System.String,System.ComponentModel.Design.ITypeResolutionService)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromFileContents (fileContents As String, typeResolver As ITypeResolutionService) As ResXResourceReader" />
+      <MemberSignature Language="F#" Value="static member FromFileContents : string * System.ComponentModel.Design.ITypeResolutionService -&gt; System.Resources.ResXResourceReader" Usage="System.Resources.ResXResourceReader.FromFileContents (fileContents, typeResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -456,6 +506,8 @@
       <MemberSignature Language="C#" Value="public static System.Resources.ResXResourceReader FromFileContents (string fileContents, System.Reflection.AssemblyName[] assemblyNames);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Resources.ResXResourceReader FromFileContents(string fileContents, class System.Reflection.AssemblyName[] assemblyNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.FromFileContents(System.String,System.Reflection.AssemblyName[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromFileContents (fileContents As String, assemblyNames As AssemblyName()) As ResXResourceReader" />
+      <MemberSignature Language="F#" Value="static member FromFileContents : string * System.Reflection.AssemblyName[] -&gt; System.Resources.ResXResourceReader" Usage="System.Resources.ResXResourceReader.FromFileContents (fileContents, assemblyNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -482,7 +534,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionaryEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IDictionaryEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator" Usage="resXResourceReader.GetEnumerator " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Resources.IResourceReader.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -516,6 +573,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionaryEnumerator GetMetadataEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IDictionaryEnumerator GetMetadataEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.GetMetadataEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMetadataEnumerator () As IDictionaryEnumerator" />
+      <MemberSignature Language="F#" Value="member this.GetMetadataEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator" Usage="resXResourceReader.GetMetadataEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -551,7 +610,11 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -577,7 +640,11 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceReader.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -603,6 +670,8 @@
       <MemberSignature Language="C#" Value="public bool UseResXDataNodes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseResXDataNodes" />
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXResourceReader.UseResXDataNodes" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseResXDataNodes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseResXDataNodes : bool with get, set" Usage="System.Resources.ResXResourceReader.UseResXDataNodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -665,23 +734,5 @@
         <exception cref="T:System.InvalidOperationException">In a set operation, the enumerator for the resource file or stream is already open.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXResourceReader" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FromFileContents">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.Resources.ResXResourceReader" /> object and initializes it to read a string whose contents are in the form of an XML resource file.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

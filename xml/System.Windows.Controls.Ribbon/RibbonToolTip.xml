@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class RibbonToolTip : System.Windows.Controls.ToolTip" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonToolTip extends System.Windows.Controls.ToolTip" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonToolTip&#xA;Inherits ToolTip" />
+  <TypeSignature Language="F#" Value="type RibbonToolTip = class&#xA;    inherit ToolTip" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public RibbonToolTip ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonToolTip.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonToolTip.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DescriptionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DescriptionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonToolTip.DescriptionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DescriptionProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DescriptionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.DescriptionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -83,6 +90,8 @@
       <MemberSignature Language="C#" Value="public string FooterDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FooterDescription" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonToolTip.FooterDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property FooterDescription As String" />
+      <MemberSignature Language="F#" Value="member this.FooterDescription : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.FooterDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -115,6 +124,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FooterDescriptionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FooterDescriptionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonToolTip.FooterDescriptionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FooterDescriptionProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FooterDescriptionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.FooterDescriptionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -132,6 +143,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource FooterImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource FooterImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonToolTip.FooterImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property FooterImageSource As ImageSource" />
+      <MemberSignature Language="F#" Value="member this.FooterImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.FooterImageSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -164,6 +177,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FooterImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FooterImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonToolTip.FooterImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FooterImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FooterImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.FooterImageSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -181,6 +196,8 @@
       <MemberSignature Language="C#" Value="public string FooterTitle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FooterTitle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonToolTip.FooterTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property FooterTitle As String" />
+      <MemberSignature Language="F#" Value="member this.FooterTitle : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.FooterTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -213,6 +230,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FooterTitleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FooterTitleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonToolTip.FooterTitleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FooterTitleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FooterTitleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.FooterTitleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -230,6 +249,8 @@
       <MemberSignature Language="C#" Value="public bool HasFooter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasFooter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonToolTip.HasFooter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasFooter As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasFooter : bool" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.HasFooter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -264,6 +285,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HasFooterProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HasFooterProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonToolTip.HasFooterProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasFooterProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HasFooterProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.HasFooterProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -281,6 +304,8 @@
       <MemberSignature Language="C#" Value="public bool HasHeader { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasHeader" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonToolTip.HasHeader" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasHeader As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasHeader : bool" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.HasHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -315,6 +340,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HasHeaderProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HasHeaderProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonToolTip.HasHeaderProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasHeaderProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HasHeaderProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.HasHeaderProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -332,6 +359,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource ImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource ImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonToolTip.ImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageSource As ImageSource" />
+      <MemberSignature Language="F#" Value="member this.ImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.ImageSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -364,6 +393,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonToolTip.ImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.ImageSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -381,6 +412,8 @@
       <MemberSignature Language="C#" Value="public bool IsPlacementTargetInRibbonGroup { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPlacementTargetInRibbonGroup" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonToolTip.IsPlacementTargetInRibbonGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPlacementTargetInRibbonGroup As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPlacementTargetInRibbonGroup : bool" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.IsPlacementTargetInRibbonGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -414,6 +447,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsPlacementTargetInRibbonGroupProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsPlacementTargetInRibbonGroupProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonToolTip.IsPlacementTargetInRibbonGroupProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsPlacementTargetInRibbonGroupProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsPlacementTargetInRibbonGroupProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.IsPlacementTargetInRibbonGroupProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -431,6 +466,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonToolTip.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="ribbonToolTip.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -450,6 +487,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.Ribbon Ribbon { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Ribbon.Ribbon Ribbon" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonToolTip.Ribbon" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ribbon As Ribbon" />
+      <MemberSignature Language="F#" Value="member this.Ribbon : System.Windows.Controls.Ribbon.Ribbon" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.Ribbon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -483,6 +522,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RibbonProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RibbonProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonToolTip.RibbonProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RibbonProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RibbonProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.RibbonProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -500,6 +541,8 @@
       <MemberSignature Language="C#" Value="public string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonToolTip.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -532,6 +575,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TitleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TitleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonToolTip.TitleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TitleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TitleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonToolTip.TitleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

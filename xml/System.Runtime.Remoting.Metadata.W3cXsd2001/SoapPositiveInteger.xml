@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SoapPositiveInteger : System.Runtime.Remoting.Metadata.W3cXsd2001.ISoapXsd" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SoapPositiveInteger extends System.Object implements class System.Runtime.Remoting.Metadata.W3cXsd2001.ISoapXsd" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapPositiveInteger&#xA;Implements ISoapXsd" />
+  <TypeSignature Language="F#" Value="type SoapPositiveInteger = class&#xA;    interface ISoapXsd" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,10 +42,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SoapPositiveInteger ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +83,8 @@
       <MemberSignature Language="C#" Value="public SoapPositiveInteger (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger.#ctor(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Decimal)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger : decimal -&gt; System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger" Usage="new System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,7 +116,12 @@
       <MemberSignature Language="C#" Value="public string GetXsdType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetXsdType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger.GetXsdType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetXsdType () As String" />
+      <MemberSignature Language="F#" Value="abstract member GetXsdType : unit -&gt; string&#xA;override this.GetXsdType : unit -&gt; string" Usage="soapPositiveInteger.GetXsdType " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Metadata.W3cXsd2001.ISoapXsd.GetXsdType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -131,6 +151,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger Parse (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger Parse(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As String) As SoapPositiveInteger" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger.Parse value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -164,6 +186,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="soapPositiveInteger.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -194,6 +218,8 @@
       <MemberSignature Language="C#" Value="public decimal Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Decimal Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Decimal" />
+      <MemberSignature Language="F#" Value="member this.Value : decimal with get, set" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -225,6 +251,8 @@
       <MemberSignature Language="C#" Value="public static string XsdType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string XsdType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger.XsdType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XsdType As String" />
+      <MemberSignature Language="F#" Value="member this.XsdType : string" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger.XsdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -250,15 +278,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapPositiveInteger" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

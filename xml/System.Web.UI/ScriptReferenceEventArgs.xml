@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ScriptReferenceEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptReferenceEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptReferenceEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScriptReferenceEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type ScriptReferenceEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public ScriptReferenceEventArgs (System.Web.UI.ScriptReference script);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.ScriptReference script) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceEventArgs.#ctor(System.Web.UI.ScriptReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (script As ScriptReference)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ScriptReferenceEventArgs : System.Web.UI.ScriptReference -&gt; System.Web.UI.ScriptReferenceEventArgs" Usage="new System.Web.UI.ScriptReferenceEventArgs script" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ScriptReference Script { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ScriptReference Script" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReferenceEventArgs.Script" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Script As ScriptReference" />
+      <MemberSignature Language="F#" Value="member this.Script : System.Web.UI.ScriptReference" Usage="System.Web.UI.ScriptReferenceEventArgs.Script" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

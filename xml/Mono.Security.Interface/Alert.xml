@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class Alert" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Alert extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.Alert" />
+  <TypeSignature Language="VB.NET" Value="Public Class Alert" />
+  <TypeSignature Language="F#" Value="type Alert = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public Alert (Mono.Security.Interface.AlertDescription description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Mono.Security.Interface.AlertDescription description) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.Alert.#ctor(Mono.Security.Interface.AlertDescription)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (description As AlertDescription)" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Interface.Alert : Mono.Security.Interface.AlertDescription -&gt; Mono.Security.Interface.Alert" Usage="new Mono.Security.Interface.Alert description" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public Alert (Mono.Security.Interface.AlertLevel level, Mono.Security.Interface.AlertDescription description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Mono.Security.Interface.AlertLevel level, valuetype Mono.Security.Interface.AlertDescription description) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.Alert.#ctor(Mono.Security.Interface.AlertLevel,Mono.Security.Interface.AlertDescription)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (level As AlertLevel, description As AlertDescription)" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Interface.Alert : Mono.Security.Interface.AlertLevel * Mono.Security.Interface.AlertDescription -&gt; Mono.Security.Interface.Alert" Usage="new Mono.Security.Interface.Alert (level, description)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -57,6 +63,8 @@
       <MemberSignature Language="C#" Value="public Mono.Security.Interface.AlertDescription Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Mono.Security.Interface.AlertDescription Description" />
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.Alert.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As AlertDescription" />
+      <MemberSignature Language="F#" Value="member this.Description : Mono.Security.Interface.AlertDescription" Usage="Mono.Security.Interface.Alert.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -75,6 +83,8 @@
       <MemberSignature Language="C#" Value="public static string GetAlertMessage (Mono.Security.Interface.AlertDescription description);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAlertMessage(valuetype Mono.Security.Interface.AlertDescription description) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.Alert.GetAlertMessage(Mono.Security.Interface.AlertDescription)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAlertMessage (description As AlertDescription) As String" />
+      <MemberSignature Language="F#" Value="static member GetAlertMessage : Mono.Security.Interface.AlertDescription -&gt; string" Usage="Mono.Security.Interface.Alert.GetAlertMessage description" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +107,8 @@
       <MemberSignature Language="C#" Value="public bool IsCloseNotify { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCloseNotify" />
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.Alert.IsCloseNotify" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCloseNotify As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCloseNotify : bool" Usage="Mono.Security.Interface.Alert.IsCloseNotify" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -115,6 +127,8 @@
       <MemberSignature Language="C#" Value="public bool IsWarning { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsWarning" />
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.Alert.IsWarning" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWarning As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsWarning : bool" Usage="Mono.Security.Interface.Alert.IsWarning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +147,8 @@
       <MemberSignature Language="C#" Value="public Mono.Security.Interface.AlertLevel Level { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Mono.Security.Interface.AlertLevel Level" />
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.Alert.Level" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As AlertLevel" />
+      <MemberSignature Language="F#" Value="member this.Level : Mono.Security.Interface.AlertLevel" Usage="Mono.Security.Interface.Alert.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,6 +167,8 @@
       <MemberSignature Language="C#" Value="public string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.Alert.Message" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="Mono.Security.Interface.Alert.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,6 +187,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.Alert.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="alert.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

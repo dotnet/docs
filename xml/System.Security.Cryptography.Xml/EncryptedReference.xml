@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class EncryptedReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EncryptedReference extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.EncryptedReference" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class EncryptedReference" />
+  <TypeSignature Language="F#" Value="type EncryptedReference = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +37,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptedReference" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected EncryptedReference ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedReference.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -67,6 +79,8 @@
       <MemberSignature Language="C#" Value="protected EncryptedReference (string uri);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedReference.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (uri As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.EncryptedReference : string -&gt; System.Security.Cryptography.Xml.EncryptedReference" Usage="new System.Security.Cryptography.Xml.EncryptedReference uri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -101,6 +115,8 @@
       <MemberSignature Language="C#" Value="protected EncryptedReference (string uri, System.Security.Cryptography.Xml.TransformChain tc);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string uri, class System.Security.Cryptography.Xml.TransformChain tc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedReference.#ctor(System.String,System.Security.Cryptography.Xml.TransformChain)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.EncryptedReference : string * System.Security.Cryptography.Xml.TransformChain -&gt; System.Security.Cryptography.Xml.EncryptedReference" Usage="new System.Security.Cryptography.Xml.EncryptedReference (uri, tc)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (uri As String, tc As TransformChain)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -135,6 +151,7 @@
       <MemberSignature Language="C#" Value="public void AddTransform (System.Security.Cryptography.Xml.Transform transform);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddTransform(class System.Security.Cryptography.Xml.Transform transform) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedReference.AddTransform(System.Security.Cryptography.Xml.Transform)" />
+      <MemberSignature Language="F#" Value="member this.AddTransform : System.Security.Cryptography.Xml.Transform -&gt; unit" Usage="encryptedReference.AddTransform transform" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -157,9 +174,11 @@
       </Docs>
     </Member>
     <Member MemberName="CacheValid">
-      <MemberSignature Language="C#" Value="protected bool CacheValid { get; }" />
+      <MemberSignature Language="C#" Value="protected internal bool CacheValid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CacheValid" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedReference.CacheValid" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property CacheValid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CacheValid : bool" Usage="System.Security.Cryptography.Xml.EncryptedReference.CacheValid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -190,6 +209,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlElement GetXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedReference.GetXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetXml () As XmlElement" />
+      <MemberSignature Language="F#" Value="abstract member GetXml : unit -&gt; System.Xml.XmlElement&#xA;override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="encryptedReference.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -230,6 +251,8 @@
       <MemberSignature Language="C#" Value="public virtual void LoadXml (System.Xml.XmlElement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedReference.LoadXml(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub LoadXml (value As XmlElement)" />
+      <MemberSignature Language="F#" Value="abstract member LoadXml : System.Xml.XmlElement -&gt; unit&#xA;override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="encryptedReference.LoadXml value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -256,6 +279,8 @@
       <MemberSignature Language="C#" Value="protected string ReferenceType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ReferenceType" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedReference.ReferenceType" />
+      <MemberSignature Language="VB.NET" Value="Protected Property ReferenceType As String" />
+      <MemberSignature Language="F#" Value="member this.ReferenceType : string with get, set" Usage="System.Security.Cryptography.Xml.EncryptedReference.ReferenceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -285,6 +310,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Xml.TransformChain TransformChain { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Xml.TransformChain TransformChain" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedReference.TransformChain" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransformChain As TransformChain" />
+      <MemberSignature Language="F#" Value="member this.TransformChain : System.Security.Cryptography.Xml.TransformChain with get, set" Usage="System.Security.Cryptography.Xml.EncryptedReference.TransformChain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -307,6 +334,8 @@
       <MemberSignature Language="C#" Value="public string Uri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Uri" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedReference.Uri" />
+      <MemberSignature Language="VB.NET" Value="Public Property Uri As String" />
+      <MemberSignature Language="F#" Value="member this.Uri : string with get, set" Usage="System.Security.Cryptography.Xml.EncryptedReference.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -333,14 +362,5 @@
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Security.Cryptography.Xml.EncryptedReference.Uri" /> property was set to <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptedReference" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

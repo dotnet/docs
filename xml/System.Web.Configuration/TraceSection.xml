@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class TraceSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TraceSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TraceSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TraceSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type TraceSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="public TraceSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TraceSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -55,6 +58,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TraceSection.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.Configuration.TraceSection.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +94,8 @@
       <MemberSignature Language="C#" Value="public bool LocalOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool LocalOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TraceSection.LocalOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.LocalOnly : bool with get, set" Usage="System.Web.Configuration.TraceSection.LocalOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,6 +130,8 @@
       <MemberSignature Language="C#" Value="public bool MostRecent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MostRecent" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TraceSection.MostRecent" />
+      <MemberSignature Language="VB.NET" Value="Public Property MostRecent As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MostRecent : bool with get, set" Usage="System.Web.Configuration.TraceSection.MostRecent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -163,6 +172,8 @@
       <MemberSignature Language="C#" Value="public bool PageOutput { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PageOutput" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TraceSection.PageOutput" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageOutput As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PageOutput : bool with get, set" Usage="System.Web.Configuration.TraceSection.PageOutput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +208,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TraceSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.TraceSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -215,6 +228,8 @@
       <MemberSignature Language="C#" Value="public int RequestLimit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RequestLimit" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TraceSection.RequestLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestLimit As Integer" />
+      <MemberSignature Language="F#" Value="member this.RequestLimit : int with get, set" Usage="System.Web.Configuration.TraceSection.RequestLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,6 +276,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.TraceDisplayMode TraceMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Configuration.TraceDisplayMode TraceMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TraceSection.TraceMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property TraceMode As TraceDisplayMode" />
+      <MemberSignature Language="F#" Value="member this.TraceMode : System.Web.Configuration.TraceDisplayMode with get, set" Usage="System.Web.Configuration.TraceSection.TraceMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -294,6 +311,8 @@
       <MemberSignature Language="C#" Value="public bool WriteToDiagnosticsTrace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WriteToDiagnosticsTrace" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TraceSection.WriteToDiagnosticsTrace" />
+      <MemberSignature Language="VB.NET" Value="Public Property WriteToDiagnosticsTrace As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WriteToDiagnosticsTrace : bool with get, set" Usage="System.Web.Configuration.TraceSection.WriteToDiagnosticsTrace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

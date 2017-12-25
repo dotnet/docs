@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ErrorHandlerModule : System.Web.IHttpModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorHandlerModule extends System.Object implements class System.Web.IHttpModule" />
   <TypeSignature Language="DocId" Value="T:System.Web.Mobile.ErrorHandlerModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class ErrorHandlerModule&#xA;Implements IHttpModule" />
+  <TypeSignature Language="F#" Value="type ErrorHandlerModule = class&#xA;    interface IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,7 @@
       <MemberSignature Language="C#" Value="public ErrorHandlerModule ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.ErrorHandlerModule.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -44,7 +47,11 @@
       <MemberSignature Language="C#" Value="void IHttpModule.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.IHttpModule.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.ErrorHandlerModule.System#Web#IHttpModule#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IHttpModule.Dispose" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpModule.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,7 +69,11 @@
       <MemberSignature Language="C#" Value="void IHttpModule.Init (System.Web.HttpApplication application);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.IHttpModule.Init(class System.Web.HttpApplication application) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.ErrorHandlerModule.System#Web#IHttpModule#Init(System.Web.HttpApplication)" />
+      <MemberSignature Language="VB.NET" Value="Sub Init (application As HttpApplication) Implements IHttpModule.Init" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpModule.Init(System.Web.HttpApplication)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

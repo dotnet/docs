@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class SecurityTokenManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SecurityTokenManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.SecurityTokenManager" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityTokenManager" />
+  <TypeSignature Language="F#" Value="type SecurityTokenManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,7 @@
       <MemberSignature Language="C#" Value="protected SecurityTokenManager ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Selectors.SecurityTokenAuthenticator CreateSecurityTokenAuthenticator (System.IdentityModel.Selectors.SecurityTokenRequirement requirement, out System.IdentityModel.Selectors.SecurityTokenResolver resolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Selectors.SecurityTokenAuthenticator CreateSecurityTokenAuthenticator(class System.IdentityModel.Selectors.SecurityTokenRequirement requirement, [out] class System.IdentityModel.Selectors.SecurityTokenResolver&amp; resolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenAuthenticator(System.IdentityModel.Selectors.SecurityTokenRequirement,System.IdentityModel.Selectors.SecurityTokenResolver@)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSecurityTokenAuthenticator (requirement As SecurityTokenRequirement, ByRef resolver As SecurityTokenResolver) As SecurityTokenAuthenticator" />
+      <MemberSignature Language="F#" Value="abstract member CreateSecurityTokenAuthenticator : System.IdentityModel.Selectors.SecurityTokenRequirement *  -&gt; System.IdentityModel.Selectors.SecurityTokenAuthenticator" Usage="securityTokenManager.CreateSecurityTokenAuthenticator (requirement, resolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -74,6 +79,8 @@
       <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Selectors.SecurityTokenProvider CreateSecurityTokenProvider (System.IdentityModel.Selectors.SecurityTokenRequirement requirement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Selectors.SecurityTokenProvider CreateSecurityTokenProvider(class System.IdentityModel.Selectors.SecurityTokenRequirement requirement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenProvider(System.IdentityModel.Selectors.SecurityTokenRequirement)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSecurityTokenProvider (requirement As SecurityTokenRequirement) As SecurityTokenProvider" />
+      <MemberSignature Language="F#" Value="abstract member CreateSecurityTokenProvider : System.IdentityModel.Selectors.SecurityTokenRequirement -&gt; System.IdentityModel.Selectors.SecurityTokenProvider" Usage="securityTokenManager.CreateSecurityTokenProvider requirement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -103,6 +110,8 @@
       <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Selectors.SecurityTokenSerializer CreateSecurityTokenSerializer (System.IdentityModel.Selectors.SecurityTokenVersion version);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Selectors.SecurityTokenSerializer CreateSecurityTokenSerializer(class System.IdentityModel.Selectors.SecurityTokenVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenSerializer(System.IdentityModel.Selectors.SecurityTokenVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSecurityTokenSerializer (version As SecurityTokenVersion) As SecurityTokenSerializer" />
+      <MemberSignature Language="F#" Value="abstract member CreateSecurityTokenSerializer : System.IdentityModel.Selectors.SecurityTokenVersion -&gt; System.IdentityModel.Selectors.SecurityTokenSerializer" Usage="securityTokenManager.CreateSecurityTokenSerializer version" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class SamlAuthenticationStatement : System.IdentityModel.Tokens.SamlSubjectStatement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SamlAuthenticationStatement extends System.IdentityModel.Tokens.SamlSubjectStatement" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlAuthenticationStatement" />
+  <TypeSignature Language="VB.NET" Value="Public Class SamlAuthenticationStatement&#xA;Inherits SamlSubjectStatement" />
+  <TypeSignature Language="F#" Value="type SamlAuthenticationStatement = class&#xA;    inherit SamlSubjectStatement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthenticationStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SamlAuthenticationStatement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationStatement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -41,6 +53,7 @@
       <MemberSignature Language="C#" Value="public SamlAuthenticationStatement (System.IdentityModel.Tokens.SamlSubject samlSubject, string authenticationMethod, DateTime authenticationInstant, string dnsAddress, string ipAddress, System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SamlAuthorityBinding&gt; authorityBindings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SamlSubject samlSubject, string authenticationMethod, valuetype System.DateTime authenticationInstant, string dnsAddress, string ipAddress, class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Tokens.SamlAuthorityBinding&gt; authorityBindings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationStatement.#ctor(System.IdentityModel.Tokens.SamlSubject,System.String,System.DateTime,System.String,System.String,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlAuthorityBinding})" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SamlAuthenticationStatement : System.IdentityModel.Tokens.SamlSubject * string * DateTime * string * string * seq&lt;System.IdentityModel.Tokens.SamlAuthorityBinding&gt; -&gt; System.IdentityModel.Tokens.SamlAuthenticationStatement" Usage="new System.IdentityModel.Tokens.SamlAuthenticationStatement (samlSubject, authenticationMethod, authenticationInstant, dnsAddress, ipAddress, authorityBindings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -93,6 +106,8 @@
       <MemberSignature Language="C#" Value="protected override void AddClaimsToList (System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt; claims);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddClaimsToList(class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Claims.Claim&gt; claims) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationStatement.AddClaimsToList(System.Collections.Generic.IList{System.IdentityModel.Claims.Claim})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddClaimsToList (claims As IList(Of Claim))" />
+      <MemberSignature Language="F#" Value="override this.AddClaimsToList : System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt; -&gt; unit" Usage="samlAuthenticationStatement.AddClaimsToList claims" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -123,6 +138,8 @@
       <MemberSignature Language="C#" Value="public DateTime AuthenticationInstant { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime AuthenticationInstant" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationStatement.AuthenticationInstant" />
+      <MemberSignature Language="VB.NET" Value="Public Property AuthenticationInstant As DateTime" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationInstant : DateTime with get, set" Usage="System.IdentityModel.Tokens.SamlAuthenticationStatement.AuthenticationInstant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -158,6 +175,8 @@
       <MemberSignature Language="C#" Value="public string AuthenticationMethod { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AuthenticationMethod" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationStatement.AuthenticationMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Property AuthenticationMethod As String" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationMethod : string with get, set" Usage="System.IdentityModel.Tokens.SamlAuthenticationStatement.AuthenticationMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -201,6 +220,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.IdentityModel.Tokens.SamlAuthorityBinding&gt; AuthorityBindings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Tokens.SamlAuthorityBinding&gt; AuthorityBindings" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationStatement.AuthorityBindings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthorityBindings As IList(Of SamlAuthorityBinding)" />
+      <MemberSignature Language="F#" Value="member this.AuthorityBindings : System.Collections.Generic.IList&lt;System.IdentityModel.Tokens.SamlAuthorityBinding&gt;" Usage="System.IdentityModel.Tokens.SamlAuthenticationStatement.AuthorityBindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -226,6 +247,8 @@
       <MemberSignature Language="C#" Value="public static string ClaimType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string ClaimType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationStatement.ClaimType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ClaimType As String" />
+      <MemberSignature Language="F#" Value="member this.ClaimType : string" Usage="System.IdentityModel.Tokens.SamlAuthenticationStatement.ClaimType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -244,6 +267,8 @@
       <MemberSignature Language="C#" Value="public string DnsAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DnsAddress" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationStatement.DnsAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property DnsAddress As String" />
+      <MemberSignature Language="F#" Value="member this.DnsAddress : string with get, set" Usage="System.IdentityModel.Tokens.SamlAuthenticationStatement.DnsAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -270,6 +295,8 @@
       <MemberSignature Language="C#" Value="public string IPAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IPAddress" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationStatement.IPAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property IPAddress As String" />
+      <MemberSignature Language="F#" Value="member this.IPAddress : string with get, set" Usage="System.IdentityModel.Tokens.SamlAuthenticationStatement.IPAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -295,6 +322,8 @@
       <MemberSignature Language="C#" Value="public override bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationStatement.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.IdentityModel.Tokens.SamlAuthenticationStatement.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -321,6 +350,8 @@
       <MemberSignature Language="C#" Value="public override void MakeReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void MakeReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationStatement.MakeReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub MakeReadOnly ()" />
+      <MemberSignature Language="F#" Value="override this.MakeReadOnly : unit -&gt; unit" Usage="samlAuthenticationStatement.MakeReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -346,6 +377,7 @@
       <MemberSignature Language="C#" Value="public override void ReadXml (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ReadXml(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationStatement.ReadXml(System.Xml.XmlDictionaryReader,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberSignature Language="F#" Value="override this.ReadXml : System.Xml.XmlDictionaryReader * System.IdentityModel.Tokens.SamlSerializer * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; unit" Usage="samlAuthenticationStatement.ReadXml (reader, samlSerializer, keyInfoTokenSerializer, outOfBandTokenResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -392,6 +424,7 @@
       <MemberSignature Language="C#" Value="public override void WriteXml (System.Xml.XmlDictionaryWriter writer, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteXml(class System.Xml.XmlDictionaryWriter writer, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationStatement.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)" />
+      <MemberSignature Language="F#" Value="override this.WriteXml : System.Xml.XmlDictionaryWriter * System.IdentityModel.Tokens.SamlSerializer * System.IdentityModel.Selectors.SecurityTokenSerializer -&gt; unit" Usage="samlAuthenticationStatement.WriteXml (writer, samlSerializer, keyInfoTokenSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -419,14 +452,5 @@
  <paramref name="samlSerializer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthenticationStatement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

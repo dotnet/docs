@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class FileSystemWatcher : System.ComponentModel.Component, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileSystemWatcher extends System.ComponentModel.Component implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.IO.FileSystemWatcher" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileSystemWatcher&#xA;Inherits Component&#xA;Implements ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type FileSystemWatcher = class&#xA;    inherit Component&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -122,10 +124,21 @@
     <altmember cref="T:System.IO.WatcherChangeTypes" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.FileSystemWatcher" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FileSystemWatcher ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -193,6 +206,8 @@
       <MemberSignature Language="C#" Value="public FileSystemWatcher (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileSystemWatcher : string -&gt; System.IO.FileSystemWatcher" Usage="new System.IO.FileSystemWatcher path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -253,6 +268,8 @@
       <MemberSignature Language="C#" Value="public FileSystemWatcher (string path, string filter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, string filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, filter As String)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileSystemWatcher : string * string -&gt; System.IO.FileSystemWatcher" Usage="new System.IO.FileSystemWatcher (path, filter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -319,7 +336,12 @@
       <MemberSignature Language="C#" Value="public void BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="fileSystemWatcher.BeginInit " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -354,6 +376,8 @@
       <MemberSignature Language="C#" Value="public event System.IO.FileSystemEventHandler Changed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.IO.FileSystemEventHandler Changed" />
       <MemberSignature Language="DocId" Value="E:System.IO.FileSystemWatcher.Changed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Changed As FileSystemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Changed : System.IO.FileSystemEventHandler " Usage="member this.Changed : System.IO.FileSystemEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -418,6 +442,8 @@
       <MemberSignature Language="C#" Value="public event System.IO.FileSystemEventHandler Created;" />
       <MemberSignature Language="ILAsm" Value=".event class System.IO.FileSystemEventHandler Created" />
       <MemberSignature Language="DocId" Value="E:System.IO.FileSystemWatcher.Created" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Created As FileSystemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Created : System.IO.FileSystemEventHandler " Usage="member this.Created : System.IO.FileSystemEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -480,6 +506,8 @@
       <MemberSignature Language="C#" Value="public event System.IO.FileSystemEventHandler Deleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.IO.FileSystemEventHandler Deleted" />
       <MemberSignature Language="DocId" Value="E:System.IO.FileSystemWatcher.Deleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Deleted As FileSystemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Deleted : System.IO.FileSystemEventHandler " Usage="member this.Deleted : System.IO.FileSystemEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -540,7 +568,12 @@
       <MemberSignature Language="C#" Value="public virtual void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="override this.Dispose : unit -&gt; unit" Usage="fileSystemWatcher.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -562,6 +595,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="fileSystemWatcher.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -609,6 +644,8 @@
       <MemberSignature Language="C#" Value="public bool EnableRaisingEvents { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableRaisingEvents" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.EnableRaisingEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableRaisingEvents As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableRaisingEvents : bool with get, set" Usage="System.IO.FileSystemWatcher.EnableRaisingEvents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -674,7 +711,12 @@
       <MemberSignature Language="C#" Value="public void EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.EndInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="fileSystemWatcher.EndInit " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -709,6 +751,8 @@
       <MemberSignature Language="C#" Value="public event System.IO.ErrorEventHandler Error;" />
       <MemberSignature Language="ILAsm" Value=".event class System.IO.ErrorEventHandler Error" />
       <MemberSignature Language="DocId" Value="E:System.IO.FileSystemWatcher.Error" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Error As ErrorEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Error : System.IO.ErrorEventHandler " Usage="member this.Error : System.IO.ErrorEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -759,6 +803,8 @@
       <MemberSignature Language="C#" Value="public string Filter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.Filter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Filter As String" />
+      <MemberSignature Language="F#" Value="member this.Filter : string with get, set" Usage="System.IO.FileSystemWatcher.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -837,6 +883,8 @@
       <MemberSignature Language="C#" Value="~FileSystemWatcher ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="fileSystemWatcher.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -855,6 +903,8 @@
       <MemberSignature Language="C#" Value="public bool IncludeSubdirectories { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IncludeSubdirectories" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.IncludeSubdirectories" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeSubdirectories As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeSubdirectories : bool with get, set" Usage="System.IO.FileSystemWatcher.IncludeSubdirectories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -913,6 +963,8 @@
       <MemberSignature Language="C#" Value="public int InternalBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 InternalBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.InternalBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property InternalBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.InternalBufferSize : int with get, set" Usage="System.IO.FileSystemWatcher.InternalBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -963,6 +1015,8 @@
       <MemberSignature Language="C#" Value="public System.IO.NotifyFilters NotifyFilter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.NotifyFilters NotifyFilter" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.NotifyFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property NotifyFilter As NotifyFilters" />
+      <MemberSignature Language="F#" Value="member this.NotifyFilter : System.IO.NotifyFilters with get, set" Usage="System.IO.FileSystemWatcher.NotifyFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1025,6 +1079,8 @@
       <MemberSignature Language="C#" Value="protected void OnChanged (System.IO.FileSystemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnChanged(class System.IO.FileSystemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.OnChanged(System.IO.FileSystemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnChanged (e As FileSystemEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.OnChanged : System.IO.FileSystemEventArgs -&gt; unit" Usage="fileSystemWatcher.OnChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1076,6 +1132,8 @@
       <MemberSignature Language="C#" Value="protected void OnCreated (System.IO.FileSystemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnCreated(class System.IO.FileSystemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.OnCreated(System.IO.FileSystemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnCreated (e As FileSystemEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.OnCreated : System.IO.FileSystemEventArgs -&gt; unit" Usage="fileSystemWatcher.OnCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1127,6 +1185,8 @@
       <MemberSignature Language="C#" Value="protected void OnDeleted (System.IO.FileSystemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnDeleted(class System.IO.FileSystemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.OnDeleted(System.IO.FileSystemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnDeleted (e As FileSystemEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.OnDeleted : System.IO.FileSystemEventArgs -&gt; unit" Usage="fileSystemWatcher.OnDeleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1176,6 +1236,8 @@
       <MemberSignature Language="C#" Value="protected void OnError (System.IO.ErrorEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnError(class System.IO.ErrorEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.OnError(System.IO.ErrorEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnError (e As ErrorEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.OnError : System.IO.ErrorEventArgs -&gt; unit" Usage="fileSystemWatcher.OnError e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1223,6 +1285,8 @@
       <MemberSignature Language="C#" Value="protected void OnRenamed (System.IO.RenamedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnRenamed(class System.IO.RenamedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.OnRenamed(System.IO.RenamedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnRenamed (e As RenamedEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.OnRenamed : System.IO.RenamedEventArgs -&gt; unit" Usage="fileSystemWatcher.OnRenamed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1269,6 +1333,8 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.IO.FileSystemWatcher.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1350,6 +1416,8 @@
       <MemberSignature Language="C#" Value="public event System.IO.RenamedEventHandler Renamed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.IO.RenamedEventHandler Renamed" />
       <MemberSignature Language="DocId" Value="E:System.IO.FileSystemWatcher.Renamed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Renamed As RenamedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Renamed : System.IO.RenamedEventHandler " Usage="member this.Renamed : System.IO.RenamedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1403,6 +1471,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.ISite Site { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.Site" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Site As ISite" />
+      <MemberSignature Language="F#" Value="member this.Site : System.ComponentModel.ISite with get, set" Usage="System.IO.FileSystemWatcher.Site" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1442,6 +1512,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.ISynchronizeInvoke SynchronizingObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISynchronizeInvoke SynchronizingObject" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.SynchronizingObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property SynchronizingObject As ISynchronizeInvoke" />
+      <MemberSignature Language="F#" Value="member this.SynchronizingObject : System.ComponentModel.ISynchronizeInvoke with get, set" Usage="System.IO.FileSystemWatcher.SynchronizingObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1488,10 +1560,22 @@
         <altmember cref="T:System.ComponentModel.ISynchronizeInvoke" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WaitForChanged">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>A synchronous method that returns a structure that contains specific information on the change that occurred.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WaitForChanged">
       <MemberSignature Language="C#" Value="public System.IO.WaitForChangedResult WaitForChanged (System.IO.WatcherChangeTypes changeType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.IO.WaitForChangedResult WaitForChanged(valuetype System.IO.WatcherChangeTypes changeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.WaitForChanged(System.IO.WatcherChangeTypes)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WaitForChanged (changeType As WatcherChangeTypes) As WaitForChangedResult" />
+      <MemberSignature Language="F#" Value="member this.WaitForChanged : System.IO.WatcherChangeTypes -&gt; System.IO.WaitForChangedResult" Usage="fileSystemWatcher.WaitForChanged changeType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1537,6 +1621,8 @@
       <MemberSignature Language="C#" Value="public System.IO.WaitForChangedResult WaitForChanged (System.IO.WatcherChangeTypes changeType, int timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.IO.WaitForChangedResult WaitForChanged(valuetype System.IO.WatcherChangeTypes changeType, int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.WaitForChanged(System.IO.WatcherChangeTypes,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WaitForChanged (changeType As WatcherChangeTypes, timeout As Integer) As WaitForChangedResult" />
+      <MemberSignature Language="F#" Value="member this.WaitForChanged : System.IO.WatcherChangeTypes * int -&gt; System.IO.WaitForChangedResult" Usage="fileSystemWatcher.WaitForChanged (changeType, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1580,25 +1666,5 @@
         <altmember cref="T:System.IO.WaitForChangedResult" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="WaitForChanged">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>A synchronous method that returns a structure that contains specific information on the change that occurred.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.FileSystemWatcher" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

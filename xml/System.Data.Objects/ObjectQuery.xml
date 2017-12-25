@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class ObjectQuery : System.Collections.IEnumerable, System.ComponentModel.IListSource, System.Linq.IOrderedQueryable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ObjectQuery extends System.Object implements class System.Collections.IEnumerable, class System.ComponentModel.IListSource, class System.Linq.IOrderedQueryable, class System.Linq.IQueryable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectQuery" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ObjectQuery&#xA;Implements IEnumerable, IListSource, IOrderedQueryable" />
+  <TypeSignature Language="F#" Value="type ObjectQuery = class&#xA;    interface IEnumerable&#xA;    interface IQueryable&#xA;    interface IOrderedQueryable&#xA;    interface IListSource" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public string CommandText { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CommandText" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectQuery.CommandText" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandText As String" />
+      <MemberSignature Language="F#" Value="member this.CommandText : string" Usage="System.Data.Objects.ObjectQuery.CommandText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Objects.ObjectContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectQuery.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As ObjectContext" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Data.Objects.ObjectContext" Usage="System.Data.Objects.ObjectQuery.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public bool EnablePlanCaching { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnablePlanCaching" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectQuery.EnablePlanCaching" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnablePlanCaching As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnablePlanCaching : bool with get, set" Usage="System.Data.Objects.ObjectQuery.EnablePlanCaching" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -114,6 +122,7 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectResult Execute (System.Data.Objects.MergeOption mergeOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectResult Execute(valuetype System.Data.Objects.MergeOption mergeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery.Execute(System.Data.Objects.MergeOption)" />
+      <MemberSignature Language="F#" Value="member this.Execute : System.Data.Objects.MergeOption -&gt; System.Data.Objects.ObjectResult" Usage="objectQuery.Execute mergeOption" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -145,6 +154,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.TypeUsage GetResultType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Metadata.Edm.TypeUsage GetResultType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery.GetResultType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResultType () As TypeUsage" />
+      <MemberSignature Language="F#" Value="member this.GetResultType : unit -&gt; System.Data.Metadata.Edm.TypeUsage" Usage="objectQuery.GetResultType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -174,6 +185,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.MergeOption MergeOption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Objects.MergeOption MergeOption" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectQuery.MergeOption" />
+      <MemberSignature Language="VB.NET" Value="Public Property MergeOption As MergeOption" />
+      <MemberSignature Language="F#" Value="member this.MergeOption : System.Data.Objects.MergeOption with get, set" Usage="System.Data.Objects.ObjectQuery.MergeOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -199,6 +212,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectParameterCollection Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Objects.ObjectParameterCollection Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectQuery.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As ObjectParameterCollection" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Data.Objects.ObjectParameterCollection" Usage="System.Data.Objects.ObjectQuery.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -232,7 +247,11 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -262,7 +281,12 @@
       <MemberSignature Language="C#" Value="bool System.ComponentModel.IListSource.ContainsListCollection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectQuery.System#ComponentModel#IListSource#ContainsListCollection" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ContainsListCollection As Boolean Implements IListSource.ContainsListCollection" />
+      <MemberSignature Language="F#" Usage="System.Data.Objects.ObjectQuery.System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IListSource.ContainsListCollection</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -289,7 +313,11 @@
       <MemberSignature Language="C#" Value="System.Collections.IList IListSource.GetList ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IList System.ComponentModel.IListSource.GetList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery.System#ComponentModel#IListSource#GetList" />
+      <MemberSignature Language="VB.NET" Value="Function GetList () As IList Implements IListSource.GetList" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IListSource.GetList</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -317,7 +345,12 @@
       <MemberSignature Language="C#" Value="Type System.Linq.IQueryable.ElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type System.Linq.IQueryable.ElementType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectQuery.System#Linq#IQueryable#ElementType" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ElementType As Type Implements IQueryable.ElementType" />
+      <MemberSignature Language="F#" Usage="System.Data.Objects.ObjectQuery.System.Linq.IQueryable.ElementType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Linq.IQueryable.ElementType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -342,7 +375,12 @@
       <MemberSignature Language="C#" Value="System.Linq.Expressions.Expression System.Linq.IQueryable.Expression { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.Expressions.Expression System.Linq.IQueryable.Expression" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectQuery.System#Linq#IQueryable#Expression" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Expression As Expression Implements IQueryable.Expression" />
+      <MemberSignature Language="F#" Usage="System.Data.Objects.ObjectQuery.System.Linq.IQueryable.Expression" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Linq.IQueryable.Expression</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -369,7 +407,12 @@
       <MemberSignature Language="C#" Value="System.Linq.IQueryProvider System.Linq.IQueryable.Provider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.IQueryProvider System.Linq.IQueryable.Provider" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectQuery.System#Linq#IQueryable#Provider" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Provider As IQueryProvider Implements IQueryable.Provider" />
+      <MemberSignature Language="F#" Usage="System.Data.Objects.ObjectQuery.System.Linq.IQueryable.Provider" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Linq.IQueryable.Provider</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -394,6 +437,8 @@
       <MemberSignature Language="C#" Value="public string ToTraceString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToTraceString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery.ToTraceString" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToTraceString () As String" />
+      <MemberSignature Language="F#" Value="member this.ToTraceString : unit -&gt; string" Usage="objectQuery.ToTraceString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

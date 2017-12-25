@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class HttpModuleBase : System.Web.IHttpModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HttpModuleBase extends System.Object implements class System.Web.IHttpModule" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.HttpModuleBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpModuleBase&#xA;Implements IHttpModule" />
+  <TypeSignature Language="F#" Value="type HttpModuleBase = class&#xA;    interface IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,7 @@
       <MemberSignature Language="C#" Value="protected HttpModuleBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.HttpModuleBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -38,7 +41,12 @@
       <MemberSignature Language="C#" Value="public virtual void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.HttpModuleBase.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="httpModuleBase.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpModule.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +71,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Services.Configuration.FederationConfiguration FederationConfiguration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Services.Configuration.FederationConfiguration FederationConfiguration" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.HttpModuleBase.FederationConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property FederationConfiguration As FederationConfiguration" />
+      <MemberSignature Language="F#" Value="member this.FederationConfiguration : System.IdentityModel.Services.Configuration.FederationConfiguration with get, set" Usage="System.IdentityModel.Services.HttpModuleBase.FederationConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -82,7 +92,12 @@
       <MemberSignature Language="C#" Value="public void Init (System.Web.HttpApplication context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Init(class System.Web.HttpApplication context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.HttpModuleBase.Init(System.Web.HttpApplication)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Init (context As HttpApplication)" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="httpModuleBase.Init context" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpModule.Init(System.Web.HttpApplication)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -112,6 +127,8 @@
       <MemberSignature Language="C#" Value="protected abstract void InitializeModule (System.Web.HttpApplication context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializeModule(class System.Web.HttpApplication context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.HttpModuleBase.InitializeModule(System.Web.HttpApplication)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub InitializeModule (context As HttpApplication)" />
+      <MemberSignature Language="F#" Value="abstract member InitializeModule : System.Web.HttpApplication -&gt; unit" Usage="httpModuleBase.InitializeModule context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -140,6 +157,8 @@
       <MemberSignature Language="C#" Value="protected abstract void InitializePropertiesFromConfiguration ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializePropertiesFromConfiguration() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.HttpModuleBase.InitializePropertiesFromConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub InitializePropertiesFromConfiguration ()" />
+      <MemberSignature Language="F#" Value="abstract member InitializePropertiesFromConfiguration : unit -&gt; unit" Usage="httpModuleBase.InitializePropertiesFromConfiguration " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

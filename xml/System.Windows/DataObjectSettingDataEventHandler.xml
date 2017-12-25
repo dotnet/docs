@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void DataObjectSettingDataEventHandler(object sender, DataObjectSettingDataEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataObjectSettingDataEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectSettingDataEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataObjectSettingDataEventHandler(sender As Object, e As DataObjectSettingDataEventArgs)" />
+  <TypeSignature Language="F#" Value="type DataObjectSettingDataEventHandler = delegate of obj * DataObjectSettingDataEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

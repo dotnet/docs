@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class SoapBodyBinding : System.Web.Services.Description.ServiceDescriptionFormatExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapBodyBinding extends System.Web.Services.Description.ServiceDescriptionFormatExtension" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapBodyBinding" />
+  <TypeSignature Language="VB.NET" Value="Public Class SoapBodyBinding&#xA;Inherits ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="F#" Value="type SoapBodyBinding = class&#xA;    inherit ServiceDescriptionFormatExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +43,7 @@
       <MemberSignature Language="C#" Value="public SoapBodyBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapBodyBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -57,6 +60,8 @@
       <MemberSignature Language="C#" Value="public string Encoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Encoding" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Encoding As String" />
+      <MemberSignature Language="F#" Value="member this.Encoding : string with get, set" Usage="System.Web.Services.Description.SoapBodyBinding.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -98,6 +103,8 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Web.Services.Description.SoapBodyBinding.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -139,6 +146,8 @@
       <MemberSignature Language="C#" Value="public string[] Parts { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] Parts" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.Parts" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parts As String()" />
+      <MemberSignature Language="F#" Value="member this.Parts : string[] with get, set" Usage="System.Web.Services.Description.SoapBodyBinding.Parts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -179,6 +188,8 @@
       <MemberSignature Language="C#" Value="public string PartsString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PartsString" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.PartsString" />
+      <MemberSignature Language="VB.NET" Value="Public Property PartsString As String" />
+      <MemberSignature Language="F#" Value="member this.PartsString : string with get, set" Usage="System.Web.Services.Description.SoapBodyBinding.PartsString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -219,6 +230,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.SoapBindingUse Use { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Description.SoapBindingUse Use" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.Use" />
+      <MemberSignature Language="VB.NET" Value="Public Property Use As SoapBindingUse" />
+      <MemberSignature Language="F#" Value="member this.Use : System.Web.Services.Description.SoapBindingUse with get, set" Usage="System.Web.Services.Description.SoapBodyBinding.Use" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

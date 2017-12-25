@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class ClientBase&lt;TChannel&gt; : IDisposable, System.ServiceModel.ICommunicationObject where TChannel : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ClientBase`1&lt;class TChannel&gt; extends System.Object implements class System.IDisposable, class System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ClientBase`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ClientBase(Of TChannel)&#xA;Implements ICommunicationObject, IDisposable" />
+  <TypeSignature Language="F#" Value="type ClientBase&lt;'Channel (requires 'Channel : null)&gt; = class&#xA;    interface IDisposable&#xA;    interface ICommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -88,6 +90,7 @@
       <MemberSignature Language="C#" Value="protected ClientBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -126,6 +129,8 @@
       <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.Description.ServiceEndpoint endpoint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (endpoint As ServiceEndpoint)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; endpoint" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -145,6 +150,8 @@
       <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; instance" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -182,6 +189,8 @@
       <MemberSignature Language="C#" Value="protected ClientBase (string endpointConfigurationName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (endpointConfigurationName As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; endpointConfigurationName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -216,6 +225,7 @@
       <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (binding, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -244,6 +254,8 @@
       <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, System.ServiceModel.Description.ServiceEndpoint endpoint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpoint As ServiceEndpoint)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpoint)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -265,6 +277,8 @@
       <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, string endpointConfigurationName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpointConfigurationName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -295,6 +309,8 @@
       <MemberSignature Language="C#" Value="protected ClientBase (string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.String,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (endpointConfigurationName As String, remoteAddress As EndpointAddress)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (endpointConfigurationName, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -331,6 +347,8 @@
       <MemberSignature Language="C#" Value="protected ClientBase (string endpointConfigurationName, string remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName, string remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (endpointConfigurationName As String, remoteAddress As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : string * string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (endpointConfigurationName, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -368,6 +386,7 @@
       <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, binding, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -392,6 +411,8 @@
       <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String, remoteAddress As EndpointAddress)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpointConfigurationName, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -425,6 +446,8 @@
       <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, string endpointConfigurationName, string remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName, string remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String, remoteAddress As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string * string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpointConfigurationName, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -458,7 +481,12 @@
       <MemberSignature Language="C#" Value="public void Abort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.Abort" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
+      <MemberSignature Language="F#" Value="abstract member Abort : unit -&gt; unit&#xA;override this.Abort : unit -&gt; unit" Usage="clientBase.Abort " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Abort</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -490,6 +518,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.CacheSetting CacheSetting { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.ServiceModel.CacheSetting CacheSetting" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.CacheSetting" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property CacheSetting As CacheSetting" />
+      <MemberSignature Language="F#" Value="member this.CacheSetting : System.ServiceModel.CacheSetting with get, set" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.CacheSetting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -508,6 +538,8 @@
       <MemberSignature Language="C#" Value="protected TChannel Channel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TChannel Channel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.Channel" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Channel As TChannel" />
+      <MemberSignature Language="F#" Value="member this.Channel : 'Channel" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.Channel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -533,6 +565,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.ChannelFactory&lt;TChannel&gt; ChannelFactory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.ChannelFactory`1&lt;!TChannel&gt; ChannelFactory" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.ChannelFactory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelFactory As ChannelFactory(Of TChannel)" />
+      <MemberSignature Language="F#" Value="member this.ChannelFactory : System.ServiceModel.ChannelFactory&lt;'Channel (requires 'Channel : null)&gt;" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.ChannelFactory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -565,6 +599,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ClientCredentials ClientCredentials { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ClientCredentials ClientCredentials" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.ClientCredentials" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientCredentials As ClientCredentials" />
+      <MemberSignature Language="F#" Value="member this.ClientCredentials : System.ServiceModel.Description.ClientCredentials" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.ClientCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -606,7 +642,12 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="clientBase.Close " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -632,6 +673,8 @@
       <MemberSignature Language="C#" Value="protected virtual TChannel CreateChannel ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance !TChannel CreateChannel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.CreateChannel" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateChannel () As TChannel" />
+      <MemberSignature Language="F#" Value="abstract member CreateChannel : unit -&gt; 'Channel&#xA;override this.CreateChannel : unit -&gt; 'Channel" Usage="clientBase.CreateChannel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -665,6 +708,8 @@
       <MemberSignature Language="C#" Value="public void DisplayInitializationUI ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DisplayInitializationUI() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.DisplayInitializationUI" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DisplayInitializationUI ()" />
+      <MemberSignature Language="F#" Value="member this.DisplayInitializationUI : unit -&gt; unit" Usage="clientBase.DisplayInitializationUI " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -692,6 +737,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceEndpoint Endpoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ServiceEndpoint Endpoint" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.Endpoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoint As ServiceEndpoint" />
+      <MemberSignature Language="F#" Value="member this.Endpoint : System.ServiceModel.Description.ServiceEndpoint" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.Endpoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -725,6 +772,8 @@
       <MemberSignature Language="C#" Value="protected T GetDefaultValueForInitialization&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance !!T GetDefaultValueForInitialization&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.GetDefaultValueForInitialization``1" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetDefaultValueForInitialization(Of T) () As T" />
+      <MemberSignature Language="F#" Value="member this.GetDefaultValueForInitialization : unit -&gt; 'T" Usage="clientBase.GetDefaultValueForInitialization " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -755,6 +804,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.IClientChannel InnerChannel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.IClientChannel InnerChannel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.InnerChannel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerChannel As IClientChannel" />
+      <MemberSignature Language="F#" Value="member this.InnerChannel : System.ServiceModel.IClientChannel" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.InnerChannel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -787,6 +838,7 @@
       <MemberSignature Language="C#" Value="protected void InvokeAsync (System.ServiceModel.ClientBase&lt;TChannel&gt;.BeginOperationDelegate beginOperationDelegate, object[] inValues, System.ServiceModel.ClientBase&lt;TChannel&gt;.EndOperationDelegate endOperationDelegate, System.Threading.SendOrPostCallback operationCompletedCallback, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InvokeAsync(class System.ServiceModel.ClientBase`1/BeginOperationDelegate&lt;!TChannel&gt; beginOperationDelegate, object[] inValues, class System.ServiceModel.ClientBase`1/EndOperationDelegate&lt;!TChannel&gt; endOperationDelegate, class System.Threading.SendOrPostCallback operationCompletedCallback, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.InvokeAsync(System.ServiceModel.ClientBase`1.BeginOperationDelegate{`0},System.Object[],System.ServiceModel.ClientBase`1.EndOperationDelegate{`0},System.Threading.SendOrPostCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.BeginOperationDelegate * obj[] * System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.EndOperationDelegate * System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="clientBase.InvokeAsync (beginOperationDelegate, inValues, endOperationDelegate, operationCompletedCallback, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -830,7 +882,12 @@
       <MemberSignature Language="C#" Value="public void Open ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.Open" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
+      <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; unit&#xA;override this.Open : unit -&gt; unit" Usage="clientBase.Open " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -856,7 +913,12 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.CommunicationState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.CommunicationState State" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As CommunicationState" />
+      <MemberSignature Language="F#" Value="member this.State : System.ServiceModel.CommunicationState" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.State" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.ICommunicationObject.State</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -888,7 +950,11 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -910,11 +976,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.ServiceModel.ICommunicationObject.BeginClose">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to close the <see cref="T:System.ServiceModel.ClientBase`1" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="System.ServiceModel.ICommunicationObject.BeginClose">
       <MemberSignature Language="C#" Value="IAsyncResult ICommunicationObject.BeginClose (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.ICommunicationObject.BeginClose(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#BeginClose(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function BeginClose (callback As AsyncCallback, state As Object) As IAsyncResult Implements ICommunicationObject.BeginClose" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginClose(System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -952,7 +1032,11 @@
       <MemberSignature Language="C#" Value="IAsyncResult ICommunicationObject.BeginClose (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.ICommunicationObject.BeginClose(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function BeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult Implements ICommunicationObject.BeginClose" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -988,11 +1072,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.ServiceModel.ICommunicationObject.BeginOpen">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to open the <see cref="T:System.ServiceModel.ClientBase`1" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="System.ServiceModel.ICommunicationObject.BeginOpen">
       <MemberSignature Language="C#" Value="IAsyncResult ICommunicationObject.BeginOpen (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.ICommunicationObject.BeginOpen(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#BeginOpen(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function BeginOpen (callback As AsyncCallback, state As Object) As IAsyncResult Implements ICommunicationObject.BeginOpen" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginOpen(System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1030,7 +1128,11 @@
       <MemberSignature Language="C#" Value="IAsyncResult ICommunicationObject.BeginOpen (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.ICommunicationObject.BeginOpen(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function BeginOpen (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult Implements ICommunicationObject.BeginOpen" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1070,7 +1172,11 @@
       <MemberSignature Language="C#" Value="void ICommunicationObject.Close ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Close" />
+      <MemberSignature Language="VB.NET" Value="Sub Close () Implements ICommunicationObject.Close" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1090,7 +1196,11 @@
       <MemberSignature Language="C#" Value="void ICommunicationObject.Close (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Close(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Close(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Sub Close (timeout As TimeSpan) Implements ICommunicationObject.Close" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close(System.TimeSpan)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1121,11 +1231,71 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="System.ServiceModel.ICommunicationObject.Closed">
+      <MemberSignature Language="C#" Value="event EventHandler System.ServiceModel.ICommunicationObject.Closed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ServiceModel.ICommunicationObject.Closed" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Closed" />
+      <MemberSignature Language="VB.NET" Value="Custom Event Closed As EventHandler Implements System.ServiceModel.ICommunicationObject" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Closed</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.ICommunicationObject.Closing">
+      <MemberSignature Language="C#" Value="event EventHandler System.ServiceModel.ICommunicationObject.Closing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ServiceModel.ICommunicationObject.Closing" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Closing" />
+      <MemberSignature Language="VB.NET" Value="Custom Event Closing As EventHandler Implements System.ServiceModel.ICommunicationObject" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Closing</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.EndClose">
       <MemberSignature Language="C#" Value="void ICommunicationObject.EndClose (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.EndClose(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#EndClose(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Sub EndClose (result As IAsyncResult) Implements ICommunicationObject.EndClose" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.EndClose(System.IAsyncResult)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1160,7 +1330,11 @@
       <MemberSignature Language="C#" Value="void ICommunicationObject.EndOpen (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.EndOpen(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#EndOpen(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Sub EndOpen (result As IAsyncResult) Implements ICommunicationObject.EndOpen" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.EndOpen(System.IAsyncResult)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1191,11 +1365,43 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="System.ServiceModel.ICommunicationObject.Faulted">
+      <MemberSignature Language="C#" Value="event EventHandler System.ServiceModel.ICommunicationObject.Faulted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ServiceModel.ICommunicationObject.Faulted" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Faulted" />
+      <MemberSignature Language="VB.NET" Value="Custom Event Faulted As EventHandler Implements System.ServiceModel.ICommunicationObject" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Faulted</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.Open">
       <MemberSignature Language="C#" Value="void ICommunicationObject.Open ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Open() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Open" />
+      <MemberSignature Language="VB.NET" Value="Sub Open () Implements ICommunicationObject.Open" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1215,7 +1421,11 @@
       <MemberSignature Language="C#" Value="void ICommunicationObject.Open (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Open(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Open(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Sub Open (timeout As TimeSpan) Implements ICommunicationObject.Open" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open(System.TimeSpan)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1246,25 +1456,61 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="System.ServiceModel.ICommunicationObject.BeginOpen">
+    <Member MemberName="System.ServiceModel.ICommunicationObject.Opened">
+      <MemberSignature Language="C#" Value="event EventHandler System.ServiceModel.ICommunicationObject.Opened;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ServiceModel.ICommunicationObject.Opened" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Opened" />
+      <MemberSignature Language="VB.NET" Value="Custom Event Opened As EventHandler Implements System.ServiceModel.ICommunicationObject" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Opened</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
       <Docs>
-        <summary>Begins an asynchronous operation to open the <see cref="T:System.ServiceModel.ClientBase`1" /> object.</summary>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="System.ServiceModel.ICommunicationObject.BeginClose">
+    </Member>
+    <Member MemberName="System.ServiceModel.ICommunicationObject.Opening">
+      <MemberSignature Language="C#" Value="event EventHandler System.ServiceModel.ICommunicationObject.Opening;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ServiceModel.ICommunicationObject.Opening" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Opening" />
+      <MemberSignature Language="VB.NET" Value="Custom Event Opening As EventHandler Implements System.ServiceModel.ICommunicationObject" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Opening</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
       <Docs>
-        <summary>Begins an asynchronous operation to close the <see cref="T:System.ServiceModel.ClientBase`1" />.</summary>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
-    </MemberGroup>
+    </Member>
   </Members>
 </Type>

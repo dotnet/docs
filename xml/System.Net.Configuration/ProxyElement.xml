@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ProxyElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProxyElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.ProxyElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProxyElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ProxyElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,7 @@
       <MemberSignature Language="C#" Value="public ProxyElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ProxyElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -66,6 +69,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.ProxyElement.AutoDetectValues AutoDetect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Configuration.ProxyElement/AutoDetectValues AutoDetect" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.AutoDetect" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoDetect As ProxyElement.AutoDetectValues" />
+      <MemberSignature Language="F#" Value="member this.AutoDetect : System.Net.Configuration.ProxyElement.AutoDetectValues with get, set" Usage="System.Net.Configuration.ProxyElement.AutoDetect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +96,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.ProxyElement.BypassOnLocalValues BypassOnLocal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Configuration.ProxyElement/BypassOnLocalValues BypassOnLocal" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.BypassOnLocal" />
+      <MemberSignature Language="VB.NET" Value="Public Property BypassOnLocal As ProxyElement.BypassOnLocalValues" />
+      <MemberSignature Language="F#" Value="member this.BypassOnLocal : System.Net.Configuration.ProxyElement.BypassOnLocalValues with get, set" Usage="System.Net.Configuration.ProxyElement.BypassOnLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +132,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.ProxyElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +152,8 @@
       <MemberSignature Language="C#" Value="public Uri ProxyAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ProxyAddress" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.ProxyAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProxyAddress As Uri" />
+      <MemberSignature Language="F#" Value="member this.ProxyAddress : Uri with get, set" Usage="System.Net.Configuration.ProxyElement.ProxyAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -167,6 +178,8 @@
       <MemberSignature Language="C#" Value="public Uri ScriptLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ScriptLocation" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.ScriptLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScriptLocation As Uri" />
+      <MemberSignature Language="F#" Value="member this.ScriptLocation : Uri with get, set" Usage="System.Net.Configuration.ProxyElement.ScriptLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -191,6 +204,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.ProxyElement.UseSystemDefaultValues UseSystemDefault { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Configuration.ProxyElement/UseSystemDefaultValues UseSystemDefault" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.UseSystemDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseSystemDefault As ProxyElement.UseSystemDefaultValues" />
+      <MemberSignature Language="F#" Value="member this.UseSystemDefault : System.Net.Configuration.ProxyElement.UseSystemDefaultValues with get, set" Usage="System.Net.Configuration.ProxyElement.UseSystemDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

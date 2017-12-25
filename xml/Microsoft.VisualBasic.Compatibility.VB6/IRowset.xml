@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IRowset" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRowset" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowset" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRowset" />
+  <TypeSignature Language="F#" Value="type IRowset = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public void AddRefRows (int cRows, int[] hRows, out int[] refCounts, out int[] rowStatus);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void AddRefRows([in]int32 cRows, [in]int32[] hRows, [out] int32[]&amp; refCounts, [out] int32[]&amp; rowStatus) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowset.AddRefRows(System.Int32,System.Int32[],System.Int32[]@,System.Int32[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRefRows (cRows As Integer, hRows As Integer(), ByRef refCounts As Integer(), ByRef rowStatus As Integer())" />
+      <MemberSignature Language="F#" Value="abstract member AddRefRows : int * int[] *  *  -&gt; unit" Usage="iRowset.AddRefRows (cRows, hRows, refCounts, rowStatus)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public void GetData (int hRow, int hAccessor, IntPtr pData);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetData([in]int32 hRow, [in]int32 hAccessor, [in]native int pData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowset.GetData(System.Int32,System.Int32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetData (hRow As Integer, hAccessor As Integer, pData As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member GetData : int * int * nativeint -&gt; unit" Usage="iRowset.GetData (hRow, hAccessor, pData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -100,6 +106,8 @@
       <MemberSignature Language="C#" Value="public void GetNextRows (int hChapter, int lRowsOffset, int cRows, out int cRowsObtained, out int[] hRows);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetNextRows([in]int32 hChapter, [in]int32 lRowsOffset, [in]int32 cRows, [out] int32&amp; cRowsObtained, [out] int32[]&amp; hRows) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowset.GetNextRows(System.Int32,System.Int32,System.Int32,System.Int32@,System.Int32[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetNextRows (hChapter As Integer, lRowsOffset As Integer, cRows As Integer, ByRef cRowsObtained As Integer, ByRef hRows As Integer())" />
+      <MemberSignature Language="F#" Value="abstract member GetNextRows : int * int * int *  *  -&gt; unit" Usage="iRowset.GetNextRows (hChapter, lRowsOffset, cRows, cRowsObtained, hRows)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -136,6 +144,8 @@
       <MemberSignature Language="C#" Value="public int ReleaseRows (int cRows, int[] hRows, IntPtr rowOptions, IntPtr rowRefCounts, IntPtr rgRowStatus);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 ReleaseRows([in]int32 cRows, [in]int32[] hRows, [in]native int rowOptions, [in]native int rowRefCounts, [in]native int rgRowStatus) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowset.ReleaseRows(System.Int32,System.Int32[],System.IntPtr,System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReleaseRows (cRows As Integer, hRows As Integer(), rowOptions As IntPtr, rowRefCounts As IntPtr, rgRowStatus As IntPtr) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseRows : int * int[] * nativeint * nativeint * nativeint -&gt; int" Usage="iRowset.ReleaseRows (cRows, hRows, rowOptions, rowRefCounts, rgRowStatus)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -173,6 +183,8 @@
       <MemberSignature Language="C#" Value="public int RestartPosition (int hChapter);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 RestartPosition([in]int32 hChapter) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowset.RestartPosition(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RestartPosition (hChapter As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member RestartPosition : int -&gt; int" Usage="iRowset.RestartPosition hChapter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

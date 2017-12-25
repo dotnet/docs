@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class NamespaceDeclaration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NamespaceDeclaration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.NamespaceDeclaration" />
+  <TypeSignature Language="VB.NET" Value="Public Class NamespaceDeclaration" />
+  <TypeSignature Language="F#" Value="type NamespaceDeclaration = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public NamespaceDeclaration (string ns, string prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string ns, string prefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.NamespaceDeclaration.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ns As String, prefix As String)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.NamespaceDeclaration : string * string -&gt; System.Xaml.NamespaceDeclaration" Usage="new System.Xaml.NamespaceDeclaration (ns, prefix)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.NamespaceDeclaration.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string" Usage="System.Xaml.NamespaceDeclaration.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -94,6 +100,8 @@
       <MemberSignature Language="C#" Value="public string Prefix { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Prefix" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.NamespaceDeclaration.Prefix" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Prefix As String" />
+      <MemberSignature Language="F#" Value="member this.Prefix : string" Usage="System.Xaml.NamespaceDeclaration.Prefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

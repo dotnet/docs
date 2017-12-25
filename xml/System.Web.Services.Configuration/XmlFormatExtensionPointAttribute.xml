@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class XmlFormatExtensionPointAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlFormatExtensionPointAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.XmlFormatExtensionPointAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlFormatExtensionPointAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type XmlFormatExtensionPointAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="public XmlFormatExtensionPointAttribute (string memberName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string memberName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionPointAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (memberName As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.XmlFormatExtensionPointAttribute : string -&gt; System.Web.Services.Configuration.XmlFormatExtensionPointAttribute" Usage="new System.Web.Services.Configuration.XmlFormatExtensionPointAttribute memberName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public bool AllowElements { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowElements" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.XmlFormatExtensionPointAttribute.AllowElements" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowElements As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowElements : bool with get, set" Usage="System.Web.Services.Configuration.XmlFormatExtensionPointAttribute.AllowElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public string MemberName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MemberName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.XmlFormatExtensionPointAttribute.MemberName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MemberName As String" />
+      <MemberSignature Language="F#" Value="member this.MemberName : string with get, set" Usage="System.Web.Services.Configuration.XmlFormatExtensionPointAttribute.MemberName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class TemplateField : System.Web.UI.WebControls.DataControlField" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateField extends System.Web.UI.WebControls.DataControlField" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TemplateField" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplateField&#xA;Inherits DataControlField" />
+  <TypeSignature Language="F#" Value="type TemplateField = class&#xA;    inherit DataControlField" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +80,7 @@
       <MemberSignature Language="C#" Value="public TemplateField ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplateField.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +120,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate AlternatingItemTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate AlternatingItemTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AlternatingItemTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.AlternatingItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -176,6 +181,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ConvertEmptyStringToNull { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ConvertEmptyStringToNull" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateField.ConvertEmptyStringToNull" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ConvertEmptyStringToNull As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ConvertEmptyStringToNull : bool with get, set" Usage="System.Web.UI.WebControls.TemplateField.ConvertEmptyStringToNull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -212,6 +219,8 @@
       <MemberSignature Language="C#" Value="protected override void CopyProperties (System.Web.UI.WebControls.DataControlField newField);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CopyProperties(class System.Web.UI.WebControls.DataControlField newField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplateField.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CopyProperties (newField As DataControlField)" />
+      <MemberSignature Language="F#" Value="override this.CopyProperties : System.Web.UI.WebControls.DataControlField -&gt; unit" Usage="templateField.CopyProperties newField" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -246,6 +255,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.DataControlField CreateField ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.DataControlField CreateField() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplateField.CreateField" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateField () As DataControlField" />
+      <MemberSignature Language="F#" Value="override this.CreateField : unit -&gt; System.Web.UI.WebControls.DataControlField" Usage="templateField.CreateField " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -278,6 +289,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate EditItemTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate EditItemTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateField.EditItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EditItemTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.EditItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.TemplateField.EditItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -334,6 +347,8 @@
       <MemberSignature Language="C#" Value="public override void ExtractValuesFromCell (System.Collections.Specialized.IOrderedDictionary dictionary, System.Web.UI.WebControls.DataControlFieldCell cell, System.Web.UI.WebControls.DataControlRowState rowState, bool includeReadOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExtractValuesFromCell(class System.Collections.Specialized.IOrderedDictionary dictionary, class System.Web.UI.WebControls.DataControlFieldCell cell, valuetype System.Web.UI.WebControls.DataControlRowState rowState, bool includeReadOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplateField.ExtractValuesFromCell(System.Collections.Specialized.IOrderedDictionary,System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlRowState,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ExtractValuesFromCell (dictionary As IOrderedDictionary, cell As DataControlFieldCell, rowState As DataControlRowState, includeReadOnly As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.ExtractValuesFromCell : System.Collections.Specialized.IOrderedDictionary * System.Web.UI.WebControls.DataControlFieldCell * System.Web.UI.WebControls.DataControlRowState * bool -&gt; unit" Usage="templateField.ExtractValuesFromCell (dictionary, cell, rowState, includeReadOnly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -370,6 +385,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate FooterTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate FooterTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateField.FooterTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FooterTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.FooterTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.TemplateField.FooterTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -426,6 +443,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate HeaderTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate HeaderTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateField.HeaderTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HeaderTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.TemplateField.HeaderTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -482,6 +501,8 @@
       <MemberSignature Language="C#" Value="public override void InitializeCell (System.Web.UI.WebControls.DataControlFieldCell cell, System.Web.UI.WebControls.DataControlCellType cellType, System.Web.UI.WebControls.DataControlRowState rowState, int rowIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeCell(class System.Web.UI.WebControls.DataControlFieldCell cell, valuetype System.Web.UI.WebControls.DataControlCellType cellType, valuetype System.Web.UI.WebControls.DataControlRowState rowState, int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplateField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub InitializeCell (cell As DataControlFieldCell, cellType As DataControlCellType, rowState As DataControlRowState, rowIndex As Integer)" />
+      <MemberSignature Language="F#" Value="override this.InitializeCell : System.Web.UI.WebControls.DataControlFieldCell * System.Web.UI.WebControls.DataControlCellType * System.Web.UI.WebControls.DataControlRowState * int -&gt; unit" Usage="templateField.InitializeCell (cell, cellType, rowState, rowIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -519,6 +540,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate InsertItemTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate InsertItemTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateField.InsertItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property InsertItemTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.InsertItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.TemplateField.InsertItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -578,6 +601,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate ItemTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate ItemTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateField.ItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ItemTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.TemplateField.ItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -637,6 +662,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ValidateRequestMode ValidateRequestMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.ValidateRequestMode ValidateRequestMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateField.ValidateRequestMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidateRequestMode As ValidateRequestMode" />
+      <MemberSignature Language="F#" Value="member this.ValidateRequestMode : System.Web.UI.ValidateRequestMode with get, set" Usage="System.Web.UI.WebControls.TemplateField.ValidateRequestMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -661,6 +688,8 @@
       <MemberSignature Language="C#" Value="public override void ValidateSupportsCallback ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ValidateSupportsCallback() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplateField.ValidateSupportsCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ValidateSupportsCallback ()" />
+      <MemberSignature Language="F#" Value="override this.ValidateSupportsCallback : unit -&gt; unit" Usage="templateField.ValidateSupportsCallback " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

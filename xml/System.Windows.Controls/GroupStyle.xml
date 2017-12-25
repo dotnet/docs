@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class GroupStyle : System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi GroupStyle extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GroupStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Class GroupStyle&#xA;Implements INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type GroupStyle = class&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,7 @@
       <MemberSignature Language="C#" Value="public GroupStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupStyle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -58,6 +61,8 @@
       <MemberSignature Language="C#" Value="public int AlternationCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AlternationCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.AlternationCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlternationCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.AlternationCount : int with get, set" Usage="System.Windows.Controls.GroupStyle.AlternationCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -117,6 +122,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Style ContainerStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style ContainerStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.ContainerStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainerStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.ContainerStyle : System.Windows.Style with get, set" Usage="System.Windows.Controls.GroupStyle.ContainerStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -163,6 +170,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.StyleSelector ContainerStyleSelector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.StyleSelector ContainerStyleSelector" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.ContainerStyleSelector" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainerStyleSelector As StyleSelector" />
+      <MemberSignature Language="F#" Value="member this.ContainerStyleSelector : System.Windows.Controls.StyleSelector with get, set" Usage="System.Windows.Controls.GroupStyle.ContainerStyleSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -188,6 +197,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.GroupStyle Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Controls.GroupStyle Default" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As GroupStyle" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Windows.Controls.GroupStyle" Usage="System.Windows.Controls.GroupStyle.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -223,6 +234,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Controls.ItemsPanelTemplate DefaultGroupPanel;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Controls.ItemsPanelTemplate DefaultGroupPanel" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GroupStyle.DefaultGroupPanel" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultGroupPanel As ItemsPanelTemplate " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultGroupPanel : System.Windows.Controls.ItemsPanelTemplate" Usage="System.Windows.Controls.GroupStyle.DefaultGroupPanel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -247,6 +260,8 @@
       <MemberSignature Language="C#" Value="public string HeaderStringFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HeaderStringFormat" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.HeaderStringFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderStringFormat As String" />
+      <MemberSignature Language="F#" Value="member this.HeaderStringFormat : string with get, set" Usage="System.Windows.Controls.GroupStyle.HeaderStringFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -289,6 +304,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.DataTemplate HeaderTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate HeaderTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.HeaderTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplate As DataTemplate" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplate : System.Windows.DataTemplate with get, set" Usage="System.Windows.Controls.GroupStyle.HeaderTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -337,6 +354,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.DataTemplateSelector HeaderTemplateSelector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataTemplateSelector HeaderTemplateSelector" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.HeaderTemplateSelector" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplateSelector As DataTemplateSelector" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplateSelector : System.Windows.Controls.DataTemplateSelector with get, set" Usage="System.Windows.Controls.GroupStyle.HeaderTemplateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -361,6 +380,8 @@
       <MemberSignature Language="C#" Value="public bool HidesIfEmpty { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HidesIfEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.HidesIfEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public Property HidesIfEmpty As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HidesIfEmpty : bool with get, set" Usage="System.Windows.Controls.GroupStyle.HidesIfEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -385,6 +406,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (System.ComponentModel.PropertyChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(class System.ComponentModel.PropertyChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupStyle.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (e As PropertyChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="groupStyle.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -406,6 +429,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.ItemsPanelTemplate Panel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ItemsPanelTemplate Panel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.Panel" />
+      <MemberSignature Language="VB.NET" Value="Public Property Panel As ItemsPanelTemplate" />
+      <MemberSignature Language="F#" Value="member this.Panel : System.Windows.Controls.ItemsPanelTemplate with get, set" Usage="System.Windows.Controls.GroupStyle.Panel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -424,7 +449,12 @@
       <MemberSignature Language="C#" Value="protected virtual event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.GroupStyle.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -436,6 +466,27 @@
         <summary>Occurs when a property value changes.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.INotifyPropertyChanged.PropertyChanged">
+      <MemberSignature Language="C#" Value="event System.ComponentModel.PropertyChangedEventHandler System.ComponentModel.INotifyPropertyChanged.PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Controls.GroupStyle.System#ComponentModel#INotifyPropertyChanged#PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Custom Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

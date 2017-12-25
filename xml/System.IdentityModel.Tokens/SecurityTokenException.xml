@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class SecurityTokenException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SecurityTokenException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityTokenException" />
+  <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenException&#xA;Inherits SystemException" />
+  <TypeSignature Language="F#" Value="type SecurityTokenException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SecurityTokenException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -34,6 +46,8 @@
       <MemberSignature Language="C#" Value="public SecurityTokenException (string msg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityTokenException : string -&gt; System.IdentityModel.Tokens.SecurityTokenException" Usage="new System.IdentityModel.Tokens.SecurityTokenException msg" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -52,6 +66,8 @@
       <MemberSignature Language="C#" Value="protected SecurityTokenException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityTokenException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.Tokens.SecurityTokenException" Usage="new System.IdentityModel.Tokens.SecurityTokenException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -72,6 +88,8 @@
       <MemberSignature Language="C#" Value="public SecurityTokenException (string msg, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string msg, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String, inner As Exception)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityTokenException : string * Exception -&gt; System.IdentityModel.Tokens.SecurityTokenException" Usage="new System.IdentityModel.Tokens.SecurityTokenException (msg, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -88,14 +106,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

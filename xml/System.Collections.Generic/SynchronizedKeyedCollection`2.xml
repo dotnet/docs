@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class SynchronizedKeyedCollection&lt;K,T&gt; : System.Collections.Generic.SynchronizedCollection&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SynchronizedKeyedCollection`2&lt;K, T&gt; extends System.Collections.Generic.SynchronizedCollection`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.SynchronizedKeyedCollection`2" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SynchronizedKeyedCollection(Of K, T)&#xA;Inherits SynchronizedCollection(Of T)" />
+  <TypeSignature Language="F#" Value="type SynchronizedKeyedCollection&lt;'K, 'T&gt; = class&#xA;    inherit SynchronizedCollection&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,10 +39,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedKeyedCollection`2" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected SynchronizedKeyedCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +70,8 @@
       <MemberSignature Language="C#" Value="protected SynchronizedKeyedCollection (object syncRoot);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object syncRoot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (syncRoot As Object)" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedKeyedCollection&lt;'K, 'T&gt; : obj -&gt; System.Collections.Generic.SynchronizedKeyedCollection&lt;'K, 'T&gt;" Usage="new System.Collections.Generic.SynchronizedKeyedCollection&lt;'K, 'T&gt; syncRoot" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -85,6 +100,8 @@
       <MemberSignature Language="C#" Value="protected SynchronizedKeyedCollection (object syncRoot, System.Collections.Generic.IEqualityComparer&lt;K&gt; comparer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object syncRoot, class System.Collections.Generic.IEqualityComparer`1&lt;!K&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.#ctor(System.Object,System.Collections.Generic.IEqualityComparer{`0})" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (syncRoot As Object, comparer As IEqualityComparer(Of K))" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedKeyedCollection&lt;'K, 'T&gt; : obj * System.Collections.Generic.IEqualityComparer&lt;'K&gt; -&gt; System.Collections.Generic.SynchronizedKeyedCollection&lt;'K, 'T&gt;" Usage="new System.Collections.Generic.SynchronizedKeyedCollection&lt;'K, 'T&gt; (syncRoot, comparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,6 +132,8 @@
       <MemberSignature Language="C#" Value="protected SynchronizedKeyedCollection (object syncRoot, System.Collections.Generic.IEqualityComparer&lt;K&gt; comparer, int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object syncRoot, class System.Collections.Generic.IEqualityComparer`1&lt;!K&gt; comparer, int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.#ctor(System.Object,System.Collections.Generic.IEqualityComparer{`0},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (syncRoot As Object, comparer As IEqualityComparer(Of K), capacity As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedKeyedCollection&lt;'K, 'T&gt; : obj * System.Collections.Generic.IEqualityComparer&lt;'K&gt; * int -&gt; System.Collections.Generic.SynchronizedKeyedCollection&lt;'K, 'T&gt;" Usage="new System.Collections.Generic.SynchronizedKeyedCollection&lt;'K, 'T&gt; (syncRoot, comparer, capacity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -149,6 +168,8 @@
       <MemberSignature Language="C#" Value="protected void ChangeItemKey (T item, K newKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ChangeItemKey(!T item, !K newKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.ChangeItemKey(`1,`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ChangeItemKey (item As T, newKey As K)" />
+      <MemberSignature Language="F#" Value="member this.ChangeItemKey : 'T * 'K -&gt; unit" Usage="synchronizedKeyedCollection.ChangeItemKey (item, newKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -173,6 +194,8 @@
       <MemberSignature Language="C#" Value="protected override void ClearItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.ClearItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="synchronizedKeyedCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -192,6 +215,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (K key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(!K key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.Contains(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (key As K) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Contains : 'K -&gt; bool" Usage="synchronizedKeyedCollection.Contains key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -216,6 +241,8 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Generic.IDictionary&lt;K,T&gt; Dictionary { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;!K, !T&gt; Dictionary" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SynchronizedKeyedCollection`2.Dictionary" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Dictionary As IDictionary(Of K, T)" />
+      <MemberSignature Language="F#" Value="member this.Dictionary : System.Collections.Generic.IDictionary&lt;'K, 'T&gt;" Usage="System.Collections.Generic.SynchronizedKeyedCollection&lt;'K, 'T&gt;.Dictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -235,6 +262,8 @@
       <MemberSignature Language="C#" Value="protected abstract K GetKeyForItem (T item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance !K GetKeyForItem(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.GetKeyForItem(`1)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetKeyForItem (item As T) As K" />
+      <MemberSignature Language="F#" Value="abstract member GetKeyForItem : 'T -&gt; 'K" Usage="synchronizedKeyedCollection.GetKeyForItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -258,6 +287,8 @@
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, T item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.InsertItem(System.Int32,`1)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As T)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * 'T -&gt; unit" Usage="synchronizedKeyedCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -282,6 +313,8 @@
       <MemberSignature Language="C#" Value="public T this[K key] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Item(!K)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SynchronizedKeyedCollection`2.Item(`0)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As K) As T" />
+      <MemberSignature Language="F#" Value="member this.Item('K) : 'T" Usage="System.Collections.Generic.SynchronizedKeyedCollection&lt;'K, 'T&gt;.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -305,6 +338,8 @@
       <MemberSignature Language="C#" Value="public bool Remove (K key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(!K key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.Remove(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (key As K) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Remove : 'K -&gt; bool" Usage="synchronizedKeyedCollection.Remove key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -329,6 +364,8 @@
       <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.RemoveItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="synchronizedKeyedCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -351,6 +388,8 @@
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, T item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, !T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.SetItem(System.Int32,`1)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As T)" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * 'T -&gt; unit" Usage="synchronizedKeyedCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -371,15 +410,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedKeyedCollection`2" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

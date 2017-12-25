@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class SecurityTokenRequirement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityTokenRequirement extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.SecurityTokenRequirement" />
+  <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenRequirement" />
+  <TypeSignature Language="F#" Value="type SecurityTokenRequirement = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,7 @@
       <MemberSignature Language="C#" Value="public SecurityTokenRequirement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenRequirement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -60,6 +63,8 @@
       <MemberSignature Language="C#" Value="public TValue GetProperty&lt;TValue&gt; (string property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TValue GetProperty&lt;TValue&gt;(string property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenRequirement.GetProperty``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty(Of TValue) (property As String) As TValue" />
+      <MemberSignature Language="F#" Value="member this.GetProperty : string -&gt; 'Value" Usage="securityTokenRequirement.GetProperty property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -95,6 +100,8 @@
       <MemberSignature Language="C#" Value="public static string IsOptionalTokenProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string IsOptionalTokenProperty" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.IsOptionalTokenProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsOptionalTokenProperty As String" />
+      <MemberSignature Language="F#" Value="member this.IsOptionalTokenProperty : string" Usage="System.IdentityModel.Selectors.SecurityTokenRequirement.IsOptionalTokenProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -113,6 +120,8 @@
       <MemberSignature Language="C#" Value="public int KeySize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySize" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeySize As Integer" />
+      <MemberSignature Language="F#" Value="member this.KeySize : int with get, set" Usage="System.IdentityModel.Selectors.SecurityTokenRequirement.KeySize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -140,6 +149,8 @@
       <MemberSignature Language="C#" Value="public static string KeySizeProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string KeySizeProperty" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySizeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KeySizeProperty As String" />
+      <MemberSignature Language="F#" Value="member this.KeySizeProperty : string" Usage="System.IdentityModel.Selectors.SecurityTokenRequirement.KeySizeProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -166,6 +177,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityKeyType KeyType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IdentityModel.Tokens.SecurityKeyType KeyType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyType As SecurityKeyType" />
+      <MemberSignature Language="F#" Value="member this.KeyType : System.IdentityModel.Tokens.SecurityKeyType with get, set" Usage="System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -193,6 +206,8 @@
       <MemberSignature Language="C#" Value="public static string KeyTypeProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string KeyTypeProperty" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyTypeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KeyTypeProperty As String" />
+      <MemberSignature Language="F#" Value="member this.KeyTypeProperty : string" Usage="System.IdentityModel.Selectors.SecurityTokenRequirement.KeyTypeProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -220,6 +235,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityKeyUsage KeyUsage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IdentityModel.Tokens.SecurityKeyUsage KeyUsage" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsage" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyUsage As SecurityKeyUsage" />
+      <MemberSignature Language="F#" Value="member this.KeyUsage : System.IdentityModel.Tokens.SecurityKeyUsage with get, set" Usage="System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -247,6 +264,8 @@
       <MemberSignature Language="C#" Value="public static string KeyUsageProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string KeyUsageProperty" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsageProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KeyUsageProperty As String" />
+      <MemberSignature Language="F#" Value="member this.KeyUsageProperty : string" Usage="System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsageProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -274,6 +293,8 @@
       <MemberSignature Language="C#" Value="public static string PeerAuthenticationMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PeerAuthenticationMode" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.PeerAuthenticationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PeerAuthenticationMode As String" />
+      <MemberSignature Language="F#" Value="member this.PeerAuthenticationMode : string" Usage="System.IdentityModel.Selectors.SecurityTokenRequirement.PeerAuthenticationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -299,6 +320,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Properties" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -324,6 +347,8 @@
       <MemberSignature Language="C#" Value="public bool RequireCryptographicToken { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequireCryptographicToken" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequireCryptographicToken As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequireCryptographicToken : bool with get, set" Usage="System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -352,6 +377,8 @@
       <MemberSignature Language="C#" Value="public static string RequireCryptographicTokenProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string RequireCryptographicTokenProperty" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicTokenProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RequireCryptographicTokenProperty As String" />
+      <MemberSignature Language="F#" Value="member this.RequireCryptographicTokenProperty : string" Usage="System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicTokenProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -370,6 +397,8 @@
       <MemberSignature Language="C#" Value="public string TokenType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TokenType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenType" />
+      <MemberSignature Language="VB.NET" Value="Public Property TokenType As String" />
+      <MemberSignature Language="F#" Value="member this.TokenType : string with get, set" Usage="System.IdentityModel.Selectors.SecurityTokenRequirement.TokenType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -399,6 +428,8 @@
       <MemberSignature Language="C#" Value="public static string TokenTypeProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TokenTypeProperty" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenTypeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TokenTypeProperty As String" />
+      <MemberSignature Language="F#" Value="member this.TokenTypeProperty : string" Usage="System.IdentityModel.Selectors.SecurityTokenRequirement.TokenTypeProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -425,6 +456,8 @@
       <MemberSignature Language="C#" Value="public bool TryGetProperty&lt;TValue&gt; (string property, out TValue value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetProperty&lt;TValue&gt;(string property, [out] !!TValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenRequirement.TryGetProperty``1(System.String,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetProperty(Of TValue) (property As String, ByRef value As TValue) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetProperty : string *  -&gt; bool" Usage="securityTokenRequirement.TryGetProperty (property, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

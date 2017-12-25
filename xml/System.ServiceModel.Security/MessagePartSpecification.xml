@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class MessagePartSpecification" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessagePartSpecification extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.MessagePartSpecification" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessagePartSpecification" />
+  <TypeSignature Language="F#" Value="type MessagePartSpecification = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,10 +25,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.ServiceModel.Security.MessagePartSpecification" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MessagePartSpecification ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +56,8 @@
       <MemberSignature Language="C#" Value="public MessagePartSpecification (bool isBodyIncluded);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isBodyIncluded) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isBodyIncluded As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.MessagePartSpecification : bool -&gt; System.ServiceModel.Security.MessagePartSpecification" Usage="new System.ServiceModel.Security.MessagePartSpecification isBodyIncluded" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -62,6 +77,8 @@
       <MemberSignature Language="C#" Value="public MessagePartSpecification (params System.Xml.XmlQualifiedName[] headerTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlQualifiedName[] headerTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.#ctor(System.Xml.XmlQualifiedName[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray headerTypes As XmlQualifiedName())" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.MessagePartSpecification : System.Xml.XmlQualifiedName[] -&gt; System.ServiceModel.Security.MessagePartSpecification" Usage="new System.ServiceModel.Security.MessagePartSpecification headerTypes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -94,6 +111,8 @@
       <MemberSignature Language="C#" Value="public MessagePartSpecification (bool isBodyIncluded, params System.Xml.XmlQualifiedName[] headerTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isBodyIncluded, class System.Xml.XmlQualifiedName[] headerTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.#ctor(System.Boolean,System.Xml.XmlQualifiedName[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isBodyIncluded As Boolean, ParamArray headerTypes As XmlQualifiedName())" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.MessagePartSpecification : bool * System.Xml.XmlQualifiedName[] -&gt; System.ServiceModel.Security.MessagePartSpecification" Usage="new System.ServiceModel.Security.MessagePartSpecification (isBodyIncluded, headerTypes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,6 +147,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="messagePartSpecification.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -148,6 +169,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Xml.XmlQualifiedName&gt; HeaderTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Xml.XmlQualifiedName&gt; HeaderTypes" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.MessagePartSpecification.HeaderTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderTypes As ICollection(Of XmlQualifiedName)" />
+      <MemberSignature Language="F#" Value="member this.HeaderTypes : System.Collections.Generic.ICollection&lt;System.Xml.XmlQualifiedName&gt;" Usage="System.ServiceModel.Security.MessagePartSpecification.HeaderTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +190,8 @@
       <MemberSignature Language="C#" Value="public bool IsBodyIncluded { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBodyIncluded" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.MessagePartSpecification.IsBodyIncluded" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsBodyIncluded As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBodyIncluded : bool with get, set" Usage="System.ServiceModel.Security.MessagePartSpecification.IsBodyIncluded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -188,6 +213,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.MessagePartSpecification.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.ServiceModel.Security.MessagePartSpecification.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -215,6 +242,8 @@
       <MemberSignature Language="C#" Value="public void MakeReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MakeReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.MakeReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MakeReadOnly ()" />
+      <MemberSignature Language="F#" Value="member this.MakeReadOnly : unit -&gt; unit" Usage="messagePartSpecification.MakeReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -241,6 +270,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.MessagePartSpecification NoParts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.MessagePartSpecification NoParts" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.MessagePartSpecification.NoParts" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NoParts As MessagePartSpecification" />
+      <MemberSignature Language="F#" Value="member this.NoParts : System.ServiceModel.Security.MessagePartSpecification" Usage="System.ServiceModel.Security.MessagePartSpecification.NoParts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -267,6 +298,8 @@
       <MemberSignature Language="C#" Value="public void Union (System.ServiceModel.Security.MessagePartSpecification other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Union(class System.ServiceModel.Security.MessagePartSpecification other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.Union(System.ServiceModel.Security.MessagePartSpecification)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Union (other As MessagePartSpecification)" />
+      <MemberSignature Language="F#" Value="member this.Union : System.ServiceModel.Security.MessagePartSpecification -&gt; unit" Usage="messagePartSpecification.Union other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -295,15 +328,5 @@
           <paramref name="other" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new <see cref="T:System.ServiceModel.Security.MessagePartSpecification" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

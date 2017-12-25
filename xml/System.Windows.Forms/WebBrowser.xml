@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class WebBrowser : System.Windows.Forms.WebBrowserBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebBrowser extends System.Windows.Forms.WebBrowserBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowser" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebBrowser&#xA;Inherits WebBrowserBase" />
+  <TypeSignature Language="F#" Value="type WebBrowser = class&#xA;    inherit WebBrowserBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +95,7 @@
       <MemberSignature Language="C#" Value="public WebBrowser ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -125,6 +128,8 @@
       <MemberSignature Language="C#" Value="public bool AllowNavigation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowNavigation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.AllowNavigation" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowNavigation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowNavigation : bool with get, set" Usage="System.Windows.Forms.WebBrowser.AllowNavigation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -157,6 +162,8 @@
       <MemberSignature Language="C#" Value="public bool AllowWebBrowserDrop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowWebBrowserDrop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.AllowWebBrowserDrop" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowWebBrowserDrop As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowWebBrowserDrop : bool with get, set" Usage="System.Windows.Forms.WebBrowser.AllowWebBrowserDrop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -206,6 +213,8 @@
       <MemberSignature Language="C#" Value="protected override void AttachInterfaces (object nativeActiveXObject);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AttachInterfaces(object nativeActiveXObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.AttachInterfaces(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AttachInterfaces (nativeActiveXObject As Object)" />
+      <MemberSignature Language="F#" Value="override this.AttachInterfaces : obj -&gt; unit" Usage="webBrowser.AttachInterfaces nativeActiveXObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -231,6 +240,8 @@
       <MemberSignature Language="C#" Value="public bool CanGoBack { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanGoBack" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.CanGoBack" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanGoBack As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanGoBack : bool" Usage="System.Windows.Forms.WebBrowser.CanGoBack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -281,6 +292,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler CanGoBackChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CanGoBackChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowser.CanGoBackChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CanGoBackChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CanGoBackChanged : EventHandler " Usage="member this.CanGoBackChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -328,6 +341,8 @@
       <MemberSignature Language="C#" Value="public bool CanGoForward { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanGoForward" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.CanGoForward" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanGoForward As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanGoForward : bool" Usage="System.Windows.Forms.WebBrowser.CanGoForward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -380,6 +395,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler CanGoForwardChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CanGoForwardChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowser.CanGoForwardChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CanGoForwardChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CanGoForwardChanged : EventHandler " Usage="member this.CanGoForwardChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -427,6 +444,8 @@
       <MemberSignature Language="C#" Value="protected override void CreateSink ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CreateSink() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.CreateSink" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateSink ()" />
+      <MemberSignature Language="F#" Value="override this.CreateSink : unit -&gt; unit" Usage="webBrowser.CreateSink " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -462,6 +481,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.WebBrowserSiteBase CreateWebBrowserSiteBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.WebBrowserSiteBase CreateWebBrowserSiteBase() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.CreateWebBrowserSiteBase" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateWebBrowserSiteBase () As WebBrowserSiteBase" />
+      <MemberSignature Language="F#" Value="override this.CreateWebBrowserSiteBase : unit -&gt; System.Windows.Forms.WebBrowserSiteBase" Usage="webBrowser.CreateWebBrowserSiteBase " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -495,6 +516,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.WebBrowser.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -513,6 +536,8 @@
       <MemberSignature Language="C#" Value="protected override void DetachInterfaces ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DetachInterfaces() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.DetachInterfaces" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DetachInterfaces ()" />
+      <MemberSignature Language="F#" Value="override this.DetachInterfaces : unit -&gt; unit" Usage="webBrowser.DetachInterfaces " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -535,6 +560,8 @@
       <MemberSignature Language="C#" Value="protected override void DetachSink ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DetachSink() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.DetachSink" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DetachSink ()" />
+      <MemberSignature Language="F#" Value="override this.DetachSink : unit -&gt; unit" Usage="webBrowser.DetachSink " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -572,6 +599,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="webBrowser.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -594,6 +623,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlDocument Document { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HtmlDocument Document" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.Document" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Document As HtmlDocument" />
+      <MemberSignature Language="F#" Value="member this.Document : System.Windows.Forms.HtmlDocument" Usage="System.Windows.Forms.WebBrowser.Document" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -649,6 +680,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.WebBrowserDocumentCompletedEventHandler DocumentCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.WebBrowserDocumentCompletedEventHandler DocumentCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowser.DocumentCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event DocumentCompleted As WebBrowserDocumentCompletedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DocumentCompleted : System.Windows.Forms.WebBrowserDocumentCompletedEventHandler " Usage="member this.DocumentCompleted : System.Windows.Forms.WebBrowserDocumentCompletedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -716,6 +749,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream DocumentStream { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream DocumentStream" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.DocumentStream" />
+      <MemberSignature Language="VB.NET" Value="Public Property DocumentStream As Stream" />
+      <MemberSignature Language="F#" Value="member this.DocumentStream : System.IO.Stream with get, set" Usage="System.Windows.Forms.WebBrowser.DocumentStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -760,6 +795,8 @@
       <MemberSignature Language="C#" Value="public string DocumentText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DocumentText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.DocumentText" />
+      <MemberSignature Language="VB.NET" Value="Public Property DocumentText As String" />
+      <MemberSignature Language="F#" Value="member this.DocumentText : string with get, set" Usage="System.Windows.Forms.WebBrowser.DocumentText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -812,6 +849,8 @@
       <MemberSignature Language="C#" Value="public string DocumentTitle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DocumentTitle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.DocumentTitle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentTitle As String" />
+      <MemberSignature Language="F#" Value="member this.DocumentTitle : string" Usage="System.Windows.Forms.WebBrowser.DocumentTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -862,6 +901,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DocumentTitleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DocumentTitleChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowser.DocumentTitleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event DocumentTitleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DocumentTitleChanged : EventHandler " Usage="member this.DocumentTitleChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -908,6 +949,8 @@
       <MemberSignature Language="C#" Value="public string DocumentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DocumentType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.DocumentType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentType As String" />
+      <MemberSignature Language="F#" Value="member this.DocumentType : string" Usage="System.Windows.Forms.WebBrowser.DocumentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -944,6 +987,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.WebBrowserEncryptionLevel EncryptionLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.WebBrowserEncryptionLevel EncryptionLevel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.EncryptionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncryptionLevel As WebBrowserEncryptionLevel" />
+      <MemberSignature Language="F#" Value="member this.EncryptionLevel : System.Windows.Forms.WebBrowserEncryptionLevel" Usage="System.Windows.Forms.WebBrowser.EncryptionLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -982,6 +1027,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler EncryptionLevelChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler EncryptionLevelChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowser.EncryptionLevelChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event EncryptionLevelChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.EncryptionLevelChanged : EventHandler " Usage="member this.EncryptionLevelChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1027,6 +1074,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler FileDownload;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FileDownload" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowser.FileDownload" />
+      <MemberSignature Language="VB.NET" Value="Public Event FileDownload As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.FileDownload : EventHandler " Usage="member this.FileDownload : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1064,6 +1113,8 @@
       <MemberSignature Language="C#" Value="public override bool Focused { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Focused" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.Focused" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Focused As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Focused : bool" Usage="System.Windows.Forms.WebBrowser.Focused" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1087,6 +1138,8 @@
       <MemberSignature Language="C#" Value="public bool GoBack ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GoBack() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.GoBack" />
+      <MemberSignature Language="VB.NET" Value="Public Function GoBack () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.GoBack : unit -&gt; bool" Usage="webBrowser.GoBack " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1135,6 +1188,8 @@
       <MemberSignature Language="C#" Value="public bool GoForward ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GoForward() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.GoForward" />
+      <MemberSignature Language="VB.NET" Value="Public Function GoForward () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.GoForward : unit -&gt; bool" Usage="webBrowser.GoForward " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1183,6 +1238,8 @@
       <MemberSignature Language="C#" Value="public void GoHome ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GoHome() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.GoHome" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GoHome ()" />
+      <MemberSignature Language="F#" Value="member this.GoHome : unit -&gt; unit" Usage="webBrowser.GoHome " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1227,6 +1284,8 @@
       <MemberSignature Language="C#" Value="public void GoSearch ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GoSearch() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.GoSearch" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GoSearch ()" />
+      <MemberSignature Language="F#" Value="member this.GoSearch : unit -&gt; unit" Usage="webBrowser.GoSearch " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1275,6 +1334,8 @@
       <MemberSignature Language="C#" Value="public bool IsBusy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBusy" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.IsBusy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBusy As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBusy : bool" Usage="System.Windows.Forms.WebBrowser.IsBusy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1314,6 +1375,8 @@
       <MemberSignature Language="C#" Value="public bool IsOffline { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOffline" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.IsOffline" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOffline As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsOffline : bool" Usage="System.Windows.Forms.WebBrowser.IsOffline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1351,6 +1414,8 @@
       <MemberSignature Language="C#" Value="public bool IsWebBrowserContextMenuEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsWebBrowserContextMenuEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.IsWebBrowserContextMenuEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsWebBrowserContextMenuEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsWebBrowserContextMenuEnabled : bool with get, set" Usage="System.Windows.Forms.WebBrowser.IsWebBrowserContextMenuEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1391,10 +1456,21 @@
         <altmember cref="P:System.Windows.Forms.WebBrowser.WebBrowserShortcutsEnabled" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Navigate">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the document at the specified location into the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Navigate">
       <MemberSignature Language="C#" Value="public void Navigate (string urlString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Navigate(string urlString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.Navigate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Navigate (urlString As String)" />
+      <MemberSignature Language="F#" Value="member this.Navigate : string -&gt; unit" Usage="webBrowser.Navigate urlString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1433,6 +1509,8 @@
       <MemberSignature Language="C#" Value="public void Navigate (Uri url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Navigate(class System.Uri url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.Navigate(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Navigate (url As Uri)" />
+      <MemberSignature Language="F#" Value="member this.Navigate : Uri -&gt; unit" Usage="webBrowser.Navigate url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1483,6 +1561,8 @@
       <MemberSignature Language="C#" Value="public void Navigate (string urlString, bool newWindow);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Navigate(string urlString, bool newWindow) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.Navigate(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Navigate (urlString As String, newWindow As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Navigate : string * bool -&gt; unit" Usage="webBrowser.Navigate (urlString, newWindow)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1523,6 +1603,8 @@
       <MemberSignature Language="C#" Value="public void Navigate (string urlString, string targetFrameName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Navigate(string urlString, string targetFrameName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.Navigate(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Navigate (urlString As String, targetFrameName As String)" />
+      <MemberSignature Language="F#" Value="member this.Navigate : string * string -&gt; unit" Usage="webBrowser.Navigate (urlString, targetFrameName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1563,6 +1645,8 @@
       <MemberSignature Language="C#" Value="public void Navigate (Uri url, bool newWindow);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Navigate(class System.Uri url, bool newWindow) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.Navigate(System.Uri,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Navigate (url As Uri, newWindow As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Navigate : Uri * bool -&gt; unit" Usage="webBrowser.Navigate (url, newWindow)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1604,6 +1688,8 @@
       <MemberSignature Language="C#" Value="public void Navigate (Uri url, string targetFrameName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Navigate(class System.Uri url, string targetFrameName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.Navigate(System.Uri,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Navigate (url As Uri, targetFrameName As String)" />
+      <MemberSignature Language="F#" Value="member this.Navigate : Uri * string -&gt; unit" Usage="webBrowser.Navigate (url, targetFrameName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1645,6 +1731,8 @@
       <MemberSignature Language="C#" Value="public void Navigate (string urlString, string targetFrameName, byte[] postData, string additionalHeaders);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Navigate(string urlString, string targetFrameName, unsigned int8[] postData, string additionalHeaders) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.Navigate(System.String,System.String,System.Byte[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Navigate (urlString As String, targetFrameName As String, postData As Byte(), additionalHeaders As String)" />
+      <MemberSignature Language="F#" Value="member this.Navigate : string * string * byte[] * string -&gt; unit" Usage="webBrowser.Navigate (urlString, targetFrameName, postData, additionalHeaders)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1689,6 +1777,8 @@
       <MemberSignature Language="C#" Value="public void Navigate (Uri url, string targetFrameName, byte[] postData, string additionalHeaders);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Navigate(class System.Uri url, string targetFrameName, unsigned int8[] postData, string additionalHeaders) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.Navigate(System.Uri,System.String,System.Byte[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Navigate (url As Uri, targetFrameName As String, postData As Byte(), additionalHeaders As String)" />
+      <MemberSignature Language="F#" Value="member this.Navigate : Uri * string * byte[] * string -&gt; unit" Usage="webBrowser.Navigate (url, targetFrameName, postData, additionalHeaders)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1734,6 +1824,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.WebBrowserNavigatedEventHandler Navigated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.WebBrowserNavigatedEventHandler Navigated" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowser.Navigated" />
+      <MemberSignature Language="VB.NET" Value="Public Event Navigated As WebBrowserNavigatedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Navigated : System.Windows.Forms.WebBrowserNavigatedEventHandler " Usage="member this.Navigated : System.Windows.Forms.WebBrowserNavigatedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1804,6 +1896,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.WebBrowserNavigatingEventHandler Navigating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.WebBrowserNavigatingEventHandler Navigating" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowser.Navigating" />
+      <MemberSignature Language="VB.NET" Value="Public Event Navigating As WebBrowserNavigatingEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Navigating : System.Windows.Forms.WebBrowserNavigatingEventHandler " Usage="member this.Navigating : System.Windows.Forms.WebBrowserNavigatingEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1875,6 +1969,8 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CancelEventHandler NewWindow;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CancelEventHandler NewWindow" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowser.NewWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Event NewWindow As CancelEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NewWindow : System.ComponentModel.CancelEventHandler " Usage="member this.NewWindow : System.ComponentModel.CancelEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1918,6 +2014,8 @@
       <MemberSignature Language="C#" Value="public object ObjectForScripting { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ObjectForScripting" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.ObjectForScripting" />
+      <MemberSignature Language="VB.NET" Value="Public Property ObjectForScripting As Object" />
+      <MemberSignature Language="F#" Value="member this.ObjectForScripting : obj with get, set" Usage="System.Windows.Forms.WebBrowser.ObjectForScripting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1971,6 +2069,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCanGoBackChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCanGoBackChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.OnCanGoBackChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCanGoBackChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnCanGoBackChanged : EventArgs -&gt; unit&#xA;override this.OnCanGoBackChanged : EventArgs -&gt; unit" Usage="webBrowser.OnCanGoBackChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2007,6 +2107,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCanGoForwardChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCanGoForwardChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.OnCanGoForwardChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCanGoForwardChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnCanGoForwardChanged : EventArgs -&gt; unit&#xA;override this.OnCanGoForwardChanged : EventArgs -&gt; unit" Usage="webBrowser.OnCanGoForwardChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2043,6 +2145,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDocumentCompleted (System.Windows.Forms.WebBrowserDocumentCompletedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDocumentCompleted(class System.Windows.Forms.WebBrowserDocumentCompletedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.OnDocumentCompleted(System.Windows.Forms.WebBrowserDocumentCompletedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDocumentCompleted (e As WebBrowserDocumentCompletedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDocumentCompleted : System.Windows.Forms.WebBrowserDocumentCompletedEventArgs -&gt; unit&#xA;override this.OnDocumentCompleted : System.Windows.Forms.WebBrowserDocumentCompletedEventArgs -&gt; unit" Usage="webBrowser.OnDocumentCompleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2081,6 +2185,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDocumentTitleChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDocumentTitleChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.OnDocumentTitleChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDocumentTitleChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDocumentTitleChanged : EventArgs -&gt; unit&#xA;override this.OnDocumentTitleChanged : EventArgs -&gt; unit" Usage="webBrowser.OnDocumentTitleChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2117,6 +2223,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnEncryptionLevelChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEncryptionLevelChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.OnEncryptionLevelChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEncryptionLevelChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnEncryptionLevelChanged : EventArgs -&gt; unit&#xA;override this.OnEncryptionLevelChanged : EventArgs -&gt; unit" Usage="webBrowser.OnEncryptionLevelChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2153,6 +2261,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnFileDownload (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFileDownload(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.OnFileDownload(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFileDownload (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnFileDownload : EventArgs -&gt; unit&#xA;override this.OnFileDownload : EventArgs -&gt; unit" Usage="webBrowser.OnFileDownload e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2188,6 +2298,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnNavigated (System.Windows.Forms.WebBrowserNavigatedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNavigated(class System.Windows.Forms.WebBrowserNavigatedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.OnNavigated(System.Windows.Forms.WebBrowserNavigatedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNavigated (e As WebBrowserNavigatedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnNavigated : System.Windows.Forms.WebBrowserNavigatedEventArgs -&gt; unit&#xA;override this.OnNavigated : System.Windows.Forms.WebBrowserNavigatedEventArgs -&gt; unit" Usage="webBrowser.OnNavigated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2224,6 +2336,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnNavigating (System.Windows.Forms.WebBrowserNavigatingEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNavigating(class System.Windows.Forms.WebBrowserNavigatingEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.OnNavigating(System.Windows.Forms.WebBrowserNavigatingEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNavigating (e As WebBrowserNavigatingEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnNavigating : System.Windows.Forms.WebBrowserNavigatingEventArgs -&gt; unit&#xA;override this.OnNavigating : System.Windows.Forms.WebBrowserNavigatingEventArgs -&gt; unit" Usage="webBrowser.OnNavigating e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2260,6 +2374,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnNewWindow (System.ComponentModel.CancelEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNewWindow(class System.ComponentModel.CancelEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.OnNewWindow(System.ComponentModel.CancelEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNewWindow (e As CancelEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnNewWindow : System.ComponentModel.CancelEventArgs -&gt; unit&#xA;override this.OnNewWindow : System.ComponentModel.CancelEventArgs -&gt; unit" Usage="webBrowser.OnNewWindow e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2295,6 +2411,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnProgressChanged (System.Windows.Forms.WebBrowserProgressChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnProgressChanged(class System.Windows.Forms.WebBrowserProgressChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.OnProgressChanged(System.Windows.Forms.WebBrowserProgressChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnProgressChanged (e As WebBrowserProgressChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnProgressChanged : System.Windows.Forms.WebBrowserProgressChangedEventArgs -&gt; unit&#xA;override this.OnProgressChanged : System.Windows.Forms.WebBrowserProgressChangedEventArgs -&gt; unit" Usage="webBrowser.OnProgressChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2331,6 +2449,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnStatusTextChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnStatusTextChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.OnStatusTextChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStatusTextChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnStatusTextChanged : EventArgs -&gt; unit&#xA;override this.OnStatusTextChanged : EventArgs -&gt; unit" Usage="webBrowser.OnStatusTextChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2367,6 +2487,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Padding Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding Padding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.WebBrowser.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2399,6 +2521,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler PaddingChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaddingChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowser.PaddingChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2436,6 +2560,8 @@
       <MemberSignature Language="C#" Value="public void Print ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Print() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.Print" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Print ()" />
+      <MemberSignature Language="F#" Value="member this.Print : unit -&gt; unit" Usage="webBrowser.Print " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2475,6 +2601,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.WebBrowserProgressChangedEventHandler ProgressChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.WebBrowserProgressChangedEventHandler ProgressChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowser.ProgressChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ProgressChanged As WebBrowserProgressChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ProgressChanged : System.Windows.Forms.WebBrowserProgressChangedEventHandler " Usage="member this.ProgressChanged : System.Windows.Forms.WebBrowserProgressChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2514,6 +2642,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.WebBrowserReadyState ReadyState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.WebBrowserReadyState ReadyState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.ReadyState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReadyState As WebBrowserReadyState" />
+      <MemberSignature Language="F#" Value="member this.ReadyState : System.Windows.Forms.WebBrowserReadyState" Usage="System.Windows.Forms.WebBrowser.ReadyState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2550,10 +2680,21 @@
         <altmember cref="T:System.Windows.Forms.WebBrowserReadyState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Refresh">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reloads the document currently displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Refresh">
       <MemberSignature Language="C#" Value="public override void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Refresh ()" />
+      <MemberSignature Language="F#" Value="override this.Refresh : unit -&gt; unit" Usage="webBrowser.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2599,6 +2740,8 @@
       <MemberSignature Language="C#" Value="public void Refresh (System.Windows.Forms.WebBrowserRefreshOption opt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh(valuetype System.Windows.Forms.WebBrowserRefreshOption opt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.Refresh(System.Windows.Forms.WebBrowserRefreshOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh (opt As WebBrowserRefreshOption)" />
+      <MemberSignature Language="F#" Value="override this.Refresh : System.Windows.Forms.WebBrowserRefreshOption -&gt; unit" Usage="webBrowser.Refresh opt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2636,6 +2779,8 @@
       <MemberSignature Language="C#" Value="public bool ScriptErrorsSuppressed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ScriptErrorsSuppressed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.ScriptErrorsSuppressed" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScriptErrorsSuppressed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ScriptErrorsSuppressed : bool with get, set" Usage="System.Windows.Forms.WebBrowser.ScriptErrorsSuppressed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2681,6 +2826,8 @@
       <MemberSignature Language="C#" Value="public bool ScrollBarsEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ScrollBarsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.ScrollBarsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollBarsEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ScrollBarsEnabled : bool with get, set" Usage="System.Windows.Forms.WebBrowser.ScrollBarsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2713,6 +2860,8 @@
       <MemberSignature Language="C#" Value="public void ShowPageSetupDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowPageSetupDialog() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.ShowPageSetupDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowPageSetupDialog ()" />
+      <MemberSignature Language="F#" Value="member this.ShowPageSetupDialog : unit -&gt; unit" Usage="webBrowser.ShowPageSetupDialog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2751,6 +2900,8 @@
       <MemberSignature Language="C#" Value="public void ShowPrintDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowPrintDialog() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.ShowPrintDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowPrintDialog ()" />
+      <MemberSignature Language="F#" Value="member this.ShowPrintDialog : unit -&gt; unit" Usage="webBrowser.ShowPrintDialog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2789,6 +2940,8 @@
       <MemberSignature Language="C#" Value="public void ShowPrintPreviewDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowPrintPreviewDialog() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.ShowPrintPreviewDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowPrintPreviewDialog ()" />
+      <MemberSignature Language="F#" Value="member this.ShowPrintPreviewDialog : unit -&gt; unit" Usage="webBrowser.ShowPrintPreviewDialog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2829,6 +2982,8 @@
       <MemberSignature Language="C#" Value="public void ShowPropertiesDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowPropertiesDialog() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.ShowPropertiesDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowPropertiesDialog ()" />
+      <MemberSignature Language="F#" Value="member this.ShowPropertiesDialog : unit -&gt; unit" Usage="webBrowser.ShowPropertiesDialog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2864,6 +3019,8 @@
       <MemberSignature Language="C#" Value="public void ShowSaveAsDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowSaveAsDialog() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.ShowSaveAsDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowSaveAsDialog ()" />
+      <MemberSignature Language="F#" Value="member this.ShowSaveAsDialog : unit -&gt; unit" Usage="webBrowser.ShowSaveAsDialog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2904,6 +3061,8 @@
       <MemberSignature Language="C#" Value="public virtual string StatusText { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StatusText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.StatusText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property StatusText As String" />
+      <MemberSignature Language="F#" Value="member this.StatusText : string" Usage="System.Windows.Forms.WebBrowser.StatusText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2952,6 +3111,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler StatusTextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler StatusTextChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowser.StatusTextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event StatusTextChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.StatusTextChanged : EventHandler " Usage="member this.StatusTextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2998,6 +3159,8 @@
       <MemberSignature Language="C#" Value="public void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="webBrowser.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3040,6 +3203,8 @@
       <MemberSignature Language="C#" Value="public Uri Url { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Url" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As Uri" />
+      <MemberSignature Language="F#" Value="member this.Url : Uri with get, set" Usage="System.Windows.Forms.WebBrowser.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3098,6 +3263,8 @@
       <MemberSignature Language="C#" Value="public Version Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version Version" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Version" />
+      <MemberSignature Language="F#" Value="member this.Version : Version" Usage="System.Windows.Forms.WebBrowser.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3133,6 +3300,8 @@
       <MemberSignature Language="C#" Value="public bool WebBrowserShortcutsEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WebBrowserShortcutsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowser.WebBrowserShortcutsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property WebBrowserShortcutsEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WebBrowserShortcutsEnabled : bool with get, set" Usage="System.Windows.Forms.WebBrowser.WebBrowserShortcutsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3177,6 +3346,8 @@
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="webBrowser.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3195,23 +3366,5 @@
         <altmember cref="M:System.Windows.Forms.WebBrowserBase.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Navigate">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads the document at the specified location into the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Refresh">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reloads the document currently displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

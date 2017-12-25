@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class LabelStyle : System.Web.UI.DataVisualization.Charting.ChartElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LabelStyle extends System.Web.UI.DataVisualization.Charting.ChartElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LabelStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Class LabelStyle&#xA;Inherits ChartElement" />
+  <TypeSignature Language="F#" Value="type LabelStyle = class&#xA;    inherit ChartElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,7 @@
       <MemberSignature Language="C#" Value="public LabelStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.LabelStyle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -46,6 +49,8 @@
       <MemberSignature Language="C#" Value="public int Angle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Angle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LabelStyle.Angle" />
+      <MemberSignature Language="VB.NET" Value="Public Property Angle As Integer" />
+      <MemberSignature Language="F#" Value="member this.Angle : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.LabelStyle.Angle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -78,6 +83,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.LabelStyle.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="labelStyle.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -100,6 +107,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LabelStyle.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.LabelStyle.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -130,6 +139,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LabelStyle.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Web.UI.DataVisualization.Charting.LabelStyle.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -159,6 +170,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LabelStyle.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.LabelStyle.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -197,6 +210,8 @@
       <MemberSignature Language="C#" Value="public string Format { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Format" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LabelStyle.Format" />
+      <MemberSignature Language="VB.NET" Value="Public Property Format As String" />
+      <MemberSignature Language="F#" Value="member this.Format : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.LabelStyle.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -226,6 +241,8 @@
       <MemberSignature Language="C#" Value="public double Interval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Interval" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LabelStyle.Interval" />
+      <MemberSignature Language="VB.NET" Value="Public Property Interval As Double" />
+      <MemberSignature Language="F#" Value="member this.Interval : double with get, set" Usage="System.Web.UI.DataVisualization.Charting.LabelStyle.Interval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -265,6 +282,8 @@
       <MemberSignature Language="C#" Value="public double IntervalOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 IntervalOffset" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LabelStyle.IntervalOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntervalOffset As Double" />
+      <MemberSignature Language="F#" Value="member this.IntervalOffset : double with get, set" Usage="System.Web.UI.DataVisualization.Charting.LabelStyle.IntervalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -307,6 +326,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalOffsetType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalOffsetType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LabelStyle.IntervalOffsetType" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntervalOffsetType As DateTimeIntervalType" />
+      <MemberSignature Language="F#" Value="member this.IntervalOffsetType : System.Web.UI.DataVisualization.Charting.DateTimeIntervalType with get, set" Usage="System.Web.UI.DataVisualization.Charting.LabelStyle.IntervalOffsetType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -346,6 +367,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LabelStyle.IntervalType" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntervalType As DateTimeIntervalType" />
+      <MemberSignature Language="F#" Value="member this.IntervalType : System.Web.UI.DataVisualization.Charting.DateTimeIntervalType with get, set" Usage="System.Web.UI.DataVisualization.Charting.LabelStyle.IntervalType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -385,6 +408,8 @@
       <MemberSignature Language="C#" Value="public bool IsEndLabelVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEndLabelVisible" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LabelStyle.IsEndLabelVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsEndLabelVisible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEndLabelVisible : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.LabelStyle.IsEndLabelVisible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -415,6 +440,8 @@
       <MemberSignature Language="C#" Value="public bool IsStaggered { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsStaggered" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LabelStyle.IsStaggered" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsStaggered As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsStaggered : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.LabelStyle.IsStaggered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -448,6 +475,8 @@
       <MemberSignature Language="C#" Value="public bool TruncatedLabels { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TruncatedLabels" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LabelStyle.TruncatedLabels" />
+      <MemberSignature Language="VB.NET" Value="Public Property TruncatedLabels As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TruncatedLabels : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.LabelStyle.TruncatedLabels" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

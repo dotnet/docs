@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class PrintDriver : System.Printing.PrintFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PrintDriver extends System.Printing.PrintFilter" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintDriver" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintDriver&#xA;Inherits PrintFilter" />
+  <TypeSignature Language="F#" Value="type PrintDriver = class&#xA;    inherit PrintFilter" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public override sealed void Commit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Commit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintDriver.Commit" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Commit ()" />
+      <MemberSignature Language="F#" Value="override this.Commit : unit -&gt; unit" Usage="printDriver.Commit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="protected override sealed void InternalDispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InternalDispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintDriver.InternalDispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub InternalDispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.InternalDispose : bool -&gt; unit" Usage="printDriver.InternalDispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -74,6 +80,8 @@
       <MemberSignature Language="C#" Value="public override sealed void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintDriver.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Refresh ()" />
+      <MemberSignature Language="F#" Value="override this.Refresh : unit -&gt; unit" Usage="printDriver.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

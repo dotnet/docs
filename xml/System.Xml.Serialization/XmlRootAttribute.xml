@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class XmlRootAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlRootAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlRootAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlRootAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type XmlRootAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -62,10 +64,20 @@
     <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlRootAttribute" /> class and uses the class name as the name of the XML root element.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlRootAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlRootAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -107,6 +119,8 @@
       <MemberSignature Language="C#" Value="public XmlRootAttribute (string elementName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string elementName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlRootAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlRootAttribute : string -&gt; System.Xml.Serialization.XmlRootAttribute" Usage="new System.Xml.Serialization.XmlRootAttribute elementName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -150,6 +164,8 @@
       <MemberSignature Language="C#" Value="public string DataType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlRootAttribute.DataType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataType As String" />
+      <MemberSignature Language="F#" Value="member this.DataType : string with get, set" Usage="System.Xml.Serialization.XmlRootAttribute.DataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -248,6 +264,8 @@
       <MemberSignature Language="C#" Value="public string ElementName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlRootAttribute.ElementName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ElementName As String" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string with get, set" Usage="System.Xml.Serialization.XmlRootAttribute.ElementName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -295,6 +313,8 @@
       <MemberSignature Language="C#" Value="public bool IsNullable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlRootAttribute.IsNullable" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsNullable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNullable : bool with get, set" Usage="System.Xml.Serialization.XmlRootAttribute.IsNullable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -359,6 +379,8 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlRootAttribute.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Xml.Serialization.XmlRootAttribute.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -407,14 +429,5 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
         <altmember cref="P:System.Xml.Serialization.XmlAttributes.XmlRoot" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlRootAttribute" /> class and uses the class name as the name of the XML root element.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

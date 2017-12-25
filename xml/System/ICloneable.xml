@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.ICloneable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICloneable" />
+  <TypeSignature Language="F#" Value="type ICloneable = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ICloneable.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj" Usage="iCloneable.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

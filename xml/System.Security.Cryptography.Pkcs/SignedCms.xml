@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SignedCms" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SignedCms extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.SignedCms" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SignedCms" />
+  <TypeSignature Language="F#" Value="type SignedCms = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +29,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SignedCms ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -63,6 +75,8 @@
       <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.ContentInfo content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Pkcs.ContentInfo content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.ContentInfo -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms content" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (content As ContentInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -91,6 +105,8 @@
       <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (signerIdentifierType As SubjectIdentifierType)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.SubjectIdentifierType -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms signerIdentifierType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -119,6 +135,8 @@
       <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.ContentInfo content, bool detached);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Pkcs.ContentInfo content, bool detached) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.ContentInfo * bool -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (content, detached)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (content As ContentInfo, detached As Boolean)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -149,6 +167,8 @@
       <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, System.Security.Cryptography.Pkcs.ContentInfo content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, class System.Security.Cryptography.Pkcs.ContentInfo content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.Pkcs.ContentInfo -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (signerIdentifierType, content)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (signerIdentifierType As SubjectIdentifierType, content As ContentInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -179,6 +199,8 @@
       <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, System.Security.Cryptography.Pkcs.ContentInfo content, bool detached);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, class System.Security.Cryptography.Pkcs.ContentInfo content, bool detached) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.Pkcs.ContentInfo * bool -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (signerIdentifierType, content, detached)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (signerIdentifierType As SubjectIdentifierType, content As ContentInfo, detached As Boolean)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -209,6 +231,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignedCms.Certificates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificates As X509Certificate2Collection" />
+      <MemberSignature Language="F#" Value="member this.Certificates : System.Security.Cryptography.X509Certificates.X509Certificate2Collection" Usage="System.Security.Cryptography.Pkcs.SignedCms.Certificates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -231,6 +255,8 @@
       <MemberSignature Language="C#" Value="public void CheckHash ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckHash() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.CheckHash" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CheckHash ()" />
+      <MemberSignature Language="F#" Value="member this.CheckHash : unit -&gt; unit" Usage="signedCms.CheckHash " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -256,10 +282,21 @@
         <altmember cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CheckSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies the digital signatures on the signed CMS/PKCS #7 message.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CheckSignature">
       <MemberSignature Language="C#" Value="public void CheckSignature (bool verifySignatureOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckSignature(bool verifySignatureOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CheckSignature (verifySignatureOnly As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.CheckSignature : bool -&gt; unit" Usage="signedCms.CheckSignature verifySignatureOnly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -308,6 +345,8 @@
       <MemberSignature Language="C#" Value="public void CheckSignature (System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraStore, bool verifySignatureOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckSignature(class System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraStore, bool verifySignatureOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature(System.Security.Cryptography.X509Certificates.X509Certificate2Collection,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CheckSignature (extraStore As X509Certificate2Collection, verifySignatureOnly As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.CheckSignature : System.Security.Cryptography.X509Certificates.X509Certificate2Collection * bool -&gt; unit" Usage="signedCms.CheckSignature (extraStore, verifySignatureOnly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -354,10 +393,21 @@
         <exception cref="T:System.InvalidOperationException">A method call was invalid for the object's current state.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ComputeSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a signature, and adds the signature to the CMS/PKCS #7 message.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ComputeSignature">
       <MemberSignature Language="C#" Value="public void ComputeSignature ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ComputeSignature() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.ComputeSignature" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ComputeSignature ()" />
+      <MemberSignature Language="F#" Value="member this.ComputeSignature : unit -&gt; unit" Usage="signedCms.ComputeSignature " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -419,6 +469,8 @@
       <MemberSignature Language="C#" Value="public void ComputeSignature (System.Security.Cryptography.Pkcs.CmsSigner signer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ComputeSignature(class System.Security.Cryptography.Pkcs.CmsSigner signer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.ComputeSignature(System.Security.Cryptography.Pkcs.CmsSigner)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ComputeSignature (signer As CmsSigner)" />
+      <MemberSignature Language="F#" Value="member this.ComputeSignature : System.Security.Cryptography.Pkcs.CmsSigner -&gt; unit" Usage="signedCms.ComputeSignature signer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -468,6 +520,8 @@
       <MemberSignature Language="C#" Value="public void ComputeSignature (System.Security.Cryptography.Pkcs.CmsSigner signer, bool silent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ComputeSignature(class System.Security.Cryptography.Pkcs.CmsSigner signer, bool silent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.ComputeSignature(System.Security.Cryptography.Pkcs.CmsSigner,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ComputeSignature (signer As CmsSigner, silent As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ComputeSignature : System.Security.Cryptography.Pkcs.CmsSigner * bool -&gt; unit" Usage="signedCms.ComputeSignature (signer, silent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -512,6 +566,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.ContentInfo ContentInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.ContentInfo ContentInfo" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignedCms.ContentInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentInfo As ContentInfo" />
+      <MemberSignature Language="F#" Value="member this.ContentInfo : System.Security.Cryptography.Pkcs.ContentInfo" Usage="System.Security.Cryptography.Pkcs.SignedCms.ContentInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -534,6 +590,8 @@
       <MemberSignature Language="C#" Value="public void Decode (byte[] encodedMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decode(unsigned int8[] encodedMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.Decode(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Decode (encodedMessage As Byte())" />
+      <MemberSignature Language="F#" Value="member this.Decode : byte[] -&gt; unit" Usage="signedCms.Decode encodedMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -578,6 +636,8 @@
       <MemberSignature Language="C#" Value="public bool Detached { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Detached" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignedCms.Detached" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Detached As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Detached : bool" Usage="System.Security.Cryptography.Pkcs.SignedCms.Detached" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -600,6 +660,8 @@
       <MemberSignature Language="C#" Value="public byte[] Encode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Encode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.Encode" />
+      <MemberSignature Language="VB.NET" Value="Public Function Encode () As Byte()" />
+      <MemberSignature Language="F#" Value="member this.Encode : unit -&gt; byte[]" Usage="signedCms.Encode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -618,10 +680,21 @@
         <altmember cref="M:System.Security.Cryptography.Pkcs.SignedCms.Decode(System.Byte[])" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified signature from the <see cref="P:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveSignature">
       <MemberSignature Language="C#" Value="public void RemoveSignature (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveSignature(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.RemoveSignature(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveSignature (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveSignature : int -&gt; unit" Usage="signedCms.RemoveSignature index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -655,6 +728,7 @@
       <MemberSignature Language="C#" Value="public void RemoveSignature (System.Security.Cryptography.Pkcs.SignerInfo signerInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveSignature(class System.Security.Cryptography.Pkcs.SignerInfo signerInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.RemoveSignature(System.Security.Cryptography.Pkcs.SignerInfo)" />
+      <MemberSignature Language="F#" Value="member this.RemoveSignature : System.Security.Cryptography.Pkcs.SignerInfo -&gt; unit" Usage="signedCms.RemoveSignature signerInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -679,6 +753,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.SignerInfoCollection SignerInfos { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.SignerInfoCollection SignerInfos" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignerInfos As SignerInfoCollection" />
+      <MemberSignature Language="F#" Value="member this.SignerInfos : System.Security.Cryptography.Pkcs.SignerInfoCollection" Usage="System.Security.Cryptography.Pkcs.SignedCms.SignerInfos" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -701,6 +777,8 @@
       <MemberSignature Language="C#" Value="public int Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Version" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignedCms.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Integer" />
+      <MemberSignature Language="F#" Value="member this.Version : int" Usage="System.Security.Cryptography.Pkcs.SignedCms.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -726,41 +804,5 @@
         <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ComputeSignature">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a signature, and adds the signature to the CMS/PKCS #7 message.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveSignature">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the specified signature from the <see cref="P:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos" /> collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CheckSignature">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Verifies the digital signatures on the signed CMS/PKCS #7 message.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

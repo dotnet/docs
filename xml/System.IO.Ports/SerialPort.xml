@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class SerialPort : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SerialPort extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.SerialPort" />
+  <TypeSignature Language="VB.NET" Value="Public Class SerialPort&#xA;Inherits Component" />
+  <TypeSignature Language="F#" Value="type SerialPort = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,10 +53,20 @@
     <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Ports.SerialPort" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SerialPort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +102,8 @@
       <MemberSignature Language="C#" Value="public SerialPort (System.ComponentModel.IContainer container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IContainer container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.#ctor(System.ComponentModel.IContainer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (container As IContainer)" />
+      <MemberSignature Language="F#" Value="new System.IO.Ports.SerialPort : System.ComponentModel.IContainer -&gt; System.IO.Ports.SerialPort" Usage="new System.IO.Ports.SerialPort container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -120,6 +134,8 @@
       <MemberSignature Language="C#" Value="public SerialPort (string portName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string portName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (portName As String)" />
+      <MemberSignature Language="F#" Value="new System.IO.Ports.SerialPort : string -&gt; System.IO.Ports.SerialPort" Usage="new System.IO.Ports.SerialPort portName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -150,6 +166,8 @@
       <MemberSignature Language="C#" Value="public SerialPort (string portName, int baudRate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string portName, int32 baudRate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (portName As String, baudRate As Integer)" />
+      <MemberSignature Language="F#" Value="new System.IO.Ports.SerialPort : string * int -&gt; System.IO.Ports.SerialPort" Usage="new System.IO.Ports.SerialPort (portName, baudRate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -182,6 +200,7 @@
       <MemberSignature Language="C#" Value="public SerialPort (string portName, int baudRate, System.IO.Ports.Parity parity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string portName, int32 baudRate, valuetype System.IO.Ports.Parity parity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.#ctor(System.String,System.Int32,System.IO.Ports.Parity)" />
+      <MemberSignature Language="F#" Value="new System.IO.Ports.SerialPort : string * int * System.IO.Ports.Parity -&gt; System.IO.Ports.SerialPort" Usage="new System.IO.Ports.SerialPort (portName, baudRate, parity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -216,6 +235,7 @@
       <MemberSignature Language="C#" Value="public SerialPort (string portName, int baudRate, System.IO.Ports.Parity parity, int dataBits);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string portName, int32 baudRate, valuetype System.IO.Ports.Parity parity, int32 dataBits) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.#ctor(System.String,System.Int32,System.IO.Ports.Parity,System.Int32)" />
+      <MemberSignature Language="F#" Value="new System.IO.Ports.SerialPort : string * int * System.IO.Ports.Parity * int -&gt; System.IO.Ports.SerialPort" Usage="new System.IO.Ports.SerialPort (portName, baudRate, parity, dataBits)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -252,6 +272,7 @@
       <MemberSignature Language="C#" Value="public SerialPort (string portName, int baudRate, System.IO.Ports.Parity parity, int dataBits, System.IO.Ports.StopBits stopBits);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string portName, int32 baudRate, valuetype System.IO.Ports.Parity parity, int32 dataBits, valuetype System.IO.Ports.StopBits stopBits) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.#ctor(System.String,System.Int32,System.IO.Ports.Parity,System.Int32,System.IO.Ports.StopBits)" />
+      <MemberSignature Language="F#" Value="new System.IO.Ports.SerialPort : string * int * System.IO.Ports.Parity * int * System.IO.Ports.StopBits -&gt; System.IO.Ports.SerialPort" Usage="new System.IO.Ports.SerialPort (portName, baudRate, parity, dataBits, stopBits)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -290,6 +311,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream BaseStream { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream BaseStream" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.BaseStream" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseStream As Stream" />
+      <MemberSignature Language="F#" Value="member this.BaseStream : System.IO.Stream" Usage="System.IO.Ports.SerialPort.BaseStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -337,6 +360,8 @@
       <MemberSignature Language="C#" Value="public int BaudRate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BaudRate" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.BaudRate" />
+      <MemberSignature Language="VB.NET" Value="Public Property BaudRate As Integer" />
+      <MemberSignature Language="F#" Value="member this.BaudRate : int with get, set" Usage="System.IO.Ports.SerialPort.BaudRate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -398,6 +423,8 @@
       <MemberSignature Language="C#" Value="public bool BreakState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BreakState" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.BreakState" />
+      <MemberSignature Language="VB.NET" Value="Public Property BreakState As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BreakState : bool with get, set" Usage="System.IO.Ports.SerialPort.BreakState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -442,6 +469,8 @@
       <MemberSignature Language="C#" Value="public int BytesToRead { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BytesToRead" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.BytesToRead" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BytesToRead As Integer" />
+      <MemberSignature Language="F#" Value="member this.BytesToRead : int" Usage="System.IO.Ports.SerialPort.BytesToRead" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -482,6 +511,8 @@
       <MemberSignature Language="C#" Value="public int BytesToWrite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BytesToWrite" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.BytesToWrite" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BytesToWrite As Integer" />
+      <MemberSignature Language="F#" Value="member this.BytesToWrite : int" Usage="System.IO.Ports.SerialPort.BytesToWrite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -521,6 +552,8 @@
       <MemberSignature Language="C#" Value="public bool CDHolding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CDHolding" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.CDHolding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CDHolding As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CDHolding : bool" Usage="System.IO.Ports.SerialPort.CDHolding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -565,6 +598,8 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="serialPort.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -610,6 +645,8 @@
       <MemberSignature Language="C#" Value="public bool CtsHolding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CtsHolding" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.CtsHolding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CtsHolding As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CtsHolding : bool" Usage="System.IO.Ports.SerialPort.CtsHolding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -654,6 +691,8 @@
       <MemberSignature Language="C#" Value="public int DataBits { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DataBits" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.DataBits" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataBits As Integer" />
+      <MemberSignature Language="F#" Value="member this.DataBits : int with get, set" Usage="System.IO.Ports.SerialPort.DataBits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -709,6 +748,8 @@
       <MemberSignature Language="C#" Value="public event System.IO.Ports.SerialDataReceivedEventHandler DataReceived;" />
       <MemberSignature Language="ILAsm" Value=".event class System.IO.Ports.SerialDataReceivedEventHandler DataReceived" />
       <MemberSignature Language="DocId" Value="E:System.IO.Ports.SerialPort.DataReceived" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DataReceived As SerialDataReceivedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DataReceived : System.IO.Ports.SerialDataReceivedEventHandler " Usage="member this.DataReceived : System.IO.Ports.SerialDataReceivedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -761,6 +802,8 @@
       <MemberSignature Language="C#" Value="public void DiscardInBuffer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DiscardInBuffer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.DiscardInBuffer" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DiscardInBuffer ()" />
+      <MemberSignature Language="F#" Value="member this.DiscardInBuffer : unit -&gt; unit" Usage="serialPort.DiscardInBuffer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -796,6 +839,8 @@
       <MemberSignature Language="C#" Value="public bool DiscardNull { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DiscardNull" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.DiscardNull" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiscardNull As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DiscardNull : bool with get, set" Usage="System.IO.Ports.SerialPort.DiscardNull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -846,6 +891,8 @@
       <MemberSignature Language="C#" Value="public void DiscardOutBuffer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DiscardOutBuffer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.DiscardOutBuffer" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DiscardOutBuffer ()" />
+      <MemberSignature Language="F#" Value="member this.DiscardOutBuffer : unit -&gt; unit" Usage="serialPort.DiscardOutBuffer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -881,6 +928,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="serialPort.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -929,6 +978,8 @@
       <MemberSignature Language="C#" Value="public bool DsrHolding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DsrHolding" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.DsrHolding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DsrHolding As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DsrHolding : bool" Usage="System.IO.Ports.SerialPort.DsrHolding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -973,6 +1024,8 @@
       <MemberSignature Language="C#" Value="public bool DtrEnable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DtrEnable" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.DtrEnable" />
+      <MemberSignature Language="VB.NET" Value="Public Property DtrEnable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DtrEnable : bool with get, set" Usage="System.IO.Ports.SerialPort.DtrEnable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1019,6 +1072,8 @@
       <MemberSignature Language="C#" Value="public System.Text.Encoding Encoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding Encoding" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Encoding As Encoding" />
+      <MemberSignature Language="F#" Value="member this.Encoding : System.Text.Encoding with get, set" Usage="System.IO.Ports.SerialPort.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1054,6 +1109,8 @@
       <MemberSignature Language="C#" Value="public event System.IO.Ports.SerialErrorReceivedEventHandler ErrorReceived;" />
       <MemberSignature Language="ILAsm" Value=".event class System.IO.Ports.SerialErrorReceivedEventHandler ErrorReceived" />
       <MemberSignature Language="DocId" Value="E:System.IO.Ports.SerialPort.ErrorReceived" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ErrorReceived As SerialErrorReceivedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ErrorReceived : System.IO.Ports.SerialErrorReceivedEventHandler " Usage="member this.ErrorReceived : System.IO.Ports.SerialErrorReceivedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1095,6 +1152,8 @@
       <MemberSignature Language="C#" Value="public static string[] GetPortNames ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetPortNames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.GetPortNames" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPortNames () As String()" />
+      <MemberSignature Language="F#" Value="static member GetPortNames : unit -&gt; string[]" Usage="System.IO.Ports.SerialPort.GetPortNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1139,6 +1198,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Ports.Handshake Handshake { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Ports.Handshake Handshake" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.Handshake" />
+      <MemberSignature Language="VB.NET" Value="Public Property Handshake As Handshake" />
+      <MemberSignature Language="F#" Value="member this.Handshake : System.IO.Ports.Handshake with get, set" Usage="System.IO.Ports.SerialPort.Handshake" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1196,6 +1257,8 @@
       <MemberSignature Language="C#" Value="public const int InfiniteTimeout = -1;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 InfiniteTimeout = (-1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialPort.InfiniteTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Const InfiniteTimeout As Integer  = -1" />
+      <MemberSignature Language="F#" Value="val mutable InfiniteTimeout : int" Usage="System.IO.Ports.SerialPort.InfiniteTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1225,6 +1288,8 @@
       <MemberSignature Language="C#" Value="public bool IsOpen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOpen" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.IsOpen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOpen As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsOpen : bool" Usage="System.IO.Ports.SerialPort.IsOpen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1262,6 +1327,8 @@
       <MemberSignature Language="C#" Value="public string NewLine { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NewLine" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.NewLine" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewLine As String" />
+      <MemberSignature Language="F#" Value="member this.NewLine : string with get, set" Usage="System.IO.Ports.SerialPort.NewLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1304,6 +1371,8 @@
       <MemberSignature Language="C#" Value="public void Open ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Open() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Open" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
+      <MemberSignature Language="F#" Value="member this.Open : unit -&gt; unit" Usage="serialPort.Open " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1362,6 +1431,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Ports.Parity Parity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Ports.Parity Parity" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.Parity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parity As Parity" />
+      <MemberSignature Language="F#" Value="member this.Parity : System.IO.Ports.Parity with get, set" Usage="System.IO.Ports.SerialPort.Parity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1419,6 +1490,8 @@
       <MemberSignature Language="C#" Value="public byte ParityReplace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 ParityReplace" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.ParityReplace" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParityReplace As Byte" />
+      <MemberSignature Language="F#" Value="member this.ParityReplace : byte with get, set" Usage="System.IO.Ports.SerialPort.ParityReplace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1467,6 +1540,8 @@
       <MemberSignature Language="C#" Value="public event System.IO.Ports.SerialPinChangedEventHandler PinChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.IO.Ports.SerialPinChangedEventHandler PinChanged" />
       <MemberSignature Language="DocId" Value="E:System.IO.Ports.SerialPort.PinChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PinChanged As SerialPinChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PinChanged : System.IO.Ports.SerialPinChangedEventHandler " Usage="member this.PinChanged : System.IO.Ports.SerialPinChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1508,6 +1583,8 @@
       <MemberSignature Language="C#" Value="public string PortName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PortName" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.PortName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PortName As String" />
+      <MemberSignature Language="F#" Value="member this.PortName : string with get, set" Usage="System.IO.Ports.SerialPort.PortName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1564,10 +1641,21 @@
         <exception cref="T:System.InvalidOperationException">The specified port is open.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads from the <see cref="T:System.IO.Ports.SerialPort" /> input buffer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public int Read (byte[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Read(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Read(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Read (buffer As Byte(), offset As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Read : byte[] * int * int -&gt; int" Usage="serialPort.Read (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1615,6 +1703,8 @@
       <MemberSignature Language="C#" Value="public int Read (char[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Read(char[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Read(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Read (buffer As Char(), offset As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Read : char[] * int * int -&gt; int" Usage="serialPort.Read (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1668,6 +1758,8 @@
       <MemberSignature Language="C#" Value="public int ReadBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ReadBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.ReadBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReadBufferSize : int with get, set" Usage="System.IO.Ports.SerialPort.ReadBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1713,6 +1805,8 @@
       <MemberSignature Language="C#" Value="public int ReadByte ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReadByte() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.ReadByte" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadByte () As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReadByte : unit -&gt; int" Usage="serialPort.ReadByte " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1754,6 +1848,8 @@
       <MemberSignature Language="C#" Value="public int ReadChar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReadChar() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.ReadChar" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadChar () As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReadChar : unit -&gt; int" Usage="serialPort.ReadChar " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1795,6 +1891,8 @@
       <MemberSignature Language="C#" Value="public string ReadExisting ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ReadExisting() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.ReadExisting" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadExisting () As String" />
+      <MemberSignature Language="F#" Value="member this.ReadExisting : unit -&gt; string" Usage="serialPort.ReadExisting " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1831,6 +1929,8 @@
       <MemberSignature Language="C#" Value="public string ReadLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ReadLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.ReadLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadLine () As String" />
+      <MemberSignature Language="F#" Value="member this.ReadLine : unit -&gt; string" Usage="serialPort.ReadLine " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1883,6 +1983,8 @@
       <MemberSignature Language="C#" Value="public int ReadTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ReadTimeout" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.ReadTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadTimeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReadTimeout : int with get, set" Usage="System.IO.Ports.SerialPort.ReadTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1943,6 +2045,8 @@
       <MemberSignature Language="C#" Value="public string ReadTo (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ReadTo(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.ReadTo(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadTo (value As String) As String" />
+      <MemberSignature Language="F#" Value="member this.ReadTo : string -&gt; string" Usage="serialPort.ReadTo value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1985,6 +2089,8 @@
       <MemberSignature Language="C#" Value="public int ReceivedBytesThreshold { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ReceivedBytesThreshold" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.ReceivedBytesThreshold" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceivedBytesThreshold As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReceivedBytesThreshold : int with get, set" Usage="System.IO.Ports.SerialPort.ReceivedBytesThreshold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2029,6 +2135,8 @@
       <MemberSignature Language="C#" Value="public bool RtsEnable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RtsEnable" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.RtsEnable" />
+      <MemberSignature Language="VB.NET" Value="Public Property RtsEnable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RtsEnable : bool with get, set" Usage="System.IO.Ports.SerialPort.RtsEnable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2076,6 +2184,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Ports.StopBits StopBits { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Ports.StopBits StopBits" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.StopBits" />
+      <MemberSignature Language="VB.NET" Value="Public Property StopBits As StopBits" />
+      <MemberSignature Language="F#" Value="member this.StopBits : System.IO.Ports.StopBits with get, set" Usage="System.IO.Ports.SerialPort.StopBits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2135,10 +2245,21 @@
  An attempt to set the state of the underlying port failed. For example, the parameters passed from this <see cref="T:System.IO.Ports.SerialPort" /> object were invalid.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to the serial port output buffer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public void Write (string str);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (str As String)" />
+      <MemberSignature Language="F#" Value="member this.Write : string -&gt; unit" Usage="serialPort.Write str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2179,6 +2300,8 @@
       <MemberSignature Language="C#" Value="public void Write (byte[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Write(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (buffer As Byte(), offset As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Write : byte[] * int * int -&gt; unit" Usage="serialPort.Write (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2225,6 +2348,8 @@
       <MemberSignature Language="C#" Value="public void Write (char[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(char[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Write(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (buffer As Char(), offset As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Write : char[] * int * int -&gt; unit" Usage="serialPort.Write (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2271,6 +2396,8 @@
       <MemberSignature Language="C#" Value="public int WriteBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 WriteBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.WriteBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property WriteBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.WriteBufferSize : int with get, set" Usage="System.IO.Ports.SerialPort.WriteBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2314,6 +2441,8 @@
       <MemberSignature Language="C#" Value="public void WriteLine (string str);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteLine(string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.WriteLine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteLine (str As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteLine : string -&gt; unit" Usage="serialPort.WriteLine str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2360,6 +2489,8 @@
       <MemberSignature Language="C#" Value="public int WriteTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 WriteTimeout" />
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.WriteTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property WriteTimeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.WriteTimeout : int with get, set" Usage="System.IO.Ports.SerialPort.WriteTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2416,32 +2547,5 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.IO.Ports.SerialPort.WriteTimeout" /> value is less than zero and not equal to <see cref="F:System.IO.Ports.SerialPort.InfiniteTimeout" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.Ports.SerialPort" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Read">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads from the <see cref="T:System.IO.Ports.SerialPort" /> input buffer.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes data to the serial port output buffer.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

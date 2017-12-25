@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public enum DataflowMessageStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataflowMessageStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.DataflowMessageStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataflowMessageStatus" />
+  <TypeSignature Language="F#" Value="type DataflowMessageStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="Accepted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.Dataflow.DataflowMessageStatus Accepted = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.Accepted" />
+      <MemberSignature Language="VB.NET" Value="Accepted" />
+      <MemberSignature Language="F#" Value="Accepted = 0" Usage="System.Threading.Tasks.Dataflow.DataflowMessageStatus.Accepted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -39,6 +43,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the  <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> accepted the message. Once a target has accepted a message, it is wholly owned by the target.</summary>
       </Docs>
@@ -47,6 +52,8 @@
       <MemberSignature Language="C#" Value="Declined" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.Dataflow.DataflowMessageStatus Declined = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.Declined" />
+      <MemberSignature Language="VB.NET" Value="Declined" />
+      <MemberSignature Language="F#" Value="Declined = 1" Usage="System.Threading.Tasks.Dataflow.DataflowMessageStatus.Declined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -57,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> declined the message. The <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> still owns the message.</summary>
       </Docs>
@@ -65,6 +73,8 @@
       <MemberSignature Language="C#" Value="DecliningPermanently" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.Dataflow.DataflowMessageStatus DecliningPermanently = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.DecliningPermanently" />
+      <MemberSignature Language="VB.NET" Value="DecliningPermanently" />
+      <MemberSignature Language="F#" Value="DecliningPermanently = 4" Usage="System.Threading.Tasks.Dataflow.DataflowMessageStatus.DecliningPermanently" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -75,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> declined the message. The <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> still owns the message.  
   
@@ -85,6 +96,8 @@
       <MemberSignature Language="C#" Value="NotAvailable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.Dataflow.DataflowMessageStatus NotAvailable = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.NotAvailable" />
+      <MemberSignature Language="VB.NET" Value="NotAvailable" />
+      <MemberSignature Language="F#" Value="NotAvailable = 3" Usage="System.Threading.Tasks.Dataflow.DataflowMessageStatus.NotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -95,6 +108,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> tried to accept the message from the <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />, but the message was no longer available.</summary>
       </Docs>
@@ -103,6 +117,8 @@
       <MemberSignature Language="C#" Value="Postponed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.Dataflow.DataflowMessageStatus Postponed = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.Postponed" />
+      <MemberSignature Language="VB.NET" Value="Postponed" />
+      <MemberSignature Language="F#" Value="Postponed = 2" Usage="System.Threading.Tasks.Dataflow.DataflowMessageStatus.Postponed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -113,6 +129,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> postponed the message for potential consumption at a later time.  
   

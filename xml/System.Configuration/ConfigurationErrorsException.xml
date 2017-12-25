@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ConfigurationErrorsException : System.Configuration.ConfigurationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ConfigurationErrorsException extends System.Configuration.ConfigurationException" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationErrorsException" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConfigurationErrorsException&#xA;Inherits ConfigurationException" />
+  <TypeSignature Language="F#" Value="type ConfigurationErrorsException = class&#xA;    inherit ConfigurationException" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,10 +52,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationErrorsException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ConfigurationErrorsException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -73,6 +85,8 @@
       <MemberSignature Language="C#" Value="public ConfigurationErrorsException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationErrorsException : string -&gt; System.Configuration.ConfigurationErrorsException" Usage="new System.Configuration.ConfigurationErrorsException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -95,6 +109,8 @@
       <MemberSignature Language="C#" Value="protected ConfigurationErrorsException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationErrorsException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Configuration.ConfigurationErrorsException" Usage="new System.Configuration.ConfigurationErrorsException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -120,6 +136,8 @@
       <MemberSignature Language="C#" Value="public ConfigurationErrorsException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationErrorsException : string * Exception -&gt; System.Configuration.ConfigurationErrorsException" Usage="new System.Configuration.ConfigurationErrorsException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -144,6 +162,8 @@
       <MemberSignature Language="C#" Value="public ConfigurationErrorsException (string message, System.Xml.XmlNode node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.#ctor(System.String,System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, node As XmlNode)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationErrorsException : string * System.Xml.XmlNode -&gt; System.Configuration.ConfigurationErrorsException" Usage="new System.Configuration.ConfigurationErrorsException (message, node)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -168,6 +188,8 @@
       <MemberSignature Language="C#" Value="public ConfigurationErrorsException (string message, System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.#ctor(System.String,System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, reader As XmlReader)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationErrorsException : string * System.Xml.XmlReader -&gt; System.Configuration.ConfigurationErrorsException" Usage="new System.Configuration.ConfigurationErrorsException (message, reader)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -192,6 +214,8 @@
       <MemberSignature Language="C#" Value="public ConfigurationErrorsException (string message, Exception inner, System.Xml.XmlNode node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner, class System.Xml.XmlNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.#ctor(System.String,System.Exception,System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception, node As XmlNode)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationErrorsException : string * Exception * System.Xml.XmlNode -&gt; System.Configuration.ConfigurationErrorsException" Usage="new System.Configuration.ConfigurationErrorsException (message, inner, node)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -218,6 +242,8 @@
       <MemberSignature Language="C#" Value="public ConfigurationErrorsException (string message, Exception inner, System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner, class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.#ctor(System.String,System.Exception,System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception, reader As XmlReader)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationErrorsException : string * Exception * System.Xml.XmlReader -&gt; System.Configuration.ConfigurationErrorsException" Usage="new System.Configuration.ConfigurationErrorsException (message, inner, reader)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -244,6 +270,8 @@
       <MemberSignature Language="C#" Value="public ConfigurationErrorsException (string message, string filename, int line);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string filename, int32 line) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.#ctor(System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, filename As String, line As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationErrorsException : string * string * int -&gt; System.Configuration.ConfigurationErrorsException" Usage="new System.Configuration.ConfigurationErrorsException (message, filename, line)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -270,6 +298,8 @@
       <MemberSignature Language="C#" Value="public ConfigurationErrorsException (string message, Exception inner, string filename, int line);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner, string filename, int32 line) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.#ctor(System.String,System.Exception,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception, filename As String, line As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationErrorsException : string * Exception * string * int -&gt; System.Configuration.ConfigurationErrorsException" Usage="new System.Configuration.ConfigurationErrorsException (message, inner, filename, line)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -298,6 +328,8 @@
       <MemberSignature Language="C#" Value="public override string BareMessage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BareMessage" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationErrorsException.BareMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BareMessage As String" />
+      <MemberSignature Language="F#" Value="member this.BareMessage : string" Usage="System.Configuration.ConfigurationErrorsException.BareMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -335,6 +367,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection Errors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Errors" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationErrorsException.Errors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As ICollection" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.Collections.ICollection" Usage="System.Configuration.ConfigurationErrorsException.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -364,6 +398,8 @@
       <MemberSignature Language="C#" Value="public override string Filename { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Filename" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationErrorsException.Filename" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Filename As String" />
+      <MemberSignature Language="F#" Value="member this.Filename : string" Usage="System.Configuration.ConfigurationErrorsException.Filename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -392,10 +428,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetFilename">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the path to the configuration file being read when this configuration exception was thrown.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetFilename">
       <MemberSignature Language="C#" Value="public static string GetFilename (System.Xml.XmlNode node);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFilename(class System.Xml.XmlNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.GetFilename(System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFilename (node As XmlNode) As String" />
+      <MemberSignature Language="F#" Value="static member GetFilename : System.Xml.XmlNode -&gt; string" Usage="System.Configuration.ConfigurationErrorsException.GetFilename node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -429,6 +476,8 @@
       <MemberSignature Language="C#" Value="public static string GetFilename (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFilename(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.GetFilename(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFilename (reader As XmlReader) As String" />
+      <MemberSignature Language="F#" Value="static member GetFilename : System.Xml.XmlReader -&gt; string" Usage="System.Configuration.ConfigurationErrorsException.GetFilename reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -458,10 +507,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetLineNumber">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the line number within the configuration file that was being processed when this configuration exception was thrown.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetLineNumber">
       <MemberSignature Language="C#" Value="public static int GetLineNumber (System.Xml.XmlNode node);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetLineNumber(class System.Xml.XmlNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.GetLineNumber(System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLineNumber (node As XmlNode) As Integer" />
+      <MemberSignature Language="F#" Value="static member GetLineNumber : System.Xml.XmlNode -&gt; int" Usage="System.Configuration.ConfigurationErrorsException.GetLineNumber node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -495,6 +555,8 @@
       <MemberSignature Language="C#" Value="public static int GetLineNumber (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetLineNumber(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.GetLineNumber(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLineNumber (reader As XmlReader) As Integer" />
+      <MemberSignature Language="F#" Value="static member GetLineNumber : System.Xml.XmlReader -&gt; int" Usage="System.Configuration.ConfigurationErrorsException.GetLineNumber reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -528,6 +590,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationErrorsException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="configurationErrorsException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -562,6 +626,8 @@
       <MemberSignature Language="C#" Value="public override int Line { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Line" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationErrorsException.Line" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Line As Integer" />
+      <MemberSignature Language="F#" Value="member this.Line : int" Usage="System.Configuration.ConfigurationErrorsException.Line" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -594,6 +660,8 @@
       <MemberSignature Language="C#" Value="public override string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationErrorsException.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Configuration.ConfigurationErrorsException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -622,32 +690,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetLineNumber">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the line number within the configuration file that was being processed when this configuration exception was thrown.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationErrorsException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetFilename">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the path to the configuration file being read when this configuration exception was thrown.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

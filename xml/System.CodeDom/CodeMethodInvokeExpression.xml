@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CodeMethodInvokeExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeMethodInvokeExpression extends System.CodeDom.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeMethodInvokeExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeMethodInvokeExpression&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeMethodInvokeExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,10 +48,20 @@
     <altmember cref="T:System.CodeDom.CodeDirectionExpression" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodInvokeExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeMethodInvokeExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodInvokeExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,6 +81,8 @@
       <MemberSignature Language="C#" Value="public CodeMethodInvokeExpression (System.CodeDom.CodeMethodReferenceExpression method, params System.CodeDom.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeMethodReferenceExpression method, class System.CodeDom.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodInvokeExpression.#ctor(System.CodeDom.CodeMethodReferenceExpression,System.CodeDom.CodeExpression[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (method As CodeMethodReferenceExpression, ParamArray parameters As CodeExpression())" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeMethodInvokeExpression : System.CodeDom.CodeMethodReferenceExpression * System.CodeDom.CodeExpression[] -&gt; System.CodeDom.CodeMethodInvokeExpression" Usage="new System.CodeDom.CodeMethodInvokeExpression (method, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -100,6 +114,8 @@
       <MemberSignature Language="C#" Value="public CodeMethodInvokeExpression (System.CodeDom.CodeExpression targetObject, string methodName, params System.CodeDom.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression targetObject, string methodName, class System.CodeDom.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodInvokeExpression.#ctor(System.CodeDom.CodeExpression,System.String,System.CodeDom.CodeExpression[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression, methodName As String, ParamArray parameters As CodeExpression())" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeMethodInvokeExpression : System.CodeDom.CodeExpression * string * System.CodeDom.CodeExpression[] -&gt; System.CodeDom.CodeMethodInvokeExpression" Usage="new System.CodeDom.CodeMethodInvokeExpression (targetObject, methodName, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -132,6 +148,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeMethodReferenceExpression Method { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeMethodReferenceExpression Method" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMethodInvokeExpression.Method" />
+      <MemberSignature Language="VB.NET" Value="Public Property Method As CodeMethodReferenceExpression" />
+      <MemberSignature Language="F#" Value="member this.Method : System.CodeDom.CodeMethodReferenceExpression with get, set" Usage="System.CodeDom.CodeMethodInvokeExpression.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -154,6 +172,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpressionCollection Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpressionCollection Parameters" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMethodInvokeExpression.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As CodeExpressionCollection" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.CodeDom.CodeExpressionCollection" Usage="System.CodeDom.CodeMethodInvokeExpression.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -181,14 +201,5 @@
         <altmember cref="T:System.CodeDom.CodeDirectionExpression" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodInvokeExpression" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

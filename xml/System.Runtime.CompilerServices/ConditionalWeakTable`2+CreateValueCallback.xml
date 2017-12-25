@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate TValue ConditionalWeakTable&lt;TKey,TValue&gt;.CreateValueCallback(TKey key) where TKey : class where TValue : class;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ConditionalWeakTable`2/CreateValueCallback&lt;class TKey, class TValue&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function ConditionalWeakTable(Of TKey, TValue).CreateValueCallback(key As TKey) As TValue " />
+  <TypeSignature Language="F#" Value="type ConditionalWeakTable&lt;'Key, 'Value (requires 'Key : null and 'Value : null)&gt;.CreateValueCallback = delegate of 'Key -&gt; 'Value" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>

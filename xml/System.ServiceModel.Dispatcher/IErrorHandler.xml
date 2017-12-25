@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IErrorHandler" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IErrorHandler" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IErrorHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IErrorHandler" />
+  <TypeSignature Language="F#" Value="type IErrorHandler = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +62,8 @@
       <MemberSignature Language="C#" Value="public bool HandleError (Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HandleError(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IErrorHandler.HandleError(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandleError (error As Exception) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member HandleError : Exception -&gt; bool" Usage="iErrorHandler.HandleError exception" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +122,8 @@
       <MemberSignature Language="C#" Value="public void ProvideFault (Exception exception, System.ServiceModel.Channels.MessageVersion version, ref System.ServiceModel.Channels.Message fault);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProvideFault(class System.Exception exception, class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.Channels.Message&amp; fault) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault(System.Exception,System.ServiceModel.Channels.MessageVersion,System.ServiceModel.Channels.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ProvideFault (error As Exception, version As MessageVersion, ByRef fault As Message)" />
+      <MemberSignature Language="F#" Value="abstract member ProvideFault : Exception * System.ServiceModel.Channels.MessageVersion *  -&gt; unit" Usage="iErrorHandler.ProvideFault (exception, version, fault)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ReceiveSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReceiveSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.ReceiveSettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReceiveSettings" />
+  <TypeSignature Language="F#" Value="type ReceiveSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public ReceiveSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.ReceiveSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public string Action { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Action" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveSettings.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="System.ServiceModel.Activities.ReceiveSettings.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="public bool CanCreateInstance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanCreateInstance" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveSettings.CanCreateInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanCreateInstance As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanCreateInstance : bool with get, set" Usage="System.ServiceModel.Activities.ReceiveSettings.CanCreateInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -71,6 +78,8 @@
       <MemberSignature Language="C#" Value="public string OwnerDisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OwnerDisplayName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveSettings.OwnerDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property OwnerDisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.OwnerDisplayName : string with get, set" Usage="System.ServiceModel.Activities.ReceiveSettings.OwnerDisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

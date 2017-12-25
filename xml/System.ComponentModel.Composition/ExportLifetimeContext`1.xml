@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ExportLifetimeContext&lt;T&gt; : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExportLifetimeContext`1&lt;T&gt; extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.ExportLifetimeContext`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExportLifetimeContext(Of T)&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type ExportLifetimeContext&lt;'T&gt; = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public ExportLifetimeContext (T value, Action disposeAction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T value, class System.Action disposeAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ExportLifetimeContext`1.#ctor(`0,System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As T, disposeAction As Action)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.ExportLifetimeContext&lt;'T&gt; : 'T * Action -&gt; System.ComponentModel.Composition.ExportLifetimeContext&lt;'T&gt;" Usage="new System.ComponentModel.Composition.ExportLifetimeContext&lt;'T&gt; (value, disposeAction)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -58,7 +62,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ExportLifetimeContext`1.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="exportLifetimeContext.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -91,6 +100,8 @@
       <MemberSignature Language="C#" Value="public T Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Value" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.ExportLifetimeContext`1.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As T" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T" Usage="System.ComponentModel.Composition.ExportLifetimeContext&lt;'T&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

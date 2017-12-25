@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class NtlmSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit NtlmSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Mono.Security.Protocol.Ntlm.NtlmSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class NtlmSettings" />
+  <TypeSignature Language="F#" Value="type NtlmSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static Mono.Security.Protocol.Ntlm.NtlmAuthLevel DefaultAuthLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype Mono.Security.Protocol.Ntlm.NtlmAuthLevel DefaultAuthLevel" />
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.NtlmSettings.DefaultAuthLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultAuthLevel As NtlmAuthLevel" />
+      <MemberSignature Language="F#" Value="member this.DefaultAuthLevel : Mono.Security.Protocol.Ntlm.NtlmAuthLevel with get, set" Usage="Mono.Security.Protocol.Ntlm.NtlmSettings.DefaultAuthLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

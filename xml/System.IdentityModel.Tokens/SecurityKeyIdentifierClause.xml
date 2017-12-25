@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class SecurityKeyIdentifierClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SecurityKeyIdentifierClause extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type SecurityKeyIdentifierClause = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected SecurityKeyIdentifierClause (string clauseType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string clauseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (clauseType As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityKeyIdentifierClause : string -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.SecurityKeyIdentifierClause clauseType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -51,6 +64,8 @@
       <MemberSignature Language="C#" Value="protected SecurityKeyIdentifierClause (string clauseType, byte[] derivationNonce, int derivationLength);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string clauseType, unsigned int8[] derivationNonce, int32 derivationLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.#ctor(System.String,System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (clauseType As String, derivationNonce As Byte(), derivationLength As Integer)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityKeyIdentifierClause : string * byte[] * int -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.SecurityKeyIdentifierClause (clauseType, derivationNonce, derivationLength)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -80,6 +95,8 @@
       <MemberSignature Language="C#" Value="public virtual bool CanCreateKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanCreateKey" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CanCreateKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanCreateKey As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanCreateKey : bool" Usage="System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CanCreateKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -106,6 +123,8 @@
       <MemberSignature Language="C#" Value="public string ClauseType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClauseType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.ClauseType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClauseType As String" />
+      <MemberSignature Language="F#" Value="member this.ClauseType : string" Usage="System.IdentityModel.Tokens.SecurityKeyIdentifierClause.ClauseType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -124,6 +143,8 @@
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SecurityKey CreateKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityKey CreateKey() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CreateKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateKey () As SecurityKey" />
+      <MemberSignature Language="F#" Value="abstract member CreateKey : unit -&gt; System.IdentityModel.Tokens.SecurityKey&#xA;override this.CreateKey : unit -&gt; System.IdentityModel.Tokens.SecurityKey" Usage="securityKeyIdentifierClause.CreateKey " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -150,6 +171,8 @@
       <MemberSignature Language="C#" Value="public int DerivationLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DerivationLength" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DerivationLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.DerivationLength : int" Usage="System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -175,6 +198,8 @@
       <MemberSignature Language="C#" Value="public byte[] GetDerivationNonce ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetDerivationNonce() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.GetDerivationNonce" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDerivationNonce () As Byte()" />
+      <MemberSignature Language="F#" Value="member this.GetDerivationNonce : unit -&gt; byte[]" Usage="securityKeyIdentifierClause.GetDerivationNonce " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -201,6 +226,8 @@
       <MemberSignature Language="C#" Value="public string Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.IdentityModel.Tokens.SecurityKeyIdentifierClause.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -226,6 +253,8 @@
       <MemberSignature Language="C#" Value="public virtual bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Matches (clause As SecurityKeyIdentifierClause) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool&#xA;override this.Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="securityKeyIdentifierClause.Matches clause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -247,14 +276,5 @@
           <paramref name="clause" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

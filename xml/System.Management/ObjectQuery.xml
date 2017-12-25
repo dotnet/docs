@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ObjectQuery : System.Management.ManagementQuery" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectQuery extends System.Management.ManagementQuery" />
   <TypeSignature Language="DocId" Value="T:System.Management.ObjectQuery" />
+  <TypeSignature Language="VB.NET" Value="Public Class ObjectQuery&#xA;Inherits ManagementQuery" />
+  <TypeSignature Language="F#" Value="type ObjectQuery = class&#xA;    inherit ManagementQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ObjectQuery" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ObjectQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ObjectQuery.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -43,6 +55,8 @@
       <MemberSignature Language="C#" Value="public ObjectQuery (string query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ObjectQuery.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (query As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.ObjectQuery : string -&gt; System.Management.ObjectQuery" Usage="new System.Management.ObjectQuery query" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -70,6 +84,8 @@
       <MemberSignature Language="C#" Value="public ObjectQuery (string language, string query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string language, string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ObjectQuery.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (language As String, query As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.ObjectQuery : string * string -&gt; System.Management.ObjectQuery" Usage="new System.Management.ObjectQuery (language, query)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -99,6 +115,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ObjectQuery.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="objectQuery.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -124,14 +142,5 @@
         <altmember cref="M:System.ICloneable.Clone" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ObjectQuery" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

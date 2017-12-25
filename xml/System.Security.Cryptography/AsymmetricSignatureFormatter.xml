@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public abstract class AsymmetricSignatureFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AsymmetricSignatureFormatter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.AsymmetricSignatureFormatter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class AsymmetricSignatureFormatter" />
+  <TypeSignature Language="F#" Value="type AsymmetricSignatureFormatter = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="protected AsymmetricSignatureFormatter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureFormatter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -69,10 +72,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateSignature">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates the signature.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateSignature">
       <MemberSignature Language="C#" Value="public abstract byte[] CreateSignature (byte[] rgbHash);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] CreateSignature(unsigned int8[] rgbHash) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureFormatter.CreateSignature(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSignature (rgbHash As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member CreateSignature : byte[] -&gt; byte[]" Usage="asymmetricSignatureFormatter.CreateSignature rgbHash" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +126,8 @@
       <MemberSignature Language="C#" Value="public virtual byte[] CreateSignature (System.Security.Cryptography.HashAlgorithm hash);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] CreateSignature(class System.Security.Cryptography.HashAlgorithm hash) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureFormatter.CreateSignature(System.Security.Cryptography.HashAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSignature (hash As HashAlgorithm) As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member CreateSignature : System.Security.Cryptography.HashAlgorithm -&gt; byte[]&#xA;override this.CreateSignature : System.Security.Cryptography.HashAlgorithm -&gt; byte[]" Usage="asymmetricSignatureFormatter.CreateSignature hash" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -150,6 +167,8 @@
       <MemberSignature Language="C#" Value="public abstract void SetHashAlgorithm (string strName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHashAlgorithm(string strName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureFormatter.SetHashAlgorithm(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetHashAlgorithm (strName As String)" />
+      <MemberSignature Language="F#" Value="abstract member SetHashAlgorithm : string -&gt; unit" Usage="asymmetricSignatureFormatter.SetHashAlgorithm strName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +206,8 @@
       <MemberSignature Language="C#" Value="public abstract void SetKey (System.Security.Cryptography.AsymmetricAlgorithm key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetKey(class System.Security.Cryptography.AsymmetricAlgorithm key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetKey (key As AsymmetricAlgorithm)" />
+      <MemberSignature Language="F#" Value="abstract member SetKey : System.Security.Cryptography.AsymmetricAlgorithm -&gt; unit" Usage="asymmetricSignatureFormatter.SetKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -220,15 +241,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateSignature">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates the signature.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class CodeCommentStatementCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeCommentStatementCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeCommentStatementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeCommentStatementCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="F#" Value="type CodeCommentStatementCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,10 +46,20 @@
     <altmember cref="T:System.CodeDom.CodeCommentStatement" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCommentStatementCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeCommentStatementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +79,8 @@
       <MemberSignature Language="C#" Value="public CodeCommentStatementCollection (System.CodeDom.CodeCommentStatement[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeCommentStatement[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatementCollection.#ctor(System.CodeDom.CodeCommentStatement[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeCommentStatement())" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeCommentStatementCollection : System.CodeDom.CodeCommentStatement[] -&gt; System.CodeDom.CodeCommentStatementCollection" Usage="new System.CodeDom.CodeCommentStatementCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +104,8 @@
       <MemberSignature Language="C#" Value="public CodeCommentStatementCollection (System.CodeDom.CodeCommentStatementCollection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeCommentStatementCollection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatementCollection.#ctor(System.CodeDom.CodeCommentStatementCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeCommentStatementCollection)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeCommentStatementCollection : System.CodeDom.CodeCommentStatementCollection -&gt; System.CodeDom.CodeCommentStatementCollection" Usage="new System.CodeDom.CodeCommentStatementCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -114,6 +130,8 @@
       <MemberSignature Language="C#" Value="public int Add (System.CodeDom.CodeCommentStatement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.CodeDom.CodeCommentStatement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatementCollection.Add(System.CodeDom.CodeCommentStatement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As CodeCommentStatement) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Add : System.CodeDom.CodeCommentStatement -&gt; int" Usage="codeCommentStatementCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,10 +166,21 @@
         <altmember cref="M:System.CodeDom.CodeCommentStatementCollection.AddRange(System.CodeDom.CodeCommentStatement[])" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of the specified <see cref="T:System.CodeDom.CodeCommentStatement" /> array to the end of the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeCommentStatement[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeCommentStatement[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatementCollection.AddRange(System.CodeDom.CodeCommentStatement[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeCommentStatement())" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeCommentStatement[] -&gt; unit" Usage="codeCommentStatementCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -191,6 +220,8 @@
       <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeCommentStatementCollection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeCommentStatementCollection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatementCollection.AddRange(System.CodeDom.CodeCommentStatementCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeCommentStatementCollection)" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeCommentStatementCollection -&gt; unit" Usage="codeCommentStatementCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -230,6 +261,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.CodeDom.CodeCommentStatement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.CodeDom.CodeCommentStatement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatementCollection.Contains(System.CodeDom.CodeCommentStatement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As CodeCommentStatement) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.CodeDom.CodeCommentStatement -&gt; bool" Usage="codeCommentStatementCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -269,6 +302,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.CodeDom.CodeCommentStatement[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.CodeDom.CodeCommentStatement[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatementCollection.CopyTo(System.CodeDom.CodeCommentStatement[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CodeCommentStatement(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.CodeDom.CodeCommentStatement[] * int -&gt; unit" Usage="codeCommentStatementCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -315,6 +350,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.CodeDom.CodeCommentStatement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.CodeDom.CodeCommentStatement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatementCollection.IndexOf(System.CodeDom.CodeCommentStatement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As CodeCommentStatement) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.CodeDom.CodeCommentStatement -&gt; int" Usage="codeCommentStatementCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -353,6 +390,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.CodeDom.CodeCommentStatement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.CodeDom.CodeCommentStatement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatementCollection.Insert(System.Int32,System.CodeDom.CodeCommentStatement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As CodeCommentStatement)" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.CodeDom.CodeCommentStatement -&gt; unit" Usage="codeCommentStatementCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -392,6 +431,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeCommentStatement this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeCommentStatement Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeCommentStatementCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CodeCommentStatement" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.CodeDom.CodeCommentStatement with get, set" Usage="System.CodeDom.CodeCommentStatementCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -426,6 +467,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.CodeDom.CodeCommentStatement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.CodeDom.CodeCommentStatement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatementCollection.Remove(System.CodeDom.CodeCommentStatement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As CodeCommentStatement)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.CodeDom.CodeCommentStatement -&gt; unit" Usage="codeCommentStatementCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -459,23 +502,5 @@
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddRange">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies the elements of the specified <see cref="T:System.CodeDom.CodeCommentStatement" /> array to the end of the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCommentStatementCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

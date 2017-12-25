@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface IManagedInstaller" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IManagedInstaller" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.IManagedInstaller" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IManagedInstaller" />
+  <TypeSignature Language="F#" Value="type IManagedInstaller = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public int ManagedInstall (string commandLine, int hInstall);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ManagedInstall([in]string commandLine, [in]int32 hInstall) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.IManagedInstaller.ManagedInstall(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ManagedInstall (commandLine As String, hInstall As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member ManagedInstall : string * int -&gt; int" Usage="iManagedInstaller.ManagedInstall (commandLine, hInstall)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>

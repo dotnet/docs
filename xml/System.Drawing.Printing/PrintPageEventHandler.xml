@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public delegate void PrintPageEventHandler(object sender, PrintPageEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PrintPageEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintPageEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub PrintPageEventHandler(sender As Object, e As PrintPageEventArgs)" />
+  <TypeSignature Language="F#" Value="type PrintPageEventHandler = delegate of obj * PrintPageEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

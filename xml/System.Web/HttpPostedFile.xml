@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class HttpPostedFile" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpPostedFile extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpPostedFile" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpPostedFile" />
+  <TypeSignature Language="F#" Value="type HttpPostedFile = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public int ContentLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ContentLength" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpPostedFile.ContentLength" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.ContentLength : int" Usage="System.Web.HttpPostedFile.ContentLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public string ContentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpPostedFile.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string" Usage="System.Web.HttpPostedFile.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public string FileName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpPostedFile.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="System.Web.HttpPostedFile.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +126,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream InputStream { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream InputStream" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpPostedFile.InputStream" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputStream As Stream" />
+      <MemberSignature Language="F#" Value="member this.InputStream : System.IO.Stream" Usage="System.Web.HttpPostedFile.InputStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -146,6 +156,8 @@
       <MemberSignature Language="C#" Value="public void SaveAs (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAs(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpPostedFile.SaveAs(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (filename As String)" />
+      <MemberSignature Language="F#" Value="member this.SaveAs : string -&gt; unit" Usage="httpPostedFile.SaveAs filename" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

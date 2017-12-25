@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class DirListBox : System.Windows.Forms.ListBox" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DirListBox extends System.Windows.Forms.ListBox" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.DirListBox" />
+  <TypeSignature Language="VB.NET" Value="Public Class DirListBox&#xA;Inherits ListBox" />
+  <TypeSignature Language="F#" Value="type DirListBox = class&#xA;    inherit ListBox" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -39,6 +41,7 @@
       <MemberSignature Language="C#" Value="public DirListBox ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -64,6 +67,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Change;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Change" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.Change" />
+      <MemberSignature Language="VB.NET" Value="Public Event Change As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Change : EventHandler " Usage="member this.Change : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -91,6 +96,8 @@
       <MemberSignature Language="C#" Value="public int ColumnWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnWidth" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.ColumnWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColumnWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.ColumnWidth : int with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DirListBox.ColumnWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -130,6 +137,8 @@
       <MemberSignature Language="C#" Value="public object DataSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataSource" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSource As Object" />
+      <MemberSignature Language="F#" Value="member this.DataSource : obj with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DirListBox.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -169,6 +178,8 @@
       <MemberSignature Language="C#" Value="public string DirList[int Index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DirList(int32)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.DirList(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DirList(Index As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.DirList(int) : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.DirListBox.DirList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -211,6 +222,8 @@
       <MemberSignature Language="C#" Value="public int DirListCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DirListCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.DirListCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DirListCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.DirListCount : int" Usage="Microsoft.VisualBasic.Compatibility.VB6.DirListBox.DirListCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -247,6 +260,8 @@
       <MemberSignature Language="C#" Value="public int DirListIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DirListIndex" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.DirListIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property DirListIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.DirListIndex : int with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DirListBox.DirListIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -285,6 +300,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool Disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool Disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (Disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="dirListBox.Dispose Disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -323,6 +340,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DrawMode DrawMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DrawMode DrawMode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.DrawMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DrawMode As DrawMode" />
+      <MemberSignature Language="F#" Value="member this.DrawMode : System.Windows.Forms.DrawMode with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DirListBox.DrawMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -359,6 +378,8 @@
       <MemberSignature Language="C#" Value="public int ItemHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemHeight" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.ItemHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.ItemHeight : int" Usage="Microsoft.VisualBasic.Compatibility.VB6.DirListBox.ItemHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -398,6 +419,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListBox.ObjectCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListBox/ObjectCollection Items" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ListBox.ObjectCollection" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Windows.Forms.ListBox.ObjectCollection" Usage="Microsoft.VisualBasic.Compatibility.VB6.DirListBox.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -437,6 +460,8 @@
       <MemberSignature Language="C#" Value="public bool MultiColumn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MultiColumn" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.MultiColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property MultiColumn As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MultiColumn : bool with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DirListBox.MultiColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -477,6 +502,8 @@
       <MemberSignature Language="C#" Value="protected override void OnBackColorChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBackColorChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.OnBackColorChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBackColorChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnBackColorChanged : EventArgs -&gt; unit" Usage="dirListBox.OnBackColorChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -513,6 +540,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnChange (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familynewslot virtual instance void OnChange(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.OnChange(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnChange (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnChange : EventArgs -&gt; unit&#xA;override this.OnChange : EventArgs -&gt; unit" Usage="dirListBox.OnChange e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -549,6 +578,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDoubleClick (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDoubleClick(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.OnDoubleClick(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDoubleClick (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnDoubleClick : EventArgs -&gt; unit" Usage="dirListBox.OnDoubleClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -585,6 +616,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDrawItem (System.Windows.Forms.DrawItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDrawItem(class System.Windows.Forms.DrawItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDrawItem (e As DrawItemEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnDrawItem : System.Windows.Forms.DrawItemEventArgs -&gt; unit" Usage="dirListBox.OnDrawItem e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -621,6 +654,8 @@
       <MemberSignature Language="C#" Value="protected override void OnFontChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFontChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.OnFontChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="dirListBox.OnFontChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -657,6 +692,8 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.OnHandleCreated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="dirListBox.OnHandleCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -693,6 +730,8 @@
       <MemberSignature Language="C#" Value="protected override void OnSelectedIndexChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSelectedIndexChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.OnSelectedIndexChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSelectedIndexChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnSelectedIndexChanged : EventArgs -&gt; unit" Usage="dirListBox.OnSelectedIndexChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -729,6 +768,8 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DirListBox.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -773,6 +814,8 @@
       <MemberSignature Language="C#" Value="public override void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Refresh ()" />
+      <MemberSignature Language="F#" Value="override this.Refresh : unit -&gt; unit" Usage="dirListBox.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -803,6 +846,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.SelectionMode SelectionMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.SelectionMode SelectionMode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.SelectionMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionMode As SelectionMode" />
+      <MemberSignature Language="F#" Value="member this.SelectionMode : System.Windows.Forms.SelectionMode with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DirListBox.SelectionMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -842,6 +887,8 @@
       <MemberSignature Language="C#" Value="public bool Sorted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Sorted" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.Sorted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sorted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Sorted : bool" Usage="Microsoft.VisualBasic.Compatibility.VB6.DirListBox.Sorted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -882,6 +929,8 @@
       <MemberSignature Language="C#" Value="public string ValueMember { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValueMember" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DirListBox.ValueMember" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValueMember As String" />
+      <MemberSignature Language="F#" Value="member this.ValueMember : string with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DirListBox.ValueMember" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

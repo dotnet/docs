@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class DataPoint : System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPoint extends System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.DataPoint" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataPoint&#xA;Inherits DataPointCustomProperties" />
+  <TypeSignature Language="F#" Value="type DataPoint = class&#xA;    inherit DataPointCustomProperties" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,10 +38,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPoint" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataPoint ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -64,6 +76,7 @@
       <MemberSignature Language="C#" Value="public DataPoint (System.Windows.Forms.DataVisualization.Charting.Series series);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.Series series) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.#ctor(System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.DataPoint : System.Windows.Forms.DataVisualization.Charting.Series -&gt; System.Windows.Forms.DataVisualization.Charting.DataPoint" Usage="new System.Windows.Forms.DataVisualization.Charting.DataPoint series" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -91,6 +104,8 @@
       <MemberSignature Language="C#" Value="public DataPoint (double xValue, double yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 xValue, float64 yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.#ctor(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (xValue As Double, yValue As Double)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.DataPoint : double * double -&gt; System.Windows.Forms.DataVisualization.Charting.DataPoint" Usage="new System.Windows.Forms.DataVisualization.Charting.DataPoint (xValue, yValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -120,6 +135,8 @@
       <MemberSignature Language="C#" Value="public DataPoint (double xValue, double[] yValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 xValue, float64[] yValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.#ctor(System.Double,System.Double[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (xValue As Double, yValues As Double())" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.DataPoint : double * double[] -&gt; System.Windows.Forms.DataVisualization.Charting.DataPoint" Usage="new System.Windows.Forms.DataVisualization.Charting.DataPoint (xValue, yValues)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -149,6 +166,8 @@
       <MemberSignature Language="C#" Value="public DataPoint (double xValue, string yValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 xValue, string yValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.#ctor(System.Double,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (xValue As Double, yValues As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.DataPoint : double * string -&gt; System.Windows.Forms.DataVisualization.Charting.DataPoint" Usage="new System.Windows.Forms.DataVisualization.Charting.DataPoint (xValue, yValues)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -183,6 +202,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.DataPoint Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataVisualization.Charting.DataPoint Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As DataPoint" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Windows.Forms.DataVisualization.Charting.DataPoint" Usage="dataPoint.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -209,6 +230,8 @@
       <MemberSignature Language="C#" Value="public double GetValueByName (string valueName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetValueByName(string valueName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.GetValueByName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValueByName (valueName As String) As Double" />
+      <MemberSignature Language="F#" Value="member this.GetValueByName : string -&gt; double" Usage="dataPoint.GetValueByName valueName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -231,6 +254,8 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPoint.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsEmpty As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPoint.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -269,6 +294,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPoint.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPoint.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -298,6 +325,8 @@
       <MemberSignature Language="C#" Value="public void SetValueXY (object xValue, params object[] yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValueXY(object xValue, object[] yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.SetValueXY(System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValueXY (xValue As Object, ParamArray yValue As Object())" />
+      <MemberSignature Language="F#" Value="member this.SetValueXY : obj * obj[] -&gt; unit" Usage="dataPoint.SetValueXY (xValue, yValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -344,6 +373,8 @@
       <MemberSignature Language="C#" Value="public void SetValueY (params object[] yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValueY(object[] yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.SetValueY(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValueY (ParamArray yValue As Object())" />
+      <MemberSignature Language="F#" Value="member this.SetValueY : obj[] -&gt; unit" Usage="dataPoint.SetValueY yValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -393,6 +424,8 @@
       <MemberSignature Language="C#" Value="public double XValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 XValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPoint.XValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property XValue As Double" />
+      <MemberSignature Language="F#" Value="member this.XValue : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPoint.XValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -434,6 +467,8 @@
       <MemberSignature Language="C#" Value="public double[] YValues { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64[] YValues" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPoint.YValues" />
+      <MemberSignature Language="VB.NET" Value="Public Property YValues As Double()" />
+      <MemberSignature Language="F#" Value="member this.YValues : double[] with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPoint.YValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -478,14 +513,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPoint" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ProjectPropertyElement : Microsoft.Build.Construction.ProjectElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProjectPropertyElement extends Microsoft.Build.Construction.ProjectElement" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ProjectPropertyElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProjectPropertyElement&#xA;Inherits ProjectElement" />
+  <TypeSignature Language="F#" Value="type ProjectPropertyElement = class&#xA;    inherit ProjectElement" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectPropertyElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Build.Construction.ProjectPropertyElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectPropertyElement.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Build.Construction.ProjectPropertyElement.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

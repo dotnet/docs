@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ConfigurationProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConfigurationProperty extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationProperty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConfigurationProperty" />
+  <TypeSignature Language="F#" Value="type ConfigurationProperty = class" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,10 +70,20 @@
     <altmember cref="T:System.Configuration.ConfigurationSection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -97,6 +109,7 @@
       <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object default_value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object default_value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -145,6 +158,7 @@
       <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object default_value, System.Configuration.ConfigurationPropertyOptions flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object default_value, valuetype System.Configuration.ConfigurationPropertyOptions flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.Configuration.ConfigurationPropertyOptions)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.Configuration.ConfigurationPropertyOptions -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, flags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -190,6 +204,7 @@
       <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object default_value, System.ComponentModel.TypeConverter converter, System.Configuration.ConfigurationValidatorBase validation, System.Configuration.ConfigurationPropertyOptions flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object default_value, class System.ComponentModel.TypeConverter converter, class System.Configuration.ConfigurationValidatorBase validation, valuetype System.Configuration.ConfigurationPropertyOptions flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.ComponentModel.TypeConverter,System.Configuration.ConfigurationValidatorBase,System.Configuration.ConfigurationPropertyOptions)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.ComponentModel.TypeConverter * System.Configuration.ConfigurationValidatorBase * System.Configuration.ConfigurationPropertyOptions -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, converter, validation, flags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -239,6 +254,7 @@
       <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object default_value, System.ComponentModel.TypeConverter converter, System.Configuration.ConfigurationValidatorBase validation, System.Configuration.ConfigurationPropertyOptions flags, string description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object default_value, class System.ComponentModel.TypeConverter converter, class System.Configuration.ConfigurationValidatorBase validation, valuetype System.Configuration.ConfigurationPropertyOptions flags, string description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.ComponentModel.TypeConverter,System.Configuration.ConfigurationValidatorBase,System.Configuration.ConfigurationPropertyOptions,System.String)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.ComponentModel.TypeConverter * System.Configuration.ConfigurationValidatorBase * System.Configuration.ConfigurationPropertyOptions * string -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, converter, validation, flags, description)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -290,6 +306,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.TypeConverter Converter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.TypeConverter Converter" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.Converter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Converter As TypeConverter" />
+      <MemberSignature Language="F#" Value="member this.Converter : System.ComponentModel.TypeConverter" Usage="System.Configuration.ConfigurationProperty.Converter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -330,6 +348,8 @@
       <MemberSignature Language="C#" Value="public object DefaultValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DefaultValue" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.DefaultValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultValue As Object" />
+      <MemberSignature Language="F#" Value="member this.DefaultValue : obj" Usage="System.Configuration.ConfigurationProperty.DefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -374,6 +394,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Configuration.ConfigurationProperty.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -413,6 +435,8 @@
       <MemberSignature Language="C#" Value="public bool IsAssemblyStringTransformationRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAssemblyStringTransformationRequired" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.IsAssemblyStringTransformationRequired" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAssemblyStringTransformationRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAssemblyStringTransformationRequired : bool" Usage="System.Configuration.ConfigurationProperty.IsAssemblyStringTransformationRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -444,6 +468,8 @@
       <MemberSignature Language="C#" Value="public bool IsDefaultCollection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDefaultCollection" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.IsDefaultCollection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDefaultCollection As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDefaultCollection : bool" Usage="System.Configuration.ConfigurationProperty.IsDefaultCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -475,6 +501,8 @@
       <MemberSignature Language="C#" Value="public bool IsKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsKey" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.IsKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsKey As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsKey : bool" Usage="System.Configuration.ConfigurationProperty.IsKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -520,6 +548,8 @@
       <MemberSignature Language="C#" Value="public bool IsRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRequired" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.IsRequired" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRequired : bool" Usage="System.Configuration.ConfigurationProperty.IsRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -560,6 +590,8 @@
       <MemberSignature Language="C#" Value="public bool IsTypeStringTransformationRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTypeStringTransformationRequired" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.IsTypeStringTransformationRequired" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTypeStringTransformationRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTypeStringTransformationRequired : bool" Usage="System.Configuration.ConfigurationProperty.IsTypeStringTransformationRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -591,6 +623,8 @@
       <MemberSignature Language="C#" Value="public bool IsVersionCheckRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsVersionCheckRequired" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.IsVersionCheckRequired" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsVersionCheckRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsVersionCheckRequired : bool" Usage="System.Configuration.ConfigurationProperty.IsVersionCheckRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -624,6 +658,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Configuration.ConfigurationProperty.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -668,6 +704,8 @@
       <MemberSignature Language="C#" Value="public Type Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Configuration.ConfigurationProperty.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -712,6 +750,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationValidatorBase Validator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationValidatorBase Validator" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.Validator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Validator As ConfigurationValidatorBase" />
+      <MemberSignature Language="F#" Value="member this.Validator : System.Configuration.ConfigurationValidatorBase" Usage="System.Configuration.ConfigurationProperty.Validator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -747,14 +787,5 @@
         <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

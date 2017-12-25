@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class Chart : System.Windows.Forms.Control, IDisposable, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Chart extends System.Windows.Forms.Control implements class System.ComponentModel.ISupportInitialize, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.Chart" />
+  <TypeSignature Language="VB.NET" Value="Public Class Chart&#xA;Inherits Control&#xA;Implements IDisposable, ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type Chart = class&#xA;    inherit Control&#xA;    interface ISupportInitialize&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,7 @@
       <MemberSignature Language="C#" Value="public Chart ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -71,10 +74,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AlignDataPointsByAxisLabel">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Aligns data points using their axis labels.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AlignDataPointsByAxisLabel">
       <MemberSignature Language="C#" Value="public void AlignDataPointsByAxisLabel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AlignDataPointsByAxisLabel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.AlignDataPointsByAxisLabel" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AlignDataPointsByAxisLabel ()" />
+      <MemberSignature Language="F#" Value="member this.AlignDataPointsByAxisLabel : unit -&gt; unit" Usage="chart.AlignDataPointsByAxisLabel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -93,6 +107,8 @@
       <MemberSignature Language="C#" Value="public void AlignDataPointsByAxisLabel (string series);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AlignDataPointsByAxisLabel(string series) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.AlignDataPointsByAxisLabel(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AlignDataPointsByAxisLabel (series As String)" />
+      <MemberSignature Language="F#" Value="member this.AlignDataPointsByAxisLabel : string -&gt; unit" Usage="chart.AlignDataPointsByAxisLabel series" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -135,6 +151,8 @@
       <MemberSignature Language="C#" Value="public void AlignDataPointsByAxisLabel (System.Windows.Forms.DataVisualization.Charting.PointSortOrder sortingOrder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AlignDataPointsByAxisLabel(valuetype System.Windows.Forms.DataVisualization.Charting.PointSortOrder sortingOrder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.AlignDataPointsByAxisLabel(System.Windows.Forms.DataVisualization.Charting.PointSortOrder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AlignDataPointsByAxisLabel (sortingOrder As PointSortOrder)" />
+      <MemberSignature Language="F#" Value="member this.AlignDataPointsByAxisLabel : System.Windows.Forms.DataVisualization.Charting.PointSortOrder -&gt; unit" Usage="chart.AlignDataPointsByAxisLabel sortingOrder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -156,6 +174,8 @@
       <MemberSignature Language="C#" Value="public void AlignDataPointsByAxisLabel (string series, System.Windows.Forms.DataVisualization.Charting.PointSortOrder sortingOrder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AlignDataPointsByAxisLabel(string series, valuetype System.Windows.Forms.DataVisualization.Charting.PointSortOrder sortingOrder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.AlignDataPointsByAxisLabel(System.String,System.Windows.Forms.DataVisualization.Charting.PointSortOrder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AlignDataPointsByAxisLabel (series As String, sortingOrder As PointSortOrder)" />
+      <MemberSignature Language="F#" Value="member this.AlignDataPointsByAxisLabel : string * System.Windows.Forms.DataVisualization.Charting.PointSortOrder -&gt; unit" Usage="chart.AlignDataPointsByAxisLabel (series, sortingOrder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -200,6 +220,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler AnnotationPlaced;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AnnotationPlaced" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPlaced" />
+      <MemberSignature Language="VB.NET" Value="Public Event AnnotationPlaced As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.AnnotationPlaced : EventHandler " Usage="member this.AnnotationPlaced : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -217,6 +239,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler AnnotationPositionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AnnotationPositionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event AnnotationPositionChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.AnnotationPositionChanged : EventHandler " Usage="member this.AnnotationPositionChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -234,6 +258,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs&gt; AnnotationPositionChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs&gt; AnnotationPositionChanging" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Event AnnotationPositionChanging As EventHandler(Of AnnotationPositionChangingEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.AnnotationPositionChanging : EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs&gt; " Usage="member this.AnnotationPositionChanging : System.EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -251,6 +277,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.AnnotationCollection Annotations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.AnnotationCollection Annotations" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.Annotations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Annotations As AnnotationCollection" />
+      <MemberSignature Language="F#" Value="member this.Annotations : System.Windows.Forms.DataVisualization.Charting.AnnotationCollection" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.Annotations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -284,6 +312,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler AnnotationSelectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AnnotationSelectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationSelectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event AnnotationSelectionChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.AnnotationSelectionChanged : EventHandler " Usage="member this.AnnotationSelectionChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -301,6 +331,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler AnnotationTextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AnnotationTextChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationTextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event AnnotationTextChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.AnnotationTextChanged : EventHandler " Usage="member this.AnnotationTextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -318,6 +350,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.AntiAliasingStyles AntiAliasing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.AntiAliasingStyles AntiAliasing" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.AntiAliasing" />
+      <MemberSignature Language="VB.NET" Value="Public Property AntiAliasing As AntiAliasingStyles" />
+      <MemberSignature Language="F#" Value="member this.AntiAliasing : System.Windows.Forms.DataVisualization.Charting.AntiAliasingStyles with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.AntiAliasing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -358,6 +392,8 @@
       <MemberSignature Language="C#" Value="public void ApplyPaletteColors ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplyPaletteColors() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.ApplyPaletteColors" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyPaletteColors ()" />
+      <MemberSignature Language="F#" Value="member this.ApplyPaletteColors : unit -&gt; unit" Usage="chart.ApplyPaletteColors " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -385,6 +421,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs&gt; AxisScrollBarClicked;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs&gt; AxisScrollBarClicked" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.AxisScrollBarClicked" />
+      <MemberSignature Language="VB.NET" Value="Public Event AxisScrollBarClicked As EventHandler(Of ScrollBarEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.AxisScrollBarClicked : EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs&gt; " Usage="member this.AxisScrollBarClicked : System.EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -402,6 +440,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ViewEventArgs&gt; AxisViewChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Forms.DataVisualization.Charting.ViewEventArgs&gt; AxisViewChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event AxisViewChanged As EventHandler(Of ViewEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.AxisViewChanged : EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ViewEventArgs&gt; " Usage="member this.AxisViewChanged : System.EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ViewEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -419,6 +459,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ViewEventArgs&gt; AxisViewChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Forms.DataVisualization.Charting.ViewEventArgs&gt; AxisViewChanging" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Event AxisViewChanging As EventHandler(Of ViewEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.AxisViewChanging : EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ViewEventArgs&gt; " Usage="member this.AxisViewChanging : System.EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ViewEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -436,6 +478,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -479,6 +523,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BackGradientStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackGradientStyle As GradientStyle" />
+      <MemberSignature Language="F#" Value="member this.BackGradientStyle : System.Windows.Forms.DataVisualization.Charting.GradientStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BackGradientStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -525,6 +571,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Image BackgroundImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image BackgroundImage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BackgroundImage" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BackgroundImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -554,6 +602,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BackHatchStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackHatchStyle As ChartHatchStyle" />
+      <MemberSignature Language="F#" Value="member this.BackHatchStyle : System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BackHatchStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -594,6 +644,8 @@
       <MemberSignature Language="C#" Value="public string BackImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BackImage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BackImage" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImage As String" />
+      <MemberSignature Language="F#" Value="member this.BackImage : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BackImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -641,6 +693,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle BackImageAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle BackImageAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BackImageAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageAlignment As ChartImageAlignmentStyle" />
+      <MemberSignature Language="F#" Value="member this.BackImageAlignment : System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BackImageAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -677,6 +731,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackImageTransparentColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackImageTransparentColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BackImageTransparentColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageTransparentColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackImageTransparentColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BackImageTransparentColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -712,6 +768,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode BackImageWrapMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode BackImageWrapMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BackImageWrapMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageWrapMode As ChartImageWrapMode" />
+      <MemberSignature Language="F#" Value="member this.BackImageWrapMode : System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BackImageWrapMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -754,6 +812,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackSecondaryColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackSecondaryColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BackSecondaryColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackSecondaryColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackSecondaryColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BackSecondaryColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -805,7 +865,12 @@
       <MemberSignature Language="C#" Value="public void BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="chart.BeginInit " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -823,6 +888,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BorderColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -871,6 +938,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartDashStyle BorderDashStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartDashStyle BorderDashStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BorderDashStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderDashStyle As ChartDashStyle" />
+      <MemberSignature Language="F#" Value="member this.BorderDashStyle : System.Windows.Forms.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BorderDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -906,6 +975,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BorderlineColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderlineColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BorderlineColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderlineColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BorderlineColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BorderlineColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -938,6 +1009,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartDashStyle BorderlineDashStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartDashStyle BorderlineDashStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BorderlineDashStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderlineDashStyle As ChartDashStyle" />
+      <MemberSignature Language="F#" Value="member this.BorderlineDashStyle : System.Windows.Forms.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BorderlineDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -964,6 +1037,8 @@
       <MemberSignature Language="C#" Value="public int BorderlineWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BorderlineWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BorderlineWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderlineWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.BorderlineWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BorderlineWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -990,6 +1065,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.BorderSkin BorderSkin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.BorderSkin BorderSkin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BorderSkin" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderSkin As BorderSkin" />
+      <MemberSignature Language="F#" Value="member this.BorderSkin : System.Windows.Forms.DataVisualization.Charting.BorderSkin with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BorderSkin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1032,6 +1109,8 @@
       <MemberSignature Language="C#" Value="public int BorderWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BorderWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BorderWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.BorderWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1074,6 +1153,8 @@
       <MemberSignature Language="C#" Value="public string BuildNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BuildNumber" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.BuildNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildNumber As String" />
+      <MemberSignature Language="F#" Value="member this.BuildNumber : string" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.BuildNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1106,6 +1187,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartAreaCollection ChartAreas { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.ChartAreaCollection ChartAreas" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.ChartAreas" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartAreas As ChartAreaCollection" />
+      <MemberSignature Language="F#" Value="member this.ChartAreas : System.Windows.Forms.DataVisualization.Charting.ChartAreaCollection" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.ChartAreas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1144,6 +1227,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.CreateAccessibilityInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="chart.CreateAccessibilityInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1163,6 +1248,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; CursorPositionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; CursorPositionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.CursorPositionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CursorPositionChanged As EventHandler(Of CursorEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.CursorPositionChanged : EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; " Usage="member this.CursorPositionChanged : System.EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1180,6 +1267,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; CursorPositionChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; CursorPositionChanging" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.CursorPositionChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Event CursorPositionChanging As EventHandler(Of CursorEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.CursorPositionChanging : EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; " Usage="member this.CursorPositionChanging : System.EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1197,6 +1286,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Customize;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Customize" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.Customize" />
+      <MemberSignature Language="VB.NET" Value="Public Event Customize As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Customize : EventHandler " Usage="member this.Customize : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1214,6 +1305,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs&gt; CustomizeLegend;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs&gt; CustomizeLegend" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend" />
+      <MemberSignature Language="VB.NET" Value="Public Event CustomizeLegend As EventHandler(Of CustomizeLegendEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.CustomizeLegend : EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs&gt; " Usage="member this.CustomizeLegend : System.EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1231,6 +1324,8 @@
       <MemberSignature Language="C#" Value="public void DataBind ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DataBind() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.DataBind" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DataBind ()" />
+      <MemberSignature Language="F#" Value="member this.DataBind : unit -&gt; unit" Usage="chart.DataBind " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1254,10 +1349,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DataBindCrossTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Data binds a chart to the table, with one series created per unique value in a given column.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DataBindCrossTable">
       <MemberSignature Language="C#" Value="public void DataBindCrossTable (System.Collections.IEnumerable dataSource, string seriesGroupByField, string xField, string yFields, string otherFields);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DataBindCrossTable(class System.Collections.IEnumerable dataSource, string seriesGroupByField, string xField, string yFields, string otherFields) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.DataBindCrossTable(System.Collections.IEnumerable,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DataBindCrossTable (dataSource As IEnumerable, seriesGroupByField As String, xField As String, yFields As String, otherFields As String)" />
+      <MemberSignature Language="F#" Value="member this.DataBindCrossTable : System.Collections.IEnumerable * string * string * string * string -&gt; unit" Usage="chart.DataBindCrossTable (dataSource, seriesGroupByField, xField, yFields, otherFields)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1307,6 +1413,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public void DataBindCrossTable (System.Collections.IEnumerable dataSource, string seriesGroupByField, string xField, string yFields, string otherFields, System.Windows.Forms.DataVisualization.Charting.PointSortOrder sortingOrder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DataBindCrossTable(class System.Collections.IEnumerable dataSource, string seriesGroupByField, string xField, string yFields, string otherFields, valuetype System.Windows.Forms.DataVisualization.Charting.PointSortOrder sortingOrder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.DataBindCrossTable(System.Collections.IEnumerable,System.String,System.String,System.String,System.String,System.Windows.Forms.DataVisualization.Charting.PointSortOrder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DataBindCrossTable (dataSource As IEnumerable, seriesGroupByField As String, xField As String, yFields As String, otherFields As String, sortingOrder As PointSortOrder)" />
+      <MemberSignature Language="F#" Value="member this.DataBindCrossTable : System.Collections.IEnumerable * string * string * string * string * System.Windows.Forms.DataVisualization.Charting.PointSortOrder -&gt; unit" Usage="chart.DataBindCrossTable (dataSource, seriesGroupByField, xField, yFields, otherFields, sortingOrder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1356,10 +1464,21 @@ These data point properties are:
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DataBindTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Automatically creates and binds series data to the specified data table.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DataBindTable">
       <MemberSignature Language="C#" Value="public void DataBindTable (System.Collections.IEnumerable dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DataBindTable(class System.Collections.IEnumerable dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.DataBindTable(System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DataBindTable (dataSource As IEnumerable)" />
+      <MemberSignature Language="F#" Value="member this.DataBindTable : System.Collections.IEnumerable -&gt; unit" Usage="chart.DataBindTable dataSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1388,6 +1507,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public void DataBindTable (System.Collections.IEnumerable dataSource, string xField);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DataBindTable(class System.Collections.IEnumerable dataSource, string xField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.DataBindTable(System.Collections.IEnumerable,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DataBindTable (dataSource As IEnumerable, xField As String)" />
+      <MemberSignature Language="F#" Value="member this.DataBindTable : System.Collections.IEnumerable * string -&gt; unit" Usage="chart.DataBindTable (dataSource, xField)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1420,6 +1541,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.DataManipulator DataManipulator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.DataManipulator DataManipulator" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.DataManipulator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataManipulator As DataManipulator" />
+      <MemberSignature Language="F#" Value="member this.DataManipulator : System.Windows.Forms.DataVisualization.Charting.DataManipulator" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.DataManipulator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1469,6 +1592,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public object DataSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSource As Object" />
+      <MemberSignature Language="F#" Value="member this.DataSource : obj with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1531,6 +1656,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1549,6 +1676,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="chart.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1571,7 +1700,12 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public void EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.EndInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="chart.EndInit " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1589,6 +1723,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1624,6 +1760,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1666,6 +1804,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs&gt; FormatNumber;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs&gt; FormatNumber" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.FormatNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Event FormatNumber As EventHandler(Of FormatNumberEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.FormatNumber : EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs&gt; " Usage="member this.FormatNumber : System.EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1683,6 +1823,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartElementOutline GetChartElementOutline (object element, System.Windows.Forms.DataVisualization.Charting.ChartElementType elementType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataVisualization.Charting.ChartElementOutline GetChartElementOutline(object element, valuetype System.Windows.Forms.DataVisualization.Charting.ChartElementType elementType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.GetChartElementOutline(System.Object,System.Windows.Forms.DataVisualization.Charting.ChartElementType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChartElementOutline (element As Object, elementType As ChartElementType) As ChartElementOutline" />
+      <MemberSignature Language="F#" Value="member this.GetChartElementOutline : obj * System.Windows.Forms.DataVisualization.Charting.ChartElementType -&gt; System.Windows.Forms.DataVisualization.Charting.ChartElementOutline" Usage="chart.GetChartElementOutline (element, elementType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1718,6 +1860,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public object GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetService : Type -&gt; obj" Usage="chart.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1740,6 +1884,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs&gt; GetToolTipText;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs&gt; GetToolTipText" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.GetToolTipText" />
+      <MemberSignature Language="VB.NET" Value="Public Event GetToolTipText As EventHandler(Of ToolTipEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.GetToolTipText : EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs&gt; " Usage="member this.GetToolTipText : System.EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1778,6 +1924,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.HitTestResult HitTest (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataVisualization.Charting.HitTestResult HitTest(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.HitTest(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HitTest (x As Integer, y As Integer) As HitTestResult" />
+      <MemberSignature Language="F#" Value="member this.HitTest : int * int -&gt; System.Windows.Forms.DataVisualization.Charting.HitTestResult" Usage="chart.HitTest (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1811,6 +1959,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.HitTestResult HitTest (int x, int y, bool ignoreTransparent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataVisualization.Charting.HitTestResult HitTest(int32 x, int32 y, bool ignoreTransparent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.HitTest(System.Int32,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HitTest (x As Integer, y As Integer, ignoreTransparent As Boolean) As HitTestResult" />
+      <MemberSignature Language="F#" Value="member this.HitTest : int * int * bool -&gt; System.Windows.Forms.DataVisualization.Charting.HitTestResult" Usage="chart.HitTest (x, y, ignoreTransparent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1849,6 +1999,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.HitTestResult HitTest (int x, int y, System.Windows.Forms.DataVisualization.Charting.ChartElementType requestedElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataVisualization.Charting.HitTestResult HitTest(int32 x, int32 y, valuetype System.Windows.Forms.DataVisualization.Charting.ChartElementType requestedElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.HitTest(System.Int32,System.Int32,System.Windows.Forms.DataVisualization.Charting.ChartElementType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HitTest (x As Integer, y As Integer, requestedElement As ChartElementType) As HitTestResult" />
+      <MemberSignature Language="F#" Value="member this.HitTest : int * int * System.Windows.Forms.DataVisualization.Charting.ChartElementType -&gt; System.Windows.Forms.DataVisualization.Charting.HitTestResult" Usage="chart.HitTest (x, y, requestedElement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1884,6 +2036,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.HitTestResult[] HitTest (int x, int y, bool ignoreTransparent, params System.Windows.Forms.DataVisualization.Charting.ChartElementType[] requestedElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataVisualization.Charting.HitTestResult[] HitTest(int32 x, int32 y, bool ignoreTransparent, valuetype System.Windows.Forms.DataVisualization.Charting.ChartElementType[] requestedElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.HitTest(System.Int32,System.Int32,System.Boolean,System.Windows.Forms.DataVisualization.Charting.ChartElementType[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function HitTest (x As Integer, y As Integer, ignoreTransparent As Boolean, ParamArray requestedElement As ChartElementType()) As HitTestResult()" />
+      <MemberSignature Language="F#" Value="member this.HitTest : int * int * bool * System.Windows.Forms.DataVisualization.Charting.ChartElementType[] -&gt; System.Windows.Forms.DataVisualization.Charting.HitTestResult[]" Usage="chart.HitTest (x, y, ignoreTransparent, requestedElement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1928,6 +2082,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.NamedImagesCollection Images { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.NamedImagesCollection Images" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.Images" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Images As NamedImagesCollection" />
+      <MemberSignature Language="F#" Value="member this.Images : System.Windows.Forms.DataVisualization.Charting.NamedImagesCollection" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.Images" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1964,10 +2120,21 @@ These data point properties are:
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Invalidate">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invalidates the entire surface of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> and causes the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control to be redrawn.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Invalidate">
       <MemberSignature Language="C#" Value="public void Invalidate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.Invalidate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
+      <MemberSignature Language="F#" Value="override this.Invalidate : unit -&gt; unit" Usage="chart.Invalidate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1986,6 +2153,7 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public void Invalidate (System.Drawing.Rectangle rectangle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate(valuetype System.Drawing.Rectangle rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.Invalidate(System.Drawing.Rectangle)" />
+      <MemberSignature Language="F#" Value="override this.Invalidate : System.Drawing.Rectangle -&gt; unit" Usage="chart.Invalidate rectangle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2014,6 +2182,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public bool IsSoftShadows { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSoftShadows" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.IsSoftShadows" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSoftShadows As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSoftShadows : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.IsSoftShadows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2050,6 +2220,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendCollection Legends { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.LegendCollection Legends" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.Legends" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Legends As LegendCollection" />
+      <MemberSignature Language="F#" Value="member this.Legends : System.Windows.Forms.DataVisualization.Charting.LegendCollection" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.Legends" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2079,10 +2251,20 @@ These data point properties are:
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadTemplate">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a template into the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control from a specified source.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LoadTemplate">
       <MemberSignature Language="C#" Value="public void LoadTemplate (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadTemplate(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.LoadTemplate(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="member this.LoadTemplate : System.IO.Stream -&gt; unit" Usage="chart.LoadTemplate stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2117,6 +2299,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public void LoadTemplate (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadTemplate(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.LoadTemplate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadTemplate (name As String)" />
+      <MemberSignature Language="F#" Value="member this.LoadTemplate : string -&gt; unit" Usage="chart.LoadTemplate name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2153,6 +2337,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected override void OnCursorChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCursorChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnCursorChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCursorChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnCursorChanged : EventArgs -&gt; unit" Usage="chart.OnCursorChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2174,6 +2360,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected virtual void OnCustomize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCustomize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnCustomize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCustomize ()" />
+      <MemberSignature Language="F#" Value="abstract member OnCustomize : unit -&gt; unit&#xA;override this.OnCustomize : unit -&gt; unit" Usage="chart.OnCustomize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2192,6 +2380,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected virtual void OnCustomizeLegend (System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection legendItems, string legendName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCustomizeLegend(class System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection legendItems, string legendName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnCustomizeLegend(System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCustomizeLegend (legendItems As LegendItemsCollection, legendName As String)" />
+      <MemberSignature Language="F#" Value="abstract member OnCustomizeLegend : System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection * string -&gt; unit&#xA;override this.OnCustomizeLegend : System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection * string -&gt; unit" Usage="chart.OnCustomizeLegend (legendItems, legendName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2215,6 +2405,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected override void OnDoubleClick (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDoubleClick(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnDoubleClick(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDoubleClick (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnDoubleClick : EventArgs -&gt; unit" Usage="chart.OnDoubleClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2236,6 +2428,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected virtual void OnFormatNumber (System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFormatNumber(class System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnFormatNumber(System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFormatNumber (e As FormatNumberEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnFormatNumber : System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs -&gt; unit&#xA;override this.OnFormatNumber : System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs -&gt; unit" Usage="chart.OnFormatNumber e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2257,6 +2451,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected override void OnLocationChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLocationChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnLocationChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLocationChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnLocationChanged : EventArgs -&gt; unit" Usage="chart.OnLocationChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2278,6 +2474,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected override void OnMouseDown (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDown(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseDown : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="chart.OnMouseDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2299,6 +2497,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected override void OnMouseMove (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseMove(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (e As MouseEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseMove : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="chart.OnMouseMove e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2320,6 +2520,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected override void OnMouseUp (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseUp(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (e As MouseEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseUp : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="chart.OnMouseUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2341,6 +2543,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected override void OnPaint (System.Windows.Forms.PaintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Windows.Forms.PaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="chart.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2362,6 +2566,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected override void OnPaintBackground (System.Windows.Forms.PaintEventArgs pevent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaintBackground(class System.Windows.Forms.PaintEventArgs pevent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaintBackground (pevent As PaintEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPaintBackground : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="chart.OnPaintBackground pevent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2383,6 +2589,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected virtual void OnPostPaint (System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPostPaint(class System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnPostPaint(System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPostPaint (e As ChartPaintEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPostPaint : System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs -&gt; unit&#xA;override this.OnPostPaint : System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs -&gt; unit" Usage="chart.OnPostPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2404,6 +2612,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected virtual void OnPrePaint (System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPrePaint(class System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnPrePaint(System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPrePaint (e As ChartPaintEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPrePaint : System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs -&gt; unit&#xA;override this.OnPrePaint : System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs -&gt; unit" Usage="chart.OnPrePaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2425,6 +2635,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected override void OnResize (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResize(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnResize(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnResize (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnResize : EventArgs -&gt; unit" Usage="chart.OnResize e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2446,6 +2658,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected override void OnRightToLeftChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRightToLeftChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnRightToLeftChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRightToLeftChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnRightToLeftChanged : EventArgs -&gt; unit" Usage="chart.OnRightToLeftChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2467,6 +2681,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="protected override void OnSystemColorsChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSystemColorsChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.OnSystemColorsChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSystemColorsChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnSystemColorsChanged : EventArgs -&gt; unit" Usage="chart.OnSystemColorsChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2488,6 +2704,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartColorPalette Palette { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartColorPalette Palette" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.Palette" />
+      <MemberSignature Language="VB.NET" Value="Public Property Palette As ChartColorPalette" />
+      <MemberSignature Language="F#" Value="member this.Palette : System.Windows.Forms.DataVisualization.Charting.ChartColorPalette with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.Palette" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2533,6 +2751,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Drawing.Color[] PaletteCustomColors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color[] PaletteCustomColors" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.PaletteCustomColors" />
+      <MemberSignature Language="VB.NET" Value="Public Property PaletteCustomColors As Color()" />
+      <MemberSignature Language="F#" Value="member this.PaletteCustomColors : System.Drawing.Color[] with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.PaletteCustomColors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2570,6 +2790,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs&gt; PostPaint;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs&gt; PostPaint" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.PostPaint" />
+      <MemberSignature Language="VB.NET" Value="Public Event PostPaint As EventHandler(Of ChartPaintEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.PostPaint : EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs&gt; " Usage="member this.PostPaint : System.EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2587,6 +2809,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs&gt; PrePaint;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs&gt; PrePaint" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.PrePaint" />
+      <MemberSignature Language="VB.NET" Value="Public Event PrePaint As EventHandler(Of ChartPaintEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.PrePaint : EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs&gt; " Usage="member this.PrePaint : System.EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2604,6 +2828,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.PrintingManager Printing { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.PrintingManager Printing" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.Printing" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Printing As PrintingManager" />
+      <MemberSignature Language="F#" Value="member this.Printing : System.Windows.Forms.DataVisualization.Charting.PrintingManager" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.Printing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2648,6 +2874,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public override void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Refresh ()" />
+      <MemberSignature Language="F#" Value="override this.Refresh : unit -&gt; unit" Usage="chart.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2671,6 +2899,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public double RenderingDpiX { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 RenderingDpiX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.RenderingDpiX" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderingDpiX As Double" />
+      <MemberSignature Language="F#" Value="member this.RenderingDpiX : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.RenderingDpiX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2703,6 +2933,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public double RenderingDpiY { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 RenderingDpiY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.RenderingDpiY" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderingDpiY As Double" />
+      <MemberSignature Language="F#" Value="member this.RenderingDpiY : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.RenderingDpiY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2735,6 +2967,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public void ResetAutoValues ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetAutoValues() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.ResetAutoValues" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetAutoValues ()" />
+      <MemberSignature Language="F#" Value="member this.ResetAutoValues : unit -&gt; unit" Usage="chart.ResetAutoValues " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2758,10 +2992,21 @@ These data point properties are:
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SaveImage">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the image to the specifed target.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SaveImage">
       <MemberSignature Language="C#" Value="public void SaveImage (System.IO.Stream imageStream, System.Drawing.Imaging.ImageFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveImage(class System.IO.Stream imageStream, class System.Drawing.Imaging.ImageFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.SaveImage(System.IO.Stream,System.Drawing.Imaging.ImageFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveImage (imageStream As Stream, format As ImageFormat)" />
+      <MemberSignature Language="F#" Value="member this.SaveImage : System.IO.Stream * System.Drawing.Imaging.ImageFormat -&gt; unit" Usage="chart.SaveImage (imageStream, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2785,6 +3030,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public void SaveImage (System.IO.Stream imageStream, System.Windows.Forms.DataVisualization.Charting.ChartImageFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveImage(class System.IO.Stream imageStream, valuetype System.Windows.Forms.DataVisualization.Charting.ChartImageFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.SaveImage(System.IO.Stream,System.Windows.Forms.DataVisualization.Charting.ChartImageFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveImage (imageStream As Stream, format As ChartImageFormat)" />
+      <MemberSignature Language="F#" Value="member this.SaveImage : System.IO.Stream * System.Windows.Forms.DataVisualization.Charting.ChartImageFormat -&gt; unit" Usage="chart.SaveImage (imageStream, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2808,6 +3055,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public void SaveImage (string imageFileName, System.Drawing.Imaging.ImageFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveImage(string imageFileName, class System.Drawing.Imaging.ImageFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.SaveImage(System.String,System.Drawing.Imaging.ImageFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveImage (imageFileName As String, format As ImageFormat)" />
+      <MemberSignature Language="F#" Value="member this.SaveImage : string * System.Drawing.Imaging.ImageFormat -&gt; unit" Usage="chart.SaveImage (imageFileName, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2831,6 +3080,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public void SaveImage (string imageFileName, System.Windows.Forms.DataVisualization.Charting.ChartImageFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveImage(string imageFileName, valuetype System.Windows.Forms.DataVisualization.Charting.ChartImageFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.SaveImage(System.String,System.Windows.Forms.DataVisualization.Charting.ChartImageFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveImage (imageFileName As String, format As ChartImageFormat)" />
+      <MemberSignature Language="F#" Value="member this.SaveImage : string * System.Windows.Forms.DataVisualization.Charting.ChartImageFormat -&gt; unit" Usage="chart.SaveImage (imageFileName, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2854,6 +3105,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; SelectionRangeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; SelectionRangeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.SelectionRangeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectionRangeChanged As EventHandler(Of CursorEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SelectionRangeChanged : EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; " Usage="member this.SelectionRangeChanged : System.EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2871,6 +3124,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; SelectionRangeChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; SelectionRangeChanging" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataVisualization.Charting.Chart.SelectionRangeChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectionRangeChanging As EventHandler(Of CursorEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SelectionRangeChanging : EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; " Usage="member this.SelectionRangeChanging : System.EventHandler&lt;System.Windows.Forms.DataVisualization.Charting.CursorEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2888,6 +3143,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartSerializer Serializer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.ChartSerializer Serializer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.Serializer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Serializer As ChartSerializer" />
+      <MemberSignature Language="F#" Value="member this.Serializer : System.Windows.Forms.DataVisualization.Charting.ChartSerializer" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.Serializer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2923,6 +3180,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.SeriesCollection Series { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.SeriesCollection Series" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.Series" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Series As SeriesCollection" />
+      <MemberSignature Language="F#" Value="member this.Series : System.Windows.Forms.DataVisualization.Charting.SeriesCollection" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.Series" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2958,6 +3217,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Drawing.Size Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size Size" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Property Size As Size" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Drawing.Size with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -2984,6 +3245,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public bool SuppressExceptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SuppressExceptions" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.SuppressExceptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuppressExceptions As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SuppressExceptions : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.SuppressExceptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -3020,6 +3283,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.TextAntiAliasingQuality TextAntiAliasingQuality { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.TextAntiAliasingQuality TextAntiAliasingQuality" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.TextAntiAliasingQuality" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextAntiAliasingQuality As TextAntiAliasingQuality" />
+      <MemberSignature Language="F#" Value="member this.TextAntiAliasingQuality : System.Windows.Forms.DataVisualization.Charting.TextAntiAliasingQuality with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.TextAntiAliasingQuality" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -3053,6 +3318,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.TitleCollection Titles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.TitleCollection Titles" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Chart.Titles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Titles As TitleCollection" />
+      <MemberSignature Language="F#" Value="member this.Titles : System.Windows.Forms.DataVisualization.Charting.TitleCollection" Usage="System.Windows.Forms.DataVisualization.Charting.Chart.Titles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -3086,6 +3353,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public void UpdateAnnotations ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateAnnotations() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.UpdateAnnotations" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateAnnotations ()" />
+      <MemberSignature Language="F#" Value="member this.UpdateAnnotations : unit -&gt; unit" Usage="chart.UpdateAnnotations " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -3104,6 +3373,8 @@ These data point properties are:
       <MemberSignature Language="C#" Value="public void UpdateCursor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateCursor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.UpdateCursor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateCursor ()" />
+      <MemberSignature Language="F#" Value="member this.UpdateCursor : unit -&gt; unit" Usage="chart.UpdateCursor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -3118,59 +3389,5 @@ These data point properties are:
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SaveImage">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Saves the image to the specifed target.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Invalidate">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invalidates the entire surface of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> and causes the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control to be redrawn.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AlignDataPointsByAxisLabel">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Aligns data points using their axis labels.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DataBindTable">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Automatically creates and binds series data to the specified data table.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="LoadTemplate">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads a template into the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control from a specified source.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DataBindCrossTable">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Data binds a chart to the table, with one series created per unique value in a given column.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

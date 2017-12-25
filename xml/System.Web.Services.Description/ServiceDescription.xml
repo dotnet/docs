@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class ServiceDescription : System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceDescription extends System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ServiceDescription" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceDescription&#xA;Inherits NamedItem" />
+  <TypeSignature Language="F#" Value="type ServiceDescription = class&#xA;    inherit NamedItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +48,7 @@
       <MemberSignature Language="C#" Value="public ServiceDescription ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.BindingCollection Bindings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.BindingCollection Bindings" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescription.Bindings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bindings As BindingCollection" />
+      <MemberSignature Language="F#" Value="member this.Bindings : System.Web.Services.Description.BindingCollection" Usage="System.Web.Services.Description.ServiceDescription.Bindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -100,6 +105,8 @@
       <MemberSignature Language="C#" Value="public static bool CanRead (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanRead(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.CanRead(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CanRead (reader As XmlReader) As Boolean" />
+      <MemberSignature Language="F#" Value="static member CanRead : System.Xml.XmlReader -&gt; bool" Usage="System.Web.Services.Description.ServiceDescription.CanRead reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -133,6 +140,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescription.Extensions" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Extensions As ServiceDescriptionFormatExtensionCollection" />
+      <MemberSignature Language="F#" Value="member this.Extensions : System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" Usage="System.Web.Services.Description.ServiceDescription.Extensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -166,6 +175,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.ImportCollection Imports { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ImportCollection Imports" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescription.Imports" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Imports As ImportCollection" />
+      <MemberSignature Language="F#" Value="member this.Imports : System.Web.Services.Description.ImportCollection" Usage="System.Web.Services.Description.ServiceDescription.Imports" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -204,6 +215,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.MessageCollection Messages { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.MessageCollection Messages" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescription.Messages" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Messages As MessageCollection" />
+      <MemberSignature Language="F#" Value="member this.Messages : System.Web.Services.Description.MessageCollection" Usage="System.Web.Services.Description.ServiceDescription.Messages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -242,6 +255,8 @@
       <MemberSignature Language="C#" Value="public const string Namespace;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Namespace" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.ServiceDescription.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Const Namespace As String " />
+      <MemberSignature Language="F#" Value="val mutable Namespace : string" Usage="System.Web.Services.Description.ServiceDescription.Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -269,6 +284,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.PortTypeCollection PortTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.PortTypeCollection PortTypes" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescription.PortTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PortTypes As PortTypeCollection" />
+      <MemberSignature Language="F#" Value="member this.PortTypes : System.Web.Services.Description.PortTypeCollection" Usage="System.Web.Services.Description.ServiceDescription.PortTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -303,10 +320,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Web.Services.Description.ServiceDescription" /> class by directly loading the XML.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Read(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="static member Read : System.IO.Stream -&gt; System.Web.Services.Description.ServiceDescription" Usage="System.Web.Services.Description.ServiceDescription.Read stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -339,6 +367,7 @@
       <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (System.IO.TextReader textReader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Read(System.IO.TextReader)" />
+      <MemberSignature Language="F#" Value="static member Read : System.IO.TextReader -&gt; System.Web.Services.Description.ServiceDescription" Usage="System.Web.Services.Description.ServiceDescription.Read textReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -371,6 +400,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Read(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Read (fileName As String) As ServiceDescription" />
+      <MemberSignature Language="F#" Value="static member Read : string -&gt; System.Web.Services.Description.ServiceDescription" Usage="System.Web.Services.Description.ServiceDescription.Read fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -403,6 +434,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Read(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Read (reader As XmlReader) As ServiceDescription" />
+      <MemberSignature Language="F#" Value="static member Read : System.Xml.XmlReader -&gt; System.Web.Services.Description.ServiceDescription" Usage="System.Web.Services.Description.ServiceDescription.Read reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -435,6 +468,7 @@
       <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (System.IO.Stream stream, bool validate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(class System.IO.Stream stream, bool validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Read(System.IO.Stream,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member Read : System.IO.Stream * bool -&gt; System.Web.Services.Description.ServiceDescription" Usage="System.Web.Services.Description.ServiceDescription.Read (stream, validate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -460,6 +494,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (System.IO.TextReader reader, bool validate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(class System.IO.TextReader reader, bool validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Read(System.IO.TextReader,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member Read : System.IO.TextReader * bool -&gt; System.Web.Services.Description.ServiceDescription" Usage="System.Web.Services.Description.ServiceDescription.Read (reader, validate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Read (reader As TextReader, validate As Boolean) As ServiceDescription" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -485,6 +521,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (string fileName, bool validate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(string fileName, bool validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Read(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Read (fileName As String, validate As Boolean) As ServiceDescription" />
+      <MemberSignature Language="F#" Value="static member Read : string * bool -&gt; System.Web.Services.Description.ServiceDescription" Usage="System.Web.Services.Description.ServiceDescription.Read (fileName, validate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -510,6 +548,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (System.Xml.XmlReader reader, bool validate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(class System.Xml.XmlReader reader, bool validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Read(System.Xml.XmlReader,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Read (reader As XmlReader, validate As Boolean) As ServiceDescription" />
+      <MemberSignature Language="F#" Value="static member Read : System.Xml.XmlReader * bool -&gt; System.Web.Services.Description.ServiceDescription" Usage="System.Web.Services.Description.ServiceDescription.Read (reader, validate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -535,6 +575,8 @@
       <MemberSignature Language="C#" Value="public string RetrievalUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RetrievalUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescription.RetrievalUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property RetrievalUrl As String" />
+      <MemberSignature Language="F#" Value="member this.RetrievalUrl : string with get, set" Usage="System.Web.Services.Description.ServiceDescription.RetrievalUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -568,6 +610,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlSchema Schema { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Xml.Schema.XmlSchema Schema" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescription.Schema" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Schema As XmlSchema" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.Xml.Schema.XmlSchema" Usage="System.Web.Services.Description.ServiceDescription.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -587,6 +631,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Serialization.XmlSerializer Serializer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Xml.Serialization.XmlSerializer Serializer" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescription.Serializer" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Serializer As XmlSerializer" />
+      <MemberSignature Language="F#" Value="member this.Serializer : System.Xml.Serialization.XmlSerializer" Usage="System.Web.Services.Description.ServiceDescription.Serializer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -618,6 +664,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.ServiceDescriptionCollection ServiceDescriptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescriptionCollection ServiceDescriptions" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescription.ServiceDescriptions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceDescriptions As ServiceDescriptionCollection" />
+      <MemberSignature Language="F#" Value="member this.ServiceDescriptions : System.Web.Services.Description.ServiceDescriptionCollection" Usage="System.Web.Services.Description.ServiceDescription.ServiceDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -643,6 +691,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.ServiceCollection Services { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceCollection Services" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescription.Services" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Services As ServiceCollection" />
+      <MemberSignature Language="F#" Value="member this.Services : System.Web.Services.Description.ServiceCollection" Usage="System.Web.Services.Description.ServiceDescription.Services" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -681,6 +731,8 @@
       <MemberSignature Language="C#" Value="public string TargetNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescription.TargetNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetNamespace As String" />
+      <MemberSignature Language="F#" Value="member this.TargetNamespace : string with get, set" Usage="System.Web.Services.Description.ServiceDescription.TargetNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -714,6 +766,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.Types Types { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Types Types" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescription.Types" />
+      <MemberSignature Language="VB.NET" Value="Public Property Types As Types" />
+      <MemberSignature Language="F#" Value="member this.Types : System.Web.Services.Description.Types with get, set" Usage="System.Web.Services.Description.ServiceDescription.Types" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -752,6 +806,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection ValidationWarnings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection ValidationWarnings" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescription.ValidationWarnings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationWarnings As StringCollection" />
+      <MemberSignature Language="F#" Value="member this.ValidationWarnings : System.Collections.Specialized.StringCollection" Usage="System.Web.Services.Description.ServiceDescription.ValidationWarnings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -772,10 +828,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes out the <see cref="T:System.Web.Services.Description.ServiceDescription" /> as a Web Services Description Language (WSDL) file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public void Write (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Write(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="member this.Write : System.IO.Stream -&gt; unit" Usage="serviceDescription.Write stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -807,6 +874,8 @@
       <MemberSignature Language="C#" Value="public void Write (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Write(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (writer As TextWriter)" />
+      <MemberSignature Language="F#" Value="member this.Write : System.IO.TextWriter -&gt; unit" Usage="serviceDescription.Write writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -829,6 +898,8 @@
       <MemberSignature Language="C#" Value="public void Write (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (fileName As String)" />
+      <MemberSignature Language="F#" Value="member this.Write : string -&gt; unit" Usage="serviceDescription.Write fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -860,6 +931,8 @@
       <MemberSignature Language="C#" Value="public void Write (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Write(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (writer As XmlWriter)" />
+      <MemberSignature Language="F#" Value="member this.Write : System.Xml.XmlWriter -&gt; unit" Usage="serviceDescription.Write writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -885,25 +958,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes out the <see cref="T:System.Web.Services.Description.ServiceDescription" /> as a Web Services Description Language (WSDL) file.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Read">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.Web.Services.Description.ServiceDescription" /> class by directly loading the XML.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

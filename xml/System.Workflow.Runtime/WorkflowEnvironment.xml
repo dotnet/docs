@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public static class WorkflowEnvironment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WorkflowEnvironment extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowEnvironment" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowEnvironment" />
+  <TypeSignature Language="F#" Value="type WorkflowEnvironment = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public static System.Workflow.Runtime.IWorkBatch WorkBatch { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Workflow.Runtime.IWorkBatch WorkBatch" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowEnvironment.WorkBatch" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WorkBatch As IWorkBatch" />
+      <MemberSignature Language="F#" Value="member this.WorkBatch : System.Workflow.Runtime.IWorkBatch" Usage="System.Workflow.Runtime.WorkflowEnvironment.WorkBatch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public static Guid WorkflowInstanceId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Guid WorkflowInstanceId" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowEnvironment.WorkflowInstanceId" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WorkflowInstanceId As Guid" />
+      <MemberSignature Language="F#" Value="member this.WorkflowInstanceId : Guid" Usage="System.Workflow.Runtime.WorkflowEnvironment.WorkflowInstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

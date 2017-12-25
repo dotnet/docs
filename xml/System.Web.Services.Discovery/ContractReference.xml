@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class ContractReference : System.Web.Services.Discovery.DiscoveryReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContractReference extends System.Web.Services.Discovery.DiscoveryReference" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.ContractReference" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContractReference&#xA;Inherits DiscoveryReference" />
+  <TypeSignature Language="F#" Value="type ContractReference = class&#xA;    inherit DiscoveryReference" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,10 +44,21 @@
     <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.ContractReference" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ContractReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ContractReference.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -78,6 +91,8 @@
       <MemberSignature Language="C#" Value="public ContractReference (string href);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string href) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ContractReference.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (href As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Discovery.ContractReference : string -&gt; System.Web.Services.Discovery.ContractReference" Usage="new System.Web.Services.Discovery.ContractReference href" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -117,6 +132,8 @@
       <MemberSignature Language="C#" Value="public ContractReference (string href, string docRef);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string href, string docRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ContractReference.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (href As String, docRef As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Discovery.ContractReference : string * string -&gt; System.Web.Services.Discovery.ContractReference" Usage="new System.Web.Services.Discovery.ContractReference (href, docRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -159,6 +176,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.ServiceDescription Contract { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescription Contract" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.ContractReference.Contract" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contract As ServiceDescription" />
+      <MemberSignature Language="F#" Value="member this.Contract : System.Web.Services.Description.ServiceDescription" Usage="System.Web.Services.Discovery.ContractReference.Contract" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -196,6 +215,8 @@
       <MemberSignature Language="C#" Value="public override string DefaultFilename { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultFilename" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.ContractReference.DefaultFilename" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultFilename As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultFilename : string" Usage="System.Web.Services.Discovery.ContractReference.DefaultFilename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -229,6 +250,8 @@
       <MemberSignature Language="C#" Value="public string DocRef { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DocRef" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.ContractReference.DocRef" />
+      <MemberSignature Language="VB.NET" Value="Public Property DocRef As String" />
+      <MemberSignature Language="F#" Value="member this.DocRef : string with get, set" Usage="System.Web.Services.Discovery.ContractReference.DocRef" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -275,6 +298,8 @@
       <MemberSignature Language="C#" Value="public const string Namespace;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Namespace" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Discovery.ContractReference.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Const Namespace As String " />
+      <MemberSignature Language="F#" Value="val mutable Namespace : string" Usage="System.Web.Services.Discovery.ContractReference.Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -309,6 +334,7 @@
       <MemberSignature Language="C#" Value="public override object ReadDocument (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadDocument(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ContractReference.ReadDocument(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="override this.ReadDocument : System.IO.Stream -&gt; obj" Usage="contractReference.ReadDocument stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -346,6 +372,8 @@
       <MemberSignature Language="C#" Value="public string Ref { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Ref" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.ContractReference.Ref" />
+      <MemberSignature Language="VB.NET" Value="Public Property Ref As String" />
+      <MemberSignature Language="F#" Value="member this.Ref : string with get, set" Usage="System.Web.Services.Discovery.ContractReference.Ref" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -389,9 +417,10 @@
       </Docs>
     </Member>
     <Member MemberName="Resolve">
-      <MemberSignature Language="C#" Value="protected override void Resolve (string contentType, System.IO.Stream stream);" />
+      <MemberSignature Language="C#" Value="protected internal override void Resolve (string contentType, System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Resolve(string contentType, class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ContractReference.Resolve(System.String,System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="override this.Resolve : string * System.IO.Stream -&gt; unit" Usage="contractReference.Resolve (contentType, stream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -432,6 +461,8 @@
       <MemberSignature Language="C#" Value="public override string Url { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.ContractReference.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="System.Web.Services.Discovery.ContractReference.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -471,6 +502,7 @@
       <MemberSignature Language="C#" Value="public override void WriteDocument (object document, System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteDocument(object document, class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ContractReference.WriteDocument(System.Object,System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="override this.WriteDocument : obj * System.IO.Stream -&gt; unit" Usage="contractReference.WriteDocument (document, stream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -504,15 +536,5 @@
         <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll(System.String,System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.ContractReference" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class Stopwatch" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Stopwatch extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Stopwatch" />
+  <TypeSignature Language="VB.NET" Value="Public Class Stopwatch" />
+  <TypeSignature Language="F#" Value="type Stopwatch = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +70,7 @@
       <MemberSignature Language="C#" Value="public Stopwatch ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -113,6 +116,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan Elapsed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Elapsed" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Stopwatch.Elapsed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Elapsed As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.Elapsed : TimeSpan" Usage="System.Diagnostics.Stopwatch.Elapsed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -167,6 +172,8 @@
       <MemberSignature Language="C#" Value="public long ElapsedMilliseconds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ElapsedMilliseconds" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Stopwatch.ElapsedMilliseconds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElapsedMilliseconds As Long" />
+      <MemberSignature Language="F#" Value="member this.ElapsedMilliseconds : int64" Usage="System.Diagnostics.Stopwatch.ElapsedMilliseconds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -219,6 +226,8 @@
       <MemberSignature Language="C#" Value="public long ElapsedTicks { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ElapsedTicks" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Stopwatch.ElapsedTicks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElapsedTicks As Long" />
+      <MemberSignature Language="F#" Value="member this.ElapsedTicks : int64" Usage="System.Diagnostics.Stopwatch.ElapsedTicks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -275,6 +284,8 @@
       <MemberSignature Language="C#" Value="public static readonly long Frequency;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly int64 Frequency" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Stopwatch.Frequency" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Frequency As Long " />
+      <MemberSignature Language="F#" Value=" staticval mutable Frequency : int64" Usage="System.Diagnostics.Stopwatch.Frequency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -325,6 +336,8 @@
       <MemberSignature Language="C#" Value="public static long GetTimestamp ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 GetTimestamp() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.GetTimestamp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTimestamp () As Long" />
+      <MemberSignature Language="F#" Value="static member GetTimestamp : unit -&gt; int64" Usage="System.Diagnostics.Stopwatch.GetTimestamp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -373,6 +386,8 @@
       <MemberSignature Language="C#" Value="public static readonly bool IsHighResolution;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly bool IsHighResolution" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Stopwatch.IsHighResolution" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsHighResolution As Boolean " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsHighResolution : bool" Usage="System.Diagnostics.Stopwatch.IsHighResolution" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -419,6 +434,8 @@
       <MemberSignature Language="C#" Value="public bool IsRunning { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRunning" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Stopwatch.IsRunning" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRunning As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRunning : bool" Usage="System.Diagnostics.Stopwatch.IsRunning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -461,6 +478,8 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="stopwatch.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -502,6 +521,8 @@
       <MemberSignature Language="C#" Value="public void Restart ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Restart() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.Restart" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Restart ()" />
+      <MemberSignature Language="F#" Value="member this.Restart : unit -&gt; unit" Usage="stopwatch.Restart " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -539,6 +560,8 @@
       <MemberSignature Language="C#" Value="public void Start ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="stopwatch.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -592,6 +615,8 @@
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Stopwatch StartNew ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Stopwatch StartNew() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.StartNew" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StartNew () As Stopwatch" />
+      <MemberSignature Language="F#" Value="static member StartNew : unit -&gt; System.Diagnostics.Stopwatch" Usage="System.Diagnostics.Stopwatch.StartNew " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -643,6 +668,8 @@
       <MemberSignature Language="C#" Value="public void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="stopwatch.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>

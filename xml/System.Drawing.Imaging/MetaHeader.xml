@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class MetaHeader" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MetaHeader extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.MetaHeader" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MetaHeader" />
+  <TypeSignature Language="F#" Value="type MetaHeader = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public MetaHeader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.MetaHeader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public short HeaderSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 HeaderSize" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetaHeader.HeaderSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderSize As Short" />
+      <MemberSignature Language="F#" Value="member this.HeaderSize : int16 with get, set" Usage="System.Drawing.Imaging.MetaHeader.HeaderSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -59,6 +64,8 @@
       <MemberSignature Language="C#" Value="public int MaxRecord { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxRecord" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetaHeader.MaxRecord" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxRecord As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxRecord : int with get, set" Usage="System.Drawing.Imaging.MetaHeader.MaxRecord" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -77,6 +84,8 @@
       <MemberSignature Language="C#" Value="public short NoObjects { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 NoObjects" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetaHeader.NoObjects" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoObjects As Short" />
+      <MemberSignature Language="F#" Value="member this.NoObjects : int16 with get, set" Usage="System.Drawing.Imaging.MetaHeader.NoObjects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -95,6 +104,8 @@
       <MemberSignature Language="C#" Value="public short NoParameters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 NoParameters" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetaHeader.NoParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoParameters As Short" />
+      <MemberSignature Language="F#" Value="member this.NoParameters : int16 with get, set" Usage="System.Drawing.Imaging.MetaHeader.NoParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -113,6 +124,8 @@
       <MemberSignature Language="C#" Value="public int Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetaHeader.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Property Size As Integer" />
+      <MemberSignature Language="F#" Value="member this.Size : int with get, set" Usage="System.Drawing.Imaging.MetaHeader.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -131,6 +144,8 @@
       <MemberSignature Language="C#" Value="public short Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 Type" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetaHeader.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As Short" />
+      <MemberSignature Language="F#" Value="member this.Type : int16 with get, set" Usage="System.Drawing.Imaging.MetaHeader.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -156,6 +171,8 @@
       <MemberSignature Language="C#" Value="public short Version { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 Version" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetaHeader.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Property Version As Short" />
+      <MemberSignature Language="F#" Value="member this.Version : int16 with get, set" Usage="System.Drawing.Imaging.MetaHeader.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

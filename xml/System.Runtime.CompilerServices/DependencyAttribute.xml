@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class DependencyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DependencyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.DependencyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DependencyAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type DependencyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public DependencyAttribute (string dependentAssemblyArgument, System.Runtime.CompilerServices.LoadHint loadHintArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dependentAssemblyArgument, valuetype System.Runtime.CompilerServices.LoadHint loadHintArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.DependencyAttribute.#ctor(System.String,System.Runtime.CompilerServices.LoadHint)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dependentAssemblyArgument As String, loadHintArgument As LoadHint)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.DependencyAttribute : string * System.Runtime.CompilerServices.LoadHint -&gt; System.Runtime.CompilerServices.DependencyAttribute" Usage="new System.Runtime.CompilerServices.DependencyAttribute (dependentAssemblyArgument, loadHintArgument)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,6 +103,8 @@
       <MemberSignature Language="C#" Value="public string DependentAssembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DependentAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.DependencyAttribute.DependentAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DependentAssembly As String" />
+      <MemberSignature Language="F#" Value="member this.DependentAssembly : string" Usage="System.Runtime.CompilerServices.DependencyAttribute.DependentAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +139,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.LoadHint LoadHint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.CompilerServices.LoadHint LoadHint" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.DependencyAttribute.LoadHint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoadHint As LoadHint" />
+      <MemberSignature Language="F#" Value="member this.LoadHint : System.Runtime.CompilerServices.LoadHint" Usage="System.Runtime.CompilerServices.DependencyAttribute.LoadHint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

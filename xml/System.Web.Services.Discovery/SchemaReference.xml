@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SchemaReference : System.Web.Services.Discovery.DiscoveryReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SchemaReference extends System.Web.Services.Discovery.DiscoveryReference" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.SchemaReference" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SchemaReference&#xA;Inherits DiscoveryReference" />
+  <TypeSignature Language="F#" Value="type SchemaReference = class&#xA;    inherit DiscoveryReference" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,10 +44,21 @@
     <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.SchemaReference" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SchemaReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.SchemaReference.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -71,6 +84,8 @@
       <MemberSignature Language="C#" Value="public SchemaReference (string href);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string href) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.SchemaReference.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (href As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Discovery.SchemaReference : string -&gt; System.Web.Services.Discovery.SchemaReference" Usage="new System.Web.Services.Discovery.SchemaReference href" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -99,6 +114,8 @@
       <MemberSignature Language="C#" Value="public override string DefaultFilename { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultFilename" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.SchemaReference.DefaultFilename" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultFilename As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultFilename : string" Usage="System.Web.Services.Discovery.SchemaReference.DefaultFilename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -132,6 +149,8 @@
       <MemberSignature Language="C#" Value="public const string Namespace;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Namespace" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Discovery.SchemaReference.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Const Namespace As String " />
+      <MemberSignature Language="F#" Value="val mutable Namespace : string" Usage="System.Web.Services.Discovery.SchemaReference.Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -164,6 +183,7 @@
       <MemberSignature Language="C#" Value="public override object ReadDocument (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadDocument(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.SchemaReference.ReadDocument(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="override this.ReadDocument : System.IO.Stream -&gt; obj" Usage="schemaReference.ReadDocument stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -200,6 +220,8 @@
       <MemberSignature Language="C#" Value="public string Ref { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Ref" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.SchemaReference.Ref" />
+      <MemberSignature Language="VB.NET" Value="Public Property Ref As String" />
+      <MemberSignature Language="F#" Value="member this.Ref : string with get, set" Usage="System.Web.Services.Discovery.SchemaReference.Ref" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -235,9 +257,10 @@
       </Docs>
     </Member>
     <Member MemberName="Resolve">
-      <MemberSignature Language="C#" Value="protected override void Resolve (string contentType, System.IO.Stream stream);" />
+      <MemberSignature Language="C#" Value="protected internal override void Resolve (string contentType, System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Resolve(string contentType, class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.SchemaReference.Resolve(System.String,System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="override this.Resolve : string * System.IO.Stream -&gt; unit" Usage="schemaReference.Resolve (contentType, stream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -262,6 +285,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchema Schema { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchema Schema" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.SchemaReference.Schema" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schema As XmlSchema" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.Xml.Schema.XmlSchema" Usage="System.Web.Services.Discovery.SchemaReference.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -307,6 +332,8 @@
       <MemberSignature Language="C#" Value="public string TargetNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.SchemaReference.TargetNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetNamespace As String" />
+      <MemberSignature Language="F#" Value="member this.TargetNamespace : string with get, set" Usage="System.Web.Services.Discovery.SchemaReference.TargetNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -343,6 +370,8 @@
       <MemberSignature Language="C#" Value="public override string Url { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.SchemaReference.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="System.Web.Services.Discovery.SchemaReference.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -381,6 +410,7 @@
       <MemberSignature Language="C#" Value="public override void WriteDocument (object document, System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteDocument(object document, class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.SchemaReference.WriteDocument(System.Object,System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="override this.WriteDocument : obj * System.IO.Stream -&gt; unit" Usage="schemaReference.WriteDocument (document, stream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -414,15 +444,5 @@
         <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.SchemaReference" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

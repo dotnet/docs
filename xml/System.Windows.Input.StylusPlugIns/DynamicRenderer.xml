@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public class DynamicRenderer : System.Windows.Input.StylusPlugIns.StylusPlugIn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicRenderer extends System.Windows.Input.StylusPlugIns.StylusPlugIn" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPlugIns.DynamicRenderer" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicRenderer&#xA;Inherits StylusPlugIn" />
+  <TypeSignature Language="F#" Value="type DynamicRenderer = class&#xA;    inherit StylusPlugIn" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,7 @@
       <MemberSignature Language="C#" Value="public DynamicRenderer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +61,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Ink.DrawingAttributes DrawingAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.DrawingAttributes DrawingAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPlugIns.DynamicRenderer.DrawingAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property DrawingAttributes As DrawingAttributes" />
+      <MemberSignature Language="F#" Value="member this.DrawingAttributes : System.Windows.Ink.DrawingAttributes with get, set" Usage="System.Windows.Input.StylusPlugIns.DynamicRenderer.DrawingAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -94,6 +99,8 @@
       <MemberSignature Language="C#" Value="protected System.Windows.Threading.Dispatcher GetDispatcher ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Windows.Threading.Dispatcher GetDispatcher() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.GetDispatcher" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetDispatcher () As Dispatcher" />
+      <MemberSignature Language="F#" Value="member this.GetDispatcher : unit -&gt; System.Windows.Threading.Dispatcher" Usage="dynamicRenderer.GetDispatcher " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -123,6 +130,8 @@
       <MemberSignature Language="C#" Value="protected override void OnAdded ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAdded() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnAdded" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAdded ()" />
+      <MemberSignature Language="F#" Value="override this.OnAdded : unit -&gt; unit" Usage="dynamicRenderer.OnAdded " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +153,7 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDraw (System.Windows.Media.DrawingContext drawingContext, System.Windows.Input.StylusPointCollection stylusPoints, System.Windows.Media.Geometry geometry, System.Windows.Media.Brush fillBrush);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDraw(class System.Windows.Media.DrawingContext drawingContext, class System.Windows.Input.StylusPointCollection stylusPoints, class System.Windows.Media.Geometry geometry, class System.Windows.Media.Brush fillBrush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnDraw(System.Windows.Media.DrawingContext,System.Windows.Input.StylusPointCollection,System.Windows.Media.Geometry,System.Windows.Media.Brush)" />
+      <MemberSignature Language="F#" Value="abstract member OnDraw : System.Windows.Media.DrawingContext * System.Windows.Input.StylusPointCollection * System.Windows.Media.Geometry * System.Windows.Media.Brush -&gt; unit&#xA;override this.OnDraw : System.Windows.Media.DrawingContext * System.Windows.Input.StylusPointCollection * System.Windows.Media.Geometry * System.Windows.Media.Brush -&gt; unit" Usage="dynamicRenderer.OnDraw (drawingContext, stylusPoints, geometry, fillBrush)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -184,6 +194,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDrawingAttributesReplaced ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDrawingAttributesReplaced() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnDrawingAttributesReplaced" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDrawingAttributesReplaced ()" />
+      <MemberSignature Language="F#" Value="abstract member OnDrawingAttributesReplaced : unit -&gt; unit&#xA;override this.OnDrawingAttributesReplaced : unit -&gt; unit" Usage="dynamicRenderer.OnDrawingAttributesReplaced " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -215,6 +227,8 @@
       <MemberSignature Language="C#" Value="protected override void OnEnabledChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEnabledChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnEnabledChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEnabledChanged ()" />
+      <MemberSignature Language="F#" Value="override this.OnEnabledChanged : unit -&gt; unit" Usage="dynamicRenderer.OnEnabledChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -236,6 +250,8 @@
       <MemberSignature Language="C#" Value="protected override void OnIsActiveForInputChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnIsActiveForInputChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnIsActiveForInputChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnIsActiveForInputChanged ()" />
+      <MemberSignature Language="F#" Value="override this.OnIsActiveForInputChanged : unit -&gt; unit" Usage="dynamicRenderer.OnIsActiveForInputChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -257,6 +273,8 @@
       <MemberSignature Language="C#" Value="protected override void OnRemoved ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemoved() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnRemoved" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemoved ()" />
+      <MemberSignature Language="F#" Value="override this.OnRemoved : unit -&gt; unit" Usage="dynamicRenderer.OnRemoved " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -278,6 +296,7 @@
       <MemberSignature Language="C#" Value="protected override void OnStylusDown (System.Windows.Input.StylusPlugIns.RawStylusInput rawStylusInput);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnStylusDown(class System.Windows.Input.StylusPlugIns.RawStylusInput rawStylusInput) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnStylusDown(System.Windows.Input.StylusPlugIns.RawStylusInput)" />
+      <MemberSignature Language="F#" Value="override this.OnStylusDown : System.Windows.Input.StylusPlugIns.RawStylusInput -&gt; unit" Usage="dynamicRenderer.OnStylusDown rawStylusInput" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -309,6 +328,8 @@
       <MemberSignature Language="C#" Value="protected override void OnStylusDownProcessed (object callbackData, bool targetVerified);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnStylusDownProcessed(object callbackData, bool targetVerified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnStylusDownProcessed(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnStylusDownProcessed (callbackData As Object, targetVerified As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.OnStylusDownProcessed : obj * bool -&gt; unit" Usage="dynamicRenderer.OnStylusDownProcessed (callbackData, targetVerified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -343,6 +364,7 @@
       <MemberSignature Language="C#" Value="protected override void OnStylusEnter (System.Windows.Input.StylusPlugIns.RawStylusInput rawStylusInput, bool confirmed);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnStylusEnter(class System.Windows.Input.StylusPlugIns.RawStylusInput rawStylusInput, bool confirmed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnStylusEnter(System.Windows.Input.StylusPlugIns.RawStylusInput,System.Boolean)" />
+      <MemberSignature Language="F#" Value="override this.OnStylusEnter : System.Windows.Input.StylusPlugIns.RawStylusInput * bool -&gt; unit" Usage="dynamicRenderer.OnStylusEnter (rawStylusInput, confirmed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -377,6 +399,7 @@
       <MemberSignature Language="C#" Value="protected override void OnStylusLeave (System.Windows.Input.StylusPlugIns.RawStylusInput rawStylusInput, bool confirmed);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnStylusLeave(class System.Windows.Input.StylusPlugIns.RawStylusInput rawStylusInput, bool confirmed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnStylusLeave(System.Windows.Input.StylusPlugIns.RawStylusInput,System.Boolean)" />
+      <MemberSignature Language="F#" Value="override this.OnStylusLeave : System.Windows.Input.StylusPlugIns.RawStylusInput * bool -&gt; unit" Usage="dynamicRenderer.OnStylusLeave (rawStylusInput, confirmed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -411,6 +434,7 @@
       <MemberSignature Language="C#" Value="protected override void OnStylusMove (System.Windows.Input.StylusPlugIns.RawStylusInput rawStylusInput);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnStylusMove(class System.Windows.Input.StylusPlugIns.RawStylusInput rawStylusInput) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnStylusMove(System.Windows.Input.StylusPlugIns.RawStylusInput)" />
+      <MemberSignature Language="F#" Value="override this.OnStylusMove : System.Windows.Input.StylusPlugIns.RawStylusInput -&gt; unit" Usage="dynamicRenderer.OnStylusMove rawStylusInput" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -442,6 +466,7 @@
       <MemberSignature Language="C#" Value="protected override void OnStylusUp (System.Windows.Input.StylusPlugIns.RawStylusInput rawStylusInput);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnStylusUp(class System.Windows.Input.StylusPlugIns.RawStylusInput rawStylusInput) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnStylusUp(System.Windows.Input.StylusPlugIns.RawStylusInput)" />
+      <MemberSignature Language="F#" Value="override this.OnStylusUp : System.Windows.Input.StylusPlugIns.RawStylusInput -&gt; unit" Usage="dynamicRenderer.OnStylusUp rawStylusInput" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -473,6 +498,8 @@
       <MemberSignature Language="C#" Value="protected override void OnStylusUpProcessed (object callbackData, bool targetVerified);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnStylusUpProcessed(object callbackData, bool targetVerified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnStylusUpProcessed(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnStylusUpProcessed (callbackData As Object, targetVerified As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.OnStylusUpProcessed : obj * bool -&gt; unit" Usage="dynamicRenderer.OnStylusUpProcessed (callbackData, targetVerified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -507,6 +534,7 @@
       <MemberSignature Language="C#" Value="public virtual void Reset (System.Windows.Input.StylusDevice stylusDevice, System.Windows.Input.StylusPointCollection stylusPoints);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset(class System.Windows.Input.StylusDevice stylusDevice, class System.Windows.Input.StylusPointCollection stylusPoints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.DynamicRenderer.Reset(System.Windows.Input.StylusDevice,System.Windows.Input.StylusPointCollection)" />
+      <MemberSignature Language="F#" Value="abstract member Reset : System.Windows.Input.StylusDevice * System.Windows.Input.StylusPointCollection -&gt; unit&#xA;override this.Reset : System.Windows.Input.StylusDevice * System.Windows.Input.StylusPointCollection -&gt; unit" Usage="dynamicRenderer.Reset (stylusDevice, stylusPoints)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -549,6 +577,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Visual RootVisual { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Visual RootVisual" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPlugIns.DynamicRenderer.RootVisual" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootVisual As Visual" />
+      <MemberSignature Language="F#" Value="member this.RootVisual : System.Windows.Media.Visual" Usage="System.Windows.Input.StylusPlugIns.DynamicRenderer.RootVisual" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

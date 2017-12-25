@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class Message : System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Message extends System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Message" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Message&#xA;Inherits NamedItem" />
+  <TypeSignature Language="F#" Value="type Message = class&#xA;    inherit NamedItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +43,7 @@
       <MemberSignature Language="C#" Value="public Message ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Message.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -57,6 +60,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Message.Extensions" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Extensions As ServiceDescriptionFormatExtensionCollection" />
+      <MemberSignature Language="F#" Value="member this.Extensions : System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" Usage="System.Web.Services.Description.Message.Extensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -81,6 +86,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.MessagePart FindPartByName (string partName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Services.Description.MessagePart FindPartByName(string partName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Message.FindPartByName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindPartByName (partName As String) As MessagePart" />
+      <MemberSignature Language="F#" Value="member this.FindPartByName : string -&gt; System.Web.Services.Description.MessagePart" Usage="message.FindPartByName partName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -116,6 +123,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.MessagePart[] FindPartsByName (string[] partNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Services.Description.MessagePart[] FindPartsByName(string[] partNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Message.FindPartsByName(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindPartsByName (partNames As String()) As MessagePart()" />
+      <MemberSignature Language="F#" Value="member this.FindPartsByName : string[] -&gt; System.Web.Services.Description.MessagePart[]" Usage="message.FindPartsByName partNames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -151,6 +160,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.MessagePartCollection Parts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.MessagePartCollection Parts" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Message.Parts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parts As MessagePartCollection" />
+      <MemberSignature Language="F#" Value="member this.Parts : System.Web.Services.Description.MessagePartCollection" Usage="System.Web.Services.Description.Message.Parts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -186,6 +197,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.ServiceDescription ServiceDescription { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescription ServiceDescription" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Message.ServiceDescription" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceDescription As ServiceDescription" />
+      <MemberSignature Language="F#" Value="member this.ServiceDescription : System.Web.Services.Description.ServiceDescription" Usage="System.Web.Services.Description.Message.ServiceDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

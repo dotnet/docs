@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed class SystemIcons" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SystemIcons extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.SystemIcons" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SystemIcons" />
+  <TypeSignature Language="F#" Value="type SystemIcons = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Icon Application { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Application" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Application" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Application As Icon" />
+      <MemberSignature Language="F#" Value="member this.Application : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Icon Asterisk { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Asterisk" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Asterisk" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Asterisk As Icon" />
+      <MemberSignature Language="F#" Value="member this.Asterisk : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Asterisk" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -68,6 +74,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Icon Error { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Error" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Error" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Error As Icon" />
+      <MemberSignature Language="F#" Value="member this.Error : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -86,6 +94,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Icon Exclamation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Exclamation" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Exclamation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Exclamation As Icon" />
+      <MemberSignature Language="F#" Value="member this.Exclamation : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Exclamation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -104,6 +114,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Icon Hand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Hand" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Hand" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Hand As Icon" />
+      <MemberSignature Language="F#" Value="member this.Hand : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Hand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -122,6 +134,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Icon Information { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Information" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Information" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Information As Icon" />
+      <MemberSignature Language="F#" Value="member this.Information : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Information" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -140,6 +154,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Icon Question { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Question" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Question" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Question As Icon" />
+      <MemberSignature Language="F#" Value="member this.Question : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Question" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -158,6 +174,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Icon Shield { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Shield" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Shield" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Shield As Icon" />
+      <MemberSignature Language="F#" Value="member this.Shield : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Shield" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -183,6 +201,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Icon Warning { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Warning" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Warning" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Warning As Icon" />
+      <MemberSignature Language="F#" Value="member this.Warning : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Warning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -201,6 +221,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Icon WinLogo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon WinLogo" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.WinLogo" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WinLogo As Icon" />
+      <MemberSignature Language="F#" Value="member this.WinLogo : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.WinLogo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

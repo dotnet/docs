@@ -1,2 +1,2 @@
 set -x
-npm install -g azure-cli
+sudo npm install -g azure-cli

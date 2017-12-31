@@ -20,7 +20,7 @@ An [interface](../../../csharp/language-reference/keywords/interface.md) can dec
   
 -   Declare the event in your class and then invoke it in the appropriate areas.  
   
-    ```  
+    ```csharp
     namespace ImplementInterfaceEvents  
     {  
         public interface IDrawingObject  

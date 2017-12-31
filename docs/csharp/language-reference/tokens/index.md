@@ -21,7 +21,7 @@ ms.author: "ronpet"
 
 # C# Special Characters
 
-Special characters are predefined, contextual characters that modifies the program element (a literal string, an identifier, or an attribute name) to which they are prepended. C# supports the following special characters: 
+Special characters are predefined, contextual characters that modify the program element (a literal string, an identifier, or an attribute name) to which they are prepended. C# supports the following special characters: 
 
 - [@](../../../csharp/language-reference/tokens/verbatim.md), the verbatim identifier character. 
 

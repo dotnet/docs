@@ -127,7 +127,7 @@ public static User ReadToObject(string json)
 > [!NOTE]
 >  The JSON serializer throws a serialization exception for data contracts that have multiple members with the same name, as shown in the following sample code.  
   
-```  
+```csharp  
 [DataContract]  
 public class TestDuplicateDataBase  
 {  

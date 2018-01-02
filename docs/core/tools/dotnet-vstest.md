@@ -114,6 +114,10 @@ Run tests in `mytestproject.dll`:
 
 `dotnet vstest mytestproject.dll`
 
+Run tests in `mytestproject.dll`, exporting to custom folder with custom name:
+
+`dotnet vstest mytestproject.dll --logger:"trx;LogFileName=custom_file_name.trx" --ResultsDirectory:custom/file/path`
+
 Run tests in `mytestproject.dll` and `myothertestproject.exe`:
 
 `dotnet vstest mytestproject.dll myothertestproject.exe`
@@ -125,3 +129,4 @@ Run `TestMethod1` tests:
 Run `TestMethod1` and `TestMethod2` tests:
 
 `dotnet vstest /Tests:TestMethod1,TestMethod2`
+

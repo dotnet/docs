@@ -283,9 +283,9 @@
 |Parameter|Property|  
 |---------------|--------------|  
 |`from`|<xref:System.Net.Mail.MailMessage.From%2A>|  
-|-   `to`|-   <xref:System.Net.Mail.MailMessage.To%2A>|  
-|-   `subject`|-   <xref:System.Net.Mail.MailMessage.Subject%2A>|  
-|-   `body`|-   <xref:System.Net.Mail.MailMessage.Body%2A>|  
+|`to`|<xref:System.Net.Mail.MailMessage.To%2A>|  
+|`subject`|<xref:System.Net.Mail.MailMessage.Subject%2A>|  
+|`body`|<xref:System.Net.Mail.MailMessage.Body%2A>|  
   
  By default, the subject and content are assumed to use the default encoding based on local computer settings. Use the <xref:System.Net.Mail.MailMessage.BodyEncoding%2A> and <xref:System.Net.Mail.MailMessage.SubjectEncoding%2A> properties to specify different encodings.  
   

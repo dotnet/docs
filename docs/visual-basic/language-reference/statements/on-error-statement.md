@@ -35,7 +35,7 @@ ms.author: dotnetcontent
 # On Error Statement (Visual Basic)
 Enables an error-handling routine and specifies the location of the routine within a procedure; can also be used to disable an error-handling routine.  
   
- Without an `On Error` statement, any run-time error that occurs is fatal: an error message is displayed, and execution stops.  
+ Without error handling, any run-time error that occurs is fatal: an error message is displayed, and execution stops.  
   
  Whenever possible, we suggest you use structured exception handling in your code, rather than using unstructured exception handling and the `On Error` statement. For more information, see [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md).  
   

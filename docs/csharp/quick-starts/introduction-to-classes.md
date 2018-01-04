@@ -64,7 +64,7 @@ namespace classes
         {
         }
 
-        public void MakeWithdrawal(decimal amount, DateTime date, string payee, string note)
+        public void MakeWithdrawal(decimal amount, DateTime date, string note)
         {
         }
     }
@@ -164,9 +164,11 @@ Next, test that you are catching error conditions by trying to create an account
 
 ```csharp
 // Test that the initial balances must be positive:
-try {
+try
+{
     var invalidAccount = new BankAccount("invalid", -55);
-} catch (ArgumentOutOfRangeException e)
+}
+catch (ArgumentOutOfRangeException e)
 {
     Console.WriteLine("Exception caught creating account with negative balance");
     Console.WriteLine(e.ToString());
@@ -177,9 +179,11 @@ You use the [`try` and `catch` statements](../language-reference/keywords/try-ca
 
 ```csharp
 // Test for a negative balance
-try {
+try
+{
     account.MakeWithdrawal(750, DateTime.Now, "Attempt to overdraw");
-} catch (InvalidOperationException e)
+}
+catch (InvalidOperationException e)
 {
     Console.WriteLine("Exception caught trying to overdraw");
     Console.WriteLine(e.ToString());

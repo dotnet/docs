@@ -64,7 +64,7 @@ namespace classes
         {
         }
 
-        public void MakeWithdrawal(decimal amount, DateTime date, string payee, string note)
+        public void MakeWithdrawal(decimal amount, DateTime date, string note)
         {
         }
     }

@@ -13,9 +13,13 @@ ms.technology: dotnet-standard
 
 The .NET API Analyzer is a Roslyn analyzer that discovers potential compatibility risks for APIs with different platforms and detects calls to deprecated APIs. It can be useful for any developers of the .NET family at any stage of development.
 
-API Analyzer comes as a [NuGet package](https://www.nuget.org/packages/Microsoft.DotNet.Analyzers.Compatibility/) and after you reference it in a project, it automatically monitors the code and indicates problematic API usage. You can also get suggestions on possible fixes by clicking on the light bulb. The drop-down menu includes an option to suppress the warnings.
+API Analyzer comes as a NuGet package [Microsoft.DotNet.Analyzers.Compatibility](https://www.nuget.org/packages/Microsoft.DotNet.Analyzers.Compatibility/) and after you reference it in a project, it automatically monitors the code and indicates problematic API usage. You can also get suggestions on possible fixes by clicking on the light bulb. The drop-down menu includes an option to suppress the warnings.
 
 ## Discovering deprecated APIs
+
+### *What is deprecated API*
+*The .NET Framework is a large product that is getting constantly upgraded to better serve customer needs. It is natural to deprecate some APIs and replace them with new ones. Previously old APIs were marked with `[Obsolete]` attribute. There was only one diagnostic ID (CS0612) for all obsolete APIs that lead to one description for all cases and ability to suppress warnings for either all cases or none of them. To provide information and a way to suppress a warning per each API or a class of APIs, `Deprecation` term was introduced.*
+
 When a deprecated API, such as \<xref:System.Net.WebClient>, is used in a code, API Analyzer highlights it with a green squiggly line and shows a light bulb on the left as in the following example:
 
 !["Screenshot of WebClient API with green squiggly line and light bulb on the left"](media/api-analyzer/green-squiggle.jpg)
@@ -27,7 +31,7 @@ The Error List window contains warnings with a unique ID per deprecated API (in 
 Any warnings can be suppressed by right-clicking on the highlighted member and selecting **Quick Actions and Refactorings**. Here you get two suppression options: locally (in source) or globally (in a suppression file). We encourage developers to use global suppression to ensure consistency of API usage across their project.
 
 ## Discovering cross-platform issues
-Similar to deprecated APIs the analyzer squiggles out all APIs that are not cross-platform supported (For example `Console.WindowWidth` works on Windows but not on Linux and macOS). The diagnostic ID is shown in Error List window. You can suppress warning by right click and choosing "Quick Actions and Refactorings". Unlike deprecation cases where you have two options: either keep using deprecated member and suppress warnings or not use it at all, here if you are developing your code only for certain platform you can suppress all warnings for all other  platforms you don't plan to run your code on. To do so, you just need to edit your project file and add a property `PlatformCompatIgnore` that lists all platforms to be ignored:
+Similar to deprecated APIs the analyzer squiggles out all APIs that are not cross-platform supported (for example `Console.WindowWidth` works on Windows but not on Linux and macOS). The diagnostic ID is shown in Error List window. You can suppress warning by right click and choosing "Quick Actions and Refactorings". Unlike deprecation cases where you have two options: either keep using deprecated member and suppress warnings or not use it at all, here if you are developing your code only for certain platform you can suppress all warnings for all other  platforms you don't plan to run your code on. To do so, you just need to edit your project file and add a property `PlatformCompatIgnore` that lists all platforms to be ignored:
 ```
 <PropertyGroup>
     <PlatformCompatIgnore>Linux;MacOSX</PlatformCompatIgnore>

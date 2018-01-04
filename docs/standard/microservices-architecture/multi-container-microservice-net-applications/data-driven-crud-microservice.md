@@ -315,9 +315,7 @@ The main reasons to generate Swagger metadata for your APIs are the following.
 
 **Ability for other products to automatically consume and integrate your APIs**. Dozens of products and [commercial tools](http://swagger.io/commercial-tools/) and many [libraries and frameworks](http://swagger.io/open-source-integrations/) support Swagger. Microsoft has high-level products and tools that can automatically consume Swagger-based APIs, such as the following:
 
--   [AutoRest](https://github.com/Azure/AutoRest). You can automatically generate .NET client classes for calling Swagger. This
-
--   tool can be used from the CLI and it also integrates with Visual Studio for easy use through the GUI.
+-   [AutoRest](https://github.com/Azure/AutoRest). You can automatically generate .NET client classes for calling Swagger. This tool can be used from the CLI and it also integrates with Visual Studio for easy use through the GUI.
 
 -   [Microsoft Flow](https://flow.microsoft.com/en-us/). You can automatically [use and integrate your API](https://flow.microsoft.com/en-us/blog/integrating-custom-api/) into a high-level Microsoft Flow workflow, with no programming skills required.
 

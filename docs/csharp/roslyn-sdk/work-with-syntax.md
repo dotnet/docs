@@ -83,7 +83,7 @@ For example:
       }
 ```
 
-The statement node inside the block has a span indicated by the single vertical bars (|). It includes the characters `throw new Exception(“Not right.”);`. The full span is indicated by the double vertical bars (||). It includes the same characters as the span and the characters associated with the leading and trailing trivia.
+The statement node inside the block has a span indicated by the single vertical bars (|). It includes the characters `throw new Exception("Not right.");`. The full span is indicated by the double vertical bars (||). It includes the same characters as the span and the characters associated with the leading and trailing trivia.
 
 ## Kinds
 

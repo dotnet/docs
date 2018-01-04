@@ -14,8 +14,6 @@ ms.assetid: 87e93838-a363-4813-b859-7356023d98ed
 
 # Microservices hosted in Docker
 
-## Introduction
-
 This tutorial details the tasks necessary to build and deploy
 an ASP.NET Core microservice in a Docker container. During the course
 of this tutorial, you'll learn:
@@ -73,13 +71,13 @@ Grunt, and Gulp. If you have them installed that is good, otherwise type the fol
 The `-g` option indicates that it is a global install, and those tools are
 available system wide. (A local install scopes the package to a single
 project). Once you've installed those core tools, you need to install
-the yeoman asp.net template generators:
+the yeoman ASP.NET template generators:
 
 `npm install -g generator-aspnet`
 
 ## Create the Application
 
-Now that you've installed all the tools, create a new asp.net core
+Now that you've installed all the tools, create a new ASP.NET Core
 application. To use the command line generator, execute the following
 yeoman command in your favorite shell:
 
@@ -92,12 +90,12 @@ will prompt you for a name. Select 'WeatherMicroservice'.
 
 The template creates eight files for you:
 
-* A .gitignore, customized for asp.net core applications.
+* A .gitignore, customized for ASP.NET Core applications.
 * A Startup.cs file. This contains the basis of the application.
 * A Program.cs file. This contains the entry point of the application.
 * A WeatherMicroservice.csproj file. This is the build file for the application.
 * A Dockerfile. This script creates a Docker image for the application.
-* A README.md. This contains links to other asp.net core resources.
+* A README.md. This contains links to other ASP.NET Core resources.
 * A web.config file. This contains basic configuration information.
 * A runtimeconfig.template.json file. This contains debugging settings used by IDEs.
 
@@ -148,7 +146,7 @@ framework that will run this application.
 The application is implemented in Startup.cs. This file contains the startup
 class.
 
-The two methods are called by the asp.net core infrastructure to configure
+The two methods are called by the ASP.NET Core infrastructure to configure
 and run the application. The `ConfigureServices` method describes the services that are
 necessary for this application. You're building a lean microservice, so it doesn't
 need to configure any dependencies. The `Configure` method configures the handlers
@@ -309,7 +307,7 @@ A ***Docker Container*** represents a running instance of a Docker image.
 By analogy, you can think of the *Docker Image* as a *class*, and the
 *Docker Container* as an object, or an instance of that class.  
 
-The Dockerfile created by the asp.net template will serve
+The Dockerfile created by the ASP.NET template will serve
 for our purposes. Let's go over its contents.
 
 The first line specifies the source image:
@@ -349,7 +347,7 @@ RUN dotnet publish -c Release -o out
 
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
-This will copy the project file from the  current directory to the docker VM, and restore
+This will copy the project file from the  current directory to the Docker VM, and restore
 all the packages. Using the dotnet CLI means that the Docker image must include the
 .NET Core SDK. After that, the rest of your application gets copied, and the dotnet
 publish command builds and packages your application.
@@ -362,7 +360,7 @@ ENTRYPOINT ["dotnet", "out/WeatherMicroservice.dll", "--server.urls", "http://0.
 
 This configured port is referenced in the `--server.urls`
 argument to `dotnet` on the last  line of the Dockerfile. The `ENTRYPOINT` command
-informs Docker  what command and command line options start the service. 
+informs Docker what command and command-line options start the service. 
 
 ## Building and running the image in a container.
 
@@ -380,7 +378,7 @@ out/*
 ```
 
 You build the image
-using the docker build command. Run the following command from the directory containing your code.
+using the `docker build` command. Run the following command from the directory containing your code.
 
 ```console
 docker build -t weather-microservice .
@@ -438,7 +436,7 @@ container process, but rather stop the `docker attach` command. The final argume
 is the name given to the container in the `docker run` command. 
 
 > [!NOTE]
-> You can also use the docker assigned container ID to refer to any container. If you
+> You can also use the Docker assigned container ID to refer to any container. If you
 > didn't specify a name for your container in `docker run` you must use the container id.
 
 Open a browser and navigate to your service. You'll see the diagnostic messages in
@@ -467,10 +465,10 @@ docker rmi weather-microservice
 
 ## Conclusion 
 
-In this tutorial, you built an asp.net core microservice, and added a few
+In this tutorial, you built an ASP.NET Core microservice, and added a few
 simple features.
 
-You built a docker container image for that service, and ran that container on
+You built a Docker container image for that service, and ran that container on
 your machine. You attached a terminal window to the service, and saw the
 diagnostic messages from your service.
 

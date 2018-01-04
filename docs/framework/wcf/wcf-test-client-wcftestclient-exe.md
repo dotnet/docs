@@ -20,7 +20,7 @@ ms.workload:
 # WCF Test Client (WcfTestClient.exe)
 [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] Test Client (WcfTestClient.exe) is a GUI tool that enables users to input test parameters, submit that input to the service, and view the response that the service sends back. It provides a seamless service testing experience when combined with [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Host.  
   
- You can find the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client (WcfTestClient.exe) in the following location: C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\  
+ You can typically find the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client (WcfTestClient.exe) in the following location: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE - Community may be one of "Enterprise", "Professional" or "Community" depending on which level of Visual Studio is installed.
   
 ## Scenarios for Using Test Client  
  The following sections discuss the most common scenarios in which you can use [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client to streamline your development process.  

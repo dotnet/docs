@@ -201,11 +201,8 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
   
 1.  On the domain controller, clear the **Account is sensitive and cannot be delegated** check box for the account under which the client application is running.  
   
-2.  On the domain controller, select the **Account is trusted for delegation** check box for the account under which the client application is running.  
-  
-3.  On the domain controller, configure the middle tier computer so that it is trusted for delegation, by clicking the **Trust computer for delegation** option.  
-  
-4.  On the domain controller, configure the middle tier computer to use constrained delegation, by clicking the **Trust this computer for delegation to specified services only** option.  
+2.  On the domain controller, configure the user account or the middle tier computer to use constrained delegation, by clicking the **Trust this computer for delegation to specified services only** option, selecting the **User Kerberos Only** option and adding the target services using **Add** button. 
+
   
  For more detailed instructions about configuring constrained delegation, see the following topics on MSDN:  
   

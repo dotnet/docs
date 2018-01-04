@@ -11,8 +11,8 @@ ms.devlang: devlang-csharp
 
 # How to (C#)
 
-The How to section of the C# Guide is where you can find quick answers
-to common questions. There are cases on this page were one article may
+In the How to section of the C# Guide you can find quick answers
+to common questions. In some cases, articles may
 be listed in multiple sections. We wanted to make them easy to find
 for multiple search paths. 
 
@@ -31,7 +31,7 @@ There are several tips and tricks that are common C# developer practices.
 
 ### Class and struct members
 
-You create classes and structs to implement your program. These techniques are common tasks when writing classes or structs.
+You create classes and structs to implement your program. These techniques are commonly used when writing classes or structs.
 
 - [Declare auto implemented properties](../programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md).
 - [Declare and use read/write properties](../programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md).
@@ -39,7 +39,7 @@ You create classes and structs to implement your program. These techniques are c
 - [Override the `ToString` method to provide string output](../programming-guide/classes-and-structs/how-to-override-the-tostring-method.md).
 - [Define abstract properties](../programming-guide/classes-and-structs/how-to-define-abstract-properties.md).
 - [Use the xml documentation features to document your code](../programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md).
-- [Explicitly implement interface members](../programming-guide/interfaces/how-to-explicitly-implement-interface-members.md) to keep your public interface more clear.
+- [Explicitly implement interface members](../programming-guide/interfaces/how-to-explicitly-implement-interface-members.md) to keep your public interface concise.
 - [Explicitly implement members of two interfaces](../programming-guide/interfaces/how-to-explicitly-implement-members-of-two-interfaces.md).
 
 ### Working with collections
@@ -72,7 +72,7 @@ You may need to convert an object to a different type.
 - [Convert a string to a number](../programming-guide/types/how-to-convert-a-string-to-a-number.md).
 - [Use `as` and `is` to safely cast to a different type](../programming-guide/types/how-to-safely-cast-by-using-as-and-is-operators.md).
 - [Define conversion operators for `struct` types](../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md).
-- [Determine if a type is a nullable type](../programming-guide/nullable-types/how-to-identify-a-nullable-type.md).
+- [Determine if a type is a nullable value type](../programming-guide/nullable-types/how-to-identify-a-nullable-type.md).
 - [Convert between nullable and non-nullable value types](../programming-guide/nullable-types/how-to-safely-cast-from-bool-to-bool.md).
 
 ## Equality and ordering comparisons
@@ -80,13 +80,13 @@ You may need to convert an object to a different type.
 You may create types that define their own rules for equality or define a
 natural ordering among objects of that type.
 
-- [Test for reference based equality](../programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md).
-- [Define value based equality for a type](../programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md).
+- [Test for reference-based equality](../programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md).
+- [Define value-based equality for a type](../programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md).
 
 ## Exception handling
 
-Throwing exceptions is how .NET programs report that methods did not
-successfully complete their work. In these articles you'll learn to work
+.NET programs report that methods did not
+successfully complete their work by throwing exceptions. In these articles you'll learn to work
 with exceptions.
 
 - [Handle exceptions using `try` and `catch`](../programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md).
@@ -101,9 +101,9 @@ loosely coupled blocks of code.
 - [Declare, instantiate, and use delegates](../programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md).
 - [Combine multicast delegates](../programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md).
 
-Events provide a mechanism to publish notifications or subscribe to notifications.
+Events provide a mechanism to publish or subscribe to notifications.
 
-- [Subscribe and unsubscrbe from events](../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
+- [Subscribe and unsubscribe from events](../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 - [Implement events declared in interfaces](../programming-guide/events/how-to-implement-interface-events.md).
 - [Conform to .NET Framework guidelines when your code publishes events](../programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md).
 - [Raise events defined in base classes from derived classes](../programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md).
@@ -228,7 +228,7 @@ LINQ to XML is an implementation of LINQ for XML data sources:
 Modern programs often use asynchronous operations. These articles will help you learn
 to use these techniques.
 
-- [Improve async performance using <xref:System.Threading.Tasks.Task.WhenAll%2A>](../programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md).
+- [Improve async performance using `System.Threading.Tasks.Task.WhenAll`](../programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md).
 - [Make multiple web requests in parallel using `async` and `await`](../programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md).
 - [Use a thread pool](../programming-guide/concepts/threading/how-to-use-a-thread-pool.md).
 
@@ -237,5 +237,5 @@ to use these techniques.
 Typically, C# programs have command line arguments. These articles teach you to access and process
 those command line arguments.
 
-- [Display command line arguments](../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md).
-- [Display command line arguments using `foreach`](../programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md).
+- [Retrieve all command line arguments with `for`](../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md).
+- [Retrieve all command line arguments with `foreach`](../programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md).

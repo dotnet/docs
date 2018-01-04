@@ -92,7 +92,7 @@ public BankAccount(string name, decimal initialBalance)
 Constructors are called when you create an object using [`new`](../language-reference/keywords/new.md). Replace the line `Console.WriteLine("Hello World!");` in ***program.cs*** with the following line (replace `<name>` with your name):
 
 ```csharp
-var account = new BankAccount("<name", 1000);
+var account = new BankAccount("<name>", 1000);
 Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance.");
 ```
 

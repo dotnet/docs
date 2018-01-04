@@ -1,6 +1,6 @@
 ---
-title: "How to: Parse Strings Using String.Split (C# Programming Guide)"
-ms.date: 07/20/2015
+title: "How to: Parse Strings Using String.Split (C# Guide)"
+ms.date: 01/03/2018
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -11,11 +11,17 @@ helpviewer_keywords:
   - "strings [C#], splitting"
   - "parse strings"
 ms.assetid: 729c2923-4169-41c6-9c90-ef176c1e2953
-caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
+ms.custom: mvc
 ---
-# How to: Parse Strings Using String.Split (C# Programming Guide)
+# How to: Parse Strings Using String.Split (C# Guide)
+
+The <xref:System.String.Split%2A?displayProperty=nameWithType> method creates an
+array of substrings by splitting the input string based on one or more delimiters.
+
+It is often the easiest way to separate 
+
 The following code example demonstrates how a string can be parsed using the <xref:System.String.Split%2A?displayProperty=nameWithType> method. As input, <xref:System.String.Split%2A> takes an array of characters that indicate which characters separate interesting sub strings of the target string.  The function returns an array of the sub strings.  
   
  This example uses spaces, commas, periods, colons, and tabs, all passed in an array containing these separating characters to <xref:System.String.Split%2A>.  Each word in the target string's sentence displays separately from the resulting array of strings.  
@@ -61,6 +67,6 @@ class TestStringSplit
 ```  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Strings](../../../csharp/programming-guide/strings/index.md)  
+ [C# Programming Guide](../programming-guide/index.md)  
+ [Strings](../programming-guide/strings/index.md)  
  [.NET Framework Regular Expressions](https://msdn.microsoft.com/library/hs600312)

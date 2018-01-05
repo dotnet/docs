@@ -20,8 +20,15 @@ ms.custom: mvc
 The <xref:System.String.Split%2A?displayProperty=nameWithType> method creates an
 array of substrings by splitting the input string based on one or more delimiters.
 
-It is often the easiest way to separate 
+It is often the easiest way to separate a string on word boundaries. It is also used
+to split strings on other specific characters or strings.
 
+The following code splits a common phrase into an array of strings for each word.
+Try it yourself by pressing the *Run* button.
+
+[!code-csharp-interactive[csProgGuideStrings#16](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#1)]
+
+.. Think of repeated delimiters.
 The following code example demonstrates how a string can be parsed using the <xref:System.String.Split%2A?displayProperty=nameWithType> method. As input, <xref:System.String.Split%2A> takes an array of characters that indicate which characters separate interesting sub strings of the target string.  The function returns an array of the sub strings.  
   
  This example uses spaces, commas, periods, colons, and tabs, all passed in an array containing these separating characters to <xref:System.String.Split%2A>.  Each word in the target string's sentence displays separately from the resulting array of strings.  

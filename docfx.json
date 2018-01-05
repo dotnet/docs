@@ -132,7 +132,7 @@
         "_vblang/spec/*.md": "language-reference"
      },
       "langs": {
-        "api/**.yml": ["csharp", "vb", "cpp"],
+        "api/**.yml": ["csharp", "vb", "cpp", "fsharp"],
         "api/System.Convert.yml": ["csharp", "vb", "cpp", "fsharp"]        
       },
       "dev_langs": {

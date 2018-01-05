@@ -10,6 +10,9 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 20bb7ea8-192e-4a96-8ef3-e10e1950fd3d
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # What is "managed code"?

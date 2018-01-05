@@ -10,6 +10,9 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: fe2e4b4c-6483-4106-a4b4-a33e2e306591
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Delegates and lambdas

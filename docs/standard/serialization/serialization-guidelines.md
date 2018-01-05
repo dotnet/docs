@@ -3,9 +3,9 @@ title: "Serialization guidelines"
 ms.date: "03/30/2017"
 ms.prod: ".net"
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "serialization, guidelines"
   - "binary serialization, guidelines"
@@ -14,6 +14,9 @@ caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Serialization guidelines
 This document lists the guidelines to consider when designing an API to be serialized.  

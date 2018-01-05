@@ -14,6 +14,9 @@ ms.assetid: 2b1ea3be-1152-4032-b2b3-07794054c405
 caps.latest.revision: 5
 author: "ViktorHofer"
 ms.author: "mairaw"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Binary serialization
 

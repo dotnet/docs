@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 9521d8b4-25fc-412b-a65b-4c975ebf6bfd
+ms.workload: 
+  - dotnetcore
 ---
 # Runtime package store
 

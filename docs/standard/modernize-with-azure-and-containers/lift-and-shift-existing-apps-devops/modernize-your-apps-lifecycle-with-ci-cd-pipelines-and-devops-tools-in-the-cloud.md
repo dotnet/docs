@@ -4,6 +4,9 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud
 

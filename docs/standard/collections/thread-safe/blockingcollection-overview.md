@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "BlockingCollection, overview"
 ms.assetid: 987ea3d7-0ad5-4238-8b64-331ce4eb3f0b
@@ -18,6 +18,9 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # BlockingCollection Overview
 <xref:System.Collections.Concurrent.BlockingCollection%601> is a thread-safe collection class that provides the following features:  

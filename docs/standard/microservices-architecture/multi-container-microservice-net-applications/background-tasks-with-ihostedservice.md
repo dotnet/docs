@@ -8,6 +8,9 @@ ms.date: 12/11/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Implement background tasks in microservices with IHostedService and the BackgroundService class
 

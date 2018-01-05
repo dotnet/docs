@@ -6,6 +6,8 @@ ms.author: kehavens
 ms.date: 10/18/2017
 ms.topic: article
 ms.prod: .net-core
+ms.workload: 
+  - dotnetcore
 ---
 # Test published output with dotnet vstest
 

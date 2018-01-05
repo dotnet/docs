@@ -14,6 +14,9 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Serialization How-to Topics
 The following list includes links to the How-to topics found in the conceptual documentation for serialization.  

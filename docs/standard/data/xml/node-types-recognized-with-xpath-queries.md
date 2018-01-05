@@ -13,6 +13,9 @@ caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Node Types Recognized with XPath Queries
 The types of nodes recognized in an XPath query are not the same node types found in the Document Object Model (DOM).  

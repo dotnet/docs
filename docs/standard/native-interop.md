@@ -10,6 +10,9 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3c357112-35fb-44ba-a07b-6a1c140370ac
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Native Interoperability

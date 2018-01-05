@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "regular expressions, quantifiers"
   - "metacharacters, quantifiers"
@@ -24,6 +24,9 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Quantifiers in Regular Expressions
 Quantifiers specify how many instances of a character, group, or character class must be present in the input for a match to be found.  The following table lists the quantifiers supported by .NET.  

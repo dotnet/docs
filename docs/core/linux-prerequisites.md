@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
+ms.workload: 
+  - dotnetcore
 ---
 
 # Prerequisites for .NET Core on Linux
@@ -207,6 +209,12 @@ For Red Hat .NET channel access registration help, see [Chapter 1 of the .NET Co
 
 3. Set up the desired version host package feed.
 
+   **Ubuntu 17.10**
+
+   ```bash
+   sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod artful main" > /etc/apt/sources.list.d/dotnetdev.list'
+   sudo apt-get update
+   ```
    **Ubuntu 17.04**
 
    ```bash
@@ -231,7 +239,7 @@ For Red Hat .NET channel access registration help, see [Chapter 1 of the .NET Co
 4. Install .NET Core.
 
    ```bash
-   sudo apt-get install dotnet-sdk-2.0.0
+   sudo apt-get install dotnet-sdk-2.1.3
    ```
 
 4. Run the `dotnet --version` command to prove the installation succeeded.

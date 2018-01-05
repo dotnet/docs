@@ -20,6 +20,9 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Managed Execution Process
 <a name="introduction"></a> The managed execution process includes the following steps, which are discussed in detail later in this topic:  

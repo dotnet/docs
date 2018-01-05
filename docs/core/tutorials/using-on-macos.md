@@ -9,6 +9,8 @@ ms.topic: get-started-article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 8ad82148-dac8-4b31-9128-b0e9610f4d9b
+ms.workload: 
+  - dotnetcore
 ---
 
 # Getting started with .NET Core on macOS

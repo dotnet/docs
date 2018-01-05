@@ -16,6 +16,9 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Scheduling Threads
 Every thread has a thread priority assigned to it. Threads created within the common language runtime are initially assigned the priority of **ThreadPriority.Normal**. Threads created outside the runtime retain the priority they had before they entered the managed environment. You can get or set the priority of any thread with the **Thread.Priority** property.  

@@ -15,6 +15,9 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # For Further Reading (Parallel Programming)
 The following resources contain additional information about Parallel Programming in the .NET Framework:  

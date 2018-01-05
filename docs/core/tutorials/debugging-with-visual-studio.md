@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: cb213625-cc60-438b-9b9e-49aed0e4a974
+ms.workload: 
+  - dotnetcore
 ---
 
 # Debug your Hello World application with Visual Studio 2017

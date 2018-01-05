@@ -20,6 +20,9 @@ caps.latest.revision: 33
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # File and Stream I/O
 File and stream I/O (input/output) refers to the transfer of data either to or from a storage medium. In the .NET Framework, the [System.IO](http://go.microsoft.com/fwlink/?LinkId=231142) namespaces contain types that enable reading and writing, both synchronously and asynchronously, on data streams and files. These namespaces also contain types that perform compression and decompression on files, and types that enable communication through pipes and serial ports.  

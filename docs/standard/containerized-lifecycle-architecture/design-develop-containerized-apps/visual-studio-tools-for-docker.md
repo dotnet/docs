@@ -5,6 +5,9 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Using Visual Studio Tools for Docker (Visual Studio on Windows)
 

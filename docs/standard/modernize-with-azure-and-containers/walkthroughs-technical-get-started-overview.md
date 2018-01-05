@@ -1,9 +1,12 @@
 ---
-title: Walkthroughs and technical get started overview 
+title: Walkthroughs and technical get started overview
 description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | walkthroughs and technical get started overview
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Walkthroughs and technical get started overview 
 
@@ -79,7 +82,7 @@ Explore this content more in-depth on the GitHub wiki:
 
 The full technical walkthrough is available in the eShopModernizing GitHub repo wiki:
 
-[https://github.com/dotnet-architecture/eShopModernizing/wiki/02.-How-to-containerized-the-.NET-Framework-web-apps-with-Windows-Containers-and-Docker](https://https://github.com/dotnet-architecture/eShopModernizing/wiki/02.-How-to-containerized-the-.NET-Framework-web-apps-with-Windows-Containers-and-DockerTBD)
+[https://github.com/dotnet-architecture/eShopModernizing/wiki/02.-How-to-containerize-the-.NET-Framework-web-apps-with-Windows-Containers-and-Docker](https://github.com/dotnet-architecture/eShopModernizing/wiki/02.-How-to-containerize-the-.NET-Framework-web-apps-with-Windows-Containers-and-Docker)
 
 ### Overview
 
@@ -118,7 +121,7 @@ Containerization, in ideal situations, does not require making any changes to th
 ### Next steps
 
 Explore this content more in-depth on the GitHub wiki:
-[https://https://github.com/dotnet-architecture/eShopModernizing/wiki/02.-How-to-containerized-the-.NET-Framework-web-apps-with-Windows-Containers-and-Docker](https://https://github.com/dotnet-architecture/eShopModernizing/wiki/02.-How-to-containerized-the-.NET-Framework-web-apps-with-Windows-Containers-and-Docker)
+[https://github.com/dotnet-architecture/eShopModernizing/wiki/02.-How-to-containerize-the-.NET-Framework-web-apps-with-Windows-Containers-and-Docker](https://github.com/dotnet-architecture/eShopModernizing/wiki/02.-How-to-containerize-the-.NET-Framework-web-apps-with-Windows-Containers-and-Docker)
 
 ## Walkthrough 3: Deploy your Windows Containers-based app to Azure VMs
 

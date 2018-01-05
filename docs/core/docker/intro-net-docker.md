@@ -12,6 +12,8 @@ ms.devlang: dotnet
 ms.assetid: 03c28597-7e73-46d6-a9c3-f9cb55642739
 manager: wpickett
 ms.custom: mvc
+ms.workload: 
+  - dotnetcore
 ---
 # Introduction to .NET and Docker
 
@@ -36,11 +38,11 @@ The [relationship between Docker containers, images, and registries](../../stand
 * [Building Docker Images for .NET Core applications](../docker/building-net-docker-images.md)
 
 
-### Getting .NET Docker Images
+### Getting .NET Docker images
 
 The Official .NET Docker images are created and optimized by Microsoft. They are publicly available in the Microsoft repositories on Docker Hub. Each repository can contain multiple images, depending on .NET versions, and on OS versions. Most image repos provide extensive tagging to help you select both a specific framework version and an OS (Linux distro or Windows version).
 
-## Scenario Based Guidance
+## Scenario based guidance
 
 Microsoft’s intent for .NET repositories is to have granular and focused repos, which represent a specific scenario or workload.
 
@@ -98,7 +100,7 @@ This repo contain samples that demonstrate various .NET Framework Docker configu
 
 **.NET Framework 4.7**
 
-[The [dotnet-framework:4.7 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-4.7) demonstrates basic "hello world" usage of the [.NET Framework 4.7](../../framework/whats-new/index.md#v47). It shows you how you can build and deploy the app relying on the [.NET Framework 4.7 docker image](https://github.com/Microsoft/dotnet-framework-docker/blob/master/4.7/Dockerfile).
+The [dotnet-framework:4.7 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-4.7) demonstrates basic "hello world" usage of the [.NET Framework 4.7](../../framework/whats-new/index.md#v47). It shows you how you can build and deploy the app relying on the [.NET Framework 4.7 docker image](https://github.com/Microsoft/dotnet-framework-docker/blob/master/4.7/Dockerfile).
 
 **.NET Framework 4.6.2**
 
@@ -195,8 +197,7 @@ Now that you have learned about the Docker platform and different Docker images,
 * [Getting hands on with Visual Studio for Mac, containers, and serverless code in the cloud](https://blogs.msdn.microsoft.com/visualstudio/2017/08/31/hands-on-with-visual-studio-for-mac-containers-serverless-code-in-the-cloud/#comments)
 * [Getting Started with Docker and Visual Studio for Mac Lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Docker/Getting-Started)
 
-## Next Steps
+## Next steps
 
 * [Learn Docker Basics with .NET Core](docker-basics-dotnet-core.md)
 * [Building .NET Core Docker Images](building-net-docker-images.md)
-\

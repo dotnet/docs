@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 815ac74c-4bd9-4a94-a87c-78288b27c0e2
+ms.workload: 
+  - dotnetcore
 ---
 
 # Unit Testing in .NET Core and .NET Standard

@@ -20,6 +20,9 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Hashtable and Dictionary Collection Types
 The <xref:System.Collections.Hashtable?displayProperty=nameWithType> class, and the <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType> and <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType> generic classes, implement the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface. The <xref:System.Collections.Generic.Dictionary%602> generic class also implements the <xref:System.Collections.Generic.IDictionary%602> generic interface. Therefore, each element in these collections is a key-and-value pair.  

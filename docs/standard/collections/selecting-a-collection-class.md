@@ -20,6 +20,9 @@ caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Selecting a Collection Class
 Be sure to choose your collection class carefully. Using the wrong type can restrict your use of the collection. In general, avoid using the types in the <xref:System.Collections> namespace unless you are specifically targeting .NET Framework version 1.1. The generic and concurrent versions of the collections are to be preferred because of their greater type safety and other improvements.  

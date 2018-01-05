@@ -13,6 +13,9 @@ caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Rules for Inferring Simple Types
 Describes how the <xref:System.Xml.Schema.XmlSchemaInference> class infers the data type for attributes and elements.  

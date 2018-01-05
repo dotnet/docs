@@ -13,6 +13,9 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Managing Namespaces in an XML Document
 XML namespaces associate element and attribute names in an XML document with custom and predefined URIs. To create these associations, you define prefixes for namespace URIs, and use those prefixes to qualify element and attribute names in XML data. Namespaces prevent element and attribute name collisions, and enable elements and attributes of the same name to be handled and validated differently.  

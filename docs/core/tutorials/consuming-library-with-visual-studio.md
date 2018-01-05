@@ -6,9 +6,11 @@ ms.author: wiwagn
 ms.date: 08/07/2017
 ms.topic: article
 ms.prod: .net-core
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
+ms.workload: 
+  - dotnetcore
 ---
 
 # Consuming a class library with .NET Core in Visual Studio 2017

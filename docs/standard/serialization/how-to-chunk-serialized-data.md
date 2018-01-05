@@ -3,9 +3,9 @@ title: "How to: chunk serialized data"
 ms.date: "03/30/2017"
 ms.prod: ".net"
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "chunking serialized data"
   - "data chunking"
@@ -19,6 +19,9 @@ caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: chunk serialized data
 

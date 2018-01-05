@@ -13,6 +13,9 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # XML Integration with Relational Data and ADO.NET
 The **XmlDataDocument** class is a derived class of the **XmlDocument**, and contains XML data. The advantage of the **XmlDataDocument** is that it provides a bridge between relational and hierarchical data. It is an **XmlDocument** that can be bound to a **DataSet** and both classes can synchronize changes made to data contained in the two classes. An **XmlDocument** that is bound to a **DataSet** allows XML to integrate with relational data, and you do not have to have your data represented as either XML or in a relational format. You can do both and not be constrained to a single representation of the data.  

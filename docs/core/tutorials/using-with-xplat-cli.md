@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 41632e63-d5c6-4427-a09e-51dc1116d45f
+ms.workload: 
+  - dotnetcore
 ---
 
 # Getting started with .NET Core on Windows/Linux/macOS using the command line

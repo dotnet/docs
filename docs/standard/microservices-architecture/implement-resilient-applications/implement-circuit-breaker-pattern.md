@@ -8,6 +8,9 @@ ms.date: 11/12/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Implementing the Circuit Breaker pattern
 

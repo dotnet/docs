@@ -1,9 +1,12 @@
 ---
-title: Build resilient services ready for the cloud. Embrace transient failures in the cloud 
-description: .NET Microservices Architecture for Containerized .NET Applications | Build resilient services ready for the cloud. Embrace transient failures in the cloud 
+title: Build resilient services ready for the cloud. Embrace transient failures in the cloud
+description: .NET Microservices Architecture for Containerized .NET Applications | Build resilient services ready for the cloud. Embrace transient failures in the cloud
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Build resilient services ready for the cloud: Embrace transient failures in the cloud 
 

@@ -5,15 +5,18 @@ ms.custom: ""
 ms.date: "10/20/2017"
 ms.prod: ".net"
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "serializing objects"
   - "objects, serializing steps"
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Determine if a .NET Standard object is serializable
 

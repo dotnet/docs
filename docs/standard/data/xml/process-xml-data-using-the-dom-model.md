@@ -13,6 +13,9 @@ caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Process XML Data Using the DOM Model
 The XML Document Object Model (DOM) treats XML data as a standard set of objects and is used to process XML data in memory. The `System.Xml` namespace provides a programmatic representation of XML documents, fragments, nodes, or node-sets. It is based on the World Wide Web Consortium (W3C) DOM Level 1 Core and the DOM Level 2 Core recommendations.  

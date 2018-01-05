@@ -6,13 +6,16 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ms.date: 07/22/2016
 ms.topic: article
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 2dbed1bc-86f5-43cd-9a57-adbb1c5efba4
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Language independence and language-independent components

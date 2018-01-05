@@ -17,7 +17,7 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # /platform (C# Compiler Options)
-Specifies which version of the common language runtime (CLR) can run the assembly.  
+Specifies which version of the Common Language Runtime (CLR) can run the assembly.  
   
 ## Syntax  
   
@@ -37,11 +37,11 @@ Specifies which version of the common language runtime (CLR) can run the assembl
   
 -   **ARM** compiles your assembly to run on a computer that has an Advanced RISC Machine (ARM) processor.  
   
--   **x64** compiles your assembly to be run by the 64-bit common language runtime on a computer that supports the AMD64 or EM64T instruction set.  
+-   **x64** compiles your assembly to be run by the 64-bit CLR on a computer that supports the AMD64 or EM64T instruction set.  
   
--   **x86** compiles your assembly to be run by the 32-bit, x86-compatible common language runtime.  
+-   **x86** compiles your assembly to be run by the 32-bit, x86-compatible CLR.  
   
--   **Itanium** compiles your assembly to be run by the 64-bit common language runtime on a computer with an Itanium processor.  
+-   **Itanium** compiles your assembly to be run by the 64-bit CLR on a computer with an Itanium processor.  
   
  On a 64-bit Windows operating system:  
   

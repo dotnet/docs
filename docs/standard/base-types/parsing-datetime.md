@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "parsing strings, date and time strings"
   - "date and time strings"
@@ -24,6 +24,9 @@ caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Parsing Date and Time Strings in .NET
 Parsing methods convert the string representation of a date and time to an equivalent <xref:System.DateTime> object. The <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.TryParse%2A> methods convert any of several common representations of a date and time. The <xref:System.DateTime.ParseExact%2A> and <xref:System.DateTime.TryParseExact%2A> methods convert a string representation that conforms to the pattern specified by a date and time format string. (See the topics on [standard date and time format strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md) and [custom date and time format strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md).)  

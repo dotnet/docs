@@ -47,7 +47,7 @@ how to manage those dependencies in your work.
 
 C# compiler tools are now decoupled from the release cycle of the .NET libraries
 on supported platforms. In fact, different .NET libraries have different release
-cycles: the .NET Framework on Windows is relesed as a Windows Update, .NET Core ships on
+cycles: the .NET Framework on Windows is released as a Windows Update, .NET Core ships on
 a separate schedule, and the Xamarin versions of library updates ship with the Xamarin tools
 for each target platform.
 

@@ -13,6 +13,9 @@ caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Removing Nodes, Content, and Values from an XML Document
 Once an XML Document Object Model (DOM) is in memory, you can remove nodes from the tree, or remove content and values from certain node types. For information on how to remove a leaf node or entire node subtree from a document, see [Removing Nodes from the DOM](../../../../docs/standard/data/xml/removing-nodes-from-the-dom.md). For information on how to remove attributes on an element, see [Removing Attributes from an Element Node in the DOM](../../../../docs/standard/data/xml/removing-attributes-from-an-element-node-in-the-dom.md). For information on removing content of a node but leaving the node in the tree, see [Removing Node Content in the DOM](../../../../docs/standard/data/xml/removing-node-content-in-the-dom.md).  

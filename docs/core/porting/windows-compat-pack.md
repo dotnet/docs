@@ -7,6 +7,8 @@ ms.author: mairaw
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: .net-core
+ms.workload: 
+  - dotnetcore
 ---
 
 # Using the Windows Compatibility Pack

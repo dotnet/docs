@@ -16,6 +16,9 @@ caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # &lt;xmlSerializer&gt; Element
 Specifies whether an additional check of progress of the <xref:System.Xml.Serialization.XmlSerializer> is done.  

@@ -13,6 +13,9 @@ caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Support for the msxsl:node-set() Function
 The `msxsl:node-set` function enables you to convert a result tree fragment into a node set. The resulting node set always contains a single node and is the root node of the tree.  

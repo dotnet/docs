@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c0d70120-78c8-4d26-bb3c-801f42fc2366
+ms.workload: 
+  - dotnetcore
 ---
 
 # Migrating from DNX to .NET Core CLI (project.json)

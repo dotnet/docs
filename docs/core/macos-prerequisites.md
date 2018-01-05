@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
+ms.workload: 
+  - dotnetcore
 ---
 
 # Prerequisites for .NET Core on macOS

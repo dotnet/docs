@@ -20,11 +20,11 @@ Over the years, many Visual Studio developers have enjoyed the productivity that
 
 > [!NOTE]
 > The **WCF Web Service Reference** option is applicable to projects created using the following project templates:
- * **Visual C#** > **.NET Core**, 
- * **Visual C#** > **.NET Standard**
- * **Visual C#** > **Web** > **ASP.NET Core Web Application** .
+> * **Visual C#** > **.NET Core**  
+> * **Visual C#** > **.NET Standard**
+> * **Visual C#** > **Web** > **ASP.NET Core Web Application**
 
-Using the **ASP.NET Core Web Application** project template as an example, This article walks you through adding a WCF service reference to the project:
+Using the **ASP.NET Core Web Application** project template as an example, this article walks you through adding a WCF service reference to the project:
 
 1. In Solution Explorer, double-click the **Connected Services** node of the project (for a .NET Core or .NET Standard project this option is available from the context menu of the **Dependencies** node). 
 
@@ -53,7 +53,7 @@ The **Connected Services** page appears as shown in the following image:
 4. The **Data Type Options** form enables you to refine the generated service reference configuration settings. 
 
 > [!NOTE]
-> The**Reuse types in referenced assemblies** check box option is useful when data types needed for service reference code generation are defined in one of your project's referenced assemblies.  It's important to reuse those existing data types to avoid compile-time type clash or runtime issues.
+> The **Reuse types in referenced assemblies** check box option is useful when data types needed for service reference code generation are defined in one of your project's referenced assemblies.  It's important to reuse those existing data types to avoid compile-time type clash or runtime issues.
 
 There may be a delay while type information is loaded, depending on the number of project dependencies and other system performance factors. The **Finish** button is disabled during loading unless the **Reuse types in referenced assemblies** check box is unchecked.
 
@@ -64,7 +64,7 @@ There may be a delay while type information is loaded, depending on the number o
 While displaying progress, the tool will:
 
 * Download metadata from the WCF service 
-* Generate the service reference code in a file named *reference.cs*, and add it to your project under the **Connected Services** node. * Update the project file (.csproj) with  NuGet package references required to compile and run on the target platform.
+* Generate the service reference code in a file named *reference.cs*, and add it to your project under the **Connected Services** node. * Update the project file (.csproj) with NuGet package references required to compile and run on the target platform.
 
 When these processes complete, you can create generated WCF web service communication client type instances.
 

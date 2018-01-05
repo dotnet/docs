@@ -79,11 +79,6 @@ Run your program in Debug mode and try a few debugging features:
 
 1. Enter `currentDate = new DateTime(2016,11,01,11,59,00)` in the **Immediate Window** and press the Enter key.
 
-<!-- The **Immediate Window** displays the value of the string variable and the properties of the <xref:System.DateTime> value. In addition, the value of the variables is updated in the **Autos** and **Locals** windows.
-
-   ![Autos window and Immediate Window](./media/debugging-with-visual-studio/vb-autosimmediate.png)
--->
-
 1. Continue program execution by selecting the **Continue** button in the toolbar or by selecting the **Debug** > **Continue** menu item. The values displayed in the console window correspond to the changes you made in the **Immediate Window**.
 
    ![Console window showing the changed values entered in the Immediate Window](./media/debugging-with-visual-studio/changed.png)

@@ -257,6 +257,7 @@
 ### [Native interoperability](csharp/programming-guide/interop/index.md)
 ### [Documenting your code](csharp/codedoc.md)
 ### [Versioning](csharp/versioning.md)
+## [How To C# Topics](csharp/how-to/index.md)
 <!-- End of C# Concepts section -->
 ## [The .NET Compiler Platform SDK (Roslyn APIs)](csharp/roslyn-sdk/)
 ## [C# Programming Guide](csharp/programming-guide/)

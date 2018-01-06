@@ -70,7 +70,7 @@ All of these methods take <xref:System.DateTime> values as parameters and return
 
 To convert UTC to local time, see the "Converting UTC to Local Time" section that follows. To convert UTC to the time in any time zone that you designate, call the <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> method. The method takes two parameters:
 
-* The UTC to convert. This must be a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is set to <xref:System.DateTimeKind?displayProperty=nameWithType> or <xref:System.DateTimeKind?displayProperty=nameWithType>.
+* The UTC to convert. This must be a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is set to `Unspecified` or `Utc`.
 
 * The time zone to convert the UTC to.
 

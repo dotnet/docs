@@ -7,6 +7,7 @@ namespace ExampleProject
     class FormattedAddresses : IEnumerable<string>
     {
         private List<string> internalList;
+        
         public IEnumerator<string> GetEnumerator()
         {
             return internalList.GetEnumerator();

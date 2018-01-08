@@ -20,7 +20,7 @@ This tutorial teaches you how to use the Microsoft XML Serializer Generator in a
 > * How to add a class and an XmlSerializer
 > * How to build and run the application 
 
-Like the [Xml Serializer Generator (sgen.exe)](https://docs.microsoft.com/en-us/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe) for .NET Framework, <xref:System.Xml.Serialization.XmlSerializer> NuGet package is the equivalent for .NET Core and .NET Standard projects. It creates an XML serialization assembly for types contained in an assembly to improve the startup performance of XML serialization when serializing or de-serializing objects of those types using XmlSerializer.
+Like the [Xml Serializer Generator (sgen.exe)](https://docs.microsoft.com/en-us/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe) for .NET Framework, <xref:System.Xml.Serialization.XmlSerializer> is the equivalent for .NET Core and .NET Standard projects. It creates an XML serialization assembly for types contained in an assembly to improve the startup performance of XML serialization when serializing or de-serializing objects of those types using XmlSerializer.
 
 ## Prerequisites
 

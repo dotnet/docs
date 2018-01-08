@@ -14,7 +14,7 @@ public class Example
       }                           
    }
 }
-// The example displays the following output:
+// The example displays output like the following:
 //       $1,603.00     1.603E+003      1603.0000      1,603.000       16.03 %
 //    
 //       $1,794.68     1.795E+003      1794.6824      1,794.682       17.95 %

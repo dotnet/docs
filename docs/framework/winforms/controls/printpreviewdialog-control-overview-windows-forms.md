@@ -44,7 +44,7 @@ For apps running on the .NET Framework 4.5.2, you can add the following key to t
 ```
 If the `EnablePrintPreviewOptimization` key is set to any other value, or if the key is not present, the optimization is not applied.
 
-For apps running on the .NET Framework 4.6 or later versions, you can add the following switch to the [\<AppContextSwitchOverrides>](../../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [\<runtime>](../../configure-apps/file-schema/runtime/runtime.md) section of your app config file:
+For apps running on the .NET Framework 4.6 or later versions, you can add the following switch to the [\<AppContextSwitchOverrides>](../../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [\<runtime>](../../configure-apps/file-schema/runtime/index.md) section of your app config file:
 
 ```xml
 <runtime >
@@ -54,7 +54,7 @@ For apps running on the .NET Framework 4.6 or later versions, you can add the fo
 ``` 
 If the switch is not present or if it is set to any other value, the optimization is not applied. 
 
-If you use the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event to modify printer settings, the performance of the <xref:System.Windows.Forms.Control.PrintPreviewDialog> control will not improve even if an optimization configuration switch is set.  
+If you use the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event to modify printer settings, the performance of the <xref:System.Windows.Forms.PrintPreviewDialog> control will not improve even if an optimization configuration switch is set.  
 
 ## See also  
  <xref:System.Windows.Forms.PrintPreviewDialog>  

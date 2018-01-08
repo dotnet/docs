@@ -638,7 +638,7 @@
   
  To associate the event with your event handler, add an instance of the <xref:System.Drawing.Printing.QueryPageSettingsEventHandler> delegate to the event. The event handler is called whenever the event occurs. For more information about handling events with delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
-   
+If you use the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event to modify printer settings, the performance of the <xref:System.Windows.Forms.PrintPreviewDialog> control will not improve even if an optimization configuration switch is set. For more information, see [PrintPreviewDialog control overview](~/docs/framework/winforms/controls/printpreviewdialog-control-overview-windows-forms.md).   
   
 ## Examples  
  The following code example prints a document with the first page in color, if the printer supports it. The example requires that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` has been created, and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> and <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> events are handled. The `currentPageNumber` variable is incremented after every page is printed in the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event, which is not shown.  

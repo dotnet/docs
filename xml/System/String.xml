@@ -130,7 +130,7 @@
   
  Each character in a string has an associated Unicode character category, which is represented in the .NET Framework by the <xref:System.Globalization.UnicodeCategory> enumeration. The category of a character or a surrogate pair can be determined by calling the <xref:System.Globalization.CharUnicodeInfo.GetUnicodeCategory%2A?displayProperty=nameWithType> method.  
   
- The .NET Framework maintains its own table of characters and their corresponding categories, which ensures that a version of the .NET Framework running on different platforms returns identical character category information. The following table lists the versions of the .NET Framework and the versions of the Unicode Standard on which their character categories are based.  
+ .NET maintains its own table of characters and their corresponding categories, which ensures that a specific version of a .NET implementation running on different platforms returns identical character category information. The following table lists .NET versions and the versions of the Unicode Standard on which their character categories are based.  
   
 |.NET Framework version|Version of the Unicode Standard|  
 |----------------------------|-------------------------------------|  
@@ -144,6 +144,7 @@
 |[!INCLUDE[net_v46](~/includes/net-v46-md.md)]|[The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/)|  
 |[!INCLUDE[net_v461](~/includes/net-v461-md.md)]|[The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/)|  
 |[!INCLUDE[net_v462](~/includes/net-v462-md.md)]|[The Unicode Standard, Version 8.0.0](http://www.unicode.org/versions/Unicode8.0.0/)|  
+|.NET Core (all versions)|[The Unicode Standard, Version 8.0.0](http://www.unicode.org/versions/Unicode8.0.0/)|
   
  In addition, the .NET Framework supports string comparison and sorting based on the Unicode standard. In versions of the .NET Framework through the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the .NET Framework maintains its own table of string data. This is also true of versions of the .NET Framework starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on Windows 7. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on Window 8 and later versions of the Windows operating system, the runtime delegates string comparison and sorting operations to the operating system. The following table lists the versions of the .NET Framework and the versions of the Unicode Standard on which character comparison and sorting are based.  
   
@@ -155,7 +156,9 @@
 |[!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]|[The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0)|  
 |[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later on Windows 7|[The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0)|  
 |[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later on Windows 8 and later Windows operating systems|[The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/)|  
-  
+
+In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of the Unicode Standard](http://www.unicode.org/versions/Unicode8.0.0/).
+
 <a name="EmbeddedNulls"></a>   
 ## Strings and embedded null characters  
  In the .NET Framework, a <xref:System.String> object can include embedded null characters, which count as a part of the string's length. However, in some languages such as C and C++, a null character indicates the end of a string;it is not considered a part of the string and is not counted as part of the string's length. This means that the following common assumptions that C and C++ programmers or libraries written in C or C++ might make about strings are not necessarily valid when applied to <xref:System.String> objects:  
@@ -347,7 +350,7 @@
 -   For a comparison that involves a security decision (such as whether a username is valid), you should always perform an ordinal test for equality by calling an overload of the <xref:System.String.Equals%2A> method.  
   
 > [!NOTE]
->  The culture-sensitive sorting and casing rules used in string comparison depend on the version of the .NET Framework. In the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on the [!INCLUDE[win8](~/includes/win8-md.md)] operating system, sorting, casing, normalization, and Unicode character information conforms to the Unicode 6.0 standard. On other operating systems, it conforms to the Unicode 5.0 standard.  
+>  The culture-sensitive sorting and casing rules used in string comparison depend on the version of the .NET Framework. In the .NET Framework [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on the [!INCLUDE[win8](~/includes/win8-md.md)] operating system, sorting, casing, normalization, and Unicode character information conforms to the Unicode 6.0 standard. On other operating systems, it conforms to the Unicode 5.0 standard.  
   
  For more information about word, string, and ordinal sort rules, see the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> topic. For additional recommendations on when to use each rule, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
   
@@ -4378,7 +4381,7 @@
  The following example defines a 6-character field to hold the string "Year" and some year strings, as well as an 15-character field to hold the string "Population" and some population data. Note that the characters are right-aligned in the field.  
   
  [!code-cpp[System.String.Format#33](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#33)]
- [!code-csharp-interactive[System.String.Format#33](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#33)]
+ [!code-csharp-interactive[System.String.Format#33](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting3.cs)]
  [!code-vb[System.String.Format#33](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#33)]  
   
  ### Controlling alignment  
@@ -4492,7 +4495,7 @@
 
 <a name="Format_Custom"></a>   
 ## Custom formatting operations  
- You can also call the any of the overloads of the <xref:System.String.Format%2A> method that have a  `provider` parameter <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload to perform custom formatting operations. For example, you could format an integer as an identification number or as a telephone number. To perform custom formatting, your `provider` argument must implement both the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces. When the <xref:System.String.Format%2A> method is passed an <xref:System.ICustomFormatter> implementation as the `provider` argument, the <xref:System.String.Format%2A> method calls its   <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> implementation and requests an object of type <xref:System.ICustomFormatter>. It then calls the returned <xref:System.ICustomFormatter> object's <xref:System.ICustomFormatter.Format%2A> method to format each format item in the composite string passed to it.  
+ You can also call the any of the overloads of the <xref:System.String.Format%2A> method that have a `provider` parameter of type <xref:System.IFormatProvider> to perform custom formatting operations. For example, you could format an integer as an identification number or as a telephone number. To perform custom formatting, your `provider` argument must implement both the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces. When the <xref:System.String.Format%2A> method is passed an <xref:System.ICustomFormatter> implementation as the `provider` argument, the <xref:System.String.Format%2A> method calls its   <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> implementation and requests an object of type <xref:System.ICustomFormatter>. It then calls the returned <xref:System.ICustomFormatter> object's <xref:System.ICustomFormatter.Format%2A> method to format each format item in the composite string passed to it.  
   
  For more information about providing custom formatting solutions, see [How to: Define and Use Custom Numeric Format Providers](~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md) and <xref:System.ICustomFormatter>. For an example that converts integers to formatted custom numbers, see [Example: A custom formatting operation](#Format6_Example). For an example that converts unsigned bytes to Roman numerals, see [Example: An intercept provider and Roman numeral formatter](#Format7_Example).  
   
@@ -4519,6 +4522,24 @@
 <a name="QA"></a>   
 ## String.Format Q & A  
   
+### Why do you recommend string interpolation over calls to the `String.Format` method?
+
+String interpolation is:
+
+- More flexible. It can be used in any string without requiring a call to a method that supports composite formatting. Otherwise, you have to call the <xref:System.String.Format%2A> method or another method that supports composite formatting, such as <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or <xref:System.Text StringBuilder AppendFormat%2A?displayProperty=nameWithType>. 
+
+- More readable. Because the expression to insert into a string appears in the interpolated expression rather than in a argument list, interpolated strings are far easier to code and to read. Because of their greater readability, interpolated strings can replace not only calls to composite format methods, but they can also be used in string concatenation operations to produce more concise, clearer code. 
+
+A comparison of the following two code examples illustrates the superiority of interpolated strings over string concatenation and calls to composite formatting methods. The use of mutiple string concatenation operations in the following example produces verbose and hard-to-read code.
+
+[!code-csharp-interactive[non-interpolated string operations](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa-interpolated1.cs)]
+[!code-vb[non-interpolated string operations](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa-interpolated1.vb)]  
+
+In contrast, the use of interpolated strings in the following example produce much clearer, more concise code than the string concatenation statement and the call to the <xref:System.String.Format%2A> method in the previous example.
+
+[!code-csharp-interactive[interpolated string operations](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa-interpolated2.cs)]
+[!code-vb[interpolated string operations](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa-interpolated2.vb)]  
+
 ### Where can I find a list of the predefined format strings that can be used with format items?  
   
 -   For all integral and floating-point types, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  

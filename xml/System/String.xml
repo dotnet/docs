@@ -350,7 +350,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
 -   For a comparison that involves a security decision (such as whether a username is valid), you should always perform an ordinal test for equality by calling an overload of the <xref:System.String.Equals%2A> method.  
   
 > [!NOTE]
->  The culture-sensitive sorting and casing rules used in string comparison depend on the version of the .NET Framework. In the .NET Framrwork [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on the [!INCLUDE[win8](~/includes/win8-md.md)] operating system, sorting, casing, normalization, and Unicode character information conforms to the Unicode 6.0 standard. On other operating systems, it conforms to the Unicode 5.0 standard.  
+>  The culture-sensitive sorting and casing rules used in string comparison depend on the version of the .NET Framework. In the .NET Framework [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on the [!INCLUDE[win8](~/includes/win8-md.md)] operating system, sorting, casing, normalization, and Unicode character information conforms to the Unicode 6.0 standard. On other operating systems, it conforms to the Unicode 5.0 standard.  
   
  For more information about word, string, and ordinal sort rules, see the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> topic. For additional recommendations on when to use each rule, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
   
@@ -4522,6 +4522,24 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
 <a name="QA"></a>   
 ## String.Format Q & A  
   
+### Why do you recommend string interpolation over calls to the `String.Format` method?
+
+String interpolation is:
+
+- More flexible. It can be used in any string without requiring a call to a method that supports composite formatting. Otherwise, you have to call the <xref:System.String.Format%2A> method or another method that supports composite formatting, such as <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or <xref:System.Text StringBuilder AppendFormat%2A?displayProperty=nameWithType>. 
+
+- More readable. Because the expression to insert into a string appears in the interpolated expression rather than in a argument list, interpolated strings are far easier to code and to read. Because of their greater readability, interpolated strings can replace not only calls to composite format methods, but they can also be used in string concatenation operations to produce more concise, clearer code. 
+
+A comparison of the following two code examples illustrates the superiority of interpolated strings over string concatenation and calls to composite formatting methods. The use of mutiple string concatenation operations in the following example produces verbose and hard-to-read code.
+
+[!code-csharp-interactive[non-interpolated string operations](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa-interpolated1.cs)]
+[!code-vb[non-interpolated string operations](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa-interpolated1.vb)]  
+
+In contrast, the use of interpolated strings in the following example produce much clearer, more concise code than the string concatenation statement and the call to the <xref:System.String.Format%2A> method in the previous example.
+
+[!code-csharp-interactive[interpolated string operations](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa-interpolated2.cs)]
+[!code-vb[interpolated string operations](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa-interpolated2.vb)]  
+
 ### Where can I find a list of the predefined format strings that can be used with format items?  
   
 -   For all integral and floating-point types, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  

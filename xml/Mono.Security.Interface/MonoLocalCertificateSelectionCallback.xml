@@ -1,4 +1,4 @@
-<Type Name="MonoLocalCertificateSelectionCallback" FullName="Mono.Security.Interface.MonoLocalCertificateSelectionCallback">
+﻿<Type Name="MonoLocalCertificateSelectionCallback" FullName="Mono.Security.Interface.MonoLocalCertificateSelectionCallback">
   <TypeSignature Language="C#" Value="public delegate System.Security.Cryptography.X509Certificates.X509Certificate MonoLocalCertificateSelectionCallback(string targetHost, X509CertificateCollection localCertificates, X509Certificate remoteCertificate, string[] acceptableIssuers);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MonoLocalCertificateSelectionCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.MonoLocalCertificateSelectionCallback" />

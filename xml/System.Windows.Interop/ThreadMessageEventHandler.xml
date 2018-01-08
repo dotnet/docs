@@ -1,4 +1,4 @@
-<Type Name="ThreadMessageEventHandler" FullName="System.Windows.Interop.ThreadMessageEventHandler">
+﻿<Type Name="ThreadMessageEventHandler" FullName="System.Windows.Interop.ThreadMessageEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ThreadMessageEventHandler(ref MSG msg, ref bool handled);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ThreadMessageEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.ThreadMessageEventHandler" />

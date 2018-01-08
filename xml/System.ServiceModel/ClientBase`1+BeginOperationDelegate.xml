@@ -1,4 +1,4 @@
-<Type Name="ClientBase&lt;TChannel&gt;+BeginOperationDelegate" FullName="System.ServiceModel.ClientBase&lt;TChannel&gt;+BeginOperationDelegate">
+﻿<Type Name="ClientBase&lt;TChannel&gt;+BeginOperationDelegate" FullName="System.ServiceModel.ClientBase&lt;TChannel&gt;+BeginOperationDelegate">
   <TypeSignature Language="C#" Value="protected delegate IAsyncResult ClientBase&lt;TChannel&gt;.BeginOperationDelegate(object[] inValues, AsyncCallback asyncCallback, object state) where TChannel : class;" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed ClientBase`1/BeginOperationDelegate&lt;class TChannel&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ClientBase`1.BeginOperationDelegate" />

@@ -1,4 +1,4 @@
-<Type Name="ExportDescriptorPromise" FullName="System.Composition.Hosting.Core.ExportDescriptorPromise">
+﻿<Type Name="ExportDescriptorPromise" FullName="System.Composition.Hosting.Core.ExportDescriptorPromise">
   <TypeSignature Language="C#" Value="public class ExportDescriptorPromise" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExportDescriptorPromise extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.ExportDescriptorPromise" />
@@ -52,8 +52,7 @@
         <param name="dependencies">A function that provides the dependencies required to fulfill the promise.</param>
         <param name="getDescriptor">A function that provides the promised descriptor.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise" /> class.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Contract">
@@ -74,8 +73,7 @@
       <Docs>
         <summary>Gets the contract fulfilled by this promise.</summary>
         <value>The contract</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Dependencies">
@@ -96,8 +94,7 @@
       <Docs>
         <summary>Gets the dependencies that are required to fulfill this promise.</summary>
         <value>A collection of dependencies.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDescriptor">
@@ -119,8 +116,7 @@
       <Docs>
         <summary>Retrieves the promised descriptor.</summary>
         <returns>The descriptor.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsShared">
@@ -142,8 +138,7 @@
         <summary>Gets a value that indicates whether the promise is shared.</summary>
         <value>
           <see langword="true" /> if the promise is shared within some context; otherwise, <see langword="false" />.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Origin">
@@ -164,8 +159,7 @@
       <Docs>
         <summary>Gets a description of where the promise originates (for example, a part type), used to provide readable errors.</summary>
         <value>A description of the promise's origin.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -187,8 +181,7 @@
       <Docs>
         <summary>Returns the string representation of this <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise" /> object.</summary>
         <returns>The string representation of this <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise" /> object.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

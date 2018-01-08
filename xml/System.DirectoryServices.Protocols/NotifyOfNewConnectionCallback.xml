@@ -1,4 +1,4 @@
-<Type Name="NotifyOfNewConnectionCallback" FullName="System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback">
+﻿<Type Name="NotifyOfNewConnectionCallback" FullName="System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback">
   <TypeSignature Language="C#" Value="public delegate bool NotifyOfNewConnectionCallback(LdapConnection primaryConnection, LdapConnection referralFromConnection, string newDistinguishedName, LdapDirectoryIdentifier identifier, LdapConnection newConnection, NetworkCredential credential, long currentUserToken, int errorCodeFromBind);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NotifyOfNewConnectionCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback" />

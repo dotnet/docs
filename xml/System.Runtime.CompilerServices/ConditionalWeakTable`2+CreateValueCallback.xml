@@ -1,4 +1,4 @@
-<Type Name="ConditionalWeakTable&lt;TKey,TValue&gt;+CreateValueCallback" FullName="System.Runtime.CompilerServices.ConditionalWeakTable&lt;TKey,TValue&gt;+CreateValueCallback">
+﻿<Type Name="ConditionalWeakTable&lt;TKey,TValue&gt;+CreateValueCallback" FullName="System.Runtime.CompilerServices.ConditionalWeakTable&lt;TKey,TValue&gt;+CreateValueCallback">
   <TypeSignature Language="C#" Value="public delegate TValue ConditionalWeakTable&lt;TKey,TValue&gt;.CreateValueCallback(TKey key) where TKey : class where TValue : class;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ConditionalWeakTable`2/CreateValueCallback&lt;class TKey, class TValue&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback" />

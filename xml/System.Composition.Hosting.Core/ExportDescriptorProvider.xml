@@ -1,4 +1,4 @@
-<Type Name="ExportDescriptorProvider" FullName="System.Composition.Hosting.Core.ExportDescriptorProvider">
+﻿<Type Name="ExportDescriptorProvider" FullName="System.Composition.Hosting.Core.ExportDescriptorProvider">
   <TypeSignature Language="C#" Value="public abstract class ExportDescriptorProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExportDescriptorProvider extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.ExportDescriptorProvider" />
@@ -15,8 +15,7 @@
   <Interfaces />
   <Docs>
     <summary>Provides the description of an export for a part known to the composition engine.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,8 +93,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates a lack of dependencies.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoExportDescriptors">
@@ -115,8 +113,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates a lack of export descriptors.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoMetadata">
@@ -136,8 +133,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates a lack of metadata.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

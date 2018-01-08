@@ -1,4 +1,4 @@
-<Type Name="Color" FullName="System.Drawing.Color">
+﻿<Type Name="Color" FullName="System.Drawing.Color">
   <TypeSignature Language="C#" Value="public struct Color" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Color extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Color" />
@@ -19,8 +19,7 @@
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Represents an ARGB (alpha, red, green, blue) color.</summary>
     <remarks>

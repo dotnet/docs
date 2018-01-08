@@ -1,4 +1,4 @@
-<Type Name="ArrayPool&lt;T&gt;" FullName="System.Buffers.ArrayPool&lt;T&gt;">
+﻿<Type Name="ArrayPool&lt;T&gt;" FullName="System.Buffers.ArrayPool&lt;T&gt;">
   <TypeSignature Language="C#" Value="public abstract class ArrayPool&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ArrayPool`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Buffers.ArrayPool`1" />
@@ -77,8 +77,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <Docs>
         <summary>Creates a new instance of the <see cref="ArrayPool{T}" /> class.</summary>
         <returns>A new instance of the <see cref="ArrayPool{T}" /> class.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">

@@ -1,4 +1,4 @@
-<Type Name="GeoCoordinateWatcher" FullName="System.Device.Location.GeoCoordinateWatcher">
+﻿<Type Name="GeoCoordinateWatcher" FullName="System.Device.Location.GeoCoordinateWatcher">
   <TypeSignature Language="C#" Value="public class GeoCoordinateWatcher : IDisposable, System.ComponentModel.INotifyPropertyChanged, System.Device.Location.IGeoPositionWatcher&lt;System.Device.Location.GeoCoordinate&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GeoCoordinateWatcher extends System.Object implements class System.ComponentModel.INotifyPropertyChanged, class System.Device.Location.IGeoPositionWatcher`1&lt;class System.Device.Location.GeoCoordinate&gt;, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Device.Location.GeoCoordinateWatcher" />

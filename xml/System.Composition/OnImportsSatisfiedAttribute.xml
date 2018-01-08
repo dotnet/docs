@@ -1,4 +1,4 @@
-<Type Name="OnImportsSatisfiedAttribute" FullName="System.Composition.OnImportsSatisfiedAttribute">
+﻿<Type Name="OnImportsSatisfiedAttribute" FullName="System.Composition.OnImportsSatisfiedAttribute">
   <TypeSignature Language="C#" Value="public sealed class OnImportsSatisfiedAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OnImportsSatisfiedAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Composition.OnImportsSatisfiedAttribute" />
@@ -44,8 +44,7 @@ The method that this attribute is applied to must be void, parameterless, and ei
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.OnImportsSatisfiedAttribute" /> class.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

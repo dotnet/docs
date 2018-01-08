@@ -1,4 +1,4 @@
-<Type Name="AuthenticationSchemeSelector" FullName="System.Net.AuthenticationSchemeSelector">
+﻿<Type Name="AuthenticationSchemeSelector" FullName="System.Net.AuthenticationSchemeSelector">
   <TypeSignature Language="C#" Value="public delegate System.Net.AuthenticationSchemes AuthenticationSchemeSelector(HttpListenerRequest httpRequest);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthenticationSchemeSelector extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.AuthenticationSchemeSelector" />

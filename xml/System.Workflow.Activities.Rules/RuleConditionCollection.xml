@@ -1,4 +1,4 @@
-<Type Name="RuleConditionCollection" FullName="System.Workflow.Activities.Rules.RuleConditionCollection">
+﻿<Type Name="RuleConditionCollection" FullName="System.Workflow.Activities.Rules.RuleConditionCollection">
   <TypeSignature Language="C#" Value="public sealed class RuleConditionCollection : System.Collections.ObjectModel.KeyedCollection&lt;string,System.Workflow.Activities.Rules.RuleCondition&gt;, System.Workflow.ComponentModel.IWorkflowChangeDiff" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit RuleConditionCollection extends System.Collections.ObjectModel.KeyedCollection`2&lt;string, class System.Workflow.Activities.Rules.RuleCondition&gt; implements class System.Workflow.ComponentModel.IWorkflowChangeDiff" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleConditionCollection" />

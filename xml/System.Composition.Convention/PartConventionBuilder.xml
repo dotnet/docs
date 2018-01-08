@@ -1,4 +1,4 @@
-<Type Name="PartConventionBuilder" FullName="System.Composition.Convention.PartConventionBuilder">
+﻿<Type Name="PartConventionBuilder" FullName="System.Composition.Convention.PartConventionBuilder">
   <TypeSignature Language="C#" Value="public class PartConventionBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PartConventionBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Convention.PartConventionBuilder" />
@@ -15,8 +15,7 @@
   <Interfaces />
   <Docs>
     <summary>Configures a type as a Managed Extensibility Framework (MEF) part.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddPartMetadata">
@@ -43,8 +42,7 @@
         <param name="getValueFromPartType">A function that returns the metadata value on the part type.</param>
         <summary>Adds metadata that has the specified name and value to the part. The value is returned by a function that maps the part type to the metadata value.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPartMetadata">
@@ -71,8 +69,7 @@
         <param name="value">The metadata value.</param>
         <summary>Adds metadata that has the specified name and value to the part.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Export">
@@ -94,8 +91,7 @@
       <Docs>
         <summary>Exports the part with its concrete type as the contract type.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Export">
@@ -120,8 +116,7 @@
         <param name="exportConfiguration">An action that configures the part.</param>
         <summary>Exports the part that has the specified configuration.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Export&lt;T&gt;">
@@ -147,8 +142,7 @@
         <typeparam name="T">The contract type.</typeparam>
         <summary>Exports the part that has the specified contract type.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Export&lt;T&gt;">
@@ -177,8 +171,7 @@
         <param name="exportConfiguration">An action that configures the part.</param>
         <summary>Exports the part that has the specified contract type by using the specified configuration.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportInterfaces">
@@ -200,8 +193,7 @@
       <Docs>
         <summary>Selects all interfaces on the part type to be exported.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportInterfaces">
@@ -226,8 +218,7 @@
         <param name="interfaceFilter">A predicate that specifies the interfaces to be selected.</param>
         <summary>Selects interfaces on the part type to be exported according to the specified filter.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportInterfaces">
@@ -254,8 +245,7 @@
         <param name="exportConfiguration">An action that configures the exports.</param>
         <summary>Selects interfaces on the part type to be exported according to the specified filter, using the specified export configuration.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportProperties">
@@ -280,8 +270,7 @@
         <param name="propertyFilter">A predicate that specifies the properites to export.</param>
         <summary>Selects the properties on the part to export according to the specified predicate.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportProperties">
@@ -308,8 +297,7 @@
         <param name="exportConfiguration">An action that configures the exports.</param>
         <summary>Selects the properties on the part to export according to the specified predicate, using the specified export configuration.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportProperties&lt;T&gt;">
@@ -338,8 +326,7 @@
         <param name="propertyFilter">A predicate that specifies the properites to export.</param>
         <summary>Selects the properties on the part to export according to the specified predicate, using the specified contract type.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportProperties&lt;T&gt;">
@@ -370,8 +357,7 @@
         <param name="exportConfiguration">An action that configures the exports.</param>
         <summary>Selects the properties on the part to export according to the specified predicate, using the specified contract type and export configuration. </summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportProperties">
@@ -396,8 +382,7 @@
         <param name="propertyFilter">A predicate that specifies the properites to import.</param>
         <summary>Selects the properties on the part to import according to the specified predicate.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportProperties">
@@ -424,8 +409,7 @@
         <param name="importConfiguration">An action that configures the imports.</param>
         <summary>Selects the properties on the part to import according to the specified predicate, using the specified import configuration.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportProperties&lt;T&gt;">
@@ -454,8 +438,7 @@
         <param name="propertyFilter">A predicate that specifies the properties to import.</param>
         <summary>Selects the properties on the part to import according to the specified predicate, using the specified contract type.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportProperties&lt;T&gt;">
@@ -486,8 +469,7 @@
         <param name="importConfiguration">An action that configures the imports.</param>
         <summary>Selects the properties on the part to import according to the specified predicate, using the specified contract type and import configuration.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="NotifyImportsSatisfied">
@@ -512,8 +494,7 @@
         <param name="methodFilter">A predicate that selects the methods.</param>
         <summary>Select methods to be used as a notification when composition is complete.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectConstructor">
@@ -538,8 +519,7 @@
         <param name="constructorSelector">A function that returns a single constructor.</param>
         <summary>Selects the constructor used to initialize the part by using the specified function.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectConstructor">
@@ -566,8 +546,7 @@
         <param name="importConfiguration">A method that configures the constructor's imports.</param>
         <summary>Selects the constructor used to initialize the part by using the specified function and import configuration.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shared">
@@ -589,8 +568,7 @@
       <Docs>
         <summary>Marks the part as being shared throughout the entire composition.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shared">
@@ -615,8 +593,7 @@
         <param name="sharingBoundary">The boundary.</param>
         <summary>Marks the part as being shared within the specified boundary.</summary>
         <returns>A part builder that can be used to further configure the part.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

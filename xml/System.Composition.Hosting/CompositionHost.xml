@@ -1,4 +1,4 @@
-<Type Name="CompositionHost" FullName="System.Composition.Hosting.CompositionHost">
+﻿<Type Name="CompositionHost" FullName="System.Composition.Hosting.CompositionHost">
   <TypeSignature Language="C#" Value="public sealed class CompositionHost : System.Composition.CompositionContext, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CompositionHost extends System.Composition.CompositionContext implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.CompositionHost" />
@@ -19,8 +19,7 @@
   </Interfaces>
   <Docs>
     <summary>A lightweight composition container that is assembled from specified providers.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateCompositionHost">
@@ -45,8 +44,7 @@
         <param name="providers">The providers, which contain export descriptions for the parts being composed.</param>
         <summary>Creates the composition host with the specified collection of providers.</summary>
         <returns>The created composition host.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCompositionHost">
@@ -77,8 +75,7 @@
         <param name="providers">The providers, which contain export descriptions for the parts being composed.</param>
         <summary>Creates the composition host with the specified array of providers.</summary>
         <returns>The created composition host.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -102,8 +99,7 @@
       <Parameters />
       <Docs>
         <summary>Releases the composition host and any globally shared parts.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetExport">
@@ -131,8 +127,7 @@
         <summary>Retrieves the specified export from the composition context.</summary>
         <returns>
           <see langword="true" /> if the export was retrieved; otherwise, <see langword="false" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

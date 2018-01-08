@@ -1,4 +1,4 @@
-<Type Name="SignatureCallingConvention" FullName="System.Reflection.Metadata.SignatureCallingConvention">
+﻿<Type Name="SignatureCallingConvention" FullName="System.Reflection.Metadata.SignatureCallingConvention">
   <TypeSignature Language="C#" Value="public enum SignatureCallingConvention" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SignatureCallingConvention extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.SignatureCallingConvention" />
@@ -15,8 +15,7 @@
   </Base>
   <Docs>
     <summary>Specifies how arguments in a given signature are passed from the caller to the callee. The underlying values of the fields in this type correspond to the representation in the leading signature byte represented by a <see cref="T:System.Reflection.Metadata.SignatureHeader" /> structure.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="CDecl">

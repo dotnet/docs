@@ -1,4 +1,4 @@
-<Type Name="DelayActivity" FullName="System.Workflow.Activities.DelayActivity">
+﻿<Type Name="DelayActivity" FullName="System.Workflow.Activities.DelayActivity">
   <TypeSignature Language="C#" Value="public sealed class DelayActivity : System.Workflow.ComponentModel.Activity, System.Workflow.Activities.IEventActivity, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DelayActivity extends System.Workflow.ComponentModel.Activity implements class System.Workflow.Activities.IEventActivity, class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.DelayActivity" />

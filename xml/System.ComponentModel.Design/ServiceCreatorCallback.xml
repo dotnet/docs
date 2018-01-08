@@ -1,4 +1,4 @@
-<Type Name="ServiceCreatorCallback" FullName="System.ComponentModel.Design.ServiceCreatorCallback">
+﻿<Type Name="ServiceCreatorCallback" FullName="System.ComponentModel.Design.ServiceCreatorCallback">
   <TypeSignature Language="C#" Value="public delegate object ServiceCreatorCallback(IServiceContainer container, Type serviceType);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceCreatorCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ServiceCreatorCallback" />

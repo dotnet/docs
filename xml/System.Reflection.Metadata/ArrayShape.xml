@@ -1,4 +1,4 @@
-<Type Name="ArrayShape" FullName="System.Reflection.Metadata.ArrayShape">
+﻿<Type Name="ArrayShape" FullName="System.Reflection.Metadata.ArrayShape">
   <TypeSignature Language="C#" Value="public struct ArrayShape" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ArrayShape extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ArrayShape" />
@@ -15,8 +15,7 @@
   <Interfaces />
   <Docs>
     <summary>Represents the shape of an array type.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,8 +40,7 @@
         <param name="sizes">The size of each dimension.</param>
         <param name="lowerBounds">The lower-bound of each dimension.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.ArrayShape" /> structure.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="LowerBounds">
@@ -63,8 +61,7 @@
       <Docs>
         <summary>Gets the lower-bounds of all dimensions. Length may be smaller than rank, in which case the trailing dimensions have unspecified lower bounds.</summary>
         <value>An array of lower-bounds.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rank">
@@ -85,8 +82,7 @@
       <Docs>
         <summary>Gets the number of dimensions in the array.</summary>
         <value>The number of dimensions.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sizes">

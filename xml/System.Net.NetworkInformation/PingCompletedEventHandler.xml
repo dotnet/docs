@@ -1,4 +1,4 @@
-<Type Name="PingCompletedEventHandler" FullName="System.Net.NetworkInformation.PingCompletedEventHandler">
+﻿<Type Name="PingCompletedEventHandler" FullName="System.Net.NetworkInformation.PingCompletedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void PingCompletedEventHandler(object sender, PingCompletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PingCompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.PingCompletedEventHandler" />

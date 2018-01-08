@@ -1,4 +1,4 @@
-<Type Name="EntitySet&lt;TEntity&gt;" FullName="System.Data.Linq.EntitySet&lt;TEntity&gt;">
+﻿<Type Name="EntitySet&lt;TEntity&gt;" FullName="System.Data.Linq.EntitySet&lt;TEntity&gt;">
   <TypeSignature Language="C#" Value="public sealed class EntitySet&lt;TEntity&gt; : System.Collections.Generic.ICollection&lt;TEntity&gt;, System.Collections.Generic.IEnumerable&lt;TEntity&gt;, System.Collections.Generic.IList&lt;TEntity&gt;, System.Collections.IList, System.ComponentModel.IListSource where TEntity : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntitySet`1&lt;class TEntity&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;!TEntity&gt;, class System.Collections.Generic.IEnumerable`1&lt;!TEntity&gt;, class System.Collections.Generic.IList`1&lt;!TEntity&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.ComponentModel.IListSource" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.EntitySet`1" />

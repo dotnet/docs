@@ -1,4 +1,4 @@
-<Type Name="ICollectionContract&lt;C&gt;" FullName="System.AddIn.Contract.Collections.ICollectionContract&lt;C&gt;">
+﻿<Type Name="ICollectionContract&lt;C&gt;" FullName="System.AddIn.Contract.Collections.ICollectionContract&lt;C&gt;">
   <TypeSignature Language="C#" Value="public interface ICollectionContract&lt;C&gt; : System.AddIn.Contract.Collections.IEnumerableContract&lt;C&gt; where C : IContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICollectionContract`1&lt;(class System.AddIn.Contract.IContract) C&gt; implements class System.AddIn.Contract.Collections.IEnumerableContract`1&lt;!C&gt;, class System.AddIn.Contract.IContract" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.ICollectionContract`1" />

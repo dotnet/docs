@@ -1,4 +1,4 @@
-<Type Name="HttpContinueDelegate" FullName="System.Net.HttpContinueDelegate">
+﻿<Type Name="HttpContinueDelegate" FullName="System.Net.HttpContinueDelegate">
   <TypeSignature Language="C#" Value="public delegate void HttpContinueDelegate(int StatusCode, WebHeaderCollection httpHeaders);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpContinueDelegate extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.HttpContinueDelegate" />

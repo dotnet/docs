@@ -1,4 +1,4 @@
-<Type Name="ServicedComponent" FullName="System.EnterpriseServices.ServicedComponent">
+﻿<Type Name="ServicedComponent" FullName="System.EnterpriseServices.ServicedComponent">
   <TypeSignature Language="C#" Value="public abstract class ServicedComponent : ContextBoundObject, IDisposable, System.EnterpriseServices.IRemoteDispatch, System.EnterpriseServices.IServicedComponentInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable ServicedComponent extends System.ContextBoundObject implements class System.EnterpriseServices.IRemoteDispatch, class System.EnterpriseServices.IServicedComponentInfo, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ServicedComponent" />

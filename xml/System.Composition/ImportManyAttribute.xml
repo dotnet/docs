@@ -1,4 +1,4 @@
-<Type Name="ImportManyAttribute" FullName="System.Composition.ImportManyAttribute">
+﻿<Type Name="ImportManyAttribute" FullName="System.Composition.ImportManyAttribute">
   <TypeSignature Language="C#" Value="public class ImportManyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImportManyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Composition.ImportManyAttribute" />
@@ -20,8 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Specifies that a property, field, or parameter should be populated with all matching exports by the host container.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +37,7 @@
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.ImportManyAttribute" /> class, importing the set of exports that have the default contract name.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -60,8 +58,7 @@
       <Docs>
         <param name="contractName">The contract name of the exports to import, or <see langword="null" /> or an empty string ("") to use the default contract name.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.ImportManyAttribute" /> class, importing the set of exports that have the specified contract name.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ContractName">
@@ -82,8 +79,7 @@
       <Docs>
         <summary>Gets the contract name of the exports to import.</summary>
         <value>The contract name of the exports to import. The default value is an empty string ("").</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

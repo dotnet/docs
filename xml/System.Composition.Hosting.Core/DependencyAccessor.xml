@@ -1,4 +1,4 @@
-<Type Name="DependencyAccessor" FullName="System.Composition.Hosting.Core.DependencyAccessor">
+﻿<Type Name="DependencyAccessor" FullName="System.Composition.Hosting.Core.DependencyAccessor">
   <TypeSignature Language="C#" Value="public abstract class DependencyAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DependencyAccessor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.DependencyAccessor" />
@@ -15,8 +15,7 @@
   <Interfaces />
   <Docs>
     <summary>Allows <see cref="T:System.Composition.Hosting.Core.ExportDescriptorProvider" /> objects to locate their dependencies.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,8 +64,7 @@
         <param name="exportKey">The export key that the promises must supply.</param>
         <summary>Retrieves all promises for the specified contract.</summary>
         <returns>A collection of promises for the contract.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveDependencies">
@@ -96,8 +94,7 @@
           <see langword="true" /> to indicate that the dependency must be satisfied before exports are made available; otherwise, <see langword="false" />.</param>
         <summary>Resolves dependencies on all implementations of a contract.</summary>
         <returns>A collection of resolved dependencies.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveRequiredDependency">
@@ -127,8 +124,7 @@
           <see langword="true" /> to indicate that the dependency must be satisfied before exports are made available; otherwise, <see langword="false" />.</param>
         <summary>Resolves a required dependency on one implementation of a contract.</summary>
         <returns>The resolved dependency.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="TryResolveOptionalDependency">
@@ -161,8 +157,7 @@
         <summary>Resolves an optional dependency on one implementation of a contract.</summary>
         <returns>
           <see langword="true" /> if the dependency was resolved; otherwise, <see langword="false" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

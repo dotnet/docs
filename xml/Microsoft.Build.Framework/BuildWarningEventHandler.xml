@@ -1,4 +1,4 @@
-<Type Name="BuildWarningEventHandler" FullName="Microsoft.Build.Framework.BuildWarningEventHandler">
+﻿<Type Name="BuildWarningEventHandler" FullName="Microsoft.Build.Framework.BuildWarningEventHandler">
   <TypeSignature Language="C#" Value="public delegate void BuildWarningEventHandler(object sender, BuildWarningEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildWarningEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildWarningEventHandler" />

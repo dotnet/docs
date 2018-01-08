@@ -1,4 +1,4 @@
-<Type Name="ADODC+FieldChangeCompleteDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+FieldChangeCompleteDelegate">
+﻿<Type Name="ADODC+FieldChangeCompleteDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+FieldChangeCompleteDelegate">
   <TypeSignature Language="C#" Value="public delegate void ADODC.FieldChangeCompleteDelegate(int cFields, ref object fields, Error pError, ref EventStatusEnum adStatus, Recordset pRecordset);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ADODC/FieldChangeCompleteDelegate extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.FieldChangeCompleteDelegate" />

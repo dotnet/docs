@@ -1,4 +1,4 @@
-<Type Name="Table&lt;TEntity&gt;" FullName="System.Data.Linq.Table&lt;TEntity&gt;">
+﻿<Type Name="Table&lt;TEntity&gt;" FullName="System.Data.Linq.Table&lt;TEntity&gt;">
   <TypeSignature Language="C#" Value="public sealed class Table&lt;TEntity&gt; : System.Collections.Generic.IEnumerable&lt;TEntity&gt;, System.ComponentModel.IListSource, System.Data.Linq.ITable, System.Linq.IQueryable&lt;TEntity&gt;, System.Linq.IQueryProvider where TEntity : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Table`1&lt;class TEntity&gt; extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;!TEntity&gt;, class System.Collections.IEnumerable, class System.ComponentModel.IListSource, class System.Data.Linq.ITable, class System.Linq.IQueryable, class System.Linq.IQueryable`1&lt;!TEntity&gt;, class System.Linq.IQueryProvider" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Table`1" />
@@ -1315,36 +1315,6 @@ db.SubmitChanges()
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.Linq.IQueryProvider.CreateQuery&lt;S&gt;">
-      <MemberSignature Language="C#" Value="System.Linq.IQueryable&lt;S&gt; IQueryProvider.CreateQuery&lt;S&gt; (System.Linq.Expressions.Expression expr);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Linq.IQueryable`1&lt;!!S&gt; System.Linq.IQueryProvider.CreateQuery&lt;S&gt;(class System.Linq.Expressions.Expression expr) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.System#Linq#IQueryProvider#CreateQuery``1(System.Linq.Expressions.Expression)" />
-      <MemberSignature Language="VB.NET" Value="Function CreateQuery(Of S) (expr As Expression) As IQueryable(Of S) Implements IQueryProvider.CreateQuery" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Linq.IQueryProvider.CreateQuery``1(System.Linq.Expressions.Expression)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Linq.IQueryable&lt;S&gt;</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="S" />
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="expr" Type="System.Linq.Expressions.Expression" />
-      </Parameters>
-      <Docs>
-        <typeparam name="S">To be added.</typeparam>
-        <param name="expr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="System.Linq.IQueryProvider.CreateQuery&lt;TResult&gt;">
       <MemberSignature Language="C#" Value="System.Linq.IQueryable&lt;TResult&gt; IQueryProvider.CreateQuery&lt;TResult&gt; (System.Linq.Expressions.Expression expression);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Linq.IQueryable`1&lt;!!TResult&gt; System.Linq.IQueryProvider.CreateQuery&lt;TResult&gt;(class System.Linq.Expressions.Expression expression) cil managed" />
@@ -1411,35 +1381,6 @@ db.SubmitChanges()
   
  ]]></format>
         </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.Linq.IQueryProvider.Execute&lt;S&gt;">
-      <MemberSignature Language="C#" Value="S IQueryProvider.Execute&lt;S&gt; (System.Linq.Expressions.Expression expression);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !!S System.Linq.IQueryProvider.Execute&lt;S&gt;(class System.Linq.Expressions.Expression expression) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.System#Linq#IQueryProvider#Execute``1(System.Linq.Expressions.Expression)" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Linq.IQueryProvider.Execute``1(System.Linq.Expressions.Expression)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>S</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="S" />
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
-      </Parameters>
-      <Docs>
-        <typeparam name="S">To be added.</typeparam>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Linq.IQueryProvider.Execute&lt;TResult&gt;">

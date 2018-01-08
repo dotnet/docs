@@ -1,4 +1,4 @@
-<Type Name="ITable&lt;TEntity&gt;" FullName="System.Data.Linq.ITable&lt;TEntity&gt;">
+﻿<Type Name="ITable&lt;TEntity&gt;" FullName="System.Data.Linq.ITable&lt;TEntity&gt;">
   <TypeSignature Language="C#" Value="public interface ITable&lt;TEntity&gt; : System.Collections.Generic.IEnumerable&lt;TEntity&gt;, System.Linq.IQueryable&lt;TEntity&gt; where TEntity : class" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITable`1&lt;class TEntity&gt; implements class System.Collections.Generic.IEnumerable`1&lt;!TEntity&gt;, class System.Collections.IEnumerable, class System.Linq.IQueryable, class System.Linq.IQueryable`1&lt;!TEntity&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ITable`1" />

@@ -1,4 +1,4 @@
-<Type Name="DistributedFileLogger" FullName="Microsoft.Build.Logging.DistributedFileLogger">
+﻿<Type Name="DistributedFileLogger" FullName="Microsoft.Build.Logging.DistributedFileLogger">
   <TypeSignature Language="C#" Value="public class DistributedFileLogger : Microsoft.Build.Framework.IForwardingLogger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DistributedFileLogger extends System.Object implements class Microsoft.Build.Framework.IForwardingLogger, class Microsoft.Build.Framework.ILogger, class Microsoft.Build.Framework.INodeLogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Logging.DistributedFileLogger" />

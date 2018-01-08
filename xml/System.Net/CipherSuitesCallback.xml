@@ -1,4 +1,4 @@
-<Type Name="CipherSuitesCallback" FullName="System.Net.CipherSuitesCallback">
+﻿<Type Name="CipherSuitesCallback" FullName="System.Net.CipherSuitesCallback">
   <TypeSignature Language="C#" Value="public delegate System.Collections.Generic.IEnumerable&lt;string&gt; CipherSuitesCallback(SecurityProtocolType protocol, IEnumerable&lt;string&gt; allCiphers);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CipherSuitesCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.CipherSuitesCallback" />

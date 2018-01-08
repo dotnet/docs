@@ -1,4 +1,4 @@
-<Type Name="IOrderedQueryable&lt;T&gt;" FullName="System.Linq.IOrderedQueryable&lt;T&gt;">
+﻿<Type Name="IOrderedQueryable&lt;T&gt;" FullName="System.Linq.IOrderedQueryable&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IOrderedQueryable&lt;out T&gt; : System.Collections.Generic.IEnumerable&lt;out T&gt;, System.Linq.IOrderedQueryable, System.Linq.IQueryable&lt;out T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IOrderedQueryable`1&lt;+ T&gt; implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable, class System.Linq.IOrderedQueryable, class System.Linq.IQueryable, class System.Linq.IQueryable`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Linq.IOrderedQueryable`1" />

@@ -1,4 +1,4 @@
-<Type Name="HttpWorkerRequest+EndOfSendNotification" FullName="System.Web.HttpWorkerRequest+EndOfSendNotification">
+﻿<Type Name="HttpWorkerRequest+EndOfSendNotification" FullName="System.Web.HttpWorkerRequest+EndOfSendNotification">
   <TypeSignature Language="C#" Value="public delegate void HttpWorkerRequest.EndOfSendNotification(HttpWorkerRequest wr, object extraData);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed HttpWorkerRequest/EndOfSendNotification extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpWorkerRequest.EndOfSendNotification" />

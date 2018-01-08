@@ -1,4 +1,4 @@
-<Type Name="ProcessHost" FullName="System.Web.Hosting.ProcessHost">
+﻿<Type Name="ProcessHost" FullName="System.Web.Hosting.ProcessHost">
   <TypeSignature Language="C#" Value="public sealed class ProcessHost : MarshalByRefObject, System.Web.Hosting.IAdphManager, System.Web.Hosting.IApplicationPreloadManager, System.Web.Hosting.IPphManager, System.Web.Hosting.IProcessHost, System.Web.Hosting.IProcessHostIdleAndHealthCheck" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProcessHost extends System.MarshalByRefObject implements class System.Web.Hosting.IAdphManager, class System.Web.Hosting.IApplicationPreloadManager, class System.Web.Hosting.IPphManager, class System.Web.Hosting.IProcessHost, class System.Web.Hosting.IProcessHostIdleAndHealthCheck" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ProcessHost" />

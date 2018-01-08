@@ -1,4 +1,4 @@
-<Type Name="FaultCallback" FullName="System.Activities.FaultCallback">
+﻿<Type Name="FaultCallback" FullName="System.Activities.FaultCallback">
   <TypeSignature Language="C#" Value="public delegate void FaultCallback(NativeActivityFaultContext faultContext, Exception propagatedException, ActivityInstance propagatedFrom);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FaultCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.FaultCallback" />

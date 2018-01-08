@@ -1,4 +1,4 @@
-<Type Name="IOutputSessionChannel" FullName="System.ServiceModel.Channels.IOutputSessionChannel">
+﻿<Type Name="IOutputSessionChannel" FullName="System.ServiceModel.Channels.IOutputSessionChannel">
   <TypeSignature Language="C#" Value="public interface IOutputSessionChannel : System.ServiceModel.Channels.IOutputChannel, System.ServiceModel.Channels.ISessionChannel&lt;System.ServiceModel.Channels.IOutputSession&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IOutputSessionChannel implements class System.ServiceModel.Channels.IChannel, class System.ServiceModel.Channels.IOutputChannel, class System.ServiceModel.Channels.ISessionChannel`1&lt;class System.ServiceModel.Channels.IOutputSession&gt;, class System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IOutputSessionChannel" />

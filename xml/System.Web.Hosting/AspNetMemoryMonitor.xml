@@ -1,4 +1,4 @@
-<Type Name="AspNetMemoryMonitor" FullName="System.Web.Hosting.AspNetMemoryMonitor">
+﻿<Type Name="AspNetMemoryMonitor" FullName="System.Web.Hosting.AspNetMemoryMonitor">
   <TypeSignature Language="C#" Value="public sealed class AspNetMemoryMonitor : IDisposable, IObservable&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt;, IObservable&lt;System.Web.Hosting.RecycleLimitInfo&gt;, System.Web.Hosting.IApplicationMonitor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AspNetMemoryMonitor extends System.Object implements class System.IDisposable, class System.IObservable`1&lt;class System.Web.Hosting.LowPhysicalMemoryInfo&gt;, class System.IObservable`1&lt;class System.Web.Hosting.RecycleLimitInfo&gt;, class System.Web.Hosting.IApplicationMonitor" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.AspNetMemoryMonitor" />

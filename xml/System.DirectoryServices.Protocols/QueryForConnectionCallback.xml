@@ -1,4 +1,4 @@
-<Type Name="QueryForConnectionCallback" FullName="System.DirectoryServices.Protocols.QueryForConnectionCallback">
+﻿<Type Name="QueryForConnectionCallback" FullName="System.DirectoryServices.Protocols.QueryForConnectionCallback">
   <TypeSignature Language="C#" Value="public delegate System.DirectoryServices.Protocols.LdapConnection QueryForConnectionCallback(LdapConnection primaryConnection, LdapConnection referralFromConnection, string newDistinguishedName, LdapDirectoryIdentifier identifier, NetworkCredential credential, long currentUserToken);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueryForConnectionCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.QueryForConnectionCallback" />

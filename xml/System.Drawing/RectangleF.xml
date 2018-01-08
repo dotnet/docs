@@ -1,4 +1,4 @@
-<Type Name="RectangleF" FullName="System.Drawing.RectangleF">
+﻿<Type Name="RectangleF" FullName="System.Drawing.RectangleF">
   <TypeSignature Language="C#" Value="public struct RectangleF" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit RectangleF extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.RectangleF" />
@@ -20,8 +20,7 @@
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Stores a set of four floating-point numbers that represent the location and size of a rectangle. For more advanced region functions, use a <see cref="T:System.Drawing.Region" /> object.</summary>
     <remarks>

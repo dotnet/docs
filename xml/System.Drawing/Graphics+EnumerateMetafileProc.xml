@@ -1,4 +1,4 @@
-<Type Name="Graphics+EnumerateMetafileProc" FullName="System.Drawing.Graphics+EnumerateMetafileProc">
+﻿<Type Name="Graphics+EnumerateMetafileProc" FullName="System.Drawing.Graphics+EnumerateMetafileProc">
   <TypeSignature Language="C#" Value="public delegate bool Graphics.EnumerateMetafileProc(EmfPlusRecordType recordType, int flags, int dataSize, IntPtr data, PlayRecordCallback callbackData);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed Graphics/EnumerateMetafileProc extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Graphics.EnumerateMetafileProc" />

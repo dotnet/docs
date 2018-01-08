@@ -1,4 +1,4 @@
-<Type Name="SignatureTypeCode" FullName="System.Reflection.Metadata.SignatureTypeCode">
+﻿<Type Name="SignatureTypeCode" FullName="System.Reflection.Metadata.SignatureTypeCode">
   <TypeSignature Language="C#" Value="public enum SignatureTypeCode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SignatureTypeCode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.SignatureTypeCode" />
@@ -15,8 +15,7 @@
   </Base>
   <Docs>
     <summary>Specifies constants that define type codes used in signature encoding.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="Array">

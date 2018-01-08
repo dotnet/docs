@@ -1,4 +1,4 @@
-<Type Name="JavaScriptEncoder" FullName="System.Text.Encodings.Web.JavaScriptEncoder">
+﻿<Type Name="JavaScriptEncoder" FullName="System.Text.Encodings.Web.JavaScriptEncoder">
   <TypeSignature Language="C#" Value="public abstract class JavaScriptEncoder : System.Text.Encodings.Web.TextEncoder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit JavaScriptEncoder extends System.Text.Encodings.Web.TextEncoder" />
   <TypeSignature Language="DocId" Value="T:System.Text.Encodings.Web.JavaScriptEncoder" />
@@ -40,8 +40,7 @@
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Text.Encodings.Web.JavaScriptEncoder" /> class.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -67,8 +66,7 @@
         <param name="settings">Settings that control how the <see cref="T:System.Text.Encodings.Web.JavaScriptEncoder" /> instance encodes, primarily which characters to encode.</param>
         <summary>Creates a new instance of JavaScriptEncoder class with the specified settings.</summary>
         <returns>A new instance of the <see cref="T:System.Text.Encodings.Web.JavaScriptEncoder" /> class.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="settings" /> is <see langword="null" />.</exception>
       </Docs>
@@ -132,8 +130,7 @@
       <Docs>
         <summary>Gets a built-in instance of the <see cref="T:System.Text.Encodings.Web.JavaScriptEncoder" /> class.</summary>
         <value>A built-in instance of the <see cref="T:System.Text.Encodings.Web.JavaScriptEncoder" /> class.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

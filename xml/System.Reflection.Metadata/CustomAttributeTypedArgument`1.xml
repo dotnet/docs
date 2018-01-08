@@ -1,4 +1,4 @@
-<Type Name="CustomAttributeTypedArgument&lt;TType&gt;" FullName="System.Reflection.Metadata.CustomAttributeTypedArgument&lt;TType&gt;">
+﻿<Type Name="CustomAttributeTypedArgument&lt;TType&gt;" FullName="System.Reflection.Metadata.CustomAttributeTypedArgument&lt;TType&gt;">
   <TypeSignature Language="C#" Value="public struct CustomAttributeTypedArgument&lt;TType&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CustomAttributeTypedArgument`1&lt;TType&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.CustomAttributeTypedArgument`1" />
@@ -19,8 +19,7 @@
   <Docs>
     <typeparam name="TType">The type of the argument.</typeparam>
     <summary>Represents a typed argument for a custom metadata attribute.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,8 +42,7 @@
         <param name="type">The type of the argument.</param>
         <param name="value">The argument value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.CustomAttributeTypedArgument`1" /> structure using the specified argument type and value.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -65,8 +63,7 @@
       <Docs>
         <summary>Gets the type of the argument.</summary>
         <value>The argument type.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -87,8 +84,7 @@
       <Docs>
         <summary>Gets the value of the argument.</summary>
         <value>The argument value.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

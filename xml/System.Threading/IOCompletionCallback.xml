@@ -1,4 +1,4 @@
-<Type Name="IOCompletionCallback" FullName="System.Threading.IOCompletionCallback">
+﻿<Type Name="IOCompletionCallback" FullName="System.Threading.IOCompletionCallback">
   <TypeSignature Language="C#" Value="public delegate void IOCompletionCallback(uint errorCode, uint numBytes, NativeOverlapped* pOVERLAP);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOCompletionCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Threading.IOCompletionCallback" />

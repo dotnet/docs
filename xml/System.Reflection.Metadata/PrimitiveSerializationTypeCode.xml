@@ -1,4 +1,4 @@
-<Type Name="PrimitiveSerializationTypeCode" FullName="System.Reflection.Metadata.PrimitiveSerializationTypeCode">
+﻿<Type Name="PrimitiveSerializationTypeCode" FullName="System.Reflection.Metadata.PrimitiveSerializationTypeCode">
   <TypeSignature Language="C#" Value="public enum PrimitiveSerializationTypeCode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PrimitiveSerializationTypeCode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.PrimitiveSerializationTypeCode" />
@@ -14,8 +14,7 @@
   </Base>
   <Docs>
     <summary>Specifies constants that define the type codes used to encode types of primitive values in a <see cref="T:System.Reflection.Metadata.CustomAttribute" /> value blob.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="Boolean">

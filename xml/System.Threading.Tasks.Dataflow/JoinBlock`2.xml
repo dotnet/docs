@@ -1,4 +1,4 @@
-<Type Name="JoinBlock&lt;T1,T2&gt;" FullName="System.Threading.Tasks.Dataflow.JoinBlock&lt;T1,T2&gt;">
+﻿<Type Name="JoinBlock&lt;T1,T2&gt;" FullName="System.Threading.Tasks.Dataflow.JoinBlock&lt;T1,T2&gt;">
   <TypeSignature Language="C#" Value="public sealed class JoinBlock&lt;T1,T2&gt; : System.Threading.Tasks.Dataflow.IReceivableSourceBlock&lt;Tuple&lt;T1,T2&gt;&gt;, System.Threading.Tasks.Dataflow.ISourceBlock&lt;Tuple&lt;T1,T2&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JoinBlock`2&lt;T1, T2&gt; extends System.Object implements class System.Threading.Tasks.Dataflow.IDataflowBlock, class System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1&lt;class System.Tuple`2&lt;!T1, !T2&gt;&gt;, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;class System.Tuple`2&lt;!T1, !T2&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.JoinBlock`2" />

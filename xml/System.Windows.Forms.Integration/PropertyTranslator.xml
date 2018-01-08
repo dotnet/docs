@@ -1,4 +1,4 @@
-<Type Name="PropertyTranslator" FullName="System.Windows.Forms.Integration.PropertyTranslator">
+﻿<Type Name="PropertyTranslator" FullName="System.Windows.Forms.Integration.PropertyTranslator">
   <TypeSignature Language="C#" Value="public delegate void PropertyTranslator(object host, string propertyName, object value);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyTranslator extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.PropertyTranslator" />

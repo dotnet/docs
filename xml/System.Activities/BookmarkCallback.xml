@@ -1,4 +1,4 @@
-<Type Name="BookmarkCallback" FullName="System.Activities.BookmarkCallback">
+﻿<Type Name="BookmarkCallback" FullName="System.Activities.BookmarkCallback">
   <TypeSignature Language="C#" Value="public delegate void BookmarkCallback(NativeActivityContext context, Bookmark bookmark, object value);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BookmarkCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.BookmarkCallback" />

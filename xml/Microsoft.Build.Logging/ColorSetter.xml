@@ -1,4 +1,4 @@
-<Type Name="ColorSetter" FullName="Microsoft.Build.Logging.ColorSetter">
+﻿<Type Name="ColorSetter" FullName="Microsoft.Build.Logging.ColorSetter">
   <TypeSignature Language="C#" Value="public delegate void ColorSetter(ConsoleColor color);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColorSetter extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Logging.ColorSetter" />

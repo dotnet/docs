@@ -1,4 +1,4 @@
-<Type Name="IObjectSet&lt;TEntity&gt;" FullName="System.Data.Objects.IObjectSet&lt;TEntity&gt;">
+﻿<Type Name="IObjectSet&lt;TEntity&gt;" FullName="System.Data.Objects.IObjectSet&lt;TEntity&gt;">
   <TypeSignature Language="C#" Value="public interface IObjectSet&lt;TEntity&gt; : System.Collections.Generic.IEnumerable&lt;TEntity&gt;, System.Linq.IQueryable&lt;TEntity&gt; where TEntity : class" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IObjectSet`1&lt;class TEntity&gt; implements class System.Collections.Generic.IEnumerable`1&lt;!TEntity&gt;, class System.Collections.IEnumerable, class System.Linq.IQueryable, class System.Linq.IQueryable`1&lt;!TEntity&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.IObjectSet`1" />

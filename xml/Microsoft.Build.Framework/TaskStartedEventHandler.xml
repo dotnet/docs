@@ -1,4 +1,4 @@
-<Type Name="TaskStartedEventHandler" FullName="Microsoft.Build.Framework.TaskStartedEventHandler">
+﻿<Type Name="TaskStartedEventHandler" FullName="Microsoft.Build.Framework.TaskStartedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void TaskStartedEventHandler(object sender, TaskStartedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TaskStartedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.TaskStartedEventHandler" />

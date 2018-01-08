@@ -1,4 +1,4 @@
-<Type Name="HashMembershipCondition" FullName="System.Security.Policy.HashMembershipCondition">
+﻿<Type Name="HashMembershipCondition" FullName="System.Security.Policy.HashMembershipCondition">
   <TypeSignature Language="C#" Value="public sealed class HashMembershipCondition : System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable, System.Security.Policy.IMembershipCondition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit HashMembershipCondition extends System.Object implements class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable, class System.Security.ISecurityEncodable, class System.Security.ISecurityPolicyEncodable, class System.Security.Policy.IMembershipCondition" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.HashMembershipCondition" />

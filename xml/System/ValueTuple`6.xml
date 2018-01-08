@@ -1,4 +1,4 @@
-<Type Name="ValueTuple&lt;T1,T2,T3,T4,T5,T6&gt;" FullName="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6&gt;">
+﻿<Type Name="ValueTuple&lt;T1,T2,T3,T4,T5,T6&gt;" FullName="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6&gt;">
   <TypeSignature Language="C#" Value="public struct ValueTuple&lt;T1,T2,T3,T4,T5,T6&gt; : IComparable, IComparable&lt;ValueTuple&lt;T1,T2,T3,T4,T5,T6&gt;&gt;, IEquatable&lt;ValueTuple&lt;T1,T2,T3,T4,T5,T6&gt;&gt;, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ValueTuple`6&lt;T1, T2, T3, T4, T5, T6&gt; extends System.ValueType implements class System.Collections.IStructuralComparable, class System.Collections.IStructuralEquatable, class System.IComparable, class System.IComparable`1&lt;valuetype System.ValueTuple`6&lt;!T1, !T2, !T3, !T4, !T5, !T6&gt;&gt;, class System.IEquatable`1&lt;valuetype System.ValueTuple`6&lt;!T1, !T2, !T3, !T4, !T5, !T6&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ValueTuple`6" />

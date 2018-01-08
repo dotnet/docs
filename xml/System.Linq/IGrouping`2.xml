@@ -1,4 +1,4 @@
-<Type Name="IGrouping&lt;TKey,TElement&gt;" FullName="System.Linq.IGrouping&lt;TKey,TElement&gt;">
+﻿<Type Name="IGrouping&lt;TKey,TElement&gt;" FullName="System.Linq.IGrouping&lt;TKey,TElement&gt;">
   <TypeSignature Language="C#" Value="public interface IGrouping&lt;out TKey,out TElement&gt; : System.Collections.Generic.IEnumerable&lt;out TElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IGrouping`2&lt;+ TKey, + TElement&gt; implements class System.Collections.Generic.IEnumerable`1&lt;!TElement&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Linq.IGrouping`2" />

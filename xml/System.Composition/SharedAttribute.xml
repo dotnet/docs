@@ -1,4 +1,4 @@
-<Type Name="SharedAttribute" FullName="System.Composition.SharedAttribute">
+﻿<Type Name="SharedAttribute" FullName="System.Composition.SharedAttribute">
   <TypeSignature Language="C#" Value="public class SharedAttribute : System.Composition.PartMetadataAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SharedAttribute extends System.Composition.PartMetadataAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Composition.SharedAttribute" />
@@ -20,8 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Marks the decorated part as being constrained to sharing within the specified boundary.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +37,7 @@
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.SharedAttribute" /> class marked as globally shared.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -60,8 +58,7 @@
       <Docs>
         <param name="sharingBoundaryName">The sharing boundary.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.SharedAttribute" /> class with the specified sharing boundary.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="SharingBoundary">
@@ -82,8 +79,7 @@
       <Docs>
         <summary>Gets the boundary outside which the part marked by this attribute is inaccessible.</summary>
         <value>The sharing boundary.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

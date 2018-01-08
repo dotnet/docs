@@ -1,4 +1,4 @@
-<Type Name="CompositeActivator" FullName="System.Composition.Hosting.Core.CompositeActivator">
+﻿<Type Name="CompositeActivator" FullName="System.Composition.Hosting.Core.CompositeActivator">
   <TypeSignature Language="C#" Value="public delegate object CompositeActivator(LifetimeContext context, CompositionOperation operation);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompositeActivator extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.CompositeActivator" />
@@ -24,7 +24,6 @@
     <param name="operation">The operation within which the activation is occurring.</param>
     <summary>The delegate that allows instances of parts and exports to be accessed during composition.</summary>
     <returns>The activated part or export.</returns>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
 </Type>

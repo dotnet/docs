@@ -1,4 +1,4 @@
-<Type Name="DelegateCompletionCallback" FullName="System.Activities.DelegateCompletionCallback">
+﻿<Type Name="DelegateCompletionCallback" FullName="System.Activities.DelegateCompletionCallback">
   <TypeSignature Language="C#" Value="public delegate void DelegateCompletionCallback(NativeActivityContext context, ActivityInstance completedInstance, IDictionary&lt;string,object&gt; outArguments);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DelegateCompletionCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.DelegateCompletionCallback" />

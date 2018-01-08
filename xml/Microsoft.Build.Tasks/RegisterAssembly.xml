@@ -1,4 +1,4 @@
-<Type Name="RegisterAssembly" FullName="Microsoft.Build.Tasks.RegisterAssembly">
+﻿<Type Name="RegisterAssembly" FullName="Microsoft.Build.Tasks.RegisterAssembly">
   <TypeSignature Language="C#" Value="public class RegisterAssembly : Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension, System.Runtime.InteropServices.ITypeLibExporterNotifySink" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RegisterAssembly extends Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension implements class System.Runtime.InteropServices.ITypeLibExporterNotifySink" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.RegisterAssembly" />

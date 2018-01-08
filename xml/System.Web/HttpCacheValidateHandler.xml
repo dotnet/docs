@@ -1,4 +1,4 @@
-<Type Name="HttpCacheValidateHandler" FullName="System.Web.HttpCacheValidateHandler">
+﻿<Type Name="HttpCacheValidateHandler" FullName="System.Web.HttpCacheValidateHandler">
   <TypeSignature Language="C#" Value="public delegate void HttpCacheValidateHandler(HttpContext context, object data, ref HttpValidationStatus validationStatus);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpCacheValidateHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheValidateHandler" />

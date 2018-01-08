@@ -1,4 +1,4 @@
-<Type Name="DataAnnotationsModelValidationFactory" FullName="System.Web.ModelBinding.DataAnnotationsModelValidationFactory">
+﻿<Type Name="DataAnnotationsModelValidationFactory" FullName="System.Web.ModelBinding.DataAnnotationsModelValidationFactory">
   <TypeSignature Language="C#" Value="public delegate System.Web.ModelBinding.ModelValidator DataAnnotationsModelValidationFactory(ModelMetadata metadata, ModelBindingExecutionContext context, ValidationAttribute attribute);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataAnnotationsModelValidationFactory extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DataAnnotationsModelValidationFactory" />

@@ -1,4 +1,4 @@
-<Type Name="CompositionContextExtensions" FullName="System.Composition.CompositionContextExtensions">
+﻿<Type Name="CompositionContextExtensions" FullName="System.Composition.CompositionContextExtensions">
   <TypeSignature Language="C#" Value="public static class CompositionContextExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CompositionContextExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.CompositionContextExtensions" />
@@ -15,8 +15,7 @@
   <Interfaces />
   <Docs>
     <summary>Adds methods to the composition context that are specific to the typed parts model.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="SatisfyImports">
@@ -41,8 +40,7 @@
         <param name="compositionContext">The context to draw exports from.</param>
         <param name="objectWithLooseImports">The object to satisfy imports on.</param>
         <summary>Satisfies the imports of the specified object from the specified context.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="compositionContext" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -75,8 +73,7 @@
         <param name="objectWithLooseImports">The object to satisfy imports on.</param>
         <param name="conventions">Conventions to use when satisfying imports.</param>
         <summary>Satisfies the imports of the specified object from the specified context, using the specified conventions.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="compositionContext" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">

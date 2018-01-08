@@ -1,4 +1,4 @@
-<Type Name="ILookup&lt;TKey,TElement&gt;" FullName="System.Linq.ILookup&lt;TKey,TElement&gt;">
+﻿<Type Name="ILookup&lt;TKey,TElement&gt;" FullName="System.Linq.ILookup&lt;TKey,TElement&gt;">
   <TypeSignature Language="C#" Value="public interface ILookup&lt;TKey,TElement&gt; : System.Collections.Generic.IEnumerable&lt;System.Linq.IGrouping&lt;TKey,TElement&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILookup`2&lt;TKey, TElement&gt; implements class System.Collections.Generic.IEnumerable`1&lt;class System.Linq.IGrouping`2&lt;!TKey, !TElement&gt;&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Linq.ILookup`2" />

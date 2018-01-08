@@ -1,4 +1,4 @@
-<Type Name="MemberFilter" FullName="System.Reflection.MemberFilter">
+﻿<Type Name="MemberFilter" FullName="System.Reflection.MemberFilter">
   <TypeSignature Language="C#" Value="public delegate bool MemberFilter(MemberInfo m, object filterCriteria);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MemberFilter extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.MemberFilter" />

@@ -1,4 +1,4 @@
-<Type Name="XmlElementAttributes" FullName="System.Xml.Serialization.XmlElementAttributes">
+﻿<Type Name="XmlElementAttributes" FullName="System.Xml.Serialization.XmlElementAttributes">
   <TypeSignature Language="C#" Value="public class XmlElementAttributes : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlElementAttributes extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlElementAttributes" />
@@ -22,8 +22,7 @@
     <BaseTypeName>System.Object</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-4.5">System.Collections.CollectionBase</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Represents a collection of <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> objects used by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> to override the default way it serializes a class.</summary>
     <remarks>

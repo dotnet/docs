@@ -1,4 +1,4 @@
-<Type Name="ModelBinderErrorMessageProvider" FullName="System.Web.ModelBinding.ModelBinderErrorMessageProvider">
+﻿<Type Name="ModelBinderErrorMessageProvider" FullName="System.Web.ModelBinding.ModelBinderErrorMessageProvider">
   <TypeSignature Language="C#" Value="public delegate string ModelBinderErrorMessageProvider(ModelBindingExecutionContext modelBindingExecutionContext, ModelMetadata modelMetadata, object incomingValue);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ModelBinderErrorMessageProvider extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBinderErrorMessageProvider" />

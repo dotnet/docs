@@ -1,4 +1,4 @@
-<Type Name="SendCompletedEventHandler" FullName="System.Net.Mail.SendCompletedEventHandler">
+﻿<Type Name="SendCompletedEventHandler" FullName="System.Net.Mail.SendCompletedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void SendCompletedEventHandler(object sender, AsyncCompletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SendCompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SendCompletedEventHandler" />

@@ -1,4 +1,4 @@
-<Type Name="TaskAwaiter&lt;TResult&gt;" FullName="System.Runtime.CompilerServices.TaskAwaiter&lt;TResult&gt;">
+﻿<Type Name="TaskAwaiter&lt;TResult&gt;" FullName="System.Runtime.CompilerServices.TaskAwaiter&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public struct TaskAwaiter&lt;TResult&gt; : System.Runtime.CompilerServices.ICriticalNotifyCompletion" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit TaskAwaiter`1&lt;TResult&gt; extends System.ValueType implements class System.Runtime.CompilerServices.ICriticalNotifyCompletion, class System.Runtime.CompilerServices.INotifyCompletion" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.TaskAwaiter`1" />

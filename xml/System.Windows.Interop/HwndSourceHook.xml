@@ -1,4 +1,4 @@
-<Type Name="HwndSourceHook" FullName="System.Windows.Interop.HwndSourceHook">
+﻿<Type Name="HwndSourceHook" FullName="System.Windows.Interop.HwndSourceHook">
   <TypeSignature Language="C#" Value="public delegate IntPtr HwndSourceHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HwndSourceHook extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.HwndSourceHook" />

@@ -1,4 +1,4 @@
-<Type Name="RuleSetCollection" FullName="System.Workflow.Activities.Rules.RuleSetCollection">
+﻿<Type Name="RuleSetCollection" FullName="System.Workflow.Activities.Rules.RuleSetCollection">
   <TypeSignature Language="C#" Value="public sealed class RuleSetCollection : System.Collections.ObjectModel.KeyedCollection&lt;string,System.Workflow.Activities.Rules.RuleSet&gt;, System.Workflow.ComponentModel.IWorkflowChangeDiff" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RuleSetCollection extends System.Collections.ObjectModel.KeyedCollection`2&lt;string, class System.Workflow.Activities.Rules.RuleSet&gt; implements class System.Workflow.ComponentModel.IWorkflowChangeDiff" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleSetCollection" />

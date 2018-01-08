@@ -1,4 +1,4 @@
-<Type Name="HttpHeaderValueCollection&lt;T&gt;" FullName="System.Net.Http.Headers.HttpHeaderValueCollection&lt;T&gt;">
+﻿<Type Name="HttpHeaderValueCollection&lt;T&gt;" FullName="System.Net.Http.Headers.HttpHeaderValueCollection&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class HttpHeaderValueCollection&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpHeaderValueCollection`1&lt;class T&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.HttpHeaderValueCollection`1" />

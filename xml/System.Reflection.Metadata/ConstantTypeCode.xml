@@ -1,4 +1,4 @@
-<Type Name="ConstantTypeCode" FullName="System.Reflection.Metadata.ConstantTypeCode">
+﻿<Type Name="ConstantTypeCode" FullName="System.Reflection.Metadata.ConstantTypeCode">
   <TypeSignature Language="C#" Value="public enum ConstantTypeCode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConstantTypeCode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ConstantTypeCode" />
@@ -15,8 +15,7 @@
   </Base>
   <Docs>
     <summary>Specifies values that represent types of metadata constants.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="Boolean">

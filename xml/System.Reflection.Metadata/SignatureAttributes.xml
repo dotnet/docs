@@ -1,4 +1,4 @@
-<Type Name="SignatureAttributes" FullName="System.Reflection.Metadata.SignatureAttributes">
+﻿<Type Name="SignatureAttributes" FullName="System.Reflection.Metadata.SignatureAttributes">
   <TypeSignature Language="C#" Value="public enum SignatureAttributes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SignatureAttributes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.SignatureAttributes" />
@@ -20,8 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Specifies additional flags that can be applied to method signatures. The underlying values of the fields in this type correspond to the representation in the leading signature byte represented by a <see cref="T:System.Reflection.Metadata.SignatureHeader" /> structure.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="ExplicitThis">

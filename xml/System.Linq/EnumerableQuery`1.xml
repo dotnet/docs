@@ -1,4 +1,4 @@
-<Type Name="EnumerableQuery&lt;T&gt;" FullName="System.Linq.EnumerableQuery&lt;T&gt;">
+﻿<Type Name="EnumerableQuery&lt;T&gt;" FullName="System.Linq.EnumerableQuery&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class EnumerableQuery&lt;T&gt; : System.Linq.EnumerableQuery, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Linq.IOrderedQueryable&lt;T&gt;, System.Linq.IQueryable&lt;T&gt;, System.Linq.IQueryProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EnumerableQuery`1&lt;T&gt; extends System.Linq.EnumerableQuery implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable, class System.Linq.IOrderedQueryable, class System.Linq.IOrderedQueryable`1&lt;!T&gt;, class System.Linq.IQueryable, class System.Linq.IQueryable`1&lt;!T&gt;, class System.Linq.IQueryProvider" />
   <TypeSignature Language="DocId" Value="T:System.Linq.EnumerableQuery`1" />

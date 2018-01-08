@@ -1,4 +1,4 @@
-<Type Name="CacheItemRemovedCallback" FullName="System.Web.Caching.CacheItemRemovedCallback">
+﻿<Type Name="CacheItemRemovedCallback" FullName="System.Web.Caching.CacheItemRemovedCallback">
   <TypeSignature Language="C#" Value="public delegate void CacheItemRemovedCallback(string key, object value, CacheItemRemovedReason reason);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheItemRemovedCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheItemRemovedCallback" />

@@ -1,4 +1,4 @@
-<Type Name="SessionStateItemExpireCallback" FullName="System.Web.SessionState.SessionStateItemExpireCallback">
+﻿<Type Name="SessionStateItemExpireCallback" FullName="System.Web.SessionState.SessionStateItemExpireCallback">
   <TypeSignature Language="C#" Value="public delegate void SessionStateItemExpireCallback(string id, SessionStateStoreData item);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SessionStateItemExpireCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateItemExpireCallback" />

@@ -1,4 +1,4 @@
-<Type Name="ExportDescriptor" FullName="System.Composition.Hosting.Core.ExportDescriptor">
+﻿<Type Name="ExportDescriptor" FullName="System.Composition.Hosting.Core.ExportDescriptor">
   <TypeSignature Language="C#" Value="public abstract class ExportDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExportDescriptor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.ExportDescriptor" />
@@ -67,8 +67,7 @@
       <Docs>
         <summary>Gets the activator used to retrieve instances of the export.</summary>
         <value>The activator.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -95,8 +94,7 @@
         <param name="metadata">The metadata associated with the export.</param>
         <summary>Creates an export descriptor that has the specified activator and metadata.</summary>
         <returns>The created descriptor.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Metadata">
@@ -117,8 +115,7 @@
       <Docs>
         <summary>Gets the metadata for the export.</summary>
         <value>A collection of metadata.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

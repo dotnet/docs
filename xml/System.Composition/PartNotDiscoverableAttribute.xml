@@ -1,4 +1,4 @@
-<Type Name="PartNotDiscoverableAttribute" FullName="System.Composition.PartNotDiscoverableAttribute">
+﻿<Type Name="PartNotDiscoverableAttribute" FullName="System.Composition.PartNotDiscoverableAttribute">
   <TypeSignature Language="C#" Value="public sealed class PartNotDiscoverableAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PartNotDiscoverableAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Composition.PartNotDiscoverableAttribute" />
@@ -20,8 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Specifies that this type’s exports won’t be included in a catalog.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +37,7 @@
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.PartNotDiscoverableAttribute" /> class.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

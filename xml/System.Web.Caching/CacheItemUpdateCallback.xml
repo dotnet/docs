@@ -1,4 +1,4 @@
-<Type Name="CacheItemUpdateCallback" FullName="System.Web.Caching.CacheItemUpdateCallback">
+﻿<Type Name="CacheItemUpdateCallback" FullName="System.Web.Caching.CacheItemUpdateCallback">
   <TypeSignature Language="C#" Value="public delegate void CacheItemUpdateCallback(string key, CacheItemUpdateReason reason, out object expensiveObject, out CacheDependency dependency, out DateTime absoluteExpiration, out TimeSpan slidingExpiration);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheItemUpdateCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheItemUpdateCallback" />

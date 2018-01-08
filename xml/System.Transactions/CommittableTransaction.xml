@@ -1,4 +1,4 @@
-<Type Name="CommittableTransaction" FullName="System.Transactions.CommittableTransaction">
+﻿<Type Name="CommittableTransaction" FullName="System.Transactions.CommittableTransaction">
   <TypeSignature Language="C#" Value="public sealed class CommittableTransaction : System.Transactions.Transaction, IAsyncResult, IDisposable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit CommittableTransaction extends System.Transactions.Transaction implements class System.IAsyncResult, class System.IDisposable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.CommittableTransaction" />

@@ -1,4 +1,4 @@
-<Type Name="DependencyFilter" FullName="Microsoft.Build.Utilities.DependencyFilter">
+﻿<Type Name="DependencyFilter" FullName="Microsoft.Build.Utilities.DependencyFilter">
   <TypeSignature Language="C#" Value="public delegate bool DependencyFilter(string fullPath);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DependencyFilter extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.DependencyFilter" />

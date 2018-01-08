@@ -1,4 +1,4 @@
-<Type Name="BuildErrorEventHandler" FullName="Microsoft.Build.Framework.BuildErrorEventHandler">
+﻿<Type Name="BuildErrorEventHandler" FullName="Microsoft.Build.Framework.BuildErrorEventHandler">
   <TypeSignature Language="C#" Value="public delegate void BuildErrorEventHandler(object sender, BuildErrorEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildErrorEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildErrorEventHandler" />

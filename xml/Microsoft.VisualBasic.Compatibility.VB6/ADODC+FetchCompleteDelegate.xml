@@ -1,4 +1,4 @@
-<Type Name="ADODC+FetchCompleteDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+FetchCompleteDelegate">
+﻿<Type Name="ADODC+FetchCompleteDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+FetchCompleteDelegate">
   <TypeSignature Language="C#" Value="public delegate void ADODC.FetchCompleteDelegate(Error pError, ref EventStatusEnum adStatus, Recordset pRecordset);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ADODC/FetchCompleteDelegate extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.FetchCompleteDelegate" />

@@ -1,4 +1,4 @@
-<Type Name="IChannelListener&lt;TChannel&gt;" FullName="System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt;">
+﻿<Type Name="IChannelListener&lt;TChannel&gt;" FullName="System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt;">
   <TypeSignature Language="C#" Value="public interface IChannelListener&lt;TChannel&gt; : System.ServiceModel.Channels.IChannelListener where TChannel : class, IChannel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IChannelListener`1&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt; implements class System.ServiceModel.Channels.IChannelListener, class System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IChannelListener`1" />

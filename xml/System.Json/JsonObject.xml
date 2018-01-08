@@ -1,4 +1,4 @@
-<Type Name="JsonObject" FullName="System.Json.JsonObject">
+﻿<Type Name="JsonObject" FullName="System.Json.JsonObject">
   <TypeSignature Language="C#" Value="public class JsonObject : System.Json.JsonValue, System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,System.Json.JsonValue&gt;&gt;, System.Collections.Generic.IDictionary&lt;string,System.Json.JsonValue&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,System.Json.JsonValue&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JsonObject extends System.Json.JsonValue implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Json.JsonValue&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;string, class System.Json.JsonValue&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Json.JsonValue&gt;&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Json.JsonObject" />

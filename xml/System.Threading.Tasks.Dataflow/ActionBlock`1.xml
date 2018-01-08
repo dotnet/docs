@@ -1,4 +1,4 @@
-<Type Name="ActionBlock&lt;TInput&gt;" FullName="System.Threading.Tasks.Dataflow.ActionBlock&lt;TInput&gt;">
+﻿<Type Name="ActionBlock&lt;TInput&gt;" FullName="System.Threading.Tasks.Dataflow.ActionBlock&lt;TInput&gt;">
   <TypeSignature Language="C#" Value="public sealed class ActionBlock&lt;TInput&gt; : System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActionBlock`1&lt;TInput&gt; extends System.Object implements class System.Threading.Tasks.Dataflow.IDataflowBlock, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!TInput&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.ActionBlock`1" />

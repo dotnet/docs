@@ -1,4 +1,4 @@
-<Type Name="ValueTask&lt;TResult&gt;" FullName="System.Threading.Tasks.ValueTask&lt;TResult&gt;">
+﻿<Type Name="ValueTask&lt;TResult&gt;" FullName="System.Threading.Tasks.ValueTask&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public struct ValueTask&lt;TResult&gt; : IEquatable&lt;System.Threading.Tasks.ValueTask&lt;TResult&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ValueTask`1&lt;TResult&gt; extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Threading.Tasks.ValueTask`1&lt;!TResult&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.ValueTask`1" />
@@ -66,8 +66,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <param name="task">The task.</param>
         <summary>Initializes a new instance of the <see cref="T:ValueTask{TResult}" /> class using the supplied task that represents the operation.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="task" /> argument is <see langword="null" />.</exception>
       </Docs>
     </Member>
@@ -90,8 +89,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <param name="result">The result.</param>
         <summary>Initializes a new instance of the <see cref="T:ValueTask{TResult}" /> class using the supplied result of a successful operation.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="AsTask">
@@ -114,8 +112,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <summary>Retrieves a <see cref="T:Task{TResult}" /> object that represents this <see cref="T:ValueTask{TResult}" />.</summary>
         <returns>The <see cref="T:Task{TResult}" /> object that is wrapped in this <see cref="T:ValueTask{TResult}" /> if one exists, or a new <see cref="T:Task{TResult}" /> object that represents the result.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConfigureAwait">
@@ -142,8 +139,7 @@ As such, the default choice for any asynchronous method should be to return a <x
           <see langword="true" /> to attempt to marshal the continuation back to the captured context; otherwise, <see langword="false" />.</param>
         <summary>Configures an awaiter for this value.</summary>
         <returns>The configured awaiter.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAsyncMethodBuilder">
@@ -170,8 +166,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <summary>Creates a method builder for use with an async method.</summary>
         <returns>The created builder.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -198,8 +193,7 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Determines whether the specified object is equal to the current object.</summary>
         <returns>
           <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -229,8 +223,7 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Determines whether the specified <see cref="T:ValueTask{TResult}" /> object is equal to the current <see cref="T:ValueTask{TResult}" /> object.</summary>
         <returns>
           <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAwaiter">
@@ -253,8 +246,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <summary>Creates an awaiter for this value.</summary>
         <returns>The awaiter.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -277,8 +269,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <summary>Returns the hash code for this instance.</summary>
         <returns>The hash code for the current object.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCanceled">
@@ -301,8 +292,7 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Gets a value that indicates whether this object represents a canceled operation.</summary>
         <value>
           <see langword="true" /> if this object represents a canceled operation; otherwise, <see langword="false" />.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCompleted">
@@ -325,8 +315,7 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Gets a value that indicates whether this object represents a completed operation.</summary>
         <value>
           <see langword="true" /> if this object represents a completed operation; otherwise, <see langword="false" />.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCompletedSuccessfully">
@@ -349,8 +338,7 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Gets a value that indicates whether this object represents a successfully completed operation.</summary>
         <value>
           <see langword="true" /> if this object represents a successfully completed operation; otherwise, <see langword="false" />.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFaulted">
@@ -373,8 +361,7 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Gets a value that indicates whether this object represents a failed operation.</summary>
         <value>
           <see langword="true" /> if this object represents a failed operation; otherwise, <see langword="false" />.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -403,8 +390,7 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Compares two values for equality.</summary>
         <returns>
           <see langword="true" /> if the two <see cref="T:ValueTask{TResult}" /> values are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -433,8 +419,7 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Determines whether two <see cref="T:ValueTask{TResult}" /> values are unequal.</summary>
         <returns>
           <see langword="true" /> if the two <see cref="T:ValueTask{TResult}" /> values are not equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Result">
@@ -487,8 +472,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <summary>Returns a string that represents the current object.</summary>
         <returns>A string that represents the current object.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

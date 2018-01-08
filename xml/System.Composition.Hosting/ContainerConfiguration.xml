@@ -1,4 +1,4 @@
-<Type Name="ContainerConfiguration" FullName="System.Composition.Hosting.ContainerConfiguration">
+﻿<Type Name="ContainerConfiguration" FullName="System.Composition.Hosting.ContainerConfiguration">
   <TypeSignature Language="C#" Value="public class ContainerConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.ContainerConfiguration" />
@@ -20,8 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Configures and constructs a lightweight container.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +37,7 @@
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.ContainerConfiguration" /> class.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateContainer">
@@ -61,8 +59,7 @@
       <Docs>
         <summary>Creates the container.</summary>
         <returns>The created container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithAssemblies">
@@ -87,8 +84,7 @@
         <param name="assemblies">The assemblies to add part types from.</param>
         <summary>Adds part types from the specified collection of assemblies to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithAssemblies">
@@ -115,8 +111,7 @@
         <param name="conventions">The conventions to use for part types.</param>
         <summary>Adds part types from the specified collection of assemblies to the container, using the specified conventions.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithAssembly">
@@ -140,8 +135,7 @@
         <param name="assembly">The assembly to add part types from.</param>
         <summary>Adds part types from the specified assembly to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithAssembly">
@@ -167,8 +161,7 @@
         <param name="conventions">The conventions to use for part types.</param>
         <summary>Adds part types from the specified assembly to the container, using the specified conventions.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithDefaultConventions">
@@ -193,8 +186,7 @@
         <param name="conventions">The conventions to use for part types.</param>
         <summary>Specifies the default conventions to use for added parts.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithPart">
@@ -219,8 +211,7 @@
         <param name="partType">The part type to add.</param>
         <summary>Adds a specified part type to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithPart">
@@ -247,8 +238,7 @@
         <param name="conventions">The conventions to use for the part type.</param>
         <summary>Adds a specified part type to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithPart&lt;TPart&gt;">
@@ -274,8 +264,7 @@
         <typeparam name="TPart">The type to add.</typeparam>
         <summary>Adds the specified type to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithPart&lt;TPart&gt;">
@@ -304,8 +293,7 @@
         <param name="conventions">The conventions to use for the part type.</param>
         <summary>Adds the specified type to the container using the specified conventions.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithParts">
@@ -330,8 +318,7 @@
         <param name="partTypes">A collection of part types to add.</param>
         <summary>Adds the specified part types to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithParts">
@@ -362,8 +349,7 @@
         <param name="partTypes">An array of part types to add.</param>
         <summary>Adds the specified array of part types to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithParts">
@@ -390,8 +376,7 @@
         <param name="conventions">The conventions to use for part types.</param>
         <summary>Adds the specified part types to the container using the specified conventions.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithProvider">
@@ -415,8 +400,7 @@
         <param name="exportDescriptorProvider">The provider to add.</param>
         <summary>Adds the specified provider to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

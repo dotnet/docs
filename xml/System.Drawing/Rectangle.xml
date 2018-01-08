@@ -1,4 +1,4 @@
-<Type Name="Rectangle" FullName="System.Drawing.Rectangle">
+﻿<Type Name="Rectangle" FullName="System.Drawing.Rectangle">
   <TypeSignature Language="C#" Value="public struct Rectangle" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Rectangle extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Rectangle" />
@@ -20,8 +20,7 @@
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Stores a set of four integers that represent the location and size of a rectangle</summary>
     <remarks>

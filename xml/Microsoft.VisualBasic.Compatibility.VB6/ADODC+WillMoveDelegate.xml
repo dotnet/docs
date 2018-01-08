@@ -1,4 +1,4 @@
-<Type Name="ADODC+WillMoveDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+WillMoveDelegate">
+﻿<Type Name="ADODC+WillMoveDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+WillMoveDelegate">
   <TypeSignature Language="C#" Value="public delegate void ADODC.WillMoveDelegate(EventReasonEnum adReason, ref EventStatusEnum adStatus, Recordset pRecordset);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ADODC/WillMoveDelegate extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillMoveDelegate" />

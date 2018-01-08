@@ -1,4 +1,4 @@
-<Type Name="ParallelActivity" FullName="System.Workflow.Activities.ParallelActivity">
+﻿<Type Name="ParallelActivity" FullName="System.Workflow.Activities.ParallelActivity">
   <TypeSignature Language="C#" Value="public sealed class ParallelActivity : System.Workflow.ComponentModel.CompositeActivity, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ParallelActivity extends System.Workflow.ComponentModel.CompositeActivity implements class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ParallelActivity" />

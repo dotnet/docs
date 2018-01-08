@@ -1,4 +1,4 @@
-<Type Name="SizeF" FullName="System.Drawing.SizeF">
+﻿<Type Name="SizeF" FullName="System.Drawing.SizeF">
   <TypeSignature Language="C#" Value="public struct SizeF" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SizeF extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.SizeF" />
@@ -20,8 +20,7 @@
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Stores an ordered pair of floating-point numbers, typically the width and height of a rectangle.</summary>
     <remarks>

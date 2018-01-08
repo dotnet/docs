@@ -1,4 +1,4 @@
-<Type Name="ISignatureTypeProvider&lt;TType,TGenericContext&gt;" FullName="System.Reflection.Metadata.ISignatureTypeProvider&lt;TType,TGenericContext&gt;">
+﻿<Type Name="ISignatureTypeProvider&lt;TType,TGenericContext&gt;" FullName="System.Reflection.Metadata.ISignatureTypeProvider&lt;TType,TGenericContext&gt;">
   <TypeSignature Language="C#" Value="public interface ISignatureTypeProvider&lt;TType,TGenericContext&gt; : System.Reflection.Metadata.IConstructedTypeProvider&lt;TType&gt;, System.Reflection.Metadata.ISimpleTypeProvider&lt;TType&gt;, System.Reflection.Metadata.ISZArrayTypeProvider&lt;TType&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISignatureTypeProvider`2&lt;TType, TGenericContext&gt; implements class System.Reflection.Metadata.IConstructedTypeProvider`1&lt;!TType&gt;, class System.Reflection.Metadata.ISimpleTypeProvider`1&lt;!TType&gt;, class System.Reflection.Metadata.ISZArrayTypeProvider`1&lt;!TType&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ISignatureTypeProvider`2" />

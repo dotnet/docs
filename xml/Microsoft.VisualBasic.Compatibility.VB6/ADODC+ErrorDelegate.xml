@@ -1,4 +1,4 @@
-<Type Name="ADODC+ErrorDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+ErrorDelegate">
+﻿<Type Name="ADODC+ErrorDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+ErrorDelegate">
   <TypeSignature Language="C#" Value="public delegate void ADODC.ErrorDelegate(int errorNumber, ref string description, int scode, string source, string helpFile, int helpContext, ref bool cancelDisplay);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ADODC/ErrorDelegate extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.ErrorDelegate" />

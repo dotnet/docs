@@ -1,4 +1,4 @@
-<Type Name="CancellationHandlerActivity" FullName="System.Workflow.ComponentModel.CancellationHandlerActivity">
+﻿<Type Name="CancellationHandlerActivity" FullName="System.Workflow.ComponentModel.CancellationHandlerActivity">
   <TypeSignature Language="C#" Value="public sealed class CancellationHandlerActivity : System.Workflow.ComponentModel.CompositeActivity, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CancellationHandlerActivity extends System.Workflow.ComponentModel.CompositeActivity implements class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.CancellationHandlerActivity" />

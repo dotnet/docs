@@ -1,4 +1,4 @@
-<Type Name="DereferenceConnectionCallback" FullName="System.DirectoryServices.Protocols.DereferenceConnectionCallback">
+﻿<Type Name="DereferenceConnectionCallback" FullName="System.DirectoryServices.Protocols.DereferenceConnectionCallback">
   <TypeSignature Language="C#" Value="public delegate void DereferenceConnectionCallback(LdapConnection primaryConnection, LdapConnection connectionToDereference);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DereferenceConnectionCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DereferenceConnectionCallback" />

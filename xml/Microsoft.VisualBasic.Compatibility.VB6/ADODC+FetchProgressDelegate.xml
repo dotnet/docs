@@ -1,4 +1,4 @@
-<Type Name="ADODC+FetchProgressDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+FetchProgressDelegate">
+﻿<Type Name="ADODC+FetchProgressDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+FetchProgressDelegate">
   <TypeSignature Language="C#" Value="public delegate void ADODC.FetchProgressDelegate(int progress, int maxProgress, ref EventStatusEnum adStatus, Recordset pRecordset);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ADODC/FetchProgressDelegate extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.FetchProgressDelegate" />

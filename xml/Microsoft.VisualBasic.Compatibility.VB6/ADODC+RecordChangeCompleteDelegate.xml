@@ -1,4 +1,4 @@
-<Type Name="ADODC+RecordChangeCompleteDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+RecordChangeCompleteDelegate">
+﻿<Type Name="ADODC+RecordChangeCompleteDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+RecordChangeCompleteDelegate">
   <TypeSignature Language="C#" Value="public delegate void ADODC.RecordChangeCompleteDelegate(EventReasonEnum adReason, int cRecords, Error pError, ref EventStatusEnum adStatus, Recordset pRecordset);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ADODC/RecordChangeCompleteDelegate extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.RecordChangeCompleteDelegate" />

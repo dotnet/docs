@@ -1,4 +1,4 @@
-<Type Name="ImportingConstructorAttribute" FullName="System.Composition.ImportingConstructorAttribute">
+﻿<Type Name="ImportingConstructorAttribute" FullName="System.Composition.ImportingConstructorAttribute">
   <TypeSignature Language="C#" Value="public sealed class ImportingConstructorAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImportingConstructorAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Composition.ImportingConstructorAttribute" />
@@ -44,8 +44,7 @@ By default, only a default parameter-less constructor, if available, is used to 
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.ImportingConstructorAttribute" /> class.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

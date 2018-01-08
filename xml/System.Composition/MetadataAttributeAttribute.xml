@@ -1,4 +1,4 @@
-<Type Name="MetadataAttributeAttribute" FullName="System.Composition.MetadataAttributeAttribute">
+﻿<Type Name="MetadataAttributeAttribute" FullName="System.Composition.MetadataAttributeAttribute">
   <TypeSignature Language="C#" Value="public sealed class MetadataAttributeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MetadataAttributeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Composition.MetadataAttributeAttribute" />
@@ -20,8 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Specifies that a custom attribute’s properties provide metadata for exports applied to the same type, property, field, or method.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +37,7 @@
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.MetadataAttributeAttribute" /> class.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

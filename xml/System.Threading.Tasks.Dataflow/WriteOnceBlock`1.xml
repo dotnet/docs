@@ -1,4 +1,4 @@
-<Type Name="WriteOnceBlock&lt;T&gt;" FullName="System.Threading.Tasks.Dataflow.WriteOnceBlock&lt;T&gt;">
+﻿<Type Name="WriteOnceBlock&lt;T&gt;" FullName="System.Threading.Tasks.Dataflow.WriteOnceBlock&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class WriteOnceBlock&lt;T&gt; : System.Threading.Tasks.Dataflow.IPropagatorBlock&lt;T,T&gt;, System.Threading.Tasks.Dataflow.IReceivableSourceBlock&lt;T&gt;, System.Threading.Tasks.Dataflow.ISourceBlock&lt;T&gt;, System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WriteOnceBlock`1&lt;T&gt; extends System.Object implements class System.Threading.Tasks.Dataflow.IDataflowBlock, class System.Threading.Tasks.Dataflow.IPropagatorBlock`2&lt;!T, !T&gt;, class System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1&lt;!T&gt;, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!T&gt;, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.WriteOnceBlock`1" />

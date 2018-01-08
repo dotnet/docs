@@ -1,4 +1,4 @@
-<Type Name="BuildMessageEventHandler" FullName="Microsoft.Build.Framework.BuildMessageEventHandler">
+﻿<Type Name="BuildMessageEventHandler" FullName="Microsoft.Build.Framework.BuildMessageEventHandler">
   <TypeSignature Language="C#" Value="public delegate void BuildMessageEventHandler(object sender, BuildMessageEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildMessageEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildMessageEventHandler" />

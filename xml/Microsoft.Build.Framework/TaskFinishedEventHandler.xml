@@ -1,4 +1,4 @@
-<Type Name="TaskFinishedEventHandler" FullName="Microsoft.Build.Framework.TaskFinishedEventHandler">
+﻿<Type Name="TaskFinishedEventHandler" FullName="Microsoft.Build.Framework.TaskFinishedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void TaskFinishedEventHandler(object sender, TaskFinishedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TaskFinishedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.TaskFinishedEventHandler" />

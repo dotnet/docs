@@ -1,4 +1,4 @@
-<Type Name="ExportMetadataAttribute" FullName="System.Composition.ExportMetadataAttribute">
+﻿<Type Name="ExportMetadataAttribute" FullName="System.Composition.ExportMetadataAttribute">
   <TypeSignature Language="C#" Value="public sealed class ExportMetadataAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExportMetadataAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Composition.ExportMetadataAttribute" />
@@ -20,8 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Specifies metadata for a type, property, field, or method that is marked with the <see cref="T:System.Composition.ExportAttribute" /> attribute.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,8 +43,7 @@
         <param name="name">A string that contains the name of the metadata value, or <see langword="null" /> to set the <see cref="P:System.Composition.ExportMetadataAttribute.Name" /> property to an empty string ("").</param>
         <param name="value">An object that contains the metadata value. This can be <see langword="null" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.ExportMetadataAttribute" /> class with the specified name and metadata value.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -66,8 +64,7 @@
       <Docs>
         <summary>Gets the name of the metadata value.</summary>
         <value>The name of the metadata value.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -88,8 +85,7 @@
       <Docs>
         <summary>Gets the metadata value.</summary>
         <value>An object that contains the metadata value.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

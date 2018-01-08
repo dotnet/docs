@@ -141,7 +141,7 @@ public interface IRepository<T> where T : IAggregateRoot
 ## Additional resources
 
 -   **Martin Fowler. Separated Interface.**
-    [*http://www.martinfowler.com/eaaCatalog/separatedInterface.html*](http://www.martinfowler.com/eaaCatalog/separatedInterface.html%20)
+    [*http://www.martinfowler.com/eaaCatalog/separatedInterface.html*](http://www.martinfowler.com/eaaCatalog/separatedInterface.html)
 
 
 >[!div class="step-by-step"]

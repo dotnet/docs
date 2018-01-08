@@ -1,7 +1,7 @@
 ---
 title: "Character Encoding in .NET"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "12/22/2017"
 ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
@@ -149,7 +149,10 @@ Characters are abstract entities that can be represented in many different ways.
 > [!NOTE]
 >  In theory, the Unicode encoding classes provided in .NET (<xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, and <xref:System.Text.UTF32Encoding>) support every character in every character set, so they can be used to eliminate best-fit fallback issues.  
   
- Best-fit strategies vary for different code pages, and they are not documented in detail. For example, for some code pages, full-width Latin characters map to the more common half-width Latin characters. For other code pages, this mapping is not made. Even under an aggressive best-fit strategy, there is no imaginable fit for some characters in some encodings. For example, a Chinese ideograph has no reasonable mapping to code page 1252. In this case, a replacement string is used. By default, this string is just a single QUESTION MARK (U+003F).  
+ Best-fit strategies vary for different code pages. For example, for some code pages, full-width Latin characters map to the more common half-width Latin characters. For other code pages, this mapping is not made. Even under an aggressive best-fit strategy, there is no imaginable fit for some characters in some encodings. For example, a Chinese ideograph has no reasonable mapping to code page 1252. In this case, a replacement string is used. By default, this string is just a single QUESTION MARK (U+003F).  
+  
+> [!NOTE]
+>  Best-fit strategies are not documented in detail. However, several code pages are documented at the [Unicode Consortium's](http://www.unicode.org/Public/MAPPINGS/VENDORS/MICSFT/WindowsBestFit/) website. Please review the **readme.txt** file in that folder for a description of how to interpret the mapping files.
   
  The following example uses code page 1252 (the Windows code page for Western European languages) to illustrate best-fit mapping and its drawbacks. The <xref:System.Text.Encoding.GetEncoding%28System.Int32%29?displayProperty=nameWithType> method is used to retrieve an encoding object for code page 1252. By default, it uses a best-fit mapping for Unicode characters that it does not support. The example instantiates a string that contains three non-ASCII characters - CIRCLED LATIN CAPITAL LETTER S (U+24C8), SUPERSCRIPT FIVE (U+2075), and INFINITY (U+221E) - separated by spaces. As the output from the example shows, when the string is encoded, the three original non-space characters are replaced by QUESTION MARK (U+003F), DIGIT FIVE (U+0035), and DIGIT EIGHT (U+0038). DIGIT EIGHT is a particularly poor replacement for the unsupported INFINITY character, and QUESTION MARK indicates that no mapping was available for the original character.  
   

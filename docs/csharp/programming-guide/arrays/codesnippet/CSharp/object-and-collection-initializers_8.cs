@@ -6,39 +6,19 @@ namespace ExampleProject
 {
     class RudimentaryMultiValuedDictionary<TKey, TValue> : IEnumerable<KeyValuePair<TKey, List<TValue>>>
     {
-        private Dictionary<TKey, List<TValue>> internalDictionary;
+        private Dictionary<TKey, List<TValue>> internalDictionary = new Dictionary<TKey, List<TValue>>();
 
-        public IEnumerator<KeyValuePair<TKey, List<TValue>>> GetEnumerator()
-        {
-            return internalDictionary.GetEnumerator();
-        }
+        public IEnumerator<KeyValuePair<TKey, List<TValue>>> GetEnumerator() => internalDictionary.GetEnumerator();
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return internalDictionary.GetEnumerator();
-        }
-
-        public RudimentaryMultiValuedDictionary()
-        {
-            internalDictionary = new Dictionary<TKey, List<TValue>>();
-        }
+        IEnumerator IEnumerable.GetEnumerator() => internalDictionary.GetEnumerator();
 
         public List<TValue> this[TKey key]
         {
-            get
-            {
-                return internalDictionary[key];
-            }
-            set
-            {
-                Add(key, value);
-            }
+            get => internalDictionary[key];
+            set => Add(key, value);
         }
 
-        public void Add(TKey key, params TValue[] values)
-        {
-            Add(key, (IEnumerable<TValue>) values);
-        }
+        public void Add(TKey key, params TValue[] values) => Add(key, (IEnumerable<TValue>)values);
 
         public void Add(TKey key, IEnumerable<TValue> values)
         {

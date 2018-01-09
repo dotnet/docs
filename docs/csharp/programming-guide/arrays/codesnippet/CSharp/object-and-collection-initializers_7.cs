@@ -6,31 +6,16 @@ namespace ExampleProject
 {
     class FormattedAddresses : IEnumerable<string>
     {
-        private List<string> internalList;
-        
-        public IEnumerator<string> GetEnumerator()
-        {
-            return internalList.GetEnumerator();
-        }
+        private List<string> internalList = new List<string>();
+        public IEnumerator<string> GetEnumerator() => internalList.GetEnumerator();
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return internalList.GetEnumerator();
-        }
+        IEnumerator IEnumerable.GetEnumerator() => internalList.GetEnumerator();
 
-        public FormattedAddresses()
-        {
-            internalList = new List<string>();
-        }
-
-        public void Add(string firstname, string lastname, string street, string city, string state, string zipcode)
-        {
-            internalList.Add(
+        public void Add(string firstname, string lastname, string street, string city, string state, string zipcode) => internalList.Add(
                 $@"{firstname} {lastname}
 {street}
 {city}, {state} {zipcode}"
             );
-        }
     }
 
     class Program

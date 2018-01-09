@@ -30,29 +30,29 @@ namespace HowToStrings
 
         private static void SplitWords()
         {
-            /// <Snippet1>
+            // <Snippet1>
             string phrase = "The quick brown fox jumped over the lazy dog.";
             string[] words = phrase.Split(' ');
 
             foreach(var word in words)
                 Console.WriteLine($"<{word}>");
-            /// </Snippet1>
+            // </Snippet1>
         }
 
         private static void SplitWordsWithRepeatedSeparators()
         {
-            /// <Snippet2>
+            // <Snippet2>
             string phrase = "The quick brown    fox     jumped over the lazy dog.";
             string[] words = phrase.Split(' ');
 
             foreach(var word in words)
                 Console.WriteLine($"<{word}>");
-            /// </Snippet2>
+            // </Snippet2>
         }
 
         private static void SplitOnMultipleChars()
         {
-            /// <Snipppet4>
+            // <Snipppet4>
             char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
 
             string text = "one\ttwo three:four,five six seven";
@@ -65,12 +65,12 @@ namespace HowToStrings
             {
                 System.Console.WriteLine($"<{s}>");
             }
-            /// </Snippet4>
+            // </Snippet4>
         }
         
         private static void SplitOnMultipleCharsWithGaps()
         {
-            /// <Snipppet5>
+            // <Snipppet5>
             char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
 
             string text = "one\ttwo :,five six seven";
@@ -83,7 +83,7 @@ namespace HowToStrings
             {
                 System.Console.WriteLine($"<{s}>");
             }
-            /// </Snippet5>
+            // </Snippet5>
         }
 
         private static void SplitUsingStrings()

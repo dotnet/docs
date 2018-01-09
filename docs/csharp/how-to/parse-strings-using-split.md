@@ -26,62 +26,34 @@ to split strings on other specific characters or strings.
 The following code splits a common phrase into an array of strings for each word.
 Try it yourself by pressing the *Run* button.
 
-[!code-csharp-interactive[csProgGuideStrings#16](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#1)]
+[!code-csharp-interactive[split strings on word boundaries](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#1)]
 
-Each instance of a delimiter character creates a new string object in the output array. 
+Every instance of one of the separator characters produces a value in the
+returned array. Consecutive separator characters produce the empty string
+as a value in the returned array.  You can see this in the following example:
 
-.. Think of repeated delimiters.
+[!code-csharp-interactive[split strings with repeated separators](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#2)]
 
-.. Next, use the example with all the punctuation.
+This behvior makes it easier for formats like comma separated values (CSV)
+files representing tabular data. Consecutive commas represent a blank column.
 
-.. finish with the sample using strings.
+You can pass an optional <xref:System.StringSplitOptions.RemoveEmptyEntries> parameter to exclude any empty strings in the output. 
 
+<xref:System.String.Split%2A?displayProperty=nameWithType> can use
+multiple separator characters. The following example uses spaces, commas, periods, colons, and tabs, all passed in an array containing these separating characters to <xref:System.String.Split%2A>.  Each word in the target string's sentence displays separately from the resulting array of strings.  
 
+[!code-csharp-interactive[split strings using multiple separators](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#3)]
 
-The following code example demonstrates how a string can be parsed using the <xref:System.String.Split%2A?displayProperty=nameWithType> method. As input, <xref:System.String.Split%2A> takes an array of characters that indicate which characters separate interesting sub strings of the target string.  The function returns an array of the sub strings.  
+Consecutive instances of any separator produce the empty string in the output array:
+
+[!code-csharp-interactive[split strings using multiple consecutive separators](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#4)]
+
+<xref:System.String.Split%2A?displayProperty=nameWithType> can take an array of strings (character sequences that act as separators for parsing the target string, instead of single characters).  
   
- This example uses spaces, commas, periods, colons, and tabs, all passed in an array containing these separating characters to <xref:System.String.Split%2A>.  Each word in the target string's sentence displays separately from the resulting array of strings.  
-  
-## Example  
- [!code-csharp[csProgGuideStrings#16](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-parse-strings-using-string-split_1.cs)]  
-  
-## Example  
- By default, String.Split returns empty strings when two separating characters appear contiguously in the target string.  You can pass an optional StringSplitOptions.RemoveEmptyEntries parameter to exclude any empty strings in the output.  
-  
- String.Split can take an array of strings (character sequences that act as separators for parsing the target string, instead of single characters).  
-  
-```csharp  
-class TestStringSplit  
-{  
-    static void Main()  
-    {  
-        string[] separatingChars = { "<<", "..." };  
-  
-        string text = "one<<two......three<four";  
-        System.Console.WriteLine("Original text: '{0}'", text);  
-  
-        string[] words = text.Split(separatingChars, System.StringSplitOptions.RemoveEmptyEntries );  
-        System.Console.WriteLine("{0} substrings in text:", words.Length);  
-  
-        foreach (string s in words)  
-        {  
-            System.Console.WriteLine(s);  
-        }  
-  
-        // Keep the console window open in debug mode.  
-        System.Console.WriteLine("Press any key to exit.");  
-        System.Console.ReadKey();  
-    }  
-}  
-/* Output:  
-    Original text: 'one<<two......three<four'  
-    3 words in text:  
-    one  
-    two  
-    three<four  
-*/  
-```  
-  
+[!code-csharp-interactive[split strings using strings as separators](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#5)]
+
+You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings)
+
 ## See Also  
  [C# Programming Guide](../programming-guide/index.md)  
  [Strings](../programming-guide/strings/index.md)  

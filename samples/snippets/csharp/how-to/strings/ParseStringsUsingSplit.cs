@@ -17,17 +17,13 @@ namespace HowToStrings
 
             Console.WriteLine("Example three");
             Console.WriteLine();
-            SplitWordsWithRepeatedSeparatorsFixed();
+            SplitOnMultipleChars();
 
             Console.WriteLine("Example four");
             Console.WriteLine();
-            SplitOnMultipleChars();
-
-            Console.WriteLine("Example five");
-            Console.WriteLine();
             SplitOnMultipleCharsWithGaps();
 
-            Console.WriteLine("Example six");
+            Console.WriteLine("Example fives");
             Console.WriteLine();
             SplitUsingStrings();
         }
@@ -52,17 +48,6 @@ namespace HowToStrings
             foreach(var word in words)
                 Console.WriteLine($"<{word}>");
             /// </Snippet2>
-        }
-
-        private static void SplitWordsWithRepeatedSeparatorsFixed()
-        {
-            /// <Snippet3>
-            string phrase = "The quick brown    fox     jumped over the lazy dog.";
-            string[] words = phrase.Split(' ').Where(s => s != string.Empty).ToArray();
-
-            foreach(var word in words)
-                Console.WriteLine($"<{word}>");
-            /// </Snippet3>
         }
 
         private static void SplitOnMultipleChars()

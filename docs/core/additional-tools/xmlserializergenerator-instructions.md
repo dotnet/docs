@@ -82,9 +82,9 @@ Open *Program.cs* in your text editor. Add the class named *MyClass* in *Program
 
 ```csharp
 public class MyClass
- {
-    public int Value;
- }
+{
+   public int Value;
+}
 ```    
 
 ### Create an `XmlSerializer` for MyClass.  

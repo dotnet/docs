@@ -42,8 +42,7 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
    requireSecurityContextCancellation="Boolean"  
    requireSignatureConfirmation="Boolean"  
       securityHeaderLayout=  
-              "Strict/Lax/LaxTimestampFirst/LaxTimestampLast"  
-   includeTimestamp="Boolean">  
+              "Strict/Lax/LaxTimestampFirst/LaxTimestampLast">  
    <issuedTokenParameters />  
    <localClientSettings />  
    <localServiceSettings />  

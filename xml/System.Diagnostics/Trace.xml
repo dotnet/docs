@@ -122,7 +122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method if you want to do assertions in release builds. The <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method works only in debug builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
+ Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method if you want to do assertions in release builds. The <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method works only in debug builds. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code).  
   
  Typically, the <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29> method is used to identify logic errors during program development. <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29> evaluates the condition. If the result is `false`, it sends a failure message to the <xref:System.Diagnostics.Trace.Listeners%2A> collection. You can customize this behavior by adding a <xref:System.Diagnostics.TraceListener> to, or removing one from, the <xref:System.Diagnostics.Trace.Listeners%2A> collection.  
   
@@ -204,7 +204,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method if you want to do assertions in release builds. The <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method works only in debug builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
+ Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method if you want to do assertions in release builds. The <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method works only in debug builds. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code).  
   
  Typically, the <xref:System.Diagnostics.Trace.Assert%28System.Boolean%2CSystem.String%29> method is used to identify logic errors during program development. <xref:System.Diagnostics.Trace.Assert%28System.Boolean%2CSystem.String%29> evaluates the condition. If the result is `false`, it sends the specified diagnostic message to the <xref:System.Diagnostics.Trace.Listeners%2A> collection. You can customize this behavior by adding a <xref:System.Diagnostics.TraceListener> to, or removing one from, the <xref:System.Diagnostics.Trace.Listeners%2A> collection.  
   
@@ -288,7 +288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method if you want to do assertions in release builds. The <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method works only in debug builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
+ Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method if you want to do assertions in release builds. The <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method works only in debug builds. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code).  
   
  Typically, the <xref:System.Diagnostics.Trace.Assert%28System.Boolean%2CSystem.String%2CSystem.String%29> method is used to identify logic errors during program development. <xref:System.Diagnostics.Trace.Assert%2A> evaluates the condition. If the result is `false`, it sends the specified diagnostic message and detailed message to the <xref:System.Diagnostics.Trace.Listeners%2A> collection. You can customize this behavior by adding a <xref:System.Diagnostics.TraceListener> to, or removing one from, the <xref:System.Diagnostics.Trace.Listeners%2A> collection.  
   

@@ -256,17 +256,15 @@ ms.workload:
  [Back to top](#Introduction)  
   
 <a name="stringRef"></a>   
-### Format Strings and .NET Class Library Types  
- All numeric types (that is, the <xref:System.Byte>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, and <xref:System.Numerics.BigInteger> types)  
-  
- , as well as the <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.TimeSpan>, <xref:System.Guid>, and all enumeration types, support formatting with format strings. For information on the specific format strings supported by each type, see the following topics  
+### Format Strings and .NET Types  
+ All numeric types (that is, the <xref:System.Byte>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, and <xref:System.Numerics.BigInteger> types), as well as the <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.TimeSpan>, <xref:System.Guid>, and all enumeration types, support formatting with format strings. For information on the specific format strings supported by each type, see the following topics:  
   
 |Title|Definition|  
 |-----------|----------------|  
 |[Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)|Describes standard format strings that create commonly used string representations of numeric values.|  
 |[Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)|Describes custom format strings that create application-specific formats for numeric values.|  
-|[Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)|Describes standard format strings that create commonly used string representations of <xref:System.DateTime> values.|  
-|[Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)|Describes custom format strings that create application-specific formats for <xref:System.DateTime> values.|  
+|[Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)|Describes standard format strings that create commonly used string representations of <xref:System.DateTime> and <xref:System.DateTimeOffset> values.|  
+|[Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)|Describes custom format strings that create application-specific formats for <xref:System.DateTime> and <xref:System.DateTimeOffset> values.|  
 |[Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)|Describes standard format strings that create commonly used string representations of time intervals.|  
 |[Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)|Describes custom format strings that create application-specific formats for time intervals.|  
 |[Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)|Describes standard format strings that are used to create string representations of enumeration values.|  

@@ -403,7 +403,7 @@ ms.workload:
   
 <a name="SupportedUnicodeGeneralCategories"></a>   
 ## Supported Unicode General Categories  
- Unicode defines the general categories listed in the following table. For more information, see the "UCD File Format" and "General Category Values" subtopics at the [Unicode Character Database](http://go.microsoft.com/fwlink/?LinkId=57650).  
+ Unicode defines the general categories listed in the following table. For more information, see the "UCD File Format" and "General Category Values" subtopics at the [Unicode Character Database](http://www.unicode.org/reports/tr44/).  
   
 |Category|Description|  
 |--------------|-----------------|  

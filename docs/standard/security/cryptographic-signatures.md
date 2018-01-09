@@ -110,7 +110,7 @@ class Class1
 ### Signing XML Files  
  The .NET Framework provides the <xref:System.Security.Cryptography.Xml> namespace, which enables you sign XML. Signing XML is important when you want to verify that the XML originates from a certain source. For example, if you are using a stock quote service that uses XML, you can verify the source of the XML if it is signed.  
   
- The classes in this namespace follow the [XML-Signature Syntax and Processing recommendation](http://go.microsoft.com/fwlink/?LinkId=136777) from the World Wide Web Consortium.  
+ The classes in this namespace follow the [XML-Signature Syntax and Processing recommendation](http://www.w3.org/TR/xmldsig-core/) from the World Wide Web Consortium.  
   
  [Back to top](#top)  
   

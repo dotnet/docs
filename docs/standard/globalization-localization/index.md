@@ -45,7 +45,7 @@ Developing a [world-ready application](http://msdn.microsoft.com/goglobal/bb9784
   
  The .NET Framework provides extensive support for the development of world-ready and localized applications. In particular, many type members in the .NET Framework class library aid globalization by returning values that reflect the conventions of either the current user's culture or a specified culture. Also, the .NET Framework supports satellite assemblies, which facilitate the process of localizing an application.  
   
- For additional information, see the [Go Global Developer Center](http://go.microsoft.com/fwlink/?LinkId=235015).  
+ For additional information, see the [Globalization documentation](/globalization/).  
   
 ## In This Section  
  [Globalization](../../../docs/standard/globalization-localization/globalization.md)  

@@ -52,7 +52,7 @@ namespace HowToStrings
 
         private static void SplitOnMultipleChars()
         {
-            // <Snipppet3>
+            // <Snippet3>
             char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
 
             string text = "one\ttwo three:four,five six seven";
@@ -70,7 +70,7 @@ namespace HowToStrings
         
         private static void SplitOnMultipleCharsWithGaps()
         {
-            // <Snipppet4>
+            // <Snippet4>
             char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
 
             string text = "one\ttwo :,five six seven";

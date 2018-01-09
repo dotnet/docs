@@ -52,7 +52,7 @@ namespace HowToStrings
 
         private static void SplitOnMultipleChars()
         {
-            // <Snipppet4>
+            // <Snipppet3>
             char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
 
             string text = "one\ttwo three:four,five six seven";
@@ -65,12 +65,12 @@ namespace HowToStrings
             {
                 System.Console.WriteLine($"<{s}>");
             }
-            // </Snippet4>
+            // </Snippet3>
         }
         
         private static void SplitOnMultipleCharsWithGaps()
         {
-            // <Snipppet5>
+            // <Snipppet4>
             char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
 
             string text = "one\ttwo :,five six seven";
@@ -83,12 +83,12 @@ namespace HowToStrings
             {
                 System.Console.WriteLine($"<{s}>");
             }
-            // </Snippet5>
+            // </Snippet4>
         }
 
         private static void SplitUsingStrings()
         {
-            /// <Snippet6>
+            // <Snippet5>
             string[] separatingChars = { "<<", "..." };  
     
             string text = "one<<two......three<four";  
@@ -101,7 +101,7 @@ namespace HowToStrings
             {  
                 System.Console.WriteLine(s);  
             }  
-            // </Snippet6>
+            // </Snippet5>
             
         }
     }

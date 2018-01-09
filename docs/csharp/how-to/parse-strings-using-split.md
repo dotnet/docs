@@ -40,7 +40,7 @@ files representing tabular data. Consecutive commas represent a blank column.
 You can pass an optional <xref:System.StringSplitOptions.RemoveEmptyEntries> parameter to
 exclude any empty strings in the output. For more complicated processing of the returned
 ecollection, you can use [LINQ](../programming-guide/concepts/linq/index.md) to manipulate
-the result sequence.
+the result sequence.    
 
 <xref:System.String.Split%2A?displayProperty=nameWithType> can use
 multiple separator characters. The following example uses spaces, commas, periods, colons, and tabs, all passed in an array containing these separating characters to <xref:System.String.Split%2A>.  Each word in the target string's sentence displays separately from the resulting array of strings.  

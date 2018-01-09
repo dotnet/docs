@@ -1,19 +1,14 @@
 ---
 title: "Walkthrough: Using Dataflow in a Windows Forms Application"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "TPL dataflow library, in Windows Forms"
   - "Task Parallel Library, dataflows"
   - "Windows Forms, and TPL"
 ms.assetid: 9c65cdf7-660c-409f-89ea-59d7ec8e127c
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -28,11 +23,9 @@ This document demonstrates how to create a network of dataflow blocks that perfo
   
 ## Prerequisites  
  Read [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) before you start this walkthrough.  
-  
-> [!TIP]
->  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow?displayProperty=nameWithType> namespace) is not distributed with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
- 
-  
+
+[!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
+
 ## Sections  
  This walkthrough contains the following sections:  
   
@@ -137,8 +130,6 @@ This document demonstrates how to create a network of dataflow blocks that perfo
  The following illustration shows typical output for the common \Sample Pictures\ folder.  
   
  ![The Windows Forms Application](../../../docs/standard/parallel-programming/media/tpldataflow-compositeimages.gif "TPLDataflow_CompositeImages")  
-  
-## Next Steps  
-  
+
 ## See Also  
  [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)

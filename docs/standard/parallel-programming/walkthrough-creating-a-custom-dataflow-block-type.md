@@ -1,12 +1,8 @@
 ---
 title: "Walkthrough: Creating a Custom Dataflow Block Type"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "csharp"
@@ -16,7 +12,6 @@ helpviewer_keywords:
   - "TPL dataflow library, creating custom dataflow blocks"
   - "dataflow blocks, creating custom in TPL"
 ms.assetid: a6147146-0a6a-4d9b-ab0f-237b3c1ac691
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -29,9 +24,8 @@ Although the TPL Dataflow Library provides several dataflow block types that ena
   
 ## Prerequisites  
  Read [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) before you read this document.  
-  
-> [!TIP]
->  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow?displayProperty=nameWithType> namespace) is not distributed with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+
+[!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
   
 ## Defining the Sliding Window Dataflow Block  
  Consider a dataflow application that requires that input values be buffered and then output in a sliding window manner. For example, for the input values {0, 1, 2, 3, 4, 5} and a window size of three, a sliding window dataflow block produces the output arrays {0, 1, 2}, {1, 2, 3}, {2, 3, 4}, and {3, 4, 5}. The following sections describe two ways to create a dataflow block type that implements this custom behavior. The first technique uses the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Encapsulate%2A> method to combine the functionality of an <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601> object and an <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601> object into one propagator block. The second technique defines a class that derives from <xref:System.Threading.Tasks.Dataflow.IPropagatorBlock%602> and combines existing functionality to perform custom behavior.  
@@ -68,8 +62,6 @@ Although the TPL Dataflow Library provides several dataflow block types that ena
  [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]  
   
  **vbc.exe /r:System.Threading.Tasks.Dataflow.dll SlidingWindowBlock.vb**  
-  
-## Next Steps  
-  
+
 ## See Also  
  [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)

@@ -1,5 +1,5 @@
 ---
-title: The .NET Compiler Platform SDK | Microsoft Docs 
+title: The .NET Compiler Platform SDK (Roslyn APIs)
 description: Learn to use the .NET Compiler Platform SDK (also called the Roslyn APIs) to understand .NET code, spot errors, and fix those errors.
 keywords: roslyn, analyzer, code fix
 author: billwagner
@@ -14,7 +14,7 @@ ms.custom: mvc
 # The .NET Compiler Platform SDK
 
 Compilers build a detailed model of application code as they validate the
-syntax and semantics of that code. The use this model to build the
+syntax and semantics of that code. They use this model to build the
 executable output from the source code. The .NET Compiler Platform SDK provides
 access to this model. Increasingly, we rely on integrated
 development environment (IDE) features such as IntelliSense, refactoring,

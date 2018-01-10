@@ -1,12 +1,8 @@
 ---
 title: "How to: Specify a Task Scheduler in a Dataflow Block"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "csharp"
@@ -16,7 +12,6 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "task scheduler, linking from TPL"
 ms.assetid: 27ece374-ed5b-49ef-9cec-b20db34a65e8
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -25,12 +20,11 @@ ms.workload:
   - "dotnetcore"
 ---
 # How to: Specify a Task Scheduler in a Dataflow Block
-This document demonstrates how to associate a specific task scheduler when you use dataflow in your application. The example uses the <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair?displayProperty=nameWithType> class in a Windows Forms application to show when reader tasks are active and when a writer task is active. It also uses the <xref:System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext%2A?displayProperty=nameWithType> method to enable a dataflow block to run on the user-interface thread.  
-  
-> [!TIP]
->  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow?displayProperty=nameWithType> namespace) is not distributed with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
-  
-### To Create the Windows Forms Application  
+This document demonstrates how to associate a specific task scheduler when you use dataflow in your application. The example uses the <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair?displayProperty=nameWithType> class in a Windows Forms application to show when reader tasks are active and when a writer task is active. It also uses the <xref:System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext%2A?displayProperty=nameWithType> method to enable a dataflow block to run on the user-interface thread.
+
+[!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
+
+## To Create the Windows Forms Application  
   
 1.  Create a [!INCLUDE[csprcs](../../../includes/csprcs-md.md)] or Visual Basic **Windows Forms Application** project. In the following steps, the project is named `WriterReadersWinForms`.  
   
@@ -41,7 +35,7 @@ This document demonstrates how to associate a specific task scheduler when you u
 ## Adding Dataflow Functionality  
  This section describes how to create the dataflow blocks that participate in the application and how to associate each one with a task scheduler.  
   
-#### To Add Dataflow Functionality to the Application  
+### To Add Dataflow Functionality to the Application  
   
 1.  In your project, add a reference to System.Threading.Tasks.Dataflow.dll.  
   

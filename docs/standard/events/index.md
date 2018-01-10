@@ -97,6 +97,6 @@ Events in the .NET Framework are based on the delegate model. The delegate model
  <xref:System.EventHandler%601>  
  <xref:System.EventArgs>  
  <xref:System.Delegate>  
- [Events and routed events overview (Windows store apps)](http://go.microsoft.com/fwlink/?LinkId=261485)  
+ [Events and routed events overview (UWP apps)](/windows/uwp/xaml-platform/events-and-routed-events-overview)  
  [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)  
  [Events (C# Programming Guide)](../../csharp/programming-guide/events/index.md)

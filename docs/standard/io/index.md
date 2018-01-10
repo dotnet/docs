@@ -25,7 +25,7 @@ ms.workload:
   - "dotnetcore"
 ---
 # File and Stream I/O
-File and stream I/O (input/output) refers to the transfer of data either to or from a storage medium. In the .NET Framework, the [System.IO](http://go.microsoft.com/fwlink/?LinkId=231142) namespaces contain types that enable reading and writing, both synchronously and asynchronously, on data streams and files. These namespaces also contain types that perform compression and decompression on files, and types that enable communication through pipes and serial ports.  
+File and stream I/O (input/output) refers to the transfer of data either to or from a storage medium. In the .NET Framework, the `System.IO` namespaces contain types that enable reading and writing, both synchronously and asynchronously, on data streams and files. These namespaces also contain types that perform compression and decompression on files, and types that enable communication through pipes and serial ports.  
   
  A file is an ordered and named collection of bytes that has persistent storage. When you work with files, you work with directory paths, disk storage, and file and directory names. In contrast, a stream is a sequence of bytes that you can use to read from and write to a backing store, which can be one of several storage mediums (for example, disks or memory). Just as there are several backing stores other than disks, there are several kinds of streams other than file streams, such as network, memory, and pipe streams.  
   
@@ -46,7 +46,7 @@ File and stream I/O (input/output) refers to the transfer of data either to or f
   
  In addition to using these classes, Visual Basic users can use the methods and properties provided by the <xref:Microsoft.VisualBasic.FileIO.FileSystem?displayProperty=nameWithType> class for file I/O.  
   
- See [How to: Copy Directories](../../../docs/standard/io/how-to-copy-directories.md), [How to: Create a Directory Listing](http://msdn.microsoft.com/en-us/4d2772b1-b991-4532-a8a6-6ef733277e69), and [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md).  
+ See [How to: Copy Directories](../../../docs/standard/io/how-to-copy-directories.md), [How to: Create a Directory Listing](http://msdn.microsoft.com/library/4d2772b1-b991-4532-a8a6-6ef733277e69), and [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md).  
   
 ## Streams  
  The abstract base class <xref:System.IO.Stream> supports reading and writing bytes. All classes that represent streams inherit from the <xref:System.IO.Stream> class. The <xref:System.IO.Stream> class and its derived classes provide a common view of data sources and repositories, and isolate the programmer from the specific details of the operating system and underlying devices.  
@@ -123,7 +123,7 @@ File and stream I/O (input/output) refers to the transfer of data either to or f
 ## Isolated Storage  
  Isolated storage is a data storage mechanism that provides isolation and safety by defining standardized ways of associating code with saved data. The storage provides a virtual file system that is isolated by user, assembly, and (optionally) domain. Isolated storage is particularly useful when your application does not have permission to access user files. You can save settings or files for your application in a manner that is controlled by the computer's security policy.  
   
- Isolated storage is not available for [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps; instead, use application data classes in the [Windows.Storage](http://msdn.microsoft.com/library/windows/apps/windows.storage.aspx) namespace. For more information, see [Application data](http://go.microsoft.com/fwlink/?LinkId=229175) in the Windows Dev Center.  
+ Isolated storage is not available for [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps; instead, use application data classes in the [Windows.Storage](/uwp/api/Windows.Storage) namespace. For more information, see [Application data](/previous-versions/windows/apps/hh464917(v=win.10)) in the Windows Dev Center.  
   
  The following classes are frequently used when implementing isolated storage:  
   
@@ -142,7 +142,7 @@ File and stream I/O (input/output) refers to the transfer of data either to or f
   
 -   Types specifically related to file operations, such as <xref:System.IO.File>, <xref:System.IO.FileInfo>, <xref:System.IO.Directory> and <xref:System.IO.DirectoryInfo>, are not included in the [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]. Instead, use the types in the [Windows.Storage](http://msdn.microsoft.com/library/windows/apps/windows.storage.aspx) namespace of the [!INCLUDE[wrt](../../../includes/wrt-md.md)], such as [StorageFile](http://msdn.microsoft.com/library/windows/apps/windows.storage.storagefile.aspx) and [StorageFolder](http://msdn.microsoft.com/library/windows/apps/windows.storage.storagefolder.aspx).  
   
--   Isolated storage is not available; instead, use [application data](http://go.microsoft.com/fwlink/?LinkId=229175).  
+-   Isolated storage is not available; instead, use [application data](/previous-versions/windows/apps/hh464917(v=win.10)).  
   
 -   Use asynchronous methods, such as <xref:System.IO.Stream.ReadAsync%2A> and <xref:System.IO.Stream.WriteAsync%2A>, to prevent blocking the UI thread.  
   
@@ -155,7 +155,7 @@ File and stream I/O (input/output) refers to the transfer of data either to or f
 ## I/O and Security  
  When you use the classes in the <xref:System.IO?displayProperty=nameWithType> namespace, you must follow operating system security requirements such as access control lists (ACLs) to control access to files and directories. This requirement is in addition to any <xref:System.Security.Permissions.FileIOPermission> requirements. You can manage ACLs programmatically. For more information, see [How to: Add or Remove Access Control List Entries](../../../docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
- Default security policies prevent Internet or intranet applications from accessing files on the user’s computer. Therefore, do not use the I/O classes that require a path to a physical file when writing code that will be downloaded over the Internet or intranet. Instead, use [isolated storage](../../../docs/standard/io/isolated-storage.md) for traditional .NET Framework applications, or use [application data](http://go.microsoft.com/fwlink/?LinkId=229175) for [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.  
+ Default security policies prevent Internet or intranet applications from accessing files on the user’s computer. Therefore, do not use the I/O classes that require a path to a physical file when writing code that will be downloaded over the Internet or intranet. Instead, use [isolated storage](../../../docs/standard/io/isolated-storage.md) for traditional .NET Framework applications, or use [application data](/previous-versions/windows/apps/hh464917(v=win.10)) for [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.  
   
  A security check is performed only when the stream is constructed. Therefore, do not open a stream and then pass it to less-trusted code or application domains.  
   

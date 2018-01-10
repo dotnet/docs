@@ -1,6 +1,6 @@
 ---
 title: "Binary serialization"
-ms.date: "11/20/2017"
+ms.date: "01/02/2018"
 ms.prod: ".net"
 ms.topic: "article"
 helpviewer_keywords: 
@@ -181,6 +181,7 @@ As the nature of binary serialization allows the modification of private members
 - <xref:System.DuplicateWaitObjectException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.EntryPointNotFoundException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Enum?displayProperty=nameWithType>   
+- <xref:System.EventArgs?displayProperty=nameWithType> (available in .NET Core 2.0.6 and later versions)
 - <xref:System.Exception?displayProperty=nameWithType>   
 - <xref:System.ExecutionEngineException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.FieldAccessException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)

@@ -21,7 +21,7 @@ Generic classes and methods combine reusability, type safety and efficiency in a
   
 -   As the return type of the `Data` property in the nested `Node` class.  
   
--   As the type of the private member data in the nested class.  
+-   As the type of the private member `data` in the nested class.  
   
  Note that T is available to the nested `Node` class. When `GenericList<T>` is instantiated with a concrete type, for example as a `GenericList<int>`, each occurrence of `T` will be replaced with `int`.  
   

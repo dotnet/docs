@@ -28,6 +28,7 @@
 ## Analyzers
 ### [API Analyzer](standard/analyzers/api-analyzer.md) 
 ### [Portability Analyzer](standard/analyzers/portability-analyzer.md)
+## [Security Analyzer](standard/security-analyzer.md)
 ## [Handling and throwing exceptions](standard/exceptions/)
 ## [.NET Assembly File Format](standard/assembly-format.md)
 ## [Garbage Collection](standard/garbage-collection/)

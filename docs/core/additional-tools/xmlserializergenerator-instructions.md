@@ -14,13 +14,13 @@ ms.custom: mvc
 This tutorial teaches you how to use the Microsoft XML Serializer Generator in a C# .NET Core application. During the course of this tutorial, you learn:
 
 > [!div class="checklist"]
-> * How to create a .NET Core app.
+> * How to create a .NET Core app
 > * How to add a reference to the Microsoft.XmlSerializer.Generator package
-> * How to edit your MyApp.csproj to add dependencies.
+> * How to edit your MyApp.csproj to add dependencies
 > * How to add a class and an XmlSerializer
 > * How to build and run the application 
 
-Like the [Xml Serializer Generator (sgen.exe)](https://docs.microsoft.com/en-us/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe) for .NET Framework, <xref:System.Xml.Serialization.XmlSerializer> is the equivalent for .NET Core and .NET Standard projects. It creates an XML serialization assembly for types contained in an assembly to improve the startup performance of XML serialization when serializing or de-serializing objects of those types using XmlSerializer.
+Like the [Xml Serializer Generator (sgen.exe)](https://docs.microsoft.com/en-us/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe) for the .NET Framework, <xref:System.Xml.Serialization.XmlSerializer> is the equivalent for .NET Core and .NET Standard projects. It creates an XML serialization assembly for types contained in an assembly to improve the startup performance of XML serialization when serializing or de-serializing objects of those types using <xref:System.Xml.Serialization.XmlSerializer>.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ To complete this tutorial:
 * Install your favorite code editor, if you haven't already.
 
 > [!TIP]
-> Need to install a code editor? Try [Visual Studio](https://visualstudio.com/downloads)!
+> Need to install a code editor? Try [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)!
   
 ## Use Microsoft XML Serializer Generator in a .NET Core console application 
 
@@ -38,27 +38,29 @@ The following instructions show you how to use XML Serializer Generator in a .NE
 
 ### Create a .NET Core console application
 
-Open a command prompt and create a folder named *MyApp*. Navigate to the folder you created and type the following commands:
+Open a command prompt and create a folder named *MyApp*. Navigate to the folder you created and type the following command:
 
 ```console
 dotnet new console
 ```
 
-### Add a reference to the Microsoft.XmlSerializer.Generator package in the MyApp project.
+### Add a reference to the Microsoft.XmlSerializer.Generator package in the MyApp project
 
- Type:
+Use the [`dotnet add`](../tools/dotnet-add.md) command to add the reference in your project. 
+
+Type:
  
  ```console
- dotnet add MyApp package Microsoft.XmlSerializer.Generator -v 1.0.0
+ dotnet add package Microsoft.XmlSerializer.Generator -v 1.0.0
  ```
  
 ### Verify changes to MyApp.csproj after adding the package
 
-Open your text editor and let's get started! We're still working from the *MyApp* directory we built the app in.
+Open your code editor and let's get started! We're still working from the *MyApp* directory we built the app in.
 
 Open *MyApp.csproj* in your text editor.
 
-After running the `dotnet add` command, the following lines are added to your *MyApp.csproj* project file:
+After running the [`dotnet add`](../tools/dotnet-add.md) command, the following lines are added to your *MyApp.csproj* project file:
 
  ```xml
  <ItemGroup>
@@ -66,9 +68,9 @@ After running the `dotnet add` command, the following lines are added to your *M
  </ItemGroup>
  ```
  
- ### Add another ItemGroup section for .NET Core CLI Tool support
+### Add another ItemGroup section for .NET Core CLI Tool support
  
- Add the following lines after the `ItemGroup` section that we just inspected.
+ Add the following lines after the `ItemGroup` section that we inspected:
  
  ```xml
  <ItemGroup>
@@ -76,7 +78,7 @@ After running the `dotnet add` command, the following lines are added to your *M
  </ItemGroup>
  ```
  
-### Add a class in the application. 
+### Add a class in the application
 
 Open *Program.cs* in your text editor. Add the class named *MyClass* in *Program.cs*.
 
@@ -85,27 +87,28 @@ public class MyClass
 {
    public int Value;
 }
-```    
+```
 
-### Create an `XmlSerializer` for MyClass.  
+### Create an `XmlSerializer` for MyClass
 
 Add the following line inside *Main* to create an `XmlSerializer` for MyClass:
 
 ```csharp
 var serializer = new System.Xml.Serialization.XmlSerializer(typeof(MyClass));
-```    
+```
 
 ### Build and run the application
 
-Still within the *MyApp* folder, run the application via [`dotnet run`](../tools/dotnet-run.md)  and it will automatically load and use the pre-generated serializers at runtime.
+Still within the *MyApp* folder, run the application via [`dotnet run`](../tools/dotnet-run.md) and it automatically loads and uses the pre-generated serializers at runtime.
 
-Type the following in your console window:
+Type the following command in your console window:
 
  ```console
  $ dotnet run
  ```
 > [!NOTE]
 > [`dotnet run`](../tools/dotnet-run.md) calls [`dotnet build`](../tools/dotnet-build.md) to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
+>The commands and steps shown in this tutorial to run your application are used during development time only. Once you're ready to deploy your app, you'll want to take a look at the different [deployment strategies](../deploying/index.md) for .NET Core apps and the [`dotnet publish`](../tools/dotnet-publish.md) command.
 
 If everything succeeds, an assembly named *MyApp.XmlSerializers.dll* is generated in the output folder. 
 

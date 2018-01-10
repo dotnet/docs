@@ -1438,7 +1438,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="component" /> is <see langword="null" />.</exception>
+          <paramref name="type" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEditor" />
@@ -1590,7 +1590,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="component" /> is <see langword="null" />.</exception>
+          <paramref name="componentType" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.ComponentModel.DefaultEventAttribute" />
         <altmember cref="T:System.ComponentModel.EventDescriptor" />
         <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent" />

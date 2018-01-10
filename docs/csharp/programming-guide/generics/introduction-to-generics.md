@@ -19,7 +19,7 @@ Generic classes and methods combine reusability, type safety and efficiency in a
   
 -   As the type of a method parameter in the `AddHead` method.  
   
--   As the return type of the public method `GetNext` and the `Data` property in the nested `Node` class.  
+-   As the return type of the `Data` property in the nested `Node` class.  
   
 -   As the type of the private member data in the nested class.  
   

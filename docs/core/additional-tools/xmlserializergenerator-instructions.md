@@ -108,7 +108,9 @@ Type the following command in your console window:
  ```
 > [!NOTE]
 > [`dotnet run`](../tools/dotnet-run.md) calls [`dotnet build`](../tools/dotnet-build.md) to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
->The commands and steps shown in this tutorial to run your application are used during development time only. Once you're ready to deploy your app, you'll want to take a look at the different [deployment strategies](../deploying/index.md) for .NET Core apps and the [`dotnet publish`](../tools/dotnet-publish.md) command.
+
+> [!IMPORTANT]
+> The commands and steps shown in this tutorial to run your application are used during development time only. Once you're ready to deploy your app, you'll want to take a look at the different [deployment strategies](../deploying/index.md) for .NET Core apps and the [`dotnet publish`](../tools/dotnet-publish.md) command.
 
 If everything succeeds, an assembly named *MyApp.XmlSerializers.dll* is generated in the output folder. 
 

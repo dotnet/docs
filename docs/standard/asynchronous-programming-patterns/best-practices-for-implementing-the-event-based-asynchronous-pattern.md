@@ -78,7 +78,7 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
   
 ### Simultaneously Executing Operations  
   
--   If your class supports multiple concurrent invocations, enable the developer to track each invocation separately by defining the *MethodName***Async** overload that takes an object-valued state parameter, or task ID, called `userSuppliedState`. It should always be the last parameter in the *MethodName***Async** method's signature.  
+-   If your class supports multiple concurrent invocations, enable the developer to track each invocation separately by defining the *MethodName***Async** overload that takes an object-valued state parameter, or task ID, called `userSuppliedState`. This parameter should always be the last parameter in the *MethodName***Async** method's signature.  
   
 -   If your class defines the *MethodName***Async** overload that takes an object-valued state parameter, or task ID, be sure to track the lifetime of the operation with that task ID, and be sure to provide it back into the completion handler. There are helper classes available to assist. For more information on concurrency management, see [Walkthrough: Implementing a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md).  
   
@@ -96,7 +96,7 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
   
 -   Support progress reporting, if possible. This enables developers to provide a better application user experience when they use your class.  
   
--   If you implement a `ProgressChanged`/*MethodName***ProgressChanged** event, ensure that there are no such events raised for a particular asynchronous operation after that operation's *MethodName***Completed** event has been raised.  
+-   If you implement a **ProgressChanged** or *MethodName***ProgressChanged** event, ensure that there are no such events raised for a particular asynchronous operation after that operation's *MethodName***Completed** event has been raised.  
   
 -   If the standard <xref:System.ComponentModel.ProgressChangedEventArgs> is being populated, ensure that the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> can always be interpreted as a percentage. The percentage does not need to be accurate, but it should represent a percentage. If your progress reporting metric must be something other than a percentage, derive a class from the <xref:System.ComponentModel.ProgressChangedEventArgs> class and leave <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> at 0. Avoid using a reporting metric other than a percentage.  
   

@@ -81,7 +81,7 @@ items:
 - title: Control the formatting of interpolated expressions
   durationInMinutes: 5
   content: |
-      In the previous lesson, two poorly formatted strings were inserted into the result string. One was a date and time value for which only the date was appropriate. The second was a price that did not indicate its unit of currency. Both issues are easy to address. Interpolated expressions can include *format strings* that control the formatting of particular types. Modify the call to `Console.WriteLine` from the previous example to include the format specifier for the date and price fields as shown in the following line:
+    In the previous lesson, two poorly formatted strings were inserted into the result string. One was a date and time value for which only the date was appropriate. The second was a price that did not indicate its unit of currency. Both issues are easy to address. Interpolated expressions can include *format strings* that control the formatting of particular types. Modify the call to `Console.WriteLine` from the previous example to include the format specifier for the date and price fields as shown in the following line:
 
     ```csharp
     Console.WriteLine($"On {date:d}, the price of {item} was {price:C2} per {unit}.");

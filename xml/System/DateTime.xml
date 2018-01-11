@@ -148,7 +148,7 @@ You can assign the <xref:System.DateTime> object a date and time value returned 
 
 <a name="initialization-03"></a>
 [!code-vb[System.DateTime.Instantiation#3](~/samples/snippets/visualbasic/System.DateTime/Instantiation.vb#3)]  
-[!code-csharp-interactive[System.DateTime.Instantiation#3](~/samples/snippets/csharp/System.DateTime/Instantiation.cs#3)]
+[!code-csharp[System.DateTime.Instantiation#3](~/samples/snippets/csharp/System.DateTime/Instantiation.cs#3)]
 
 #### Parsing a string that represents a DateTime
 
@@ -156,7 +156,7 @@ The <xref:System.DateTime.Parse%2A>, <xref:System.DateTime.ParseExact%2A>, <xref
 
 <a name="initialization-04"></a>
 [!code-vb[System.DateTime.Instantiation#4](~/samples/snippets/visualbasic/System.DateTime/Instantiation.vb#4)]  
-[!code-csharp-interactive[System.DateTime.Instantiation#4](~/samples/snippets/csharp/System.DateTime/Instantiation.cs#4)]
+[!code-csharp[System.DateTime.Instantiation#4](~/samples/snippets/csharp/System.DateTime/Instantiation.cs#4)]
 
 The <xref:System.DateTime.TryParse%2A> and <xref:System.DateTime.TryParseExact%2A> methods indicate whether a string is a valid representation of a <xref:System.DateTime> value and, if it is, performs the conversion.  
 

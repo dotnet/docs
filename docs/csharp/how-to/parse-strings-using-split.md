@@ -1,5 +1,6 @@
 ---
 title: "How to: Parse Strings Using String.Split (C# Guide)"
+description: String.Split returns an array of strings split from a set of delimiters. It's an easy way to parse strings.
 ms.date: 01/03/2018
 ms.prod: .net
 ms.technology: 

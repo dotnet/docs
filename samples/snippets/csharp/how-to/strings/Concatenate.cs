@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,6 +13,7 @@ namespace HowToStrings
             UsingAddWithVariables();
             UsingInterpolationWithVariables();
             UsingStringBuilder();
+            UsingAggregate();
         }
 
         private static void UsingAddWithConstantStrings()
@@ -73,6 +75,16 @@ namespace HowToStrings
             }
             System.Console.WriteLine(sb.ToString());
             // </Snippet4>
+        }
+
+        private static void UsingAggregate()
+        {
+            // <Snippet5>
+            string[] words = { "The", "quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog." };
+
+            var phrase = words.Aggregate((partialPhrase, word) =>$"{partialPhrase} {word}");
+            Console.WriteLine(phrase);
+            // </Snippet5>
         }
     }
 }

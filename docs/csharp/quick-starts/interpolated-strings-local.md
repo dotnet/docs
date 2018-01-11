@@ -136,18 +136,30 @@ If the field width is a negative number, the field is left-aligned:
 {expression, -width}
 ```
 
-Try removing the negative signs from the `{"Author",-25}` and `{title.Key,-25}` interpolated expressions and run the example again. This time, the author information is right-aligned.
+Try removing the negative signs from the `{"Author",-25}` and `{title.Key,-25}` interpolated expressions and run the example again, as the following code does:
 
-   You can combine a field width and a format string in a single interpolated expression. The field width comes first, followed by a colon and the format string. Try the following simple program that displays three formatted strings with defined field widths.
+```csharp
+Console.WriteLine($"\n{"Author",-25}    {"Title",30}\n");
+foreach (var title in titles)
+   Console.WriteLine($"{title.Key,-25}     {title.Value,30}");
+```
 
-    ```csharp
-    Console.WriteLine($"{DateTime.Now,-20:d} Hour {DateTime.Now,-10:HH} {1063.342,15:N2} feet");
-    ```
+This time, the author information is right-aligned.
 
-- content: |
-    You've completed the interpolated strings quick start. 
+You can combine a field width and a format string in a single interpolated expression. The field width comes first, followed by a colon and the format string. Replace all of the code inside the `Main` method with the following code, which displays three formatted strings with defined field widths. Then run the program by entering the `dotnet run` command.
+
+```csharp
+Console.WriteLine($"{DateTime.Now,-20:d} Hour {DateTime.Now,-10:HH} {1063.342,15:N2} feet");
+```
+The output looks something like the following:
+
+```console
+1/11/2018            Hour 09                1,063.34 feet
+```
+
+You've completed the interpolated strings quick start. 
     
-    You can continue these quick starts on your own local development environment. Learn the basics of [local development](local-environment.md) and then pick a quick start. You can try this same exercise, move directly to the next quick start, or start again with the [numbers in C#](numbers-in-csharp-local.md) quickstart.
+You can continue with the [Arrays and collections](arrays-and-collections.md) quick start in your own development environment.
 
-    You can learn more about working with interpolated strings in the [Interpolated Strings](../language-reference/keywords/interpolated-strings.md) topic in the C# Reference.
+You can learn more about working with interpolated strings in the [Interpolated Strings](../language-reference/keywords/interpolated-strings.md) topic in the C# Reference.
 

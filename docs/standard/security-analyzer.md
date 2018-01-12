@@ -31,15 +31,16 @@ project where you want them to run. Only one developer needs to add them
 to the project. The analyzer package is a project dependency and will run
 on every developer's machine once they have the updated solution.
 
-The .NET Security Analyzers are delivered in the [Microsoft.DesktopAnalyzers](https://www.nuget.org/packages/Desktop.Analyzers/)
-NuGet package. This package provides only the security analyzers. In most cases, you'll want
+The .NET Security Analyzers are delivered in the [Microsoft.NetFramework.Analyzers](https://www.nuget.org/packages/Microsoft.NetFramework.Analyzers/)
+NuGet package. This package provides only the analyzers specific to the .NET Framework, which
+includes the security analyzers. In most cases, you'll want
 the [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet package. 
-The FxCopAnalyzers package contains all the security analyzers included in the
+The FxCopAnalyzers aggregate package contains all the security analyzers included in the
 Desktop.Analyzers package as well as other analyzers that
 help your team enforce the rules recommended by FxCop.
 
 To install it, right-click on the project, and select "Manage Dependencies".
-From the NuGet explorer, search for "Desktop Analyzers", or if you prefer,
+From the NuGet explorer, search for "NetFramework Analyzers", or if you prefer,
 "Fx Cop Analyzers". Install the latest stable version in all projects in your
 solution.
 

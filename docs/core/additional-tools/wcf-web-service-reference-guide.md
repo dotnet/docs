@@ -1,4 +1,4 @@
---- 
+﻿--- 
 title: Microsoft WCF Web Service Reference Provider Tool
 description: An overview of the Microsoft WCF Web Service Reference Provider Tool that adds functionality for .NET Core and ASP.NET Core projects, similar to Add Service Reference for .NET Framework projects.
 author: mlacouture
@@ -11,7 +11,7 @@ ms.custom: mvc
 ---
 # Microsoft WCF Web Service Reference Provider Tool
 
-Over the years, many Visual Studio developers have enjoyed the productivity that the [Add Service Reference](https://docs.microsoft.com/en-us/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference) tool provided when their .NET Framework projects needed to access Windows Communication Foundation (WCF) services. The **WCF Web Service Reference** tool is a Visual Studio connected service extension that provides an experience like the Add Service Reference functionality for .NET Core and ASP.NET Core projects. This tool retrieves metadata from a WCF service in the current solution, from a WSDL file or on a network location, and generates a .NET Core compatible source file containing WCF client proxy code that you can use to access the web service.
+Over the years, many Visual Studio developers have enjoyed the productivity that the [Add Service Reference](https://docs.microsoft.com/en-us/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference) tool provided when their .NET Framework projects needed to access web services. The **WCF Web Service Reference** tool is a Visual Studio connected service extension that provides an experience like the Add Service Reference functionality for .NET Core and ASP.NET Core projects. This tool retrieves metadata from a web service in the current solution, on a network location, or from a WSDL file, and generates a .NET Core compatible source file containing Windows Communication Foundation (WCF) client proxy code that you can use to access the web service.
 
 > [!IMPORTANT]
 > You should only reference services from a trusted source. Adding references from an untrusted source may compromise security. 
@@ -66,7 +66,7 @@ While displaying progress, the tool will:
 * Download metadata from the WCF service 
 * Generate the service reference code in a file named *reference.cs*, and add it to your project under the **Connected Services** node. * Update the project file (.csproj) with NuGet package references required to compile and run on the target platform.
 
-When these processes complete, you can create generated WCF web service communication client type instances.
+When these processes complete, you can create an instance of the generated WCF client type and invoke the service operations.
 
 ## Next Steps
 
